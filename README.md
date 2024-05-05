@@ -2,7 +2,7 @@
 
 This repository contains publicly released resources created in the context of the [MaTOS ANR project](https://anr-matos.github.io).
 
-1. Post-editing data for the NLP domain
+## 1. Post-editing data for the NLP domain
 
 This data is described in the following paper, published at the EAMT conference 2024: 
 
