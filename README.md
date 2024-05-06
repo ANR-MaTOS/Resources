@@ -10,7 +10,7 @@ Rachel Bawden, Ziqian Peng, Maud Bénard, Éric Villemonte de la Clergerie, Raph
 
 Please cite the following:
 ```
-@inproceedings{alvarez-oliver-2023-pe,
+@inproceedings{bawden-etal-2024-translate,
     title = "{Translate your Own: a Post-Edition Experiment in the NLP domain}",
     author = "Rachel Bawden and Ziqian Peng and Maud Bénard and Éric Villemonte de la Clergerie and Raphaël Esamotunu and Mathilde Huguin and Natalie Kübler and Alexandra Mestivier and Mona Michelot and Laurent Romary and Lichao Zhu and François Yvon",
     booktitle = "Proceedings of the 25th Annual Conference of the European Association for Machine Translation",
