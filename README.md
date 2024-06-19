@@ -20,3 +20,5 @@ Please cite the following:
     publisher = "European Association for Machine Translation"
 }
 ```
+
+The postediting interface is still live and you can still contribute here: [https://postedition.anr-matos.fr](https://postedition.anr-matos.fr).
