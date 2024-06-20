@@ -1,0 +1,205 @@
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.input_keyword {
+	display: inline-block;
+	width: auto;
+	padding-right: calc(1.5em + .95rem);
+}
+
+h1 {
+    color: #db5a14;
+}
+
+body {
+    /* padding-bottom: 70px; */
+    /* min-height: 500px; */
+    margin-bottom: 200px;
+   clear: both;
+}
+
+
+:root {
+    --shade-10: #2c3e50;
+    --shade-1: #d7dcdf;
+    --shade-0: #fff;
+    --teal: #1abc9c; 
+}
+
+
+
+.range-slider {
+  margin: 60px 0 0 0;
+}
+
+
+// Range Slider
+
+.range-slider {
+  width: 100% ! default;
+}
+
+.range-slider__range {
+  -webkit-appearance: none;
+  width: calc(100% - (#{60px !default + 13px}));
+  height: 10px;
+  border-radius: 5px;
+  background: var(--shade-1);
+  outline: none;
+  padding: 0;
+  margin: 0;
+
+  // Range Handle
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--teal);
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+
+    &:hover {
+      background: var(--teal);
+    }
+  }
+
+  &:active::-webkit-slider-thumb {
+    background: var(--teal);
+  }
+
+  &::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--shade-10);
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+
+    &:hover {
+      background: var(--teal);
+    }
+  }
+
+  &:active::-moz-range-thumb {
+    background: var(--teal);
+  }
+  
+  // Focus state
+  &:focus {
+    
+    &::-webkit-slider-thumb {
+      box-shadow: 0 0 0 3px var(--shade-0),
+                  0 0 0 6px var(--teal);
+    }
+  }
+}
+
+
+// Range Label
+.range-slider__value {
+  display: inline-block;
+  position: relative;
+  width: 60px !default;
+  color: var(--shade-0);
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: black;
+  padding: 5px 10px;
+  margin-left: 8px;
+
+  &:after {
+    position: absolute;
+    top: 8px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid var(--shade-10);
+    border-bottom: 7px solid transparent;
+    content: '';
+  }
+}
+
+
+// Firefox Overrides
+::-moz-range-track {
+    background: var(--shade-1);
+    border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer { 
+  border: 0; 
+}
+
+tr.invalid-row {
+    /* border: 1px solid red !important; */
+}
+
+td.invalid-row {
+    /* border-top: 1px solid red !important; */
+    /* border-bottom: 1px solid red !important; */
+    color: #b02a37;
+}
+
+/* Style the form - display items horizontally */
+.form-inline { 
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.icon-stack {
+      position: relative;
+      display: inline-block;
+      width: 2em;
+      height: 5em;
+      line-height: 4em;
+      vertical-align: middle;
+    }
+    .icon-stack-1x,
+    .icon-stack-2x,
+    .icon-stack-3x {
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+    .icon-stack-1x {
+      line-height: inherit;
+      position: absolute;
+      left:8px;
+      top:-11px;
+    }
+    .icon-stack-2x {
+      font-size: 1.5em;
+    }
+    .icon-stack-3x {
+      font-size: 2em;
+    }
+
+    textarea {
+	width: auto;
+    }
+
+    .mark, mark {
+	padding: 0;
+    }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* height: 60px; /\* Set the fixed height of the footer here *\/ */
+  line-height: 60px; /* Vertically center the text there */
+}
