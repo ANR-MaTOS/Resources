@@ -29,4 +29,4 @@ Resources available:
     - Postedits from the NLP community and translators: `community-2023-10-03.csv` and `translators-2023-10-03.csv`, and the user metadata: `users-2023-10-19.csv`
 - Post-editing interface:
   - The post-editing interface is still live and you can still contribute here: [https://postedition.anr-matos.fr](https://postedition.anr-matos.fr).
-  - Code for the post-editing interface: 
+  - Code for the post-editing interface: `postediting-interface/tal/`
