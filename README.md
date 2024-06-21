@@ -26,7 +26,7 @@ Resources available:
     - The initial NLP corpus extracted from HAL (English article titles and abstracts): `NLP-corpus/nlp_corpus.jsonl`, a subsection of recent articles (2020 onwards): `nlp_corpus.2020-present.jsonl`, and translations by the 3 MT systems: `nlp_corpus.2020-present-{systran,deepl,etranslation}.jsonl`
     - NLP keywords and list of venues for the filtering of HAL articles: `nlp_keywords_dedupl.txt` and `nlp_venues.txt`
     - Creation scripts found in `corpus-creation-scripts/`. See `corpus-creation-scripts/README.md` for details.
-    - Postedits from the NLP community and translators: `community-2023-10-03.csv` and `translators-2023-10-03.csv`, and the user metadata: `users-2023-10-19.csv`
+    - Postedits from the NLP community and translators: `NLP-corpus/postedits-NLP-community.csv` and `NLP-corpus/postedits-translators.csv`, and the user metadata: `NLP-corpus/postedits-user-metadata.csv`
 - Post-editing interface:
   - The post-editing interface is still live and you can still contribute here: [https://postedition.anr-matos.fr](https://postedition.anr-matos.fr).
   - Code for the post-editing interface: `postediting-interface/tal/`
