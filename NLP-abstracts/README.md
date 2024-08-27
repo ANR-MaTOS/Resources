@@ -58,12 +58,12 @@ We indicate the DOCID in the meta data. Using this DOCID, people can find the or
     </body>
 </tmx>
 
+```
+
 This data is described in the following paper, published at the 2024 edition of the TALN conference: 
 
 Ziqian Peng, Rachel Bawden, and François Yvon. 2024. À propos des difficultés de traduire automatiquement de longs documents. In Actes de la 31ème Conférence sur le Traitement Automatique des Langues Naturelles, volume 1 : articles longs et prises de position, pages 2–21, Toulouse, France. ATALA and AFPC.
 https://aclanthology.org/2024.jeptalnrecital-taln.1/
-
-```
 
 
 
