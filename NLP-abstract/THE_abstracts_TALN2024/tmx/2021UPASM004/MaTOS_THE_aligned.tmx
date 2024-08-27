@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2021UPASM004. segId begin by 1, tuid = segId</note>
+        <docid>2021UPASM004</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les nombres à virgule flottante ne représentent qu'un sous-ensemble des nombres réels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Floating-point numbers represent only a subset of real numbers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>De ce fait, l'arithmétique à virgule flottante introduit des approximations qui sont susceptibles de se cumuler et d'avoir un impact significatif sur les simulations numériques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As such, floating-point arithmetic introduces approximations that can compound and have a significant impact on numerical simulations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous introduisons une nouvelle façon d'estimer et de localiser les sources d'erreur numérique dans une application et fournissons une implémentation de référence, la bibliothèque Shaman.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We introduce a new way to estimate and localize the sources of numerical error in an application and provide a reference implementation, the Shaman library.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Notre méthode utilise une arithmétique dédiée sur un type qui encapsule à la fois le résultat des calculs (identique à la version non instrumentée du code) et une approximation de son erreur numérique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our method uses a dedicated arithmetic over a type that encapsulates both the result the user would have had with the original computation and an approximation of its numerical error.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons ainsi mesurer le nombre de chiffres significatifs de tout résultat ou résultat intermédiaire dans une simulation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We thus can measure the number of significant digits of any result or intermediate result in a simulation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons que notre approche, bien que simple, donne des résultats compétitifs avec l'état de l'art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that this approach, while simple, gives results competitive with state-of-the-art methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Qui plus est, elle a un surcoût en temps de calcul moins important et est compatible avec le parallélisme, ce qui la rend appropriée pour l'étude de larges applications.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It has a smaller overhead and is compatible with parallelism which makes it suitable for the study of large scale applications.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

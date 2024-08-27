@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018GREAM081. segId begin by 1, tuid = segId</note>
+        <docid>2018GREAM081</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes cyber-physiques sont une classe de systèmes complexe, de grande échelle, souvent critiques de sûreté, qui apparaissent dans des applications industrielles variées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Cyber-Physical Systems form a class of complex, large-scale systems of frequently safety-critical nature in various industrial applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Des approches de vérification formelle sont capable de fournir des garanties pour la performance et la sûreté de ces systèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Formal verification approaches can provide performance and safety guarantees for these systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Elles nécessitent trois éléments : un modèle formel, une méthode de vérification, ainsi qu’un ensemble de spécifications formelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They require three elements: a formal model, a formal verification method, and a set of formal specifications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>En revanche, les modèles industriels sont typiquement informels, ils sont analysés dans des environnements de simulation informels et leurs spécifications sont décrits dans un langage naturel informel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, industrial models are typically non-formal, they are analyzed in non-formal simulation environments, and their specifications are described in non-formal natural language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous visons à faciliter l’intégration de la vérification formelle dans le processus industriel de la conception basé sur modèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we aim to facilitate the integration of formal verification into the industrial model-based design process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Notre première contribution clé est une méthodologie de transformation de modèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our first key contribution is a model transformation methodology.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>A partir d’un modèle de simulation standard, nous le transformons en un modèle de vérification équivalent, plus précisément en un réseau d’automates hybrides.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Starting with a standard simulation model, we transform it into an equivalent verification model, particularly a network of hybrid automata.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Le processus de transformation prend en compte des différences de syntaxes, sémantique et d’autres aspects de la modélisation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The transformation process addresses differences in syntax, semantics, and other aspects of modeling.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Pour cette classe de modèle formel, des algorithmes d’atteignabilité peuvent être appliqués pour vérifier des propriétés de sûreté.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For this class of formal models, so-called reachability algorithms can be applied to verify safety properties.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Un obstacle est que des algorithmes d’atteignabilité se mettent à l’échelle pour des modèles affines par morceaux, mais pas pour des modèles non linéaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An obstacle is that scalable algorithms exist for piecewise affine (PWA) models, but not for nonlinear ones.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Pour obtenir des surapproximations affines par morceaux des dynamiques non linéaires, nous proposons une technique compositionnelle d’hybridisation syntaxique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To obtain PWA over-approximations of nonlinear dynamics, we propose a compositional syntactic hybridization technique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>La seconde contribution clé est une approche pour encoder des spécifications formelles riches de façon à ce qu’elles peuvent être interprétées par des outils d’atteignabilité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second key contribution is an approach to encode rich formal specifications so that they can be interpreted by tools for reachability.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Nous prenons en compte des spécifications exprimées sous forme d’un gabarit de motif (pattern template), puisqu’elles sont proche au langage naturel et peuvent être compris facilement par des utilisateurs non experts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Herein, we consider specifications expressed by pattern templates since they are close to natural language and can be easily understood by non-expert users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Nous fournissons (i) des définitions formelles pour des motifs choisis, qui respectent la sémantique des automates hybrides, et (ii) des observateurs qui encodes les propriétés en tant qu’atteignabilité d’un état d’erreur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We provide (i) formal definitions for select patterns that respect the semantics of hybrid automata, and (ii) monitors which encode the properties as the reachability of an error state.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>En composant ces observateurs avec le modèle formel, les propriétés peuvent être vérifiées par des outils standards de vérification qui sont automatisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By composing these monitors with the formal model under study, the properties can be checked by off-the-shelf fully automated verification tools.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Finalement, nous présentons une chaîne d’outils semi-automatisée ainsi que des études de cas menées en collaboration avec des partenaires industriels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, we provide a semi-automated toolchain and present results from case studies conducted in collaboration with industrial partners.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

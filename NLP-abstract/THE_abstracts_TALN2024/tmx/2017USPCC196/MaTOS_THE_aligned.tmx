@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017USPCC196. segId begin by 1, tuid = segId</note>
+        <docid>2017USPCC196</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse explore l'usage des Grammaires Categorielles Abstraites (CGA) pour la Génération Automatique de Texte (GAT) dans un contexte industriel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis explores the usage of Abstract Categorial Grammars (ACG) for Natural Language Generation (NLG) in an industrial context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes GAT basés sur des théories linguistiques ont un long historique, cependant ils sont relativement peu utilisés en industrie, qui préfère les approches plus "pragmatiques", le plus souvent pour des raisons de simplicité et de performance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While NLG system based on linguistic theories have a long history, they are not prominent in industry, which, for the sake of simplicity and efficiency, usually prefer more ``pragmatic" methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cette étude montre que les avancées récentes en linguistique computationnelle permettent de concilier le besoin de rigueur théorique avec le besoin de performance, en utilisant CGA pour construire les principaux modules d'un système GAT de qualité industrielle ayant des performances comparables aux méthodes habituellement utilisées en industrie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This study shows that recent advances in computational linguistics allow to conciliate the requirements of soundness and efficiency, by using ACG to build the main elements of a production grade NLG framework (document planner and microplanner), with performance comparable to existing, less advanced methods used in industry</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

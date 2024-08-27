@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2010PA132035. segId begin by 1, tuid = segId</note>
+        <docid>2010PA132035</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes intégrant des traitements venant du traitement automatique des langues reposent souvent sur des lexiques et des grammaires, parfois indirectement sur des corpus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Establishing an Environment to Manage Linguistic Resources for a Text Analysis Platform Systems integrating natural language processing often use lexicons and grammars, sometimes indirectly corpora.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>A cause de la quantité et de la complexité des informations qu‘elles contiennent, ces ressources linguistiques deviennent facilement une source d‘incohérence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Because of the quantity and the complexity of the information in these linguistic resources, they are likely to become a source of inconsistency.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous explorons les moyens d‘améliorer la gestion des nombreuses ressources linguistiques d‘un moteur de recherche industriel en dix-neuf langues qui fait appel à une analyse textuelle élaborée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis we explore how to improve the management of linguistic resources for an industrial search engine in nineteen languages that performs an elaborate textual analysis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une méthode pour formaliser l‘architecture linguistique des traitements linguistiques et des ressources utilisées par ceux-ci.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a method to formalize the linguistic architecture of the linguistic processing and its resources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cette formalisation explicite la façon dont les connaissances contenues dans les ressources sont exploitées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This formalization shows how the knowledge contained in the resources is exploited and gives us the possibility to build management tools compliant with the system‘s architecture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Grâce à elle, nous pouvons construire des outils de gestion qui respectent l‘architecture du système.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The environment implemented in this way focuses on updating and acquiring the linguistic resources, while their exploitation is defined by the industrial constraints.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>L'environnement ainsi mis en place se concentre sur la mise à jour et l‘acquisition des ressources linguistiques, leur exploitation étant figée par des contraintes industrielles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Keywords: linguistic architecture, linguistic resource, linguistic resource management, NLP system, NLP tool, natural language processing.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

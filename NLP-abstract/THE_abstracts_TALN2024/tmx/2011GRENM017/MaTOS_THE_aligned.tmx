@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2011GRENM017. segId begin by 1, tuid = segId</note>
+        <docid>2011GRENM017</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les technologies de reconnaissance automatique de la parole sont désormais intégrées dans de nombreux systèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Automatic speech recognition technologies are now integrated into many systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La performance des systèmes de reconnaissance vocale pour les locuteurs non natifs continue cependant à souffrir de taux d'erreur élevés, en raison de la différence entre la parole non native et les modèles entraînés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The performance of speech recognition systems for non-native speakers, however, continues to suffer high error rates, due to the difference between native and non-speech models trained.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La réalisation d'enregistrements en grande quantité de parole non native est généralement une tâche très difficile et peu réaliste pour représenter toutes les origines des locuteurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The making of recordings in large quantities of non-native speech is typically a very difficult and impractical to represent all the origins of the speakers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ce travail de thèse porte sur l'amélioration des modèles acoustiques multilingues pour la transcription phonétique de la parole de type « réunion multilingue ».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis focuses on improving multilingual acoustic models for automatic phonetic transcription of speech such as “multilingual meeting”.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Pour répondre à ces défis, nous proposons un processus d'adaptation de modèles acoustiques multilingues que nous appelons « adaptation autonome ».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To meet these challenges, we propose a process of adaptation of multilingual acoustic models is called "autonomous adaptation".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans l'adaptation autonome, nous étudions plusieurs approches pour adapter les modèles acoustiques multilingues de manière non supervisée (les langues parlées et les origines des locuteurs ne sont pas connues à l'avance) et qui n'utilise aucune donnée supplémentaire lors du processus d'adaptation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In autonomous adaptation, we studied several approaches for adapting multilingual acoustic models in unsupervised way (spoken languages and the origins of the speakers are not known in advance) and no additional data is used during the adaptation process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Les approches étudiées sont décomposées selon deux modules.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The approaches studied are decomposed into two modules.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Le premier module qui s'appelle « l'observateur de langues » consiste à récupérer les caractéristiques linguistiques (les langues parlées et les origines des locuteurs) des segments à décoder.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first module called "the language observer" is to recover the linguistic information (spoken languages and the origins of the speakers) of the segments to be decoded.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Le deuxième module consiste à adapter le modèle acoustique multilingue en fonction des connaissances fournies par l'observateur de langue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second module is to adapt the multilingual acoustic model based on knowledge provided by the language observer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Pour évaluer l'utilité de l'adaptation autonome d'un modèle acoustique multilingue, nous utilisons les données de test, qui sont extraites de réunions multilingues, contenant de la parole native et non native de trois langues : l'anglais (EN), le français (FR) et le vietnamien (VN).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To evaluate the usefulness of autonomous adaptation of multilingual acoustic model, we use the test data, which are extracted from multilingual meeting corpus, containing the native and nonnative speech of three languages: English (EN), French (FR) and Vietnamese (VN).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Selon les résultats d'expérimentation, l'adaptation autonome donne des résultats prometteurs pour les paroles non natives mais dégradent très légèrement les performances sur de la parole native.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>According to the experiment results, the autonomous adaptation shows promising results for non native speech but very slightly degrade performance on native speech.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Afin d'améliorer la performance globale des systèmes de transcription pour toutes les paroles natives et non natives, nous étudions plusieurs approches de détection de parole non native et proposons de cascader un tel détecteur avec notre processus d'adaptation autonome.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To improve the overall performance of transcription systems for all native and non native speech, we study several approaches for detecting non native speech and propose such a detector cascading with our self-adaptation process (autonomous adaptation).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Les résultats obtenus ainsi, sont les meilleurs parmi toutes les expériences réalisées sur notre corpus de réunions multilingues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results thus are the best among all experiments done on our corpus of multilingual meetings.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

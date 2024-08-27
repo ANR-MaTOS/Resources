@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017IMTA0005. segId begin by 1, tuid = segId</note>
+        <docid>2017IMTA0005</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Face à la complexité significative du domaine mammographique ainsi que l'évolution massive de ses données, le besoin de contextualiser les connaissances au sein d'une modélisation formelle et exhaustive devient de plus en plus impératif pour les experts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Facing the significant complexity of the mammography area and the massive changes in its data, the need to contextualize knowledge in a formal and comprehensive modeling is becoming increasingly urgent for experts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>C'est dans ce cadre que s'inscrivent nos travaux de recherche qui s'intéressent à unifier différentes sources de connaissances liées au domaine au sein d'une modélisation ontologique cible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is within this framework that our thesis work focuses on unifying different sources of knowledge related to the domain within a target ontological modeling.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>D'une part, plusieurs modélisations ontologiques mammographiques ont été proposées dans la littérature, où chaque ressource présente une perspective distincte du domaine d'intérêt.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the one hand, there is, nowadays, several mammographic ontological modeling, where each resource has a distinct perspective area of interest.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>D'autre part, l'implémentation des systèmes d'acquisition des mammographies rend disponible un grand volume d'informations issues des faits passés, dont la réutilisation devient un enjeu majeur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, the implementation of mammography acquisition systems makes available a large volume of information providing a decisive competitive knowledge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Toutefois, ces fragments de connaissances, présentant de différentes évidences utiles à la compréhension de domaine, ne sont pas interopérables et nécessitent des méthodologies de gestion de connaissances afin de les unifier.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, these fragments of knowledge are not interoperable and they require knowledge management methodologies for being comprehensive.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>C'est dans ce cadre que se situe notre travail de thèse qui s'intéresse à l'enrichissement d'une ontologie de domaine existante à travers l'extraction et la gestion de nouvelles connaissances (concepts et relations) provenant de deux courants scientifiques à savoir : des ressources ontologiques et des bases de données comportant des expériences passées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this context, we are interested on the enrichment of an existing domain ontology through the extraction and the management of new knowledge (concepts and relations) derived from two scientific currents: ontological resources and databases holding with past experiences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Notre approche présente un processus de couplage entre l'enrichissement conceptuel et l'enrichissement relationnel d'une ontologie mammographique existante.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our approach integrates two knowledge mining levels: The first module is the conceptual target mammographic ontology enrichment with new concepts extracting from source ontologies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Le but étant de réduire l'étape d'alignement de deux ontologies entières en un alignement de deux groupements de concepts de tailles réduits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The goal is to reduce the alignment task from two full ontologies to two reduced conceptual clusters.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>La deuxième étape consiste à aligner les deux structures des clusters relatives aux ontologies cible et source.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second stage consists on aligning the two hierarchical structures of both source and target ontologies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Les alignements validés permettent d'enrichir l'ontologie de référence par de nouveaux concepts permettant d'augmenter le niveau de granularité de la base de connaissances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thirdly, the validated alignments are used to enrich the reference ontology with new concepts in order to increase the granularity of the knowledge base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Le deuxième processus s'intéresse à l'enrichissement relationnel de l'ontologie mammographique cible par des relations déduites de la base de données de domaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second level of management is interested in the target mammographic ontology relational enrichment by novel relations deducted from domain database.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Cette dernière comporte des données textuelles des mammographies recueillies dans les services de radiologies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The latter includes medical records of mammograms collected from radiology services.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Cette dernière consiste à filtrer et classer les règles afin de faciliter leur interprétation et validation par l'expert vi) L'enrichissement de l'ontologie par de nouvelles associations entre les concepts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The latter is to filter and classify the rules in order to facilitate their interpretation and validation by expert, vi) The enrichment of the ontology by new associations between concepts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Cette approche a été mise en 'uvre et validée sur des ontologies mammographiques réelles et des données des patients fournies par les hôpitaux Taher Sfar et Ben Arous.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This approach has been implemented and validated on real mammographic ontologies and patient data provided by Taher Sfar and Ben Arous hospitals.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

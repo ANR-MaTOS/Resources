@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019SACLC068. segId begin by 1, tuid = segId</note>
+        <docid>2019SACLC068</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le "Big Data''et les grands systèmes d'apprentissage sont omniprésents dans les problèmes d'apprentissage automatique aujourd’hui.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Large dimensional data and learning systems are ubiquitous in modern machine learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Contrairement à l'apprentissage de petite dimension, les algorithmes d'apprentissage en grande dimension sont sujets à divers phénomènes contre-intuitifs et se comportent de manière très différente des intuitions de petite dimension sur lesquelles ils sont construits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As opposed to small dimensional learning, large dimensional machine learning algorithms are prone to various counterintuitive phenomena and behave strikingly differently from the low dimensional intuitions upon which they are built.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cependant, en supposant que la dimension et le nombre des données sont à la fois grands et comparables, la théorie des matrices aléatoires (RMT) fournit une approche systématique pour évaluer le comportement statistique de ces grands systèmes d'apprentissage, lorsqu'ils sont appliqués à des données de grande dimension.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nonetheless, by assuming the data dimension and their number to be both large and comparable, random matrix theory (RMT) provides a systematic approach to assess the (statistical) behavior of these large learning systems, when applied on large dimensional data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L’objectif principal de cette thèse est de proposer un schéma d'analyse basé sur la RMT, pour une grande famille de systèmes d’apprentissage automatique : d'évaluer leurs performances, de mieux les comprendre et finalement les améliorer, afin de mieux gérer les problèmes de grandes dimensions aujourd'hui.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The major objective of this thesis is to propose a full-fledged RMT-based framework for various machine learning systems: to assess their performance, to properly understand and to carefully refine them, so as to better handle large dimensional problems that are increasingly needed in artificial intelligence applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Précisément, nous commençons par exploiter la connexion entre les grandes matrices à noyau, les projection aléatoires non-linéaires et les réseaux de neurones aléatoires simples.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Precisely, we exploit the close connection between kernel matrices, random feature maps, and single-hidden-layer random neural networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>En considérant que les données sont tirées indépendamment d'un modèle de mélange gaussien, nous fournissons une caractérisation précise des performances de ces systèmes d'apprentissage en grande dimension, exprimée en fonction des statistiques de données, de la dimensionnalité et, surtout, des hyper-paramètres du problème.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Under a simple Gaussian mixture modeling for the input data, we provide a precise characterization of the performance of these large dimensional learning systems as a function of the data statistics, the dimensionality, and most importantly the hyperparameters (e.g., the choice of the kernel function or activation function) of the problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Lorsque des algorithmes d'apprentissage plus complexes sont considérés, ce schéma d'analyse peut être étendu pour accéder à de systèmes d'apprentissage qui sont définis (implicitement) par des problèmes d'optimisation convexes, lorsque des points optimaux sont atteints.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Further addressing more involved learning algorithms, we extend the present RMT analysis framework to access large learning systems that are implicitly defined by convex optimization problems (e.g., logistic regression), when optimal points are assumed reachable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Pour trouver ces points, des méthodes d'optimisation telles que la descente de gradient sont régulièrement utilisées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To find these optimal points, optimization methods such as gradient descent are regularly used.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>À cet égard, dans le but d'avoir une meilleur compréhension théorique des mécanismes internes de ces méthodes d'optimisation et, en particulier, leur impact sur le modèle d'apprentissage, nous évaluons aussi la dynamique de descente de gradient dans les problèmes d'optimisation convexes et non convexes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Aiming to have a better theoretical grasp of the inner mechanism of optimization methods and their impact on the resulting learning model, we further evaluate the gradient descent dynamics in training convex and non-convex objects.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Ces études préliminaires fournissent une première compréhension quantitative des algorithmes d'apprentissage pour le traitement de données en grandes dimensions, ce qui permet de proposer de meilleurs critères de conception pour les grands systèmes d’apprentissage et, par conséquent, d'avoir un gain de performance remarquable lorsqu'il est appliqué à des jeux de données réels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These preliminary studies provide a first quantitative understanding of the aforementioned learning algorithms when large dimensional data are processed, which further helps propose better design criteria for large learning systems that result in remarkable gains in performance when applied on real-world datasets.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

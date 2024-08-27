@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018PSLEE063. segId begin by 1, tuid = segId</note>
+        <docid>2018PSLEE063</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les graphes sont omniprésents dans de nombreux domaines de recherche, allant de la biologie à la sociologie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Graphs are ubiquitous in many fields of research ranging from sociology to biology.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Un graphe est une structure mathématique très simple constituée d’un ensemble d’éléments, appelés nœuds, reliés entre eux par des liens, appelés arêtes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A graph is a very simple mathematical structure that consists of a set of elements, called nodes, connected to each other by edges.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le partitionnement ou clustering de graphe est un problème central en analyse de graphe dont l’objectif est d’identifier des groupes de nœuds densément interconnectés et peu connectés avec le reste du graphe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Graph clustering is a central problem in the analysis of graphs whose objective is to identify dense groups of nodes that are sparsely connected to the rest of the graph.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ces groupes de nœuds, appelés clusters, sont fondamentaux pour une compréhension fine de la structure des graphes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These groups of nodes, called clusters, are fundamental to an in-depth understanding of graph structures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Il n’existe pas de définition universelle de ce qu’est un bon cluster, et différentes approches peuvent s’avérer mieux adaptées dans différentes situations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There is no universal definition of what a good cluster is, and different approaches might be best suited for different applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Alors que les méthodes classiques s’attachent à trouver des partitions des nœuds de graphe, c’est-à-dire à colorer ces nœuds de manière à ce qu’un nœud donné n’ait qu’une et une seule couleur, des approches plus élaborées se révèlent nécessaires pour modéliser la structure complexe des graphes que l’on rencontre en situation réelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Whereas most of classic methods focus on finding node partitions, i.e. on coloring graph nodes so that each node has one and only one color, more elaborate approaches are often necessary to model the complex structure of real-life graphs and to address sophisticated applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En particulier, dans de nombreux cas, il est nécessaire de considérer qu’un nœud donné peut appartenir à plus d’un cluster.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, in many cases, we must consider that a given node can belong to more than one cluster.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, de nombreux systèmes que l’on rencontre en pratique présentent une structure multi-échelle pour laquelle il est nécessaire de partir à la recherche de hiérarchies de clusters plutôt que d’effectuer un partitionnement à plat.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Besides, many real-world systems exhibit multi-scale structures and one much seek for hierarchies of clusters rather than flat clusterings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>De plus, les graphes que l’on rencontre en pratique évoluent souvent avec le temps et sont trop massifs pour être traités en un seul lot.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, graphs often evolve over time and are too massive to be handled in one batch so that one must be able to process stream of edges.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Pour ces raisons, il est souvent nécessaire d’adopter des approches dites de streaming qui traitent les arêtes au fil de l’eau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this work, we study alternative approaches and design novel algorithms to tackle these different problems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Enfin, dans de nombreuses applications, traiter des graphes entiers n’est pas nécessaire ou est trop coûteux, et il est plus approprié de retrouver des clusters locaux dans un voisinage de nœuds d’intérêt plutôt que de colorer tous les nœuds.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The novel methods that we propose to address these different problems are mostly inspired by variants of modularity, a classic measure that accesses the quality of a node partition, and by random walks, stochastic processes whose properties are closely related to the graph structure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous étudions des approches alternatives de partitionnement de graphe et mettons au point de nouveaux algorithmes afin de résoudre les différents problèmes évoqués ci-dessus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We provide analyses that give theoretical guarantees for the different proposed techniques, and endeavour to evaluate these algorithms on real-world datasets and use cases.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

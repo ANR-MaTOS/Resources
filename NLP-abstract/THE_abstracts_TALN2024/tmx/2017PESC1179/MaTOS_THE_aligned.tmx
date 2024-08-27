@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017PESC1179. segId begin by 1, tuid = segId</note>
+        <docid>2017PESC1179</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Plusieurs ressources publiées sur le Web de données sont dotées de références spatiales qui décrivent leur localisation géographique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Many resources published on the Web of data are related to spatial references that describe their location.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ces références spatiales sont un moyen favori pour interconnecter et visualiser les ressources sur le Web de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These spatial references are a valuable asset for interlinking and visualizing data over the Web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cependant, les hétérogénéités des niveaux de détail et de modélisations géométriques entre les sources de données constituent un défi majeur pour l'utilisation de la comparaison des références spatiales comme critère pour l'interconnexion des ressources.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, these spatial references may be presented with different levels of detail and different geometric modelling from one data source to another.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ce défi est amplifié par la nature ouverte et collaborative des sources de données du Web qui engendre des hétérogénéités géométriques internes aux sources de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These differences are a major challenge for using geometries comparison as a criterion for interlinking georeferenced resources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>En outre, les applications de visualisation cartographique des ressources géoréférencées du Web de données ne fournissent pas une visualisation lisible à toutes les échelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This challenge is even amplified more due to the open and often volunteered nature of the data that causes geometric heterogeneities between the resources of a same data source.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous proposons un vocabulaire pour formaliser les connaissances sur les caractéristiques de chaque géométrie dans un jeu de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this PhD thesis, we propose a vocabulary for formalizing the knowledge about the characteristics of every single geometry in a dataset.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons également une approche semi-automatique basée sur un référentiel topographique pour acquérir ces connaissances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a semi-automatic approach for acquiring this knowledge by using geographic reference data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons de mettre en oeuvre ces connaissances dans une approche d'adaptation dynamique du paramétrage de la comparaison des géométries dans un processus d'interconnexion.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, we propose to use this knowledge in approach for adapting dynamically the setting of the comparison of each pair of geometries during an interlinking process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une approche complémentaire s'appuyant sur un référentiel topographique pour la détection des liens de cardinalité n : m.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose an additional interlinking approach based on geographic reference data for detecting n:m links between data sources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons finalement des applications qui s'appuient sur des données topographiques de référence et leurs liens avec les ressources géoréférencées du Web pour offrir une visualisation cartographique multiéchelle lisible et conviviale</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we propose Web mapping applications for georeferenced resources that remain readable at different map scales</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

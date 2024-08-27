@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2012-53_2_ID=5-Gaio-TAL53-2. segId begin by 1, tuid = segId</note>
+        <docid>2012-53_2_ID=5-Gaio-TAL53-2</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cet article présente une annotation automatique d’expressions spatiales géolocalisables permettant de contribuer à l’amélioration du processus d’indexation de l’information géographique contenue dans des documents textuels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This paper presents an automatic annotation of spatial expressions enabling the improvement of the indexing process of geographic information from textual documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La méthode proposée combine l’exploitation de relations spécifiques intra-phrastiques et de ressources externes : lexiques de verbes spécialisés, thésaurus généraux, ontologie topographique et gazetiers.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed method combines the use of specific intrasentential relationships and external resources: lexicons of specialized verbs, general thesauri, geographical ontology, and gazetteers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Elle repose sur la reconnaissance d’entités nommées spatiales étendues afin, d’une part, d’en déduire une représentation symbolique exprimée en termes de traits sémantiques puis, d’autre part, de leur attribuer au moins une représentation numérique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It relies on expanded spatial named entities recognition to deduce a symbolic representation expressed in terms of semantic features, on the one hand, and, to give them a numerical representation, on the other hand.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Notre méthode a été intégrée et expérimentée dans un processus totalement automatisé d’annotation et d’indexation spatiale de documents textuels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our method was integrated and tested in a fully automated process of spatial annotation and indexing dedicated to textual documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les expérimentations ont été réalisées sur un fonds documentaire réel de type « récit de voyage ».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Experiments were performed on a corpus of travelogues.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

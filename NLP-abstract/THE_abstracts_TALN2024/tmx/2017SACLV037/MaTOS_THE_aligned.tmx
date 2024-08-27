@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017SACLV037. segId begin by 1, tuid = segId</note>
+        <docid>2017SACLV037</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'architecture proposée utilise le concept d'Ontologie du domaine pour la description de l'environnement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The architecture uses the concept of ontology for the descriptionof the environment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous avons choisi d'utiliser l'outil open source PROTEGE qui va nous permettre de définir l'ontologie ainsi que les moteurs de fusion et de fission.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have chosen to use the open source PROTEGE because it allows the definition of the ontology and the fusion and fission engines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Les entrées multimodales seront fusionnées puis subdivisées en tâches élémentaires et envoyées comme commandes au fauteuil roulant muni d'un bras manipulateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, multimodal inputs will be merged and subdivided into elementary tasks and sent tocontrol the wheelchair with the manipulated arm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cette architecture sera validée par des spécifications et des simulations via des réseaux de Pétri temporels et stochastiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This architecture will be validated by specifications and simulations via temporal and stochastic Petri nets.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

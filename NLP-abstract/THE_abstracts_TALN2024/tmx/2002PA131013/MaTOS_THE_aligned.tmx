@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2002PA131013. segId begin by 1, tuid = segId</note>
+        <docid>2002PA131013</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>On constate actuellement un engouement général pour la recherche d'informations dans les textes, dû sans doute à la disponibilité d'une masse considérable d'informations sur le réseau internet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With the enormous amount of electronically available information on the internet, the development of information extraction technology becomes and more important.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>D'où la nécessité des dictionnaires reliant étroitement sémantique et syntaxe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is the linguist's task to create terminological databases and thesauri for this application.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ils'agit des verbes, des noms et des adjectifs qui impliquent un "dire" et dont nous avons fait le recensement le plus exhaustif possible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The research presented in this thesis is situated in the domain of Natural Language Processing (NLP), in which the lexicon plays a central role.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les structures syntaxiques sont determinées par le contenu sémantique des prédicats, de sorte qu'il est patent que ces deux niveaux sont étroitement imbriqués.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although this is an appropriate approach it is to some extent insufficient because it does not take into account the semantic of words and their ambiguity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Ces classes cependant déterminent une structure argumentale qui leur est propre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For this, one needs to build dictionaries that relate syntax and semantics...</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

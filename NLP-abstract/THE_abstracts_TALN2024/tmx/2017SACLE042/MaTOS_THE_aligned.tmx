@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017SACLE042. segId begin by 1, tuid = segId</note>
+        <docid>2017SACLE042</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les décès du cancer de la peau sont majoritairement des mélanomes malins.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The vast majority of skin cancer deaths are due to malignant melanoma.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Il est considéré comme l’un des plus dangereux cancer.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is considered as one of the most dangerous cancers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>A ses débuts, les mélanomes malins sont traités avec des simples biopsies et sont complètement curable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In its early stages, malignant melanoma is completely curable with a simple biopsy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Pour cela, une détection précoce est la meilleure solution pour réduire ses conséquences désastreuses.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, an early detection is the best solution to improve skin cancer prognostic.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Imagerie médicale telle que la dermoscopie et les caméras à images standard sont les outils disponibles les plus adaptées pour diagnostiquer précocement les mélanomes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Medical imaging such as dermoscopy and standard camera images are the most suitable tools available to diagnose melanoma at early stages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Le diagnostic assisté par ordinateur (CAD) est développé dans le but d’accompagner les radiologistes dans la détection et le diagnostic.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To help radiologists in the diagnosis of melanoma cases, there is a strong need to develop computer aided diagnosis (CAD) systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Cependant, il y a un besoin d’améliorer la précision de la segmentation et de détection des lésions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The accurate segmentation and classification of pigment skin lesions still remains a challenging task due to the various colors and structures developed randomly inside the lesions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>La deuxième tâche consiste à extraire des caractéristiques afin de discriminer les mélanomes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The model is adapted to segment the variations of the pigment inside the lesion and not only the main border.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Deux méthodes ont été développée, une se basant sur l’irrégularité des bords des lésions et l’autre par la fusion des caractéristiques texturales et structurelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The method has been implemented on DermIs and DermQues, two databases of standard camera images, and achieved an accuracy of 86.54% with a sensitivity of 80% and a specificity of 95.45%.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Les résultats ont montrés de bonnes performances avec une précision de 86.54% et de 86.07%, respectivement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The method has been implemented on the PH2 database for dermoscopy images with 1000-random sampling cross validation.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017LYSES056. segId begin by 1, tuid = segId</note>
+        <docid>2017LYSES056</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La vision par ordinateur est un domaine interdisciplinaire étudiant la manière dont les ordinateurs peuvent acquérir une compréhension de haut niveau à partir d’images ou de vidéos numériques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Computer vision is an interdisciplinary field that investigates how computers can gain a high level of understanding from digital images or videos.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>En intelligence artificielle, et plus précisément en apprentissage automatique, domaine dans lequel se positionne cette thèse, la vision par ordinateur passe par l’extraction de caractéristiques présentes dans les images puis par la généralisation de concepts liés à ces caractéristiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In artificial intelligence, and more precisely in machine learning, the field in which this thesis is positioned,computer vision involves extracting characteristics from images and then generalizing concepts related to these characteristics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ce domaine de recherche est devenu très populaire ces dernières années, notamment grâce aux résultats des réseaux de neurones convolutifs à la base des méthodes dites d’apprentissage profond.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This field of research has become very popular in recent years, particularly thanks to the results of the convolutional neural networks that form the basis of so-called deep learning methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Aujourd’hui les réseaux de neurones permettent, entre autres, de reconnaître les différents objets présents dans une image, de générer des images très réalistes ou même de battre les champions au jeu de Go.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Today, neural networks make it possible, among other things, to recognize different objects present in an image, to generate very realistic images or even to beat the champions at the Go game.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Leurs performances ne s’arrêtent d’ailleurs pas au domaine de l’image puisqu’ils sont aussi utilisés dans d’autres domaines tels que le traitement du langage naturel (par exemple en traduction automatique) ou la reconnaissance de son.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Their performance is not limited to the image domain, since they are also used in other fields such as natural language processing (e. g. machine translation) or sound recognition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous étudions les réseaux de neurones convolutifs afin de développer des architectures et des fonctions de coûts spécialisées à des tâches aussi bien de bas niveau (la constance chromatique) que de haut niveau (la segmentation sémantique d’image).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we study convolutional neural networks in order to develop specialized architectures and loss functions for low-level tasks (color constancy) as well as high-level tasks (semantic segmentation).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En vision par ordinateur, l’approche principale consiste à estimer la couleur de l’illuminant puis à supprimer son impact sur la couleur perçue des objets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In computer vision, the main approach consists in estimating the color of the illuminant and then suppressing its impact on the perceived color of objects.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Les expériences que nous avons menées montrent que notre méthode permet d’obtenir des performances compétitives avec l’état de l’art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our experience shows that our method makes it possible to obtain competitive performances with the state of the art.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, notre architecture requiert une grande quantité de données d’entraînement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, our architecture requires a large amount of training data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Afin de corriger en parti ce problème et d’améliorer l’entraînement des réseaux de neurones, nous présentons plusieurs techniques d’augmentation artificielle de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to partially correct this problem and improve the training of neural networks, we present several techniques for artificial data augmentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous apportons également deux contributions sur une problématique de haut niveau : la segmentation sémantique d’image.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We are also making two contributions on a high-level issue: semantic segmentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Cette tâche, qui consiste à attribuer une classe sémantique à chacun des pixels d’une image, constitue un défi en vision par ordinateur de par sa complexité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This task, which consists of assigning a semantic class to each pixel of an image, is a challenge in computer vision because of its complexity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>D’une part, elle requiert de nombreux exemples d’entraînement dont les vérités terrains sont coûteuses à obtenir.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the one hand, it requires many examples of training that are costly to obtain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>D’autre part, elle nécessite l’adaptation des réseaux de neurones convolutifs traditionnels afin d’obtenir une prédiction dite dense, c’</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, it requires the adaptation of traditional convolutional neural networks in order to obtain a so-called dense prediction, i. e., a prediction for each pixel present in the input image.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Pour résoudre la difficulté liée à l’acquisition de données d’entrainements, nous proposons une approche qui exploite simultanément plusieurs bases de données annotées avec différentes étiquettes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To do this, we define a selective loss function that has the advantage of allowing the training of a convolutional neural network from data from multiple databases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Nous développons aussi une approche dites d’auto-contexte capturant d’avantage les corrélations existantes entre les étiquettes des différentes bases de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also developed self-context approach that captures the correlations between labels in different databases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Finalement, nous présentons notre troisième contribution : une nouvelle architecture de réseau de neurones convolutifs appelée GridNet spécialisée pour la segmentation sémantique d’image.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we present our third contribution: a new convolutional neural network architecture called GridNet specialized for semantic segmentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Contrairement aux réseaux traditionnels, notre architecture est implémentée sous forme de grille 2D permettant à plusieurs flux interconnectés de fonctionner à différentes résolutions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Unlike traditional networks, implemented with a single path from the input (image) to the output (prediction), our architecture is implemented as a 2D grid allowing several interconnected streams to operate at different resolutions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>En outre, nous montrons empiriquement que notre architecture généralise de nombreux réseaux bien connus de l’état de l’art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, we empirically demonstrate that our architecture generalize many of well-known stateof- the-art networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Nous terminons par une analyse des résultats empiriques obtenus avec notre architecture qui, bien qu’entraînée avec une initialisation aléatoire des poids, révèle de très bonnes performances, dépassant les approches populaires souvent pré-entraînés</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We conclude with an analysis of the empirical results obtained with our architecture which, although trained from scratch, reveals very good performances, exceeding popular approaches often pre-trained</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

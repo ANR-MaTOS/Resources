@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2013PA070023. segId begin by 1, tuid = segId</note>
+        <docid>2013PA070023</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse propose une méthode et un système d'identification d'entités (personnes, lieux, organisations) mentionnées au sein des contenus textuels produits par l'Agence France Presse dans la perspective de l'enrichissement automatique de ces contenus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This dissertation proposes a method and a System for the identification of entities (persons, locations, organizations) mentioned in the textual production of the news agency Agence France Presse, in the prospect of the automatic content enrichment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les différents domaines concernés par cette tâche ainsi que par l'objectif poursuivi par les acteurs de la publication numérique de contenus textuels sont abordés et mis en relation : Web Sémantique, Extraction d'Information et en particulier Reconnaissance d'Entités Nommées (REN), Annotation Sémantique, Liage d'Entités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The various fields concerned by this task are viewed through their relationship: Semantic Web, Information Extraction and in particular Named Entity Recognition (NER), Semantic Annotation, Entity Linking.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>À l'issue de cette étude, le besoin industriel formulé par l'Agence France Presse fait l'objet des spécifications utiles au développement d'une réponse reposant sur des outils de Traitement Automatique du Langage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Following this study, the industrial need expressed by the Agence France Presse is the subject of specifications, useful for the development of a solution relying on Natural Language Processing tools.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L'approche adoptée pour l'identification des entités visées est ensuite décrite : nous proposons la conception d'un système prenant en charge l'étape de REN à l'aide de n'importe quel module existant, dont les résultats, éventuellement combinés à ceux d'autres modules, sont évalués par un module de Liage capable à la fois (i) d'aligner une mention donnée sur l'entité qu'elle dénote parmi un inventaire constitué au préalable, (ii) de repérer une dénotation ne présentant pas d'alignement dans cet inventaire et (iii) de remettre en cause la lecture dénotationnelle d'une mention (repérage des faux positifs).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The approach adopted for the identification of the target entities is then described: we propose a System taking charge of the NER step using any existing module, whose results, possibly combined with those of other modules, are evaluated by a linking module able to (i) align a given mention with the entity it denotes among an inventory, built prior to the task, (ii) to spot denotations without alignment in the inventory and (iii) to reconsider denotational readings of mentions (false positive detection).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le système Nomos est développé à cette fin pour le traitement de données en français.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The Nomos System is developed to this end for the processing of French data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Sa conception donne également lieu à la construction et à l'utilisation de ressources ancrées dans le réseau des Linked Data ainsi que d'une base de connaissances riche sur les entités concernées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Its conception also gives rise to the building and use of resources integrated into the Linked Data network, as well as a rich knowledge base about the target entities.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

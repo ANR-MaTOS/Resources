@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020LORR0212. segId begin by 1, tuid = segId</note>
+        <docid>2020LORR0212</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans le Web des données, des graphes de connaissances de plus en plus nombreux sont simultanément publiés, édités, et utilisés par des agents humains et logiciels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the Web of data, an increasing number of knowledge graphs are concurrently published, edited, and accessed by human and software agents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette large adoption rend essentielles les tâches d'appariement et de fouille.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Their wide adoption makes key the two tasks of matching and mining.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'appariement identifie des unités de connaissances équivalentes, plus spécifiques ou similaires au sein et entre graphes de connaissances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, matching consists in identifying equivalent, more specific, or somewhat similar units within and across knowledge graphs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cette tâche est cruciale car la publication et l'édition parallèles peuvent mener à des graphes de connaissances co-existants et complémentaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This task is crucial since concurrent publication and edition may result in coexisting and complementary knowledge graphs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cependant, l'hétérogénéité inhérente aux graphes de connaissances (e.g., granularité, vocabulaires, ou complétude) rend cette tâche difficile.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, this task is challenging because of the inherent heterogeneity of knowledge graphs, e.g., in terms of granularities, vocabularies, and completeness.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Motivés par une application en pharmacogénomique, nous proposons deux approches pour apparier des relations n-aires représentées au sein de graphes de connaissances : une méthode symbolique à base de règles et une méthode numérique basée sur le plongement de graphe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Motivated by an application in pharmacogenomics, we propose two approaches to match n-ary relationships represented in knowledge graphs: a symbolic rule-based approach and a numeric approach using graph embedding.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous les expérimentons sur PGxLOD, un graphe de connaissances que nous avons construit de manière semi-automatique en intégrant des relations pharmacogénomiques de trois sources du domaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We experiment on PGxLOD, a knowledge graph that we semi-automatically built by integrating pharmacogenomic relationships from three distinct sources of this domain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>La tâche de fouille permet quant à elle de découvrir de nouvelles unités de connaissances à partir des graphes de connaissances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Second, mining consists in discovering new and useful knowledge units from knowledge graphs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Leur taille croissante et leur nature combinatoire entraînent des problèmes de passage à l'échelle que nous étudions dans le cadre de la fouille de patrons de chemins.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Their increasing size and combinatorial nature entail scalability issues, which we address in the mining of path patterns.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons également l'annotation de concepts, une méthode d'amélioration des graphes de connaissances qui étend l'Analyse Formelle de Concepts, un cadre mathématique groupant des entités en fonction de leurs attributs communs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also propose Concept Annotation, a refinement approach extending Formal Concept Analysis, a mathematical framework that groups entities based on their common attributes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Au cours de tous nos travaux, nous nous sommes particulièrement intéressés à tirer parti des connaissances de domaines formalisées au sein d'ontologies qui peuvent être associées aux graphes de connaissances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Throughout all our works, we particularly focus on taking advantage of domain knowledge in the form of ontologies that can be associated with knowledge graphs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons notamment que, lorsqu'elles sont prises en compte, ces connaissances permettent de réduire l'impact des problèmes d'hétérogénéité et de passage à l'échelle dans les tâches d'appariement et de fouille.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that, when considered, such domain knowledge alleviates heterogeneity and scalability issues in matching and mining approaches.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

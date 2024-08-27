@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017SACLS225. segId begin by 1, tuid = segId</note>
+        <docid>2017SACLS225</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La traduction automatique (TA) a connu des progrès significatifs ces dernières années et continue de s'améliorer.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Machine Translation (MT) has made significant progress in the recent years and continues to improve.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La TA est utilisée aujourd'hui avec succès dans de nombreux contextes, y compris les environnements professionnels de traduction et les scénarios de production.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Today, MT is successfully used in many contexts, including professional translation environments and production scenarios.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cependant, le processus de traduction requiert souvent des connaissances plus larges qu'extraites de corpus parallèles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the translation process requires knowledge larger in scope than what can be captured by machines even from a large quantity of translated texts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Étant donné qu'une injection de connaissances humaines dans la TA est nécessaire, l'un des moyens possibles d'améliorer TA est d'assurer une collaboration optimisée entre l'humain et la machine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since injecting human knowledge into MT is required, one of the potential ways to improve MT is to ensure an optimized human-machine collaboration.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>À cette fin, de nombreuses questions sont posées pour la recherche en TA : Comment détecter les passages où une aide humaine devrait être proposée ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To this end, many questions are asked by modern research in MT: How to detect where human assistance should be proposed?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Comment faire pour que les machines exploitent les connaissances humaines obtenues afin d'améliorer leurs sorties ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>How to make machines exploit the obtained human knowledge so that they could improve their output?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Enfin, comment optimiser l'échange : minimiser l'effort humain impliqué et maximiser la qualité de TA ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>And, not less importantly, how to optimize the exchange so as to minimize the human effort involved and maximize the quality of MT output?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Diverses solutions sont possibles selon les scénarios de traductions considérés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Various solutions have been proposed depending on concrete implementations of the MT process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous avons choisi de nous concentrer sur la pré-édition, une intervention humaine en TA qui a lieu ex-ante, par opposition à la post-édition, où l'intervention humaine qui déroule ex-post.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis we have chosen to focus on Pre-Edition (PRE), corresponding to a type of human intervention into MT that takes place ex-ante, as opposed to Post-Edition (PE), where human intervention takes place ex-post.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>En particulier, nous étudions des scénarios de pré-édition ciblés où l'humain doit fournir des traductions pour des segments sources difficiles à traduire et choisis avec soin.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, we study targeted PRE scenarios where the human is to provide translations for carefully chosen, difficult-to-translate, source segments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Les scénarios de la pré-édition impliquant la pré-traduction restent étonnamment peu étudiés dans la communauté.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Targeted PRE scenarios involving pre-translation remain surprisingly understudied in the MT community.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>De plus, dans un contexte multilingue, des difficultés communes peuvent être résolues simultanément pour de nombreuses langues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, in a multilingual setting common difficulties can be resolved at one time and for many languages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>De tels scénarios s'adaptent donc parfaitement aux contextes de production standard, où l'un des principaux objectifs est de réduire le coût de l’intervention humaine et où les traductions sont généralement effectuées à partir d'une langue vers plusieurs langues à la fois.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such scenarios thus perfectly fit standard production contexts, where one of the main goals is to reduce the cost of PE and where translations are commonly performed simultaneously from one language into many languages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte, nous nous concentrons sur la TA de revues systématiques en médecine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A representative production context - an automatic translation of systematic medical reviews - is the focus of this work.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>En considérant cet exemple, nous proposons une méthodologie indépendante du système pour la détection des difficultés de traduction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Given this representative context, we propose a system-independent methodology for translation difficulty detection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Nous définissons la notion de difficulté de traduction de la manière suivante : les segments difficiles à traduire sont des segments pour lesquels un système de TA fait des prédictions erronées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We define the notion of translation difficulty as related to translation quality: difficult-to-translate segments are segments for which an MT system makes erroneous predictions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Nous formulons le problème comme un problème de classification binaire et montrons que, en utilisant cette méthodologie, les difficultés peuvent être détectées de manière fiable sans avoir accès à des informations spécifiques au système.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We cast the problem of difficulty detection as a binary classification problem and demonstrate that, using this methodology, difficulties can be reliably detected without access to system-specific information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Nous intégrons les résultats de notre procédure de détection des difficultés dans un protocole de pré-édition qui permet de résoudre ces difficultés par pré-traduction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We integrate the results of our difficulty detection procedure into a PRE protocol that enables resolution of those difficulties by pre-translation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Nous évaluons le protocole dans un cadre simulé et montrons que la pré-traduction peut être à la fois utile pour améliorer la qualité de la TA et réaliste en termes d'implication des efforts humains.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We assess the protocol in a simulated setting and show that pre-translation as a type of PRE can be both useful to improve MT quality and realistic in terms of the human effort involved.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>En outre, les effets indirects sont significatifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, indirect effects are found to be genuine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="FR">
+                <seg>Les résultats de ces expériences pilotes confirment les résultats obtenus dans le cadre simulé et ouvrent des perspectives encourageantes pour des tests ultérieures.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Results of those pilot experiments confirm the results in the simulated setting and suggest an encouraging beginning of the test phase.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019LORIS546. segId begin by 1, tuid = segId</note>
+        <docid>2019LORIS546</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans le domaine de la chimie, il est intéressant de pouvoir estimer des propriétés physico-chimiques de molécules, notamment pour des applications industrielles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the field of chemistry, it is interesting to be able to estimate the physicochemical properties of molecules, especially for industrial applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Celles-ci sont difficiles à estimer par simulations physique, présentant une complexité temporelle prohibitive.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These are difficult to estimate by physical simulations, as their implementation often present prohibitive time complexity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'émergence des données (publiques ou privées) ouvre toutefois de nouvelles perspectives pour le traitement de ces problèmes par des méthodes statistiques et d'apprentissage automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the emergence of data (public or private) opens new perspectives for the treatment of these problems by statistical methods and machine learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La principale difficulté réside dans la caractérisation des molécules : celles-ci s'apparentent davantage à un réseau d'atomes (autrement dit un graphe coloré) qu'à un vecteur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main difficulty lies in the characterization of molecules: these are more like a network of atoms (in other words a colored graph) than a vector.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le but de cette thèse est de tirer parti des corpus publics pour apprendre les meilleures représentations possibles de ces structures, et de transférer cette connaissance globale vers des jeux de données plus restreints.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The aim of this thesis is to take advantage of public corpora to learn the best possible representations of these structures, and to transfer this global knowledge to smaller datasets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous nous inspirons pour ce faire de méthodes utilisées en traitement automatique des langages naturels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We adapted methods used in automatic processing of natural languages to achieve this goal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Pour les mettre en œuvre, des travaux d'ordre plus théorique ont été nécessaires, notamment sur le problème d'isomorphisme de graphes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To implement them, more theoretical work was needed, especially on the graph isomorphism problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Les résultats obtenus sur des tâches de classification/régression sont au moins compétitifs avec l'état de l'art, voire meilleurs, en particulier sur des jeux de données restreints, attestant des possibilités d'apprentissage par transfert sur ce domaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results obtained on classification / regression tasks are at least competitive with the state of the art, and even sometimes better, in particular on restricted data sets, attesting some opportunities for transfer learning in this field.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

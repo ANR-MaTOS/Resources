@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020UPASG058. segId begin by 1, tuid = segId</note>
+        <docid>2020UPASG058</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les véhicules autonomes sont des systèmes assez complexes où plusieurs types de défaillances peuvent se produire, enclenchant une fausse action sur la route.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Autonomous vehicles represent highly complex systems, where multiple types of failures could occur leading to a wrong execution on the road.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Chaque composant devra donc être testé rigoureusement pour anticiper et éliminer les potentielles défaillances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, each component should be thoroughly tested to anticipate potential failures and mitigate them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Des techniques de simulation numérique sont utilisées pour complémenter les essais de conduite réelle dans la validation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Simulation testing methods are used to complement real test driving in the validation process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les contributions de cette thèse sont organisées selon trois objectifs : détection d'un nombre maximal de défaillances de la loi de commande, détection de scénarios près de la frontière entre zones défaillantes et sûres, et construction de modèles explicables de la frontière pour l'identifier aussi précisément que possible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main contributions of this PhD thesis are threefold: detecting a maximum number of failures of the command law, detecting scenarios as close as possible to the border separating zones of failed and safe scenarios, and building explainable border models to identify the border as accurately as possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Des techniques d’apprentissage (forêt aléatoire) et d'optimisation (CMA-ES) sont utilisées pour satisfaire la contrainte industrielle de réduire la puissance de calcul, et trois approches sont considérées pour construire des modèles de frontière en analysant leurs performances et explicabilités : réseaux de neurones, programmation mathématique linéaire, et programmation génétique appliquée à la régression symbolique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The algorithms of the first two objectives use machine learning (Random Forest) and optimization (CMA-ES) techniques to abide with the industrial requirement of reducing the computing power needed, and three approaches are considered to build border models while comparing their performances and explainabilities: Neural Networks, Mixed-Integer Linear Programming (MILP), and Genetic Programming (GP) applied to symbolic regression.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

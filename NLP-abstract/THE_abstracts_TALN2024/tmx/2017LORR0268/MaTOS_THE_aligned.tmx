@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017LORR0268. segId begin by 1, tuid = segId</note>
+        <docid>2017LORR0268</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Notre but dans cette thèse est de construire un système qui réponde à une question en langue naturelle (NL) en représentant sa sémantique comme une forme logique (LF) et ensuite en calculant une réponse en exécutant cette LF sur une base de connaissances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our goal in this thesis is to build a system that answers a natural language question (NL) by representing its semantics as a logical form (LF) and then computing the answer by executing the LF over a knowledge base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La partie centrale d'un tel système est l'analyseur sémantique qui transforme les questions en formes logiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The core part of such a system is the semantic parser that maps questions to logical forms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Notre objectif est de construire des analyseurs sémantiques performants en apprenant à partir de paires (NL, LF).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our focus is how to build high-performance semantic parsers by learning from (NL, LF) pairs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons de combiner des réseaux neuronaux récurrents (RNN) avec des connaissances préalables symboliques exprimées à travers des grammaires hors-contexte (CFGs) et des automates.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose to combine recurrent neural networks (RNNs) with symbolic prior knowledge expressed through context-free grammars (CFGs) and automata.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>En intégrant des CFGs contrôlant la validité des LFs dans les processus d'apprentissage et d'inférence des RNNs, nous garantissons que les formes logiques générées sont bien formées ; en intégrant, par le biais d'automates pondérés, des connaissances préalables sur la présence de certaines entités dans la LF, nous améliorons encore la performance de nos modèles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By integrating CFGs over LFs into the RNN training and inference processes, we guarantee that the generated logical forms are well-formed; by integrating, through weighted automata, prior knowledge over the presence of certain entities in the LF, we further enhance the performance of our models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Expérimentalement, nous montrons que notre approche permet d'obtenir de meilleures performances que les analyseurs sémantiques qui n'utilisent pas de réseaux neuronaux, ainsi que les analyseurs à base de RNNs qui ne sont pas informés par de telles connaissances préalables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Experimentally, we show that our approach achieves better performance than previous semantic parsers not using neural networks as well as RNNs not informed by such prior knowledge.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

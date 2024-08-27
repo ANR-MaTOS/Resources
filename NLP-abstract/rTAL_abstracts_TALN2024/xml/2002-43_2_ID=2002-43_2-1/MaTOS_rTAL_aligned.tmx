@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2002-43_2_ID=2002-43_2-1. segId begin by 1, tuid = segId</note>
+        <docid>2002-43_2_ID=2002-43_2-1</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le dialogue est rempli d'énoncés intuitivement complets, mais qui ne sont pas des propositions hors de leur contexte, typiquement les réponses courtes aux questions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Dialogue is full of intuitively complete utterances that are not sentential in their outward form, most prototypically the "short answers" used to respond to queries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Le traitement de tels énoncés non phrastiques (Non Sentential Utterances, NSUs) est connu comme étant difficile, d'un point de vue théorique comme calculatoire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As is well known, processing such non-sentential utterances (NSUs) is a difficult problem on both theoretical and computational grounds.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous proposons une étude basée sur corpus des NSUs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this paper we present a corpus-based study of NSUs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une classification dans le dialogue complète et théoriquement fondée, sur la base d'une portion du British National Corpus (BNC).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a comprehensive, theoretically grounded classification of NSUs in dialogue based on a sub-portion of the British National Corpus (BNC).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cette étude suggère que l'interprétation des NSUs est susceptible d'être résolue grâce à une grammaire relativement complexe, combinée avec une approche fondée sur la dynamique des énoncés, c'est-à-dire une stratégie qui garde la trace d'un enregistrement fortement structuré du dialogue des entités introduites dans le contexte par les énoncés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The study suggests that the interpretation of NSUs is amenable to resolution using a relatively intricate grammar combined with an utterance dynamics approach. That is, a strategy that keeps track of a highly structured dialogue record of entities that get introduced into context as a result of utterances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Il n'est notamment pas évident qu'un raisonnement complexe et centré sur un domaine spécifique soit nécéssaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Complex, domain-based reasoning is not, on the whole, very much in evidence.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

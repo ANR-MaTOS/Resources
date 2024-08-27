@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2012-53_2_ID=2-Kessler-TAL53-2-2. segId begin by 1, tuid = segId</note>
+        <docid>2012-53_2_ID=2-Kessler-TAL53-2-2</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Ce travail a été mené sur un corpus de dépêches en français et en anglais fourni par l’Agence France Presse (AFP).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This work was carried out on a corpus of newswire texts in English provided by the Agence France Presse (AFP).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous ne nous intéressons pour le moment qu’à l’extraction des dates et pas aux événements associés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For the time being, we have focused only on extracting the dates and not the events to which they are related.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

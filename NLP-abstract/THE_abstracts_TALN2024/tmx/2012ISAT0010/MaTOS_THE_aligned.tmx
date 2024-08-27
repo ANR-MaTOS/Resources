@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2012ISAT0010. segId begin by 1, tuid = segId</note>
+        <docid>2012ISAT0010</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Avec le développement de la robotique cognitive, le besoin d’outils avancés pour représenter, manipuler, raisonner sur les connaissances acquises par un robot a clairement été mis en avant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With the rise of the so-called cognitive robotics, the need of advanced tools to store, manipulate, reason about the knowledge acquired by the robot has been made clear.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Mais stocker et manipuler des connaissances requiert tout d’abord d’éclaircir ce que l’on nomme connaissance pour un robot, et comment celle-ci peut-elle être représentée de manière intelligible pour une machine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>But storing and manipulating knowledge requires first to understand what the knowledge itself means to the robot and how to represent it in a machine-processable way.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans un second temps, nous présentons en profondeur ORO, une instanciation particulière d’un système de représentation et manipulation des connaissances, conçu et implémenté durant la préparation de cette thèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a second part, the thesis presents in depth a particular instantiation of a knowledge representation and manipulation system called ORO, that has been designed and implemented during the preparation of the thesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous détaillons le fonctionnement interne du système, ainsi que son intégration dans plusieurs architectures robotiques complètes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We elaborate on the inner working of this system, as well as its integration into several complete robot control stacks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Un éclairage particulier est donné sur la modélisation de la prise de perspective dans le contexte de l’interaction, et de son interprétation en terme de théorie de l’esprit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A particular focus is given to the modelling of agent-dependent symbolic perspectives and their relations to theories of mind.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>La troisième partie de l’étude porte sur une application importante des systèmes de représentation des connaissances dans ce contexte de l’interaction homme-robot : le traitement du dialogue situé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The third part of the study is focused on the presentation of one important application of knowledge representation systems in the human-robot interaction context: situated dialogue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous concluons cette thèse sur un certain nombre de considérations sur la viabilité et l’importance d’une gestion explicite des connaissances des agents, ainsi que par une réflexion sur les éléments encore manquant pour réaliser le programme d’une robotique “de niveau humain”</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The thesis concludes on considerations regarding the viability and importance of an explicit management of the agent's knowledge, along with a reflection on the missing bricks in our research community on the way towards "human level robots"</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-s209891. segId begin by 1, tuid = segId</note>
+        <docid>s209891</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le contexte de la thèse se situe dans la perspective de travaux sur l'interprétation automatisée de manifestations complexes de faits de discours non saisissables par les méthodes actuelles de l'analyse de discours (AD) dans des données issues de transcription d'interviews politiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The thesis takes part within works on the automated interpretation of complex manifestations of discourse facts that are not graspable by the usual methods of discourse analysis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Il se focalise sur le mécanisme linguistique de la « nomination », en lien avec les concepts de dénomination, désignation, référenciation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Based on political interviews transcripts, the study focuses on the linguistic mechanism of "nomination".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En particulier, les sorties des reconnaissances d'entités et de coréférences pourront être exploitées, afin de déterminer leur apport pour un système expérimental de focalisé sur les nominations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As part of the ANR TALAD project, the aim is to do theoretical and descriptive works on discourse facts to carry out prototyping, implementation, experimentation and validation of approaches for the detection and the characterization of nominations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Un retour sera fait à chaque traitement TAL afin d'évaluer son apport dans la reconnaissance des nominations, dans une optique d'intégration aux outils traditionnels de l'AD.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, the purpose is to study the outputs of entity and co-reference recognition systems to determine their contribution to the nomination detection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Un des enjeux de cette thèse est aussi de proposer un système de classification pour l'entreprise Reticular afin de qualifier différents acteurs de la vie politique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One of the challenges of the thesis is to propose a classification system for the Reticular company - which is interested in the qualification of political actors as "doctrine designers" or "influencers".</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

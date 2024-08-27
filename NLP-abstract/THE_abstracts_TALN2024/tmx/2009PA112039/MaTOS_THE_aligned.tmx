@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2009PA112039. segId begin by 1, tuid = segId</note>
+        <docid>2009PA112039</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse est consacrée à l'étude d’accents régionaux en français, à partir de deux grands corpus de parole face à face (PFC) et de parole téléphonique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This dissertation addresses the study of French regional accents based on two large corpora totalling over 100 hours of face-to-face speech (PFC) and telephone speech.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous avons étudié la perception humaine et les caractéristiques acoustiques de différentes variétés de français (français standard, français du sud de la France, d'Alsace, de Belgique et de Suisse) afin de les modéliser dans leurs aspects segmentaux (articulation des phonèmes) et prosodiques (accentuation et intonation).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We investigated the perception, acoustic characteristics as well as automatic classification of French varieties (standard French, French spoken in the South of France, Alsace, Belgium and Switzerland) in order to model segmental and prosodic levels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, des tests perceptifs ont permis d’évaluer quels accents sont distingués par des auditeurs français.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, perceptual experiments were conducted to determine French listeners’ capacities to discriminate between French accents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les résultats ont été analysés par des techniques de clustering et de scaling.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Results were analysed using scaling and clustering techniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans un second temps, nous avons mesuré des paramètres acoustiques (formants, fréquence fondamentale, durée et intensité) en nous appuyant sur les frontières temporelles des segments phonémiques fournies par un système d’alignement standard, ce qui nous a également permis de dégager certains patrons prosodiques spécifiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Next, acoustic analyses relying on automatic phonemic alignment were carried out measuring formants, fundamental frequency, duration and intensity so as to produce linguistically-motivated segmental and prosodic features.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous avons en outre introduit des variantes dans le dictionnaire de prononciation utilisé pour l'alignement, afin d'observer les variantes choisies par le système.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, region-specific pronunciation tendencies were quantified exploiting new alignments with augmented pronunciation dictionaries including relevant variants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Ces deux méthodes ont permis de mettre en évidence un certain nombre de traits pertinents concernant la réalisation des voyelles nasales, l’antériorisation du /O/, le dévoisement des consonnes sonores et l’accentuation initiale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The different methods allowed us to highlight characteristic pronunciation traits such as the realisation of nasal vowels, /O/ fronting, the devoicing of voiced consonants and word-initial stress.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

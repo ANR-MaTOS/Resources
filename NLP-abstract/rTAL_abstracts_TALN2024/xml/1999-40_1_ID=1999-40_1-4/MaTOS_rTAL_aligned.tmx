@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-1999-40_1_ID=1999-40_1-4. segId begin by 1, tuid = segId</note>
+        <docid>1999-40_1_ID=1999-40_1-4</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons la métagrammaire (MG) : un cadre de description linguistique modulaire, permettant, via compilation, la représentation de TAG Lexicalisées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this paper we propose to view Lexicalized TAG as the compilation of a more abstract and modular layer of linguistic description : the metagrammar (MG).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>MG permet l'expression de généralisations syntaxiques et formalise des principes rendant compte de la bonne formation des structures lexicalisées, exprimés en utilisant des fonctions syntaxiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>MG provides a hierarchical representation of syntactic knowledge and principles that capture the well-formedness of lexicalized structures, expressed using syntactic functions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Un outil implémenté compile une MG en une LTAG, en opérant les croisements valides de phénomènes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A tool compiles an instance of MG into an LTAG, automatically carrying out the relevant combinations of linguistic phenomena.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous décrivons une MG pour le français (MGf) et une pour l'italien (MGi).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We then describe an MG for French (MGf) and an MG for Italian (MGi).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La MGf a été construite à partir d'une LTAG existante (Abeillé 1991) et a permis d'en augmenter la couverture.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>MGf was built starting with an existing LTAG, augmented as a result.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>La MGi a été construite à partir de la MGf.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>MGi was built by systematic contrast with MGf.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>La compilation automatique fournit deux LTAG parallèles, compatibles pour des applications multilingues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The automatic compilation gives two parallel LTAG, compatible for NLP applications.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

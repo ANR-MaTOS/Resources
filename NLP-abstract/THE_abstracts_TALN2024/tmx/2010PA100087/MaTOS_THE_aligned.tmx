@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2010PA100087. segId begin by 1, tuid = segId</note>
+        <docid>2010PA100087</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse présente Adetoa, système dédié au repérage et à l'annotation sémantique automatique d'expressions temporelles dans des pages Web pour une application de e-tourisme.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis presents Adetoa, a system designed to automatically locate temporal expressions in Web pages and tag them with semantic annotations, in the field of e-tourism.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Une étude linguistique détaillée a permis de mettre en avant les caractéristiques et la complexité de l'expression de la temporalité dans les pages Web touristiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A detailed linguistic study has revealed that the expression of temporal information in Web tourism pages is complex and has specific properties.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ces analyses ont mené à l'élaboration d'un ensemble important de transducteurs (avec Unitex) pour les tâches de repérage et d'annotation des expressions temporelles, ce qui constitue une ressource pouvant être généralisée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These analyses have led to the development of a large number of transducers (under Unitex) for the extraction and mark-up tasks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Des transducteurs de liage permettent de grouper toutes les informations concernant une même offre touristique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Other tourist information is also extracted, such as tourist objects and addresses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Pour l'annotation et l'intégration d'Adetoa à la chaîne de traitement du projet Eiffel, un schéma d'annotation et des règles de transformations ont été mis au point.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Linking transducers have been developed to group all the information concerning one tourist destination.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Il permet ainsi de rester au plus près des expressions linguistiques de manière à les caractériser finement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The annotation scheme is based on a tourism ontology but is not a direct replica, thus enabling the expressions to be accurately characterized on a linguistic level.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>L'ontologie a ensuite pu être adaptée en conséquence, pour un meilleur stockage des données dans la base de connaissance qui lui correspond.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The ontology has then been adapted accordingly, so that the information can more easily be included in the corresponding knowledge base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>L'évaluation d'Adetoa, présentée dans cette thèse, a montré des résultats satisfaisants aussi bien d'un point de vue théorique que pour cette application industrielle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The evaluation of Adetoa, which is detailed in the last chapter, showed satisfying results, both on a theoretical level and for industrial purposes.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

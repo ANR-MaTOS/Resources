@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020UPASS059. segId begin by 1, tuid = segId</note>
+        <docid>2020UPASS059</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'événement est un concept central dans plusieurs tâches du Traitement Automatique des Langues, en dépit de l'absence d'une définition unifiée de ce que recouvre cette notion.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Events are central in many Natural Language Processing tasks, despite the lack of a unified definition for the concept.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La création de ces schémas requiert une connaissance experte et est donc longue, coûteuse et difficile à étendre à un large ensemble de domaines de spécialité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Creating these templates is an expert task and therefore costly, painstaking and hard to extend to new domains.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En parallèle de ces travaux, la quantité de données produites par les individus et les organisations a crû de manière exponentielle, ouvrant des perspectives applicatives inédites.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Meanwhile, the amount of data produced by individuals and organizations has grown exponentially, opening unprecedented perspectives of applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Pour ce faire, nous suivons une approche ascendante divisée en trois grandes étapes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To this end, we propose a bottom-up approach composed of three main steps.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans la première étape, nous groupons ensemble les nombreuses mentions textuelles relatant la même réalisation d'un événement, identifiée dans le temps et l'espace et appelée instance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first step clusters several textual mentions of a same particular event (i.e tied to a time and place) to identify distinct instances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>La deuxième étape vise à s'abstraire des caractéristiques spatio-temporelles de chaque instance pour les grouper en grands types d'événements.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second step groups these instances together based on more abstract features to infer event types.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Enfin, la dernière étape de cette contribution vise à extraire les éléments caractéristiques de chaque type d'événement induit afin d'en proposer une représentation synthétique assimilable à un schéma d'événement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, the third and last step extracts the most salient elements of each type to produce the synthetic, template-like structure we are looking for.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

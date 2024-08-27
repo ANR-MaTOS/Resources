@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019SACLT049. segId begin by 1, tuid = segId</note>
+        <docid>2019SACLT049</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La recrudescence de contenus dans lesquels les clients expriment leurs opinions relativement à des produits de consommation a fait de l'analyse d'opinion un sujet d'intérêt pour la recherche en apprentissage automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Opinion mining has emerged as a hot topic in the machine learning community due to the recent availability of large amounts of opinionated data expressing customer's attitude towards merchandisable goods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cependant, prédire une opinion est un tâche difficile et parmi les modèles à disposition, peu sont capables de capturer la complexité de tels objets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Yet, predicting opinions is not easy due to the lack of computational models able to capture the complexity of the underlying objects at hand.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Les approches actuelles reposent sur la prédiction de représentations simplifiées d'expressions affectives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Current approaches consist in predicting simple representations of the affective expressions, for example by restricting themselves to the valence attribute.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Par exemple, il est possible de se restreindre à la reconnaissance de l'attribut de valence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a deep learning based approach able to take advantage of the different labeled parts of the output objects by learning to jointly predict them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse propose d'étudier le problème de la construction de modèles structurés capables de tirer parti des dépendances entre les différentes composantes des opinions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a novel hierarchical architecture composed of different state-of-the-art multimodal neural layers and study the effect of different learning strategies in this joint prediction context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte, le choix d'un modèle d'opinion a des conséquences sur la complexité du problème d'apprentissage et sur les propriétés statistiques des fonctions de prédiction associées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The resulting model is shown to improve over the performance of separate opinion component predictors and raises new questions concerning the optimal treatment of hierarchical labels in a structured prediction context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous étudions 2 problèmes classique de l'analyse d'opinion pour lesquels nous mettons en oeuvre des modèles à base de fonctions à noyau de sortie permettant d'illustrer le compromis précision</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We specifically analyzed the case of preference based learning and joint entity and valence detection under a 2 layer binary tree representation in order to derive excess risk bounds and an analysis of the learning procedure algorithmic complexity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Un second aspect de cette thèse repose sur l'adaptation de méthodes issues de l'état de l'art à un jeu de données comportant des données d'opinion à la structure complexe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A second aspect of this thesis is to handle a newly released multimodal dataset containing entity and valence annotations at different granularity levels providing a complex representation of the underlying expressed opinions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une approche basée sur l'apprentissage profond pour prendre en contre jointement les différentes étiquettes du modèle d'opinions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hence, we propose a deep learning based approach able to take advantage of the different labeled parts of the output objects by learning to jointly predict them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Une nouvelle architecture hiérarchique est introduite issue de la fusion de structures précédemment proposées en les étendant à un jeu de données multimodal.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a novel hierarchical architecture composed of different state-of-the-art multimodal neural layers and study the effect of different learning strategies in this joint prediction context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons que notre approche fournit des résultats compétitifs par rapport à des architectures traitant séparément les différentes représentations des opinions ce qui soulève des nouvelles questions concernant les stratégies optimales de traitement de données définies selon une hiérarchie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The resulting model is shown to improve over the performance of separate opinion component predictors and raises new questions concerning the optimal treatment of hierarchical labels in a structured prediction context.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

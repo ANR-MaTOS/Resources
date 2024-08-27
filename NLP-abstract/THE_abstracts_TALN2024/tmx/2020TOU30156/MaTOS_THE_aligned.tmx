@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020TOU30156. segId begin by 1, tuid = segId</note>
+        <docid>2020TOU30156</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les travaux présentés de cette thèse visent à proposer des outils numériques et théoriques pour la résolution de problèmes inverses en imagerie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The contributions of this thesis are numerical and theoretical tools for the resolution of blind inverse problems in imaging.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Une approche plébiscitée pour estimer un opérateur de dégradation consiste à observer un échantillon contenant des sources ponctuelles (microbilles en microscopie, étoiles en astronomie).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A very popular approach consists in estimating this operator from an image containing point sources (microbeads or fluorescent proteins in microscopy, stars in astronomy).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Une telle acquisition fournit une mesure de la réponse impulsionnelle de l'opérateur en plusieurs points du champ de vue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such an observation provides a measure of the impulse response of the degradation operator at several points in the field of view.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Le traitement de cette observation requiert des outils robustes pouvant utiliser rapidement les données rencontrées en pratique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Processing this observation requires robust tools that can rapidly use the data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une boîte à outils qui estime un opérateur de dégradation à partir d'une image contenant des sources ponctuelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a toolbox that estimates a degradation operator from an image containing point sources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>L'opérateur estimé à la propriété qu'en tout point du champ de vue, sa réponse impulsionnelle s'exprime comme une combinaison linéaire de fonctions élémentaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The estimated operator has the property that at any location in the field of view, its impulse response is expressed as a linear combination of elementary estimated functions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Cela permet d'estimer des opérateurs invariants (convolutions) et variants (développement en convolution-produit) spatialement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This makes it possible to estimate spatially invariant (convolution) and variant (product-convolution expansion) operators.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Une spécificité importante de cette boîte à outils est son caractère automatique : seul un nombre réduit de paramètres facilement accessibles permettent de couvrir une grande majorité des cas pratiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An important specificity of this toolbox is its high level of automation: only a small number of easily accessible parameters allows to cover a large majority of practical cases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>La taille de la source ponctuelle (e.g. bille), le fond et le bruit sont également pris en compte dans l'estimation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The size of the point source (e.g. bead), the background and the noise are also taken in consideration in the estimation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Cet outil se présente sous la forme d'un module appelé PSF-Estimator pour le logiciel Fiji, et repose sur une implémentation parallélisée en C++.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This tool, coined PSF-estimator, comes in the form of a module for the Fiji software, and is based on a parallelized implementation in C++.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>En réalité, les opérateurs modélisant un système optique varient d'une expérience à une autre, ce qui, dans l'idéal, nécessite une calibration du système avant chaque acquisition.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The operators generated by an optical system are usually changing for each experiment, which ideally requires a calibration of the system before each acquisition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Pour pallier à cela, nous proposons de représenter un système optique non pas par un unique opérateur de dégradation, mais par un sous-espace d'opérateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To overcome this, we propose to represent an optical system not by a single operator (e.g. convolution blur with a fixed kernel for different experiments), but by subspace of operators.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Cet ensemble doit permettre de représenter chaque opérateur généré par un microscope.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This set allows to represent all the possible states of a microscope.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Nous introduisons une méthode d'estimation d'un tel sous-espace à partir d'une collection d'opérateurs de faible rang (comme ceux estimés par la boîte à outils PSF-Estimator).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We introduce a method for estimating such a subspace from a collection of low rank operators (such as those estimated by the toolbox PSF-Estimator).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons que sous des hypothèses raisonnables, ce sous-espace est de faible dimension et est constitué d'éléments de faible rang.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that under reasonable assumptions, this subspace is low-dimensional and consists of low rank elements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Dans un second temps, nous appliquons ce procédé en microscopie sur de grands champs de vue et avec des opérateurs variant spatialement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a second step, we apply this process in microscopy on large fields of view and with spatially varying operators.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Cette mise en œuvre est possible grâce à l'utilisation de méthodes complémentaires pour traiter des images réelles (e.g.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This implementation is possible thanks to the use of additional methods to process real images (e.g. background, noise, discretization of the observation).The construction of an operator subspace is only one step in the resolution of blind inverse problems.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

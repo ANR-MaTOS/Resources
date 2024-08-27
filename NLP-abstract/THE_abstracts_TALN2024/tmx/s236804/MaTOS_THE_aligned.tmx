@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-s236804. segId begin by 1, tuid = segId</note>
+        <docid>s236804</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Aujourd'hui, nous recueillons des données de différentes sources, en ligne et hors ligne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Today we collect data from various sources both online and offline.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Habituellement, ces données se réfèrent principalement à des actes déjà commis et sont généralement analysées a posteriori.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Usually this data is mostly referring to acts already committed and are usually analyzed a posteriori.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Étant donné que l'alerte précoce conduit à une action rapide (et, espérons-le, plus efficace), nous suggérons dans ce travail d'essayer d'identifier les signaux d'alerte précoce des actions ou activités qui se produiront à l'avenir.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Given that early warning leads to early (and hopefully more effective) action, in this work we suggest to try and identify early warning signals of actions or activities that will happen in the future.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Un signal faible est une preuve passée ou actuelle avec des interprétations ambiguës pouvant être corrélée à d'autres événements et tendances plus importants, présents ou futurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A weak signal is a past, or current, evidence with ambiguous interpretations that can be correlated to other, more important present, or future, events and tendencies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les signaux faibles sont des indices peu clairs qui peuvent nous avertir d'autres modèles émergents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Weak signals are unclear clues that can warn us for other emerging patterns.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Le problème clé est de détecter ces signaux pertinents cachés dans la masse de données disponibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The key problem is to detect such relevant signals hidden in the mass of data that is available.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Avant d'être sûr que l'attention des analystes humains est nécessaire, il est important de détecter, mais également de vérifier et de valider ces signaux au moyen d'une série de méthodes différentes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Before being sure that the attention of human analysts is necessary, it is important to detect but also verify and validate these signals through a series of different methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Une fois identifié et validé, un signal faible devient un signe précoce qu'il convient de surveiller attentivement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>After being identified and validated, a weak signal becomes an early sign that should be carefully monitored.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous souhaitons établir des méthodes d'identification des signaux faibles au sein d'ensembles de données volumineux, tels que des ensembles de données provenant de médias sociaux ou d'autres sources accessibles au public.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this work, we want to establish methods of identifying weak signals inside massive datasets, like datasets originating from social media or other publicly available sources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Des algorithmes basés sur des méthodes d'apprentissage statistique ou automatique ou d'intelligence artificielle, combinés à des descriptions sémantiques formelles des événements qui nous intéressent, nous permettraient d'identifier les signaux d'alerte précoce et de les transformer en indications d'actes futurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Algorithms based on statistical or machine learning or Artificial Intelligence methods combined with formal semantic descriptions of the events we are interested in, would allow us to identify early warning signals and turn them to indications of future acts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>De plus, les méthodes liées à la détection d'entités nommées nous permettraient de lier ces signaux d'alerte aux entités participantes (par exemple, des personnes, des lieux, etc.) et d'utiliser les descriptions d'entités pour améliorer et élargir la description des événements possibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, methods related to Named Entity Detection would allow us to bind these early warning signals to participating entities (e.g. persons, places, etc.) and use the entity descriptions to improve and extend the description of the possible events.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Le travail sera validé en appliquant ses résultats aux données réelles fournies par PJGN, partenaire de ce travail.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The work will be validated by applying its results to actual real-world data provided by PJGN, which is a partner in this work.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Identifier des références à des événements et résoudre les informations autour de ces événements est un problème important pour PJGN et le travail sera directement applicable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Identifying references to events and resolving the information around those events is an important problem for PJGN and the work will be directly applicable.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020INPT0023. segId begin by 1, tuid = segId</note>
+        <docid>2020INPT0023</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La vision par ordinateur est un domaine de l'informatique visant à reproduire et à améliorer la capacité de la vision humaine à comprendre son environnement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Computer vision is the computational science aiming at reproducing and improving the ability of human vision to understand its environment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous nous concentrons sur deux domaines de la vision par ordinateur, à savoir la segmentation d'image et l'odométrie visuelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we focus on two fields of computer vision, namely image segmentation and visual odometry and we show the positive impact that interactive Web applications provide on each.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons l'impact positif qu'apporte l'usage d'applications</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first part of this thesis focuses on image annotation and segmentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La première partie de cette thèse porte sur l'annotation et la segmentation d'images.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Many interactions have been explored in the literature to help segmentation algorithms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous définissons dans un premier temps le problème de l'annotation d'images et les défis que cela représente pour des grands ensembles de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The most common consist in designating contours, bounding boxes around objects, or interior and exterior scribbles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>De nombreuses interactions ont été utilisées dans la littérature pour aider les algorithmes de segmentation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>When crowdsourcing, annotation tasks are delegated to a non-expert public, sometimes on cheaper devices such as tablets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Les plus courantes consistent à désigner explicitement des contours, dessiner des boîtes englobantes, ou marquer des traits à l'intérieur et à l'extérieur des objets d'intérêt.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this context, we conducted a user study showing the advantages of the outlining interaction over scribbles and bounding boxes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans un contexte de crowdsourcing, les tâches d'annotation sont déléguées à un public non-expert.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Another challenge of crowdsourcing is the distribution medium.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Pour cette raison, nous avons mené une étude utilisateur montrant les avantages d'une interaction que nous appelons entourage par rapport aux autres types d'interactions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While evaluating an interaction in a small user study does not require complex setup, distributing an annotation campaign to thousands of potential users might differ.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Un tour d'horizon des fonctionnalités et de son architecture est proposé, ainsi qu'un guide pour le déploiement dans des services de microtâches comme Amazon Mechanical Turk.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A highlights tour of its functionalities and architecture is provided, as well as a guide on how to deploy it to crowdsourcing services such as Amazon Mechanical Turk.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Cette application est entièrement libre et mise à disposition en ligne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The application is completely opensource and available online.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Dans la seconde partie de cette thèse, nous présentons notre bibliothèque libre d'odométrie visuelle directe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second part of this thesis we present our open-source direct visual odometry library.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Nous fournissons une évaluation comparative montrant que notre approche est aussi performante que les alternatives actuellement disponibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In that endeavor, we provide an evaluation of other open-source RGB-D camera tracking algorithms and show that our approach performs as well as the currently available alternatives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>La formulation du problème d'odométrie visuelle repose sur des outils géométriques et des techniques d'optimisation nécessitant une grosse puissance de calcul pour fonctionner à 25 images par seconde.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The visual odometry problem relies on geometry tools and optimization techniques traditionally requiring much processing power to perform at realtime framerates.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Puisque nous aspirons à exécuter ces algorithmes sur le Web, nous passons en revue les technologies passées et courantes fournissant des bonnes performances directement au sein du navigateur Web.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since we aspire to run those algorithms directly in the browser, we review past and present technologies enabling high performance computations on the Web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>En particulier, nous détaillons comment cibler une nouvelle plateforme appelée WebAssembly à partir des langages de programmation C++ et Rust.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, we detail how to target a new standard called WebAssembly from the C++ and Rust programming languages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Notre bibliothèque a été implémentée entièrement dans le langage de programmation Rust, ce qui en a facilité le portage vers WebAssembly.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our library has been started from scratch in the Rust programming language, which then allowed us to easily port it to WebAssembly.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Cette propriété nous a permis de mettre en place une application Web d'odométrie visuelle proposant différents types d'interactions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thanks to this property, we are able to showcase a visual odometry Web application with multiple types of interactions available.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Une barre de temps permet une navigation unidimensionnelle le long de la séquence vidéo.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A timeline enables one-dimensional navigation along the video sequence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Des paires de points peuvent être sélectionnées sur deux images de la séquence pour réaligner les caméras et corriger l'éventuelle dérive.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Pairs of image points can be picked on two 2D thumbnails of the image sequence to realign cameras and correct drifts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="FR">
+                <seg>Des couleurs sont également utilisées pour identifier des parties sélectionnables du nuage de points 3D pour réinitialiser les positions de la caméra.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Colors are also used to identify parts of the 3D point cloud, selectable to reinitialize camera positions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="FR">
+                <seg>La combinaison de ces interactions permet d'apporter des améliorations sur les résultats du suivi et de la reconstruction du nuage de points 3D.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Combining those interactions enables improvements on the tracking and 3D point reconstruction results.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2010-51_1_ID=TAL-2010-51-1-4-Quarteroni. segId begin by 1, tuid = segId</note>
+        <docid>2010-51_1_ID=TAL-2010-51-1-4-Quarteroni</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Un problème commun aux systèmes de Question-Réponse, et de recherche documentaire plus généralement, est la présence d'une quantité excessive de données parmi lesquelles chercher l'information pertinente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A common problem in Question Answering - and Information Retrieval in general - is information overload, i.e. an excessive amount of data from which to search for relevant information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ceci apporte un rappel élevé mais se traduit par un risque de faible précision de l'information retournée à l'utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This results in the risk of high recall but low precision of the information returned to the user.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>De plus, ce problème concerne la pertinence des réponses vis-à-vis des besoins des utilisateurs, puisque les questions peuvent être ambiguës et même des réponses extraites de documents au contenu pertinent peuvent être mal reçues si elles sont trop compliquées (ou trop simples) pour les utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In turn, this affects the relevance of answers with respect to the users’ needs, as queries can be ambiguous and even answers extracted from documents with relevant content may be ill-received by users if they are too difficult (or simple) for them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous adressons ce problème en incorporant une composante de modélisation de l'utilisateur afin de personnaliser les résultats d'un système Web de Question-Réponse à domaine ouvert sur la base de son niveau de lecture et de ses interêts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We address the issue by integrating a User Modelling component to personalize the results of a Web-based opendomain Question Answering system based on the user's reading level and interests.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

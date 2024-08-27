@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018LYSE2057. segId begin by 1, tuid = segId</note>
+        <docid>2018LYSE2057</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Malgré l’importance d'une nomenclature internationale, le domaine de la chimie souffre encore de quelques problèmes linguistiques, liés notamment à ses unités terminologiques simples et complexes, pouvant gêner la communication scientifique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Despite the importance of an international nomenclature, the field of chemistry still suffers from some linguistic problems, linked in particular to its simple and complex terminological units, which can hinder scientific communication.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>A cela s’ajoute l’emploi récurrent d’emprunts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is in addition to the recurring use of borrowings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La question est de savoir comment représenter les unités terminologiques simples et complexes de cette langue spécialisée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The problematic is how to represent the simple and complex terminological units of this specialized language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>En d’autres termes, formaliser les caractéristiques terminologiques en étudiant les mécanismes de la construction morphosyntaxique des termes de la chimie en arabe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In other words, formalize the terminological characteristics by studying the mechanisms of themorphosyntactic construction of the chemistry'terms in Arabic.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cette étude devrait aboutir à la mise en place d’un outil de désambigüisation sémantique qui vise à constituer un outil d’extraction des termes de la chimie en arabe et de leurs relations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This study should lead to the establishment of a semantic-disambiguation tool that aims to create a tool for extracting the terms of Arabic chemistry and their relationships.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>La construction de cette grammaire d’identification nécessite la modélisation des patrons morphosyntaxiques à partir de leur observation en corpus etdébouche sur la définition de règles de grammaire et de contraintes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The construction of this identification grammar requires modelling of morphosyntactic patterns from their observation in corpus and leads to the definition of rules of grammar and constraints.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

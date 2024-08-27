@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019LYSE1259. segId begin by 1, tuid = segId</note>
+        <docid>2019LYSE1259</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Ces dernières années ont connu un regain d'intérêt pour l'utilisation des graphes comme moyen fiable de représentation et de modélisation des données, et ce, dans divers domaines de l'informatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recent years have witnessed a growing renewed interest in the use of graphs as a reliable means for representing and modeling data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>En particulier, pour les grandes masses de données, les graphes apparaissent comme une alternative prometteuse aux bases de données relationnelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thereby, graphs enable to ensure efficiency in various fields of computer science, especially for massive data where graphs arise as a promising alternative to relational databases for big data modeling.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Plus particulièrement, le recherche de sous-graphes s'avère être une tâche cruciale pour explorer ces grands jeux de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this regard, querying data graph proves to be a crucial task to explore the knowledge in these datasets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous étudions deux problématiques principales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this dissertation, we investigate two main problems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Ce problème vise à rechercher les k-meilleures correspondances (top-k) d'un graphe motif dans un graphe de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first part we address the problem of detecting patterns in larger graphs, called the top-k graph pattern matching problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Pour cette problématique, nous introduisons un nouveau modèle de détection de motifs de graphe nommé la Simulation Relaxée de Graphe (RGS), qui permet d’identifier des correspondances de graphes avec un certain écart (structurel) et ainsi éviter le problème de réponse vide.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We introduce a new graph pattern matching model named Relaxed Graph Simulation (RGS), to identify significant matches and to avoid the empty-set answer problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, nous formalisons et étudions le problème de la recherche des k-meilleures réponses suivant deux critères, la pertinence (la meilleure similarité entre le motif et les réponses) et la diversité (la dissimilarité entre les réponses).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We formalize and study the top-k matching problem based on two classes of functions, relevance and diversity, for ranking the matches according to the RGS model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous considérons également le problème des k-meilleures correspondances diversifiées et nous proposons une fonction de diversification pour équilibrer la pertinence et la diversité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also consider the diversified top-k matching problem, and we propose a diversification function to balance relevance and diversity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>En outre, nous développons des algorithmes efficaces basés sur des stratégies d’optimisation en respectant le modèle proposé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, we provide efficient algorithms based on optimization strategies to compute the top-k and the diversified top-k matches according to the proposed model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Notre approche est efficiente en terme de temps d’exécution et flexible en terme d'applicabilité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed approach is optimal in terms of search time and flexible in terms of applicability.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>L’analyse de la complexité des algorithmes et les expérimentations menées sur des jeux de données réelles montrent l’efficacité des approches proposées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The analyze of the time complexity of the proposed algorithms and the extensive experiments on real-life datasets demonstrate both the effectiveness and the efficiency of these approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Dans un second temps, nous abordons le problème de recherche agrégative dans des documents XML.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second part, we tackle the problem of graph querying using aggregated search paradigm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps nous présentons la motivation derrière ce paradigme de recherche agrégative et nous expliquons les gains potentiels par rapport aux méthodes classiques de requêtage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Firstly, we give the motivation behind the use of such a paradigm, and we explain the potential benefits compared to traditional querying approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Ensuite nous proposons une nouvelle approche qui a pour but de construire, dans la mesure du possible, une réponse cohérente et plus complète en agrégeant plusieurs résultats provenant de plusieurs sources de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, we propose a new method for aggregated tree search, based on approximate tree matching algorithm on several tree fragments, that aims to build, the extent possible, a coherent and complete answer by combining several results.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Les expérimentations réalisées sur plusieurs ensembles de données réelles montrent l’efficacité de cette approche en termes de pertinence et de qualité de résultat.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed solutions are shown to be efficient in terms of relevance and quality on different real-life datasets</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

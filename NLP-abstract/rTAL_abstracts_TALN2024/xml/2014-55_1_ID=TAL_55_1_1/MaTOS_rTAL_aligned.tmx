@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2014-55_1_ID=TAL_55_1_1. segId begin by 1, tuid = segId</note>
+        <docid>2014-55_1_ID=TAL_55_1_1</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Ce travail s'intéresse à la notion de contexte lexical qui est au coeur de l'approche fondatrice en extraction de lexiques bilingues à partir de corpus comparables spécialisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This work focuses on the concept of lexical context that is central to the historical approach of bilingual lexicon extraction from specialized comparable corpora.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>D'une part, nous revenons sur les deux principales stratégies, dédiées à la caractérisation du contexte lexical, qui reposent sur l'exploitation de représentations graphique ou syntaxique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, we revisit the two main strategies dedicated to lexical context characterization, that rely on the use of window-based and syntactic-based representations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons que l'exploitation conjointe de ces deux représentations a un intérêt particulier pour la tâche de construction de lexiques bilingues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that the combination of these two representations has a particular interest in the task of building bilingual lexicons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>D'autre part, nous abordons la difficulté de disposer d'observations significatives du contexte des mots en corpus comparables spécialisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Second, we address the problem of the reliability of context words observations in specialized comparable corpora.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Pour répondre à cette difficulté, nous proposons de mettre en oeuvre des stratégies de réestimation des observations de cooccurrences de mots par méthode de lissage ou par prédiction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To answer this difficulty, we propose to implement strategies to re-estimate words cooccurrence observations by smoothing or prediction techniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Les différentes contributions associées à ce travail engendrent une amélioration significative de la qualité des lexiques extraits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our results show a significant improvement in the quality of extracted lexicons.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

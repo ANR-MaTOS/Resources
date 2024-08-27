@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018AVIG0227. segId begin by 1, tuid = segId</note>
+        <docid>2018AVIG0227</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'utilisation répandue des smartphones dans notre vie quotidienne et l'essor technologique que connait le monde aujourd'hui - offrant l'accès mobile à très haut débit - ont exponentiellement augmenté la demande sur les services de vidéo streaming mobile, ce qui justifie la tendance à explorer de nouvelles approches pour la distribution des contenus média.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The strong emergence of smartphones on human daily life as well as the high broadband access supplied by operators have triggered pervasive demand on video streaming mobile services, requiring the exploration of novel approaches on video content delivery.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Afin d'assurer une qualité de streaming constante et acceptable, la majorité des approches proposent aujourd'hui d'adapter la distribution des flux média au contexte de l'utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To afford video streaming services at sustainable quality, the idea of adjusting the streaming to the time-varying users' contexts has been actively investigated during the recent years.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Pour assurer une bonne QoE, les solutions de vidéo streaming mobile exigent la connaissance au préalable du contexte de l'utilisateur, comme par exemple la capacité de son lien physique ou la disponibilité de sa bande passante.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Today streaming solutions mostly rely on the user's contextual information such as his link capacity or his available bandwidth to provide an acceptable final QoE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L'acquisition de telles informations contextuelles est devenue possible aujourd'hui grâce à l'utilisation des capteurs sans fils dans les appareils mobiles et à l'existence de plusieurs applications intelligentes dédiées, le principe étant majoritairement d'exploiter la forte corrélation entre le contexte de l'utilisateur et sa position géographique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such contextual information can be easily acquired thanks to the existence of wireless sensors and dedicated smart applications on today mobile devices.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>En outre, plusieurs études menées sur les modèles de mobilité des usagers ont exhibé une quasi-régularité spatio-temporelle dans leurs trajets quotidiens, soit en prenant les transports publics ou en allant vers des endroits fréquemment visités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Various studies on users' mobility patterns also showed that people daily routes exhibit a high degree of spatial and temporal regularity, especially on public transportation or on road ways to/from frequently visited places.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Couplés avec les cartes radio, ces études permettent une haute précision dans la prédiction du contexte de l'utilisateur le long de son trajet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Coupled with radio maps, these mobility patterns can give high accuracy on context predictability along users' trips.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous nous intéressons à analyser l'impact de l'adaptation du service vidéo streaming au contexte de l'utilisateur sur sa QoE finale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we analyse the impact of adapting video streaming to the user's context on the final QoE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous commençons par proposer CAMS (Context Aware Mode Switching), un mécanisme d'allocation de ressources qui dépend du contexte et qui s'applique à la distribution du vidéo streaming réel (non-adaptatif), pour assurer le minimum d'interruptions de vidéo.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We start by proposing CAMS (Context Aware Mode Switching),a context-aware resource allocation mechanism, for real (i.e, non adaptive) video streaming delivery to reduce the number of video stalling.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>CAMS est conçu pour être déployé dans une topologie de réseau spécifique avec un modèle de mobilité particulier.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>CAMS is designed to be applied in a particular network topology under a particular mobility of users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Par la suite, nous explorons l'impact de la connaissance à l'avance du débit futur de l'utilisateur sur l'adaptation de la qualité de sa vidéo et sur le coût de sa transmission dans un contexte de streaming adaptatif.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then,we explore the impact of knowing the future throughput variations on video quality adaptation and delivery cost in adaptive video streaming.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons NEWCAST (aNticipating qoE With threshold sCheme And aScending biTrate levels), un algorithme proactif pour l'ajustement du coût et l'adaptation de la qualité sous réserve d'une prédiction parfaite du débit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose NEWCAST (a Nticipating qoE With threshold scheme And a Scending biTrate levels) as a proactive algorithm for cost adjustment and quality adaptation under the assumption of a perfect throughput estimation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous étendons cette étude, dans un deuxième temps, pour le cas où la prédiction du débit est imparfaite. Nous proposons, donc, d'autres algorithmes adaptatifs en nous inspirant de l'approche de NEWCAST.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We then extend the study to the case where throughput prediction errors may exist and propose a bench of adaptive algorithms inspired from NEWCAST.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Pour étudier la faisabilité de ces algorithmes sur le plan pratique, nous menons quelques expérimentations dans un environnement émulé à l'aide du lecteur média DASH-IF-Reference.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To explore the feasibility of implementing these algorithms in real world streaming, we conduct some experiments with the DASH-If Reference player in an emulated environment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Finalement, nous explorons l'idée de coupler la connaissance parfaite du débit futur de l'utilisateur avec l'usage d'un mécanisme d'apprentissage automatique, pour améliorer la QoE dans un contexte de streaming adaptatif.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we explore the impact of knowing the future throughput variations when exploited with machine learning on the global QoE enhancement in adaptive video streaming.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons, donc, un système à boucle fermée, basé sur le retour des utilisateurs, pour apprendre progressivement leurs préférences et pour optimiser adéquatement la transmission des futures vidéos.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a closed-loop framework based on users' feedbacks to progressively learn their QoE profiles and to fittingly optimize video deliveries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Ce système est particulièrement conçu pour être utilisé dans des populations hétérogènes avec des profils de QoE différents et inconnus à l'avance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This framework is in particular suited for heterogenous populations where the QoE profiles of users are quite different and unknown in advance.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

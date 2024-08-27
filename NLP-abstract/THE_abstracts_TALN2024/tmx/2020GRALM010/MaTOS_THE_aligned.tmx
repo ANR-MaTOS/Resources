@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020GRALM010. segId begin by 1, tuid = segId</note>
+        <docid>2020GRALM010</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse aborde le problème de la reconnaissance, de la modélisation et de la description des activités humaines.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis addresses the problem of recognition, modelling and description of human activities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous décrivons nos résultats sur trois problèmes : (1) l’utilisation de l’apprentissage par transfert pour la reconnaissance visuelle simultanée d’objets et de leur état, (2) la reconnaissance d’actions de manipulation à partir de transitions d’états, et (3) l’interprétation d’une série d’actions et d’états comme les événements d’une histoire prédéfinie afin d’en construire une description narrative.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We describe results on three problems: (1) the use of transfer learning for simultaneous visual recognition of objects and object states, (2) the recognition of manipulation actions from state transitions, and (3) the interpretation of a series of actions and states as events in a predefined story to construct a narrative description.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ces résultats ont été développés en utilisant les activités culinaires comme domaine expérimental.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These results have been developed using food preparation activities as an experimental domain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous commençons par reconnaître les ingrédients comme les tomates et la laitue et les ingrédients tranchés et coupés en dés pendant la préparation d’un repas.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We start by recognising food classes such as tomatoes and lettuce and food states, such as sliced and diced, during meal preparation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous adaptons l’architecture VGG afin d’apprendre conjointement les représentations des ingrédients et de leurs états selon une approche par transfert d’apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We adapt the VGG network architecture to jointly learn the representations of food items and food states using transfer learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous modélisons les actions en tant que transformations d’état d’objets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We model actions as the transformation of object states.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous détectons ainsi les actions de manipulation en suivant les transformations des propriétés correspondantes des objets (état et type) dans la vidéo.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We use recognised object properties (state and type) to detect corresponding manipulation actions by tracking object transformations in the video.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>L’évaluation expérimentale de cette approche est réalisée en se servant des jeux de données 50 salads et EPIC</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Experimental performance evaluation for this approach is provided using the 50 salads and EPIC-Kitchen datasets.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018TOU20065. segId begin by 1, tuid = segId</note>
+        <docid>2018TOU20065</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'objectif de notre travail, qui émane d'une demande de la sous-direction Assurance Qualité du CNES (Centre National d'Études Spatiales), est d'augmenter la clarté des spécifications techniques rédigées par les ingénieurs préalablement à la réalisation de systèmes spatiaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The aim of this work is to improve the clarity and precision of the technical specifications written in French by the engineers at CNES (Centre National d'Études Spatiales / National Centre for Space Studies) prior to the realization of space systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>L'importance des spécifications (et en particulier des exigences qui les composent) pour la réussite des projets de grande envergure est en effet désormais largement reconnue, de même que les principaux problèmes liés à l'utilisation de la langue naturelle (ambiguïtés, flou, incomplétude) sont bien identifiés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The importance of specifications (and particularly of the requirements that are part of them) for the success of large-scale projects is indeed widely acknowledged; similarly, the main risks associated with the use of natural language (ambiguity, vagueness, incompleteness) are relatively well identified.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'originalité de notre démarche consiste à systématiquement vérifier nos hypothèses sur un corpus d'exigences (constitué à partir d'authentiques spécifications de projets spatiaux) à l'aide de techniques et d'outils de traitement automatique du langage existants, dans l'optique de proposer un ensemble cohérent de règles (nouvelles ou inspirées de règles plus anciennes) qui puissent ainsi être vérifiées semi-automatiquement lors de l'étape de spécification et qui soient conformes aux pratiques de rédaction des ingénieurs du CNES.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A Controlled Natural Language (CNL) – i.e. a set of linguistic rules constraining the lexicon, the syntax and the semantics – seems to be an interesting option, provided that it remains close enough to natural language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Pour cela, nous nous appuyons notamment sur l'hypothèse de l'existence d'un genre textuel, que nous tentons de prouver par une analyse quantitative, ainsi que sur les notions de normalisation et normaison.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Unfortunately, the CNLs for technical writing that we have examined are not always relevant from a linguistic point of view.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Notre méthodologie combine les approches corpus-based et corpus-driven en tenant compte à la fois des règles imposées par deux autres langues contrôlées (dont l'adéquation avec des données réelles est discutée au travers d'une analyse plus qualitative) et des résultats offerts par des outils de text mining.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our methodology for developping a CNL for requirements writing in French at CNES relies on the hypothesis of the existence of a textual genre; besides, we make use of existing Natural Language Processing tools and methods to validate the relevance of the rules on a corpus of genuine requirements written for former projects.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

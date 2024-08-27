@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2015TOU20035. segId begin by 1, tuid = segId</note>
+        <docid>2015TOU20035</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse décrit les applications du traitement automatique des langues (TAL) à la gestion des risques industriels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis describes the applications of natural language processing (NLP) to industrial risk management.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Elle se concentre sur le domaine de l'aviation civile, où le retour d'expérience (REX) génère de grandes quantités de données, sous la forme de rapports d'accidents et d'incidents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We focus on the domain of civil aviation, where incident reporting and accident investigations produce vast amounts of information, mostly in the form of textual accounts of abnormal events, and where efficient access to the information contained in the reports is required.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous commençons par faire un panorama des différentes types de données générées dans ce secteur d'activité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We start by drawing a panorama of the different types of data produced in this particular domain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous analysons les documents, comment ils sont produits, collectés, stockés et organisés ainsi que leurs utilisations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We analyse the documents themselves, how they are stored and organised as well as how they are used within the community.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons que le paradigme actuel de stockage et d’organisation est mal adapté à l’utilisation réelle de ces documents et identifions des domaines problématiques ou les technologies du langage constituent une partie de la solution.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that the current storage and organisation paradigms are not well adapted to the data analysis requirements, and we identify the problematic areas, for which NLP technologies are part of the solution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Répondant précisément aux besoins d'experts en sécurité, deux solutions initiales sont implémentées : la catégorisation automatique de documents afin d'aider le codage des rapports dans des taxonomies préexistantes et un outil pour l'exploration de collections de rapports, basé sur la similarité textuelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Specifically addressing the needs of aviation safety professionals, two initial solutions are implemented: automatic classification for assisting in the coding of reports within existing taxonomies and a system based on textual similarity for exploring collections of reports.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En nous basant sur des observations de l'usage de ces outils et sur les retours de leurs utilisateurs, nous proposons différentes méthodes d'analyse des textes issus du REX et discutons des manières dont le TAL peut être appliqué dans le cadre de la gestion de la sécurité dans un secteur à haut risque.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Based on the observation of real-world tool usage and on user feedback, we propose different methods and approaches for processing incident and accident reports and comprehensively discuss how NLP can be applied within the safety information processing framework of a high-risk sector.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>En déployant et évaluant certaines solutions, nous montrons que même des aspects subtils liés à la variation et à la multidimensionnalité du langage peuvent être traités en pratique afin de gérer la surabondance de données REX textuelles de manière ascendante</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By deploying and evaluating certain approaches, we show how elusive aspects related to the variability and multidimensionality of language can be addressed in a practical manner and we propose bottom-up methods for managing the overabundance of textual feedback data</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

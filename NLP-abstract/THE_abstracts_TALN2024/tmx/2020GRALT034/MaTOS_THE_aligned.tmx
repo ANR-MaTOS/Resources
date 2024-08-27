@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020GRALT034. segId begin by 1, tuid = segId</note>
+        <docid>2020GRALT034</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Un des enjeux majeurs du marché des synthétiseurs et de la recherche en synthèse sonore aujourd'hui est de proposer une nouvelle forme de synthèse permettant de générer des sons inédits tout en offrant aux utilisateurs de nouveaux contrôles plus intuitifs afin de les aider dans leur recherche de sons.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One of the main challenges of the synthesizer market and the research in sound synthesis nowadays lies in proposing new forms of synthesis allowing the creation of brand new sonorities while offering musicians more intuitive and perceptually meaningful controls to help them reach the perfect sound more easily.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>En effet, les synthétiseurs sont actuellement des outils très puissants qui offrent aux musiciens une large palette de possibilités pour la création de textures sonores, mais également souvent très complexes avec des paramètres de contrôle dont la manipulation nécessite généralement des connaissances expertes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, today's synthesizers are very powerful tools that provide musicians with a considerable amount of possibilities for creating sonic textures, but the control of parameters still lacks user-friendliness and may require some expert knowledge about the underlying generative processes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse s'intéresse ainsi au développement et à l'évaluation de nouvelles méthodes d'apprentissage machine pour la synthèse sonore permettant la génération de nouveaux sons de qualité tout en fournissant des paramètres de contrôle pertinents perceptivement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we are interested in developing and evaluating new data-driven machine learning methods for music sound synthesis allowing the generation of brand new high-quality sounds while providing high-level perceptually meaningful control parameters.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Le premier challenge que nous avons relevé a donc été de caractériser perceptivement le timbre musical synthétique en mettant en évidence un jeu de descripteurs verbaux utilisés fréquemment et de manière consensuelle par les musiciens.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first challenge of this thesis was thus to characterize the musical synthetic timbre by evidencing a set of perceptual verbal descriptors that are both frequently and consensually used by musicians.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Deux études perceptives ont été menées : un test de verbalisation libre qui nous a permis de sélectionner huit termes communément utilisés pour décrire des sons de synthétiseurs, et une analyse à échelles sémantiques permettant d'évaluer quantitativement l'utilisation de ces termes pour caractériser un sous-ensemble de sons, ainsi que d'analyser leur "degré de consensualité".</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two perceptual studies were then conducted: a free verbalization test enabling us to select eight different commonly used terms for describing synthesizer sounds, and a semantic scale analysis enabling us to quantitatively evaluate the use of these terms to characterize a subset of synthetic sounds, as well as analyze how consensual they were.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans un second temps, nous avons exploré l'utilisation d'algorithmes d'apprentissage machine pour l'extraction d'un espace de représentation haut-niveau avec des propriétés intéressantes d'interpolation et d'extrapolation à partir d'une base de données de sons, le but étant de mettre en relation cet espace avec les dimensions perceptives mises en évidence plus tôt.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a second phase, we investigated the use of machine learning algorithms to extract a high-level representation space with interesting interpolation and extrapolation properties from a dataset of sounds, the goal being to relate this space with the perceptual dimensions evidenced earlier.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>S'inspirant de précédentes études sur la synthèse sonore par apprentissage profond, nous nous sommes concentrés sur des modèles du type autoencodeur et avons réalisé une étude comparative approfondie de plusieurs types d'autoencodeurs sur deux jeux de données différents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Following previous studies interested in using deep learning for music sound synthesis, we focused on autoencoder models and realized an extensive comparative study of several kinds of autoencoders on two different datasets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Ces expériences, couplées avec une étude qualitative via un prototype non temps-réel développé durant la thèse, nous ont permis de valider les autoencodeurs, et en particulier l'autoencodeur variationnel (VAE), comme des outils bien adaptés à l'extraction d'un espace latent de haut-niveau dans lequel il est possible de se déplacer de manière continue et fluide en créant de tous nouveaux sons.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These experiments, together with a qualitative analysis made with a non real-time prototype developed during the thesis, allowed us to validate the use of such models, and in particular the use of the variational autoencoder (VAE), as relevant tools for extracting a high-level latent space in which we can navigate smoothly and create new sounds.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Cependant, à ce niveau, aucun lien entre cet espace latent et les dimensions perceptives mises en évidence précédemment n'a pu être établi spontanément.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, so far, no link between this latent space and the perceptual dimensions evidenced by the perceptual tests emerged naturally.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Pour finir, nous avons donc apporté de la supervision au VAE en ajoutant une régularisation perceptive durant la phase d'apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a final step, we thus tried to enforce perceptual supervision of the VAE by adding a regularization during the training phase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>En utilisant les échantillons sonores résultant du test perceptif avec échelles sémantiques labellisés suivant les huit dimensions perceptives, il a été possible de contraindre, dans une certaine mesure, certaines dimensions de l'espace latent extrait par le VAE afin qu'elles coïncident avec ces dimensions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Using the subset of synthetic sounds used in the second perceptual test and the corresponding perceptual grades along the eight perceptual dimensions provided by the semantic scale analysis, it was possible to constraint, to a certain extent, some dimensions of the VAE high-level latent space so as to match these perceptual dimensions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Un test comparatif a été finalement réalisé afin d'évaluer l'efficacité de cette régularisation supplémentaire pour conditionner le modèle et permettre un contrôle perceptif (au moins partiel) de la synthèse sonore.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A final comparative test was then conducted in order to evaluate the efficiency of this additional regularization for conditioning the model and (partially) leading to a perceptual control of music sound synthesis.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

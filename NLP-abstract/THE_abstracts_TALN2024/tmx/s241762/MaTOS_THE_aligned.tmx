@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-s241762. segId begin by 1, tuid = segId</note>
+        <docid>s241762</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse propose d’investiguer certains des aspects de l’apprentissage auto-supervisé, une forme d’apprentissage non-supervisé qui permet à des modèles et agents d’apprendre sans supervision explicite.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This PhD proposes to investigate some of the aspects of self-supervised learning, a form of unsupervised learning that allows models and agents to learn without explicit supervision.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>L’un de ses principaux avantages est le fait d’utiliser plus efficacement les données, en obtenant une performance supérieure ou égale à partir de moins de données étiquetées ou moins d’itérations dans l’environnement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One of its major benefits is to increase data efficiency: achieving comparable or better performance with less labeled data or fewer environment steps.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>De nombreux travaux de recherche contenant des méthodes d’apprentissage auto-supervisé ont vu le jour depuis quelques années, principalement dans le domaine de la vision par ordinateur, ainsi qu’en traitement du langage naturel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Many works involving self-supervised learning have been developed in the last few years, mostly in Computer Vision and Natural Language Processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cependant, les approches actuelles sont souvent limitées à des base de données simples ou à des environnements statiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the current methods are often limited to simple datasets and static environments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Ce projet visera donc à étudier et à développer des méthodes d’apprentissage auto-supervisé dans des environnements dynamiques (dont les caractéristiques évoluent au cours du temps), comme par exemple les jeux vidéos.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The project will focus on self-supervised learning methods in dynamic environments (in which features evolve over time) such as video games.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Le premier axe de recherche de cette thèse sera d’étudier les méthodes d’exploration guidées par la curiosité dans des environnements dynamiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first research focus of the PhD will be to study curiosity-driven methods in dynamic environments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans des travaux récents, des agents ont été développés de manière à n’utiliser aucun signal extérieur pour s’améliorer, mais au contraire, en se servant d’une motivation intrinsèque qui les encourage à explorer et donc, à se perfectionner.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In recent works, researchers have developed agents that do not use any external reward to improve, but instead, use an intrinsic motivation that drives them to explore, and thus, to advance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Ces stratégies guidées par la curiosité ont permis de résoudre de nombreuses tâches à récompenses éparses en entraînant des agents de manière auto-supervisée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This curiosity-based strategy has allowed solving many tasks with sparse reward by training agents in a self-supervised manner.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Cependant, ces méthodes peinent encore à être généralisées à des environnements dynamiques, et sont rarement adaptables à des configurations réalistes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, such methods still fail to generalize to dynamic environments and are rarely generalizable to realistic setup.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Dans un second temps, cette thèse se penchera sur l’exploration des techniques d’apprentissage auto-supervisé appliquées aux bases de données vidéos.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a second step, the PhD will investigate self-supervised learning techniques applied to video datasets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Une des directions de recherche sera d’étudier le parallèle entre les bases de données vidéos et les environnements tri-dimensionnels (3D) : l’exploration d’un environnement 3D peut se voir comme la mise en place d’une stratégie d’échantillonnage pour un ensemble de vidéos.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One research direction will be to study the parallel between video datasets and visual 3D environments: exploring a virtual environment can be seen as designing a sampling policy for a set of videos.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, il existe une forte corrélation entre les méthodes développées pour ces deux types de problèmes, bien que cette connexion n’ait pas encore été exploitée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, there is a strong correlation between methods developed for both types of data although this connection has not been studied yet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>En effet, les problèmes concernant les bases de données vidéos sont souvent étudiées par le spectre de la vision par ordinateur, alors que les problèmes d’exploration dans des environnements virtuels sont traités du point de vue de l’apprentissage par renforcement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, problems that appear in video datasets are often seen from the Computer Vision perspective, whereas tasks in virtual environments are tackled from the Reinforcement Learning point of view.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>L’un des objectifs de cette thèse sera donc d’examiner et de transposer les méthodes propres à l’un et à l’autre de ces domaines.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hence, one of the goals for the PhD will be to examine and transpose methods from one field to the other.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

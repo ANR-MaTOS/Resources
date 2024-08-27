@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018USPCD033. segId begin by 1, tuid = segId</note>
+        <docid>2018USPCD033</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Il s'agit de minimiser l'écart sémantique existant entre le document et le domaine considérés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such an enrichment which is based on Natural Language Processing and Information Retrieval technologies has several applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La méthode s'appuie sur une collection d’enrichissement constituée automatiquement en lien avec le domaine d'intérêt et procède par extraction de mots-clés et détection de thèmes (topics).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As an example, flling in the gap between a scientifc paper and a collection of highly cited papers in a domain helps the paper to be better acknowledged by the community that refers to that collection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La méthode d’enrichissement proposé a été appliquée à des pages web.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We present a comprehensive study over different approaches of each component.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Elle est robuste au bruit indépendant du domaine considéré et facile transporter dans différentes langues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The enrichment is performed by recommending discriminative sets of semantically relevant keywords, i.e. topics, to a user.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Elle est pauvre en connaissances mais elle exploite les résultats de moteurs de recherche de manière optimisée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The topics are labeled with representative keywords and have a level of granularity that is easily interpretable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>L'approche a été testée sur différentes langues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is also knowledge-poor and domain-independent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>L'évaluation a été conduite sur le français et sur 10 domaines différents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To evaluate their robustness, we studied them on 10 topically diverse domains.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Les résultats ont été évalués par des utilisateurs dans un contexte applicatif réel et par comparaison avec des approches de références.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our results on the keyword extraction approach showed that the statistical features are not adequate for capturing words importance within a web page.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>On observe une bonne précision des résultats et une bonne cohérence sémantique au sein de chaque thème, avec une amélioration significative par rapport aux méthodes d'extraction des mots-clé et de détection de thèmes de l'état de l'art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We showed that our approach out performs a baseline approach, since the widely-used co-occurrence feature between keywords is notivenough for capturing their semantic similarity and consequently for detecting semantically consistent topics.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

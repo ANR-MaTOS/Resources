@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017PA066577. segId begin by 1, tuid = segId</note>
+        <docid>2017PA066577</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans cette dissertation, nous discutons comment utiliser les données du regard humain pour améliorer la performance du modèle d'apprentissage supervisé faible dans la classification des images.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this dissertation, we discuss how to use the human gaze data to improve the performance of the weak supervised learning model in image classification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Le contexte de ce sujet est à l'ère de la technologie de l'information en pleine croissance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The background of this topic is in the era of rapidly growing information technology.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En conséquence, les données à analyser augmentent de façon spectaculaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a consequence, the data to analyze is also growing dramatically.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Étant donné que la quantité de données pouvant être annotées par l'humain ne peut pas tenir compte de la quantité de données elle-même, les approches d'apprentissage supervisées bien développées actuelles peuvent faire face aux goulets d'étranglement l'avenir.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since the amount of data that can be annotated by the human cannot keep up with the amount of data itself, current well-developed supervised learning approaches may confront bottlenecks in the future.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte, l'utilisation de annotations faibles pour les méthodes d'apprentissage à haute performance est digne d'étude.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this context, the use of weak annotations for high-performance learning methods is worthy of study.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, nous essayons de résoudre le problème à partir de deux aspects : l'un consiste à proposer une annotation plus longue, un regard de suivi des yeux humains, comme une annotation alternative par rapport à l'annotation traditionnelle longue, par exemple boîte de délimitation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Specifically, we try to solve the problem from two aspects: One is to propose a more time-saving annotation, human eye-tracking gaze, as an alternative annotation with respect to the traditional time-consuming annotation, e.g. bounding box.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>L'autre consiste à intégrer l'annotation du regard dans un système d'apprentissage faiblement supervisé pour la classification de l'image.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The other is to integrate gaze annotation into a weakly supervised learning scheme for image classification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Ce schéma bénéficie de l'annotation du regard pour inférer les régions contenant l'objet cible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This scheme benefits from the gaze annotation for inferring the regions containing the target object.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Une propriété utile de notre modèle est qu'elle exploite seulement regardez pour la formation, alors que la phase de test est libre de regard.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A useful property of our model is that it only exploits gaze for training, while the test phase is gaze free.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Cette propriété réduit encore la demande d'annotations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This property further reduces the demand of annotations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Les deux aspects isolés sont liés ensemble dans nos modèles, ce qui permet d'obtenir des résultats expérimentaux compétitifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The two isolated aspects are connected together in our models, which further achieve competitive experimental results.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

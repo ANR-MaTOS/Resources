@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019SACLS085. segId begin by 1, tuid = segId</note>
+        <docid>2019SACLS085</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'objectif de cette thèse est de lever les verrous que constituent le manque de disponibilité de ressources ou d'outils TAL pour la langue arabe dans les domaines de spécialité en proposant des méthodes permettant l'extraction de termes à partir de textes en arabe standard moderne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The goal of this thesis is to reduce the lack of available resources and NLP tools for Arabic language in specialised domains by proposing methods allowing the extraction of terms from texts in Modern Standard Arabic.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte, nous avons d'abord construit un corpus parallèle anglais-arabe dans un domaine de spécialité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this context, we first constructed an English-Arabic parallel corous in a specific domain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Il s'agit d'un ensemble de textes médicaux produits par la bibliothèque nationale de médecine américaine (NLM).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is a set of medical texts produced by the US National Library of Medicine (NLM).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Par la suite, nous avons proposé des méthodes d'acquisition terminologique, permettant d'extraire des termes ou d'acquérir des relations entre ces termes, pour la langue arabe en se basant sur : i)adaptation d'un extracteur terminologique existant pour la languefrançaise ou anglaise, ii) l'exploitation de la translittération des termes anglais en caractères arabes et iii) l'application de la la notion de transfert translingue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thereafter, we have proposed terminological acquisition methods, toextract terms or acquire relations between these terms, for Arabic based on: i) the adaptation of an existing terminology extractor for French or English, ii) the transliteration of English terms in Arabic characters and iii) cross-lingual transfer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Appliqué au niveau terminologique, le transfert consiste à mettre en œuvre un processus d'extraction de termes ou d'acquisition de relations entre termes sur des textes d'une langue source (ici, le français ou l'anglais) puis à transférer les informations extraites sur des textes d'une langue cible (ici, l’arabe standard moderne) pour ainsi identifier le même type d'informations terminologiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Applied at the terminological level, transfer aims to implement a process of term extraction or relationship acquisition between terms in the texts of a source language (here, French or English) and then to transfer the extracted information to target language texts (in this case, Modern Standard Arabic), thereby identifying the same type of terminologicalinformation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous avons évalué les listes de termes monolingues et bilingues obtenues lors des différentes expériences que nous avons réalisées, suivant une méthode transparente, directe et semi-automatique : les termes candidats extraits sont confrontés à une terminologie de référence avant d'être vérifiés manuellement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have evaluated the monolingual and bilingual term lists that we have obtained by the experiments we carried out, according to a transparent, direct and semi-automatic method: the extracted term candidates are confronted with a reference terminology before being validated manually.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Cette évaluation suit un protocole que nous avons proposé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This evaluation follows a protocol that we proposed.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

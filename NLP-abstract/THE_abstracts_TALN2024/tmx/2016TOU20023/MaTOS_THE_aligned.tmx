@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016TOU20023. segId begin by 1, tuid = segId</note>
+        <docid>2016TOU20023</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La communication efficace a tendance à suivre la loi du moindre effort.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The efficient communication tends to follow the principle of the least effort.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Selon ce principe, en utilisant une langue donnée les interlocuteurs ne veulent pas travailler plus que nécessaire pour être compris.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>According to this principle, using a given language interlocutors do not want to work any harder than necessary to reach understanding.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ce fait mène à la compression extrême de textes surtout dans la communication électronique, comme dans les microblogues, SMS, ou les requêtes dans les moteurs de recherche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This fact leads to the extreme compression of texts especially in electronic communication, e.g. microblogs, SMS, search queries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cependant souvent ces textes ne sont pas auto-suffisants car pour les comprendre, il est nécessaire d’avoir des connaissances sur la terminologie, les entités nommées ou les faits liés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, sometimes these texts are not self-contained and need to be explained since understanding them requires knowledge of terminology, named entities or related facts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le premier objectif de notre travail est d'aider l’utilisateur à mieux comprendre un message court par l’extraction du contexte d’une source externe comme le Web ou la Wikipédia au moyen de résumés construits automatiquement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first aim of this work is to help a user to better understand a short message by extracting a context from an external source like a text collection, the Web or the Wikipedia by means of text summarization.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Pour cela nous proposons une approche pour le résumé automatique de documents multiples et nous l’appliquons à la contextualisation de messages, notamment à la contextualisation de tweets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To this end we developed an approach for automatic multi-document summarization and we applied it to short message contextualization, in particular to tweet contextualization.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>La méthode que nous proposons est basée sur la reconnaissance des entités nommées, la pondération des parties du discours et la mesure de la qualité des phrases.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed method is based on named entity recognition, part-of-speech weighting and sentence quality measuring.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Contrairement aux travaux précédents, nous introduisons un algorithme de lissage en fonction du contexte local.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In contrast to previous research, we introduced an algorithm for smoothing from the local context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>De plus, nous avons développé un algorithme basé sur les graphes pour le ré-ordonnancement des phrases.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, we developed a graph-based algorithm for sentence reordering.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>La méthode a été également adaptée pour la génération de snippets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The method was also adapted to snippet retrieval.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Les résultats des évaluations attestent une bonne performance de notre approche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The evaluation results indicate good performance of the approach.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

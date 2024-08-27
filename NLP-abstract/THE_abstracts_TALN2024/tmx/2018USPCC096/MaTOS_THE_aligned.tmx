@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018USPCC096. segId begin by 1, tuid = segId</note>
+        <docid>2018USPCC096</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, jusqu'à présent, aucune théorie systématique n'a pas été construite qui peut fournir en une manière formelle la composition et la gamme des types de conversation actuels et possibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nonetheless, hitherto there has been no systematic theory that tries to propose a formal account regarding the make-up and range of actual and possible conversational types.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous adoptons une approche topologique pour classifier les conversations et développons une théorie formelle des types conversationnels dans le cadre de Type Theory with Records.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we take a topological approach to classifying conversations and develop a formal theory of conversational types in the framework of Type Theory with Records (TTR).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En revanche, nous testerons l’hypothèse que la variation entre des distributions des énoncés non phrastiques peut servir à structurer l’espace des types conversationnels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Conversely, we investigate whether the variation in the distribution of NSUs can serve as a means of structuring the space of conversational types.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

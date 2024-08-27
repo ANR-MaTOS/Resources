@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018AZUR4246. segId begin by 1, tuid = segId</note>
+        <docid>2018AZUR4246</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'objectif principal de cette thèse est de proposer un framework complet pour une découverte, modélisation et reconnaissance automatiques des activités humaines dans les vidéos.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main goal of this thesis is to propose a complete framework for automatic discovery, modeling and recognition of human activities in videos.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Afin de modéliser et de reconnaître des activités dans des vidéos à long terme, nous proposons aussi un framework qui combine des informations perceptuelles globales et locales issues de la scène, et qui construit, en conséquence, des modèles d'activités hiérarchiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to model and recognize activities in long-term videos, we propose a framework that combines global and local perceptual information from the scene and accordingly constructs hierarchical activity models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans la première catégorie du framework, un classificateur supervisé basé sur le vecteur de Fisher est formé et les étiquettes sémantiques prédites sont intégrées dans les modèles hiérarchiques construits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first variation of the framework, a supervised classifier based on Fisher vector is trained and the predicted semantic labels are embedded in the constructed hierarchical models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans la seconde catégorie, pour avoir un framework complètement non supervisé, plutôt que d'incorporer les étiquettes sémantiques, les codes visuels formés sont stockés dans les modèles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second variation, to have a completely unsupervised framework, rather than embedding the semantic labels, the trained visual codebooks are stored in the models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous évaluons les frameworks sur deux ensembles de données réalistes sur les activités de la vie quotidienne enregistrées auprés des patients dans un environnement hospitalier.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we evaluate the proposed frameworks on two realistic Activities of Daily Living datasets recorded from patients in a hospital environment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Pour modéliser des mouvements fins du corps humain, nous proposons quatre différents frameworks de reconnaissance de gestes où chaque framework accepte une ou une combinaison de différentes modalités de données en entrée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, to model fine motions of human body, we propose four different gesture recognition frameworks where each framework accepts one or combination of different data modalities as input.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous évaluons les frameworks développés dans le contexte du test de diagnostic médical, appelé Praxis.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We evaluate the developed frameworks in the context of medical diagnostic test namely Praxis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons un nouveau défi dans la reconnaissance gestuelle qui consiste à obtenir une opinion objective sur les performances correctes et incorrectes de gestes très similaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We suggest a new challenge in gesture recognition, which is to obtain an objective opinion about correct and incorrect performances of very similar gestures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Les expériences montrent l'efficacité de notre approche basée sur l'apprentissage en profondeur dans la reconnaissance des gestes et les tâches d'évaluation de la performance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The experiments show effectiveness of our deep learning based approach in gesture recognition and performance assessment tasks.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

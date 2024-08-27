@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017AIXM0221. segId begin by 1, tuid = segId</note>
+        <docid>2017AIXM0221</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>En traitement automatique de la langue, les différentes étapes d'analyse usuelles ont tour à tour amélioré la façon dont le langage peut être modélisé par les machines.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In natural language processing, each analysis step has improved the way in which language can be modeled by machines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Une étape d'analyse encore mal maîtrisée correspond à l'analyse sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Another step of analysis still poorly mastered resides in semantic parsing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ce type d'analyse permettrait de nombreuses avancées, telles que de meilleures interactions homme-machine ou des traductions plus fiables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This type of analysis can provide information which would allow for many advances, such as better human-machine interactions or more reliable translations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Il existe plusieurs structures de représentation du sens telles que PropBank, les AMR et FrameNet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There exist several types of meaning representation structures, such as PropBank, AMR and FrameNet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>FrameNet correspond à la représentation en cadres sémantiques dont la théorie a été décrite par Charles Fillmore.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>FrameNet corresponds to the frame semantic framework whose theory has been described by Charles Fillmore (1971).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans cette théorie, chaque situation prototypique et les différents éléments y intervenant sont représentés de telle sorte que deux situations similaires soient représentées par le même objet, appelé cadre sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this theory, each prototypical situation and each different elements involved are represented in such a way that two similar situations are represented by the same object, called a semantic frame.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Le projet FrameNet est une application de cette théorie, dans laquelle plusieurs centaines de situations prototypiques sont définies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The work that we will describe here follows the work already developed for machine prediction of frame semantic representations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Le travail que nous décrirons ici s'inscrit dans la continuité des travaux déjà élaborés pour prédire automatiquement des cadres sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We will present four prediction systems, and each one of them allowed to validate another hypothesis on the necessary properties for effective prediction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous verrons également que notre analyse peut être améliorée en fournissant aux modèles de prédiction des informations raffinées au préalable, avec d'un côté une analyse syntaxique dont les liens profonds sont explicités et de l'autre des représentations vectorielles du vocabulaire apprises au préalable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We will show that semantic parsing can also be improved by providing prediction models with refined information as input of the system, with firstly a syntactic analysis where deep links are made explicit and secondly vectorial representations of the vocabulary learned beforehand.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

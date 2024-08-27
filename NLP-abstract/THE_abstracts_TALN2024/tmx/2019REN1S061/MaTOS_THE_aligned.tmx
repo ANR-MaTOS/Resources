@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019REN1S061. segId begin by 1, tuid = segId</note>
+        <docid>2019REN1S061</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'établissement de la similarité entre séries temporelles est au cœur de nombreuses tâches d'analyse de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Establishing the similarity of time series is at the core of many data mining tasks such as time series classification, time series clustering, time series retrieval, among others.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les mesures permettant d'établir des similitudes entre les séries temporelles sont spécifiques en ce sens qu'elles doivent pouvoir prendre en compte les différences entre les valeurs constituant la série, ainsi que les distorsions selon l'axe du temps.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Metrics to establish similarities between time series are specific in the sense that they must be able to take into account the differences in the values making the series as well as distortions along the timelines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La mesure de similarité la plus répandue est la mesure Dynamic Time Warping (DTW).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The most popular similarity metric is the Dynamic Time Warping (DTW) measure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cependant, son calcul est coûteux et son application à des séries temporelles nombreuses et/ou très longues est difficile en pratique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, it is costly to compute, and using it against numerous and/or very long time series is difficult in practice.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Il s'agit de plonger les séries temporelles dans un espace euclidien construit de telle manière que les distances entre les séries selon la métrique DTW s'y trouvent préservées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It shows how shapelets that preserve DTW measures can be used in the specific context of large scale time series retrieval.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ce manuscrit apporte des contributions majeures : (1) il explique comment les shapelets préservant la DTW peuvent être utilisées dans le contexte spécifique de la recherche de séries temporelles similaires ; (2) il propose des stratégies de sélection de ces shapelets pour faire face à l'échelle, c'est-à-dire pour traiter une collection extrêmement vaste de séries temporelles ; (3) il explique en détail comment gérer les séries temporelles univariées et multivariées, couvrant ainsi tout le spectre des problèmes de recherches et facilitant la moise au point d'applications très diverses.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This manuscript is making major contributions: (1) it explains how DTW-preserving shapelets can be used in the specific context of time series retrieval; (2) it proposes some shapelet selection strategies in order to cope with scale, that is, in order to deal with extremely large collection of time series; (3) it details how to handle both univariate and multivariate time series, hence covering the whole spectrum of time series retrieval problems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Le coeur de la contribution présentée dans ce manuscrit permet de compenser facilement la complexité du processus de plongement par un jeu sur la précision de la recherche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The core of the contribution presented in this manuscript allows to easily trade-off the complexity of the transformation against the accuracy of the retrieval.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Des expérimentations utilisant les jeux de données UCR et UEA démontrent l'amélioration considérable des performances par rapport aux techniques de pointe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Experiments using the UCR and the UEA datasets demonstrate the vast performance improvements compared to state of the art techniques.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

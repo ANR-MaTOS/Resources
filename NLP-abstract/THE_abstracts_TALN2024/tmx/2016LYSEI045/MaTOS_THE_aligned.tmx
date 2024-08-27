@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016LYSEI045. segId begin by 1, tuid = segId</note>
+        <docid>2016LYSEI045</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous proposons une nouvelle methode, Triangular Similarity Metric Learning (TSML), pour spécifier une fonction métrique de données automatiquement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we propose Triangular Similarity Metric Learning (TSML) for automatically specifying a metric from data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Le système TSML proposée repose une architecture Siamese qui se compose de deux sous-systèmes identiques partageant le même ensemble de paramètres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A TSML system is loaded in a siamese architecture which consists of two identical sub-systems sharing the same set of parameters.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Chaque sous-système traite un seul échantillon de données et donc le système entier reçoit une paire de données en entrée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Each sub-system processes a single data sample and thus the whole system receives a pair of data as the input.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Le système TSML comprend une fonction de coût qui définit la relation entre chaque paire de données et une fonction de projection permettant l’apprentissage des formes de haut niveau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The TSML system includes a cost function parameterizing the pairwise relationship between data and a mapping function allowing the system to learn high-level features from the training data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Pour la fonction de coût, nous proposons d’abord la similarité triangulaire (Triangular Similarity), une nouvelle similarité métrique qui équivaut à la similarité cosinus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In terms of the cost function, we first propose the Triangular Similarity, a novel similarity metric which is equivalent to the well-known Cosine Similarity in measuring a data pair.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Sur la base d’une version simplifiée de la similarité triangulaire, nous proposons la fonction triangulaire (the triangular loss) afin d’effectuer l’apprentissage de métrique, en augmentant la similarité entre deux vecteurs dans la même classe et en diminuant la similarité entre deux vecteurs de classes différentes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Based on a simplified version of the Triangular Similarity, we further develop the triangular loss function in order to perform metric learning, i.e. to increase the similarity between two vectors in the same class and to decrease the similarity between two vectors of different classes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Par rapport aux autres distances ou similarités, la fonction triangulaire et sa fonction gradient nous offrent naturellement une interprétation géométrique intuitive et intéressante qui explicite l’objectif d’apprentissage de métrique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Compared with other distance or similarity metrics, the triangular loss and its gradient naturally offer us an intuitive and interesting geometrical interpretation of the metric learning objective.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>En ce qui concerne la fonction de projection, nous présentons trois fonctions différentes : une projection linéaire qui est réalisée par une matrice simple, une projection non-linéaire qui est réalisée par Multi-layer Perceptrons (MLP) et une projection non-linéaire profonde qui est réalisée par Convolutional Neural Networks (CNN).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In terms of the mapping function, we introduce three different options: a linear mapping realized by a simple transformation matrix, a nonlinear mapping realized by Multi-layer Perceptrons (MLP) and a deep nonlinear mapping realized by Convolutional Neural Networks (CNN).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Avec ces fonctions de projection, nous proposons trois systèmes de TSML pour plusieurs applications : la vérification par paires, l’identification d’objet, la réduction de la dimensionnalité et la visualisation de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With these mapping functions, we present three different TSML systems for various applications, namely, pairwise verification, object identification, dimensionality reduction and data visualization.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Pour chaque application, nous présentons des expérimentations détaillées sur des ensembles de données de référence afin de démontrer l’efficacité de notre systèmes de TSML.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For each application, we carry out extensive experiments on popular benchmarks and datasets to demonstrate the effectiveness of the proposed systems.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

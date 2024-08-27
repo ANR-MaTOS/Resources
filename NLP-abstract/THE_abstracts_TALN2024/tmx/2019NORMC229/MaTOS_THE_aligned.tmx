@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019NORMC229. segId begin by 1, tuid = segId</note>
+        <docid>2019NORMC229</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Notre perception est par nature multimodale, i.e. fait appel à plusieurs de nos sens.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our perception is by nature multimodal, i.e. it appeals to many of our senses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Pour résoudre certaines tâches, il est donc pertinent d'utiliser différentes modalités, telles que le son ou l'image.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To solve certain tasks, it is therefore relevant to use different modalities, such as sound or image.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse s'intéresse à cette notion dans le cadre de l'apprentissage neuronal profond.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis focuses on this notion in the context of deep learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Pour cela, elle cherche à répondre à une problématique en particulier : comment fusionner les différentes modalités au sein d'un réseau de neurones ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For this, it seeks to answer a particular problem: how to merge the different modalities within a deep neural network?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons tout d'abord d'étudier un problème d'application concret : la reconnaissance automatique des émotions dans des contenus audio-visuels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We first propose to study a problem of concrete application: the automatic recognition of emotion in audio-visual contents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Cela nous conduit à différentes considérations concernant la modélisation des émotions et plus particulièrement des expressions faciales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This leads us to different considerations concerning the modeling of emotions and more particularly of facial expressions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons ainsi une analyse des représentations de l'expression faciale apprises par un réseau de neurones profonds.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We thus propose an analysis of representations of facial expression learned by a deep neural network.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>De plus, cela permet d'observer que chaque problème multimodal semble nécessiter l'utilisation d'une stratégie de fusion différente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, we observe that each multimodal problem appears to require the use of a different merge strategy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous nous intéressons à une vision multimodale du transfert de connaissances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we are interested in a multimodal view of knowledge transfer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>En effet, nous détaillons une méthode non traditionnelle pour effectuer un transfert de connaissances à partir de plusieurs sources, i.e. plusieurs modèles pré-entraînés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, we detail a non-traditional method to transfer knowledge from several sources, i.e. from several pre-trained models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Pour cela, une représentation neuronale plus générale est obtenue à partir d'un modèle unique, qui rassemble la connaissance contenue dans les modèles pré-entraînés et conduit à des performances à l'état de l'art sur une variété de tâches d'analyse de visages.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For that, a more general neural representation is obtained from a single model, which brings together the knowledge contained in the pre-trained models and leads to state-of-the-art performances on a variety of facial analysis tasks.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

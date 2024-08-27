@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2009-50_2_ID=TAL-2009-50-2-08-Kondrak. segId begin by 1, tuid = segId</note>
+        <docid>2009-50_2_ID=TAL-2009-50-2-08-Kondrak</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'identification de mots apparentés et des correspondances de sons récurrents intervient dans deux des principales tâches de la linguistique historique: démontrer des filiations linguistiques et reconstruire l'histoire des familles de langues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Identification of cognates and recurrent sound correspondences is a component of two principal tasks of historical linguistics: demonstrating the relatedness of languages, and reconstructing the histories of language families.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons des méthodes de détection et de quantification de trois caractéristiques des mots apparentés: les correspondances de sons récurrents, la ressemblance phonétique et l'affinité sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose methods for detecting and quantifying three characteristics of cognates: recurrent sound correspondences,phonetic similarity, and semantic affinity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le but ultime est d'identifier les mots apparentés et les correspondances directement à partir de listes de mots représentant des paires des langues dont la filiation est connue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The ultimate goal is to identify cognates and correspondences directly from lists of words representing pairs of languages that are known to be related.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les solutions proposées sont indépendantes des langues traitées et sont évaluées sur des données linguistiques réelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed solutions are language independent, and are evaluated against authentic linguistic data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les résultats d'expériences impliquant des langues indo-européennes, algonquines et des langues de la famille du totonaque indiquent que nos méthodes sont plus précises que des programmes comparables et d'atteignent une haute précision et un haut taux de rappel sur des ensembles de test.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results of evaluation experiments involving the Indo-European, Algonquian, and Totonac language families indicate that our methods are more accurate than comparable programs, and achieve high precision and recall on various test sets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Les résultats suggèrent également que la combinaison de divers types d'indices augmente grandement la justesse de l'identification des mots apparentés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results also suggest that combining various types of evidence substantially increases cognate identification accuracy.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

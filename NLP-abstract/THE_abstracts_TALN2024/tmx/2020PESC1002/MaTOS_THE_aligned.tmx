@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020PESC1002. segId begin by 1, tuid = segId</note>
+        <docid>2020PESC1002</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous abordons le problème de prédiction de liens dans des tenseurs binaires d'ordre trois et quatre contenant des observations positives uniquement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we focus on the problem of link prediction in binary tensors of order three and four containing positive observations only.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ce type de tenseur apparaît dans les problèmes de recommandations sur le web, en bio-informatique pour compléter des bases d'interactions entre protéines, ou plus généralement pour la complétion bases de connaissances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Tensors of this type appear in web recommender systems, in bio-informatics for the completion of protein interaction databases, or more generally for the completion of knowledge bases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ces dernières nous permettent d'évaluer nos méthodes de complétion à grande échelle et sur des types de graphes relationnels variés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We benchmark our completion methods on knowledge bases which represent a variety of relationnal data and scales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Notre approche est parallèle à celle de la complétion de matrice.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our approach is parallel to that of matrix completion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous résolvons de manière non-convexe un problème de minimisation empirique régularisé sur des tenseurs de faible rangs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We optimize a non-convex regularised empirical risk objective over low-rank tensors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, nous validons empiriquement notre approche en obtenant des performances supérieures à l'état de l'art sur de nombreux jeux de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our method is empirically validated on several databases, performing better than the state of the art.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Ces performances ne peuvent être atteintes que pour des rangs trop élevés pour que cette méthode soit applicable à l'échelle de bases de connaissances complètes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These performances however can only be reached for ranks that would not scale to full modern knowledge bases such as Wikidata.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous nous intéressons dans un second temps à la décomposition Tucker, plus expressive que la décomposition Canonique, mais plus difficile à optimiser.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We focus on the Tucker decomposition which is more expressive than the Canonical decomposition but also harder to optimize.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Ces méthodes nous permettent d'améliorer les performances en complétion pour une quantité faible de paramètres par entités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With these method, we obtain improved performances on several benchmarks for limited parameters per entities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Finalement, nous étudions le cas de base de connaissances temporelles, dans lesquels les prédicats ne sont valides que sur certains intervalles de temps.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we study the case of temporal knowledge bases, in which the predicates are only valid over certain time intervals.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une formulation faible rang et une régularisation adaptée à la structure du problème, qui nous permet d'obtenir des performances supérieures à l'état de l'art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a low-rank formulation and regularizer adapted to the temporal structure of the problem and obtain better performances than the state of the art.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

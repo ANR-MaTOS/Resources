@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2009NAN10027. segId begin by 1, tuid = segId</note>
+        <docid>2009NAN10027</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>De nombreuses applications génèrent et reçoivent des données sous la forme de flux continu, illimité, et très rapide.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Many applications produce and receive continuous, unlimited, and high-speed data streams.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cela pose naturellement des problèmes de stockage, de traitement et d'analyse de données qui commencent juste à être abordés dans le domaine des flux de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This raises obvious problems of storage, treatment and analysis of data, which are only just beginning to be treated in the domain of data streams.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'apprentissage de ce modèle est, contrairement à sa version de départ, guidé non seulement par la nouveauté qu'apporte une donnée d'entrée mais également par la donnée elle-même.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The learning of this model is, contrary to that of its former self, driven not only by the novelty part in the input data but also by the data itself.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>De ce fait, le modèle ILoNDF peut acquérir constamment de nouvelles connaissances relatives aux fréquences d'occurrence des données et de leurs variables, ce qui le rend moins sensible au bruit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thereby, ILoNDF can continuously extract new knowledge relating to the relative frequencies of the data and their variables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, notre travail se focalise sur l'étude du comportement du modèle ILoNDF dans le cadre général de la classification à partir d'une seule classe en partant de l'exploitation des données fortement multidimensionnelles et bruitées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Firstly, we focus on the study of ILoNDF's behavior for one-class classification when dealing with high-dimensional noisy data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ce type d'étude nous a permis de mettre en évidence les capacités d'apprentissage pures du modèle ILoNDF vis-à-vis de l'ensemble des méthodes proposées jusqu'à présent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This study enabled us to highlight the pure learning capacities of ILoNDF with respect to the key classification methods suggested until now.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans un deuxième temps, nous nous intéressons plus particulièrement à l'adaptation fine du modèle au cadre précis du filtrage d'informations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Next, we are particularly involved in the adaptation of ILoNDF to the specific context of information filtering.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Notre objectif est de mettre en place une stratégie de filtrage orientée-utilisateur plutôt qu'orientée-système, et ceci notamment en suivant deux types de directions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our goal is to set up user-oriented filtering strategies rather than system-oriented in following two types of directions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>La première direction concerne la modélisation utilisateur à l'aide du modèle ILoNDF.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first direction concerns user modeling relying on the model ILoNDF.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Cette modélisation fournit une nouvelle manière de regarder le profil utilisateur en termes de critères de spécificité, d'exhaustivité et de contradiction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This provides a new way of looking at user's need in terms of specificity, exhaustivity and contradictory profile-contributing criteria.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>La seconde direction, complémentaire de la première, concerne le raffinement des fonctionnalités du modèle ILoNDF en le dotant d'une capacité à s'adapter à la dérive du besoin de l'utilisateur au cours du temps.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second direction, complementary to the first one, concerns the refinement of ILoNDF's functionality in order to confer it the capacity of tracking drifting user's need over time.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous nous attachons à la généralisation de notre travail antérieur au cas où les données arrivant en flux peuvent être réparties en classes multiples.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we consider the generalization of our previous work to the case where streaming data can be divided into multiple classes.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

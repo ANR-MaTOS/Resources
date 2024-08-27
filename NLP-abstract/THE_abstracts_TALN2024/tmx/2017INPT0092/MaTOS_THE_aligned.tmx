@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017INPT0092. segId begin by 1, tuid = segId</note>
+        <docid>2017INPT0092</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les robots sont les futurs compagnons et équipiers de demain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the future, robots will become our companions and co-workers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cependant, nous sommes encore loin d'un vrai robot autonome, qui agirait de manière naturelle, efficace et sécurisée avec l'homme.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, we are still far from a real autonomous robot, which would be able to act in a natural, efficient and secure manner with humans.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Afin de doter le robot de la capacité d'agir naturellement avec l'homme, il est important d'étudier dans un premier temps comment les hommes agissent entre eux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To endow robots with the capacity to act naturally with human, it is important to study, first, how humans act together.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse commence donc par un état de l'art sur l'action conjointe en psychologie et philosophie avant d'aborder la mise en application des principes tirés de cette étude à l'action conjointe homme-robot.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Consequently, this manuscript starts with a state of the art on joint action in psychology and philosophy before presenting the implementation of the principles gained from this study to human-robot joint action.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous décrirons ensuite le module de supervision pour l'interaction homme-robot développé durant la thèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We will then describe the supervision module for human-robot interaction developed during the thesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Une partie des travaux présentés dans cette thèse porte sur la gestion de ce que l'on appelle un plan partagé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Part of the work presented in this manuscript concerns the management of what we call a shared plan.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Ici un plan partagé est une séquence d'actions partiellement ordonnées à effectuer par l'homme et/ou le robot afin d'atteindre un but donné.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Here, a shared plan is a a partially ordered set of actions to be performed by humans and/or the robot for the purpose of achieving a given goal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, nous présenterons comment le robot estime l'état des connaissances des hommes avec qui il collabore concernant le plan partagé (appelées états mentaux) et les prend en compte pendant l'exécution du plan.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, we present how the robot estimates the beliefs of its humans partners concerning the shared plan (called mental states) and how it takes these mental states into account during shared plan execution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Cela permet au robot de communiquer de manière pertinente sur les potentielles divergences entre ses croyances et celles des hommes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It allows it to be able to communicate in a clever way about the potential divergent beliefs between the robot and the humans knowledge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Puis, dans un second temps, nous présenterons l'abstraction de ces plan partagés et le report de certaines décisions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Second, we present the abstraction of the shared plans and the postponing of some decisions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>En effet, dans les précédents travaux, le robot prenait en avance toutes les décisions concernant le plan partagé (qui va effectuer quelle action, quels objets utiliser...) ce qui pouvait être contraignant et perçu comme non naturel par l'homme lors de l'exécution car cela pouvait lui imposer une solution par rapport à une autre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, in previous works, the robot took all decisions at planning time (who should perform which action, which object to use…) which could be perceived as unnatural by the human during execution as it imposes a solution preferentially to any other.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Ces travaux vise à permettre au robot d'identifier quelles décisions peuvent être reportées à l'exécution et de gérer leur résolutions suivant le comportement de l'homme afin d'obtenir un comportement du robot plus fluide et naturel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This work allows us to endow the robot with the capacity to identify which decisions can be postponed to execution time and to take the right decision according to the human behavior in order to get a fluent and natural robot behavior.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Le système complet de gestions des plan partagés à été évalué en simulation et en situation réelle lors d'une étude utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The complete system of shared plans management has been evaluated in simulation and with real robots in the context of a user study.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Par la suite, nous présenterons nos travaux portant sur la communication non-verbale nécessaire lors de de l'action conjointe homme-robot.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thereafter, we present our work concerning the non-verbal communication needed for human-robot joint action.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Ces travaux sont ici focalisés sur l'usage de la tête du robot, cette dernière permettant de transmettre des informations concernant ce que fait le robot et ce qu'il comprend de ce que fait l'homme, ainsi que des signaux de coordination.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This work is here focused on how to manage the robot head, which allows to transmit information concerning what the robot's activity and what it understands of the human actions, as well as coordination signals.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Finalement, il sera présenté comment coupler planification et apprentissage afin de permettre au robot d'être plus efficace lors de sa prise de décision.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we present how to mix planning and learning in order to allow the robot to be more efficient during its decision process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>L'idée, inspirée par des études de neurosciences, est de limiter l'utilisation de la planification (adaptée au contexte de l'interaction homme-robot mais coûteuse) en laissant la main au module d'apprentissage lorsque le robot se trouve en situation "connue".</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The idea, inspired from neuroscience studies, is to limit the use of planning (which is adapted to the human-aware context but costly) by letting the learning module made the choices when the robot is in a "known" situation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Les premiers résultats obtenus démontrent sur le principe l'efficacité de la solution proposée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first obtained results demonstrate the potential interest of the proposed solution.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

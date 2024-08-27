@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016TELB0418. segId begin by 1, tuid = segId</note>
+        <docid>2016TELB0418</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les services cloud offrent des coûts réduits, une élasticité et un espace de stockage illimité qui attirent de nombreux utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Cloud services offer reduced costs, elasticity and a promised unlimited managed storage space that attract many end-users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Le partage de fichiers, les plates-formes collaboratives, les plateformes de courrier électroniques, les serveurs de sauvegarde et le stockage de fichiers sont parmi les services qui font du cloud un outil essentiel pour une utilisation quotidienne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>File sharing, collaborative platforms, email platforms, back-up servers and file storage are some of the services that set the cloud as an essential tool for everyday use.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Actuellement, la plupart des systèmes d'exploitation proposent des applications de stockage externalisées intégrées, par conception, telles que One Drive et iCloud, en tant que substituts naturels succédant au stockage local.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Currently, most operating systems offer built-in outsourced cloud storage applications, by design, such as One Drive and iCloud, as natural substitutes succeeding to the local storage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cependant, de nombreux utilisateurs, même ceux qui sont disposés à utiliser les services susmentionnés, restent réticents à adopter pleinement le stockage et les services sous-traités dans le cloud.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, many users, even those willing to use the aforementioned cloud services, remain reluctant towards fully adopting cloud outsourced storage and services.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les préoccupations liées à la confidentialité des données augmentent l'incertitude pour les utilisateurs qui conservent des informations sensibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Concerns related to data confidentiality rise uncertainty for users maintaining sensitive information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Il existe de nombreuses violations récurrentes de données à l'échelle mondiale qui ont conduit à la divulgation d'informations sensibles par les utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There are many, recurrent, worldwide data breaches that led to the disclosure of users' sensitive information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Pour en citer quelques-uns : une violation de Yahoo fin 2014 et annoncé publiquement en Septembre 2016, connue comme la plus grande fuite de données de l'histoire d'Internet, a conduit à la divulgation de plus de 500 millions de comptes utilisateur ; une infraction aux assureurs-maladie, Anthem en février 2015 et Premera BlueCross BlueShield en mars 2015, qui a permis la divulgation de renseignements sur les cartes de crédit, les renseignements bancaires, les numéros de sécurité sociale, pour des millions de clients et d'utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To name a few: a breach of Yahoo late 2014 and publicly announced on September 2016, known as the largest data breach of Internet history, led to the disclosure of more than 500 million user accounts; a breach of health insurers, Anthem in February 2015 and Premera BlueCross BlueShield in March 2015, that led to the disclosure of credit card information, bank account information, social security numbers, data income and more information for more than millions of customers and users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Une contre-mesure traditionnelle pour de telles attaques dévastatrices consiste à chiffrer les données des utilisateurs afin que même si une violation de sécurité se produit, les attaquants ne peuvent obtenir aucune information à partir des données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A traditional countermeasure for such devastating attacks consists of encrypting users' data so that even if a security breach occurs, the attackers cannot get any information from the data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Malheureusement, cette solution empêche la plupart des services du cloud, et en particulier, la réalisation des recherches sur les données externalisées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Unfortunately, this solution impedes most of cloud services, and in particular, searching on outsourced data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Les chercheurs se sont donc intéressés à la question suivante : comment effectuer des recherches sur des données chiffrées externalisées tout en préservant une communication, un temps de calcul et un stockage acceptables ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Researchers therefore got interested in the following question: how to search on outsourced encrypted data while preserving efficient communication, computation and storage overhead?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Cette question avait plusieurs solutions, reposant principalement sur des primitives cryptographiques, offrant de nombreuses garanties de sécurité et d'efficacité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This question had several solutions, mostly based on cryptographic primitives, offering numerous security and efficiency guarantees.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Bien que ce problème ait été explicitement identifié pendant plus d'une décennie, de nombreuses dimensions de recherche demeurent non résolues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While this problem has been explicitly identified for more than a decade, many research dimensions remain unsolved.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte, le but principal de cette thèse est de proposer des constructions pratiques qui sont (1) adaptées aux déploiements dans les applications réelles en vérifiant les exigences d'efficacité nécessaires, mais aussi, (2) en fournissant de bonnes assurances de sécurité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main goal of this thesis is to come up with practical constructions that are (1) suitable for real life deployments verifying necessary efficiency requirements, but also, (2) providing good security insurances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Tout au long de notre recherche, nous avons identifié le chiffrement cherchable (SSE) et la RMA inconsciente (ORAM) comme des deux potentielles et principales primitives cryptographiques candidates aux paramètres des applications réelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Throughout our research investigation, we identified symmetric searchable encryption (SSE) and oblivious RAM (ORAM) as the two potential and main cryptographic primitives' candidate for real life settings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Nous avons identifié plusieurs défis et enjeux inhérents à ces constructions et fourni plusieurs contributions qui améliorent significativement l'état de l'art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have recognized several challenges and issues inherent to these constructions and provided a number of contributions that improve upon the state of the art.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Premièrement, nous avons contribué à rendre les schémas SSE plus expressifs en permettant des requêtes booléennes, sémantiques et de sous-chaînes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, we contributed to make SSE schemes more expressive by enabling Boolean, semantic, and substring queries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Cependant, les praticiens doivent faire très attention à préserver l'équilibre entre la fuite d'information et le degré d'expressivité souhaité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Practitioners, however, need to be very careful about the provided balance between the security leakage and the degree of desired expressiveness.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, nous améliorons la bande passante de l'ORAM en introduisant une nouvelle structure récursive de données et une nouvelle procédure d'éviction pour la classe d'ORAM ; nous introduisons également le concept de redimensionnabilibté dans l'ORAM qui est une caractéristique requise pour l'élasticité de stockage dans le cloud.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Second, we improve ORAM's bandwidth by introducing a novel recursive data structure and a new eviction procedure for the tree-based class of ORAM constructions, but also, we introduce the concept of resizability in ORAM which is a required feature for cloud storage elasticity.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

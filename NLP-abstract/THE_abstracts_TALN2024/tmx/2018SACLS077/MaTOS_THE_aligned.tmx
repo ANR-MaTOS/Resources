@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018SACLS077. segId begin by 1, tuid = segId</note>
+        <docid>2018SACLS077</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les travaux de recherche de cette thèse portent sur l'amélioration des capacités sociales d'un système conversationnel en interaction avec un humain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This doctoral dissertation is about the improvement of social capacities of a conversationnal system to interact with humans.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Lorsque le système n'est pas dédié à une tâche particulière, il doit tenir compte de difficultés relevant de l'interaction sociale elle-même.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>When the system is not dedicated to one particular task, it must take into account the inherent difficulties of social interaction it-self.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'humour est un mécanisme naturel dans les interactions sociales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Humor is a natural mechanism present in social interactions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous considérons un humour-machine comme une simulation de comportements simplifiés des capacités humoristiques humaines : dérision, blagues, jeux de mots.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We consider humour in a robotic system as a simulation of simplified behaviors from human humor: derision, jokes, puns.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les travaux de cette thèse s'appuient sur des théories issues de domaines variés en sociologie, psychologie, neurosciences et linguistique pour l'intégration de cet humour-machine dans un système robotique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This work is based on theories issued from various research domains as sociology, psychology, neurosciences and linguistics to enable integration of humor in a robotic system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Implémentées dans certains systèmes de dialogue, ces capacités humoristiques sont cependant rarement utilisées pour pouvoir choisir les comportements à générer du robot.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Implemented in some dialog systems, humorous capacities are however rarely used when programming the robot’s behavior.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans nos travaux, la mise en œuvre des comportements humoristiques du système en conversation est réalisée en utilisant la théorie des rites d'interaction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In our study, the humourous behavior is implemented in the system by using the ritual theory of face-work.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>L'estimation de la face de l'interlocuteur permet de diriger le comportement du robot dans la conversation casuelle humoristique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The face analysis of the interlocutor can be used to direct the robot’s reactions during a casual humorous talk.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Pour réaliser cette estimation de la face, nous étudions, à partir de corpus créés à cet effet, les réactions comportementales, affectives et expressives des participants à différents types d'humour réalisés par le robot et ayant des impacts variables sur celle-ci (l'humour prenant pour cible le robot, le participant ou un autre sujet).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to evaluate the faces of participants in interaction, we study, using data collections created for this purpose, the participant’s behavior, emotionnal and expressive responses to different types of humor (humorous act targeting the robot, the participant or a neutral subject).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Les réactions des participants à l'humour sont établies sur une représentation multi-niveaux d'indices émotionnels, comportementaux et linguistiques, extraits à partir de l'audio.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Participant's reaction to humor are made upon a multi-level processing of emotionnal, linguistic and behavioral cues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Des règles sont ainsi construites à partir de l'apprentissage automatique de ces indices issus des corpus, concernant l'appréciation de la réaction des participants à l'humour et la mise à jour de l'estimation de la face présentée du participant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Machine learning is used to extract rules defining appreciation or not and update the participant's face evaluation in regards of the humorous act produced by the robot.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Leur implémentation dans un système automatique nous permet de les évaluer.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An implementation of these rules in an automatic dialog system allows us to evaluate their accuracy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>De nombreuses expérimentations ont été menées avec des publics variés : personnes âgées, adultes, adolescents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Numerous experiments were carried out on various populations: elderly persons, adults, teenagers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Enfin, l'utilisation des préférences du participant à l'humour dans la conversation fait émerger des questions éthiques, notamment face au pouvoir persuasif et manipulateur de l'humour.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, the use of the participant’s preferences in the conversation raises ethical questions, in particular against the persuasive and manipulative power of humor.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

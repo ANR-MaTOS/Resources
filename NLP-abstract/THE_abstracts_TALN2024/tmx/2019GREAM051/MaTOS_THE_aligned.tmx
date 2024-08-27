@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019GREAM051. segId begin by 1, tuid = segId</note>
+        <docid>2019GREAM051</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La disponibilité de quantités massives de données, comme des images dans les réseaux sociaux, des signaux audio de téléphones mobiles, ou des données génomiques ou médicales, a accéléré le développement des techniques d'apprentissage automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The increased availability of large amounts of data, from images in social networks, speech waveforms from mobile devices, and large text corpuses, to genomic and medical data, has led to a surge of machine learning techniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Récemment, les systèmes d'apprentissage profond ont émergé comme des algorithmes d'apprentissage très efficaces.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such methods exploit statistical patterns in these large datasets for making accurate predictions on new data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ces modèles multi-couche effectuent leurs prédictions de façon hiérarchique, et peuvent être entraînés à très grande échelle avec des méthodes de gradient.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In recent years, deep learning systems have emerged as a remarkably successful class of machine learning algorithms, which rely on gradient-based methods for training multi-layer models that process data in a hierarchical manner.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Leur succès a été particulièrement marqué lorsque les données sont des signaux naturels comme des images ou des signaux audio, pour des tâches comme la reconnaissance visuelle, la détection d'objets, ou la reconnaissance de la parole.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These methods have been particularly successful in tasks where the data consists of natural signals such as images or audio; this includes visual recognition, object detection or segmentation, and speech recognition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Pour de telles tâches, l'apprentissage profond donne souvent la meilleure performance empirique, mais leur compréhension théorique reste difficile à cause du grand nombre de paramètres, et de la grande dimension des données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For such tasks, deep learning methods often yield the best known empirical performance; yet, the high dimensionality of the data and large number of parameters of these models make them challenging to understand theoretically.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Leur succès est souvent attribué à leur capacité d'exploiter des structures des signaux naturels, par exemple en apprenant des représentations invariantes et multi-échelle de signaux naturels à travers un bon choix d'architecture, par exemple avec des convolutions et des opérations de pooling.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Their success is often attributed in part to their ability to exploit useful structure in natural signals, such as local stationarity or invariance, for instance through choices of network architectures with convolution and pooling operations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, ces propriétés sont encore mal comprises théoriquement, et l'écart entre la théorique et pratique en apprentissage continue à augmenter.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, such properties are still poorly understood from a theoretical standpoint, leading to a growing gap between the theory and practice of machine learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse vise à réduire cet écart grâce à l'étude d'espaces de fonctions qui surviennent à partir d'une certaine architecture, en particulier pour les architectures convolutives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis is aimed towards bridging this gap, by studying spaces of functions which arise from given network architectures, with a focus on the convolutional case.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Notre approche se base sur les méthodes à noyaux, et considère des espaces de Hilbert à noyaux reproduisant (RKHS) associés à certains noyaux construits de façon hiérarchique selon une architecture donnée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our study relies on kernel methods, by considering reproducing kernel Hilbert spaces (RKHSs) associated to certain kernels that are constructed hierarchically based on a given architecture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Cela nous permet d'étudier précisément des propriétés de régularité, d'invariance, de stabilité aux déformations du signal, et d'approximation des fonctions du RKHS.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This allows us to precisely study smoothness, invariance, stability to deformations, and approximation properties of functions in the RKHS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Ces propriétés sur la représentation sont aussi liées à des questions d'optimisation pour l'entraînement de réseaux profonds à très grand nombre de neurones par descente de gradient, qui donnent lieu à de tels noyaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These representation properties are also linked with optimization questions when training deep networks with gradient methods in some over-parameterized regimes where such kernels arise.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Cette théorie suggère également des nouvelles stratégies pratiques de régularisation qui permettent d'obtenir une meilleure performance en généralisation pour des petits jeux de données, et une performance état de l'art pour la robustesse à des perturbations adversariales en vision.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They also suggest new practical regularization strategies for obtaining better generalization performance on small datasets, and state-of-the-art performance for adversarial robustness on image tasks.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

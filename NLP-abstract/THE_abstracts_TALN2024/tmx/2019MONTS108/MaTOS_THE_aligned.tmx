@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019MONTS108. segId begin by 1, tuid = segId</note>
+        <docid>2019MONTS108</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Grâce à la démocratisation des nouvelles technologies de communications nous disposons d'une quantité croissante de ressources textuelles, faisant du Traitement Automatique du Langage Naturel (TALN) une discipline d'importance cruciale tant scientifiquement qu'industriellement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thanks to the democratization of new communication technologies, there is a growing quantity of textual resources, making Automatic Natural Language Processing (NLP) a discipline of crucial importance both scientifically and industrially.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Aisément disponibles, ces données offrent des opportunités sans précédent et, de l'analyse d'opinion à la recherche d'information en passant par l'analyse sémantique de textes les applications sont nombreuses.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Easily available, these data offer unprecedented opportunities and, from opinion analysis to information research and semantic text analysis, there are many applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>On ne peut cependant aisément tirer parti de ces données textuelles dans leur état brut et, en vue de mener à bien de telles tâches il semble indispensable de posséder des ressources décrivant les connaissances sémantiques, notamment sous la forme de réseaux lexico-sémantiques comme par exemple celui du projet JeuxDeMots.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, this textual data cannot be easily exploited in its raw state and, in order to carry out such tasks, it seems essential to have resources describing semantic knowledge, particularly in the form of lexico-semantic networks such as that of the JeuxDeMots project.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La constitution et la maintenance de telles ressources restent cependant des opérations difficiles, de part leur grande taille mais aussi à cause des problèmes de polysémie et d'identification sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the constitution and maintenance of such resources remain difficult operations, due to their large size but also because of problems of polysemy and semantic identification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>De plus, leur utilisation peut se révéler délicate car une part significative de l'information nécessaire n'est pas directement accessible dans la ressource mais doit être inférée à partir des données du réseau lexico-sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, their use can be tricky because a significant part of the necessary information is not directly accessible in the resource but must be inferred from the data of the lexico-semantic network.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nos travaux cherchent à démontrer que les réseaux lexico-sémantiques sont, de par leur nature connexionniste, bien plus qu'une collection de faits bruts et que des structures plus complexes telles que les chemins d'interprétation contiennent davantage d'informations et permettent d'accomplir de multiples opérations d'inférences.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our work seeks to demonstrate that lexico-semantic networks are, by their connexionic nature, much more than a collection of raw facts and that more complex structures such as interpretation paths contain more information and allow multiple inference operations to be performed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En particulier, nous montrerons comment utiliser une base de connaissance pour fournir des explications à des faits de haut niveau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, we will show how to use a knowledge base to provide explanations to high-level facts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Ces explications permettant a minima de valider et de mémoriser de nouvelles informations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These explanations allow at least to validate and memorize new information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Ce faisant, nous pouvons évaluer la couverture et la pertinence des données de la base ainsi que la consolider.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In doing so, we can assess the coverage and relevance of the database data and consolidate it.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>De même, la recherche de chemins se révèle utile pour des problèmes de classification et de désambiguïsation, car ils sont autant de justifications des résultats calculés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Similarly, the search for paths is useful for classification and disambiguation problems, as they are justifications for the calculated results.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre de la reconnaissance d'entité nommées, ils permettent aussi bien de typer les entités et de les désambiguïser (l'occurrence du terme Paris est-il une référence à la ville, et laquelle, ou à une starlette ?) en mettant en évidence la densité des connexions entre les entités ambiguës, leur contexte et leur type éventuel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the context of the recognition of named entities, they also make it possible to type entities and disambiguate them (is the occurrence of the term Paris a reference to the city, and which one, or to a starlet?) by highlighting the density of connections between ambiguous entities, their context and their possible type.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Enfin nous proposons de tourner à notre avantage la taille importante du réseau JeuxDeMots pour enrichir la base de nouveaux faits à partir d'un grand nombre d'exemples comparables et par un processus d'abduction sur les types de relations sémantiques pouvant connecter deux termes donnés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we propose to turn the large size of the JeuxDeMots network to our advantage to enrich the database with new facts from a large number of comparable examples and by an abduction process on the types of semantic relationships that can connect two given terms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Chaque inférence s'accompagne d'explications pouvant être validées ou invalidées offrant ainsi un processus d'apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Each inference is accompanied by explanations that can be validated or invalidated, thus providing a learning process.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

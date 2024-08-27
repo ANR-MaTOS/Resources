@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-s251320. segId begin by 1, tuid = segId</note>
+        <docid>s251320</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cependant, la construction de telles ressources est coûteuse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the construction of such resources is costly.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Elles ne sont donc disponibles que pour un nombre restreint de langues et de domaines.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, they are only available for a limited number of languages and domains.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>De plus, les choix de formalisation de la sémantique peuvent différer selon les besoins (requêtes SQL, formules logiques,...).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, the choice of semantic formalization can differ according to the needs (SQL queries, logical formulas,...).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Il est dans ce contexte nécessaire de développer des méthodes qui soient moins dépendantes de ces données de supervision, par exemple en exploitant des ressources linguistiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this context, it is necessary to develop methods that are less dependent on this supervision data, for example by exploiting linguistic resources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre de cette thèse, nous nous intéresserons à développer des approches jointes pour l'analyse sémantique et la génération contrôlée de textes fondées sur des architectures neuronales de type 'auto-encodeurs' : une phrase est encodée en une représentation latente (par analyse sémantique) puis regénérée à partir de cette dernière (génération contrôlée).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the framework of this thesis, we are interested in developing joint approaches for semantic analysis and controlled generation of texts based on 'auto-encoder'neural architectures: a sentence is encoded into a latent representation (by semantic analysis) and then regenerated from this latent representation (controlled generation).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous nous focaliserons sur des approches faiblement supervisées en utilisant des connaissances sur la langue, le domaine ainsi que le formalisme visé plutôt que sur l'accumulation de données annotées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We will focus on weakly supervised approaches using knowledge of the language, of the domain and of the targeted formalism rather than on the accumulation of annotated data.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

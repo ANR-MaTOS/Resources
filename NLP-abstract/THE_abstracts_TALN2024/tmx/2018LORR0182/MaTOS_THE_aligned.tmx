@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018LORR0182. segId begin by 1, tuid = segId</note>
+        <docid>2018LORR0182</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes de recommandation se sont imposés comme étant des outils indispensables face à une quantité de données qui ne cesse chaque jour de croître depuis l'avènement d'Internet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recommender Systems (RS) have become essential tools to deal with an endless increasing amount of data available on the Internet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Leur objectif est de proposer aux utilisateurs des items susceptibles de les intéresser sans que ces derniers n'aient besoin d'agir pour les obtenir.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Their goal is to provide items that may interest users before they have to find them by themselves.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Après s'être majoritairement focalisés sur la précision de la prédiction d'intérêt, ces systèmes ont évolué pour prendre en compte d'autres critères dans leur processus de recommandation, tels que les facteurs humains inhérents à la prise de décision, afin d'améliorer la qualité et l'utilité des recommandations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>After being exclusively focused on the precision of users'interests prediction task, RS had to evolve by taking into account other criteria like human factors involved in the decision-making process while computing recommendations, so as to improve their quality and usefulness of recommendations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cependant, la prise en compte de certains facteurs humains tels que la diversité et le contexte demeure critiquable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, the way some human factors, such as context and diversity needs, are managed remains open to criticism.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Alors que le contexte des utilisateurs est inféré sur la base d'informations collectées à l'insu de leur vie privée, la prise en compte de la diversité est quant à elle réduite à une dimension qu'un système se doit de maximiser.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While context-aware recommendations relies on exploiting data that are collected without any consideration for users'privacy, diversity has been coming down to a dimension which has to be maximized.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Partant du postulat inverse selon lequel l'analyse de l'évolution de la diversité au cours du temps permet de définir le contexte de l'utilisateur, nous proposons dans ce manuscrit une nouvelle approche de modélisation contextuelle basée sur la diversité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thereby, we argue that analyzing the evolution of diversity over time would be a promising way to define a user's context, under the condition that context is now defined by item attributes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En effet, nous soutenons qu'une variation de diversité remarquable peut être la conséquence d'un changement de contexte et qu'il faut alors adapter la stratégie de recommandation en conséquence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, we support the idea that a sudden variation of diversity can reflect a change of user's context which requires to adapt the recommendation strategy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons la première approche de la littérature permettant de modéliser en temps réel l'évolution de la diversité, ainsi qu'une nouvelle famille de contextes dits implicites n'exploitant aucune donnée sensible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We present in this manuscript the first approach to model the evolution of diversity over time and a new kind of context, called ``implicit contexts'', that are respectful of privacy (in opposition to explicit contexts).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>La possibilité de remplacer les contextes traditionnels (explicites) par les contextes implicites est confirmée de plusieurs manières.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We confirm the benefits of implicit contexts compared to explicit contexts from several points of view.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Premièrement, nous démontrons sur deux corpus issus d'applications réelles qu'il existe un fort recouvrement entre les changements de contextes explicites et les changements de contextes implicites.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a first step, using two large music streaming datasets we demonstrate that explicit and implicit context changes are highly correlated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, une étude utilisateur impliquant de nombreux participants nous permet de démontrer l'existence de liens entre les contextes explicites et les caractéristiques des items consultés dans ces derniers.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a second step, a user study involving many participants allowed us to demonstrate the links between the explicit contexts and the characteristics of the items consulted in the meantime.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Fort de ces constats et du potentiel offert par nos modèles, nous présentons également plusieurs approches de recommandation et de prise en compte des besoins des utilisateurs</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Based on these observations and the advantages offered by our models, we also present several approaches to provide privacy-preserving context-aware recommendations and to take into account user's needs</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

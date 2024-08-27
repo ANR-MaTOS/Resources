@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018TOU30075. segId begin by 1, tuid = segId</note>
+        <docid>2018TOU30075</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans un processus de conception centré sur l'utilisateur, les artefacts évoluent par cycles itératifs jusqu'à ce qu'ils répondent aux exigences des utilisateurs et deviennent ensuite le produit final.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a user-centered design process, artifacts evolve in iterative cycles until they meet user requirements and then become the final product.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Chaque cycle donne l'occasion de réviser la conception et d'introduire de nouvelles exigences qui pourraient affecter les artefacts qui ont été définis dans les phases de développement précédentes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Every cycle gives the opportunity to revise the design and to introduce new requirements which might affect the artifacts that have been set in former development phases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Garder la cohérence des exigences dans tels artefacts tout au long du processus de développement est une activité lourde et longue, surtout si elle est faite manuellement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Keeping the consistency of requirements in such artifacts along the development process is a cumbersome and time-consuming activity, especially if it is done manually.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Actuellement, certains cadres d'applications implémentent le BDD (Développement dirigé par le comportement) et les récits utilisateur comme un moyen d'automatiser le test des systèmes interactifs en construction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nowadays, some software development frameworks implement Behavior-Driven Development (BDD) and User Stories as a means of automating the test of interactive systems under construction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les tests automatisés permettent de simuler les actions de l'utilisateur sur l'interface et, par conséquent, de vérifier si le système se comporte correctement et conformément aux exigences de l'utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Automated testing helps to simulate user's actions on the user interface and therefore check if the system behaves properly and in accordance with the user requirements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Cependant, les outils actuels supportant BDD requièrent que les tests soient écrits en utilisant des événements de bas niveau et des composants qui n'existent que lorsque le système est déjà implémenté.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, current tools supporting BDD requires that tests should be written using low-level events and components that only exist when the system is already implemented.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En conséquence d'un tel bas niveau d'abstraction, les tests BDD peuvent difficilement être réutilisés avec des artefacts plus abstraits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a consequence of such low-level of abstraction, BDD tests can hardly be reused with more abstract artifacts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Afin d'éviter que les tests doivent être écrits sur chaque type d'artefact, nous avons étudié l'utilisation des ontologies pour spécifier à la fois les exigences et les tests, puis exécuter des tests dans tous les artefacts partageant les concepts ontologiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to prevent that tests should be written to every type of artifact, we have investigated the use of ontologies for specifying both requirements and tests once, and then run tests on all artifacts sharing the ontological concepts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>L'ontologie fondée sur le comportement que nous proposons ici vise alors à élever le niveau d'abstraction tout en supportant l'automatisation de tests dans des multiples artefacts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The resultant behavior-based ontology we propose herein is therefore aimed at raising the abstraction level while supporting test automation on multiple artifacts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse présente tel ontologie et une approche fondée sur BDD et les récits utilisateur pour soutenir la spécification et l'évaluation automatisée des exigences des utilisateurs dans les artefacts logiciels tout au long du processus de développement des systèmes interactifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis presents this ontology and an approach based on BDD and User Stories to support the specification and the automated assessment of user requirements on software artifacts along the development process of interactive systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Deux études de cas sont également présentées pour valider notre approche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two case studies are also presented to validate our approach.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>La première étude de cas évalue la compréhensibilité des spécifications des récits utilisateur par une équipe de propriétaires de produit (POs) du département en charge des voyages d'affaires dans notre institut.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first case study evaluates the understandability of User Stories specifications by a team of Product Owners (POs) from the department in charge of business trips in our institute.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>À l'aide de cette première étude de cas, nous avons conçu une deuxième étude pour démontrer comment les récits utilisateur rédigés à l'aide de notre ontologie peuvent être utilisées pour évaluer les exigences fonctionnelles exprimées dans des différents artefacts, tels que les modèles de tâche, les prototypes d'interface utilisateur et les interfaces utilisateur à part entière.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With the help of this first case study, we designed a second one to demonstrate how User Stories written using our ontology can be used to assess functional requirements expressed in different artifacts, such as task models, user interface (UI) prototypes, and full-fledged UIs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Les résultats ont montré que notre approche est capable d'identifier même des incohérences à grain fin dans les artefacts mentionnés, permettant d'établir une compatibilité fiable entre les différents artefacts de conception de l'interface utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results have shown that our approach is able to identify even fine-grained inconsistencies in the mentioned artifacts, allowing establishing a reliable compatibility among different user interface design artifacts.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

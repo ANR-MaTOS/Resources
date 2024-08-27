@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019SACLS489. segId begin by 1, tuid = segId</note>
+        <docid>2019SACLS489</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les procédés de traduction constituent un sujet important pour les traductologues et les linguistes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Translation techniques constitute an important subject in translation studies and in linguistics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Face à un certain mot ou segment difficile à traduire, les traducteurs humains doivent appliquer les solutions particulières au lieu de la traduction littérale, telles que l'équivalence idiomatique, la généralisation, la particularisation, la modulation syntaxique ou sémantique, etc.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>When confronted with a certain word or segment that is difficult to translate, human translators must apply particular solutions instead of literal translation, such as idiomatic equivalence, generalization, particularization, syntactic or semantic modulation, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En revanche, ce sujet a reçu peu d'attention dans le domaine du Traitement Automatique des Langues (TAL).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, this subject has received little attention in the field of Natural Language Processing (NLP).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Notre problématique de recherche se décline en deux questions : est-il possible de reconnaître automatiquement les procédés de traduction ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our research problem is twofold: is it possible to automatically recognize translation techniques?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Pour vérifier notre hypothèse, nous avons annoté un corpus parallèle anglais-français en procédés de traduction, tout en établissant un guide d'annotation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To verify our hypothesis, we annotated a parallel English-French corpus with translation techniques, while establishing an annotation guide.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Notre typologie de procédés est proposée en nous appuyant sur des typologies précédentes, et est adaptée à notre corpus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our typology of techniques is proposed based on previous typologies, and is adapted to our corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>L'accord inter-annotateur (0,67) est significatif mais dépasse peu le seuil d'un accord fort (0,61), ce qui reflète la difficulté de la tâche d'annotation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The inter-annotator agreement (0.67) is significant but slightly exceeds the threshold of a strong agreement (0.61), reflecting the difficulty of the annotation task.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>En nous fondant sur des exemples annotés, nous avons ensuite travaillé sur la classification automatique des procédés de traduction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Based on annotated examples, we then worked on the automatic classification of translation techniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Même si le jeu de données est limité, les résultats expérimentaux valident notre hypothèse de travail concernant la possibilité de reconnaître les différents procédés de traduction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Even if the dataset is limited, the experimental results validate our working hypothesis regarding the possibility of recognizing the different translation techniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous avons aussi montré que l'ajout des traits sensibles au contexte est pertinent pour améliorer la classification automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have also shown that adding context-sensitive features is relevant to improve the automatic classification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>En vue de tester la généricité de notre typologie de procédés de traduction et du guide d'annotation, nos études sur l'annotation manuelle ont été étendues au couple de langues anglais-chinois.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to test the genericity of our typology of translation techniques and the annotation guide, our studies of manual annotation have been extended to the English-Chinese language pair.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Ce couple de langues partagent beaucoup moins de points communs par rapport au couple anglais</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This pair shares far fewer linguistic and cultural similarities than the English-French pair.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Le guide d'annotation a été adapté et enrichi.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The annotation guide has been adapted and enriched.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Dans le but de valider l'intérêt de ces études, nous avons conçu un outil d'aide à la compréhension écrite pour les apprenants de français langue étrangère.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With the aim to validate the benefits of these studies, we have designed a tool to help learners of French as a foreign language in reading comprehension.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Une expérience sur la compréhension écrite avec des étudiants chinois confirme notre hypothèse de travail et permet de modéliser l'outil.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An experiment on reading comprehension with Chinese students confirms our working hypothesis and allows us to model the tool.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>D'autres perspectives de recherche incluent l'aide à la construction de ressource de paraphrases, l'évaluation de l'alignement automatique de mots et l'évaluation de la qualité de la traduction automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Other research perspectives include helping to build paraphrase resources, evaluating automatic word alignment and evaluating the quality of machine translation.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2012PA112298. segId begin by 1, tuid = segId</note>
+        <docid>2012PA112298</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Il est généralement facile pour les humains de distinguer rapidement différents lieux en se basant uniquement sur leur aspect visuel..</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Usually, human beings are able to quickly distinguish between different places, solely from their visual appearance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ces catégories sémantiques peuvent être utilisées comme information contextuelle favorisant la détection et la reconnaissance d'objets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such a semantic category can thus be used as contextual information which fosters object detection and recognition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Des travaux récents en reconnaissance des lieux visent à doter les robots de capacités similaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recent works in semantic place recognition seek to endow the robot with similar capabilities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Contrairement aux travaux classiques, portant sur la localisation et la cartographie, cette tâche est généralement traitée comme un problème d'apprentissage supervisé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Contrary to classical localization and mapping works, this problem is usually addressed as a supervised learning problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La reconnaissance de lieux sémantiques-la capacité à reconnaître la catégorie sémantique à laquelle une scène appartient – peut être considérée comme une condition essentielle en robotique autonome.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The question of semantic places recognition in robotics-the ability to recognize the semantic category of a place to which scene belongs to-is therefore a major requirement for the future of autonomous robotics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Un robot autonome doit en effet pouvoir apprendre facilement l'organisation sémantique de son environnement pour pouvoir fonctionner et interagir avec succès.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is indeed required for an autonomous service robot to be able to recognize the environment in which it lives and to easily learn the organization of this environment in order to operate and interact successfully.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Si nous faisons l'hypothèse que les objets sont plus faciles à reconnaître quand la scène dans laquelle ils apparaissent est bien identifiée, la deuxième approche semble plus appropriée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If we make the hypothesis that objects are more easily recognized when the scene in which they appear is identified, the second approach seems more suitable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Elle est cependant fortement dépendante de la nature des descripteurs d'images utilisées qui sont généralement dérivés empiriquement a partir des observations générales sur le codage d'images.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is however strongly dependent on the nature of the image descriptors used, usually empirically derived from general considerations on image coding.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>En opposition avec ces propositions, une autre approche de codage des images, basée sur un point de vue plus théorique, a émergé ces dernières années.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Compared to these many proposals, another approach of image coding, based on a more theoretical point of view, has emerged the last few years.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Les modèles d'extraction de caractéristiques fondés sur le principe de la minimisation d'une fonction d'énergie en relation avec un modèle statistique génératif expliquant au mieux les données, ont abouti à l'apparition des Machines de Boltzmann Restreintes (Rectricted Boltzmann Machines : RBMs) capables de coder une image comme la superposition d'un nombre limité de caractéristiques extraites à partir d'un plus grand alphabet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Energy-based models of feature extraction based on the principle of minimizing the energy of some function according to the quality of the reconstruction of the image has lead to the Restricted Boltzmann Machines (RBMs) able to code an image as the superposition of a limited number of features taken from a larger alphabet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Il a été montré que ce processus peut être répété dans une architecture plus profonde, conduisant à une représentation parcimonieuse et efficace des données initiales dans l'espace des caractéristiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It has also been shown that this process can be repeated in a deep architecture, leading to a sparse and efficient representation of the initial data in the feature space.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Le problème complexe de la classification dans l'espace de début est ainsi remplacé par un problème plus simple dans l'espace des caractéristiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A complex problem of classification in the input space is thus transformed into an easier one in the feature space.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Après avoir realisé un codage approprié, une régression softmax dans l'espace de projection est suffisante pour obtenir des résultats de classification prometteurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that after appropriate coding a softmax regression in the projection space is sufficient to achieve promising classification results.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>A notre connaissance, cette approche n'a pas encore été proposée pour la reconnaissance de scène en robotique autonome.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To our knowledge, this approach has not yet been investigated for scene recognition in autonomous robotics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Nous avons comparé nos méthodes avec les algorithmes de l'état-de-l'art en utilisant une base de données standard de localisation de robot.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We compare our methods with the state-of-the-art algorithms using a standard database of robot localization.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Nous avons étudié l'influence des paramètres du système et comparé les différentes conditions sur la même base de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We study the influence of system parameters and compare different conditions on the same dataset.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Les expériences réalisées montrent que le modèle que nous proposons, tout en étant très simple, conduit à des résultats comparables à l'état-de-l'art sur une tâche de reconnaissance de lieux sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These experiments show that our proposed model, while being very simple, leads to state-of-the-art results on a semantic place recognition task.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2009-50_1_ID=TAL-2009-50-1-04-Jaquet. segId begin by 1, tuid = segId</note>
+        <docid>2009-50_1_ID=TAL-2009-50-1-04-Jaquet</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La résolution de métonymie des entités nommées constitue un réel enjeu pour le traitement automatique des langues et bénéficie depuis peu d'un intérêt grandissant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Named Entity metonymy resolution is a challenging natural langage processing task, which has been recently subject to a growing interest.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous décrivons la méthode que nous avons développée pour la résolution de métonymie des entités nommées dans le cadre de la compétition SemEval 2007.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this paper, we describe the method we have developed in order to solve Named entity metonymy in the framework of the SemEval 2007 competition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Afin de résoudre les métonymies sur les noms de lieux et noms d'organisations, tel que requis pour cette tâche, nous avons mis au point un système hybride fondé sur l'utilisation d'un analyseur syntaxique robuste combiné avec une méthode d'analyse distributionnelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to perform Named Entity metonymy resolution on location names and company names, as required for this task, we developed a hybrid system based on the use of a robust parser that extracts deep syntactic relations combined with a non supervised distributional approach, also relying on the relations extracted by the parser.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous décrivons cette méthode ainsi que les résultats obtenus par le système dans le cadre de la compétition SemEval 2007.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We describe this methodology as well as the results obtained at SemEval 2007.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

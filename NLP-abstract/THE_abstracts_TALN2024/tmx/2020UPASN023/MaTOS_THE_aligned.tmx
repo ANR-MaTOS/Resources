@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020UPASN023. segId begin by 1, tuid = segId</note>
+        <docid>2020UPASN023</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse porte sur la détection d'événements dans des signaux issus de capteurs sols pour le suivi des personnes âgées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis addresses the subject of event detection in temporal signals for elderly monitoring by the use of a floor pressure sensor.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Au vu des questions pratiques, il semble en effet que les capteurs de pression situés au sol soient de bons candidats pour les activités de suivi, notamment la détection de chute.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We first show that most proposed systems do not meet main practical issues and that floor systems constitute promising candidates for monitoring tasks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, afin de concevoir un détecteur de chutes, nous proposons une approche basée sur les forêts aléatoires, tout en répondant aux contraintes matérielles à l’aide d’une procédure de sélection des variables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since complex signals require sophisticated models, we propose a random-forest-based approach that detects falls with state-of-the-art accuracy and meets hardware constraints with a feature selection procedure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les performances sont améliorées à l’aide d’une méthode d’augmentation des données ainsi qu’à l'agrégation temporelle des réponses du modèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The model performance is improved with data augmentation and time aggregation of the random forest outputs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous les testons sur plusieurs ensembles de données, montrant ainsi des résultats encourageants pour la suite, et une implémentation Python est mise à disposition.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Methods are tested on several data sets, showing interesting potential continuation, and a Python implementation is made available.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Enfin, motivés par la question du suivi des personnes âgées tout en traitant un signal unidimensionnel pour une grande zone, nous proposons de distinguer les personnes âgées des individus plus jeunes grâce à un modèle de réseau de neurones convolutifs et un apprentissage de dictionnaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, motivated by the issue of elderly monitoring while dealing with one-dimensional signals for a large areas, we propose to distinguish elderly persons from younger individuals with a model based on convolutional neural network and convolutional dictionary learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Les signaux à traiter étant principalement constitués de marches, la première brique du modèle est entraînée pour se focaliser sur les pas dans les signaux, et la seconde partie du modèle est entraînée séparément sur la tâche finale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since signals are mainly made of walks, the first part of the model is trained to recognize steps, and the last part of the model is trained with all previous layers frozen.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cette nouvelle approche de la classification de la marche permet de reconnaître avec efficacité les signaux issus de personnes âgées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This novel approach to gait classification allows to isolate elderly-generated signals with very high accuracy.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

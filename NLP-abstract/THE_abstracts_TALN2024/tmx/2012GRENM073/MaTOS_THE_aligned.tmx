@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2012GRENM073. segId begin by 1, tuid = segId</note>
+        <docid>2012GRENM073</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le cadre général de cette thèse est l'indexation sémantique et la recherche d'informations, appliquée à des documents multimédias.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The general framework of this thesis is semantic indexing and information retrieval, applied to multimedia documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, nous nous intéressons à l'indexation sémantique des concepts dans des images et vidéos par les approches d'apprentissage actif, que nous utilisons pour construire des corpus annotés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More specifically, we are interested in the semantic indexing of concepts in images and videos by the active learning approaches that we use to build annotated corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Tout au long de cette thèse, nous avons montré que les principales difficultés de cette tâche sont souvent liées, en général, à l'fossé sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Throughout this thesis, we have shown that the main difficulties of this task are often related, in general, to the semantic-gap.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>En outre, elles sont liées au problème de classe-déséquilibre dans les ensembles de données à grande échelle, où les concepts sont pour la plupart rares.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, they are related to the class-imbalance problem in large scale datasets, where concepts are mostly sparse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Pour l'annotation de corpus, l'objectif principal de l'utilisation de l'apprentissage actif est d'augmenter la performance du système en utilisant que peu d'échantillons annotés que possible, ainsi minimisant les coûts de l'annotations des données (par exemple argent et temps).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For corpus annotation, the main objective of using active learning is to increase the system performance by using as few labeled samples as possible, thereby minimizing the cost of labeling data (e.g. money and time).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous avons contribué à plusieurs niveaux de l'indexation multimédia et nous avons proposé trois approches qui succèdent des systèmes de l'état de l'art : i) l'approche multi-apprenant (ML) qui surmonte le problème de classe-déséquilibre dans les grandes bases de données, ii) une méthode de reclassement qui améliore l'indexation vidéo, iii) nous avons évalué la normalisation en loi de puissance et de l'APC et a montré son efficacité dans l'indexation multimédia.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we have contributed in several levels of multimedia indexing and proposed three approaches that outperform state-of-the-art systems: i) the multi-learner approach (ML) that overcomes the class-imbalance problem in large-scale datasets, ii) a re-ranking method that improves the video indexing, iii) we have evaluated the power-law normalization and the PCA and showed its effectiveness in multimedia indexing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En outre, nous avons proposé l'approche ALML qui combine le multi-apprenant avec l'apprentissage actif, et nous avons également proposé une méthode incrémentale qui accélère l'approche proposé (ALML).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, we have proposed the ALML approach that combines the multi-learner with active learning, and also proposed an incremental method that speeds up ALML approach.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>En outre, nous avons proposé l'approche de nettoyage actif, qui aborde la qualité des annotations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, we have proposed the active cleaning approach, which tackles the quality of annotations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Les méthodes proposées ont été tous validées par plusieurs expériences, qui ont été menées et évaluées sur des collections à grande échelle de l'indice de benchmark internationale bien connue, appelés TRECVID.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed methods were validated through several experiments, which were conducted and evaluated on large-scale collections of the well-known international benchmark, called TrecVid.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous avons présenté notre système d'annotation dans le monde réel basé sur l'apprentissage actif, qui a été utilisé pour mener les annotations de l'ensemble du développement de la campagne TRECVID en 2011, et nous avons présenté notre participation à la tâche d'indexation sémantique de cette campagne, dans laquelle nous nous sommes classés à la 3ème place sur 19 participants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we have presented our real-world annotation system based on active learning, which was used to lead the annotations of the development set of TrecVid 2011 campaign, and we have presented our participation at the semantic indexing task of the mentioned campaign, in which we were ranked at the 3rd place out of 19 participants.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

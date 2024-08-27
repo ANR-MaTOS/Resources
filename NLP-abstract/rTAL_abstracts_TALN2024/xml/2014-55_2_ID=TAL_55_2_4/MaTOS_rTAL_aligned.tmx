@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2014-55_2_ID=TAL_55_2_4. segId begin by 1, tuid = segId</note>
+        <docid>2014-55_2_ID=TAL_55_2_4</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cet article présente CROC (Coreference Resolution for Oral Corpus), le premier système de résolution des coréférences en français reposant sur des techniques d'apprentissage automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We present CROC (Coreference Resolution for Oral Corpus), the first machine learning system for coreference resolution in French.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Une des spécificités du système réside dans son apprentissage sur des données exclusivement orales, à savoir ANCOR (anaphore et coréférence dans les corpus oraux), le premier corpus de français oral transcrit annoté en relations anaphoriques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One specific aspect of the system is that it has been trained on data that are exclusively oral, namely ANCOR (ANaphora and Coreference in ORal corpus), the first corpus in oral French with anaphorical relations annotations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En l'état actuel, le système CROC nécessite un repérage préalable des mentions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In its current state, the CROC system requires pre-annotated mentions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous détaillons les choix des traits – issus du corpus ou calculés – utilisés par l'apprentissage, et nous présentons un ensemble d'expérimentations avec ces traits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We detail the features that we chose to be used by the learning algorithms, and we present a set of experiments with these features.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les scores obtenus sont très proches de ceux de l'état de l'art des systèmes conçus pour l'écrit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The scores we obtain are close to those of state-of-the-art systems for written English.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous concluons alors en donnant des perspectives sur la réalisation d'un système end-to-end valable à la fois pour l'oral transcrit et l'écrit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then we give future works on the design of an end-to-end system for oral and written French.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

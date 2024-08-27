@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2005-46_3_ID=articleId=9947. segId begin by 1, tuid = segId</note>
+        <docid>2005-46_3_ID=articleId=9947</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Une analyse syntaxique profonde et robuste améliore la performance d'un système de question-réponse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The availability of robust and deep syntactic parsing can improve the performance of all modules of a Question Answering system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Le système utilise l'information contenue dans une version analysée syntaxiquement du corpus des documents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The system can make use of information found in the fully parsed version of the document collections.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous montrerons que l'utilisation de l'information syntaxique améliore certains modules de Joost, comme l'extraction et l'ordonnancement final des réponses, l'acquisition automatique d'information lexicale, l'extraction de faits hors ligne et la recherche de passages.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We demonstrate that this improves the performance of various components of the system, such as answer extraction and selection, lexical acquisition, off-line relation extraction, and passage retrieval.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

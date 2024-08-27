@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016USPCC197. segId begin by 1, tuid = segId</note>
+        <docid>2016USPCC197</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Ce document rassemble les travaux effectués durant mes années de thèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This document presents the problems I have been interested in during my PhD thesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Je commence par une présentation concise des résultats principaux, puis viennent trois parties relativement indépendantes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>I begin with a concise presentation of the main results, followed by three relatively independent parts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans la première partie, je considère des problèmes d'inférence statistique sur un échantillon i.i.d. issu d'une loi inconnue à support dénombrable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first part, I consider statistical inference problems on an i.i.d. sample from an unknown distribution over a countable alphabet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Le premier chapitre est consacré aux propriétés de concentration du profil de l'échantillon et de la masse manquante.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first chapter is devoted to the concentration properties of the sample's profile and of the missing mass.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Il s'agit d'un travail commun avec Stéphane Boucheron et Mesrob Ohannessian.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is a joint work with Stéphane Boucheron and Mesrob Ohannessian.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Après avoir obtenu des bornes sur les variances, nous établissons des inégalités de concentration de type Bernstein, et exhibons un vaste domaine de lois pour lesquelles le facteur de variance dans ces inégalités est tendu.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>After obtaining bounds on variances, we establish Bernstein-type concentration inequalities and exhibit a vast domain of sampling distributions for which the variance factor in these inequalities is tight.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Le deuxième chapitre présente un travail en cours avec Stéphane Boucheron et Elisabeth Gassiat, concernant le problème de la compression universelle adaptative d'un tel échantillon.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second chapter presents a work in progress with Stéphane Boucheron and Elisabeth Gassiat, on the problem of universal adaptive compression over countable alphabets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous établissons des bornes sur la redondance minimax des classes enveloppes, et construisons un code quasi-adaptatif sur la collection des classes définies par une enveloppe à variation régulière.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We give bounds on the minimax redundancy of envelope classes, and construct a quasi-adaptive code on the collection of classes defined by a regularly varying envelope.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans la deuxième partie, je m'intéresse à des marches aléatoires sur des graphes aléatoires à degrés precrits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second part, I consider random walks on random graphs with prescribed degrees.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Je présente d'abord un résultat obtenu avec Justin Salez, établissant le phénomène de cutoff pour la marche sans rebroussement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>I first present a result obtained with Justin Salez, establishing the cutoff phenomenon for non-backtracking random walks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Sous certaines hypothèses sur les degrés, nous déterminons précisément le temps de mélange, la fenêtre du cutoff, et montrons que le profil de la distance à l'équilibre converge vers la fonction de queue gaussienne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Under certain degree assumptions, we precisely determine the mixing time, the cutoff window, and show that the profile of the distance to equilibrium converges to the Gaussian tail function.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Puis je m'intéresse à la comparaison des temps de mélange de la marche simple et de la marche sans rebroussement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then I consider the problem of comparing the mixing times of the simple and non-backtracking random walks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Enfin, la troisième partie est consacrée aux propriétés de concentration de tirages pondérés sans remise et correspond à un travail commun avec Yuval Peres et Justin Salez.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The third part is devoted to the concentration properties of weighted sampling without replacement and corresponds to a joint work with Yuval Peres and Justin Salez.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

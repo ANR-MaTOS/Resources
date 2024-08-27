@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018SACLS338. segId begin by 1, tuid = segId</note>
+        <docid>2018SACLS338</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les annotations sémantiques sont utilisées dans de nombreux domaines comme celui de la santé et servent à différentes tâches notamment la recherche et le partage d’information ou encore l'aide à la décision.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Semantic annotations are often used in a wide range of applications ranging from information retrieval to decision support.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les annotations sont produites en associant à des documents digitaux des labels de concepts provenant des systèmes d’organisation de la connaissance (Knowledge Organization Systems, ou KOS, en anglais) comme les ontologies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Annotations are produced through the association of concept labels from Knowledge Organization System (KOS), i.e. ontology, thesaurus, dictionaries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cependant, la nature dynamique de la connaissance engendre régulièrement de profondes modifications au niveau du contenu des KOS provoquant ainsi un décalage entre la définition des concepts et les annotations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>New concepts can be added, obsolete ones removed and the definition of existing concepts may be refined through the modification of their labels/properties.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Elles permettent alors aux ordinateurs d'interpréter, connecter et d'utiliser de grandes quantités de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Annotations enable machines to interpret, link, and use a vast amount of data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans ce mémoire de thèse, nous proposons une approche originale appelée MAISA pour résoudre le problème de l'adaptation des annotations sémantiques engendrée par l’évolution des KOS et pour lequel nous distinguons deux cas.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis we propose a framework called MAISA to tackle the problem of adapting outdated annotations when the KOS utilized to create them change. We distinguish two different cases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans le premier cas, nous considérons que les annotations sont directement modifiables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first one we consider that annotations are directly modifiable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Pour traiter ce problème nous avons défini une approche à base de règles combinant des informations provenant de l’évolution des KOS et des connaissances extraites du Web.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this case, we proposed a rule-based approach implementing information derived from the evolution of KOS as well as external knowledge from the Web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans le deuxième cas, nous considérons que les annotations ne sont pas modifiables comme c’est bien souvent le cas des annotations associées aux données des patients.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second case, we consider that the annotations are not modifiable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>L’objectif ici étant de pouvoir retrouver les documents annotées avec une version du KOS donnée lorsque l’utilisateur interroge le système stockant ces documents avec le vocabulaire du même KOS mais d’une version différente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The goal is then to keep the annotated documents searchable even if the annotations are produced with a given KOS version but the user used another version to query them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Pour gérer ce décalage de versions, nous avons proposé un graphe de connaissance représentant un KOS et son historique et un mécanisme d’enrichissement de requêtes permettant d’extraire de ce graphe l’historique d’un concept pour l’ajouter à la requête initiale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this case, we designed a knowledge graph that represent a KOS and its successive evolution and propose a method to extract the history of a concept and add the gained label to the initial query allowing to deal with annotation evolution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une évaluation expérimentale de notre approche pour la maintenance des annotations à partir de cas réels construits sur quatre KOS du domaine de la santé : ICD-9-CM, MeSH, NCIt et SNOMED CT.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We experimentally evaluated MAISA on realistic cases-studies built from four well-known biomedical KOS: ICD-9-CM, MeSH, NCIt and SNOMED CT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons à travers l’utilisation des métriques classiques que l’approche proposée permet, dans les deux cas considérés, d’améliorer la maintenance des annotations sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that the proposed maintenance method allow to maintain semantic annotations using standard metrics.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

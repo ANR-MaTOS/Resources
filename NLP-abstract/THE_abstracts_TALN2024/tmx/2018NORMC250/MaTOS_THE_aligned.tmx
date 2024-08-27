@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018NORMC250. segId begin by 1, tuid = segId</note>
+        <docid>2018NORMC250</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse nous étudions différentes questions relatives à la mise en pratique de modèles d'apprentissage profond.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we examine some practical difficulties of deep learning models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>En effet malgré les avancées prometteuses de ces algorithmes en vision par ordinateur, leur emploi dans certains cas d'usage réels reste difficile.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, despite the promising results in computer vision, implementing them in some situations raises some questions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Une première difficulté est, pour des tâches de classification d'images, de rassembler pour des milliers de catégories suffisamment de données d'entraînement pour chacune des classes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For example, in classification tasks where thousands of categories have to be recognised, it is sometimes difficult to gather enough training data for each category.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>C'est pourquoi nous proposons deux nouvelles approches adaptées à ce scénario d'apprentissage, appelé &amp;lt ;&amp;lt ;classification zero-shot&amp;gt ;&amp;gt ;.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose two new approaches for this learning scenario, called &amp;lt;&amp;lt;zero-shot learning&amp;gt;&amp;gt;.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>L'utilisation d'information sémantique pour modéliser les classes permet de définir les modèles par description, par opposition à une modélisation à partir d'un ensemble d'exemples, et rend possible la modélisation sans donnée de référence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We use semantic information to model classes which allows us to define models by description, as opposed to modelling from a set of examples.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>L'idée fondamentale du premier chapitre est d'obtenir une distribution d'attributs optimale grâce à l'apprentissage d'une métrique, capable à la fois de sélectionner et de transformer la distribution des données originales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first chapter we propose to optimize a metric in order to transform the distribution of the original data and to obtain an optimal attribute distribution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans le chapitre suivant, contrairement aux approches standards de la littérature qui reposent sur l'apprentissage d'un espace d'intégration commun, nous proposons de générer des caractéristiques visuelles à partir d'un générateur conditionnel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the following chapter, unlike the standard approaches of the literature that rely on the learning of a common integration space, we propose to generate visual features from a conditional generator.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Une fois générés ces exemples artificiels peuvent être utilisés conjointement avec des données réelles pour l'apprentissage d'un classifieur discriminant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The artificial examples can be used in addition to real data for learning a discriminant classifier.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans une seconde partie de ce manuscrit, nous abordons la question de l'intelligibilité des calculs pour les tâches de vision par ordinateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second part of this thesis, we address the question of computational intelligibility for computer vision tasks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>En raison des nombreuses et complexes transformations des algorithmes profonds, il est difficile pour un utilisateur d'interpréter le résultat retourné.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Due to the many and complex transformations of deep learning algorithms, it is difficult for a user to interpret the returned prediction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>L'intelligibilité de la représentation permet à un utilisateur d'examiner sur quelle base l'inférence a été réalisée et ainsi d'accepter ou de rejeter la décision suivant sa connaissance et son expérience humaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This semantic bottleneck allows to detect failure cases in the prediction process so as to accept or reject the decision.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018CLFAC037. segId begin by 1, tuid = segId</note>
+        <docid>2018CLFAC037</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La thèse consiste en l'apprentissage d'une tâche complexe de robotique de manipulation en utilisant très peu d'aprioris.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The thesis is focused on learning a complex manipulation robotics task using little knowledge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, la tâche apprise consiste à atteindre un objet avec un robot série. L'objectif est de réaliser cet apprentissage sans paramètres de calibrage des caméras, modèles géométriques directs, descripteurs faits à la main ou des démonstrations d'expert.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More precisely, the concerned task consists in reaching an object with a serial arm and the objective is to learn it without camera calibration parameters, forward kinematics, handcrafted features, or expert demonstrations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'apprentissage par renforcement profond est une classe d'algorithmes particulièrement intéressante dans cette optique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Deep reinforcement learning algorithms suit well to this objective.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>En effet, l'apprentissage par renforcement permet d’apprendre une compétence sensori-motrice en se passant de modèles dynamiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, reinforcement learning allows to learn sensori-motor mappings while dispensing with dynamics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, l'apprentissage profond permet de se passer de descripteurs faits à la main pour la représentation d'état.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Besides, deep learning allows to dispense with handcrafted features for the state space representation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Cependant, spécifier les objectifs sans supervision humaine est un défi important.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, it is difficult to specify the objectives of the learned task without requiring human supervision.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Certaines solutions consistent à utiliser des signaux de récompense informatifs ou des démonstrations d'experts pour guider le robot vers les solutions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Some solutions imply expert demonstrations or shaping rewards to guide robots towards its objective.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>D'autres consistent à décomposer l'apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The latter is generally computed using forward kinematics and handcrafted visual modules.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Par exemple, l'apprentissage "petit à petit" ou "du simple au compliqué" peut être utilisé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Another class of solutions consists in decomposing the complex task.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Cependant, cette stratégie nécessite la connaissance de l'objectif en termes d'état.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Learning from easy missions can be used, but this requires the knowledge of a goal state.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>D'autres approches utilisant plusieurs robots en parallèle peuvent également être utilisés mais nécessite du matériel coûteux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Alternate approaches which use several agents in parallel to increase the probability of success can be used but are costly.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, nous décomposons la tâche d'atteinte en 3 sous tâches.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, humans first look at an object before reaching it.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>La première tâche consiste à apprendre à fixer un objet avec un système de deux caméras pour le localiser dans l'espace.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first learned task is an object fixation task which is aimed at localizing the object in the 3D space.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Cette tâche est apprise avec de l'apprentissage par renforcement profond et un signal de récompense faiblement supervisé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is learned using deep reinforcement learning and a weakly supervised reward function.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Pour la tâche suivante, deux compétences sont apprises en parallèle : la fixation d'effecteur et une fonction de coordination main-oeil.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second task consists in learning jointly end-effector binocular fixations and a hand-eye coordination function.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Le but de cette tâche est d'être capable de localiser l'effecteur du robot à partir des coordonnées articulaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is also learned using a similar set-up and is aimed at localizing the end-effector in the 3D space.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>En plus de la tâche d'atteinte, un predicteur d'atteignabilité d'objet est appris.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, without using additional priors, an object reach ability predictor is learned in parallel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>La principale contribution de ces travaux est l'apprentissage d'une tâche de robotique complexe en n'utilisant que très peu de supervision.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main contribution of this thesis is the learning of a complex robotic task with weak supervision.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

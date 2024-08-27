@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016TOU30034. segId begin by 1, tuid = segId</note>
+        <docid>2016TOU30034</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les recherches passées constituent pourtant une source d'information utile pour les nouveaux utilisateurs (nouvelles requêtes).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Past searches provide a useful source of information for new users (new queries).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>En raison de l'absence de collections ad-hoc de RI, à ce jour il y a un faible intérêt de la communauté RI autour de l'utilisation des recherches passées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Due to the lack of ad-hoc IR collections, to this date there is a weak interest of the IR community on the use of past search results.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En effet, la plupart des collections de RI existantes sont composées de requêtes indépendantes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, most of the existing IR collections are composed of independent queries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ces collections ne sont pas appropriées pour évaluer les approches fondées sur les requêtes passées parce qu'elles ne comportent pas de requêtes similaires ou qu'elles ne fournissent pas de jugements de pertinence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These collections are not appropriate to evaluate approaches rooted in past queries because they do not gather similar queries due to the lack of relevance judgments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, il n'est pas facile d'évaluer ce type d'approches.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, there is no easy way to evaluate the convenience of these approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>En outre, l'élaboration de ces collections est difficile en raison du coût et du temps élevés nécessaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, elaborating such collections is difficult due to the cost and time needed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Une alternative consiste à simuler les collections.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus a feasible alternative is to simulate such collections.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, les documents pertinents de requêtes passées similaires peuvent être utilisées pour répondre à une nouvelle requête.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Besides, relevant documents from similar past queries could be used to answer the new query.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>De plus, ce principe peut également bénéficier d'un clustering des recherches antérieures selon leurs similarités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This principle could benefit from clustering of past searches according to their similarities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Quatre algorithmes probabilistes pour la réutilisation des résultats de recherches passées sont ensuite proposés et évalués.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, in this thesis a framework to simulate ad-hoc approaches based on past search results is implemented and evaluated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Enfin, une nouvelle mesure dans un contexte de clustering est proposée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Four randomized algorithms to improve precision are proposed and evaluated, finally a new measure in the clustering context is proposed.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

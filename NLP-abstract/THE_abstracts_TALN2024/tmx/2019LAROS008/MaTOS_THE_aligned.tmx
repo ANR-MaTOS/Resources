@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019LAROS008. segId begin by 1, tuid = segId</note>
+        <docid>2019LAROS008</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Nous abordons d’abord le problème de la représentation sous forme d’un graphe de l’image et de ses applications en reconnaissance des formes, en mettant l’accent sur les applications de recherche d’images basées sur le contenu (CBIR).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In information retrieval tasks from image databases where content representation is based on graphs, the evaluation of similarity is based both on the appearance of spatial entities and on their mutual relationships.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les images utilisées dans cette thèse sont des images de bandes dessinées, qui possèdent des spécificités qui sont des freins pour les méthodes de recherche d’information par le contenu utilisées dans la littérature.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis we present a novel scheme of Attributed Relational Adjacency Graphs representation and mining, which has been applied in content-based retrieval of comic images.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons ainsi une représentation qui permet d’obtenir des graphes stables et qui conserve des informations structurelles de haut niveau pour les objets d’intérêt dans les images de bandes dessinées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a graph representation that yields stable graphs and allow to retain high-level and structural information of objects of interest in comic images.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, nous étendons le problème d’indexation et d’appariement aux structures de graphes représentant les images d’une bande dessinée et nous l’appliquons au problème de la recherche d’information.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Next, we extend the indexing and matching problem to graph structures representing the comic image, and apply it to the problem of retrieval.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Un album de bandes dessinées est ainsi transformé en une base de graphes, chaque graphe correspondant à la description d’une seule case.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The graphs in the graph database representing the whole comic volume are then mined for frequent patterns (or frequent substructures).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>La stratégie utilisée pour retrouver un objet ou un personnage donné, consiste donc à rechercher des motifs fréquents (ou des sous-structures fréquentes) dans cette base de graphes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This step is to overcome the non-repeatability problem caused by the unavoidable errors introduced into the graph structure during the graph construction stage, which ultimately create a semantic gap between the graph and the content of the comic image.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Il apparait donc un écart sémantique entre le graphe et le contenu de l’image de bande dessinée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Experiments of performance measures is addressed to evaluate the performance of this CBIR system.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

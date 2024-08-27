@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016SACLC058. segId begin by 1, tuid = segId</note>
+        <docid>2016SACLC058</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Sachant qu'une grande partie des offres d'emplois et des profils candidats est en ligne, le e-recrutement constitue un riche objet d'étude.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With so many job adverts and candidate profiles available online, the e-recruitment constitutes a rich object of study.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Déduire de tels attributs structurés à partir de donnée textuelle brute est le problème abordé dans cette thèse, sous le nom de normalisation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One of the difficulties when dealing with this type of raw textual data is being able to grasp the concepts contained in it, which is the problem of standardization that is tackled in this thesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ce traitement traduit donc chaque document en un language commun, ce qui permet d'agréger l'ensemble des données dans un format exploitable et compréhensible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A nomenclature is by definition a finite set of meaningful concepts, which means that the attributes resulting from standardization are a structured representation of the information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Quelle structure de nomenclature est la plus adaptée à la normalisation, et comment l'exploiter ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>What structure of nomenclature is the best suited for standardization, and how to leverage it?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Est-il possible de construire automatiquement une telle nomenclature de zéro, ou de normaliser sans en avoir une ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Is it possible to automatically build such a nomenclature from scratch, or to manage the standardization process without one?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Pour illustrer le problème de la normalisation, nous allons étudier par exemple la déduction des compétences ou de la catégorie professionelle d'une offre d'emploi, ou encore du niveau d'étude d'un profil de candidat.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To illustrate the various obstacles of standardization, the examples we are going to study include the inference of the skills or the category of a job advert, or the level of training of a candidate profile.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Un défi du e-recrutement est que les concepts évoluent continuellement, de sorte que la normalisation se doit de suivre les tendances du marché.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One of the challenges of e-recruitment is that the concepts are continuously evolving, which means that the standardization must be up-to-date with job market trends.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>A la lumière de cela, nous allons proposer un ensemble de modèles d'apprentissage statistique nécessitant le minimum de supervision et facilement adaptables à l'évolution des nomenclatures.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In light of this, we will propose a set of machine learning models that require minimal supervision and can easily adapt to the evolution of the nomenclatures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Les questions posées ont trouvé des solutions dans le raisonnement à partir de cas, le learning-to-rank semi-supervisé, les modèles à variable latente, ainsi qu'en bénéficiant de l'Open Data et des médias sociaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The questions raised found partial answers using Case Based Reasoning, semi-supervised Learning-to-Rank, latent variable models, and leveraging the evolving sources of the semantic web and social media.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Les différents modèles proposés ont été expérimentés sur des données réelles, avant d'être implémentés industriellement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The different models proposed have been tested on real-world data, before being implemented in a industrial environment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>La normalisation résultante est au coeur de SmartSearch, un projet qui fournit une analyse exhaustive du marché de l'emploi.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The resulting standardization is at the core of SmartSearch, a project which provides a comprehensive analysis of the job market.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

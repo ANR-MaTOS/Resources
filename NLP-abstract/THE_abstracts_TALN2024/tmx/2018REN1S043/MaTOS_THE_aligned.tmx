@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018REN1S043. segId begin by 1, tuid = segId</note>
+        <docid>2018REN1S043</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans ces travaux de thèse nous proposons de tirer parti de la théorie des ensembles flous afin d'améliorer les interactions entre les systèmes de bases de données et les utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we are interested in how we can leverage fuzzy logic to improve the interactions between relational database systems and humans.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les mécanismes coopératifs visent à aider les utilisateurs à mieux interagir avec les SGBD.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Cooperative answering techniques aim to help users harness the potential of DBMSs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ces mécanismes doivent faire preuve de robustesse : ils doivent toujours pouvoir proposer des réponses à l'utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These techniques are expected to be robust and always provide answer to users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Empty set (0,00 sec) est un exemple typique de réponse qu'il serait désirable d'éradiquer.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Empty set (0,00 sec) is a typical example of answer that one may wish to never obtain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le caractère informatif des explications de réponses est parfois plus important que les réponses elles-mêmes : ce peut être le cas avec les réponses vides et pléthoriques par exemple, d'où l'intérêt de mécanismes coopératifs robustes, capables à la fois de contribuer à l'explication ainsi qu'à l'amélioration des résultats.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The informative nature of explanations is higher than that of actual answers in several cases, e.g. empty answer sets and plethoric answer sets, hence the interest of robust cooperative answering techniques capable of both explaining and improving an answer set.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, l'utilisation de termes de la langue naturelle pour décrire les données permet de garantir l'interprétabilité des explications fournies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Using terms from natural language to describe data --- with labels from fuzzy vocabularies --- contributes to the interpretability of explanations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Permettre à l'utilisateur d'utiliser des mots de son propre vocabulaire contribue à la personnalisation des explications et améliore l'interprétabilité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Offering to define and refine vocabulary terms increases the personalization experience and improves the interpretability by using the user's own words.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Ces axes définissent des approches coopératives où l'intérêt des explications est de permettre à l'utilisateur de comprendre comment sont calculés les résultats proposés dans un effort de transparence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These axes define cooperative techniques where the interest of explanations is to enable users to understand how results are computed in an effort of transparency.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Le caractère informatif des explications apporte une valeur ajoutée aux résultats bruts, et forme une réponse coopérative.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The informativeness of the explanations brings an added value to the direct results, and that in itself represents a cooperative answer.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

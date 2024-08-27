@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017TOU30110. segId begin by 1, tuid = segId</note>
+        <docid>2017TOU30110</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La diversité des contenus recommandation et la variation des contextes des utilisateurs rendent la prédiction en temps réel des préférences des utilisateurs de plus en plus difficile mettre en place.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Due to the diversity of alternative contents to choose and the change of users' preferences, real-time prediction of users' preferences in certain users' circumstances becomes increasingly hard for recommender systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Toutefois, la plupart des approches existantes n'utilisent que le temps et l'emplacement actuels séparément et ignorent d'autres informations contextuelles sur lesquelles dépendent incontestablement les préférences des utilisateurs (par exemple, la météo, l'occasion).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, most existing context-aware approaches use only current time and location separately, and ignore other contextual information on which users' preferences may undoubtedly depend (e.g. weather, occasion).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En outre, ils ne parviennent pas considérer conjointement ces informations contextuelles avec les interactions sociales entre les utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, they fail to jointly consider these contextual information with social interactions between users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>D'autre part, la résolution de problèmes classiques de recommandation (par exemple, aucun programme de télévision vu par un nouvel utilisateur connu sous le nom du problème de démarrage froid et pas assez d'items co-évalués par d'autres utilisateurs ayant des préférences similaires, connu sous le nom du problème de manque de donnes) est d'importance significative puisque sont attaqués par plusieurs travaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, solving classic recommender problems (e.g. no seen items by a new user known as cold start problem, and no enough co-rated items with other users with similar preference as sparsity problem) is of significance importance since it is drawn by several works.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans notre travail de thèse, nous proposons un modèle probabiliste qui permet exploiter conjointement les informations contextuelles actuelles et l'influence sociale afin d'améliorer la recommandation des items.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In our thesis work, we propose a context-based approach that leverages jointly current contextual information and social influence in order to improve items recommendation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>En particulier, le modèle probabiliste vise prédire la pertinence de contenu pour un utilisateur en fonction de son contexte actuel et de son influence sociale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, we propose a probabilistic model that aims to predict the relevance of items in respect with the user's current context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous avons considérer plusieurs éléments du contexte actuel des utilisateurs tels que l'occasion, le jour de la semaine, la localisation et la météo.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We considered several current context elements such as time, location, occasion, week day, location and weather.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé la technique de lissage Laplace afin d'éviter les fortes probabilités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to avoid strong probabilities which leads to sparsity problem, we used Laplace smoothing technique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>D'autre part, nous supposons que l'information provenant des relations sociales a une influence potentielle sur les préférences des utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, we argue that information from social relationships has potential influence on users' preferences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, nous supposons que l'influence sociale dépend non seulement des évaluations des amis mais aussi de la similarité sociale entre les utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, we assume that social influence depends not only on friends' ratings but also on social similarity between users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Les similarités sociales utilisateur-ami peuvent être établies en fonction des interactions sociales entre les utilisateurs et leurs amis (par exemple les recommandations, les tags, les commentaires).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The user-friend social similarity information may be established based on social interactions between users and their friends (e.g. recommendations, tags, comments).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous avons mené une série d'expérimentations en utilisant un ensemble de donnes réelles issues de la plateforme de TV sociale Pinhole.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We conducted a comprehensive effectiveness evaluation on real dataset crawled from Pinhole social TV platform.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Cet ensemble de donnes inclut les historiques d'accès des utilisateurs-vidéos et les réseaux sociaux des téléspectateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This dataset includes viewer-video accessing history and viewers' friendship networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>En outre, nous collectons des informations contextuelles pour chaque historique d'accès utilisateur-vidéo saisi par le système de formulaire plat.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, we collected contextual information for each viewer-video accessing history captured by the plat form system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Le système de la plateforme capture et enregistre les dernières informations contextuelles auxquelles le spectateur est confronté en regardant une telle vidéo.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The platform system captures and records the last contextual information to which the viewer is faced while watching such a video.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Dans notre évaluation, nous adoptons le filtrage collaboratif axé sur le temps, le profil dépendant du temps et la factorisation de la matrice axe sur le réseau social comme tant des modèles de référence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In our evaluation, we adopt Time-aware Collaborative Filtering, Time-Dependent Profile and Social Network-aware Matrix Factorization as baseline models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>L'évaluation a port sur deux tâches de recommandation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The evaluation focused on two recommendation tasks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Nous avons évalué l'impact de chaque élément du contexte de visualisation dans la performance de prédiction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We evaluated the impact of each viewing context element in prediction performance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Les résultats expérimentaux démontrent que notre modèle surpasse les approches de l'état de l'art fondes sur le facteur temps et sur les réseaux sociaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Experimental results demonstrate that our approach outperforms time-aware and social network-based approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Dans les tests des problèmes de manque de donnes et de démarrage froid, notre modèle renvoie des prédictions cohérentes différentes valeurs de manque de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the sparsity and cold start tests, our approach returns consistently accurate predictions at different values of data sparsity.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

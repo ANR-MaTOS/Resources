@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-1998PA040048. segId begin by 1, tuid = segId</note>
+        <docid>1998PA040048</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le système de COATIS met en oeuvre une méthode opérationnelle pour passer des textes à des représentations sémantiques impliquant la notion de causalité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The approach adopted to build COATIS system aims at finding an operational method for constructing representations from a text, taking into account the causality notion.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

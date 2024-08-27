@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016PA066368. segId begin by 1, tuid = segId</note>
+        <docid>2016PA066368</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans ce manuscrit, nous étudions la diffusion d'information dans les réseaux sociaux en ligne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we study information diffusion in online social networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Des sites comme Facebook ou Twitter sont en effet devenus aujourd'hui des media d'information à part entière, sur lesquels les utilisateurs échangent de grandes quantités de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Websites like Facebook or Twitter have indeed become information medias, on which users create and share a lot of data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La plupart des modèles existant pour expliquer ce phénomène de diffusion sont des modèles génératifs, basés sur des hypothèses fortes concernant la structure et la dynamique temporelle de la diffusion d'information.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Most existing models of the information diffusion phenomenon relies on strong hypothesis about the structure and dynamics of diffusion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous considérerons dans ce manuscrit le problème de la prédiction de diffusion dans le cas où le graphe social est inconnu, et où seules les actions des utilisateurs peuvent être observées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this document, we study the problem of diffusion prediction in the context where the social graph is unknown and only user actions are observed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>- Nous proposons, dans un premier temps, une méthode d'apprentissage du modèle independent cascade consistant à ne pas prendre en compte la dimension temporelle de la diffusion.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- We propose a learning algorithm for the independant cascades model that does not take time into account.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Des résultats expérimentaux obtenus sur des données réelles montrent que cette approche permet d'obtenir un modèle plus performant et plus robuste.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Experimental results show that this approach obtains better results than time-based learning schemes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>- Nous proposons ensuite plusieurs méthodes de prédiction de diffusion reposant sur des technique d'apprentissage de représentations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- We then propose several representations learning methods for this task of diffusion prediction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Celles-ci nous permettent de définir des modèles plus compacts, et plus robustes à la parcimonie des données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This let us define more compact and faster models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>- Enfin, nous terminons en appliquant une approche similaire au problème de détection de source, consistant à retrouver l'utilisateur ayant lancé une rumeur sur un réseau social.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Finally, we apply our representation learning approach to the source detection task, where it obtains much better results than graph-based approaches.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

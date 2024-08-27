@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018SACLS299. segId begin by 1, tuid = segId</note>
+        <docid>2018SACLS299</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Nous nous intéressons, dans cette thèse, à l'étude des modèles de mélange et des modèles linéaires généralisés, avec une application aux données de co-infection entre les arbovirus et les parasites du paludisme.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We are interested, in this thesis, to the study of mixture models and generalized linear models, with an application to co-infection data between arboviruses and malaria parasites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Après une première partie consacrée à l'étude de la co-infection par un modèle logistique multinomial, nous proposons dans une deuxième partie l'étude des mélanges de modèles linéaires généralisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>After a first part dedicated to the study of co-infection using a multinomial logistic model, we propose in a second part to study the mixtures of generalized linear models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La méthode proposée pour estimer les paramètres du mélange est une combinaison d'une méthode des moments et d'une méthode spectrale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed method to estimate the parameters of the mixture is a combination of a moment method and a spectral method.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons à la fin une dernière partie consacrée aux mélanges de valeurs extrêmes en présence de censure.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we propose a final section for studing extreme value mixtures under random censoring.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La méthode d'estimation proposée dans cette partie se fait en deux étapes basées sur la maximisation d'une vraisemblance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The estimation method proposed in this section is done in two steps based on the maximization of a likelihood.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

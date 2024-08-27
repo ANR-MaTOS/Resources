@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017REN1S076. segId begin by 1, tuid = segId</note>
+        <docid>2017REN1S076</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans la première partie de cette thèse, nous présentons une nouvelle méthode de production de variantes de prononciations qui adapte des prononciations standards, c'est-à-dire issues d'un dictionnaire, à un style spontané.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first part of this thesis, we present a new pronunciation variant generation method which works by adapting standard i.e., dictionary-based, pronunciations to a spontaneous style.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette méthode utilise une vaste gamme d'informations linguistiques, articulatoires et acoustiques, ainsi qu'un cadre probabiliste d'apprentissage automatique, à savoir les champs aléatoires conditionnels (CAC) et les modèles de langage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Its strength and originality lie in exploiting a wide range of linguistic, articulatory and acoustic features and to use a probabilistic machine learning framework, namely conditional random fields (CRFs) and language models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nos expériences poussées sur le corpus Buckeye démontrent l'efficacité de l'approche à travers des évaluations objectives et perceptives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Extensive experiments on the Buckeye corpus demonstrate the effectiveness of this approach through objective and subjective evaluations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Des tests d'écoutes sur de la parole synthétisée montrent que les prononciations adaptées sont jugées plus spontanées que les prononciations standards, et même que celle réalisées par les locuteurs du corpus étudié.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Listening tests on synthetic speech show that adapted pronunciations are judged as more spontaneous than standard ones, as well as those realized by real speakers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La seconde partie de la thèse explore une nouvelle approche de production automatique de disfluences dans les énoncés en entrée d'un système de synthèse de la parole.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Speech disfluencies are one of the most pervasive phenomena in spontaneous speech, therefore being able to automatically generate them is crucial to have more expressive synthetic speech.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>L'approche proposée offre l'avantage de considérer plusieurs types de disfluences, à savoir des pauses, des répétitions et des révisions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed approach provides the advantage of generating several types of disfluencies: pauses, repetitions and revisions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Pour cela, nous présentons une formalisation novatrice du processus de production de disfluences à travers un mécanisme de composition de ces disfluences.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To achieve this task, we formalize the problem as a theoretical process, where transformation functions are iteratively composed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons une première implémentation de notre processus, elle aussi fondée sur des CAC et des modèles de langage, puis conduisons des évaluations objectives et perceptives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We present a first implementation of the proposed process using CRFs and language models, before conducting objective and perceptual evaluations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Celles-ci nous permettent de conclure à la bonne fonctionnalité de notre proposition et d'en discuter les pistes principales d'amélioration.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These experiments lead to the conclusion that our proposition is effective to generate disfluencies, and highlights perspectives for future improvements.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

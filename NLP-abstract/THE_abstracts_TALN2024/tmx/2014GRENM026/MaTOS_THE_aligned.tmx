@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2014GRENM026. segId begin by 1, tuid = segId</note>
+        <docid>2014GRENM026</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La majorité des systèmes embarqués récents sont basées sur des architectures massivement parallèles MPSoC, d'où la nécessité de développer des applications parallèles embarquées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The majority of recent embedded systems are based on massively parallel MPSoC architectures, hence the necessity of developing embedded parallel applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La conception et le développement d'une application parallèle embarquée devient de plus en plus difficile notamment pour les architectures multiprocesseurs hétérogènes ayant différents types de contraintes de communication et de conception tels que le coût du matériel, la puissance et la rapidité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Embedded parallel application design becomes more challenging: It becomes a parallel programming for non-trivial heterogeneous multiprocessors with diverse communication architectures and design constraints such as hardware cost, power, and timeliness.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cela est particulièrement important pour les systèmes embarqués de type MPSoC, où les applications doivent fonctionner correctement sur de nombreux cœurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is especially critical for embedded systems powered by MPSoC, where ever demanding applications have to run smoothly on numerous cores, each with modest power budget.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>En outre, la performance d'une application ne s'améliore pas forcément lorsque l'application tourne sur un nombre de cœurs encore plus grand.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, application performance does not necessarily improve as more cores are added.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La performance d'une application peut être limitée en raison de multiples goulot d'étranglement notamment la contention sur des ressources partagées telles que les caches et la mémoire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Application performance can be limited due to multiple bottlenecks including contention for shared resources such as caches and memory.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Cela devient contraignant etune perte de temps pour un développeur de faire un profilage de l'application parallèle embarquée et d'identifier des goulots d'étranglement dans le code source qui diminuent la performance de l'application.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It becomes time consuming for a developer to pinpoint in the source code the bottlenecks decreasing the performance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Pour surmonter ces problèmes, dans cette thèse, nous proposons trois méthodes automatiques qui détectent les instructions du code source qui ont conduit à une diminution de performance due à la contention et à l'évolutivité des processeurs sur une puce.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To overcome these issues, in this thesis, we propose a fully three automatic methods which detect the instructions of the code which lead to a lack of performance due to contention and scalability of processors on a chip.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Les méthodes sont basées sur des techniques de fouille de données exploitant des gigaoctets de traces d'exécution de bas niveau produites par les platesformes MPSoC.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The methods are based on data mining techniques exploiting gigabytes of low level execution traces produced by MPSoC platforms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nos approches de profilage permettent de quantifier et de localiser automatiquement les goulots d'étranglement dans le code source afin d'aider les développeurs à optimiserleurs applications parallèles embarquées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our profiling approaches allow to quantify and pinpoint, automatically the bottlenecks in source code in order to aid the developers to optimize its embedded parallel application.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous avons effectué plusieurs expériences sur plusieurs applications parallèles embarquées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We performed several experiments on several parallel application benchmarks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nos expériences montrent la précision des techniques proposées, en quantifiant et localisant avec précision les hotspots dans le code source.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our experiments show the accuracy of the proposed techniques, by quantifying and pinpointing the hotspot in the source code.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018SACLC069. segId begin by 1, tuid = segId</note>
+        <docid>2018SACLC069</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse aborde différents aspects de la modélisation de la microstructure du marché et des problèmes de Market Making, avec un accent particulier du point de vue du praticien.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis addresses different aspects around the market microstructure modelling and market making problems, with a special accent from the practitioner’s viewpoint.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous souhaitons améliorer la connaissance du LOB pour la communauté de la recherche, proposer de nouvelles idées de modélisation et développer des applications pour les Market Makers.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We wish to improve the knowledge of LOB for the research community, propose new modelling ideas and develop concrete applications to the interest of Market Makers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous remercions en particuler l’équipe Automated Market Making d’avoir fourni la base de données haute-fréquence de très bonne qualité et une grille de calculs puissante, sans laquelle ces recherches n’auraient pas été possible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We would like to specifically thank the Automated Market Making team for providing a large high frequency database of very high quality as well as a powerful computational grid, without whom these researches would not have been possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Le Chapitre 1 présente la motivation de cette recherche et reprend les principaux résultats des différents travaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first chapter introduces the incentive of this research and resumes the main results of the different works.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le Chapitre 2 se concentre entièrement sur le LOB et vise à proposer un nouveau modèle qui reproduit mieux certains faits stylisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Chapter 2 fully focuses on the LOB and aims to propose a new model that better reproduces some stylized facts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>A travers cette recherche, non seulement nous confirmons l’influence des flux d’ordres historiques sur l’arrivée de nouveaux, mais un nouveau modèle est également fourni qui réplique beaucoup mieux la dynamique du LOB, notamment la volatilité réalisée en haute et basse fréquence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Through this research, not only do we confirm the influence of historical order flows to the arrival of new ones, but a new model is also provided that captures much better the LOB dynamic, notably the realized volatility in high and low frequency.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans le Chapitre 3, l’objectif est d’étudier les stratégies de Market Making dans un contexte plus réaliste.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In chapter 3, the objective is to study Market Making strategies in a more realistic context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>La prédiction à haute fréquence avec la méthode d’apprentissage profond est étudiée dans le Chapitre 4.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>High-frequency prediction with deep learning method is studied in chapter 4.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>De nombreux résultats de la prédiction en 1- étape et en plusieurs étapes ont retrouvé la non-linéarité, stationarité et universalité de la relation entre les indicateurs microstructure et le changement du prix, ainsi que la limitation de cette approche en pratique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Many results of the 1-step and multi-step prediction have found the non-linearity, stationarity and universality of the relationship between microstructural indicators and price change, as well as the limitation of this approach in practice.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

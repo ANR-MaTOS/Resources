@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2014PA066033. segId begin by 1, tuid = segId</note>
+        <docid>2014PA066033</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La modélisation de la langue naturelle est l¿un des défis fondamentaux de l¿intelligence artificielle et de la conception de systèmes interactifs, avec applications dans les systèmes de dialogue, la génération de texte et la traduction automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Modeling natural language is among fundamental challenges of artificial intelligence and the design of interactive machines, with applications spanning across various domains, such as dialogue systems, text generation and machine translation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons un modèle log-linéaire discriminatif donnant la distribution des mots qui suivent un contexte donné.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a discriminatively trained log-linear model to learn the distribution of words following a given context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le résultat est un modèle efficace qui capte suffisamment les dépendances longues sans occasionner une forte augmentation des ressources en espace ou en temps.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The outcome is an efficient model that suitably captures long dependencies in language without a significant increase in time or space requirements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans un modèle log-linéaire, les phases d¿apprentissage et de tests deviennent de plus en plus chères avec un nombre croissant de classes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a log-linear model, both training and testing become increasingly expensive with growing number of classes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le nombre de classes dans un modèle de langue est la taille du vocabulaire, qui est généralement très importante.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The number of classes in a language model is the size of the vocabulary which is typically very large.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Une astuce courante consiste à appliquer le modèle en deux étapes : la première étape identifie le cluster le plus probable et la seconde prend le mot le plus probable du cluster choisi.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A common trick is to cluster classes and apply the model in two-steps; the first step picks the most probable cluster and the second picks the most probable word from the chosen cluster.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Cette idée peut être généralisée à une hiérarchie de plus grande profondeur avec plusieurs niveaux de regroupement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This idea can be generalized to a hierarchy of larger depth with multiple levels of clustering.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cependant, la performance du système de classification hiérarchique qui en résulte dépend du domaine d¿application et de la construction d¿une bonne hiérarchie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the performance of the resulting hierarchical classifier depends on the suitability of the clustering to the problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous étudions différentes stratégies pour construire la hiérarchie des catégories de leurs observations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We study different strategies to build the hierarchy of categories from their observations.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

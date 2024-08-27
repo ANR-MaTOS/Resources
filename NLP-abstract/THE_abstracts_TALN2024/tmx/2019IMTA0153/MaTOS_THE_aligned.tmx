@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019IMTA0153. segId begin by 1, tuid = segId</note>
+        <docid>2019IMTA0153</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans le domaine de l'apprentissage machine, les réseaux de neurones profonds sont devenus la référence incontournable pour un très grand nombre de problèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the field of machine learning, deep neural networks have become the inescapable reference for a very large number of problems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ces systèmes sont constitués par un assemblage de couches, lesquelles réalisent des traitements élémentaires, paramétrés par un grand nombre de variables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These systems are made of an assembly of layers,performing elementary operations, and using a large number of tunable variables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>À l'aide de données disponibles pendant une phase d'apprentissage, ces variables sont ajustées de façon à ce que le réseau de neurones réponde à la tâche donnée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Using data available during a learning phase, these variables are adjusted such that the neural network addresses the given task.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Il est ensuite possible de traiter de nouvelles données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is then possible to process new data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Si ces méthodes atteignent les performances à l'état de l'art dans bien des cas, ils reposent pour cela sur un très grand nombre de paramètres, et donc des complexités en mémoire et en calculs importantes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To achieve state-of-the-art performance, in many cases these methods rely on a very large number of parameters, and thus large memory and computational costs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>De fait, ils sont souvent peu adaptés à l'implémentation matérielle sur des systèmes contraints en ressources.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, they are often not very adapted to a hardware implementation on constrained resources systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, l'apprentissage requiert de repasser sur les données d'entraînement plusieurs fois, et s'adapte donc difficilement à des scénarios où de nouvelles informations apparaissent au fil de l'eau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, the learning process requires to reuse the training data several times, making it difficult to adapt to scenarios where new information appears on the fly.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous nous intéressons dans un premier temps aux méthodes permettant de réduire l'impact en calculs et en mémoire des réseaux de neurones profonds.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we are first interested in methods allowing to reduce the impact of computations and memory required by deep neural networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons dans un second temps des techniques permettant d'effectuer l'apprentissage au fil de l'eau, dans un contexte embarqué.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Secondly, we propose techniques for learning on the fly, in an embedded context.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

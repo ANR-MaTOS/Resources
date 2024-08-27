@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018LYSES018. segId begin by 1, tuid = segId</note>
+        <docid>2018LYSES018</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes de recommandation jouent un rôle important dans l'orientation des choix des utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recommender systems play a leading role in user’s choice guidance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La recommandation se fait généralement par une optimisation d'une mesure de précision de l'adéquation entre un utilisateur et un produit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The search of accuracy in such systems is generally done through an optimization of a function between the items and the users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cependant, plusieurs travaux de recherche ont montré que l’optimisation de la précision ne produisait pas les recommandations les plus utiles pour les utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It has been proved that maximizing only the accuracy does not produce the most useful recommendation for the users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Un système trop précis peut contribuer à confiner les utilisateurs dans leur propre bulle de choix.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This can confine individuals inside the bubble of their own choices.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Ceci peut aussi produire un effet de foule qui va concentrer les usages autour de quelques articles populaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Additionally, it tends to emphasize the agglomaration of the users’ behavior on few popular items.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, il y a un manque de diversité et de nouveauté dans les recommandations et une couverture limitée du catalogue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, it produces a lack of diversity and novelty in recommendations and a limited coverage of the platform catalog.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Même si la routine peut être sécurisante, l’être humain aime sortir des sentiers battus pour, par exemple, découvrir de nouveaux produits, tenter de nouvelles expériences.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This non-discovery is even more crucial if the platform wants to be fair in its recommendations with all contents’ producers (e.g, music artists, writers, video game developers or videographers).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous présentons deux familles de modèles qui cherchent à produire des résultats qui vont au-delà des aspects de précision pour des systèmes de recommandation pour des produits culturels basés sur le contenu.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The non diversity, and novelty problem is more important for the users because it has been shown that human mind appreciates when moved outside of its comfort zone.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Le premier modèle repose principalement sur une approche de clustering.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our two models are based on a user profile understanding prior to bring diversification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Dans ce modèle, nous proposons de la diversité à l’utilisateur tout en restant dans le périmètre de ses goûts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They capture the diversity in the user profile and respond to thisdiversity by looking to create a diverse list of recommendation without loosing to much accuracy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Le second modèle est basé sur une fonction issue de la loi normale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first model is mainly built upon a clustering approach, while the second model is based on an wavelet function.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous faisons l’hypothèse de l’existence d’une zone intermédiaire définie entre des éléments considérés comme trop similaires et d’autres considérés comme trop différents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This wavelet function in our model helps us delimit an area where the user will find item slightly different from what he liked in the past.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Nos propositions sont testées sur des jeux de données standards et comparées à des algorithmes de l’état de l’art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our proposals are tested on a common experimental design that consider well-known datasets and state-of-the-art algorithm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Les résultats de nos expériences montrent que nos approches apportent de la diversité et de la nouveauté et sont compétitives par rapport aux méthodes de l’état de l’art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results of our experiments show that our approaches indeed bring diversity and novelty and are also competitive against state-of-the-art method.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons également une expérience utilisateur pour valider notre modèle basé sur la fonction issue de la loi normale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also propose a user-experiment to validate our model based on the wavelet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Les résultats des expériences centrées sur l’utilisateur montrent que ce modèle correspond au comportement cognitif de l’être humain ainsi qu’à sa perception de la diversité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results of user centered experiments conclude that this model corresponds with human cognitive and perceptual behavior.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

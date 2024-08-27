@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018PSLEM041. segId begin by 1, tuid = segId</note>
+        <docid>2018PSLEM041</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Depuis le premier séquençage du génome humain au début des années 2000, de grandes initiatives se sont lancé le défi de construire la carte des variabilités génétiques inter-individuelles, ou bien encore celle des altérations de l'ADN tumoral.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since the first sequencing of the human genome in the early 2000s, large endeavours have set out to map the genetic variability among individuals, or DNA alterations in cancer cells.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ces projets ont posé les fondations nécessaires à l'émergence de la médecine de précision, dont le but est d'intégrer aux dossiers médicaux conventionnels les spécificités génétiques d'un individu, afin de mieux adapter les traitements et les stratégies de prévention.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They have laid foundations for the emergence of precision medicine, which aims at integrating the genetic specificities of an individual with its conventional medical record to adapt treatment, or prevention strategies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La traduction des variations et des altérations de l'ADN en prédictions phénotypiques constitue toutefois un problème difficile.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Translating DNA variations and alterations into phenotypic predictions is however a difficult problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les séquenceurs ou puces à ADN mesurent plus de variables qu'il n'y a d'échantillons, posant ainsi des problèmes statistiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>DNA sequencers and microarrays measure more variables than there are samples, which poses statistical issues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les données brutes sont aussi sujettes aux biais techniques et au bruit inhérent à ces technologies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The data is also subject to technical biases and noise inherent in these technologies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Enfin, les vastes réseaux d'interactions à l'échelle des protéines obscurcissent l'impact des variations génétiques sur le comportement de la cellule, et incitent au développement de modèles prédictifs capables de capturer un certain degré de complexité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, the vast and intricate networks of interactions among proteins obscure the impact of DNA variations on the cell behaviour, prompting the need for predictive models that are able to capture a certain degree of complexity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse présente de nouvelles contributions méthodologiques pour répondre à ces défis.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis presents novel methodological contributions to address these challenges.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, nous définissons une nouvelle représentation des profils de mutations tumorales, qui exploite leur position dans les réseaux d'interaction protéine-protéine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, we define a novel representation for tumour mutation profiles that exploits prior knowledge on protein-protein interaction networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Pour certains cancers, cette représentation permet d'améliorer les prédictions de survie à partir des données de mutations, et de stratifier les cohortes de patients en sous-groupes informatifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For certain cancers, this representation allows improving survival predictions from mutation data as well as stratifying patients into meaningful subgroups.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons ensuite une nouvelle méthode d'apprentissage permettant de gérer conjointement la normalisation des données et l'estimation d'un modèle linéaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Second, we present a new learning framework to jointly handle data normalisation with the estimation of a linear model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nos expériences montrent que cette méthode améliore les performances prédictives par rapport à une gestion séquentielle de la normalisation puis de l'estimation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our experiments show that it improves prediction performances compared to handling these tasks sequentially.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Pour finir, nous accélérons l'estimation de modèles linéaires parcimonieux, prenant en compte des interactions deux à deux, grâce à un nouvel algorithme.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we propose a new algorithm to scale up sparse linear models estimation with two-way interactions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>L'accélération obtenue rend cette estimation possible et efficace sur des jeux de données comportant plusieurs centaines de milliers de variables originales, permettant ainsi d'étendre la portée de ces modèles aux données des études d'associations pangénomiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The obtained speed-up makes this estimation possible and efficient for datasets with hundreds of thousands of main effects, thereby extending the scope of such models to the data from genome-wide association studies.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2007-48_1_ID=TAL-2007-48-1-06-Viethen. segId begin by 1, tuid = segId</note>
+        <docid>2007-48_1_ID=TAL-2007-48-1-06-Viethen</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Sur la base des résultats d'une évaluation de certains des principaux algorithmes connus de génération d'expressions référentielles, cet article explore plusieurs problèmes posés par l'évaluation et présente quelques considérations d'ordre général à prendre en compte lors de l'évaluation des sous-tâches de la génération automatique de textes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Based on an earlier evaluation of a number of well-established algorithms for the generation of referring expressions, this paper explores several problems that arise in designing evaluation for this task, and identifies general considerations that need to be met in evaluating Natural Language Generation subtasks.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

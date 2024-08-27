@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017LORR0300. segId begin by 1, tuid = segId</note>
+        <docid>2017LORR0300</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les essaims de robots sont des systèmes composés d'un grand nombre de robots relativement simples.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Robot swarms are systems composed of a large number of rather simple robots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Du fait du grand nombre d'unités, ces systèmes ont de bonnes propriétés de robustesse et de passage à l'échelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Due to the large number of units, these systems, have good properties concerning robustness and scalability, among others.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, il reste en général difficile de concevoir manuellement des contrôleurs pour les essaims de robots, à cause de la grande complexité des interactions inter-robot.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, it remains generally difficult to design controllers for such robotic systems, particularly due to the complexity of inter-robot interactions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, les approches automatisées pour l'apprentissage de comportements d'essaims de robots constituent une alternative attrayante.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Consequently, automatic approaches to synthesize behavior in robot swarms are a compelling alternative.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous étudions l'adaptation de comportements d'essaim de robots avec des méthodes de Embodied Evolutionary Robotics (EER) distribuée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we focus on online behavior adaptation in a swarm of robots using distributed Embodied Evolutionary Robotics (EER) methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, nous fournissons trois contributions principales :</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To this end, we provide three main contributions:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>(1) Nous étudions l'influence de la pression à la sélection dirigée vers une tâche dans un essaim d'agents robotiques qui utilisent une approche d'EER distribuée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>(1) We investigate the influence of task-driven selection pressure in a swarm of robotic agents using a distributed EER approach.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous évaluons l'impact de différents opérateurs de sélection dans un algorithme d'EER distribuée pour un essaim de robots.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We evaluate the impact of a range of selection pressure strength on the performance of a distributed EER algorithm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nos résultats montrent que le plus forte la pression à la sélection est, les meilleures performances sont atteintes lorsque les robots doivent s'adapter à des tâches particulières.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results show that the stronger the task-driven selection pressure, the better the performances obtained when addressing given tasks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>(2) Nous étudions l'évolution de comportements collaboratifs pour une tâche de récolte d'objets dans un essaim d'agents robotiques qui utilisent une approche d'EER distribuée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>(2) We investigate the evolution of collaborative behaviors in a swarm of robotic agents using a distributed EER approach.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous réalisons un ensemble d'expériences où un essaim de robots s'adapte à une tâche collaborative avec un algorithme d'EER distribuée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We perform a set of experiments for a swarm of robots to adapt to a collaborative item collection task that cannot be solved by a single robot.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nos résultats montrent que l'essaim s'adapte à résoudre la tâche, et nous identifions des limitations concernant le choix d'action.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our results show that the swarm learns to collaborate to solve the task using a distributed approach, and we identify some inefficiencies regarding learning to choose actions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>(3) Nous proposons et validons expérimentalement un mécanisme complètement distribué pour adapter la structure des neurocontrôleurs des robots dans un essaim qui utilise une approche d'EER distribuée, ce qui permettrait aux neurocontrôleurs d'augmenter leur expressivité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>(3) We propose and experimentally validate a completely distributed mechanism that allows to learn the structure and parameters of the robot neurocontrollers in a swarm using a distributed EER approach, which allows for the robot controllers to augment their expressivity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Nos expériences montrent que notre mécanisme, qui est complètement décentralisé, fournit des résultats similaires à un mécanisme qui dépend d'une information globale</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our experiments show that our fully-decentralized mechanism leads to similar results as a mechanism that depends on global information</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

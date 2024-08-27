@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2018-59_3_ID=TAL59-3-Miletic. segId begin by 1, tuid = segId</note>
+        <docid>2018-59_3_ID=TAL59-3-Miletic</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cet article retrace une expérience de constitution d'un corpus arboré pour le serbe, conçu dans le but de doter cette langue des instruments nécessaires à l'analyse syntaxique et, plus généralement, de favoriser des recherches plus systématiques aussi bien en TAL (traitement automatique des langues) qu’en linguistique serbe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this paper we describe our work on a treebank for Serbian, which aims to provide this language with tools and resources needed for parsing and, more globally, to encourage research on this language both in NLP (natural language processing) and in theoretical linguistics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Au-delà de la description des résultats de ce projet, nous présentons une méthode de confection d’un corpus arboré qui vise à optimiser les ressources, par définition rares, dont on dispose dans le cas d’une langue peu dotée, qu'il s'agisse de moyens matériels (corpus et outils) ou humains.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Beyond the results of this resource-building project, we also provide a description of a treebank-building method that optimizes the limited resources available for an under-resourced language, both from the technical point of view (tools and corpora) and from that of human resources (annotation process).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons comment tirer au mieux parti de l'existant pour faciliter le travail des annotateurs humains et accélérer l'enrichissement du corpus, tout en garantissant la validité de l'annotation produite.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show how best to take advantage of what is available in order to facilitate the manual work and accelerate the corpus enrichment process, all the while maintaining a high-quality annotation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cette méthode, basée sur des principes transposables à d'autres langues, a vocation à faciliter la création des corpus arborés pour les langues sous-dotées en général.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Being based on language-independent principles, this method should help forward the creation of treebanks for other under-resourced languages.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

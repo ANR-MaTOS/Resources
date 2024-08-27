@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017LYSEI113. segId begin by 1, tuid = segId</note>
+        <docid>2017LYSEI113</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les éditions critiques numériques sont des ressources patrimoniales annotées, sous une forme numérique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Digital Scholarly Editions are critically annotated patrimonial literary resources, in a digital form.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>De telles éditions prennent la forme d'une transcription des ressources originales, augmentées d'un apparat critique, c'est-à-dire, la forme de données structurées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such editions roughly take the shape of a transcription of the original resources, augmented with critical information, that is, of structured data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans un contexte collaboratif, a structure de ces données est définie explicitement par un schéma, document interprétable qui contraint la manière dont les éditeurs vont pouvoir annoter les ressources primaires et va de ce fait garantir une certaine homogénéité dans le respect de la politique éditoriale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a collaborative setting, the structure of the data is explicitly defined in a schema, an interpretable document that governs the way editors annotate the original resources and guarantees they follow a common editorial policy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les projets d'édition critique numérique font classiquement face à deux problèmes techniques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Digital editorial projects classically face two technical problems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le premier a à voir avec l'expressivité des langages d'annotation, qui empêchent l'expression de certaines informations utiles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first has to do with the expressiveness of the annotation languages, that prevents from expressing some kinds of information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>La seconde tient au fait que, par expérience, les schémas qui sous-tendent une édition critique vont être amenés à évoluer au cours de la réalisation de cette édition ;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second relies in the fact that, historically, schemas of long-running digital edition projects have to evolve during the lifespan of the project.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>cependant, modifier le schéma implique qu'il faille mettre à jour l'intégralité des données structurées validées par ce schéma, ce qui est habituellement effectué à la main par les éditeurs, au moyen de scripts ad-hoc – si les éditeurs, faute de moyens ou de temps, ne renoncent pas à faire évoluer la structure de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, amending a schema implies to update the structured data that has been produced, which is done either by hand, by means of ad-hoc scripts, or abandoned by lack of technical skills or human resources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail de thèse, nous définissons les fondements théoriques pour l'établissement d'un système éditorial dédié à l'édition critique numérique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this work, we define the theoretical ground for an annotation system dedicated to scholarly edition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous définissons les eAG, un modèle d'annotation déporté basé sur un formalisme de graphes cycliques, autorisant a plus grande expressivité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We define eAG, a stand-off annotation model based on a cyclic graph model, enabling the widest range of annotation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous définissons un mécanisme de schéma innovant, SeAG, permettant la validation à la volée des eAG au cours de leur manufacture.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We define a novel schema language, SeAG, that permits to validate eAG documents on-the-fly, while they are being manufactured.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous définissons également une syntaxe de balisage présentant des similarités avec les langages d'annotation classiques comme XML, tout en préservant l'expressivité des eAG.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also define an inline markup syntax for eAG, reminiscent of the classic annotation languages like XML, but retaining the expressivity of eAG.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous proposons une algèbre bidirectionnelle pour les eAG de telle sorte que, si un SeAG S est transformé en un SeAG S', alors tout eAG I validé par S est traduit de manière semi-automatique sous la forme d'un eAG I', validé par S', et tel que toute mise à jour de I (respectivement I') soit propagé, de manière semi-automatique, sur I'(resp. I).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Eventually, we propose a bidirectional algebra for eAG documents so that, when a SeAG S is amended, giving S', an eAG I validated by S is semi-automatically translated into an eAG I'validated by S', and so that any modification applied to I (resp. I') is semi-automatically propagated to I'(resp. I) – hence working as an assistance tool for the evolution of SeAG schemas and eAG annotations.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

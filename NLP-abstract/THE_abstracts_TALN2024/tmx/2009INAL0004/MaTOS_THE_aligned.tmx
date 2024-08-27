@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2009INAL0004. segId begin by 1, tuid = segId</note>
+        <docid>2009INAL0004</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La présente thèse a pour objet l'analyse automatique des formes lexicales dans les textes écrits en lituanien, sur la base d'une heuristique forme - valeur qui s'inscrit dans une approche symbolique du traitement automatique des langues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The aim of this thesis is to carry out lexical analysis of written texts in Lithuanian by automatic means, according to a heuristics from form to content based on symbolic methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette étude accorde une attention spécifique à l'éxploitation optimale des indices formels et s'appuie principalement sur deux domaines de la linguistique, la graphématique et la morphologie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This study attempts to make an expanded use of marks given by linguistic forms, drawing on graphemic and morphological aspects.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le point d'entrée formaliste couplé à l'objectif d'automatisation a réclamé une révision de la perspective grammaticale traditionnelle, qui nous a conduit à esquisser un renouvellement de la description relative à plusieurs aspects du système linguistique, notamment les parties du discours, la structure lexicale et la suffixation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This formal starting point in conjunction with automation of linguistic tasks required a revision of the traditional grammatical point of view, concerning mainly parts of speech, lexical structure and suffixation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Le modèle linguistique, qui reste à développer, a servi de fondement à la réalisation d'un analyseur de formes lexicales nommé ALeksas.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This linguistic model, which needs further expansion, served as a basis for ALeksas, an analyzer of lexical forms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Ce logiciel possède une structure hybride principalement basée sur des automates à nombre fini d'états.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This software implements a hybrid structure expanding a system of finite state automata.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>ALeksas, qui est encore à l'état expérimental, assure l'analyse grammaticale des mots formes selon une approche indépendante d'une base de données lexicale permettant de formuler des hypothèses d'interprétation sur des critères formels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The prototype computes the analysis of word forms, giving grammatical interpretations according to a set of formal criteria, instead of making use of a lexical database.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Le prototype a fait l'objet d'une mise à l'épreuve par confrontation à un corpus de textes authentiques variés, afin d'évaluer ses capacités, notamment par rapport aux outils comparables, et de mieux cerner les améliorations nécessaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results of the analysis of a corpus complied from various texts allowed us to delineate more precisely the advantages and shortcomings of Aleksas, as compared with other similar tools, and to also suggest possible enhancements.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019SACLX051. segId begin by 1, tuid = segId</note>
+        <docid>2019SACLX051</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La thèse vise à explorer des modèles et algorithmes d'extraction de connaissance et d'interconnexion de bases de données hétérogènes, appliquée à la gestion de contenus tels que rencontrés fréquemment dans le quotidien des journalistes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Digital content is increasingly produced nowadays in a variety of media such as news and social network sites, personal Web sites, blogs etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Le travail se déroulera dans le cadre du projet ANR ContentCheck (2016-2019) qui fournit le financement et dans le cadre duquel nous collaborons aussi avec l'équipe "Les Décodeurs" (journalistes spécialisés dans le fact-checking) du journal Le Monde.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, a large and dynamic part of such content is related to media-worthy events, whether of general interest (e.g., the war in Syria) or of specialized interest to a sub-community of users (e.g., sport events or genetically modified organisms).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La démarche scientifique de la thèse se décompose comme suit :</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While such content is primarily meant for the human users (readers), interest is growing in its automatic analysis, understanding and exploitation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>1. Identifier les technologies et domaines de gestion de contenu (texte, données, connaissances) intervenant de façon recurrente (ou dont le besoin est ressenti comme important) dans l'activité des journalistes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Within the ANR project ContentCheck, we are interested in developing textual and semantic tools for analyzing content shared through digital media.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Il est par exemple déjà clair que ceux-ci ont l'habitude d'utiliser "en interne" quelques bases de données construites par les journalistes eux-mêmes ;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed PhD project takes place within this contract, and will be developed based on the interactions with our partner from Le Monde.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Parmi ces problèmes, identifier ceux pour lesquels des solutions techniques (informatiques) sont connues, et le cas échéant mis en oeuvre dans des systèmes existants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Information and relation extraction from a text which may comprise a statement to be fact-checked, with a particular focus on capturing the time dimension ; a sample statement is for instance « VAT on iron in France was the highest in Europe in 2015 ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>2. S'attaquer aux problèmes ouverts (sur le plan de la recherche), pour lesquels des réponses satisfaisantes manquent, liés à la modélisation et à l'algorithmique efficace pour des contenus textuels, sémantiques, et des données, dans un contexte journalistique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Building structured queries from extracted information and relations, to be evaluated against reference databases used as trusted information against which facts can be checked.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

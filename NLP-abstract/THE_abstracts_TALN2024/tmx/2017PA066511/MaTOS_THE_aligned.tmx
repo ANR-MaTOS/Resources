@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017PA066511. segId begin by 1, tuid = segId</note>
+        <docid>2017PA066511</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le but de cette thèse était de conduire des recherches sur la synthèse et transformation expressive de voix chantée, en vue de pouvoir développer un synthétiseur de haute qualité capable de générer automatiquement un chant naturel et expressif à partir d’une partition et d’un texte donnés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis aimed at conducting research on the synthesis and expressive transformations of the singing voice, towards the development of a high-quality synthesizer that can generate a natural and expressive singing voice automatically from a given score and lyrics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse apporte diverses contributions dans chacune de ces 3 directions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis provides some contributions in each of those 3 directions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Tout d’abord, un système de synthèse complet a été développé, basé sur la concaténation de diphones.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, a fully-functional synthesis system has been developed, based on diphones concatenations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L’architecture modulaire de ce système permet d’intégrer et de comparer différent modèles de signaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The modular architecture of this system allows to integrate and compare different signal modeling approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, la question du contrôle est abordée, comprenant la génération automatique de la f0, de l’intensité, et des durées des phonèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, the question of the control is addressed, encompassing the automatic generation of the f0, intensity, and phonemes durations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>La modélisation de styles de chant spécifiques a également été abordée par l’apprentissage des variations expressives des paramètres de contrôle modélisés à partir d’enregistrements commerciaux de chanteurs célèbres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The modeling of specific singing styles has also been addressed by learning the expressive variations of the modeled control parameters on commercial recordings of famous French singers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Enfin, des investigations sur des transformations expressives du timbre liées à l'intensité et à la raucité vocale ont été menées, en vue d'une intégration future dans notre synthétiseur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, some investigations on expressive timbre transformations have been conducted, for a future integration into our synthesizer.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

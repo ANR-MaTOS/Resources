@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017UBFCC006. segId begin by 1, tuid = segId</note>
+        <docid>2017UBFCC006</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le traitement automatique de la langue quechua (TALQ) ne dispose pas actuellement d'un dictionnaire électronique des verbes, du français-quechua.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The automatic processing of the Quechua language (APQL) lacks an electronic dictionary of French­ Quechua verbs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Pourtant, un projet visant la traduction automatique nécessite au préalable, entre autres, cette importante ressource.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, any NLP project requires this important linguistic resource.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La réalisation d'un tel dictionnaire peut ouvrir également de nouvelles perspectives dans l'enseignement à distance, dans les domaines de l'accès multilingue aux informations, l'annotation/l'indexation des documents, la correction orthographique et pour le TAL en général.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The realization of such a resource couId also open new perspectives on different domains such as multilingual access to information, distance learning,inthe areas of annotation /indexing of documents, spelling correction and eventually in machine translation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La première difficulté consiste à sélectionner un dictionnaire français comme base de travail.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first challenge was the choice of the French dictionary which would be used as our basic reference.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Parmi les nombreux dictionnaires français, il en existe très peu en format électronique, et moins encore ceux dont les sources soient en libre accès au public.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Among the numerous French dictionaries, there are very few which are presented in an electronic format, and even less that may be used as an open source.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Parmi ces derniers, l'ouvrage Les verbes français (LVF), contenant 25 610 sens verbaux, que Jean Dubois et Françoise Dubois-Charlier ont publié chez Larousse en 1997, est un dictionnaire particulièrement complet ; de plus il a l 'avantage d'avoir une licence « open source » et un format compatible avec la plateforme NooJ.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Among the latter, we found the dictionary Les verbes français (LVF}, of Jean Dubois and Françoise Dubois-Charlier, edited by Larousse en 1997. It is a remarkably complete dictionary. It contains 25 610 verbal senses and with open source license. It is entirely compatible with the Nooj platform.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En tenant en compte ces considérations nous avons choisi traduire ce dictionnaire en quechua.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>That's why we have chosen this dictionary to be the one to translate into Quechua.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cependant, cette tâche se heurte à un obstacle considérable : le lexique quechua de verbes simples compte moins de l 500 entrées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, this task faces a considerable obstacle: the Quechua lexicon of simple verbs contains around 1,500 entries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Comment faire correspondre 25 610 sens verbaux français avec seulement 1 500 verbes quechua ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>How to match 25,610 French verbal senses with only 1,500 Quechua verbs?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Sommes-nous condamnés à utiliser beaucoup de polysémies ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Are we condemned to produce many polysemies?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Par exemple, dans LVF il y a 27 sens verbaux du verbe « tourner » ; doit-on tous les traduire par muyuy ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For example, in LVF, we have 27 verbal senses of the verb "tourner" to turn; should we translate them all by the Quechua verb muyuy to turn?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Ou bien, pouvons-nous utiliser une stratégie particulière et remarquable de la langue pour répondre à ce défi : la génération de nouveaux verbes par dérivation suffixale ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Or, can we make use of a particular and remarkable Quechua strategy that may allow us to face thischallenge: the generation of new verbs by suffix derivation?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Nous avons inventorié tous les suffixes du quechua qui permettent d'obtenir une forme dérivée possédant le comportement d'un verbe simple.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a first step, we have inventoried ail the Quechua suffixes that make possible to obtain a derived verbal form which behaves as if it was a simple verb.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Cet ensemble de suffixes que nous appelons SIP_DRV, contient 27 éléments.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This set of suffixes, which we call IPS_DRV, contains 27 elements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Ainsi chaque verbe quechua transitif ou intransitif donne naissance à au moins 27 verbes dérivés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus each Quechua verb, transitive or intransitive, gives rise to at least 27 derived verbs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Il reste cependant à formaliser les paradigmes et grammaires qui vont nous permettre d'obtenir les dérivations compatibles avec la morphosyntaxe de la langue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Next, we need to formalize the paradigms and grammars that will allow us to obtain derivations compatible with the morphology of the language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Cela a été réalisé avec NooJ.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This was done with the help of the NooJ platform.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>L'application de ces grammaires nous a permis d'obtenir 40 500 unités linguistiques conjugables (ULAV) à partir de 1 500 verbes simples quechua.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The application of these grammars allowed us to obtain 40,500 conjugable atomic linguistic units (CALU) out of 1,500 simple Quechua verbs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Ce résultat encourageant nous permet d'envisager une solution favorable à notre projet de traduction des 25 000 sens verbaux du français en quechua.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This encouraging first result allows us to hope to get a favorable solution to our project of translation of the 25,000 verbal senses of French into Quechua.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Afin d'obtenir la traduction de ces ULAV, nous avons besoin d'abord de connaître la modalité d'énonciation qu'apporte chaque SIP quand il s'agglutine au radical verbal pour le transformer.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to obtain the translation of these CALUs, we first needed to know the modalities of enunciation that each IPS have and transmits to the verbal radical when it is agglutinated to it.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="FR">
+                <seg>Chaque suffixe peut avoir plusieurs modalités d'énonciation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Each suffix can have several modalities of enunciation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="FR">
+                <seg>Nous les avons obtenus à partir du corpus, de notre propre expérience et quelques enregistrements dans le terrain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have obtained an inventory of them from the corpus, our own experience and some recordings obtained in fieldwork.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="FR">
+                <seg>Nous avons ainsi construit un tableau indexé contenant toutes ces modalités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We constructed an indexed table containing all of these modalities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, nous utilisons des opérateurs de NooJ pour programmer les grammaires qui présentent la traduction automatique en une forme glosés de modalités d'énonciation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Next, we used NooJ operators to program grammars that present automatic translation into a glossed form of enunciation modalities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="FR">
+                <seg>Finalement, nous avons développé un algorithme qui nous a permis d'obtenir la traduction réciproque du français vers le quechua de plus de 8 500 sens verbaux de niveau 3 et un certain nombre de sens verbaux de niveau 4 et 5.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we developed an algorithm that allowed us to obtain the reciprocal translation from French to Quechua of more than 8,500 Verbal senses of Level 3 and a number of verbal senses of Levels 4 and 5.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

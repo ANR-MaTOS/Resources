@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2010-51_3_ID=Resume-automatique-de-textes-d. segId begin by 1, tuid = segId</note>
+        <docid>2010-51_3_ID=Resume-automatique-de-textes-d</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons dans cet article un système de résumé automatique tourné vers l'analyse de blogs, où sont exprimées à la fois des informations factuelles et des prises de position sur les faits considérés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this paper, we present a summarization system that is specifically designed to process blog posts, where factual information is mixed with opinions on the discussed facts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Notre système de résumé est fondé sur une approche nouvelle qui mêle analyse de la redondance et repérage des informations nouvelles dans les textes ;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our approach combines redundancy analysis with new information tracking and is enriched by a module that computes the polarity of textual fragments in order to summarize blog posts more efficiently.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le système est évalué sur l'anglais, à travers la participation à la campagne d'évaluation internationale TAC (Text Analysis Conference) où notre système a obtenu des performances satisfaisantes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The system is evaluated against English data, especially through the participation in TAC (Text Analysis Conference), an international evaluation framework for automatic summarization, in which our system obtained interesting results.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

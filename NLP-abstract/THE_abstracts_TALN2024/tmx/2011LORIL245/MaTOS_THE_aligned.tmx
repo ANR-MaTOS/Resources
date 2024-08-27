@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2011LORIL245. segId begin by 1, tuid = segId</note>
+        <docid>2011LORIL245</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les corpus, collections de textes sélectionnés dans un objectif spécifique, occupent une place de plus en plus déterminante en Linguistique comme en Traitement Automatique des Langues (TAL).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Corpora which are text collections selected for specific purposes, are playing an increasing role in Linguistics and Natural Language Processing (NLP).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Considérés à la fois comme source de connaissances sur l'usage authentique des langues, ou sur les entités que désignent des expressions linguistiques, ils sont notamment employés pour évaluer la performance d'applications de TAL.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They are conceived as knowledge sources on natural language use, as much as knowledge on the entities designated by linguistic expressions, and they are used in particular to evaluate NLP application performances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Les critères qui prévalent à leur constitution ont un impact évident, mais encore délicat à caractériser, sur (i) les structures linguistiques majeures qu'ils renferment, (ii) les connaissances qui y sont véhiculées, et, (iii) la capacité de systèmes informatiques à accomplir une tâche donnée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The criteria prevailing on their constitution have an obvious, though still delicate to characterize, impact on (i) the major linguistic structures they contain, (ii) the knowledge conveyed, and, (iii) computational systems' success on a give task.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ce mémoire étudie des méthodologies d'extraction automatique de relations sémantiques dans des corpus de textes écrits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis studies methodologies of automatic extraction of semantic relations on written text corpora.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Un tel sujet invite à examiner en détail le contexte dans lequel une expression linguistique s'applique, à identifier les informations qui déterminent son sens, afin d'espérer relier des unités sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such a topic calls for a detailed examination of the context in which a given expression holds, as well as for the discovery of the features which determine its meaning, in order to be able to link semantic units.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Généralement, la modélisation du contexte est établie à partir de l'analyse de co-occurrence d'informations linguistiques issues de ressources ou obtenues par des systèmes de TAL.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Generally, contextual models are built from the co-occurrence analysis of linguistic informations, drawn from resources and NLP tools.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Les intérêts et limites de ces informations sont évalués dans le cadre de la tâche d'extraction de relations sur des corpus de genre différent (article de presse, conte, biographie).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The benefits and limits of these informations are evaluated in a task of relation extraction from corpora belonging to different genres (press article, fairy tale, biography).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Les résultats obtenus permettent d'observer que pour atteindre une représentation sémantique satisfaisante ainsi que pour concevoir des systèmes robustes, ces informations ne suffisent pas.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results show that these informations are insufficient to reach a satisfying semantic representation as well as to design robust systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Deux problèmes sont particulièrement étudiés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two problems are particularly addressed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>D'une part, il semble indispensable d'ajouter des informations qui concernent le genre du texte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the one hand, it seems indispensable to add informations related to text genre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Pour caractériser l'impact du genre sur les relations sémantiques, une méthode de classification automatique, reposant sur les restrictions sémantiques qui s'exercent dans le cadre de relations verbo-nominales, est proposée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>So as to characterize the impact of genre on semantic relations, an automatic classification method, which relies on the semantic restrictions holding between verbs and nouns, is proposed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>La méthode est expérimentée sur un corpus de conte et un corpus de presse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The method is experimented on a fairy tale corpus and on a press corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>D'autre part, la modélisation du contexte pose des problèmes qui relèvent de la variation discursive de surface.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, contextual models need to deal with problems which come under discourse surface variation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Un texte ne met pas toujours bout à bout des expressions linguistiques en relation et il est parfois nécessaire de recourir à des algorithmes complexes pour détecter des relations à longue portée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a text, related linguistic expressions are not always close to one another and it is sometimes necessary to design complex algorithms in order to detect long dependencies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Pour répondre à ce problème de façon cohérente, une méthode de segmentation discursive, qui s'appuie sur des indices de structuration de surface apparaissant dans des corpus écrits, est proposée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To answer this problem in a coherent manner, a method of discourse segmentation based on surface structure triggers in written corpora, is proposed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Elle ouvre le champ à la conception de grammaires qui permettent de raisonner sur des catégories d'ordre macro-syntaxique afin de structurer la représentation discursive d'une phrase.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It paves the way for grammars operating on macro-syntactic categories in order to structure the discursive representation of a sentence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Cette méthode est appliquée en amont d'une analyse syntaxique et l'amélioration des performances est évaluée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This method is applied prior to a syntactic analysis and its improvement is evaluated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Les solutions proposées à ces deux problèmes nous permettent d'aborder l'extraction d'information sous un angle particulier : le système implémenté est évalué sur une tâche de correction d'Entités Nommées dans le contexte d'application des Systèmes de Question-Réponse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The solutions proposed to these problems help us to approach Information Extraction from a particular angle : the implemented system is evaluated on a task of Named Entity correction in the context of a Question-Answering System.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Ce besoin spécifique entraîne l'alignement de la définition d'une catégorie sur le type de réponse attendue par une question.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This specific need entails the alignment of a category definition on the type of answer expected by the question.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

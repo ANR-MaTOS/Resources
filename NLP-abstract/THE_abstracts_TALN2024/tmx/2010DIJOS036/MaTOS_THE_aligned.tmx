@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2010DIJOS036. segId begin by 1, tuid = segId</note>
+        <docid>2010DIJOS036</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans le monde du Web, on retrouve les formats RSS et Atom (feeds) qui sont, sans doute, les formats XML les plus populaires et les plus utilisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the Web, RSS and Atom (feeds) are probably the most popular and highly utilized XML formats which allow web communities, publishing industries, web services, etc. to publish and exchange XML documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ces formats permettent aux, entre autres, communautés Web, industriels, et services web de publier et d’échanger des documents XML.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, they allow a user to consume data/information easily without roaming from site to site using software applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En outre, ils permettent à un utilisateur de consulter librement des données/informations sans avoir à basculer d’un site à un autre, et cela à l'aide d’applications logicielles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Here, the user registers her favorite feed providers; and each provider sends the list of news items changed since the last download.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans ce cas, l'utilisateur enregistre ses fournisseurs de flux favoris, chaque fournisseur diffuse la liste des nouveaux éléments qui ont été modifiés depuis le dernier téléchargement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, registering a number of feed sources in feed aggregators cause both heterogeneity and information overloading problems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cependant, l'enregistrement d'un certain nombre de sources de flux dans un agrégateur de flux engendre à la fois des problèmes d'hétérogénéité (à cause des différences structurelles et de contenu) et des problèmes de surcharges d’information.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Besides, none of the existing RSS/feed aggregators provide an approach that integrates (merges) feeds from different sources considering similarity, user contexts and preferences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous proposons un framework formel qui permet de traiter l'hétérogénéité, l'intégration et l'interrogation des flux d’actualités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The framework is based a tree representation of a feed and has three main components: feed comparator, merger and query processor.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Ce framework est fondé sur une représentation arborescente d'un flux et possède trois éléments principaux qui sont les suivants : comparateur de flux, intégrateur de flux, et processeur de requêtes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The feed comparator addresses the issue of measuring the relatedness between news items using a Knowledge Base, a bottom-up and incremental approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Le comparateur de flux permet de mesurer le degré de similarité entre deux éléments/flux en utilisant une base de connaissance intégrant une approche ascendante et progressive.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We proposed a concept-based similarity measure based on the function of the number of shared and different concepts in their global semantic neighborhoods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une mesure de similarité à base de concept capable de calculer la similarité entre les flux selon le nombre de leurs concepts communs (et différents) et leurs proximités sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Here, we use the concept similarity value and relationship as a building block for texts, simple elements and items relatedness algorithms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons également comment définir et identifier la relation exclusive entre deux textes ou éléments.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show also how to define and identify the exclusive relationship between any two texts and elements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>L’intégrateur de flux permet de fusionner plusieurs flux provenant de différentes sources tout en tenant compte du contexte de l’utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The feed merger addresses the issue of integrating news items from different sources considering a user context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous fournissons un ensemble prédéfini de règles de fusion qui peuvent être enrichies et adaptées par chaque utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Also, we provide a set of predefined set of merging rules that can be extended and adapted by a user.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Quant au processeur de requêtes, il se base sur une étude formelle et plus précisément sur une algèbre dédiée à la fusion des flux continus d’actualités que nous proposons ici.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The query processor is based on a formal study on RSS query algebra that uses the notion of semantic similarity over dynamic content.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Les opérateurs proposés dans cette algèbre sont aidés par des fonctions à base de similarité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The operators are supported by a set of similarity-based helper functions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons que l’opérateur de fusion généralise l’opération de jointure et les opérateurs ensemblistes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The merge operator generalizes the join and the set membership operators.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Nous fournissons également un ensemble de règles de réécriture et d'équivalence de requêtes pour la simplification et l’optimisation des requêtes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also provide a set of query rewriting and equivalence rules that would be used during query simplification and optimization.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous présentons un prototype nommé «Easy RSS Manager» (EasyRSSManager).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we present a desktop prototype called Easy RSS Manager (EasyRSSManager) having a semanticaware RSS Reader, and semantic-aware and window-based RSS query components.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Ce prototype est un lecteur sémantique de flux et un composant sémantique pour l’interrogation des fenêtres de flux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is designed to validate, demonstrate and test the practicability of the different proposals of this research.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>EasyRSSManager a été utilisé pour valider, démontrer et tester la faisabilité des différentes propositions de notre étude.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, we test the timing complexity and the relevance of our approaches using both a real and syntactic dataset.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2008NAN10101. segId begin by 1, tuid = segId</note>
+        <docid>2008NAN10101</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La RAP non native souffre encore d'une chute significative de précision.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Automatic speech recognition systems are still vulnerable to non native accents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette dégradation est due aux erreurs d'accent et de prononciation que produisent les locuteurs non natifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Their precision drastically drops as non native speakers commit acoustic and pronunciation errors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Les recherches que nous avons entreprises ont pour but d'atténuer l'impact des accents non natifs sur les performances des systèmes de RAP.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have proposed a new approach for non native ASR based on pronunciation modelling.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous avons proposé une nouvelle approche pour la modélisation de prononciation non native permettant de prendre en compte plusieurs accents étrangers.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This approach uses a non native speech corpus and two sets of acoustic models: the first set stands for the canoncial target language accent and the second stands for the non native accent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cette approche automatique utilise un corpus de parole non native et deux ensembles de modèles acoustiques : le premier ensemble représente l'accent canonique de la langue cible et le deuxième représente l'accent étranger.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is an automated approach that associates, to each phoneme from the first set of models, one or several non native pronunciations each expressed as a sequence of phonemes from the second set of models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Les modèles acoustiques du premier ensemble sont modifiés par l'ajout de nouveaux chemins d'états HMM.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These pronunciations are taken into account through adding new HMM paths to the models of each phoneme from the first set of models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous avons proposé une nouvelle approche pour la détection de la langue maternelle basée sur la détection de séquences discriminantes de phonèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have developed a new approach for the automatic detection of the mother tong of non native speakers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, nous avons proposé une approche de modélisation de prononciation non native multi-accent permettant de prendre en compte plusieurs accents étrangers simultanément.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This approach is based on the detection of discriminative phoneme sequences, and is used as a first step of the ASP process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous avons conçu une approche automatique pour la detection des contraintes graphémiques et leur prise en compte pour l'approche de RAP non native.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Besides, we have developed an approach of automatic phoneme-grapheme alignment in order to take into account the graphemic constraints within the non native pronunciation modeling.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>En outre, Nous avons proposé trois nouvelles approches efficaces dont le but est l'accélération du calcul de vraisemblance sans dégradation de la précision.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have studied some fast likelihood computation techinques, and we have proposed three novel appraoches that aim at enhancing likelihood computation speed without harming ASR precision.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

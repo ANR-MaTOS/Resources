@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019LYSEI086. segId begin by 1, tuid = segId</note>
+        <docid>2019LYSEI086</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Avec la prolifération rapide des plateformes de données qui récoltent des données relatives à plusieurs domaines tels que les données de gouvernements, d’éducation, d’environnement ou les données de notations de produits, plus de données sont disponibles en ligne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With the rapid proliferation of data platforms collecting and curating data related to various domains such as governments data, education data, environment data or product ratings, more and more data are available online.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ceci représente une opportunité sans égal pour étudier le comportement des individus et les interactions entre eux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This offers an unparalleled opportunity to study the behavior of individuals and the interactions between them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Sur le plan politique, le fait de pouvoir interroger des ensembles de données de votes peut fournir des informations intéressantes pour les journalistes et les analystes politiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the political sphere, being able to query datasets of voting records provides interesting insights for data journalists and political analysts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>En particulier, ce type de données peut être exploité pour l’investigation des sujet exceptionnellement conflictuels ou consensuels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, such data can be leveraged for the investigation of exceptionally consensual/controversial topics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Considérons des données décrivant les sessions de votes dans le parlement Européen (PE).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Consider data describing the voting behavior in the European Parliament (EP).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ces données offrent la possibilité d’étudier les accords et désaccords de sous-groupes cohérents, en particulier pour mettre en évidence des comportements inattendus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This dataset offers opportunities to study the agreement or disagreement of coherent subgroups, especially to highlight unexpected behavior.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Par exemple, il est attendu que sur la majorité des sessions, les députés votent selon la ligne politique de leurs partis politiques respectifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is to be expected that on the majority of voting sessions, MEPs will vote along the lines of their European party alliance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cependant, lorsque les sujets sont plutôt d’intérêt d’un pays particulier dans l’Europe, des coalitions peuvent se former ou se dissoudre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, when matters are of interest to a specific nation within Europe, alignments may change and agreements can be formed or dissolved.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>À titre d’exemple, quand une procédure législative concernant la pêche est proposée devant les MPE dans l’hémicycle, les MPE des nations insulaires du Royaume-Uni peuvent voter en accord sans être influencés par la différence entre les lignes politiques de leurs alliances respectives, cela peut suggérer un accord exceptionnel comparé à la polarisation observée habituellement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For instance, when a legislative procedure on fishing rights is put before the MEPs, the island nation of the UK can be expected to agree on a specific course of action regardless of their party alliance, fostering an exceptional agreement where strong polarization exists otherwise.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous nous intéressons à ce type de motifs décrivant des (dés)accords exceptionnels, pas uniquement sur les données de votes mais également sur des données similaires appelées données comportementales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we aim to discover such exceptional (dis)agreement patterns not only in voting data but also in more generic data, called behavioral data, which involves individuals performing observable actions on entities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>La première permet la découverte de (dés)accords exceptionnels entre groupes tandis que la seconde permet de mettre en évidence les comportements exceptionnels qui peuvent au sein d’un même groupe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These two approaches called Debunk and Deviant, ideally, enables the implementation of a sufficiently comprehensive tool to highlight, summarize and analyze exceptional comportments in behavioral data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Dans l’esprit d’évaluer la capacité des deux méthodes à réaliser cet objectif, nous évaluons les performances quantitatives et qualitatives sur plusieurs jeux de données réelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We thoroughly investigate the qualitative and quantitative performances of the devised methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>De plus, nous motivons l’utilisation des méthodes proposées dans le contexte du journalisme computationnel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, we motivate their usage in the context of computational journalism.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

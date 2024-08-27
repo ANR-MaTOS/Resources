@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016LORIS395. segId begin by 1, tuid = segId</note>
+        <docid>2016LORIS395</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Face à la masse grandissante des données textuelles présentes sur le Web, le résumé automatique d'une collection de documents traitant d'un sujet particulier est devenu un champ de recherche important du Traitement Automatique des Langues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With the growing mass of textual data on the Web, automatic summarization of topic-oriented collections of documents has become an important research field of Natural Language Processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les expérimentations décrites dans cette thèse s'inscrivent dans cette perspective.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The experiments described in this thesis were framed within this context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>SemEval 2014 pour la langue anglaise et des ressources que nous avons construites pour la langue française.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We proposed several similarity measures which were evaluated and compared on different data sets: the SemEval 2014 challenge corpus for the English language and own built datasets for French.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les bonnes performances des mesures proposées nous ont amenés à les utiliser dans une tâche de résumé multi-documents, qui met en oeuvre un algorithme de type PageRank.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The good performance showed by our measures led us to use them in a multi-document summary task, which implements a pagerank-type algorithm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le système a été évalué sur les données de DUC 2007 pour l'anglais et le corpus RPM2 pour le français.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The system was evaluated on the DUC 2007 datasets for English and RPM2 corpus for French.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Les résultats obtenus par cette approche simple, robuste et basée sur une ressource aisément disponible dans de nombreuses langues, se sont avérés très encourageants</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This simple approach, based on a resource readily available in many languages, proved efficient, robust and the encouraging outcomes open up real prospects of improvement.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

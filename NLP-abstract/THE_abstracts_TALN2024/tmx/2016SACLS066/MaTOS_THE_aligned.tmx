@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016SACLS066. segId begin by 1, tuid = segId</note>
+        <docid>2016SACLS066</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>S'il est indéniable que de nos jours la traduction automatique (TA) facilite la communication entre langues, et plus encore depuis les récents progrès des systèmes de TA statistiques, ses résultats sont encore loin du niveau de qualité des traductions obtenues avec des traducteurs humains.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although communication between languages has without question been made easier thanks to Machine Translation (MT), especially given the recent advances in statistical MT systems, the quality of the translations produced by MT systems is still well below the translation quality that can be obtained through human translation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ce constat résulte en partie du mode de fonctionnement d'un système de TA statistique, très contraint sur la nature des modèles qu'il peut utiliser pour construire et évaluer de nombreuses hypothèses de traduction partielles avant de parvenir à une hypothèse de traduction complète.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This gap is partly due to the way in which statistical MT systems operate; the types of models that can be used are limited because of the need to construct and evaluate a great number of partial hypotheses to produce a complete translation hypothesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En conséquence, de tels modèles complexes sont typiquement uniquement utilisés en TA pour effectuer le reclassement de listes de meilleures hypothèses complètes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Using these features in a reranking framework does often provide a better modelization of certain aspects of the translation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Bien que ceci permette dans les faits de tirer profit d'une meilleure modélisation de certains aspects des traductions, cette approche reste par nature limitée : en effet, les listes d'hypothèses reclassées ne représentent qu'une infime partie de l'espace de recherche du décodeur, contiennent des hypothèses peu diversifiées, et ont été obtenues à l'aide de modèles dont la nature peut être très différente des modèles complexes utilisés en reclassement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, this approach is inherently limited: reranked hypothesis lists represent only a small portion of the decoder's search space, tend to contain hypotheses that vary little between each other and which were obtained with features that may be very different from the complex features to be used during reranking.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous formulons donc l'hypothèse que de telles listes d'hypothèses de traduction sont mal adaptées afin de faire s'exprimer au mieux les modèles complexes utilisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this work, we put forward the hypothesis that such translation hypothesis lists are poorly adapted for exploiting the full potential of complex features.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Les travaux que nous présentons dans cette thèse ont pour objectif de permettre une meilleure exploitation d'informations riches pour l'amélioration des traductions obtenues à l'aide de systèmes de TA statistique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The aim of this thesis is to establish new and better methods of exploiting such features to improve translations produced by statistical MT systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Notre première contribution s'articule autour d'un système de réécriture guidé par des informations riches.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our first contribution is a rewriting system guided by complex features.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Des réécritures successives, appliquées aux meilleures hypothèses de traduction obtenues avec un système de reclassement ayant accès aux mêmes informations riches, permettent à notre système d'améliorer la qualité de la traduction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Sequences of rewriting operations, applied to hypotheses obtained by a reranking framework that uses the same features, allow us to obtain a substantial improvement in translation quality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>L'originalité de notre seconde contribution consiste à faire une construction de listes d'hypothèses par passes multiples qui exploitent des informations dérivées de l'évaluation des hypothèses de traduction produites antérieurement à l'aide de notre ensemble d'informations riches.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The originality of our second contribution lies in the construction of hypothesis lists with a multi-pass decoding that exploits information derived from the evaluation of previously translated hypotheses, using a set of complex features.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Notre système produit ainsi des listes d'hypothèses plus diversifiées et de meilleure qualité, qui s'avèrent donc plus intéressantes pour un reclassement fondé sur des informations riches.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our system is therefore capable of producing more diverse hypothesis lists, which are globally of a better quality and which are better adapted to a reranking step with complex features.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>De surcroît, notre système de réécriture précédent permet d'améliorer les hypothèses produites par cette deuxième approche à passes multiples.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>What is more, our forementioned rewriting system enables us to further improve the hypotheses produced with our multi-pass decoding approach.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Notre troisième contribution repose sur la simulation d'un type d'information idéalisé parfait qui permet de déterminer quelles parties d'une hypothèse de traduction sont correctes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our third contribution is based on the simulation of an ideal information type, designed to perfectly identify the correct fragments of a translation hypothesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Cette idéalisation nous permet d'apporter une indication de la meilleure performance atteignable avec les approches introduites précédemment si les informations riches disponibles décrivaient parfaitement ce qui constitue une bonne traduction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This perfect information gives us an indication of the best attainable performance with the systems described in our first two contributions, in the case where the complex features are able to modelize the translation perfectly.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Cette approche est en outre présentée sous la forme d'une traduction interactive, baptisée « pré-post-édition », qui serait réduite à sa forme la plus simple : un système de TA statistique produit sa meilleure hypothèse de traduction, puis un humain apporte la connaissance des parties qui sont correctes, et cette information est exploitée au cours d'une nouvelle recherche pour identifier une meilleure traduction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Through this approach, we also introduce a novel form of interactive translation, coined "pre-post-editing", under a very simplified form: a statistical MT system produces its best translation hypothesis, then a human indicates which fragments of the hypothesis are correct, and this new information is then used during a new decoding pass to find a new best translation.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2011-52_1_ID=Cascades-de-transducteurs-autour. segId begin by 1, tuid = segId</note>
+        <docid>2011-52_1_ID=Cascades-de-transducteurs-autour</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cet article présente la cascade de transducteurs CasEN pour la reconnaissance des entités nommées et deux autres cascades qui utilisent le texte étiqueté par CasEN.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This paper presents the CasEN transducer cascade to recognize French Named Entities and two other cascades using a CasEN annotated text.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La première ajoute des informations sur les locuteurs de l'enquête sociolinguistique Eslo et la deuxième met en relation des entités nommées dans un corpus du journal Le Monde.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first cascade adds speaker information into the Eslo socio-linguitic survey and the second one links named entities in Le Monde newspaper corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La cascade CasEN est implanté sous le logiciel CasSys de la plateforme Unitex et sera librement mise à disposition des utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This cascade is implemented with the CasSys software of the Unitex plateform and will be put at user free disposal.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

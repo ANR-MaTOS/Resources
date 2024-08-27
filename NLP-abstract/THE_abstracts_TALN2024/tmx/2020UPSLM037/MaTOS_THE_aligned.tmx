@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020UPSLM037. segId begin by 1, tuid = segId</note>
+        <docid>2020UPSLM037</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'apprentissage profond a abouti à des développements spectaculaires dans le domaine de l'image et du langage naturel au cours des dernières années.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In recent years, deep learning has lead to groundbreaking developments in the image and natural language processing fields.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Pourtant, dans de nombreux domaines, les données d'observations ne sont ni des images ni du texte mais des séries temporelles qui représentent l'évolution de grandeurs mesurées ou calculées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, in many domains, input data consists in neither images nor text documents, but in time series that describe the temporal evolution of observed or computed quantities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous étudions et proposons différentes représentations de séries temporelles à partir de modèles d'apprentissage profond.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we study and introduce different representations for time series, based on deep learning models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, dans le domaine du contrôle de véhicules autonomes, nous montrons que l'analyse d'une fenêtre temporelle par un réseau de neurones permet d'obtenir de meilleurs résultats que les méthodes classiques qui n'utilisent pas de réseaux de neurones.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Firstly, in the autonomous driving domain, we show that, the analysis of a temporal window by a neural network can lead to better vehicle control results than classical approaches that do not use neural networks, especially in highly-coupled situations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans un troisième temps, dans un but de génération de mouvements humains, nous proposons des réseaux de neurones génératifs convolutifs 2D où les dimensions temporelles et spatiales sont convoluées de manière jointe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thirdly, in the human pose motion generation domain, we introduce 2D convolutional generative adversarial neural networks where the spatial and temporal dimensions are convolved in a joint manner.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Enfin, dans un dernier temps, nous proposons un plongement où des représentations spatiales de poses humaines sont (ré)organisées dans un espace latent en fonction de leurs relations temporelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we introduce an embedding where spatial representations of human poses are sorted in a latent space based on their temporal relationships.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020BORD0313. segId begin by 1, tuid = segId</note>
+        <docid>2020BORD0313</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La reconnaissance des actions à partir de vidéos est l'un des principaux problèmes de vision par ordinateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Action recognition in videos is one of the key problems in visual data interpretation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Malgré des recherches intensives, la différenciation et la reconnaissance d'actions similaires restent un défi.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Despite intensive research, differencing and recognizing similar actions remains a challenge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse porte sur la classification des gestes sportifs à partir de vidéos, avec comme cadre applicatif le tennis de table.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis deals with fine-grained classification of sport gestures from videos, with an application to table tennis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une méthode d’apprentissage profond pour segmenter et classifier automatiquement les différents coup de Tennis de Table.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this manuscript, we propose a method based on deep learning for automatically segmenting and classifying table tennis strokes in videos.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les annotations consistent en une description des coups effectués (début, fin et type de coup).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For developing such a system with fine-grained classification, a very specific dataset is needed to supervise the learning process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Au total, 20 différents coups de tennis de table sont considérés plus une classe de rejet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To that aim, we built the “TTStroke-21” dataset, which is composed of 20 stroke classes plus a rejection class.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>La reconnaissance des actions similaires présente des différences avec la reconnaissance d’actions classique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These recorded sessions were annotated by professional players or teachers using a crowdsourced annotation platform.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>En effet, dans les bases de données classiques, le contexte de l’arrière plan fournit souvent des informations discriminantes que les méthodes peuvent utiliser pour classer l'action plutôt que de se concentrer sur l'action elle-même.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The annotations consist in a description of the handedness of the player and information for each stroke performed (starting and ending frames, class of the stroke).Fine-grained action recognition has some notable differences with coarse-grained action recognition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans notre cas, la similarité entre classes est élevée, les caractéristiques visuelles discriminantes sont donc plus difficiles à extraire et le mouvement joue un rôle clef dans la caractérisation de l’action.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In general, datasets used for coarse-grained action recognition, the background context often provides discriminative information that methods can use to classify the action, rather than focusing on the action itself.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous introduisons un réseau de neurones spatio-temporel convolutif avec une architecture Jumelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we introduce a Twin Spatio-Temporal Convolutional Neural Network.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Ce réseau d'apprentissage profond prend comme entrées une séquence d'images RVB et son flot optique estimé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This deep learning network takes as inputs an RGB image sequence and its computed Optical Flow.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Les données RVB permettent à notre modèle de capturer les caractéristiques d'apparence tandis que le flot optique capture les caractéristiques de mouvement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The RGB image sequence allows our model to capture appearance features while the optical flow captures motion features.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Ces deux flux sont traités en parallèle à l'aide de convolutions 3D, et sont fusionnés à la dernière étape du réseau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Those two streams are processed in parallel using 3D convolutions, and fused at the last stage of the network.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Notre méthode obtient une performance de classification de 93.2% sur l'ensemble des données tests.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our method gets an average classification performance of 87.3% with a best run of 93.2% accuracy on the test set.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Appliquée à la tâche jointe de détection et de classification, notre méthode atteint une précision de 82.6%.Nous étudions les performances en fonction des types de données utilisés en entrée et la manière de les fusionner.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>When applied on joint detection and classification task, the proposed method reaches an accuracy of 82.6%.A systematic study of the influence of each stream and fusion types on classification accuracy has been performed, giving clues on how to obtain the best performances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Différents estimateurs de flot optique ainsi que leur normalisation sont testés afin d’améliorer la précision.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A comparison of different optical flow methods and the role of their normalization on the classification score is also done.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Les caractéristiques de chaque branche de notre architecture sont également analysées afin de comprendre le chemin de décision de notre modèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The extracted features are also analyzed by back-tracing strong features from the last convolutional layer to understand the decision path of the trained model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous introduisons un mécanisme d'attention pour aider le modèle à se concentrer sur des caractéristiques discriminantes et aussi pour accélérer le processus d’entraînement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we introduce an attention mechanism to help the model focusing on particular characteristic features and also to speed up the training process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Nous comparons notre modèle avec d'autres méthodes sur TTStroke-21 et le testons sur d'autres ensembles de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For comparison purposes, we provide performances of other methods on TTStroke-21 and test our model on other datasets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Nous constatons que les modèles fonctionnant bien sur des bases de données d’actions classiques ne fonctionnent pas toujours aussi bien sur notre base de données d'actions similaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We notice that models performing well on coarse-grained action datasets do not always perform well on our fine-grained action dataset.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="FR">
+                <seg>Les travaux présentés dans cette thèse ont été validés par des publications dans une revue internationale, cinq papiers de conférences internationales, deux papiers d’un workshop international et une tâche reconductible dans le workshop MediaEval où les participants peuvent appliquer leurs méthodes de reconnaissance d'actions à notre base de données TTStroke-21.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The research presented in this manuscript was validated with publications in one international journal, five international conference papers, two international workshop papers and a reconductible task in MediaEval workshop in which participants can apply their action recognition methods to TTStroke-21.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="FR">
+                <seg>Deux autres papiers de workshop internationaux sont en cours de préparation, ainsi qu'un chapitre de livre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two additional international workshop papers are in process along with one book chapter.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

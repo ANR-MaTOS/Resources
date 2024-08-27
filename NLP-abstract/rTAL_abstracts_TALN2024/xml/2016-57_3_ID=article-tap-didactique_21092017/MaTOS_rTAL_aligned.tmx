@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2016-57_3_ID=article-tap-didactique_21092017. segId begin by 1, tuid = segId</note>
+        <docid>2016-57_3_ID=article-tap-didactique_21092017</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L’un des composants les plus novateurs de notre réflexion porte sur les apports de la phonologie de corpus, notamment des corpus oraux d’apprenants de L2.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One distinctive aspect of our contribution lies in its connection with the field of corpus phonology, especially oral L2 learners’ corpora.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette réflexion nous conduit à plaider en faveur d’une approche interdisciplinaire plus riche entre didacticiens et ingénieurs de la parole afin d’encourager le développement des systèmes de correction automatique dans les curricula de L2.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In conclusion, we call for more interactions between speech engineers and L2 education specialists to promote the use of such systems in L2 curricula.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

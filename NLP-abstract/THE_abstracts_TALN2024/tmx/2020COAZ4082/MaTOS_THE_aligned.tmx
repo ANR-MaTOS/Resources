@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020COAZ4082. segId begin by 1, tuid = segId</note>
+        <docid>2020COAZ4082</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans le contexte actuel, l’Intelligence Artificielle (IA) est largement répandue et s’applique à de nombreux domaines tels que les transports, la médecine et les véhicules autonomes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nowadays, Artificial Intelligence (AI) is a widespread concept applied to many fields such as transportation, medicine and autonomous vehicles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Parmi les algorithmes d'IA, on retrouve principalement les réseaux de neurones, qui peuvent être répartis en deux familles : d'une part, les Réseaux de Neurones Impulsionnels (SNNs) qui sont issus du domaine des neurosciences ; d'autre part, les Réseaux de Neurones Analogiques (ANNs) qui sont issus du domaine de l'apprentissage machine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main AI algorithms are artificial neural networks, which can be divided into two families: Spiking Neural Networks (SNNs), which are bio-inspired models resulting from neuroscience, and Analog Neural Networks (ANNs), which result from machine learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Les ANNs connaissent un succès inédit grâce à des résultats inégalés dans de nombreux secteurs tels que la classification d'images et la reconnaissance d'objets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The ANNs are experiencing unprecedented success in research and industrial fields, due to their recent successes in many application contexts such as image classification and object recognition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cependant, leur déploiement nécessite des capacités de calcul considérables et ne conviennent pas à des systèmes très contraints.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, they require considerable computational capacity for their deployment which is not adequate to very constrained systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Afin de pallier ces limites, de nombreux chercheurs s'intéressent à un calcul bio-inspiré, qui serait la parfaite alternative aux calculateurs conventionnels basés sur l'architecture de Von Neumann.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To overcome these limitations, many researchers are interested in brain-inspired computing, which would be the perfect alternative to conventional computers based on the Von Neumann architecture (CPU/GPU).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ce paradigme répond aux exigences de performance de calcul, mais pas aux exigences d'efficacité énergétique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This paradigm meets computing performance but not energy efficiency requirements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Il faut donc concevoir des circuits matériels neuromorphiques adaptés aux calculs parallèles et distribués.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hence, it is necessary to design neuromorphic hardware circuits adaptable to parallel and distributed computing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte, nous avons établi un certain nombre de critères en termes de précision et de coût matériel pour différencier les SNNs et ANNs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this context, we have set criteria in terms of accuracy and hardware implementation cost to differentiate the two neural families (SNNs and ANNs).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans le cas de topologies simples, nous avons montré que les SNNs sont plus efficaces en termes de coût matériel que les ANNs, et ce, avec des précisions de prédiction quasiment similaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the case of simple network topologies, we conducted a study that has shown that the spiking models have significant gains in terms of hardware cost when compared to the analog networks, with almost similar prediction accuracies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, dans ce travail, notre objectif est de concevoir une architecture neuromorphique basée sur les SNNs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, the objective of this thesis is to design a generic neuromorphic architecture that is based on spiking neural networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Dans un contexte d'efficacité énergétique, nous avons réalisé une étude approfondie sur divers paradigmes de codage neuronal utilisés avec les SNNs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In an energy efficiency context, a thorough exploration of different neural coding paradigms for neural data representation in SNNs has been carried out.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, nous avons proposé de nouvelles versions dérivées du codage fréquentiel, visant à se rapprocher de l'activité produite avec le codage temporel, qui se caractérise par un nombre réduit d'impulsions (spikes) se propageant dans le SNN.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, new derivative versions of rate-based coding have been proposed that aim to get closer to the activity produced by temporal coding, which is characterized by a reduced number of spikes propagating in the network.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>En faisant cela, nous sommes en mesure de réduire le nombre de spikes, ce qui se traduit par un SNN avec moins d'événements à traiter, et ainsi, réduire la consommation énergétique sous-jacente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this way, the number of spikes can be reduced so that the number of events to be processed in the SNNs gets smaller. The aim in doing this approach is to reduce the underlying energy consumption.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Pour cela, deux techniques nouvelles ont été proposées : "First Spike", qui se caractérise par l'utilisation d’un seul spike au maximum par donnée ; "Spike Select", qui permet de réguler et de minimiser l'activité globale du SNN.Dans la partie d’exploration RTL, nous avons comparé de manière quantitative un certain nombre d’architectures de SNN avec différents niveaux de parallélisme et multiplexage de calculs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed coding approaches are: First Spike, which is characterized using at most one single spike to present an input data, and Spike Select, which allows to regulate and minimize the overall spiking activity in the SNN.In the RTL design exploration, we quantitatively compared three SNN architectural models having different levels of computing parallelism and multiplexing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>En effet, le codage "Spike Select" engendre une régulation de la distribution des spikes, avec la majorité générée dans la première couche et peu d'entre eux propagés dans les couches profondes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Using Spike Select coding results in a distribution regulation of the spiking data, with most of them generated within the first layer and few of them propagate into the deep layers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Nous avons constaté que cette distribution bénéficie d’une architecture hybride comportant une première couche parallèle et les autres multiplexées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such distribution benefits from a so-called 'hybrid architecture' that includes a fully-parallel part for the first layer and multiplexed parts to the other layers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, la combinaison du "Spike Select" et de l'architecture hybride serait une solution efficace, avec un compromis efficace entre coût matériel, consommation et latence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, combining the Spike Select and the Hybrid Architecture would be an effective solution for embedded AI applications, with an efficient hardware and latency trade-off.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Enfin, en se basant sur les choix architecturaux et neuronaux issus de l'exploration précédente, nous avons élaboré une architecture évènementielle dédiée aux SNNs mais suffisamment programmable pour supporter différents types et tailles de réseaux de neurones.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, based on the architectural and neural choices resulting from the previous exploration, we have designed a final event-based architecture dedicated to SNNs supporting different neural network types and sizes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>L'architecture supporte les couches les plus utilisées : convolution, pooling et entièrement connectées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The architecture supports the most used layers: convolutional, pooling and fully-connected.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>En utilisant cette architecture, nous serons bientôt en mesure de comparer les ANNs et les SNNs sur des applications réalistes et enfin conclure sur l'utilisation des SNNs pour l'IA embarquée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Using this architecture, we will be able to compare analog and spiking neural networks on realistic applications and to finally conclude about the use of SNNs for Embedded Artificial Intelligence.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

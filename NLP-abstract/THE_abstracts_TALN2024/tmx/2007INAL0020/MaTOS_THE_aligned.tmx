@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2007INAL0020. segId begin by 1, tuid = segId</note>
+        <docid>2007INAL0020</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>D’abord, nous introduisons le concept de corpus parallèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>At the beginning the concept of a parallel corpus is defined.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Fratchèque est un corpus parallèle de ressources écrites dont les textes en français et en tchèque proviennent de la littérature écrite après 1945.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>French and Czech texts forming the parallel Fratchèque corpus come from literature; only texts after the year 1945 have been selected.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Il ne contient pas de balises XML, le logiciel ParaConc utilisé pour le traitement du corpus n’en a pas besoin.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Fratchèque is not marked up explicitly by XML tags because the tagging is not necessary for the proper functioning of the corpus manager ParaConc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L’élaboration du corpus est décrite d’une façon détaillée en suivant toutes les démarches et tout le paramétrage des logiciels utilisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The building-up of the corpus is thoroughly described following all steps and settings of the software used.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Elle commence avec le logiciel de reconnaissance optique de caractères FineReader et après le contrôle de la qualité des textes numérisés sous MS Word 2002 on procède à la constitution d’un corpus parallèle géré par ParaConc.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The process starts with the optical character recognition program FineReader and, after checking the accuracy of numerical texts by using MS Word 2002, it goes on building up a corpus managed by ParaConc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>La partie linguistique de la thèse s’appuie sur le corpus parallèle réalisé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The linguistic investigations of the thesis rely primarily on the realization of a parallel corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Elle aborde un phénomène connu en tchèque sous le terme částice qui n’a d’équivalent univoque en français.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main purpose is to tackle a phenomenon that is known in Czech as částice but has no direct equivalent in French.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Les termes le plus souvent liés en français à la question sont mots du discours et particules énonciatives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The most frequent terms used in the French approach are mots du discours and particules énonciatives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Selon les descriptions existantes, il y a une relation étroite entre ces mots et le discours.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The existing descriptions suggest a close relationship between these words and the discourse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Cette constatation est démontrée pour deux částice – vždyt̕, přece et leurs variantes – sur les grands corpus tchèques (Analyse A) et Fratchèque (Analyse B).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is demonstrated on two Czech částice - přece, vždyt̕ and their variants - using huge Czech corpora (Analysis A) and Fratchèque (Analysis B).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>L’étude continue avec l’analyse systématique des types variés d’usage de vždyt̕, přece dans le but de proposer une description lexicographique pour un dictionnaire bilingue tchèque-français.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The study continues analysing systematically all kind of usage of vždyt̕, přece in order to present lexicographical description for a bilingual Czech-French dictionary.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Enfin, on discute quelques questions qui concernent la possibilité d’évaluer automatiquement la qualité de traductions liées à la présence de částice</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, some issues concerning automatic evaluation of translation quality are discussed taking into account the work with částice</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

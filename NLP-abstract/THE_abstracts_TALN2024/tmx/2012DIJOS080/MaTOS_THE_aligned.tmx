@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2012DIJOS080. segId begin by 1, tuid = segId</note>
+        <docid>2012DIJOS080</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le développement croissant des réseaux et en particulier l'Internet a considérablement développé l'écart entre les systèmes d'information hétérogènes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The increasing development of networks and especially the Internet has greatly expanded the gap between heterogeneous information systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>En faisant une analyse sur les études de l'interopérabilité des systèmes d'information hétérogènes, nous découvrons que tous les travaux dans ce domaine tendent à la résolution des problèmes de l'hétérogénéité sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a review of studies of interoperability of heterogeneous information systems, we find that all the work in this area tends to be in solving the problems of semantic heterogeneity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le W3C (World Wide Web Consortium) propose des normes pour représenter la sémantique par l'ontologie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The W3C (World Wide Web Consortium) standards proposed to represent the semantic ontology.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L'ontologie est en train de devenir un support incontournable pour l'interopérabilité des systèmes d'information et en particulier dans la sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Ontology is becoming an indispensable support for interoperability of information systems, and in particular the semantics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La structure de l'ontologie est une combinaison de concepts, propriétés et relations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The structure of the ontology is a combination of concepts, properties and relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Cette combinaison est aussi appelée un graphe sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This combination is also called a semantic graph.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Les langages OWL (Ontology Web Language) et RDF (Resource Description Framework) sont les langages les plus importants du web sémantique, ils sont basés sur XML.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The OWL (Ontology Web Language) and RDF (Resource Description Framework) are the most important languages of the Semantic Web, and are based on XML.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Le RDF est la première norme du W3C pour l'enrichissement des ressources sur le Web avec des descriptions détaillées et il augmente la facilité de traitement automatique des ressources Web.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>RDF is the first W3C standard for enriching resources on the Web with detailed descriptions, and increases the facility of automatic processing of Web resources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Les descriptions peuvent être des caractéristiques des ressources, telles que l'auteur ou le contenu d'un site web.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Descriptions may be characteristics of resources, such as the author or the content of a website.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Ces descriptions sont des métadonnées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These descriptions are metadata.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Enrichir le Web avec des métadonnées permet le développement de ce qu'on appelle le Web Sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Enriching the Web with metadata allows the development of the so-called Semantic Web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Le RDF est aussi utilisé pour représenter les graphes sémantiques correspondant à une modélisation des connaissances spécifiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>RDF is used to represent semantic graphs corresponding to a specific knowledge modeling.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Les fichiers RDF sont généralement stockés dans une base de données relationnelle et manipulés en utilisant le langage SQL ou les langages dérivés comme SPARQL.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>RDF files are typically stored in a relational database and manipulated using SQL, or derived languages such as SPARQL.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Malheureusement, cette solution, bien adaptée pour les petits graphes RDF n'est pas bien adaptée pour les grands graphes RDF.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This solution is well suited for small RDF graphs, but is unfortunately not well suited for large RDF graphs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Ces graphes évoluent rapidement et leur adaptation au changement peut faire apparaître des incohérences.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These graphs are rapidly evolving, and adapting them to change may reveal inconsistencies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Conduire l'application des changements tout en maintenant la cohérence des graphes sémantiques est une tâche cruciale et coûteuse en termes de temps et de complexité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Driving the implementation of changes while maintaining the consistency of a semantic graph is a crucial task, and costly in terms of time and complexity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Un processus automatisé est donc essentiel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An automated process is essential.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Pour ces graphes RDF de grande taille, nous suggérons une nouvelle façon en utilisant la vérification formelle « Le Model checking ».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For these large RDF graphs, we propose a new way using formal verification entitled "Model Checking".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Le Model checking est une technique de vérification qui explore tous les états possibles du système.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Model Checking is a verification technique that explores all possible states of the system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>De cette manière, on peut montrer qu'un modèle d'un système donné satisfait une propriété donnée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this way, we can show that a model of a given system satisfies a given property.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse apporte une nouvelle méthode de vérification et d'interrogation de graphes sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis provides a new method for checking and querying semantic graphs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une approche nommé ScaleSem qui consiste à transformer les graphes sémantiques en graphes compréhensibles par le model checker (l'outil de vérification de la méthode Model checking).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose an approach called ScaleSem which transforms semantic graphs into graphs understood by the Model Checker (The verification Tool of the Model Checking method).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="FR">
+                <seg>Il est nécessaire d'avoir des outils logiciels permettant de réaliser la traduction d'un graphe décrit dans un formalisme vers le même graphe (ou une adaptation) décrit dans un autre formalisme</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is necessary to have software tools to perform the translation of a graph described in a certain formalism into the same graph (or adaptation) described in another formalism</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017REN1S002. segId begin by 1, tuid = segId</note>
+        <docid>2017REN1S002</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les WMNs comportent des noeuds qui sont capables de recevoir et de transmettre des données vers de multiples destinations dans le réseau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>WMNs comprise nodes that are able to receive and forward the data to other destinations in the networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>De ce fait, les WMNs sont capables de s'auto-organiser et auto-configurer dynamiquement [5].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Consequently, WMNs are able to dynamically self-organize and self-configure [5].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Chaque noeud crée et maintient la connectivité avec ses voisins.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Each node itself creates and maintains the connectivity with its neighbors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La disponibilité du mode ad-hoc basée sur la norme IEEE 802.11 permet une mise en œuvre de WMNs à faible coût.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The availability of ad-hoc mode on popular IEEE 802.11 allows low-cost implementation of WMNs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les WMNs présentent cependant deux inconvénients majeurs liés aux interférences d'une part et à la scalabilité d'autre part [6].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, WMNs have two major drawbacks: interference and scalability as discussed in [6].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>(D1) Le problème des interférences</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>(D1) Interference :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>(D2) Le problème de scalabilité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>(D2) Scalability:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>D'un autre côté, le problème de scalabilité dans les WMNs peut être résolu par les solutions de routage efficaces [11].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Meanwhile, the scalability of WMNs could be tackled by routing solutions [11].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>En effet, les algorithmes de routage dans les WMNs sont chargés de calculer des routes pour transporter des données de multiples sauts jusqu'à atteindre les destinations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Routing algorithms are responsible for computing routes so as to convey data through multiple hops until reaching the destinations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Comme illustré dans [11], les routes les plus courtes, qui sont les solutions par défaut des algorithmes de routage classiques, ont généralement plus d'interférences.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As shown in [11], the shortest-path routes, which are the default solutions of conventional routing algorithms, usually have more interference.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>En conséquences, il faut trouver des routes qui ont moins d'interférences.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The solution, subsequently, is finding other routes that have less interference.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Pour un objectif de routage donné et des paramètres donnés, ces routes peuvent être optimales ou sub-optimales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These routes could be optimal or sub-optimal with given objectives and arguments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Les paramètres dans les problèmes de routage comprennent des métriques orientées réseau et des métriques orientées utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The arguments of routing problems comprise of network-oriented metrics and User-oriented metrics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Les métriques orientées réseau, également appelées les métriques de la qualité de service (QoS), sont dérivées à partir des paramètres réseau comme la bande passante, le délai, la gigue, etc.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Network-oriented metrics, also called as Quality of Service (QoS) metrics, are derived from the network directly such as bandwidth, delay, jitter, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>En revanche, les métriques orientées vers l'utilisateur, également appelées les métriques de qualité d'expérience (QoE), sont basées sur l'expérience de l'utilisateur, tels que les notes MOS (Mean Opinion Score).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Meanwhile, User-oriented metrics, also called as Quality of Experience (QoE) metrics, are based on users’ experience such as mean opinion score (MOS).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>La perception de l'utilisateur est un objectif majeur des services de streaming vidéo.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The good perception of users is the major objective of video streaming services.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>La plupart des algorithmes de routage existants prennent des décisions de routage en fonction d'une seule ou d'une combinaison des métriques orientées réseau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Most of existing routing algorithms give routing decisions based on single or combination of network-oriented metrics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, les algorithmes de routage dans [12, 13, 14] déterminent les routes basées sur la bande passante et la charge du réseau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For example, the routing algorithms in [12, 13, 14] determine routes based on the bandwidth and congestion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Cependant, les métriques orientées réseau ne sont pas nécessairement corrélée à l'expérience de l'utilisateur [15, 16, 17, 18].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, network-oriented metrics may not be well-correlated to users’ experience [15, 16, 17, 18].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>En d'autres termes, les utilisateurs peuvent ne pas être satisfaits même avec les routes optimales qui sont basées sur les métriques orientés réseau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In other words, users may not be satisfied even with optimal network-oriented metric routes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="FR">
+                <seg>En conséquences, il est nécessaire de développer les algorithmes de routage qui tiennent compte de métriques orientées utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a result, it is necessary to develop routing algorithms that take user-oriented metrics into account.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse traite d'algorithmes de routage dans les WMNs avec comme objectif d'améliorer la qualité pour les applications de streaming vidéo.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis addresses the routing of video streaming over WMNs and proposes novel routing algorithms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="FR">
+                <seg>Les algorithmes de routage proposés prendront des décisions de routage basées sur la perception de l'utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These routing algorithms give routing decisions based on the perception of users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte, toutes les solutions doivent faire face aux deux challenges suivants : (M1) l'estimation en temps réel de la perception utilisateur et (M2) découverte des routes optimales ou sous-optimales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To do that, the proposed solution has to address two challenges as follows: (M1) estimate users’ perception in real-time and (M2) find optimal or sub-optimal routes efficiently.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

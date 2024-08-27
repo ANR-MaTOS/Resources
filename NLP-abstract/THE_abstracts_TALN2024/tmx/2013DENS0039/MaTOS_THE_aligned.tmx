@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2013DENS0039. segId begin by 1, tuid = segId</note>
+        <docid>2013DENS0039</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La vérification automatique est aujourd'hui devenue un domaine central de recherche en informatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Automatic verification has nowadays become a central domain of investigation in computer science.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Depuis plus de 25 ans, une riche théorie a été développée menant à de nombreux outils, à la fois académiques et industriels, permettant la vérification de propriétés booléennes-celles qui peuvent être soit vraies soit fausses.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Over 25 years, a rich theory has been developed leading to numerous tools, both in academics and industry, allowing the verification of Boolean properties-those that can be either true or false.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Les besoins actuels évoluent vers une analyse plus fine, c'est-à-dire plus quantitative.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Current needs evolve to a finer analysis, a more quantitative one.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L'extension des techniques de vérification aux domaines quantitatifs a débuté depuis 15 ans avec les systèmes probabilistes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Extension of verification techniques to quantitative domains has begun 15 years ago with probabilistic systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cependant, de nombreuses autres propriétés quantitatives existent, telles que la durée de vie d'un équipement, la consommation énergétique d'une application, la fiabilité d'un programme, ou le nombre de résultats d'une requête dans une base de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, many other quantitative properties are of interest, such as the lifespan of an equipment, energy consumption of an application, the reliability of a program, or the number of results matching a database query.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Exprimer ces propriétés requiert de nouveaux langages de spécification, ainsi que des algorithmes vérifiant ces propriétés sur une structure donnée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Expressing these properties requires new specification languages, as well as algorithms checking these properties over a given structure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse a pour objectif l'étude de plusieurs formalismes permettant de spécifier de telles propriétés, qu'ils soient dénotationnels-expressions régulières, logiques monadiques ou logiques temporelles-ou davantage opérationnels, comme des automates pondérés, éventuellement étendus avec des jetons.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis aims at investigating several formalisms, equipped with weights, able to specify such properties: denotational ones-like regular expressions, first-order logic with transitive closure, or temporal logics-or more operational ones, like navigating automata, possibly extended with pebbles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Un premier objectif de ce manuscript est l'étude de résultats d'expressivité comparant ces formalismes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A first objective of this thesis is to study expressiveness results comparing these formalisms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>En particulier, on donne des traductions efficaces des formalismes dénotationnels vers celui opérationnel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, we give efficient translations from denotational formalisms to the operational one.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Ces objets, ainsi que les résultats associés, sont présentés dans un cadre unifié de structures de graphes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These objects, and the associated results, are presented in a unified framework of graph structures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Ils peuvent, entre autres, s'appliquer aux mots et arbres finis, aux mots emboîtés (nested words), aux images ou aux traces de Mazurkiewicz.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This permits to handle finite words and trees, nested words, pictures or Mazurkiewicz traces, as special cases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, la vérification de propriétés quantitatives de traces de programmes (potentiellement récursifs, ou concurrents), les requêtes sur des documents XML (modélisant par exemple des bases de données), ou le traitement des langues naturelles sont des applications possibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, possible applications are the verification of quantitative properties of traces of programs (possibly recursive, or concurrent), querying of XML documents (modeling databases for example), or natural language processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>On s'intéresse ensuite aux questions algorithmiques que soulèvent naturellement ces résultats, tels que l'évaluation, la satisfaction et le model checking.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Second, we tackle some of the algorithmic questions that naturally arise in this context, like evaluation, satisfiability and model checking.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>En particulier, on étudie la décidabilité et la complexité de certains de ces problèmes, en fonction du semi-anneau sous-jacent et des structures considérées (mots, arbres...).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, we study some decidability and complexity results of these problems depending on the underlying semiring and the structures under consideration (words, trees...).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Finalement, on considère des restrictions intéressantes des formalismes précédents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we consider some interesting restrictions of the previous formalisms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Certaines permettent d'étendre l'ensemble des semi-anneau sur lesquels on peut spécifier des propriétés quantitatives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Some permit to extend the class of semirings on which we may specify quantitative properties.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Une autre est dédiée à l'étude du cas spécial de spécifications probabilistes : on étudie en particulier des fragments syntaxiques de nos formalismes génériques de spécification générant uniquement des comportements probabilistes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Another is dedicated to the special case of probabilistic specifications: in particular, we study syntactic fragments of our generic specification formalisms generating only probabilistic behaviors.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

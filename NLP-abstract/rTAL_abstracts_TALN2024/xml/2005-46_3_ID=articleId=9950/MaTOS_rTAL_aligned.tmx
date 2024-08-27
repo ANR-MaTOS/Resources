@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2005-46_3_ID=articleId=9950. segId begin by 1, tuid = segId</note>
+        <docid>2005-46_3_ID=articleId=9950</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes de questions-réponses ont pour objectif de donner accès à des informations précises.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Question answering systems aim at retrieving precise information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Dans un système de questions-réponses classique, l'étape qui effectue la mise en relation de la question et des réponses est l'extraction de la réponse, qui consiste dans un premier temps à sélectionner des phrases susceptibles de contenir la réponse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a classical question answering system, the step which matches the question to the possible answers is the answer extraction, which begins by selecting sentences that may contain the answer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La sélection et le classement des phrases sont cruciaux, car ils déterminent fortement le poids des réponses courtes retournées, et donc le classement de ces réponses.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Selecting and ranking sentences is crucial, since it determines the weights of the short answers, and thus their ranks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cet article s'intéresse plus particulièrement à cette étape, en tentant d'évaluer des stratégies de sélection des phrases candidates.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This article considers the problem of sentence selection, by evaluating selection strategies.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

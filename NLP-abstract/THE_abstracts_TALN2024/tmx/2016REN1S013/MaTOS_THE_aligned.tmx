@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016REN1S013. segId begin by 1, tuid = segId</note>
+        <docid>2016REN1S013</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'analyse du domaine vise à identifier et organiser les caractéristiques communes et variables dans un domaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Domain analysis is the process of analyzing a family of products to identify their common and variable features.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La contribution générale de cette thèse consiste à adopter et exploiter des techniques de traitement automatique du langage naturel et d'exploration de données pour automatiquement extraire et modéliser les connaissances relatives à la variabilité à partir de documents informels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, our general contribution is to address mining and modeling variability from informal documentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous étudions l'applicabilité de notre idée à travers deux études de cas pris dans deux contextes différents : (1) la rétro-ingénierie des Modèles de Features (FMs) à partir des exigences réglementaires de sûreté dans le domaine de l'industrie nucléaire civil et (2) l'extraction de Matrices de Comparaison de Produits (PCMs) à partir de descriptions informelles de produits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We investigate the applicability of this idea by instantiating it in two different contexts: (1) reverse engineering Feature Models (FMs) from regulatory requirements in nuclear domain and (2) synthesizing Product Comparison Matrices (PCMs) from informal product descriptions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans la première étude de cas, nous adoptons des techniques basées sur l'analyse sémantique, le regroupement (clustering) des exigences et les règles d'association.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first case study, we adopt NLP and data mining techniques based on semantic analysis, requirements clustering and association rules to assist experts when constructing feature models from these regulations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>L'évaluation de cette approche montre que 69% de clusters sont corrects sans aucune intervention de l'utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The evaluation shows that our approach is able to retrieve 69% of correct clusters without any user intervention.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Les dépendances entre features montrent une capacité prédictive élevée : 95% des relations obligatoires et 60% des relations optionnelles sont identifiées, et la totalité des relations d'implication et d'exclusion sont extraites.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, features dependencies show a high predictive capacity: 95% of the mandatory relationships and 60% of optional relationships are found, and the totality of requires and exclude relationships are extracted.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans la deuxième étude de cas, notre approche repose sur la technologie d'analyse contrastive pour identifier les termes spécifiques au domaine à partir du texte, l'extraction des informations pour chaque produit, le regroupement des termes et le regroupement des informations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second case study, our proposed approach relies on contrastive analysis technology to mine domain specific terms from text, information extraction, terms clustering and information clustering.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Notre étude empirique montre que les PCMs obtenus sont compacts et contiennent de nombreuses informations quantitatives qui permettent leur comparaison.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Overall, our empirical study shows that the resulting PCMs are compact and exhibit numerous quantitative and comparable information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>L'expérience utilisateur montre des résultats prometteurs et que notre méthode automatique est capable d'identifier 43% de features correctes et 68% de valeurs correctes dans des descriptions totalement informelles et ce, sans aucune intervention de l'utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The user study shows that our automatic approach retrieves 43% of correct features and 68% of correct values in one step and without any user intervention.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons qu'il existe un potentiel pour compléter ou même raffiner les caractéristiques techniques des produits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that there is a potential to complement or even refine technical information of products.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>La principale leçon à tirer de ces deux études de cas, est que l'extraction et l'exploitation de la connaissance relative à la variabilité dépendent du contexte, de la nature de la variabilité et de la nature du texte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main lesson learnt from the two case studies is that the exploitability and the extraction of variability knowledge depend on the context, the nature of variability and the nature of text.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

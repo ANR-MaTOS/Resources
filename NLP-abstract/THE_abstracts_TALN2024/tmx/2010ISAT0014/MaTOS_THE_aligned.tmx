@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2010ISAT0014. segId begin by 1, tuid = segId</note>
+        <docid>2010ISAT0014</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse contribue à l’étude de la fiabilité et de la sécurité-innocuité des systèmes informatisés, modélisés par des systèmes à événements discrets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis contributes to the study of reliability and safety of computer and software systems which are modeled as discrete event systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les principales contributions concernent la théorie des Systèmes de Contrôle (notés C Systems) et l’approche par Monitoring des modèles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The major contributions include the theory of Control Systems (C Systems) and the model monitoring approach.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans la première partie de la thèse, nous étudions la théorie des Systèmes de Contrôle qui combine et étend de façon significative, les systèmes de réécriture de la théorie des langages et le contrôle supervisé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first part of the thesis, we study the theory of control systems which combines and significantly extends regulated rewriting in formal languages theory and supervisory control.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Un système de contrôle est une structure générique qui contient deux composants : le composant contrôlé et le composant contrôlant qui restreint le comportement du composant contrôlé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The control system is a generic framework, and contains two components: the controlled component and the controlling component that restricts the behavior of the controlled component.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les deux composants sont exprimés en utilisant le même formalisme comme des automates ou des grammaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The two components are expressed using the same formalism, e.g., automata or grammars.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous considérons différentes classes de systèmes de contrôle basés sur différents formalismes comme, par exemple, les automates, les grammaires, ainsi que leurs versions infinies et concurrentes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We consider various classes of control systems based on different formalisms, for example, automaton control systems, grammar control systems, and their infinite versions and concurrent variants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, une application de cette théorie est présentée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>After that, an application of the theory is presented.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes de contrôle basés sur les automates de Büchi sont utilisés pour vérifier par model-checking, des propriétés définissant la correction sur des traces d’exécution spécifiées par une assertion de type nevertrace.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The Büchi automata based control system is used to model and check correctness properties on execution traces specified by nevertrace claims.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans la seconde partie de la thèse, nous investiguons l’approche de monitoring des modèles dont la théorie des systèmes de contrôle constitue les fondations formelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second part of the thesis, we investigate the model monitoring approach whose theoretical foundation is the theory of control systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Le principe pivot de cette approche est la « spécification de propriétés comme contrôleur».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The key principle of the approach is “property specifications as controllers”.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>En d’autres termes, pour un système, les exigences fonctionnelles, d’une part, et des propriétés, d’autre part, sont modélisées et implantées séparément, les propriétés spécifiées contrôlant le comportement issu des exigences fonctionnelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In other words, the functional requirements and property specification of a system are separately modeled and implemented, and the latter one controls the behavior of the former one.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>De cette approche découle ainsi deux techniques alternatives, respectivement nommées monitoring de modèle et génération de modèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The model monitoring approach contains two alternative techniques, namely model monitoring and model generating.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Cette approche peut être utilisée de diverses manières pour améliorer la fiabilité et la sécurité-innocuité de divers types de systèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The approach can be applied in several ways to improve reliability and safety of various classes of systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons quelques applications qui montrent l’intérêt pratique de cette contribution théorique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We present some typical applications to show its strong power.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Tout d’abord, cette approche aide à prendre en compte les évolutions des spécifications des propriétés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, the approach provides better support for the change and evolution of property specifications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>En second lieu, elle fournit une base théorique à la sécurité fonctionnelle, popularisée par la norme IEC 61508.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Second, it provides the theoretical foundation of safety-related systems in the standard IEC 61508 for ensuring the functional validity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>En troisième lieu, l’approche peut être utilisée pour formaliser et vérifier l’application de guides de bonnes pratiques ou des règles de modélisation appliquées par exemple pour des modèles UML.Ces résultats constituent les bases pour des études futures de dispositifs plus perfectionnés, et fournissent une nouvelle voie pour s’assurer de la fiabilité et de la sécurité-innocuité des systèmes</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Third, it is used to formalize and check guidelines and consistency rules of UML.These results lay out the foundations for further study of more advanced control mechanisms, and provide a new way for ensuring reliability and safety</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

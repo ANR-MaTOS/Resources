@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2005-46_2_ID=articleId=9936. segId begin by 1, tuid = segId</note>
+        <docid>2005-46_2_ID=articleId=9936</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Ce modèle repose sur l'utilisation de IGTREE, un algorithme d'inférence d'arbre de décision capable de traiter à la fois un grand nombre de classes et d'exemples d'apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We present a classification-based word prediction model based on IGTREE, a decision-tree induction algorithm with favorable scaling abilities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>À travers une première série d'expérimentations nous montrons que la capacité de prédiction du modèle augmente log-linéairement avec le nombre d'exemples d'entraînement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Through a first series of experiments we demonstrate that the system exhibits log-linear increases in prediction accuracy and decreases in discrete perplexity, a new evaluation metric, with increasing numbers of training examples.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La taille des arbres inférés croît, elle, linéairement avec la quantité d'exemples d'apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The induced trees grow linearly with the amount of training examples.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Lorsque notre modèle est entraîné sur un corpus journalistique de 30 millions de mots, le nombre de mots correctement prédits est de 42.2 % sur des textes journalistiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Trained on 30 million words of newswire text, prediction accuracies reach 42.2% on the same type of text.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Une seconde série d'expérimentations démontre que ce prédicteur générique peut être spécialisé pour traiter des configurations dans lesquelles l'ensemble des mots à prédire se restreint à un petit ensemble.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a second series of experiments we show that this generic approach to word prediction can be specialized to confusible prediction, yielding high accuracies on nine example confusible sets in all genres of text.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Le modèle spécialisé atteint des meilleurs résultats que le classifieur générique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The confusible-specific approach outperforms the generic word-prediction approach, but with more data the difference decreases.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

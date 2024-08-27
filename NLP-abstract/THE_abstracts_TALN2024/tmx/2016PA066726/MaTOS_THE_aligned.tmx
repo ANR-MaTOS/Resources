@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016PA066726. segId begin by 1, tuid = segId</note>
+        <docid>2016PA066726</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La classification des images revêt un intérêt majeur dans de nombreuses tâches de reconnaissance visuelle, en particulier pour la reconnaissance de véhicules au sol via les systèmes aéroportés, où les images traitées sont de faible résolution du fait de la large distance entre le porteur et la scène observée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Image classification has a prominent interest in numerous visual recognition tasks, particularly for vehicle recognition in airborne systems, where the images have a low resolution because of the large distance between the system and the observed scene.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Durant l'apprentissage, des données complémentaires peuvent être disponibles, qu'il s'agisse de connaissances sur les conditions de prise de vue ou de la version haute-résolution des images.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>During the training phase, complementary data such as knowledge on the position of the system or high-resolution images may be available.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans nos travaux, on s'intéresse au problème de la reconnaissance d'images faiblement résolues en prenant en compte des informations complémentaires pendant l'apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In our work, we focus on the task of low-resolution image classification while taking into account supplementary information during the training phase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>On montre d'abord l'intérêt des réseaux convolutionnels profonds pour la reconnaissance d'images faiblement résolues, en proposant notamment une architecture apprise sur les données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We first show the interest of deep convolutional networks for the low-resolution image recognition, especially by proposing an architecture learned on the targeted data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>D'autre part, on s'appuie sur le cadre de l'apprentissage avec information privilégiée pour bénéficier des données d'entraînement complémentaires, ici les versions haute-résolution des images.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, we rely on the framework of learning using privileged information to benefit from the complementary training data, here the high-resolution versions of the images.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons deux méthodes d'intégration de l'information privilégiée dans l'apprentissage des réseaux de neurones.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose two novel methods for integrating privileged information in the learning phase of neural networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Notre premier modèle s'appuie sur ces données complémentaires pour calculer un niveau de difficulté absolue, attribuant un poids important aux images les plus facilement reconnaissables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our first model relies on these complementary data to compute an absolute difficulty level, assigning a large weight to the most easily recognized images.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Notre deuxième modèle introduit une contrainte de similitude entre les modèles appris sur chaque type de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our second model introduces a similarity constraint between the networks learned on each type of data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>On valide expérimentalement nos deux modèles dans plusieurs cas d'application, notamment dans un contexte orienté grain-fin et sur une base de données contenant du bruit d'annotation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We experimentally validate our models on several application cases, especially in a fine-grained oriented context and on a dataset containing annotation noise.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

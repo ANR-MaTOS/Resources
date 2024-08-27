@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2015TOU30202. segId begin by 1, tuid = segId</note>
+        <docid>2015TOU30202</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La compréhension du langage naturel repose souvent sur des raisonnements de sens commun, pour lesquels la connaissance de relations sémantiques, en particulier entre prédicats verbaux, peut être nécessaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Natural language understanding often relies on common-sense reasoning, for which knowledge about semantic relations, especially between verbal predicates, may be required.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse porte sur la problématique de l'utilisation d'une méthode distributionnelle pour extraire automatiquement les informations sémantiques nécessaires à ces inférences de sens commun.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis addresses the challenge of using a distibutional method to automatically extract the necessary semantic information for common-sense inference.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Des associations typiques entre des paires de prédicats et un ensemble de relations sémantiques (causales, temporelles, de similarité, d'opposition, partie/tout) sont extraites de grands corpus, par l'exploitation de la présence de connecteurs du discours signalant typiquement ces relations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Typical associations between pairs of predicates and a targeted set of semantic relations (causal, temporal, similarity, opposition, part/whole) are extracted from large corpora, by exploiting the presence of discourse connectives which typically signal these semantic relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Afin d'apprécier ces associations, nous proposons plusieurs mesures de signifiance inspirées de la littérature ainsi qu'une mesure novatrice conçue spécifiquement pour évaluer la force du lien entre les deux prédicats et la relation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to appraise these associations, we provide several significance measures inspired from the literature as well as a novel measure specifically designed to evaluate the strength of the link between the two predicates and the relation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La pertinence de ces mesures est évaluée par le calcul de leur corrélation avec des jugements humains, obtenus par l'annotation d'un échantillon de paires de verbes en contexte discursif.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The relevance of these measures is evaluated by computing their correlations with human judgments, based on a sample of verb pairs annotated in context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous évaluons le potentiel de ces représentations pour plusieurs applications.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We assess the potential of these representations for several applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Concernant l'analyse du discours, les tâches de la prédiction d'attachement entre unités du discours, ainsi que la prédiction des relations discursives spécifiques les reliant, sont explorées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Regarding discourse analysis, the tasks of predicting attachment of discourse units, as well as predicting the specific discourse relation linking them, are investigated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>En utilisant uniquement les traits provenant de notre ressource, nous obtenons des améliorations significatives pour les deux tâches, par rapport à plusieurs bases de référence, notamment des modèles utilisant d'autres types de représentations lexico-sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Using only features from our resource, we obtain significant improvements for both tasks in comparison to several baselines, including ones using other representations of the pairs of predicates.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons également de définir des ensembles optimaux de connecteurs mieux adaptés à des applications sur de grands corpus, en opérant une réduction de dimension dans l'espace des connecteurs, au lieu d'utiliser des groupes de connecteurs composés manuellement et correspondant à des relations prédéfinies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also propose to define optimal sets of connectives better suited for large corpus applications by performing a dimension reduction in the space of the connectives, instead of using manually composed groups of connectives corresponding to predefined relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Ces applications diverses démontrent les contributions prometteuses amenées par notre approche permettant l'extraction non supervisée de relations sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These diverse applications aim to demonstrate the promising contributions provided by our approach, namely allowing the unsupervised extraction of typed semantic relations.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

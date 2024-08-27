@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017PA066079. segId begin by 1, tuid = segId</note>
+        <docid>2017PA066079</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Différentes disciplines des sciences humaines telles la philologie ou la paléographie font face à des tâches complexes et fastidieuses pour l'examen des sources de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Different disciplines in the humanities, such as philology or palaeography, face complex and time-consuming tasks whenever it comes to examining the data sources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La première partie de la thèse vise, d'une part, à établir la structuration thématique d'un corpus, en construisant des espaces sémantiques de grande dimension.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The introduction of computational approaches in humanities makes it possible to address issues such as semantic analysis and systematic archiving.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>D'autre part, elle vise au suivi dynamique des thématiques qui constitue un réel défi scientifique, notamment en raison du passage à l'échelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The conceptual models developed are based on algorithms that are later hard coded in order to automate these tedious tasks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La seconde partie de la thèse traite de manière holistique la page d'un document numérisé sans aucune intervention préalable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first part of the thesis we propose a novel method to build a semantic space based on topics modeling.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le but est d'apprendre automatiquement des représentations du trait de l'écriture ou du tracé d'un certain script par rapport au tracé d'un autre script.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second part and in order to classify historical documents according to their script.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Il faut dans ce cadre tenir compte de l'environnement où se trouve le tracé : image, artefact, bruits dus à la détérioration de la qualité du papier, etc.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a novel representation learning method based on stacking convolutional auto-encoder.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

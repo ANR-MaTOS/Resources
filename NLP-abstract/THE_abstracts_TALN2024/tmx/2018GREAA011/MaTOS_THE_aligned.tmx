@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018GREAA011. segId begin by 1, tuid = segId</note>
+        <docid>2018GREAA011</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Ce travail de thèse traite de la découverte de connaissances à partir de Séries Temporelles de Champs de Déplacements (STCD) obtenues par imagerie satellitaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This PhD thesis deals with knowledge discovery from Displacement Field Time Series (DFTS) obtained by satellite imagery.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>De telles séries occupent aujourd'hui une place centrale dans l'étude et la surveillance de phénomènes naturels tels que les tremblements de terre, les éruptions volcaniques ou bien encore le déplacement des glaciers.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such series now occupy a central place in the study and monitoring of natural phenomena such as earthquakes, volcanic eruptions and glacier displacements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En effet, ces séries sont riches d'informations à la fois spatiales et temporelles et peuvent aujourd'hui être produites régulièrement à moindre coût grâce à des programmes spatiaux tels que le programme européen Copernicus et ses satellites phares Sentinel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These series are indeed rich in both spatial and temporal information and can now be produced regularly at a lower cost thanks to spatial programs such as the European Copernicus program and its famous Sentinel satellites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nos propositions s'appuient sur l'extraction de motifs Séquentiels Fréquents Groupés (SFG).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our proposals are based on the extraction of grouped frequent sequential patterns.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, ils ne permettent pas d'utiliser les indices de confiance intrinsèques aux STCD et la méthode de swap randomisation employée pour sélectionner les motifs les plus prometteurs ne tient pas compte de leurs complémentarités spatiotemporelles, chaque motif étant évalué individuellement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, they cannot use the confidence indices coming along with DFTS and the swap method used to select the most promising patterns does not take into account their spatiotemporal complementarities, each pattern being evaluated individually.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Notre contribution est ainsi double.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our contribution is thus double.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Une première proposition vise tout d'abord à associer une mesure de fiabilité à chaque motif en utilisant les indices de confiance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A first proposal aims to associate a measure of reliability with each pattern by using the confidence indices.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cette mesure permet de sélectionner les motifs portés par des données qui sont en moyenne suffisamment fiables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This measure allows to select patterns having occurrences in the data that are on average sufficiently reliable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons un algorithme correspondant pour réaliser les extractions sous contrainte de fiabilité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a corresponding constraint-based extraction algorithm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Celui-ci s'appuie notamment sur une recherche efficace des occurrences les plus fiables par programmation dynamique et sur un élagage de l'espace de recherche grâce à une stratégie de push partiel, ce qui permet de considérer des STCD conséquentes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It relies on an efficient search of the most reliable occurrences by dynamic programming and on a pruning of the search space provided by a partial push strategy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Une deuxième contribution visant à sélectionner les motifs les plus prometteurs est également présentée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A second contribution for the selection of the most promising patterns is also made.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Celle-ci, basée sur un critère informationnel, permet de prendre en compte à la fois les indices de confiance et la façon dont les motifs se complètent spatialement et temporellement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This one, based on an informational criterion, makes it possible to take into account at the same time the confidence indices and the way the patterns complement each other spatially and temporally.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Pour ce faire, les indices de confiance sont interprétés comme des probabilités, et les STCD comme des bases de données probabilistes dont les distributions ne sont que partielles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For this aim, the confidence indices are interpreted as probabilities, and the DFTS are seen as probabilistic databases whose distributions are only partial.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Le gain informationnel associé à un motif est alors défini en fonction de la capacité de ses occurrences à compléter/affiner les distributions caractérisant les données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The informational gain associated with a pattern is then defined according to the ability of its occurrences to complete/refine the distributions characterizing the data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Sur cette base, une heuristique est proposée afin de sélectionner des motifs informatifs et complémentaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On this basis, a heuristic is proposed to select informative and complementary patterns.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Cette méthode permet de fournir un ensemble de motifs faiblement redondants et donc plus faciles à interpréter que ceux fournis par swap randomisation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This method provides a set of weakly redundant patterns and therefore easier to interpret than those provided by swap randomization.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Elle a été implémentée au sein d'un prototype dédié.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It has been implemented in a dedicated prototype.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Outre le fait d'être construites à partir de données et de techniques de télédétection différentes, ces séries se différencient drastiquement en termes d'indices de confiance, la série couvrant le massif du Mont-Blanc se situant à des niveaux de confiance très faibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition to being constructed from different data and remote sensing techniques, these series differ drastically in terms of confidence indices, the series covering the Mont-Blanc massif being at very low levels of confidence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Pour les deux STCD, les méthodes proposées ont été mises en œuvre dans des conditions standards au niveau consommation de ressources (temps, espace), et les connaissances des experts sur les zones étudiées ont été confirmées et complétées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In both cases, the proposed methods operate under standard conditions of resource consumption (time, space), and experts’ knowledge of the studied areas is confirmed and completed.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

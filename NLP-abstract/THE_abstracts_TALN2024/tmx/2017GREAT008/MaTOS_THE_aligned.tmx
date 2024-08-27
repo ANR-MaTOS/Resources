@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017GREAT008. segId begin by 1, tuid = segId</note>
+        <docid>2017GREAT008</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Ce travail de thèse porte sur un nouveau paradigme pour la synthèse de la parole à partir du texte, à savoir la synthèse incrémentale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we investigate a new paradigm for text-to-speech synthesis (TTS) allowing to deliver synthetic speech while the text is being inputted: incremental text-to-speech synthesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>L'objectif est de délivrer la parole de synthèse au fur et à mesure de la saisie du texte par l'utilisateur, contrairement aux systèmes classiques pour lesquels la synthèse est déclenchée après la saisie d'une ou plusieurs phrases.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Contrary to conventional TTS systems, that trigger the synthesis after a whole sentence has been typed down, incremental TTS devices deliver speech in a "piece-meal" fashion (i.e. word after word) while aiming at preserving the speech quality achievable by conventional TTS systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'application principale visée est l'aide aux personnes présentant un trouble sévère de la communication orale, et communiquant principalement à l'aide d'un synthétiseur vocal.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By reducing the waiting time between two speech outputs while maintaining a good speech quality, such a system should improve the quality of the interaction for speech-impaired people using TTS devices to express themselves.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Un synthétiseur vocal incrémental permettrait de fluidifier une conversation en limitant le temps que passe l'interlocuteur à attendre la fin de la saisie de la phrase à synthétiser.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main challenge brought by incremental TTS is the synthesis of a word, or of a group of words, with the same segmental and supra-segmental quality as conventional TTS, but without knowing the end of the sentence to be synthesized.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Un des défi que pose ce paradigme est la synthèse d'un mot ou d'un groupe de mot avec une qualité segmentale et prosodique acceptable alors que la phrase qui le contient n'est que partiellement connue au moment de la synthèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we propose to adapt the two main modules (natural language processing and speech synthesis) of a TTS system to the incremental paradigm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Pour ce faire, nous proposons différentes adaptations des deux principaux modules d'un système de synthèse de parole à partir du texte : le module de traitement automatique de la langue naturelle (TAL) et le module de synthèse sonore.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For the natural language processing module, we focused on part-of-speech tagging, which is a key step for phonetization and prosody generation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Pour le TAL en synthèse incrémentale, nous nous sommes intéressé à l'analyse morpho-syntaxique, qui est une étape décisive pour la phonétisation et la détermination de la prosodie cible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose an "adaptive latency algorithm" for part-of-speech tagging, that estimates if the inferred part-of-speech for a given word (based on the n-gram approach) is likely to change when adding one or several words.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous décrivons un algorithme d'analyse morpho-syntaxique dit "à latence adaptative".</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If the Part-of-speech is considered as likely to change, the synthesis of the word is delayed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Ce dernier estime en ligne si une classe lexicale (estimée à l'aide d'un analyseur morpho-syntaxique standard basé sur l'approche n-gram), est susceptible de changer après l'ajout par l'utilisateur d'un ou plusieurs mots.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the other case, the word may be synthesized without risking to alter the segmental or supra-segmental quality of the synthetic speech.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Si la classe est jugée instable, alors la synthèse sonore est retardée, dans le cas contraire, elle peut s'effectuer sans risque a priori de dégrader de la qualité segmentale et suprasegmentale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed method is based on a set of binary decision trees trained over a large corpus of text.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Cet algorithme exploite une ensemble d'arbre de décisions binaires dont les paramètres sont estimés par apprentissage automatique sur un large corpus de texte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We achieve 92.5% precision for the incremental part-of-speech tagging task and a mean delay of 1.4 words.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Les résultats des évaluations objectives et perceptives montrent l’intérêt de la méthode proposée pour la langue française.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Objective and subjective evaluation show that the proposed method outperforms the baselines for French.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous décrivons un prototype complet qui combine les deux méthodes proposées pour le TAL et la synthèse par HMM incrémentale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we describe a prototype developed during this thesis implementing the proposed solution for incremental part-of-speech tagging and speech synthesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Une évaluation perceptive de la pertinence et de la qualité des groupes de mots synthétisés au fur et à mesure de la saisie montre que notre système réalise un compromis acceptable entre réactivité (minimisation du temps entre la saisie d'un mot et sa synthèse) et qualité (segmentale et prosodique) de la parole de synthèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A perceptive evaluation of the word grouping derived from the proposed adaptive latency algorithm as well as the segmental quality of the synthetic speech tends to show that our system reaches a good trade-off between reactivity (minimizing the waiting time between the input and the synthesis of a word) and speech quality (both at segmental and supra-segmental levels).</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

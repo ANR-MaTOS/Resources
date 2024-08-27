@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2012PEST1106. segId begin by 1, tuid = segId</note>
+        <docid>2012PEST1106</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse porte sur l'intégration de ressources lexicales et syntaxiques du français dans deux tâches fondamentales du Traitement Automatique des Langues [TAL] que sont l'étiquetage morpho-syntaxique probabiliste et l'analyse syntaxique probabiliste.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis focuses on the integration of lexical and syntactic resources of French in two fundamental tasks of Natural Language Processing [NLP], that are probabilistic part-of-speech tagging and probabilistic parsing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Grâce à des algorithmes d'analyse syntaxique de plus en plus évolués, les performances actuelles des analyseurs sont de plus en plus élevées, et ce pour de nombreuses langues dont le français.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this paper, we use these resources to give an answer to two problems that we describe briefly below: data sparseness and automatic segmentation of texts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cependant, il existe plusieurs problèmes inhérents aux formalismes mathématiques permettant de modéliser statistiquement cette tâche (grammaire, modèles discriminants,...).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Through more and more sophisticated parsing algorithms, parsing accuracy is becoming higher for many languages including French.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La dispersion des données est l'un de ces problèmes, et est causée principalement par la faible taille des corpus annotés disponibles pour la langue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, there are several problems inherent in mathematical formalisms that statistically model the task (grammar, discriminant models,...).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>De plus, il est prouvé que la dispersion est en partie un problème lexical, car plus la flexion d'une langue est importante, moins les phénomènes lexicaux sont représentés dans les corpus annotés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, it is proved that spars ness is partly a lexical problem, because the richer the morphology of a language is, the sparser the lexicons built from a Treebank will be for that language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Notre première problématique repose donc sur l'atténuation de l'effet négatif de la dispersion lexicale des données sur les performances des analyseurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our first problem is therefore based on mitigating the negative impact of lexical data sparseness on parsing performance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans cette optique, nous nous sommes intéressé à une méthode appelée regroupement lexical, et qui consiste à regrouper les mots du corpus et des textes en classes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To this end, we were interested in a method called word clustering that consists in grouping words of corpus and texts into clusters.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Ces classes réduisent le nombre de mots inconnus et donc le nombre de phénomènes syntaxiques rares ou inconnus, liés au lexique, des textes à analyser.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These clusters reduce the number of unknown words, and therefore the number of rare or unknown syntactic phenomena, related to the lexicon, in texts to be analyzed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Notre objectif est donc de proposer des regroupements lexicaux à partir d'informations tirées des lexiques syntaxiques du français, et d'observer leur impact sur les performances d'analyseurs syntaxiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our goal is to propose word clustering methods based on syntactic information from French lexicons, and observe their impact on parsers accuracy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, la plupart des évaluations concernant l'étiquetage morpho-syntaxique probabiliste et l'analyse syntaxique probabiliste ont été réalisées avec une segmentation parfaite du texte, car identique à celle du corpus évalué.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, most evaluations about probabilistic tagging and parsing were performed with a perfect segmentation of the text, as identical to the evaluated corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Or, dans les cas réels d'application, la segmentation d'un texte est très rarement disponible et les segmenteurs automatiques actuels sont loin de proposer une segmentation de bonne qualité, et ce, à cause de la présence de nombreuses unités multi-mots (mots composés, entités nommées,...).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>But in real cases of application, the segmentation of a text is rarely available and automatic segmentation tools fall short of proposing a high quality segmentation, because of the presence of many multi-word units (compound words, named entities,...).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Dans ce mémoire, nous nous focalisons sur les unités multi-mots dites continues qui forment des unités lexicales auxquelles on peut associer une étiquette morpho-syntaxique, et que nous appelons mots composés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this paper, we focus on continuous multi-word units, called compound words, that form lexical units which we can associate a part-of-speech tag.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Par exemple, cordon bleu est un nom composé, et tout à fait un adverbe composé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We may see the task of searching compound words as text segmentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Notre deuxième problématique portera donc sur la segmentation automatique des textes français et son impact sur les performances des processus automatiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our second issue will therefore focus on automatic segmentation of French texts and its impact on the performance of automatic processes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Pour ce faire, nous nous sommes penché sur une approche consistant à coupler, dans un même modèle probabiliste, la reconnaissance des mots composés et une autre tâche automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to do this, we focused on an approach of coupling, in a unique probabilistic model, the recognition of compound words and another task.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>La reconnaissance des mots composés est donc réalisée au sein du processus probabiliste et non plus dans une phase préalable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recognition of compound words is performed within the probabilistic process rather than in a preliminary phase.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

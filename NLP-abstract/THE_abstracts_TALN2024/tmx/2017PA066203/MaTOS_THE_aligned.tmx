@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017PA066203. segId begin by 1, tuid = segId</note>
+        <docid>2017PA066203</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse propose de s'intéresser au problème de la prédiction en apprentissage statistique sous contrainte de coût, notamment du coût de l'information utilisée par le système de prédiction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis studies the problem of machine learning under budget constraints, in particular we propose to focus on the cost of the information used by the system to predict accurately.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les approches classiques d'apprentissage statistique utilisent généralement le seul aspect de la performance en prédiction pour évaluer la qualité d'un modèle, ignorant le coût potentiel du modèle, par exemple en quantité de données utilisées en apprentissage (nombre d'exemples, nombre d'étiquette, mémoire) ou en inférence (quantité de features -ou caractéristiques-).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Most methods in machine learning usually defines the quality as the performance (e.g accuracy) on the task at hand, but ignores the cost of the model itself: for instance, the number of examples and/or labels needed during learning, the memory used, or the number of features required to predict at test-time.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous développons trois modèles qui intègrent pendant l'apprentissage une notion du coût de l'information utilisée pour la prédiction, avec pour objectif de contraindre le coût de la prédiction en inférence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We present three models that learn to predict under such constraint, i.e that learn a strategy to gather only the necessary information in order to predict well but with a small cost.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons des méthodes d'apprentissage de représentations avec des architectures type réseau de neurones récurrents et des algorithmes par descente de gradient pour l'apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We rely on representation learning techniques, along with recurrent neural networks architecture and gradient descent algorithms for learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La dernière partie du manuscrit s'intéresse au coût lié aux étiquettes, usuellement dénommé apprentissage actif dans la littérature.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the last part of the thesis, we propose to study the problem of active-learning, where one aims at constraining the amount of labels used to train a model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons nos travaux pour une approche nouvelle de ce problème en utilisant le méta-apprentissage ainsi qu'une première instanciation basée sur des réseaux récurrents bi-directionnels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We present our work for a novel approach of the problem using meta-learning, with an instantiation using bi-directional recurrent neural networks.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

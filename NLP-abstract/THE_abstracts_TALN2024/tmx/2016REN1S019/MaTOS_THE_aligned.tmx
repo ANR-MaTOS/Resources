@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016REN1S019. segId begin by 1, tuid = segId</note>
+        <docid>2016REN1S019</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes de recommandation essayent de déduire les intérêts de leurs utilisateurs afin de leurs suggérer des items pertinents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recommendation systems try to infer their users’ interests in order to suggest items relevant to them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ces systèmes offrent ainsi aux utilisateurs un service utile car ils filtrent automatiquement les informations non-pertinentes, ce qui évite le problème de surcharge d’information qui est courant de nos jours.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These systems thus offer a valuable service to users in that they automatically filter non-relevant information, which avoids the nowadays common issue of information overload.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>C’est pourquoi les systèmes de recommandation sont aujourd’hui populaires, si ce n’est omniprésents dans certains domaines tels que le World Wide Web.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is why recommendation systems are now popular, if not pervasive in some domains such as the World Wide Web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cependant, les intérêts d’un individu sont des données personnelles et privées, comme par exemple son orientation politique ou religieuse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, an individual’s interests are personal and private data, such as one’s political or religious orientation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes de recommandation recueillent donc des données privées et leur utilisation répandue nécessite des mécanismes de protection de la vie privée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, recommendation systems gather private data and their widespread use calls for privacy-preserving mechanisms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous étudions la protection de la confidentialité des intérêts des utilisateurs des systèmes de recommandation appelés systèmes de filtrage collaboratif (FC).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we study the privacy of users’ interests in the family of recommendation systems called Collaborative Filtering (CF) ones.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Notre première contribution est Hide &amp;amp; Share, un nouveau mécanisme de similarité, respectueux de la vie privée, pour la calcul décentralisé de graphes de K-Plus-Proches-Voisins (KPPV).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our first contribution is Hide &amp;amp; Share, a novel privacy-preserving similarity mechanism for the decentralized computation of K-Nearest-Neighbor (KNN) graphs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>C’est un mécanisme léger, conçu pour les systèmes de FC fondés sur les utilisateurs et décentralisés (ou pair-à-pair), qui se basent sur les graphes de KPPV pour fournir des recommandations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is a lightweight mechanism designed for decentralized (a.k.a. peer-to-peer) user-based CF systems, which rely on KNN graphs to provide recommendations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Notre seconde contribution s’applique aussi aux systèmes de FC fondés sur les utilisateurs, mais est indépendante de leur architecture.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our second contribution also applies to user-based CF systems, though it is independent of their architecture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Cette contribution est double : nous évaluons d’abord l’impact d’une attaque active dite « Sybil » sur la confidentialité du profil d’intérêts d’un utilisateur cible, puis nous proposons une contre-mesure.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This contribution is two-fold: first we evaluate the impact of an active Sybil attack on the privacy of a target user’s profile of interests, and second we propose a counter-measure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Celle-ci est 2-step, une nouvelle mesure de similarité qui combine une bonne précision, permettant ensuite de faire de bonnes recommandations, avec une bonne résistance à l’attaque Sybil en question.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This counter-measure is 2-step, a novel similarity metric combining a good precision, in turn allowing for good recommendations,with high resilience to said Sybil attack.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2007-48_1_ID=TAL-2007-48-1-02-Blanchon. segId begin by 1, tuid = segId</note>
+        <docid>2007-48_1_ID=TAL-2007-48-1-02-Blanchon</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les méthodes externes d'évaluation de systèmes de TA définissent des mesures de qualité à partir des résultats de TA et de leur usage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>External methods for evaluating MT systems define various measures based on MT results and their usage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Alors que les systèmes opérationnels sont depuis longtemps le plus souvent évalués par des méthodes fondées sur la tâche, les campagnes d'évaluation des dernières années utilisent (parcimonieusement) des méthodes subjectives assez chères fondées sur des jugements humains peu fiables, et (pour la plus grande part) des méthodes basées sur des traductions de référence, impossibles à utiliser lors de l'utilisation réelle d'un système, d'autant moins corrélées aux jugements humains que la qualité augmente, et totalement irréalistes en ce qu'elles forcent à mesurer les progrès sur des corpus fixes, sans cesse retraduits, et non sur de nouveaux textes à traduire pour des besoins réels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While operational systems are mostly evaluated since long by task-based methods, evaluation campaigns of the last years use (parsimoniously) quite expensive subjective methods based on unreliable human judgments, and (for the most part) methods based on reference translations, that are impossible to use during the real usage of a system, less correlated with human judgments when quality increases, and totally unrealistic in that they force to measure progress on fixed corpora, endlessly retranslated, and not on new texts to be translated for real needs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Il y a aussi de nombreux biais introduits par le désir de diminuer les coûts, en particulier l'utilisation de corpus parallèles dans le sens inverse de leur production et l'utilisation de juges monolingues au lieu de bilingues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There are also numerous biases introduced by the desire to diminish costs, in particular the usage of parallel corpora in the direction opposed to that of their production, and of monolingual rather than bilingual judges.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous prouvons cela par une analyse de l'histoire de l'évaluation en TA, des méthodes d'évaluation du « courant dominant », et de certaines récentes campagnes d'évaluation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We prove the above by an analysis of the history of MT evaluation, of the « mainstream » evaluation methods, and of certain recent evaluation campaigns.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons d'abandonner les méthodes fondées sur des traductions de référence en évaluation externe, et de les remplacer par des méthodes strictement fondées sur la tâche, en les réservant à l'évaluation interne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose to abandon the reference-based methods in external evaluations, and to replace them by strictly task-based methods, while reserving them for internal evaluations.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

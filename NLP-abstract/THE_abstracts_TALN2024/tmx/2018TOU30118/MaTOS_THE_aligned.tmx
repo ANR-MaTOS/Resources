@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018TOU30118. segId begin by 1, tuid = segId</note>
+        <docid>2018TOU30118</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le contenu généré dans les médias sociaux comme Twitter permet aux utilisateurs d'avoir un aperçu rétrospectif d'évènement et de suivre les nouveaux développements dès qu'ils se produisent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>User-generated content on social media, such as Twitter, provides in many cases, the latest news before traditional media, which allows having a retrospective summary of events and being updated in a timely fashion whenever a new development occurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cependant, bien que Twitter soit une source d'information importante, il est caractérisé par le volume et la vélocité des informations publiées qui rendent difficile le suivi de l'évolution des évènements.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, social media, while being a valuable source of information, can be also overwhelming given the volume and the velocity of published information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'objectif de cette thèse est de faciliter le suivi d'événement, en fournissant des outils de génération de synthèse adaptés à ce vecteur d'information.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our work falls within these frameworks and focuses on developing a tweet summarization approaches for the two aforementioned scenarios.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les défis majeurs sous-jacents à notre problématique découlent d'une part du volume, de la vélocité et de la variété des contenus publiés et, d'autre part, de la qualité des tweets qui peut varier d'une manière considérable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, tweet summarization task faces many challenges that stem from, on one hand, the high volume, the velocity and the variety of the published information and, on the other hand, the quality of tweets, which can vary significantly.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La tâche principale dans la notification prospective est l'identification en temps réel des tweets pertinents et non redondants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the prospective notification, the core task is the relevancy and the novelty detection in real-time.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Le système peut choisir de retourner les nouveaux tweets dès leurs détections où bien de différer leur envoi afin de s'assurer de leur qualité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For timeliness, a system may choose to push new updates in real-time or may choose to trade timeliness for higher notification quality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>L'intuition sous-jacente à notre proposition est que la mesure de similarité à base de word embedding est capable de considérer des mots différents ayant la même sémantique ce qui permet de compenser le non-appariement des termes lors du calcul de la pertinence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The intuition behind our proposition is that context-aware similarity measure in word2vec is able to consider different words with the same semantic meaning and hence allows offsetting the word mismatch issue when calculating the similarity between a tweet and a topic.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, l'estimation de nouveauté d'un tweet entrant est basée sur la comparaison de ses termes avec les termes des tweets déjà envoyés au lieu d'utiliser la comparaison tweet à tweet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Second, we propose to compute the novelty score of the incoming tweet regarding all words of tweets already pushed to the user instead of using the pairwise comparison.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Cette méthode offre un meilleur passage à l'échelle et permet de réduire le temps d'exécution.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed novelty detection method scales better and reduces the execution time, which fits real-time tweet filtering.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Troisièmement, pour contourner le problème du seuillage de pertinence, nous utilisons un classificateur binaire qui prédit la pertinence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Third, we propose an adaptive Learning to Filter approach that leverages social signals as well as query-dependent features.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>L'approche proposée est basée sur l'apprentissage supervisé adaptatif dans laquelle les signes sociaux sont combinés avec les autres facteurs de pertinence dépendants de la requête.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To overcome the issue of relevance threshold setting, we use a binary classifier that predicts the relevance of the incoming tweet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>De plus, le retour des jugements de pertinence est exploité pour re-entrainer le modèle de classification.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, we show the gain that can be achieved by taking advantage of ongoing relevance feedback.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous montrons que l'approche proposée, qui envoie les notifications en temps réel, permet d'obtenir des performances prometteuses en termes de qualité (pertinence et nouveauté) avec une faible latence alors que les approches de l'état de l'art tendent à favoriser la qualité au détriment de la latence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we adopt a real-time push strategy and we show that the proposed approach achieves a promising performance in terms of quality (relevance and novelty) with low cost of latency whereas the state-of-the-art approaches tend to trade latency for higher quality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse explore également une nouvelle approche de génération du résumé rétrospectif qui suit un paradigme différent de la majorité des méthodes de l'état de l'art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis also explores a novel approach to generate a retrospective summary that follows a different paradigm than the majority of state-of-the-art methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons de modéliser le processus de génération de synthèse sous forme d'un problème d'optimisation linéaire qui prend en compte la diversité temporelle des tweets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We consider the summary generation as an optimization problem that takes into account the topical and the temporal diversity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Les tweets sont filtrés et regroupés d'une manière incrémentale en deux partitions basées respectivement sur la similarité du contenu et le temps de publication.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Tweets are filtered and are incrementally clustered in two cluster types, namely topical clusters based on content similarity and temporal clusters that depends on publication time.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Nous formulons la génération du résumé comme étant un problème linéaire entier dans lequel les variables inconnues sont binaires, la fonction objective est à maximiser et les contraintes assurent qu'au maximum un tweet par cluster est sélectionné dans la limite de la longueur du résumé fixée préalablement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Summary generation is formulated as integer linear problem in which unknowns variables are binaries, the objective function is to be maximized and constraints ensure that at most one post per cluster is selected with respect to the defined summary length limit.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

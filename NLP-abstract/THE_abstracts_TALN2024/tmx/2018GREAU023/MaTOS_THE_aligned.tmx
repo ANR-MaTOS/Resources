@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018GREAU023. segId begin by 1, tuid = segId</note>
+        <docid>2018GREAU023</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Ce travail vise à améliorer la compréhension des signaux sismiques dérivés des fonctions de corrélation inter-récepteur du bruit sismique, ce qui est critique pour une imagerie fiable de la Terre profonde basée sur le bruit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This work aims toward an improved understanding of the seismic signals derived from the inter-receiver correlation functions of seismic noise, which is valuable and critical for a reliable noise-based deep Earth imaging.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La thèse comprend sept chapitres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The thesis consists of seven chapters.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le chapitre 1 introduit les connaissances de base sur le bruit sismique, de la terminologie à ses origines diverses.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Chapter 1 introduces background knowledge on seismic noise, from its classifications to various origins.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Le chapitre 2 fournit une vue d'ensemble de la littérature sur l'historique et le développement de la méthode récente de corrélation de bruit, et passe en revue diverses techniques pour le prétraitement des données de bruit sismique et le post-traitement des fonctions de corrélation de bruit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Chapter 2 provides a literature overview on the history and development of the emerging noise correlation method, and reviews various techniques for the pre-processing of seismic noise data and post-processing of noise correlation functions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Des méthodes de traitement du bruit basées sur les statistiques et un schéma modifié pour calculer la fonction de corrélation sont développés dans ce chapitre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Statistics-based noise processing methods and a modified scheme for computing correlation function are developed in this chapter.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Le chapitre 3 propose plusieurs techniques basées sur la transformée de Radon pour mesurer les lenteurs des champs d'ondes corrélés et analyser en termes de phases sismiques les signaux dérivés du bruit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Chapter 3 proposes several Radon-based techniques to analyze the slownesses of correlated wavefields and to unveil the origin of noise-derived seismic signals.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Le chapitre 6 discute des conditions dans lesquelles apparaissent des phases sans correspondance dans la réponse physique de la Terre qui peuvent fausser les analyses des structures profondes basées sur le bruit..</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Chapter 6 discusses several situations that bring ambiguities into the noise-derived seismic signals and can potentially bias the noise-based imaging of subsurface structure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Le dernier chapitre fournit un résumé sur les contributions de cette thèse et une perspective de plusieurs travaux soit en cours soit envisagés pour le futur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The last chapter provides a summarization over the contributions of this thesis and an outlook of several ongoing and prospected works.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

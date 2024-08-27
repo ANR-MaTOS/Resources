@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018MONTS076. segId begin by 1, tuid = segId</note>
+        <docid>2018MONTS076</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L’extraction d’information spatiale à partir de données textuelles est désormais un sujet de recherche important dans le domaine du Traitement Automatique du Langage Naturel (TALN).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The extraction of spatial information from textual data has become an important research topic in the field of Natural Language Processing (NLP).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Elle répond à un besoin devenu incontournable dans la société de l’information, en particulier pour améliorer l’efficacité des systèmes de Recherche d’Information (RI) pour différentes applications (tourisme, aménagement du territoire, analyse d’opinion, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It meets a crucial need in the information society, in particular, to improve the efficiency of Information Retrieval (IR) systems for different applications (tourism, spatial planning, opinion analysis, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>De tels systèmes demandent une analyse fine des informations spatiales contenues dans les données textuelles disponibles (pages web, courriels, tweets, SMS, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such systems require a detailed analysis of the spatial information contained in the available textual data (web pages, e-mails, tweets, SMS, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cependant, la multitude et la variété de ces données ainsi que l’émergence régulière de nouvelles formes d’écriture rendent difficile l’extraction automatique d’information à partir de corpus souvent peu standards d’un point de vue lexical voire syntaxique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the multitude and the variety of these data, as well as the regular emergence of new forms of writing, make difficult the automatic extraction of information from such corpora.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Afin de relever ces défis, nous proposons, dans cette thèse, des approches originales de fouille de textes permettant l’identification automatique de nouvelles variantes d’entités et relations spatiales à partir de données textuelles issues de la communication médiée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To meet these challenges, we propose, in this thesis, new text mining approaches allowing the automatic identification of variants of spatial entities and relations from textual data of the mediated communication.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ces approches sont fondées sur trois principales contributions qui sont cruciales pour fournir des méthodes de navigation intelligente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These approaches are based on three main contributions that provide intelligent navigation methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Notre première contribution se concentre sur la problématique de reconnaissance et d’extraction des entités spatiales à partir de corpus de messages courts (SMS, tweets) marqués par une écriture peu standard.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our first contribution focuses on the problem of recognition and identification of spatial entities from short messages corpora (SMS, tweets) characterized by weakly standardized modes of writing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>La deuxième contribution est dédiée à l’identification de nouvelles formes/variantes de relations spatiales à partir de ces corpus spécifiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second contribution is dedicated to the identification of new forms/variants of spatial relations from these specific corpora.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Enfin, la troisième contribution concerne l’identification des relations sémantiques associées à l’information spatiale contenue dans les textes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, the third contribution concerns the identification of the semantic relations associated withthe textual spatial information.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

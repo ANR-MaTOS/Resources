@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2006-47_2_ID=TAL-2006-47-2-02-Verberne. segId begin by 1, tuid = segId</note>
+        <docid>2006-47_2_ID=TAL-2006-47-2-02-Verberne</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cet article présente la recherche que nous avons réalisée en examinant le but de la structure du discours de réponse aux questions du type pourquoi (why-QA).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This paper presents the work that we have carried out in investigating the purpose of discourse structure for why-question answering (why-QA).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous avons développé un système de réponse aux questions pourquoi qui utilise les relations RST dans une collection de documents pré-annotés (le RST Treebank).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We developed a system for answering why-questions that employs the discourse relations in a pre-annotated document collection (the RST Treebank).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En appliquant cette méthode, nous obtenons un rappel de 53,3 % avec une Moyenne du Rang Inverse (MRR) de 0,662.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With this method, we obtain a recall of 53.3% with a mean reciprocal rank (MRR) of 0.662.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous soutenons que le rappel maximum qui puisse être obtenu en utilisant les relations RST est de 58,0 %.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We argue that the maximum recall that can be obtained from the use of RST relations as proposed in the present paper is 58.0%.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>En supprimant les questions qui requièrent une connaissance du monde, le rappel maximal serait de 73,9 %.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If we discard the questions that require world knowledge, maximum recall is 73.9%.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous concluons que les structures du discours peuvent jouer un rôle important dans la réponse aux questions complexes, mais que l’augmentation du rappel nécessite davantage de sortes de traitements linguistiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We conclude that discourse structure can play an important role in complex question answering, but that more forms of linguistic processing are needed for increasing recall.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

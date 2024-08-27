@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017CNAM1102. segId begin by 1, tuid = segId</note>
+        <docid>2017CNAM1102</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le sujet de la thèse est l'extraction et la segmentation des vêtements à partir d'images en utilisant des techniques de la vision par ordinateur, de l'apprentissage par ordinateur et de la description d'image, pour la recommandation de manière non intrusive aux utilisateurs des produits similaires provenant d'une base de données de vente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The topic of the thesis is the extraction and segmentation of clothing items from still images using techniques from computer vision, machine learning and image description, in view of suggesting non intrusively to the users similar items from a database of retail products.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons tout d'abord un extracteur d'objets dédié à la segmentation de la robe en combinant les informations locales avec un apprentissage préalable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We firstly propose a dedicated object extractor for dress segmentation by combining local information with a prior learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Un détecteur de personne localises des sites dans l'image qui est probable de contenir l'objet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A person detector is applied to localize sites in the image that are likely to contain the object.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, un processus d'apprentissage intra-image en deux étapes est est développé pour séparer les pixels de l'objet de fond.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, an intra-image two-stage learning process is developed to roughly separate foreground pixels from the background.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>L'objet est finalement segmenté en utilisant un algorithme de contour actif qui prend en compte la segmentation précédente et injecte des connaissances spécifiques sur la courbure locale dans la fonction énergie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, the object is finely segmented by employing an active contour algorithm that takes into account the previous segmentation and injects specific knowledge about local curvature in the energy function.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons ensuite un nouveau framework pour l'extraction des vêtements généraux en utilisant une procédure d'ajustement globale et locale à trois étapes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We then propose a new framework for extracting general deformable clothing items by using a three stage global-local fitting procedure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Un ensemble de modèles initialises un processus d'extraction d'objet par un alignement global du modèle, suivi d'une recherche locale en minimisant une mesure de l'inadéquation par rapport aux limites potentielles dans le voisinage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A set of template initiates an object extraction process by a global alignment of the model, followed by a local search minimizing a measure of the misfit with respect to the potential boundaries in the neighborhood.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Les résultats fournis par chaque modèle sont agrégés, mesuré par un critère d'ajustement globale, pour choisir la segmentation finale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results provided by each template are aggregated, with a global fitting criterion, to obtain the final segmentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>De plus, nous introduisons une nouvelle base de données RichPicture, constituée de 1000 images pour l'extraction de vêtements à partir d'images de mode.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, we introduce a novel dataset called RichPicture, consisting of 1000 images for clothing extraction from fashion images.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Les méthodes sont validées sur la base de données publiques et se comparent favorablement aux autres méthodes selon toutes les mesures de performance considérées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The methods are validated on the public database and compares favorably to the other methods according to all the performance measures considered.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-s235219. segId begin by 1, tuid = segId</note>
+        <docid>s235219</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les solutions cognitives, notamment les agents conversationnels, se basent sur des données textuelles non-structurées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Cognitive solutions, including conversational agents, are based on unstructured textual data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La conception de ces solutions est ralentie par l’absence d’outils d’annotation et d’interprétation sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The design of these solutions is slowed down by the lack of annotation and semantic interpretation tools.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous envisageons d’employer le clustering pour regrouper automatiquement les données et ainsi permettre d’accélérer la labellisation des données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We plan to use clustering to automatically group the data and thus speed up data labelling.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Toutefois, le clustering fait face à de nombreux problèmes qui rendent cette méthode non optimale suivant les conditions d’utilisation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, clustering faces many problems that make this method not optimal depending on the conditions of use.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le but de la thèse est d’étudier la portée applicative de la technique de maximisation des traits associée au clustering pour pallier ces problèmes et répondre aux besoins d’outils de support destinés à la conception de ces solutions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The aim of the thesis is to study the applicative scope of the feature maximization technique associated with clustering to overcome these problems and meet the needs of support tools for the design of these solutions.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

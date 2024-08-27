@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017AZUR4075. segId begin by 1, tuid = segId</note>
+        <docid>2017AZUR4075</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous étudions plusieurs modèles de collaboration entre l’ingénierie logiciel et le web sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we study several models of collaboration between Software Engineering and Semantic Web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>L’objectif principal de notre travail est de fournir au développeur des outils pour concevoir la matière déclarative une couche de métier "exécutable" d’une application afin de simuler son fonctionnement et de montrer ainsi la conformité de l’application par rapport aux exigences du client au début du cycle de vie du logiciel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main objective of our work is to provide the developer with the tools to design, in the declarative manner, a business "executable" layer of an application in order to simulate its operation and thus show the compliance of the application with the customer requirements defined at the beginning of the software life cycle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Un autre avantage de cette approche est de permettre au développeur de partager et de réutiliser la description de la couche de métier d’une application dans un domaine en utilisant l’ontologie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, another advantage of this approach is to allow the developer to share and reuse the business layer description of a typical application in a domain using ontology.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Celle-ci est appelée "patron d’application".</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This typical application description is called "Application Template".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La réutilisation de la description de la couche de métier d’une application est un aspect intéressant à l'ingénier logiciel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The reuse of the business layer description of an application is an interesting aspect of software engineering.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>C’est le point-clé que nous voulons considérer dans cette thèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>That is the key point we want to consider in this thesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans la première partie de notre travail, nous traitons la modélisation de la couche de métier.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first part of this thesis, we deal with the modeling of the business layer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons d’abord une approche fondée sur l’ontologie pour représenter les processus de métiers et les règles de métiers et nous montrons comment vérifier la cohérence du processus et de l’ensemble des règles de métier.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We first present an ontology-based approach to represent business process and the business rules and show how to verify the consistency of business process and the set of business rules.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Puis, nous présentons le mécanisme de vérification automatique de la conformité d’un processus de métier avec un ensemble de règles de métier.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, we present an automatic check mechanism of compliance of business process with a set of business rules.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>La deuxième partie de cette thèse est consacrée à définir une méthodologie, dite de personnalisation, de création une application à partir d'un "patron d’application".</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second part of this thesis is devoted to define a methodology, called personalization, of creating of an application from an "Application Template".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Cette méthode permettra à l'utilisateur d'utiliser un patron d'application pour créer sa propre application en évitant les erreurs de structures et les erreurs sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This methodology will allow the user to use an Application Template to create his own application by avoiding deadlock and semantic errors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous introduisons à la fin de cette partie, la description d’une plateforme expérimentale permettant d’illustrer la faisabilité des mécanismes proposés dans cette thèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We introduce at the end of this part the description of an experimental platform to illustrate the feasibility of the mechanisms proposed in the thesis.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

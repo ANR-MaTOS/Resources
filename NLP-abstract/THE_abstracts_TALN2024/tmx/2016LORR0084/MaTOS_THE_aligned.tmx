@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016LORR0084. segId begin by 1, tuid = segId</note>
+        <docid>2016LORR0084</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La classification se base sur un jeu de données étiquetées par un expert.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A Classification problem makes use of a training set consisting of data labeled by an oracle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Plus le jeu de données est grand, meilleure est la performance de classification.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The larger the training set, the best the performance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Pourtant, la requête à un expert peut parfois être coûteuse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, requesting the oracle may be costly.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Le but de l'apprentissage actif est alors de minimiser le nombre de requêtes à l'expert.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The goal of Active Learning is thus to minimize the number of requests to the oracle while achieving the best performance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Améliorer la précision de l'estimation nécessite d'annoter de nouvelles données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To Increase the precision on the estimate, we need to label more data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Il y a donc un dilemme entre utiliser le budget d'annotations disponible pour améliorer la performance du classifieur selon l'estimation actuelle du critère ou pour améliorer la précision sur le critère.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, there is a dilemma between labeling data in order to increase the performance of the classifier or to better know how to select data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Ce dilemme est bien connu dans le cadre de l'optimisation en budget fini sous le nom de dilemme entre exploration et exploitation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This dilemma is well studied in the context of finite budget optimization under the name of exploration versus exploitation dilemma.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Les solutions usuelles pour résoudre ce dilemme dans ce contexte font usage du principe d'Optimisme Face à l'Incertitude.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The most famous solutions make use of the principle of Optimism in the Face of Uncertainty.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous montrons donc qu'il est possible d'adapter ce principe au problème d'apprentissage actif pour la classification.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we show that it is possible to adapt this principle to the active learning problem for classification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Pour cela, plusieurs algorithmes ont été être développés pour des classifieurs de complexité croissante, chacun utilisant le principe de l'Optimisme Face à l'Incertitude, et leurs résultats ont été évalués empiriquement</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Several algorithms have been developed for classifiers of increasing complexity, each one of them using the principle of Optimism in the Face of Uncertainty, and their performances have been empirically evaluated</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

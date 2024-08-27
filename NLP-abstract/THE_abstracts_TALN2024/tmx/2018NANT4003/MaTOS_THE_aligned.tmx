@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018NANT4003. segId begin by 1, tuid = segId</note>
+        <docid>2018NANT4003</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le tuffeau est un matériau de construction calcaire largement utilisé dans la vallée de la Loire pour les bâtiments historiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Limestone is a historical building material widely used in Loire Valley of France.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Le temps passant, il est confronté à des problèmes de pathologies, principalement liées à sa teneur en eau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Time passed, it is facing to health problems, mainly due to water content.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Pour évaluer cet indicateur, le radar à sauts de fréquence (SFR) a été retenu parmi les techniques d’évaluation non destructives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To evaluate this indicator, stepped-frequency radar is an efficient technique among all non-destructive testing techniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cette dernière peut être associée à une technique d’inversion « forme d’onde » dans le domaine fréquentiel (FWFI), technique performante pour obtenir la permittivité, directement en lien avec la teneur en eau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It can be combined with a frequency-domain full-waveform inversion technique, which is an efficient signal processing method to achieve permittivity that is the observable of water content, after a calibration process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>L’inversion FWFI d’un signal SFR utilise, pour le calcul direct, un modèle analytique de propagation des ondes, basé sur les fonctions de Green d’un dipôle, et sur le modèle de dispersion de Jonscher pour la caractérisation EM du milieu.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To do signal inversion, an analytical model of ultrawide band radar wave propagation through limestone is built in the forward study.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ce modèle direct est validé par une approche numérique utilisant le logiciel HFSS et par une approche expérimentale sur des blocs tests.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This model is based on one-dipole Green’s function, for the EM propagation, and 4-parameters’ Jonscher dispersion model, for the EM characterization of the medium.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Le problème inverse, comprenant une fonction Objectif et un algorithme de minimisation de type génétique, est ensuite étudié pour obtenir la permittivité du milieu ausculté.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This direct model is validated by a numerical approach using HFSS and an experimental approach using an experimental platform of Cerema.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>En parallèle, une base de données entre teneur en eau et permittivité du tuffeau est construite à l’aide de mesures EM en cellule sur des échantillons homogènes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The inverse problem, including objective function and minimization algorithm, to achieve the permittivity, is then studied.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Enfin, cette méthode est validée sur plusieurs applications pratiques, comprenant l’acquisition d’informations géométriques (estimation d’un front d’eau) et la caractérisation du matériau (estimation du gradient d’eau et cartographie hydrique).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, this method is validated on several practical applications including geophysical information acquisition (water front estimation) and material characterization (water gradient estimation and hydric mapping).</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

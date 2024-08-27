@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-s225375. segId begin by 1, tuid = segId</note>
+        <docid>s225375</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'objectif principal de cette thèse est de proposer des techniques d'apprentissage de représentation avares en données étiquetées : apprentissage non-supervisé, supervision distante, ou encore apprentissage actif sont autant de pistes qui pourront être étudiées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main objective of this thesis is to propose representation learning techniques with little to no need for labeled data: unsupervised, distant or even active learning are all research pathways that could be explored.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>L'apprentissage non-supervisé est le cas extrême où les données non-étiquetées sont disponibles en abondance, mais aucune donnée étiquetée n'est disponible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Unsupervised learning is an extreme case in which unlabeled data is abundantly available, but in which no labeled data is.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'appellation 'auto-supervisé'(self-supervised, en anglais) est de plus en plus utilisée pour décrire ce type d'approches car il s'agit généralement d'approches visant à reconstruire les données originales à partir d'une version altérée (BERT [Devlin et al., 2018], auto-encodeurs, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The term 'self-supervised'is being increasingly used to describe this kind of approaches, as their task often consists on reconstructing the original data from an altered version of it (BERT [Devlin et al., 2018], auto-encoders, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>On parle de supervision distante quand des étiquettes (parfois imparfaites) sont effectivement disponibles, mais pas pour la tâche visée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We talk about distant supervision when (sometimes inaccurate) labels are in fact available, but not for the specific targeted task.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Par exemple, pour la tâche de vérification du locuteur, il est possible d'utiliser un système de transcription de la parole automatique pour obtenir des étiquettes phonétiques du signal de parole.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For instance, for speaker verification, it is possible to use an automatic transcription system in order to obtain phonetic labels for the voice signal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Cette information orthogonale à la tâche principale doit permettre de démêler des signaux contradictoires pour améliorer la représentation des locuteurs [Zeghidour et al., 2016]).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This information, orthogonal to the main task, must be able to disentangle contradictory signals to improve speaker representation [Zeghidour et al., 2016].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>L'apprentissage actif est un modèle d'apprentissage semi-supervisé où un oracle (généralement, un humain) intervient au cours du processus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Active learning is a semi-supervised model where an oracle (generally a human) participates in the learning process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, à partir de données non-étiquetés, l'algorithme d'apprentissage détermine quelles données doivent être annotées par l'oracle pour obtenir les meilleures performances à moindre coût [Lowell et al., 2018, Drugman et al., 2019, Feyisetan et al., 2019, Settles and Craven, 2008, Duong et al., 2018, Kholghi et al., 2016,Settles, 2009].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More precisely, starting from non-annotated data, the learning algorithm needs to determine what has to be annotated by the oracle, so as to get the best performance at the least cost [Lowell et al., 2018, Drugman et al., 2019, Feyisetan et al., 2019, Settles and Craven, 2008, Duong et al., 2018, Kholghi et al., 2016,Settles, 2009].</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

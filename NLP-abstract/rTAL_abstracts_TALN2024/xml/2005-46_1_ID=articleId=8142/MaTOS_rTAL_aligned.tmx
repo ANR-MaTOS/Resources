@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2005-46_1_ID=articleId=8142. segId begin by 1, tuid = segId</note>
+        <docid>2005-46_1_ID=articleId=8142</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>On y examine la façon de représenter ces différents types d'entités en DRT (sur la base de leurs propriétés linguistiques), et les conséquences qu'ont ces méthodes de représentation sur la représentation du lien anaphorique lui-même.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We examine the various ways of representing entities of these kinds in DRT (on the basis of their linguistic properties), and the consequences of these representations on the representation of the anaphoric link itself.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Après un inventaire des matériaux de reprise en jeu, on passe en revue les différents types de reprise, directes ou croisées</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>After an inventory of the anaphoric material involved, we survey the various possible anaphoric links, either direct or mixed</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

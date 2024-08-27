@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017AIXM0501. segId begin by 1, tuid = segId</note>
+        <docid>2017AIXM0501</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes de traitement automatique des langues reposent souvent sur l'idée que le langage est compositionnel, c'est-à-dire que le sens d'une entité linguistique peut être déduite à partir du sens de ses parties.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Natural language processing systems often rely on the idea that language is compositional, that is, the meaning of a linguistic entity can be inferred from the meaning of its parts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette supposition ne s’avère pas vraie dans le cas des expressions polylexicales (EPLs).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This expectation fails in the case of multiword expressions (MWEs).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Par exemple, une "poule mouillée" n'est ni une poule, ni nécessairement mouillée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For example, a person who is a "sitting duck" is neither a duck nor necessarily sitting.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les techniques pour déduire le sens des mots en fonction de leur distribution dans le texte ont obtenu de bons résultats sur plusieurs tâches, en particulier depuis l'apparition des word embeddings.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Modern computational techniques for inferring word meaning based on the distribution of words in the text have been quite successful at multiple tasks, especially since the rise of word embedding approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cependant, la représentation des EPLs reste toujours un problème non résolu.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the representation of MWEs still remains an open problem in the field.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>En particulier, on ne sait pas comment prédire avec précision, à partir des corpus, si une EPL donnée doit être traitée comme une unité indivisible (p.ex. "carton plein") ou comme une combinaison du sens de ses parties (p.ex. "eau potable").</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, it is unclear how one could predict from corpora whether a given MWE should be treated as an indivisible unit (e.g. "nut case") or as some combination of the meaning of its parts (e.g. "engine room").</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse propose un cadre méthodologique pour la prédiction de compositionnalité d'EPLs fondé sur des représentations de la sémantique distributionnelle, que nous instancions à partir d’une variété de paramètres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis proposes a framework of MWE compositionality prediction based on representations of distributional semantics, which we instantiate under a variety of parameters.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous présenterons une évaluation complète de l'impact de ces paramètres sur trois nouveaux ensembles de données modélisant la compositionnalité d'EPLs, en anglais, français et portugais.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We present a thorough evaluation of the impact of these parameters on three new datasets of MWE compositionality, encompassing English, French and Portuguese MWEs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Finalement, nous présenterons une évaluation extrinsèque des niveaux de compositionnalité prédits par le modèle dans le contexte d’un système d'identification d'EPLs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we present an extrinsic evaluation of the predicted levels of MWE compositionality on the task of MWE identification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Les résultats suggèrent que le choix spécifique de modèle distributionnel et de paramètres de corpus peut produire des prédictions de compositionnalité qui sont comparables à celles présentées dans l'état de l'art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our results suggest that the proper choice of distributional model and corpus parameters can produce compositionality predictions that are comparable to the state of the art.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-s242471. segId begin by 1, tuid = segId</note>
+        <docid>s242471</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le principal sujet de cette thèse CIFRE, en partenariat avec le cabinet de conseil en IT Retail OneTeam, est le Natural Language Processing (NLP).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main topic of investigation for this CIFRE Ph.D., in partnership with the retail consultancy firm OneTeam, is Natural Language Processing (NLP).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Sa spécificité est la conception et la mise en œuvre d'un ChatBot à usage interne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Its specificity is the conception and implementation of a ChatBot for internal use.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, ses cas d'utilisation seront d'aider à la relation entre les clients de OneTeam et son service client en ligne, d'aider à gérer les tickets techniques concernant les difficultés des clients avec le logiciel de vente au détail.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More precisely, its use case will be to assist in the relationship between OneTeam's clients and its online customer service, to help handling technical tickets concerning client difficulties with OneTeam's retail support software.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Un ChatBot est une interface NLP entre un humain et une machine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A ChatBot is a NLP interface between a human and the machine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Il est censé comprendre un sous-ensemble limité de langage naturel pertinent pour le contexte de l'application, fournir une d'interaction sous forme de dialogue et être capable de traduire les demandes humaines dans un langage soit semi-formel (à communiquer à un responsable technique), ou un langage formel (par exemple une requête de recherche), ou un contexte pragmatique (par exemple implémenter un ensemble d'actions tel que lancer un logiciel ou exécuter une requête SQL), ou une combinaison de ceux-ci.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is supposed to understand a limited subset of natural language relevant to the application context, provide a dialogue-like interaction capability, and be able to translate the human requests into a either a semi-formal language (to be communicated to a technical manager), or a formal language (e.g. a search query), or a pragmatic context (e.g. implement a set of actions such as launch a piece of software or run a SQL query), or a combination thereof.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre de cette thèse, le ChatBot doit comprendre une description informelle d'un problème technique côté client lié à l'une des applications des suites logicielles de OneTeam, et fournir une interface conditionnelle basée sur un choix booléen : soit la description correspond à un problème existant dans les tickets fermés stockés dans la base de données, ou non.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the context of this Ph.D. proposal, the ChatBot should understand an informal description of a client-side technical problem to do with one of the applications from OneTeam's software suites, and provide a conditional interface based on a boolean choice: either the description matches an existing issue in stored closed tickets database, or not.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans le premier cas, le ChatBot devrait construire la description pragmatique formelle nécessaire pour résoudre le problème client à portée de main.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first case, the ChatBot should construct the formal pragmatic description necessary to solve the client problem at hand.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans le deuxième cas, le ChatBot doit traduire la description informelle en un ticket ouvert semi-formel à écrire dans la base de données des tickets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second case, the ChatBot should translate the informal description to a semi-formal open ticket to be written in the ticket database.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Bien que la conception et le déploiement de ChatBots ne soient pas en soi nouveau, le système global requis par OneTeam présente des fonctionnalités qui offre du challenge :</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While the conception and deployment of ChatBots is not by itself new, the overall system required by OneTeam has some severely challenging features:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>1. la description informelle en entrée peut être une transcription d'un message téléphonique, ce qui rend le texte beaucoup plus entaché d'erreurs, de signes de ponctuation et donc plus difficile à comprendre ;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>1. the informal description in input may be a transcription from a telephone message, which makes the text much more error-ridden, punctuation-challenged, and hence more difficult to understand;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>2. le langage limité à comprendre comprend plusieurs acronymes qui peuvent être mal orthographiés dans la description informelle, ainsi que des phrases non grammaticales ;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>2. the limited language to be understood includes several acronyms that may be mis-spelled in the informal description, as well as ungrammatical sentences;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>3. dans le cas où le ChatBot doit engendrer directement la solution, il n'y a aucune marge d'erreur dans la compréhension et la bonne traduction formelle pragmatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>3. in the case the ChatBot is to directly engender the solution, there is no margin of error in the understanding and translation to the correct formal pragmatics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Aborder ces caractéristiques nécessitera des recherches scientifiques entre l'algorithmique et la linguistique computationnelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Addressing these features will require scientific research at the interface between algorithmics and computational linguistics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Un autre défi est que le texte peut être en français ou en anglais, le français étant de loin plus probable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A further challenge is that the text may be in French or English, with French being by far more likely.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Bien que cette fonctionnalité en elle-même ne soit pas nécessairement originale, il existe une quantité considérablement plus limitée de ressources logicielles NLP disponibles en français par rapport à l'anglais.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While this feature is in itself not necessarily original, there is a severely more limited amount of available NLP software resources in French as compared to English.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Cela nécessitera sans aucun doute une conception et une mise en œuvre supplémentaires des tâches de NLP de bas niveau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This will undoubtedly call for some supplementary low-level NLP task conception, design and implementation.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

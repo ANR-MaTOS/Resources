@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019CLFAC030. segId begin by 1, tuid = segId</note>
+        <docid>2019CLFAC030</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Nous abordons le problème de la recherche indépendante du modèle pour la Nouvelle Physique (NP), au Grand Collisionneur de Hadrons (LHC) en utilisant le détecteur ATLAS.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We address the problem of model-independent searches for New Physics (NP), at the Large Hadron Collider (LHC) using the ATLAS detector.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Une attention particulière est accordée au développement et à la mise à l'essai de nouvelles techniques d'apprentissage automatique à cette fin.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Particular attention is paid to the development and testing of novel Machine Learning techniques for that purpose.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le présent ouvrage présente trois résultats principaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The present work presents three main results.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, nous avons mis en place un système de surveillance automatique des signatures génériques au sein de TADA, un outil logiciel d'ATLAS.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Firstly, we put in place a system for automatic generic signature monitoring within TADA, a software tool from ATLAS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous avons exploré plus de 30 signatures au cours de la période de collecte des données de 2017 et aucune anomalie particulière n'a été observée par rapport aux simulations des processus du modèle standard.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We explored over 30 signatures in the data taking period of 2017 and no particular discrepancy was observed with respect to the Standard Model processes simulations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, nous proposons une méthode collective de détection des anomalies pour les recherches de NP indépendantes du modèle au LHC.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Secondly, we propose a collective anomaly detection method for model-independent searches for NP at the LHC.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons l'approche paramétrique qui utilise un algorithme d'apprentissage semi-supervisé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose the parametric approach that uses a semi-supervised learning algorithm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cette approche utilise une probabilité pénalisée et est capable d'effectuer simultanément une sélection appropriée des variables et de détecter un comportement anormal collectif possible dans les données par rapport à un échantillon de fond donné.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This approach uses penalized likelihood and is able to simultaneously perform appropriate variable selection and detect possible collective anomalous behavior in data with respect to a given background sample.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Troisièmement, nous présentons des études préliminaires sur la modélisation du bruit de fond et la détection de signaux génériques dans des spectres de masse invariants à l'aide de processus gaussiens (GPs) sans information préalable moyenne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thirdly, we present preliminary studies on modeling background and detecting generic signals in invariant mass spectra using Gaussian processes (GPs) with no mean prior information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Deux méthodes ont été testées dans deux ensembles de données : une procédure en deux étapes dans un ensemble de données tiré des simulations du modèle standard utilisé pour ATLAS General Search, dans le canal contenant deux jets à l'état final, et une procédure en trois étapes dans un ensemble de données simulées pour le signal (Z′) et le fond (modèle standard) dans la recherche de résonances dans le cas du spectre de masse invariant de paire supérieure.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two methods were tested in two datasets: a two-step procedure in a dataset taken from Standard Model simulations used for ATLAS General Search, in the channel containing two jets in the final state, and a three-step procedure from a simulated dataset for signal (Z′) and background (Standard Model) in the search for resonances in the top pair invariant mass spectrum case.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Notre étude est une première étape vers une méthode qui utilise les GPs comme outil de modélisation qui peut être appliqué à plusieurs signatures dans une configuration plus indépendante du modèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our study is a first step towards a method that takes advantage of GPs as a modeling tool that can be applied to several signatures in a more model independent setup.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

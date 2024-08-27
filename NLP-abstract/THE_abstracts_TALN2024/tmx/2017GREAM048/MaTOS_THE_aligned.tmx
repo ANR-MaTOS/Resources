@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017GREAM048. segId begin by 1, tuid = segId</note>
+        <docid>2017GREAM048</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'explosion de données relationnelles largement disponibles sous la forme de graphes de connaissances a permisle développement de multiples applications, dont les agents personnels automatiques,les systèmes de recommandation et l'amélioration des résultats de recherche en ligne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The explosion of widely available relational data in the form of knowledge graphs enabled many applications, including automated personal agents, recommender systems and enhanced web search results.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La grande taille et l'incomplétude de ces bases de données nécessite le développement de méthodes de complétion automatiques pour rendre ces applications viables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The very large size and notorious incompleteness of these data bases calls for automatic knowledge graph completion methods to make these applications viable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Les modèles de factorisation existants proposent différents compromis entre leur expressivité, et leur complexité en temps et en espace.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>State-of-the-art factorization models propose different trade-offs between modeling expressiveness, and time and space complexity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons un nouveau modèle appelé ComplEx, pour "Complex Embeddings", pour réconcilier expressivité et complexité par l'utilisation d'une factorisation en nombre complexes, dont nous explorons le lien avec la diagonalisation unitaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We introduce a new model, ComplEx---for Complex Embeddings---to reconcile both expressiveness and complexity through the use of complex-valued factorization, and explore its link with unitary diagonalization.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous corroborons notre approche théoriquement en montrant que tous les graphes de connaissances possibles peuvent être exactement décomposés par le modèle proposé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We corroborate our approach theoretically and show that all possible knowledge graphs can be exactly decomposed by the proposed model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Notre approche, basées sur des embeddings complexes reste simple, car n'impliquant qu'un produit trilinéaire complexe, là où d'autres méthodes recourent à des fonctions de composition de plus en plus compliquées pour accroître leur expressivité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our approach based on complex embeddings is arguably simple,as it only involves a complex-valued trilinear product,whereas other methods resort to more and more complicated composition functions to increase their expressiveness.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Le modèle proposé ayant une complexité linéaire en temps et en espace est passable à l'échelle, tout en dépassant les approches existantes sur les jeux de données de référence pour la prédiction de liens.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed ComplEx model is scalable to large data sets as it remains linear in both space and time, while consistently outperforming alternative approaches on standard link-prediction benchmarks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous démontrons aussi la capacité de ComplEx à apprendre des représentations vectorielles utiles pour d'autres tâches,en enrichissant des embeddings de mots, qui améliorentles prédictions sur le problème de traitement automatique du langage d'implication entre paires de phrases.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also demonstrate its ability to learn useful vectorial representations for other tasks,by enhancing word embeddings that improve performances on the natural language problem of entailment recognition between pair of sentences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans la dernière partie de cette thèse, nous explorons les capacités de modèles de factorisation à apprendre les structures relationnelles à partir d'observations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the last part of this thesis, we explore factorization models ability to learn relational patterns from observed data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>De part leur nature vectorielle, il est non seulement difficile d'interpréter pourquoi cette classe de modèles fonctionne aussi bien, mais aussi où ils échouent et comment ils peuvent être améliorés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By their vectorial nature, it is not only hard to interpret why this class of models works so well,but also to understand where they fail and how they might be improved.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous conduisons une étude expérimentale sur les modèles de l'état de l'art, non pas simplement pour les comparer, mais pour comprendre leur capacités d'induction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We conduct an experimental survey of state-of-the-art models, not towards a purely comparative end, but as a means to get insight about their inductive abilities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Pour évaluer les forces et faiblesses de chaque modèle, nous créons d'abord des tâches simples représentant des propriétés atomiques des propriétés des relations des graphes de connaissances ;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To assess the strengths and weaknesses of each model, we create simple tasks that exhibit first, atomic properties of knowledge graph relations,and then, common inter-relational inference through synthetic genealogies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>À partir de ces résultats expérimentaux, nous proposons de nouvelles directionsde recherches pour améliorer les modèles existants, y compris ComplEx.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Based on these experimental results, we propose new research directions to improve on existing models, including ComplEx.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

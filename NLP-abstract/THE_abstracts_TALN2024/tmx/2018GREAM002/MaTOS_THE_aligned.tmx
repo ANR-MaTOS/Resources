@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018GREAM002. segId begin by 1, tuid = segId</note>
+        <docid>2018GREAM002</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le principal objectif de cette thèse vise à estimer de manière automatique la qualité de la traduction de langue parlée (Spoken Language Translation ou SLT), appelée estimation de confiance (Confidence Estimation ou CE).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main aim of this thesis is to investigate the automatic quality assessment of spoken language translation (SLT), called Confidence Estimation (CE) for SLT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>En raison de multiples facteurs, la sortie de SLT, ayant une qualité insatisfaisante, pourrait causer différents problèmes pour les utilisateurs finaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Due to several factors, SLT output having unsatisfactory quality might cause various issues for the target users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, il est utile de savoir combien de confiance les tokens corrects pourraient être trouvés au sein de l'hypothèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, it is useful to know how we are confident in the tokens of the hypothesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre de cette thèse, nous avons proposé un boîte à outils, qui consiste en un framework personnalisable, flexible et en une plate-forme portative, pour l'estimation de confiance au niveau de mots (Word-level Confidence Estimation ou WCE) de SLT.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our first contribution of this thesis is a toolkit LIG-WCE which is a customizable, flexible framework and portable platform for Word-level Confidence Estimation (WCE) of SLT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cette tâche, relativement nouvelle, est définie et formalisée comme un problème d'étiquetage séquentiel dans lequel chaque mot, dans l'hypothèse de SLT, est annoté comme bon ou mauvais selon un ensemble des traits importants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>WCE for SLT is a relatively new task defined and formalized as a sequence labelling problem where each word in the SLT hypothesis is tagged as good or bad accordingto a large feature set.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons plusieurs outils servant d'estimer la confiance des mots (WCE) en fonction de notre évaluation automatique de la qualité de la transcription (ASR), de la qualité de la traduction (MT), ou des deux (combiner ASR et MT).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose several word confidence estimators (WCE) based on our automatic evaluation of transcription (ASR) quality, translation (MT) quality,or both (combined/joint ASR+MT).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Ce travail de recherche est réalisable parce que nous avons construit un corpus spécifique, qui contient 6.7k des énoncés pour lesquels un quintuplet est normalisé comme suit : (1) sortie d'ASR, (2) transcription en verbatim, (3) traduction textuelle, (4) traduction vocale et (5) post-édition de la traduction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This research work is possible because we built a specific corpus, which contains 6.7k utterances for which a quintuplet containing: ASRoutput, verbatim transcript, text translation, speech translation and post-edition of the translation is built.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>La conclusion de nos multiples expérimentations, utilisant les traits conjoints entre ASR et MT pour WCE, est que les traits de MT demeurent les plus influents, tandis que les traits de ASR peuvent apporter des informations intéressantes complémentaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The conclusion of our multiple experiments using joint ASR and MT features for WCE is that MT features remain the most influent while ASR features can bring interesting complementary information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>En deuxième lieu, nous proposons deux méthodes pour distinguer des erreurs susceptibles d'ASR et de celles de MT, dans lesquelles chaque mot, dans l'hypothèse de SLT, est annoté comme good (bon), asr_error (concernant les erreurs d'ASR) ou mt_error (concernant les erreurs de MT).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As another contribution, we propose two methods to disentangle ASR errors and MT errors, where each word in the SLT hypothesis is tagged as good, asr_error or mt_error.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous contribuons donc à l'estimation de confiance au niveau de mots (WCE) pour SLT par trouver la source des erreurs au sein des systèmes de SLT.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We thus explore the contributions of WCE for SLT in finding out the source of SLT errors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>En troisième lieu, nous proposons une nouvelle métrique, intitulée Word Error Rate with Embeddings (WER-E), qui est exploitée afin de rendre cette tâche possible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, we propose a simple extension of WER metric in order to penalize differently substitution errors according to their context using word embeddings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Cette approche génère de meilleures hypothèses de SLT lors de l'optimisation de l'hypothèse de N-meilleure hypothèses avec WER-E.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our experiments show that the correlation of the new proposed metric with SLT performance is better than the one of WER.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>En somme, nos stratégies proposées pour l'estimation de la confiance se révèlent un impact positif sur plusieurs applications pour SLT.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To conclude, we have proposed several prominent strategies for CE of SLT that could have a positive impact on several applications for SLT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Les outils robustes d'estimation de la qualité pour SLT peuvent être utilisés dans le but de re-calculer des graphes de la traduction de parole ou dans le but de fournir des retours d'information aux utilisateurs dans la traduction vocale interactive ou des scénarios de parole aux textes assistés par ordinateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Robust quality estimators for SLT can be used for re-scoring speech translation graphs or for providing feedback to the user in interactive speech translation or computer-assisted speech-to-text scenarios.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Mots-clés : Estimation de la qualité, Estimation de confiance au niveau de mots (WCE), Traduction de langue parlée (SLT), traits joints, Sélection des traits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Keywords: Quality estimation, Word confidence estimation (WCE), Spoken Language Translation (SLT), Joint Features, Feature Selection.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

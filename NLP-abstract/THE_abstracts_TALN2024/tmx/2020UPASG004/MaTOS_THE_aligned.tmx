@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020UPASG004. segId begin by 1, tuid = segId</note>
+        <docid>2020UPASG004</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Avec le développement des dispositifs de capture et d'Internet, les gens accèdent à un nombre croissant d'images.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With the development of capture devices and the Internet, people access to an increasing amount of images.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>L'évaluation de l'esthétique visuelle a des applications importantes dans plusieurs domaines, de la récupération d'image et de la recommandation à l'amélioration.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Assessing visual aesthetics has important applications in several domains, from image retrieval and recommendation to enhancement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'évaluation de la qualité esthétique de l'image vise à déterminer la beauté d'une image pour les observateurs humains.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Image aesthetic quality assessment aims at determining how beautiful an image looks to human observers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>De nombreux problèmes dans ce domaine ne sont pas bien étudiés, y compris la subjectivité de l'évaluation de la qualité esthétique, l'explication de l'esthétique et la collecte de données annotées par l'homme.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Many problems in this field are not studied well, including the subjectivity of aesthetic quality assessment, explanation of aesthetics and the human-annotated data collection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La prédiction conventionnelle de la qualité esthétique des images vise à prédire le score moyen ou la classe esthétique d'une image.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Conventional image aesthetic quality prediction aims at predicting the average score or aesthetic class of a picture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Cependant, la prédiction esthétique est intrinsèquement subjective, et des images avec des scores / classe esthétiques moyens similaires peuvent afficher des niveaux de consensus très différents par les évaluateurs humains.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the aesthetic prediction is intrinsically subjective, and images with similar mean aesthetic scores/class might display very different levels of consensus by human raters.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Des travaux récents ont traité de la subjectivité esthétique en prédisant la distribution des scores humains, mais la prédiction de la distribution n'est pas directement interprétable en termes de subjectivité et pourrait être sous-optimale par rapport à l'estimation directe des descripteurs de subjectivité calculés à partir des scores de vérité terrain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recent work has dealt with aesthetic subjectivity by predicting the distribution of human scores, but predicting the distribution is not directly interpretable in terms of subjectivity, and might be sub-optimal compared to directly estimating subjectivity descriptors computed from ground-truth scores.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>De plus, les étiquettes des ensembles de données existants sont souvent bruyantes, incomplètes ou ne permettent pas des tâches plus sophistiquées telles que comprendre pourquoi une image est belle ou non pour un observateur humain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, labels in existing datasets are often noisy, incomplete or they do not allow more sophisticated tasks such as understanding why an image looks beautiful or not to a human observer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous proposons tout d'abord plusieurs mesures de la subjectivité, allant de simples mesures statistiques telles que l'écart type des scores, aux descripteurs nouvellement proposés inspirés de la théorie de l'information.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we first propose several measures of subjectivity, ranging from simple statistical measures such as the standard deviation of the scores, to newly proposed descriptors inspired by information theory.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous évaluons les performances de prédiction de ces mesures lorsqu'elles sont calculées à partir de distributions de scores prédites et lorsqu'elles sont directement apprises à partir de données de vérité terrain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We evaluate the prediction performance of these measures when they are computed from predicted score distributions and when they are directly learned from ground-truth data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous constatons que cette dernière stratégie donne en général de meilleurs résultats.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We find that the latter strategy provides in general better results.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons également la subjectivité pour améliorer la prédiction des scores esthétiques, montrant que les mesures de subjectivité inspirées de la théorie de l'information fonctionnent mieux que les mesures statistiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also use the subjectivity to improve predicting aesthetic scores, showing that information theory inspired subjectivity measures perform better than statistical measures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, nous proposons un ensemble de données EVA (Explainable Visual Aesthetics), qui contient 4070 images avec au moins 30 votes par image.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, we propose an Explainable Visual Aesthetics (EVA) dataset, which contains 4070 images with at least 30 votes per image.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>EVA a été collecté en utilisant une approche plus disciplinée inspirée des meilleures pratiques d'évaluation de la qualité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>EVA has been crowd-sourced using a more disciplined approach inspired by quality assessment best practices.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Il offre également des caractéristiques supplémentaires, telles que le degré de difficulté à évaluer le score esthétique, l'évaluation de 4 attributs esthétiques complémentaires, ainsi que l'importance relative de chaque attribut pour se forger une opinion esthétique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It also offers additional features, such as the degree of difficulty in assessing the aesthetic score, rating for 4 complementary aesthetic attributes, as well as the relative importance of each attribute to form aesthetic opinions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>L'ensemble de données accessible au public devrait contribuer aux recherches futures sur la compréhension et la prédiction de l'esthétique de la qualité visuelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The publicly available dataset is expected to contribute to future research on understanding and predicting visual quality aesthetics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>De plus, nous avons étudié l'explicabilité de l'évaluation de la qualité esthétique de l'image.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Additionally, we studied the explainability of image aesthetic quality assessment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Une analyse statistique sur EVA démontre que les attributs collectés et l'importance relative peuvent être combinés linéairement pour expliquer efficacement les scores d'opinion moyenne esthétique globale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A statistical analysis on EVA demonstrates that the collected attributes and relative importance can be linearly combined to explain effectively the overall aesthetic mean opinion scores.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Nous avons trouvé que la subjectivité a une corrélation limitée avec la difficulté personnelle moyenne dans l'évaluation esthétique, et la région du sujet, le niveau photographique et l'âge affectent de manière significative l'évaluation esthétique de l'utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We found subjectivity has a limited correlation to average personal difficulty in aesthetic assessment, and the subject's region, photographic level and age affect the user's aesthetic assessment significantly.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

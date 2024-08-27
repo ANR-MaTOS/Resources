@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2003-44_2_ID=articleId=4874. segId begin by 1, tuid = segId</note>
+        <docid>2003-44_2_ID=articleId=4874</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le but du projet décrit dans cet article est d'implémenter un prototype électronique du dictionnaire monolingue du basque Euskal Hiztegia, désormais eEH.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The goal of the project presented here is to implement a prototype of an advanced electronic version of the Basque monolingual dictionary Euskal Hiztegia (EH), hereafter eEH.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>L'accent sera mis sur deux aspects : i) la méthodologie utilisée pour corriger et mettre à jour le contenu du dictionnaire après sa transformation de MRD (Machine Readable Dictionary) en TEI (Text Encoding Initiative) et ii) l'application elle-même, application qui a été développée pour faciliter la recherche et la navigation dans l'information contenue dans le dictionnaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We will focus on two aspects: i) the methodology followed to correct and update the contents of the dictionary after the automatic conversion from the MRD (Machine Readable Dictionary) to the TEI version (Text Encoding Initiative) and ii) the application developed in order to facilitate the navigation and search through the information contained in it.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Notre motivation a été double : 1) obtenir une représentation électronique bien structurée d'une ressource importante de la langue basque, ressource susceptible d être utilisée ensuite comme un outil de base dans nos recherches et développements futurs, et 2) offrir aux utilisateurs un ensemble de fonctionnalités allant au-delà de celles offertes par les dictionnaires conventionnels papier ou par des applications classiques de navigation dans un dictionnaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our motivation is twofold: 1) to get a well-structured electronic representation of a significant resource for the Basque language, and 2) to offer common users a set of more useful utilities than those offered by paper dictionaries or classic dictionary browser applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L'article décrit brièvement le dictionnaire EH lui-même, puis son contenu et sa structure.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We include a brief description of the EH dictionary itself, outlining its content and structure.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

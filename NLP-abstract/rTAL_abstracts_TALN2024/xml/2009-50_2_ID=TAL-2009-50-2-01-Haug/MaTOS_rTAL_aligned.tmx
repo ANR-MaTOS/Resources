@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2009-50_2_ID=TAL-2009-50-2-01-Haug. segId begin by 1, tuid = segId</note>
+        <docid>2009-50_2_ID=TAL-2009-50-2-01-Haug</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'article décrit le développement du corpus aligné PROIEL, qui couvre le texte original grec du Nouveau Testament et les traductions latine, gotique, vieux-slave et arménienne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This paper reports on the development of the PROIEL parallel corpus of New Testament texts, which contains the Greek original of the New Testament and its earliest Indo-European translations, into Latin, Gothic, Old Church Slavic and Classical Armenian.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Pour faciliter la création du corpus, nous avons developpé une application web qui permet l'annotation des textes sur plusieurs niveaux: morphologie, syntaxe, alignement de phrases, syntagmes et mots, structure informationelle et sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A web application has been constructed specifically for the purpose of annotating the texts at multiple levels: morphology, syntax, alignment at sentence, dependency graph and token level, information structure and semantics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans l'article nous décrivons cette application web ainsi que nos schémas d'annotations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We describe this web application and our annotation schemes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Bien que conçue pour l'étude des phénomènes pragmaticaux, l'annotation très riche des textes a resulté à une ressource importante pour l'étude comparée and historique de la syntaxe et de la pragmatique de l'indo-européen, et le corpus pourra facilement être étendu à d'autres langues indo-européennes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although designed for investigating pragmatic resources, the corpus with its rich annotation is an important resource in contrastive and historical Indo-European syntax and pragmatics, easily expandable to include other old Indo-European languages.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

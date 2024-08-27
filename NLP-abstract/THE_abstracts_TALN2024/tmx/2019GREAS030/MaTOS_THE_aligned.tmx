@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019GREAS030. segId begin by 1, tuid = segId</note>
+        <docid>2019GREAS030</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le script est une structure qui décrit une séquence stéréotypée d’événements ou d’actions survenant dans notre vie quotidienne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Script is a structure describes an appropriate sequence of events or actions in our daily life.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les histoires utilisent des scripts, avec une ou plusieurs déviations intéressantes, qui nous permettent de mieux saisir les situations quotidiennes rapportées et les faits saillants du récit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A story, is invoked a script with one or more interesting deviations, which allows us to deeper understand about what were happened in routine behaviour of our daily life.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, la notion de script est très utile dans de nombreuses applications d’intelligence ambiante telles que la surveillance de la santé et les services d’urgence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, it is essential in many ambient intelligence applications such as healthmonitoring and emergency services.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La reconnaissance de l’activité humaine (HAR) a ainsi connue un essor important grâce notamment à des approches d’apprentissage automatique telles que le réseau neuronal ou le réseau bayésien.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hence, human activity recognition (HAR) has become a hot topic interest of research over the past decades.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Ces avancées ouvre des perspectives qui vont au delà de la simple reconnaissance d’activités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to do HAR, most researches used machine learning approaches such as Neural network, Bayesian network, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ce manuscrit défend la thèse selon laquelle ces données de capteurs portables peuvent être utilisées pour générer des récits articulés autour de scripts en utilisant l’apprentissage automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, the ultimate goal of our thesis is to generate such kind of stories or scripts from activity data of wearable sensors using machine learning approach.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Il ne s’agit pas d’une tâche triviale en raison du grand écart sémantique entre les informations brutes de capteurs et les abstractions de haut niveau présente dans les récits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, to best of our knowledge, it is not a trivial task due to very limitation of information of wearable sensors activity data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>A notre connaissance, il n’existe toujours pas d’approche pour générer une histoire à partir de données de capteurs en utilisant l’apprentissage automatique, même si de nombreuses approches d’apprentissage automatique (réseaux de neurones convolutifs, réseaux de neurones profonds) ont été proposées pour la reconnaissance de l’activité humaine au cours des dernières années.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hence, there is still no approach to generate script/story using machine learning, even though many machine learning approaches were proposed for HAR in recent years (e.g., convolutional neural network, deep neural network, etc.) to enhance the activity recognition accuracy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, nous présentons un nouveau système permettant de générer automatiquement des scripts à partir de données d’activité humaine à l’aide de l’apprentissage profond.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Secondly, we introduce a novel scheme to automatically generate scripts from wearable sensor human activity data using deep learning models, and evaluate the generated method performance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous proposons une approche pour l’apprentissage de scripts à partir de textes en langage naturel capable d’exploiter l’information syntaxique et sémantique sur le contexte textuel des événements.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we proposed a neural event embedding approach that is able to benefit from semantic and syntactic information about the textual context of events.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Cette approche permet l’apprentissage de l’ordonnancement d’événements à partir d’histoires décrivant des situations typiques de vie quotidienne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The approach is able to learn the stereotypical order of events from sets of narrative describing typical situations of everyday life.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

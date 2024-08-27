@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-1986INAL0003. segId begin by 1, tuid = segId</note>
+        <docid>1986INAL0003</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Ce travail évalue les possibilités d'automatisation d'une analyse morphologique des mots de la langue russe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis is an evaluation of the possibilities of automatising a morphological analysis of the Russian words.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette analyse est soumise à deux contraintes principales :</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This analysis is submitted to two major constraints:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>- elle ne peut s'appuyer que sur la connaissance du mot seul et non du contexte dont il a été tiré.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>1) it can rely only on the knowledge of the word itself and not on the context from which it is extracted,</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>- aucune racine n'est connue a priori, à l'exception des racines entrant dans la formation : de dérives homonymes, de dérives dont la segmentation ne peut être contrôlée par des règles simples.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>2) no stem is known a priori, with the exception of the roots forming part of: - homonym derivatives, - derivatives whose segmentation cannot be controlled by simple rules.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Une grande partie de ce travail consiste tout naturellement à définir les facteurs autorisant une réduction sensible de cet ensemble de racines.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An important part of this work consists in defining factors leading to an appreciable reduction of this set of stems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>L'analyse est conduite à l'aide : 1) de trois ensembles de morphèmes (préfixes, suffixes, désinences) auxquels viennent s'ajouter les deux formes du pronom réfléchi postposé, 2) de règles de reconnaissance des mots n'appartenant pas au fond slave (mots étrangers).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This analysis is done with the aid of: three sets of morphemes (prefixes, suffixes and endings) and the two forms of the reflexive pronoun, rules of recognition of foreign words, morphological incompatibilities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>L'analyse doit aboutir à la production d'un grammatème (fiche signalétique) des mots analysés aussi réduit que possible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The analysis produces grammatemes (sort of identification sheet of the word) of the analysed word, as reduced as possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>La réduction du grammatème résulte de l'intersection des ensembles d'informations liées à chacun des éléments morphémiques entrant dans la composition des mots à analyser.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The reduction of this grammateme is the result of the intersection of the sets of information bound to each one of the morphemic elements forming the word to be analysed.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

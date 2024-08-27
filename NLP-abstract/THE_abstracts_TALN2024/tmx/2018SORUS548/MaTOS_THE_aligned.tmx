@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018SORUS548. segId begin by 1, tuid = segId</note>
+        <docid>2018SORUS548</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La pharmacovigilance souffre d’une sous notification chronique des effets indésirables de la part des professionnels de santé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Pharmacovigilance suffers from chronic underreporting of drug's adverse effects from health professional's part.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La FDA (US Food and Drug Administration), l’EMA (European Medicines Agency), et d’autres agences sanitaires, suggèrent que les réseaux sociaux pourraient constituer une source de données supplémentaire pour la détection de signaux faibles de pharmacovigilance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The FDA (US Food and Drug Administration), The EMA (European Medicines Agency), and other health agencies, suggest that social media could constitute an additional data source for detection of weak pharmacovigilance signals.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L’OMS (Organisation Mondiale de la Santé) a publié un rapport en 2003 exposant le problème que pose la non-observance au traitement sur le long terme et son caractère préjudiciable à l’efficacité des systèmes de santé au niveau mondial.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The WHO (World Health Organization) published a report in 2003 outlining the problem of non-compliance with treatment over long term and its prejudicial effectiveness on health systems worldwide.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les données nécessaires à la mise au point d’un système d’extraction d’informations de santé depuis les forums de patients sont mise à disposition par la société́ Kappa Santé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The necessary data for development of an information extraction system from patient's forums are made available by the company Kappa Sante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La première approche proposée s’inscrit dans un contexte de détection de cas de pharmacovigilance à partir d’échanges entre patients sur des forums de santé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first proposed approach fits into a context of pharmacovigilance case detection from patient's online discussions on health forums.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons un filtre basé sur le nombre de mots séparant le nom du médicament évoqué dans le message du terme considéré́ comme un potentiel effet indésirable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a filter based on the number of words separating the name of the mentioned drug in the message from the term considered as a potential adverse effect.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une seconde approche basée sur les « topic models » afin de cibler les groupes de messages abordant les thèmes traitant de non-observance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a second approach based on topic models to target groups of messages addressing topics dealing with non-compliance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>En terme de pharmacovigilance, le filtre gaussien proposé permet d’identifier 50.03% des faux positifs avec une précision de 95.8% et un rappel de 50%.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In terms of pharmacovigilance, the proposed Gaussian filter identifies 50.03% of false positives with a precision of 95.8% and a recall of 50%.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>L’approche de détection de cas de non-observance permet l’identification de ces derniers avec une précision de 32.6% et un rappel de 98.5%.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The case detection approach of non-compliance allows the identification of messages describing this kind of behaviors with a precision of 32.6% and a recall of 98.5%.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

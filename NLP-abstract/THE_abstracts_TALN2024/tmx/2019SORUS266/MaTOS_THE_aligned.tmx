@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019SORUS266. segId begin by 1, tuid = segId</note>
+        <docid>2019SORUS266</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La médecine fondée sur les preuves a permis de formaliser des guides de pratique clinique qui définissent des flux de travail et des recommandations à suivre pour un domaine clinique concis.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Evidence-Based Medicine has been formalized as Clinical Practice Guidelines, which define workflows and recommendations to be followed for a given clinical domain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ces guides se sont construits dans le but de standardiser les soins de santé et d'obtenir les meilleurs résultats possibles pour les patients.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These documents were formalized aiming to standardize healthcare and seeking the best patient outcomes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, les médecins n'adhèrent pas toujours à ces directives en raison de diverses limitations cliniques et de mise-en-œuvre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, clinicians do not adhere as expected to these guidelines due to several clinical and implementation limitations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>D'une part, les médecins n'ont pas toujours familiarisés ou en accord avec les lignes directrices des guides de pratique clinique, doutant ainsi de leur efficacité et des résultats attendus par rapport aux pratiques antérieures.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On one hand, clinicians do not feel familiar, agree with and or are unaware of guidelines, hence doubting their self-efficacy and outcome expectancy compared to previous or more common practices.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>D'autre part, maintenir ces guides à jour en incluant les dernières preuves établies requiert une gestion continue d'une documentation établie sur support papier.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, maintaining these guidelines updated with the most recent evidence requires continuous versioning of these paper-based documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes d'aide à la décision clinique sont ainsi proposés comme aide durant le processus de prise de décision clinique, par la mise en œuvre informatisée des guides pour promouvoir leur consultation et l'adhésion des médecins.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Clinical Decision Support Systems are proposed to help during the clinical decision-making process with the computerized implementation of the guidelines to promote their easy consultation and increased compliance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Bien que ces systèmes aident à améliorer la conformité des guides, il subsiste certains obstacles hérités des guides sur support papier qui ne sont pas résolus avec leur mise en œuvre informatisée, comme le traitement des cas complexes non-définis dans les directives ou le manque de représentation d'autres facteurs externes qui peuvent influer sur les traitements fournis et faire dévier des recommandations des guides (c.-à-d. les préférences du patient).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Even if these systems help improving guideline compliance, there are still some barriers inherited from paper-based guidelines that are not solved, such as managing complex cases not defined within the guidelines or the lack of representation of other external factors that may influence the provided treatments, biasing from guidelines'recommendations (i.e. patient preferences).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>La présente thèse propose un système avancé d'aide à la décision clinique pour faire face aux limitations du soutien purement basé en guides et aller au-delà des connaissances formalisées en analysant les données cliniques, les résultats et les performances de toutes les décisions prises au fil du temps.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis proposes an advanced Clinical Decision Support System for coping with the purely guideline-based support limitations and going beyond the formalized knowledge by analyzing the clinical data, outcomes, and performance of all the decisions made over time.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Pour atteindre ces objectifs, une approche de modélisation des connaissances et performances cliniques de manière sémantique validée et informatisée a été présentée, en s'appuyant sur une ontologie et avec la formalisation du concept d'Événement Décisionnel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To achieve these objectives, an approach for modeling the clinical knowledge and performance in a semantically validated and computerized way has been presented, leaning on an ontology and the formalization of the Decisional Event concept.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>De plus, un cadre indépendant du domaine a été mis en place pour faciliter le processus d'informatisation, de mise à jour et de mise en œuvre des guides de pratique clinique au sein d'un système d'aide à la décision clinique afin de fournir un soutien clinique à pour chaque patient interrogé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, a domain-independent framework has been implemented for easing the process of computerizing, updating and implementing Clinical Practice Guidelines within a Clinical Decision Support System in order to provide clinical support for any queried patient.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Pour répondre aux limites des guides, une méthodologie permettant d'augmenter les connaissances cliniques en utilisant l'expérience a été présentée ainsi qu'une évaluation de la performance clinique et de la qualité au fil du temps, en fonction des différents résultats cliniques étudiés, tels que l'utilisabilité et la fiabilité clinique derrière les connaissances cliniques formalisées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For addressing the reported guideline limitations, a methodology for augmenting the clinical knowledge using experience has been presented along with some clinical performance and quality evaluation over time, based on different studied clinical outcomes, such as the usability and the strength of the rules for evaluating the clinical reliability behind the formalized clinical knowledge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Enfin, les données du monde réel accumulées ont été explorées pour soutenir les cas futurs, promouvoir l'étude de nouvelles hypothèses cliniques et aider à la détection des tendances et des modèles sur les données à l'aide d'outils d'analyse visuelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, the accumulated Real World Data was explored to support future cases, promoting the study of new clinical hypotheses and helping in the detection of trends and patterns over the data using visual analytics tools.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Les modules présentés ont été développés et mis en œuvre dans leur majorité dans le cadre du projet européen Horizon 2020 DESIREE, dans lequel le cas d'utilisation était axé sur le soutien des unités de soins du sein au cours du processus décisionnel pour la prise en charge des patientes atteintes d'un cancer du sein primaire, en effectuant une validation technique et clinique sur l'architecture présentée, dont les résultats sont présentés dans cette thèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The presented modules had been developed and implemented in their majority within the European Horizon 2020 project DESIREE, in which the use case was focused on supporting Breast Units during the decision-making process for Primary Breast Cancer patients management, performing a technical and clinical validation over the presented architecture, whose results are presented in this thesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, certains des modules ont également été utilisés dans d'autres domaines médicaux tels que le développement des guides de pratique clinique pour le diabète gestationnel, mettant en évidence l'interopérabilité et la flexibilité du travail présenté.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, some of the modules have been also used in other medical domains such as Gestational Diabetes guidelines development, highlighting the interoperability and flexibility of the presented work.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

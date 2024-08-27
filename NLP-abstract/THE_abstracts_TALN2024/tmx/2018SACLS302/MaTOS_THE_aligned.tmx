@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018SACLS302. segId begin by 1, tuid = segId</note>
+        <docid>2018SACLS302</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Du point de vue du traitement automatique des langues (TAL), l'extraction des événements dans les textes est la forme la plus complexe des processus d'extraction d'information, qui recouvrent de façon plus générale l'extraction des entités nommées et des relations qui les lient dans les textes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>From the point of view of Natural Language Processing (NLP), the extraction of events from texts is the most complex form of Information Extraction (IE) techniques, which more generally encompasses the extraction of named entities and relationships that bind them in the texts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Le cas des événements est particulièrement ardu car un événement peut être assimilé à une relation n-aire ou à une configuration de relations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The event extraction task can be represented as a complex combination of relations linked to a set of empirical observations from texts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>De ce fait, l'adaptation à un nouveau domaine constitue un défi supplémentaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a result, adaptation to a new domain is an additional challenge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse présente plusieurs stratégies pour améliorer la performance d'un système d'extraction d'événements en utilisant des approches fondées sur les réseaux de neurones et en exploitant les propriétés morphologiques, syntaxiques et sémantiques des plongements de mots.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis presents several strategies for improving the performance of an Event Extraction (EE) system using neural-based approaches exploiting morphological, syntactic, and semantic properties of word embeddings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Ceux-ci ont en effet l'avantage de ne pas nécessiter une modélisation a priori des connaissances du domaine et de générer automatiquement un ensemble de traits beaucoup plus vaste pour apprendre un modèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These have the advantage of not requiring a priori modeling domain knowledge and automatically generate a much larger set of features to learn a model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous avons proposé plus spécifiquement différents modèles d'apprentissage profond pour les deux sous-tâches liées à l'extraction d'événements : la détection d'événements et la détection d'arguments.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More specifically, we proposed different deep learning models for two sub-tasks related to EE: event detection and argument detection and classification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>La détection d'événements est considérée comme une sous-tâche importante de l'extraction d'événements dans la mesure où la détection d'arguments est très directement dépendante de son résultat.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Event Detection (ED) is considered an important subtask of event extraction since the detection of arguments is very directly dependent on its outcome.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>En préalable à l'introduction de nos nouveaux modèles, nous commençons par présenter en détail le modèle de l'état de l'art qui en constitue la base.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a preliminary to the introduction of our proposed models, we begin by presenting in detail a state-of-the-art model which constitutes the baseline.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Des expériences approfondies sont menées sur l'utilisation de différents types de plongements de mots et sur l'influence des différents hyperparamètres du modèle en nous appuyant sur le cadre d'évaluation ACE 2005, standard d'évaluation pour cette tâche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In-depth experiments are conducted on the use of different types of word embeddings and the influence of the different hyperparameters of the model using the ACE 2005 evaluation framework, a standard evaluation for this task.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons ensuite deux nouveaux modèles permettant d'améliorer un système de détection d'événements.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We then propose two new models to improve an event detection system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>L'un permet d'augmenter le contexte pris en compte lors de la prédiction d'une instance d'événement (déclencheur d'événement) en utilisant un contexte phrastique, tandis que l'autre exploite la structure interne des mots en profitant de connaissances morphologiques en apparence moins nécessaires mais dans les faits importantes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One allows increasing the context taken into account when predicting an event instance by using a sentential context, while the other exploits the internal structure of words by taking advantage of seemingly less obvious but essentially important morphological knowledge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons enfin de reconsidérer la détection des arguments comme une extraction de relation d'ordre supérieur et nous analysons la dépendance de cette détection vis-à-vis de la détection d'événements.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also reconsider the detection of arguments as a high-order relation extraction and we analyze the dependence of arguments on the ED task.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

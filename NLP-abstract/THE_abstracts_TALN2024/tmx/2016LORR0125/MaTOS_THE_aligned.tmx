@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016LORR0125. segId begin by 1, tuid = segId</note>
+        <docid>2016LORR0125</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Depuis plusieurs années, un nouveau phénomène lié aux données numériques émerge : des données de plus en plus volumineuses, variées et véloces, apparaissent et sont désormais disponibles, elles sont souvent qualifiées de données complexes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For several years now, a new phenomenon related to digital data is emerging: data which are increasingly voluminous, varied and rapid, appears and becomes available, they are often referred to as complex data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous focalisons sur un type particulier de données complexes : les séquences complexes d’événements, en posant la question suivante : “comment prédire au plus tôt et influencer l’apparition des événements futurs dans une séquence complexe d’événements ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this dissertation, we focus on a particular type of data: complex sequence of events, by asking the following question: “how to predict as soon as possible and to influence the appearance of future events within a complex sequence of events?”.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons un algorithme de fouille de règles d’épisode DEER qui a l’originalité de maîtriser l’horizon d’apparition des événements futurs à travers d’une distance imposée au sein de règles extraites.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose DEER: an algorithm for mining episode rules, which has the originality of controlling the horizon of the appearance of future events by imposing a temporal distance within the extracted rules.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans un deuxième temps, nous focalisons sur la détection de l’émergence dans un flux d’événements.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a second phase, we address the problem of emergence detection in an events stream.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons l’algorithme EER pour la détection au plus tôt de l’émergence de nouvelles règles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose EER: an algorithm for detecting new emergent rules as soon as possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Pour augmenter la fiabilité de nouvelles règles lorsque leur support est très faible, EER s’appuie sur la similarité entre ces règles et les règles déjà connues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to increase the reliability of new rules, EER relies on the similarity between theses rules and previously extracted rules.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous étudions l’impact porté par des événements sur d’autres dans une séquence d’événements.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>At last, we study the impact carried by events on other events within a sequence of events.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons l’algorithme IE qui introduit la notion des “événements influenceurs” et étudie l’influence sur le support, la confiance et la distance à travers de trois mesures d’influence proposées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose IE: an algorithm that introduces the concept of “influencer events” and studies the influence on the support, on the confidence and on the distance through three proposed measures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Ces travaux sont évalués et validés par une étude expérimentale menée sur un corpus de données réelles issues de blogs</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our work is evaluated and validated through an experimental study carried on a real data set of blogs messages</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

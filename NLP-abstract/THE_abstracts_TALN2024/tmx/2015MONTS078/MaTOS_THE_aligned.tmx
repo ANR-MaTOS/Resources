@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2015MONTS078. segId begin by 1, tuid = segId</note>
+        <docid>2015MONTS078</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les robots sous-marins peuvent aujourd'hui évoluer dans des environnements complexes difficilement accessibles à l'Homme pour des raisons de coût ou de sécurité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Underwater robots can nowadays operate in complex environments in a broad scope of missions where the use of human divers is difficult for cost or safety reasons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Or, la complexité de ces milieux impose de doter le vecteur robotique d'une autonomie opérationnelle suffisante afin qu'il puisse mener sa mission à bien tout en préservant son intégrité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However the complexity of aquatic environments requires to give the robotic vector an autonomy sufficient to perform its mission while preserving its integrity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cela nécessite de développer des lois de commande répondant aux spécificités de l'application.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This requires to design control laws according to application requirements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ces lois de commande se basent sur des connaissances provenant de différentes disciplines scientifiques ce qui souligne l'interdisciplinarité inhérente à la robotique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They are built on knowledge from several scientific fields, underlining the interdisciplinarity inherent to robotics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Une fois la loi de commande développée, il faut implémenter le contrôleur sur le robot sous forme de logiciel de contrôle basé sur une architecture logicielle temps-réel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Once the control law designed, it must be implemented as a control Software working on a real-time Software architecture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Or la conception actuelle des lois de commande, sous forme de blocs "monolithiques", rend difficile l'évolution d'une loi de commande d'une application à l'autre, l'intégration de connaissances provenant d'autres disciplines scientifiques que ne maitrisent pas forcément les automaticiens et pénalisent son implémentation sur des architectures logicielles qui nécessitent la modularité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nonetheless the current conception of control laws, as "monolithic" blocks, makes difficult the adaptation of a control from an application to another and the integration of knowledge from various scientific fields which are often not fully understood by control engineers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Cela permettra en outre une projection plus efficace sur l'architecture logicielle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover this will allow us a more efficient projection on the Software architecture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons donc un nouveau formalisme de description des lois de commande selon une composition modulaire d'entités de base appelées Atomes et qui encapsulent les différents éléments de connaissance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We thus propose a new formalism for control laws description as a modular composition of basic entities named Atoms used to encapsulate the knowledge items.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Pour cela, nous enrichissons nos Atomes de contraintes chargées de véhiculer les informations relatives à ces aspects temporels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose as well a methodology relying on our formalism to guide the implementation of control on a real-time Middleware.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons également une méthodologie basée sur notre formalisme afin de guider l'implémentation de nos stratégies de commande sur un Middleware temps-réel, dans notre cas le Middleware ContrACT développé au LIRMM.Nous illustrons notre approche par diverses fonctionnalités devant être mises en oeuvre lors de missions d'exploration de l'environnement aquatique et notamment pour l'évitement de parois lors de l'exploration d'un aquifère karstique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We will focus on the ContrACT Middleware developed at LIRMM.Finally we illustrate our approach on several robotic functionalities that can be used during aquatic environments exploration and especially for wall avoidance during the exploration of a karst aquifer.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

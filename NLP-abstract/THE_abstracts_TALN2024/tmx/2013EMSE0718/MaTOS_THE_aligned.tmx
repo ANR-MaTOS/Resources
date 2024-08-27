@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2013EMSE0718. segId begin by 1, tuid = segId</note>
+        <docid>2013EMSE0718</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Ce travail s’inscrit dans le projet « Personnalisation des EIAH » étudiant l’utilisation des traces d’activité dans l’évaluation et la personnalisation des situations d’ apprentissage médiatisées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This work is part of the "TEL Environments customization" project studying the use of activity traces in the evaluation and customization of mediated learning situations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>L’analyse des traces se fait généralement par des outils d’analyse réalisés par les chercheurs et spécifiques à leurs besoins.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Analyzing traces is generally performed using analysis tools developed by researchers specifically for their needs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Les résultats publiés ne peuvent généralement pas être vérifiés ni comparés, ceci étant dû aux difficultés de partage des corpus et des outils d’analyse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Published research results can generally not be verified or compared, due to difficulties of sharing corpora and analysis tools.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L’objectif de ce travail est de proposer aux chercheurs utilisant les EIAH, une plateforme pour le partage, d’une part des corpus de traces d’interaction contextualisées et les analyses réalisées sur ces corpus, et des outils d’analyse et de visualisation des traces d’autre part.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The aim of this research work is to provide researchers using TEL environments in their researches with a platform to share corpora of contextualized interaction traces and analyses performed on them, and to analyse those corpora using shared analysis and visualization tools.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>L’hétérogénéité des traces produites par les EIAH, due à la variété des domaines d’apprentissage et des besoins d’analyse, fait que la proposition d’une représentation commune ne peut répondre aux différents besoins de chercheurs pluridisciplinaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Heterogeneity of traces produced by TEL environments, due to the diversity of learning domains and to analysis needs makes the proposition of a common representation cannot satisfy the various needs of multidisciplinary researchers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons l’approche par « proxy », une solution participative et incrémentale basée sur une ontologie qui définit trois modèles : un modèle de corpus définissant la structure et les métadonnées de description du corpus et son contenu, un modèle définissant les concepts génériques pouvant être retrouvés dans les corpus, et un modèle opérationnel définissant des opérations assurant l’interopérabilité entre un corpus et un outil d’analyse partagé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose the “proxy” approach, a participative and incremental solution based on an ontology which defines three models: a corpus model defining the structure and description metadata of the corpus and its contents, a semantic model defining generic concepts which can be retrieved in shared corpora, and an operational model defining a set of operations ensuring interoperability between shared corpora and analysis tools.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En nous basant sur cette approche, nous proposons une architecture de plateforme de partage de corpus de traces et d’outils d’analyse permettant aux chercheurs de partager leurs corpus,d’accéder aux corpus partagés, et de les analyser.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Based on this approach, we propose a platform architecture for sharing traces corpora and analysis tools allowing researchers to share their own corpora, to access to shared corpora, and to analyze them.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

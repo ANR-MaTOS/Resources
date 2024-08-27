@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2008ROUES019. segId begin by 1, tuid = segId</note>
+        <docid>2008ROUES019</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La recherche d'information ainsi que l'aide à la décision nécessitent un accès rapide et eﬃcace aux connaissances contenues dans une collection de documents de santé, ainsi qu'une bonne exploitation des connaissances médicales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Information retrieval and decision support systems need fast and accurate access to the content of documents and eﬃcient medical knowledge processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>L'indexation (description à l'aide de mots clés) permet de rendre ces connaissances accessibles et utilisables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indexing (describing using keywords) enables access to knowledge and knowledge processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans le domaine de la santé, le nombre de ressources électroniques disponibles augmente de manière exponentielle ainsi la nécessité de disposer de solutions automatiques pour faciliter l'accès aux connaissances ainsi que l'indexation est omniprésente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the medical domain, an increasing number of resources are available in electronic format, and there is a growing need for automatic solutions to facilitate knowledge access and indexing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L'objectif de cette thèse a été de développer un outil d'aide à l'indexation automatique multi-terminologique, multi-document et multi-tâche nommé F-MTI (French Multi-terminology Indexer) capable de produire une proposition une indexation pour les documents de santé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The objectives of my PhD work are the implementation of an automatic multi-terminology multi-document and multi-task indexing help-system namely F-MTI (French Multi-terminology Indexer).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cet outil a nécessité l'élaboration de méthodes de Traitement Automatique de la Langue Naturelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It uses Natural Language processing methods to produce an indexing proposition for medical documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Il a été appliqué à l'indexation documentaire dans le catalogue de santé en ligne CISMeF, à l'indexation des données thérapeutiques pour les médicaments et à l'indexation des diagnostics et des actes médicaux pour les dossiers médicaux éléctroniques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We applied it to resources indexing in a French online health catalogue, namely CISMeF, to therapeutical data indexing for drug medication and to diagnosis and health procedures indexing for patient medical records.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

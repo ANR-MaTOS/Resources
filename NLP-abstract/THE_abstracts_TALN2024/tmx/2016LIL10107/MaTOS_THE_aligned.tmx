@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016LIL10107. segId begin by 1, tuid = segId</note>
+        <docid>2016LIL10107</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L’apprentissage de modèles stochastiques générant des séquences a de nombreuses applications en traitement de la parole, du langage ou bien encore en bio-informatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Learning stochastic models generating sequences has many applications in natural language processing, speech recognitions or bioinformatics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les algorithmes traditionnels d’apprentissage comme celui de Baum-Welch sont itératifs, lent et peuvent converger vers des optima locaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Traditional learning algorithms such as the one of Baum-Welch are iterative, slow and may converge to local optima.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Une alternative récente consiste à utiliser la méthode des moments (MoM) pour concevoir des algorithmes rapides et consistent avec des garanties pseudo-PAC.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A recent alternative is to use the Method of Moments (MoM) to design consistent and fast algorithms with pseudo-PAC guarantees.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cependant, les algorithmes basés sur la MoM ont deux inconvénients principaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, MoM-based algorithms have two main disadvantages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, les garanties PAC ne sont valides que si la dimension du modèle appris correspond à la dimension du modèle cible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, the PAC guarantees hold only if the size of the learned model corresponds to the size of the target model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, bien que les algorithmes basés sur la MoM apprennent une fonction proche de la distribution cible, la plupart ne contraignent pas celle-ci à être une distribution.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Second, although these algorithms learn a function close to the target distribution, most do not ensure it will be a distribution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, un modèle appris à partir d’un nombre fini d’exemples peut renvoyer des valeurs négatives et qui ne somment pas à un.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, a model learned from a finite number of examples may return negative values or values that do not sum to one.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, cette thèse s’adresse à ces deux problèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis addresses both problems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>D’abord, nous proposons un élargissement des garanties théoriques pour les modèles compressés, ainsi qu’un algorithme spectral régularisé qui adapte la taille du modèle aux données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, we extend the theoretical guarantees for compressed models, and propose a regularized spectral algorithm that adjusts the size of the model to the data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Puis, une application en guerre électronique est aussi proposée pour le séquencement des écoutes du récepteur superhétérodyne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, an application in electronic warfare is proposed to sequence of the dwells of a super-heterodyne receiver.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

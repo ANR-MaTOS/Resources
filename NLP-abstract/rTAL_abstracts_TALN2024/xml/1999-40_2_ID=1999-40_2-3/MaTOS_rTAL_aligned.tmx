@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-1999-40_2_ID=1999-40_2-3. segId begin by 1, tuid = segId</note>
+        <docid>1999-40_2_ID=1999-40_2-3</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Différents paradigmes de systèmes d'analyse des textes se sont succédés ces dernières années.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Various paradigms of text analysis systems followed one another over the last twenty years.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes de compréhension des années 1980 visent une analyse profonde et exhaustive du texte, tandis que les systèmes d'extraction d'information du début des années 1990 mettent en œuvre des analyses beaucoup plus locales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the eighties, text understanding systems aimed at a deep and exhaustive analysis of texts, while Information Extraction systems of the nineties are based on local analyses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'article dresse un panorama et un bilan rapide de ces approches.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This paper contrasts these different approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Il analyse ensuite le retour d'approches globales (par apprentissage symbolique ou statistique notamment) dans des systèmes essentiellement locaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It analyses the return to global approaches (by symbolic or statistical machine learning-based systems especially) in systems based on a rather local analysis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La généricité et l'adaptabilité des systèmes sont discutées et illustrées à travers des exemples représentatifs des réalisations du domaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The genericity and the adaptability of the systems are discussed and illustrated through application examples.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2012TOUR4011. segId begin by 1, tuid = segId</note>
+        <docid>2012TOUR4011</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le développement des technologies de l'information et de la communication à modifié en profondeur la manière dont nous avons accès aux connaissances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Those latest decades, the development of information end communication technologies has deeply modified die way we access knowledge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Face à l'afflux de données et à leur diversité, il est nécessaire de meure su point des technologies performantes et robustes pour y rechercher des informations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Facing the volume end the diversity of date, it is necessary to work out robust end efficient technologies to retrieve information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Après une caractérisation de leur nature linguistique, nous proposons une approche par instructions, fondée sur les marqueurs (balises) d'annotation, qui considère ces éléments isolément (début ou fin d'une annotation).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We question named entities status (related notions, typologies, evaluation end annotation) and propose properties to define their linguistic nature.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>En seconde partie, nous faisons état des travaux en fouille de données et présentons un cadre formel pour explorer les données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We conclude this part by describing state-of-the-art approaches end by presenting our contribution, focused on markers (tags) diet begin or end an annotation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous y proposons une formulation alternative par segments, qui limite la combinatoire lors de l'exploration.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In die second part, we present die formalism used to mine date.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Les motifs corrélés à un ou plusieurs marqueurs d'annotation sont extraits comme règles d'annotation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The framework we use to enrich date, explore sequences and extract annotation rules is formalized.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>La dernière partie décrit le cadre expérimental, quelques spécificités de l'implémentation du système (mXS) et les résultats obtenus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The lest part describes the implemented system (mXS) and the obtained results.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons l'intérêt d'extraire largement les règles d'annotation et expérimentons les motifs de segments.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Specific implementation details are given and results about rule extraction from data are reported.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous fournissons des résultats chiffrés relatifs aux performances du système à divers point de vue et dans diverses configurations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we provide quantitative results of the performance of mXS on Ester2 end Etape datasets, among with various indications about die behaviour of die system from diverse points of view and in diverse configurations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Ils montrent que l'approche que nous proposons est compétitive et qu'elle ouvre des perspectives dans le cadre de l'observation des langues naturelles et de l'annotation automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They show diet our approach gives competitive results end that it opens up new perspectives for natural language processing and automatic annotation.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

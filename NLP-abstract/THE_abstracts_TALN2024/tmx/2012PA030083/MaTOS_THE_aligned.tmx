@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2012PA030083. segId begin by 1, tuid = segId</note>
+        <docid>2012PA030083</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La méthode textométrique, en revanche, met en œuvre un ensemble de modèles statistiques permettant l’analyse des distributions de mots dans de vastes corpus, afin faire émerger les caractéristiques significatives des données textuelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A Textometric method, however, uses several statistical models to study the distribution of words in large corpora, with the goal of shedding light on significant characteristics of the textual data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Dans cette recherche, la textométrie, traditionnellement considérée comme étant incompatible avec la fouille par l’extraction, est substituée à cette dernière pour obtenir des informations sur des événements économiques dans le discours.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this research, Textometry, an approach traditionally considered incompatible with information extraction methods, is applied to the same corpus as an information extraction procedure in order to obtain information on economic events.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Plusieurs analyses textométriques (spécificités et cooccurrences) sont donc menées sur un corpus de flux de presse numérisé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Several textometric analyses (characteristic elements, co-occurrences) are examined on a corpus of online news feeds.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>On constate que chacune des approches contribuent différemment au traitement des données textuelles, produisant toutes deux des analyses complémentaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Both approaches contribute differently to processing textual data, producing complementary analyses of the corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>À l’issue de la comparaison est exposé l’apport des deux méthodes de fouille pour la veille d’événements.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Following the comparison, this research presents the advantages for these two text mining methods in strategic monitoring of current events.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2014MON20216. segId begin by 1, tuid = segId</note>
+        <docid>2014MON20216</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans de nombreux domaines, les nouvelles technologies d'acquisition de l'information ou encore de mesure (e.g. serres de phénotypage robotisées) ont engendré une création phénoménale de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In many fields, novel technologies employed in information acquisition and measurement (e.g. phenotyping automated greenhouses) are at the basis of a phenomenal creation of data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous nous appuyons en particulier sur deux cas d'application réels : les observations de plantes en botanique et les données de phénotypage en biologie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, we focus on two real use cases: plants observations in botany and phenotyping data in biology.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cependant, nos contributions peuvent être généralisées aux données du Web.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our contributions can be, however, generalized to Web data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, s'ajoute à la quantité des données leur distribution.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition to their huge volume, data are also distributed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Chaque utilisateur stocke en effet ses données sur divers sites hétérogènes (e.g.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, each user stores their data in many heterogeneous sites (e.g. personal computers, servers, cloud); yet he wants to be able to share them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Que ce soit pour les observations de botanique ou pour les données de phénotypage en biologie, des solutions collaboratives, comprenant des outils de recherche et de recommandation distribués, bénéficieraient aux utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, the global objective of this work is to define a set of techniques enabling sharing and discovery of data in heterogeneous distributed environment, through the use of search and recommendation approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Les techniques de diversification permettent de présenter aux utilisateurs des résultats offrant une meilleure nouveauté tout en évitant de les lasser par des contenus redondants et répétitifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Diversification techniques allow users to receive results with better novelty while avoiding redundant and repetitive content.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Grâce à la diversité, une distance entre toutes les recommandations est en effet introduite afin que celles-ci soient les plus représentatives possibles de l'ensemble des résultats pertinents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By introducing a distance between each result presented to the user, diversity enables to return a broader set of relevant items.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Peu de travaux exploitent la diversité des profils des utilisateurs partageant les données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, few works exploit profile diversity, which takes into account the users that share each item.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail de thèse, nous montrons notamment que dans certains scénarios, diversifier les profils des utilisateurs apporte une nette amélioration en ce qui concerne la qualité des résultats~ : des sondages montrent que dans plus de 75% des cas, les utilisateurs préfèrent la diversité des profils à celle des contenus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this work, we show that in some scenarios, considering profile diversity enables a consequent increase in results quality: surveys show that in more than 75% of the cases, users would prefer profile diversity to content diversity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, afin d'aborder les problèmes de distribution des données sur des sites hétérogènes, deux approches sont possibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Additionally, in order to address the problems related to data distribution among heterogeneous sites, two approaches are possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>La première, les réseaux P2P, consiste à établir des liens entre chaque pair (noeud du réseau) : étant donné un pair p, ceux avec lesquels il a établi un lien représentent son voisinage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, P2P networks aim at establishing links between peers (nodes of the network): creating in this way an overlay network, where peers directly connected to a given peer p are known as his neighbors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Celui-ci est utilisé lorsque p soumet une requête q, pour y répondre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This overlay is used to process queries submitted by each peer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Cependant, dans les solutions de l'état de l'art, la redondance des profils des pairs présents dans les différents voisinages limitent la capacité du système à retrouver des résultats pertinents sur le réseau, étant donné les requêtes soumises par les utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, in state of the art solutions, the redundancy of the peers in the various neighborhoods limits the capacity of the system to retrieve relevant items on the network, given the queries submitted by the users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons, dans ce travail, qu'introduire de la diversité dans le calcul du voisinage, en augmentant la couverture, permet un net gain en termes de qualité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this work, we show that introducing diversity in the computation of the neighborhood, by increasing the coverage, enables a huge gain in terms of quality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>La seconde approche de la distribution est le multisite.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second category of approaches is called multi-site.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Généralement, dans les solutions de l'état de l'art, les sites sont homogènes et représentés par de gros centres de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Generally, in state of the art multi-sites solutions, the sites are homogeneous and consist in big data centers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Deux versions du prototype ont été réalisées afin de répondre aux deux cas d'application, en s'adaptant notamment aux types des données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A prototype regrouping all contributions have been developed, with two versions addressing each of the use cases considered in this thesis.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

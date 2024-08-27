@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2013-54_3_ID=Detection-d-evenements-a-partir-de. segId begin by 1, tuid = segId</note>
+        <docid>2013-54_3_ID=Detection-d-evenements-a-partir-de</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons un système pour déterminer, à partir des données de Twitter, les évènements qui suscitent de l’intérêt d’utilisateurs au cours d’une période donnée ainsi que les dates saillantes de chaque évènement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We present a system for finding, from Twitter data, events that raised the interest of users within a given time period and the important dates for each event.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Un évènement est représenté par plusieurs termes dont la fréquence augmente brusquement à un ou plusieurs moments durant la période analysée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An event is represented by many terms whose frequency increases suddenly at one or more moments during the analysed period.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Afin de déterminer les termes (notamment les hashtags) portant sur un même sujet, nous proposons des méthodes pour les regrouper: des méthodes phonétiques adaptées au mode d’écriture utilisé par les utilisateurs et des méthodes statistiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to determine the terms (especially the hashtags) dealing with a topic, we propose methods to cluster similar terms: phonetic methods adapted to the writing mode used by users and some statistical methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Pour sélectionner l’ensemble des évènements, nous avons utilisé trois critères : fréquence, variation et Tf*Idf.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to select the set of events, we used three main criteria: frequency, variation and Tf*Idf.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

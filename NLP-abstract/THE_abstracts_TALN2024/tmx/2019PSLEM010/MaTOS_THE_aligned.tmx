@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019PSLEM010. segId begin by 1, tuid = segId</note>
+        <docid>2019PSLEM010</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le processus de découverte de médicaments a un succès limité malgré tous les progrès réalisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The rational drug discovery process has limited success despite all the advances in understanding diseases, and technological breakthroughs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>En effet, on estime actuellement que le développement d'un médicament nécessite environ 1,8 milliard de dollars américains sur environ 13 ans.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, the process of drug development is currently estimated to require about 1.8 billion US dollars over about 13 years on average.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Leurs applications sont polyvalentes : elles permettent d’identifier des candidats médicaments pour des cibles thérapeutiques connues, d’anticiper des effets secondaires potentiels, ou de proposer de nouvelles indications thérapeutiques pour des médicaments connus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We focus in this thesis on statistical approaches which virtually screen a large set of compounds against a large set of proteins, which can help to identify drug candidates for known therapeutic targets, anticipate potential side effects or to suggest new therapeutic indications of known drugs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse est conçue selon deux cadres d'approches de criblage virtuel : les approches dans lesquelles les données sont décrites numériquement sur la base des connaissances des experts, et les approches basées sur l'apprentissage automatique de la représentation numérique à partir du graphe moléculaire et de la séquence protéique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis is conceived following two lines of approaches to perform drug virtual screening: data-blinded feature-based approaches (in which molecules and proteins are numerically described based on experts'knowledge), and data-driven feature-based approaches (in which compounds and proteins numerical descriptors are learned automatically from the chemical graph and the protein sequence).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous discutons ces approches et les appliquons pour guider la découverte de médicaments.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We discuss these approaches, and also propose applications of virtual screening to guide the drug discovery process.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

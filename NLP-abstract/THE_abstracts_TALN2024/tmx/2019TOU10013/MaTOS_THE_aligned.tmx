@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019TOU10013. segId begin by 1, tuid = segId</note>
+        <docid>2019TOU10013</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le résumé en français n'a pas été communiqué par l'auteur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Le résumé en anglais n'a pas été communiqué par l'auteur.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

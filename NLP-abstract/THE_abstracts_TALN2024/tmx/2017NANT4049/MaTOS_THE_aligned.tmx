@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017NANT4049. segId begin by 1, tuid = segId</note>
+        <docid>2017NANT4049</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Identifier les leviers de satisfaction des consommateurs est aujourd’hui capital dans un monde où la relation que tisse une entreprise avec ses clients est sa plus grande richesse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Identifying satisfaction triggers among customers is a crucial need in today’s business world, as a strong customer relationship is now a most vital asset.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Le domaine de la fouille d’opinion, dans lequel s’inscrit cette thèse, propose des méthodes permettant de répondre à ce besoin.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The domain of opinion mining, in which this thesis falls into, offers several methods to answer this need.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Celles-ci nécessitent cependant une mise à jour constante de ressources spécialisées qui sont la pierre angulaire des outils d’analyse d’opinion.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These methods, however, require a continuous update of specialized resources which are the cornerstone of many opinion mining tools.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ce travail vise à développer des stratégies d’acquisition et de structuration de ces ressources, qui prennent la forme de lexiques, de patrons morpho-syntaxiques ou de textes annotés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The objective of this work is to develop acquisition and structuration strategies for these resources, which can be lexicons, morphosyntactic rules or annotated data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous traitons ensuite la question de l’apport des différents types de ressources, dont il ressort que la meilleure stratégie est de les utiliser de concert.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We then compare the benefits of each type of resource through a benchmark of several opinion mining methods, and conclude that the best performing strategy is a hybrid approach.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous proposons des méthodes d’acquisition pour chacune des ressources répondant non seulement aux besoins de la fouille d’opinion mais également aux contraintes du contexte industriel au sein duquel ces recherches sont menées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we present results for resource acquisition methods that answer not only the needs of opinion mining but also the constraints from the industrial setting in which this work has been conducted.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

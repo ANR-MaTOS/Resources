@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-s163553. segId begin by 1, tuid = segId</note>
+        <docid>s163553</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>A partir des décès certifiés électroniquement de 2012 à 2016 en France, la thèse vise à mettre en œuvre et évaluer les performances de méthodes de traitement automatique des langues, pour classer les causes médicales de décès disponibles en texte libre dans des regroupements syndromiques (RS) pertinents pour la surveillance réactive de la mortalité à visée d'alerte et d'évaluation d'impact sanitaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Based on electronic death certificates from 2012 to 2016 in France, this thesis aims to implement and evaluate the performance of natural language processing methods, to classify medical causes of death in free text format into mortality syndromic groups (MSG) relevant for reactive mortality surveillance and health impact assessment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Près de 100 RS répondant aux objectifs ont été définis.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Close to 100 MSGs meeting the objectives of the surveillance were defined.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Deux méthodes de classification ont été développées : une méthode à base de règles linguistiques et une méthode par apprentissage supervisé (SVM).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two classification methods were developed: a rule-based method and a supervised machine learning method (SVM).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Deux modèles SVM ont été développés utilisant différentes combinaisons de caractéristiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two SVM models were developed using different combinations of features.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le développement et l'évaluation des performances des méthodes se sont appuyés sur 4 500 certificats de décès annotés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The development and evaluation of the performances of the methods were based on 4,500 annotated death certificates.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>L'évaluation a porté dans un premier temps sur 7 RS, puis a été étendue à 60 autres RS.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The evaluation was initially based on 7 MSGs and was then extended to 60 other MSGs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Les évolutions mensuelles des RS attribués par les méthodes ont été comparées sur l'ensemble des décès de 2012 à 2016 (204 000 décès).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The variations of the monthly number of MSGs assigned by the two methods were compared using the whole death certificates from 2012 to 2016 (204,000 deaths).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>La méthode par règles et le modèle SVM incluant l'ensemble des caractéristiques ont obtenu des performances élevées (F-mesure≥0,95) pour la classification des causes dans 31 RS.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The rule-based method and the SVM model including all the features obtained high performances (F-mesure≥0.95) for the classification of causes into 31 MSGs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>L'évolution temporelle de ces RS obtenus par les deux méthodes était comparable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The monthly variations of those MSGs were comparable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>En moyenne, les causes de décès au sein d'un certificat sont classées dans 3,7 RS.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In average, the causes of death within a certificate are classified into 3.7 MSG.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Une méthode de pondération équilibrée des RS a été proposée pour prendre en compte ces causes multiples lors de l'analyse en routine de la mortalité pour la surveillance à visée d'alerte et d'évaluation d'impact.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We proposed a balanced weighting method of the MSG to take these multiple causes into account in the routine analysis of mortality for alert and impact assessment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Ces résultats permettent d'améliorer la surveillance réactive actuellement fondée sur des données d'état-civil.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These results complete and enrich the reactive surveillance currently based on administrative data.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

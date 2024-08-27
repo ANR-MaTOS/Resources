@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2022-63_1_ID=TAL_63_1_1. segId begin by 1, tuid = segId</note>
+        <docid>2022-63_1_ID=TAL_63_1_1</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les obligations légales concernant l’accessibilité des contenus audiovisuels conjuguées avec l’importance des volumes actuellement produits par diverses sources suscitent un intérêt croissant pour les systèmes de sous-titrage automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Interest in automatic closed captioning systems has risen on account of legal obligations concerning accessibility and the sheer amount of audiovisual content being produced by multiple sources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Traditionnellement, ces systèmes procèdent en enchaînant une étape de reconnaissance de la parole et une étape de « traduction » de la transcription vers les sous-titres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such systems usually proceed by coupling Automatic Speech Recognition (ASR) and Machine Translation (MT) from transcript to captions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Pour le sous-titrage monolingue, la « traduction » correspond à une simplification et à une segmentation du texte, qui doivent notamment respecter des normes liées à l’affichage, et composer avec les erreurs issues de la reconnaissance vocale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The "translation" task consist of a simplification and segmentation of the text, which must observe norms with respect to display, while handling ASR errors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans le cas des émissions télévisées, la forme et la teneur du flux audio initial comme des sous-titres à répliquer varient significativement selon les programmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the case of TV shows, both the initial audio stream and the target captions vary significantly in form and content according to the program.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>En prenant inspiration dans la littérature de la traduction automatique, cet article met en place et compare des méthodes d’adaptation aux genres télévisuels pour la production de sous-titres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Taking inspiration in MT literature, this paper implements and compare televisual genre adaptation methods for closed captioning.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

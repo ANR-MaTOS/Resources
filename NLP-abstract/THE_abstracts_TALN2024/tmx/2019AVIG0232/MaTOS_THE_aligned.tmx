@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019AVIG0232. segId begin by 1, tuid = segId</note>
+        <docid>2019AVIG0232</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans le domaine de la néologie, différentes approches méthodologiques ont été développées pour la détection et l’extraction de néologismes sémantiques. Ces approches utilisent des stratégies telles que la désambiguïsation sémantique et la modélisation thématique, mais il n’existe aucun système complet de détection de néologismes sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the field of neology, different methodological approaches for the detection and extraction of semantic neologisms have been developed using strategies such as word sense disambiguation and topic modeling, but there is still not a proposal for a system for the detection of these units.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, nous proposons dans cette thèse le développement des algorithmes qui permettent d’identifier et d’extraire les néologismes sémantiques au moyen de méthodes statistiques,d’extraction d’information et d’apprentissage automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Beginning from a detailed study on the necessary theoretical assumptions required to delimit and describe semantic neologisms, in this thesis, we propose the development of an application to identify and extract said units using statistical,data mining and machine learning strategies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La méthodologie proposée est basée sur le traitement du processus de détection et d’extraction en tant que problème de classification. Il consiste à analyser la proximité des thèmes entre le champ sémantique de la signification principale d’un terme et son contexte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed methodology is based on treating the process of detection and extraction as a classification task, which consists on analyzing the concordance of topics between the semantic field from the main meaning of a word and the text where it is found.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Pour la construction du système nous avons étudié cinq méthodes de classification automatique supervisée et trois modèles pour la génération de représentations vectorielles de mots par apprentissage profonde.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To build the architecture of the proposed system,we analyzed five automatic classification methods and three deep learning based word embedding models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le corpus d’analyse est composé de néologismes sémantiques du domaine informatique appartenant à la base de données de l’Observatoire de Néologie de l’Université Pompeu Fabra, enregistrés de 1989 à 2015.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our analysis corpus is composed of the semantic neologisms of the computer science field belonging to the database of the Observatory of Neology of the Pompeu Fabra University, which have been registered from 1989 to 2015.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons ce corpus pour évaluer les différentes méthodes mises en oeuvre par le système : classification automatique, extraction de mots à partir de contextes courts et génération de listes de mots similaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We used this corpus to evaluate the different methods that our system implements: automatic classification,keyword extraction from short contexts, and similarity list generation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Cette première approche méthodologique cherche à établir un cadre de référence en termes de détection et d’extraction de néologismes sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This first methodological approach aims to establish a framework of reference in terms of detection and extraction of semantic neologisms.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

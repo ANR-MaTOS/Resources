@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019LYSE1305. segId begin by 1, tuid = segId</note>
+        <docid>2019LYSE1305</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le sujet de cette thèse s’inscrit dans le cadre général de la Recherche d’Information et la gestion des données massives et distribuées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this research, we are interested in investigating issues related to query evaluation and optimization in the framework of aggregated search.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Elle a pour but de retourner à l’utilisateur d’un système de recherche d’information des objets résultats qui sont riches et porteurs de connaissances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Aggregated search is a new paradigm to access massively distributed information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ces objets n’existent pas en tant que tels dans les sources.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It aims to produce answers to queries by combining fragments of information from different sources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ils sont construits par assemblage (ou configuration ou agrégation) de fragments issus de diffèrentes sources.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The queries search for objects (documents) that do not exist as such in the targeted sources, but are built from fragments extracted from the different sources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les sources peuvent être non spécifiées dans l’expression de la requête mais découvertes dynamiquement lors de la recherche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The sources might not be specified in the query expression, they are dynamically discovered at runtime.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous nous intéressons particulièrement à l’exploitation des dépendances de données pour optimiser les accès aux sources distribuées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In our work, we consider data dependencies to propose a framework for optimizing query evaluation over distributed graph-oriented data sources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans ce cadre, nous proposons une approche pour l’un des sous processus de systèmes de RIA, principalement le processus d’indexation/organisation des documents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For this purpose, we propose an approach for the document indexing/orgranizing process of aggregated search systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous considérons dans cette thèse, les systèmes de recherche d’information orientés graphes (graphes RDF).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We consider information retrieval systems that are graph oriented (RDF graphs).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Utilisant les relations dans les graphes, notre travail s’inscrit dans le cadre de la recherche d’information agrégative relationnelle (Relational Aggregated Search) où les relations sont exploitées pour agréger des fragments d’information.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Using graph relationships, our work is within relational aggregated search where relationships are used to aggregate fragments of information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons d’optimiser l’accès aux sources d’information dans un système de recherche d’information agrégative.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our goal is to optimize the access to source of information in a aggregated search system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Ces sources contiennent des fragments d’information répondant partiellement à la requête.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These sources contain fragments of information that are relevant partially for the query.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>L’objectif est de minimiser le nombre de sources interrogées pour chaque fragment de la requête, ainsi que de maximiser les opérations d’agrégations de fragments dans une même source.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We aim at minimizing the number of sources to ask, also at maximizing the aggregation operations within a same source.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons d’effectuer cela en réorganisant la/les base(s) de graphes dans plusieurs clusters d’information dédiés aux requêtes agrégatives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For this, we propose to reorganize the graph database(s) in partitions, dedicated to aggregated queries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Ces clusters sont obtenus à partir d’une approche de clustering sémantique ou structurel des prédicats des graphes RDF.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We use a semantic or strucutral clustering of RDF predicates.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Pour le clustering structurel, nous utilisons les algorithmes d’extraction de sous-graphes fréquents et dans ce cadre nous élaborons une étude comparative des performances de ces algorithmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For structural clustering, we propose to use frequent subgraph mining algorithms, we performed for this, a comparative study of their performances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Pour le clustering sémantique, nous utilisons les métadonnées descriptives des prédicats dont nous appliquons des outils de similarité textuelle sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For semantic clustering, we use the descriptive metadata of RDF predicates and apply semantic textual similarity methods to calculate their relatedness.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

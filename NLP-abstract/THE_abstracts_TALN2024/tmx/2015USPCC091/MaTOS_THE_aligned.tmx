@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2015USPCC091. segId begin by 1, tuid = segId</note>
+        <docid>2015USPCC091</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse de Traitement Automatique des Langues a pour objectif l'annotation automatique en rôles sémantiques du français en domaine spécifique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Ln th is Natural Language Processing Ph. D. Thesis, we aim to perform semantic role labeling on French domain-specific texts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette tâche désambiguïse le sens des prédicats d'un texte et annote les syntagmes liés avec des rôles sémantiques tels qu'Agent, Patient ou Destination.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This task first disambiguates the sense of predicates in a given text and annotates its child chunks with semantic roles such as Agent, Patient or Destination.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Elle aide de nombreuses applications dans les domaines où des corpus annotés existent, mais est difficile à utiliser quand ce n'est pas le cas.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The task helps many applications in domains where annotated corpora exist, but is difficult to use otherwise.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous avons d'abord évalué sur le corpus FrameNet une méthode existante d'annotation basée uniquement sur VerbNet et donc indépendante du domaine considéré.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We first evaluate on the FrameNet corpus an existing method based on VerbNet, which explains why the method is domain-independant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Pour utiliser cette méthode en français, nous traduisons deux ressources lexicales anglaises.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To apply this method to French, we first translate lexical resources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous commençons par la base de données lexicales WordNet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We first translate the WordNet lexical database.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous traduisons ensuite le lexique VerbNet dans lequel les verbes sont regroupés sémantiquement grâce à leurs traits syntaxiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Next, we translate the VerbNet lexicon which is organized semantically using syntactic information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>La traduction, VerbNet, a été obtenue en réutilisant deux lexiques verbaux du français (le Lexique-Grammaire et Les Verbes Français) puis en modifiant manuellement l'ensemble des informations obtenues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We obtains its translation, VerbuNet, by reusing two French verb lexicons (the Lexique-Grammaire and Les Verbes Français) and by manually modifying and reorganizing the resulting lexicon.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Enfin, une fois ces briques en place, nous évaluons la faisabilité de l'annotation en rôles sémantiques en anglais et en français dans trois domaines spécifiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, once those building blocks are in place, we evaluate the feasibilty of semantic role labeling of French and English in three specific domains.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous évaluons quels sont les avantages et inconvénients de se baser sur VerbNet et VerbuNet pour annoter ces domaines, avant d'indiquer nos perspectives pour poursuivre ces travaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We study the pros and cons of using VerbNet and VerbnNet to annotate those domains before explaining our future work.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

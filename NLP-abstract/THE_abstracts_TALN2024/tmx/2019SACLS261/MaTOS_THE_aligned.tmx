@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019SACLS261. segId begin by 1, tuid = segId</note>
+        <docid>2019SACLS261</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La tâche de segmentation et de regroupement en locuteurs (speaker diarization) consiste à identifier "qui parle quand" dans un flux audio sans connaissance a priori du nombre de locuteurs ou de leur temps de parole respectifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Speaker diarization is the task of determining "who speaks when" in an audio stream that usually contains an unknown amount of speech from an unknown number of speakers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes de segmentation et de regroupement en locuteurs sont généralement construits en combinant quatre étapes principales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Speaker diarization systems are usually built as the combination of four main stages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Premièrement, les régions ne contenant pas de parole telles que les silences, la musique et le bruit sont supprimées par la détection d'activité vocale (VAD).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, non-speech regions such as silence, music, and noise are removed by Voice Activity Detection (VAD).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, les régions de parole sont divisées en segments homogènes en locuteur par détection des changements de locuteurs, puis regroupées en fonction de l'identité du locuteur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Next, speech regions are split into speaker-homogeneous segments by Speaker Change Detection (SCD), later grouped according to the identity of the speaker thanks to unsupervised clustering approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Enfin, les frontières des tours de parole et leurs étiquettes sont affinées avec une étape de re-segmentation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, speech turn boundaries and labels are (optionally) refined with a re-segmentation stage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous proposons d'aborder ces quatre étapes avec des approches fondées sur les réseaux de neurones.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we propose to address these four stages with neural network approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Au stade du regroupement des régions de parole, nous proposons d’utiliser l'algorithme de propagation d'affinité à partir de plongements neuronaux de ces tours de parole dans l'espace vectoriel des locuteurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the speech turn clustering stage, we propose to use affinity propagation on top of neural speaker embeddings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Des expériences sur un jeu de données télévisées montrent que le regroupement par propagation d'affinité est plus approprié que le regroupement hiérarchique agglomératif lorsqu'il est appliqué à des plongements neuronaux de locuteurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Experiments on a broadcast TV dataset show that affinity propagation clustering is more suitable than hierarchical agglomerative clustering when applied to neural speaker embeddings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>La segmentation basée sur les réseaux récurrents et la propagation d'affinité sont également combinées et optimisées conjointement pour former une chaîne de regroupement en locuteurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The LSTM-based segmentation and affinity propagation clustering are also combined and jointly optimized to form a speaker diarization pipeline.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Comparé à un système dont les modules sont optimisés indépendamment, la nouvelle chaîne de traitements apporte une amélioration significative.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Compared to the pipeline with independently optimized modules, the new pipeline brings a significant improvement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>De plus, nous proposons d’améliorer l'estimation de la matrice de similarité par des réseaux neuronaux récurrents, puis d’appliquer un partitionnement spectral à partir de cette matrice de similarité améliorée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, we propose to improve the similarity matrix by bidirectional LSTM and then apply spectral clustering on top of the improved similarity matrix.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Le système proposé atteint des performances à l'état de l'art sur la base de données de conversation téléphonique CALLHOME.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed system achieves state-of-the-art performance in the CALLHOME telephone conversation dataset.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Pour mieux comprendre le comportement du système, une analyse basée sur une architecture de codeur-décodeur est proposée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To better understand its behavior, the analysis is based on a proposed encoder-decoder architecture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Sur des exemples synthétiques, nos systèmes apportent une amélioration significative par rapport aux méthodes de regroupement traditionnelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our proposed systems bring a significant improvement compared with traditional clustering methods on toy examples.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

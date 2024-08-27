@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019LORIS522. segId begin by 1, tuid = segId</note>
+        <docid>2019LORIS522</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les définitions des mots « sentiment », « opinion » et « émotion » sont toujours très vagues comme l'atteste aussi le dictionnaire qui semble expliquer un mot en utilisant le deux autres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>"Sentiment", "opinion" and "emotion" are words really vaguely defined; not even the dictionary seems to be of any help, being it the first to define each of the three by using the remaining two.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Tout le monde est affecté par les opinions : les entreprises pour vendre les produits, les gens pour les acheter et, plus en général, pour prendre des décisions, les chercheurs en intelligence artificielle pour comprendre la nature de l'être humain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>And yet, the civilised world is heavily affected by opinions: companies need them to understand how to sell their products; people use them to buy the most fitting product and, more generally, to weigh their decisions; researchers exploit them in Artificial Intelligence studies to understand the nature of the human being.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Aujourd'hui on a une quantité d'information disponible jamais vue avant, mais qui résulte peu accessible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Today we can count on a humongous amount of available information, though it's hard to use it.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les mégadonnées (en anglais « big data ») ne sont pas organisées, surtout pour certaines langues – dont la difficulté à les exploiter.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In fact, the so-called “Big data” are not always structured – especially for certain languages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La recherche française souffre d'une manque de ressources « prêt-à-porter » pour conduire des tests.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>French research suffers from a lack of readily available resources for tests.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse a l'objectif d'explorer la nature des sentiments et des émotions, dans le cadre du Traitement Automatique du Langage et des Corpus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the context of Natural Language Processing, this thesis aims to explore the nature of sentiment and emotion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Les contributions de cette thèse sont plusieurs : création de nouvelles ressources pour l'analyse du sentiment et de l'émotion, emploi et comparaison de plusieurs techniques d'apprentissage automatique, et plus important, l'étude du problème sous différents points de vue : classification des commentaires en ligne en polarité (positive et négative), Aspect-Based Sentiment Analysis des caractéristiques du produit recensé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Some of our contributions to the NLP research community are: creation of new resources for sentiment and emotion analysis, tests and comparisons of several machine learning methods to study the problem from different points of view-classification of online reviews using sentiment polarity, classification of product characteristics using Aspect-Based Sentiment Analysis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Enfin, un étude psycholinguistique, supporté par des approches lexicales et d'apprentissage automatique, sur le rapport entre qui juge et l'objet jugé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, a psycholinguistic study-supported by a machine learning and lexical approaches – on the relation between who judges, the reviewer, and the object that has been judged, the product.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

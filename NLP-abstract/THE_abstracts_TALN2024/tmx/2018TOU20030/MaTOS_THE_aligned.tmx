@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018TOU20030. segId begin by 1, tuid = segId</note>
+        <docid>2018TOU20030</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Au début de cette thèse, aucun corpus annoté syntaxiquement (treebank) n'était disponible pour le serbe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>At the beginning of this PhD, no treebank for Serbian was available.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Or, les treebanks annotés manuellement sont une condition sine qua non du développement (entraînement et évaluation) d'outils statistiques dédiés à l'annotation syntaxique automatique (parsers).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, manually annotated treebanks are an essential resource for developing (training and evaluating) statistical tools for syntactic analysis (parsers).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'existence des parsers performants permet à son tour l'annotation syntaxique de corpus plus larges, qui peuvent ensuite alimenter des recherches en linguistique théorique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Efficient parsers, in turn, facilitate the annotation of large corpora, which can be used as a basis for research in theoretical linguistics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Afin de combler cette lacune, nous avons constitué un ensemble de ressources pour le traitement automatique du serbe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to address this issue, we created a suite of NLP resources for Serbian.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Il s'agit en premier lieu du treebank ParCoTrain-Synt, qui contient 101 000 tokens annotés en morphosyntaxe, en lemmes et en syntaxe de dépendances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Firstly, we created the ParCoTrain-Synt treebank, a 101 000 token corpus, complete with morphosyntactic annotation, lemmatisation and syntactic dependency annotation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous avons également confectionné le lexique ParCoLex, doté de 7 millions d'entrées provenant de 157 000 lemmes différents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also built the ParCoLex lexicon, containing 7 million entries for 157 000 different lemmas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En exploitant ces deux ressources, nous avons développé des modèles pour le parsing, pour l'étiquetage et pour la lemmatisation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Using these two resources, we trained models for parsing, morphosyntactic tagging and lemmatisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Toutes les ressources citées sont librement diffusées à l'adresse suivante : https ://github.com/aleksandra-miletic/serbian-nlp-resources.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>All of the above resources are available at the following address: https: //github.com/aleksandra-miletic/serbian-nlp-resources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Les ressources constituées ont également été exploitées dans le cadre de deux études linguistiques, montrant ainsi que le corpus ParCoTrain-Synt ouvre la porte aux études empiriques basées sur des analyses quantitatives dans le domaine de la linguistique serbe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also used these resources in two experiments in Serbian linguistics, demonstrating that the ParCoTrain-Synt treebank is well suited to empirical studies based on quantitative data analysis.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

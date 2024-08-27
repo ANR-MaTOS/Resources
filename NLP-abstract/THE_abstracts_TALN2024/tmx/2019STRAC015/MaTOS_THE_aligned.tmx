@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019STRAC015. segId begin by 1, tuid = segId</note>
+        <docid>2019STRAC015</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse a pour objet le traitement automatique du phénomène elliptique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis examines the automatic processing of elliptical phenomena in English.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>À la croisée de plusieurs disciplines – linguistique théorique, linguistique de corpus, linguistique outillée et traductologie –, elle s’inscrit dans une démarche expérimentale en poursuivant deux objectifs essentiels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Situated at the crossroads of various disciplines, such as theoretical linguistics, corpus linguistics, computational linguistics and translation studies, it implements an experimental approach in order to achieve two main goals.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Il s’agit tout d’abord de vérifier la possibilité de détecter automatiquement le phénomène elliptique en anglais pour explorer ensuite les procédures facilitant sa traduction automatique de l’anglais vers le français.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first one consists in establishing that ellipsis can be detected automatically, and the second one in exploring procedures to facilitate its machine translation from English into French.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La détection automatique repose sur des analyses morphosyntaxiques qui paraissent suffisantes à la détection automatique de certaines catégories d’ellipse, puisqu’en décomposant le phénomène, elles permettent de l’identifier parmi d’autres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For these purposes, this thesis resorts to morpho-syntactic analyses, which seem sufficient for the automatic detection of some types of ellipsis, since through breaking down the phenomenon into its specific features it makes it possible to identify it among others.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Un corpus parallèle et multi-genres, collecté et conçu pour répondre aux hypothèses de recherche, est utilisé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The investigation draws on a parallel, multi-genre corpus compiled to test the research hypotheses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Afin d’élaborer des patrons de détection et exploiter le corpus, cette recherche utilise les outils CoreNLP développés à l’université de Stanford (USA) et met en lumière leurs limites lorsqu’ils sont confrontés à l’ellipse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to develop detection patterns and exploit the corpus, the CoreNLP package developed at the University of Stanford (US) is used, and its limitations in the processing of ellipsis are highlighted.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Les résultats obtenus s’articulent autour du lien établi entre la détection et la traduction automatiques du phénomène elliptique, facteur déterminant dans la compréhension des erreurs de traduction générées lors de son traitement automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Findings and results emphasize the close link between the detection of ellipsis and its machine translation as a key factor in understanding translation errors caused by its automatic processing.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2016-57_1_ID=3-Coavoux-TAL57-1. segId begin by 1, tuid = segId</note>
+        <docid>2016-57_1_ID=3-Coavoux-TAL57-1</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'article présente une méthode d'analyse syntaxique en constituants par transitions qui se fonde sur une méthode de pondération des analyses par apprentissage profond.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The article introduces a transition-based constituent parsing method relying on a deep-learning weighting scheme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Celle-ci est comparée à une méthode de pondération par perceptron structuré, vue comme plus classique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This weighting method is compared to a structured perceptron, which is a more traditional method.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous introduisons tout d'abord un analyseur syntaxique pondéré par un réseau de neurones local et glouton qui s'appuie sur des plongements.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First of all, we introduce a syntactic parser weighted by a local greedy neural network based on symbol embeddings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ensuite nous présentons son extension vers un modèle global et à recherche par faisceau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, we extend this model to a global beam-search based model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La comparaison avec un modèle d'analyse de la famille perceptron global et en faisceau permet de mettre en évidence les propriétés étonnamment bonnes du modèle neuronal à recherche gloutonne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our experiments highlight the surprisingly good properties of the greedy local neural parser.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

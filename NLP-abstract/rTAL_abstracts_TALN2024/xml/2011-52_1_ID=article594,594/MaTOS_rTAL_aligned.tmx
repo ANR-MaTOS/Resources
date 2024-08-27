@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for TAL-2011-52_1_ID=article594,594. segId begin by 1, tuid = segId</note>
+        <docid>2011-52_1_ID=article594,594</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les textes scientifiques et techniques regorgent d’assertions (hypothèses, conditions, possibilités) qui nuancent le discours et donnent plus ou moins de certitude aux informations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Scientific and technical texts are full of assertions (i.e., hypothesis, condition, possibility) that shade the discourse and give more or less certainty to information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous nous intéressons aux assertions portant sur la relation {patient, problème médical} dans les dossiers patients.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We focus on the assertions that influence the relation {patient, medical problem} in patients’ records.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Notre objectif est d’identifier automatiquement la certitude et les degrés de certitude dans les textes médicaux, ainsi que leur polarité (positive/négative).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We aim at automatically identifying certainty and the degrees of certainty in medical texts, as well as their polarity (positive/negative).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons d’exploiter un ensemble de marqueurs de types morphologique, contextuel et structurel pour identifier et désambiguïser les assertions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose to exploit morphological, contextual and structural markers for identification and disambiguation of assertions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Notre système a été évalué dans le cadre de la compétition internationale I2B2.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our system has been evaluated within the I2B2 international challenge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>L’évaluation montre que la détection de certaines catégories d’assertion est satisfaisante alors que d’autres restent difficiles à détecter.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The evaluation shows that serveral categories of assertion are correctly identified while others remain difficult to detect.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous étudions également l’apport de chaque marqueur et analysons l’évolution des résultats, ainsi que les performances de la détection de différentes catégories d’assertions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We explore also the contribution of each marker and analyse the evolution of the results, as well as performances in the detection of different categories of assertions.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

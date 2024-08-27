@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018LORR0045. segId begin by 1, tuid = segId</note>
+        <docid>2018LORR0045</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse traite le problème d’extension d’annotation d’images.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis deals the problem of image annotation extension.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>En effet, la croissance rapide des archives de contenus visuels disponibles a engendré un besoin en techniques d’indexation et de recherche d’information multimédia.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, the fast growth of available visual contents has led a need for indexing and searching of multimedia information methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L’annotation d’images permet l’indexation et la recherche dans des grandes collections d’images d’une façon facile et rapide.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Image annotation allows indexing and searching in a large collection of images in an easy and fast way.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Pour l’extension automatique d’annotation d’images, nous avons utilisé les modèles graphiques probabilistes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For automatic image annotation extension, we use probabilistic graphical models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le modèle proposé est un mélange de distributions multinomiales et de mélanges de Gaussiennes où nous avons combiné des caractéristiques visuelles et textuelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed model is based on a mixture of multinomial distributions and mixtures of Gaussian where we have combined visual and textual characteristics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Pour réduire le coût de l’annotation manuelle et améliorer la qualité de l’annotation obtenue, nous avons intégré des retours utilisateur dans notre modèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To reduce the cost of manual annotation and improve the quality of the annotation obtained, we have incorporated user feedback into our model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Pour combler le problème du fossé sémantique et enrichir l’annotation d’images, nous avons utilisé une hiérarchie sémantique en modélisant de nombreuses relations sémantiques entre les mots-clés d’annotation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To reduce the semantic gap problem and to enrich the image annotation, we use a semantic hierarchy by modeling many semantic relationships between keywords.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Après la construction de la hiérarchie, nous l’avons intégré dans notre modèle d’annotation d’images.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>After building the hierarchy, we integrate it into our image annotation model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Le modèle obtenu avec la hiérarchie est un mélange de distributions de Bernoulli et de mélanges de Gaussiennes</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The model obtained with this hierarchy is a mixture of Bernoulli distributions and</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020UPAST010. segId begin by 1, tuid = segId</note>
+        <docid>2020UPAST010</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'anticipation des besoins des clients est cruciale pour toute entreprise — c'est particulièrement vrai des banques d'investissement telles que BNP Paribas Corporate and Institutional Banking au vu de leur rôle dans les marchés financiers.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Anticipating clients'needs is crucial to any business — this is particularly true for corporate and institutional banks such as BNP Paribas Corporate and Institutional Banking due to their role in the financial markets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse s'intéresse au problème de la prédiction des intérêts futurs des clients sur les marchés financiers, et met plus particulièrement l'accent sur le développement d'algorithmes ad hoc conçus pour résoudre des problématiques spécifiques au monde financier.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis addresses the problem of future interests prediction in the financial context and focuses on the development of ad hoc algorithms designed for solving specific financial challenges.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ce manuscrit se compose de cinq chapitres, répartis comme suit :</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This manuscript is composed of five chapters:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>- Le chapitre 1 expose le problème de la prédiction des intérêts futurs des clients sur les marchés financiers.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Chapter 1 introduces the problem of future interests prediction in the financial world.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le but de ce chapitre est de fournir aux lecteurs toutes les clés nécessaires à la bonne compréhension du reste de cette thèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The goal of this chapter is to provide the reader with all the keys necessary to understand the remainder of this thesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ces clés sont divisées en trois parties : une mise en lumière des jeux de données à notre disposition pour la résolution du problème de prédiction des intérêts futurs et de leurs caractéristiques, une vue d'ensemble, non exhaustive, des algorithmes pouvant être utilisés pour la résolution de ce problème, et la mise au point de métriques permettant d'évaluer la performance de ces algorithmes sur nos jeux de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These keys are divided into three parts: a presentation of the datasets we have at our disposal to solve the future interests prediction problem and their characteristics, an overview of the candidate algorithms to solve this problem, and the development of metrics to monitor the performance of these algorithms on our datasets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Ce chapitre se clôt sur les défis que l'on peut rencontrer lors de la conception d'algorithmes permettant de résoudre le problème de la prédiction des intérêts futurs en finance, défis qui seront, en partie, résolus dans les chapitres suivants ;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This chapter finishes with some of the challenges that we face when designing algorithms to solve the future interests problem in finance, challenges that will be partly addressed in the following chapters;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>- Le chapitre 2 compare une partie des algorithmes introduits dans le chapitre 1 sur un jeu de données provenant de BNP Paribas CIB, et met en avant les difficultés rencontrées pour la comparaison d'algorithmes de nature différente sur un même jeu de données, ainsi que quelques pistes permettant de surmonter ces difficultés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Chapter 2 proposes a benchmark of some of the algorithms introduced in Chapter 1 on a real-word dataset from BNP Paribas CIB, along with a development on the difficulties encountered for comparing different algorithmic approaches on a same dataset and on ways to tackle them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Ce comparatif met en pratique des algorithmes de recommandation classiques uniquement envisagés d'un point de vue théorique au chapitre précédent, et permet d'acquérir une compréhension plus fine des différentes métriques introduites au chapitre 1 au travers de l'analyse des résultats de ces algorithmes ;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This benchmark puts in practice classic recommendation algorithms that were considered on a theoretical point of view in the preceding chapter, and provides further intuition on the analysis of the metrics introduced in Chapter 1;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>-Le chapitre 3 introduit un nouvel algorithme, Experts Network, i.e., réseau d'experts, conçu pour résoudre le problème de l'hétérogénéité de comportement des investisseurs d'un marché donné au travers d'une architecture de réseau de neurones originale, inspirée de la recherche sur les mélanges d'experts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Chapter 3 introduces a new algorithm, called Experts Network, that is designed to solve the problem of behavioral heterogeneity of investors on a given financial market using a custom-built neural network architecture inspired from mixture-of-experts research.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Dans ce chapitre, cette nouvelle méthodologie est utilisée sur trois jeux de données distincts : un jeu de données synthétique, un jeu de données en libre accès, et un jeu de données provenant de BNP Paribas CIB.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this chapter, the introduced methodology is experimented on three datasets: a synthetic dataset, an open-source one and a real-world dataset from BNP Paribas CIB.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Ce chapitre présente aussi en plus grand détail la genèse de l'algorithme et fournit des pistes pour l'améliorer ;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The chapter provides further insights into the development of the methodology and ways to extend it;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>- Le chapitre 4 introduit lui aussi un nouvel algorithme, appelé History-augmented collaborative filtering, i.e., filtrage collaboratif augmenté par historiques, qui proposes d'augmenter les approches de factorisation matricielle classiques à l'aide des historiques d'interaction des clients et produits considérés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Chapter 4 also introduces a new algorithm, called History-augmented Collaborative Filtering, that proposes to augment classic matrix factorization approaches with the information of users and items'interaction histories.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Ce chapitre poursuit l'étude du jeu de données étudié au chapitre 2 et étend l'algorithme introduit avec de nombreuses idées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This chapter provides further experiments on the dataset used in Chapter 2, and extends the presented methodology with various ideas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, ce chapitre adapte l'algorithme de façon à permettre de résoudre le problème du cold start, i.e., l'incapacité d'un système de recommandation à fournir des prédictions pour de nouveaux utilisateurs, ainsi qu'un nouveau cas d'application sur lequel cette adaptation est essayée ;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Notably, this chapter exposes an adaptation of the methodology to solve the cold-start problem and applies it to a new dataset;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>- Le chapitre 5 met en lumière une collection d'idées et d'algorithmes, fructueux ou non, qui ont été essayés au cours de cette thèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Chapter 5 brings to light a collection of ideas and algorithms, successful or not, that were experimented during the development of this thesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Ce chapitre se clôt sur un nouvel algorithme mariant les idées des algorithmes introduits aux chapitres 3 et 4.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This chapter finishes on a new algorithm that blends the methodologies introduced in Chapters 3 and 4.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

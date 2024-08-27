@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2015GREAL009. segId begin by 1, tuid = segId</note>
+        <docid>2015GREAL009</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Notre travail de recherche vise deux objectifs étroitement liés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our research focuses on two interrelated objectives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Le premier consiste à proposer une aide à l'évaluation des écrits scientifique et pour cause : le nombre de publication augmente, les limites entre les domaines deviennent floues, et il devient difficile de trouver des publications pertinentes si bien qu'un besoin pratique d'évaluation surgit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first one aims at providing assistance to the evaluation of scientific writings because of; the numbers of publication, which keep on rising, the boundaries between the areas become and it's becoming more and more difficult to find relevant publications so as the practical need for assessments is appearing as unavoidable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Il s'agit aussi de trouver les moyens d'une aide à l'expertise, appuyée sur des indices discursifs permettant d'aider le lecteur à repérer les points clés d'une publication (phase préalable à une évaluation) notamment à travers l'identification du problème de recherche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also have to find new ways to help the evaluation of the research work, through a wide range of indications different from those usually used for research assessment, notably, through the identification of the research problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ces indices qui annoncent la formulation du problème de recherche dans les articles scientifiques sont repérables sous forme de « formules de discours ».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These indications that announce the formulation of the research problem in scientific articles can be identified as "speech formulas. "</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Notre recherche ne s'étend pas sur la formulation de la problématique scientifique au vu de la complexité de cette notion et de la difficulté de la définir d'un point de vue de l'extraction d'information.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our research does not extend to the formulation of the scientific problem because of the complexity of this concept and the difficulty of defining it from the point of view of information extraction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une modélisation de ces formules de discours que nous avons intégrée dans l'analyseur syntaxique Xerox Incremental Parser (XIP) sous forme de règles de reconnaissance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a model of the speech forms that we have integrated into the parser Xerox Incremental Parser (XIP) in pattern recognition rules.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé un corpus d'articles de recherche en sciences de l'éducation extraits du corpus Scientext pour y détecter ces formules de discours.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We used a corpus of Educational Sciences Research articles from the Scientext corpus to detect these speeches formulas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Le choix du domaine est motivé par ma participation au projet européen EERQI dont le but est de renforcer et d'améliorer la visibilité mondiale et la compétitivité de la recherche européenne en éducation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The choice of field is motivated by my participation in the European project EERQI which aims to strengthen and enhance the worldwide visibility and competitiveness of European research in education.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Différentes approches méthodologiques ont été adoptées afin de procéder à une étude linguistique fine de ces formules dîtes de discours entre autres : l'analyse de discours (M. Pecman, 2004, K. Hyland, 2005, Á. Sándor, A. Kaplan, G. Randeau, 2006, D. Siepman, 2007, A. Tutin, 2007-2010), robust parsing (S. Aït-Mokhtar, J. Chanod, R. Roux, 2002).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Different methodological approaches were adopted to perform a fine linguistic study of these formulas as: discourse analysis (Mr. Pecman, 2004, K. Hyland, 2005, Á, Sándor A. Kaplan, G. Randeau, 2006, D. Siepman, 2007, A. Tutin, 2007-2010), robust parsing (S. Aït-Mokhtar, J. Chanod, R. Roux, 2002).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Il s'agit donc de mettre en œuvre une approche applicative en vue de l'aide à la lecture experte à travers l'identification, la typologie et le fonctionnement des associations lexicales véhiculant le problème de recherche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, the goal is to implement an applicative approach aiming at helping expert reading through the identification, typology and functioning of lexical associations which convey the research problem.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

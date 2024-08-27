@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019REN1B003. segId begin by 1, tuid = segId</note>
+        <docid>2019REN1B003</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Pour la recherche en santé publique, réutiliser les bases médicoadministratives est pertinent et ouvre de nouvelles perspectives</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Reusing healthcare administrative databases for public health research is relevant and opens new perspectives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse porte sur l’utilisation conjointe de bases de données médicoadministratives et de connaissances biomédicales pour l’étude des trajectoires de soin.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis deals with the joint use of healthcare administrative databases and biomedical knowledge for the study of patient care trajectories.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cela recouvre à la fois (1) l’exploration et l’identification des trajectoires de soins pertinentes dans des flux volumineux au moyen de requêtes et (2) l’analyse des trajectoires retenues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This includes both (1) exploration and identification through queries of relevant care pathways in voluminous flows, and (2) analysis of retained trajectories.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les technologies du Web Sémantique et les ontologies du Web des données ont permis d’explorer efficacement les données médicoadministratives, en identifiant dans des trajectoires de soins des interactions, ou encore des contre-indications.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Semantic Web technologies and biomedical ontologies from the Linked Data allowed to identify care trajectories containing a drug interaction or a potential contraindication between a prescribed drug and the patient’s state of health.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous avons également développé le package R queryMed afin de rendre plus accessible les ontologies médicales aux chercheurs en santé publique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, we have developed the R queryMed package to enable public health researchers to carry out such studies by overcoming the difficulties of using Semantic Web technologies and ontologies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Après avoir permis d’identifier les trajectoires intéressantes, les connaissances relatives aux nomenclatures médicales de ces bases de données ont permis d’enrichir des méthodes d’analyse de trajectoires de soins pour mieux prendre en compte leurs complexités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>After identifying potentially interesting trajectories, knowledge from biomedical nomenclatures and ontologies has also enriched existing methods of analysing care trajectories to better take into account the complexity of data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Cela s’est notamment traduit par l’intégration de similarités sémantiques entre concepts médicaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This resulted notably in the integration of semantic similarities between medical concepts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Les technologies du Web Sémantique ont également été utilisées pour explorer les résultats obtenus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Semantic Web technologies have also been used to explore obtained results.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017LYSEN051. segId begin by 1, tuid = segId</note>
+        <docid>2017LYSEN051</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La factorisation des tenseurs est au coeur des méthodes d'analyse des données massives multidimensionnelles dans de nombreux domaines, dont les systèmes de recommandation, les graphes, les données médicales, le traitement du signal, la chimiométrie, et bien d'autres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Tensor factorization has been increasingly used to analyze high-dimensional low-rank data of massive scale in numerous application domains, including recommender systems, graph analytics, health-care data analysis, signal processing, chemometrics, and many others.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Pour toutes ces applications, l'obtention rapide de la décomposition des tenseurs est cruciale pour pouvoir traiter manipuler efficacement les énormes volumes de données en jeu.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In these applications, efficient computation of tensor decompositions is crucial to be able to handle such datasets of high volume.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'objectif principal de cette thèse est la conception d'algorithmes pour la décomposition de tenseurs multidimensionnels creux, possédant de plusieurs centaines de millions à quelques milliards de coefficients non-nuls. De tels tenseurs sont omniprésents dans les applications citées plus haut.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main focus of this thesis is on efficient decomposition of high dimensional sparse tensors, with hundreds of millions to billions of nonzero entries,which arise in many emerging big data applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous poursuivons cet objectif via trois approches.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We achieve this through three major approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>En premier lieu, nous proposons des algorithmes parallèles à mémoire distribuée, comprenant des schémas de communication point-à-point optimisés, afin de réduire les coûts de communication.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first approach, we provide distributed memory parallel algorithms with efficient point-to-point communication scheme for reducing the communication cost.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ces algorithmes sont indépendants du partitionnement des éléments du tenseur et des matrices de faible rang. Cette propriété nous permet de proposer des stratégies de partitionnement visant à minimiser le coût de communication tout en préservant l'équilibrage de charge entre les ressources.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These algorithms are agnostic to the partitioning of tensor elements and low rank decomposition matrices, which allow us to investigate effective partitioning strategies for minimizing communication cost while establishing computational load balance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons des techniques d'hypergraphes pour analyser les paramètres de calcul et de communication de ces algorithmes, ainsi que des outils de partitionnement d'hypergraphe pour déterminer des partitions à même d'offrir un meilleur passage à l'échelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We use hypergraph-based techniques to analyze computational and communication requirements in these algorithms, and employ hypergraph partitioning tools to find suitable partitions that provide much better scalability.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, nous étudions la parallélisation sur plate-forme à mémoire partagée de ces algorithmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Second, we investigate effective shared memory parallelizations of these algorithms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte, nous déterminons soigneusement les tâches de calcul et leur dépendances, et nous les exprimons en termes d'une structure de données idoine, et dont la manipulation permet de révéler le parallélisme intrinsèque du problème.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Here, we carefully determine unit computational tasks and their dependencies, and express them using a proper data structure that exposes the parallelism underneath.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Troisièmement, nous présentons un schéma de calcul en forme d'arbre binaire pour représenter les noyaux de calcul les plus coûteux des algorithmes, comme la multiplication du tenseur par un ensemble de vecteurs ou de matrices donnés. L'arbre binaire permet de factoriser certains résultats intermédiaires, et de les ré-utiliser au fil du calcul.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Third, we introduce a tree-based computational scheme that carries out expensive operations(involving the multiplication of the tensor with a set of vectors or matrices, found at the core of these algorithms) faster by factoring out and storing common partial results and effectively re-using them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Grâce à ce schéma, nous montrons comment réduire significativement le nombre et le coût des multiplications tenseur-vecteur et tenseur-matrice, rendant ainsi la décomposition du tenseur plus rapide à la fois pour la version séquentielle et la version parallèle des algorithmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With this computational scheme, we asymptotically reduce the number of tensor-vector and -matrix multiplications for high dimensional tensors, and thereby render computing tensor decompositions significantly cheaper both for sequential and parallel algorithms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Enfin, le reste de la thèse décrit deux extensions sur des thèmes similaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we diversify this main course of research with two extensions on similar themes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>La première extension consiste à appliquer le schéma d'arbre binaire à la décomposition des tenseurs denses, avec une analyse précise de la complexité du problème et des méthodes pour trouver la structure arborescente qui minimise le coût total.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first extension involves applying the tree-based computational framework to computingdense tensor decompositions, with an in-depth analysis of computational complexity and methods to find optimal tree structures minimizing the computational cost.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>La seconde extension consiste à adapter les techniques de partitionnement utilisées pour la décomposition des tenseurs creux à la factorisation des matrices non-négatives, problème largement étudié et pour lequel nous obtenons des algorithmes parallèles plus efficaces que les meilleurs actuellement connus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second work focuses on adapting effective communication and partitioning schemes of our parallel sparse tensor decomposition algorithms to the widely used non-negative matrix factorization problem,through which we obtain significantly better parallel scalability over the state of the art implementations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Tous les résultats théoriques de cette thèse sont accompagnés d'implémentations parallèles,aussi bien en mémoire partagée que distribuée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We point out that all theoretical results in the thesis are nicely corroborated by parallel experiments on both shared-memory and distributed-memory platforms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Tous les algorithmes proposés, avec leur réalisation sur plate-forme HPC, contribuent ainsi à faire de la décomposition de tenseurs un outil prometteur pour le traitement des masses de données actuelles et à venir.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With these fast algorithms as well as their tuned implementations for modern HPC architectures, we render tensor and matrix decomposition algorithms amenable to use for analyzing massive scale datasets.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

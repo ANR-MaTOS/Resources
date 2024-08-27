@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019AZUR4029. segId begin by 1, tuid = segId</note>
+        <docid>2019AZUR4029</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>De nombreuses villes d'Asie du Sud-Est subissent de graves inondations liées d'une part à l'intensité croissante des précipitations et d'autre part à une urbanisation rapide souvent due à une planification urbaine non maitrisée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Many urban cities in Southeast Asia witness severe flooding associated to increasing rainfall intensity and rapid urbanization often due to poor urban planning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>L'évaluation quantitative des risques d'inondation nécessite deux éléments essentiels : (1) un modèle numérique de terrain (MNT) haute définition, et (2) une chronologie de précipitations la plus longue possible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two important inputs required in flood hazard assessment are: (1) high accuracy Digital Elevation Model (DEM), and (2) long rainfall record.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Un MNT haute définition est à la fois coûteux et long à acquérir.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>High accuracy DEM is both expensive and time consuming to acquire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les chronologies de précipitations longues sont fréquemment indisponibles dans de nombreux sites et ne présentent pas toujours une durée suffisante pour une définition pertinente des valeurs extrêmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Long rainfall records for areas of interest are often not available or not sufficiently long to determine the probable extremes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse présente une approche opérationnelle pour générer des MNT haute définition et suggère une stratégie pour définir des pluies extrêmes en dehors de chronologies de précipitations longues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis presents a notably cost-effective and efficient approach to derive high accuracy DEM, and suggests proxies for long rainfall data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Des données pour la production des MNT issues de capteurs satellitaires-mission SRTM (Shuttle Radar Topography Mission) et images multi spectrales Sentinel 2-ont été utilisées et mises en œuvre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>DEM data from a publicly accessible satellite, Shuttle Radar Topography Mission (SRTM), and Sentinel 2 multispectral imagery are selected and used to train the Artificial Neural Network (ANN) to improve the quality of the DEM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Un réseau de neurones artificiels (ANN) est utilisé afin d'améliorer la qualité du MNT.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the training of ANN, high quality observed DEM is the key leading to a well-trained ANN.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>A la suite de cet apprentissage, le réseau de neurones peut être mis en œuvre pour générer, à faible coût, des MNT haute résolution dans des secteurs où les données sont partiellement indisponibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The trained ANN will then be ready to efficiently and effectively generate high quality DEM, at low cost, for places where DEM data is not available.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Le MNT issu des données SRTM améliorées montre (1) une qualité nettement supérieure au MNT initial puisque le RMSE passe de 34% à 57% du RMSE ; (2) la clarté visuelle est largement améliorée ; et (3) le réseau de drainage calculé correspond davantage au réseau réel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The DEM resulting from the latest version of improved SRTM (iSRTM_v2 DEM) shows (1) significantly better than the original SRTM DEM, a 34 % to 57 % RMSE reduction; (2) the visual clarity is so much clearer as well; and (3) much closer drainage network with the actual.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>La production de ce MNT amélioré permet une meilleure modélisation des processus d'inondation et augmente la qualité des résultats des simulations hydrauliques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The much improved DEM allows flood modelling to proceed with high confidence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Des données de précipitation issues d'un Modèle Climatologique Régional (RCM) haute résolution spatiale ainsi que des prévisions issues de données ERA-Interim (WRF / ERAI) ont été extraites, analysées et comparées avec les observations haute résolution enregistrées à Singapour.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Rainfall data resulting from a high spatial resolution Regional Climate Model (RCM), Weather Research and Forecasting driven by ERA-Interim (WRF/ERAI) dataset, is extracted, analyzed, and compared its accuracy with high quality observed rainfall data of Singapore.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Les comparaisons ont également été effectuées avec les courbes Intensité-Durée-Fréquence (IDF) qui sont utilisées pour l'évaluation des risques d'inondation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The comparisons are performed, among others, on their Intensity-Duration-Frequency (IDF) curves, the essential design curves for flood risk assessment; they matched quite well.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Un modèle hydraulique détaillé a été construit avec le système de modélisation MIKE 21 pour toute la métropole de Jakarta à partir d'un MNT amélioré et des précipitations associées à des périodes de retour de 50 et 100 ans.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>MIKE 21 Flow Model Flexible Mesh (MIKE 21 FM) is applied to Greater Jakarta, with input data from the above mentioned much improved DEM and precipitation proxy data, for flood simulations of 2 return periods (50-and 100-years).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Des cartes d'inondation ont été générées et sont utilisées par les services gestionnaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally flood maps are generated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Cet exemple démontre que les nouvelles méthodes et approches proposées dans cette thèse sont pertinentes pour produire une évaluation des risques d'inondation pertinente lorsque des données locales (MNT haute résolution et données pluviométriques sur une période longue) sont insuffisantes ou indisponibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This demonstrates the applications of the approaches/methodologies, proposed in this thesis, on catchments where most essential data for flood risk assessment (high resolution and high accuracy DEM and long and high accuracy rainfall data) are not available.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

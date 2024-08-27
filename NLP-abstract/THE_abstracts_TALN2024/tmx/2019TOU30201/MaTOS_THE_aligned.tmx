@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019TOU30201. segId begin by 1, tuid = segId</note>
+        <docid>2019TOU30201</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les modèles computationnels pour la compréhension automatique des textes ont suscité un vif intérêt en raison de gains de performances inhabituels au cours des dernières années, certains d'entre eux conduisant à des scores d'évaluation surhumains.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Computational models for automatic text understanding have gained a lot of interest due to unusual performance gains over the last few years, some of them leading to super-human scores.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ce succès a conduit à affirmer la création de représentations universelles de phrases.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This success reignited some grandeur claims about artificial intelligence, such as universal sentence representation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous questionnons cette affirmation au travers de deux angles complémentaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we question these claims through two complementary angles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Premièrement, les réseaux de neurones et les représentations vectorielles sont-ils suffisamment expressifs pour traiter du texte de sorte à pouvoir effectuer un large éventail de tâches complexes ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Firstly, are neural networks and vector representations expressive enough to process text and perform a wide array of complex tasks?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous présenterons les modèles neuronaux actuellement utilisés et les techniques d'entraînement associées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we will present currently used computational neural models and their training techniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, nous aborderons la question de l'universalité dans les représentation des phrases : que cachent en réalité ces prétentions à l'universalité ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Secondly, we will discuss the question of universality in sentence representation: what actually lies behind these universality claims?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous décrivons quelques théories de ce qu'est le sens d'une expression textuelle, et dans une partie ultérieure de cette thèse, nous soutenons que la sémantique (contenu littéral, non situé) par rapport à la pragmatique (la partie du sens d'un texte définie par son rôle et son contexte) est prépondérante dans les données d'entraînement et d'évaluation actuelles des modèles de compréhension du langage naturel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We delineate a few theories of meaning, and in a subsequent part of this thesis, we argue that semantics (unsituated, literal content) as opposed to pragmatics (meaning as use) is preponderant in the current training and evaluation data of natural language understanding models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Pour atténuer ce problème, nous montrons que la prédiction de marqueurs de discours (classification de marqueurs de discours initialement présents entre des phrases) peut être considérée comme un signal d'apprentissage centré sur la pragmatique pour la compréhension de textes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To alleviate that problem, we show that discourse marker prediction (classification of hidden discourse markers between sentences) can be seen as a pragmatics-centered training signal for text understanding.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons également un nouvel outil d'évaluation de la compréhension du langage naturel en se basant sur le discours et la pragmatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We build a new discourse marker prediction dataset that yields significantly better results than previous work.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Cet outil pourrait inciter la communauté du traitement des langues à prendre en compte les considérations pragmatiques lors de l'évaluation de modèles de compréhension du langage naturel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, we propose a new discourse-based evaluation suite that could incentivize researchers to take into account pragmatic considerations when evaluating text understanding models.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

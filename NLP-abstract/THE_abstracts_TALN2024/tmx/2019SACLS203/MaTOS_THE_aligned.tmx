@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019SACLS203. segId begin by 1, tuid = segId</note>
+        <docid>2019SACLS203</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Un problème central contribuant à la grande difficulté du traitement du langage naturel par des méthodes statistiques est celui de la parcimonie des données, à savoir le fait que dans un corpus d'apprentissage donné, la plupart des évènements linguistiques n'ont qu'un nombre d'occurrences assez faible, et que par ailleurs un nombre infini d'évènements permis par une langue n'apparaitront nulle part dans le corpus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A crucial issue in statistical natural language processing is the issue of sparsity, namely the fact that in a given learning corpus, most linguistic events have low occurrence frequencies, and that an infinite number of structures allowed by a language will not be observed in the corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les modèles neuronaux ont déjà contribué à partiellement résoudre le problème de la parcimonie en inférant des représentations continues de mots.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Neural models have already contributed to solving this issue by inferring continuous word representations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ces représentations continues permettent de structurer le lexique en induisant une notion de similarité sémantique ou syntaxique entre les mots.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These continuous representations allow to structure the lexicon by inducing semantic or syntactic similarity between words.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Toutefois, les modèles neuronaux actuellement les plus répandus n'offrent qu'une solution partielle au problème de la parcimonie, notamment par le fait que ceux-ci nécessitent une représentation distribuée pour chaque mot du vocabulaire, mais sont incapables d'attribuer une représentation à des mots hors vocabulaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, current neural models only partially solve the sparsity issue, due to the fact that they require a vectorial representation for every word in the lexicon, but are unable to infer sensible representations for unseen words.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Ce problème est particulièrement marqué dans des langues morphologiquement riches, ou des processus de formation de mots complexes mènent à une prolifération des formes de mots possibles, et à une faible coïncidence entre le lexique observé lors de l’entrainement d’un modèle, et le lexique observé lors de son déploiement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This issue is especially present in morphologically rich languages, where word formation processes yield a proliferation of possible word forms, and little overlap between the lexicon observed during model training, and the lexicon encountered during its use.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Aujourd'hui, l'anglais n'est plus la langue majoritairement utilisée sur le Web, et concevoir des systèmes de traduction automatique pouvant appréhender des langues dont la morphologie est très éloignée des langues ouest-européennes est un enjeu important.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Today, several languages are used on the Web besides English, and engineering translation systems that can handle morphologies that are very different from western European languages has become a major stake.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>L’objectif de cette thèse est de développer de nouveaux modèles capables d’inférer de manière non-supervisée les processus de formation de mots sous-jacents au lexique observé, afin de pouvoir de pouvoir produire des analyses morphologiques de nouvelles formes de mots non observées lors de l’entraînement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The goal of this thesis is to develop new statistical models that are able to infer in an unsupervised fashion the word formation processes underlying an observed lexicon, in order to produce morphological analyses of new unseen word forms.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

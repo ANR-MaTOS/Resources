@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2010ARTO0410. segId begin by 1, tuid = segId</note>
+        <docid>2010ARTO0410</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La représentation du temps et de l’espace est une tâche importante dans de nombreux domaines de l’Intelligence Artificielle tels que le traitement du langage naturel, les systèmes d’informations géographiques (GIS), la conception assistée par ordinateur (CAO), la navigation de robots.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Time and space representation is an important task in many domains such as natural language processing, geographic information systems (GIS), computer vision, robot navigation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>De nombreux formalismes qualitatifs ont été proposés pour représenter un ensemble d’entités spatiales ou temporelles et leurs relations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Many qualitative approaches have been proposed to represent the spatial or temporal entities and their relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La plupart de ces formalismes utilisent des réseaux de contraintes qualitatives (RCQ en abrégé) pour représenter l’ensemble des informations d’un système.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The majority of these formalisms use qualitative constraints networks (QCNs) to represent information about a system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans certaines applications, en particulier de type multi-agents, plusieurs sources d’informations peuvent chacune fournir un réseau de contraintes qualitatives pour représenter leur connaissance sur l’ensemble des positions relatives d’un ensemble d’objets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In some application, e. g. multi-agent systems, spatial or temporal information come from different sources, i. e. each source provides a spatial or temporal QCN representing relative positions between objects.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La multiplicité des sources d’informations fournissant les RCQ fait que souvent ces RCQ sont conflictuels, et il est alors utile de mettre en oeuvre une méthode de fusion de ces réseaux pour résoudre les conflits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The multiplicity of sources providing spatial or temporal information makes that the underlying QCNs are generally conflicting.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>De nombreux opérateurs de fusion ont été définis dans le cadre de la logique propositionnelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Merging multiple sources information has attracted much attention in the framework of propositional logic.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En s’inspirant en partie de ces travaux, nous élaborons des processus de fusion spécifiques aux RCQ et nous en étudions les propriétés logiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We take an inspiration from these works in order to define some merging process specified to QCNs, and study their logic and computational properties.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

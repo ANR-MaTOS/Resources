@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2013TOU30317. segId begin by 1, tuid = segId</note>
+        <docid>2013TOU30317</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La structure discursive d'un texte est un élément essentiel à la compréhension du contenu véhiculé par ce texte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The discourse structure of a document is a key element to understand the content conveyed by a text.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Elle affecte, par exemple, la structure temporelle du texte, ou encore l'interprétation des expressions anaphoriques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It affects, for instance, the temporal structure of a text, or the interpretation of anaphoric expressions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous aborderons les effets de la structure discursive sur l'analyse de sentiments.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we will study the effects of the discourse structure on sentiment analysis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L'analyse des sentiments est un domaine de recherche extrêmement actif en traitement automatique des langues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Sentiment analysis is an extremely active research domain in natural language processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Devant l'abondance de données subjectives disponibles, l'automatisation de la synthèse des multiples avis devient cruciale pour obtenir efficacement une vue d'ensemble des opinions sur un sujet donné.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The last years have seen the multiplication of the available textual data conveying opinion on the web, and the automation of the summary of opinion documents became crucial for who wants to keep an overview of the opinion on a given subject.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>La plupart des travaux actuels proposent une analyse des opinions au niveau du document ou au niveau de la phrase en ignorant la structure discursive.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Most of the current research efforts describe an opinion extraction at the document level or at the sentence level, ignoring the discourse structure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous nous plaçons dans le contexte de la théorie de la SDRT (Segmented Discourse Representation Theory) et proposons de répondre aux questions suivantes :</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis work, we address opinion extraction through the discourse framework of the SDRT (Segmented Discourse Representation Theory), and try to answer to the following questions:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>- Existe-t-il un lien entre la structure discursive d'un document et les opinions émises dans ce même document ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Is there a link between the discourse structure of a document and the opinions contained in that document?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>- Quel est le rôle des relations de discours dans la détermination du caractère objectif ou subjectif d'un segment textuel ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- What is the role of discourse relations in the determination of whether a textual segment is objective or subjective?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>- Quel est l'impact de la structure discursive lors de la détermination de l'opinion globale véhiculée dans un document ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- What is the impact of the discourse structure in the determination of the overall opinion conveyed by a document?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>- Est-ce qu'une approche basée sur le discours apporte une réelle valeur ajoutée comparée à une approche classique basée sur la notion de 'sacs de mots' ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Does a discourse based approach really bring additional value compared to a classical "bag of words" approach?</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

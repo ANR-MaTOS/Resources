@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019BORD0305. segId begin by 1, tuid = segId</note>
+        <docid>2019BORD0305</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les avancées dans l'analyse de l'expression différentielle de gènes ont suscité un vif intérêt pour l'étude d'ensembles de gènes présentant une similarité d'expression au cours d'une même condition expérimentale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The revolution in new sequencing technologies, by strongly improving the production of omics data, is greatly leading to new understandings of the relations between genotype and phenotype.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les approches classiques pour interpréter l'information biologique reposent sur l'utilisation de méthodes statistiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To interpret and analyze data grouped according to a phenotype of interest, methods based on statistical enrichment became a standard in biology.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cependant, ces méthodes se focalisent sur les gènes les plus connus tout en générant des informations redondantes qui peuvent être éliminées en prenant en compte la structure des ressources de connaissances qui fournissent l'annotation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, these methods synthesize the biological information by a priori selecting the over-represented terms and focus on the most studied genes that may represent a limited coverage of annotated genes within a gene set.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Au cours de cette thèse, nous avons exploré différentes méthodes permettant l'annotation d'ensembles de gènes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>During this thesis, we explored different methods for annotating gene sets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Premièrement, nous présentons les solutions visuelles développées pour faciliter l'interprétation des résultats d'annotation d'un ou plusieurs ensembles de gènes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this frame, we developed three studies allowing the annotation of gene sets and thus improving the understanding of their biological context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous avons développé un prototype de visualisation, appelé MOTVIS, qui explore l'annotation d'une collection d'ensembles des gènes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, visualization approaches were applied to represent annotation results provided by enrichment analysis for a gene set or a repertoire of gene sets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>MOTVIS utilise ainsi une combinaison de deux vues inter-connectées : une arborescence qui fournit un aperçu global des données mais aussi des informations détaillées sur les ensembles de gènes, et une visualisation qui permet de se concentrer sur les termes d'annotation d'intérêt.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this work, a visualization prototype called MOTVIS (MOdular Term VISualization) has been developed to provide an interactive representation of a repertoire of gene sets combining two visual metaphors: a treemap view that provides an overview and also displays detailed information about gene sets, and an indented tree view that can be used to focus on the annotation terms of interest.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>La combinaison de ces deux visualisations a l'avantage de faciliter la compréhension des résultats biologiques lorsque des données complexes sont représentées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This illustrates the interest of using different visual metaphors to facilitate the comprehension of biological results by representing complex data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, nous abordons les limitations des approches d'enrichissement statistique en proposant une méthode originale qui analyse l'impact d'utiliser différentes mesures de similarité sémantique pour annoter les ensembles de gènes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Secondly, to address the issues of enrichment analysis, a new method for analyzing the impact of using different semantic similarity measures on gene set annotation was proposed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Pour évaluer l'impact de chaque mesure, nous avons considéré deux critères comme étant pertinents pour évaluer une annotation synthétique de qualité d'un ensemble de gènes : (i) le nombre de termes d'annotation doit être réduit considérablement tout en gardant un niveau suffisant de détail, et (ii) le nombre de gènes décrits par les termes sélectionnés doit être maximisé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To evaluate the impact of each measure, two relevant criteria were considered for characterizing a "good" synthetic gene set annotation: (i) the number of annotation terms has to be drastically reduced while maintaining a sufficient level of details, and (ii) the number of genes described by the selected terms should be as large as possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, neuf mesures de similarité sémantique ont été analysées pour trouver le meilleur compromis possible entre réduire le nombre de termes et maintenir un niveau suffisant de détails fournis par les termes choisis.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, nine semantic similarity measures were analyzed to identify the best possible compromise between both criteria while maintaining a sufficient level of details.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous avons développé GSAn, un serveur web basé sur les développements précédents et dédié à l'annotation d'un ensemble de gènes a priori.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, we developed GSAn (Gene Set Annotation), a novel gene set annotation web server that uses semantic similarity measures to synthesize a priori GO annotation terms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>GSAn intègre MOTVIS comme outil de visualisation pour présenter conjointement les termes représentatifs et les gènes de l'ensemble étudié.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>GSAn contains the interactive visualization MOTVIS, dedicated to visualize the representative terms of gene set annotations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Nous avons comparé GSAn avec des outils d'enrichissement et avons montré que les résultats de GSAn constituent un bon compromis pour maximiser la couverture de gènes tout en minimisant le nombre de termes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Compared to enrichment analysis tools, GSAn has shown excellent results in terms of maximizing the gene coverage while minimizing the number of terms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Le dernier point exploré est une étape visant à étudier la faisabilité d'intégrer d'autres ressources dans GSAn.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>At last, the third work consisted in enriching the annotation results provided by GSAn.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Nous avons ainsi intégré deux ressources, l'une décrivant les maladies humaines avec Disease Ontology (DO) et l'autre les voies métaboliques avec Reactome.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since the knowledge described in GO may not be sufficient for interpreting gene sets, other biological information, such as pathways and diseases, may be useful to provide a wider biological context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Nous avons ainsi intégré deux ressources, l'une décrivant les maladies humaines avec Disease Ontology (DO) et l'autre les voies métaboliques avec Reactome.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, two additional knowledge resources, being Reactome and Disease Ontology (DO), were integrated within GSAn.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>L'intégration a amélioré les résultats en couvrant d'avantage de gènes sans pour autant affecter de manière significative le nombre de termes impliqués.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The integration of these resources improved the results in terms of gene coverage without affecting significantly the number of involved terms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, les termes GO ont été mis en correspondance avec les termes DO et Reactome, a priori et a posteriori des calculs effectués par GSAn.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In practice, GO terms were mapped to terms of Reactome and DO, before and after applying the GSAn method.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Nous avons montré qu'un processus de mise en correspondance appliqué a priori permettait d'obtenir un plus grand nombre d'inter-relations entre les deux ressources.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have shown that a mapping process before computing the GSAn method allowed to obtain a larger number of inter-relations between the two knowledge resources.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

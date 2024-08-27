@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2015LAROS005. segId begin by 1, tuid = segId</note>
+        <docid>2015LAROS005</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les récents progrès dans la numérisation des collections de documents patrimoniaux ont ravivé de nouveaux défis afin de garantir une conservation durable et de fournir un accès plus large aux documents anciens.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Over the last few years, there has been tremendous growth in digitizing collections of cultural heritage documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les efforts se concentrent autant sur le développement d'outils rapides et automatiques de caractérisation et catégorisation des pages d'ouvrages anciens, capables de classer les pages d'un ouvrage numérisé en fonction de plusieurs critères, notamment la structure des mises en page et/ou les caractéristiques typographiques/graphiques du contenu de ces pages.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recently, an important need has emerged which consists in designing a computer-aided characterization and categorization tool, able to index or group historical digitized book pages according to several criteria, mainly the layout structure and/or typographic/graphical characteristics of the historical document image content.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, dans le cadre de cette thèse, nous proposons une approche permettant la caractérisation et la catégorisation automatiques des pages d'un ouvrage ancien.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, the work conducted in this thesis presents an automatic approach for characterization and categorization of historical book pages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L'approche proposée se veut indépendante de la structure et du contenu de l'ouvrage analysé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed approach is applicable to a large variety of ancient books.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le principal avantage de ce travail réside dans le fait que l'approche s'affranchit des connaissances préalables, que ce soit concernant le contenu du document ou sa structure.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, it does not assume a priori knowledge regarding document image layout and content.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Elle est basée sur une analyse des descripteurs de texture et une représentation structurelle en graphe afin de fournir une description riche permettant une catégorisation à partir du contenu graphique (capturé par la texture) et des mises en page (représentées par des graphes).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is based on the use of texture and graph algorithms to provide a rich and holistic description of the layout and content of the analyzed book pages to characterize and categorize historical book pages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En effet, cette catégorisation s'appuie sur la caractérisation du contenu de la page numérisée à l'aide d'une analyse des descripteurs de texture, de forme, géométriques et topologiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The categorization is based on the characterization of the digitized page content by texture, shape, geometric and topological descriptors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cette caractérisation est définie à l'aide d'une représentation structurelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This characterization is represented by a structural signature.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans le détail, l'approche de catégorisation se décompose en deux étapes principales successives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More precisely, the signature-based characterization approach consists of two main stages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>La première consiste à extraire des régions homogènes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first stage is extracting homogeneous regions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>La seconde vise à proposer une signature structurelle à base de texture, sous la forme d'un graphe, construite à partir des régions homogènes extraites et reflétant la structure de la page analysée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, the second one is proposing a graph-based page signature which is based on the extracted homogeneous regions, reflecting its layout and content.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Cette signature assure la mise en œuvre de nombreuses applications pour gérer efficacement un corpus ou des collections de livres patrimoniaux (par exemple, la recherche d'information dans les bibliothèques numériques en fonction de plusieurs critères, ou la catégorisation des pages d'un même ouvrage).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Afterwards, by comparing the different obtained graph-based signatures using a graph-matching paradigm, the similarities of digitized historical book page layout and/or content can be deduced.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>En comparant les différentes signatures structurelles par le biais de la distance d'édition entre graphes, les similitudes entre les pages d'un même ouvrage en termes de leurs mises en page et/ou contenus peuvent être déduites.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Subsequently, book pages with similar layout and/or content can be categorized and grouped, and a table of contents/summary of the analyzed digitized historical book can be provided automatically.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Ainsi de suite, les pages ayant des mises en page et/ou contenus similaires peuvent être catégorisées, et un résumé/une table des matières de l'ouvrage analysé peut être alors généré automatiquement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a consequence, numerous signature-based applications (e.g. information retrieval in digital libraries according to several criteria, page categorization) can be implemented for managing effectively a corpus or collections of books.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Pour illustrer l'efficacité de la signature proposée, une étude expérimentale détaillée a été menée dans ce travail pour évaluer deux applications possibles de catégorisation de pages d'un même ouvrage, la classification non supervisée de pages et la segmentation de flux de pages d'un même ouvrage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To illustrate the effectiveness of the proposed page signature, a detailed experimental evaluation has been conducted in this work for assessing two possible categorization applications, unsupervised page classification and page stream segmentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>En outre, les différentes étapes de l'approche proposée ont donné lieu à des évaluations par le biais d'expérimentations menées sur un large corpus de documents patrimoniaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, the different steps of the proposed approach have been evaluated on a large variety of historical document images.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

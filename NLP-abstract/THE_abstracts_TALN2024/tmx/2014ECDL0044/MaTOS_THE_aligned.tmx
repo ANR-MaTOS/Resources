@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2014ECDL0044. segId begin by 1, tuid = segId</note>
+        <docid>2014ECDL0044</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La production et la diffusion de musique numérisée ont explosé ces dernières années.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Digitalized music production exploded in the past decade.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Une telle quantité de données à traiter nécessite des méthodes efficaces et rapides pour l'analyse et la recherche automatique de musique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Huge amount of data drives the development of effective and efficient methods for automatic music analysis and retrieval.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse s'attache donc à proposer des contributions pour l'analyse sémantique de la musique, et en particulier pour la reconnaissance du genre musical et de l'émotion induite (ressentie par l'auditoire), à l'aide de descripteurs de bas-niveau sémantique mais également de niveau intermédiaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis focuses on performing semantic analysis of music, in particular mood and genre classification, with low level and mid level features since the mood and genre are among the most natural semantic concepts expressed by music perceivable by audiences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Afin d'accéder aux propriétés sémantiques à partir des descripteurs bas-niveau, des modélisations basées sur des algorithmes de types K-means et GMM utilisant des BoW et Gaussian super vectors ont été envisagées pour générer des dictionnaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to delve semantics from low level features, feature modeling techniques like K-means and GMM based BoW and Gaussian super vector have to be applied.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Compte-tenu de la très importante quantité de données à traiter, l'efficacité temporelle ainsi que la précision de la reconnaissance sont des points critiques pour la modélisation des descripteurs de bas-niveau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this big data era, the time and accuracy efficiency becomes a main issue in the low level feature modeling.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, notre première contribution concerne l'accélération des méthodes K-means, GMM et UMB-MAP, non seulement sur des machines indépendantes, mais également sur des clusters de machines.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our first contribution thus focuses on accelerating k-means, GMM and UBM-MAP frameworks, involving the acceleration on single machine and on cluster of workstations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Afin d'atteindre une vitesse d'exécution la plus importante possible sur une machine unique, nous avons montré que les procédures d'apprentissage des dictionnaires peuvent être réécrites sous forme matricielle pouvant être accélérée efficacement grâce à des infrastructures de calcul parallèle hautement performantes telle que les multi-core CPU ou GPU.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To achieve the maximum speed on single machine, we show that dictionary learning procedures can elegantly be rewritten in matrix format that can be accelerated efficiently by high performance parallel computational infrastructures like multi-core CPU, GPU.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>En particulier, en s'appuyant sur GPU et un paramétrage adapté, nous avons obtenu une accélération de facteur deux par rapport à une implémentation single thread.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular with GPU support and careful tuning, we have achieved two magnitudes speed up compared with single thread implementation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Concernant le problème lié au fait que les données ne peuvent pas être stockées dans la mémoire d'une seul ordinateur, nous avons montré que les procédures d'apprentissage des K-means et GMM pouvaient être divisées par un schéma Map-Reduce pouvant être exécuté sur des clusters Hadoop et Spark.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Regarding data set which cannot fit into the memory of individual computer, we show that the k-means and GMM training procedures can be divided into map-reduce pattern which can be executed on Hadoop and Spark cluster.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>En utilisant notre format matriciel sur ce type de clusters, une accélération de 5 à 10 fois a pu être obtenue par rapport aux librairies d'accélération de l'état de l'art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our matrix format version executes 5 to 10 times faster on Hadoop and Spark clusters than the state-of-the-art libraries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>En complément des descripteurs audio bas-niveau, des descripteurs de niveau sémantique intermédiaire tels que l'harmonie de la musique sont également très importants puisqu'ils intègrent des informations d'un niveau d'abstraction supérieur à celles obtenues à partir de la simple forme d'onde.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Beside signal level features, mid-level features like harmony of music, the most natural semantic given by the composer, are also important since it contains higher level of abstraction of meaning beyond physical oscillation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, notre seconde contribution consiste en la modélisation de l'information liée aux notes détectées au sein du signal musical, en utilisant des connaissances sur les propriétés de la musique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our second contribution thus focuses on recovering note information from music signal with musical knowledge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Cette contribution s'appuie sur deux niveaux de connaissance musicale : le son des notes des instruments ainsi que les statistiques de co-occurrence et de transitions entre notes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This contribution relies on two levels of musical knowledge: instrument note sound and note co-occurrence/transition statistics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Pour le premier niveau, un dictionnaire musical constitué de notes d'instruments a été élaboré à partir du synthétiseur Midi de Logic Pro 9.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the instrument note sound level, a note dictionary is firstly built i from Logic Pro 9.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Basé sur ce dictionnaire, nous avons proposé un algorithme « Positive Constraint Matching Pursuit » (PCMP) pour réaliser la décomposition de la musique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With the musical dictionary in hand, we propose a positive constraint matching pursuit (PCMP) algorithm to perform the decomposition.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>
