@@ -65,7 +65,7 @@ Please cite the following:
 
 **Resources available** are the test sets **THE** and **rTAL**, the validation set in **TAL**, 
 and we will release our complete training set soon.
-The corpus is in the folder `NLP-abstract`, including
+The corpus is in the folder `NLP-abstracts`, including
 
 - `rTAL_abstracts_TALN2024`
   - `xml` : containing a folder for each document pair, with the aligned sentences for the current document in an xml file
