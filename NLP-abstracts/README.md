@@ -2,26 +2,24 @@ This repository contains about 2000 abstracts (fr / en) of scientific documents 
 - Abstracts of PhD theses from the [these.fr](https://these.fr), selected based on keywords. These are located in the subdirectory THE_abstracts.
 - Abstracts of articles published in the [TAL journal](https://www.atala.org/revuetal). These are located in the subdirectory rTAL_abstracts. 
 
-Each repository contains the complete set of abstracts in TMX format, in xml the subdirectory; as well as a text version of the abstracts used for training, developing, or testing our models. The detailed content is as follows: 
+Each repository contains the complete set of abstracts in TMX format, in the tmx subdirectory; as well as a text version of the abstracts used for training, developing, or testing our models. The detailed content is as follows: 
 
 - `rTAL_abstracts`
   - `xml` : containing a folder for each document pair, with the aligned sentences for the current document in an xml file
   - `drop.lst`: a plain text file that lists at each line the DOCID of documents to discard among the xml files in `xml` folder
-  - `rTAL_doc.lst`: contains the DOCID of documents in `rTAL`, with the same order as their positions in the test set.
+  - `rTAL_doc.idx`: a tsv file indicating the index of each document in `rTAL`
   - `txt_test`: the test set in plain text used in our experiments, it consists of 
     - the document-level test set without sentence boundaries (e.g. `rTAL_doc.fr`), 
     - the document-level test set with sentence boundaries in the sub-folder `doc_with_sep`, 
     - the sentence level test set in the sub-folder `sents`, 
     with `rTAL_sent.idx` an index file indicating the correspondence between documents and sentences in the document-level version.
-    For example, `D0.3` represents the third sentence in the document `D0` of `rTAL` test set. The order of these indices is the same as the position of these sentences, and the sentences from the same document are consecutive.
+    For example, `D0.3` represents the third sentence in the first document of `rTAL` test set.
 
 - `THE_abstracts`
   - The content is similar to `rTAL` for the test set `THE`
   - `test.lst` contains the DOCID of documents in `THE`, with the same order as the positions of these documents.
   - `txt_dev` contains the document-level validation set used to train our document-level models. We also release the version with sentence boundaries in the sub-folder `doc_with_sep`
   - `dev.lst` contains the DOCID of documents in the validation set.
-  - `txt_train` contains the documents in `TAL-D` training set extracted from [these.fr](https://these.fr). We will release soon the rest part from [ISTEX](https://www.istex.fr/).
-  - `train.lst` contains the DOCID of the first 15k documents in the training set, which corresponds to data in `txt_train`.
 
 **The Resources currently available** are the test sets **THE** and **rTAL**, the validation set in **TAL**. The complete training set will also be published set soon.
   
@@ -66,7 +64,6 @@ This data is described in the following paper, published at the 2024 edition of 
 
 Ziqian Peng, Rachel Bawden, and François Yvon. 2024. À propos des difficultés de traduire automatiquement de longs documents. In Actes de la 31ème Conférence sur le Traitement Automatique des Langues Naturelles, volume 1 : articles longs et prises de position, pages 2–21, Toulouse, France. ATALA and AFPC.
 https://aclanthology.org/2024.jeptalnrecital-taln.1/
-
 
 
 
