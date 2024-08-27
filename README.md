@@ -33,11 +33,13 @@ Resources available:
 
 ## 2. Parallel corpus of EN-FR abstracts in the NLP domain
 
-This data is described in the following paper, published at the TALN conference 2024: 
+This corpus contains approximately 2,000 abstracts of PhD Theses and journal abstracts in the NLP domain in French associated with their English translation (or vice-versa). These texts have been downloaded from public sources, manually curated, and aligned at the sentence level. It is redistributed under the terms of the [CC-BY Licence](https://creativecommons.org/licenses/by/4.0/).
+
+This data has been used in the following paper, published at the 2024 edition of the TALN conference: 
 
 Ziqian Peng, Rachel Bawden, and François Yvon. 2024. À propos des difficultés de traduire automatiquement de longs documents. In Actes de la 31ème Conférence sur le Traitement Automatique des Langues Naturelles, volume 1 : articles longs et prises de position, pages 2–21, Toulouse, France. ATALA and AFPC.
 
-Please cite the following:
+If you would like to use this data, please use the following citation:
 
 ```
 @inproceedings{peng-etal-2024-propos,
