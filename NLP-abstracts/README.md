@@ -2,7 +2,7 @@ This repository contains about 2000 abstracts (fr / en) of scientific documents 
 - Abstracts of PhD theses from the [these.fr](https://these.fr), selected based on keywords. These are located in the subdirectory THE_abstracts.
 - Abstracts of articles published in the [TAL journal](https://www.atala.org/revuetal). These are located in the subdirectory rTAL_abstracts. 
 
-Each repository contains the complete set of abstracts in XLIFF format, in xml the subdirectory; as well as a text version of the abstracts used for training, developing, or testing our models. The detailed content is as follows: 
+Each repository contains the complete set of abstracts in TMX format, in xml the subdirectory; as well as a text version of the abstracts used for training, developing, or testing our models. The detailed content is as follows: 
 
 - `rTAL_abstracts`
   - `xml` : containing a folder for each document pair, with the aligned sentences for the current document in an xml file
