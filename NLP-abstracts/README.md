@@ -1,5 +1,5 @@
 This repository contains about 2000 abstracts (fr / en) of scientific documents in the Natural Language Processing domain. It has been collected from the following sources:
-- Abstracts of PhD theses from the [these.fr](https://these.fr), selected based on keywords. These are located in the subdirectory THE_abstracts.
+- Abstracts of PhD theses from the [theses.fr](https://theses.fr), selected based on keywords. These are located in the subdirectory THE_abstracts.
 - Abstracts of articles published in the [TAL journal](https://www.atala.org/revuetal). These are located in the subdirectory rTAL_abstracts. 
 
 Each repository contains the complete set of abstracts in TMX format, in the tmx subdirectory; as well as a text version of the abstracts used for training, developing, or testing our models. The detailed content is as follows: 
@@ -20,7 +20,7 @@ Each repository contains the complete set of abstracts in TMX format, in the tmx
   - `test.lst` contains the DOCID of documents in `THE`, with the same order as the positions of these documents.
   - `txt_dev` contains the document-level validation set used to train our document-level models. We also release the version with sentence boundaries in the sub-folder `doc_with_sep`
   - `dev.lst` contains the DOCID of documents in the validation set.
-  - `txt_train` contains the documents in `TAL-D` training set extracted from [these.fr](https://these.fr). We will release soon the rest part from [ISTEX](https://www.istex.fr/).
+  - `txt_train` contains the documents in `TAL-D` training set extracted from [theses.fr](https://theses.fr). We will release soon the rest part from [ISTEX](https://www.istex.fr/).
   - `train.lst` contains the DOCID of the first 15k documents in the training set, which corresponds to data in `txt_train`.
 
 
