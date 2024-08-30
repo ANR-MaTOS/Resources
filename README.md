@@ -4,7 +4,7 @@ This repository contains publicly released resources created in the context of t
 
 ## 1. Post-editing data for the NLP domain
 
-This data is described in the following paper, published at the EAMT conference 2024: 
+The data in [NLP-corpus] is described in the following paper, published at the EAMT Conference 2024: 
 
 Rachel Bawden, Ziqian Peng, Maud Bénard, Éric Villemonte de la Clergerie, Raphaël Esamotunu, Mathilde Huguin, Natalie Kübler, Alexandra Mestivier, Mona Michelot, Laurent Romary, Lichao Zhu and François Yvon. 2024. Translate your Own: a Post-Edition Experiment in the NLP domain. In *Proceedings of the 25th Annual Conference of the European Association for Machine Translation*. Sheffield, UK. European Association for Machine Translation. To appear. 
 
@@ -33,7 +33,7 @@ Resources available:
 
 ## 2. Parallel corpus of EN-FR abstracts in the NLP domain
 
-This corpus contains approximately 2,000 abstracts of PhD Theses and journal abstracts in the NLP domain in French associated with their English translation (or vice-versa). These texts have been downloaded from public sources, manually curated, and aligned at the sentence level. It is redistributed under the terms of the [CC-BY Licence](https://creativecommons.org/licenses/by/4.0/).
+The data in [NLP-abstracts] correspond to approximately 2,000 abstracts of PhD Theses and journal abstracts in the NLP domain in French associated with their English translation (or vice-versa). These texts have been downloaded from public sources, manually curated, and aligned at the sentence level. It is redistributed under the terms of the [CC-BY Licence](https://creativecommons.org/licenses/by/4.0/).
 
 This data has been used in the following paper, published at the 2024 edition of the TALN conference: 
 
