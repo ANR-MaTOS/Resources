@@ -1,7 +1,7 @@
-Nous présentons le projet Papillon dédié la construction d'une base lexicale multilingue linguistiquement riche.
-Ce projet s'appuie sur le principe de construction collaborative, qui permet à chacun, professionel ou amateur, institution ou individu, de contribuer, dans la mesure de ses moyens, à ce grand chantier.
-Pour qu'un tel travail collaboratif puisse s'amorcer, il est nécessaire de fournir un ensemble conséquent d'informations lexicales multilingues, sur lesquels les contributeurs pourront s'appuyer.
-Après avoir présenté l'architectures linguistique, lexicale et informatique du projet Papillon, nous détaillons la méthode utilisée pour créer les informations initiales mises à disposition des contributeurs.
+Nous présentons le projet Papillon dédié la construction d'une base lexicale multilingue linguistiquement riche.
+Ce projet s'appuie sur le principe de construction collaborative, qui permet à chacun, professionel ou amateur, institution ou individu, de contribuer, dans la mesure de ses moyens, à ce grand chantier.
+Pour qu'un tel travail collaboratif puisse s'amorcer, il est nécessaire de fournir un ensemble conséquent d'informations lexicales multilingues, sur lesquels les contributeurs pourront s'appuyer.
+Après avoir présenté l'architectures linguistique, lexicale et informatique du projet Papillon, nous détaillons la méthode utilisée pour créer les informations initiales mises à disposition des contributeurs.
 L'article s'intéresse à la formalisation, dans une optique de calcul, des définitions lexicographiques BDéf (Altman et Polguère, 2003).
 La richesse informationnelle de ces définitions laisse envisager de nombreux calculs utiles aussi bien à la pratique lexicographique qu'à une réflexion plus générale sur la modélisation du sens lexical.
 De tels calculs ne peuvent toutefois être mis en oeuvre sans une formalisation poussée des définitions, qui se traduira ici par le recours aux structures de traits typées (Carpenter, 1992).
@@ -218,7 +218,7 @@ Afin de déterminer les termes (notamment les hashtags) portant sur un même suj
 Pour sélectionner l'ensemble des évènements, nous avons utilisé trois critères : fréquence, variation et Tf*Idf.
 Dans le cadre de Morpho Challenge 2009, nous avons mis au point un système d'analyse morphologique non supervisée qui tire profit d'analogies de formes entre mots.
 A l'issue de notre participation nous avons pris le temps de corriger certaines lacunes de notre système et d'en analyser les caractéristiques principales.
-Dans cet article, nous mettons l'accent non pas sur les performances de notre système (au demeurant plus qu'encourageantes) à cette compétition, mais plutôt sur les acquis de ces expériences post-compétition.
+Dans cet article, nous mettons l'accent non pas sur les performances de notre système (au demeurant plus qu'encourageantes) à cette compétition, mais plutôt sur les acquis de ces expériences post-compétition.
 Nous espérons que ce travail contribuera à démontrer que l'analogie formelle est non seulement une alternative viable mais également compétitive à l'analyse morphologique non supervisée.
 Toutefois, la compilation des corpus historiques est différente de la compilation des corpus contemporains.
 Les concepteurs de corpus doivent faire face à des problèmes inhérents aux textes historiques, tels que : l'absence d'une norme orthographique, l'utilisation généralisée des abréviations en plus de leurs variantes orthographiques, le manque d'espace entre les mots, l'utilisation irrégulière des traits d'union, les symbols typographiques non standard.
@@ -388,11 +388,11 @@ En suggérant des pistes d'évolution pour ces logiciels, nous essayons d'engage
 Les systèmes professionnels de traduction offrent à cet effet à leurs utilisateurs la possibilité d'enrichir un lexique de base avec de nouvelles entrées.
 Récemment, Stroppa et Yvon (2005) démontraient l'intérêt de l'apprentissage analogique pour l'analyse morphologique d'une langue.
 Dans cette étude, nous montrons qu'il offre également une réponse adaptée au problème de l'enrichissement d'un lexique bilingue et à la traduction d'entrées lexicales inconnues en particulier.
-Les dictionnaires électroniques traditionnels permettent de nos jours, grâce à des requêtes évoluées, d'accéder rapidement aux articles et aux informations qu'ils contiennent.
-En cela consiste leur principale valeur ajoutée.
-Cependant, celle-ci s'estompe une fois l'utilisateur parvenu à l'article, car il y retrouve la présentation des versions papier et leurs limites.
-Nous montrons ici, à travers l'exemple du DAFLES, un nouveau dictionnaire pour apprenants du français, comment il est possible d'organiser différemment les articles de dictionnaires, de façon plus dynamique et plus adaptée aux besoins de l'utilisateur.
-Ceci est rendu possible grâce à une structuration souple et cohérente des données lexicales.
+Les dictionnaires électroniques traditionnels permettent de nos jours, grâce à des requêtes évoluées, d'accéder rapidement aux articles et aux informations qu'ils contiennent.
+En cela consiste leur principale valeur ajoutée.
+Cependant, celle-ci s'estompe une fois l'utilisateur parvenu à l'article, car il y retrouve la présentation des versions papier et leurs limites.
+Nous montrons ici, à travers l'exemple du DAFLES, un nouveau dictionnaire pour apprenants du français, comment il est possible d'organiser différemment les articles de dictionnaires, de façon plus dynamique et plus adaptée aux besoins de l'utilisateur.
+Ceci est rendu possible grâce à une structuration souple et cohérente des données lexicales.
 Le problème de l'attribution stylométrique d'auteur est un problème fondamental.
 L'idée fondamentale derrière cette recherche est que l'on peut déterminer la paternité d'un document sur la base d'un ensemble de trait cognitifs et linguistiques qui permettent d'identifier de manière unique le style d'écriture d'une personne.
 Dans de nombreux cas, cependant, le bruit présent dans les documents originaux peut rendre cette analyse plus difficile et moins fiable.
@@ -469,8 +469,8 @@ Il analyse ensuite le retour d'approches globales (par apprentissage symbolique 
 La généricité et l'adaptabilité des systèmes sont discutées et illustrées à travers des exemples représentatifs des réalisations du domaine.
 L'apprentissage non supervisé et semi-supervisé de la morphologie fournit des solutions pratiques pour le traitement des langues morphologiquement riches et requiert une intervention humaine réduite comparée aux analyseurs traditionnels basés sur des règles.
 L'évaluation directe des méthodes d'apprentissage utilisant des analyses de référence linguistique est importante pour leur développement, puisque l'évaluation par les applications finales prend généralement beaucoup de temps.
-Cependant, même l'évaluation linguistique n'est pas simple pour l'analyse morphologique complète, car les identifiants de morphèmes générés par la méthode d'apprentissage peuvent se révéler arbitraires.
-Nous passons en revue les méthodes d'évaluation existantes pour les tâches d'apprentissage et proposons de nouvelles variations.
+Cependant, même l'évaluation linguistique n'est pas simple pour l'analyse morphologique complète, car les identifiants de morphèmes générés par la méthode d'apprentissage peuvent se révéler arbitraires.
+Nous passons en revue les méthodes d'évaluation existantes pour les tâches d'apprentissage et proposons de nouvelles variations.
 Afin de comparer les méthodes, nous effectuons une vaste méta-évaluation à l'aide de l'importante base de résultats provenant des compétitions Morpho Challenge.
 Nous proposons une méthode permettant d'extraire automatiquement des chaînes de mots relatives à des opinions à partir de corpus étiquetés.
 Il s'agit dans un premier temps d'améliorer les performances de systèmes de catégorisation automatique utilisés pour retrouver l'opinion (positive, négative ou neutre) rattachée à un texte.
@@ -822,9 +822,9 @@ Nous présentons une technique efficace pour calculer la probabilité d'une séq
 Notre approche est basée sur une formalisation du problème en une chaîne de Markov particulière, dont nous présentons et exploitons les spécificités afin d'obtenir une complexité compétitive.
 Nous développons notre approche plus avant afin de calculer la fréquence documentaire attendue d'une séquence donnée.
 Cet article présente finalement une application de ces travaux : une méthode automatique pour l'évaluation directe de l'intérêt d'une séquence de mots, par le biais de comparaisons statistiques entre leurs fréquences attendues et observées.
-VerbNet est une ressource lexicale pour les verbes anglais qui est largement utilisée en TAL du fait de sa bonne couverture lexicale et syntaxique et de son encodage systématique des rôles thématiques.
-Nous présentons comment nous avons développé Verbenet à partir de VerbNet tout en utilisant au maximum les ressources lexicales existantes du français, et comment sont encodées les différentes alternances du français en mettant l'accent sur les différences avec l'anglais (l'existence de formes pronominales, par exemple).
-Cet article devrait permettre à un chercheur en TAL une utilisation simple et efficace de Verbenet pour une tâche comme l'annotation en rôles sémantiques.
+VerbNet est une ressource lexicale pour les verbes anglais qui est largement utilisée en TAL du fait de sa bonne couverture lexicale et syntaxique et de son encodage systématique des rôles thématiques.
+Nous présentons comment nous avons développé Verbenet à partir de VerbNet tout en utilisant au maximum les ressources lexicales existantes du français, et comment sont encodées les différentes alternances du français en mettant l'accent sur les différences avec l'anglais (l'existence de formes pronominales, par exemple).
+Cet article devrait permettre à un chercheur en TAL une utilisation simple et efficace de Verbenet pour une tâche comme l'annotation en rôles sémantiques.
 Parce que l'éthique est un sujet important, mais sous-représenté dans le domaine du traitement automatique des langues et de la parole (TALP) par rapport à d'autres domaines scientifiques, nous nous interrogeons sur les causes de ce relatif désintérêt.
 Pour cela, nous mettons en contextes historique et sociétal le traitement de l'éthique en TALP.
 Les articles de ce numéro spécial, bien que ne couvrant pas tous les sujets, présentent un échantillon cohérent pour amener la communauté scientifique au sens large à réfléchir sur ces sujets et, à terme à s'en saisir et à agir.
