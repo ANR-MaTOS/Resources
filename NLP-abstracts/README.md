@@ -1,11 +1,12 @@
-This repository contains about 2000 abstracts (fr / en) of scientific documents in the Natural Language Processing domain. It has been collected from the following sources:
+This repository contains about 3400 abstracts (fr / en) of scientific documents in the Natural Language Processing domain. It has been collected from the following sources:
 - Abstracts of PhD theses from the [theses.fr](https://theses.fr), selected based on keywords. These are located in the subdirectory THE_abstracts.
 - Abstracts of articles published in the [TAL journal](https://www.atala.org/revuetal). These are located in the subdirectory rTAL_abstracts. 
+- Abstracts of articles published in [ISTEX](https://www.istex.fr/). These are located in the subdirectory ISTEX_abstracts. 
 
-Each repository contains the complete set of abstracts in TMX format, in the tmx subdirectory; as well as a text version of the abstracts used for training, developing, or testing our models. The detailed content is as follows: 
+Each repository contains the complete set of abstracts in TMX format, in tmx.zip; as well as a text version of the abstracts used for training, developing, or testing our models. The detailed content is as follows: 
 
 - `rTAL_abstracts`
-  - `xml` : containing a folder for each document pair, with the aligned sentences for the current document in an xml file
+  - `tmx.zip` : containing a folder for each document pair, with the aligned sentences for the current document in an xml file
   - `drop.lst`: a plain text file that lists at each line the DOCID of documents to discard among the xml files in `xml` folder
   - `rTAL_doc.lst`: contains the DOCID of documents in `rTAL`, with the same order as their positions in the test set.
   - `txt_test`: the test set in plain text used in our experiments, it consists of 
@@ -20,11 +21,20 @@ Each repository contains the complete set of abstracts in TMX format, in the tmx
   - `test.lst` contains the DOCID of documents in `THE`, with the same order as the positions of these documents.
   - `txt_dev` contains the document-level validation set used to train our document-level models. We also release the version with sentence boundaries in the sub-folder `doc_with_sep`
   - `dev.lst` contains the DOCID of documents in the validation set.
-  - `txt_train` contains the documents in `TAL-D` training set extracted from [theses.fr](https://theses.fr). We will release soon the rest part from [ISTEX](https://www.istex.fr/).
+  - `txt_train` contains the documents in `TAL-D` training set extracted from [theses.fr](https://theses.fr). 
   - `train.lst` contains the DOCID of the first 15k documents in the training set, which corresponds to data in `txt_train`.
 
 
-**The Resources currently available** are the test sets **THE** and **rTAL**, the validation set in **TAL**. The complete training set will also be published set soon.
+- `ISTEX_abstracts`
+  - The content is similar to `rTAL` and `THE`
+  - `train.lst` contains the DOCID of the last 1358 documents in the training set, which corresponds to data in `txt_train`.
+  - `txt_train` contains the documents in `TAL-D` training set extracted from [ISTEX](https://www.istex.fr/).
+
+- `NLP_abstracts_txt_all.zip` contains the plain text version of the full training set, the validation set and the test sets **THE** and **rTAL**
+
+- `scripts` gives an example to extract parallel texts from the given xml files and to reconstruct the datasets.
+
+<!-- **The Resources currently available** are the test sets **THE** and **rTAL**, the validation set in **TAL**. The complete training set will also be published set soon. -->
   
 ## Example of xml file & ressources of raw data ##
 
