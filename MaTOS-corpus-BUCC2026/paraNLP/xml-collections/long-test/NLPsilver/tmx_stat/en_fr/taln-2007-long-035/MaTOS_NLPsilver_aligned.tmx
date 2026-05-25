@@ -1,0 +1,1567 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2007-long-035. segId begin by 1, tuid = segId</note>
+        <url_en>https://hal.science/hal-00160804/document</url_en>
+        <url_fr>https://talnarchives.atala.org/TALN/TALN-2007/taln-2007-long-035.pdf</url_fr>
+        <title_en>The structure of verbal sequences analyzed with unsupervised learning techniques</title_en>
+        <title_fr>Enchaînements verbaux – étude sur le temps et l'aspect utilisant des techniques d’apprentissage non supervisé</title_fr>
+        <docid>taln-2007-long-035</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>The structure of verbal sequences analyzed with unsupervised learning techniques</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Structure des séquences verbales analysées avec des techniques d’apprentissage non supervisé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>Data mining allows the exploration of sequences of phenomena, whereas one usually tends to focus on isolated phenomena or on the relation between two phenomena.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'exploration de données permet l'exploration de séquences de phénomènes, alors qu'on a tendance à se focaliser sur l'analyse de phénomènes isolés ou sur la relation entre deux phénomènes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>It offers invaluable tools for theoretical analyses and exploration of the structure of sentences, texts, dialogues, and speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elles offrent de précieux outils pour l'analyse théorique et l'exploration de la structure des phrases, des textes, des dialogues et des discours.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>We report here the results of an attempt at using it for inspecting sequences of verbs from French accounts of road accidents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons ici les résultats d’une première tentative de les utiliser pour inspecter les séquences de verbes provenant de phrases de récits d’accidents de la route en français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>This analysis comes from an original approach of unsupervised training allowing the discovery of the structure of sequential data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette analyse provient d'une approche originale de formation non supervisée permettant la découverte de la structure des données séquentielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>The entries of the analyzer were only made of the verbs appearing in the sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les entrées de l'analyseur ne contenaient que les verbes apparaissant dans les phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>It provided a classification of the links between two successive verbs into four distinct clusters, allowing thus text segmentation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’analyse, basée sur une approche originale, a fourni une classification des enchaînements de deux verbes successifs en quatre groupes permettant de segmenter les textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>We give here an interpretation of these clusters by comparing the statistical distribution of independent semantic annotations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous donnons ici une interprétation de ces groupes à partir de statistiques sur des annotations sémantiques indépendantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>Keywords: time, tense, aspect, semantics, unsupervised learning, data mining.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mots-clés : temps, aspect, sémantique, apprentissage non supervisé, fouille de données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>Many studies emphasize the importance of tense in the narrative structure of texts (see (Vuillaume, 1990) for French narratives).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nombreuses études ont montré l'importance des temps dans la structure narrative d'un récit (voir Vuillaume, 1990 pour les récits français).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>Much has been written about the contrast between French passé simple and imparfait .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’opposition entre le passé simple et l’imparfait a en particulier fait couler beaucoup d’encre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>See (Hopper, 1979) for a good description of the opposition of these two tenses with respect to narrative structure, focus, and aspect.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Voir (Hopper, 1979) pour une bonne description de l'opposition de ces deux temps en ce qui concerne la structure narrative, le focus et l'aspect.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>Concerning aspect, it has been shown that one could not carry out the analysis of the succession of events in time using only tenses without referring to aspect (see e.g. Kamp, Vet or Vlach in (Martin and Nef, 1981), (Kamp and Rohrer, 1983), (Vet, 1994), (Gosselin, 1996), etc.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il a en effet été démontré qu'on ne peut effectuer l'analyse temporelle des suites d'événements à partir du seul temps grammatical sans faire intervenir l'aspect (voir Kamp H., Vet C. ou Vlach F. dans (Martin et Nef, 1981), (Kamp et Rohrer, 1983), (Vet, 1994), (Gosselin, 1996), etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>Aspect is initially defined as the domain of temporal organization of situations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'aspect est d'abord défini comme le domaine de l'organisation temporelle des situations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>It determines their localization in time but also introduces points of view.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle détermine leur localisation dans le temps mais introduit aussi des points de vue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>Therefore, there are links between aspect and other semantic domains, such as intentions or causality.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On trouve donc dans la littérature des liens entre l'aspect et d'autres domaines sémantiques, comme l'intentionnalité ou la causalité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>Although all words of a sentence may contribute to aspectual meaning, verbs play a crucial role and lexical aspectual categories of verbs do exist. In this work, we shall attempt to detect regularities in sequences of verbs (within sentences) by focusing only on their tense and lexical aspectual category.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que tous les mots d'une phrase puissent contribuer à la signification aspectuelle, les verbes jouent un rôle crucial et les catégories aspectuelles lexicales des verbes existent. Dans cette étude, nous allons tenter de détecter des régularités dans les séquences de verbes (au sein des phrases) en nous concentrant uniquement sur leur temps et leur catégorie aspectuelle lexicale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>The French texts we analyze are short accounts of road accidents intended for the insurers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les textes français que nous avons analysés sont des récits d’accidents de la route destinés aux assureurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>Their main purpose is to describe an accident, its causes, and to identify those who are responsible.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leur but principal est de décrire un accident, ses causes et d'identifier les personnes responsables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>The verbs are reduced here to pairs ( category , tense ), where category is one of the four lexical aspectual categories of a verb, and tense its grammatical tense. We sought here to isolate typical sequences of such pairs on the assumption that they are meaningful, at the very least for the type of account considered.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les verbes sont réduits ici en paires (catégorie, temps), où la catégorie est l'une des quatre catégories aspectuelles lexicales d'un verbe et le temps son temps grammatical. Nous avons cherché ici à isoler des séquences typiques de telles paires en partant du principe qu'elles sont significatives, du moins pour le type de récit considéré.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>Let us add that the mathematical tools used here make it possible to check the statistical validity of the categories obtained, and that our semantic validation has been carried out with annotations unused by the training process.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ajoutons que les outils mathématiques dont nous disposons nous ont permis de tester la validité des catégories obtenues du point de vue statistique, et que notre analyse sémantique a été effectuée à partir d’annotations complètement indépendantes de l’apprentissage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>Advantages of our formal approach</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avantages de notre approche formelle</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>One of the interests of unsupervised training is to allow the discovery of initially unknown categories.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'un des intérêts de la formation non supervisée est de permettre la découverte de catégories initialement inconnues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>In this framework, the connectionist Self Organizing Maps (SOM) of Kohonen (Kohonen, 1995) provide an efficient categorization with simultaneous visualization of the results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cadre, les cartes topologiques auto-organisantes (SOM) de Kohonen (Kohonen, 1995) permettent une classification efficace avec visualisation simultanée des résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>This visualization is given by the topological map of the data (two similar data are close on the map) providing at the same time an “intelligent” coding of the data in the form of prototypes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette visualisation se fait grâce à la carte topologique des données (deux données similaires sont proches sur la carte) qui fournit en même temps un codage “intelligent” des données sous forme de prototypes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>Since these prototypes are of same nature as the data, they are interpretable, and the map thus provides a summary of the data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces prototypes étant de même nature que les données, ils sont interprétables, et la carte fournit ainsi un résumé des données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>From this coding, we took the Hidden Markov Models (HMM) to model the dynamics of the sequences of data (here, the verbs within a sentence).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A partir de ce codage, nous avons pris les HMM (Hidden Markov Models) pour modéliser la dynamique des séquences de données (ici, les suites de verbes).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>The HMM (Rabiner and Juang, 1986) are the best approach to treat sequences of variable length and to capture their dynamics.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les HMM ( Rabiner et Juang, 1986) sont la meilleure approche pour traiter des séquences de longueur variable et capturer leur dynamique .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>This is the reason why these models have been widely used in the field of voice recognition and are particularly well adapted to our objective.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C’est pourquoi ces modèles ont été largement utilisés dans le domaine de la reconnaissance de la parole et sont tout particulièrement adaptés à notre objectif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>To validate our hybrid approach, we used biological gene sequences and the textual data whose interpretation is given here.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour valider notre approche hybride, nous avons utilisé des séquences génétiques biologiques et des données textuelles dont l'interprétation est présentée ici.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>For technical details see (Rogovschi and al., 2007).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour plus de détails techniques sur cette méthode, voir (Rogovschi et al., 2007).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>Data encoding</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Codage des données</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>We encoded a hundred or so texts containing 700 occurrences of verbs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons codé une centaine de textes correspondant à 700 occurrences de verbes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>In these texts, we considered all the sequences of at least two verbs delimited by the end of a sentence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ces textes, nous avons considéré toutes les séquences de verbes délimitées par la fin d'une phrase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>To cope with the paucity of the data, we used re-sampling techniques based on sliding windows, which increase the redundancy (redundancy ensures a better classification of the data).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour palier au faible nombre de données, nous avons utilisé des techniques de ré-échantillonnage basées sur des fenêtres glissantes permettant d’augmenter la redondance (la redondance assure une meilleure classification des données).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>For coding, the four aspectual categories of verbs introduced in (Vendler, 1967), namely state, activity, accomplishment and achievement, were combined with the tenses of the verb.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour le codage, les quatre catégories aspectuelles de verbes (état, activité, accomplissement et réalisation) introduites dans (Vendler, 1967) ont été combinées avec les temps du verbe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>The indexing is based on some of the ideas presented in (Recanati C. and Recanati F., 1999).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'indexation est basée sur certaines des idées présentées dans (Recanati C. et Recanati F., 1999).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>Table 1 below briefly summarizes our understanding of these four categories.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 1 ci-dessous résume brièvement notre compréhension de ces quatre catégories.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>These accounts of road accidents mostly use the imparfait (24%) and the passé composé (34%), with a few sentences in the present.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce type de récit n’utilise globalement que l’imparfait (24%) et le passé composé (34%), avec de temps à autre quelques phrases au présent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>In addition, there are also some (rare) occurrences of passé simple and of plus-queparfait .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On y trouve aussi quelques occurrences (rares) de passé simple et de plus-que-parfait.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>There are however a significant number of present participles (11%) and infinitives (20%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il existe par contre un nombre important de participes présents (11%) et d’infinitifs (20%).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>We decided to retain all these “tenses” and carried out the training by using nine codes[1] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons décidé de conserver tous ces "temps" et avons effectué l'apprentissage en utilisant neuf codes [1].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>Table 1: The four aspectual categories of verbs</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1: Les quatre catégories aspectuelles des verbes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>Example « Le véhicule B circulait sur la voie de gauche des véhicules allant à gauche (marquage au sol par des flèches).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Exemple « Le véhicule B circulait sur la voie de gauche des véhicules allant à gauche (marquage au sol par des flèches).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Celui-ci s’est rabattu sur mon véhicule, me heurtant à l’arrière.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Celui-ci s’est rabattu sur mon véhicule, me heurtant à l’arrière.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>Il a accroché mon pare-choc et m ’a entraîné vers le mur amovible du pont de Gennevilliers que j ’ai percuté violemment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il a accroché mon pare-choc et m ’a entraîné vers le mur amovible du pont de Gennevilliers que j ’ai percuté violemment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>» This description will be first reduced to the sequences of verbs: (circulait, allant) / (s’est rabattu, heurtant)/ (a accroché, a entraîné, ai percuté) – which are then numerically encoded as (tense, category) pairs: (act., IM) (acc., pp) / (acc., PC) (ach., pp) / (ach., PC) (acc., PC) (ach., PC).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>» Cette description sera d'abord réduite aux séquences de verbes : (circulait, allant) / (s'est rabattu, heurtant)/ (a accroché, a entraîné, ai percuté) - qui sont ensuite encodées numériquement en paires (temps, catégorie) : (act., IM) (acc., pp) / (acc., PC) (achè., pp) / (achè., PC) (acco., PC) (achè., PC).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>First results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Premiers résultats</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>The first results are the percentages of tenses and aspectual categories (independently of sequences of verbs).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les premiers résultats concernent les pourcentages de temps et de catégories aspectuelles (indépendamment des séquences de verbes).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>The verbs of state account for 24% of the corpus, of activity only 10%, verbs of accomplishment 34% and of achievement 32%.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les verbes d'état représentent 24% du corpus, ceux d'activité seulement 10%, les verbes d'accomplissement 34% et les verbes d'achèvement 32%.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>The percentages of tenses by category given graphically in Figure 1 confirm the interest of our pairings ( tense , category ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les pourcentages de temps par catégorie donnés graphiquement dans la Figure 1 confirment l'intérêt de nos couplages (temps, catégorie).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: Distribution of main tenses by category</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1 : Répartition des temps par catégorie</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>The nature of the aspectual categories, the aspectual specialization of grammatical tenses, and the typical structure of these accounts explain these percentages rather naturally.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces pourcentages et leur répartition s'expliquent assez naturellement par la nature de chaque catégorie aspectuelle, la structure généralement typique de ces récits, et la spécialisation aspectuelle des temps grammaticaux (opposition perfectif/imperfectif).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>Verbs of states (24%). More than 70% are in the imparfait , the present, and the participe présent .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les verbes d’états (24%) sont répartis à plus de 70% sur l’imparfait, le présent et le participe présent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>This is not surprising since states are homogeneous and often durative, or characterize a disposition (habitual, generic).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela n’est guère surprenant puisque les états sont homogènes, souvent duratifs ou caractérisant une aptitude (habituels, génériques).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>We find also a significant proportion of passé composé in connection with verbs like “want” or “can” (“j’ai voulu freiner”, “je n’ai pu éviter” - “I wanted to slow down”, “I could not avoid”).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous trouvons également une proportion non négligeable de passé composé en relation avec des verbes comme « vouloir » ou « pouvoir » (« j’ai voulu freiner », « je n’ai pu éviter »).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>The small proportion of present arises from the fact that the account is in the past and the historic present is a literary style not appropriate for this kind of account.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La faible proportion de présent provient du fait que le récit est au passé et que le présent historique est un style littéraire inapproprié pour ce genre de récit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>Verbs of activities (10%). Similarly, the activities indicating unbounded processes, verbs of activities are distributed quite naturally with more than 79% in the imparfait tense and in the form of present participles.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les verbes d’activités (10%) dénotant des processus homogènes et non bornés, ils se répartissent tout naturellement à plus de 79% sur l’imparfait et le participe présent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>That 10% of the verbs are in the infinitive can be easily explained by the fact that activities are processes which may have a beginning, and which can thus be the complement of verbs like “start”, “want”, or simply can be introduced to mention a future goal of the driver (with the preposition “ pour ” + infinitive in French).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La présence de 10% d'infinitif peut facilement s'expliquer par le fait qu'il s'agit de processus qui ont un début, et qui peuvent donc se trouver complément de verbe comme « commencer à », « vouloir », ou être introduits pour mentionner un but par la préposition « pour » en français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>Accomplishments (34%) and Achievements (32%). Contrary to the two preceding categories, the telic character of these verbs explains their frequency in the passé composé .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Accomplissements (34%) et Achèvements (32%). Contrairement aux deux catégories précédentes, le caractère télique de ces verbes explique leur fréquence au passé composé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>Achievements are mostly in the passé composé because denoting mainly a change of state, they are punctual (or of short time span), and take the imparfait tense only infrequently.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les accomplissements sont principalement au passé composé car ils dénotent principalement un changement d'état, ils sont ponctuels (ou de courte durée) et ne sont utilisés que rarement au temps imparfait.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>In contrast, accomplishments often occur in the imparfait and as present participles, because they stress rather the process than its end - which brings them very close to activities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A l’inverse, les accomplissements se passent bien en imparfait et en participe présent, parce qu’ils mettent l’accent sur le processus plutôt que sur sa fin, ce qui les rapproche des activités.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>The global importance of these two categories (66%) has some connection with text typology, because an account of an accident implies a description of the sequence of the successive events that caused it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'importance globale de ces deux catégories (66 %) est sans doute liée à la typologie des textes analysés, un récit d'accident impliquant de décrire la séquence des événements successifs qui l'ont provoqué.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>Aspectual specialization of tenses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Spécialisation aspectuelle des temps.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>For (Smith, 1991), there are three points of view in the aspectual system of French.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il y a trois points de vue dans le système aspectuel du Français (Smith, 1991).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>A perfective viewpoint shows a situation as being closed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un point de vue parfait montre une situation comme étant close.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>It is expressed by the passé composé and the passé simple .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il s’exprime par le passé composé et le passé simple.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>The imperfective and neutral viewpoints present on the contrary open situations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les points de vue imperfectif et neutre présentent à l’inverse des situations ouvertes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>A neutral viewpoint is expressed by the present.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le point de vue neutre s’exprime par le présent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>An imperfective viewpoint is expressed by the imparfait , or by the locution “ en train de” (it would nevertheless be a mistake to assign systematically an imperfective aspect to all imparfait (Ducrot, 1979)).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le point de vue imparfait s'exprime par l'imparfait, ou par la locution "en train de" (il serait cependant une erreur d'attribuer systématiquement un aspect imparfait à tous les imparfaits (Ducrot, 1979)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>However, the opposition perfective/imperfective will be mainly embodied in these texts by the opposition imparfait/passé composé .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ici, l’opposition perfectif/imperfectif sera réalisée par l’opposition imparfait/passé composé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>A typical structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Structure typique .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>A description of an accident generally starts with one or two sentences describing the circumstances before the accident.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un récit d'accident commence généralement par quelques phrases décrivant les circonstances et les états de choses précédant l'accident.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>This first part of the text is thus in the imparfait , and contains many present participles.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette première partie du texte est donc à l'imparfait, et contient de nombreux participes présents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>In addition, there are also a few verbs in the present tense and many infinitives introduced by “ pour ”, or occurring as complements of other verbs (“je m’apprêtais à tourner”, “le feu venait de passer au rouge”: “I was on the point of turning”, “The stop light had just turned red”).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On y trouve aussi quelques verbes au présent et de nombreux infinitifs introduits par « pour », ou compléments de verbes (« je m’apprêtais à tourner », « le feu venait de passer au rouge »).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>This first part is mainly circumstantial and contains a majority of verbs of states, but also some of activities and of accomplishments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Essentiellement circonstancielle, cette partie contient une majorité de verbes d'états, et quelques activités et accomplissements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>It is characterized by an overall imperfective point of view, and the account is in background.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle est globalement caractérisée par un point de vue imperfectif, et le récit est en arrièreplan.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>The next part of the text contains a description of the accident that mentions the succession of events leading to the accident and finishes with the crucial moment of the impact.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Vient ensuite la description de l'accident proprement dit, qui mentionne la suite des événements ayant conduit à l'accident et se termine par le moment crucial de l'impact.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>This indispensable part of the text uses mostly verbs of accomplishment and achievement, generally in the passé composé .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette partie indispensable du texte utilise massivement des verbes d’accomplissement et d’achèvement, le plus souvent au passé composé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>It is characterized by a perfective mode, but since the goal is to indicate the responsibilities of the various actors, one still finds here many present participles and infinitive constructions connecting several verbs (“J’ai voulu freiner pour l’éviter” : “I wanted to slow down to avoid it”).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle est caractérisée par un mode perfectif, mais le but étant d'indiquer les responsabilités des différents acteurs, on trouve ici encore beaucoup de participes présents et de tournures infinitives enchaînant plusieurs verbes (« J’ai voulu freiner pour l’éviter » : « J’ai voulu freiner pour l’éviter »).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>At the end of the account, one occasionally finds a section with comments on the accident. That section often contains an inventory of the damage.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fin de compte, on trouve parfois une section avec des commentaires sur l'accident. Cette section contient souvent un inventaire des dégâts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>This third part is often short and less easy to characterize.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette troisième partie est souvent courte et moins facile à caractériser.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>Note that the structure we have indicated is only typical.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notez que la structure que nous avons indiquée est seulement typique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>The three parts can come in a different order, or some of them may be missing all together.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les trois parties peuvent apparaître dans un ordre différent, ou certaines d'entre elles peuvent être complètement absentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>Categorization of verbal sequences</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Catégorisation des enchaînements verbaux</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>Our unsupervised approach provided a classification of the sequences of two successive verbs (within the same sentence) in four groups (or clusters).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre approche non supervisée a fourni une classification des séquences de deux verbes successifs (au sein d’une même phrase) en quatre groupes (ou clusters).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>The profiles of the resulting transitions are represented on maps (SOM) incorporating a notion of proximity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les profils des transitions résultantes sont représentés sur des cartes (SOM) intégrant une notion de proximité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>The matrix of the distances between the profiles of transitions provides a distribution of these transitions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La matrice des distances entre les profils de transitions fournit une distribution de ces transitions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>That the profiles of the transitions fall into four distinct clusters accords with the Davies and Bouldin quality standard of unsupervised classification (Davies and Bouldin, 1979).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le fait que les profils des transitions se répartissent en quatre groupes distincts est conforme à la norme de qualité de Davies et Bouldin pour la classification non supervisée (Davies et Bouldin, 1979).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>In addition, it should be pointed out that since this number of four is small, it is to a certain extent a confirmation of the fruitfulness of our tense/lexical category pairing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il faut souligner que ce nombre de quatre, particulièrement petit, est intéressant car il atteste du bien fondé de notre couplage temps/aspect (pas d’explosion combinatoire).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>Semantic interpretation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Interprétation sémantique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>To provide the interpretation of the clusters, we carried out a certain number of semantic annotations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour faciliter l’interprétation des classes obtenues, nous avions effectué par avance un certain nombre d’annotations sémantiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>Thus, to account for the typical structure of these texts, we indexed all the verbs with a number indicating the part of the text in which they occurred (1- circumstance , 2- accident and 3- comment ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, pour rendre compte de la structure typique de ces récits, nous avons indexé tous les verbes d’un numéro indiquant la « partie » thématique (1- circonstance , 2- accident ou 3- commentaire ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>We have also marked some of the verbs with the attributes foreground or background to indicate the type of contribution they make to the narrative structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également marqué certains verbes des attributs foreground ou background pour indiquer le type de contribution qu'ils apportent à la structure narrative.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>In order to be able to detect possible causal chains of verbs leading to the accident, we marked some verbs with the attributes causal and impact ( causal when the verb was describing a direct cause of the accident, and impact when indicating the impact itself).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de déceler d'éventuelles chaînes causales de verbes menant à l'accident, nous avons marqué certains verbes des attributs causal et impact (causal quand le verbe décrit une cause directe de l'accident, et impact quand il indique l'impact lui-même).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>We also marked the verbs of action according to the agent responsible for the action ( A for the driver and author of the text, B for the second driver involved in the accident, and C for a third person).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également marqué les verbes d’action en fonction de l’agent responsable de l’action (A pour le conducteur auteur du récit, B pour le second conducteur impliqué dans l’accident, et C pour un tiers).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>We also noted the presence of negation, and the description of objectives or possible worlds that did not occur (attribute inertia for goals and alternatives).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons aussi noté la présence de négation, et l'évocation plus générale de buts poursuivis ou de mondes possibles qui n'ont pas eu lieu (attributs d'inertie pour les buts et les alternatives).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>The marking of negation was not very discriminating, and that of agent not very helpful.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le marquage de la négation s'est avéré peu discriminant, et celui de l'agent relativement peu informatif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>Table 2 summarizes the main results that we obtained by doing statistical comparisons of our semantic marks within these four clusters.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 2 résume les principaux résultats que nous avons obtenus en faisant des comparaisons statistiques de nos marques sémantiques au sein de ces quatre clusters.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>Table 2: Summary of statistical interpretations</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2 : Synthèse sur les interprétations statistiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>Cluster (C) of Circumstances</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Groupe C des circonstances</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>The cluster (C) makes a clear distinction between the first and the second verb of a sequence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce groupe (C) se distingue par une nette différenciation du premier verbe et du second d'une séquence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>The first verb is 93% in the imparfait , but only 7% in the present, while the second is 63% in the infinitive and 30% in the present participle.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le premier verbe est à 93% à l’imparfait, pour seulement 7% de présent, tandis que le second est à 63% à l’infinitif et à 30% au participe présent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>From the point of view of aspectual categories, the first verb is a verb of state 56% of the time, and the second a verb of accomplishment 63% of the time. (The other categories divide themselves in a regular way between 12% and 16%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Du point de vue des catégories aspectuelles, le premier verbe est à 56% un verbe d’état, et le second à 63% un verbe d’accomplissement (les autres catégories se trouvant distribuées de manière régulière entre 12% et 16%).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>One can described the pairs of this group as made up of a verb of state (or activity) in the imparfait , followed by a verb of accomplishment in the infinitive or in the present participle.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On pourrait résumer globalement les paires de ce groupe comme présentant un verbe d’état (ou d’activité) à l’imparfait, suivi d’un verbe d’accomplissement à l’infinitif ou au participe présent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>The analysis of the prototypes provides a finer synthesis (see Table 3).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'analyse des prototypes fournit une synthèse plus fine (voir Tableau 3).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>This group favors states and activities to the detriment of achievements - accomplishments on the other hand are overwhelmingly present in the second verbal occurrence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce groupe privilégie les états et les activités au détriment des accomplissements - les accomplissements sont massivement présents dans la deuxième occurrence verbale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>The cluster (C) is the one where the inertia attribute (indicating a goal or an alternative world) is the most frequent.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce groupe est celui où l'attribut inertia (indiquant un but ou un monde possible proche) est le plus important.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>This is explained by the many accomplishments introduced by the French preposition “pour” (“je reculais pour repartir”, “je sortais du parking pour me diriger” - “I backed up to set out again”, “I left the carpark to find my way”), or by the auxiliaries in the imparfait introducing an infinitive indicating the intentions of the driver (“j’allais tourner à gauche”: “I was on the point of turning left”).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela s'explique par les nombreux accomplissements introduits par la préposition « pour » (« je reculais pour repartir », « je sortais du parking pour me diriger ») ou les auxiliaires à l'imparfait introduisant un infinitif et indiquant des intentions du conducteur (« j'allais tourner à gauche » : « j'étais sur le point de tourner à gauche »).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>This is one of the reasons why we called this cluster (C) “Circumstances”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C’est une des raisons pour laquelle nous l’avons baptisé groupe C des circonstances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>Another reason is that it contains a strong majority of verbs belonging to the first part of the account (63%), and very little to the second or the third.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'autre raison est que ce groupe contient une majorité de verbes appartenant à la première partie du récit (63 %), et peu de la deuxième ou de la troisième.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>Moreover, this cluster hardly contains verbs indicating the causes of the accident or describing the impact.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, ce groupe ne contient pratiquement aucun verbe indiquant les causes de l'accident ou le choc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>Actor A is represented the most there, and the account is in background.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'acteur A y est le plus présent, et le compte est en arrière-plan.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>Cluster (CA) of Circumstances or of the Appearance of an incident</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2 Groupe CI des circonstances ou de la survenue d’un incident</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>The second cluster (CA) is that of the circumstances or of the appearance of an incident.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le deuxième groupe (CA) est celui des circonstances ou de la survenue d’un incident.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>One notes here a great number of verbs of states (37.5%) and activities (17%), even more than in the preceding cluster and much higher than average.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On note ici un grand nombre de verbes d’états (37,5%) et d’activités (17%), encore plus important que dans le groupe précédent et très supérieur à la moyenne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>There are, on the other hand, an average number of achievements (29%), absent from the first verb but quite often present on the second.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On a par contre un nombre moyen d’achèvements (29%), absents du premier verbe mais massivement représentés en second.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>This distinguishes this cluster from the preceding one, where accomplishments played this role.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela distingue ce groupe du précédent, où les accomplissements jouaient ce rôle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>Here, on the contrary, accomplishments are excluded from the second place, and are clearly under-represented (16.5%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ici, à l’inverse, les accomplissements sont exclus de la seconde place et nettement sous représentés (16,5%).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>One can synthesize the transitions of this cluster by saying that one generally has a state or an activity in the imparfait tense, followed by a state or an achievement in the imparfait or in the passé composé .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut synthétiser les enchaînements de ce groupe en disant qu’on a généralement affaire à un état ou une activité à l’imparfait, suivi d’un état ou d’un accomplissement, à l’imparfait ou au passé composé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>(One thus connects two imperfective points of view, and sometimes, an imperfective point of view and a perfective one).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On enchaîne donc deux points de vue imperfectifs, et parfois, un point de vue imperfectif et un point de vue perfectif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>In this group 36% of verbs come from the first part of the account (“je circulais à 45 km/h environ dans une petite rue à sens unique où des voitures étaient garées des deux côtés”: “I drove at approximately 45 km/h in a small oneway street where cars were parked on each side”), but also sequences finishing by an achievement in the passé composé , coming from the second part (34%, “je roulais rue Pasteur quand une voiture surgit de la gauche”: “I drove on Pasteur street when a car emerged from the left”).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On a en effet 36% des verbes qui proviennent de la partie circonstancielle (« Je circulais à environ 45 Km/h dans une petite rue à sens unique où stationnaient des voitures de chaque côté »), mais également des séquences finissant par un achèvement au passé composé, provenant de la seconde (34%, « Je roulais dans la rue Pasteur quand une voiture a surgi de ma droite »).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>This cluster contains also 25% of verbal sequences located between the two parts (providing thus half of such sequences).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce groupe contient également 25 % de séquences verbales situées entre les deux parties (fournissant ainsi la moitié de ces séquences).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>This is why we called it the cluster of circumstances or of the appearance of an incident.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C’est la raison pour laquelle nous l’avons baptisé « groupe des circonstances ou de la survenue d’un incident ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>The account is here mainly in background.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le compte est principalement en arrière-plan.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>Actor A (or a third person C) are strongly indexed to the detriment of actor B.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'acteur A (ou un tiers C) se trouvent fortement représentés au détriment de l'acteur B.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>There are few allusions to the causes of the accident and to the impact, and few verbs in the foreground.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il y a peu d’allusions aux causes de l’accident et au choc et peu de verbes en premier plan.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>The evocation of goals or alternative worlds is missing from this group (contrary to the preceding group).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’évocation de buts ou d’alternatives y est insignifiante (contrairement au groupe précédent).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>Cluster (AA) of Actions leading to the Accident</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3 Groupe (AA) d'actions menant à l'accident</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>The third cluster (AA) clearly marks the account of the accident itself.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le troisième groupe (AA) marque clairement le récit de l'accident lui-même.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>It is characterized by the wealth of achievements, to the detriment of states and activities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est caractérisé par l'abondance des accomplissements, au détriment des états et des activités.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>It is in perfective mode but includes many infinitives.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est en mode perfectif mais on y trouve aussi beaucoup d’infinitifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>The detected prototypes are given in Table 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les prototypes détectés sont listés dans le Tableau 3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>These pairs lend themselves well to constructions of three verbs as in, “J’ai voulu m’engager pour laisser” (“I wanted to turn into to let”), or “n’ayant pas la possibilité de changer de voie et la route étant mouillée” (“not having the possibility of changing the lane and the road’s being wet”).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces enchaînements se prêtent à des constructions de trois verbes comme « j’ ai voulu m’engager pour laisser », ou « n’ ayant pas la possibilité de changer de voie et la route étant mouillée ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>Fifty-six percents of the pairs come from the second part of the account.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cinquante-six pour cent des paires proviennent de la deuxième partie du compte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>This is why, since this cluster also contains many accomplishments, we called it a cluster of actions leading to the accident.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est pourquoi, puisque ce groupe contient également de nombreuses réalisations, nous l'avons appelé un groupe d'actions menant à l'accident.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, as in cluster (C), the present participles and infinitives allow the expression of goals and alternative worlds (“désirant me rendre à”, “commençant à tourner” - “wishing to go to”, “starting to turn”), so 26% of the pairs come from the first part of the account.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, comme dans le cluster (C), les participes présents et les infinitifs permettent l'expression de buts et de mondes possibles (« désirant me rendre à », « commençant à tourner »), 26 % des paires proviennent de la première partie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>We noted however a rather strong proportion of agent A and B, with little of C, but also little foregrounding - the account being unmarked (neither in foreground, nor in background).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On constate ici une assez forte proportion d’acteurs A et B, peu de tiers C, et très peu de marques de relief – le récit n’étant ni spécialement en avant-plan, ni spécialement en arrière-plan.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>Many verbs describe the causal chain, but relatively few mention the impact.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nombreux verbes décrivent la chaîne causale, mais relativement peu mentionnent l'impact.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>Cluster (IC) of the Impact and of the Comments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Groupe (IC) de l'impact et des commentaires</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>The verbs of achievements (45%) appear here in a larger number than elsewhere (32% on average), to the detriment of activities (6.5%), and states (only 14.5%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les verbes d’accomplissement (45%) apparaissent ici en plus grand nombre que partout ailleurs (32% en moyenne), au détriment des activités (6,5%) et des états (seulement 14,5%).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>This explains that this group supports the descriptive part of the accident (57%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela explique que ce groupe favorise globalement la partie descriptive de l'accident (57%).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>Here also one observes an increase in infinitives and participles on the first verb to the detriment of the imparfait and of the present, and a large increase in passé composé on the second verb to the detriment of all tenses - except the present (8%, slightly higher than the average).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On observe aussi une augmentation des infinitifs et des participes en premier verbe au détriment de l’imparfait et du présent, et une augmentation massive du passé composé sur le second verbe au détriment de toutes les catégories – sauf le présent (8%, légèrement plus que la moyenne).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>Perhaps the occurrence of the present is related to the strong proportion of comments (29%), more important than elsewhere (18% on average).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette apparition du présent explique peut-être la forte proportion de commentaires (29%), plus importante qu'ailleurs (18% en moyenne).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>The mention of goals or alternatives is average.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La mention de buts ou d'alternatives est moyenne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>It is here on the other hand that foregrounding is most marked.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C’est ici par contre que l’avant-plan est le plus marqué.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>There is an important number of references to actor B (the driver of the other vehicule) and it is here that one finds most verbs relating to the causes of the accident and the impact itself.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il y a un nombre important de références à l'acteur B (le conducteur de l'autre véhicule) et c'est là que l'on trouve le plus de verbes relatifs aux causes de l'accident et au choc lui-même.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>Table 3 indicates only two typical elements in this group, which, although quite large, is more difficult to characterize.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le Tableau 3 indique seulement deux éléments typiques dans ce groupe qui, bien qu’assez volumineux, est plus difficile à caractériser.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>The analysis in terms of viewpoints shows nevertheless that the sequence generally finishes with a perfective viewpoint.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’analyse en termes de point de vue montre néanmoins que la séquence finit généralement par un point de vue perfectif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>Typical pairs</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Paires typiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>Information concerning the Markov chains (transferred back to the topological map) enabled us to reduce the number of typical pairs (verb1, verb2) by pruning.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les informations concernant les chaînes de Markov (retranscrites sur la carte topologique) nous ont permis de réduire le nombre de paires typiques (verbe1, verbe2) par élagage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>A synthesis is given in Table 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une synthèse est présentée au tableau 3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>Table 3: Most typical pairs of the clusters</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 3 : Paires les plus typiques des groupes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>Comments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Commentaires</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>This categorization distinguishes quite well states and activities (groups C, CA) from telic events (groups AA, CC).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette catégorisation a bien distingué les états et activités (groupes C, CI) des événements (groupes AA, CC).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>In a more interesting way, accomplishments are also distinguished from achievements, justifying the distinction in opposition to a single notion of telic events.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De manière plus intéressante, les accomplissements sont aussi distingués des réalisations, justifiant la distinction en opposition à une seule notion d’événements télés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>It should also be noticed that the expression of goals or alternatives often accompanies the use of verbs in the present participle or infinitive - which explains the ratio displayed by groups C and AA.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On a pu également mettre en évidence que l'expression de buts ou d'alternatives passe souvent par l'utilisation de verbes au participe présent ou à l'infinitif - ce qui explique les taux réalisés par les groupes C et AA.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>However, the lexical category used influences also this expression, because the second verb in these two groups is generally an accomplishment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais la catégorie utilisée influence aussi cette expression, car le second verbe dans ces deux groupes est généralement un accomplissement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>Moreover, the groups C and CA (unmarked for this purpose) differ precisely in the type of event appearing in second place.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, les groupes C et CA (non marqués à cet effet) se distinguent justement sur le type d'événement qui apparaît en second.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>In the same way, elements differentiating the groups AA and CC (which contain a majority of telic events) show that the group AA (which favors accomplishments), although conveying a perfective mode, is little marked for narrative foreground.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De même les éléments différenciant les groupes AA et CC (lesquels ont cette fois une majorité d’événements) montrent que le groupe AA (qui favorise les accomplissements), bien que véhiculant un mode perfectif, est peu marqué sur le plan du relief narratif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>This group is also less concerned with the causes of the accident than the group CC, and it makes little allusion to the impact.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce groupe est également moins concerné par les causes de l’accident que le groupe CC, et il fait peu allusion au choc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>Goals and intentions would thus be expressed more easily by accomplishments than by achievements - which would carry more causality.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les buts et intentions s’exprimeraient donc plus facilement par des accomplissements que par des achèvements – lesquels seraient porteurs de plus de causalité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>Indeed, the group CC, which favors achievements, is more strongly marked for narrative foregrounding, the impact itself, and the causal chain of events, which directly caused it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, le groupe CC, qui favorise les achèvements, est plus fortement marqué pour l’avant plan, le choc lui-même et la chaîne causale des événements l’ayant directement provoqué.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>It may be that for achievements and activities, the subject has a relation of power over the direct object (or over the oblique object).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il peut arriver que pour les réalisations et les activités, le sujet ait une relation de pouvoir sur l'objet direct (ou sur l'objet indirect).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>One can check its existence by using adverbs of manner (gently, with caution, etc).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut tester son existence en utilisant des adverbes de manière (doucement, précautionneusement, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>This explains perhaps also the strong attribution of responsibility to the agent with the use of verbs of achievements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela explique peut-être aussi la forte attribution de responsabilité à l'agent avec l'utilisation de verbes d'accomplissement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>Although the perfective/imperfective contrast emerges rather neatly (clusters AA and CC vs. C and CA), surprisingly cluster (CA) hosts both imperfective sequences and imparfait / passé composé sequences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que le contraste perfectif/imperfectif se démarque assez clairement (groupes AA et CC vs C et CA), de manière surprenante, le groupe CA contient à la fois des séquences à l’imparfait et des ruptures imparfait/passé composé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>One of the explanations is that our training algorithm did not the linking of two sentences take into account, so that the succession of several sentences in the imperfect mode, and the typical structure of these accounts (such as we perceive it) could not be detected.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une des explications est que notre algorithme d’apprentissage n’a pas tenu compte de l’ordre des phrases (ni de la distinction entre les textes), de sorte que la succession de plusieurs phrases à l’imparfait, et la structure typique de ces récits (telle que nous la percevons), n’a pas pu être bien repérée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>One thus misses a significant part of our objective.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On manque ainsi une part importante de notre objectif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>However, the results obtained in focusing only on sentences are still interesting, since the three typical parts that we have distinguished fall differently onto the four clusters, although not in a uniform way.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, les résultats obtenus en se concentrant uniquement sur les phrases sont toujours intéressants, puisque les trois parties typiques que nous avons distinguées sont réparties différemment sur les quatre groupes, mais pas de manière uniforme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>It should also be noted that this classification underlines the importance of infinitive turns and present participles, and the subtlety of their linking (cf. Table 3).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On notera également que cette classification a mis en évidence l'importance des tournures infinitives et des participes présents, et la subtilité de leurs enchaînements (cf. Tableau 3).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>Technical improvements .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Améliorations techniques possibles .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>One built the HMM here by moving a window of size 2: verbs are analyzed by taking into consideration the verbs that precede and follow them, but not the N-preceding verbs or the N-following.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On a construit ici les HMM en déplaçant une fenêtre de taille 2 : un verbe est analysé au regard du verbe qui le précède et de celui qui le suit, mais pas au regard des n précédents ou des n suivants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>This is not important here, since our analysis is at the sentence level, (and in these accounts, a sentence contains rarely more than three verbs), but for an analysis of the entire structure of a text, we will need to add this.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela n'est pas très important ici, puisque notre analyse se fait au niveau de la phrase (dans ces récits, les phrases comportent rarement plus de trois verbes), mais pour une analyse globale prenant en compte tout le texte, on aura certainement besoin de cette amélioration.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>In addition, we would have liked to produce typical sequences of variable length instead of simple pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’autre part, nous aurions aimé produire des séquences typiques de longueur variables au lieu de simples paires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>Thus, clusters AA and CC would have provided sequences of three verbs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, les groupes AA et CC auraient fourni des séquences de trois verbes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>(This follows from the prototypes of Table 3, and was noted on the segmentation of texts).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(Cela se déduit des prototypes du Tableau 3, et nous l’avons par ailleurs constaté sur la segmentation des textes).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>This result could be obtained automatically (because the HMM provides the probabilities of transitions between two verbs), but we have not had enough time to implement this method.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce résultat pourrait être obtenu automatiquement (parce que les HMM fournissent les probabilités de transition entre deux verbes), mais nous n’avons pas encore eu le temps d’implanter cette méthode.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>Our general project is to apply techniques of data mining to explore textual structures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre projet général est d’appliquer les techniques de la fouille de données à la découverte de structures textuelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>For this purpose we developed an original approach of unsupervised learning allowing the detection of sequential structures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons développé à cette fin une technique d’apprentissage non supervisé permettant de détecter des structures séquentielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>We applied it to the analysis of sequences of verbs in sentences coming from a corpus of accounts of road accidents. We obtained a classification of pairs of two successive verbs in four groups (or clusters).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous l'avons appliquée à l'analyse des séquences de verbes constituant une phrase, et de proposer une classification des apparitions de deux verbes successifs en quatre groupes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>We succeeded in validating these groups satisfactorily, by basing our judgment on semantic annotations and the application of statistical analyses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons réussi à valider ces groupes de manière satisfaisante, en nous basant sur des annotations sémantiques et l'application d'analyses statistiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>This validates at the same time the power of the technique employed, and that of our coupling of the grammatical tense with the aspectual lexical category of a verb.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela confirme à la fois le bien-fondé de la technique employée, et celui de notre couplage des temps grammaticaux avec la catégorie aspectuelle d’un verbe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>However, this work is still in its early stages, and many points remain to be elucidated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais ce travail n’en est encore qu’à ses débuts, et il nous reste de nombreux points à élucider.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <tuv xml:lang="EN">
+                <seg>We first regret not to have been able to compare our statistical analysis on cross tense/category uses with those of other types of texts (and in particular with that of simple accounts of incidents).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous regrettons tout d’abord de ne pas avoir pu comparer nos analyses statistiques sur les emplois de temps/catégorie à celles d’autres types de textes (et en particulier à celle de récits simples d’incidents).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <tuv xml:lang="EN">
+                <seg>It indeed remains to be determinded what the “typological” part of the isolated sequences is.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il nous reste en effet à déterminer quelle est la part « typologique » des séquences isolées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <tuv xml:lang="EN">
+                <seg>Nor did we have time to exploit the probabilities of transitions given by the HMM; but this could be an interesting application of the techniques developed in this paper.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous n’avons pas non plus eu le temps d’exploiter les probabilités de transition données par l’HMM ; mais ceci pourrait être une application intéressante des techniques développées dans cet article.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <tuv xml:lang="EN">
+                <seg>The general method should also be improved so as to take into account the entire structure of a text (which is not the case here), and make room for sequences of length higher than 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthode générale devrait également être améliorée pour prendre en compte la structure globale d'un texte (ce qui n'est pas le cas ici), et laisser de la place pour des séquences de longueur supérieure à 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <tuv xml:lang="EN">
+                <seg>Acknowledgments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Remerciements</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <tuv xml:lang="EN">
+                <seg>We warmly thank Steven Davis and Adeline Nazarenko for their help with respect to both substance and style.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous remercions chaleureusement Steven Davis et Adeline Nazarenko pour leur aide en ce qui concerne le fond et la forme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <tuv xml:lang="EN">
+                <seg>1 IM = imparfait , PR = présent , PC = passé composé , PS = passé simple , PQP = plus-que-parfait , inf = infinitif , ppr = participe présent , pp = participe passé and pps = participe passé surcomposé .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 IM = imparfait, PR = présent, PC = passé composé, PS = passé simple, PQP = plus-que-parfait, inf = infinitif, ppr = participe présent, pp = participe passé et pps = participe passé surcomposé.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,1511 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2002-long-023. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/L02-1090/</url_en>
+        <url_fr>https://aclanthology.org/2002.jeptalnrecital-long.23.pdf</url_fr>
+        <title_en>Evaluating resource acquisition tools for Information Extraction</title_en>
+        <title_fr>Évaluer l’acquisition semi-automatique de classes sémantiques</title_fr>
+        <docid>taln-2002-long-023</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Evaluating resource acquisition tools for Information Extraction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Évaluer les outils d'acquisition de ressources pour l'extraction d'informations</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>This paper evaluates two different approaches for the elaboration of semantic classes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article vise à évaluer deux approches différentes pour la constitution de classes sémantiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>The framework is an Information Extraction, which needs large amount of domain-dependent resources.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le cadre est une extraction d'informations, qui nécessite une grande quantité de ressources dépendantes du domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>An endogenous approach (corpus-based learning) is contrasted with a heterogeneous one (the use of a large semantic network).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une approche endogène (apprentissage à partir d'un corpus) est contrastée avec une approche exogène (à travers un réseau sémantique riche).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>The two techniques are evaluated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les deux techniques sont évaluées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>Keywords: Semantic classes, Evaluation, Information Extraction, Resources, Semantic network</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mots clés : Classes sémantiques, Évaluation, Extraction de l'information, Ressources, Réseau sémantique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>1 Introduction: general resources vs. specific resources</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Introduction : ressources générales ressources spécifiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>This paper presents an evaluation methodology applied to the elaboration of semantic classes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article présente une méthodologie d'évaluation appliquée à l'élaboration de classes sémantiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>Our framework is Information Extraction: in this domain, one needs to develop extraction patterns (on the syntactic level) enriched with semantic classes (on the semantic level).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre cadre est l'extraction d'information : dans ce domaine, il faut développer des modèles d'extraction (au niveau syntaxique) enrichis de classes sémantiques (au niveau sémantique).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>In this introduction we consider the two main approaches that are commonly used to define semantic classes: the access to large general resources and the semiautomatic elaboration form a corpus analysis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette introduction, nous considérons les deux principales approches généralement utilisées pour définir les classes sémantiques : l'accès à de grandes ressources générales et l'élaboration semi-automatique à partir de l'analyse du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>The utility of general resources has been disputed in the last few years.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'utilité des ressources générales a été fortement critiquée ces dernières années.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>The main objections are enumerated in D. Dutoit’s thesis (Dutoit, 2000):</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les principales objections sont rappelées dans la thèse de D. Dutoit (2000) :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>- General linguistic resources (especially large semantic networks) are rarely usable in context since they encode abstract data but not the main linguistic features specific of the domain to be addressed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Les ressources linguistiques générales (en particulier les réseaux sémantiques larges et hors-domaine) sont difficilement utilisables en contexte car elles sont abstraites et encodent rarement les traits propres à un domaine visé, qui sont pourtant essentiels à l’analyse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>- Even if relevant information has been encoded, this information is lost among a large set of irrelevant information. Finding and using the good information is then a difficult task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Même si l’information pertinente a été modélisée, elle est noyée au milieu de nombreuses informations non pertinentes pour la tâche et elle est donc difficilement exploitable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>- The information that has to be encoded is so large that the task is potentially infinite and, so, is doomed to failure (Victorri, 1998).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- L’information à modéliser est si importante que la tâche est infinie et donc vouée à l’échec (Victorri, 1998).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>The usability of a linguistic resource is largely dependent of the way it is structured.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’utilisabilité d’une ressource linguistique dépend en grande partie de la façon dont elle est structurée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>From this point of view, one must notice that most of the above criticisms concerned the Princeton version of Wordnet (Fellbaum, 1998). A large number of people agree on the fact that this semantic network is not sufficiently structured to be optimally used in various operational contexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De ce point de vue, il faut noter que la plupart des critiques examinées ci-dessus concernent la version de Wordnet de Princeton (Fellbaum, 1998). Un grand nombre de personnes s'accordent sur le fait que ce réseau sémantique n'est pas suffisamment structuré pour être exploité de façon optimale dans divers contextes opérationnels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>On a more theoretical level, message understanding is a process implying different kind of knowledge and the use of a semantic network, even if it is incomplete, lead to a more realistic situation compared to the sole used of the corpus as a reservoir of knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur un plan plus théorique, la compréhension est un phénomène qui met en jeu différents types de connaissances et l'usage d'un réseau sémantique, même incomplet, permet de se rapprocher de cet état de fait, comparé à l'utilisation du corpus comme réservoir de connaissances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>The immediate context is unable to provide the full knowledge implied by an understanding process.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le contexte immédiat est incapable de fournir la connaissance complète impliquée par un processus de compréhension.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>However, several researchers refused these arguments and have investigated some automatic procedure to automatically derived semantic classes from a representative corpus (Hirschmann et al , 1975) (Grishman et Sterling, 1994).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, plusieurs chercheurs ont refusé ces arguments et ont étudié des procédures automatiques pour dériver automatiquement des classes sémantiques à partir d’un corpus représentatif (Hirschmann et al , 1975) (Grishman et Sterling, 1994).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>These experiments are, for the most part, based on a distributionalist assumption (Harris, 1951): in a sublanguage, regular syntactic structures allow to highlight word families occurring in common contexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces expériences sont, pour la plupart, basées sur une hypothèse distributionnaliste (Harris, 1951) : dans un sous-langage, les structures syntaxiques régulières permettent de mettre en évidence des familles de mots apparaissant dans des contextes communs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>These distributional word families are a basis for the elaboration of semantic classes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces familles de mots servent à former des classes sémantiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>This approach is attractive but the results vary a lot wen we take into account the size and the regularity of the corpus on which the acquisition is performed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette approche est séduisante, mais les résultats sont très variables en fonction de la taille et de la régularité du corpus sur lequel l'acquisition est réalisée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>Papers in this domain rarely address this issue, and most of the experiments are done on very regular corpora (for example Nazarenko et al. (2000) report an experiment on medical texts, Faure (2000) on cooking recipes).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet aspect est relativement peu abordé dans les comptes rendus d’expériences, qui portent souvent sur des corpus réguliers ou techniques (par exemple, Nazarenko et al. (2000) proposent une expérience sur le domaine médical, Faure (2000) sur des recettes de cuisine).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>Moreover, most of semantic classes semi-automatically derived from a corpus are not completely satisfactory (Nazarenko et al. , 2001): they cannot be directly injected in an operational application.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, la plupart des classes sémantiques dérivées de manière semi-automatique d'un corpus ne sont pas complètement satisfaisantes (Nazarenko et al., 2001) : elles ne peuvent pas être injectées directement dans une application opérationnelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>Several well-known reasons can be given:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs raisons bien connues peuvent être avancées :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>- Even in a sublanguage, a syntactic schema can be ambiguous ; - Words appearing in different contexts are linked by various kinds of relations. These relations can be specific to a given context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Même à l'intérieur d'un sous-langage, un schéma syntaxique peut être ambigu. - Les mots apparaissant dans un contexte donné entretiennent entre eux des relations plus ou moins étroites[3] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>The decision to group or not the different words in a class highly depends on the fineness of the expected classification and cannot be automatically a priori determined.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La décision de regrouper ou non les différents mots dans une classe dépend fortement de la finesse de la classification attendue et ne peut pas être déterminée automatiquement a priori.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>- Some words that are very frequent and very general induce semantically irrelevant classes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Certains mots très fréquents et très généraux induisent des classes sans grande pertinence sémantique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>It is then necessary to inject some exterior knowledge in the acquisition systems to strengthen the results and develop operational solutions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est donc nécessaire d’injecter des connaissances dans le système d’acquisition pour en améliorer les résultats et développer des solutions opérationnelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>The learning process is then supervised, like in the experiment from Nazarenko et al. (2001) who propose to adapt the medical nomenclature SNOMED to the MENELAS corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’apprentissage devient alors supervisé, comme dans l’expérience de Nazarenko et al. (2001) qui proposent d’adapter la nomenclature médicale SNOMED au corpus MENELAS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>The authors project the categories of SNOMED on the results of the distributional analysis, which contributes to a refinement of the semantic classes that were otherwise automatically obtained from the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les auteurs projettent les catégories de SNOMED sur le résultat d’une analyse distributionnelle, ce qui contribue à affiner les classes sémantiques obtenues automatiquement à partir du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>Morin and Jacquemin (1999) use the same kind of technique to specialize a thesaurus (AGROVOC) in relation with a technical corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Morin et Jacquemin (1999) utilisent le même type de technique pour spécialiser un thésaurus (AGROVOC) en fonction d’un corpus technique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>The debate is then still alive between supporters of general resources versus supporters of a more dynamic approach.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le débat est donc toujours vif entre les partisans de ressources générales et les partisans d'une approche plus dynamique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>We propose to re-investigate this question in this paper. We will take an applicative framework to compare two different approaches for the acquisition of semantic classes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous proposons donc de reprendre cette question ici d’un point de vue applicatif, en comparant deux approches pour l’acquisition semi-automatique de classes sémantiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>We firstly evaluate the ASIUM system that proposes an automatic acquisition from a corpus and then an interactive validation phase (section 3).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous évaluons d’abord le système ASIUM (Faure, 2000) proposant une acquisition automatique à partir de corpus puis une phase de validation interactive (section 3).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>We will do the same experiment with the semantic network from MEMODATA that is currently, as far as we know, the richer semantic network for French (section 4).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous effectuerons ensuite la même expérience avec le réseau sémantique de MEMODATA (Dutoit, 2000), qui constitue à notre connaissance le réseau sémantique le plus riche à l'heure actuelle pour le français (section 4).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>We will conclude on the complementarity of the two approaches (section 5).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons ensuite des conclusions sur la complémentarité des deux approches (section 5).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>2 Experiment protocol</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Protocole de l'expérience</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>The experiments that are described here have been performed on a financial corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les expériences décrites ont été menées sur un corpus financier.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>300 news stories reporting company transactions in French have been selected (this constitutes the FIRSTINVEST corpus).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>300 dépêches traitant de rachat et de vente d’entreprises en français ont été sélectionnées (ceci constitue le corpus FIRSTINVEST).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>The set of news stories is divided in two unequal parts: 57 stories are reserved for test, 243 for training.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet ensemble de dépêches a été divisé en deux parties inégales : 57 dépêches pour le corpus de test, 243 autres pour le corpus d’entraînement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>An information engineer, Sophie Bizouard[1] , developed an Information extraction system on that domain in Thales.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une ingénieure en informatique, Sophie Bizouard[1], a développé un système d'extraction d'informations sur ce domaine chez Thales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>The system included manually elaborated semantic classes that have been considered as a reference for the further experiments we have done in this domain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système incluait des classes sémantiques élaborées manuellement qui ont constitué la référence pour les expériences réalisées ensuite dans ce domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>3 An interactive symbolic machine learning approach for the automatic acquisition of semantic classes</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Une approche interactive d'apprentissage symbolique pour l'acquisition automatique de classes sémantiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>We have evaluated the contribution of a machine learning system to acquire knowledge from texts and elaborate the resources dedicated to an Information Extraction system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons évalué l'apport d'un système d'apprentissage automatique pour acquérir des connaissances à partir de textes et élaborer les ressources nécessaires à un système d'extraction d'informations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>We gave below a brief description of the ASIUM system that we used (for a more detailed description, please refer to (Faure et Nédellec, 1998), (Faure, 2000)).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous donnons ci-dessous une rapide description du système que nous avons utilisé, ASIUM (pour une description plus complète, cf. (Faure et Nédellec, 1998), (Faure, 2000)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>3.1 The ASIUM acquisition system</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1 Le système d'acquisition ASIUM</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>The ASIUM system provides knowledge acquired from unstructured texts that have previously been syntactically analyzed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système ASIUM fournit des connaissances acquises à partir de textes non structurés qui ont été précédemment analysés syntaxiquement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>The approach is based on a distributional analysis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'approche est basée sur une analyse de la distribution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>ASIUM aims at providing to the analyst a set of classes relevant for the task he is doing and it also provides means to structures these classes into a domain ontology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>ASIUM a pour objectif de fournir à l'analyste un ensemble de classes pertinentes pour la tâche qu'il est en train de faire et il fournit également des moyens pour structurer ces classes en une ontologie de domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>This ontology gives a clear image of the relationships among classes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette ontologie donne une image claire des relations entre les classes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>Figure 1. The ASIUM system</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1. Le système ASIUM</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>The method is original in that it provides an interactive validation phase.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'originalité de la méthode réside essentiellement dans l'étape de validation interactive.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>The analysis rests on a distributional analysis that allows to generate classes of words appearing in similar contexts (the base classes ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'analyse repose sur une analyse distributionnelle, permettant de générer des classes de mots apparaissant dans des contextes similaires (les classes de base).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>The similarity measure implemented in ASIUM gives a score for the coverage of a class compared to another one. The system then proposes to group together classes that have a similarity measure above a certain threshold (this threshold is empirically fixed by the expert).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La mesure de similarité d’ASIUM permet de calculer le recouvrement entre classes et de proposer le regroupement de classes ayant une similarité supérieure à un seuil fixé par l’expert.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>The base classes are progressively aggregated following a cooperative bottom-up method.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les classes de base sont progressivement agrégées selon une méthode coopérative ascendante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>This classification process is not limited to lists of words appearing in similar contexts but it also extends these lists by induction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce processus de catégorisation ne se contente pas d'identifier des listes de mots apparaissant dans des contextes similaires, mais il augmente ces listes par induction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>Indeed, from two classes C1 and C2 found in two different contexts CTXT1 and CTXT2, one can authorize non-attested sequences like CTXT1 C2 or CTXT2 C1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, à partir de deux classes C1 et C2 trouvées dans deux contextes différents CTXT1 et CTXT2, on peut autoriser des séquences non attestées comme CTXT1 C2 ou CTXT2 C1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>For example, imagine that acquisition and fusion belong to the same base class.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, imaginons que les mots acquisition et fusion appartiennent à la même classe de base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>Then, if procéder à une acquisition is a sequence present in the corpus, the system will infer that procéder à une fusion is also a valid sequence, even if it is not present in the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si procéder à une acquisition est une séquence présente dans le corpus, le système va induire que procéder à une fusion est également une séquence valide, même si elle n’est pas présente dans le corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>The result is then a generalization of the knowledge base that can be directly inferred from the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le résultat est alors une généralisation de la base de connaissances qui peut être directement déduite du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>ASIUM requires that a domain expert intervene to validate the results. This validation is done by examining each class, one by one, until the threshold is reached. Classes under the threshold are supposed to be non relevant and are automatically rejected by the system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>ASIUM requiert donc, à ce stade, l’intervention d’un expert du domaine pour valider les résultats. Cette validation se fait en examinant chaque classe, une par une, jusqu’à atteindre le seuil. Les classes en-deçà du seuil sont censées être non pertinentes et sont automatiquement rejetées par le système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>3.2 From unsupervised to supervised methods</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2 Des méthodes non supervisées à des méthodes supervisées</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>The validation phase is very important in the acquisition process designed in ASIUM.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La phase de validation est très importante dans le processus d'acquisition conçu par ASIUM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>Given that the amount of data was reduced, the threshold that we retained to merge the base classes was low. The consequence is that the propositions from the system concerned classes having very few elements in common.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Du fait de la faible taille du corpus disponible, le seuil retenu pour les classes de base est obligatoirement bas et les rapprochements entre classes s’opèrent sur un nombre d’éléments communs relativement peu important.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>To solve this problem, we made two different experiments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour résoudre ce problème, nous avons réalisé deux expériences différentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>In the first one, ASIUM is used as it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la première expérience, ASIUM est utilisé tel quel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>The propositions of the system are the result of an unsupervised process: they are solely based on the number of common elements between the different base classes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les propositions du système sont le résultat d'un processus non supervisé : elles sont uniquement basées sur le nombre d'éléments communs entre les différentes classes de base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>This strategy leads to an expensive validation task: the analyst needs to validate a large number of irrelevant items.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette stratégie mène à une tâche de validation coûteuse : l'analyste doit valider un grand nombre d'éléments non pertinents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>A second experiment then used a new function of ASIUM allowing to focalize the validation process on the sole classes containing words that are relevant for the domain. These words are defined by the analyst in a file that is then considered as a filter.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une deuxième expérience a alors utilisé une fonctionnalité d’ASIUM permettant de focaliser le processus de validation sur les seules classes comprenant des mots pertinents pour le domaine. Ces mots sont définis par l’analyste dans un fichier qui joue le rôle de filtre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>For example, to find the semantic class purchase_operations ( Opération d’achat ), the filter contained the following set of words: achat , fusion, scission and for the class Company ( Entreprise ), the words: entreprise , société , filiale .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, pour la recherche de la classe Opération d’achat, le filtre comprenait les mots achat , fusion, scission ; pour la classe Entreprise, les mots entreprise , société , filiale .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>This strategy led us to the definition of a supervised strategy for ASIUM. Performances are then largely better, provided that the filter (i.e. the set of words initially defined by the analyst) is relevant.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette stratégie nous a conduit à la définition d'une stratégie supervisée pour ASIUM. Les performances sont alors largement meilleures, à condition que le filtre (c'est-à-dire l'ensemble de mots initialement défini par l'analyste) soit pertinent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>In function of the semantic class that the analyst wants to model, the filter has to change.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fonction de la classe sémantique que l'analyste cherche à modéliser, le filtre doit changer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>There is here a subjectivity factor in our evaluation: elaborating a filter is, by definition, a subjective task that influences the quality of the results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il y a donc là un premier facteur de subjectivité dans l’évaluation : la définition du filtre est une opération subjective qui influe notablement sur les résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>Compared to the experiments in an unsupervised mode, the elaboration of keyword filters makes things work better.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par rapport aux expérimentations en mode non supervisé, l'élaboration de filtres de mots-clés fait que les choses fonctionnent mieux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>However, the reduced size of corpus does not make it possible to obtain really accurate base classes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, la taille réduite du corpus ne permet pas d'obtenir des classes de base vraiment précises.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>Filters are simple list of relevant words: this resource is not informative enough to obtain really accurate results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les filtres sont des listes simples de mots pertinents : cette ressource n'est pas suffisamment informative pour obtenir des résultats vraiment précis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>Different experiments (Nazarenko et al. (2001); Morin et Jacquemin (1999)) have shown that using more structures data allows to guide and refine the overall results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Différentes expériences (Nazarenko et al., 2001 ; Morin et Jacquemin, 1999) ont montré que l'utilisation de données de structures plus nombreuses permet de guider et d'affiner les résultats globaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>This kind of techniques leads to a better quality.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce type de techniques mène à une meilleure qualité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>3.3 Criteria for the elaboration of semantic classes</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3 Critères pour l'élaboration des classes sémantiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>Class modeling necessitates an important part of manual work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La modélisation des classes nécessite un travail manuel significatif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>Even with a file of words used as a filter, the number of base classes is important, varying from 41 to 576 in function of the total number of words contained in the filter.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Même avec un fichier jouant le rôle de filtre, le nombre de classes de base proposées est important, puisqu’il varie de 41 à 576 suivant le nombre d’éléments contenus dans le filtre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>Most of the time, the nearest base class defined contained less than 30% of the desired elements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La plupart du temps, la classe de base la plus proche de la classe sémantique visée contient moins de 30 % des éléments désirés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>On the other hand, it is very rare to see more than 30% of a base class validated by the analyst.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, il est très rare que plus de 30 % d'une classe de base soit validé par l'analyste.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>The amount of work to provide in order to clean and aggregate the different class is then relatively high.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le travail de nettoyage et d'agrégation des différentes classes est alors relativement élevé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>It is not infrequent to see a final semantic class that was initially split into 20 base classes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il n’est pas rare de voir une classe sémantique finale qui a été initialement divisée en 20 classes de base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>The number of aggregation to validate is proportional.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le nombre d'agrégats à valider est proportionnel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>This point can be problematic: the analyst must accept to spend some time to validate classes that are initially of very poor quality.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce point peut poser problème lors de la mise en œuvre du système : il faut que l’analyste accepte de passer du temps à valider des classes initialement de très mauvaise qualité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>The classes obtained are progressively validated and refined.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les classes obtenues sont progressivement validées et affinées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>They are initially noisy but the validation phase allows then to access to proposal from the system that are based on relevant classes that are more homogeneous.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elles sont d'abord bruyantes mais la phase de validation permet d'accéder à des propositions du système qui sont basées sur des classes pertinentes plus homogènes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>The task is finished when the system has no new proposal to do to the analyst.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La tâche est terminée lorsque le système n'a plus de proposition à faire à l'analyste.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>In our experiments, the validation phase rarely concerned more than 3 or 4 level of the ontology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans nos expérimentations, la phase de validation concernait rarement plus de 3 ou 4 niveaux de l’ontologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>If the results of the learning phase are too poor, the expert may decide to relaunch a learning process with a lower threshold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si les résultats de la phase d'apprentissage sont trop médiocres, l'expert peut décider de relancer un processus d'apprentissage avec un seuil plus bas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>The risk is then to obtain more noisy classes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le risque est alors d'obtenir des classes plus bruyantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>The choice of a threshold is still an empirical task and Asium does not provide any means to fix it in as assisted manner.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le choix d'un seuil est toujours une tâche empirique et Asium ne fournit aucun moyen de le fixer de manière assistée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>Our aim in this experiment is to acquire semi-automatically thanks to Asium, semantic classes from a corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le but de l’expérience est d’acquérir des classes sémantiques d’un corpus de manière semi-automatique grâce à ASIUM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>In this framework of this experiment on the FirstInvest corpus, we evaluate the results by comparing them with those previously manually obtained by an expert.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre de l'expérience sur le corpus FirstInvest, l'évaluation a porté sur une comparaison des résultats obtenus automatiquement avec ceux obtenus précédemment manuellement par un expert.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>The results of ASIUM take into account a frequency dimension. That is the reason why most of the major elements (the set of words that are relevant for the task and that appear frequently in the corpus) have been found.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats d'ASIUM prennent en compte la dimension de la fréquence. C'est la raison pour laquelle la plupart des éléments majeurs (l'ensemble des mots qui sont pertinents pour la tâche et qui apparaissent fréquemment dans le corpus) ont été trouvés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>There are a few missing elements but they have a limited influence on the overall results, like échange , émission , transaction .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il y a quelques éléments manquants mais ils ont une influence limitée sur les résultats globaux, comme échange , émission , transaction .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>We must however notice that some elements like vendre have not been found, even if they are common in our corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il faut toutefois noter que certains éléments comme vendre n’ont pas été trouvés, bien qu’il s’agisse de mots fréquents dans notre corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>Lastly, the distributional analysis makes it possible to find some elements that have not previously been retained by the expert working manually ( désengagement , regroupement , scission ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, l'analyse distributionnelle permet de retrouver quelques éléments pertinents pour la tâche, qui n'avaient pas été retenus lors du travail d'évaluation manuel des ressources ( désengagement , regroupement , scission ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>The distributional analysis gives a more accurate and more global view of the corpus, allowing to take better decisions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'analyse de répartition donne une vision plus précise et plus globale du corpus, permettant de prendre de meilleures décisions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>Relevant elements that did not appear in the corpus are, of course, not found in the classes proposed by ASIUM.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien évidemment, les éléments pertinents qui n'apparaissent pas dans le corpus d'entraînement ne peuvent figurer dans les classes proposées par ASIUM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>Once they have been refined and validated, the semi-automatically defined semantic classes obtain good overall results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois affinées et validées, les classes définies semi-automatiquement permettent d'obtenir des résultats globaux relativement bons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>The corpus is very homogeneous: even if its size is reduced (243 texts, 45.334 words). The training corpus allows to obtain very good performances over the test corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus est très homogène : même si sa taille est réduite (243 textes, soit 45 334 mots). Le corpus d'entraînement permet d'obtenir de très bonnes performances sur le corpus de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>In this context, using ASIUM together with an important validation phase allows to accurately cover the training (and the test) corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte, l'utilisation d'ASIUM, accompagnée d'un important travail de validation, permet de couvrir avec précision le corpus d'entraînement (et de test).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>From this tool, one can obtain simultaneously some lists of relevant nouns together with associated verbs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'outil permet d'établir conjointement des listes de noms et de verbes associés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>There is a real gain when compared to the manual reading of the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il y a un réel gain par rapport à la lecture manuelle du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>The evaluator estimates that about 10 hours have been spent to defined semantic classes with ASIUM, to be compared with the 50 hours spent to read the corpus and manually elaborate the resources.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’évaluateur estime avoir passé 10 heures à définir des classes sémantiques avec ASIUM, à comparer avec les 50 heures consacrées à lire le corpus lors du développement manuel des ressources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>Guiding the learning process with a set of initial keywords (supervised learning) allows to directly obtain relevant classes. This last point is a great advantage compared to the previous experiment, based on an unsupervised learning phase.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le fait de guider le processus d’apprentissage avec un ensemble de mots clés initiaux (apprentissage supervisé) permet d’obtenir directement des classes pertinentes. Ce dernier point est un grand avantage par rapport à l’expérience précédente, basée sur une phase d’apprentissage non supervisé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>4 Using general linguistic resource: the semantic network from Memodata</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Utilisation d’une ressource linguistique générale : le réseau sémantique de Memodata</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>We contrast the experiment previously done by using ASIUM with the manipulation of a semantic network, directly providing semantic classes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous comparons l'expérience faite précédemment avec ASIUM à la manipulation d'un réseau sémantique, fournissant directement des classes sémantiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>We used the semantic net from Memodata: this company has developed since ten years a very compete network, the INTEGRAL DICTIONARY (le DICTIONNAIRE INTÉGRAL in French), together with a set of functionality and a programming interface (API). See (Dutoit, 2000).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé le réseau sémantique de Memodata : cette société a développé depuis plus de 10 ans un réseau très complet, le DICTIONNAIRE INTEGRAL, accompagné d'un ensemble de fonctionnalités et d'une interface de programmation (API) (Dutoit, 2000).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>4.1 The semantic network: THE INTEGRAL DICTIONARY and associated tools</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Le réseau sémantique : le DICTIONNAIRE INTEGRAL et les outils associés</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>THE INTEGRAL DICTIONARY is the name of the semantic network developed by the French company Memodata.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>LE DICTIONNAIRE INTEGRAL est le nom du réseau sémantique développé par la société française MEMODATA.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>This network is inspired from the Text-Sense Theory from Igor Melc’uk.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce réseau s'inspire de la théorie du sens textuel d'Igor Melc'uk.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>The theoritical basis of the dictionary is the set of different senses associated with a word (a string of characters).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La base théorique du dictionnaire est l'ensemble des différents sens associés à un mot (une chaîne de caractères).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>The network is made of 186.000 word senses. From this point of view, the coverage of the network is comparable with that of Wordnet (Fellbaum, 1998). However, THE INTEGRAL DICTIONARY is very different when one observes its overall structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le réseau est composé de 186 000 sens de mots. De ce point de vue, la couverture du réseau est comparable à celle de Wordnet (Fellbaum, 1998). Cependant, le DICTIONNAIRE INTEGRAL est très différent lorsqu'on observe sa structure globale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>The links between words are not only is-a links, they are not based on psychological assumptions. Instead, the analysis is based on a decomposition of words in a set of basic features called sèmes (in the framework of a componential analysis) that are structured through typed links.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les liens entre les mots ne sont pas seulement des liens « est-un », ils ne sont pas non plus basés sur des présupposés psychologiques. Au lieu de cela, l'analyse est basée sur une décomposition des mots en un ensemble de caractéristiques de base appelées sèmes (analyse componentielle) structurées par des liens typés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>Figure 2. The INTEGRAL DICTIONARY</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 2. Le DICTIONNAIRE INTEGRAL</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>The network is structured thanks to an important set of links between elements of different syntactic category, like in EUROWORDNET (Vossen, 1998).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le réseau repose sur de nombreuses relations entre des éléments de catégories syntaxiques différentes, à l’instar de EUROWORDNET (Vossen, 1998).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>This aspect is especially important for the task we are interested in, given that we must find that the French words achat (a noun) as well as acheter (a verb) reflect the notion of acquisition .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet aspect est bien évidemment primordial pour la tâche qui nous intéresse, puisqu’il nous faut trouver que les mots français achat (un nom) ainsi que acheter (un verbe) reflètent la notion d’acquisition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>The coverage of the INTEGRAL DICTIONARY is larger than the French EUROWORDNET. By the way, a part of the information contained inside the French EUROWORDNET has been automatically derived from MEMODATA’s resources (the rest of the French EUROWORDNET network has been produced by the University of Avignon, that was responsible of the French part of the project).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La couverture du DICTIONNAIRE INTEGRAL est plus large que celle du réseau sémantique au format EUROWORDNET existant pour le français, une partie de l’information contenue dans le EUROWORDNET provenant d’ailleurs des bases de MEMODATA (le reste du réseau EUROWORDNET français ayant été produit par l’Université d’Avignon, responsable du projet pour la France).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>4.2 Criteria for the elaboration of semantic classes</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 Critères pour l'élaboration des classes sémantiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>To elaborate semantic classes from a semantic network like the one from MEMODATA, the end-user must choose a keyword from the domain he is interested in and then query the linguistic base.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour élaborer des classes sémantiques à partir d’un réseau sémantique comme celui de MEMODATA, l’utilisateur doit choisir un mot-clé du domaine qui l’intéresse et ensuite interroger la base linguistique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>A semantic class then progressively emerges when following the different links between elements in the semantic net.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une classe sémantique émerge alors progressivement en suivant les différents liens entre les éléments du réseau sémantique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>In our experiment, we took into account all the words that were linked to the original keyword with one of the following typed links: generic , specific or synonym .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre expérience, nous avons pris en compte tous les mots reliés à un mot-clé par un lien de type générique, spécifique ou synonyme .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>The lexical class we obtain is then refined, so that we finally obtain an homogeneous and relevant semantic class (the analyst must essentially delete terms that are not relevant for the task or the domain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La classe lexicale ainsi obtenue est affinée de manière à obtenir une classe sémantique relativement homogène et pertinente (il s’agit essentiellement d’enlever les mots non pertinents pour la tâche ou le domaine).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>For example, in French, if the entry point (the initial keyword) is achat ( purchase ), the system will propose the following list of terms: abonnement, accaparement, acheter, acquérir, acquisition, appropriation, commande, prise de contrôle, prise de participation, préemption, téléachat …</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, en partant de achat (achat), on accède à une classe comprenant les mots suivants : abonnement, accaparement, acheter, acquérir, acquisition, appropriation, commande, prise de contrôle, prise de participation, préemption, téléachat …</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>In this context of company purchasing other companies, the words abonnement and téléachat are irrelevant.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le contexte de rachat d’entreprise, les termes abonnement ou téléachat sont sans pertinence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>They have to be manually discarded.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils doivent être éliminés à la main.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>When we compare this approach with what we have previously done with ASIUM, we see that the end-user has no information about the representativeness of a word: the number of occurrences in the training corpus cannot be accessed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsque nous comparons cette approche avec ce que nous avons précédemment fait avec ASIUM, nous constatons que l'utilisateur final n'a aucune information sur la représentativité d'un mot : il ne peut pas accéder au nombre de fois où il apparaît dans le corpus de formation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>For the analyst, going back to the corpus to check the context is a too heavy and boring task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour l'analyste, retourner au corpus pour vérifier le contexte est une tâche trop lourde et fastidieuse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>We will see in the next section that this can cause problem when dealing with the representativeness of the results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous verrons dans la section suivante que cela peut poser problème lorsqu'il s'agit de la représentativité des résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>The process stops when the analyst has checked the links between words and when no new term is found out.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le processus s'arrête quand l'analyste a vérifié les liens entre les mots et quand aucun nouveau terme n'est trouvé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>We observed that people rarely validates terms that are too much distant from the initial keyword.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons observé que les gens validaient rarement des termes trop éloignés du mot-clé initial.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>In fact, people rarely follow more than 2 to 3 nodes from the initial keyword.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fait, les gens suivent rarement plus de 2 à 3 nœuds à partir du mot-clé initial.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>In our experiments we noticed that the strategy we have adopted is efficient and allows to rapidly propose an accurate solution.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans nos expérimentations, nous avons constaté que la stratégie adoptée est efficace et permet de proposer rapidement une solution précise.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>The links that are followed by the analyst rapidly provide a set of already registered terms or some set of irrelevant terms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les faits, les liens suivis par l'analyste ramènent rapidement soit un ensemble de mots déjà trouvés, soit un ensemble de mots peu pertinents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>The acquisition stops when this kind of situations happens[2] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'acquisition s'arrête lorsqu'un tel événement se produit[2].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>4.3 Measuring the gain brought by a general resources for the acquisition process</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.3 Mesurer l’apport de ressources générales pour le processus d’acquisition</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>The evaluation of the INTEGRAL DICTIONARY for the task is very close from the one we have followed for ASIUM.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'évaluation de l'apport du DICTIONNAIRE INTEGRAL pour la définition des classes sémantiques du domaine se rapproche partiellement de celle qui a été mise en œuvre pour ASIUM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>We will compare the result of the acquisition process using the tool from MEMODATA with the semantic classes that have been manually defined.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il s’agit en effet de comparer la couverture de classes obtenues à partir de l’outil de MEMODATA avec la couverture des classes définies manuellement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>However, we see a certain number of differences. The tool of Memodata does not necessitate any modeling task nor any training corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On constate toutefois quelques différences : l’outil de MEMODATA ne nécessite pas de travail de modélisation ni de corpus d’entraînement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>Even so, a certain number of subjectivity factors appeared during the evaluation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs facteurs de subjectivité apparaissent aussi de manière flagrante dans l’évaluation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>The analyst has to produce a request in order to obtain a set of related words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'analyste doit produire une requête afin d'obtenir un ensemble de mots associés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>The starting point (the initial keyword chosen by the analyst) has a major effect on the quality of the overall results: one word can be more or less accurately linked with other words. The semantic network can be more detailed in one part than in some other parts, etc.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le point de départ (le mot-clé initial choisi par l'analyste) a une influence majeure sur la qualité des résultats globaux : un mot peut être plus ou moins bien relié aux mots de sens proche, le réseau lexical est plus dense dans certains domaines, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>However, we noticed that, from a request made of 3 to 5 keywords, it is always possible to integrally reconstruct any semantic class whatever has been manually defined.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On observe qu’en interrogeant le DICTIONNAIRE INTEGRAL avec 3 à 5 mots seulement, il est possible de reconstituer intégralement n’importe laquelle des classes sémantiques sur lesquelles a porté l’évaluation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>For the evaluation, the difficulty consists, of course, in choosing the good initial set of keywords (like achat in the example of the previous paragraph), which are crucial for the quality of the results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour l'évaluation, la difficulté consiste évidemment à bien choisir les mots-clés initiaux (comme achat dans l'exemple du paragraphe précédent), qui sont déterminants pour la qualité du résultat final.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>This subjective factor in the evaluation is the same one as for ASIUM, when we had to define a set of keywords to define a filter.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On retrouve ici le même facteur de subjectivité que celui qui préside à l’élaboration des filtres d’ASIUM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>However, the small number of words that must be activated in the INTEGRAL DICTIONAY in order to be able to reconstruct the original classes shows the homogeneity of the semantic network from MEMODATA.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le petit nombre d’éléments initiaux du DICTIONNAIRE INTEGRAL à activer pour reconstituer les classes sémantiques visées montrent toutefois l’homogénéité des classes sémantiques définies par MEMODATA.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>To avoid or, at least, limit this subjectivity factor, we chose to evaluate the system from a simple request consisting of a single keyword, instead of a set of keywords. We chose the keyword achat ( purchase ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour éviter ou, au moins, limiter ce facteur de subjectivité, nous avons choisi d'évaluer le système à partir d'une requête simple composée d'un seul mot-clé, au lieu d'un ensemble de mots-clés. Nous avons choisi le mot-clé « achat ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>The semantic class we obtained by activating the direct links of achat and then by validating these results, showed that more than 75% of the original class is found in this way (but we don’t take into account the total number of occurrences in the corpus; we only calculate here the number of items appearing in the manually defined semantic class).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La classe sémantique obtenue en activant les liens directs de « achat » puis en validant les résultats montre que plus de 75 % de la classe sémantique d'origine est ainsi trouvée (mais nous ne tenons pas compte du nombre total d'occurrences dans le corpus ; nous ne calculons ici que le nombre d'éléments apparaissant dans la classe sémantique définie manuellement).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>60% of the elements proposed by the Integral dictionary have been positively validated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>60 % des éléments proposés par le DICTIONNAIRE INTEGRAL ont été validés positivement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>A large part of the class we obtained was not present in the corpus and, thus, was lacking in the class obtained manually or with ASIUM). We evaluated that about 40% of the elements proposed by the INTEGRAL DICTIONARY were lacking in the class defined manually although they were relevant elements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une grande partie de la classe ainsi obtenue ne figurait pas dans le corpus et, par conséquent, manquait dans la classe obtenue manuellement ou avec ASIUM). Nous avons évalué qu'environ 40 % des éléments proposés par le DICTIONNAIRE INTEGRAL manquaient dans la classe définie manuellement, bien qu'ils soient des éléments pertinents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>In other words, the semantic network from MEMODATA provides lots of relevant elements that were not in the training corpus and that the analyst could have forgotten.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Autrement dit, le réseau sémantique de MEMODATA fournit beaucoup d'éléments pertinents qui n'étaient pas dans le corpus d'entraînement et que l'analyste aurait pu oublier.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>However, things slightly change when we take into account, for each word, the total number of its occurrences in the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutefois, les choses changent légèrement lorsque nous prenons en compte, pour chaque mot, le nombre total de ses occurrences dans le corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>We then observe that some key elements of the target semantic class are not found.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous observons alors que certains éléments clés de la classe sémantique visée n’ont pas été trouvés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>The scores show that only 45% of the original semantic classes are found with the INTEGRAL DICTIONARY, when we take into account their total number of apparition in the corpus. The new elements proposed by the INTEGRAL DICTIONARY only improve the result by 7%.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les scores montrent que seulement 45 % des classes sémantiques originales sont couvertes par le DICTIONNAIRE INTEGRAL, en tenant compte du nombre total de leur apparition dans le corpus. Les nouveaux éléments proposés par le DICTIONNAIRE INTEGRAL n'améliorent le résultat que de 7 %.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>In other words, a lot of potentially relevant words are proposed that could be interesting, but these words are rarely present in the test corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Autrement dit, de nombreux termes proposés pourraient être pertinents, mais ceux-ci ne sont pas présents dans le corpus de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>We should not conclude too quickly that general resources are inadequate for the task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous ne devrions pas conclure trop rapidement que les ressources générales sont insuffisantes pour la tâche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>A word like raid only appears once in the test corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un mot comme raid n'apparaît qu'une seule fois dans le corpus de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>But a research on a larger corpus from FIRSTINVEST showed that this term is relevant and productive in other news stories.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais une recherche sur un corpus plus large de FIRSTINVEST a montré que ce terme est pertinent et productif dans d'autres articles de presse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>Thus, we have to say that a “chance factor” is present: the nature of the corpus, its genre, the kind of language used are important factors that have an influence on the evaluation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il faut donc dire qu'un "facteur aléatoire" est présent : la nature du corpus, son genre, le type de langage utilisé sont des facteurs importants qui ont une influence sur l'évaluation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>The structure of the network and its homogeneity are also important factors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La structure du réseau et son homogénéité sont également des facteurs importants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>For example, if we access to the semantic network with the words “ achat” , “ vente” and “ fusion” , we obtain more than 90% of the element of the manually defined class (more than 95% if we take into account the number of words really present in the corpus).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, si l'on accède au réseau sémantique avec les mots « achat », « vente » et « fusion », on obtient plus de 90 % des éléments de la classe définie manuellement (plus de 95 % si l'on prend en compte le nombre de mots réellement présents dans le corpus).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>The conclusion for this part of the study is that the semantic classes proposed by the INTEGRAL DICTIONARY are of better quality than those of ASIUM. They cover a larger spectrum of elements since they are not limited to the training corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La conclusion de cette partie de l'étude est que les classes sémantiques proposées par le DICTIONNAIRE INTEGRAL sont de meilleure qualité que celles proposées par ASIUM et qu'elles couvrent un spectre plus large d'éléments, du fait qu'elles ne sont pas limitées au corpus d'entraînement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>Unfortunately, some key elements are forgotten (30% of undiscovered elements correspond in fact to 55% of the occurrences of the corpus).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malheureusement, certains éléments clés sont oubliés (30 % d’éléments non couverts représentent en fait 55 % des occurrences du corpus).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>The missing elements are very frequent ones and they contribute to a lower recall.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certains de ces éléments sont des éléments fréquents, ce qui contribue à faire largement baisser le rappel global.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>5 Conclusion: evaluating resource acquisition tools</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Conclusion : évaluation des outils d’acquisition de ressources</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>Information extraction (IE) systems offer clear evaluation methods: a reference can generally be manually established and the results of automatic IE systems are compared with the reference.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les systèmes d’extraction d’information (IE) offrent des possibilités d’évaluation relativement claires : une référence peut généralement être établie manuellement, et les résultats de l’extraction sont comparés à cette référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>Things are very different when we try to evaluate resource acquisition tools.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il en va tout autrement quand il s’agit d’évaluer les outils d’acquisition de ressources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>Manually defined resources define a reference relative to a corpus and this reference is known to be largely imperfect.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les ressources définies manuellement constituent une référence relative, que l’on sait largement imparfaite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>The evaluation is then not based on an objective and indisputable basis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’évaluation ne repose donc pas sur une base objective et incontestable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>These difficulties are increased again when we think to the fact that resource acquisition cannot constitutes an isolated and abstract task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces difficultés deviennent encore plus grandes quand on sait que l'acquisition de ressources ne peut constituer une tâche isolée et abstraite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>Any linguistic modeling task requires a large knowledge of the domain and of the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, le travail de modélisation linguistique exige une connaissance approfondie du domaine et du corpus traité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>This knowledge allows the analyst to guide the machine learning process in defining good filters and good keywords.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette connaissance permet à l'analyste de guider le processus d'apprentissage automatique en définissant les « bons » filtres ou les « bons » mots-clés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>But, every part of human knowledge includes a part of unvoiced feeling and of implicitness that can hardly be described in an abstract model!</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais, comme toute connaissance humaine, elle comporte une part de non-dit et d'implicite qui est difficile à décrire dans un modèle abstrait !</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>This part of subjectivity is inherent to the task and should not be hidden during the evaluation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette part de subjectivité est inhérente à la tâche et ne doit pas être masquée lors de l’évaluation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>We obtain results that are less readable than when we strictly follow a black box evaluation protocol.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On obtient alors des résultats moins lisibles et moins clairs que lors d’une évaluation de type « boîte noire ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>This lack of clarity can be compensated by the intuition of the expert who knows how to use his knowledge to appropriately use different acquisition tools.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce manque de clarté peut être compensé par l'intuition de l'expert qui sait comment utiliser ses connaissances pour utiliser de manière appropriée les différents outils d'acquisition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>He is then able to develop original analysis strategies to explore the corpus and extract the good information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est alors en mesure d'élaborer des stratégies d'analyse originales pour explorer le corpus et extraire les bonnes informations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>It is then necessary to provide guidelines associated with acquisition tools. These guidelines should propose a method and a way to acquire knowledge from a given corpus. They should take into account the corpus size, the regularity of its vocabulary and of its syntax, and of its representativeness of a domain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est alors nécessaire de proposer des directives associées aux outils d'acquisition. Ces directives doivent proposer une méthode et un moyen d'acquérir des connaissances à partir d'un corpus donné. Elles doivent prendre en compte la taille du corpus, la régularité de son vocabulaire et de sa syntaxe, et de sa représentativité d'un domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>1. Sophie Bizouard (INALCO/CRIM) led for the larger part these experiments in Thales Research and Technology in 2001. She ensured a neutral point of view since she did not previously work on Asium nor on The Integral Dictionary.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Sophie Bizouard (INALCO/CRIM) a dirigé pour la plus grande partie ces expériences à Thales Research and Technology en 2001. Elle a assuré un point de vue neutre puisqu'elle n'avait pas travaillé sur Asium ni sur Le Dictionnaire Intégral auparavant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>2. This is not obvious! The links that refer to Synonymy in a semantic network are rarely reciprocal (for example, a link can be established from A to B, but not from B to A), contrary to an open idea.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Ceci n'est pas évident ! Les liens de synonymie dans les réseaux sémantiques sont rarement réciproques (un lien de synonymie peut exister de A vers B, mais pas de B vers A), contrairement à une idée reçue.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

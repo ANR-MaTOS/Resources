@@ -1,0 +1,1695 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2010-long-001. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/2009.mtsummit-posters.17.pdf</url_en>
+        <url_fr>https://aclanthology.org/2010.jeptalnrecital-long.1.pdf</url_fr>
+        <title_en>Translation Model Adaptation for an Arabic/French News Translation System by Lightly-Supervised Training</title_en>
+        <title_fr>Adaptation d’un Système de Traduction Automatique Statistique avec des Ressources monolingues</title_fr>
+        <docid>taln-2010-long-001</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Translation Model Adaptation for an Arabic/French News Translation System by Lightly-Supervised Training</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Adaptation du modèle de traduction pour un système de traduction de nouvelles en arabe/français par formation légèrement supervisée</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>Most of the existing, easily available parallel texts to train a statistical machine translation system are from international organizations that use a particular jargon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La plupart des textes parallèles disponibles et faciles à trouver pour former un système de traduction statistique proviennent d'organisations internationales qui utilisent un jargon particulier.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we consider the automatic adaptation of such a translation model to the news domain. The initial system was trained on more than 200M words of UN bitexts. We then explore large amounts of in-domain monolingual texts to modify the probability distribution of the phrase-table and to learn new task-specific phrase-pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous considérons l'adaptation automatique d'un tel modèle de traduction au domaine des actualités. Le système initial a été formé sur plus de 200 millions de mots de bitextes de l'ONU. Nous explorons ensuite de grandes quantités de textes monolingues dans le domaine pour modifier la distribution de probabilité du tableau de phrases et apprendre de nouvelles paires de phrases spécifiques à la tâche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>This procedure achieved an improvement of 3.5 points BLEU on the test set in an Arabic/French statistical machine translation system. This result compares favorably with other large state-of-the-art systems for this language pair.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette procédure a permis d'améliorer de 3,5 points le score BLEU sur l'ensemble de données de test dans un système de traduction statistique de l'arabe vers le français. Ce résultat est comparable à d'autres systèmes de pointe pour cette paire de langues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>1 Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>Adaptation of a statistical machine translation system (SMT) is a topic of increasing interest during the last years.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'adaptation d'un système de traduction automatique statistique (SMT) est un sujet d'intérêt croissant au cours des dernières années.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Statistical ( n -gram) language models are used in many domains and several approaches to adapt such models were proposed in the literature, for instance in the framework of automatic speech recognition.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les modèles de langage (n-grammes) statistiques sont utilisés dans de nombreux domaines et plusieurs approches pour adapter ces modèles ont été proposées dans la littérature, par exemple dans le cadre de la reconnaissance automatique de la parole.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>Many of these approaches were successfully used to adapt the language model of an SMT system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bon nombre de ces approches ont été utilisées avec succès pour adapter le modèle de langue d'un système SMT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>On the other hand, it seems more challenging to adapt the other components of an SMT system, namely the translation and reordering model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autre part, il semble plus difficile d'adapter les autres composants d'un système SMT, à savoir le modèle de traduction et de réorganisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>In this work we consider the adaptation of the translation model of a phrase-based SMT system. While rule-based machine translation rely on rules and linguistic resources built for that purpose, SMT systems can be developed without the need of any language-specific expertise and are only based on bilingual sentence-aligned data (“ bitexts ”) and large monolingual texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous considérons l'adaptation du modèle de traduction d'un système SMT basé sur les phrases. Alors que les systèmes de traduction basés sur des règles s'appuient sur des règles et des ressources linguistiques construites à cet effet, les systèmes SMT peuvent être développés sans nécessiter de connaissances linguistiques spécifiques et ne reposent que sur des données bilingues alignées (bitextes) et de grands textes monolingues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>However, while monolingual data is usually available in large amounts and for a variety of tasks, bilingual texts are a sparse resource for most language pairs. Current parallel corpora mostly come from one domain (proceedings of the Canadian or European Parliament, or of the United Nations).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, bien que les données monolingues soient généralement disponibles en grande quantité et pour une variété de tâches, les textes bilingues sont une ressource rare pour la plupart des paires de langues. Les corpus parallèles actuels proviennent pour la plupart d'un domaine (procès-verbaux du Parlement canadien ou européen, ou des Nations Unies).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>This is problematic when SMT systems trained on such corpora are used for general translations, as the language jargon heavily used in these corpora is not appropriate for everyday life translations or translations in some other domain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela pose problème lorsque les systèmes SMT formés sur de tels corpus sont utilisés pour des traductions générales, car le jargon linguistique fortement utilisé dans ces corpus n'est pas approprié pour des traductions de la vie quotidienne ou dans d'autres domaines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>This problem could be attacked by either searching for more in-domain training data, e.g. by exploring comparable corpora or the WEB, or by adapting the translation model to the task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce problème peut être résolu en recherchant plus de données de formation dans le domaine, par exemple en explorant des corpus comparables ou sur le WEB, ou en adaptant le modèle de traduction à la tâche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>In this work we consider translation model adaptation without using additional bilingual data .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous considérons l'adaptation du modèle de traduction sans utiliser de ressources bilingues supplémentaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>One can distinguish two types of translation model adaptation: first, adding new source words or/and new translations to the model; and second, modifying the probabilities of the existing model to better fit the topic of the task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut distinguer deux types d'adaptation du modèle de traduction : premièrement, on ajoute de nouveaux mots en langue source ou de nouvelles traductions ; et deuxièmement, on modifie les probabilités du modèle existant pour qu'elles conviennent mieux au domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>These two directions are complementary and could be simultaneously applied.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces deux directions sont complémentaires et peuvent être effectuées simultanément.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>In this work we focus on the second type of adaptation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette étude, nous nous concentrons sur le second type d'adaptation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>A common way to modify a statistical model is to use a mixture model and to optimize the coefficients to the adaptation domain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une technique classique pour adapter un modèle statistique consiste à utiliser un mélange de plusieurs modèles et à optimiser les coefficients d’interpolation à la tâche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>This was investigated in the framework of SMT by several authors, for instance for word alignment (Civera and Juan, 2007), for language modeling (Zhao et al., 2004; Koehn and Schroeder, 2007) and to a lesser extent for the translation model (Foster and Kuhn, 2007; Chen et al., 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci a été étudié par plusieurs auteurs dans le cadre de la traduction statistique, par exemple pour l’alignement des mots (Civera &amp; Juan, 2007), pour la modélisation linguistique (Zhao et al. , 2004; Koehn &amp; Schroeder, 2007), et pour le modèle de traduction (Foster &amp; Kuhn, 2007; Chen et al. , 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>This mixture approach has the advantage that only few parameters need to be modified, the mixture coefficients.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'avantage de cette approche consiste dans le fait que peu de paramètres sont modifiés, i.e. les coefficients des mélanges.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>On the other hand, many translation probabilities are modified at once and it is not possible to selectively modify the probabilities of particular phrases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, beaucoup de probabilités sont modifiées en même temps et il n’est pas possible de modifier sélectivement la probabilité d’une traduction particulière.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>Comparable corpora are commonly used to find additional parallel texts, candidate sentences being often identified with help of information retrieval techniques, for instance (Hildebrand et al., 2005).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des corpus comparables sont couramment utilisés pour trouver des textes parallèles supplémentaires, les phrases candidates étant souvent identifiées à l'aide de techniques de recherche d'information, par exemple (Hildebrand et al., 2005).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>Recently, a similar idea was applied to adapt the translation and language model using monolingual texts in the target language (Snover et al., 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Récemment, une technique similaire a été mise en œuvre pour adapter le modèle de traduction et de langage avec des textes monolingues dans la langue source (Snover et al. , 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>Cross-lingual information retrieval was applied to find texts in the target language that are related to the domain of the source texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une recherche d'information interlingue a été appliquée pour trouver des textes dans la langue cible qui correspondent au domaine des textes dans la langue source.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>However, it was difficult to get the alignments between the source and target phrases and an over-generalizing IBM1-style approach was used.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, il est difficile de trouver les alignements entre les phrases en langue source et cible, et un modèle de type IBM-1 a été utilisé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>Another direction of research is self-enhancing of the translation model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une autre direction de recherche consiste dans l’auto-amélioration du modèle de traduction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>This was first proposed by (Ueffing, 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci a été proposé la première fois par (Ueffing, 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>The idea is to translate the test data, to filter the translations with help of a confidence score and to use the most reliable ones to train an additional small phrase table that is jointly used with the generic phrase table.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'idée consiste à traduire les données de test, à filtrer les traductions avec une mesure de confiance et à utiliser les meilleures traductions pour entraîner un nouveau (petit) modèle de traduction qui est utilisé conjointement avec la table de traduction générique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>This could be also seen as a mixture model with the in-domain component being build on-the-fly for each test set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela peut également être considéré comme un modèle de mélange dont la composante en domaine est construite sur-le-champ pour chaque jeu de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>In practice, such an approach is probably only feasible when large amounts of test data are collected and processed at once, e.g. a typical evaluation set up with a test set of about 50k words. This method of self-enhancing the translation model seems to be more difficult to apply for on-line SMT, e.g. a WEB service, since often the translation of some sentences only is requested.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En pratique, une telle approche n'est probablement possible que lorsqu'un grand nombre de données de test sont collectées et traitées en une seule fois, par exemple lors d'une évaluation typique avec un jeu de test d'environ 50 000 mots. Cette méthode d'amélioration de la qualité du modèle de traduction semble plus difficile à appliquer dans le cadre d'un service de traduction en ligne, par exemple un service WEB, car la traduction de quelques phrases seulement est souvent demandée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>In follow up work, this approach was refined (Ueffing, 2007). Domain adaptation was also performed simultaneously for the translation, language and reordering model (Chen et al., 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre d'un travail de suivi, cette approche a été améliorée (Ueffing, 2007). L'adaptation du domaine a également été effectuée simultanément pour le modèle de traduction, de langage et de réorganisation (Chen et al., 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>A somehow related approach was named lightlysupervised training (Schwenk, 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une autre approche comparable est l’apprentissage légèrement supervisé (Schwenk, 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>In that work an SMT system is used to translate large amounts of monolingual texts, to filter them and to add them to the translation model training data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, un système de traduction statistique est utilisé pour traduire de grandes quantités de textes monolingues, pour les filtrer et pour les ajouter aux données d'entraînement du modèle de traduction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>We could obtain small improvements in the BLEU score in a French/English translation system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons pu obtenir de petites améliorations du score BLEU dans un système de traduction français/anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>Although this technique seems to be close to self enhancing as proposed by (Ueffing, 2006), there is a conceptual difference.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que cette technique semble être proche de l'auto-amélioration telle que proposée par (Ueffing, 2006), il y a une différence conceptuelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>We do not use the test data to adapt the translation model, but large amounts of monolingual training data in the source language and we create a complete new model that can be applied to any test data without additional modification of the system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous n'utilisons pas les données de test pour adapter le modèle de traduction, mais un grand corpus monolingue. Nous créons un tout nouveau modèle qui peut être appliqué sur tout corpus de test sans modification supplémentaire du système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>This kind of adapted system can be used in WEB service.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce type de système adapté peut être utilisé dans un service de traduction sur Internet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we use the same type of approach to adapt an generic Arabic/French translation system to the news domain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous utilisons le même type d'approche pour adapter un système de traduction générique de l'arabe vers le français au domaine des nouvelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>This task is interesting for several reasons: there is only a limited amount of in-domain bitexts available (about 1.2M words), but large amounts of out-of-domain bitexts ( ≈ 150M words of UN data) and both languages have a rich morphology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette tâche est intéressante pour plusieurs raisons : il n'y a qu'une quantité limitée de bit-textes dans le domaine (environ 1,2 M de mots), mais de grandes quantités de bit-textes hors du domaine (≈ 150 M de mots de données de l'ONU) et les deux langues ont une morphologie riche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>Usually, the Arabic source words are decomposed to detach pre- and suffixes. This helps to significantly reduce the size of the translation vocabulary and is reported to improve the translation quality.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Habituellement, les mots source en arabe sont décomposés pour séparer les préfixes et les suffixes. Cela permet de diminuer considérablement la taille du vocabulaire de traduction et améliore la qualité de la traduction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>This morphological decomposition also results in many different and infrequent phrases which may lead to bad relative frequency estimates of the phrase translation probabilities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette décomposition morphologique donne également beaucoup de phrases différentes et peu fréquentes, ce qui peut entraîner une mauvaise estimation des probabilités de traduction par fréquence relative.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>We are aiming in improving those estimates by using large amount of monolingual in-domain data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre but est d’améliorer ces estimations en utilisant de grandes quantités de données monolingues dans le domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>Finally, there seems to be a real need to translate between Arabic and French for the population in the Mediterranean area.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, il semble exister un réel besoin de traduction entre l'arabe et le français pour la population de la zone méditerranéenne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>This paper is organized as follows.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le présent document est organisé comme suit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>In the next section we first describe the considered task and the available bilingual and monolingual resources.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la section suivante, nous décrivons d'abord la tâche considérée et les ressources bilingues et monolingues disponibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Section 3 describes the baseline SMT systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section 3 décrit les systèmes de SMT de référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>The following section describe our adaptation technique.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section suivante décrit notre technique d'adaptation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>Results are summarized in section 5 and the paper concludes with a discussion and perspectives of this work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats sont résumés dans la section 5 et l'article se termine par une discussion et des perspectives de ce travail.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>2 Task Description and resources</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Description de la tâche et ressources</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we consider the translation of news texts from Arabic into French.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous considérons la traduction de textes d'actualité de l'arabe vers le français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>We are not aware of easily available aligned parallel corpora for this language pair.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous ne connaissons pas de corpus parallèles alignés facilement disponibles pour cette paire de langues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>Fortunately, Arabic and French are both official languages of the United Nations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Heureusement, l'arabe et le français sont les deux langues officielles des Nations unies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>We crawled data from various sources of the United Nations over the period 1988-2008.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons analysé des données provenant de diverses sources des Nations Unies sur la période 1988-2008.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>This totals in almost 150M Arabic words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela représente près de 150 millions de mots en arabe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>The Arabic and French texts were automatically sentence aligned.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les textes en arabe et en français ont été automatiquement alignés en fonction des phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>This amount of parallel texts is usually considered as more than sufficient to train an SMT system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette quantité de textes parallèles est généralement considérée comme plus que suffisante pour former un système SMT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>Note however, that a particular jargon is used in the UN texts that is not appropriate for news-text translation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notez cependant qu'un jargon particulier est utilisé dans les textes de l'ONU qui n'est pas approprié pour la traduction de textes d'actualité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>The French TRAMES[1] project considered the translation of Arabic Speeches to French.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le projet français TRAMES[1] a envisagé la traduction de discours arabes en français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>In the framework of this project, about 90h of Arabic TV and radio broadcast news were recorded, transcribed and translated into French.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre de ce projet, environ 90 heures d'émissions de télévision et de radios arabes ont été enregistrées, transcrites et traduites en français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>The sources are Orient, Qatar, BBC, Alarabiya, Aljazeera and Alalam.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les sources sont Orient, Qatar, BBC, Alarabiya, Aljazeera et Alalam.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>These high-quality domain specific bitexts of about 262k Arabic words were made available to us by the DGA.[2]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces bites de haute qualité spécifiques à un domaine, d'environ 262 000 mots en arabe, nous ont été fournis par la DGA.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>Additional bilingual training data was obtained from the Project Syndicate WEB-site.[3]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des données de formation bilingue supplémentaires ont été obtenues à partir du site Web du Project Syndicate.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>This data source is already used to build SMT systems to translate between European languages, in particular in the framework of the evaluations organized in junction with the workshops on statistical machine translation (Callison-Burch et al., 2007; CallisonBurch et al., 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette source de données est déjà utilisée pour construire des systèmes SMT de traduction entre langues européennes, notamment dans le cadre des évaluations organisées en jumelage avec les ateliers de TM statistique (Callison-Burch et al., 2007 ; Callison-Burch et al., 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>Some of the texts are also translated into Arabic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certains textes sont également traduits en arabe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>The scripts to access this WEBsite were kindly made available by P. Koehn. We crawled and aligned a total of 1.6M words. Note that these texts are not exactly broadcast news texts. The characteristics of the translation model training data is summarized in table 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les scripts pour accéder à ce site web ont été gentiment mis à disposition par P. Koehn. Nous avons parcouru et aligné un total de 1,6 M de mots. Notez que ces textes ne sont pas exactement des textes de nouvelles diffusées. Les caractéristiques des données d'entraînement du modèle de traduction sont résumées dans le tableau 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>The number of words is given after tokenization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le nombre de mots est indiqué après la tokenisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Characteristics of the available bitexts Table 2: Characteristics of the development and test set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 : Caractéristiques des bitexte disponibles Tableau 2 : Caractéristiques de l’ensemble de développement et de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>The DGA also provided a test set that was created in the same way than the in-domain bitexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La DGA a également fourni un jeu de tests créé de la même manière que les bitranscriptions en domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>Four high-quality reference translations are available.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quatre traductions de référence de haute qualité sont disponibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>We randomly split this data into a development set for system tuning and an internal test set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons divisé ces données de manière aléatoire en un jeu de données de développement pour le réglage du système et un jeu de données de test interne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>The details of the development and test set are given in Table 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les détails du développement et du jeu de données d'essai sont fournis dans le tableau 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>We are only aware of one other large Arabic/French news translation system, the one that was developed during the TRAMES project (Hasan and Ney, 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous ne connaissons qu'un autre système de traduction de nouvelles en arabe/français, celui qui a été développé dans le cadre du projet TRAMES (Hasan et Ney, 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>In that work, results are reported on the same test set, but different bitexts for training were used, namely the TRAMES bitexts, UN data from the period 2001 to April 2007, archives of Amnesty International and articles from Le Monde Diplomatique.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette étude, les résultats sont rapportés sur le même ensemble de tests, mais différents bitxtes de formation ont été utilisés, à savoir les bitxtes TRAMES, les données de l'ONU de la période 2001 à avril 2007, les archives d'Amnesty International et des articles du Monde Diplomatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>The authors report a BLEU score of 41.1 on the whole test data of 466 lines.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les auteurs rapportent un score BLEU de 41,1 sur l'ensemble des données d'essai de 466 lignes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>Tuning was done on some held-out data which was not exactly specified.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le réglage a été effectué sur des données non divulguées qui n'ont pas été précisées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>Due to the differences in the resources used by both systems, it is of course not possible to directly compare the results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En raison des différences dans les ressources utilisées par les deux systèmes, il n'est bien entendu pas possible de comparer directement les résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, we can probably infer that MT systems achieving BLEU scores close to 42 on this test set are state-of-the-art.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, nous pouvons probablement déduire que les systèmes de TM atteignant des scores BLEU proches de 42 sur cet ensemble d'essai sont à la pointe de la technologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>This is also the range of scores obtained by the best systems in the NIST 2008 evaluations when translating from Arabic to English.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est également la fourchette de scores obtenus par les meilleurs systèmes lors des évaluations NIST 2008 lors de la traduction de l'arabe vers l'anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>Translation from Arabic to French could be also approached by pivoting through English, but we don’t have comparable BLEU scores for this kind of approach.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La traduction de l'arabe vers le français peut également être abordée en passant par l'anglais, mais nous n'avons pas de scores BLEU comparables pour ce type d'approche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>3 Baseline system</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Système de référence</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>The baseline system is a standard phrase-based SMT system based on the the Moses SMT toolkit (Koehn et al., 2007).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système de référence est un système SMT basé sur des phrases standard, basé sur le kit d'outils SMT Moses (Koehn et al., 2007).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>It uses fourteen features functions, namely phrase and lexical translation probabilities in both directions, seven features for the lexicalized distortion model, a word and a phrase penalty, and a target language model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle utilise quatorze fonctions caractéristiques, à savoir les probabilités de traduction et lexicales dans les deux directions, sept fonctions pour le modèle de distorsion lexicalisé, une pénalité sur les mots et les groupes de mots, et une fonction pour le modèle de langue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>It constructed as follows. First, word alignments in both directions are calculated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les systèmes sont construits de la façon suivante : d’abord, les alignements de mots dans les deux directions sont calculés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>We used a multi-threaded version of the GIZA++ tool (Gao and Vogel, 2008).[4] This speeds up the process and corrects an error of GIZA++ that can appear with rare words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé une version multi-thread de l'outil GIZA++ (Gao et Vogel, 2008).[4] Cela accélère le processus et corrige une erreur de GIZA++ qui peut apparaître avec des mots rares.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>Phrases and lexical reorderings are extracted using the default settings of the Moses toolkit.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les phrases et les réordonnements lexicaux sont extraits avec les paramètres par défaut de l’outil Moses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>All the bitexts were concatenated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous les bit-textes ont été concaténés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>The parameters of Moses are tuned on the development data using the CMERT tool.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les paramètres de Moses sont ajustés sur les données de développement à l'aide de l'outil CMERT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>3.1 Tokenization</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1 Tokenisation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>There is a large body of work in the literature showing that a morphological decomposition of the Arabic words can improve the word coverage and by these means the translation quality, see for instance (Habash and Sadat, 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il existe un grand nombre de travaux dans la littérature montrant qu'une décomposition morphologique des mots arabes peut améliorer la couverture des mots et par conséquent la qualité de la traduction, voir par exemple (Habash et Sadat, 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>It is clear that such a decomposition is most helpful when the translation model training data is limited, but this is less obvious for tasks where several hundreds of millions of words of bitexts are available.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est clair qu'une telle décomposition est très utile lorsque les données d'entraînement du modèle de traduction sont limitées, mais ce n'est pas aussi évident pour les tâches pour lesquelles plusieurs centaines de millions de mots de bitextes sont disponibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>Most of the published work is based on the freely available tools, like the Buckwalter transliterator and the MADA and TOKAN tools for morphological analysis from Columbia University.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La plupart des travaux publiés sont basés sur des outils disponibles gratuitement, tels que l'analyseur Buckwalter et les outils MADA et TOKAN pour l'analyse morphologique de l'université de Columbia.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>In this work, we compare two different tokenization of the Arabic source text: a full word mode and the morphological decomposition provided by the sentence analysis module of SYSTRAN’s rulebased Arabic/English translation software.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le présent travail, nous comparons deux types de segmentation différents du texte source arabe : un mode de mot complet et la décomposition morphologique fournie par le module d'analyse de la phrase du logiciel de traduction arabe/anglais basé sur des règles de l'entreprise SYSTRAN.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>Sentence analysis represents a large share of the computations in a rule-based system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'analyse de la phrase représente une grande partie des calculs dans un système basé sur des règles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>This process first applies decomposition rules coupled with a word dictionary.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce processus applique d’abord des règles de décomposition couplées à un dictionnaire de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>For words that are not known in the dictionary, the most likely decomposition is guessed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les mots absents du dictionnaire, la décomposition la plus probable est estimée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>In general, all possible decompositions of each word are generated and then filtered in the context of the sentence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De façon générale, toutes les décompositions possibles de chaque mot sont générées et filtrées en utilisant le contexte de la phrase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>This step uses lexical knowledge and a global analysis of the sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette étape se base sur une analyse globale de la phrase ainsi que des connaissances lexicales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>This morphological decomposition drastically reduced the vocabulary of the Arabic bitexts: it was almost divided by two.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette décomposition morphologique a drastiquement réduit le vocabulaire des bit-textes arabes : il a été presque divisé par deux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>The French texts were tokenized using the tools of the Moses suite.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les textes français ont été tokénisés avec les outils de la suite Moses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>Punctuation and case were preserved.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La ponctuation et la casse sont préservées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>3.2 LM training</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2 Formation du LM</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>In contrast to the translation model, many resources are available to train a LM optimized on French broadcast news texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contrairement au modèle de traduction, de nombreuses ressources sont disponibles pour former un LM optimisé sur des textes de nouvelles télévisées françaises.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>We used the French side of the bitexts, data form the European and the Canadian parliament, news-data crawled in the framework for the 2009 WMT evaluation,[5] other WEB data collected by ourselves and finally LDC’s Gigaword corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé la version française des bitextes, les données du Parlement européen et du Parlement canadien, les données de nouvelles collectées dans le cadre de l'évaluation WMT de 2009[5], d'autres données collectées par nous-mêmes et enfin le corpus Gigaword de LDC.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>Separate 4-gram back-off LMs were build on each data source with the SRI LM toolkit (Stolcke, 2002) and then linearly interpolated, optimizing the coefficients with an EM procedure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des LM de rétrogradation de 4 grammes ont été construits sur chaque source de données avec le kit SRI LM (Stolcke, 2002) et ensuite interpolés linéairement, en optimisant les coefficients avec une procédure EM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>The perplexities of these LMs are given in Table 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les perplexités de ces LM sont données dans le tableau 3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>Table 3: LM training data, perplexities and interpolation coefficients (NC=news-commentary, AFP and APW are from LDC’s Gigaword corpus)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 3 : données d'entraînement LM, perplexités et coefficients d'interpolation (NC=news-commentary, AFP et APW sont issus du corpus Gigaword de LDC)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>4 Translation model adaptation by lightly-supervised training</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Adaptation du modèle de traduction par formation légèrement supervisée</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>The goal of this work is to adapt the translation model without using additional bilingual data. Instead we will use in-domain monolingual data in the source language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le but de ce travail est l'adaptation du modèle de traduction sans données bilingues supplémentaires, mais avec des données monolingues dans la langue source.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>Usually it is relatively easy to obtain large collections of such data, in particular in the news domain as considered in this work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Habituellement, il est bien plus facile de trouver de tels textes, en particulier lorsqu’il s’agit de textes du domaine des actualités comme dans ce travail.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>We use parts of the LDC Arabic Gigaword corpus, but more recent texts could be easily found on the Internet.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons ici des parties du corpus Gigaword en arabe du LDC, mais des textes plus récents peuvent être facilement trouvés sur Internet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>These texts are translated by an initial, unadapted SMT system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces textes sont traduits par un système SMT initial et non adapté.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>We then need to filter the automatic translations in order to keep only the “good ones” for addition to the translation model training data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, les traductions automatiques sont filtrées afin de ne garder que les « meilleures » pour l'ajout aux données d'apprentissage du modèle de traduction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>This selection could take advantage of word-based confidence scores (Ueffing, 2007).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette sélection pourrait être basée sur des scores de confiance au niveau des mots (Ueffing, 2007).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>We use the sentencelength normalized log-likelihoods of the decoder.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé le logarithme de la vraisemblance fourni par le décodeur, normalisé par le nombre de mots dans chaque phrase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>These selected translations are used as additional indomain bitexts and the standard procedure to build a new SMT system is performed, i.e. word alignment with GIZA++, phrase extraction and tuning of the system parameters.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces traductions sélectionnées sont utilisées comme bitextes in-domain supplémentaires et la procédure standard de construction d'un nouveau système SMT est effectuée, c'est-à-dire l'alignement des mots par GIZA++, l'extraction des phrases et l'optimisation des paramètres du système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>Alternately, we could reuse the alignments established by the translation process since the Moses decoder is able to output the phrase and word alignments .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Alternativement, on pourrait réutiliser les alignements déterminés par le processus de traduction puisque le décodeur Moses est capable de produire les alignements de phrases et de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>This would speed up the process of creating the adapted SMT system since we skip the timeconsuming word alignment performed by GIZA++.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela pourrait accélérer le processus de création du système SMT adapté puisque nous omettons l'étape de l'alignement des mots effectué par GIZA++.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>Table 4: Characteristics of the available monolingual Gigaword corpora (number of words).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 4 présente les caractéristiques des corpus monolingues Gigaword disponibles (nombre de mots).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>It could also be that the decoder-induced word alignments are more appropriate than those performed by GIZA++.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il se pourrait également que les alignements de mots induits par le décodage soient plus appropriés que ceux effectués par GIZA++.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>This was partially investigated in the framework of pivot translation to produce artificially bitexts in another language (Bertoldi et al., 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela a été partiellement étudié dans le cadre de la traduction pivot pour produire artificiellement des bitextes dans une autre langue (Bertoldi et al., 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>Finally, instead of only using the 1-best translation we could also use the n -best list.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, au lieu d'utiliser seulement la meilleure traduction, nous pourrions également utiliser la liste des n meilleures traductions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>LDC’s Arabic and French Gigaword corpora are described in Table 4.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les corpus Gigaword en anglais et en français de LDC sont décrits dans le tableau 4.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>There is only one source that does exist in both languages: the AFP collection.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il n'y a qu'une seule source qui existe dans les deux langues : la collection AFP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>It is likely that the Arabic and French texts partially cover the same facts, but they are usually not direct translations.[6]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est probable que les textes en arabe et en français couvrent partiellement les mêmes faits, mais ils ne sont pas directement traduits.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>In fact, we were informed that journalists at AFP have the possibility to freely change the sentences when they report on a fact based on text already available in another language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fait, nous avons été informés que les journalistes de l'AFP ont la possibilité de modifier librement les phrases lorsqu'ils rapportent un fait basé sur un texte déjà disponible dans une autre langue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, it can be expected that using these texts in the target language model helps the SMT system to produce good translations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, on peut s'attendre à ce que l'utilisation de ces textes dans le modèle de langue cible aide le système SMT à produire de bonnes traductions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>This language model training data can be considered as some form of light supervision and we will therefore use the term lightly-supervised training (Schwenk, 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces données d'entraînement du modèle de langage peuvent être considérées comme une forme de supervision légère et nous utiliserons donc le terme d'apprentissage légèrement supervisé (Schwenk, 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>This can be compared to the research in speech recognition where the same term was used for supervision that either comes from approximate transcriptions of the audio signal (closed captions) or related language model training data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela peut être comparé à la recherche en reconnaissance vocale où le même terme était utilisé pour la supervision qui provient soit de transcriptions approximatives du signal audio (sous-titres), soit de données de formation de modèle linguistique connexes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>In this work, we have processed the AFP Arabic text only, but the other texts (ASB, HYT, … ) could be processed in the same manner.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous avons traité uniquement le texte en arabe de l'AFP, mais les autres textes (ASB, HYT, ...) pourraient être traités de la même manière.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>In fact it is an interesting question whether the availability of related or even “comparable” texts for the target language model is a necessary condition for our approach to work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fait, il est intéressant de se demander si la disponibilité de textes apparentés ou même « comparables » pour le modèle de langue cible est une condition nécessaire pour que notre approche fonctionne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>All these issues will be explored in future research.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous ces sujets seront explorés dans les recherches futures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>5 Experimental Evaluation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Évaluation expérimentale</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>We first performed experiments using different amounts of bitexts to train the translation model and analyzed the benefits of the morphological decomposition of the Arabic words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons d'abord effectué des expériences en utilisant différentes quantités de bitextes pour former le modèle de traduction et analysé les avantages de la décomposition morphologique des mots arabes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>The results are summarized in Table 5.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats sont résumés dans le tableau 5.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>The TRAMES training corpus contains several lines with more than 100 words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus de formation TRAMES contient plusieurs lignes avec plus de 100 mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>These can’t be processed by the GIZA++ tool and the were discarded.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces données ne peuvent pas être traitées par l'outil GIZA++ et ont été supprimées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>This was the case for about 6% of the data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'était le cas pour environ 6 % des données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>In future research, we will try to split those lines into shorter sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les recherches futures, nous essaierons de diviser ces lignes en phrases plus courtes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>As expected, the morphological decomposition of the Arabic words is very helpful when only a small amount of training data is available: using only the TRAMES and news-commentary in-domain data we observed an improvement of 4.6 BLEU points (first and second line in Table 5).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme prévu, la décomposition morphologique des mots arabes est très utile lorsque seuls quelques exemples de données d'apprentissage sont disponibles : en utilisant uniquement les données de TRAMES et de commentaires de nouvelles, nous avons observé une amélioration de 4,6 points BLEU (première et deuxième ligne du tableau 5).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>Note that in this case we have actually less training data since the morphological decomposition leads to longer phrases out of which many are discarded by the 100 words limit of GIZA++.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notez que dans ce cas, nous avons en fait moins de données d'entraînement puisque la décomposition morphologique conduit à des phrases plus longues, dont un grand nombre sont éliminées par la limite de 100 mots de GIZA++.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>Somewhat surprisingly, the morphological decomposition still achieves a significant improvement of 1 BLEU point when more than 200M words of bitexts are available (last two lines in Table 5).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De manière quelque peu surprenante, la décomposition morphologique atteint toujours une amélioration significative de 1 point BLEU lorsqu'il y a plus de 200 M de mots de bitexte disponibles (dernières deux lignes du tableau 5).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>5.1 Translation model adaptation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.1 Adaptation du modèle de traduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>Table 5: BLEU scores for different unadapted systems (NC=news-commentary). Figure 1: BLEU scores when adding automatic translations to the TRAMES and NC bitexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 5 présente les scores BLEU pour différents systèmes non adaptés (NC = news-commentary). La figure 1 présente les scores BLEU lors de l’ajout de traductions automatiques aux bitextes TRAMES et NC.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>Table 6: Improvements obtained by the automatically adapted systems (BLEU scores).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 6 : Améliorations obtenues par les systèmes adaptés automatiquement (scores BLEU).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>The best system we were able to build with all human provided translations was used to translate all the AFP news texts from Arabic to French.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le meilleur système que nous avons pu construire avec toutes les traductions fournies par des humains a été utilisé pour traduire tous les textes d'actualité de l'AFP de l'arabe au français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>The phrase table of this system has 329M entries and occupies 7.9GB on disk (gzipped).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau de phrases de ce système compte 329 M d'entrées et occupe 7,9 Go sur le disque (gzip).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>Translating the whole AFP Gigaword corpus with such a large system is a computational challenge since it is impossible to charge the whole phrase table into memory. The Moses system supports two procedures to deal with this problem: filtering of the phrase table or binary on-disk phrase tables. Neither technique can be applied here.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La traduction de l'ensemble du corpus AFP Gigaword avec un système aussi volumineux est un défi informatique puisqu'il est impossible de charger la totalité du tableau de phrases en mémoire. Le système Moses prend en charge deux procédures pour résoudre ce problème : le filtrage du tableau de phrases ou les tableaux de phrases binaires sur disque. Aucune de ces techniques ne peut être appliquée ici.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>The phrase table is still too big in the first case and the binary representation of the whole phrase table occupies too much space on disk.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le premier cas, le tableau de phrases est encore trop volumineux et la représentation binaire de l'intégralité du tableau de phrases occupe trop d'espace sur le disque.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>This problem could be eventually approached with a distributed representation of the data structures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce problème pourrait être résolu avec une représentation distribuée des structures de données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>We finally adopted a combination of both techniques: the AFP corpus is split into parts with 50k lines (approximately 1.5M words), the phrase table is filtered for this data and then binarized.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons finalement adopté une combinaison des deux techniques : le corpus AFP est divisé en parties de 50 000 lignes (environ 1,5 million de mots), la table de phrases est filtrée pour ces données et ensuite binarisée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>This made it possible to load the LM into memory and to have a process size of less then 20GB.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela a permis de charger le LM en mémoire et d'avoir une taille de processus de moins de 20 Go.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>The total translation time was more than 2700 hours.[7] These automatic translations were filtered according to the sentence-length normalized log-likelihood and the most likely ones were used as bitexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le temps de traduction total était de plus de 2700 heures.[7] Ces traductions automatiques ont été filtrées en fonction de la log-vraisemblance normalisée de la longueur de la phrase et les plus vraisemblables ont été utilisées comme bitextes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>Different amounts of data can be obtained by varying the threshold on the likelihood.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Différentes quantités de données peuvent être obtenues en variant le seuil de probabilité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>The BLEU scores on the development and test data in function of the total size of the bitexts are shown in figure 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les scores BLEU sur les données de développement et de test en fonction de la taille totale des bitextes sont présentés dans la figure 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>In these experiments we only use the in-domain humanprovided bitexts (TRAMES and news-commentary) – the UN data being replaced by the automatic translations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ces expériences, nous n'utilisons que les bitextes fournis par des humains du domaine (TRAMES et news-commentary) - les données de l'ONU étant remplacées par des traductions automatiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>The best value on the development data was obtained for a total of 48M words of bitexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La meilleure valeur sur les données de développement a été obtenue pour un total de 48 M de mots de bitèques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>The BLEU score on the development data is 45.44 and 43.68 on the test data respectively (see also table 6).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le score BLEU sur les données de développement est de 45,44 et de 43,68 sur les données d'essai respectivement (voir également le tableau 6).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>This is an improvement of 3.5 BLEU points on both data sets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela représente une amélioration de 3,5 points BLEU sur les deux ensembles de données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>We analyzed the phrase table of the original system trained on all human provided data, including UN, and the one of the automatically adapted system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons analysé la table de traduction du système original entraîné sur toutes les données fournies par l'homme, y compris les Nations Unies, et celle du système adapté automatiquement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>This is summarized in table 7.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci est résumé dans le tableau 7.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>The original phrase table had 329M entries out of which 22.9M could be potentially applied on the test data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La table de traduction initiale avait 329M de lignes dont 22,9M pouvaient être potentiellement appliquées aux données de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>The phrase table of the adapted system on the other hand used only 700k out of a total of 8.6M phrases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La table de traduction du système adapté, d’autre part, n’utilise que 700k d’un total de 8,6M d’entrées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>It seems clear that the phrase table obtained by training on the UN data contains many entries that are not useful, or eventually even correspond to wrong translations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il paraît clair que la table de traduction obtenue en entraînant sur les données de l’ONU contient beaucoup d’entrées qui ne sont pas utiles, voire même fausses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>Surprisingly, the phrase table of the adapted system is not only substantially smaller, but even contains about 11% more entries (18029 with respect to 16263).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est surprenant de voir que la table de traduction du système adapté soit non seulement plus petite, mais qu'elle contienne même 11% de segments de la langue source de plus (18029 par rapport à 16263).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>All these entries correspond to new sequences of known words since lightlysupervised training cannot extend the source or target side vocabulary.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutes ces entrées correspondent aux nouvelles séquences de mots connus puisque l'apprentissage légèrement supervisé ne permet pas d'augmenter le vocabulaire des mots source ou cible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>We conjecture that this is particularly important with the morphological decomposition of the Arabic words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous supposons que ceci est particulièrement important avec la décomposition morphologique des mots arabes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>This decomposition reduces the vocabulary size of the source language, but produces on the other hand many possible sequences of tokens.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette décomposition permet de réduire considérablement le vocabulaire de la langue source, mais produit également beaucoup de séquences de tokens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>It seems important to a include sequences of these tokens in the phrase table that appear in in-domain data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il semble important d'inclure dans la table de traduction des séquences de ces mots qui apparaissent dans les données du domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>As a side effect, the smaller phrase-table of the adapted system also leads to a 40% faster translation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme effet de bord, la plus petite table de traduction du système adapté entraîne également un gain de vitesse de la traduction d’environ 40 %.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>Table 7: Characteristics of the phrase tables of the unadapted and adapted system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 7 : Caractéristiques des tables de phrases du système non adapté et adapté.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>In both cases the table was filtered to include only entries that could be applied on the test data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les deux cas, le tableau a été filtré pour n'inclure que les entrées pouvant être appliquées aux données d'essai.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>Figure 2: Example translations from the test set of the baseline and the automatically adapted system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 2 : Exemples de traductions de l’ensemble de test du système de référence et du système adapté automatiquement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>We also give the closest reference translation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous fournissons également la traduction de référence la plus proche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>We compared the translations of the unadapted and adapted systems: the TER is about 30 in both directions, meaning that the outputs differ substantially.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons comparé les traductions du système avant et après adaptation : le TER est à environ 30 dans les deux sens, ce qui signifie que les traductions diffèrent considérablement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>Some example translations are shown in figure 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quelques exemples de traductions sont reproduits dans la figure 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>The adapted system clearly produces better output in these examples.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système adapté produit manifestement de meilleures traductions pour ces exemples.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>There remain of course some errors in these sentences, but we argue that the quality is high enough for an human being to capture most of the meaning of the sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il reste bien sûr quelques erreurs dans ces phrases, mais la qualité des traductions est suffisamment bonne pour que l'être humain puisse comprendre le sens des phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>6 Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>Statistical machine translation is today used to rapidly create automatic translations systems for a variety of tasks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La traduction automatique statistique est aujourd'hui utilisée pour créer rapidement des systèmes de traduction automatique pour de nombreuses tâches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>In principle, we only need aligned example translations and monolingual data in the target language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En principe, on a seulement besoin d'exemples de traductions alignées et de données monolingues dans la langue cible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>However, for many application domains and language pairs there are no appropriate in-domain parallel texts to train the translation model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, pour de nombreux domaines d'application et paires de langues, il n'existe pas de textes parallèles adaptés pour former le modèle de traduction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>On the other hand, large generic bitexts may be available.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’autre part, de grands bitxtes génériques peuvent être disponibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>In this work we consider such a configuration: the translation of broadcast news texts from Arabic to French.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous considérons une telle configuration : la traduction de textes d'actualité de l'arabe vers le français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>We have a little more than 1M words of in-domain bitexts and about 150M words of generic bitexts from the United Nations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous disposons de plus d'un million de mots de bitxtes bidirectionnels dans le domaine et d'environ 150 millions de mots de bitxtes génériques des Nations unies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>This system is automatically adapted to the news domain by using large amounts of monolingual texts , namely LDC’s collection of Arabic AFP texts from 1994 to 2006.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce système est automatiquement adapté au domaine de l’actualité en utilisant de grandes quantités de textes monolingues, à savoir la collection d’AFP en arabe de LDC de 1994 à 2006.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>These texts were processed by the initial SMT system and the most reliable automatic translations were added to the bitexts and a new system was trained.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces textes ont été traités par le système SMT initial et les traductions automatiques les plus fiables ont été ajoutées aux textes parallèles et un nouveau système a été formé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <tuv xml:lang="EN">
+                <seg>By these means we achieved an improvement in the BLEU score of 3.5 points on the test set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Grâce à ces moyens, nous avons obtenu une amélioration de 3,5 points du score BLEU sur l'ensemble de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <tuv xml:lang="EN">
+                <seg>This system actually uses less bitexts than the generic one since the generic UN bitexts are not used any more.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce système utilise en fait moins de bitranscriptions que le système générique puisque les bitranscriptions génériques de l'ONU ne sont plus utilisées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <tuv xml:lang="EN">
+                <seg>An analysis of the created phrase table seems to indicate that the adaptation of the translation model leads to much smaller and more concise phrases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'analyse du tableau de phrases créé semble indiquer que l'adaptation du modèle de traduction conduit à des phrases beaucoup plus courtes et plus concises.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <tuv xml:lang="EN">
+                <seg>Our best system achieves a BLEU score of 43.68 on the test set which compares favorably with other large state-of-the-art systems for this language pair.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre meilleur système atteint un score BLEU de 43,68 sur l'ensemble de test, ce qui se compare favorablement à d'autres grands systèmes de pointe pour cette paire de langues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <tuv xml:lang="EN">
+                <seg>The proposed algorithm is generic and could be applied to other language pairs and applications domains.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'algorithme proposé est générique et pourrait être appliqué à d'autres paires de langues et domaines d'application.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <tuv xml:lang="EN">
+                <seg>We only need a good initial generic SMT system and in-domain monolingual texts in the source language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons seulement besoin d'un bon système SMT générique initial et de textes monolingues dans la langue source.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <tuv xml:lang="EN">
+                <seg>It is interesting to compare our approach to self-learning as proposed in (Ueffing, 2006)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est intéressant de comparer notre approche d'auto-apprentissage à celle proposée dans (Ueffing, 2006)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="195">
+            <tuv xml:lang="EN">
+                <seg>Selflearning was applied to small amounts of test data only while we use several hundreds of million words of training data in the source language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'auto-apprentissage a été appliqué à de petites quantités de données d'essai seulement, tandis que nous utilisons plusieurs centaines de millions de mots de données d'entraînement dans la langue source.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="196">
+            <tuv xml:lang="EN">
+                <seg>We build a complete new phrase table instead of interpolating a small “adapted phrase table” with a generic one.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous construisons une nouvelle table de phrases complète au lieu d’interpoler une petite « table de phrases adaptée » avec une table générique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="197">
+            <tuv xml:lang="EN">
+                <seg>Finally, self-learning was applied during the translation process and must be repeated for each new test data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, l'auto-apprentissage a été appliqué pendant le processus de traduction et doit être répété pour chaque nouvelle donnée d'essai.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="198">
+            <tuv xml:lang="EN">
+                <seg>This is computationally expensive and is difficult to use in on-line translation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela est très gourmand en calcul et difficile à utiliser dans une traduction en ligne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="199">
+            <tuv xml:lang="EN">
+                <seg>The approach proposed in this paper applies translation model adaptation once and builds a new SMT system that can be then applied to any test data (ideally from the same domain).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'approche proposée dans cet article applique une adaptation du modèle de traduction une seule fois et construit un nouveau système SMT qui peut ensuite être appliqué à n'importe quel ensemble de données d'essai (idéalement du même domaine).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="200">
+            <tuv xml:lang="EN">
+                <seg>Several extensions of the proposed approach can be envisioned, namely improved confidence scores for filtering the most reliable translations, processing of n -best lists instead of using the most likely translation only, and reuse of the decoder-induced word alignments instead of rerunning GIZA++. We are currently working on these issues.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs extensions de l'approche proposée peuvent être envisagées, notamment des scores de confiance améliorés pour filtrer les traductions les plus fiables, le traitement des listes des n meilleures hypothèses au lieu de la traduction la plus probable, et la réutilisation des alignements de mots induits par le décodeur au lieu de relancer GIZA++. Nous travaillons actuellement sur ces questions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="201">
+            <tuv xml:lang="EN">
+                <seg>Acknowledgments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Remerciements</seg>
+            </tuv>
+        </tu>
+        <tu tuid="202">
+            <tuv xml:lang="EN">
+                <seg>The Arabic/French corpus of broadcasts news as well as the corresponding test set were made available to us by the DGA.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus parallèle arabe/français de nouvelles de radiodiffusion ainsi que les données de test correspondantes ont été mises à disposition par la DGA.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="203">
+            <tuv xml:lang="EN">
+                <seg>This work has been partially funded by the French Government under the project INSTAR (ANR JCJC06 143038) and the European Commission under the project EuromatrixPlus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce travail a été partiellement financé par le gouvernement français dans le cadre du projet INSTAR (ANR JCJC06 143038) et par la Commission européenne dans le cadre du projet EuromatrixPlus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="204">
+            <tuv xml:lang="EN">
+                <seg>1 Traduction Automatique par Méthodes Statistiques</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Traduction Automatique par Méthodes Statistiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="205">
+            <tuv xml:lang="EN">
+                <seg>2 Direction générale de l’armement</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Direction générale de l’armement</seg>
+            </tuv>
+        </tu>
+        <tu tuid="206">
+            <tuv xml:lang="EN">
+                <seg>3 http://www.project-syndicate.org</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 http://www.project-syndicate.org</seg>
+            </tuv>
+        </tu>
+        <tu tuid="207">
+            <tuv xml:lang="EN">
+                <seg>4 The source is available at http://www.cs.cmu.edu/˜[qing/]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 La source est disponible à l'adresse http://www.cs.cmu.edu/˜[qing/]</seg>
+            </tuv>
+        </tu>
+        <tu tuid="208">
+            <tuv xml:lang="EN">
+                <seg>5 newstrain08 as available on http://www.statmt. org/wmt2009</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 newstrain08 tel que disponible sur http://www.statmt.org/wmt2009</seg>
+            </tuv>
+        </tu>
+        <tu tuid="209">
+            <tuv xml:lang="EN">
+                <seg>6 Note that there are almost four times as much texts in French than in Arabic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Notez qu'il y a presque quatre fois plus de textes en français qu'en arabe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="210">
+            <tuv xml:lang="EN">
+                <seg>7 translation was of course performed in parallel on a cluster.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La traduction a bien sûr été effectuée en parallèle sur un cluster.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,2023 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-TAL-2012-2-Kessler. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/P12-1077.pdf</url_en>
+        <url_fr>https://aclanthology.org/2012.tal-2.3.pdf</url_fr>
+        <title_en>Finding Salient Dates for Building Thematic Timelines</title_en>
+        <title_fr>Extraction de dates saillantes pour la construction de chronologies thématiques [Salient date extraction for building query-based timelines]</title_fr>
+        <docid>TAL-2012-2-Kessler</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Finding Salient Dates for Building Thematic Timelines</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Extraction de dates saillantes pour la construction de chronologies thématiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>We present an approach for detecting salient (important) dates in texts in order to automatically build event timelines from a search query ( e.g. the name of an event or person, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons ici une approche pour la détection de dates saillantes (importantes) dans les textes dans le but de construire automatiquement des chronologies événementielles à partir de requêtes thématiques (_ ex. _le nom d’un événement, d’une personne, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>This work was carried out on a corpus of newswire texts in English provided by the Agence France Presse (AFP).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce travail a été mené sur un corpus de dépêches en anglais fourni par l’Agence France Presse (AFP).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>In order to extract salient dates that warrant inclusion in an event timeline, we first recognize and normalize temporal expressions in texts and then use a machine-learning approach to extract salient dates that relate to a particular topic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d'extraire les dates saillantes qui méritent d'être incluses dans une chronologie événementielle, nous reconnaissons et normalisons d'abord les expressions temporelles dans les textes, puis nous utilisons une approche par apprentissage pour extraire les dates saillantes relatives à un thème donné.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>We focused only on extracting the dates and not the events to which they are related.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous ne nous intéressons pour le moment qu’à l’extraction des dates et non aux événements associés. MOTS-CLÉS : dates saillantes, événements, chronologies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>1 Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Our aim here was to build thematic timelines for a general domain topic defined by a user query.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre but final est de construire des chronologies thématiques pour un sujet général défini par une requête utilisateur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>This task, which involves the extraction of important events, is related to the tasks of Retrospective Event Detection (Yang et al., 1998), or New Event Detection , as defined for example in Topic Detection and Tracking (TDT) campaigns (Allan, 2002).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette tâche, qui implique l’extraction des événements importants, est proche des tâches de Retrospective Event Detection (Yang et al. , 1998) ou New Event Detection , telles que définies dans les campagnes Topic Detection and Tracking (TDT) (Allen, 2002). L’objectif du travail présenté dans cet article est intermédiaire, à savoir l’extraction thématique de dates saillantes . Nous allons décrire dans cette introduction les tenants et les aboutissants de cette tâche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>The majority of systems designed to tackle this task make use of textual information in a bag-ofwords manner. They use little temporal information, generally only using document metadata, such as the document creation time (DCT).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La majorité des systèmes conçus pour la construction de chronologies événementielles utilisent des informations textuelles de manière « sac de mots ». Ils utilisent peu d’informations temporelles, utilisant généralement uniquement les métadonnées du document, comme la date de création du document (DCT).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>The few systems that do make use of temporal information (such as the now discontinued Google timeline), only extract absolute, full dates (that feature a day, month and year).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les quelques systèmes qui utilisent des informations temporelles n’extraient que des dates absolues (celles dont la lecture hors contexte suffit à les placer sur l’axe des temps, comme « 14 juillet 1789 », contrairement à « 14 juillet »).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>In our corpus, described in Section 3.1, we found that only 7% of extracted temporal expressions are absolute dates.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre corpus, décrit à la section 3.1, nous avons constaté que seulement 7 % des expressions temporelles extraites sont des dates absolues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>We distinguish our work from that of previous researchers in that we have focused primarily on extracted temporal information as opposed to other textual content.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre travail se distingue de celui des chercheurs précédents dans la mesure où nous avons principalement mis l'accent sur l'extraction de l'information temporelle par opposition à tout autre contenu textuel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>We show that using linguistic temporal processing helps extract important events in texts. Our system extracts a maximum of temporal information and uses only this information to detect salient dates for the construction of event timelines.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous montrons que l'utilisation d'un traitement temporel linguistique aide à extraire les événements importants dans les textes. Notre système extrait un maximum d'informations temporelles et utilise uniquement ces informations pour détecter les dates importantes pour la construction de lignes de temps d'événements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>Other types of content are used for initial thematic document retrieval.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les autres types de contenus sont utilisés pour la recherche préalable de documents thématiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>Output is a list of dates, ranked from most important to least important with respect to the given topic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En sortie, notre système fournit une liste de dates classées de la plus à la moins importante par rapport au thème de la requête.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>Each date is presented with a set of relevant sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque date est accompagnée d'un ensemble de phrases pertinentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>We can see this work as a new, easily evaluable task of “date extraction”, which is an important component of timeline summarization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons voir ce travail comme une nouvelle tâche facilement évaluable d'« extraction de date », qui est un élément important de la synthèse de la chronologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>In what follows, we first review some of the related work in Section 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la suite, nous commençons par présenter des travaux liés à notre étude dans la section 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>Section 3 presents the resources used and gives an overview of the system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section 3 présente les ressources utilisées et donne un aperçu du système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>The system used for temporal analysis is described in Section 4, and the strategy used for indexing and finding salient dates, as well as the results obtained, are given in Section 5[1] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système utilisé pour l'analyse temporelle est décrit en section 4. Enfin, les approches choisies pour l'indexation et l'extraction des dates saillantes, ainsi que les résultats obtenus, sont présentés dans la section 5[1] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>2 Related Work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Travaux connexes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>The ISO-TimeML language (Pustejovsky et al., 2010) is a specification language for manual annotation of temporal information in texts, but, to the best of our knowledge, it has not yet actually been used in information retrieval systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le langage ISO-TimeML (Pustejovsky et al., 2010) est un langage de spécification pour l’annotation des informations temporelles dans les textes mais, à notre connaissance, il n’a pas encore été utilisé dans des systèmes de recherche d’information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, (Alonso et al., 2007; Alonso, 2008; Kanhabua, 2009) and (Mestl et al., 2009), among others, have highlighted that the analysis of temporal information is often an essential component in text understanding and is useful in a wide range of information retrieval applications.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, Alonso et al. (2007), Alonso (2008), Kanhabua (2009) et Mestl et al. (2009), parmi d’autres, ont souligné le fait que l’analyse des informations temporelles est souvent un composant essentiel dans la compréhension de textes et utile dans un grand nombre d’applications de recherche d’information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>(Harabagiu and Bejan, 2005; Saquete et al., 2009) highlight the importance of processing temporal expressions in Question Answering systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(Harabagiu et Bejan, 2005 ; Saquete et al., 2009) soulignent l'importance du traitement des expressions temporelles pour les systèmes de question-réponse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>For example, in the TREC-10 QA evaluation campaign, more than 10% of questions required an element of temporal processing in order to be correctly processed (Li et al., 2005a).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, dans la campagne d’évaluation TREC-10 pour les systèmes de questionréponse, plus de 10 % des questions nécessitaient un traitement temporel pour pouvoir être traitées correctement (Li et al. , 2005a).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>In multidocument summarization, temporal processing enables a system to detect redundant excerpts from various texts on the same topic and to present results in a relevant chronological order (Barzilay and Elhadad, 2002).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les applications de résumés multidocuments, le traitement temporel permet à un système de détecter les extraits redondants à partir de plusieurs textes traitant du même thème et de présenter les résultats dans un ordre chronologique pertinent (Barzilay et Elhadad, 2002). De plus, les grandes bases de connaissances constituées automatiquement ou semiautomatiquement grâce à l’extraction de l’information contenue dans les textes et qui peuvent être utilisées comme source d’informations encyclopédiques pour des tâches relevant du TAL s’enrichissent aujourd’hui d’une composante temporelle (Wang et al. , 2010).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>Temporal processing is also useful for aiding medical decision-making.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'analyse temporelle est également utile pour aider à la prise de décision médicale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>(Kim and Choi, 2011) present work on the extraction of temporal information in clinical narrative texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(Kim et Choi, 2011) présentent un travail sur l'extraction d'informations temporelles dans des textes narratifs cliniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>Similarly, (Jung et al., 2011) present an end-to-end system that processes clinical records, detects events and constructs timelines of patients’ medical histories.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De la même manière, (Jung et al., 2011) présentent un système qui traite les dossiers cliniques, détecte les événements et construit une chronologie de l’histoire médicale des patients.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>The various editions of the TDT task have given rise to the development of different systems that detect novelty in news streams (Allan, 2002; Kumaran and Allen, 2004; Fung et al., 2005).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les différentes éditions de la tâche TDT ont permis le développement de différents systèmes qui détectent la nouveauté dans les flux d'actualité (Allan, 2002 ; Kumaran et Allen, 2004 ; Fung et al., 2005).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>Most of these systems are based on statistical bag-of-words models that use similarity measures to determine proximity between documents (Li et al., 2005b; Brants et al., 2003).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La plupart de ces systèmes s’appuient sur des modèles statistiques à base de sac de mots utilisant des mesures de similarité pour déterminer la proximité entre les documents (Li et al. , 2005b ; Brants et al. , 2003).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>(Smith, 2002) used spatio-temporal information from texts to detect events from a digital library.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(Smith, 2002) a utilisé des informations spatio-temporelles des textes pour détecter les événements dans une bibliothèque numérique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>His method used place/time collocations and ranked events according to statistical measures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sa méthode s'appuie sur les collocations temps/lieu et classe les événements selon des mesures statistiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>Some efforts have been made for automatically building textual and graphical timelines.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des efforts ont également été faits pour construire automatiquement des chronologies textuelles et graphiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>For example, (Allan et al., 2001) present a system that uses measures of pertinence and novelty to construct timelines that consist of one sentence per date.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, Allen et al. (2001) présentent un système qui utilise des mesures de pertinence et de nouveauté pour construire des chronologies constituées d’une phrase par date.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>(Chieu and Lee, 2004) propose a similar system that extracts events relevant to a query from a collection of documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chieu et Lee (2004) proposent un système similaire qui extrait d’une collection de documents les événements pertinents par rapport à une requête.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>Important events are those reported in a large number of news articles and each event is constructed according to one single query and represented by a set of sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les événements considérés comme importants sont ceux qui sont mentionnés dans un grand nombre d’articles et chaque événement est construit à partir d’une seule requête et représenté par un ensemble de phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>(Swan and Allen, 2000) present an approach to generating graphical timelines that involves extracting clusters of noun phrases and named entities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(Swan et Allen, 2000) proposent une approche pour la génération de chronologies graphiques qui implique l’extraction de clusters de syntagmes nominaux et d’entités nommées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>More recently, (Yan et al., 2011b; Yan et al., 2011a) used a summarizationbased approach to automatically generate timelines, taking into account the evolutionary characteristics of news.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus récemment, Yan et al. (2011b) et Yan et al. (2011a) ont mis en œuvre une approche par résumé pour générer automatiquement des chronologies en prenant en compte les caractéristiques évolutives des actualités. Par ailleurs, les développeurs d’interfaces graphiques se sont récemment intéressés à la dimension temporelle, comme le montre Time Explorer[1] , Dipity[2] ou Time-Surfer (Llorens et al. , 2011). Cependant, la plupart de ces applications ne traitent que les expressions temporelles absolues dans les textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>3 Resources and System Overview</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Description des ressources et du système</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>3.1 AFP Corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1. Corpus de l’AFP</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>For this work, we used a corpus of newswire texts provided by the AFP French news agency.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour ce travail, nous avons utilisé un corpus de dépêches fournies par l'agence de presse française AFP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>The English AFP corpus is composed of 1.3 million texts that span the 2004-2011 period (511 documents/day in average and 426 millions words). Each document is an XML file containing a title, a date of creation (DCT), set of keywords, and textual content split into paragraphs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus anglais AFP est composé de 1,3 million de documents qui couvrent la période 2004-2011 (511 documents par jour en moyenne et 426 millions de mots). Chaque document est un fichier XML contenant un titre, une date de création (DCT), un ensemble de mots-clés et un texte découpé en paragraphes. Le corpus anglais est composé de 1,3 million de documents (en moyenne 511 documents par jour et 426 millions de mots). Le corpus français est lui composé de 1 million de documents (en moyenne 499 documents par jour et 390 millions de mots).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>3.2 AFP Chronologies</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2. Chronologies de l’AFP</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>AFP “chronologies” (textual event timelines) are a specific type of articles written by AFP journalists in order to contextualize current events.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les « chronologies » (lignes du temps textuelles) de l'AFP sont un type spécifique d'articles écrits par des journalistes de l'AFP dans le but de contextualiser des événements actuels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>These chronologies may concern any topic discussed in the media, and consist in a list of dates (typically between 10 and 20) associated with a text describing the related event(s).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces chronologies peuvent concerner n'importe quel sujet discuté dans les médias et se présentent sous la forme d'une liste de dates (généralement entre 10 et 20) associées à un texte décrivant l'événement(s) en question.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>Figure 1 shows an example of such a chronology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 1 présente un exemple de chronologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>Further examples are given in Figure 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’autres exemples sont donnés dans la figure 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>We selected 91 chronologies satisfying the following constraints:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour cela, nous avons sélectionné 91 chronologies satisfaisant les contraintes suivantes :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>- All dates in the chronologies are between 2004 and 2011 to be sure that the related events are described in the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>– toutes les dates des chronologies doivent être comprises entre 2004 et 2011 afin de s’assurer que les événements associés sont bien présents dans le corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>For example, “Chronology of climax to Vietnam War” was excluded because its corresponding dates do not appear in the content of the articles.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, une chronologie sur la guerre du Vietnam a été éliminée car les dates la composant n’apparaissent pas dans le contenu des articles de notre corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>- All dates in the chronology are anterior to the chronology’s creation date.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Toutes les dates de la chronologie sont antérieures à la date de création de la chronologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>For example, the chronology “Space in 2005: A calendar” , published in January 2005 and listing scheduled events, was not selected (because almost no rocket launches finally happened on the expected day).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, la chronologie « Space in 2005 : A calendar » , publiée en janvier 2005 et listant les événements prévus pendant l’année, a été éliminée car la plupart des lancements de fusées n’ont finalement pas eu lieu à la date prévue ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>- The temporal granularity of the chronology is the day.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>– la granularité temporelle des chronologies est le jour.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>For example, “A timeline of how the London transport attacks unfolded” , relating the events hour by hour, is not in our focus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous ne nous intéressons pas aux chronologies relatant, par exemple, des événements heure par heure. Dans le cadre de l’élaboration de notre système, nous nous plaçons sur ce niveau de granularité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: Example of an AFP manual chronology. Figure 2: Examples of AFP chronologies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1 : Exemple de chronologie manuelle AFP. Figure 2 : Exemples de chronologies AFP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>Figure 3: System overview.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 3: Vue d'ensemble du système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>For learning and evaluation purposes, all chronologies were converted to a single XML format.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour assurer une exploitation aisée pour l’apprentissage et l’évaluation de notre système, toutes les chronologies ont été converties dans un format XML unique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>Each document was manually associated with a user search query made up of the keywords required to retrieve the chronology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque document a été associé manuellement à une requête de recherche de l'utilisateur composée des mots-clés nécessaires pour récupérer la chronologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>3.3 System Overview</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3 Présentation du système</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>Figure 3 shows the general architecture of the system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 3 présente l’architecture générale de notre système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>First, pre-processing of the AFP corpus tags and normalizes temporal expressions in each of the articles (step x in the Figure).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, un prétraitement du corpus AFP permet d’annoter et de normaliser les expressions temporelles de chaque article (étape x sur la figure).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>Next, the corpus is indexed by the Lucene search engine[2] (step y).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus ainsi enrichi est indexé par le moteur de recherche Lucene[2] (étape y).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>Given a query, a number of documents are retrieved by Lucene (z).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné une requête, un certain nombre de documents est renvoyé par Lucene (z).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>These documents can be filtered ({), and dates are extracted from the remaining documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces documents peuvent être filtrés ({), et les dates sont extraites des documents restants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>These dates are then ranked in order to show the most important ones to the user (|), together with the sentences that contain them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces dates sont ensuite classées afin de montrer les plus importantes à l’utilisateur (|) accompagnées des phrases qui les contiennent. Toutes ces étapes sont détaillées dans les sections suivantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>4 Temporal and Linguistic Processing</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Analyse temporelle et traitement linguistique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>In this section, we describe the linguistic and temporal information extracted during the pre-processing phase and how the extraction is carried out.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette section, nous décrivons les informations linguistiques et temporelles extraites pendant la phase de prétraitement du corpus et comment cette extraction est menée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>We rely on the powerful linguistic analyzer XIP (A¨ıtMokhtar et al., 2002), that we adapted for our purposes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous nous appuyons sur l’analyseur linguistique puissant XIP (Aït-Mokhtar et al. , 2002) que nous avons adapté pour nos besoins.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>4.1 XIP</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 XIP</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>The linguistic analyzer we use performs a deep syntactic analysis of running text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'analyseur linguistique que nous utilisons réalise une analyse syntaxique profonde des textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>It takes as input XML files and analyzes the textual content enclosed in the various XML tags in different ways that are specified in an XML guide (a file providing instructions to the parser, see (Roux, 2004) for details).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il prend en entrée des fichiers XML et analyse le contenu textuel à l’intérieur de différentes balises XML selon des règles précisées dans un guide XML (un fichier donnant les instructions à l’analyseur, pour plus de détails voir (Roux, 2004)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>XIP performs complete linguistic processing ranging from tokenization to deep grammatical dependency analysis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>XIP réalise un traitement linguistique complet allant de la segmentation jusqu’à l’analyse profonde en dépendances grammaticales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>It also performs named entity recognition (NER) of the most usual named entity categories and recognizes temporal expressions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il réalise aussi une reconnaissance des entités nommées les plus courantes ainsi que des expressions temporelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>Linguistic units manipulated by the parser are either terminal categories or chunks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les unités linguistiques manipulées par l’analyseur sont soit des catégories terminales soit des syntagmes noyaux[4] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>Each of these units is associated with an attribute-value matrix that contains the unit’s relevant morphological, syntactic and semantic information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque unité est associée à une matrice attribut-valeur qui contient les informations morphologiques, syntaxiques et sémantiques de l’unité en question.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>Linguistic constituents are linked by oriented and labelled n-ary relations denoting syntactic or semantic properties of the input text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les unités linguistiques sont reliées par des relations n-aires orientées dénotant les propriétés syntaxiques ou sémantiques du texte en entrée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>A Java API is provided with the parser so that all linguistic structures and relations can be easily manipulated by Java code.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une API Java est fournie avec l’analyseur pour que toutes les structures et relations linguistiques puissent être facilement manipulées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>In the following subsections, we give details of the linguistic information that is used for the detection of salient dates.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les sections suivantes, nous détaillons les informations linguistiques que nous utilisons pour la détection des dates saillantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>4.2 Named Entity Recognition</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2. Reconnaissance des entités nommées</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>Named Entity (NE) Recognition is one of the outputs provided by XIP.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La reconnaissance des entités nommées (NE) est l'une des sorties fournies par XIP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>NEs are represented as unary relations in the parser output.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les entités nommées sont représentées par une relation unaire dans la sortie du parseur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>We used the existing NE recognition module of the English grammar which tags the following NE types: location names , person names and organization names .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons le module de reconnaissance NE existant de la grammaire anglaise qui marque les types suivants : noms de lieux, noms de personnes et noms d'organisations .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>Ambiguous NE types (ambiguity between type location or organization for country names for instance) are also considered.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'ambiguïté pouvant exister entre certains types (entre le type lieu ou organisation pour les noms de pays par exemple) est également prise en compte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>4.3 Temporal Analysis</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.3 Analyse temporelle</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>A previous module for temporal analysis was developed and integrated into the English grammar (Hagège and Tannier, 2008), and evaluated during TempEval campaign (Verhagen et al., 2007).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un module pour l’analyse temporelle avait déjà été développé et intégré à la grammaire anglaise (Hagège et Tannier, 2008) et évalué au cours de la campagne TempEval (Verhagen et al. , 2007). Cet analyseur d’expressions temporelles était uniquement développé pour l’anglais et suivait la norme TimeML (Pustejovsky et al. , 2005).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>This module was adapted for tagging salient dates.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce module a été adapté pour le marquage des dates importantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>Our goal with temporal analysis is to be able to tag and normalize[3] a selected subset of temporal expressions (TEs) which we consider to be relevant for our task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre objectif avec l'analyse temporelle est d'être capable de marquer et de normaliser[3] un sous-ensemble d'expressions temporelles (TE) que nous considérons pertinentes pour notre tâche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>This subset of expressions is described in the following sections.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce sous-ensemble d’expressions est décrit dans les sections suivantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>4.3.1 Absolute Dates</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.3.1. Dates absolues</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>Absolute dates are dates that can be normalized without external or contextual knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les dates absolues sont des dates qui peuvent être normalisées sans connaissance externe ou contextuelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>This is the case, for instance, of “On January 5th 2003” .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C’est le cas, par exemple, de l’expression « le 5 janvier 2003 » .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>In these expressions, all information needed for normalization is contained in the linguistic expression.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce type d’expressions, toutes les informations nécessaires à la normalisation sont contenues dans l’expression linguistique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>However, absolute dates are relatively infrequent in our corpus (7%), so in order to broaden the coverage for the detection of salient dates, we decided to consider relative dates, which are far more frequent.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, les dates absolues sont relativement peu fréquentes dans notre corpus (7 % de toutes les dates extraites en anglais, 12 % en français). Il est donc indispensable de considérer les dates relatives, beaucoup plus fréquentes, afin d’élargir la couverture pour la détection des dates saillantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>4.3.2 DCT-relative Dates</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.3.2. Dates relatives à la DCT</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>DCT-relative temporal expressions are those which are relative to the creation date of the document. This class represents 40% of dates extracted from the AFP corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les expressions temporelles relatives à la DCT (date de création du document) représentent 40 % des dates extraites du corpus AFP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>Unlike the absolute dates, the linguistic expression does not provide all the information needed for normalization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contrairement aux dates absolues, l'expression linguistique ne fournit pas toutes les informations nécessaires à la normalisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>External information is required, in particular, the date which corresponds to the moment of utterance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’autres informations, en particulier la date correspondant au moment d’énonciation, sont nécessaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>In news articles, this is the DCT.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les dépêches, cette date correspond à la DCT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>Two sub-classes of relative TEs can be distinguished. The first sub-class only requires knowledge of the DCT value to perform the normalization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut distinguer deux sous-classes d'expressions temporelles relatives. La première sous-classe ne nécessite que la connaissance de la valeur de la DCT pour effectuer la normalisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>This is the case of expressions like next Friday , which correspond to the calendar date of the first Friday following the DCT. The second sub-class requires further contextual knowledge for normalization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C’est le cas d’expressions comme vendredi prochain qui correspond à la date calendaire du premier vendredi suivant la DCT ; la seconde sous-classe nécessite des connaissances contextuelles pour effectuer la normalisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>For example, on Friday will correspond either to last Friday or to next Friday depending on the context where this expression appears ( e.g. He is expected to come on Friday corresponds to next Friday while He arrived on Friday corresponds to last Friday ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, l’expression vendredi peut correspondre soit à vendredi dernier soit à vendredi prochain selon le contexte où cette expression apparaît (par exemple, Il viendra vendredi correspond à vendredi prochain alors que Il est arrivé vendredi correspond à vendredi dernier ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>In such cases, the tense of the verb that governs the TE is essential for normalization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans de tels cas, le temps du verbe qui gouverne l’expression temporelle est essentiel pour la normalisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>This information is provided by the linguistic analysis carried out by XIP.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette information nous est fournie par l'analyse linguistique effectuée par XIP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>4.3.3 Underspecified Dates</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.3.3 Dates insuffisamment précises</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>Considering the kind of corpus we deal with (news), we decided to consider TEs whose granularity is at least equal to a day.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Compte tenu du type de corpus avec lequel nous travaillons (actualités), nous avons décidé de considérer les TE dont la granularité est au moins égale à une journée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>As a result, TEs were normalized to a numerical YYYYMMDD format (where YYYY corresponds to the year, MM to the month and DD to the day).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En conséquence, les TEs ont été normalisés au format numérique AAAAMMJJ (où AAAA correspond à l'année, MM au mois et JJ au jour).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>In case of TEs with a granularity superior to the day or month, DD and MM fields remain unspecified accordingly. However, these underspecified dates are not used in our experiments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas de TE avec une granularité supérieure à la journée ou au mois, les champs DD et MM restent non spécifiés en conséquence. Cependant, ces dates non spécifiées ne sont pas utilisées dans nos expériences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>4.4 Modality and Reported Speech</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.4 Modalité et discours rapporté</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>An important issue that can affect the calculation of salient dates is the modality associated with timestamped events in text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La modalité associée aux événements datés dans les textes est un point important qui peut affecter le calcul des dates saillantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>For instance, the status of a salient date candidate in a sentence like “The meeting takes place on Friday” has to be distinguished from the one in “The meeting should take place on Friday” or “The meeting will take place on Friday, Mr. Hong said” .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, le statut d'une date saillante dans une phrase comme « La réunion a lieu vendredi » doit être distingué de celui d'une date saillante dans « La réunion devrait avoir lieu vendredi » ou « La réunion aura lieu vendredi, a déclaré M. Hong ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>The time-stamped event meeting takes place is factual in the first example and can be taken as granted.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’événement daté réunion a lieu est factuel dans le premier exemple et peut être considéré comme certain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>In the second and third examples, however, the event does not necessarily occur.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les deux autres exemples, l'événement ne se produit pas nécessairement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>This is expressed by the modality introduced by the modal auxiliary should (second example), or by the use of the future tense or reported speech (third example).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci est exprimé par la modalité introduite par l'auxiliaire modale devrait (deuxième exemple), ou par l'utilisation du futur ou du discours rapporté (troisième exemple). Nous avons voulu prendre en compte ces éléments pour l'extraction des dates saillantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>We annotate TEs with information regarding the factuality of the event they modify.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous annotons les TEs avec des informations concernant la véracité de l'événement qu'ils modifient.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>More specifically, we consider the following features:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus spécifiquement, nous considérons les caractéristiques suivantes :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>Events that are mentioned in the future: If a time-stamped event is in the future tense, we add a specific attribute MODALITY with value FUTURE to the corresponding TE annotation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Événements mentionnés dans le futur : si un événement daté se situe dans le futur, nous ajoutons un attribut MODALITY avec la valeur FUTURE à l’annotation TE correspondante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>Events used with a modal verb:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Événements utilisés avec un verbe modale:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>If a timestamped event is introduced by a modal verb such as should or would , then attribute MODALITY to the corresponding TE annotation has the value MODAL.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si un événement daté est introduit par un verbe modal (par exemple, should ou would pour l’anglais, pouvoir , devoir pour le français), alors on donne la valeur MODAL à l’attribut MODALITY de l’annotation pour l’expression temporelle correspondante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>Reported speech verbs: Reported speech verbs (or verbs of speaking) introduce indirect or reported speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Verbes de discours rapporté : les verbes de discours rapporté introduisent un discours indirect ou rapporté.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>We dealt with time-stamped events governed by a reported speech verb, or otherwise appearing in reported speech. Once again, XIP’s linguistic analysis provided the necessary information, including the marking of reported speech verbs and clause segmentation of complex sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons traité des événements datés régis par un verbe de discours rapporté ou apparaissant dans un discours rapporté. Encore une fois, l'analyse linguistique de XIP a fourni les informations nécessaires, y compris le marquage des verbes de discours rapporté et la segmentation des clauses de phrases complexes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>If a relevant TE modifies a reported speech verb, the annotation of this TE contains a specific attribute, DECLARATION=”YES”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si une expression temporelle modifie un tel verbe, on ajoute l’attribut DECLARATION=“YES” à l’annotation de l’expression temporelle. Par exemple, dans la phrase ci-dessous du corpus de l’AFP, l’expression temporelle mercredi aura dans son annotation l’attribut DECLARATION=“YES” dans la annoncer .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>If the relevant TE modifies a verb that appears in a clause introduced by a reported speech verb then the annotation contains the attribute REPORTED=”YES”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Si une expression temporelle modifie un verbe qui apparaît dans une proposition introduite par un verbe de discours rapporté, alors on ajoute l’attribut REPORTED=“YES” à l’annotation de l’expression temporelle. Par exemple, dans la phrase suivante extraite du même corpus, l’annotation de l’expression temporelle en 2004 comporte l’attribut REPORTED=“YES” car elle fait partie du discours rapporté introduit par le verbe demander .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>Note that the different annotations can be combined ( e.g. modality and reported speech can occur for a same time-stamped event).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il faut noter que les différentes annotations peuvent se combiner (par exemple, la modalité et le discours rapporté peuvent être exprimés pour un même événement).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>For example, the TE Friday in “The meeting should take place on Friday, Mr. Hong said” is annotated with both modality and reported speech attributes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, l’expression temporelle vendredi dans « La réunion devrait avoir lieu vendredi, a déclaré M. Hong » est annotée avec les deux attributs MODALITY et REPORTED.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>4.5 Corpus-dependent Special Cases</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.5 Cas particuliers liés au corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>While we developed the linguistic and temporal annotators, we took into account some specificities of our corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lors du développement des annotateurs linguistique et temporel, nous avons pris en compte certaines spécificités de notre corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>We decided that the TEs today and now were not relevant for the detection of salient dates.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons ainsi décidé que les expressions temporelles today et now pour l’anglais, aujourd’hui pour le français, n’étaient pas pertinentes pour la détection des dates saillantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>In the AFP news corpus, these expressions are mostly generic expressions synomymous with nowadays and do not really time-stamp an event with respect to the DCT.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, dans le corpus de dépêches de l’AFP, ces expressions sont principalement synonymes de de nos jours et ne datent pas réellement un événement par rapport à la DCT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>Another specificity of the corpus is the fact that if the DCT corresponds to a Monday, and if an event in a past tense is described with the associated TE on Monday or Monday , it means that this event occurs on the DCT day itself, and not on the Monday before.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une autre spécificité du corpus réside dans le fait que si la DCT d’un document correspond à un lundi et si un événement au passé est décrit avec l’expression temporelle le lundi ou lundi , l’ancrage temporel de cet événement est celui de la DCT et non le lundi précédent, contrairement à ce que l’emploi du verbe au passé aurait pu laisser supposer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>We adapted the TE normalizer to these special cases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons adapté la normalisation des TE pour prendre en compte ces cas particuliers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>Figure 4: Example of XIP output for a sample article.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 4 : Exemple de sortie XIP pour un article d'exemple.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>4.6 Implementation and Example</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.6. Mise en œuvre et exemple</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>As said previously, a NER module is integrated into the XIP parser, which we used “as is”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme dit précédemment, un module de reconnaissance d’entités nommées est intégré au parseur XIP, que nous avons utilisé « tel quel ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>The TE tagger and normalizer was adapted from (Hagège and Tannier, 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le normaliseur et le taggeur TE ont été adaptés à partir de (Hagège et Tannier, 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>We used the Java API provided with the parser to perform the annotation and normalization of TEs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé l’API Java fournie avec le parseur pour réaliser la normalisation et l’annotation des expressions temporelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>The output for the linguistic and temporal annotation consists in XML files where only selected information is kept (structural information distinguishing headlines from news content, DCT), and enriched with the linguistic annotations described before (NEs and TEs with relevant attributes corresponding to the normalization and typing).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les sorties pour l'annotation linguistique et temporelle consistent en des fichiers XML où seules les informations sélectionnées sont conservées (informations structurelles pour différencier les titres du contenu des dépêches, la DCT) et enrichies avec les annotations linguistiques décrites précédemment (NE et TE avec les attributs correspondants à la normalisation et au type).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>Information concerning modality, future tense and reported speech, appears as attributes on the TE tag.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les informations concernant la modalité, le futur et le discours rapporté apparaissent sous la forme d'attributs dans la balise TE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>Figure 4 shows an example of an analyzed excerpt of a news article.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 4 montre un exemple d’analyse d’un extrait d’article de presse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>In this news excerpt, only one TE ( Wednesday ) is normalized as both The year 2004 and in a decade are not considered to be relevant.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet extrait de dépêche, une seule expression temporelle ( Wednesday ) est normalisée alors que The year 2004 et in a decade ne sont pas considérées comme pertinentes. La première réfère plutôt à un événement, car elle apparaît comme sujet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>The first one being a generic TE and the second one being of granularity superior to a year.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première expression est générique et la seconde est d'une granularité supérieure à l'année.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>The annotation of the relevant TE has the attribute indicating that it time-stamps an event realized by a reported speech verb.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’annotation de la TE pertinente possède l’attribut indiquant que cette expression marque un événement réalisé par un verbe de discours rapporté.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>The normalized value of the TE corresponds to the 5th of January 2005, which is a Wednesday.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La valeur normalisée de l’expression correspond au 5 janvier 2005 qui est un mercredi.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>NEs are also annotated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les entités nommées sont annotées également.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>In the entire AFP corpus, 11.5 millions temporal expressions were detected, among which 845,000 absolute dates (7%) and 4.6 millions normalized relative dates (40%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans l'ensemble du corpus AFP, 11,5 millions d'expressions temporelles ont été détectées, parmi lesquelles 845 000 sont des dates absolues (7 %) et 4,6 millions sont des dates relatives (40 %). En français, 9,4 millions d'expressions temporelles comprenaient 1,1 million de dates absolues (12 %) et 3,8 millions de dates relatives (40 %).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>Although we have not yet evaluated our tagging of relative dates, the system on which our current date normalization is based achieved good results in the TempEval (Verhagen et al., 2007) campaign.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que nous n'ayons pas encore évalué notre système de tagging des dates relatives, le système sur lequel se base notre normalisation de date actuelle a obtenu de bons résultats dans la campagne TempEval (Verhagen et al., 2007).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>5 Experiments and Results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. Expériences et résultats</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>In Section 5.1, we propose two baseline approaches in order to give a good idea of the difficulty of the task (Section 5.4 also discusses this point).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la section 5.1, nous proposons deux approches de référence afin de montrer la difficulté de la tâche (la section 5.4 discute aussi ce point).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>In Section 5.2, we present our experiments using simple filtering and statistics on dates calculated by Lucene.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la section 5.2.1, nous présentons nos expériences qui utilisent un filtrage simple et des statistiques sur les dates calculées par Lucene.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>Finally, Section 5.3 gives details of our experiments with a learning approach.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, la section 5.3 détaille nos expériences avec une approche d'apprentissage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>In our experiments, we used three different values to rank dates: - occ ( d ) is the number of textual units (documents or sentences) containing the date d .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans nos expériences, nous utilisons trois valeurs différentes pour classer les dates : – occ (d) est le nombre d’unités textuelles (documents ou phrases) contenant la date d.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>- Lucene provides ranked documents together with their relevance score.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Lucene fournit des documents classés avec leur score de pertinence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>luc ( d ) is the sum of Lucene scores for textual units containing the date d .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>luc ( d ) est la somme des scores Lucene pour les unités textuelles contenant la date d ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>- An adaptation of classical tf.idf for dates:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Une adaptation du tf.idf classique pour les dates :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>where f ( d ) is the number of occurrences of date d in the sentence (generally, f ( d ) = 1), N is the number of indexed sentences and df ( d ) is the number of sentences containing date d .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où f ( d ) est le nombre d'occurrences de la date d dans la phrase (généralement, f ( d ) = 1), N est le nombre de phrases indexées et df ( d ) est le nombre de phrases contenant la date d . Les tf.idf sont sommés pour donner le score de la date.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>In all experiments (including baselines), timelines have been built by considering only dates between the first and the last dates of the corresponding manual chronology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans tous les expériences (y compris les bases), les calendriers ont été construits en considérant uniquement les dates entre la première et la dernière date de la chronologie manuelle correspondante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>Processing runs were evaluated on manually-written chronologies (see Section 3.2) according to Mean Average Precision (MAP), which is a widely accepted metric for ranked lists.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les séries de traitements ont été évaluées sur des chronologies écrites manuellement (voir section 3.2) selon la précision moyenne pondérée (MAP), qui est une métrique largement acceptée pour les listes classées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>MAP gives a higher weight to higher ranked elements than lower ranked elements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La MAP donne un poids plus fort aux éléments bien classés qu'aux éléments moins bien classés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>Significance of evaluation results are indicated by the p-value results of the Student’s t-test ( t (90) = 1 . 9867).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La signification statistique des résultats est indiquée par la p-value , résultat du t-test de Student ( t (90) = 1,9867).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>Table 1: MAP results for baseline runs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 : Résultats MAP pour les essais de référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>5.1 Baseline Runs</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.1. Baselines</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>- BLDCT . Indexing and search were done at document level ( i.e. each AFP article, with its title and keywords, is a document).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- BLDCT . L'indexation et la recherche ont été effectuées au niveau du document (c'est-à-dire que chaque article AFP, avec son titre et ses mots-clés, est un document).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>Given a query, the top 10,000 documents were retrieved.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour une requête donnée, les 10 000 premiers documents ont été récupérés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>In these runs, only the DCT for each document was considered. Dates were ranked by one of the three values described above ( occ , luc or tf.idf ) leading to runs</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ces runs, seul le DCT pour chaque document a été considéré. Les dates ont été classées en fonction de l'un des trois valeurs décrites ci-dessus (occ, luc ou tf.idf) conduisant à des runs</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>BL[occ] DCT[,] [BL][luc] DCT[and] BL[tfidf] DCT[.]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>BL[occ] DCT[,] [BL][luc] DCT[and] BL[tfidf] DCT[.]</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>- BLabs . Indexing and search were done at sentence level (document title and keywords are added to sentence text).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- BLabs . L’indexation et la recherche de document sont effectuées au niveau du paragraphe par le moteur de recherche Lucene (le titre et les mots-clés du document sont ajoutés au texte du paragraphe).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>Given a query, the top 10,000 sentences were retrieved.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour une requête donnée, les 10 000 premiers documents sont renvoyés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>Only absolute dates in these sentences were considered.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Seules les dates absolues ont été prises en compte pour cette base de référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>We thus obtained runs BL[occ] abs[,] [ BL] abs[luc][and] [ BL][tfidf] abs[.]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons ainsi obtenu les runs BL[occ] abs[,] BL[luc] abs[et] [ BL][tfidf] abs[.]</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>Note that in this baseline, as well as in all the subsequent runs, the information unit was the sentence because a date was associated to a small part of the text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notez que dans cette base de référence, ainsi que dans toutes les étapes ultérieures, l'unité d'information était la phrase car une date était associée à une petite partie du texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>The rest of the document generally contained text that was not related to the specific date.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le reste du document contenait généralement du texte qui n'était pas lié à la date spécifique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>- BLmix . Same as BLabs , except that sentences containing no absolute dates were considered and associated to the DCT.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- BLmix . Comme BLabs , sauf que les phrases ne contenant pas de dates absolues ont été prises en compte et associées au DCT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>Table 1 shows results for these baseline runs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 1 présente les résultats pour ces essais de référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>Using only DCTs with Lucene scores or tf.idf(d) already yielded interesting results, with MAP around 0.55.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'utilisation de DCT uniquement avec des scores Lucene ou tf.idf(d) a déjà donné des résultats intéressants, avec un MAP d'environ 0,55.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>5.2 Salient Date Extraction with XIP Results and Simple Filtering</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.2 Extraction de dates saillantes avec les résultats XIP et filtrage simple</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>Table 2: MAP results for salient date extraction with XIP and simple filtering.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2 : Résultats de la MAP pour l'extraction de dates importantes avec XIP et un filtrage simple.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>The significance of the improvement due to filtering wrt no filtering is indicated by the Student t-test ( [∗] : p &lt; 0 . 05 (significant); [∗∗] : p &lt; 0 . 01 (highly significant)).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'importance de l'amélioration due au filtrage par rapport au non-filtrage est indiquée par le test t de Student ([∗] : p &lt; 0,05 (significatif); [∗∗] : p &lt; 0,01 (très significatif)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>The improvement due to using tf.idf ( d ) as opposed to occ ( d ) is also highly significant.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'amélioration due à l'utilisation de tf.idf (d) par rapport à occ (d) est également très significative.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>In these experiments, we considered a Lucene index to be built as follows: each document was taken to be a sentence containing a normalized date .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ces expériences, nous avons considéré qu'un index Lucene a été construit de la façon suivante : chaque document était considéré comme un paragraphe contenant une date normalisée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>This sentence was indexed with the title and keywords of the AFP article containing it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette phrase a été indexée avec le titre et les mots-clés de l'article AFP qui la contient.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>Given a query, the top 10,000 documents were retrieved.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour une requête, les 10 000 premiers documents sont renvoyés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>Combinations between the following filtering operations were possible, by removing all dates associated with a reported speech verb ( R ), a modal verb ( M ) and/or a future verb ( F ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Différentes combinaisons de filtrage ont été mises en place afin de ne pas prendre en compte les dates associées à un verbe de discours rapporté (R), un verbe modal (M) et/ou un verbe au futur (F).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>All these filtering operations were intended to remove references to events that were not certain, thereby minimizing noise in results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’objectif de ces filtrages est de pouvoir retirer les références à des événements incertains qui pourraient bruiter les résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>These processing runs are named SD runs, with indices representing the filtering operations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces séries d'expérimentations sont appelées SD runs, avec des indices représentant les opérations de filtrage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>For example, a run obtained by filtering modal and future verbs is called SDM,F .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, une série de tests obtenue par filtrage des verbes modaux et des verbes au futur sera appelée SDM,F .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>In all combinations, dates were ranked by the sum of Lucene scores for these sentences ( luc ) or by tf.idf[4] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour toutes ces combinaisons, les dates obtenues sont classées en faisant la somme des scores Lucene ( luc ) des phrases associées ou par le tf.idf[4] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <tuv xml:lang="EN">
+                <seg>Table 2 presents the results for this series of experiments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 2 présente les résultats obtenus pour cette série d'expériences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <tuv xml:lang="EN">
+                <seg>MAP values are much higher than for baselines.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les scores MAP obtenus sont bien meilleurs que pour les baselines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <tuv xml:lang="EN">
+                <seg>Using tf.idf ( d ) is only very slightly better than luc .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’utilisation du tf.idf ( d ) apporte une très légère amélioration par rapport aux scores luc .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <tuv xml:lang="EN">
+                <seg>Filtering operations bring significant improvement but the benefits of these different techniques have to be further investigated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les différents filtrages permettent une amélioration globale mais les avantages de ces différentes techniques doivent être approfondis afin d'affiner les résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <tuv xml:lang="EN">
+                <seg>5.3 Machine-Learning Runs</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.3 Exécutions d'apprentissage automatique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <tuv xml:lang="EN">
+                <seg>We used our set of manually-written chronologies as a training corpus to perform machine learning experiments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé notre ensemble de chronologies écrites manuellement comme corpus d’apprentissage afin d’entraîner nos modèles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <tuv xml:lang="EN">
+                <seg>We used IcsiBoost[5] , an implementation of adaptative boosting (AdaBoost (Freund and Schapire, 1997)).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons IcsiBoost[5] , une implémentation de boosting adaptatif (AdaBoost (Freund et Schapire, 1997)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="195">
+            <tuv xml:lang="EN">
+                <seg>In our approach, we consider two classes: salient dates are dates that have an entry in the manual chronologies, while non-salient dates are all other dates.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre approche, nous considérons deux classes : les dates saillantes sont les dates contenues dans les chronologies manuelles tandis que toutes les autres dates sont considérées comme des dates non saillantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="196">
+            <tuv xml:lang="EN">
+                <seg>This choice does, however, represent an important bias.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce choix présente cependant un biais important.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="197">
+            <tuv xml:lang="EN">
+                <seg>The choices of journalists are indeed very subjective, and chronologies must not exceed a certain length, which means that relevant dates can be thrown away.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les choix des journalistes sont en effet très subjectifs et les chronologies ne devant pas dépasser une certaine longueur, des dates pertinentes peuvent être exclues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="198">
+            <tuv xml:lang="EN">
+                <seg>These issues will be discussed in Section 5.4.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces questions seront discutées dans la section 5.3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="199">
+            <tuv xml:lang="EN">
+                <seg>The classifier instances were not all sentences retrieved by the search engine.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les instances de classifieur ne contenaient pas toutes les phrases récupérées par le moteur de recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="200">
+            <tuv xml:lang="EN">
+                <seg>Using all sentences would not yield a useful feature set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'utilisation de toutes les phrases ne permettrait pas d'obtenir un ensemble de fonctionnalités utile.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="201">
+            <tuv xml:lang="EN">
+                <seg>We rather aggregated all sentences corresponding to the same date before learning the classifier.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons plutôt regroupé toutes les phrases correspondant à la même date avant d'apprendre le classifieur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="202">
+            <tuv xml:lang="EN">
+                <seg>Therefore, each instance corresponded to a single date, and features were figures concerning the set of sentences containing this date.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, chaque instance correspond à une date unique, et les traits associés concernent l’ensemble des phrases contenant cette date.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="203">
+            <tuv xml:lang="EN">
+                <seg>Features used in this series of runs are as follows:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les caractéristiques utilisées pour cette série d'essais sont les suivantes :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="204">
+            <tuv xml:lang="EN">
+                <seg>1. Features representing the fact that the more a date is mentioned, the more important it is likely to be:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1) traits représentant le fait que plus une date est mentionnée, plus celle-ci doit être importante :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="205">
+            <tuv xml:lang="EN">
+                <seg>1) Sum of the Lucene scores for all sentences containing the date</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1) somme des scores Lucene des phrases contenant cette date</seg>
+            </tuv>
+        </tu>
+        <tu tuid="206">
+            <tuv xml:lang="EN">
+                <seg>2) Number of sentences containing the date</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2) nombre de phrases contenant cette date,</seg>
+            </tuv>
+        </tu>
+        <tu tuid="207">
+            <tuv xml:lang="EN">
+                <seg>3) Ratio between the total weights of the date and weights of all returned dates</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3) Ratio entre les poids totaux de la date et les poids de toutes les dates retournées</seg>
+            </tuv>
+        </tu>
+        <tu tuid="208">
+            <tuv xml:lang="EN">
+                <seg>4) Ratio between the frequency of the date and frequency of all returned dates;</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4) Ratio entre le nombre de phrases contenant cette date et le nombre de phrases de toutes les dates ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="209">
+            <tuv xml:lang="EN">
+                <seg>2. Features representing the fact that an important event is still written about, a long time after it occurs:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2) traits représentant le fait qu’un événement important est toujours mentionné longtemps après qu’il se soit produit :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="210">
+            <tuv xml:lang="EN">
+                <seg>1) Distance between the date and the most recent mention of this date</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1) Distance en nombre de jours entre la date et l’évocation la plus récente de cette date (la plus tardive dans le corpus),</seg>
+            </tuv>
+        </tu>
+        <tu tuid="211">
+            <tuv xml:lang="EN">
+                <seg>2) Distance between the date and the DCT;</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2) Distance en nombre de jours entre cette date et la DCT ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="212">
+            <tuv xml:lang="EN">
+                <seg>3. Other features:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3) autres traits :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="213">
+            <tuv xml:lang="EN">
+                <seg>1) Lucene’s best ranking of the date</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1) meilleur classement de Lucene de la date</seg>
+            </tuv>
+        </tu>
+        <tu tuid="214">
+            <tuv xml:lang="EN">
+                <seg>2) Number of times where the date is absolute in the text 3) Number of times where the date is relative (but normalized) in the text</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2) Nombre de fois où la date est absolue dans le texte 3) Nombre de fois où la date est relative (mais normalisée) dans le texte</seg>
+            </tuv>
+        </tu>
+        <tu tuid="215">
+            <tuv xml:lang="EN">
+                <seg>4) Total number of keywords of the query in the title, sentence and named entities of retrieved documents</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4) Nombre total de mots-clés de la requête présents dans le titre, la phrase et les entités nommées des documents renvoyés</seg>
+            </tuv>
+        </tu>
+        <tu tuid="216">
+            <tuv xml:lang="EN">
+                <seg>5) Number of times where the date modifies a reported speech verb or is extracted from reported speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5) Nombre de fois où la date modifie un verbe de discours rapporté ou est extraite d'un discours rapporté.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="217">
+            <tuv xml:lang="EN">
+                <seg>We did not aim to classify dates, but rather to rank them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous n’avons pas pour but de classifier de manière binaire les dates, mais plutôt de les classer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="218">
+            <tuv xml:lang="EN">
+                <seg>Instead, we used the predicted probability P ( d ) returned by the classifier, and mixed it with the Lucene score of sentences, or with date tf.idf : score ( d ) = P ( d ) × val ( d ) where val ( d ) is either luc ( d ) or tf.idf ( d ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons plutôt utilisé la probabilité P (d) retournée par le classifieur, et l'avons combinée au score Lucene des phrases ou au tf.idf de la date d : score (d) = P (d) × val (d) où val (d) est soit luc (d) ou tf.idf (d). Étant donné le biais signalé ci-dessus, et surtout la faible quantité de données d'apprentissage, les approches communément appelées Learning to Rank, qui visent à apprendre un modèle de tri à partir de listes partiellement ordonnées et d'un ensemble de traits, ne semblent pas adaptées à notre problème.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="219">
+            <tuv xml:lang="EN">
+                <seg>Table 3: MAP results for salient date extraction with machine-learning.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 3 présente les scores MAP obtenus pour l'extraction de dates importantes avec l'apprentissage machine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="220">
+            <tuv xml:lang="EN">
+                <seg>ML[luc] base used Lucene scores and only the first set of features described above.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>ML[luc] base utilise le score Lucene et uniquement le premier type de traits décrit précédemment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="221">
+            <tuv xml:lang="EN">
+                <seg>ML[luc] and ML[tf.idf] used the three sets of features.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>ML[luc] et ML[tf.idf] utilisent les trois types de traits.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="222">
+            <tuv xml:lang="EN">
+                <seg>They are both highly significant under the t-test ( p ≈ 6 . 10 [−][4] ) wrt respectively SD[luc] and SD[tf.idf] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils sont tous deux très significatifs sous le test t (p ≈ 6 . 10 [−][4] ) par rapport à SD[luc] et SD[tf.idf] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="223">
+            <tuv xml:lang="EN">
+                <seg>Because the task is very subjective and (above all) because of the low quantity of learning data, we prefered not to opt for a “learning to rank” approach.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Parce que la tâche est très subjective et (surtout) en raison de la faible quantité de données d'apprentissage, nous avons préféré ne pas opter pour une approche « learning to rank ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="224">
+            <tuv xml:lang="EN">
+                <seg>We evaluated this approach with a classic 4-fold cross-validation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons évalué cette approche avec une validation croisée classique à 4 volets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="225">
+            <tuv xml:lang="EN">
+                <seg>Our 91 chronologies were randomly divided into 4 sub-samples, each of them being used once as test data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nos 91 chronologies ont été divisées au hasard en 4 sous-échantillons, chacun d'eux étant utilisé une fois comme données d'essai.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="226">
+            <tuv xml:lang="EN">
+                <seg>The final scores, presented in Table 3, are the average of these 4 processes. As shown in this table, the learning approach improves MAP results by about 0.05 point.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les scores finaux, présentés dans le tableau 3, sont la moyenne de ces 4 processus. Comme le montre ce tableau, l'approche d'apprentissage améliore les résultats MAP d'environ 0,05 point.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="227">
+            <tuv xml:lang="EN">
+                <seg>5.4 Discussion and Final Experiment</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.4 Discussion et expérience finale</seg>
+            </tuv>
+        </tu>
+        <tu tuid="228">
+            <tuv xml:lang="EN">
+                <seg>Chronologies hand-written by journalists are a very useful resources for evaluation of our system, as they are completely dissociated from our research and are an exact representation of the output we aim to obtain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les chronologies existantes, écrites manuellement par les journalistes de l’AFP, constituent une ressource très utile pour une évaluation objective de notre système. En effet, elles sont totalement dissociées de notre sujet de recherche et sont une représentation exacte du type de sortie que nous souhaitons obtenir.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="229">
+            <tuv xml:lang="EN">
+                <seg>However, assembling such a chronology is a very subjective task, and no clear method for evaluation agreement between two journalists seems immediately apparent.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pourtant, la composition d’une telle chronologie est une tâche très subjective, et aucune méthode simple ne permet d’estimer ce que serait l’accord entre deux journalistes écrivant la même chronologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="230">
+            <tuv xml:lang="EN">
+                <seg>Only experts can build such chronologies, and calculating this agreement would require at least two experts from each domain, which are hard to come by.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, seuls des experts d'un domaine peuvent rédiger une chronologie sur ce domaine, et calculer le traditionnel « accord interannotateur » nécessiterait la participation d'au moins deux experts de chaque domaine concerné, ce qui semble impossible à obtenir. Nous proposons deux expérimentations spécifiques à ce point délicat.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="231">
+            <tuv xml:lang="EN">
+                <seg>One may then consider our system as a useful tool for building a chronology more objectively.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut alors considérer notre système comme un outil utile pour construire une chronologie de manière plus objective.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="232">
+            <tuv xml:lang="EN">
+                <seg>To illustrate this point, we chose four specific topics[6] and showed one of our runs on each topic to an AFP expert for these subjects.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour illustrer ce point, nous avons choisi quatre sujets spécifiques[6] et présenté l'une de nos séries sur chacun de ces sujets à un expert de l'AFP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="233">
+            <tuv xml:lang="EN">
+                <seg>We asked him to assess the first 30 dates of these runs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous lui avons demandé d'estimer la pertinence des 30 premières dates de ces courses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="234">
+            <tuv xml:lang="EN">
+                <seg>Table 4 presents results for this evaluation, comparing average precision values obtained 1) against the original, manual chronologies ( APC ), and 2) against the expert assessment ( APE ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 4 présente les résultats de cette évaluation, comparant les valeurs de précision moyenne obtenues 1) par rapport à la chronologie originale composée manuellement (APC) et 2) par rapport à l'évaluation de l'expert (APE).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="235">
+            <tuv xml:lang="EN">
+                <seg>These values show that, for 3 runs out of 4, many dates returned by the system are considered as valid by the expert, even if not presented in the original chronology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces valeurs montrent que, pour trois runs sur les quatre, de nombreuses dates suggérées par le système sont considérées comme valides par l’expert, alors qu’elles n’étaient pas présentes dans la chronologie originale. Malgré le faible nombre de sujets concernés, ceci montre que notre système peut être une aide efficace pour le journaliste, puisque celui-ci considère la plupart des dates proposées comme pertinentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="236">
+            <tuv xml:lang="EN">
+                <seg>Even if this experiment is not strong enough to lead to a formal conclusion ( post-hoc evaluation with only 4 topics and a single assessor), this tends to show that our system produces usable outputs and that our system can be of help to journalists by providing them with chronologies that are as useful and objective as possible.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Même si cette expérience n'est pas suffisamment solide pour mener à une conclusion formelle (évaluation post-hoc avec seulement 4 sujets et un seul évaluateur), cela tend à montrer que notre système produit des résultats utilisables et que notre système peut aider les journalistes en leur fournissant des chronologies aussi utiles et objectives que possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="237">
+            <tuv xml:lang="EN">
+                <seg>Table 4: Average precision results for manual evaluation on 4 topics, against the original chronologies ( APC ), and the expert assessment ( APE ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 4 : Résultats de précision moyenne pour l'évaluation manuelle sur 4 sujets, par rapport aux chronologies originales (APC) et à l'évaluation d'experts (APE).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="238">
+            <tuv xml:lang="EN">
+                <seg>6 Conclusion and Future Work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Conclusion et perspectives de travail</seg>
+            </tuv>
+        </tu>
+        <tu tuid="239">
+            <tuv xml:lang="EN">
+                <seg>This article presents a task of “date extraction” and shows the importance of taking temporal information into consideration and how with relatively simple temporal processing, we were able to indirectly point to important events using the temporal information associated with these events.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article présente une tâche d'« extraction de dates » et montre l'importance de la prise en compte de l'information temporelle et comment, grâce à un traitement temporel relativement simple, nous avons pu pointer indirectement vers des événements importants en utilisant l'information temporelle associée à ces événements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="240">
+            <tuv xml:lang="EN">
+                <seg>Of course, as our final goal consists in the detection of important events, we need to take into account the textual content.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien sûr, puisque notre but final consiste à détecter les événements importants, nous devons prendre en compte le contenu textuel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="241">
+            <tuv xml:lang="EN">
+                <seg>In future work, we envisage providing, together with the detection of salient dates, a semantic analysis that will help determine the importance of events.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre de nos travaux futurs, nous envisageons de fournir, en plus de la détection des dates importantes, une analyse sémantique qui permettra de déterminer l'importance des événements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="242">
+            <tuv xml:lang="EN">
+                <seg>Another interesting direction in which we soon aim to work is to consider all textual excerpts that are associated with salient dates, and use clustering techniques to determine if textual excerpts correspond to the same event or not.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une autre direction intéressante dans laquelle nous comptons nous engager est l’utilisation de techniques de catégorisation pour déterminer si les passages associés à une date correspondent vraiment à un seul et même événement. Ceci devrait permettre d’affiner la détection des dates saillantes. Concernant l’amélioration de l’extraction des dates saillantes elles-mêmes, elle pourrait bénéficier d’approches hybrides en utilisant à la fois l’analyse temporelle efficace décrite dans cet article, et les techniques fondées sur le contenu, plus proches du domaine du résumé automatique multidocument.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="243">
+            <tuv xml:lang="EN">
+                <seg>Finally, as our news corpus is available both for English and French (comparable corpus, not necessarily translations), we aim to investigate cross-lingual extraction of salient dates and salient events.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, comme notre corpus de nouvelles est disponible en anglais et en français (corpus comparable, pas nécessairement des traductions), nous voulons étudier l'extraction translinguistique des dates et événements saillants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="244">
+            <tuv xml:lang="EN">
+                <seg>1 This work has been partially funded by French National Research Agency (ANR) under project Chronolines (ANR-10CORD-010).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Ce travail a été partiellement financé par l’Agence Nationale pour la Recherche (ANR) dans le cadre du projet Chronolines (ANR-10CORD-010).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="245">
+            <tuv xml:lang="EN">
+                <seg>We would like to thank the French News Agency (AFP) for providing us with the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous remercions l’Agence France Presse (AFP) pour la mise à disposition du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="246">
+            <tuv xml:lang="EN">
+                <seg>2 http://lucene.apache.org</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. http://lucene.apache.org</seg>
+            </tuv>
+        </tu>
+        <tu tuid="247">
+            <tuv xml:lang="EN">
+                <seg>3 We call normalization the operation of turning a temporal expression into a formated, fully specified representation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Nous appelons normalisation l'opération qui consiste à transformer une expression temporelle en une représentation formatée et entièrement spécifiée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="248">
+            <tuv xml:lang="EN">
+                <seg>This includes finding the absolute value of relative dates.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela inclut la recherche de la valeur absolue de dates relatives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="249">
+            <tuv xml:lang="EN">
+                <seg>4 We do not present runs where dates are ranked by the number of times they appear in retrieved sentences ( occ ), as we did for baselines, since results are systematically lower.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Nous ne présentons plus par la suite les classements obtenus en fonction de la fréquence d’apparition de chacune des dates (occ), ceux-ci étant, comme pour les approches de base, systématiquement plus faibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="250">
+            <tuv xml:lang="EN">
+                <seg>5 http://code.google.com/p/icsiboost/</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. http://code.google.com/p/icsiboost/</seg>
+            </tuv>
+        </tu>
+        <tu tuid="251">
+            <tuv xml:lang="EN">
+                <seg>6 Namely, “Arab revolt timeline for Morocco” , “Kyrgyzstan unrest timeline” , “Lebanon’s new government: a timeline” , “Libya timeline” .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6. A savoir : « Chronologie de la révolte arabe au Maroc » , « Chronologie des troubles au Kirghizstan » , « Chronologie du nouveau gouvernement au Liban » , « Chronologie de la Libye ».</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

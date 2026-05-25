@@ -1,0 +1,975 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-F12-1007. segId begin by 1, tuid = segId</note>
+        <url_en>https://www.isca-archive.org/interspeech_2012/fayolle12_interspeech.pdf</url_en>
+        <url_fr>https://aclanthology.org/F12-1007.pdf</url_fr>
+        <title_en>Lexical-phonetic automata for spoken utterance indexing and retrieval</title_en>
+        <title_fr>Automates lexico-phonétiques pour l’indexation et la recherche de segments de parole</title_fr>
+        <docid>F12-1007</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Lexical-phonetic automata for spoken utterance indexing and retrieval</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Automates lexico-phonétiques pour l’indexation et la recherche de segments de parole</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>This paper[1] presents a method for indexing spoken utterances which combines lexical and phonetic hypotheses in a hybrid index built from automata.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce papier[1] présente une méthode d’indexation de segments de parole qui combine des hypothèses lexicales et phonétiques au sein d’un index hybride à base d’automates.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>The retrieval is realised by a lexical-phonetic and semi-imperfect matching whose aim is to improve the recall.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La recherche se fait via un appariement lexico-phonétique semi-imparfait qui tolère certaines imperfections pour améliorer le rappel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>A feature vector, containing edit distance scores and a confidence measure, weights each transition to help the filtering of the candidate utterance list for a more precise search.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un vecteur de descripteurs, contenant des scores de distance d’édition et une mesure de confiance, pondère chaque transition permettant de caractériser la pertinence des segments candidats pour une recherche plus précise.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>Experiment results show that the lexical and phonetic representations are complementary and we compare the hybrid search with the state-of-the-art cascaded search to retrieve named entity queries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats des expériences montrent que les représentations lexicales et phonétiques sont complémentaires et nous comparons la recherche hybride avec la recherche en cascade de pointe pour récupérer des requêtes d’entités nommées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>Index Terms : information retrieval, speech indexing, lexical-phonetic automata, confidence measures, edit distances, supervised learning</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>MOTS-CLÉS : recherche d’information, indexation de parole, automates et transducteurs lexicaux-phonétiques, mesures de confiance, distances d’édition, apprentissage supervisé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>Spoken content retrieval [1] relies on the fields of automatic speech recognition (ASR) and information retrieval (IR).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La recherche de contenus parlés (Chelba et al. , 2008) fait appel aux domaines de la reconnaissance automatique de la parole (RAP) et de la recherche d’information (RI).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>However, IR tools made for text are not adapted to automatic transcripts which are particularly incomplete and uncertain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, les outils de RI textuelle ne sont pas adaptés aux transcriptions automatiques qui sont particulièrement incomplètes et incertaines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>Even if in-vocabulary words (IV) are usually well-recognized, these transcripts contain many recognition errors affecting notably out-of-vocabulary words (OOV) and named entities (NE) that convey important discourse information ( e.g. , person names, localisations, organisations) necessary for IR.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Même si les mots du vocabulaire (IV) sont généralement bien reconnus, ces transcriptions contiennent de nombreuses erreurs de reconnaissance touchant notamment les mots hors vocabulaire (OOV) et les entités nommées (NE) qui véhiculent les informations essentielles du discours (par exemple, les noms de personnes, de lieux ou d'organisations) nécessaires à l'IR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>Two kinds of approaches can be used to attenuate these drawbacks by either improving the recall or the precision.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On distingue deux types d’approches pour pallier ces défauts, soit en améliorant le taux de rappel, soit en améliorant la précision.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>First, the recall can be improved by using a lower level of representation consisting in sub-words ( e.g. , syllables, phonemes) to represent OOV words and, more generally, all types of lexical errors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut, d’une part, améliorer le rappel en faisant appel à une représentation de plus bas niveau composée de sous-mots ( i.e. , subdivisions du mot comme les syllabes ou les phonèmes) qui permet de représenter les mots OOV et plus généralement tous types d’erreurs lexicales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>Representations denser than a simple transcript can also be used, such as graphs, confusion networks and N-best lists.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est aussi possible d’utiliser des représentations plus denses qu’une simple transcription telles que le graphe, le réseau de confusion ou la liste des N meilleures hypothèses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>Second, the precision can be improved by filtering out noisy parts of the recognition thanks to meaningful features ( e.g. , confidence measures).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autre part, on peut améliorer la précision en filtrant les parties bruitées de la reconnaissance grâce à des caractéristiques significatives (par exemple, des mesures de confiance).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>We are interested in combining the two approaches for a task of spoken utterance retrieval.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On s’intéresse ici à combiner ces deux approches pour une tâche de recherche de segments de parole.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>Spoken utterance retrieval consists in retrieving, in a spoken content set, all the segments (called utterances) containing a given textual query.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette tâche consiste à retrouver, dans un ensemble de contenus parlés, tous les segments de parole contenant une requête textuelle donnée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>Two strategies are used in state-of-the-art systems to combine efficiently both lexical and phonetic levels for searching.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux stratégies sont utilisées dans les systèmes de pointe pour combiner efficacement les niveaux lexicaux et phonétiques de la recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>The first one considers two separated indexes used in “cascade”, i.e. , the search is, by default, based on the lexical index and can fall back on the phonetic one if necessary [2]. This limits the usage of the phonetic index, rather noisy, only to mis-recognized queries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première considère deux index séparés utilisés en « cascade », i.e. , la recherche est, par défaut, basée sur l'index lexical et peut recourir à l'index phonétique si nécessaire [2]. Cela limite l'utilisation de l'index phonétique, plutôt bruyant, aux requêtes mal reconnues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>The second approach models the two levels in one hybrid index [3, 4], offering the advantage of a hybrid matching between the query and the index.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La deuxième approche modélise les deux niveaux au sein d’un index hybride (Hori et al. , 2007; Yu et Seide, 2004), offrant l’avantage d’un appariement hybride entre la requête et l’index.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>The proposed method takes up the idea of a hybrid index because it can tolerate lexical-phonetic matchings that are impossible with two separate indexes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthode proposée reprend l'idée d'un index hybride car il permet des appariements lexicophonétiques impossibles avec deux index séparés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>The index structure is based on automata as they can represent all types of ASR outputs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La structure de l'index est basée sur les automates car ils peuvent représenter tous types de sorties de RAP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>The originality of the method consists in the weighting of automaton transitions with a vector of different features that can be used to estimate the relevance of the candidate utterances for a given query.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'originalité de la méthode est qu'elle pondère les transitions des automates par un vecteur de descripteurs qui permet de caractériser la pertinence des segments candidats à la requête donnée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>The features used include : edit distance scores (counts of correct symbols, deletions, insertions, substitutions) indicating the imperfection of the matching between the query and the index; and a lexical-phonetic confidence measure indicating the reliability of the recognized symbols.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les descripteurs utilisés comprennent : des scores de distance d'édition (nombre de symboles corrects, suppressions, insertions, substitutions) indiquant l'imperfection de l'appariement entre la requête et l'index ; et une mesure de confiance lexicophonétique indiquant la fiabilité des symboles reconnus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>The experiments conducted compare the performances between the cascaded and hybrid searches to retrieve named entity queries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les expériences menées comparent les performances des recherches hybrides et en cascade pour retrouver des requêtes d’entités nommées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>We present first the proposed method (section 2), then the results of the experiments (section 3) and finally conclude the paper (section 4).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons tout d'abord la méthode proposée (section 2), puis les résultats des expériences (section 3) et enfin concluons l'article (section 4). FIG. 1 – Vue générale de la méthode proposée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>2. Method</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Méthode</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>The proposed method is based on the general indexing of weighted automata presented by Allauzen et al. [5] and adapted for the case of lexical-phonetic automata (see figure 1 for an overview of the method).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthode proposée est basée sur l'indexation générale d'automates pondérés présentée par Allauzen et al. [5] et adaptée pour le cas d'automates lexicophonétiques (voir la figure 1 pour une vue générale de la méthode).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>From the ASR outputs, we build the lexical-phonetic automata to be indexed (section 2.1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À partir des sorties de RAP, on construit des automates lexico-phonétiques qui constituent l’index (section 2.1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>The textual query is phonetized and converted into a lexical-phonetic automaton as well.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La requête textuelle est phonétisée et aussi convertie en un automate lexico-phonétique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>A more or less imperfect matching is possible by composing successively the query, an edit transducer and the index (section 2.2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un appariement plus ou moins imparfait est rendu possible en composant successivement la requête, un transducteur d’édition et l’index (section 2.2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>This process returns a list of candidate utterances that can be filtered thanks to the feature vector weighting each utterance (section 2.3).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette opération renvoie une liste de segments candidats qui peut être filtrée à l’aide d’un vecteur de descripteurs qui pondère chaque segment (section 2.3).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: Overview of the proposed method.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1 : Vue d'ensemble de la méthode proposée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>2.1. Lexical-phonetic automata</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.1 Automates lexico-phonétiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>In this paper, a lexical-phonetic automaton simply denotes a weighted finite-state automaton whose symbols are either from a lexical alphabet Σ [lex] or a phonetic alphabet Σ [ph] , and whose weights are multi-dimensional.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, un automate lexico-phonétique désigne simplement un automate à états finis dont les symboles appartiennent soit à un alphabet lexical Σ [lex] soit à un alphabet phonétique Σ [ph] , et dont les poids sont multi-dimensionnels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>Thus, a lexical-phonetic automaton can have concurrent lexical and phonetic paths weighted by a vector of various features ( e.g. , see figure 2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, un automate lexical-phonétique peut avoir des chemins lexicaux et phonétiques concurrents pondérés par un vecteur de descripteurs variés (voir figure 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>If defined over the tropical semi-ring, then the weight of a path is the sum of its transition weights and the shortest path is the one with the minimum weight.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si l'automate est défini sur le semi-anneau tropical, le poids d'un chemin est la somme des poids de ses transitions et le chemin le plus court est celui de poids minimal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>This minimum weight can always be found only if the weights are always comparable, i.e. , if they are totally ordered.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut toujours déterminer ce poids minimum si les poids sont toujours comparables, i.e. , s’ils sont totalement ordonnés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>This is precisely the case when the lexicographic order (also known as the alphabetical order) is considered as in [6].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C’est précisément le cas lorsqu’on considère l’ordre lexicographique (aussi appelé ordre alphabétique) comme dans (Can et Saraclar, 2011).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>Each transition corresponds to a symbol (either lexical or phonetic) recognized between the start time ts and the end time te with an associated confidence measure c .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque transition correspond à un symbole s (lexical ou phonétique) reconnu entre les temps de début td et de fin t f avec une mesure de confiance associé c .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>The weight of the transition is the following :</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le poids de la transition est le suivant :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>where wconf[lex][+] [ph] is the lexical-phonetic confidence score because it is common to both lexical and phonetic levels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où wconf[lex][+] [ph] est un score de confiance commun aux niveaux lexical et phonétique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>The confidence score is proportional to the duration of the symbol so that concurrent lexical-phonetic paths of different numbers of symbols can be comparable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le score de confiance est proportionnel à la durée du symbole afin que les chemins lexico-phonétiques concurrents ayant des nombres différents de symboles soient comparables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>Once built, the automaton is turned into a corresponding factor transducer that accepts all the sub-sequences of the automaton in input and gives the utterance identifier in output.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois construit, l'automate est converti en un transducteur de facteurs correspondant qui accepte toutes les sous-séquences de l'automate en entrée et donne l'identifiant du segment de parole en sortie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>The index consists in the union of all the factor transducers (as presented in [5]).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’index est constitué de l’union de tous les transducteurs de facteurs (tel que présenté dans [5]).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>2.2. Lexical-phonetic matching</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.2. Appariements lexico-phonétiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>The matching between the query Q and the index I can be realised by the simple automaton-transducer composition Q ◦ I .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'appariement entre la requête Q et l'index I peut être réalisé par la simple composition automaton-transducteur Q ◦ I .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>It is however possible to get a more flexible matching using an edit transducer E by the successive composition Q ◦ E ◦ I [7].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est cependant possible d’obtenir un appariement plus flexible en utilisant un transducteur d’édition E par la composition successive Q ◦ E ◦ I [7].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>We present three types of lexical-phonetic edit transducers corresponding to perfect, imperfect and semi-imperfect matchings. Their aim is to compute the edit distance scores in the vector consisting in the counts of correct words, correct phonemes, and phonetic deletions, insertions and substitutions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons trois types de transducteurs d’édition lexico-phonétiques correspondant à des appariements parfait, imparfait et semi-imparfait et calculant les scores d’édition du vecteur qui comprend les nombres de mots corrects, de phonèmes corrects, et d’erreurs phonétiques (suppressions, insertions et substitutions).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>The perfect matching transducer only counts correct words and phonemes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le transducteur d’appariement parfait ne compte que les mots et phonèmes corrects.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>The count of correct words is chosen to be the first dimension of the vector in order to favour the lexical matching rather than the phonetic matching when both are possible.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le nombre de mots corrects est choisi pour être la première dimension du vecteur afin de privilégier les appariements lexicaux plutôt que phonétiques lorsque les deux sont possibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>No imperfections are allowed, which makes this transducer particularly restrictive.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les imperfections ne sont pas tolérées, ce qui rend ce transducteur particulièrement restrictif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>The imperfect matching transducer is able to count, besides correct words and phonemes, also phonetic deletions, insertions and substitutions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le transducteur d'appariement imparfait est capable de compter, en plus des mots et phonèmes corrects, les suppressions, inscriptions et substitutions phonétiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>Its problem is that the matching is done without any constraints and, thus, all imperfections are tolerated (even paths with no correct symbols), which makes this transducer quite greedy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le problème est que l'appariement se fait sans aucune contrainte. Ainsi toutes les imperfections sont tolérées (même les chemins ne comptant aucun symbole correct), ce qui le rend particulièrement gourmand.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>A good trade-off between the two previous extreme approaches can be to count the imperfections under certain constraints.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un bon compromis entre entre ces deux approches extrêmes peut être de compter les imperfections sous certaines contraintes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>The proposed semi-imperfect matching transducer takes into account the a priori phonetic variability to limit the imperfection possibilities : “in a sliding window of α phonemes, the rate of correct phonemes must be greater than ρ”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le transducteur d'appariement semi-imparfait proposé tient compte de la variabilité phonétique connue a priori afin de limiter les possibilités d'imperfection : « sur une fenêtre glissante de φ phonèmes, le taux de phonèmes corrects doit être supérieur ou égal à τ ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>In this paper, the parameters are arbitrarily set to α = 2 and ρ = 1 / 2 for preliminary experiments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, les paramètres sont fixés arbitrairement à α = 2 et ρ = 1 / 2 pour des expériences préliminaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>Figure 3 illustrates these three types of transducers for a small lexical-phonetic alphabet.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 3 illustre ces trois types de transducteurs pour un petit alphabet lexico-phonétique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>2.3. Filtering of candidate utterances</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.3 Filtrage des segments candidats</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>After matching and projection on the output label, we obtain a list of weighted utterances ranked according to the lexicographic order.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après appariement et projection sur l’étiquette de sortie, on obtient une liste de segments pondérés et ordonnés suivant l’ordre lexicographique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>Thus, each candidate utterance is associated to a vector of 7 features :</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque énoncé candidat est ainsi associé à un vecteur de 7 descripteurs :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>Determining if an utterance contains (or not) the query from these features can be posed as a binary classification problem solvable by any learning method ( e.g. , decision trees).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Déterminer si un segment contient (ou non) la requête à partir de ces descripteurs se ramène à un problème de classification binaire qui peut se résoudre par une méthode d’apprentissage quelconque (par exemple, arbre de décision).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>Then, the estimated probability of an utterance to contain the query is turned into a binary decision with a threshold set according to the desired recall-precision trade-off.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La probabilité estimée qu'un segment contienne la requête est ensuite transformée en une décision binaire avec un seuil défini en fonction du compromis souhaité entre le taux de rappel et la précision.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>Figure 2: Example of a lexical-phonetic automaton : accepting the lexical path “l’ ena”, the phonetic path “ l E n a”, and the lexical-phonetic paths “l’ En a” and “ lena”; and weighted by a vector of 6 different features.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 2 : Exemple d’automate lexico-phonétique : acceptant le chemin lexical « l’ ena », le chemin phonétique « l E n a », et les chemins lexico-phonétiques « l’ En a » et « lena » ; et pondéré par un vecteur de 6 caractéristiques différentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>Figure 3: Edit transducers for a lexical-phonetic matching that is perfect (a), imperfect (b) or semi-imperfect (c) where Σ [lex] = {ab, ba} and Σ [ph] = { a, b} .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 3 : Édition des transducteurs pour un rapprochement lexical-phonétique parfait (a), imparfait (b) ou semi-imparfait (c) où Σ [lex] = {ab, ba} et Σ [ph] = { a, b} .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>3. Experiments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Expériences</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>In this section, we present the necessary experimental setup (section 3.1) to implement the proposed method and carry out two experiments, one on the complementarity of the lexical and phonetic levels (section 3.2) and a second one on spoken utterance retrieval (section 3.3).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette partie, nous détaillons le protocole expérimental (section 3.1) permettant de mettre en œuvre la méthode proposée à travers deux expériences sur la complémentarité des représentations lexicales et phonétiques (section 3.2) et la recherche de segments de parole (section 3.3).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>3.1. Setup</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1 Configuration</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>The audio data used for the experiments consists of 6 hours of French radio broadcast news material extracted from the ESTER2 corpus [8] containing reference transcripts with manually annotated named entities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les données audio utilisées pour les expériences proviennent de 6 heures d'émissions de radio en français extraites du corpus ESTER2 [8] contenant des transcriptions de référence avec des entités nommées annotées manuellement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>The ASR system is a large vocabulary (65k words) transcription system for which the word error rates on this corpus vary between 16.0% and 42.2%.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système ASR est un système de transcription à large vocabulaire (65k mots) dont les taux d'erreurs par mot sur ce corpus varient de 16,0 % à 42,2 %.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>The data are automatically segmented into 3447 utterances.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les données sont automatiquement décomposées en 3447 segments de parole.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>The N-best hypotheses are then re-scored using a morpho-syntactic tagger [9].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les N meilleures hypothèses sont ensuite réévaluées à l'aide d'un étiquetage morpho-syntaxique (Huet et al. , 2010).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>The lexical level is made only of the 1-best hypothesis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le niveau lexical n’est constitué que de la meilleure hypothèse de transcription.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>The phonetic level is obtained by forced alignment between the audio signal and the pronunciation of the lexical level.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le niveau phonétique est obtenue en forçant l’alignement entre le signal audio et la prononciation du niveau lexical.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>Lexical and phonetic confidence measures are calculated from the a posteriori probabilities and the entropy between the different hypotheses [10].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les mesures de confiance lexicales et phonétiques sont calculées à partir des probabilités a posteriori et de l’entropie entre les différentes hypothèses [10].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>The automata are implemented based on OpenFST[2] and the size of the lexical, phonetic and hybrid indexes are 9.9, 32.8 and 47.6 MB respectively. To avoid matching problems that might appear due to morphological variations, words are turned into lemmas with TreeTagger[3] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les automates sont implémentés avec OpenFST[2] et la taille des index lexical, phonétique et hybride est respectivement de 9.9, 32.8 et 47.6 Mo. Pour éviter les problèmes d’appariement dûs aux variations morphologiques, les mots sont lemmatisés par l’outil TreeTagger[3] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>To estimate the probability of an utterance to contain the query, we used a bagging over 20 decision trees (Bonzaiboost[4] ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour estimer la probabilité qu’un segment candidat contienne la requête, nous avons utilisé un bagging sur 20 arbres de décision (Bonzaiboost[4] ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>The evaluation is done according to a 5-fold cross-validation using 80% of the candidate set for training and 20% for testing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'évaluation se fait suivant une validation croisée sur 5 ensembles d'échantillons : 80% pour l'apprentissage et 20% pour le test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>The queries are all named entities extracted from the transcripts of reference.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les requêtes sont toutes des entités nommées extraites des transcriptions de référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>The pronunciation of the query is given by the phonetic lexicon ILPho[5] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La prononciation de la requête est donnée par le lexique phonétique ILPho[5] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>If a certain word doesn’t belong to the lexicon, multiple pronunciations of it are generated by the phonetizer Lia phon[6] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si le mot ne se trouve pas dans le lexique, de multiples prononciations sont générées via le phonétiseur Lia_phon[6] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>In addition to the usual sets of IV and OOV queries, we propose a third set of queries made of both IV and OOV words ( e.g. , an IV first name followed by an OOV family name).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En plus des deux jeux de requêtes IV (pour in-vocabulary) et OOV habituels, nous proposons un troisième jeu de requêtes composées à la fois de mots IV et OOV ( e.g. , prénom IV suivi du nom OOV).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>These mixed IV/OOV queries are interesting because they represent an intermediate level of difficulty (a priori more difficult than IV queries but less difficult than OOV ones) and they are more frequent than the OOV queries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces requêtes IV/OOV sont intéressantes car elles représentent un niveau de difficulté intermédiaire (a priori plus difficile que les requêtes IV mais moins que celles OOV) et sont plus fréquentes que les requêtes OOV.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>Table 1 shows the query distribution.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 1 montre la répartition des requêtes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>To evaluate the performance of spoken utterance retrieval, we use the mean average precision (MAP) and the precision at N (P@N) where N is the number of the expected relevant utterances for a given query.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour évaluer la performance de la recherche de locution parlée, nous utilisons la précision moyenne (MAP) et la précision à N (P@N) où N est le nombre de locutions pertinentes attendues pour une requête donnée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>3.2. Complementarity of lexical and phonetic levels</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2. Complémentarité des niveaux lexical et phonétique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>This preliminary experiment consists in measuring the quality of the lexical and phonetic representations and their complementarity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette expérience préliminaire consiste à mesurer la qualité des représentations lexicales et phonétiques ainsi que leur complémentarité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>For each utterance, we align the lexical-phonetic automata of reference and hypothesis with an imperfect edit transducer to obtain Table 2, which gives the correct symbol rate on named entities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque énoncé, nous alignons les automates lexicaux-phonétiques de référence et d'hypothèse à l'aide d'un transducteur d'édition imparfait pour obtenir le tableau 2 qui donne le taux de symboles corrects pour les entités nommées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>On the one hand, the lexical level is used on areas correctly recognized. On the other hand, the phonetic level is only used on mis-recognized areas.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'une part, le niveau lexical est utilisé sur les zones correctement reconnues et, d'autre part, le niveau phonétique est utilisé sur les zones mal reconnues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>We note that 73.89% of the lemmas are well recognized.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On constate que 73.89% des lemmes sont bien reconnus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>For the mis-recognized lemmas, we can fortunately fall back on the phonetic level for which 67.73% of the phonemes are correct.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les lemmes mal reconnus, on peut heureusement se replier sur le niveau phonétique dont 67.73% des phonèmes sont corrects.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>This justifies the combination of lexical and phonetic levels to search for named entities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela justifie la combinaison des niveaux lexical et phonétique pour rechercher des entités nommées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Query distribution in function of the type and the length in number of words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 : Répartition des requêtes en fonction du type et de la longueur en nombre de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>Table 2: Complementarity of lexical and phonetic representations for named entities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2 : Complémentarité des représentations lexicales et phonétiques pour les entités nommées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>Table 3: Spoken utterance retrieval results : baseline, better than the baseline , best result(s) .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 3 : Résultats de la récupération des énoncés oraux : référence, meilleure que la référence, meilleur(s) résultat(s).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>3.3. Spoken utterance retrieval</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3 Recherche de segments de parole</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>The goal of this experiment is to compare the spoken utterance retrieval for different settings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le but de cette expérience est de comparer les recherches de segments de parole pour des paramètres différents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>We perform the search using either a lexical index, a phonetic index, both indexes in cascade or a hybrid index.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous effectuons la recherche en utilisant un index lexical, un index phonétique, les deux index en cascade ou un index hybride.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>The queries are IV, OOV or IV/OOV while the matching is perfect or semiimperfect.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les requêtes peuvent être IV, OOV ou IV/OOV. L’appariement est parfait ou semi-imparfait.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>The imperfect matching has been discarded because it is too greedy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’appariement imparfait a été mis de côté car il est trop gourmand en temps de calcul.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>Two filtering methods are considered using a simple threshold either over the lexicalphonetic confidence score (th-conf) or over the probability estimated by the decision trees using all the features (dt-all).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux méthodes de filtrage sont considérées en utilisant un seuil simple sur le score de confiance lexicophonétique (th-conf) ou sur la probabilité estimée par les arbres de décision utilisant toutes les caractéristiques (dt-all).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>The baseline corresponds to the cascade search using a perfect matching and a th-conf filtering.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthode de référence correspond à une recherche cascadée dont l’appariement est parfait et dont le filtrage est basé sur un seuillage du score de confiance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>Table 3 reports the obtained performances.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 3 rapporte les résultats obtenus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>Generally, we first notice that the baseline can easily be improved for all types of queries using a semiimperfect matching with the dt-all filtering (the th-conf filtering is not sufficient).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De manière générale, on remarque tout d’abord que la méthode de référence peut facilement être améliorée pour tous les types de requêtes en utilisant un appariement semi-imparfait et un filtrage supervisé (le filtrage sur le score de confiance n’est pas suffisant).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>Second, the hybrid search using the dt-all filtering always performs better or equally than both lexical and phonetic searches.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, la recherche hybride (accompagnée d'un filtrage supervisé) obtient des performances supérieures ou équivalentes aux recherches lexicale et phonétique, ce qui justifie la combinaison hybride.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>This proves that the hybrid combination is justified.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela prouve que la combinaison hybride est justifiée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>More the hybrid search obtains the best results for IV queries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus spécifiquement, la recherche hybride obtient les meilleurs résultats pour les requêtes IV.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>For OOV queries, the hybrid, cascaded and phonetic search are equivalent as they can only use the phonetic level.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les requêtes OOV, les recherches phonétiques, cascadées et hybrides sont équivalentes puisqu’elles ne font appel qu’au niveau phonétique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>For mixed IV/OOV queries, it is surprising that the phonetic and cascaded searches are better than the hybrid one.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les requêtes mixtes IV/OOV, il est surprenant de constater que la recherche phonétique et la recherche en cascade sont meilleures que la recherche hybride.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>This is due to the fact that the ranking gives too much importance to lexical match even if this one is not really relevant (mis-recognized or very frequent words).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela est dû au fait que le classement donne trop d'importance aux appariements lexicaux même lorsque ceux-ci ne sont pas pertinents (mots mal reconnus ou mots très fréquents).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>We think that adding a tf*idf score in the feature vector will help to deal with these cases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pensons que l'ajout d'un score tf*idf dans le vecteur de caractéristiques aidera à gérer ces cas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>Finally, the hybrid search (with the semi-imperfect matching and the dt-all filtering) offers the best overall performances.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Finalement, la recherche hybride (avec un appariement semi-imparfait et un filtrage supervisé) offre les meilleures performances globales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>4. Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>We have presented a method to index lexical-phonetic automata for spoken utterance retrieval.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons présenté une méthode d'indexation et de recherche de segments de parole représentés sous forme d'automates lexico-phonétiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>The results demonstrates the complementarity of the lexical and phonetic levels (extracted from the 1-best speech recognition hypothesis) and the advantage of using a hybrid index, a semi-imperfect matching and a supervised filtering (combining edit distance scores and a confidence measure).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats montrent la complémentarité des niveaux lexical et phonétique (extraits de la meilleure hypothèse de reconnaissance de la parole) et l’avantage d’un index hybride, d’un appariement semi-imparfait et d’un filtrage supervisé (combinant des scores d’édition et un score de confiance).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>1 This work was partly achieved as part of the Quaero Programme, funded by OSEO, French State agency for innovation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Travaux réalisés dans le cadre du programme QUAERO, financé par OSEO, agence française pour l’innovation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>2 http://www.openfst.org/ 3 http://www.ims.uni-stuttgart.de/projekte/corplex/TreeTagger/</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 http://www.ims.uni-stuttgart.de/projekte/corplex/TreeTagger/ 3 http://www.openfst.org/</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>4 http://bonzaiboost.gforge.inria.fr/</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 http://bonzaiboost.gforge.inria.fr/</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>5 http://catalog.elra.info/product info.php?products id=760</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 http://catalog.elra.info/product_info.php?products_id=760</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>6 http://www.atala.org/LIA-PHON</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 http://www.atala.org/LIA-PHON</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

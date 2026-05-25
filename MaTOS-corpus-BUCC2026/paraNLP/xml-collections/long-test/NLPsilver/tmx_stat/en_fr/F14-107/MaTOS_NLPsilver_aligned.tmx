@@ -1,0 +1,1247 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-F14-107. segId begin by 1, tuid = segId</note>
+        <url_en>https://ieeexplore.ieee.org/document/6639318</url_en>
+        <url_fr>https://www.afcp-parole.org/doc/Archives_JEP/2014_XXXe_JEP_LeMans/2014_XXXe_JEP_LeMans.pdf</url_fr>
+        <title_en>Person name recognition in ASR outputs using continuous context models</title_en>
+        <title_fr>Modèles contextuels continus pour la reconnaissance des noms de personnes dans des transcriptions automatiques Reconnaissance de la parole</title_fr>
+        <docid>F14-107</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>PERSON NAME RECOGNITION IN ASR OUTPUTS USING CONTINUOUS CONTEXT MODELS</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Reconnaissance des noms de personnes dans les transcriptions automatiques à l'aide de modèles contextuels continus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>ABSTRACT</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>RÉSUMÉ</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>The detection and characterization, in audiovisual documents, of speech utterances where person names are pronounced, is an important cue for spoken content analysis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La détection et la caractérisation, dans des documents audiovisuels, des énoncés où des noms de personnes sont prononcés, est un élément important pour l'analyse du contenu parlé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>This paper tackles the problematic of retrieving spoken person names in the 1-Best ASR outputs of broadcast TV shows.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article aborde la problématique de la récupération des noms de personnes prononcés dans les sorties ASR 1-Best des émissions télévisées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>Our assumption is that a person name is a latent variable produced by the lexical context it appears in. Thereby, a spoken name could be derived from ASR outputs even if it has not been proposed by the speech recognition system. A new context modelling is proposed in order to capture lexical and structural information surrounding a spoken name.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre hypothèse est que le nom d'une personne est une variable latente produite par le contexte lexical dans lequel il apparaît. Ainsi, un nom prononcé peut être dérivé des sorties ASR même s'il n'a pas été proposé par le système de reconnaissance vocale. Une nouvelle modélisation du contexte est proposée afin de capturer les informations lexicales et structurelles entourant un nom prononcé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>The fundamental hypothesis of this study has been validated on broadcast TV documents available in the context of the REPERE challenge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'hypothèse fondamentale de cette étude a été validée sur des documents télévisés disponibles dans le cadre du défi REPERE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>Index Terms — spoken document retrieval, spoken name detection, lexical context representation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Termes clés — récupération de documents oraux, détection de noms oraux, représentation du contexte lexical</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>1. INTRODUCTION</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. INTRODUCTION</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>Detecting and characterizing, in audiovisual documents, speech utterances where person names are pronounced, is an important cue for spoken content analysis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La détection et la caractérisation, dans les documents audiovisuels, des énoncés de la parole où les noms de personnes sont prononcés, est un indice important pour l'analyse des contenus parlés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>These names may lead to identifying speakers themselves or people that speakers are talking about.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces noms peuvent permettre d'identifier les locuteurs eux-mêmes ou les personnes dont les locuteurs parlent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>Therefore this information is certainly an important preliminary step to content understanding, indexing and structuring, or to topic modelling and tracking.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, cette information est certainement une étape préliminaire importante pour la compréhension, l'indexation et la structuration du contenu, ou pour le modèle et le suivi de thèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>The scientific community in Named Entity Detection and Recognition has proposed several methods to achieve this task on more or less structured text documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La communauté scientifique de la détection et de la reconnaissance des entités nommées a proposé plusieurs méthodes pour réaliser cette tâche sur des documents textuels plus ou moins structurés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>Earlier methods based on manual lexical rules and grammar models [1] have reported good performance when they are applied on journalistic data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les méthodes précédentes basées sur des règles lexicales manuelles et des modèles de grammaire [1] ont montré de bonnes performances lorsqu'elles sont appliquées à des données journalistiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>But considering the amount and diversity of text documents produced and exchanged every day, these approaches have known a significant drop of performance on less structured texts [2].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais au vu de la quantité et de la diversité des documents textuels produits et échangés chaque jour, ces approches ont connu un déclin significatif de performance sur les textes moins structurés [2].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>In order to model the variety of contexts named entities may appear in, more recent contributions have integrated a probabilistic framework [3].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de modéliser la variété des contextes dans lesquels les entités nommées peuvent apparaître, les contributions plus récentes ont intégré un cadre probabiliste [3].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>Spoken Document Retrieval [4] is the research field that aims at employing and adapting information retrieval to spoken documents. In practice, systems for person name detection and recognition in spoken documents have to deal with the errors introduced by Automatic Speech Recognition (ASR) systems. A first critical problem is related to the coverage of person names in the lexicons of ASR tools.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La recherche sur la récupération de documents oraux [4] vise à utiliser et à adapter la recherche d'information aux documents oraux. En pratique, les systèmes de détection et de reconnaissance de noms de personnes dans des documents oraux doivent composer avec les erreurs introduites par les systèmes de reconnaissance automatique de la parole (ASR). Le premier problème critique est lié à la couverture des noms de personnes dans les lexiques des outils ASR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>Since the number of candidates may reach hundreds of thousands according to [3], most of person names will remain OutOf-Vocabulary (OOV) and will not be recognized by ASR systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme le nombre de candidats peut atteindre des centaines de milliers selon [3], la plupart des noms de personnes resteront OutOf-Vocabulary (OOV) et ne seront pas reconnus par les systèmes ASR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>The proportion of proper names in OOV has been estimated at 72% in [3], and 66% in [5].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La proportion de noms propres dans les OOV a été estimée à 72 % dans [3], et à 66 % dans [5].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>A significant part of these OOV is person names.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une partie importante de ces OOV sont des noms de personnes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>A second limitation lays in the large variety of potential pronunciations for the person names.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une deuxième limitation réside dans la grande variété de prononciations possibles pour les noms propres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>Proposals have been made to try to overcome these limitations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des propositions ont été faites pour essayer de surmonter ces limitations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>For example, [6, 7] proposed to detect OOV words and to increase the lexicon coverage by automatically selecting words from contemporary text documents. Other works automatically produce a larger number of pronunciations in order to cover the variety of spoken names [8, 9]. Recent works tackle spoken name extraction by directly processing speech signal related to spoken documents using word spotting techniques [10], or by analyzing ASR lattices (of word [11], phonemes [4] or syllables [12]) and word confusion networks [13].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, [6, 7] ont proposé de détecter les mots OOV et d'augmenter la couverture du lexique en sélectionnant automatiquement des mots dans des documents de texte contemporains. D'autres travaux produisent automatiquement un plus grand nombre de prononciations afin de couvrir la variété des noms prononcés [8, 9]. Les travaux récents abordent l'extraction de noms prononcés en traitant directement le signal de parole lié aux documents prononcés à l'aide de techniques de repérage de mots [10], ou en analysant les lattices ASR (de mots [11], de phonèmes [4] ou de syllabes [12]) et les réseaux de confusion de mots [13].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we face the problematic of retrieving spoken person names in the 1-Best ASR outputs of broadcast TV shows. Our proposal relies on the assumption that a person name is a latent variable produced by the lexical context it appears in, i.e. the sequence of words around the person name.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous abordons le problème de la récupération de noms de personnes dans les sorties ASR 1-Best des émissions de télévision. Notre proposition repose sur l'hypothèse que le nom d'une personne est une variable latente produite par le contexte lexical dans lequel il apparaît, c'est-à-dire la séquence de mots autour du nom de la personne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>Therefore, we assume that a spoken name could be derived from ASR outputs even if it has not been proposed by the speech recognition system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, nous supposons qu'un nom parlé peut être dérivé des sorties ASR même s'il n'a pas été proposé par le système de reconnaissance vocale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>The paper is organized as follows.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le document est organisé comme suit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>The next section provides a short overview of the different approaches proposed in the literature for person name detection (i.e. section 2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La suite de l'article présente un survol assez général des approches proposées dans la littérature pour la détection de noms de personnes (i.e. section 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>Section 3 describes the original approach we suggest, in this paper, for spoken name recognition, followed, in section 4 by a presentation of several experiments conducted on broadcast TV shows.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section 3 décrit l'approche originale que nous proposons, dans ce document, pour la reconnaissance de noms parlée, suivie, dans la section 4, par une présentation de plusieurs expériences menées sur des émissions de télévision.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>We will then conclude and open our work to several research perspectives.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous conclurons ensuite et ouvrirons notre travail à plusieurs perspectives de recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>2. MODELLING CONTEXTS OF PERSON NAMES</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Modélisation des contextes des noms de personnes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>Most of Named Entity Detection systems rely on an efficient capture of relevant pieces of information from lexical contexts where proper names occur. Differences between existing techniques mainly stand within the kind of model and the nature of this information, either lexical, structural, syntactic or semantic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La plupart des systèmes de détection des entités nommées reposent sur l’extraction d’informations pertinentes dans les contextes lexicaux où les noms propres apparaissent. Les différences entre les techniques existantes se situent principalement au niveau du type de modèle et de la nature de ces informations, qu’elles soient lexicales, structurelles, syntaxiques ou sémantiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>In particular, N-gram models have been widely used to represent the sequentiality of the N words occurring before a given name.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En particulier, les modèles n-grammes ont été largement utilisés pour représenter la séquentialité de N mots précédant un nom donné.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>In [3], noun phrases including proper names are automatically extracted and used to train a probabilistic classification method.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans (Béchet et al. , 2000), les phrases nominales comprenant des noms propres sont extraites automatiquement et utilisées pour former un classifieur statistique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>In both cases, the temporality of words present in the contexts is captured. If this temporal information may be useful to understand the structure of the discourse in these contexts, the length of these sequences is commonly limited to a few number of words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les deux cas, la temporanéité des mots présents dans le contexte est capturée. Si cette information temporelle peut être utile pour comprendre la structure du discours dans ces contextes, la longueur de ces séquences est généralement limitée à quelques mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>On the other side, methods concerning speaker name discrimination (in text documents [14] and web pages [15]), Cross Document Coreference [16], Web People Search [17] or Machine Translation for Name Recognition [18], represent proper name context like bag-of-words (b-o-w) or vectorial representation. The main differences with previous methods are that the temporality of words in contexts is no more modelled, and larger observation windows around proper names are typically considered.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'un autre côté, les méthodes concernant la discrimination du nom du locuteur (dans les documents textuels [14] et les pages web [15]), la référence croisée de documents [16], la recherche de personnes sur le web [17] ou la traduction automatique pour la reconnaissance de noms [18], représentent le contexte du nom propre comme un sac-de-mots ou une représentation vectorielle. Les principales différences avec les méthodes précédentes sont que la temporanlité des mots dans les contextes n'est plus modélisée et que des fenêtres d'observation plus larges autour des noms propres sont généralement considérées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>Works belonging to this second category rely on the Distributional Hypothesis of [19, 20], assuming that a name with similar meanings should appear in similar contexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les travaux de cette deuxième catégorie s'appuient sur l'hypothèse distributionnelle (19, 20), selon laquelle un nom ayant des significations similaires devrait apparaître dans des contextes similaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>3. TEMPORAL AND LEXICAL CONTEXT FOR SPOKEN NAME RECOGNITION IN ASR</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Contexte temporel et lexical pour la reconnaissance de noms prononcés dans la SR</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>The approach proposed in this paper relies on the assumption that a person name is related to the lexical context it appears in.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’approche proposée dans ce papier repose sur l’hypothèse que le nom d’une personne est lié au contexte lexical dans lequel ce nom apparaît.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>In order to model these name-to-context dependencies, we propose to consider a proper name as a latent variable occurring in various observable contexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de modéliser ces dépendances nom vers contexte , nous proposons de considérer un nom propre comme une variable latente survenant dans divers contextes observables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>With regards to this hypothesis, a person name should be discovered in speech recognition outputs by considering its context, even if the name has not been proposed by the ASR system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au regard de cette hypothèse, un nom de personne doit être découvert dans les transcriptions automatiques en tenant compte de son contexte, même si le nom n’a pas été proposé par le système de transcription.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>These conditions are very suitable for automatic processing since most of the proper names are OOV words, which are, by nature, unpredictable by ASR systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces conditions sont très appropriées pour le traitement automatique puisque la plupart des noms propres sont des mots OOV, qui sont par nature imprévisibles pour les systèmes ASR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>Our approach consists in capturing name-to-context dependencies by using statistical models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre approche consiste à capturer les dépendances nom vers contexte à l’aide de modèles statistiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>Classical techniques rely on short-term context-modeling, or on long-term cooccurrences represented in a Vector Space Model (VSM).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les techniques classiques reposent sur la modélisation du contexte à court terme, ou sur les co-occurrences à long terme, représentées dans un modèle vectoriel (VSM).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>On the one hand, short-term context models are generally based on n-gram statistics, where n is lower than 6 due to complexity reasons.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En premier lieu, les modèles de contexte à court terme sont généralement basés sur des statistiques n-grammes, où n est inférieur à 6 pour des raisons de complexité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>Consequently, these models miss long-term word dependencies that bring semantic and pragmatic information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces modèles manquent alors les dépendances longues portées alors qu’elles véhiculent l’information sémantique et pragmatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>On the other hand, co-occurrence models represent a document as a bag of words, without any information related to its temporal structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’autre part, les modèles de co-occurrences représentent un document comme un sac-de-mots, sans aucune information relative à sa structure temporelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>Therefore, the estimate of co-occurrence statistics in VSM is possible on relatively limited corpus, but critical information, such as word sequentiality notably, is definitely lost.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, l'estimation des statistiques sur ces co-occurrences est possible sur des corpus relativement limités, mais l'information critique, telle que la séquentialité des mots notamment, est définitivement perdue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Fig. 1 . A general framework for extracting and modelling lexical contexts of spoken person names</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Fig. 1. Un cadre général pour l'extraction et la modélisation des contextes lexicaux des noms de personnes parlées</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>Here, the focus is made on the extraction of discriminant information held by the words surrounding proper names.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ici, l’accent est mis sur l’extraction de l’information discriminante détenue par les mots autour de noms propres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>Indeed, we consider the temporality of words in contexts as an important feature, just as in N-grams and rule-based methods.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, nous considérons la temporalité des mots dans le contexte comme un élément important, tout comme dans les n-grammes et les méthodes à base de règles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>Moreover, we assume that medium- and long-term word dependencies could bring relevant information to the latent proper name.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, nous supposons que les dépendances à court et à long terme pourraient apporter des informations pertinentes pour le nom propre latent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>This is especially verified in broadcast news documents, where many OOV names occur exclusively in the specific context of the event they are involved in.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci est particulièrement vrai pour les documents de nouvelles télévisées, où de nombreux noms hors-vocabulaire apparaissent exclusivement dans le contexte spécifique de l'événement auquel ils sont associés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>For these reasons, we propose a vector representation holding information relative to the positions of words in the contexts, coupled with a larger context window comparable to those used in contributions based on b-o-w representation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour ces raisons, nous proposons une représentation vectorielle qui détient des informations relatives aux positions des mots dans le contexte, couplée avec une fenêtre de contexte plus large comparable à celles utilisées dans les contributions fondées sur la représentation par sac-de-mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>Indeed, the later permits not to exclude the case where discriminant information may stay in sentences located at several tens of words from the person name.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, cette fenêtre permet de prendre en compte le cas où l'information discriminante se situe dans des phrases éloignées de plusieurs dizaines de mots du nom de personne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>This original approach is integrated in the general architecture, pictured in Fig. 1, which counts three steps, described below, dedicated to the modelling of contexts for one given person name from examples found in a text database.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette approche originale, illustrée sur la figure 1, se déroule en trois étapes, décrites ci-dessous, pour la modélisation des contextes d’un nom de personne à partir d’exemples trouvés dans une base de textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>3.1. Context Characterization</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1 Caractérisation du contexte</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>Let’s consider one given person name W , and assume that we dispose of a corpus of errorless text documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Considérons un nom de personne W , et supposons qu'il dispose d'un corpus de documents textuels sans erreur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>The first step consists in estimating, from this collection of name contexts, the model that will be able to spot the missing proper name W from ASR outputs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première étape consiste à estimer, à partir de la collection de contextes du nom, le modèle qui sera capable de retrouver le nom de personne manquant W dans des transcriptions automatiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>In a formal manner, a context is a sequence of 2 N + 1 words centred on one person name.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De manière formelle, un contexte est une séquence de 2 N + 1 mots centrée sur un nom de personne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>The system first extracts from documents of the database, all the contexts CW associated with W .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système extrait tout d’abord, à partir des documents de la base de données, tous les contextes CW associés à W .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>This set of contexts is denoted SCW .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet ensemble de contextes est noté SCW .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>Documents of the corpus have been pre-processed by removing punctuation marks and by turning texts to lower case, like in ASR outputs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les documents du corpus ont été pré-traités en enlevant la ponctuation et en mettant l’ensemble du texte en minuscule, tout comme les sorties du système de transcription.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>In a second time, we run a Part-Of-Speech (POS) tagger [21] on the contexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans un second temps, un étiqueteur de Partie du discours (POS) [21] est appliqué sur les contextes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>The words tagged as NOUN, VERB and ADJECTIVE are kept but replaced by their lemmatized forms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les mots étiquetés comme NOMS, VERBES et ADJECTIFS sont conservés, mais remplacés par leur forme lémmatisée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>The words that do not match these POS are substituted with the tag ’NULL’.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les mots ne possédant pas ces POS sont substitués par l’étiquette « NULL ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>Finally, this process removes function words, and reduces the lexicon of SCW by considering the canonical forms of words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, ce processus supprime les mots fonctions, et réduit le lexique de SCW en considérant les formes canoniques des mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>The substitution by a flag, of the other words, we do not alter the absolute positions of words composing the context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La substitution par un drapeau, des autres mots, nous ne modifions pas les positions absolues des mots composant le contexte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>At the end of this second step, we build an overall lexicon LW by considering all the lemmatized words occurring at least one time in the contexts of SCW .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À la fin de cette seconde étape, un lexique global LW est construit en considérant tous les mots lemmatisés apparaissant au moins une fois dans les contextes de SCW .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>The lexicon LW holds the lexical information of our context representation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le lexique LW contient l’information lexical de notre représentation contextuelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>By definition, a context is a sequence of words w[(] [i][)] centred around W , where i is for the relative position of wi comparing to W :</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par définition, un contexte est une séquence de mots w[(] [i][)] centrée autour W , où i est la position relative de wi par rapport à W :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>Words are weighted according to their positions in the context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les mots sont pondérés en fonction de leurs positions relatives dans le contexte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>The weighting takes into account that words closer to W should be more characteristic to this person name than further words in the context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le poids prend en compte le fait que les mots proches de W caractérisent mieux le nom de personne que les mots plus éloignées dans le contexte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>For a word w[(] [i][)] situated at the position i , the weight Pw ( i ) is computed with</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour un mot w[(] [i][)] situé à la position i, le poids Pw ( i ) est calculé selon :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>The function is not defined in 0 since the latent word W is supposed to be unobserved.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La fonction n’est pas définie en 0 puisque le mot latent W est supposé ne pas être observé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>By combining the lexicon LW and weighted words of each context CW of SCW we build a matrix denoted MW , in which a line represents one context, a column corresponds to one word of LW , and the cells are filled with its weighted position Pwi .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En combinant le lexique LW et les mots pondérés de chaque contexte CW de SCW , une matrice dénotée MW est construite, dans laquelle une ligne représente un contexte, une colonne représente un mot de LW , et les cellules sont remplies selon la position pondérée Pwi du mot w[i] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>When a word appears several times in one context, the word will be considered only one time with its occurrence closest to W .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsque qu’un mot apparaît plusieurs fois dans un contexte, le mot ne sera considéré qu’une seule fois avec son occurrence la plus proche de W.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>If a words of LW does not appear in a context, its corresponding cell in MW is set with the 0 value.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si un mot de LW n’apparaît pas dans un contexte, sa cellule correspondante dans MW est mise à la valeur 0.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>3.2. Dimension Reduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2 Réduction de la dimension</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>The preceding step has produced a matrix MW with dimensions C × L , where C is the number of contexts extracted from the training document set, and L is the size of the overall lexicon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’étape précédente a produit une matrice MW avec les dimensions C × L , où C est le nombre de contextes extraits à partir d’un ensemble de documents d’entrainement et L est la taille du lexique global.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>Since this matrix contains an important proportion of values equal to 0, a dimension reduction strategy is necessary.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Puisque la matrice contient une proportion importante de valeurs égales à 0, une stratégie de réduction de la dimension est nécessaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>Here, a Singular Value Decomposition is applied as follows, and aims at reducing the sparsity of data while decreasing the dimension of the lexicon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ici, une décomposition en valeurs singulières (ou SVD, Singular Value Decomposition) est appliquée. Elle vise à réduire la rareté des données tout en réduisant la dimension du lexique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>The dimension reduction is achieved by separating the matrix MW into three different matrices :</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La réduction de la dimension est réalisée en séparant la matrice MW en trois différentes matrices :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>where Σ stands for a diagonal matrix, and U and V are orthogonal matrices.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où Σ représente une matrice diagonale, et U et V des matrices orthogonales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>Vectors composing Σ are re-ordered according to the highest singular values.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les vecteurs composant Σ sont ré-ordonnés en fonction des valeurs singulières les plus hautes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>The dimension reduction is, then, achieved by deleting the dimensions that present the less variation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La réduction de la dimension est, ensuite, achevée en supprimant les dimensions présentant le moins de variation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>The matrix transformation is obtained with the product of MW by V .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La matrice de transformation est obtenue grâce au produit de MW par V .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>The SVD of these large sparse matrices has been done with the SVDLIBC toolkit.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La SVD de ces matrices éparses de grande taille a été réalisée au moyen de l’outil SVDLIBC .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>3.3. Name Spotting</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3 Détection des noms</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>The reduced space resulting from SVD allows to map each word sequence in a low dimension feature vector.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’espace réduit obtenu à partir de la SVD permet de projeter chaque séquence de mots dans un vecteur de faible dimension.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>The spotting process will operate at this level, by searching a matching context in the feature vector stream obtained from the ASR output word stream.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le processus de détection sera exploité à ce niveau, en cherchant une correspondance dans le flux de vecteurs de caractéristiques obtenu à partir du flux de mots de la transcription automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>Name-context model are trained to detect, whether an unknown lexical context corresponds or not to a given name in this feature vector stream,.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le modèle de contexte de noms est entrainé pour détecter si un contexte lexical inconnu correspond ou non à un nom donné dans le flux de vecteurs de caractéristiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>We chose to use a Linear Support Vector Machine classifier with a 2-class SVM.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons choisi d’utiliser un classifieur linéaire “Support Vector Machine” (SVM) avec deux classes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>Our classification strategy relies on the concurrence between two contradictory context matrices.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre stratégie de classification s’appuie sur la concurrence entre deux matrices de contextes contradictoires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>The first context matrix is MCW , it contains the contexts centred on the person name W . This is called the acceptance matrix of W .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première matrice de contextes MCW , contenant les contextes centrés sur le nom de personne W , est appelée matrice d’acceptation de W .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>The second is a rejection matrix of W .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La seconde est appelée matrice de rejet de W .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>It has been build with contexts where the person name W is not present.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle a été construite au moyen des contextes où le nom W n’est pas présent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>This second matrix aims at reducing errors from ambiguous contexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette deuxième matrice vise à réduire les erreurs dues à des contextes ambigus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>The SVM classification has been done thanks to the libSVM tool [22].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La classification SVM a été réalisée grâce à l'outil libSVM [22].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>4. EXPERIMENT</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. EXPERIMENT</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>4.1. Experimental context : the PERCOL Project in the REPERE Challenge</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Contexte expérimental : le projet PERCOL dans le cadre du défi REPERE</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>This work has been realized in the context of the PERCOL Project[1] dedicated to the automatic named identification of persons in TV programs using mutimodal information like speaker recognition, speech analysis and video processing (face tracking and recognition).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce travail a été réalisé dans le cadre du projet PERCOL[1] dédié à l'identification automatique de noms de personnes dans des programmes télévisés en utilisant des informations multimodales telles que la reconnaissance de locuteurs, l'analyse du discours et le traitement vidéo (suivi et reconnaissance de visages).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>For three years, PERCOL project partners participate to annual evaluation campaigns organized within the REPERE challenge [23].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pendant trois ans, les partenaires du projet PERCOL participent à des campagnes d'évaluation annuelles organisées dans le cadre du défi REPERE [23].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>The experiments presented in the paper have therefore been done with the REPERE challenge development data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les expériences présentées dans le papier ont donc été réalisées avec les données issues de la campagne de développement de REPERE (Kahn et al. , 2012).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>4.1.1. Context corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1.1. Corpus de contexte</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>The contexts used to build the acceptance and rejection matrices are taken from three different kinds of document sets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les contextes utilisés pour construire les matrices d’acceptation et de rejet sont issus de trois différentes types de documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>The first set is composed of around 135,000 news texts produced by AFP (Agence France Presse) in 2009 and 2011.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le premier ensemble est composé d’environ 135 000 dépêches AFP (Agence France Presse) de 2009 à 2011.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>The second set is a dump of Wikipedia 2012.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le deuxième ensemble provient de Wikipedia (2012).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>It counts around one million and two hundred thousand articles.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il contient environ 1,2 millions d’articles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>A last set contains the manual transcriptions of 280 hours from French Radio and TV shows from past French evaluation campaigns (ESTER1&amp;2, EPAC, ETAPE and previous documents provided by the REPERE challenge).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le dernier ensemble contient les transcriptions manuelles de 280 heures d’émissions radios et télévisées françaises issues de précédentes campagnes d’évaluation françaises (ESTER1&amp;2, EPAC, ETAPE et REPERE).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>4.1.2. Evaluation Corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1.2. Corpus d'évaluation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>In this experiment, test data are taken from a development corpus provided by REPERE’s organizers in the purpose of the second evaluation campaign.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ces expériences, les données de test sont issues d'un corpus de développement fourni par les organisateurs de REPERE dans le cadre de la deuxième campagne d'évaluation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>It counts 135 audio files for a total of 24 hours of annotated speech initially including 4,172 annotations of spoken person names.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il contient 135 fichiers audio pour une total de 24 heures de parole annotées incluant 4 172 annotations de noms de personnes prononcées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>We have reduced this set to 4,130 spoken name occurrences by removing persons for which the real identity cannot be established.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons réduit cet ensemble à 4 130 occurrences de noms, les personnes dont l’identité n’ayant pu être clairement définie étant enlevées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>These cases typically correspond to anonymous people calling during a TV show to ask a question to the show participants.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces cas correspondent généralement à des personnes anonymes qui appellent pendant une émission de télévision pour poser une question aux participants de l'émission.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>The spoken names we kept correspond to 845 different identities among which can be found, in the largest proportion, the journalists animating the shows, French and foreigner politicians, sport players, famous people etc.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les noms prononcés que nous avons conservés correspondent à 845 identités différentes parmi lesquelles on trouve principalement les journalistes qui animent les émissions, des politiciens français et étrangers, des sportifs, des personnes connues, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>In this test set, 40% of the identified persons account for 85% of the spoken name annotations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet ensemble de test, 40 % des personnes identifiées correspondent à 85 % des annotations de noms prononcés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>Names of the lasting 60% identified persons are pronounced not more than twice.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les noms des personnes identifiées à 60 % ne sont pas prononcés plus de deux fois.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>4.2. Automatic Speech Recognition Speech recognition outputs yielded from the test data have been produced with the system of the LIA [24].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2. Reconnaissance automatique de la parole Les transcriptions automatiques produites à partir des données d'essai ont été réalisées au moyen du système de transcription du LIA (Nocera et al. , 2002).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>The ASR output scoring tool reports a 29.4% WER.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'outil de notation de sortie ASR indique un taux d'erreur-mot sur l'ensemble de test de 29,4 %.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>Moreover, it has to be noted that the lexicon used in the ASR system contains lexical units found in around 66% of the name shapes present in the annotation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, il faut noter que le lexique utilisé dans le système de reconnaissance automatique du discours contient des unités lexicales présentes dans environ 66 % des formes de noms présents dans l'annotation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>Neverthless, this value is an optimistic estimate since it does not take into account the variability of spoken name pronunciations that really occur in the test set and how many of them are covered by the ASR.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, cette valeur est une estimation optimiste car elle ne tient pas compte de la variabilité des prononciations des noms réellement présentes dans l’ensemble de test et du nombre de prononciations couvertes par le système de reconnaissance vocale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>4.3. Learning Name Models</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.3. Modèles de noms d'apprentissage</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>In this experiment, we set the length of the observation windows used for context extraction to 201 words (i.e. a 2 N + 1 word window centred on a person name with N = 100).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans nos expériences, la longueur des fenêtres d’estimation utilisée pour l’extraction des contextes a été fixée à 201 mots ( i.e. une fenêtre centrée de 2 N + 1 mots sur un nom de personne avec N = 100).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>At the end of the context extraction, we observed that no context at all have been found for 83 person names.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À la fin du processus d’extraction du contexte, nous avons observé qu’aucun contexte n’a été trouvé pour 83 noms de personnes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>Moreover, from the set of 845 person names present in the manual annotation, only 323 names (38 . 2% of the person names) count more than 100 extracted contexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, si nous considérons les 845 noms de personnes présents dans les annotations manuelles, seulement 323 noms (38,2 % des noms de personnes) possèdent plus de 100 contextes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>This 323-speaker set covers 63.3% of the overall number of spoken name occurrences of the test data (2,615 occurrences on a total of 4,130).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet ensemble de 323 noms couvre 63,3 % des occurrences des noms de personnes prononcés dans l’ensemble de test (2 615 occurrences sur un total de 4 130).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>Under this condition, for this experiment, the set of person names is limited to these 323 names.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ces conditions, pour cette expérience, l'ensemble des noms de personnes est limité à ces 323 noms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>For each of them, contexts are then used for the model training.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chacun d’entre eux, les contextes sont alors utilisés pour l’apprentissage du modèle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>Once built, each context matrix is reduced to 100 dimensions by SVD.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois construit, chaque matrice de contextes est réduite à 100 dimensions au moyen de la SVD.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>At the classification step, in order to learn a more discriminant SVM classifier, for a given name W , we build the corresponding rejection matrix using a random sampling of the contexts of person names different from W .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À l’étape de classification, afin d’entraîner un classifieur SVM plus discriminant, pour un nom W donné, nous avons construit la matrice de rejet correspondante au moyen d’un échantillonnage aléatoire des contextes des noms de personnes différentes de W .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>5. RESULTS</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. RÉSULTATS</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>We propose to achieve spoken name recognition and localization in the ASR output stream at the scale of speech segments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous proposons de réaliser la reconnaissance et la localisation des noms de personnes dans les transcriptions automatiques au niveau des segments de parole.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>Our baseline system consists in directly looking for the person names in the 1-Best ASR output using regular expressions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre système de base consiste à rechercher directement les noms de personnes dans la meilleure hypothèse en sortie du système de transcription au moyen d’expressions régulières.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>Since our method assumes that a person name can be discovered in ASR results even if the spoken name is not present in the automatic transcriptions, we are interested in evaluating if our temporal and lexical context representation has captured enough contextual information to learn discriminant model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Puisque que notre approche suppose qu’un nom de personne peut être trouvé dans les résultats des systèmes de transcription même si le nom prononcé n’est pas présent dans les transcriptions, nous cherchons à évaluer si notre représentation temporelle et lexicale du contexte a capturé assez d’information contextuelle pour apprendre un modèle discriminant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>On the other hand we also want to evaluate the complementarity of the baseline with our proposition.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’un autre côté, nous voulons également évaluer la complémentarité du système de base avec notre proposition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>The scoring is done by considering in the manual reference only the 323 person names for which we have been able to learn a context model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'évaluation est réalisée en considérant dans la référence manuelle uniquement les 323 noms de personnes pour lesquels nous avons été capables d'apprendre un modèle de contexte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>The test set therefore contains 2 , 615 spoken occurrences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’ensemble de test contient alors 2 615 occurrences de paroles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>The evaluation reports that 21% (549 occ.) of spoken names cannot be found neither in the ASR outputs, nor with the context model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’évaluation indique que 21 % (549 occurrences) des noms de personnes ne peuvent pas être trouvés, que ce soit dans les transcriptions automatiques ou le modèle des contextes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>We have also evaluated that 40% of the spoken names can be found directly either in automatic transcriptions, or by using context models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également évalué que 40 % des noms de personnes peuvent être trouvés directement dans les transcriptions automatiques ou en utilisant le modèle des contextes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>Our context based method is unable to find 14% of the occurrences while the spoken name has been found using regular expression.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre méthode s’appuyant sur les contextes est incapable de trouver 14 % des occurrences, alors que les noms prononcés ont pu être retrouvés avec des expressions régulières.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>But a very interesting result lays in the observation that 25% of spoken names can be correctly extracted using our approach, while this results cannot be found in the ASR outputs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, un résultat très intéressant concerne le fait que 25 % des noms prononcés peuvent être correctement extraits au moyen de notre approche, alors que ces résultats ne peuvent être trouvés dans les transcriptions automatiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>This last result confirms the validity of our fundamental assumption.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce dernier résultat confirme la validité de notre hypothèse de départ.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>Finally by considering the combination of these two approaches (baseline + our approach), we have found that 79% of the considered spoken names have been correctly discovered.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, en considérant la combinaison de ces deux approches (base + notre approche), nous avons constaté que 79 % des noms de personnes considérés ont été correctement découverts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>6. CONCLUSION AND PERSPECTIVES</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6. CONCLUSION ET PERSPECTIVES</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we have presented a context-based method for retrieving spoken person names in the 1-Best ASR outputs of broadcast TV shows.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce papier, nous avons présenté une méthode basée sur le contexte pour retrouver des noms de personnes dans les sorties ASR 1-Best de programmes télévisés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>Our approach assumes that a person name occurence is dependent from the lexical context it appears in, and the modeling of name-to-context depedencies could help the spotting of person names in ASR outputs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre approche suppose que l'occurrence d'un nom de personne est dépendante du contexte lexical dans lequel il apparaît, et la modélisation des dépendances du contexte d'un nom peut aider à repérer les noms de personnes dans les sorties de systèmes automatiques de transcription.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>Starting from this idea, we proposed a modeling paradigm where contexts are represented by features vetors that integrate the temporal structure of large-span lexical contexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Partant de cette idée, nous avons proposé un paradigme permettant la modélisation de contextes au moyen de vecteurs de caractéristiques intégrant la structure temporelle de contextes lexicaux de grande envergure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>These vectors are reduced by a classical SVD process, and SVM models are trained to identify the targeted person names in the low-dimension feature-vector space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces vecteurs sont réduits avec un processus SVD classique, et les modèles SVM sont entrainés afin d’identifier le nom de personne recherchés dans un espace vectoriel de faible dimension.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>Experiments have been conducted on the data sets of the REPERE Challenge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des expériences ont été menées sur les jeux de données de la campagne d’évaluation REPERE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>Results validate our hypothesis and the efficiency of the proposed modeling paradigm : this method improve from 54% to 79% the person name detection rates.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats valident notre hypothèse de départ et l'efficacité du paradigme de modélisation proposé : cette méthode améliore de 54 % à 79 % le taux de détection des noms de personnes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>Future works in short-term delay will consist in increasing the number of person name model for the next evaluation of the REPERE challenge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les travaux futurs consisteront à augmenter le nombre de modèles de noms de personnes pour la prochaine évaluation du défi REPERE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>We will as well investigate the use of confidence measures provided by the ASR systems in order to increase our system accuracy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous étudierons également l’utilisation des mesures de confiance fournies par les systèmes de transcription afin d’augmenter la précision de notre système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>Moreover, once spoken name have been detected we could try to investigate way to answer the question who is talking to who? and about who are person speaking about? by applying methods like those found in [25, 26].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, une fois que le nom de la personne a été détecté, nous pouvons essayer d'étudier la façon dont nous pouvons répondre aux questions Qui parle ? et De qui l'on parle ? en appliquant des méthodes telles que celles décrites dans [25, 26].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>7. ACKNOWLEDGMENT</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7. RECONNAISSANCE</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>The authors thank the financial supports : ANR 2010-CORD102-02 of the French National Research Agency (ANR). 1 funded by the French national research agency : ANR</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les auteurs remercient le soutien financier : ANR 2010-CORD102-02 de l'Agence Nationale de la Recherche (ANR).</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

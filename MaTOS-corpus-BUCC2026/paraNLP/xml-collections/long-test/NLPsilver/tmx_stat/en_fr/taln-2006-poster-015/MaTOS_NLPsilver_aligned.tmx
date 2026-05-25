@@ -1,0 +1,1055 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2006-poster-015. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/L08-1546/</url_en>
+        <url_fr>https://talnarchives.atala.org/TALN/TALN-2006/taln-2006-poster-015.pdf</url_fr>
+        <title_en>Evolutionary basic notions for a thematic representation of general knowledge</title_en>
+        <title_fr>Approche évolutive des notions de base pour une représentation thématique des connaissances générales </title_fr>
+        <docid>taln-2006-poster-015</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Evolutionary basic notions for a thematic representation of general knowledge</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Approche évolutive des notions de base pour une représentation thématique des connaissances générales</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>In the field of Natural Language Processing, in order to work out a thematic representation system of general knowledge, methods relying on thesaurus have been used for about twenty years.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le domaine du Traitement Automatique du Langage Naturel, pour élaborer un système de représentation thématique des connaissances générales, des méthodes s’appuyant sur des thésaurus sont utilisées depuis une quinzaine d’années.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>A thesaurus consists of a set of concepts which define a generating system of a vector space modelling general knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un thésaurus est constitué d’un ensemble de concepts qui définissent un système générateur d’un espace vectoriel modélisant les connaissances générales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>These concepts, often organized in a treelike structure, constitute a fundamental, but completely fixed tool.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces concepts, souvent organisés en une hiérarchie arborescente, constituent un instrument fondamental, mais totalement figé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>Even if the concepts evolve (we think for example of the technical fields), a thesaurus as for it can evolve only at the time of a particularly heavy process, because it requires the collaboration of human experts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Même si les notions évoluent (nous pensons par exemple aux domaines techniques), un thésaurus ne peut quant à lui être modifié que lors d’un processus particulièrement lourd, car nécessitant la collaboration d’experts humains.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>After detailing the characteristics which a generating system of the vector space of knowledge modelling must have, we define the “basic notions”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après avoir détaillé les caractéristiques que doit posséder un système générateur de l’espace vectoriel de modélisation des connaissances, nous définissons les « notions de base ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Basic notions, whose construction is initially based on the concepts of a thesaurus, constitute another generating system of this vector space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les notions de base, dont la construction s'appuie initialement sur les concepts d'un thésaurus, constituent un autre système générateur de cet espace vectoriel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>We then approach the determination of the acceptions expressing the basic notions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous abordons ensuite la détermination des acceptions exprimant les notions de base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>Lastly, we clarify how, being freed from the concepts of the thesaurus, the basic notions evolve progressively with the analysis of new texts by an iterative process.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous explicitons comment, s’affranchissant des concepts du thésaurus, ces notions de base évoluent par un processus itératif au fur et à mesure de l’analyse de nouveaux textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>Keywords : thesaurus, conceptual vectors, basic notions, evolution.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mots clés : thésaurus, vecteurs conceptuels, notions de base, évolutivité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>1. Introduction: thematic representation of general knowledge</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction : représentation thématique des connaissances générales</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>(Lafourcade and Sandford 1999) then (Lafourcade 2001) developed a system of thematic representation[1] of general knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lafourcade et Sandford (1999) puis Lafourcade (2001), à la suite de Chauché (1990), ont développé un système de représentation thématique[1] des connaissances générales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>This system is based on a vector representation which is initially built from the hierarchy of concepts of the Larousse thesaurus (Larousse 1999).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Celui-ci est fondé sur une représentation vectorielle qui repose initialement sur la hiérarchie de concepts du thésaurus Larousse (Larousse, 1999).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>This thesaurus initially defines the extent of general knowledge: we consider that a term belongs to general knowledge when it belongs to one of the non-specialized dictionaries (ex: Larousse or Robert for French language).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est ce thésaurus qui, initialement, définit l'étendue des connaissances générales, par opposition aux connaissances spécialisées spécifiques à un domaine particulier : nous considérons qu'un terme fait partie des connaissances générales lorsqu'il appartient à l'un des dictionnaires généralistes (ex. : Larousse ou Robert pour la langue française).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>The use of a vector space for modelling has existed for a long time in Information Retrieval, for example (Salton and MacGill 1983).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’utilisation d’un espace vectoriel pour la modélisation existe depuis longtemps en Recherche d’Informations (cf. par exemple Salton et MacGill 1983).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>The thesaurus we used features a treelike structure; it contains 873 leaf concepts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le thésaurus utilisé possède une structure arborescente ; il contient 873 concepts feuilles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>These concepts form a generative system of the vector space named C873; this space constitutes a modelling of our thematic representation system of general knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces concepts forment un système générateur de l’espace vectoriel noté C873 ; cet espace constitue une modélisation de notre représentation thématique des connaissances générales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>This vector approach, based on a set of predetermined concepts, is the one that (Chauché 1990) recommended.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette approche vectorielle, s’appuyant sur un ensemble de concepts prédéterminé, est celle préconisée par Chauché (1990).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>The concepts defining the generative system constitute the fundamental elements in representing knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les concepts définissant le système générateur constituent les éléments fondamentaux de notre représentation des connaissances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>The purpose of a generative system is thus to be able to represent the maximum of general knowledge in a minimum number of vectors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le but d’un système générateur est donc de pouvoir, en un minimum de vecteurs, représenter le maximum de connaissances générales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>Do the 873 concepts of the thesaurus used, given a priori, establish the “best” generative system?</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les 873 concepts du thésaurus utilisé, donnés a priori , constituent-ils le « meilleur » système générateur ?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>This question is all the more legitimate that other general thesauruses were published, for example the Roget Thesaurus (Kipfer 2001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est d’autant plus légitime de se poser cette question que d’autres thésaurus généralistes ont été publiés. Le plus ancien est probablement le Roget’s Thesaurus (Kipfer, 2001) dont la première édition date du milieu du XIX[e] siècle, organisé en une structure arborescente qui compte dans sa version actuelle 1075 concepts feuilles regroupés en 15 classes. Ce thésaurus a servi de base à différents travaux, par exemple Yarowsky (1992).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>The 873 concepts used do not constitute a base of the C873 vector space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les 873 concepts utilisés ne constituent pas une base de l’espace vectoriel C873.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>Indeed, we can notice that it is possible to find relations between some of these 873 generative vectors, and thus it is obvious that the dimension of the C873 space is smaller than 873.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, il est à remarquer qu’il est possible de trouver des relations entre certains de ces 873 vecteurs générateurs ; par exemple, entre les concepts 1_EXISTENCE et 2_INEXISTENCE existe une relation d’antonymie ; même s’il serait naïf de considérer que leurs vecteurs associés sont opposés (Schwab, 2005), il est manifeste que la dimension de l’espace C873 est donc inférieure à 873.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>However, for reasons of simplicity, the decomposition of an acception remains unique in the considered thesaurus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutefois, pour des raisons de simplicité, la décomposition d’une acception quelconque reste unique dans le thésaurus considéré.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>This interdependence between concepts has sometimes been processed, as for example in the LSA model (Deerwester and al. 1990).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette interdépendance entre concepts a parfois été exploitée, comme par exemple dans le modèle LSA (Deerwester et al. 1990).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>What is the dimension of the vector space of thematic modelling of general knowledge?</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quelle est la dimension de l'espace vectoriel de la modélisation thématique des connaissances générales ?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>It is impossible to answer this question.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est impossible de répondre à cette question.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>It depends in particular on the degree of precision wanted in this modelling: the more precision we want, the more concepts we need to distinguish similar (and thus nearby) notions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela dépend notamment du degré de précision souhaité dans cette modélisation : plus la précision est grande, plus il faut de concepts pour distinguer des notions similaires (et donc voisines).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>Every acception, that is, every meaning of a term, is thus represented on C873 by a unique vector, called abstract vector (Schwab 2005): each of the 873 components of an abstract vector represents the intensity of one of the 873 generative ideas.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque acception, c’est-à-dire chaque sens d’un terme, se traduit donc sur C873 par un vecteur unique, appelé vecteur conceptuel (Schwab, 2005) : chacune des 873 composantes d’un vecteur conceptuel représente l’intensité d’une des 873 idées génératrices.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>The abstract vectors are at the moment built from the hierarchy of a thesaurus, thus totally fixed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les vecteurs conceptuels sont construits actuellement à partir de la hiérarchie d’un thésaurus, donc totalement figée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>This construction is achieved by automatic learning from various sources: dictionaries, lists of synonyms or antonyms …</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette construction s’effectue par apprentissage automatique à partir de différentes sources : dictionnaires, listes de synonymes ou d’antonymes, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>For example, in the case of a definition of an acception, we combine the abstract vectors of the various acceptions that we meet in the text of this definition to form the abstract vector of the defined acception.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, dans le cas d'une définition d'une acception, on combine les vecteurs conceptuels des différentes acceptions que l'on rencontre dans le texte de cette définition pour former le vecteur conceptuel de l'acception définie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>Figure 1 shows the 873 components of the abstract vector for the term ‘Peace’ .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 1 montre les 873 composants du vecteur abstrait pour le terme « Paix ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>The 873 concepts of the Larousse thesaurus establish a generative system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les 873 concepts du thésaurus Larousse constituent un système générateur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>This system is not unique!</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce système n'est pas unique !</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>We can consider that the generative system of the Larousse thesaurus corresponds in fact to one of a typical individual.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut considérer que le système générateur du thésaurus Larousse correspond en fait à celui d'un individu type.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>Can we find a “better” generative system of the vector space modelling the thematic representation of knowledge than the generative system defined by the concepts of the used thesaurus?</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pouvons-nous trouver un « meilleur » système générateur de l'espace vectoriel modélisant la représentation thématique des connaissances que celui défini par les concepts du thésaurus utilisé ?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>What is the meaning of “better”?</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quelle est la signification de ce mot « meilleur » ?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: The 873 components of the abstract vector for the term ‘Peace’ .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1 : Les 873 composantes du vecteur abstrait pour le terme « Paix ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>In the thesaurus (Larousse 1999), the concept 652_PAIX exists: so, this component has here a dominating value.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le thésaurus (Larousse 1999), le concept 652_PAIX existe : donc, cette composante a ici une valeur dominante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>2. What are the criteria of a good generative system?</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Quels sont les critères d’un « bon » système générateur ?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>It could be pretentious to assert what a good generative system of a vector space modelling our thematic representation of general knowledge would be.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il pourrait être prétentieux d’affirmer ce que serait un « bon » système générateur d’un espace vectoriel modélisant notre représentation thématique des connaissances générales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>It is however possible to clarify several minimal characteristics that such a system must have.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est toutefois possible d’expliciter un certain nombre de caractéristiques minimales que doit posséder un tel système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>This is close to the work of (Wilks 1977).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci est à rapprocher des travaux de Wilks (1977).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>2.1 Extent: it is a generative system</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.1 Étendue : c’est un système générateur</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>A generative system has to cover the whole nonspecialized domain (because it is the domain considered here).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un système générateur doit couvrir l’ensemble du domaine généraliste (puisque c’est ici le domaine considéré).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>What do we mean by “the whole non-specialized domain”?</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Qu’entend-on par « l’ensemble du domaine non spécialisé » ?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>Even if it is impossible to define the limits of the domain in a clear way, we can consider that the terms belonging to common non-specialized dictionaries give us a reasonable idea of what these limits are.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Même s'il est impossible de définir de manière précise les limites du domaine, on peut considérer que les termes appartenant aux dictionnaires généralistes courants en donnent une idée raisonnable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>We cannot however conclude that any new acception that could be expressed according to already existing acceptions can be considered as being part of the domain because a lot of specialized acceptions can be expressed with nonspecialized terms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On ne peut cependant pas en conclure que toute nouvelle acception qu’il serait possible d’exprimer en fonction d’acceptions déjà existantes pourrait être considérée comme faisant partie du domaine car de nombreuses acceptions spécialisées peuvent être exprimées avec des termes non spécialisés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>2.2 Representativeness: it is a generative system close to a base</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.2. Représentativité : c’est un système générateur proche d’une base</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>A generative system should distinguish, in a minimum number of concepts, a maximum of “common” notions: our experiments show that a thousand of concepts seem sufficient to be such a system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un système générateur doit donc permettre, en un minimum de concepts, de différencier un maximum de notions « courantes » : nos expérimentations montrent qu’un millier de concepts semblent suffisants pour cela.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>The generative system, even if it is not a base of the representation space (can we really verify it?), must be relatively close to it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système générateur, même s'il n'est pas une base de l'espace de représentation (peut-on vraiment le vérifier ?), doit en être relativement proche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>2.3 Evolution capacities: it is not a fixed system</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.3 Capacités d'évolution : ce n'est pas un système figé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>A thesaurus is mainly criticized for its fixed character.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La principale critique faite à un thésaurus est son caractère figé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>A generative system must be able to take into account the evolution of notions easily.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un système générateur doit pouvoir facilement prendre en compte l’évolution des notions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>Furthermore, a generative system, like a thesaurus, cannot a priori be exhaustive: it seems difficult, even impossible, to define the limits of the considered domain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, un système générateur, tout comme un thésaurus, ne peut pas a priori être exhaustif : il parait difficile, voire impossible, de définir les limites du domaine considéré.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>This shows that the generative system has to be evolutionary.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela montre la nécessité, en fonction des besoins, du caractère évolutif du système générateur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>It will be necessary however to make sure that these abilities to evolve do not work against the representativeness.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il faudra toutefois faire attention à ce que cette capacité d'évolution n'œuvre pas à l'encontre de la représentativité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>3. Method: definition and evolution of the basic notions</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Méthode : définition et évolution des notions de base</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>3.1 Definition of the basic notions</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1. Définition des notions de base</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>In an incremental way, as texts are analysed, we meet words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De façon incrémentale, au fur et à mesure de l'analyse de textes, on rencontre des mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>Let k be the number of different terms met.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Soit k le nombre de termes différents rencontrés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>Most of the terms being polysemous, these different k terms have k’ acceptions and thus generate k’ vectors on the C873 vector space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La grande majorité des termes étant polysémiques, ces k termes différents possèdent k' acceptions et génèrent donc k' vecteurs sur l'espace vectoriel C873. (dans l'état actuel de nos expérimentations, k' dépasse 400.000 (Schwab et al. 2004)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>Furthermore, it is necessary to balance these k’ vectors according to how often they appear in the texts studied.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, il est nécessaire de pondérer ces k’ vecteurs en fonction de leur fréquence d’apparition dans les textes étudiés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>This weighting function is inevitably an increasing function: the more frequent an acception is, the more important it is for our general knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette fonction de pondération est inévitablement croissante : plus une acception est fréquente, plus elle est importante pour notre connaissance générale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>But connecting proportionally this importance with the frequency of appearance seems too strict for relatively infrequent terms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais associer proportionnellement cette importance à la fréquence d’apparition semble trop strict pour des termes relativement peu fréquents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>Numerous phenomena in physics are measured according to logarithmic scales (for example: decibels in acoustics, Richter scale for earthquakes, brightness of stars in the Greek antiquity…).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nombreux phénomènes en physique sont mesurés selon des échelles logarithmiques (par exemple : les décibels en acoustique, l'échelle de Richter pour les tremblements de terre, la luminosité des étoiles dans l'Antiquité grecque...).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>We decided to use a logarithmic function.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons décidé d'utiliser une fonction logarithmique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>It also seems reasonable to weight every occurrence of these k’ vectors according to the depth of the corresponding acception in the syntactic analysis tree of the text studied; indeed, it is logical to think that the more a word is “lost” in the depths of a sentence, the less important it is for the global meaning of this sentence[2] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il parait également raisonnable de pondérer chaque occurrence de ces k’ vecteurs en fonction de la profondeur de l’acception correspondante dans l’arbre d’analyse syntaxique du texte étudié ; en effet, il est logique de penser que plus un mot est « perdu » dans les profondeurs d’une phrase, moins il est important pour le sens global de cette phrase[3] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>It seems natural that this weighting function, inevitably decreasing, should be a negative exponential function of depth.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il semble naturel que cette fonction de pondération, nécessairement décroissante, soit une fonction exponentielle négative de la profondeur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>In a more formal way, if we call p the depth of a term t in the tree of syntactic analysis of the studied text, the norm of the vector v representing the corresponding acception (after disambiguation between the possible various acceptions of t) is: ||v|| = e[-][α][p] where α is a weighting coefficient.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De manière plus formelle, si nous appelons p la profondeur d’un terme t dans l’arbre d’analyse syntaxique du texte étudié, la norme du vecteur v représentant l’acception correspondante (après désambiguïsation entre les éventuelles différentes acceptions de t sera : ||v|| = e[-][α][p] où α est un coefficient de pondération.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>The ith occurrence of this acception a of the term t will be represented on C873 by a vector va,i the norm of which will be: ||va,i|| = e[-][α][p][a,i] where pa,i indicates the depth in the analysis tree of the ith occurrence of the acception a.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La i[e] occurrence de cette acception a du terme t sera représentée sur C873 par un vecteur v dont la norme sera : ||va,i|| = e[-][α][p][a,i] où pa,i désigne la profondeur dans l’arbre d’analyse de la i[e] occurrence de l’acception a .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>If we want to take into account the occurrences of the acceptions, we should think about a (logarithmic) summation of the different vectors representing every occurrence of a same acception.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de tenir compte de la fréquence d’apparition des acceptions, il parait raisonnable d’envisager une sommation (logarithmique) des différents vecteurs représentant chaque occurrence d’une même acception.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>As a result, we find that the vector va representing the acception a on all the texts processed will have as norm: ||va|| = Log ( Σi e[||v][a,i][||] ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, le vecteur va représentant l’acception a sur l’ensemble des textes traités aura pour norme : ||va|| = Log ( Σi e[||v][a,i][||] ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>In order to simplify, and if we want to take into account the thematic closeness[3] , the k’ vectors va obtained can be grouped together in n clusters, with n &lt;&lt; k’.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de simplifier, et si l'on tient compte de la proximité thématique[3] , les k’ vecteurs va obtenus peuvent se regrouper en n nuages, avec n &lt;&lt; k’.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>The n barycentric vectors of these n clusters form a generative system of a vector space Bn.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les n vecteurs barycentres de ces n nuages forment un système générateur d’un espace vectoriel Bn.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>So, we group together the terms thematically close to a same concept.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous regroupons ainsi les termes thématiquement proches d’un même concept.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>Although the method is different, our aim resembles the one developed by (Landauer and Dumais 1997) for the Latent Semantic Analysis (LSA) method.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que la méthode soit différente, notre objectif est à rapprocher de celui développé par Landauer et Dumais (1997) pour la méthode Latent Semantic Analysis (LSA).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>By considering a relatively large number n, probably from several hundreds to a few thousands, this Bn space can almost be confused with C873, provided that the texts studied sweep all the general knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En considérant un nombre n relativement grand, probablement de plusieurs centaines à quelques milliers, cet espace Bn peut être quasiment confondu avec C873 , à condition que les textes étudiés ne se restreignent pas à un domaine spécifique et balaient l’ensemble des connaissances générales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>What do these n vectors correspond to?</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À quoi correspondent ces n vecteurs ?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>They are the “basic notions” deducted from the analysis of texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce sont les « notions de base » déduites de l’analyse des textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>Figure 2 illustrates the principle of our methodology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 2 illustre le principe de notre méthodologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>3.2 Labelling the basic notions</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2. Expression des notions de base</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>For each of these n basic notions, called bi, it is possible to find the closest term by using the notion of thematic distance defined on C873.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chacune de ces n notions de base, notée bi , il est possible de trouver le terme le plus proche, en utilisant la notion de distance thématique définie sur C873.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>Providing that a term close enough of bi exists, it will express this basic notion.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sous la condition qu’il existe un terme « suffisamment » proche de bi , celui-ci exprimera cette notion de base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>In fact, it is not a question of finding the closest term, but the closest acception of bi.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fait, il s’agit non pas de trouver le terme le plus proche, mais l’acception de terme la plus proche de bi .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>The question of what we should name the cluster has to be asked to avoid any risk of ambiguity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La question de ce que nous devrions nommer le cluster doit être posée afin d’éviter tout risque d’ambiguïté.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>Furthermore, it is essential to take into account the frequency of the candidate acception to name the basic notion: can a rare acception be a good concept?</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, il est indispensable de prendre en compte la fréquence de l’acception candidate pour nommer la notion de base : une acception trop peu fréquente peut-elle être un « bon » concept ?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>In the opposite, the most frequent acception, or more exactly the one the vector of which has the biggest norm in the cluster (see fig.2), is not necessarily the ‘best’ concept, if it is relatively far from the barycenter of the cluster of vectors which it is supposed to represent.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas contraire, l'acception la plus fréquente, ou plus exactement celle dont le vecteur a la norme la plus grande dans le nuage (voir la figure 2), ne constitue pas nécessairement le « meilleur » concept, si elle est relativement éloignée du barycentre du nuage de vecteurs qu'elle est censée représenter.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>3.3 Evolution capacities of the system</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3 Capacités d'évolution du système</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>As new texts are analysed, the clusters of vectors evolve: it is “the evolution of the notions”, with a possible phenomenon of differentiating clusters or grouping them together.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au fur et à mesure de l'analyse de nouveaux textes, les nuages de vecteurs évoluent : c'est « l'évolution des notions », avec éventuellement des phénomènes de différenciation ou de regroupement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>This is to be set against the definition of the 873 basic concepts which are unchangeable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci est à opposer à la définition des 873 concepts de base qui sont immuables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>We can notice that these evolutionary basic notions are initially expressed according to the 873 fixed concepts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est tout de même à remarquer que ces notions de base évolutives sont initialement exprimées en fonction des 873 concepts fixes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>From the generative system of the fixed concepts, we built the generative system of the basic notions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À partir du système générateur des concepts fixes, nous avons construit le système générateur des notions de base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>Any acception can now be expressed in the space of the basic notions; therefore, any new acception expressed according to an already existing acception (which is the case of the definitions from dictionaries) can be expressed in the space of the basic notions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toute acception peut à présent s’exprimer dans l’espace des notions de base ; par conséquent, toute nouvelle acception s’exprimant en fonction d’acceptions déjà existantes (ce qui est le cas des définitions dictionnairiques) peut s’exprimer dans l’espace des notions de base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>So, the thesaurus concepts are used for initializing the process.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les concepts du thésaurus servent donc pour une initialisation du processus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>After a first definition of the basic notions, it is possible to break free from concepts, because any new acception can be decomposed on the space generated by the basic notions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après une première définition des notions de base, il est possible de s’affranchir des concepts, puisque, comme nous venons de le voir, toute nouvelle acception est décomposable sur l’espace généré par les notions de base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>The process of evolution includes two stages:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le processus d'évolution comprend deux étapes :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>1°/ evolution of the basic notions, that is, evolution of the generative system:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1°/ évolution des notions de base, c'est-à-dire évolution du système générateur :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>Every introduction of a new acception modifies the cluster to which it belongs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque introduction d'une nouvelle acception modifie le nuage auquel elle appartient.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>The barycenter of this cluster is thus moved, which leads to a modification of the vector of the corresponding basic notion.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le barycentre de ce nuage est donc déplacé, ce qui entraîne une modification du vecteur de la notion de base correspondante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>In some cases, the introduction of a new acception may have such an influence on the cluster that it can split in more restricted clusters, or on the contrary regroup with a nearby cluster.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il se peut même, dans certains cas, que l'introduction d'une nouvelle acception ait une influence telle sur le nuage que celui-ci puisse se morceler en nuages plus restreints, ou à l'opposé se regroupe avec un nuage voisin.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>2°/ modification of the coordinates of the acception vectors for which the components on the vectors of the modified basic notions is not equal to zero:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2°/ modification des coordonnées des vecteurs d’acceptation pour lesquels les composantes sur les vecteurs des notions de base modifiées est non nulle :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>After modifying the vector of a basic notion, it is essential to go through the existing acception vectors and to modify the coordinates of those for which the projection on the modified basic notion vector is not equal to zero: it is a classical change of mark.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après modification du vecteur d'une notion de base, il est indispensable de parcourir l'ensemble des vecteurs d'acceptation existants et de modifier les coordonnées de ceux pour lesquels la projection sur le vecteur notion de base modifié n'est pas nulle : c'est un changement de repère classique. On se rappellera que la base de données vectorielles est en apprentissage permanent et la révision des notions de base pourra être réalisée simultanément à cet apprentissage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>Indeed, during the revision of a vector of acception, we revise not only the intensity of its components, but also its components themselves, namely the basic notions on which it leans.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, lors de la révision d’un vecteur d’acception, nous révisons non seulement l’intensité de ses composantes, mais également ses composantes elles-mêmes, à savoir les notions de base sur lesquelles il s’appuie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>Figure 3 shows this iterative principle: every introduction of a new acception (or every new definition of an already existing acception) generates an iteration leading to an evolution of the generative system of the space of the basic notions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 3 montre ce principe itératif : chaque introduction d'une nouvelle acception (ou chaque nouvelle définition d'une acception déjà existante) génère une itération conduisant à une évolution du système générateur de l'espace des notions de base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>This updating, even if it can be relatively long, is totally automatic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette mise à jour, même si elle peut être relativement longue est totalement automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>It is not the case with a fixed thesaurus defined a priori that can be modified only by a human expert.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce n'est pas le cas avec un thésaurus fixe défini a priori qui ne peut être modifié que par un expert humain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>In this last case, the first stage, completely ‘manual’, is actually much heavier; the second stage, which is automatic, is similar to the one realized in the space of the basic notions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce dernier cas, la première étape, entièrement « manuelle », est effectivement beaucoup plus lourde ; la deuxième étape, automatique, est quant à elle analogue à celle réalisée dans l’espace des notions de base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>4. Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>The modelling by a vector space for representating thematically general knowledge has been used for about twenty years.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La modélisation par un espace vectoriel pour la représentation thématique des connaissances générales est utilisée depuis une vingtaine d’années.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>The definition of the generative system of this space usually rests on the hierarchy of a thesaurus: it is a fundamental, but totally fixed structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La définition du système générateur de cet espace de modélisation repose couramment sur la hiérarchie d’un thésaurus : c’est une structure fondamentale, mais totalement figée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>Evolution of knowledge requires a generative system which can evolve.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’évolution des connaissances nécessite de disposer d’un système générateur qui puisse évoluer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>That is why we defined the basic notions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons donc défini les notions de base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>Their construction initially relies on the skeleton which constitutes the concepts of a thesaurus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leur construction s’appuie initialement sur l’ossature que constituent les concepts d’un thésaurus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>The appearance of acceptions allows the evolution of the generative system of the space of knowledge representation, as new texts are analyzed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'apparition d'acceptions permet l'évolution du système générateur de l'espace de représentation des connaissances au fur et à mesure de l'analyse de nouveaux textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>This evolutionary definition of the basic notions totally frees itself from the fixed hierarchy of the concepts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette définition évolutive des notions de base s’affranchit totalement de la hiérarchie figée des concepts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>It allows to contemplate applications generated by the evolution of notions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle permet de contempler des applications générées par l'évolution des notions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>Fig.2: this diagram illustrates the method we used to define the basic notions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Fig.2 : ce schéma illustre la méthode utilisée pour définir les notions de base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>Studying the texts allows to get the trees of morpho-syntactic analysis of the sentences constituting these texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'étude des textes permet d'obtenir les arbres d'analyse morpho-syntaxique des phrases constituant ces textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>This analysis is conducted thanks to the tool SYGFRAN (for the French language) developed with SYGMART (Chauché 1984).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette analyse est réalisée grâce à l'outil SYGFRAN (pour le français) développé avec SYGMART (Chauché 1984).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>A semantic analysis is then carried out and every occurrence of an acception gives a vector on C873 whose norm is function of its depth in the tree.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une analyse sémantique est ensuite effectuée et chaque occurrence d'une acception donne un vecteur sur C873 dont la norme est fonction de sa profondeur dans l'arbre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>By adding (logarithmically) the vectors of the various occurrences of a same acception, we get the vector corresponding to this acception on C873.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En additionnant (logarithmiquement) les vecteurs des différentes occurrences d'une même acception, on obtient le vecteur correspondant à cette acception sur C873.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>The vectors of various acceptions can be grouped together in clusters the barycenters of which define the basic notions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les vecteurs de diverses acceptions peuvent être regroupés en clusters dont les barycentres définissent les notions de base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>Fig.3: this diagram which recapitulates the definition of the basic notions, illustrates the iterative structure allowing their evolution after introducing a new acception.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Fig.3 : ce schéma qui recapitule la définition des notions de base, illustre la structure itérative permettant leur évolution après introduction d'une nouvelle acception.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>1 We only consider thematic relations; “transverse” relations between objects not belonging to the same sub-tree of the hierarchy are not taken into account.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Nous ne considérons donc que les relations thématiques ; les relations « transversales » entre objets n’appartenant pas au même sous arbre de la hiérarchie ne sont pas prises en compte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>2 Of course, the importance of a word also depends on its function in the sentence, and its depth in the tree of syntactic analysis is only a criterion of the importance of the word in question.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Bien évidemment, l'importance d'un mot dépend également de sa fonction dans la phrase, et sa profondeur dans l'arbre d'analyse syntaxique n'est qu'un critère de l'importance du mot considéré.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>3 It is possible to measure this thematic closeness by means of the angular distance between vectors: this one is based on the notion of similarity between vectors, often used in information retrieval, for example (Baeza-Yates and Ribeiro-Neto 1999).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Il est possible de mesurer cette proximité thématique à l'aide de la distance angulaire entre vecteurs : celle-ci s'appuie sur la notion de similarité entre vecteurs, souvent utilisée en recherche d'information, par exemple (Baeza-Yates et Ribeiro-Neto 1999).</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

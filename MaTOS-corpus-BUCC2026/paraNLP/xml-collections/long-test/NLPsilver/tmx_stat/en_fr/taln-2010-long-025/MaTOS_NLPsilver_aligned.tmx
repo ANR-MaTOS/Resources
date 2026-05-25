@@ -1,0 +1,1519 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2010-long-025. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/C10-2122.pdf</url_en>
+        <url_fr>https://aclanthology.org/2010.jeptalnrecital-long.25.pdf</url_fr>
+        <title_en>Multilingual Summarization Evaluation without Human Models</title_en>
+        <title_fr>Évaluation automatique de résumés avec et sans référence</title_fr>
+        <docid>taln-2010-long-025</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Multilingual Summarization Evaluation without Human Models</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Évaluation automatique de résumés multilingues sans modèles humains</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>We study correlation of rankings of text summarization systems using evaluation methods with and without human models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous étudions la corrélation des classements des systèmes de résumé de texte en utilisant des méthodes d'évaluation avec et sans modèles humains.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>We apply our comparison framework to various well-established contentbased evaluation measures in text summarization such as coverage, Responsiveness, Pyramids and ROUGE studying their associations in various text summarization tasks including generic and focus-based multi-document summarization in English and generic single-document summarization in French and Spanish. The research is carried out using a new content-based evaluation framework called FRESA to compute a variety of divergences among probability distributions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous appliquons notre cadre de comparaison aux diverses mesures d'évaluation bien établies en résumé de texte telles que la couverture, la réactivité, les pyramides et ROUGE en étudiant leurs associations dans diverses tâches de résumé de texte, y compris le résumé multi-document générique (français/anglais), le résumé focalisé (anglais) et le résumé mono-document générique (français/espagnol). La recherche est menée à l'aide d'un nouveau cadre d'évaluation fondé sur le contenu appelé FRESA qui calcule diverses divergences entre les distributions de probabilité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>Keywords: Evaluation measures, Text Automatic Summarization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mots-clés : Mesures d’évaluation, Résumé automatique de textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>1 Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>Text summarization evaluation has always been a complex and controversial issue in computational linguistics.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'évaluation des résumés produits de manière automatique a toujours été une question complexe et controversée en linguistique computationnelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>In the last decade, significant advances have been made in the summarization evaluation field. Various evaluation frameworks have been established and evaluation measures developed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au cours de la dernière décennie, des progrès importants ont été réalisés dans le domaine de l'évaluation de la synthèse. Différents cadres d'évaluation ont été établis et plusieurs mesures d'évaluation ont été développées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>SUMMAC (Mani et al., 2002), in 1998, provided the first system independent framework for summary evaluation; the Document Understanding Conference (DUC) (Over et al., 2007) was the main evaluation forum from 2000 until 2007; nowadays, the Text Analysis Conference (TAC)[1] provides a forum for assessment of different information access technologies including text summarization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>SUMMAC (Mani et al., 2002), en 1998, a fourni le premier cadre indépendant du système pour l'évaluation des résumés ; la Document Understanding Conference (DUC) (Over et al., 2007) a été le principal forum d'évaluation de 2000 à 2007 ; de nos jours, la Text Analysis Conference (TAC) [1] fournit un forum pour l'évaluation des différentes technologies d'accès à l'information, y compris la résumé de texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>Evaluation in text summarization can be extrinsic or intrinsic (Sp¨arck-Jones and Galliers, 1996).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'évaluation du résumé de texte peut être extrinsèque ou intrinsèque (Spärck Jones &amp; Galliers, 1996).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>In an extrinsic evaluation, the summaries are assessed in the context of an specific task a human or machine has to carry out; in an intrinsic evaluation, the summaries are evaluated in reference to some ideal model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans une évaluation extrinsèque, les résumés sont évalués dans le contexte d'une tâche spécifique réalisée par un humain ou une machine. Dans l'évaluation intrinsèque, les résumés sont évalués par rapport à un modèle idéal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>SUMMAC was mainly extrinsic while DUC and TAC followed an intrinsic evaluation paradigm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>SUMMAC était principalement extrinsèque tandis que DUC et TAC suivaient un paradigme d'évaluation intrinsèque.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>In order to intrinsically evaluate summaries, the automatic summary ( peer ) has to be compared to a model summary or summaries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d'évaluer intrinsèquement les résumés, un résumé automatique (peer) doit être comparé à un ou plusieurs résumés de référence (models).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>DUC used an interface called SEE to allow human judges compare a peer summary to a model summary.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>DUC a utilisé l’interface SEE qui permet aux juges humains de comparer un résumé de pairs à un résumé de modèle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>Using SEE, human judges give a coverage score to the peer summary representing the degree of overlap with the model summary.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En utilisant SEE, les juges humains attribuent un score de couverture au résumé de pairs représentant le degré de chevauchement avec le résumé du modèle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>Summarization systems obtain a final coverage score which is the average of the coverage’s scores associated to their summaries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les systèmes de résumé obtiennent un score de couverture final qui est la moyenne des scores de couverture associés à leurs résumés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>The system’s coverage score can then be used to rank summarization systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le score de couverture du système peut alors être utilisé pour établir un classement des systèmes de résumé automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>In the case of query-focused summarization (e.g. when the summary has to respond to a question or set of questions) a Responsiveness score is also assigned to each summary which indicates how responsive the summary is to the question(s).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas du résumé orienté par une requête (par exemple, lorsque le résumé doit répondre à une ou à un ensemble de questions) un score d’adéquation de la réponse Responsiveness est assigné au résumé. Ce score évalue la manière dont le résumé répond aux questions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>Because manual comparison of peer summaries with model summaries is an arduous and costly process, a body of research has been produced in the last decade on automatic content-based evaluation procedures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Puisque la comparaison manuelle des résumés candidats avec ceux de référence est un processus ardu et coûteux, des recherches ont été menées ces dernières années sur les procédures d’évaluation automatique fondées sur le contenu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>Early studies used text similarity measures such as cosine similarity (with or without weighting schema) to compare peer and model summaries (Donaway et al., 2000), various vocabulary overlap measures such as set of n -grams overlap or longest common subsequence between peer and model have also been proposed (Saggion et al., 2002; Radev et al., 2003).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les premières études utilisaient des mesures de similarité telles que le cosinus (avec ou sans pondération) pour comparer les résumés candidats et ceux de référence (Donaway et al. , 2000). Diverses mesures de couverture du vocabulaire telles que l'intersection des n-grammes ou la plus longue sous-séquence commune entre le candidat et le modèle ont également été proposées (Saggion et al. , 2002 ; Radev et al. , 2003).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>The Bleu machine translation evaluation measure (Papineni et al., 2002) has also been tested in summarization (Pastra and Saggion, 2003).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La mesure d'évaluation de la traduction automatique BLEU (Papineni et al., 2002) a également été testée en résumé de texte par Pastra &amp; Saggion (2003).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>The DUC conferences adopted the ROUGE package for content-based evaluation (Lin, 2004).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les conférences DUC ont adopté le paquet ROUGE pour l'évaluation du contenu (Lin, 2004).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>It implements a series of recall measures based on n - gram co-occurrence statistics between a peer summary and a set of model summaries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il met en œuvre une série de mesures de rappel basées sur des statistiques de cooccurrence n-grammes entre un résumé de pair et un ensemble de résumés modèles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>ROUGE measures can be used to produce systems ranks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les mesures ROUGE peuvent être utilisées pour produire des classements de systèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>It has been shown that system rankings produced by some ROUGE measures (e.g., ROUGE-2 which uses bi-grams) correlate with rankings produced using coverage.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il a été montré que les classements des systèmes générés par certaines mesures ROUGE (par exemple, ROUGE-2 qui utilise 2-grammes) ont une bonne corrélation avec les classements produits par couverture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>In recent years the Pyramids evaluation method (Nenkova and Passonneau, 2004) was introduced.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces dernières années, la méthode d'évaluation PYRAMIDS a été introduite par Nenkova &amp; Passonneau (2004).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>It is based on the distribution of “content” in a set of model summaries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>PYRAMIDS est basée sur la distribution de « contenu » dans un ensemble de résumés de modèle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>Summary Content Units (SCUs) are first identified in the model summaries, then each SCU receives a weight which is the number of models containing or expressing the same unit.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les unités informatives (SCU) sont d'abord identifiées dans les résumés de modèles, puis chacune reçoit un poids égal au nombre de modèles contenant ou exprimant la même unité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>Peer SCUs are identified in the peer, matched against model SCUs, and weighted accordingly.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les SCU des résumés candidats sont identifiées dans les résumés candidats, alignées avec les SCU de référence, puis pondérées en conséquence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>The Pyramids score given to the peer is the ratio of the sum of the weights of its units and the sum of the weights of the best possible ideal summary with the same number of SCUs as the peer.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le score PYRAMIDS attribué aux pairs est le rapport entre la somme des poids de leurs unités et la somme des poids du meilleur résumé idéal possible avec le même nombre d’unités SCUs que les pairs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>The Pyramids scores can be used for ranking summarization systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les scores Pyramids peuvent être utilisés pour classer les systèmes de résumé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>Nenkova and Passonneau (2004) showed that Pyramids scores produced reliable system rankings when multiple (4 or more) models were used and that Pyramids rankings correlate with rankings produced by ROUGE-2 and ROUGE-SU2 (i.e. ROUGE with skip bi-grams).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nenkova et Passonneau (2004) ont montré que les scores PYRAMIDS produisent des classements fiables lorsque plusieurs (4 ou plus) modèles sont utilisés et que les classements PYRAMIDS sont en corrélation avec ceux produits par ROUGE-2 et ROUGE-SU2 (ROUGE avec skip bi-grammes).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>Still this method requires the creation of models and the identification, matching, and weighting of SCUs in both models and peers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, cette méthode nécessite la création de modèles et l'identification, l'alignement et la pondération des SCU dans les modèles et les candidats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>Donaway et al. (2000) put forward the idea of using directly the full document for comparison purposes, and argued that content-based measures which compare the document to the summary may be acceptable substitutes for those using model summaries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Donaway et al. (2000) ont proposé d'utiliser directement le document complet à des fins de comparaison et ont argumenté que les mesures basées sur le contenu, qui comparent le document entier au résumé, pourraient être des substituts acceptables à celles utilisant les résumés de référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>A method for evaluation of summarization systems without models has been recently proposed (Louis and Nenkova, 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une nouvelle méthode d’évaluation de systèmes de résumé sans référence a été récemment proposée (Louis &amp; Nenkova, 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>It is based on the direct content-based comparison between summaries and their corresponding source documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle est basée sur la comparaison directe de l'information contenue entre les résumés et leurs documents sources correspondants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>Louis and Nenkova (2009) evaluated the effectiveness of the Jensen-Shannon (Lin, 1991b) theoretic measure in predicting systems ranks in two summarization tasks query-focused and update summarization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Louis et Nenkova (2009) ont évalué l'efficacité de la mesure théorique de Jensen-Shannon (Lin, 1991b) pour prédire les classements des systèmes dans les tâches de résumé multi-document focalisé sur une requête et de résumé de mise à jour.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>They have shown that ranks produced by Pyramids and ranks produced by the Jensen-Shannon measure correlate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elles ont montré que les classements produits par PYRAMIDS et ceux produits par la mesure J-S sont corrélés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>However, they did not investigate the effect of the measure in past summarization tasks such as generic multi-document summarization (DUC 2004 Task 2), biographical summarization (DUC 2004 Task 5), opinion summarization (TAC 2008 OS), and summarization in languages other than English.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, ils n'ont pas étudié l'effet de la mesure dans des tâches de résumé passées telles que le résumé générique multi-document (DUC 2004, tâche 2), le résumé biographique (DUC 2004, tâche 5), le résumé d'opinions (TAC 2008 OS) et le résumé dans des langues autres que l'anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>We think that, in order to have a better understanding of document-summary evaluation measures, more research is needed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pensons qu'il faudrait mener davantage de recherches pour mieux comprendre les mesures d'évaluation des résumés de documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>In this paper we present a series of experiments aimed at a better understanding of the value of the Jensen-Shannon divergence for ranking summarization systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous présentons une série d'expériences visant une meilleure compréhension de la pertinence de la divergence J-S pour le classement des systèmes de résumé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>We have carried out experimentation with the proposed measure and have verified that in certain tasks (such as those studied by (Louis and Nenkova, 2009)) there is a strong correlation among Pyramids and Responsiveness and the Jensen-Shannon divergence, but as we will show in this paper, there are datasets in which the correlation is not so strong.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons effectué des expériences avec la mesure proposée et nous avons vérifié qu'il existe une forte corrélation entre les pyramides et la réactivité et la divergence de Jensen-Shannon pour certaines tâches (telles que celles étudiées par Louis &amp; Nenkova (2009)), mais comme nous allons le montrer plus loin, il existe aussi des jeux de données pour lesquelles la corrélation n'est pas si forte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>We also present experiments in Spanish and French showing positive correlation between the Jensen-Shannon measure and ROUGE.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons aussi des expériences sur des jeux de données en espagnol et en français qui montrent aussi une corrélation positive entre les mesures J S et ROUGE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>The rest of the paper is organized in the following way: First in Section 2 we introduce related work in the area of content-based evaluation identifying the departing point for our inquiry; then in Section 3 we explain the methodology adopted in our work and the tools and resources used for experimentation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le reste de l'article est organisé de la façon suivante : dans la section 2, nous présentons les travaux existants dans le domaine de l'évaluation du contenu basée sur le contenu, ce qui nous permet de préciser le point de départ de nos recherches ; puis, dans la section 3, nous décrivons la méthodologie suivie, les outils ainsi que les ressources utilisés lors des expériences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>In Section 4 we present the experiments carried out together with the results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la section 4, nous présentons les expériences menées et les résultats obtenus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>Section 5 discusses the results and Section 6 concludes the paper.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section 5 comprend une discussion sur ces résultats et la section 6 conclut l'article.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>2 Related Work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Travaux connexes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>One of the works to use content-based measures in text summarization evaluation is due to (Donaway et al., 2000) who presented an evaluation framework to compare rankings of summarization systems produced by recall and cosinebased measures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'un des premiers travaux à utiliser des mesures fondées sur le contenu dans l'évaluation de la résumé de texte est celui de Donaway et al. (2000) qui a présenté une méthode d'évaluation des systèmes de résumé automatique au moyen de mesures de rappel et de mesures fondées sur la distance du cosinus entre le texte et le résumé produit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>They showed that there was weak correlation between rankings produced by recall, but that content-based measures produce rankings which were strongly correlated, thus paving the way for content-based measures in text summarization evaluation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils ont montré qu'il y avait une corrélation faible entre les classements produits par le rappel, mais que les mesures basées sur le contenu produisaient des classements fortement corrélés, ouvrant ainsi la voie aux mesures fondées sur le contenu dans l'évaluation de la synthèse de texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>Radev et al. (2003) also compared various evaluation measures based on vocabulary overlap.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Radev et al. (2003) ont également comparé différentes mesures d’évaluation basées sur le chevauchement du vocabulaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>Although these measures were able to separate random from non-random systems, no clear conclusion was reached on the value of each of the measures studied.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que ces mesures permettaient de séparer les systèmes aléatoires de ceux non-aléatoires, aucune conclusion claire ne s’est dégagée sur la pertinence des mesures étudiées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>Nowadays, a widespread summarization evaluation framework is ROUGE (Lin and Hovy, 2003) which, as we have mentioned before, offers a set of statistics that compare peer summaries with models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nos jours, un cadre d'évaluation de résumé largement répandu est ROUGE (Lin et Hovy, 2003) qui, comme nous l'avons mentionné précédemment, offre un ensemble de statistiques pour comparer les résumés candidats avec des modèles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>Various statistics exist depending on the used n -gram and on the type of text processing applied to the input texts (e.g., lemmatization, stopword removal).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Diverses statistiques existent selon le n -gramme utilisé et le type de traitement appliqué aux textes d’entrée (par exemple lemmatisation, suppression de mots fonctionnels).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>Lin et al. (2006) proposed a method of evaluation based on the use of “distances” or divergences between two probability distributions (the distribution of units in the automatic summary and the distribution of units in the model summary).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lin et al. (2006) ont proposé une méthode d'évaluation basée sur l'utilisation de "distances" ou divergences entre deux distributions de probabilité (la distribution d'unités dans le résumé automatique et celle d'unités dans le résumé de référence).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>They studied two different Information Theoretic measures of divergence: the Kullback-Leibler ( KL ) (Kullback and Leibler, 1951) and Jensen-Shannon ( J S ) (Lin, 1991a) divergences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils ont étudié deux mesures théoriques d’information : la divergence de KullbackLeibler ( KL ) (Kullback &amp; Leibler, 1951) et celle de Jensen-Shannon ( J S ) (Lin, 1991).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>In this work we use the Jensen-Shannon ( J S ) divergence that is defined as follows:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous utilisons la divergence de Jensen-Shannon (J S) qui est définie comme suit :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>This measure can be applied to the distribution of units in system summaries P and reference summaries Q and the value obtained used as a score for the system summary.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette mesure peut être appliquée à la distribution d'unités dans les résumés des systèmes P et dans ceux de référence Q. La valeur obtenue est utilisée pour attribuer un score au résumé produit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>The method has been tested by (Lin et al., 2006) over the DUC 2002 corpus for single and multi document summarization tasks showing good correlation among divergence measures and both coverage and ROUGE rankings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthode a été testée par (Lin et al., 2006) sur le corpus DUC 2002 pour les tâches de résumé mono et multi-document, montrant une bonne corrélation entre les mesures de divergence et les classements obtenus avec ROUGE et la couverture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>Louis and Nenkova (2009) went even further and, as in (Donaway et al., 2000), proposed to directly compare the distribution of words in full documents with the distribution of words in automatic summaries to derive a content-based evaluation measure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Louis &amp; Nenkova (2009) sont allées encore plus loin et, comme Donaway et al. (2000), ont proposé de comparer directement la distribution de mots dans les documents complets avec celle des mots dans les résumés automatiques afin d’inférer une mesure d’évaluation basée sur le contenu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>They found high correlation among rankings produced using models and rankings produced without models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elles ont constaté une forte corrélation entre les classements produits avec des modèles et ceux obtenus sans modèle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>This work is the departing point for our inquiry into the value of measures that do not rely on human models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce travail est le point de départ de nos recherches sur la pertinence des mesures qui ne reposent pas sur des modèles humains.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>3 Methodology</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Méthodologie</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>The methodology of this paper mirrors the one adopted in past work (Donaway et al., 2000; Louis and Nenkova, 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthodologie suivie dans cet article reflète celle adoptée dans les travaux passés (Donaway et al. , 2000; Radev et al. , 2003; Louis &amp; Nenkova, 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>Given a particular summarization task T , p data points to be summarized with input material {Ii}i[p] =0 [−][1] (e.g. document(s), questions, topics), s peer summaries { SUM i,k}[s] k[−] =0[1] for input [i] , and [m] model summaries { MODEL i,j}[m] j =0 [−][1] for input [ i] , we will compare rankings of the s peer summaries produced by various evaluation measures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné une tâche de résumé spécifique T , un jeu de p points de données à résumer avec du matériel d'entrée {Ii}i[p] =0 [−][1] (par exemple, document(s), question(s),topics) devant guider les résumés produits, s résumés candidats { SUM i,k}[s] k =0 par entrée [ i][, et] [ m] résumés de référence {[REF] [i,j]}mj =0 par entrée i , nous allons comparer les classements produits par différentes mesures d'évaluation basées sur le contenu, de s systèmes de résumé automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>Some measures we use compare summaries with n out of the m models:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certaines mesures sont utilisées pour comparer les résumés avec n des m modèles :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>while other measures compare peers with all or some of the input material:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>tandis que d’autres mesures comparent les pairs avec l’entrée ou une partie de l’entrée :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>where Ii′ is some subset of input [I][i] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où Ii′ est un sous-ensemble des entrées [I][i].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>The values produced by the measures for each summary SUM i,k are averaged for each system k = 0 , … , s − 1 and these averages are used to produce a ranking.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On obtient la moyenne des valeurs produites par les mesures pour chaque résumé SUM i,k et pour chaque système k = 0 , … , s . Ces moyennes induisent un classement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>Rankings are compared using Spearman Rank correlation (Spiegel and Castellan, 1998) used to measure the degree of association between two variables whose values are used to rank objects.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les classements sont ensuite comparés avec le taux de corrélation de Spearman (Siegel &amp; Castellan, 1998), utilisé pour mesurer le degré d’association entre deux variables dont les valeurs servent à classer des objets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>We use this correlation to directly compare results to those presented in (Louis and Nenkova, 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons choisi d’utiliser cette corrélation pour comparer directement les résultats à ceux présentés par Louis &amp; Nenkova (2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>Computation of correlations is done using the CPAN Statistics-RankCorrelation0.12 package[2] , which computes the rank correlation between two vectors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les calculs des corrélations ont été effectués avec le paquet Statistics-RankCorrelation0.12 du CPAN[2] , qui calcule la corrélation de classement entre deux vecteurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>3.1 Tools</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1 Outils</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>We carry out experimentation using a new summarization evaluation framework: FRESA –FRamework for Evaluating Summaries Automatically– which includes documentbased summary evaluation measures based on probabilities distribution.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons réalisé des expérimentations en utilisant un nouveau système d'évaluation de résumés : FRESA – FRamework for Evaluating Summaries Automatically – qui inclut des mesures d'évaluation de résumés basées sur la distribution de probabilités.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>As in the ROUGE package, FRESA supports different n -grams and skip n -grams probability distributions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De façon similaire à ROUGE, FRESA utilise des n -grammes et des skip n -grammes dans le calcul des distributions de probabilité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>The FRESA environment can be used in the evaluation of summaries in English, French, Spanish and Catalan, and it integrates filtering and lemmatization in the treatment of summaries and documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’environnement FRESA peut être utilisé pour l’évaluation de résumés en anglais, français, espagnol et catalan. Il intègre filtrage et lemmatisation dans le pre-traitement des documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>It is developed in Perl and will be made publicly available.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il a été développé en Perl et sera mis à disposition du public.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>We also use the ROUGE package to compute various ROUGE statistics in new datasets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons aussi le paquet ROUGE pour calculer diverses statistiques ROUGE dans de nouveaux ensembles de données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>3.2 Summarization Tasks and Data Sets</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2 Tâches de résumé et jeux de données</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>We have conducted our experimentation with the following summarization tasks and data sets:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons mené nos expériences sur les corpus et les tâches de résumé suivants :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>Generic multi-document-summarization in English (i.e. production a short summary of a cluster of related documents) using data from DUC 2004[3] corpus task 2: 50 clusters (10 documents each) – 294,636 words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé générique multi-document en anglais (génération d’un petit résumé à partir d’un groupe de documents pertinents d’une thématique donnée) de DUC 2004[3] , tâche 2 : 50 groupes, 10 documents par groupe, 294 636 mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>Focused-based summarization in English (i.e. production a short focused multi-document summary focused on the question “who is X?”, where X is a person’s name) using data from the DUC 2004 task 5: 50 clusters ( 10 documents each plus a target person name) – 284,440 words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Résumé guidé ( Focused-based ) en anglais (par exemple, génération d’un résumé multi-document guidé par la question “qui est X ?”, où X est le nom d’une personne) à partir des données DUC’04, tâche 5 : 50 groupes, 10 documents dans chaque plus le nom d’une personne-cible, 284.440 mots ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>Update-summarization task that consists of creating a summary out of a cluster of documents and a topic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tâche de mise à jour-résumé qui consiste à créer un résumé à partir d'un groupe de documents et d'un thème.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>Two sub-tasks are considered here: A) an initial summary has to be produced based on an initial set of documents and topic; B) an update summary has to be produced from a different (but related) cluster assuming documents used in A) are known.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux sous-tâches sont considérées : a) un premier résumé doit être produit à partir d’un ensemble de documents et d’une thématique ; b) une mise à jour du résumé doit être réalisée à partir d’un groupe différent (mais lié) en supposant que les documents utilisés en a) ont été lus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>The English TAC 2008 Update Summarization dataset is used which consists of 48 topics with 20 documents each – 36,911 words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus de résumés mis à jour TAC’08 en anglais est utilisé : 48 thèmes, 20 documents chacun, 36 911 mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>Opinion summarization where systems have to analyze a set of blog articles and summarize the opinions about a target in the articles.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé d’opinions où les systèmes doivent analyser un ensemble d’articles de blogs et résumer les opinions sur une entité cible dans les articles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>The TAC 2008 Opinion Summarization in English[4] data set (taken from the Blogs06 Text Collection) is used: 25 clusters and targets (i.e., target entity and questions) were used – 1,167,735 words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus TAC’08 Opinion Summarization en anglais[4] (tiré de la collection de textes du Blogs06) a été utilisé : 25 groupes et cibles (c'est-à-dire, l'entité cible et les questions), 1 167 735 mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>Generic single-document summarization in Spanish using the “Spanish Medicina Cl´ınica”[5] corpus which is composed of 50 biomedical articles in Spanish, each one with its corresponding author abstract – 124,929 words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé générique mono-document en espagnol, corpus « Spanish Medicina Clínica »[5] composé de 50 articles biomédicaux en espagnol, chacun avec le résumé de l’auteur correspondant, 124 929 mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>Generic single document summarization in French using the “Canadien French Sociological Articles” corpus from the journal Perspectives interdisciplinaires sur le travail et la santé (PISTES)[6] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé générique mono-document en français, corpus « Articles sociologiques en français canadien » de la revue Perspectives interdisciplinaires sur le travail et la santé (PISTES)[6] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>It contains 50 sociological articles in French with their corresponding author abstracts – 381,039 words. 3.3 Summarization Systems</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il contient 50 articles sociologiques en français avec leurs correspondants résumés d'auteurs - 381 039 mots. 3.3 Systèmes de résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>For experimentation in the TAC and the DUC datasets we directly use the peer summaries produced by systems participating in the evaluations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les expériences avec les corpora TAC et DUC, nous avons utilisé directement les résumés produits par les systèmes participant aux évaluations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>For experimentation in Spanish and French (single-document summarization) we have created summaries at the compression rates of the model summaries using the following summarization systems:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les expériences en espagnol et en français (résumé mono-document), nous avons créé des résumés à un taux de compression similaire à ceux de référence en utilisant les systèmes suivants :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>- CORTEX (Torres-Moreno et al., 2002), a single-document sentence extraction system for Spanish and French that combines various statistical measures of relevance (angle between sentence and topic, various Hamming weights for sentences, etc.) and applies an optimal decision algorithm for sentence selection; - ENERTEX (Fernandez et al., 2007), a summarizer based on a theory of textual energy;</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- ENERTEX (Fernandez et al. , 2007), un système de résumé automatique fondée sur l’énergie textuelle ; - CORTEX (Torres-Moreno et al. , 2002), un système d’extraction de phrases mono-document multilangue qui combine différentes mesures statistiques de pertinence (angle entre les phrases et la thématique, le poids de Hamming des phrases, etc.) et applique un algorithme de décision optimale pour la sélection des phrases pertinentes ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>- SUMMTERM (Vivaldi et al., 2010), a terminology-based summarizer that is used for summarization of medical articles and uses specialized terminology for scoring and ranking sentences;</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>– SUMMTERM (Vivaldi et al. , 2010), système de résumé des articles médicaux basé sur la terminologie spécialisée afin de donner un score et un classement aux phrases ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>- JS summarizer, a summarization system that scores and ranks sentences according to their Jensen-Shannon divergence to the source document;</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Résumeur J S , système qui donne un score et un classement aux phrases en considérant leur divergence Jensen-Shannon par rapport au document source ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>- a lead-based summarization system that selects the lead sentences of the document;</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- un système de résumé basé sur le texte qui sélectionne les premières phrases du document ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>- a random-based summarization system that selects sentences at random;</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- un système de résumé basé sur le hasard qui sélectionne les phrases au hasard pour construire les résumés ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>- the multilingual word-frequency Open Text Summarizer (Yatsko and Vishnyakov, 2007);</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Open Text Summarizer (Yatsko &amp; Vishnyakov, 2007), résumeur multi-langue basé sur la fréquence, et</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>- the AutoSummarize program of Microsoft Word;</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- le programme AutoSummarize de Microsoft Word;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>- the commercial SSSummarizer[7] ; - the Pertinence summarizer[8] ; - the Copernic summarizer[9] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- les systèmes de résumé commerciaux SSSummarizer[7] ; - le résuméur Pertinence[8] ; - le résuméur Copernic[9] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>3.4 Evaluation Measures</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.4 Mesures d’évaluation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>The following measures derived from human assessment of the content of the summaries are used in our experiments:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les mesures suivantes, qui proviennent de l'évaluation humaine du contenu des résumés, ont été utilisées dans nos expériences :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>- Coverage is understood as the degree to which one peer summary conveys the same information as a model summary (Over et al., 2007).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Couverture : le degré auquel un résumé candidat transmet la même information qu'un résumé de référence (Over et al., 2007).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>Coverage was used in DUC evaluations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle a été utilisée dans les campagnes d’évaluation DUC.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>- Responsiveness ranks summaries in a 5-point scale indicating how well the summary satisfied a given information need (Over et al., 2007).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Responsiveness : elle classe les résumés sur une échelle de 5, en indiquant dans quelle mesure le résumé répond à un besoin d’information précis (Over et al. , 2007).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>It is used in focused-based summarization tasks. Responsiveness was used in DUC-TAC evaluations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle est utilisée dans les tâches de résumé guidé. La réactivité a été utilisée dans les évaluations DUC-TAC.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>- Pyramids introduced in Section 1) (Nenkova and Passonneau, 2004) is a content assessment measure which compares content units in a peer summary to weighted content units in a set of model summaries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- PYRAMIDS : il s'agit d'une mesure d'évaluation du contenu qui compare les unités de contenu dans un résumé de pairs à des unités de contenu pondérées dans un ensemble de résumés de modèles (Nenkova et Passonneau, 2004).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>Pyramids is the adopted metric for content-based evaluation in the TAC evaluations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>PYRAMIDS est la mesure d'évaluation basée sur le contenu des campagnes TAC.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>For DUC and TAC datasets the values of these measures are available and we used them directly.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les corpus DUC et TAC, les valeurs de ces mesures sont disponibles et nous les avons utilisées directement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>We used the following automatic evaluation measures in our experiments:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans nos expériences nous avons utilisé les mesures d’évaluation automatiques suivantes : – ROUGE : métrique de rappel qui emploie des n -grammes comme unités de contenu pour comparer les résumés candidats vs. ceux de référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>- We use the Rouge package (Lin, 2004) to compute various statistics.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Nous utilisons le paquet Rouge (Lin, 2004) pour calculer diverses statistiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>For the experiments presented here we used uni-grams, bigrams, and the skip bi-grams with maximum skip distance of 4 (ROUGE-1, ROUGE-2 and ROUGE-SU4).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les expériences présentées ici, nous avons utilisé uni-grammes, bigrams et skip bigrams avec une distance maximale de 4 (ROUGE-1, ROUGE-2 et ROUGE-SU4).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>ROUGE is used to compare a peer summary to a set of model summaries in our framework.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>ROUGE est utilisée pour comparer un résumé candidat à l’ensemble des résumés de référence disponibles dans notre cadre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>- Jensen-Shannon divergence formula given in Equation 1 is implemented in our FRESA package with the following specification for the probability distribution of words w .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- La formule de la divergence de Jensen-Shannon donnée dans l'équation 1 a été implémentée dans notre système FRESA avec la spécification suivante pour la distribution de probabilités de mots w :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>Where P is the probability distribution of words w in text T and Q is the probability distribution of words w in summary S ; N is the number of words in text and summary</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où P est la distribution de probabilités des mots w dans le texte T et Q la distribution de probabilités des mots w dans le résumé S ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>N = NT + NS , B = 1 . 5 |V | , Cw[T] is the number of words in the text and Cw[S] is the number of words in the summary.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>N est le nombre de mots dans le texte et le résumé N = NT + NS , B = 1 . 5 |V | , Cw[T] est le nombre de mots dans le texte et [C] w[S] est le nombre de mots dans le résumé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>For smoothing the summary’s probabilities we have used δ = 0 . 005.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour le lissage des probabilités du résumé, nous avons utilisé δ = 0 . 005.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>4 Experiments and Results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Expériences et résultats</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>We replicated the experiments presented in (Louis and Nenkova, 2009) to verify that our implementation of JS produced correlation results compatible with that work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons reproduit les expériences présentées dans Louis &amp; Nenkova (2009) pour vérifier que notre implémentation JS obtient des résultats de corrélation cohérents avec ce travail.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>We used the TAC 2008 Update Summarization data set and computed JS and ROUGE measures for each peer summary.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé les données de résumés mis à jour de TAC’08 pour calculer les mesures JS et ROUGE pour chaque résumé candidat.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>We produced two system rankings (one for each measure), which were compared to rankings produced using the manual Pyramids and Responsiveness scores.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons réalisé deux classements des systèmes (un pour chaque mesure), qui ont été comparés aux classements produits selon les scores manuels de PYRAMIDS et de Responsiveness .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>Spearman correlations were computed among the different rankings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les corrélations de Spearman ont été calculées entre les différents classements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>The results are presented in Table 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats sont présentés au tableau 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>These results confirm a high correlation among Pyramids, Responsiveness, and JS .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces résultats confirment une forte corrélation entre les Pyramids, la Réactivité et JS .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>We also verified high correlation between JS and ROUGE-2 (0 . 83 Spearman correlation, not shown in the table) in this task and dataset.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également vérifié la corrélation élevée entre J S et ROUGE-2 (0 , 83 Spearman, non affichée dans le tableau) pour cette tâche et ce corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Spearman system rank correlation of content-based measures in TAC 2008 Update Summarization task</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 : Corrélation de Spearman des mesures basées sur le contenu dans la tâche de résumé de la mise à jour de 2008 du TAC</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>Table 2: Spearman system rank correlation of content-based measures with coverage in DUC 2004 Task 2</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2 : Corrélation de Spearman des mesures basées sur le contenu avec la couverture dans la tâche 2 du DUC 2004</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>Table 3: Spearman system rank correlation of content-based measures in DUC 2004 Task 5</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 3 : Corrélation de Spearman des mesures basées sur le contenu dans la tâche 5 du DUC 2004</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>Table 4: Spearman system rank correlation of content-based measures in TAC 2008 Opinion Summarization task</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 4 : Corrélation de Spearman des mesures basées sur le contenu dans la tâche de résumé d'opinion TAC 2008</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>Then, we experimented with data from DUC 2004, TAC 2008 Opinion Summarization pilot and with single document summarization in Spanish and French.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Puis, nous avons mené des expériences sur les données du DUC 2004, du TAC 2008 pour la tâche pilote de résumés d'opinion et sur le résumé de documents en espagnol et en français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>In spite of the fact that the experiments for French and Spanish corpora use less data points (i.e., less summarizers per task) than for English, results are still quite significant.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En dépit du fait que les expériences pour les corpus français et espagnol utilisent moins de points de données (c'est-à-dire, un nombre inférieur de résumés par tâche) que pour l'anglais, les résultats restent tout de même significatifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>For DUC 2004, we computed the JS measure for each peer summary in tasks 2 and 5 and we used JS and the official ROUGE, coverage, and Responsiveness scores to produce systems’ rankings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour DUC 2004, nous avons calculé la mesure JS pour chaque résumé candidat des tâches 2 et 5 et nous avons utilisé JS et les scores officiels ROUGE, couverture et Responsiveness pour produire les classements des systèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>The various Spearman’s rank correlation values for DUC 2004 are presented in Tables 2 (for task 2) and 3 (for task 5).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les différentes valeurs de la corrélation de classement Spearman pour DUC’04 sont présentées aux tableaux 2 (pour la tâche 2) et 3 (pour la tâche 5).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>For task 2, we have verified a strong correlation between JS and coverage.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour la tâche 2, nous avons vérifié une forte corrélation entre J S et la Couverture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>For task 5, the correlation between JS and coverage is weak, and the correlation between JS and Responsiveness weak and negative.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour la tâche 5, la corrélation entre J S et la Couverture est faible, et la corrélation entre J S et Responsiveness est faible voire négative.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>Although the Opinion Summarization task is a new type of summarization task and its evaluation is a complicated issue, we have decided to compare JS rankings with those obtained using Pyramids and Responsiveness in TAC 2008.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que la tâche de résumé d’opinion soit récente et son évaluation un problème compliqué, nous avons décidé de comparer les classements JS avec ceux obtenus en utilisant Pyramids et Responsiveness dans le TAC 2008.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>Spearman’s correlation values are listed in Table 4.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les valeurs de la corrélation de Spearman sont affichées au tableau 4.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>As can be seen, there is weak and negative correlation of JS with both Pyramids and Responsiveness.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme on peut le constater, il existe une corrélation faible voire négative entre JS et PYRAMIDS ou Responsiveness .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>Correlation between Pyramids and Responsiveness rankings is high for this task (0.71 Spearman’s correlation value).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La corrélation entre les classement PYRAMIDS et Responsiveness est élevée pour cette tâche (0,71 valeur de corrélation de Spearman).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>For experimentation in Spanish and French, we have run 11 multi-lingual summarization systems over each of the documents in the two corpora, producing summaries at a compression rate close to the compression rate of the provided authors’ abstracts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les expériences en espagnol et en français, nous avons lancé 11 systèmes de résumé multilingue sur chacun des documents des deux corpus, produisant des résumés à un taux de compression proche de celui des résumés des auteurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>We have computed JS and ROUGE measures for each summary and we have averaged the measure’s values for each system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons calculé les mesures JS et ROUGE pour chaque résumé et nous avons obtenu la moyenne des valeurs pour chaque système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>These averages were used to produce rankings per each measure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces moyennes ont été utilisées pour produire les classements pour chaque mesure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>We computed Spearman’s correlations for all pairs of rankings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons calculé les corrélations de Spearman pour toutes les paires de classement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>Results are presented in Tables 5-6.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats sont présentés dans les tablaux 5, 6 et 7.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>All results show medium to strong correlation between JS and ROUGE measures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous les résultats montrent une corrélation moyenne à forte entre les mesures JS et ROUGE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>However the JS measure based on uni-grams has lower correlation than JS s which use n -grams of higher order.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutefois, la mesure JS basée sur les uni-grammes obtient une corrélation inférieure à celle qui utilise des n-grammes d’ordre supérieur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>5 Discussion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Discussion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>Table 5: Spearman system rank correlation of content-based measures with ROUGE in the Medicina Clinica Corpus (Spanish)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 5 : Corrélation de Spearman des mesures basées sur le contenu avec ROUGE dans le corpus Medicina Clinica (espagnol)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>Table 6: Spearman system rank correlation of content-based measures with ROUGE in the PISTES Sociological Articles Corpus (French)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 6 : Corrélation de Spearman des mesures basées sur le contenu avec ROUGE dans le corpus d’articles sociologiques PISTES (français)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>The departing point for our inquiry into text summarization evaluation has been recent work on the use of content-based evaluation metrics that do not rely on human models but that compare summary content to input content directly (Louis and Nenkova, 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le point de départ de notre enquête sur l'évaluation de la résumé de texte a été le travail récent sur l'utilisation des métriques d'évaluation basées sur le contenu qui ne reposent pas sur des modèles humains, mais qui comparent le contenu des résumés directement aux entrées (Louis &amp; Nenkova, 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>We have some positive and some negative results regarding the direct use of the full document in content-based evaluation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons obtenu des résultats positifs et négatifs en ce qui concerne l'utilisation directe du document complet pour l'évaluation par contenu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>We have verified that in both generic muti-document summarization and in topic-based multi-document summarization in English correlation among measures that use human models (Pyramids, Responsiveness, and ROUGE) and a measure that does not use models (the Jensen Shannon divergence) is strong.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons vérifié que dans les deux variétés de résumé multi-document en anglais, générique et basé sur une thématique, la corrélation entre les mesures qui utilisent des modèles humains (PYRAMIDS, Responsiveness et ROUGE) et une mesure qui n’utilise pas de référence (la divergence de J S ) est forte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>We have found that correlation among the same measures is weak for summarization of biographical information and summarization of opinions in blogs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons constaté que la corrélation entre les mêmes mesures est faible pour le résumé d’informations biographiques et le résumé d’opinions des blogs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>We believe that in these cases content-based measures should consider in addition to the input document, the summarization task (i.e. its text-based representation) to better assess the content of the peers, the task being a determinant factor in the selection of content for the summary.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pensons que dans ces cas, les mesures fondées sur le contenu devraient prendre en compte en plus du document d'entrée, la tâche de résumé (c'est-à-dire sa représentation basée sur le texte) pour mieux évaluer le contenu des pairs, la tâche étant un facteur déterminant dans la sélection du contenu pour le résumé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>Our multi-lingual experiments in generic single-document summarization confirm a strong correlation among the Jensen-Shannon divergence and ROUGE measures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nos expériences multilingues en résumé générique mono-document confirment une forte corrélation entre les mesures de divergence J S et ROUGE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>It is worth noting that ROUGE is in general the chosen framework for presenting content-based evaluation results in non-English summarization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il faut noter que ROUGE est en général le logiciel choisi pour présenter les résultats des évaluations basées sur le contenu des résumés en d’autres langues que l’anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>For the experiments in Spanish, we are conscious that we only have one model summary to compare with the peers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les expériences en espagnol, nous sommes conscients que nous n’avons qu’un seul résumé de modèle à comparer avec les résumés candidats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, these models are the corresponding abstracts written by the authors of the articles and this is in fact the reason for choosing this corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, ces modèles sont les résumés correspondants rédigés par les auteurs des articles et c'est en fait la raison pour laquelle ce corpus a été choisi.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>As the experiments in (da Cunha et al., 2007) show, the professionals of a specialized domain (as, for example, the medical domain) adopt similar strategies to summarize their texts and they tend to choose roughly the same content chunks for their summaries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme le montrent les expériences conduites par da Cunha et al. (2007), les professionnels d’un domaine spécialisé (par exemple le domaine médical) adoptent des stratégies similaires pour résumer leurs textes : ils ont tendance à choisir des passages à peu près du même contenu pour leurs résumés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>Because of this, the summary of the author of a medical article can be taken as reference for summaries evaluation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De ce fait, le résumé de l'auteur d'un article médical peut être pris comme référence pour l'évaluation des résumés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>It is worth noting that there is still debate on the number of models to be used in summarization evaluation (Owkzarzak and Dang, 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est intéressant de noter qu'il existe encore des débats sur le nombre de modèles à utiliser pour l'évaluation de la résumé (Owkzarzak et Dang, 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>In the French corpus PISTES, we suspect the situation is similar to the Spanish case.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le corpus en français PISTES, on suppose une situation semblable au cas en espagnol.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>Table 7: Spearman system rank correlation of content-based measures with ROUGE in the RPM2 Corpus (French)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 7 : Corrélation de Spearman, mesures de contenu vs. ROUGE, corpus multi-document RPM2 (français)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>6 Conclusions and Future Work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Conclusions et travail futur</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>This paper has presented a series of experiments in content evaluation in text summarization to assess the value of content-based measures that do not rely on the use of model summaries for comparison purposes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous avons présenté une série d'expériences d'évaluation du contenu dans la résumé de texte pour évaluer la validité des mesures de contenu qui ne reposent pas sur l'utilisation de résumés de modèle à des fins de comparaison.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>We have carried out extensive experimentation with different summarization tasks drawing a clearer picture of tasks where the measures could be applied.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons mené de multiples expérimentations sur un large spectre de tâches de résumé, ce qui nous a permis de mieux cerner les tâches pour lesquelles les mesures pourraient être appliquées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>This paper makes the following contributions:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article apporte les contributions suivantes :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>- We have shown that if we are only interested in ranking summarization systems according to the content of their automatic summaries, there are tasks where models could be substituted by the full document in the computation of the Jensen-Shannon divergence measure obtaining reliable rankings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Nous avons montré que, si l’on s’intéresse uniquement au classement des systèmes de résumé selon le contenu de leurs résumés automatiques, il y a des tâches où les modèles pourraient être substitués par le document complet, tout en obtenant des classements fiables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>However, we have also found that the substitution of models by full-documents is not always advisable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, nous avons aussi constaté que la substitution des modèles par le document complet n’est pas toujours souhaitable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>We have found weak correlation among different rankings in complex summarization tasks such as the summarization of biographical information and the summarization of opinions about an “entity”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons trouvé une faible corrélation entre les différents classements dans des tâches de résumé complexes telles que le résumé de l'information biographique et le résumé d'opinion sur une « entité ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>- We have also carried out large-scale experiments in Spanish and French which show positive medium to strong correlation among system’s ranks produced by ROUGE and divergence measures that do not use the model summaries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Nous avons également effectué des expériences à grande échelle en espagnol et en français qui montrent une corrélation positive de moyenne à forte entre les classements des systèmes obtenus par ROUGE et les mesures de divergence qui n’utilisent pas des résumés de référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>- We have also presented a new framework, FRESA, for the computation of measures based on Jensen-Shannon divergence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Nous avons également présenté un nouveau cadre, FRESA, pour le calcul des mesures basées sur la divergence de Jensen-Shannon.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>Following the ROUGE approach, FRESA implements word uni-grams, bi-grams and skip n - grams for the computation of divergences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Suivant l'approche ROUGE, FRESA utilise des uni-grammes, des bi-grammes et des skip n-grammes de mots pour le calcul des divergences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>The framework is being made available to the community for research purposes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le cadre est mis à disposition de la communauté à des fins de recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>Although we have made a number of contributions, this paper leaves many questions open that need to be addressed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que nous ayons apporté un certain nombre de contributions, cet article laisse de nombreuses questions en suspens qui doivent être abordées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>In order to verify correlation between ROUGE and JS , in the short term we intend to extend our investigation to other languages and datasets such as Portuguese and Chinese for which we have access to data and summarization technology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de vérifier la corrélation entre ROUGE et JS, à court terme, nous avons l’intention d’étendre nos recherches à d’autres langues et ensembles de données tels que le portugais et le chinois pour lesquels nous avons accès aux données et à la technologie de résumé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>We also plan to apply our evaluation framework to the rest of the DUC and TAC summarization tasks to have a full picture of the correlations among measures with and without human models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous envisageons également d'appliquer notre cadre d'évaluation aux autres tâches de résumé de DUC et TAC afin d'avoir une image complète des corrélations entre les mesures avec et sans modèles humains.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>In the long term we plan to incorporate a representation of the task/topic in the computation of the measures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À plus long terme, nous prévoyons d’intégrer une représentation de la tâche/thématique dans le calcul des mesures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>Acknowledgements</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Remerciements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>We thank three anonymous reviewers for their valuable and enthusiastic comments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous remercions les trois évaluateurs anonymes pour leurs commentaires précieux et enthousiastes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>Horacio Saggion is grateful to the Programa Ram´on y Cajal from the Ministerio de Ciencia e Innovaci´on, Spain and to a Comenc¸a grant from Universitat Pompeu Fabra (COMENC¸ A10.004). This work is partially supported by a postdoctoral grant (National Program for Mobility of Research Human Resources; National Plan of Scientific Research, Development and Innovation 2008-2011) given to Iria da Cunha by the Ministerio de Ciencia e Innovaci´on, Spain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Horacio Saggion remercie le Programa Ramón y Cajal du Ministère de la Science et de l'Innovation, Espagne et une subvention Comenc¸a de l'Universitat Pompeu Fabra (COMENC¸ A10.004). Ce travail est partiellement financé par une bourse postdoctorale (Programme National pour la Mobilité des Ressources Humaines de Recherche ; Plan National de Recherche, Développement et Innovation 2008-2011) donnée à Iria da Cunha par le Ministère de la Science et de l'Innovation, Espagne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>1 http://www.nist.gov/tac 2 http://search.cpan.org/∼gene/Statistics-RankCorrelation-0.12/</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 http://www.nist.gov/tac 2 http://search.cpan.org/~gene/Statistics-RankCorrelation-0.12/</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>3 http://www-nlpir.nist.gov/projects/ duc/guidelines/2004.html</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 http://www-nlpir.nist.gov/projects/duc/guidelines/2004.html</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>4 http://www.nist.gov/tac/data/index. html</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 http://www.nist.gov/tac/data/index.html</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>5 http://www.elsevier.es/revistas/ ctl servlet? f=7032&amp;revistaid=2</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 http://www.elsevier.es/revistas/ctl_servlet?_f=7032&amp;revistaid=2</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>6 http://www.pistes.uqam.ca/</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 http://www.pistes.uqam.ca/</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>7 http://www.kryltech.com/summarizer. htm</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7 http://www.kryltech.com/summarizer.htm</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>8 http://www.pertinence.net</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>8 http://www.pertinence.net</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <tuv xml:lang="EN">
+                <seg>9 http://www.copernic.com/en/products/ summarizer</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>9 http://www.copernic.com/en/products/summarizer</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

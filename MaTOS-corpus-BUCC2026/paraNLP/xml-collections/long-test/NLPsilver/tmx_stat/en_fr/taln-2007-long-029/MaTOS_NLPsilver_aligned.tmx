@@ -1,0 +1,1535 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2007-long-029. segId begin by 1, tuid = segId</note>
+        <url_en>https://hal.science/hal-00360978/document</url_en>
+        <url_fr>https://talnarchives.atala.org/TALN/TALN-2007/taln-2007-long-029.pdf</url_fr>
+        <title_en>Mining Parsing Results for Lexical Corrections</title_en>
+        <title_fr>Confondre le coupable : corrections d'un lexique suggérées par une grammaire</title_fr>
+        <docid>taln-2007-long-029</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Mining Parsing Results for Lexical Corrections</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Analyse des résultats de l’extraction de données pour les corrections lexicales</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>Successful parsing depends on the quality of the underlying grammar but also on the correctness of the lexicon that feeds the parser.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le succès de l’analyse syntaxique d’une phrase dépend de la qualité de la grammaire sous-jacente mais aussi de celle du lexique utilisé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>The development of a lexicon both complete and accurate is an intricate and demanding task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La création d'un lexique complet et précis est une tâche complexe et exigeante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>A first step towards the improvement of a lexicon consists in identifying potentially erroneous lexical entries, for instance by using error mining techniques on large corpora (Sagot and de La Clergerie, ACL/COLING 2006)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une première étape dans l'amélioration des lexiques consiste à identifier les entrées lexicales potentiellement erronées, par exemple en utilisant des techniques de fouilles d'erreurs sur des corpus importants (Sagot et de La Clergerie, ACL/COLING 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>This paper explores the next logical step, namely the suggestion of corrections for those entries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce document explore l'étape suivante logique, à savoir la suggestion de corrections pour ces entrées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>This is achieved by running new analysis on the sentences rejected at the previous step, after having modified the information carried by the identified lexical entries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet objectif est atteint en effectuant de nouvelles analyses des phrases rejetées à l'étape précédente, après modification des informations portées par les entrées lexicales identifiées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Afterwards, a statistical computation on the parsing results exhibits the most relevant corrections.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un calcul statistique sur les nouveaux résultats permet ensuite de mettre en valeur les corrections les plus pertinentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>Keywords: parsing, lexicon, machine learning, correction .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mots-clés : analyse syntaxique, lexique, apprentissage, correction .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>Obtaining both accurate and wide coverage linguistic resources is a time-consuming and complex task, which can be alleviated through the use of tools.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Obtenir des ressources linguistiques à la fois précises et couvrant un large spectre est une tâche complexe et chronophage, qui peut être allégée par l'utilisation d'outils.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>We present one such tool that attempts to correct potentially erroneous lexical entries in a semi-automatic fashion.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons ici un tel outil qui tente de corriger de manière semi-automatique les entrées lexicales potentiellement erronées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>We focus on methods to improve the completeness and correctness of a lexicon starting from a set of lexical forms assumed to be non-reliable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous nous intéressons aux moyens d'améliorer l'exactitude et l'exhaustivité d'un lexique à partir d'un ensemble de formes lexicales présumées non fiables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>Our work extends an error mining technique on large corpora which automatically detects suspicious forms (van Noord, 2004). More precisely, we pursue the work begun by (Sagot and de La Clergerie, 2006), whose results are confirmed by ours.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre travail consiste à étendre une technique de détection d'erreurs sur de grands corpus qui détecte automatiquement des formes suspectes (van Noord, 2004). Plus précisément, nous poursuivons le travail commencé par (Sagot et de La Clergerie, 2006), dont les résultats sont confirmés par les nôtres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>This detection technique relies on the following remark: given a large corpus of valid sentences, the more a form (and indirectly its underlying lemmas) appears (or not) in non-parsable sentences, the more likely (or unlikely) its features are to be incorrect.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette technique repose sur l'idée suivante : étant donné un large corpus de phrases attestées, plus une forme (et indirectement les lemmes associés) apparaît ou n'apparaît pas dans des phrases dont les analyses échouent, plus nous avons des raisons de douter ou de ne pas douter des caractéristiques de cette forme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, we have to mitigate this assumption by considering contexts: a form is even more suspicious if it appears in non-parsable sentences along with forms that appear in parsable ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, nous devons atténuer cette hypothèse en considérant le contexte : une forme est d'autant plus suspecte qu'elle apparaît dans des phrases non analysables mais en co-occurrence avec des formes qui tendent à apparaître dans des phrases analysables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>Our work, as well as the previous detection technique, is a mechanism of feedback on error .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre travail, comme la technique de détection précédente, est un mécanisme de rétroaction sur l'erreur .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>By this term, we mean tools that analyze errors generated by a program (here a parser) in order to improve its quality.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ce terme, on entend des outils qui analysent les erreurs générées par un programme (ici un analyseur) afin d'en améliorer la qualité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>For this purpose, the data given as input to the program must be as error-free as possible, in order to ensure that only the program is responsible for the errors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À cette fin, les données saisies dans le programme doivent être aussi exemptes d'erreurs que possible, afin que le programme soit le seul responsable des erreurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>In the present case, our work is based on the errors generated through the processing (in 2005) of a corpus MD extracted from the French newspaper Le monde diplomatique .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas présent, notre travail s'appuie sur les erreurs générées lors du traitement (en 2005) d'un corpus MD extrait du journal français Le Monde diplomatique .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>This corpus is composed of 570 000 sentences and 14.5 million words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce corpus est composé de 570 000 phrases et 14,5 millions de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>The previous detection step has built an ordered list of 5344 suspicious forms with, for each form f , a suspicion rate representing how much suspicious f is and a list of sentences (56089 overall) where f appears to be the culprit responsible for the parsing failures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'étape de détection précédente a construit une liste ordonnée de 5344 formes suspectes avec, pour chaque forme f , un taux de suspicion représentant la mesure dans laquelle f est suspect et une liste de phrases (56089 au total) où f semble être le coupable responsable des échecs de l'analyse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>If a form is actually responsible for those failures, and not the grammar,[1] then the information associated with this form (in fact with its underlying lemmas) is likely to be incorrectly or only partially described in the lexicon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si une forme est effectivement responsable de ces échecs, et non la grammaire[1] , c’est donc que les informations lexicales qui lui sont associées sont incomplètes ou inexactes (voir inexistantes).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>Therefore, by releasing or modifying the constraints on the features carried by the suspicious form, new parses of the sentences have more chances to succeed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En relâchant les contraintes sur les informations portées par une forme suspecte ou en les modifiant (notamment la catégorie syntaxique), de nouvelles analyses des phrases associées vont aboutir.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>The representations of the sentences produced by the new successful parses provide useful grammatical information for the suspicious form. These data typify the conditions in which the parses could be achieved, that is, the expectations of the grammar for the form.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les représentations des phrases produites par les nouvelles analyses réussies fournissent des informations grammaticales utiles sur la forme suspecte. Ces données typifient les conditions dans lesquelles l’analyse a pu être réalisée, c.a.d. les attentes de la grammaire pour la forme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>By sorting it on various sentences, we are able to provide useful correction hypotheses for the corresponding entries of the lexicon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En les triant sur un ensemble de phrases, il est alors possible de dégager des hypothèses de correction utiles pour les entrées correspondantes du lexique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>Although our examples and results are related to French, the method we present is fully system and language independent.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que nos exemples et résultats soient liés au français, la technique que nous présentons est entièrement indépendante du système et du langage étudié.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>Practical Context</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contexte pratique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>The lexicon we are improving is the Lefff (Sagot et al., 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le lexique que nous améliorons est le Lefff (Sagot et al., 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>Partly built automatically, this morphosyntactic wide coverage French lexicon is under constant development and so far contains more than 520 000 entries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En partie construit automatiquement, ce lexique français de grande couverture morphosyntaxique est en constante évolution et contient à ce jour plus de 520 000 entrées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>The parser we use is an hybrid TAG/TIG parser based on a grammar generated from a more abstract meta-grammar FRMG, Fr ench M eta- G rammar , with 134 highly factorized trees (Thomasset and de La Clergerie, 2005).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le parseur que nous utilisons est un parseur hybride TAG/TIG basé sur une grammaire générée à partir d'une grammaire métagrammaire plus abstraite FRMG, Fr ench M eta- G rammar , avec 134 arbres fortement factorisés (Thomasset et de La Clergerie, 2005).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>In 2005, FRMG coupled with the Lefff lexicon gave a full parse coverage rate around 41% on the MD corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En 2005, FRMG couplé au lexique Lefff donnait un taux de couverture de parsing complet d'environ 41 % sur le corpus MD.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>Related Work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Travaux connexes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>Acquisition of lexical knowledge from natural (i.e. not annotated) corpora using some grammatical knowledge has been first studied by Brent (1993) in order to infer the syntactic frames of English verbs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’acquisition de connaissances linguistiques depuis des corpus bruts (i.e. non annotés) par le biais de connaissances grammaticales a été initialement étudiée par (Brent, 1993) afin d’identifier les cadres syntaxiques des verbes en anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>The Lerner system designed by Brent is based on two modules: the observation collecting module and the statistical modeling one.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système Lerner conçu par Brent est basé sur deux modules : le module de collecte d'observations et le module de modélisation statistique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>The observation module, which has a partial knowledge of the english grammar, only performs a surface analysis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le module d'observation, qui dispose d'une connaissance partielle de la grammaire anglaise, ne réalise qu'une analyse de surface.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>Noticing that the surface analysis used in Lerner disregards a large proportion of sentences and put extra burden on the statistical computations, Horiguchi et al. (1995) suggested that the observation module should rely on a more structurally complex knowledge of the language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Remarquant que l'analyse de surface utilisée dans Lerner ignore une grande proportion de phrases et alourdit les calculs statistiques, Horiguchi et al. (1995) ont suggéré que le module d'observation devrait s'appuyer sur une connaissance plus structurée de la langue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>They use the results of the unification-based parses of an HPSGbased system in order to acquire lexical entries of unknown japanese content words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils utilisent les résultats de l'analyse basée sur l'unification d'un système HPSG afin d'acquérir des entrées lexicales de mots japonais inconnus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>However, function words are given manually-coded lexical entries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, les mots fonctionnels sont associés à des entrées lexicales codées manuellement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>The repair of lexical information shortfall for robust parsing, as studied by Grover and Lascarides (2001) and by Crysmann et al. (2002), should also be mentioned.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, mentionnons la reconstitution d’informations lexicales manquantes en vue d’analyses robustes (Grover &amp; Lascarides, 2001), (Crysmann et al. , 2002).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>We explain how to generate correction hypotheses (Sect. 2.), how to order (Sect. 3.) and how to observe them (Sect. 4.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous expliquons comment générer des hypothèses de correction (Sect. 2), comment les classer (Sect. 3) et comment les observer (Sect. 4).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>Then, we present the practical results we obtained and outline the improvements we planned for the future (Sect. 5.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons ensuite les résultats pratiques que nous avons obtenus et les améliorations que nous avons prévues pour l'avenir (Sect. 5.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>2. Hypotheses Generation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Génération d’hypothèses</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>The main goal of a parser is to check the syntactic correctness of a sentence and to produce one or more representations of it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le principal but d’un analyseur syntaxique est de vérifier la validité syntaxique d’une phrase et d’en produire une ou plusieurs représentations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>In general, we intend to avoid overgeneration, that is, to generate as few representations as possible.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En général, nous souhaitons éviter la surgénération, c'est-à-dire générer le moins de représentations possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>We say that a sentence is ambiguous for a parser when its parse allows several interpretations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On dit qu'une phrase est ambiguë pour un analyseur lorsque son analyse lui associe plusieurs interprétations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>This happens mostly for two reasons: 1. The sentence is naturally ambiguous, and additional information, such as the semantic context, is needed in order to filter the interpretations. 2. The resources (lexicon, grammar…) are not restrictive enough and accept a wider language than intended.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela arrive principalement pour deux raisons : 1. La phrase est intrinsèquement ambiguë, i.e. d'autres informations (tel que le contexte sémantique) sont nécessaires afin de filtrer les interprétations, ou 2. Les ressources utilisées (lexique, grammaire...) ne sont pas assez restrictives et acceptent un langage plus large.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>In order to reject sentences that do not belong to the language, we need the lexicon to be as accurate as possible.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de rejeter les phrases n’appartenant pas à la langue, il faut que le lexique soit aussi précis que possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>The most specified a lexical form is, the less combinations with the other constituents of the sentence are allowed, and therefore, the less incorrect interpretations are permitted.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, plus une forme lexicale est spécifiée, moins elle se combine avec les autres constituants de la phrase, et par conséquent, moins elle permet d’interprétations incorrectes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>2.1. Causes of Parsing Failure</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.1 Causes d’échec d’une analyse</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>As we pointed out previously, if a lexical form is actually responsible for a parsing failure, then the features it carries are erroneous.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme nous l'avons déjà dit, si une forme lexicale est responsable d'une erreur de parsing, alors les caractéristiques qu'elle contient sont erronées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>Each form, through its lemmas, has three kinds of information, divided into two sets: firstly the syntactic category (noun, verb …), secondly the morphological features (number, gender, person, tense, mood …) and the syntactic features (subcategorization frame, pronomalization, diathesis …).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque forme possède, à travers ses lemmes, trois types d'informations, divisées en deux ensembles : d'une part la catégorie syntaxique (nom, verbe, adjectif, …), d'autre part les informations morphologiques (nombre, genre, personne, temps, mode, …) et syntaxiques (cadre de subcatégorisation, pronomalisation, diathèse, …).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>A parsing failure due to a form is the consequence of a problem related to at least one of those sets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’échec d’une analyse à cause d’un formulaire est la conséquence d’un problème touchant à au moins un de ces ensembles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>In the following sections, we focus mostly on errors caused by the syntactic features and category.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les sections suivantes, nous nous concentrons principalement sur les erreurs causées par les caractéristiques syntaxiques et la catégorie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>We will discuss errors related to morphological features or to the grammar later on.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous reviendrons plus loin sur les erreurs liées aux caractéristiques morphologiques ou à la grammaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>2.1.1. Category Defect</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.1.1 Défaut de catégorisation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>A single lexical form can be associated with several lemmas with distinct syntactic categories.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une seule forme lexicale peut être associée à plusieurs lemmes (homonymes) avec des catégories syntaxiques distinctes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>Therefore, the input of the parser must be a lattice of words (Sagot and Boullier, 2005), or DAG, as illustrated by Fig. 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'entrée du parseur doit donc être un treillis de mots (Sagot et Boullier, 2005), ou DAG, comme illustré par la figure 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>A successful parse validates at least one path in this DAG.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une analyse syntaxique réussie valide au moins un chemin possible de lecture dans ce treillis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: DAG structure given in input to a parser</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1 : Structure DAG fournie en entrée à un analyseur</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>However, the lexicon may not contain all the homonyms of a form, and this can lead to parsing failures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, un lexique peut ne pas recenser tous les homonymes d’une forme et induire ainsi des échecs d’analyse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>For instance, the French word “fiche” is a noun and a flexion of the verb “ficher”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, le mot français « fiche » est un nom commun et une flexion du verbe « ficher ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>If no entry with a “noun” category is present, the sentence “Ma fiche contient une erreur”/ My card contains an error will be represented by the single sequence ma/possessive-pronoun fiche/verb contient/verb une/det erreur/noun .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>S’il n’existe aucun lemme associé de catégorie nom-commun , la phrase « Ma fiche contient une erreur. » sera représentée par une seule séquence de catégories ma/pronompossessif fiche/verbe contient/verbe une/det erreur/nom-commun .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>Hopefully, there should not be any grammatical rule to accept it, and its parse should fail.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Espérons qu'il n'y ait pas de règle grammaticale pour l'accepter, et que son analyse échoue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>2.1.2. Overspecification</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.1.2 Sur-spécification</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>Usually, grammar rules are enriched with feature equations, in order to further constrain the language recognized by the grammar backbone (Abeillé, 1993).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En général, on associe aux règles de grammaire des décorations, exprimées sous formes de structures de traits et chargées de compléter les vérifications amorcées par le squelette syntaxique d’une production grammaticale (Abeillé, 1993).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>These equations are also used to establish syntactic dependencies between forms in the computed representations of the sentence (see Sect. 2.2.2.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces équations sont également utilisées pour établir des dépendances syntaxiques entre les formes dans les représentations calculées de la phrase (voir la section 2.2.2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>As told before, having the best possible (restriction) of lexical forms helps reduce ambiguity and produce less representations for a sentence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme nous l’avons expliqué, il est souhaitable que les formes lexicales soient les plus spécifiées possible afin de réduire les ambiguïtés et de produire moins de représentations pour une phrase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>Nonetheless, if they are too restrictive, i.e. overspecified, then feature unification on the syntactic backbone might fail. This issue arises with scarce uses of a form for which some features should have been marked as optional.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En revanche, si elles sont trop restrictives, c'est-à-dire sur-spécifiées, l'unification des caractéristiques sur l'arrière-plan syntaxique peut échouer. Ce problème survient lorsqu'une forme est utilisée rarement et que certaines caractéristiques auraient dû être marquées comme optionnelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>For instance, the exhaustive enumeration of all the possible uses of a verb is a tedious task, because of polysemy, optional arguments, possible verbal alternations (“to buy something” will give “something is bought”), and various realizations of the arguments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est par exemple très difficile de renseigner un verbe sur l'ensemble de ses emplois possibles, du fait de la polysémie, de la facultativité de certains arguments, de possibles alternations (« acheter qchose » donnant « qchose s'achète » ), et de multiples réalisations des arguments (« aimer qchose » , « aimer que + S » , « aimer Sinf » ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>This statement can be extended to the other syntactic categories, provided that they are also given subcategorization frames.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette affirmation peut être étendue aux autres catégories syntaxiques, à condition qu'elles soient également dotées de cadres de subcatégorisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>Consequently, some aspects may sometimes be marked as mandatory when, in some cases, they are only optional.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il arrive donc que l’on considère comme obligatoires des aspects qui ne sont que facultatifs dans certains cas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>2.2. Re-parsing Non-parsable Sentences</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.2 Réanalyser les phrases non analysables</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>The previous step of detection of suspicious form only keeps the non-parsable sentences. Thus, their parsing rate is null.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'étape précédente de détection des formes suspectes ne conserve que les phrases non analysables. Ainsi, leur taux d'analyse est nul.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>If changing some features of a suspicious form f allows their parsing rate to increase noticeably, it seems natural to assume that f was responsible for the previous failures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si une modification des caractéristiques d'une forme suspecte f permet d'augmenter sensiblement le taux de réanalyse des phrases qui lui sont associées, il est raisonnable de penser que f était responsable des échecs précédents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>Our objective is to identify which changes are the cause of the rate increase.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre objectif est de déterminer quelles modifications sont à l'origine de la hausse des tarifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>Rather than testing all possible combinations of changes, which is exponential and thus inefficient, we rely upon the ability of our parser to handle underspecified forms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plutôt que de tester toutes les combinaisons de modifications possibles, ce qui est exponentiel et donc inefficace, nous nous reposons sur la capacité de notre analyseur à pouvoir gérer des formes sous-spécifiées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>Once new parsing results on various sentences are obtained, we are able to extract and compute correction hypotheses (see Sect. 2.2.2.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois obtenus de nouveaux résultats d’analyse sur diverses phrases, nous sommes en mesure d’en extraire et de calculer des hypothèses de correction (voir Sect. 2.2.2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>2.2.1. Joker Generation and Use</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.2.1 Génération et utilisation de jokers</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>In order to collect new parsing results from initially non-parsable sentences, we introduce special underspecified lexical forms called jokers .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de collecter de nouveaux résultats de parsing à partir de phrases initialement non-parsables, nous introduisons des formes lexicales sous-spécifiées appelées jokers .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>In the current approach, each joker only carries a syntactic category, excluding closed categories (pronoun, determinant, …).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans l'approche actuelle, chaque joker ne possède qu'une catégorie syntaxique, excluant les catégories fermées (pronoms, déterminants, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>Thus, a joker is not constrained with fixed morphological or syntactic informations, and always fulfills the grammar requirements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, un joker n'est pas contraint par des informations morphologiques ou syntaxiques fixes et remplit toujours les conditions fixées par les règles grammaticales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>Its substitution to the suspicious form in a sentence clearly enhances the chances of successful parse.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leur substitution à une forme suspecte dans une phrase rejetée favorise clairement les chances de réussite de son analyse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, it can introduce a noticeable ambiguity because no feature-filtering can be done on the joker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, cela peut introduire une certaine ambiguïté car aucun filtrage de caractéristiques ne peut être effectué sur le joker.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>Since, so far, we are not able to know which kind of error (overspecification or category defect) is responsible for the parsing failures, we consider both simultaneously.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné que nous ne pouvons savoir a priori quel type d’erreur (sur-spécification ou défaut de catégorisation) est responsable des échecs d’analyse, nous considérons les deux simultanément.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>In order to handle an overspecification, we use a joker with the same syntactic categories as the exchanged suspicious form.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de gérer une sur-spécification, nous utilisons un joker de même catégorie syntaxique que la forme suspecte échangée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>Doing so, we allow the parser to explore the same grammar rules as the ones used for the initial sentences without being bothered by feature equations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce faisant, nous permettons au parseur d'explorer les mêmes règles grammaticales que celles utilisées pour les phrases initiales, sans pour autant être gênés par les équations de caractéristiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>In order to deal with a category defect, we use jokers with syntactic categories distinct from the ones of the suspicious form exchanged.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour faire face à un défaut de catégorisation d'une forme f , nous créons des jokers avec des catégories syntaxiques différentes de celles initialement recensées pour f .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>Thus, the parser will explore new grammar rules.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, l'analyseur explorera de nouvelles règles de grammaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>We choose these categories according to the informations provided by a stemmer or by a part-ofspeech tagger like TREETAGGER (Schmid, 1999).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous choisissons ces catégories en fonction des informations fournies par un lemmatiseur ou un tagger de type TREETAGGER (Schmid, 1999).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>One could ask why we do not use a single joker without any syntactic category, hence without any information? Indeed, such a joker would simultaneously cover all the situations described above.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On pourrait se demander pourquoi nous n’utilisons pas un seul joker sans catégorie syntaxique, et donc sans information. En effet, un tel joker couvrirait simultanément l’ensemble des situations décrites ci-dessus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>The reason is that it would introduce a substantial ambiguity, leading, in most cases, to parsing failures caused by timeouts or memory shortage, or to an overgeneration of interpretations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, un tel joker introduit une très forte ambiguïté, aboutissant soit à un échec des analyses par limite de temps ou de mémoire, soit à la surgénération de représentations pour une phrase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>In the first case, we do not collect any information; in the second case, the huge amount of data prevents its efficient analysis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le premier cas, nous ne collectons aucune donnée, dans le second cas, le volume de données est trop important pour être correctement trié et valorisé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>Our solution allows us to avoid in most cases these problems, while keeping the number of jokers to test within reasonable limits.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre solution nous permet d'éviter dans la plupart des cas ces problèmes tout en limitant le nombre de jokers à tester à des limites raisonnables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>During our experiments, we tested 2.05 jokers per suspicious form (10 978 all in all), resulting in 117 655 parses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pendant nos expériences, nous avons testé 2,05 jokers par formulaire suspect (10 978 au total), ce qui a donné lieu à 117 655 analyses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>2.2.2. Syntactic Signature Extraction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.2.2 Extraction de signatures syntaxiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>Assuming that a suspicious form has been correctly identified by the error mining step, exchanging it with jokers in the associated sentences allows some parses to succeed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si une forme suspecte a été correctement identifiée par l'étape de détection d'erreurs, son remplacement par des jokers dans les phrases qui lui sont associées permet à certaines analyses de réussir.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>In fact, we observe that the success rate for the modified sentences increases in a coordinated way with the suspicion rate of the suspicious form exchanged (see Sect. 5.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fait, nous observons que le taux de réussite pour les phrases modifiées augmente de manière coordonnée avec le taux de suspicion de la forme suspectée (voir section 5).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>The parser we use returns the set of all possible interpretations for the parsed sentence as a shared dependency forest (see Fig. 2). This forest is available in XML format, allowing easy manipulation. In such forests, vertices represent the lemmas and edges represent the syntactic dependencies between lemmas.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre analyseur renvoie l'ensemble des interprétations possibles d'une phrase sous la forme d'une forêt partagée de dépendances (voir la figure 2). Cette forêt est disponible au format XML, ce qui permet une manipulation facile. Dans ces forêts, les nœuds représentent les lemmes et les arcs représentent les dépendances syntaxiques entre les lemmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>Every dependency has a governor source lemma and a governee target lemma. All the informations about the form, the category and the anchored grammatical production are provided for each lemma. A dependency always receives a kind and a label.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque dépendance possède un lemme source gouverneur et un lemme cible gouverné. Toutes les informations relatives à la forme, à la catégorie et à la production grammaticale ancrée sont fournies pour chaque lemme. Une dépendance est toujours caractérisée par un type et un label.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>The label often (but not always) indicates the syntactic function of the target (subject, object, …).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce label dénote souvent (mais malheureusement pas toujours) la fonction syntaxique de la cible (sujet, objet, …).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>The kind provides information about the nature of the target (argument, adjunct, co-anchor, …).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le type fournit des informations sur la nature de la cible (argument, adjonction, co-ancrage, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>In order to manage ambiguities, additional information, local to the governor, links lemmas and dependencies to one or more interpretations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de gérer les ambiguïtés, des informations complémentaires locales au gouverneur lient les lemmes et les dépendances à une ou plusieurs interprétations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>For instance, the French sentence “la vie est belle” (Fig. 2) has various interpretations. This is due to the ambiguity of “est” as a copula verb, an apposed noun and an adjective. Furthermore, we also have the ambiguity of “belle” as an adjective and a noun.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, la phrase française « la vie est belle » (Fig. 2) a plusieurs interprétations. Cela est dû à l'ambiguïté de « est » comme verbe à copule, nom commun (en apposition de « vie ») et adjectif, ainsi que l'ambiguïté de « belle » entre adjectif et nom.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>The forests contain incoming and outgoing dependencies to and from the joker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les forêts contiennent les dépendances entrantes et sortantes vers et depuis le joker.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>We will use the terms : - syntactic signature for the set of dependencies around the joker for a given interpretation of a sentence, - group of signatures for the set of all possible syntactic signatures for a given sentence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous appelons désormais : - signature syntaxique l’ensemble de dépendances autour d’un joker pour une interprétation donnée d’une phrase, - groupe de signatures l’ensemble des signatures syntaxiques possibles pour une phrase donnée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>Those signatures represent the conditions in which the parse could be achieved; in other words, it represents the data the grammar would have accepted for the form.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces signatures représentent les conditions dans lesquelles l’analyse a pu aboutir, i.e. les données que la grammaire aurait acceptées pour la forme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>Because of the ambiguity we introduced, the parser can produce several interpretations and thus several signatures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Du fait de l’ambiguïté consécutive à l’introduction d’un joker, un analyseur peut produire plusieurs interprétations et donc plusieurs signatures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>Among these interpretations, there is one that fits the true meaning of the sentence better than any other.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Parmi ces interprétations, une est plus proche du sens réel de la phrase que les autres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>Therefore, its corresponding signature contains the most relevant and interesting data. This is the data we need in order to infer the corrections we should apply to the lexicon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La signature correspondante contient donc les données les plus pertinentes et intéressantes, celles que nous recherchons afin de déterminer les corrections à appliquer au lexique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>Within only one group (produced from one sentence) we are unable to promote the signatures: there is no way to differentiate the relevant signatures from the ones that are just a consequence of the ambiguity we introduced.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En se plaçant au niveau d’un seul groupe de signatures (produit à partir d’une seule phrase), nous sommes incapables de différencier les signatures pertinentes de celles qui ne sont qu’une conséquence de l’ambiguïté introduite par le joker.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>The variability of contexts represented by several groups of signatures (produced from several sentences) bring us a solution to this problem: this variability implies the diversification of non-relevant signatures, which contrasts with the stability of the relevant ones that correspond to the correct sense of the form.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La variabilité de contexte induite par plusieurs groupes de signatures (produits à partir de plusieurs phrases) nous apporte une solution à ce problème. En effet, elle implique la diversification des signatures « parasites » qui contraste avec la stabilité des signatures pertinentes représentant le(s) sens réel(s) de la forme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>Thus, a clear repetition of particular signatures spanning several groups of signatures obtained from different sentences undeniably suggests one or more schemes expected by the grammar for the form.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, une répétition bien marquée de certaines signatures sur l'ensemble des phrases suggère alors un ou plusieurs schémas d'utilisation attendus par la grammaire pour la forme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>3. Ordering and Promoting the Signatures</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Commander et promouvoir les signatures</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>We promote/devalue the signatures through a simple two-step statistical computation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous valorisons/dévalorisons les signatures par le biais d’un calcul statistique simple en deux étapes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>First step: local distribution of points</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Première étape : distribution locale des points.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>The interest we have for a group of signatures depends on its size: the more signatures it contains, the less interest it has, since it is probably related to several permissive syntactic skeletons, as shown by the interpretations represented in Fig. 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'intérêt que nous portons à un groupe de signatures dépend de sa taille : plus il contient de signatures moins il présente d'intérêt. En effet, il est vraisemblable que plusieurs squelettes syntaxiques « permissifs » lui correspondent, à l'image de ceux permettant les diverses interprétations illustrées par la figure 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>So, for each group, we compute a score P = c^n with c being a numerical constant in ]0, 1[ (eg. 0.95) and n the size of the group.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque groupe g, nous calculons donc un poids P = c^n avec c une constante incluse dans ]0, 1[ (par exemple 0, 95) et n la taille du groupe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>All the signatures of a group are equally interesting, thus, we spread the score of the group equally between them. In the end, each signature receives a score pg = P/n = c^n / n , which depends twice on the size n of group g.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au niveau d'un groupe, toutes les signatures sont d'égale importance, nous répartissons donc de manière équitable les poids attribués au groupe : chacune signature reçoit un poids pg = P/n = c^n / n qui dépend donc doublement de la taille du groupe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>Second step: global score computation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Seconde étape : calcul global du score.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>Once the previous step is complete, we add the scores received by a same signature σ in the different groups where it appears in order to compute its global score sσ = Σgpg.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois l’étape précédente réalisée, nous additionnons les poids obtenus par une même signature σ dans les différents groupes où elle apparaît pour calculer son score sσ = Σgpg.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>Thus the best signatures, the ones that appear in various groups and in small groups, receive a greater score sσ.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, les meilleures signatures, à savoir celles qui se trouvent dans plusieurs groupes et dans des groupes de petite taille, reçoivent alors un score sσ plus élevé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>Figure 2: a shared forest of dependencies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 2 : une forêt de dépendances partagée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>4. Signature Study</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Étude de la signature</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>The technique is a supervised one: the system suggests corrections that may be explored through an adequate interface and the lexicon maintener decide to apply (or not) these suggestions</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La technique est supervisée : le système propose des corrections qui peuvent être explorées à travers une interface adéquate et le lexicographe décide d'appliquer (ou non) ces suggestions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>Although the classification resulting from the previous computation is the most important point when studying the signatures, there are side aspects that we also need to take into account.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que la classification résultant du calcul précédent soit le point le plus important lors de l'étude des signatures, il existe des aspects secondaires que nous devons également prendre en compte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>4.1. Inclusion Between Signatures</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1. Inclusion entre les signatures</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>If a signature A includes a signature B (all the information carried by B are also in A), the A’s added information may represent some optional aspects of the common information shared by both signatures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si une signature A inclut une signature B (toutes les informations portées par B sont également dans A), les informations ajoutées par A peuvent représenter des aspects optionnels des informations communes partagées par les deux signatures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>If both A and B have high scores sA and sB, we need to consider this phenomenon in order to avoid an incomplete correction if sB &gt; sA, an overspecified correction if sA &gt; sB.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si A et B ont des scores élevés sA et sB, il faut prendre en compte ce phénomène afin d'éviter une correction incomplète si sB &gt; sA, une correction sur-spécifiée si sA &gt; sB.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>This is why an inclusion graph should be computed and observed when analyzing signatures, in order to avoid fixing only partially an error.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est pourquoi un graphe d'inclusion doit être calculé et observé lors de l'analyse des signatures, afin d'éviter de corriger une erreur seulement en partie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>4.2. Lexicon and Grammar Synchronization</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 Synchronisation lexique-grammaire</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>The lexical changes suggested by this technique are not always unquestionable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les changements lexicaux proposés par cette technique ne sont pas toujours indiscutables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>Indeed, this technique allows the grammar to express its expectations about the suspicious forms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, cette technique permet à la grammaire d'exprimer ses attentes pour les formes suspectes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>If the grammar is not fully correct, neither will be the generated interpretations and, consequently, the extracted signatures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si la grammaire n'est pas parfaite, les représentations qu'elle produit ainsi que les signatures que l'on en extrait ne le sont pas non plus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>Therefore the quality of the corrections depends greatly on the quality of the grammar. Nevertheless, even incorrect signatures provide precious feedback about the shortcomings of the grammar.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, la qualité des corrections dépend grandement de la qualité de la grammaire. Néanmoins, même les signatures incorrectes fournissent un précieux feedback sur les lacunes de la grammaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>This technique is a method that attempts to decrease the number of conflicts between a grammar and a lexicon in order to better “synchronize” them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette technique est une méthode qui tente de diminuer le nombre de conflits entre une grammaire et un lexique afin de mieux les « synchroniser ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>4.3. Impact of Jokers on the Parsing Rate</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.3. Impact des jokers sur le taux d'analyse</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>Unlike programming languages, natural languages are highly flexible and so have to be the grammars describing them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contrairement aux langages de programmation, les langages naturels sont très flexibles et les grammaires qui les décrivent doivent l'être également.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>For instance, in French, one can easily use an adjective as a noun and conversely.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, en français, on peut facilement utiliser un adjectif comme nom et inversement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>This fact, combined with the ability of jokers to prevent conflicts during feature unification, can lead to successful parses of sentences even with a wrongly categorized joker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce fait, combiné à la capacité des jokers à empêcher les conflits lors de l'unification des caractéristiques, peut mener à des analyses syntaxiques réussies, même avec un joker mal catégorisé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>Thus, an irrelevant joker can still induce a set of signatures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, un joker sans importance peut tout de même induire un ensemble de signatures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>Therefore, it is important to observe the parsing rate a joker has implied before studying the signatures it has induced.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est donc important d'observer le taux de parsing impliqué par un joker avant d'étudier les signatures qu'il a induites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>5. Results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. Résultats</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>In addition to the validation of our technique, our experiments strengthen the relevance of the detection technique with new results not present in the original paper by Sagot and de La Clergerie (2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En plus de valider notre technique, nos expériences renforcent la pertinence de la technique de détection avec de nouveaux résultats non présents dans l'article original de Sagot et de La Clergerie (2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>5.1. Precision of the Error Mining Technique</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.1 Exactitude de la technique de détection des erreurs</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>The curve of Fig. 5.1. shows an obvious correlation between the best parsing rates achieved after having introduced jokers and the suspicion rates of the forms exchanged.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La courbe de la figure 5.1 montre une corrélation très nette entre les meilleurs taux de réussite des analyses après avoir introduit des jokers et les taux de suspicion des formes échangées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>Thus, it confirms the validity of the detection technique that provided the suspicious forms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela confirme la validité de la technique de détection qui a fourni les formulaires suspects.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>Figure 3: Parsing rates in percentages (Y-axis) according to the suspicion rates (X-axis) after joker introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 3 : Taux de décodage en pourcentage (axe des Y) en fonction des taux de suspicion (axe des X) après l’introduction du joker</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>The values used for this curve are averages after grouping the suspicious forms by range of suspicion rate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les valeurs présentées par cette courbe sont en réalité des moyennes calculées après un regroupement des formes suspectes par intervalle de taux de suspicion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>Without this grouping, the curve would present many variations making its observation difficult.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sans ce regroupement, la courbe présente de nombreuses variations rendant difficile son observation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>There are two parasite phenomena that explain this variability:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il existe deux phénomènes de parasitisme qui expliquent cette variabilité :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>- Some forms were suspected when the grammar was actually the true culprit, so exchanging them with jokers does not bring any parsing rate increase.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Certaines formes ont été suspectées alors que la grammaire était en fait le véritable coupable, donc les échanger avec des jokers n'apporte aucune amélioration du taux de parsing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>Indeed, some forms are naturally related to some specific syntactic constructions, like for instance, the subject inversion in presence of some adjectives (as in “Rares sont ceux qui …”/ Rare are those that … ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, certaines formes ont une affinité marquée pour des constructions spécifiques ; par exemple une inversion du sujet en présence de l’adjectif ’rare’ comme dans « Rares sont ceux qui tentent d’en sortir. » ou ’nombreux’ dans « Nombreux sont ceux qui refusent. »[2] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>Thus their suspicion rate has been unfairly increased.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, leur taux de suspicion a été injustement augmenté.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>- Introducing a joker can increase timeout and memory shortage rates noticeably, even if we impose a 40word limit on the parsed sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- L'introduction d'un joker peut augmenter sensiblement les taux de dépassement de temps et de mémoire, même en imposant une limite de 40 mots sur la longueur des phrases analysées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>Because those two phenomena are not linked to suspicion rates, they can be observed at any level. Grouping the forms by range reduces their effects on the curve.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Puisque ces deux phénomènes ne sont pas liés aux taux de suspicion, ils peuvent être observés à tous les niveaux. Le regroupement des valeurs par intervalle a permis d'en diminuer l'influence sur la courbe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>If a sentence associated with an highly suspicious form can not be parsed after several joker introductions (timeouts and memory shortages are not considered as failure), it seems reasonable to think that those failures were caused by shortcomings of the grammar.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si une phrase associée à un formulaire très suspect ne peut pas être analysée après plusieurs tentatives (les dépassements de temps et les défaillances de mémoire ne sont pas considérés comme des échecs), il semble raisonnable de penser que ces échecs sont dus à des lacunes de la grammaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>This provides precious data to analyze with a process such as a grammar induction mechanism.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela fournit des données précieuses à analyser au moyen d'un processus tel qu'un mécanisme d'induction grammaticale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>5.2. Assessing Signature Quality</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.2 Évaluation de la qualité des signatures</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>The study of the best jokers and best signatures has confirmed some doubts we had: the technique is still “young”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'étude des meilleures blagues et des meilleures signatures a confirmé certains doutes que nous avions : la technique est encore « jeune ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>Various phenomena could not allow us to correctly quantify the quality of the signatures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons identifié un certain nombre de phénomènes nous empêchant de correctement quantifier la qualité des signatures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, we already know how to face most of them (see Sect 6.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, nous savons déjà comment faire face à la plupart (voir Sect 6).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>In the end, in many cases, the technique has proved to be very relevant and instructive and has permitted us to perform improvements to our tools, and not only to the lexicon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fin de compte, dans de nombreux cas, la technique s'est avérée très pertinente et instructive et nous a permis d'améliorer nos outils, et pas seulement notre lexique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>For instance, we found correct signatures, such as for “prospères”/ prosperous . We can observe its use as an attributive adjective (shown by joker syntactic category and the signature), whereas it was only described as a verb in the Lefff .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, on retrouve la bonne signature comme dans le cas de « prospères » où l’on retrouve un usage d’adjectif épithète (joker + signature), alors qu’il n’existe que comme verbe dans Lefff .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>For the verbal form “révéler”/ to reveal , the signatures illustrate the expectation of a copula argument as in “ce choix pourrait se révéler catastrophique.” / This choice could appear disastrous . A reflexive aspect was missing in order to cover prepositional construction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour la forme verbale « révéler » , les signatures illustrent l'attente d'un argument attributif comme dans « ce choix pourrait se révéler catastrophique. » Une construction prépositionnelle était manquante pour couvrir le côté réflexif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>Even if incomplete, our approach to automatically suggest corrections for a lexicon has proved to be viable and we are willing to develop it further in order to obtain a fully functional tool.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Même s'il est incomplet, notre approche visant à suggérer automatiquement des corrections pour un lexique s'est avérée viable et nous sommes prêts à la développer davantage afin d'obtenir un outil pleinement fonctionnel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>Once some improvements are achieved, new computation campaigns will be performed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois que certaines améliorations auront été réalisées, de nouvelles campagnes de calcul seront menées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>6. Future Improvements</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6. Améliorations futures</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>During our experiments, we have established a list of problems to solve and solutions to fix them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Durant nos expériences, nous avons pu établir une liste de problèmes à traiter et des solutions pour les résoudre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>It is very frequent to be able to apply several grammar rules to a sequence of words, especially when the syntactic category of a word changes, like when we try various jokers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est très fréquent de pouvoir appliquer plusieurs règles grammaticales à une suite de mots, surtout si la catégorie syntaxique d’un mot varie, comme pour les jokers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, rules are not used with the same frequency and, consequently, the resulting signatures do not carry the same amount of information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, les règles ne sont pas utilisées avec la même fréquence et, par conséquent, les signatures qui en résultent ne représentent pas la même quantité d’informations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>Once such data is obtained, we shall use this probabilistic aspect to balance the scores of the signatures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois ces données obtenues, nous utiliserons cet aspect probabiliste pour équilibrer les scores des signatures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>Signatures should be cleaned to avoid irrelevant adjuncts on suspects.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les signatures doivent être nettoyées pour éviter les adjonctions non pertinentes sur les suspects.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>However, evaluating the importance of a given adjunct is difficult.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, il n'est pas toujours évident de juger de l'importance d'un adjoint.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>For instance, an adverb modifying an adjective joker strengthens the adjectival hypothesis but a prepositional attachment does not bring much information about noun, adjective and verb jokers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, un adverbe qui modifie un joker adjectif renforce l'hypothèse d'un joker adjectif, mais un complément prépositionnel ne fournit pas beaucoup d'informations sur les jokers nominal, adjectival et verbal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>We often observe families of suspicious lemmas with a root stem in common with similar signatures, like for the various flexions of a verb.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous observons souvent des familles de lemmes suspects avec une racine en commun avec des signatures similaires, comme pour les différentes flexions d'un verbe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>In these cases, the problems directly concern the root stem and not the forms. We could group those forms in order to increase the number of associated sentences. Still, we have to keep in mind that some problems are only related to some specific forms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, les problèmes concernent directement la racine et non les formes. Nous pouvons regrouper ces formes afin d'augmenter le nombre de phrases associées. Toutefois, nous devons garder à l'esprit que certains problèmes ne se manifestent que pour certaines formes spécifiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>We should group signatures that represent a common syntactic phenomenon under various aspects by establishing a list of equivalent combinations of dependencies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous devons regrouper les signatures qui représentent un même phénomène syntaxique sous des aspects différents en établissant une liste de combinaisons équivalentes de dépendances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>For instance, the subject and other verbal arguments with various realizations (nominal, clitics, relatives and pronouns, …) or a transitive verb used in a passive construction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, le sujet et d'autres arguments verbaux ont diverses réalisations (nominales, cliticisées, relatives et pronoms, ...) ou un verbe transitif utilisé dans une construction passive.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>The lack of morphological information in the signatures has lead, in few cases, to signatures equivalent to the data present in the lexicon and thus did not help to understand the problem.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le manque d'informations morphologiques dans les signatures a conduit, dans quelques cas, à des signatures équivalentes aux données présentes dans le lexique et n'a donc pas aidé à comprendre le problème.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>The next logical step for the signature model will be to assimilate this available information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'étape logique suivante pour le modèle de signature sera donc d'intégrer ces informations déjà présentes dans les forêts de dépendances, mais non encore exploitées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>7. Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7 Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>Our experiments strengthen the ability of the detection algorithm to correctly identify true suspicious forms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nos expériences renforcent la capacité de l'algorithme de détection à identifier correctement les formes suspectes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>Exchanging them with jokers has proved to noticeably increase the parsing rate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leur transformation en jokers augmente le taux de réanalyses réussies de manière notable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>They also validates our mechanism for automatically suggesting lexical corrections for the suspicious forms (i.e. to their underlying lemmas) and bringing precious feedback on several shortcomings of the grammar.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elles valident également notre mécanisme de suggestion automatique de corrections lexicales pour les formes suspectes (i.e. vers leurs lemmes sous-jacents) et apportent un précieux retour d'information sur plusieurs lacunes de la grammaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>Still, work remains to be carried out in order to the quality of the suggested corrections by distinguishing what is relevant from what is not. We have suggested some means to this end.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, un travail reste encore à faire pour améliorer la qualité des corrections suggérées en distinguant mieux l’essentiel de l’accessoire dans les signatures, notamment à travers des améliorations introduites précédemment. Nous avons suggéré quelques moyens à cet effet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>Acknowledgement.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Reconnaissance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <tuv xml:lang="EN">
+                <seg>The authors are grateful to Sylvain Schmitz and Angelica Lim for their valuable comments and suggestions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les auteurs remercient Sylvain Schmitz et Angelica Lim pour leurs précieuses remarques et suggestions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <tuv xml:lang="EN">
+                <seg>1We suppose that failures caused by the previous parse steps (segmentation, punctuation, detection of named entities, … ) have been identified.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Nous supposons que les erreurs dues à un traitement incorrect en amont du processus d’analyse proprement dit (segmentation, ponctuation, détection d’entités nommées, …) ont été identifiées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <tuv xml:lang="EN">
+                <seg>We do not take in account the erroneous forms and their associated sentences caused by such errors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous ne prenons pas en compte les formes erronées et leurs phrases associées qui résulteraient de telles erreurs.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

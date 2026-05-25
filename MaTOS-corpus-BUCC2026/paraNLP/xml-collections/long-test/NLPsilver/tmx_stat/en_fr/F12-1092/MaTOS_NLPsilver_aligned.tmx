@@ -1,0 +1,1431 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-F12-1092. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/L12-1363</url_en>
+        <url_fr>https://aclanthology.org/F12-1092.pdf</url_fr>
+        <title_en>Towards Fully Automatic Annotation of Audio Books for Text-To-Speech (TTS) Synthesis</title_en>
+        <title_fr>Vers une annotation automatique de corpus audio pour la synthèse de parole</title_fr>
+        <docid>F12-1092</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Towards Fully Automatic Annotation of Audiobooks for TTS</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Vers une annotation automatique de livres audio pour la synthèse de parole</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>Building speech corpora is a first and crucial step for every text-to-speech synthesis system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La construction de corpus de parole est une étape cruciale pour tout système de synthèse de la parole à partir du texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>Nowadays, the use of statistical models implies the use of huge sized corpora that need to be recorded, transcribed, annotated and segmented to be usable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’usage de modèles statistiques nécessite aujourd’hui l’utilisation de corpus de très grande taille qui doivent être enregistrés, transcrits, annotés et segmentés afin d’être exploitables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>The variety of corpora necessary for recent applications (content, style, etc.) makes the use of existing digital audio resources very attractive. Among all available resources, audiobooks, considering their quality, are interesting.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La variété des corpus nécessaires aux applications récentes (contenu, style, etc.) rend l'utilisation de ressources audio numériques disponibles, comme les livres audio, très attrayante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>Considering this framework, we propose a complete acquisition, segmentation and annotation chain for audiobooks that tends to be fully automatic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C’est dans ce cadre que s’inscrit notre proposition de chaîne d’acquisition, de segmentation, et d’annotation de livres audio. Cette proposition tend vers la mise en place d’un processus automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>The proposed process relies on a data structure, ROOTS, that establishes the relations between the different annotation levels represented as sequences of items.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le processus proposé s’appuie sur une structure de données, ROOTS, qui établit des relations entre différents niveaux d’annotation représentés sous forme de séquences d’éléments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>This methodology has been applied successfully on 11 hours of speech extracted from an audiobook.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthodologie a été appliquée avec succès sur 11 heures de parole extraites d’un livre audio.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>A manual check, on a part of the corpus, shows the efficiency of the process.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une vérification manuelle sur une partie du corpus annoté a montré l'efficacité du procédé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>Keywords: Audiobook, annotation, phone segmentation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mots clés : Livre audio, annotation, segmentation téléphonique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>1. Use of Large Corpora for Speech Synthesis</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Usage de grands corpus pour la synthèse de la parole</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>The use of statistical models, mainly from the speech recognition field, occurs in all the automatic language and speech processing disciplines.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'usage de modèles statistiques, issus du domaine de la reconnaissance de la parole, intervient dans toutes les disciplines du traitement automatique des langues et de la parole.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>Learning such models on speech units needs a large number of observations and implies the use of large speech corpora.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’apprentissage de tels modèles, sur des unités de parole, nécessite un grand nombre d’observations, ce qui implique la mise en place de corpus de parole de grande taille.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>A direct consequence of the size of corpora is that conventional methods used to build, segment and annotate them have shown their limits.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une conséquence directe de la taille de ces corpus est que les méthodes jusqu’alors utilisées pour les constituer, les segmenter et les annoter montrent leurs limites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>When we consider the field of speech synthesis, the unit generally used is the phoneme together with its precise linguistic and acoustic context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En synthèse de la parole, l’unité est généralement un phonème pris dans un contexte linguistique et acoustique précis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>Representing in a database the whole set of the units generated by the combination of all the linguistic and acoustic features (about 50 features are used in HTS (Tokuda et al., 2000)) is impossible.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La représentation dans une base de données de l’ensemble des unités générées par les combinaisons de toutes les caractéristiques linguistiques et acoustiques (une vingtaine de descripteurs est utilisée pour HTS (Tokuda et al. , 2002)) est impossible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>Nonetheless, learning models of the units that are present in the target language can be done by the analysis of large natural speech corpora.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, l'apprentissage des modèles des unités présentes dans la langue visée peut être envisagé par l'analyse de grands corpus de parole naturelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>The increasing availability of digital resources enables research laboratories to have a great variety of recordings covering many speaking styles and recorded in varied conditions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La disponibilité croissante des ressources numériques permet aux laboratoires de recherche d'avoir une grande variété d'enregistrements couvrant de nombreux styles de parole et enregistrés dans des conditions variées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>In the framework of speech synthesis, we consider the use of audiobooks which enables to have recordings, read by a professionnal speaker and with a good acoustic quality, accompanied with the script.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre d’une utilisation en synthèse de la parole, nous considérons ici le cas du livre audio qui permet de disposer d’un enregistrement accompagné du texte lu par un locuteur professionnel et de bonne qualité acoustique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>Audiobooks have a lot of benefits and can complete or even replace ad-hoc corpora.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les livres audio présentent de nombreux avantages et peuvent compléter ou même remplacer des corpus ad hoc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>As an example, we can find different books read by the same speaker which increases the variety of speaking and literary styles, or we can find the same book recorded by different speakers and thus enabling studies using parallel data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, on peut trouver des livres différents lus par le même locuteur, ce qui augmente la variété des styles littéraires et de lecture, ou on peut trouver un même livre enregistré par des locuteurs différents, ce qui permet des études sur des corpus parallèles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>In addition, a specificity of textual data associated to audiobooks is that they are nearly constant from one recording to another.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, une particularité des données textuelles associées à un livre audio est qu’elles sont presque constantes d’une enregistrement à l’autre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>However, possible variations may exist in the case of multiple editions (translations, unfinished manuscripts, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutefois, des variations sont possibles dans le cas d'éditions multiples (traductions, manuscrits inachevés, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>An important step to build a new voice is the annotation of the signal and the associated text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une étape importante pour la création d’une voix est l’annotation du signal et du texte associé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>This step may appear simple if it is limited to the synchronisation of words onto the signal, but uses complex temporal relation when it comes to dealing with other levels of analysis, as semantic, lexical, grammatical, syntactical, phonetic or prosodic annotations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette opération peut paraître simple si on se limite à la synchronisation des mots sur le signal prononcé, mais fait appel à des relations temporelles complexes si on s’intéresse à différents niveaux d’analyse comme l’annotation sémantique, lexicale, grammaticale, syntaxique, phonétique, prosodique, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>For each of these annotation levels, previous works found in the literature proposed automatic annotation systems that define labels to place on the text linked to the signal.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chacun de ces niveaux, des travaux ont permis de mettre au point des systèmes d’annotation automatique définissant l’ensemble des étiquettes à apposer sur le texte en lien avec le signal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>Generally, these systems have been built separately and, consequently, use different description formats but not the same time scale.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces systèmes sont le plus souvent indépendants les uns des autres, ne travaillent pas toujours à la même échelle et peuvent recourir à des formats de description différents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>Their use on a corpus often requires a lot of conversions and generates a lot of heterogeneous and scattered files.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leur mise en œuvre sur un corpus demande souvent beaucoup de manipulations et génère un ensemble de fichiers hétérogènes et dispersés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>In order to avoid desynchronized descriptions, we have recently proposed a solution based on relations between sequences, ROOTS (Barbot et al., 2011).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de limiter la désynchronisation des informations de description, nous avons récemment proposé une solution fondée sur la mise en relation de séquences, ROOTS (Barbot et al. , 2011).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>This approach enables to define a minimal set of relations that exist between levels of description.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette approche permet de définir un ensemble de relations minimales qui existent entre différents niveaux de description.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>Primitive relations are first defined and then all the necessary missing relations between two sequences of annotation are composed using algebraic rules.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les relations primitives sont d'abord définies et toutes les relations manquantes nécessaires entre deux séquences d'annotation sont composées à l'aide de règles algébriques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>The aim of this study consists in describing the process used to build speech corpora from audiobooks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'objectif de cette étude consiste à décrire le processus utilisé pour construire des corpus de parole à partir de livres audio.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>This automatic annotation process is applied to several dozen hours of continuous speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le processus d’annotation automatique a été mis en œuvre pour traiter plusieurs dizaines d’heures de discours continu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>This study is restricted to mono-speaker recordings but the only constraint is to have an acoustic content and the corresponding text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’étude se limite à des enregistrements monolocuteurs. La seule contrainte est de disposer du contenu sonore et du texte associé à ce contenu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>The ouput of the system, according to the annotation levels required, is a set of ROOTS files, stored as XML files. These files put together give the structure of all the relations from text to signal.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La sortie du système, selon les niveaux d’annotation requis, est un ensemble de fichiers ROOTS, stockés au format XML. Ces fichiers, réunis, donnent la structure de toutes les relations allant du texte au signal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>The rest of the paper is organized as follows.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le reste du document est organisé comme suit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>In part 2, the proposed annotation process is described.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la partie 2, le processus d'annotation proposé est décrit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>The structure representing the information linked to the utterance is then introduced in part 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La structure permettant la représentation des informations liées à l’énoncé est ensuite présentée dans la partie 3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>This structure is used by the text splitting and alignment processes, detailed in section 4, and also to keep all the information obtained form the annotation step, section 5.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette structure est utilisée pour le processus de découpage et d’alignement du texte, détaillé en section 4, ainsi que pour conserver toutes les informations obtenues suite à la phase d’annotation, section 5.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>Finally, part 6 illustrates the whole process with an application of the methodology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, la partie 6 illustre tout ce processus en proposant une application de cette méthodologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>2. Annotation Process</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Procédé d’annotation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>The annotation process has to fulfill a number of constraints that come from the use of annotated corpora and performance control.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La mise en place du procédé d’annotation doit respecter un certain nombre de contraintes dictées par l’usage du corpus annoté et la maîtrise des performances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>The first one concerns the text that has to be kept under its original form and the differences introduced by the reader have to be tagged.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première contrainte concerne le texte qui devra être conservé sous sa forme originale, les écarts de lecture devront être signalés par des balises.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>The second one concerns the corpus splitting.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La seconde concerne le découpage du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>Our goal being to annotate a corpus on several levels, we have to manipulate speech fragments and text fragments of variable size.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre objectif étant d’annoter un corpus sur différents niveaux, nous sommes amenés à traiter des fragments de parole ou de texte de taille variable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>As an example, it is desirable for the syntactical analysis to have a complete sentence while the segmentation into phones is more efficient when applied on short extracts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, il est souhaitable pour une analyse syntaxique de disposer d'une phrase complète alors qu'une segmentation en phones est plus efficace sur des extraits courts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>The text and the recorded tracks will be split with a granularity sufficiently fine to enable working on short fragments that may be, if needed, merged together to build a sentence or just a longer fragment under the condition of keeping coherence of the text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le texte et les plages d’enregistrement seront donc découpés avec une granularité suffisamment fine pour pouvoir travailler sur des fragments courts qui pourront, le cas échéant, être réunis et former une phrase ou un fragment plus long à condition de toujours conserver la cohérence du texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>Lastly, to garantee the annotation quality, a manual intervention is possible, and is guided by confidence indicators given by the different tools used during the process.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, pour garantir une annotation de qualité, une intervention manuelle est possible, elle sera guidée par des indicateurs de confiance fournis par les différents outils intervenant dans le processus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>The annotation process, shown on figure 1, is composed of two main steps: the first one consists in splitting several hours of a long speech recording into short tracks and associating to each of them the corresponding text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le processus d'annotation, présenté sur la figure 1, est composé de deux étapes principales : la première consiste à fractionner plusieurs heures d'enregistrement de parole en pistes courtes et à y associer le texte correspondant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>This step, as time consuming as the signal cutting is thin, needs the use of a speech recognition system to find anchors of the corresponding textual transcription in the entire text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette étape, aussi coûteuse en temps que le découpage du signal est fin, nécessite le recours à un système de reconnaissance de la parole pour retrouver dans le texte complet l’ancrage de la transcription associée au signal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>The extracts obtained are then merged to rebuild the sentences of the original text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les extraits obtenus sont ensuite regroupés pour reconstituer les phrases du texte original.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>The second step is the annotation of the text sentences and the signal fragments that have been put into correspondance during the first step.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La deuxième étape concerne l’annotation des phrases du texte et des fragments de signal mis en correspondance au cours de la première étape.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>Data representation using ROOTS is done from the audiobook splitting step.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La représentation des données par ROOTS est réalisée dès l’étape de découpage du livre-audio.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>It is enriched as data annotation is done by the addition of new description sequences and relations between them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle est enrichie au fur et à mesure de l’annotation des données par l’ajout de nouvelles séquences de description et de relations entre ces séquences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>Figure 2: Class diagram of ROOTS main components: sequence, relation and utterance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 2 : Diagramme de classes des principales composantes de ROOTS : séquence, relation et énoncé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>The utterance is the entry point of the ROOTS architecture and can contain both sequences and relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'énoncé est le point d'entrée de l'architecture ROOTS et peut contenir des séquences et des relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>Sequences are generic since they are composed by an ordered set of items.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les séquences sont génériques car elles sont composées d'un ensemble ordonné d'éléments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>The items can be as simple as a word or as complex as a syntax tree.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les éléments peuvent être aussi simples qu'un mot ou aussi complexes qu'un arbre de syntaxe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>Relations are built upon couples of sequences and put into relation the items contained by them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les relations sont construites à partir de couples de séquences et mettent en relation les éléments qu'elles contiennent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>The mapping realized by a relation can be a one-to-one , many-to-one or one-to-many mapping.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La correspondance réalisée par une relation peut être une correspondance un-à-un, plusieurs-à-un ou un-à-plusieurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>3. Corpus Representation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Représentation du corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>ROOTS is a software library designed to handle a coherent set of data structures built to describe annotated speech and linguistic contents(Barbot et al., 2011).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>ROOTS est une librairie conçue pour manipuler un ensemble de structures de données comme un ensemble cohérent permettant la description et l’annotation de la parole et de contenu linguistique (Barbot et al., 2011).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>This structure is used during the whole process and for each annotation state to build a unique representation of all annotating elements of the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette structure est utilisée pendant tout le processus et pour chaque état d'annotation afin de construire une représentation unique de tous les éléments annotés du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>3.1. Items, Sequences and Relations</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1. Éléments, séquences et relations</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>The main invariant of the ROOTS structure is the time which seems to be the only valid referential concerning speech and justifies the use of item sequences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'invariant principal de la structure ROOTS est le temps qui semble être le seul référentiel valable concernant le discours et justifie l'utilisation des séquences d'items.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>This axis can be materialized by time anchors or, in an abstract manner, by the order of the events (for example, a succession of syllables anchored on a succession of words).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet axe peut se matérialiser par des ancres temporelles ou, de manière abstraite, par l'ordre des événements (par exemple une succession de syllabes ancrée sur une succession de mots).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>Each type of annotation is described by a sequence of items.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque type d’annotation correspond à une séquence d’items.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>An item is an object whose nature may vary a lot, for example, a transcription of text, a label, an acoustic segment, etc.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un item correspond à des objets de nature très variée comme par exemple une transcription sous forme de texte, un label, un segment acoustique (i.e. défini par un début et une fin), etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>The only constraint to respect, to insure consistency of the sequences, is that all the items in one sequence are always of the same type.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La seule contrainte à respecter, pour assurer la cohérence des séquences, est que tous les éléments d’une séquence soient toujours du même type.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>Relations allow to connect sequence items in a n-to-m manner.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les relations permettent de connecter les éléments de séquence entre eux, de manière n-vers-m.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>ROOTS produces an XML file, that gives a complete description of the corpus, but may also provide files under well-known formats to guarantee the possible use of other tools to make analysis or manual verification like Wavesurfer or Transcriber.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>ROOTS produit un fichier XML qui donne une description complète du corpus, mais peut également fournir des fichiers dans des formats bien connus pour garantir l'utilisation possible d'autres outils pour effectuer des analyses ou des vérifications manuelles, comme Wavesurfer ou Transcriber.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>Figure 2 shows an extract of ROOTS class diagram with the three main classes : Sequence, Relation and Utterance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 2 montre un extrait du diagramme de classes ROOTS avec les trois classes principales : Sequence, Relation et Utterance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>The last one, Utterance, is the main container that regroups all the sequences and relations corresponding to a piece of text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le dernier, Utterance, est le conteneur principal qui regroupe toutes les séquences et relations correspondant à un morceau de texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>3.2. Complete and Versatile Structure</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2. Structure complète et polyvalente</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>A lot of different information can be kept in a ROOTS structure, going from linguistics (words, POS tags, syntax, named entities, fillers), or phonology (phonemes, syllables) to acoustics (acoustic segments, non speech sounds, allophones).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nombreuses informations différentes peuvent être conservées dans une structure ROOTS, allant de la linguistique (mots, POS tags, syntaxe, entités nommées, remplisseurs) ou de la phonologie (phonèmes, syllabes) à l’acoustique (segments acoustiques, sons non vocaux, allophones).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>In addition, ROOTS has a modular structure which allows to keep several sequences of the same type simultaneously.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, ROOTS a une structure modulaire qui permet de conserver plusieurs séquences du même type en parallèle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>For example, it is important to keep the original text, the spoken text (which may contain corrections of misspelled words or specific pronounciation) and finally the output of syntax analysis (for example, “j’avais” contains two words). For each previous type of text, a particular sequence is associated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est par exemple important de pouvoir conserver le texte d'origine, le texte prononcé (texte avec éventuellement des corrections prenant en compte des erreurs sur les mots ou bien des prononciations particulières), et également le texte en sortie de l'analyse syntaxique (par exemple, « j’avais » correspond réellement à deux mots). Pour chaque type de texte précédent, une séquence particulière est associée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>Those three sequences are then linked together by relations, as shown on figure 3, which give a precise correspondance between items.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces trois séquences sont ensuite reliées entre elles par des relations, comme le montre la figure 3, qui donnent une correspondance précise entre les éléments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>Thus, this point of view enables to keep all the information untouched and to keep, in a unique structure, various utterance annotations. Furthermore, information can be split into several files while the coherence is also preserved.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce point de vue permet donc de ne perdre aucune information et de conserver dans une structure unique (pouvant correspondre physiquement à plusieurs fichiers) les différentes annotations d’un énoncé. De plus, l’information peut être divisée en plusieurs fichiers tout en préservant la cohérence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>4. Speech Signal Split and Alignment with the Text</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Découpage du signal de parole et alignement avec le texte</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>Many papers are dealing with the alignment of large texts and their corresponding signal.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs travaux portent sur l’alignement de longs textes et des plages audio correspondantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>(Braunschweiler et al., 2010) has proposed a system which automatically aligns text parts of an audiobook for TTS applications.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(Braunschweiler et al., 2010) a proposé un système qui aligne automatiquement les parties de texte d'un livre audio pour des applications en synthèse de la parole à partir du texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>Other systems deal with approximate transcriptions (Tao et al., 2010) or align the text without splitting it (Moreno and Alberti, 2009)(Prahallad et al., 2007).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autres systèmes traitent des transcriptions approximatives (Tao et al., 2010) ou alignent le texte sans le découper (Moreno et Alberti, 2009) (Prahallad et al., 2007).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>In our process, the text is segmented to be annotated and manipulated more easily, especially for human operations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre processus, le texte est segmenté pour être annoté et manipulé plus facilement, en particulier dans le cadre d'opérations manuelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: This figure describes the audiobook annotation process which begins with a complete text and the corresponding recording.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1 : Cette figure décrit le processus d'annotation de livres audio qui commence par un texte complet et l'enregistrement correspondant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>This process is based on (1) the use of ASR to split the complete text and signal into smaller pieces (of the size of a sentence) and (2) the annotation of the text using the ROOTS structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce processus est basé sur (1) l'utilisation de l'ASR pour diviser le texte complet et le signal en morceaux plus petits (de la taille d'une phrase) et (2) l'annotation du texte en utilisant la structure ROOTS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>Figure 3: Example of relation graph obtained from relations contained in ROOTS files.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 3 : Exemple de graphe de relations obtenu à partir des relations contenues dans les fichiers ROOTS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>This graph shows 4 sequences and their relations as arcs between sequences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce graphique montre 4 séquences et leurs relations sous forme d'arcs entre les séquences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>Relations can be composed to move from one sequence to another in the graph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les relations peuvent être composées pour passer d'une séquence à une autre dans le graphe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>Here, the sequence named Word Synapse can be considered as a pivot in the graph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ici, la séquence nommée Word Synapse peut être considérée comme un pivot dans le graphe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>We have chosen to realize the text alignment with the signal in three steps like illustrated in the figure 1: 1. Split the signal on large acoustic pauses, 2. Find the corresponding text description of the signal by using Automatic Speech Recognition (ASR) System, 3. Align the recognized text with the original one.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons choisi de réaliser l'alignement du texte et du signal en trois étapes, comme illustré dans la figure 1 : 1. Diviser le signal sur de grandes pauses acoustiques, 2. Trouver la description de texte correspondante du signal en utilisant le système de reconnaissance automatique de la parole (ASR), 3. Aligner le texte reconnu avec le texte original.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>The main goal of this alignment is to put text anchors in the signal.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le principal objectif de cet alignement est de placer des ancres de texte dans le signal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>Rought cutting of a speech signal is based on the observation of energy levels and lengths of silent pauses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le découpage approximatif d'un signal vocal est basé sur l'observation des niveaux d'énergie et de la longueur des silences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>Thresholds are determined and adjusted by the current speaking rate and recording levels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les seuils sont déterminés et ajustés en fonction du débit de parole et des niveaux d'enregistrement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>The goal is to produce segments that represent units smaller than a sentence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le but est de produire des segments qui représentent des unités plus petites qu'une phrase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>Text recognition of each signal fragment is achieved by using the Nuance ASR system (Nuance, 2010).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La reconnaissance du texte correspondant à chaque extrait sonore est réalisée par le système de reconnaissance automatique de la parole (ASR) de Nuance (Nuance, 2010).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>Models are speaker independent and the language model is learnt on the text extracted from the whole analyzed audiobook.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les modèles sont indépendants du locuteur, le modèle de langage est appris sur le texte extrait de l'intégralité de l'audiobook analysé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>By comparing the original text with the recognized one, we can determined word error rates.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En comparant le texte original et le texte issu de la reconnaissance, il est possible de mesurer le taux d’erreur de reconnaissance des mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>These errors can result of wrong recognition achieved by the system or a mistake realized while the speaker reads the text (like a bad pronounciation or a text replacement).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces erreurs peuvent être dues à une défaillance du système de reconnaissance ou à une lecture erronée du texte (mauvaise prononciation ou modification du texte).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>In our experiments, the analysis of the audiobook we use, which duration is more than 11 hours, leads to a word error rate of 5.2%.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans nos expériences, l'analyse de l'audiobook que nous utilisons, dont la durée est de plus de 11 heures, mène à un taux d'erreur de 5,2 %.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>This rate can be reduced by adapting the speaker models with a small amount of sentences extracted from the original audiobook.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce taux peut être réduit en adaptant les modèles de locuteurs avec un petit nombre de phrases extraites de l'audiobook original.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>The text provided by the recognition system is aligned with the original text using a Levenstein distance computed at a word level.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le texte obtenu par le système de reconnaissance est ensuite aligné sur le texte original par le calcul d’une distance de Levenshtein définie au niveau du mot.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>When the end position of a text segment is found, the original text segment is associated to the signal and deleted from the original text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsque la position de la fin d'un segment de texte est déterminée, le segment de texte original est associé au fichier sonore et supprimé du texte original.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>This process is repeated until text end.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'opération est reproduite pour les extraits suivants jusqu'à la fin du texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>Finally, to preserve as much as possible the text structure, segments are brought together into sentences by using major punctuation marks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin pour conserver au mieux la structure du texte, les extraits sont regroupés en phrases en respectant les ponctuations majeures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>When a segment is not ended by a terminal punctuation mark, it is grouped with the next one.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsqu’un extrait n’est pas terminé par une ponctuation finale, il est simplement regroupé avec l’extrait suivant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, the boundary position between the segments is memorized to help later processing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, la position de la frontière entre les segments est mémorisée pour faciliter le traitement ultérieur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>The segmented text and signal are then adapted for Transcriber (Barras et al., 2001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le texte et le signal découpés sont ensuite adaptés pour le logiciel Transcriber (Barras et al., 2001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>A speech turn is composed of a single sentence or a set of undivided adjacent sentences. This prevents dividing segments too early.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un tour de parole est constitué d'une phrase ou d'un ensemble de phrases contiguës de manière à ne pas diviser les segments trop tôt.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>Synchronization points define boundaries between two audio segments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les points de synchronisation définissent les frontières entre deux segments audio.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>The use of transcriber allows manual verification before the annotation process: differences between the original and the recognized text are highlighted by specific tags to be manually checked.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'utilisation de transcriber permet également de vérifier manuellement avant le processus d'annotation : les différences entre le texte original et le texte reconnu sont signalées par des balises spécifiques à vérifier manuellement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>The alignment of the segmented text and signal is automatically converted into the ROOTS format.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La mise en relation texte/signal est ensuite automatiquement convertie au format ROOTS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>5. Data Annotation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. Annotation des données</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>In a second stage, ROOTS provides acoustic and textual data in an appropriate format to the annotation tools that return their own analysis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au cours de la deuxième étape, les données acoustiques et textuelles sont fournies par l'objet ROOTS aux différents systèmes d'annotation qui donneront en retour leur propre analyse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>Currently, annotation levels used for our studies are the following: - named entities extraction, - syntactic annotation, - part of speech tagging, - phone segmentation, - prosodic prominence extraction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Actuellement, les niveaux d'annotations utilisés sont les suivants : extraction des entités nommées, annotation syntaxique, balise de Part-Of-Speech, segmentation phonétique et extraction des proéminences prosodiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>The grammatical and syntactical analyses are produced using a Synapse Developpement software, (Synapse, 2011) (Developpement, 2011) while acoustic analysis is done with our own tools.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les analyses syntaxiques et grammaticales sont réalisées par des logiciels fournis par Synapse Développement, (Synapse, 2011) (Développement, 2011) tandis que les analyses acoustiques sont réalisées à l'aide de nos propres outils.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>The information provided by each annotation system is included into the ROOTS object thereby refining the corpus description and allowing the generation of new relations between items of different sequences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les informations obtenues à chaque analyse sont intégrées au fichier ROOTS affinant ainsi la description du corpus et permettant d’établir de nouvelles relations entre les éléments des différentes séquences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>For example, after a complete analysis, one can define, for a given phoneme, to which word it belongs and what is its corresponding POS tag.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, après une analyse complète, il est possible de définir, pour un phonème donné, le mot auquel il appartient et son étiquette grammaticale correspondante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>To complete the data structure in a speech synthesis context, other information are essential (pitchmarks, fundamental frequency contours, etc.) but are not part of the current study.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour compléter la structure des données dans un contexte de synthèse vocale, d'autres informations sont essentielles (pitchmarks, contours de fréquence fondamentale, etc.) mais ne font pas partie de l'étude actuelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>6. Application</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Application</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>6.1. Material</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.1. Matériel</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>The complete annotation process was experimented on a Marcel Proust’s literary work called “Albertine disparue”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le processus complet d’annotation a été expérimenté sur une œuvre de Marcel Proust “Albertine disparue”.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>This book contains around 120 , 000 words and its duration is 11 hours and 43 minutes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce livre contient environ 120 000 mots, son enregistrement dure 11 heures et 43 minutes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>Since Proust had rewritten some parts of the book, the version of the text has been checked.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Proust ayant réécrit certains passages, le texte a tout d’abord été contrôlé pour en garantir la version.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>The process described on figure 1 is divided into two main phases: block alignment and then annotation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le processus décrit sur la figure 1 est divisé en deux phases principales : l'alignement des blocs et l'annotation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>The rest of the section describes the results obtained for those phases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le reste de la section décrit les résultats obtenus pour ces phases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>A special focus is made on the segmentation process considering the manual verification we have done.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un accent particulier est mis sur le processus de segmentation en tenant compte de la vérification manuelle que nous avons effectuée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>6.2. Phase 1: block alignment</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.2. Phase 1 : alignement des blocs</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>6.2.1. Text Splitting</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.2.1. Division du texte</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>Tracks were splitted on silences whose duration were longer than one second.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les pistes ont été découpées sur les silences d’une durée supérieure à une seconde.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>The split step has produced 11 , 693 files with an average duration of 3 seconds.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le découpage a produit 11 693 fichiers d'une durée moyenne de 3 secondes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>Then, files were analyzed by the ASR system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les fichiers ont ensuite été analysés par le système de reconnaissance automatique de la parole.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>The average word error rate between the original and recognized texts is about 5.21%. This rate includes misspelled words and grammatical agreements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le taux d'erreur moyen entre le texte original et le texte reconnu est d'environ 5,21 %. Ce taux inclut les mots mal orthographiés et les différences de concordance grammaticale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>As we mentioned before, this error rate can be improved by speaker adaptation. 6.2.2. Text Alignment</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme nous l'avons mentionné précédemment, ce taux d'erreur peut être amélioré par l'adaptation du locuteur. 6.2.2. Alignement du texte</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>Text obtained in output of the ASR system is then used to split the original text to match the signal tracks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les textes obtenus à la sortie du système de reconnaissance automatique du langage sont ensuite utilisés pour découper le texte original conformément au découpage du signal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>When a conflict is detected on a starting segment or an ending segment word, particularly when the conflict is an insertion or a deletion, the alignment does not garantuee a suitable split of the text for this word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsqu'un désaccord porte sur un mot en début ou en fin de segment, en particulier lorsqu'il s'agit d'une insertion ou d'une élision, l'alignement ne garantit pas un bon découpage du texte autour de ce mot.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>In this case, we indicates that a human operation is needed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cas, nous indiquons qu'une intervention manuelle est nécessaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>This problem appeared 969 times out of the 11 , 693 files which represent 8,3% of the segments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce problème est apparu 969 fois sur 11 693 fichiers, ce qui représente 8,3 % des segments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>A manual check established that a real splitting error occured in 8% of the alerts (78 files).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une vérification manuelle a pu établir qu’une erreur de découpage avait réellement eu lieu dans 8% des alertes soit sur 78 fichiers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>The high number of false alert comes from the fact that all the disagreements occuring on a frontier are signaled (insertion, elision, substitution) and a lot of substitutions have no impact on the alignment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le nombre élevé de fausses alertes provient du fait que tous les désaccords en frontière de segment ont été signalés (insertion, élision et substitution), et de nombreuses substitutions n'ont pas d'impact sur l'alignement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>6.2.3. Sentence Reconstruction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.2.3. Reconstruction de la phrase</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>Resultant files are then grouped into speech turns, using punctuation, in Transcriber files (one file per CD track which represents, generally, fifteen minutes of speech).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les fichiers résultants ont ensuite été regroupés au sein de fichiers de type Transcriber (un fichier par plage de CD, soit une quinzaine de minutes de parole en moyenne), en utilisant la ponctuation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>We obtain a total of 3 , 340 turns whose durations are between 660ms and 1min22s.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous obtenons un total de 3340 tours dont les durées varient entre 660 ms et 1 min 22 s.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>One turn contains around 3 . 5 segments and the anchors of these segments are kept.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un tour regroupe en moyenne 3,5 segments définis lors de la précédente étape. Comme nous l’avons précisé, les positions d’ancrage de ces segments sont conservées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>After the Transcriber file creation, all the conflicts between the original text and the ASR output are identified by using a specific tag.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après la création du fichier Transcriber, tous les désaccords entre le texte d'origine et les sorties du système de reconnaissance sont identifiés par une balise spécifique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>The operator can then add new tags to indicate reading mistakes or bad pronounciation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’opérateur peut alors ajouter de nouvelles balises signalant les erreurs de prononciation ou les erreurs de lecture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>In our case, 86 lexical tags (word or expression replaced by another), 213 pronounciation tags were added and 78 corrections were realized. 6.3. Phase 2: Annotation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre cas, 86 balises lexicales (remplacement d'un mot ou d'une expression par une autre) et 213 balises de prononciation ont été ajoutées, et 78 corrections ont été effectuées. 6.3. Phase 2 : Annotation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>The next step is to generate a ROOTS structure from the splitted and aligned corpus in order to use various tools to get the levels of annotation. Informations from the annotation tools are then integrated directly into the ROOTS structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'étape suivante consiste à générer une structure ROOTS à partir du corpus découpé et aligné afin d'utiliser divers outils pour obtenir les niveaux d'annotation. Les informations des outils d'annotation sont ensuite intégrées directement dans la structure ROOTS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>Using relations, it is possible to find, for each text or audio segments, all of its associated features.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À l'aide des relations, il est possible de trouver, pour chaque segment de texte ou audio, toutes les caractéristiques qui lui sont associées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>Figure 4 shows an example of a sentence generated from ROOTS.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 4 montre un exemple de phrase générée à partir de ROOTS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>We can see that different texts are associated for this utterance: the transcriber text gives segmentation according to space characters while synapse text is separating elements according to their nature.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons voir que différents textes sont associés à cette énonciation : le texte du transcripteur donne une segmentation selon les espaces tandis que le texte synapse sépare les éléments selon leur nature.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>Actually, linguistic analysis has not been validated but the phone segmentation step was manually corrected on a 2 hours and 16 minutes long part of the corpus. Consequently, we study the results of the segmentation process considering the use of the text preparation process presented in this paper.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fait, l'analyse linguistique n'a pas encore été validée, mais l'étape de segmentation en phonèmes a été corrigée manuellement sur une partie du corpus d'une durée de 2 heures et 16 minutes. Par conséquent, nous étudions les résultats du processus de segmentation en tenant compte de l'utilisation du processus de préparation du texte présenté dans cet article.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>6.3.1. Phone Segmentation Process</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.3.1. Processus de segmentation des téléphones</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>The automatic segmentation is achieved by using Markov models (a model for each phone, a model for the pause and a model for the inspiration) on a phonetisation graph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La segmentation automatique est obtenue par l'application de modèles de Markov (un modèle par phonème, un modèle de pause et un modèle d'inspiration) sur un graphe de phonétisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>Models are context-independent and they are trained on observation vectors of 39 coefficients (12 MFCC, the first order and second order derivative, and energy). These vectors are computed on 30ms frames using a 10ms shift.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les modèles sont indépendants du contexte, ils sont appris sur des vecteurs d’observation constitués de 39 coefficients (12 coefficients MFCC, leurs dérivées au premier et second ordre et l’energie) calculés sur des trames de 30 ms décalées de 10 ms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>The phonetisation graph is obtained by the text phonetisation achieved by Liaphon (Bechet, 2001) which has been completed by variations of some phonemes: /ø/ and /@/ are optional for a majority of words, connections are optional too and may be preceded or followed by short silences. Finally, pauses can be replaced by inspirations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le graphe de phonétisation est obtenu par la phonétisation du texte par Liaphon (Bechet, 2001) enrichie de variantes concernant certains phonèmes : les phonèmes /ø/ et /@/ sont optionnels pour une majorité des mots, les liaisons sont optionnelles et peuvent être précédées ou suivies de courts silences, et enfin les pauses peuvent être remplacées par des inspirations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>During the segmentation step, the speech segments we use are as short as possible in order to take into account variations directly in the graph without reducing the efficiency of the alignment algorithms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pendant l'étape de segmentation, les segments de paroles utilisés sont aussi courts que possible afin de pouvoir prendre en compte les variations directement dans le graphe sans réduire l'efficacité des algorithmes d'alignement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>The text used by the segmentation process does not take into account the lexical and pronunciation tags inserted in the Transcriber files, but takes into account the manual corrections of text splitting.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le texte fourni au système de segmentation ne tient pas compte des labels de lexique et de prononciation insérés dans les fichiers Transcriber mais tient compte des corrections manuelles concernant le découpage du texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>6.3.2. Phone Segmentation Accuracy</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.3.2. Précision de la segmentation téléphonique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>On 82 , 936 phonetic units manually checked, 94 . 17% are correctly labeled, 2 . 52% are missing and 3 . 31% are replaced by another label.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur 82 936 unités phonétiques validées manuellement, 94,17% ont été correctement étiquetées, 2,52% sont absentes et 3,31% ont été remplacées par une autre étiquette.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>Furthermore, we can mention that 2 . 77% of phone insertion occurs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, on peut mentionner que 2,77% d'insertion de phonèmes se produit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>A great part of elisions involves /ø/ (46%), this phoneme is generally optional, and 24% of its occurrences were not detected.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une grande partie des élisions (46%) concerne le phonème /ø/ qui est la plupart du temps optionnel et dont 24% des occurrences n’ont pas été détectées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>The majority of substitutions (41%) concerns the substitution of /e/ by /E/ which is the result of a specific pronounciation. The second important part of substitutions (19%) deals with pauses and inspirations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La majorité des substitutions (41 %) concernent le remplacement de /e/ par /E/ qui est le résultat d'une prononciation particulière. La deuxième partie importante des substitutions (19 %) concerne les pauses et les inspirations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>Insertions are mainly composed of pauses and inspirations (72%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les insertions concernent principalement les pauses et les inspirations (72 % des insertions).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>These results are quite good but they can be improved by at least two means: - Variants taking into account the speaker specific pronunciation may be added, - Post-processing can be done on pauses and inspirations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces résultats sont corrects mais ils peuvent être améliorés par au moins deux moyens : - des variantes prenant en compte la prononciation spécifique du locuteur peuvent être ajoutées, - un post-traitement peut être effectué sur les pauses et inspirations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>The alignment of phones leads to a good score: 86 . 34% of the phone boundaries are located at less than 20ms of manual positions, the average distance is about 8.7ms which is less than a shift between two frames.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'alignement des phones sur le signal donne un bon score : 86,34 % des frontières de phones sont situées à moins de 20 ms des positions manuelles, la distance moyenne étant d'environ 8,7 ms, ce qui est inférieur au décalage entre deux trames d'observation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>These measures are also collected before a manual correction of the text alignment. In that case the proportion of correct phone labels is 91 . 12% and 86 . 24% of phone boundaries were placed at less than 20ms from manual marks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces mesures ont également été effectuées avant une correction manuelle du découpage du texte. Dans ce cas, le nombre d'étiquettes de téléphone correctes était de 91,12 % et la proportion de frontières placées à moins de 20 ms des repères manuels était de 86,24 %.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>7. Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7 Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>The automation of the whole process that converts an audiobook to a corpus annotated at several levels gives a quick access to large corpora.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'automatisation de l'ensemble des traitements d'un livre audio pour obtenir un corpus annoté sur différents niveaux permet d'accéder rapidement à de grands corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>The time reduction gained with this methodology to build new speech synthesis voices is considerable when we take into account the time saved for both corpus recording and corpus annotation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le gain de temps réalisé avec cette méthodologie pour la création d’une nouvelle voix de synthèse est considérable si on ajoute le temps épargné par la suppression de l’étape d’enregistrement à celui gagné lors de l’annotation du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>The corpus representation generated by ROOTS removes the problems related to the heterogeneity of the files provided by each annotation systems and simplifies its handling.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La représentation du corpus générée par ROOTS supprime les difficultés liées à l’hétérogénéité des fichiers fournis par chaque système d’annotation et simplifie sa manipulation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>However, the annotation process has to be reinforced by confidence indicators for each annotation step, either to remove uncertain areas, or to enable a supervised modality. In that case, the indicators would be given to an operator to guarantee a fast intervention as well as data in an appropriate format for the validation tools.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, le processus d'annotation doit être renforcé par des indicateurs de confiance pour chaque étape de l'annotation, soit pour éliminer les zones douteuses, soit pour fonctionner en mode supervisé en fournissant à un opérateur les informations nécessaires à une intervention rapide ainsi que les données sous un format adapté aux outils de vérification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>Figure 4: Illustration of an annotated utterance extracted from the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 4: Illustration d’une énonciation annotée extraite du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>The different levels of information are represented on the figure: syntax, POS tags, named entities, text (Transcriber, Synapse), lemmas, phonemes and signal segments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les différents niveaux d'information sont représentés sur la figure : syntaxe, balises POS, entités nommées, texte (Transcriber, Synapse), lemme, phonèmes et segments de signal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>The vertical bars represent synchronisations between items of the differents sequences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les barres verticales représentent les synchronisations entre les éléments des différentes séquences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>For example, we can see that “est partie” is the verb of the sentence, is composed of two words and has two POS tags.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, nous pouvons voir que « est partie » est le verbe de la phrase, est composé de deux mots et possède deux balises POS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>The first one, which is “Vbitbs3” means it is a verb in the indicative present, is finite, singular at the third person.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le premier, qui est « Vbitbs3 », signifie qu’il s’agit d’un verbe au présent de l’indicatif, qui est fini, au singulier à la troisième personne.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

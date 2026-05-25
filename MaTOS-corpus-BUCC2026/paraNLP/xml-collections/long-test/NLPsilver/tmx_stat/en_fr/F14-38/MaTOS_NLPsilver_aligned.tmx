@@ -1,0 +1,1407 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-F14-38. segId begin by 1, tuid = segId</note>
+        <url_en>https://www.isca-archive.org/interspeech_2015/lecouteux15_interspeech.pdf</url_en>
+        <url_fr>https://hal.science/hal-01003001v1</url_fr>
+        <title_en>Ant Colony Algorithm Applied to Automatic speech Recognition Graph Decoding</title_en>
+        <title_fr>Décodage de graphe à l'aide de colonies de fourmis.</title_fr>
+        <docid>F14-38</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Ant Colony Algorithm Applied to Automatic speech Recognition Graph Decoding</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Algorithme de colonie de fourmis appliqué au décodage de graphes de reconnaissance automatique de la parole</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>In this article we propose an original approach that allows the decoding of Automatic Speech Recognition Graphs by using a constructive algorithm based on ant colonies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous proposons une approche originale permettant de décoder des graphes issus d’un Système de Reconnaissance Automatique de la Parole (SRAP) à l’aide d’un algorithme constructif basé sur les colonies de fourmis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>In classical approaches, when a graph is decoded with higher order language models; the algorithm must expand the graph in order to develop each new observed n-gram.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les approches classiques, lorsqu'un graphe est décodé avec un modèle de langage d'ordre supérieur, l'algorithme doit étendre le graphe afin de développer chaque nouvel n-gramme observé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>This extension process increases the computation time and memory consumption.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette extension peut rapidement engendrer des calculs lourds et une consommation de mémoire conséquente.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>We propose to use an ant colony algorithm in order to explore ASR graphs with a new language model, without the necessity of expanding it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous proposons d'utiliser un algorithme de fourmilière pour explorer les graphes de SRAS avec un nouveau modèle de langage, sans la nécessité d'effectuer une extension.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>We first present results based on the TED English corpus where 2-grams graph are decoded with a 4-grams language model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons d'abord des résultats basés sur le corpus anglais TED où les graphes de 2-grammes sont décodés avec un modèle de langue de 4-grammes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Then, we show that our approach performs better than a conventional Viterbi algorithm when computing time is constrained and allows a highly threaded decoding process with a single graph and a strict control of computation time and memory consumption.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous montrons que notre approche est meilleure qu'un algorithme Viterbi classique lorsque le temps de calcul est limité et permet un décodage fortement parallélisable avec un seul graphe et un contrôle strict du temps de calcul et de la consommation de mémoire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>Index Terms : Graph decoding, ant colony algorithm, language model, automatic speech recognition, real-time</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Termes-clés : Décodage de graphes, algorithme de fourmilière, modèle de langue, reconnaissance vocale automatique, temps réel</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>In this article, we introduce a new paradigm for the exploration of decoding graphs in automatic speech recognition (ASR) systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous introduisons un nouveau paradigme pour l'exploration des graphes de décodage dans les systèmes de reconnaissance automatique de la parole (SRAP).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>A preliminary part of this work was presented in a French conference [1].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une partie préliminaire de ce travail a été présentée lors d'une conférence française [1].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>A problem that arises during this exploration of word graphs is when higher-order language models are applied to them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un problème rencontré lors de l’exploration des graphes de mots est l’application sur ces derniers d’un modèle de langage d’ordre supérieur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>Indeed, the number of paths grows exponentially with the language model order.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, le nombre de chemins croît avec l’ordre du modèle de langage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>For example, the size of a simple word graph decoded with a 2-gram model and expanded to a 4-gram model is tenfold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi un graphe de mots initialement décodé avec un modèle bi-gramme qui est étendu avec un modèle quadrigramme peut voire sa taille multipliée par plus de 10.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>Several techniques have been successfully applied to overcome the problem. Some, such as compactexpansion [2], are approximation methods while others such as beam-search are based on pruning.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs techniques ont été appliquées avec succès pour résoudre le problème. Certaines, telles que compactexpansion [2], sont des méthodes d'approximation, tandis que d'autres, telles que beam-search, sont basées sur des coupures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>Here, we present an alternative method based on a constructive version of an algorithm that is widely used in operational research: an ant colony algorithm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une méthode alternative se basant sur un algorithme constructif très utilisé dans le domaine de la recherche opérationnelle : les colonies de fourmis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>Such algorithms have been successfully applied to the travelling salesman problem or lexical disambiguation for example.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De tels algorithmes ont été appliqués avec succès au problème du voyageur de commerce ou à la désambiguisation lexicale, par exemple.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>The paper is structured as follows: In the 2 [nd] section, we briefly review decoding techniques for ASR system with large vocabularies and then ant colony algorithms in general.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le document est structuré comme suit : dans la section 2, nous faisons un rapide tour d’horizon des techniques de décodage pour les SRAP à grand vocabulaire ainsi que de l’algorithme des colonies de fourmis en général.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>The 3 [th] , 4 [th] , 5 [th] sections present the overall architecture of the system used for this work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section 3, la section 4 et la section 5 présentent l'architecture générale du système utilisé pour ce travail.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>Then, we present all the experiments we conducted in section 6 [th] and the analysis of their results, followed by a discussion in the 7 [th] section.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, nous présentons toutes les expériences que nous avons menées dans la section 6 [th] et l'analyse de leurs résultats, suivies par une discussion dans la section 7 [th].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>We conclude by proposing some interesting improvement perspectives based on the properties of ant colony algorithms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous concluons en proposant quelques perspectives intéressantes d'amélioration basées sur les propriétés des algorithmes de fourmis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>2. Related Work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Travaux connexes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>2.1. Classical approaches</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.1 Approches classiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>The principle of ASR systems is to find in a graph the hypothesis that will maximize the probabilities of the acoustic and language models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le principe des systèmes ASR est de trouver dans un graphe l’hypothèse qui maximisera les probabilités des modèles linguistiques et acoustiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>Generally, heuristics are applied to limit the size of the search space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Généralement, des heuristiques sont appliquées afin de limiter l'espace de recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>We can find several approaches to dynamically generate hypotheses:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On trouve ainsi dans la littérature plusieurs approches d’exploration dynamique pour générer les hypothèses :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>- synchronous graph algorithms that generate a virtual copy of the graph for all hypotheses and that terminate after a fixed time t .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Les algorithmes de graphes synchrones qui génèrent une copie virtuelle du graphe pour l’ensemble des hypothèses et qui se terminent après un temps t fixe .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>The next word is shared but is associated to several timelines.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le mot suivant est partagé, mais associé à plusieurs historiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>In this approach, the dynamic alignment algorithm is applied for each word without any conservation of their timelines.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette approche, l'algorithme d'alignement dynamique est appliqué pour chaque mot sans aucune conservation de leur chronologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>Such algorithms are rarely implemented [3].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De tels algorithmes sont rarement mis en oeuvre [3].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>- reentrant graph algorithms, where a virtual copy of the graph is explored for every linguistic context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Les algorithmes de graphes réentrants où une copie virtuelle du graphe est explorée pour chaque contexte linguistique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>The information pertaining to each context is recorded for each path and combined with a new virtual root relative to the history in the language model [4].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'information relative à chaque contexte est enregistrée pour chaque chemin et combinée avec une nouvelle racine virtuelle dépendant de l'historique relatif au modèle de langage [4].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>Reentrant graph algorithms are widely used and the more frequent implementation is the Viterbi beam-search [5, 6].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les algorithmes de graphes réentrants sont très répandus et leur implémentation la plus courante est le Viterbi en faisceau ( beam - search ) [5, 6].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>Their design based on dynamic programming.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leur conception est basée sur la programmation dynamique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>- stack asynchronous algorithms [7] where the principle is to do a deep exploration and prioritize promising hypotheses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Empiler des algorithmes asynchrones [7] dont le principe est d’explorer en profondeur et en priorité les hypothèses qui semblent prometteuses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>This is achieved by expanding the selected hypothesis word by word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci se fait en étendant mot par mot l’hypothèse sélectionnée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>Their implementation relies on priority stacks that order the hypotheses to explore.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leur mise en œuvre repose sur des piles de priorité qui ordonnent les hypothèses à explorer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>The most commonly used asynchronous method is A[∗] [8, 9, 10].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthode asynchrone la plus couramment utilisée est A[∗] (8, 9, 10).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>- in the field of WFST-based speech recognition, several algorithms have been proposed in order to reduce time and memory problem: [11], [12] propose on the fly composition algorithms while [13] propose to factor the language models into smaller components.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- dans le domaine de la reconnaissance vocale basée sur WFST, plusieurs algorithmes ont été proposés afin de réduire les problèmes de temps et de mémoire : [11], [12] proposent des algorithmes de composition à la volée tandis que [13] propose de factoriser les modèles de langage en composants plus petits.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>For a more detailed and in-depth review of decoding techniques for large vocabulary ASR systems, readers are advised to refer to [14].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour une revue plus détaillée et approfondie des techniques de décodage pour les systèmes de reconnaissance vocale à grand vocabulaire, nous conseillons aux lecteurs de se référer à [14].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>The rescoring of a 2-gram graph with 3-gram language model increases drastically the number of nodes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le recalcul d'un graphe de 2 grammes avec un modèle de langage de 3 grammes augmente considérablement le nombre de nœuds.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>For example, in our experiments the storage of 2-gram graphs takes up to 500MB against 6GB for expanded 4-gram graphs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, dans nos expériences, le stockage de graphes de 2 grammes peut atteindre 500 Mo contre 6 Go pour les graphes de 4 grammes étendus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>In order to remove the language model expansion phase, we propose to use an ant colony algorithm to explore the graph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d'éliminer la phase d'expansion du modèle de langue, nous proposons d'utiliser un algorithme d'ant colony pour explorer le graphe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>2.2. Ant colony algorithm</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.2 Algorithmes à colonies de fourmis</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>The idea of ant colony algorithms comes from biology and from the observation of ant social behavior.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'idée des algorithmes d'une colonie de fourmis vient de la biologie et des observations réalisées sur le comportement social des fourmis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Indeed, ants have the ability to collectively find the shortest path between their nest and a source of energy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, les fourmis ont la capacité collective de trouver le plus court chemin entre leur nid et une source d'énergie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>It has been demonstrated that cooperation inside an ant colony is self-organized and emerges from interactions between individuals.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il a pu être démontré que la coopération au sein de la colonie est auto-organisée et résulte d’interactions entre individus autonomes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>These interactions are often very simple and allow the colony to solve complex problems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces interactions, souvent très simples, permettent à la colonie de résoudre des problèmes complexes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>This phenomenon is called swarm intelligence [15, 16] and is increasingly used in computer science, where centralized control systems are often successfully replaced by other types of control based on interactions between simple elements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce phénomène est appelé intelligence en essaim [15, 16] et est de plus en plus utilisé en informatique, où les systèmes de contrôle centralisés sont souvent remplacés par d’autres types de contrôle basés sur les interactions entre des éléments simples.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Details on the different language models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 : Détails sur les différents modèles de langage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>Artificial ants have first been used for solving the Traveling Salesman Problem [17].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les fourmis artificielles ont d'abord été utilisées pour résoudre le problème du voyageur de commerce [17].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>In these algorithms, the environment is usually represented by a graph, in which virtual ants exploit pheromone trails deposited by others, or pseudo-randomly explore the graph. Ant colony algorithms are a good alternative for the resolution of problems modeled by graphs. They allow a fast and efficient exploration that exhibits performance close to other search methods.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les algorithmes à base de fourmis artificielles, l’environnement est généralement représenté par un graphe et les fourmis virtuelles utilisent l’information accumulée sous la forme de chemins de phéromone déposée sur les arcs du graphe. De façon simple, une fourmi se contente de suivre les traces de phéromones déposées précédemment ou explore au hasard dans le but de trouver un chemin optimal, fonction du problème posé, dans le graphe. Les algorithmes à base de fourmis sont une bonne alternative pour la résolution des problèmes modélisés par des graphes. Ils permettent une exploration rapide et efficace qui présente des performances proches de celles d’autres méthodes de recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>Their main advantage is their high adaptivity to changing environments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leur principal avantage est leur grande adaptabilité aux environnements changeants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>Readers can refer to [18], [19] or [20] for a state of the art.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le lecteur peut se référer aux articles [18], [19] ou [20] pour un état de l'art.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>Such algorithms have already been applied for natural language processing tasks successfully including Word Sense Disambiguation [21].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce type d'algorithme a déjà été appliqué à des problèmes en traitement automatique du langage, notamment dans le cadre de la désambiguisation lexicale (Schwab et al. , 2013).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>The work presented here aims at expanding this paradigm to automatic speech recognition.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les travaux présentés ici visent à étendre ce paradigme à la reconnaissance automatique de la parole.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>3. ASR system</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Système ASR</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>The ASR system we implement is based on the KALDI toolkit [22].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système ASR que nous utilisons est basé sur le toolkit KALDI (Povey et al. , 2011).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>KALDI offers state of the art tools for automatic speech recognition.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>KALDI propose des outils de pointe pour la reconnaissance vocale automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>The acoustic model and phonetization of our system have been trained with the corpora provided by LIUM [23] (118 hours of annotated data).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les modèles acoustiques et les phonétisations de notre système ont été appris avec les données mises à disposition par le LIUM (Rousseau et al. , 2012) qui représentent 118 heures de données annotées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>The enrichment of the delta and delta-delta coefficient parameters, as well as several transformations such as LDA and MLLT [24] are applied.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'enrichissement des paramètres par les coefficients delta et delta-delta, ainsi que plusieurs transformations telles que LDA et MLLT (Gopinath, 1998) sont appliquées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>Finally, speaker adaptive training is applied on the acoustic models and combined with fMLLR space type parameter adaptation [25] at the speaker level.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, un apprentissage adapté au locuteur (Speaker Adaptive Training - SAT) est réalisé et combiné avec une adaptation dans l'espace des paramètres de type fMLLR (Gales, 1998) au niveau du locuteur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>The language model is trained on all the data provided for the IWSLT 2010 campaign as well as the training corpora provided by LIUM.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le modèle de langage a quant à lui été appris sur l'ensemble des données fournies pour la campagne IWSLT 2010 ainsi que sur la partie de formation fournie par le LIUM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>A language model was trained for each subcorpus and all models were interpolated by minimizing the perplexity on the development set, without applying any data selection or pruning.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un modèle a été appris pour chaque sous-corpus et l’ensemble des modèles a été interpolé en minimisant la perplexité sur les données de développement, sans appliquer de sélection ou d’élagage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>The final perplexity obtained on the dev is 159 for the 3- gram model and 150 for the 4-gram.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La perplexité finale obtenue sur le corpus dev est de 159 pour le modèle trigramme et 150 pour le quadrigramme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>The amounts of n-grams and the perplexity of the different models used in our experiments are shown in Table 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les quantités de n-grammes et la perplexité des différents modèles utilisés pour nos expériences sont présentées dans le tableau 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>4. Used Corpora and baseline results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Corpus utilisés et résultats de référence</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>The entirety of the experiments were performed on a corpus made available to the community for the IWSLT 2010 campaign: the TED corpus that corresponds to a set of conference talks recorded in English [26].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'ensemble des expériences ont été effectuées sur un corpus mis à disposition par la communauté pour la campagne d'évaluation IWSLT 2010 : le corpus TED qui correspond à un ensemble de conférences enregistrées en anglais (Paul et al. , 2010).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>Details and baseline results are shown in Table 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les détails et les résultats de référence sont présentés dans le tableau 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>Table 2: Details on TED corpora used for the experiments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2 : Détails sur les corpus TED utilisés pour les expériences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>We purposely used an initial bi-gram language model in order to not introduce additional information at the linguistic level in the ASR.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons volontairement utilisé un modèle de langue bigrame initial afin de ne pas introduire d'informations supplémentaires au niveau linguistique dans l'ASR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>Then the graphs were rescored without pruning with 3 and 4-gram language models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, les graphes ont été réévalués sans élagage avec des modèles de langage de 3 et 4 grammes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>4.1. Graph conversion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Conversion des graphes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>Although the ASR system we used is based on the FST framework, the tools we used to implement the Ant Colony Algorithm was developed in LIG and uses graphs based on the HTK format.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que le système ASR que nous avons utilisé soit basé sur le cadre FST, les outils que nous avons utilisés pour mettre en œuvre l'algorithme de fourmilière ont été développés en LIG et utilisent des graphes basés sur le format HTK.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>We have thus converted the entirety of the graphs from KALDI in the HTK format, which allowed us to work with that format.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons donc converti l'ensemble des graphes issus de KALDI au format HTK, ce qui nous a permis de travailler avec ce format.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>The ant decoder can be downloaded at the following address: http://getalp.imag.fr/static/wsd/ INTERSPEECH2015-Ants4ASR/</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le décodeur ant peut être téléchargé à l'adresse suivante : http://getalp.imag.fr/static/wsd/ INTERSPEECH2015-Ants4ASR/</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>5. Proposed approaches</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. Approches proposées</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>As a first step, we want to validate the approach by simplifying the decoding stages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, nous souhaitons valider l'approche en simplifiant certaines étapes du décodage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>For this reason, all the work presented is performed on word graphs extracted from the KALDI ASR.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour cette raison, l’ensemble des travaux présenté est réalisé sur des graphes de mots extraits du SRAP KALDI.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>We use an initial bi-gram language model, so that we could use the ant colony algorithm to expand the graph to higher n-gram orders.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons volontairement utilisé un modèle de langage initial bi-gramme afin de ne pas introduire d’information supplémentaire au niveau linguistique. Nous utilisons donc l’algorithme de colonies de fourmis pour étendre le graphe à des ordres de n-gramme supérieurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>Our general implementation of the algorithm is as follows:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre implémentation générale de l’algorithme est la suivante :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>Each link of the graph is associated with a pheromone variable initialized at the beginning of each epoch.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque lien du graphe est associé à une variable de type phéromone initialisée à 1 au début de chaque époque.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>Our ants are launched from the first node of the graph and in order to leave a node, ants will have to choose a link.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nos fourmis sont lancées à partir du premier noeud du graphe et pour sortir d'un noeud, elles vont devoir choisir un lien.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>This choice is performed with a weighted random selection based on the quantity of pheromone on each arc (Figure 1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce choix est effectué via un tirage aléatoire dont la fonction de distribution dépend de la quantité de phéromones sur chaque arc (Figure 1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>With the arrival of an ant at the endpoint, if a solution is found (i.e. the acoustic and linguistic probabilities combination) that is better than the previous best solution found, then pheromone is added on the path by an increment of 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À l'arrivée de la fourmi sur le noeud final, si la solution trouvée - c'est-à-dire le produit des probabilités acoustiques et linguistiques du chemin parcouru - est meilleure que la précédente meilleure solution trouvée, alors la phéromone est ajoutée sur le chemin par un incrément de 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>In the literature, it was shown that with such a simple version of the ant colony, ants tended to converge on a path that does not necessarily represent the optimal solution.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la littérature, il a été montré qu’avec une version aussi simple des colonies de fourmis, ces dernières ont tendance à converger sur un chemin qui ne représente pas forcément la solution optimale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>It is therefore necessary to use local or global heuristics to avoid this phenomenon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est donc nécessaire d’utiliser des heuristiques locales ou globales pour éviter ce type de phénomène.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>The next section presents some heuristics that bias the choice of ants.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La sous-section suivante présente quelques heuristiques locales biaisant le choix des fourmis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: In order to leave a node, ants will have to choose a link.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1 : Pour quitter un nœud, les fourmis doivent choisir un lien.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>This choice is performed with a weighted random selection based on the quantity of pheromone on each arc (weighted by the nodes posteriors in our experiments).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce choix est effectué par sélection aléatoire pondérée en fonction de la quantité de phéromone sur chaque arc (pondérée par les postérieurs des noeuds dans nos expériences).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>The thickness of the line expresses the amount of pheromone already deposited.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'épaisseur de la ligne exprime la quantité de phéromone déjà déposée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>5.1. Anamorphic ants</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.1 Fourmis anamorphiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>We use different types ants as proposed in [19] using an heuristic exploration biased by the information already present in the initial graph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons différentes fourmis, comme proposé dans (Bontoux, 2008), qui utilisent des heuristiques d’exploration biaisées par l’information déjà présente dans le graphe initial.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>Posteriors probabilities p(a|G) are computed on the bigram graph for each link a, given the current word graph G.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les probabilités a posteriori p(a|G) sont calculées sur le graphe bigramme pour chaque lien a, étant donné le graphe de mots courant G.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>This probability corresponds to the ratio between all the probabilities of all the paths passing through link a and the set of all paths in the graph G: p(a|G) = C∈G,a⊃C p(C|G) C∈G p(C|G)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle correspond au ratio entre l’ensemble des probabilités de tous les chemins passant par l’arc a et l’ensemble de tous les chemins dans le graphe G : p ( a | G ) = ∑ C ∈ CG ∈, aG ⊃ [p] C( [p][C] ([|] [C][G][|]) [G]).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>Where C ∈ G denotes a full path C in the graph G and a ⊃ C a link that belongs to the path.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Où [C][∈] [G] désigne un chemin [C] complet dans le graphe G et a ⊃ C un arc qui est compris dans ce chemin.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>This posterior probability is conventionally estimated by using a forward-backward algorithm as shown in [27].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette probabilité a posteriori est calculée classiquement par via un algorithme forward-backward comme présenté dans (Wessel et al. , 2000).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>We independently evaluate three variants of the algorithm :</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous évaluons de manière indépendante trois variantes de l'algorithme :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>1. rior probability, without taking into account the linguistic aspect.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Probabilité a priori, sans prendre en compte l'aspect linguistique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>2. Talkative ants that unlike previous ants, are only enced by the language posterior probability of the next node.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Fourmis verbeuses : à l'inverse des fourmis précédentes, ces dernières sont uniquement influencées par la probabilité a posteriori linguistique du noeud suivant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>3. Oracles ants, a hybrid model that combines the previous two and that represents the classical posterior probability of the next node.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Les fourmis oracles, un modèle hybride qui combine les deux précédentes et qui représente la probabilité a posteriori classique du noeud suivant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>The various posteriors probabilities are estimated by running Viterbi on the bi-gram graph. For models (1) and (2) we respectively remove the acoustic model or language models and for model (3) we keep the initial score.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les différentes probabilités a posteriori sont calculées via un algorithme Viterbi appliqué sur le graphe bi-gramme. Pour les modèles (1) et (2), nous supprimons respectivement le modèle acoustique ou les modèles linguistiques et pour le modèle (3), nous conservons le score initial.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>The different types of ants are used to guide exploration based on acoustic or linguistic information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces différents types de fourmis permettent d'orienter l'exploration en fonction d'informations linguistiques ou acoustiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>In the next section, we present their performance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la prochaine section, nous présentons leurs performances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>The detailed algorithm 1 is presented below.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'algorithme détaillé 1 est présenté ci-dessous.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>For all of the presented experiments, the number of epochs is set to 5 and the number of ants is proportional to the number of nodes (5 ants/node).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour l'ensemble des expériences présentées, le nombre d'époques est fixé à 5 et le nombre de fourmis est proportionnel au nombre de nœuds (5 fourmis/nœud).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>The average duration of the decoding with these parameters is approximately 5 seconds per graph (on an Intel Xeon 2.5 Ghz, using a single core).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La durée moyenne d’un décodage avec ces paramètres est d’environ 5 secondes par graphe (sur un Intel Xeon 2.5 Ghz).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>6. Preliminary experiments and results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6. Expériences préliminaires et résultats</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>Table 3 shows the results obtained with the algorithms presented above.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 3 présente les résultats obtenus avec les algorithmes présentés ci-dessus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>The experiment confirms that orienting starting ants on optimal paths strongly influences the final result.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’expérimentation confirme qu’orienter au départ les fourmis sur les chemins optimaux influence grandement le résultat final.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>Ants launched on paths that privilege acoustic (model 1) or linguistic information (model 2) perform poorly, but the merged model with more heterogeneous ants (full posterior, model 3) provides meaningful information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les fourmis lancées sur des chemins privilégiant l’acoustique (modèle 1) ou la linguistique (modèle 2) obtiennent de piètres résultats, mais le modèle fusionné avec des fourmis plus hétérogènes (postérieur complet, modèle 3) apporte une information significative.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>Table 3: Decoding results of the ant colony algorithm, ants have WER results that vary between +/- 0.1% during execution (WER scores shown are averaged over 5 runs).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 3 : Résultats de décodage de l'algorithme d'ant colony, les fourmis ont des résultats WER qui varient entre +/- 0,1 % pendant l'exécution (les scores WER affichés sont la moyenne de 5 exécutions).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>The computational time is compared to a Viterbi rescoring algorithm without pruning, as performed in KALDI framework.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le temps de calcul est comparé à un algorithme de recalcul Viterbi sans élagage, tel qu'il est effectué dans le cadre de KALDI.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>Ant algorithm decoding time is constant against the language model order.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le temps de décodage de l'algorithme d'ant est constant par rapport à l'ordre du modèle de langue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>These experiments show that ant colony algorithms are able to expand the graph, but do not reach strictly the performance of baseline results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces expériences montrent que les algorithmes de colonies de fourmis sont capables d'étendre le graphe, mais ne parviennent pas à atteindre strictement les performances des résultats de référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>However, the computational time required with the ant colony algorithm is about 10 times lower than a conventional expansion method: the configurations shown in the Table reach the optimums scores in 1xRT.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par contre, d’un point de vue temps de calcul, l’algorithme basé sur les fourmis est près de 10 fois plus rapide qu’une méthode d’extension classique : les configurations présentées dans le tableau atteignent les scores optimaux en 1xRT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>If we add more iterations, the ants still converge on the same path.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si on ajoute plus d'itérations, les fourmis continuent de converger sur le même chemin.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>In the literature, it has been shown for example that heuristics that influence the initial distribution of pheromone on the nodes had a significant bearing on the evolution of the anthill.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la littérature, il a été montré que les heuristiques qui influencent la distribution initiale des phéromones sur les noeuds ont eu une importance capitale sur l'évolution de la fourmilière.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>Moreover [17] shows that the major potential pitfall for ant colony algorithms is its convergence to local optima.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, [17] montre que le principal piège potentiel des algorithmes d'essaims de fourmis est leur convergence vers des optima locaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>One way to avoid such phenomena is to use several dimensions that can be combined a posteriori , as shown in [19].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un moyen d'éviter ce type de phénomène est d'utiliser plusieurs dimensions qui pourront être combinées a posteriori , comme présenté dans (Bontoux, 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>The mixed model with three types of ants was an embodiment of this heuristic and showed its effectiveness.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le modèle mixte avec trois types de fourmis a été une incarnation de cette heuristique et a montré son efficacité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>Algorithm 1: Ant colony algorithm</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Algorithme 1 : Algorithme de fourmilière</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>7. Discussion on the ant colony algorithm</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7. Discussion sur l'algorithme de colonie de fourmis</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>7.1. Behavior analysis</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7.1 Analyse du comportement</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>In order to understand the evolution of ants we conducted several decoding: we experimented different number of ants relative to the amount of nodes in each graph (left Figure 2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de comprendre l'évolution des fourmis, nous avons effectué plusieurs décodages : nous avons expérimenté différents nombres de fourmis par rapport au nombre de nœuds dans chaque graphe (figure 2, à gauche).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>We observe that with about 10 ants per node, the WER remains stable without converging to the optimal solution.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous observons que, avec environ 10 fourmis par noeud, le WER reste stable sans converger vers la solution optimale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>This is explained by the fact that ants tend to reinforce a path corresponding to a local optimum.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela s'explique par le fait que les fourmis ont tendance à renforcer un chemin correspondant à un optimum local.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>This result suggests that ant colony algorithms are more effective when rigid pruning are carried out.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce résultat suggère que les algorithmes d'essaims de fourmis sont plus efficaces lorsqu'un élagage rigide est effectué.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>However the trend is reversed starting from 4xRT.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutefois, la tendance s'inverse à partir de 4xRT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>Ant colony algorithm can not always find the exact solution, but with time constraints the algorithm is more efficient than a conventional extension.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'algorithme de fourmilière ne peut pas toujours trouver la solution exacte, mais avec des contraintes de temps, l'algorithme est plus efficace qu'une extension conventionnelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>These experiments highligths a potential disadvantage: the proposed search algorithm include non-determinism and no guarantee of optimality (which Viterbi search with pruning also doesn’t have).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces expérimentations mettent en évidence un inconvénient potentiel : l'algorithme de recherche proposé comporte un non-déterminisme et aucune garantie d'optimisation (ce qui est également le cas de la recherche de Viterbi avec élagage).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>7.2. Discussion and perspectives</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7.2. Discussion et perspectives</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>Figure 2: Evolution of rescoring according the number of ant by node (on the dev set) during 1 run and comparison between Viterbi beam-search and ant colonies algorithm:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 2 : Evolution de la rescoring en fonction du nombre d'ant par nœud (sur le dev set) au cours d'une seule itération et comparaison entre l'algorithme Viterbi beam-search et celui des fourmis :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>Computing time against performance, on the dev set with a 4-gram language model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Temps de calcul par rapport aux performances, sur l'ensemble de développement avec un modèle de langue de 4 grammes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>With time constraints the ant algorithm is more efficient than a conventional extension..</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avec des contraintes de temps, l'algorithme fourmi est plus efficace qu'une extension classique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>Despite this convergence, we observed that each new random seed generates new solutions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malgré cette convergence, nous avons observé que chaque nouvelle graine aléatoire génère de nouvelles solutions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>Table 4 shows the selection of the best hypothesis (i.e. best score AM+LM) among 100 different runs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 4 montre la sélection de la meilleure hypothèse (c'est-à-dire le meilleur score AM+LM) parmi 100 exécutions différentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>The results show that hypotheses change for each run but are not always complementary.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats montrent que les hypothèses changent d'une course à l'autre mais ne sont pas toujours complémentaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>Table 4: Decoding analysis of the ant colony algorithm, using several runs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 4 : Analyse de décodage de l'algorithme des colonies de fourmis, utilisant plusieurs exécutions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>We report the decoding time (dev+test), the memory footprint (average for one graph) and the WER compared to Viterbi beam-search baseline.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous indiquons le temps de décodage (dev+test), l'encombrement mémoire (moyenne pour un graphe) et le WER par rapport à la référence de Viterbi beam-search.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>We introduce a pruned Viterbi beam-search in order to compare decoding time vs performance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous introduisons une recherche de faisceau Viterbi élaguée afin de comparer le temps de décodage par rapport aux performances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>As shown in Table 4, this experiment shows that our algorithm is sometimes trapped in wrong areas of the graph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme le montre le tableau 4, cette expérience montre que notre algorithme est parfois coincé dans des zones erronées du graphe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>However in the case of constrained computing time, ant colony algorithm outperforms classical expansion algorithm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, dans le cas d'un temps de calcul limité, l'algorithme de fourmilière surpasse l'algorithme d'expansion classique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>The Table shows also memory footprint (average for one graph) for the various systems and the computing time for the whole decodings: the results show that these two ressources consumption are independant of the language model size.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau montre également l'empreinte mémoire (moyenne pour un graphe) pour les différents systèmes et le temps de calcul pour toutes les décodages : les résultats montrent que ces deux consommations de ressources sont indépendantes de la taille du modèle de langue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>In order to make a meaningful comparison with a classical expansion (Viterbi beam-search), we fixed the computing time and limited empirically the beam-width.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de pouvoir comparer de manière significative avec une expansion classique (Viterbi beam-search), nous avons fixé le temps de calcul et limité de manière empirique la largeur du faisceau.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>Results are shown in Table4.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats sont présentés dans le tableau 4.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>The right Figure 2 shows the evolution of WER against the decoding time for the 4-gram rescoring task (dev set).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 2 montre l'évolution du WER par rapport au temps de décodage pour la tâche de re-correction des 4-grammes (ensemble de données de développement).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>The parallelization of the ant colony algorithms is trivial.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La parallélisation des algorithmes d'une colonie de fourmis est triviale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>In fact, ants can evolve independently of each other in the search for new paths.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, les fourmis peuvent évoluer indépendamment les unes des autres à la recherche de nouveaux chemins.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>Parallelization is also possible at a higher level: that of ant colonies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La parallélisation est également envisageable à un plus haut niveau : celui des colonies de fourmis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>Different colonies operate on copies of a graph and exchange information by merging copies (i.e. by summing the amount of pheromone present on each node).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Différentes colonies peuvent évoluer sur des copies d’un même graphe puis échanger leurs informations en fusionnant les copies (c’est-à-dire en additionnant la quantité de phéromone présente sur chaque noeud).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>Finally, the computational time is easily controlled: the number of evaluations is known in advance and the time depends only on the depth of the graph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, le temps de calcul est facilement contrôlable : le nombre d'évaluations est connu à l'avance et le temps dépend uniquement de la profondeur du graphe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>Another important factor is the amount of memory needed, which is bounded by the space required to store the graph in memory.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un autre point non négligeable est la quantité de mémoire nécessaire. Elle est limitée à l'espace requis pour stocker le graphe en mémoire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>As there are no physical extensions, memory usage is constant.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné qu’il n’y a pas d’extension physique, la mémoire utilisée est constante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>In our experiments, the algorithm uses on average about 100MB against several GBs for a conventional expansion.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans nos expériences, l’algorithme utilise en moyenne 100 Mo contre plusieurs Go lors d’une extension classique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>The evaluation of the solution is performed when ant arrives at the final node of the graph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’évaluation de la solution se fait lorsqu’une fourmi arrive sur le noeud final du graphe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>The number of evaluations is relatively low, so it is easy to add extra information to refine the solution ( semantic language model based on neural network etc.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le nombre d'évaluations étant relativement faible, il est facile d'ajouter des informations supplémentaires pour affiner la solution (modèle de langage sémantique à base de réseau de neurones, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>An application of ants colony will also be applied to ASR systems using continuous space language models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une application de colonie d'insectes sera également appliquée aux systèmes ASR utilisant des modèles de langage d'espace continu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>Current methods are not integrated: they propose to rescore the graphs or n-best list [28].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les méthodes actuelles ne sont pas intégrées : elles proposent de recalculer les graphes ou la liste des meilleures solutions [28].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>Ant colonies can integrate a continuous space model directly in the decoder (the evaluation of an hypothesis is global).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les colonies de fourmis peuvent intégrer un modèle d'espace continu directement dans le décodage (l'évaluation d'une hypothèse est globale).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>We wish to explore and analyze this ant colony paradigm more in depth when applied to ASR.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous souhaitons explorer et analyser plus en profondeur le paradigme des colonies de fourmis appliqué à la SRAP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>Future developments will result in the parallel use of ants with different behaviors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les prochaines évolutions se traduiront par l’utilisation en parallèle de fourmis ayant des comportements différents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>Thus, a selection of well performing and behaving individuals will be performed along the exploration.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, une sélection des individus performants et bien comportés se fera au fur et à mesure de l'exploration.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>It would also be interesting to analyze in detail how the graphs are explored: this aspect will allow to optimize exploration strategies further.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il serait également intéressant d’analyser en détail de quelle manière sont explorés les graphes : cet aspect permettra d’optimiser les stratégies d’exploration.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>Finally, in the longer term, we would like to apply ant colony algorithms throughout the ASR process: from the phoneme lattice to the language model expansion.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, à plus long terme, nous souhaiterions appliquer les algorithmes de fourmis tout au long du processus de SRAP : du treillis de phonèmes à l’extension linguistique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>8. Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>8. Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>In this article, we presented a new paradigm to expand word graphs in automatic speech recognition systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous avons présenté un nouveau paradigme permettant d'étendre des graphes de mots issus d'un système de reconnaissance automatique de la parole.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>This paradigm based on ant colony algorithms for the exploration of the graph, removes the need to dynamically expand the graph: the memory footprint becomes independant of the language model size.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce paradigme, basé sur les algorithmes de fourmilière pour l'exploration du graphe, supprime la nécessité d'étendre dynamiquement le graphe : l'empreinte mémoire devient indépendante de la taille du modèle de langue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>Our results show that the paradigm works: the presented algorithm performs better than a conventional Viterbi algorithm when computing time is constrained.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nos résultats montrent que le paradigme fonctionne : l’algorithme présenté fonctionne mieux qu’un algorithme Viterbi conventionnel lorsque le temps de calcul est limité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>Without constraints, ant algorithm and classical expansion are close.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sans contraintes, l'algorithme fourmi et l'expansion classique sont proches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>This work offers to some interesting research avenues and in the short-term we want to refine the exploration heuristics in order to remove local optimums.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce travail offre des pistes de recherche intéressantes et à court terme nous souhaitons affiner les heuristiques d'exploration afin d'éliminer les optima locaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>Another very interesting aspect is the fact that the ASR hypotheses are scored globally: introducing continuous space language model directly in the decoder would be interesting.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un autre aspect très intéressant est le fait que les hypothèses ASR sont notées globalement : l'introduction d'un modèle de langage de l'espace continu directement dans le décodeur serait intéressante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>Moreover the algorithm is easy to parallelize with a low memory footprint: this work opens up interesting perspectives in terms of memory use and the exploitation of parallelization opportunities that modern microprocessors offer.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, l'algorithme est facile à paralléliser avec une faible empreinte mémoire : ce travail ouvre des perspectives intéressantes en termes d'utilisation de la mémoire et d'exploitation des opportunités de parallélisation offertes par les microprocesseurs modernes.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

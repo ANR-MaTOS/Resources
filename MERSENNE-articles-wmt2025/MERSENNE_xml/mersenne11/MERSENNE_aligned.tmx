@@ -1,0 +1,1476 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en" srclang="FR" tgtlang="EN" o-tmf="XML" creationdate="2024-11-15" creationid="MaTOS">
+        <note>This is the sentence alignement file for MERSENNE-mersenne11. segId begin by 1, tuid = segId</note>
+        <docid>mersenne11</docid>
+        <url_src>https://comptes-rendus.academie-sciences.fr/geoscience/articles/10.5802/crgeos.19/</url_src>
+        <url_tgt>https://comptes-rendus.academie-sciences.fr/geoscience/articles/en/10.5802/crgeos.19/</url_tgt>
+        <author>Vincent Viguié</author>
+        <title_en>Cities and climate change: buildings and urban land use</title_en>
+        <title_fr>Les villes et le climat: Bâtiments et urbanisme</title_fr>
+        <volume>CRGEOS, 2020, Volume 352, Facing climate change, the range of possibilities</volume>
+        <translator>Catherine W.</translator>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <prop type="paragraph">1</prop>
+            <tuv xml:lang="FR">
+                <seg>Les villes et le climat: Bâtiments et urbanisme</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Cities and climate change: buildings and urban land use</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Les politiques urbaines et les modes de vie des citadins sont un élément central de la question climatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Urban policies and city inhabitants behaviors are at the forefront of global environmental issues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous vivons en effet dans un monde de plus en plus urbanisé, et les villes sont responsables de plus des deux tiers des consommations d’énergie mondiales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We live indeed in an urbanizing world, and cities are responsible for approximately two third of global energy consumptions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>La manière dont sont conçus les bâtiments, et l’organisation spatiale des villes jouent un rôle fondamental sur ces consommations d’énergie et les émissions associées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>How buildings are built, and how cities are organized are both key drivers of greenhouse gases emissions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Faire en sorte qu’elles soient cohérentes avec les enjeux environnementaux amène la plupart du temps de nombreux co-bénéfices vis-à-vis des autres enjeux (sociaux et économiques) auxquels sont confrontés les décideurs urbains.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Making them coherent with environmental constraints often lead to co-benefits with other urban issues such as economic competitiveness or social inclusiveness.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est ce qui explique que les villes soient globalement très actives sur la question du climat, même si les défis restent importants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This explains why cities are globally active concerning climate change, even if much still needs to be done.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>1. Les villes et le climat</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Cities and climate</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Jusqu’au milieu du XIXème siècle, la quasi-totalité de la population humaine vivait dans les zones rurales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Until the middle of the 19th century, almost the entire human population lived in rural areas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>La situation a brusquement changé en Europe lors de la révolution industrielle, avec l’apparition d’une croissance rapide de la population des villes, phénomène qui a progressivement touché le reste du monde au fur et à mesure du XXème siècle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The situation changed abruptly in Europe during the industrial revolution with the appearance of rapid urban population growth, a phenomenon that gradually affected the rest of the world as the 20th century progressed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Aujourd’hui, fait sans précédent dans l’histoire, on estime qu’il y a sur la planète plus d’habitants dans les villes que dans les campagnes, et ce depuis une dizaine d’années environ (Figure1).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Unprecedented in history, it is estimated that there are now more people on the planet living in cities than in the countryside. This has been the case for about ten years (Figure1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Les derniers chiffres publiés par les Nations Unies [UN 2018] estiment ainsi qu’en 2018, 55.3% de la population mondiale vivait en ville, proportion qui pourrait atteindre 60% en 2030.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The latest figures published by the United Nations [UN 2018] estimate that in 2018, 55.3% of the world's population lived in cities, a proportion that could reach 60% in 2030.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>¹ Quatre cinquième des Nord-Américains, plus de 90% des Belges, Uruguayens, Israéliens, Japonais ou Gabonais vivent en ville.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>¹ Four fifths of North Americans and more than 90% of Belgians, Uruguayans, Israelis, Japanese, and Gabonese live in cities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>La proportion d’urbains est plus faible dans les pays en développement, mais est proche de 52%, et en croissance constante.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proportion of urban dwellers is lower in developing countries, but is close to 52% and growing steadily.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Du fait de leur poids démographique, les villes sont responsables de la majorité des consommations mondiales d’énergie: de 67 à 76% de celles-ci [IPCC 2014d].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Because of their demographic weight, cities are responsible for the majority of global energy consumption: between 67 and 76% [IPCC 2014d].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Certaines villes consomment autant d’énergie que des pays entiers.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Some cities consume as much energy as entire countries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Londres, par exemple, avec une population aux alentours de 7.8 millions habitants, consomme à peu près autant d’énergie que l’Irlande (Source: Eurostat et UK department of energy and climate change).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>London, for example, with a population of around 7.8 million, consumes about as much energy as Ireland (Source: Eurostat and UK department of energy and climate change).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>On peut noter que la part de l’énergie mondiale consommée par les villes est plus importante que la part de la population mondiale qui y vit (67 à 76% comparé à 55%).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It can be noted that the share of the world's energy consumed by cities is greater than the share of the world's population living there (67-76% compared to 55%).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela peut paraître contre-intuitif, car, dans les pays développés, en général, la consommation d’énergie par personne tend à être plus faible dans les villes que dans les campagnes, du fait d’une densité de peuplement plus importantequi permet des gains d’efficacité et limite les besoins en longs déplacements.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This may seem counterintuitive because in developed countries, in general, energy consumption per person tends to be lower in cities than in rural areas. This is due to a higher population density which allows for efficiency gains and limits the need for long journeys.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Cependant, dans les pays en développement, c’est l’inverse qui se produit: la consommation d’énergie par personne est en général plus élevée en ville qu’à la campagne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, in developing countries, the reverse is true: per capita energy consumption is generally higher in cities than in the countryside.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>La raison en est que les urbains tendent à être plus riches et à avoir plus accès aux services consommant de l’énergie que les ruraux [IPCC 2014d].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is because urban residents tend to be richer and have more access to energy-consuming services than rural residents [IPCC 2014d].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Cet effet l’emporte en général face aux gains d’efficacité qui existent dans les pays en développement comme dans les pays développés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This effect generally prevails against efficiency gains in both developing and developed countries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Un exemple extrême est donné par la Chine du milieu des années 2000, où la consommation d’énergie par personne dans les villes était de quasiment 80% plus élevée que la consommation moyenne dans le pays [IEA 2008].²</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An extreme example is China in the mid-2000s, where per capita energy consumption in cities was almost 80% higher than the average consumption in the country [IEA 2008].²</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Plus des trois quarts de la population urbaine mondiale vivant dans un pays en développement, c’est cette tendance qui est observée en moyenne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As more than three quarters of the world's urban population lives in a developing country, this is the trend that is observed on average.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Les villes sont également des lieux importants lorsque l’on s’intéresse à notre vulnérabilité face au changement du climat, car ce sont des lieux de concentration extrême de la population.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Cities are also important places when it comes to our vulnerability to climate change, as they are places of extreme population density.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Elles ne couvrent que de 0.4 à 0.9% de la surface globale de la terre [Esch etal. 2017; Zhou etal. 2015] dans lesquels, rappelons-le, se concentrent plus de 50% de la population de la planète.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They cover only 0.4 to 0.9% of the Earth's total land surface [Esch etal. 2017; Zhou etal. 2015] in which, we recall, more than 50% of the planet's population is concentrated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela signifie que tout événement météorologique extrême touchant les espaces urbanisés peut avoir des répercussions considérables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This means that any extreme weather event affecting urbanised areas can have significant impacts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Ceci est d’autant plus vrai que les villes ne sont pas réparties au hasard à la surface du globe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is all the more true as cities are not randomly distributed on the surface of the globe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>De nombreuses villes sont installées le long de cours d’eau ou de surfaces maritimes, du fait de l’important rôle historique joué par la navigation pour le commerce.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Many cities are located along waterways or sea surfaces due to the important historical role played by shipping for trade.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces espaces sont particulièrement vulnérables à des catastrophes telles que les inondations [IPCC 2014b].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These areas are particularly vulnerable to disasters such as floods [IPCC 2014b].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>La concentration d’habitants elle-même est un facteur de risque pour certains impacts du changement climatique, tels que la propagation des maladies, ou encore l’accroissement des canicules.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The concentration of inhabitants itself is a risk factor for certain impacts of climate change, such as the spread of diseases or the increase in heat waves.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans ce dernier cas, l’explication vient du fait que les villes génèrent un micro-climat, «l’effet d’îlot de chaleur urbain», qui augmente les températures (jusqu’à 7 degrés la nuit à Paris, voir Lemonsu etal. [2013] par exemple), et démultiplie l’impact sur la santé des vagues de chaleur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the latter case, the explanation comes from the fact that cities generate a microclimate, the urban heat island effect, which increases temperatures (up to 7 degrees at night in Paris, see Lemonsu etal. [2013] for example) and multiplies the impact of heat waves on health.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>Cet effet est d’autant plus important que la ville est peuplée et dense [Lemonsu etal. 2015].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This effect is all the more important the more the city is populated and dense [Lemonsu etal. 2015].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>2. La fenêtre d’opportunités</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>2. The window of opportunity</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces enjeux, tant ceux relatifs à la vulnérabilité face aux impacts du changement climatique, que ceux relatifs aux émissions de gaz à effet de serre, dépendent crucialement de la manière dont les villes sont construites.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These issues, both those relating to vulnerability to the impacts of climate change and those relating to greenhouse gas emissions, depend crucially on how cities are built.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est important de noter que nous vivons actuellement ce que l’on appelle une «fenêtre d’opportunité» vis-à-vis de chacun d’entre eux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is important to note that we are currently experiencing what is called a 'window of opportunity' regarding each of them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Une fois une ville construite, il est en effet très difficile de revenir en arrière et d’adapter l’existant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Once a city is built, it is very difficult indeed to go back and adapt the existing one.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est difficile de modifier les bâtiments tout d’abord, mais également les réseaux et encore plus le plan de la ville.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is first of all difficult to modify the buildings, but also the networks and even more so the layout of the city.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour s’en convaincre, il suffit de regarder par exemple les bastides françaises, villes dont le tracé des rues reste approximativement le même que lors de leur fondation au Moyen Age il y a plus de 700 ans…</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To be convinced, it is enough to look at the French bastides for example, cities whose layout of the streets remains approximately the same as when they were founded in the Middle Ages more than 700 years ago...</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Les choses sont beaucoup plus simples lorsque l’on est en train de construire une ville, et que de nombreux choix d’aménagement et d’organisation s’offrent à nous.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Things are much simpler when you are building a city and there are numerous choices of layout and organisation available to you.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est à ce moment qu’est choisi ce à quoi va ressembler la ville pour les décennies, voire les siècles à venir.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is at this point that what the city will look like for decades or even centuries to come is decided.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Or, le monde s’urbanise actuellement à une vitesse folle, et c’est maintenant que se décide si les villes qui sont construites sont et seront adaptées aux enjeux climatiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the world is currently urbanising at an incredible rate. It is now the moment to decide whether the cities being built are and will be adapted to climate challenges.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Les chiffres sont sans précédent dans l’histoire : non seulement la part de la population mondiale vivant en ville augmente, comme nous l’avons indiqué ci-dessus, mais la population mondiale est elle-même en forte croissance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The numbers are unprecedented in history: not only is the share of the world's population living in cities increasing, as we have indicated above, but the world population itself is growing rapidly.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>La conjonction des deux conduit à une explosion du nombre d’urbains.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The combination of the two is leading to an explosion in the number of urban inhabitants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Les Nations Unies estiment qu’en 2050, comparé à 2010, la population urbaine aura pratiquement doublé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The United Nations estimates that by 2050, compared to 2010, the urban population will have nearly doubled.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>En fait, la majorité de l’accroissement de population mondiale que l’on observe aura lieu en ville, la population rurale restant à peu près stable voire baissant en valeur absolue (voir par exemple la Figure1).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In fact, the majority of the world's population growth will take place in cities, with the rural population remaining almost stable or even declining in absolute number (see, for example, Figure1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Tous les jours, en moyenne, il y a ainsi 220000 urbains de plus dans le monde.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Every day, on average, there are 220,000 more urban residents in the world.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est plus, pour chaque semaine, que l’équivalent de la population de Munich, ou de toute l’agglomération Lyonnaise.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is more each week than the equivalent of the population of Munich, or of the entire Lyon agglomeration.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est l’équivalent de l’ensemble de l’île de France à construire tous les deux mois!</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is the equivalent of requiring the entire Ile-de-France (Parisian region) to be built every two months!</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette croissance n’est d’ailleurs pas uniforme entre les villes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, this growth is not uniform between cities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>S’il est projeté que le nombre de mégapoles de plus de 15 millions d’habitants augmente, de 16 aujourd’hui à 24 en 2030, les deux tiers d’entre elles ne devraient voir cependant qu’une croissance modeste de leur population (moins de 2% par an).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While the number of megacities with more than 15 million inhabitants is projected to increase from 16 today to 24 in 2030, two thirds of them are expected to see only modest population growth (less than 2% per year).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>L’essentiel de la croissance urbaine devrait avoir lieu dans les villes de taille moyenne ou petite, de moins de 1 million d’habitants, qui regroupent déjà plus de 60% de la population urbaine mondiale [UN 2018].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The bulk of urban growth is expected to take place in medium-sized and small cities with populations of less than 1 million, which already account for more than 60% of the world's urban population [UN 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>3. Comment réduire les émissions des villes ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>3. How can we reduce emissions from cities?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>Mesurer les émissions d’une ville est un exercice compliqué, et qui se heurte à deux obstacles majeurs [Hoornweg etal. 2011a, b].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Measuring a city's emissions is a complicated exercise that faces two major obstacles [Hoornweg etal. 2011a, b].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>Tout d’abord, il n’y a pas de définition universellement acceptée des limites d’une ville, ce qui fait que les chiffres concernant des villes de différents pays peuvent correspondre à des réalités différentes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, there is no universally accepted definition of the boundaries of a city. This means that the values for cities in different countries may reflect differing realities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>³ Deuxièmement, la délimitation des activités qui doivent être prises en compte ne fait pas non plus consensus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>³ Second, there is also no consensus on the delimitation of the activities that should be taken into account.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>En effet, il faut par exemple décider si la production d’électricité etles émissions associées sont la «responsabilité» de ceux qui la produisent, ou de ceux qui la consomment.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For example, it must be decided whether the generation of electricity andits associated emissions are the "responsibility" of those who produce it or of those who consume it.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>Il en va de même pour les biens et les services achetés par les habitants: à qui faut-il attribuer les émissions associées à l’extraction des ressources, au transport et aux processus industriels qui sont nécessaires à leur production et à leur distribution?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The same applies to goods and services purchased by residents: to whom should emissions associated with resource extraction, transport, and the industrial processes necessary for their production and distribution be attributed?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Des standards ont été proposés en vue d’harmoniser les réponses à ces questions, et plusieurs initiatives tentent d’établir des inventaires d’émissions comparables d’une ville à l’autre [C40 2014, 2018; Hoornweg etal. 2011a, b; IPCC 2014d; Nangini etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Standards have been proposed to harmonise responses to these questions, and several initiatives are attempting to establish comparable emissions inventories across cities [C40 2014, 2018; Hoornweg etal. 2011a, b; IPCC 2014d; Nangini etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Leur principale conclusion est que, même rapportées au nombre d’habitants, les niveaux d’émissions de GES varient fortement d’une ville à l’autre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Their main conclusion is that even relative to the number of inhabitants, the levels of GHG emissions vary greatly from one city to another.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Une deuxième conclusion, importante, est que, même si les villes riches tendent à consommer plus d’énergie que les villes pauvres, et donc à émettre plus, pour des conditions climatiques similaires, il n’y a pas de relation inévitable entre richesse économique et niveau d’émission de GES.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A second important conclusion is that even if rich cities tend to consume more energy than poor cities, and therefore emit more under similar climatic conditions, there is no inevitable relationship between economic wealth and the level of GHG emissions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est particulièrement le cas si la comptabilité des émissions exclut la consommation des biens manufacturés par les habitants: les émissions dans ce cas peuvent être très faibles dans certaines villes à la planification urbaine adaptée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is particularly the case if emissions accounting excludes the consumption of manufactured goods by inhabitants; emissions in this case may be very low in some cities with adapted urban planning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour comprendre quelles caractéristiques ou politiques permettent aux villes d’être sur une trajectoire bas-carbone, regardons plus en détail deux postes particulièrement importants des émissions urbaines: les émissions des bâtiments et du transport. Ces deux postes constituent par exemple, dans les villes européennes, les secteurs principaux sur lesquels se concentrent les stratégies municipales de baisse desémissions [Reckien etal. 2018].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To understand which characteristics or policies allow cities to be on a low-carbon pathway, let's look in more detail at two particularly significant sources of urban emissions: building and transport emissions. For example, in European cities, these two items are the main sectors on which municipal emission reduction strategies are focused [Reckien etal. 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>4. Bâtiments</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>4 Buildings</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>En 2014, l’énergie pour les bâtiments résidentiels et commerciaux représentait 31% de l’énergie finale utilisée dans le monde et 54% de la demande en électricité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In 2014, energy for residential and commercial buildings accounted for 31% of the world's final energy use and 54% of electricity demand.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela correspondait à 23% des émissions de GES d’origine énergétique (dont un tiers via utilisation directe d’énergie fossile) [IEA 2017; Masson-Delmotte etal. 2018].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This corresponded to 23% of energy-related GHG emissions (one third of which came from direct use of fossil fuel energy) [IEA 2017; Masson-Delmotte etal. 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces émissions proviennent de l’énergie utilisée pour le chauffage, la climatisation, la cuisine, et les divers équipements ménagers.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These emissions come from energy used for heating, air conditioning, cooking, and various household equipment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans les pays à forte croissance urbaine, comme en Chine, il faut également y ajouter les émissions liées aux travaux de construction de nouveaux logements [Zhu etal. 2020].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In countries with high urban growth, such as China, emissions related to the construction of new housing must also be added [Zhu etal. 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Toutes ces émissions sont en augmentation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>All of these emissions are increasing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Du fait de l’augmentation de la population urbaine mondiale et du meilleur accès, dans les pays en développement, aux équipements ménagers, il est projeté que l’utilisation d’énergie dans les bâtiments puisse doubler ou tripler d’ici le milieu du XXIème siècle [IPCC 2014c].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With the increase in the world's urban population and improved access to household appliances in developing countries, it is projected that energy use in buildings will double or triple by the middle of the 21st century [IPCC 2014c].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Cependant, et c’est le point central dans ce secteur, il existe de nombreuses solutions technologiques, déjà bien établies, qui permettent de réduire très fortement la consommation d’énergie des bâtiments.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, and this is the central point in this sector, there are already many well-established technological solutions that make it possible to significantly reduce the energy consumption of buildings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>On estime ainsi que la diffusion généralisée des pratiques de construction et des technologies les plus performantes actuelles permettrait d’éviter la hausse des consommations dont nous venons de parler, et même de réduire les consommations d’énergie dans les bâtiments par rapport à aujourd’hui, malgré l’augmentation de la population mondiale et la croissance des villes [IPCC 2014c].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is thus estimated that the widespread dissemination of current best-performing construction practices and technologies would prevent the increase in consumption we have just mentioned, and even reduce energy consumption in buildings compared to today, despite the increase in world population and the growth of cities [IPCC 2014c].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>L’enjeu majeur dans ce secteur est donc de réussir à diffuser ces techniques, et de comprendre où se situent les barrières à cette diffusion.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The major challenge in this sector is therefore to successfully disseminate these techniques, and to understand where the barriers to this dissemination lie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est une question complexe, car, en général, ce n’est pas le coût qui pose problème: dans la plupart des cas, réduire les consommations d’énergie des bâtiments est rentable au bout de quelques années grâce aux économies d’énergie effectuées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is a complex issue because, in general, it is not cost that is the problem; in most cases, reducing the energy consumption of buildings is profitable after a few years thanks to the energy savings made.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Les barrières se situent plutôt au niveau de questions liées au manque d’information, au manque d’incitation, au manque de fonds pour financer l’installation initiale des équipements, ou encore à des politiques de subvention du prix de l’énergie, qui supprime tout avantage financier à économiser ses consommations d’énergie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The obstacles are more related to the lack of information, the lack of incentives, the lack of funds to finance the initial installation of equipment, or policies of subsidising the price of energy, which eliminates any financial advantage to reducing energy consumption.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Prenons deux exemples de barrières que l’on peut observer en France (et dans de nombreux pays développés) [Giraudet 2011].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Let us take two examples of obstacles that can be observed in France (and in many other developed countries) [Giraudet 2011].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Premier exemple: Personne n’a intérêt à isoler un logement qui est mis en location.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First example: no one has an interest in insulating a dwelling that is rented.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>En effet, le coût des travaux incombe au propriétaire, tandis que les économies d’énergie vont au locataire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, the cost of the work is the responsibility of the landlord, whereas the energy savings go to the tenant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>La bonne prise en compte dans le prix des loyers du niveau d’isolation des logements serait un des moyens de lutter contre ce phénomène.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One way of combating this phenomenon would be to take proper account of the level of insulation of the housing in the price of rent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>L’état tente de le promouvoir en obligeant notamment à joindre un diagnostic de performance énergétique aux contrats de location, de manière à informer les locataires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The state can try to promote it notably by requiring an energy performance diagnosis with the lease, so as to inform the tenants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Deuxième exemple [Giraudet and Houde 2014]: les travaux d’isolation d’un logement nécessitent un investissement (un surcoût), et, comme nous l’avons dit, sont souvent rentables après quelques temps via les économies réalisées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Second example [Giraudet and Houde 2014]: the insulation of a dwelling requires an investment (an additional cost), and, as we have said, are often profitable after some time via the savings made.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Cependant, si on s’aperçoit au bout de quelques années que les travaux ont été mal faits, l’équation change complètement, et la situation n’est plus du tout rentable pour la personne qui a payé des travaux sans obtenir les économies espérées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, if after a few years it becomes clear that the work has been poorly done, the equation changes completely, and the situation is no longer profitable for the person who paid for the work without obtaining the savings they hoped for.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Il existe donc un risque qui peut freiner la demande pour les travaux d’isolation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, there is a risk that can reduce the demand for insulation installation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Les politiques de certification des entreprises et des artisans sont un exemple de dispositifs mis en place pour essayer de surmonter cette barrière.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The certification policies of businesses and craftsmen are an example of schemes put in place to try to overcome this barrier.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>Un autre enjeu dans le secteur du bâtiment est, au-delà des technologies, le rôle central joué par les comportements et les modes de vie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Another challenge in the construction sector, beyond technology, is the central role played by behaviours and lifestyles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>Faire attention à sa consommation d’énergie dans la vie quotidienne peut permettre de réduire ses consommations de quasiment un facteur 2 [IPCC 2014c].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Paying attention to your energy consumption in your daily life can reduce your consumption by almost a factor of 2 [IPCC 2014c].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce que l’on nomme «l’effet rebond» est une bonne illustration du rôle joué par les comportements [Sorrell etal. 2009]: on observe en général que, lorsqu’un logement est isolé, les habitants en profitent pour plus chauffer (maintenir des températures plus chaudes) qu’auparavant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The so-called "rebound effect" is a good illustration of the role played by behaviours [Sorrell etal. 2009]: it is generally observed that, when housing is insulated, residents take advantage of it to heat it up (maintain warmer temperatures) more than before.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce comportement est logique, vu que chauffer leur coûte moins cher qu’avant, mais il annule une certaine partir des économies d’énergie espérées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This behaviour makes sense, since heating costs less to them than before, but it cancels out some of the expected energy savings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce phénomène, qui est beaucoup étudié et bien quantifié, et est aujourd’hui pris en compte statistiquement dans la planification énergétique nationale et la mise en place de politiques d’isolation des bâtiments.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This phenomenon, which is well-studied and well-quantified, is now taken into account statistically in national energy planning and the implementation of building insulation policies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Un autre enjeu notable, est la difficulté posée au secteur du bâtiment par les effets du changement climatique lui-même.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Another notable challenge is the difficulty posed to the construction sector by the effects of climate change itself.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>En changeant les températures, celui-ci va en effet changer à l’avenir les besoins de chauffage et de climatisation, rendant plus complexe la conception de bâtiments prévus pour durer plusieurs décennies [De Cian and Wing 2019; Hallegatte etal. 2007].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By changing temperatures, it will indeed change heating and air conditioning needs in the future, making the design of buildings intended to last several decades more complex [De Cian and Wing 2019; Hallegatte etal. 2007].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Tout l’enjeu est notamment de réussir à éviter un recours massif à la climatisation dans quelques années, ce qui conduirait à un cercle vicieux dans lequel le réchauffement du climat lui-même amènerait à plus d’émissions de GES [Viguie etal. 2020].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main challenge is to succeed in avoiding a massive use of air conditioning in a few years, which would lead to a vicious cycle in which global warming itself would lead to more GHG emissions [Viguie etal. 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>5. Transports</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>5. Transport</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>Les transports jouent un rôle particulièrement important en ville, pour les mouvements des biens et de la population.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Transport plays a particularly important role in the city for the movement of goods and people.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>Le secteur des transports représentait en 2014 dans le monde environ 28% des consommations d’énergie, et 23% des émissions liées à l’énergie [IEA 2017; Masson-Delmotte etal. 2018].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In 2014, the transport sector accounted for around 28% of global energy consumption and 23% of energy-related emissions [IEA 2017; Masson-Delmotte etal. 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est un secteur dans lequel la consommation de pétrole est particulièrement intense: plus de 90% de l’énergie utilisée pour les transports provient du pétrole, ce qui fait que ce secteur représente à lui seul près des deux tiers (65%) de la demande en pétrole mondiale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is a sector in which oil consumption is particularly intense: more than 90% of the energy used for transport comes from oil, which means that this sector alone accounts for nearly two thirds (65%) of the world's oil demand.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>On estime que près de 40% de la demande mondiale d’énergie concerne le transport urbain [IEA 2013].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is estimated that nearly 40% of global energy demand is in urban transport [IEA 2013].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Les émissions liées aux transports sont très inégalement réparties à travers le monde: même en faisant abstraction du transport aérien, 10% de la population mondiale est à l’origine de près de 80% de la mobilité motorisée totale (exprimée en passager.km), tandis que la plupart de la population ne voyage quasiment jamais de manière motorisée [IPCC 2014a]. Les émissions liées aux transports sont aujourd’hui dominées par les pays développés, même si ces dernières années une croissance rapide a été observée en Asie, tant pour la mobilité en voiture que pour celle en véhicules légers à 2 ou 3 roues, qui ont toutes les deux fait plus que doubler (exprimées en passagers.km) entre 2000 et 2010.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Transport-related emissions are highly unevenly distributed around the world: even disregarding air transport, 10% of the world's population is responsible for nearly 80% of total motorised mobility (expressed in passenger.km), while most of the population almost never travels by motorised means [IPCC 2014a]. Transport-related emissions are now dominated by developed countries, although in recent years there has been rapid growth in Asia, both in car mobility and in light two- or three-wheeled vehicles. Both of these have more than doubled (in passenger.km) between 2000 and 2010.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Il a existé jusqu’à aujourd’hui un lien fort entre la croissance économique et le développement de ces transports motorisés: plus un pays est développé, plus la part des déplacements qui y est faite en véhicule à moteur, et notamment en voiture, tend à être importante [IPCC 2014a].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To date, there has been a strong link between economic growth and the development of such motorised transport: the more developed a country is, the greater the proportion of travel that is made by motor vehicles, especially cars, tends to be [IPCC 2014a].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela explique que les émissions de ce secteur ont fortement crû ces dernières années, de 2.5% par an en moyenne entre 2010 et 2015, soit plus que dans n’importe quel autre secteur, avec la croissance économique des pays en développement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This explains why emissions from this sector have grown sharply in recent years, by 2.5% per year on average between 2010 and 2015, more than in any other sector, in parallel with the economic growth of developing countries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Ceci est illustré par exemple par la Figure2, dans laquelle on peut voir l’augmentation tendancielle, de 1970 à 2010, de la part du secteur des transports dans les émissions, au fur et à mesure de la croissance économique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is illustrated, for example, in Figure2, which shows the rising trend in the transport sector's share of emissions from 1970 to 2010, increasing progressively as the economy grows.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Réduire les émissions associées aux transports passe, comme pour le secteur du bâtiment, par la diffusion de technologies moins émettrices, comme par exemple des véhicules électriques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Reducing emissions from transport requires, as in the building sector, the widespread implementation of reduced-emission technologies, such as electric vehicles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Cependant, il faut noter que, dans ce secteur, il ne s’agit là que d’un aspect de la question, l’autre aspect, essentiel, étant les choix d’infrastructures de transport et d’aménagement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, it should be noted that in this sector, this is only one aspect of the issue, the other essential aspect being the choice of transport infrastructure and layout.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces choix sont en effet déterminants sur les distances parcourues et sur les modes de transports utilisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These choices are decisive regarding the distances travelled and the modes of transport used.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>La Figure2 illustre également ces idées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Figure2 also illustrates these ideas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>En effet, il n’existe pas une trajectoire unique que suivraient les pays.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In fact, there is no single pathway that countries would follow.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>La comparaison des trajectoires de l’Amérique du Nord (bleu foncé) avec celles de l’Europe et des pays de l’OCDE de la zone Pacifique (Japon, Corée, Australie, Nouvelle-Zélande), montre que, pour un niveau de PIB par personne similaire, ces zones ont des niveaux d’émissions dues aux transports très différents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A comparison of the pathways of North America (dark blue) with those of Europe and the OECD countries of the Pacific zone (Japan, Korea, Australia, New Zealand) shows that, for a similar level of GDP per person, these zones have very different levels of emissions from transport.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela est dû en grande partie à des politiques d’infrastructures, un aménagement du territoire et à des choix d’urbanisme très différents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is largely due to infrastructure policies, land use, and very different urban planning choices.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Savoir quelle trajectoire vont suivre les pays en développement est une question cruciale pour le climat.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Knowing what pathway developing countries will follow is a crucial issue for climate.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>Si le lien entre croissance du PIB et croissance de la mobilité motorisée a été valable depuis plusieurs décennies, on commence aujourd’hui à observer les premiers signes d’un découplage entre eux [Masson-Delmotte etal. 2018].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although the link between GDP growth and motorised mobility growth has been valid for several decades, we are now beginning to observe the first signs of decoupling between them [Masson-Delmotte etal. 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans plusieurs villes de pays développés, l’utilisation de la voiture est en baisse, remplacée par les transports en commun, beaucoup moins émetteurs, les véhicules électriques ou les modes nonmotorisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Car use is declining in several cities in developed countries, replaced by public transport which produces much less emissions, electric vehicles, or non-motorised modes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>Des évolutions similaires apparaissent également dans des villes d’Amérique Latine et de Chine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Similar developments are also occurring in cities in Latin America and China.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>La Figure3 présente ainsi l’évolution des parts modales de la voiture, du vélo et des transports en commun à Beijing de 1986 à 2014.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Figure3 shows the evolution of the modal shares of cars, bicycles, and public transport in Beijing from 1986 to 2014.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>L’utilisation de la voiture, d’abord en croissance, a commencé à baisser autour des années 2010, remplacée par les transports en commun.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Car use, which increased initially, began to decline around the 2010s, replaced by public transport.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs facteurs expliquent ce découplage, dans les villes dans lesquelles il a lieu: développement de nouveaux transports en commun, apparition de nouveaux modes de transport tels que les vélos électriques, et politiques d’urbanisme pour maximiser l’utilisation des transports en commun ou des modes doux (marche, vélo…).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Several factors explain this decoupling in the cities where it takes place: the development of new public transport, the emergence of new modes of transport such as electric bicycles, and urban planning policies to maximise the use of public transport or soft modes (walking, cycling...).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>Les politiques d’urbanisme jouent un rôle fondamental sur les distances parcourues et le choix du mode de transport [IPCC 2014d].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Urban planning policies play a fundamental role in the distances travelled and the choice of transport mode [IPCC 2014d].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>Favoriser la mixité des usages (emplois et logements mélangés dans les quartiers) et aménager les rues pour favoriser les modes doux (marche, vélo) sont des exemples de pratiques ayant un impact positif sur les émissions liées aux transports.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Promoting mixed-use zones (jobs and housing mixed in neighbourhoods) and developing streets to promote soft modes (walking, cycling) are examples of practices that have a positive impact on transport-related emissions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>À l’échelle des agglomérations, la densité urbaine joue également un rôle important.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>At the urban area level, city density also plays an important role.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>En réduisant la distance des déplacements et en permettant de développer plus simplement des réseaux de transport en commun, cette densité joue un rôle essentiel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By reducing the distance of travel and making it easier to develop public transport networks, this density plays an essential role.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>Les exemples en sont nombreux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Examples of this are numerous.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>Le cas de Barcelone et Atlanta est assez illustratif [Bertraud and Richardson 2004] : ce sont deux villes qui ont à peu près la même population (5.3 millions à Atlanta et 5 millions à Barcelone, lorsque l’on considère les agglomérations) et sont situées dans des pays développés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The case of Barcelona and Atlanta is quite illustrative [Bertraud and Richardson 2004]: the two cities have roughly the same population (5.3 million in Atlanta and 5 million in Barcelona, when considering the greater metropolitan areas) and are located in developed countries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>En revanche, comme on peut le voir Figure4, elles n’ont pas du tout été construites de la même manière, Barcelone étant beaucoup plus dense qu’Atlanta, qui est 11 fois plus étendue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, as can be seen in Figure4, they were not built in the same way at all. Barcelona is much denser than Atlanta, which is 11 times larger in area.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette différence est notamment due à des raisons historiques, Barcelone ayant été construite en grande partie au XIXème siècle, à une époque où la norme était les déplacements à pieds, alors qu’Atlanta s’est principalement développée au XXème siècle, à une époque où la norme était les déplacements en voiture.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This difference is due in part to historical reasons; Barcelona was built largely in the 19th century, at a time when the norm for getting from one place to another was walking, whereas Atlanta was developed mainly in the 20th century, at a time when the norm was driving.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>Par personne, les émissions liées au transport sont de l’ordre de 6.9 tCO₂/an à Atlanta, et de 1.16 tCO₂/an à Barcelone, soit 6 fois plus faibles (source: LSE Cities).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Per capita transport emissions are around 6.9 _(tCO2)/year in Atlanta and 1.16 _(tCO2)/year in Barcelona, 6 times lower (source: LSE Cities).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>Les deux raisons principales sont celles que nous avons évoquées ci-dessus: d’une partles distances à parcourir à Barcelone sont généralement plus faibles qu’à Atlanta, et d’autres part les transports en commun y assurent une grande part des déplacements.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The two main reasons are those mentioned above: on the one hand, the distances to be covered in Barcelona are generally smaller than in Atlanta, and on the other hand public transport provides a large portion of transport needs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>Le métro de Barcelone mesure 99km de long, et 60% de la population de la ville vit à moins de 600m d’une des 136 stations de métro.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Barcelona's metro is 99km long, and 60% of the city's population lives within 600m of one of the 136 metro stations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour obtenir la même accessibilité aux transports en commun à Atlanta, il faudrait au minimum 3400km de lignes de métro et 2800 stations, ce qui serait un investissement considérable [Bertraud and Richardson 2004].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A minimum of 3400km of metro lines and 2800 stations would be required to achieve the same level of access to public transit in Atlanta, which would be a significant investment [Bertraud and Richardson 2004].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>La question de la densité des villes illustre cependant aussi toute la complexité des politiques d’aménagement urbain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the issue of urban density also illustrates the complexity of urban planning policies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>En effet, au-delà des questions de transport, une ville dense présente de nombreux avantages (limitation de l’artificialisation des terres agricoles), mais aussi de nombreux défauts [Lohrey and Creutzig 2015]: exposition accrue aux nuisances (bruit, et, potentiellement, pollution de l’air), faible présence d’espaces verts au sein de la ville, effet d’îlot de chaleur urbain accru, et donc vulnérabilité accrue aux canicules etc.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, beyond transport issues, a dense city has many advantages (notably limiting the transformation of agricultural land), but also many defects [Lohrey and Creutzig 2015]: increased exposure to nuisances (noise, and potentially air pollution), reduced presence of green spaces within the city, increased urban heat island effect and therefore increased vulnerability to heat waves, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>La recherche reste active sur comment concilier tous ces enjeux (voir par exemple [OECD 2018]; [Pierer and Creutzig 2019]).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Research remains active on how to reconcile all these issues (see for example [OECD 2018]; [Pierer and Creutzig 2019]).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>6. Enjeux et défis des politiques climatiques urbaines</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>6. Urban climate policy issues and challenges</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>La question dont nous venons de parler est en fait plus générale: les politiques urbaines qui concernent les enjeux climatiques ne sont jamais décidées dans le vide.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The question we have just discussed is in fact more broad: urban policies that concern climate issues are never decided in a vacuum.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Les gestionnaires d’une ville doivent, au-delà des questions environnementales, s’occuper de nombreux autres enjeux très divers(compétitivité économique, questions sociales, logements, etc.) qui interagissent avec ceux-ci, et parfois s’y opposent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition to environmental issues, the managers of a city have to deal with many other very diverse issues (economic competitiveness, social issues, housing, etc.) that interact with them, and sometimes oppose them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Cependant, il faut noter que dans une très grande part des cas, les mesures permettant de réduire les émissions des villes sont plutôt des mesures qui ont des co-bénéfices positifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, one must note that in a very large number of cases, measures to reduce emissions from cities are rather measures that have positive co-benefits.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>L’exemple le plus emblématique est la question de la pollution de l’air.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The most emblematic example is the issue of air pollution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Isoler les bâtiments et donc réduire le chauffage au fioul ou au charbon, promouvoir des véhicules plus efficaces, les modes doux et les transports en commun, sont autant de politiques qui ont un impact direct sur la qualité de l’air extérieur [Masson-Delmotte etal. 2018].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Insulating buildings and thus reducing heating with fuel oil or coal, promoting more efficient vehicles, and using soft modes and public transport are all policies that have direct impacts on outdoor air quality [Masson-Delmotte etal. 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans de nombreux pays en développement, la qualité de l’air à l’intérieur des logements est également un enjeu de santé publique prioritaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In many developing countries, indoor air quality is also a priority public health issue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Le fait de passer de chauffages et de cuisinières à bois, charbon ou paraffine vers des appareils plus modernes électriques ou au gaz permet à la fois de réduire les émissions de gaz à effet de serre et d’améliorer grandement la qualité de l’air intérieur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Switching from wood, coal, or paraffin stoves and heaters to more modern electric or gas appliances can both reduce greenhouse gas emissions and greatly improve indoor air quality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="FR">
+                <seg>Un autre exemple est la congestion des transports.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Another example is transport congestion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="FR">
+                <seg>Les déplacements en voiture individuelle sont très consommateurs d’espace sur la route, pour faire circuler les véhicules et pour les stationner.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Travel by private car consumes a lot of space on the road, for both driving and parking vehicles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="FR">
+                <seg>La Figure5 illustre ainsi la place prise sur la chaussée pour déplacer le même nombre de personnes, en bus, en vélos et en voitures.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Figure5 thus illustrates the space taken on the road to move the same number of people, by bus, by bicycle, and by car.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="FR">
+                <seg>Faire se déplacer les personnes en transport en commun ou en vélo permet d’en déplacer beaucoup plus sur la même portion de route, et donc de faire chuter la congestion.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moving people by public transport or by bike means that many more people can be moved on the same stretch of road, thus reducing congestion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces questions sont importantes, car elles expliquent que la situation, lorsque l’on veut faire diminuer les émissions de GES, se pose de manière très différente au niveau des états ou des villes [Ostrom 2010].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These questions are important because they explain that the situation, when it comes to reducing GHG emissions, is very different at the state or city level [Ostrom 2010].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="FR">
+                <seg>Au niveau des états, réduire les émissions est souvent vu comme entraînant des pertes de compétitivité, ce qui induit des réticences à agir si les autresétats ne le font pas également.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>At the state level, reducing emissions is often seen as leading to loss of competitiveness, leading to reluctance to act if otherstates do not do so as well.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="FR">
+                <seg>En revanche, au niveau des villes, réduire les émissions est au contraire souvent vu comme améliorant la qualité de vie des habitants et l’attractivité de la ville.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, at the city level, reducing emissions is often seen as improving the quality of life of the inhabitants and the attractiveness of the city.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela entraîne que les villes et les collectivités locales sont généralement beaucoup plus enclines à agir pour réduire les émissions que les pays dans lesquel elles sont situées [Rosenzweig etal. 2010].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This means that cities and local communities are generally much more likely to take action to reduce emissions than the countries in which they are located [Rosenzweig etal. 2010].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Des projets essaient de quantifier l’impact de ces actions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Some projects are trying to quantify the impact of these actions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Aux Etats-Unis, par exemple, le projet «America’s Pledge» [Bloomberg Philanthropies 2019] estime que, malgré la sortie du pays de l’accord de Paris, il existe beaucoup d’acteurs locaux qui se sont engagés en faveur de réductions d’émissions qui entrent dans le cadre des objectifs de l’accord de Paris, et qu’ils représentent au moins 51% des émissions américaines et 65% de la population.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the United States, for example, the “America's Pledge” project [Bloomberg Philanthropies 2019] estimates that despite the country's exit from the Paris Agreement, there are many local actors who have committed to emission reductions that fall within the scope of the Paris Agreement objectives. The project estimates that local actors represent at least 51% of US emissions and 65% of the population.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>En Europe, il a été monté récemment que, sur un échantillon représentatif de 885 villes, plus des deux tiers ont mis en place une stratégie des réductions des émissions [Reckien etal. 2018].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In Europe, it was recently shown that out of a representative sample of 885 cities, more than two-thirds have put in place an emission reduction strategy [Reckien etal. 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>De nombreux réseaux ont été constitués par des villes, indépendamment des états, pour leur permettre de mutualiser les connaissances et les compétences (par exemple ICLEI, C40, le Covenant of Mayors, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Many networks have been set up by cities, regardless of state, to enable them to pool knowledge and skills (e.g. ICLEI, C40, Covenant of Mayors, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Tout ceci est enfin une des raisons qui explique la création au sein des négociations internationales du NAZCA (Non-State Actor Zone for Climate Action, [UNFCCC 2019]), qui recense les actions au niveau local dans chaque pays, dans le but notamment d’avoir une vision plus juste des efforts internationaux de réduction desémissions que les simples politiques nationales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is one of the reasons for the creation of the NAZCA (Non-State Actor Zone for Climate Action [UNFCCC 2019]) within international negotiations, which identifies actions at the local level in each country with the aim of having a more accurate vision of international efforts to reduce emissions than simple national policies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>7. Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>7. Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="FR">
+                <seg>En conclusion, parce qu’elles concentrent plus de la moitié de la population et l’essentiel de l’activité économique mondiales, les villes sont des acteurs majeurs des problématiques environnementales globales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In conclusion, because cities account for more than half of the world's population and most of its economic activity, they are major players in global environmental problems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="FR">
+                <seg>Les politiques de transport, d’urbanisme et de logement sont des moyens nécessaires et efficaces d’action pour réduire les émissions de GES de la planète.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Transport, urban planning, and housing policies are necessary and effective means of reducing global GHG emissions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela est particulièrement vrai en ce moment, car le monde vit une urbanisation massive, et les choix qui vont être faits pour les villes qui se construisent actuellement vont nous engager pour les décennies à venir.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is particularly true at this time, as the world is experiencing massive urbanisation and the choices that will be made for the cities that are currently being built will commit us for decades to come.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="FR">
+                <seg>Réduire les consommations d’énergie et les émissions de GES en ville n’est pas simple, car cela interagit avec de nombreux autres enjeux, environnementaux, mais aussi économiques et sociaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Reducing energy consumption and GHG emissions in cities is not easy, as it interacts with many other issues, not only environmental, but also economic and social.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="FR">
+                <seg>Cependant, des synergies entre ces enjeux sont très souvent présentes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, synergies between these issues are very often present.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>¹Voir les chiffres de Nations-Unies https://population.un.org/wup/.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>¹See UN figures https://population.un.org/wup/.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>Il faut noter que la définition de «urbain» et «rural» dépend du pays.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It should be noted that the definition of "urban" and "rural" depends on the country.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>En France, par exemple, un urbain est quelqu’un qui vit dans une commune de plus de 2,000 habitants et où les habitations sont séparées d’au plus 200 mètres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In France, for example, an urban resident is someone who lives in a town of more than 2,000 inhabitants and where the dwellings are separated by at most 200 meters.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>Au Royaume-Uni, il s’agit des habitants de municipalités de plus de 10,000 habitants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the United Kingdom, urban residents are defined by living in municipalities with more than 10,000 inhabitants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>²Autre exemple: au niveau mondial, 32% de la population rurale n’a pas accès à l’électricité, comparé à seulement 5.3% de la population urbaine [IPCC 2014d].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>²Another example: worldwide, 32% of the rural population does not have access to electricity, compared to only 5.3% of the urban population [IPCC 2014d].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <prop type="paragraph">43</prop>
+            <tuv xml:lang="FR">
+                <seg>³Par exemple, les chiffres concernant Paris se réfèrent généralement à Paris au sens administratif, c’est à dire à Paris intra-muros, alors que dans la plupart des villes, c’est l’agglomération en entier qui est considérée. L’agglomération urbaine correspondant à la ville de Paris correspond à peu près à l’ensemble de la région Île de France [Hassan 2001].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>³For example, the figures for Paris generally refer to Paris in the administrative sense, that is to say to Paris within the walls, whereas in most cities, the entire agglomeration or urban area is considered. The urban agglomeration corresponding to the city of Paris corresponds roughly to the entire Île-de-France region [Hassan 2001].</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

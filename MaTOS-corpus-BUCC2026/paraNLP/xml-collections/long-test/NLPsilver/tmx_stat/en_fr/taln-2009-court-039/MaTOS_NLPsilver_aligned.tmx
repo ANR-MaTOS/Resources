@@ -1,0 +1,1359 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2009-court-039. segId begin by 1, tuid = segId</note>
+        <url_en>None</url_en>
+        <url_fr>https://aclanthology.org/2009.jeptalnrecital-court.39.pdf</url_fr>
+        <title_en>Automatic Processing of Disfluencies in Linguistically Constrained Spoken Dialogs Corpus</title_en>
+        <title_fr>Traitement automatique de disfluences dans un corpus linguistiquement contraint de dialogue oral spontané</title_fr>
+        <docid>taln-2009-court-039</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Automatic Processing of Disfluencies in Linguistically Constrained Spoken Dialogs Corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Traitement automatique de disfluences dans un corpus linguistiquement contraint de dialogue oral spontané</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>ATC</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>ATC</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>Spoken Speech Modeling</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Modèles de langage de la parole spontanée</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>Dialogs</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dialogues</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>Speech Processing</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Natural Language Processing</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>This article presents a work of modeling and detection of phenomena disfluencies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article présente un travail de modélisation et de détection des phénomènes de disfluence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>One of the specificity of this work is its framework: the Air Traffic Control (ATC) spoken dialogs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une des spécificités de ce travail est son cadre: les dialogues de contrôle de la circulation aérienne (ATC).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>We show that this particular framework implies some specific choices about modeling and implementation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous montrons que ce cadre particulier implique certains choix spécifiques concernant la modélisation et l'implémentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>Thus we use a suitably adapted modeling of the disfluencies in this situation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi nous utilisons une modélisation adaptée des disfluences dans cette situation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>This modeling is done from the subtle analysis of the disfluencies from a large corpus of ATC spoken dialogs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette modélisation est réalisée à partir de l'analyse fine des disfluences d'un grand corpus de dialogues ATC.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>We use this modeling for the implementation of a device that automatically detects disfluencies in this context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons cette modélisation pour la mise en œuvre d'un dispositif qui détecte automatiquement les disfluences dans ce contexte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>We validate the implementation and show that the overall performances are very satisfying.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous validons la mise en oeuvre et montrons que les performances globales sont très satisfaisantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>The disfluencies are a frequently occurring phenomenon in spontaneous speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les disfluences sont un phénomène apparaissant fréquemment dans toute production orale spontanée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>They have given rise to numerous studies both in Natural Language Processing and Speech Processing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elles ont donné lieu à de nombreuses études que ce soit dans le domaine du Traitement Automatique de la Parole ou celui du Traitement Automatique du Langage Naturel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>Indeed their study and accurate identification are essential.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet leur étude et leur identification précise est primordiale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>From a theoretical perspective in order to better understand and model the problems that can happen during any spoken communication.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur le plan théorique afin de mieux comprendre et modéliser les problèmes pouvant survenir lors de toute communication orale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>The potential applications are also numerous for improving the robustness of automatic spoken dialog systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les applications potentielles sont également nombreuses pour améliorer la robustesse des systèmes automatiques de dialogue oral.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>However to automatically process disfluencies is particularly difficult.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutefois, le traitement automatique des disfluences est particulièrement difficile.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>Indeed these phenomena are apparently totally disorganized; besides their appearance usually leads to disturbances in the regularity of the spoken production.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, ces phénomènes sont apparemment totalement désordonnés ; de plus, leur apparition provoque généralement des perturbations dans la régularité de la production orale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless their processing is the subject of several studies though still quite rare.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins leur traitement fait l'objet de plusieurs études bien qu'ils soient encore assez rares.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>This article also provides a work of this kind.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article présente lui aussi un travail de ce type.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>One of its features is that it is carried out in a constrained framework: the Air Traffic Control (ATC) spoken dialogs. From a linguistic point of view the main constraint is the use of a specific phraseology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une de ses spécificités est qu'il est mené dans le cadre d'une tâche particulièrement contrainte notamment d'un point de vue linguistique par l'utilisation d'une phraséologie spécifique : les dialogues parlées du Contrôle de Trafic Aérien.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>As this article shows this implies a number of specific theoretical and practical choices.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme cet article le montre cela implique un certain nombre de choix théoriques et pratiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>The presentation of our work is done in four phases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La présentation de notre travail se fait en quatre temps.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>First the description of the corpus and of its characteristics.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'abord la description du corpus et de ses caractéristiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>Then the presentation of the various types of disfluencies that we found in our corpus and of the way they were modeled.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, la présentation des différents types de disfluences relevées dans notre corpus et de la manière dont elles ont été modélisées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>Finally we give the principles of the implementation and then we present its validation and the results obtained.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin nous donnons les principes de l'implémentation puis nous présentons la validation et les résultats obtenus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>Corpus Presentation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Présentation du corpus d'étude</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>In the following section we present the corpus that we used to study the specificity of the disfluencies during ATC spoken dialogs. In a first time we describe the context of the recording: dialogs of ATC apprenticeship.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la section suivante, nous présentons le corpus que nous avons utilisé pour étudier la spécificité des disfluences pendant les dialogues ATC. Dans un premier temps, nous décrivons le contexte de l'enregistrement : des dialogues d'apprentissage ATC.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>Then we present the main characteristics of the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Puis nous présentons les principales caractéristiques du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>Context of Recording The formation of the air traffic controllers includes theoretical teachings but it also consists of training sessions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contexte d'enregistrement : La formation des contrôleurs de la circulation aérienne comprend des enseignements théoriques mais aussi des séances de formation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>These sessions are made of communications between air traffic controllers being formed and "pseudopilots operators" (that is people simulating real pilots).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces séances consistent en des communications entre contrôleurs de la circulation aérienne en formation et des « pseudo-pilotes-opérateurs » (c'est-à-dire des personnes qui simulent des vrais pilotes).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>The aim of the exercises is to train apprentice controller activities and then to evaluate them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le but des exercices est d'entraîner les apprentis contrôleurs et ensuite de les évaluer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>It consists of managing several planes that are in a controlled area for example by assigning them a given speed and/or position.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il s'agit pour eux de gérer plusieurs avions situés dans la zone contrôlée par exemple en leur assignant une vitesse et/ou une position données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>Two languages are used: French and English (French being the majority); all the speakers are French native speakers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux langues sont utilisées : le français et l'anglais (le français étant majoritaire) ; tous les intervenants sont des francophones.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>The exercise conditions are as near as possible from real environment: controllers work with screen giving the radar position of virtual "planes"; the air traffic is simulated by several persons assuming the role of one or many pilots.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les conditions de l'exercice sont aussi proches que possible de l'environnement réel : les contrôleurs travaillent sur un écran qui donne la position radar de « l'avion » virtuel ; la circulation aérienne est simulée par plusieurs personnes qui prennent le rôle d'un ou de plusieurs pilotes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>Some background noises (overlapping conversations sounds emitted by microphones etc.) also occur.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des bruits de fond (conversations se chevauchant, sons émis par des microphones, etc.) sont également présents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>The utterances produced by the controllers as well as the pilots' ones must respect phraseology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les productions orales des contrôleurs et des pilotes doivent respecter la phraséologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>It describes for example the way the speaker must pronounce the plane call signs or the order that the different components of a message or an utterance have to follow.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Celle-ci décrit par exemple la manière dont les locuteurs doivent prononcer les identifiants des avions ou bien l'ordre que doivent observer les différentes parties d'un message.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>Two speakers cannot speak at the same time.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux locuteurs ne peuvent pas parler en même temps.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>During the formation step the phraseology is not always strictly respected (neither in real work conditions) though its general guidelines are kept. However its learning and mastering is also aimed by exercises.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Durant la formation, la phraséologie n'est pas toujours strictement respectée (ni dans des conditions réelles de travail), mais ses directives générales sont maintenues. Cependant, son apprentissage et sa maîtrise sont également visés par les exercices.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>An instance of a simple order that an air controller can formulate to a pilot is: "D T C climb level 9 0": we find first the callsign of the pilot's plane ("D T C") and then the order itself.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un exemple d'ordre simple que peut formuler un contrôleur aérien à un pilote est : "D T C monter niveau 9 0" : on trouve d'abord le call-sign de l'avion du pilote ("D T C") puis l'ordre proprement dit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>More complex utterances can also occur composed of a sequence of simple orders.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des énoncés plus complexes peuvent également se produire, composés d'une séquence d'ordres simples.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>The use of the phraseology entails that the lexicosyntactic patterns are limited in number.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'utilisation de la phraseologie implique que les modèles lexicaux et syntaxiques sont limités en nombre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>Moreover it is obvious that from a linguistic point of view the corpus differs a lot from some others.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, il est évident que, d'un point de vue linguistique, le corpus diffère beaucoup de certains autres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>This is due to the restrictive task and to the apprenticeship characteristic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela est dû à la tâche restrictive et à la caractéristique d'apprentissage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>We hypothesize that this may probably influence the spoken phenomena that appear in comparison to some less constraint tasks such as daily conversations or train timetable reservation for instance (Lamel et al. 1997)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous supposons que cela peut probablement influer sur les phénomènes oraux qui apparaissent en comparaison avec certaines tâches moins contraignantes telles que les conversations quotidiennes ou la réservation des horaires de train par exemple (Lamel et al., 1997).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>To conclude it is important to note that the spoken dialogs are actually spontaneous speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En conclusion, il est important de noter que les dialogues parlées appartiennent bien à la catégorie du discours oral spontané.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>We insist on that point because the phraseology characteristics could make one thinks that all utterances are already planned.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous insistons sur ce point car les caractéristiques de la phraséologie pourraient laisser penser que tous les énoncés sont déjà planifiés à l'avance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>It's not true since both controllers and pilots do not know what will happen and consequently what has to be said.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce n'est pas vrai puisque ni les contrôleurs ni les pilotes ne savent à l'avance ce qui va se passer et par conséquent ce qu'il faut dire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>The phraseology only set up a general framework for utterances; what is actually said depends on the dynamic interaction between some given controller and pseudopilot.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La phraséologie définit seulement le cadre général de production des énoncés ; ce qui est dit repose sur l'interaction dynamique entre un contrôleur et un pilote ou pseudo-pilote donnés en fonction d'une situation variable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>Characteristics of corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Caractéristiques du corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>We transcribed dialogues as well as annotated them according to the specifications described in (Coullon et al. 2000)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons procédé à la transcription et l'annotation des dialogues selon les spécifications de (Coullon et al. 2000)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>These specifications were defined firstly to determine speech units and phenomena that has to be transcribed and secondly to obtain homogeneity of transcriptions in case where several annotators processed the tasks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces spécifications ont pour but de déterminer les unités et les phénomènes de parole à transcrire et d'obtenir l'homogénéité des transcriptions dans le cas où plusieurs annotateurs ont travaillé sur les tâches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>Recordings were made with a DAT (Digital Audio Tape) and sampled at 16 kHz (16 bits).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les enregistrements ont été effectués avec un DAT (Digital Audio Tape) et échantillonnés à 16 kHz (16 bits).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>For recording reasons the speech signal quality sometimes suffers from saturation or noises such as interferences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour des raisons d'enregistrement, la qualité du signal sonore peut parfois souffrir de saturation ou de bruits tels que les interférences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>However it stays intelligible.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, il reste intelligible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>The corpus is 36h50mn long and includes 76 306 words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus dure 36h50mn et comprend 76 306 mots ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>16 speakers took part in its production.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>16 locuteurs différents ont participé à sa production.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>Modeling of Disfluencies</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Modélisation des disfluences</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>To take into account the disfluencies we proceeded into two main stages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour prendre en compte les disfluences nous avons procédé en deux grandes étapes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>As a first step we identified precisely the phenomena to be treated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, nous avons identifié précisément les phénomènes à traiter.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>Once it was done we then proceeded to the modeling of their patterns of occurrence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois cela fait nous avons ensuite pu procéder à la modélisation de leurs patterns d'apparition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>This process is described in the two next sections.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce processus est décrit dans les deux sous sections suivantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>Identification of phenomena disfluencies</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Identification des phénomènes de disfluences</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>The task is not as trivial as it sounds especially when it comes to disfluencies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La tâche n'est pas aussi triviale qu'il n'y paraît surtout lorsqu'il s'agit des disfluences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>In the literature the terms used to describe them often vary from one author to another (see for example (Candea 2000) (Henry et al. 2003) ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la littérature, les termes utilisés pour les décrire varient souvent d'un auteur à l'autre (voir par exemple (Candea 2000) (Henry et al. 2003)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>We identified 7 different categories of disfluencies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons défini 7 catégories de disfluences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>When it's necessary we give some examples to illustrate our purpose (with the disfluencies in bold).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsque cela est nécessaire nous donnons des exemples pour illustrer notre propos (en mettant la disfluence en gras).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>For comparisons with other terminologies and the distributions of each category we refer to (Bouraoui 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les comparaisons avec d'autres terminologies et les distributions de chaque catégorie, nous renvoyons à (Bouraoui 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>Hesitation: it is the interjection "uh";</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Hésitation : désigne l'interjection « euh ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>Repetition: a word (or phrase) appears at least twice in a row.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Répétition : un mot (ou une expression) apparaît au moins deux fois de suite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>We do not take into account the repetition of disfluencies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous ne prenons pas en compte la répétition des disfluences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>Example: "station station calling uh repeat your callsign";</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Exemple : « station station appelant uh répétez votre indicatif ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>False starts: it refers to the utterance of the word that does not come to an end.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Faux départs : il s'agit de l'énonciation d'un mot qui ne se termine pas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>A false start always corresponds to a fragment of word that can be identified.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un faux départ correspond toujours à un fragment de mot qui peut être identifié.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>For example: "speed 200 Knots [mak] minimum".</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple : "vitesse 200 nœuds [mak] minimum".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>Here the speaker first began to utter "maximum". He realized that he was wrong and stopped the production ("mak"). Finally he said the correct word: "minimum" to an end;</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ici, le locuteur a commencé à prononcer "maximum" mais s'est rendu compte qu'il avait tort et a arrêté de parler ("mak"). Finalement, il a prononcé le mot correctement : "minimum" jusqu'à la fin ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>Self-correction: the speaker makes one or several errors during his production and corrects himself in the current utterance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Autocorrection : le locuteur commet une ou plusieurs erreurs pendant sa production et se corrige dans l'énoncé actuel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>Contrary to false starts the corrected word is totally uttered.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contrairement aux faux-départ, le mot corrigé est totalement prononcé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>Example: "France Air Force 900 893"; Word fragment: contrary to "false starts" "word fragments" refers to a sound (usually a single phoneme) that can't be identified as a part of a word or that clearly does not belong to any lexicon. Lengthening: it occurs when the production of a sound (usually a phoneme) lasts more than 0.5 second.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Exemple : "France Air Force 900 893" ; Fragment de mot : contrairement aux "faux départs", un fragment de mot est un son (généralement un seul phonème) qui ne peut être identifié comme faisant partie d'un mot ou qui ne fait manifestement pas partie du lexique. Elongation : elle se produit lorsque la production d'un son (généralement un phonème) dure plus de 0,5 seconde.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>Long pause: it is a pause (a silent one) that lasts more than 0.5 second.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pause longue : toute pause supérieure à 05 seconde et comprise à l'intérieur un tour de parole.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>We only take into account pauses that occur during a given speaker's speech turn.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous prenons en compte uniquement les pauses qui se produisent pendant le tour de parole d'un orateur donné.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>Modeling of phenomena</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Modélisation des phénomènes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>In most of the studies on disfluencies the modeling when it is done is based on the syntactic and/or semantic representation of the phenomena.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la majorité des études sur les disfluences la modélisation lorsqu'elle est faite repose sur la représentation syntaxique et/ou sémantique des phénomènes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>Phraseology and its restrictions induces/generates specific linguistic behavior.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La phraséologie et ses restrictions induisent/génèrent un comportement linguistique spécifique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>Besides we don't use a Hidden Markov Model (HMM) approach since it's not well adapted to the representation of disfluencies such as repetitions or self-corrections.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, nous n'utilisons pas l'approche du modèle caché de Markov (HMM) puisque celle-ci n'est pas adaptée à la représentation des disfluences telles que les répétitions ou les corrections.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>Indeed as shown notably by (Johnson et al. 2004a) HMM relies on a left to right analysis whereas some disfluencies are built upon "crossing dependencies".</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, comme le montre notamment (Johnson et al. 2004a), l'HMM repose sur une analyse de gauche à droite alors que certaines disfluences sont construites sur des "dépendances croisées".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>We need a representation language with at least the following features:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons besoin d'un langage de représentation doté d'au moins les caractéristiques suivantes :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>adapted to the subject of study (disfluencies)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>adapté au sujet d'étude (disfluxes)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>large capacity for expression and representation simplicity of the patterns obtained and easy adaptation according to the annotator needs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>grande capacité d’expression et de représentation simplicité des schémas obtenus et grande adaptabilité aux besoins de l’annotateur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>We found these properties altogether in the annotation scheme proposed by (Bear et al. 1993) used in a context almost identical to our by (Shriberg et al. 1992) (Heeman et al. 1994 ) or (Kurdi 2003)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons trouvé ces propriétés dans le schéma d'annotation proposé par (Bear et al., 1993) utilisé dans un contexte presque identique au nôtre par (Shriberg et al., 1992) (Heeman et al., 1994) ou (Kurdi, 2003)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>The aim of this scheme is to account for certain phenomena of spontaneous oral for example in transcripts by labeling them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le but de ce schéma est de rendre compte de certains phénomènes de la parole spontanée par exemple dans les transcriptions en les étiquetant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>The authors designate the disfluencies by the generic term "repairs".</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les auteurs désignent les disfluences par le terme générique de « réparations ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>This term corresponds to that we called "repetitions" "false starts" and "self-corrections".</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce terme correspond à ce que nous appelions "répétitions", "faux départs" et "autocorrections".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>But the scheme can also represent other disfluencies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais le schéma peut également représenter d'autres disfluxes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>The authors propose a generic set of symbols to represent the majority of disfluencies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les auteurs proposent un ensemble générique de symboles pour représenter la majorité des disfluences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>For example FP (filled pause) stands for the hesitation C (Cues) for words such as "sorry" etc.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, FP (pause remplie) représente l'hésitation C (signaux) pour des mots tels que « désolé » etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>Each symbol occurrence is associated with a numerical index; it allows should the case arise to distinguish it from others in a statement.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque occurrence de symbole est associée à un indice numérique ; cela permet de la distinguer des autres dans une déclaration si cela se présente.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>The scheme can also reflect the different areas involved in more complex disfluencies such as repetitions or selfcorrections.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système peut également refléter les différentes zones impliquées dans des disfluences plus complexes telles que les répétitions ou les autocorrections.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>The authors use the vertical bar (|) to indicate the editing point.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les auteurs utilisent la barre verticale (|) pour indiquer le point d'édition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>This is the "place" following the occurrence of the disfluency.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est le "lieu" qui suit l'occurrence de la disfluence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>From it the speaker realizes that there is a problem in his spoken production and attempts to fix it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A partir de là, l'orateur se rend compte qu'il y a un problème dans sa production orale et tente de le corriger.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>For example the following statement includes a self-correction (in bold): climb level maintain level</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, la déclaration suivante inclut une auto-correction (en gras) : monter, maintenir le niveau.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>Its representation according to the scheme of (Bear et al. 1993) will be:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sa représentation selon le schéma de (Bear et al. 1993) sera :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>R1 M1 | R1 M1</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>R1 M1 | R1 M1</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>where the symbol R stands for the replacement of one word in the other side of the editing point (respectively the error and its correction) and M (Matching Words) indicates that the same word is used alongside the editing point.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où le symbole R signifie le remplacement d'un mot du côté opposé du point d'édition (respectivement l'erreur et sa correction) et M (Mots correspondants) indique que le même mot est utilisé à côté du point d'édition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>We also added some symbols to this annotation scheme.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également ajouté certains symboles à ce schéma d'annotation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>Their objective was to be more representative to the task of ATC.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leur objectif était d'être plus représentatif de la tâche de contrôle aérien.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>Thus we systematically modeled all occurrences of disfluencies in our corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, nous avons systématiquement modélisé toutes les occurrences de disfluences dans notre corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>From this work we identified more general patterns which have been useful in the last part of this work: the implementation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A partir de ce travail, nous avons identifié des modèles plus généraux qui nous ont été utiles pour la dernière partie de ce travail : l'implémentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>Implementation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Implémentation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>Implementation Framework</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cadre d'implémentation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>We integrate our model in the system VOICE which is described in (Dourmap et al. 2004)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système dans lequel nous intégrons notre modèle a été développé dans le cadre du projet VOICE et est décrit dans (Truillet et al. 2005)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>Specifically the purpose of this system is to manage the spoken inputs produced by the pseudo-pilots to extract their meaning and to interpret them so that the orders are executed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus précisément le but de ce système est de gérer les entrées vocales pouvant être produites par les pseudo-pilotes en extraire le sens et l'interpréter de manière à ce que les ordres reçus soient exécutés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>It has already worked in a simulation of ATC although some constraints were still to be taken into account including the management of disfluencies!</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il a déjà fonctionné dans une simulation de contrôle aérien même si un certain nombre de contraintes restent à prendre en compte, dont la gestion des disfluences !</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>The VOICE system has a modular architecture of software components which communicate with each other.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système VOICE dispose d'une architecture modulaire de composants logiciels communiquant entre eux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>They are each dedicated to a task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils sont chacun dédiés à une tâche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>Notably one of them is speech recognition.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notamment l'un d'eux gère la reconnaissance de la parole.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>From the results it provides another components chooses the most likely solution depending on the context of dialog (historical of the actual dialog but also task knowledge etc.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A partir des résultats fournis par celui-ci, un autre composant choisit la solution la plus probable en fonction du contexte du dialogue (historique du dialogue actuel mais aussi connaissances de la tâche, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>Finally the decision is added to a log.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, la décision prise est ajoutée au journal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>The VOICE system operates from a Context Free Grammar (CFG) which dynamically changes depending on the context of interaction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système VOICE fonctionne à partir d'une grammaire de type CFG (Context Free Grammar) modifiée périodiquement en fonction du contexte d'interaction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>It takes the form of rewriting rules.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle se présente sous la forme de règles de réécriture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>This formalism is particularly well adapted to the ATC phraseology given the standardization of the production and the low number of lexico-syntactic patterns.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce formalisme est particulièrement bien adapté à la phraséologie du contrôle aérien compte tenu de la standardisation des productions et du faible nombre de schémas lexico-syntaxiques utilisés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>Computational modeling and processing</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Modélisation computationnelle et traitement informatique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>We distinguish two types of disfluencies to be addressed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous distinguons deux types de perturbations à traiter.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>On the one hand "ad hoc" disfluencies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'une part les disfluences « ponctuelles ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>We include in this category: hesitations and fragments of words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous rangeons dans cette catégorie les hésitations et les fragments de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>They do not modify alone the organization of the sequence of words in which they occur.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elles ne modifient pas seules l'organisation de la suite de mots dans laquelle elles apparaissent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>Therefore we consider that only the occurrence identification is necessary and sufficient for the automatic processing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous considérons donc que l'identification des occurrences est nécessaire et suffisante pour un traitement automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>This is not the same with disfluencies that are more complex: false starts repetitions and self-corrections.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce n'est pas la même chose avec les disfluences plus complexes que sont les amorces les répétitions et les auto-corrections.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>Indeed they affect a larger span than the only position in which they appear.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elles affectent en effet un empan plus important en termes de taille que la seule position dans laquelle elles apparaissent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>For these disfluencies we do not only identify their occurrences but we also distinguish the repetitive items (in the case of false starts we distinguish the corrected element from its correction).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour ces disfluences, nous ne nous contentons pas seulement d'identifier leurs occurrences, mais nous distinguons également les éléments répétés (dans le cas des fausses amorces, nous distinguons l'élément corrigé de sa correction).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>Which are the lessons drawn from these different patterns of disfluencies?</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Que nous apprennent les différents modèles de ces disfluences ?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>Most of the time we find out a symmetry of the components located on both sides of the editing point.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La majorité du temps nous constatons une symétrie des composants situés de part et d'autre du point d'édition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>We will use this observation as central point to carry out the implementation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette observation va nous servir de point central pour la mise en oeuvre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>We do not describe here all of the algorithms but the general principles underlying them:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous ne décrivons pas ici la totalité des algorithmes mais les principes généraux qui les sous-tendent et dont ils ne sont que le développement :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg> In a first time to associate to each lexical item from the utterance a corresponding word class.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps associer à chaque élément lexical de l'énoncé à traiter une classe de mot correspondant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>This is provided by the CFG used in VOICE recognition system to which we added some modifications (for example the definition of word classes to add a "semantic" level.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela est assuré par la CFG utilisée dans VOICE moyennant quelques modifications (par exemple la définition de classes de mot afin d'ajouter un niveau « sémantique ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>For instance the verb "descend" would be labeled as "verb_level" class).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi au verbe « descendez » serait associé la classe « verbe_niveau »).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>This is where the treatment of "ad hoc" disfluencies is carried out.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est à ce niveau que se situe le traitement des disfluences « ponctuelles ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>If we are dealing with a more complex disfluency a more extensive treatment is needed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si on a affaire à une disfluence plus complexe un traitement plus approfondi s'impose ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>It is described next;</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle est décrite ci-après ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg> To parse the utterance with a sliding window.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>« Parser » l'énoncé avec une fenêtre coulissante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>This latter with a maximum size of 10 lexical items moves from the left to the right of the utterance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette dernière, d'une taille maximale de 10 éléments lexicaux, se déplace de gauche à droite de l'énoncé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>The principle is to detect within the window the occurrence of a repetition of a pattern (either class of words or word from the lexicon).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le principe est de détecter dans la fenêtre l'occurrence d'une répétition d'un schéma (classe de mots ou mot du lexique).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>When this happens the window stops its moving. This allows further processing:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsque cela arrive, la fenêtre arrête son déplacement. Cela permet d'effectuer des traitements supplémentaires à l'intérieur de celle-ci :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>o To find the position of the editing point.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Pour trouver la position du point d'édition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>This is done by running a CFG interpreter from the beginning of the window.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour cela, on lance un interprète de CFG au début de la fenêtre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>When the analysis ends before any of the terminal rules of the CFG has been reached it indicates with certainty the presence of the editing point; o Once this point is found we have to distinguish each of these repeated items (or for correction to distinguish the corrected items from their correction).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsque l'analyse se termine avant que l'un des éléments terminaux de la CFG n'ait été atteint cela indique avec certitude la présence du point d'édition ; o une fois ce point trouvé, il faut distinguer chacun des éléments répétés (ou les éléments corrigés de leur correction).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>The comparison is done between the items located at the left of the editing point and those at its right.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La comparaison est faite entre les éléments situés à gauche du point d'édition et ceux de droite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>The repeated items (from a lexical point of view) correspond to a "repetition" while the repeated items (at the word class level) correspond to a "self correction".</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les éléments répétés (d'un point de vue lexical) correspondent à une « répétition » tandis que les éléments répétés (au niveau de la classe de mot) correspondent à une « auto-correction ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg> Eventually the moving window goes on from the element located to its right before the previous stop.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Finalement, la fenêtre mobile est réamorcée à partir de l'élément situé à sa droite avant l'arrêt précédent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>Validation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Validation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>Evaluation Methodology</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Méthodologie d'évaluation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>We accept the following as relevant to the validation of the component that we propose:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous retenons les paramètres suivants comme pertinents pour la validation du module que nous proposons :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg> Execution time: this parameter determines whether the component that we propose can be reasonably integrated into a system to operate in real time.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Temps d'exécution : ce paramètre permet de déterminer si le dispositif que nous proposons est raisonnablement intégrable dans un système visant à fonctionner en temps réel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>Indeed beyond a threshold the loss of processing time cancels the gain provided by the component;</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet au-delà d'un certain seuil la perte de temps de traitement annule le gain apporté par le composant ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg> Precision rate: it allows establishing the number of correct detections in regard to the total number of detections (including "false positives");  Recall rate: it determines the number of correctly detected disfluencies compared to the total number of occurrences;  Delimitation rate: the delimitation of the borders of the start and end of disfluencies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Taux de précision : il permet d'établir le nombre de détections correctes par rapport au nombre total de détections (y compris les « faux positifs ») ; Taux de rappel : il détermine le nombre de disfluences correctement détectées par rapport au nombre total d'occurrences ; Taux de délimitation : délimitation des frontières du début et de la fin des disfluences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>It is also one of the tasks performed by our component.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est également l'une des tâches accomplies par notre composant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>It is therefore important to determine its performance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est par conséquent important de déterminer les performances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>For this we use again the rate of precision (here the number of correct boundaries in relation to the total number of boundaries identified automatically) and of recall (number of correct boundaries in relation to the total number of disfluencies);</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour cette mesure également, nous utilisons les taux de précision (ici le nombre de délimitations correctes par rapport au nombre total de délimitations effectuées) et de rappel (nombre de délimitations correctes par rapport au nombre total de disfluences) ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>Identifying the appropriate category of the disfluency: the aim is to determine if a disfluency even properly detected and defined is also correctly classified.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Identification de la bonne catégorie : il s'agit de déterminer si une disfluence même détectée et délimitée correctement est également correctement catégorisée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>For instance it can happen that a repetition is labeled as a self-correction or reciprocally.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il peut par exemple arriver qu'une répétition soit étiquetée comme étant une autocorrection ou réciproquement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>This risk is even more important given that our detection algorithm is based on the occurrence of repetitions either at a lexical or a semantic level.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce risque est d'autant plus important que notre algorithme de détection est basé sur l'occurrence de répétitions que ce soit au niveau lexical ou sémantique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>The performance for this parameter is important: to detect and to label correctly a given item from the disfluent area is the first step to be able to correct it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le rendement pour ce paramètre est important : détecter et étiqueter correctement un lexème donné de la zone disfluente est la première étape pour pouvoir ensuite le corriger. Constitution du corpus d'évaluation Pour l'évaluation il nous a été nécessaire de nous procurer un deuxième corpus indépendant de celui présenté plus haut à partir duquel a été effectuée la modélisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>For example to delete the repetitions or to replace directly a corrected word by its correction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple pour supprimer les répétitions ou pour remplacer directement un mot corrigé par sa correction.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

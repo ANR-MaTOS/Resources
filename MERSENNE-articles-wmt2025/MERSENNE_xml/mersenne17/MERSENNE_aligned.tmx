@@ -1,0 +1,2178 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en" srclang="FR" tgtlang="EN" o-tmf="XML" creationdate="2024-11-15" creationid="MaTOS">
+        <note>This is the sentence alignement file for MERSENNE-mersenne17. segId begin by 1, tuid = segId</note>
+        <docid>mersenne17</docid>
+        <url_src>https://comptes-rendus.academie-sciences.fr/chimie/articles/10.5802/crchim.130/</url_src>
+        <url_tgt>https://comptes-rendus.academie-sciences.fr/chimie/articles/en/10.5802/crchim.130/</url_tgt>
+        <author>Louisa Aribi-Zouioueche, Françoise Couic-Marinier</author>
+        <title_en>Essential oils and molecular chirality</title_en>
+        <title_fr>Huiles essentielles et chiralité moléculaire</title_fr>
+        <volume>CRCHIM, 2021, Volume 24, 3</volume>
+        <translator>Catherine W.</translator>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <prop type="paragraph">1</prop>
+            <tuv xml:lang="FR">
+                <seg>Huiles essentielles et chiralité moléculaire</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Essential oils and molecular chirality</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>La chiralité moléculaire est une propriété de la nature et de la vie, elle est présente à toutes les échelles de grandeur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Molecular chirality is a property of the nature and life, it is present everywhere and at all scales of magnitude.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Un aspect fondamental des molécules qui est généralement négligé de l’aromathérapie scientifique pourtant basée sur l’utilisation de la chimie des groupes fonctionnels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A fundamental aspect of molecules that is generally overlooked in scientific aromatherapy yet based on the use of the chemistry of functional groups.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette mise au point tente d’apporter de l’information sur la stéréochimie moléculaire dans la composition des huiles essentielles (HE) et son impact sur leurs activités biologiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This update attempts to provide information on molecular stereochemistry in the composition of essential oils and its impact on their biological activities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Des notions de stéréochimie sont introduites et un nouvel éclairage est apporté avec de nombreux exemples sur les principales molécules composant les HE.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Notions of stereochemistry are introduced and new light is shed with numerous examples on the main molecules making up EO.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>L’importance du profil énantiomérique des HE est démontrée avec une évaluation plus précise des conséquences sur leurs propriétés biologiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The importance of the enantiomeric profile of EOs is shown with a more precise evaluation of the consequences on their biological properties.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>La chiralité moléculaire est l’un des concepts les plus puissants du XXe siècle de par sa portée et ses applications[1], cette caractéristique de la nature intègre tous les processus régulateurs de développement et impacte un vaste domaine d’application: santé (médicaments et vitamines), agroalimentaire (arômes, additifs alimentaires), agronomie (contrôle des insectes, herbicides, fongicides), cosmétiques (parfums, produits de beauté).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Molecular chirality is one of the most powerful concepts of the twentieth century due to its scope and applications [1]. This natural characteristic integrates all the regulatory processes of development and impacts a wide range of applications, including health (medicines and vitamins); the food industry (flavourings, food additives); agronomy (insect control, herbicides, fungicides); and cosmetics (perfumes, beauty products).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Les huiles essentielles, substances complexes volatiles, lipophiles, odoriférantes, sont riches de centaines de molécules organiques issues du métabolisme secondaire des plantes, elles sont particulièrement concernées par cette propriété de la nature.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Essential oils are complex substances that are particularly affected by this property of nature. They are volatile, lipophilic, odoriferous, and rich in hundreds of molecules produced by the secondary metabolism of plants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces molécules variées sont largement impliquées dans les interactions de la plante avec son environnement (protection, communication, réserve énergétique …).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These varied molecules are largely involved in the plant's interactions with its environment (protection, communication, energy reserve, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Leurs composants, essentiellement des terpènes (monoterpènes, sesquiterpènes, diterpènes) et leurs dérivés oxygénés (alcools, aldéhydes, esters, cétones, phénols …) sont majoritairement des molécules chirales[2, 3].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Their components, mainly terpenes (monoterpenes, sesquiterpenes, diterpenes) and their oxygenated derivatives (alcohols, aldehydes, esters, ketones, phenols, etc.) are predominantly chiral molecules [2, 3].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Le retour vers une consommation «naturelle»amène un nouvel élan au développement de produits à base de plantes[4], spécialement dans les industries de la beauté et du bien-être[5].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The trend towards "natural" consumption is creating momentum for plant-based product development [4], especially in the beauty and wellness industries [5].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Le marché des huiles essentielles connaît une croissance importante, il a dépassé 7,51 milliards USD en 2018 et devrait parvenir à un taux de croissance annuel de 9% entre 2019 et 2026[6].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The essential oils market is experiencing significant growth. It exceeded US$7.51 billion in 2018 and is projected to have an annual growth rate of 9% between 2019 and 2026 [6].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces concentrés de plantes aromatiques affichent toutes les vertus : anti-inflammatoires, anti-infectieuses, immunomodulatrices, bronchodilatatrices, antivirales, anti-déprime, relaxantes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These herbal concentrates demonstrate a multitude of virtues: they are anti-inflammatory, anti-infective, immunomodulatory, bronchodilating, antiviral, anti-depressant, and relaxant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>La demande de substances «naturelles»pour soulager des affections physiques et/ou psychologiques, s’est accentuée avec la pandémie de SARS-CoV-2, que ce soit, pour renforcer l’immunité, en intégration dans les protocoles de soin[7, 8] ou pour traiter l’anosmie souvent conséquente à la maladie[9, 10, 11].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Demand for "natural" substances to relieve physical ailments and/or psychological problems increased with the SARS-CoV-2 pandemic, whether for strengthening immunity, integrating into treatment protocols [7, 8], or treating the anosmia often resulting from the disease [9, 10, 11].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>La mise au point d’un protocole de stimulation olfactive[12, 13] à base d’huiles essentielles a permis à plus d’un tiers des hyposmiques de présenter un mieux-être et de retrouver leur odorat.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The development of an olfactory stimulation protocol [12, 13] based on essential oils has enabled more than a third of people suffering from hyposmia to feel better and regain their sense of smell.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces derniers mois, de nombreux travaux de recherche explorent le potentiel antiviral des huiles essentielles[14, 15, 16, 17, 18, 19, 20, 21, 22].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In recent months, numerous research studies have explored the antiviral potential of essential oils [14, 15, 16, 17, 18, 19, 20, 21, 22].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>On doit l’origine de la chimie du chiral aux travaux de LouisPasteur[23] sur ladissymétrie moléculaire, cependant, la littérature francophone de l’aromathérapie[24, 25, 26, 27, 28] n’intègre pas cet aspect structural des molécules, restreignant fortement la compréhension des mécanismes intervenant sur l’activité moléculaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We owe the origin of chiral chemistry to the works of Louis Pasteur [23] on molecular asymmetry. However, the French-language aromatherapy literature [24, 25, 26, 27, 28] does not integrate this structural aspect of the molecules, thus severely restricting understanding of the mechanisms involved in their molecular activity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>La classification chimique des huiles essentielles repose sur une approche basée sur un classement par groupes fonctionnels[29], avec une répartition générale un peu réductrice où le facteur d’attribution de l’activité thérapeutique est basé sur une fonction de la molécule (alcool, cétone, éther, ester, oxyde …).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The chemical classification of essential oils is based on a classification by functional groups [29], into which they are first divided in a somewhat reductivist manner where the allocation criteria of the therapeutic activity is based on a function of the molecule (alcohol, ketone, ether, ester, oxide, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, la précision du chimiotype (ou chemotype) permet de désigner l’entité chimique distincte prépondérante pour une même espèce végétale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Next, specifying the chemotype designates the predominant distinct chemical entity for an individual plant species.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette notion de race chimique[30] s’est imposée depuis 1975 et a été normalisée en 2006 au sein de l’Union Européenne avec l’adoption du règlement REACH.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This approach to chemical classification [30] has been established since 1975 and was standardised in 2006 within the European Union with the adoption of the REACH Regulation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>¹ Depuis quelques années, de nombreuses insuffisances conceptuelles de la classification des familles moléculaires, en lien avec la stéréochimie des molécules sont signalées[31, 32], elles ciblent également l’efficacité et/ou la toxicité liée à certaines fonctions et la polyvalence des HE qui aurait plusieurs niveaux d’action en synergie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>¹ In recent years, many conceptual shortcomings in the classification of molecular families related to the stereochemistry of molecules have been reported [31, 32]. They also target the efficacy and/or toxicity linked to certain functions, and the polyvalence of essential oils that would have several levels of action in synergy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans cette mise au point, le concept de la chiralité moléculaire, son importance et ses enjeux sont introduits, la configuration des principales molécules composant les HE est présentée en soulignant l’impact du profil stéréochimique sur l’activité biologique de quelques huiles essentielles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this text, the concept of molecular chirality, its importance, and its impacts are introduced. The configurations of the main molecules composing essential oils are presented, highlighting the impact of stereochemical profiles on the biological activity of certain essential oils.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>L’article est complété par la présentation de l’activité pharmacologique des énantiomères du linalol, une molécule chirale présente naturellement dans la quasi-totalité des huiles essentielles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The article concludes with a presentation of the pharmacological activity of linalool enantiomers, a chiral molecule naturally present in almost all essential oils.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Au-delà du chimiotype, l’importance de la signature chirale naturelle sera démontrée avec les configurations moléculaires précises et leurs implications sur l’activité biologique et les propriétés olfactives …</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Beyond the chemotype, the importance of the natural chiral signature will be demonstrated with precise molecular configurations and their implications for biological activity and olfactory properties.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Vers un énantiotype des huiles essentielles?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Towards enantiotypes for essential oils?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>2. La chiralité moléculaire, qu’est-ce que c’est ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>2. What is molecular chirality?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>La chiralité vient du grec «kheir»qui signifie main, c’est la propriété d’un objet non superposable à son image dans un miroir, comme une main droite et une main gauche et qui se traduit par une absence de symétrie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Chirality comes from the Greek "kheir" which means hand. It is the property of an object that cannot be superimposed on its image in a mirror, like a right hand and a left hand, which results in a lack of symmetry.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>L’image de la main droite dans un miroir correspond à la main gauche et réciproquement, cependant, les deux mains ne peuvent se superposer ou, plus simplement, un gant droit ne pourra être enfilé que par une main droite.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The image of the right hand in a mirror corresponds to the left hand and vice versa; however, the two hands cannot overlap. More simply, a right glove can only be put on with a right hand.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>De manière analogue, quand deux molécules en trois dimensions, symétriques par rapport à un axe sont dites chirales, cela se traduit par une absence de centre de symétrie ou de plan de symétrie (Figure1).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Likewise, when two molecules in three dimensions, symmetrical with respect to an axis, are referred to as chiral, this indicates an absence of a centre of symmetry or plane of symmetry (Figure1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>La nature constitue le plus important réservoir chiral, ainsi, seule la (−)-morphine, isolée de pavot à opium (Papaver somniferum)[33] possède une activité analgésique, son isomère de synthèse (+) en est dépourvu, tous lesacides𝛼-aminéspossèdent lamême configuration (S) à l’exception de la cystéine, et, à l’état naturel, les sucres existent sous la forme d’un unique énantiomère.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nature is the most important chiral reservoir. Thus, only (−)-morphine, isolated from the opium poppy plant (Papaver somniferum) [33], has analgesic activity; its synthetic (+) isomer is devoid of it. All of the 𝛼-amino acids have the same configuration (S) with the exception of cysteine. In their natural state, sugars exist as a single enantiomer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, du fait de leur forme en hélice et aussi par leur composition, l’ADN et l’ARN sont des moléculeschirales[34, 35].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, because of their helical shape and also because of their composition, DNA and RNA are chiral molecules [34, 35].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Les deux formes d’une molécule chirale sont desénantiomères et peuvent avoir des activités biologiques très différentes car elles interagissent sur des récepteurs différents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The two forms of a chiral molecule are called enantiomers. They can have very different biological activity as they interact on different receptors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs cas de figure peuvent être rencontrés qui sont définis comme suit:</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Several possibilities may be encountered, which are defined as follows:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>1. l’eutomère;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>1. (1) The eutomer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>c’est l’énantiomère dont l’activité biologique est la plus forte ou dont l’affinité relative de liaison à un récepteur biologique ou une enzyme est la meilleure.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is the enantiomer which has the strongest biological activity, or has the best relative affinity for binding to a biological receptor or enzyme;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>2. le distomere;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>2. (2) The distomer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>c’est l’énantiomère inactif, moins actif, ou possédant une activité tout autre que l’activité recherchée et/ou pouvant s’avérer porteur d’une toxicité différente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is the enantiomer that is inactive, less active, or has any activity other than the desired activity, and/or may be found to have a different toxicity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>2.1. Enantiomères et médicaments</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>2.1. Enantiomers and medicinal products</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Le phénomène est crucial pour les médicaments[36] avec des énantiomères d’activités biologiques très différents où l’un peut être bénéfique et l’autre très toxique (Figure2).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This phenomenon is crucial for medications [36] consisting of enantiomers that have very different biological activities, where one can be beneficial and the other very toxic (Figure2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>On peut citer la Dopa où l’énantiomère (S) soigne la maladie de Parkinson alors que l’énantiomère (R) est un poison, ou encore, l’Ethambutol, où l’énantiomère (S) est un anti-tuberculinique alors que l’énantiomère (R) cause la cécité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One can cite the case of Dopa, whose S enantiomer treats Parkinson's disease while the (R) enantiomer is a poison, or Ethambutol, wherein the S enantiomer is an anti-tuberculosis drug while the R enantiomer causes blindness.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Un des plus gros scandales pharmaceutiques de tous les temps, est lié à l’affaire du Thalidomide qui fut à l’origine d’une prise de conscience de l’importance de la chiralité dans la toxicité des molécules présentes dans les médicaments.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One of the biggest pharmaceutical scandals of all time is the case of Thalidomide, which led to an awareness of the importance of chirality in the toxicity of molecules in medicines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Prescrite aux femmes enceintes au début des années soixante pour soulager les nausées, le Thalidomide a défrayé la chronique en causant des ravages irréversibles sur le développement du fœtus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Prescribed to pregnant women in the early 1960s to relieve nausea, Thalidomide hit the headlines for causing irreversible damage to the development of the foetus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>On estime entre 10000et 20000 le nombre des victimes de ce médicament qui sont nées avec des malformations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is estimated that between 10,000 and 20,000 were victims of this drug and born with malformations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>En fait, seul l’énantiomère (R) est sédatif l’autre (S) est tératogène.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In fact, only the R enantiomer is sedative; the other (S) is teratogenic.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>Depuis 1990, l’autorisation de mise sur le marché de nouveaux médicaments de synthèse est soumise à une réglementation très stricte[37, 38], l’activité de chacun des énantiomères d’une nouvelle molécule chirale doit être évaluée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since 1990, the marketing authorisation for new synthetic medications is subject to very strict regulations [37, 38]. The activity of each of the enantiomers of a new chiral molecule must be evaluated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces restrictions ont conduit à l’émergence de la chimie du chiral qui connaît un essor considérable, face à une chimie organique de synthèse traditionnelle qui produit des mélanges racémiques (deux énantiomères en égale quantité).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These restrictions have led to the emergence of chiral chemistry, a field which is experiencing considerable growth, as opposed to traditional organic chemistry synthesis which produces racemic mixtures (two enantiomers in equal quantity).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Aujourd’hui, on estime qu’environ 50% des médicaments possèdent une structure chirale et de nombreux principes actifs thérapeutiques présentant un ou plusieurs centres de chiralité sont aujourd’hui encore utilisés sous forme de mélanges racémiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Today, it is estimated that about 50% of medicines have a chiral structure, and numerous therapeutic active ingredients having one or more centres of chirality are still used today in the form of racemic mixtures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>L’utilisation d’un énantiomère à la place du mélange racémique n’est intéressante que lorsque «l’autre»énantiomère influence défavorablement le rapport bénéfice-risque du mélange racémique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The use of an enantiomer in the place of a racemic mixture is only favourable when "the other" enantiomer adversely influences the benefit-risk ratio of racemic mixing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Les propriétés pharmacodynamiques et pharmacocinétiques des deux énantiomères doivent être évaluées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Pharmacodynamic and pharmacokinetic properties of both enantiomers must be evaluated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour cela, la séparation des premiers mg d’énantiomères purs pour réaliser les premiers tests d’activité et de toxicité est souvent réalisée par chromatographie sur support chiral[39, 40].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to do this, the separation of the first milligrams of pure enantiomers for conducting initial activity and toxicity tests is often carried out using chromatography on a chiral support [39, 40].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Les stratégies de synthèse d’un énantiomère unique interviennent dans un second temps si son activité est reconnue, pour y accéder selon le besoin par catalyse asymétrique ou par dédoublement de racémiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Strategies for synthesising a unique enantiomer are utilised in a second step if its activity is recognised, in order to access it as needed via asymmetric catalysis or by racemic splitting.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Le développement de la catalyse asymétrique[41] qui consiste à utiliser un catalyseur chiral (complexe organométallique, biocatalyseur ou organocatalyseur), a permis de réaliser de nombreuses synthèses industrielles de médicaments énantiopurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The development of asymmetric catalysis [41], which consists of using a chiral catalyst (organometallic complex, biocatalyst, or organocatalyst), has made it possible to produce many industrial syntheses of enantiopure drugs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>On constate un impact de «l’atropoisomérie», (chiralité de type axiale dû au blocage de la rotation autour d’une liaison simple) sur la découverte des médicaments ou des produits naturels[42, 43].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One can note the impact of "atropisomerism" (axial-type chirality due to blockage of the rotation around a single bond) on the discovery of drugs or natural products [42, 43].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce type d’énantiomères présentent des caractéristiques intéressantes, montrant que la chiralité conformationnelle devrait être traitée avec autant d’intérêt que la chiralité centrée sur l’atome.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This type of enantiomer has advantageous characteristics, showing that conformational chirality should be treated with as much interest as chirality that is centred on the atom.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette année, la catalyse asymétrique est une nouvelle fois mise à l’honneur avec le Prix Nobel 2021 pour récompenser l’organocatalyse. Cet important champ de recherche, qui permet de créer des molécules droites et gauche en respectant les principes de chimie verte, avait déjà fait l’objet du Prix Nobel de chimie 2001[44], via les catalyseurs organométalliques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This year, asymmetric catalysis was once again honoured via the 2021 Nobel Prize recognising organocatalysis. This important field of research, which makes it possible to create right and left molecules while respecting the principles of green chemistry, was already the recipient of the 2001 Nobel Prize in Chemistry [44], through organometallic catalysts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>3. Reconnaître une molécule chirale</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>3. Recognising a chiral molecule</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>De manière simple, on peut dire qu’une molécule est chirale si elle présente au moins un centre d’asymétrie, qui est, le plus souvent, un atome de carbone (noté C^(*)) lié à quatre atomes ou groupes d’atomes différents (Figure3).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In simple terms, it can be said that a molecule is chiral if it has at least one centre of asymmetry, which is, most often, a carbon atom (denoted as C^(*)) bonded to four different atoms or groups of atoms (Figure3).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Une molécule possédant n C^(∗) peut exister au maximum sous 2^(n)isomères stériques que l’on appelle des stéréoisomères, constitués d’énantiomères, de diastéréoisomères et d’isomères de conformation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A molecule having n C^(∗) may exist at most under 2^(n)spatial isomers, called stereoisomers, consisting of enantiomers, diastereomers, and conformational isomers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Seuls les énantiomères sont images miroirs, contiennent des centres chiraux et ne sont pas superposables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Only the enantiomers are mirror images, containing chiral centres and having the characteristic of being non-superimposable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Les diastéréoisomères sont des stéréoisomères qui ne sont pas des images miroirs, leurs propriétés physico-chimiques sont différentes (énergie potentielle, moment dipolaire, point de fusion, d’ébullition, indice de réfraction)[1].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Diastereomers are stereoisomers that are not mirror images of each other. Their physico-chemical properties are different (potential energy, dipole moment, melting point, boiling point, refractive index) [1].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>La nomenclature absolue de Cahn, Ingold et Prelog (CIP)[1] permet de désigner les énantiomères et de les nommer séparément.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The absolute nomenclature of Cahn, Ingold, and Prelog (CIP) [1] makes it possible to designate the enantiomers and to name them separately.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Cet arrangement spatial de la molécule, c’est la configuration absolue, elle repose sur un ensemble de règles de classement des quatre coordinats attachés au centre chiral, selon une séquence spécifique par ordre de priorité applicables à tous types de molécules, sur la base de critères définis.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The spatial arrangement of the molecule, the absolute configuration, depends on a set of classification rules for the four ligands attached to the chiral centre, according to a specific sequence in order of priority that is applicable to all types of molecules, on the basis of defined criteria.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Les quatre substituants a, b, c, d du carbone asymétrique sont classés par ordre de priorité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The four substituents a, b, c, d of asymmetric carbon are classed in order of priority.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>En se plaçant dans l’axe de la liaison carbone — substituant minoritaire, on regarde le sens de rotation de la molécule en suivant l’ordre a &gt; b &gt; d; si la molécule tourne vers la droite, la configuration est R (Rectus), si c’est vers la gauche la configuration est S (Sinister) (Figure4).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By placing oneself in the axis of the carbon — the minority substituent, one observes the direction of rotation of the molecule in the order a &gt; b &gt; d: if the molecule rotates to the right, the configuration is R (Rectus); if it rotates to the left, the configuration is S (Sinister) (Figure4).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Avec des géométries spatiales opposées, ils interagissent différemment avec leur environnement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With opposite spatial geometries, they interact differently with their environment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>La chiralité centrale est l’élément stéréogène le plus fréquent, pourtant d’autres éléments induisent la chiralité moléculaire comme l’axe de chiralité (chiralité axiale), le plan de chiralité (chiralité planaire) ou encore l’hélicité (chiralité hélicoïdale).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Central chirality is the most common stereogenic element, but other elements also induce molecular chirality, such as the chirality axis (axial chirality), the chirality plane (planar chirality), or helicity (helical chirality).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>4. Molécules chirales et activité biologique des huiles essentielles</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>4. Chiral molecules and the biological activity of essential oils</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>Une même espèce de plante peut synthétiser des proportions variables de terpènes chiraux et les raisons de ce phénomène ne sont pas très claires, même si les conséquences de cette chiralité sont très importantes pour tous les organismes vivants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The same species of plant can synthesise variable proportions of chiral terpenes. The reasons for this phenomenon are not very clear, even if the consequences of this chirality are very important for all living organisms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>Les énantiomères d’une molécule chirale ne réagissent pas avec les mêmes récepteurs, eux même chiraux, n’induisant pas nécessairement la même activité biologique, et cette propriété est d’une importance fondamentale[45].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The enantiomers of a chiral molecule do not react with the same receptors, which are themselves chiral, thus not necessarily inducing the same biological activity. This property is of fundamental importance [45].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est un élément déterminant dans le contrôle de la naturalité des huiles essentielles et pour la détection de contrefaçons.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is a decisive factor in controlling the naturalness of essential oils and for the detection of counterfeits.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>En olfaction, par exemple, c’est la liaison de la molécule odorante chirale avec le récepteur chiral qui déclenchera la série d’événements moléculaires qui constituent la transduction du signal sensitif par la cellule sensorielle et in fine la reconnaissance par le cerveau de l’odeur caractéristique[46].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In olfaction, for example, the binding of the chiral odorant molecule with the chiral receptor triggers the series of molecular events that constitute the transduction of the sensory signal by the sensory cell and ultimately the brain's recognition of the characteristic smell [46].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>L’odorat est devenu un axe de recherche central depuis la découverte de la plus grande famille de gènes impliquée dans la production de protéines capables de détecter des odeurs qui a été récompensée par le Prix Nobel 2004 de Médecine[47].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Smell has become a central focus of research since the discovery of the largest family of genes involved in the production of proteins that are capable of detecting odours, which was awarded the 2004 Nobel Prize in Medicine [47].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces travaux montrent que chaque récepteur olfactif est activé spécifiquement par les caractéristiques structurales des molécules.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These studies show that each olfactory receptor is specifically activated by the structural characteristics of the molecules.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, le seuil de détection olfactif peut différer fortement entre deux énantiomères d’une même molécule[48].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, the olfactory detection threshold may differ strongly between two enantiomers of the same molecule [48].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est le cas par exemple, du limonène, de la carvone ou du linalol présents en abondance dans les huiles essentielles d’agrumes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is the case, for example, of limonene, carvone, and linalool, present in abundance in citrus essential oils.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Leurs énantiomères ont des fragrances très différentes, le (S)-(−)-Limonène a l’odeur de citron alors que le (R)-(+)-Limonène sent l’orange; l’énantiomère (R)-(−)-Carvone sent la menthe verte alors que le (S)-(+)-Carvone sent le cumin.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Their enantiomers have very different fragrances: (S)-(−)-Limonene has a lemon smell while (R)-(+)-Limonene smells of orange; the (R)-(−)-Carvone enantiomer smells like spearmint while the (S)-(+)-Carvone smells like cumin.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour les énantiomères du linalol, le (S)-(+)-Linalol a une odeur douce, florale, aux fragrances d’agrumes et le (R)-(−)-Linalol a un arôme boisé rappelant la lavande (Figure5).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As for the enantiomers of linalool, (S)-(+)-Linalool has a sweet, floral, citrus fragrance, and (R)-(−)-Linalool has a woody aroma reminiscent of lavender (Figure5).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, très fréquemment, le nez humain ne détecte pas de la même façon deux énantiomères.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, very frequently, the human nose does not detect two enantiomers in the same way.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour la forme (R)-Linalol, sa une note fleurie puissante est perçue dès la concentration de 0,8 ppb,² alors qu’il faut atteindre 7,4 ppb pour apprécier la senteur beaucoup moins intense de la forme (S)-Linalol[49].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For the (R)-Linalool form, its powerful floral note is perceived at a concentration of 0.8 ppb ^(,2), while it takes up to 7.4 ppb to appreciate the much less intense smell of (S)-Linalool [49].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>Avec trois carbones asymétriques (3C^(∗)) dans la molécule, la famille des menthes compte 8 stéréoisomères (2³).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With three asymmetric carbons (3C ^(∗)) in the molecule, the mint family has eight stereoisomers (2³).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans la nature, le plus courant est l’énantiomère (1R,2S,5R)-(−)-Menthol,[(1R,2S,5R)-5-méthyl-2-(propan-2-yl)cyclohexanol], c’est le seul qui possède les propriétés anti-inflammatoires, antivirales, anesthésiques, pesticides et désinfectantes;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In nature, the most common enantiomer is(1R,2S,5R)-(−)-Menthol,[(1R,2S,5R)-5-methyl-2-(propan-2-yl)cyclohexanol]. It is the only one that possesses anti-inflammatory, antiviral, anaesthetic, pesticide, and disinfectant properties.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>il appartient à lafamilledes monoterpénols et se trouve naturellement dans l’HE de menthe poivrée (Mentha piperita).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It belongs to the family of monoterpenols and is naturally found in the essential oil of peppermint (Mentha piperita).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>Le menthol japonais contient également un léger pourcentage de (+)-Néomenthol [(1S,2S,5R)-2-Isopropyl-5-methylcyclohexanol] (Figure6).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Japanese menthol also contains a small percentage of (+)-Neomenthol[(1S,2S ,5R)-2-Isopropyl-5-methylcyclohexanol] (Figure6).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>L’analyse chirale d’échantillons d’huile essentielle montrant la présence de l’énantiomère (1S,2SR,5S)-(+)-Menthol est une preuve d’adultération.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Chiral analysis of essential oil samples showing the presence of the (1S,2SR,5S)-(+)-Menthol enantiomer is evidence of adulteration.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>L’exemple de l’HE de rose, l’une des plus précieuses de l’aromathérapie, très appréciée par les parfumeurs, est particulièrement intéressant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The example of rose essential oil, one of the most precious in aromatherapy and much appreciated by perfumers, is particularly interesting.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Parmi ses principales composants on trouve le citronellol [3,7-dimethyloct-6-en-1-ol] et les oxydes de rose [4-methyl-2-(2-methylprop-1-enyl)oxane] qui ont des profils énantiomériques très spécifiques[50].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Among its main components are citronellol [3,7-dimethyloct-6-en-1-ol] and rose oxides [4-methyl-2-(2-methylprop-1-enyl)oxane] which have highly specific enantiomeric profiles [50].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>L’oxyde de rose, molécule star de nombreux parfums prestigieux, possède plusieurs diastéréoisomères dus à une isomérie endo/exo (position du substituant sur/sous le cycle) et à la présence de deux carbones asymétriques (Figure7).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Rose oxide, the star molecule of many prestigious perfumes, has several diastereomers due to an endo/exo isomerism (position of the substituent on/under the ring) and the presence of two asymmetric carbons (Figure7).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>L’autre composant principal de l’huile de rose qui mérite d’être cité est le citronellol, présent à plus de 50% sous sa forme énantiomérique (S)-(−)-Citronellol.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The other main component of rose oil that merits mentioning is citronellol, with more than 50% present in its enantiomeric form (S)-(−)-Citronellol.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Son odeur florale de rose rappelle celle de l’huile de géranium alors que l’arôme du (R)-(+)-Citronellol est semblable à l’huile de citronnelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Its floral rose smell is reminiscent of geranium oil, while the aroma of (R)-(+)-Citronellol is similar to citronella (lemongrass) oil.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Leurs seuils olfactifs sont proches entre 40–50 ppb pour l’énantiomère (S) et 50ppb pour le (R)[51, 52].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Their olfactory thresholds are close to 40–50 ppb for the (S) enantiomer and 50 ppb for the (R) enantiomer [51, 52].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans l’HE de rose de Bulgarie et de Turquie, les énantiomères lévogyres (2S,4R)-(−)-cis-oxyde de rose et (2R,4R)-(−)-trans-oxyde de rose sont retrouvés avec une pureté énantiomérique élevée (&gt;99,5%)[53, 54], la présence des énantiomères (+)-cis et (+)-trans-oxydes de rose permet une identification «non naturelle»de cette huile essentielle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the rose essential oil of Bulgaria and Turkey, the levorotatory enantiomers (2S,4R)-(−)-cis-rose oxide and (2R,4R)-(−)-trans-rose oxide have a high enantiomeric purity (&gt;99.5%) [53, 54]. The presence of the (+)-cis-rose oxide and (+)-trans-rose oxide enantiomers allows for the identification of this essential oil as “unnatural“.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>A l’inverse, les deux énantiomères dextrogyres (2R,4S)-(+)-cis-oxyde de rose et (2S,4S)-(+)-trans-oxyde de rose sont détectés avec une haute pureté énantiomérique dans l’HE de Mélisse officinale (Melissa officinalis) et s’avèrent être des indicateurs d’authenticité de cette huile essentielle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Conversely, the two dextrorotatory enantiomers (2R,4S)-(+)-cis-oxide of rose and (2S,4S)-(+)-trans-rose oxide are detected with high enantiomeric purity in the essential oil of Melissa officinalis (lemon balm). They are indicators of the authenticity of this essential oil.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Les arômes et les seuils olfactifs de ces quatre énantiomères[55, 56, 57] sont intéressants, ils sont décrits comme suit:</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The aromas and olfactory thresholds of these four enantiomers[55, 56, 57] are notable. They are described as follows:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>- (4R,2S)-(−)-cis-oxyde de rose possède une note vert floral nette, légère, rose verte, diffusive, forte, il a été décrit comme puissant fruité, son seuil olfactif de 0,5 ppb est très faible, c’est le seul énantiomère responsable du parfum typique de la rose.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- (4R,2S)-(−)-cis-rose oxide has a clear floral green note, light, green pink, diffusive, strong. It has been described as powerful fruity. Its olfactory threshold of 0.5 ppb is very low. It is the only enantiomer responsible for the typical rose fragrance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>- (4S,2R)-(+)-cis-oxyde de rose, avec une note florale, vert foin, terreux, lourd et un seuil olfactif de 50ppb est inodore.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- (4S,2R)-(+)-cis-rose oxide, with a floral note, green hay, earthy, heavy. With a 50 ppb olfactory threshold, it is odourless.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>- (4R,2R)-(−)-trans-oxyde de rose a une note verte, mentholée, fruitée, son seuil olfactif est de 160ppb.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- (4R,2R)-(−)-trans-rose oxide has a green, minty, fruity note. Its olfactory threshold is 160 ppb.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>- (4S,2S)-(+)-trans-oxyde de rose, avec une note verte végétale, florale fruitée, rose aux herbes, agrumes (écorce amère), son seuil olfactif est de 80ppb.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- (4S,2S)-(+)-trans-rose oxide with a green vegetal note, fruitily floral, rose with herbs, citrus fruits (bitter bark). Its olfactory threshold is 80 ppb.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>La perception des arômes est un mécanisme très complexe qui intègre de nombreux facteurs tels que la structure moléculaire, la concentration, le milieu de libération, le mécanisme d’olfaction mais également les différences génétiques dans l’expression des récepteurs d’odeur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The perception of aromas is a highly complex mechanism that incorporates many factors, such as molecular structure, concentration, the release medium, and the olfaction mechanism, but also genetic differences in the expression of odour receptors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>La bibliographie scientifique est très riche sur la relation structure-odeur des molécules chirales[58, 59, 60, 61, 62, 63, 64, 65, 66, 67] et sur l’impact de la configuration absolue sur le seuil d’olfaction des énantiomères.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The scientific bibliography is very rich for the structure-odour relationship of chiral molecules [58, 59, 60, 61, 62, 63, 64, 65, 66, 67] and on the impact of the absolute configuration on the olfaction threshold of the enantiomers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>L’exemple le plus marquant est celui de la Nootkatone[68, 69], une cétone sesquiterpénoïde dont l’énantiomère dextrogyre (4R,4aS,6R)-(+)-Nootkatone possède une forte odeur de pamplemousse et un seuil olfactif de 800ppb, tandis que l’énantiomère lévogyre (4S,4aR,6S)-(−)-Nootkatone a une senteur fortement fraîche, verte, boisée, épicée et un seuil olfactif de 600000 ppb soit 750 fois supérieur!</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The most striking example is that of nootkatone[68, 69], a sesquiterpenoid ketone whose dextrorotatory enantiomer (4R,4aS,6R)-(+) -Nootkatone has a strong grapefruit smell and an olfactory threshold of 800 ppb, whereas the levorotatory enantiomer (4S,4aR,6S)-(−)-Nootkatone has a strongly fresh, green, woody, and spicy scent, and an olfactory threshold of 600,000 ppb, 750 times higher!</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>La composition énantiomérique des molécules d’une HE constitue sa carte d’identité, elle permet de préciser son origine et son activité biologique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The enantiomeric composition of the molecules of an essential oil constitutes its identity card. It makes it possible to specify its origin and its biological activity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>La majorité des molécules composant les HE existent sous la forme d’un énantiomère majoritaire ou parfois en mélange des deux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The majority of molecules that constitute essential oils consist of one predominant enantiomer, or sometimes a mixture of the two.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour une même espèce de plante, il existe dans la nature une forte variabilité énantiomérique de la concentration des constituants des HE due à divers facteurs tels que l’environnement, les facteurs génétiques, les conditions de croissance, de récolte et les techniques de distillation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For the same species of plant, there is a high natural variability in the enantiomeric concentration of essential oils' constituents. This is due to various factors, such as environmental, genetic factors, growth conditions, harvesting, and distillation techniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>La chiralité est un aspect fondamental de la nature, même si le phénomène est complexe et parfois difficile à identifier[70].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Chirality is a fundamental aspect of nature, even if the phenomenon is complex and sometimes difficult to identify [70].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>5. Structure des principales molécules chirales composant les huiles essentielles</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>5. Structure of the main chiral molecules constituting essential oils</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>La classification des HE par famille biochimique constitue un préalable pour comprendre leurs propriétés thérapeutiques et les utiliser au mieux en toute sécurité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The classification of essential oils by biochemical family is a prerequisite for understanding their therapeutic properties and making the best use of them safely.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>La chimie seule ne suffit pas pour expliquer l’ensemble des propriétés, ni toutes les toxicités potentielles des HE.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Chemistry alone is not enough to explain all of the properties, nor all of the potential toxicities of essential oils.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>L’activité biochimique des molécules principales étudiées individuellement contribue à clarifier l’action thérapeutique notamment selon les énantiomères majoritaires pour lesquelles la reconnaissance avec un substrat se fait sur la base du modèle clef-serrure.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Studying the biochemical activity of the main molecules individually helps to clarify the therapeutic effect, in particular according to the main enantiomers, for which recognition with a substrate is conducted based on the lock-and-key model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Cependant, l’action de l’HE recueillie dans son intégralité après une distillation douce, complète, non fractionnée, s’avère souvent plus importante et peut différer de celle des principes actifs pris isolément.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the effect of the essential oil collected in its entirety after a gentle, complete, and unfractionated distillation often turns out to be more significant, and may differ from that of the active ingredients taken in isolation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Les principales molécules chimiques composant les HE sont des hydrocarbures terpéniques et sesquiterpéniques, alcools et esters, aldéhydes, cétones, phénols, éthers et peroxydes; la majorité de ces molécules sont chirales et existent sous forme d’énantiomères ou de diastéréoisomères. Nous présenterons les formes énantiomères de quelques molécules chirales importantes composant les hydrocarbures terpéniques et sesquiterpéniques les plus fréquemment retrouvées dans les HE (Tableau1).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main chemical molecules that make up essential oils are terpene and sesquiterpene hydrocarbons, alcohols and esters, aldehydes, ketones, phenols, ethers and peroxides; the majority of these molecules are chiral and exist in the form of enantiomers or diastereomers. We will present the enantiomeric forms of some significant chiral molecules that compose the terpene hydrocarbons and sesquiterpenes most frequently found in essential oils (Table1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="FR">
+                <seg>^(a)Nombre de C^(∗): carbone asymétrique dans la molécule.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>^(a)Number of C^(∗): asymmetric carbon in the molecule.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="FR">
+                <seg>La stéréochimie des énantiomères de l’ensemble des structures moléculaires du Tableau1 est détaillées dans la Figure8.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The stereochemistry of the enantiomers of all of the molecular structures in Table1 is detailed in Figure8.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour les molécules ayant un seul carbone asymétrique, les deux formes énantiomères sont représentées avec: 𝛼-terpinéol, terpinène-4-ol, carvone, acétate de lavandulyle, acétate de linalyle, germacrène D.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For molecules with a single asymmetric carbon, the two enantiomer forms are represented by: 𝛼-terpineol, terpinene-4-ol, carvone, lavandulyl acetate, linalyl acetate, and germacrene D.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas des molécules avec deux carbones asymétriques; quatre stéréo-isomères sont possibles, parfois moins, en cas de pont dans la molécule.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the case of molecules with two asymmetric carbons, four stereoisomers are possible, sometimes less in the case of a bridge in the molecule.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="FR">
+                <seg>En effet, la géométrie d’un des atomes de carbone fixe celle de l’autre carbone et on aura uniquement deux énantiomères, c’est le cas pour: camphre, camphène, 𝛼-pinène, 𝛽-pinène, sabinène.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The geometry of one of the carbon atoms fixes that of the other carbon, thus there will be only two enantiomers. Such is the case for camphor, camphene, 𝛼-pinene, 𝛽-pinene, and sabinene.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>En plus de leur carbone asymétrique, le Nérolidol et le 𝛽-caryophyllène ont une double liaison (oléfines) avec des conformations Z∕E (cis/trans), éléments stéréogènes non chirotopes; cela donne quatre stéréoisomères possibles pour (Z,E)-Nérolidol, dont deux paires d’énantiomères [(E)-(R), (E)-(S)] et [(Z)-(R), (Z)-(S)]. Dans le cas du 𝛽-caryophyllène, seuls les deux énantiomères de la forme E (ou trans) sont présentés (Figure8).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition to their asymmetric carbon, nerolidol and 𝛽-caryophyllene have a double bond (olefins) with Z∕ E conformations (cis/trans), non-chirotopic stereogenic elements; this allows for four possible stereoisomers for (Z,E)-nerolidol, including two pairs of enantiomers: [(E)-(R), (E)-(S)] and [(Z)-(R), (Z)-(S)]. In the case of 𝛽-caryophyllene, only the two E (or trans) form enantiomers are shown (Figure8).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>6. Profil énantiomérique de quelques huiles essentielles</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>6. Enantiomeric profiles of selected essential oils</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="FR">
+                <seg>Même si la composition des HE est largement déterminée par la génétique, les facteurs climatiques, géographiques et saisonniers[71], il est admis qu’à partir d’une source spécifique et dans les mêmes conditions de traitement la composition énantiomérique des molécules principales d’une HE subira peu de variations, permettant de vérifier son authenticité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Even if the composition of the essential oil is largely determined by genetics and by climatic, geographical, and seasonal factors[71], it is accepted that from a specific source and under the same conditions, the enantiomeric composition of the main molecules of an essential oil will undergo little variation, making it possible to verify its authenticity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="FR">
+                <seg>Certaines espèces produisent les molécules sous forme d’un énantiomère unique alors que d’autres produisent les deux, soit en mélanges enrichis en l’un ou l’autre des énantiomères ou encore sous forme racémique (les deux énantiomères 50/50).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Some species produce the molecules as a single enantiomer while others produce both, either in mixtures enriched with one or other of the enantiomers or in racemic form (with the two enantiomers present equally 50/50).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>Le Tableau2 réunit le profil énantiomérique de quelques huiles essentielles choisies qui incluent les molécules chirales présentées précédemment comme: l’arbre à thé, la menthe verte, la lavande fine, la lavande aspic, le lavandin, le néroli, le petit grain bigarade, l’orange amère, l’orange douce, le citron, et la sauge sclarée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Table2 brings together the enantiomeric profile of some selected essential oils, including the chiral molecules previously presented: tea tree, spearmint, fine lavender, aspic lavender, lavandin, neroli, petitgrain bigarade, bitter orange, sweet orange, lemon, and clary sage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>La distribution énantiomérique de chaque HE est limitée aux 3 ou 4 molécules chirales principales dont l’abondance est &gt;1% et aux molécules ayant un intérêt d’authentification (&lt;1%); les molécules non chirales seront également citées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The enantiomeric distribution of each essential oil is limited to the three or four main chiral molecules whose presence is &gt;1% and molecules pertinent for authentication (&lt;1%); non-chiral molecules will also be mentioned.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>Les structures des énantiomères des divers hydrocarbures terpéniques et sesquiterpéniques concernés sont représentées en Figure8 et l’impact de la chiralité des molécules sur l’activité biologique de l’HE est signalée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The structures of the enantiomers of the various terpene and sesquiterpene hydrocarbons concerned are represented in Figure8, and the impact of the molecules' chirality on the biological activity of the essential oil is reported.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>L’analyse du Tableau2 montre que toutes les huiles essentielles décrites sont majoritairement composées de molécules chirales avec des profils énantiomériques constitués d’un énantiomère très majoritaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Analysis of Table2 shows that all the essential oils described are predominantly composed of chiral molecules, with enantiomeric profiles characterised by a highly predominant enantiomer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <prop type="paragraph">43</prop>
+            <tuv xml:lang="FR">
+                <seg>L’huile essentielle d’arbre à thé (Melaleuca alternifolia) est la première dont le profil énantiomérique est désormais imposé par la réglementation, elle a longtemps fait l’objet d’adultérations récurrentes, soit par mélange avec d’autre HE (pin, eucalyptus globulus, camphre …) ou par l’ajout de composants adultérants[72]. Cette huile essentielle peut présenter jusqu’à sept chimiotypes différents[73, 74], pourtant, c’est le type terpinène-4-ol auquel on attribue les meilleures qualités thérapeutiques, qui a fait l’objet d’études sur sa sécurité[75, 76].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Tea tree essential oil (Melaleuca alternifolia) is the first one whose enantiomeric profile is now imposed by regulations. It has long been the subject of recurrent adulteration, either by mixing with other essential oils (pine, eucalyptus globulus, camphor, etc.) or via the addition of adulterating components[72]. This essential oil can have up to seven different chemotypes[73, 74], the best therapeutic qualities are attributed to the terpinen-4-ol type, which has been subjected to safety studies[75, 76].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="FR">
+                <seg>La version de la norme ISO 4730:2004 pour ce chimiotype établissait un minimum de 35% Terpinène-4-ol, 14% de 𝛾-Terpinène et 6% de 𝛼-Terpinène[77].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The ISO 4730:2004 standard for this chemotype established a minimum of 35% terpinen-4-ol, 14% of 𝛾-terpinen, and 6% of 𝛼-terpinen [77].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="FR">
+                <seg>La nouvelle version, l’ISO 4730:2017, est plus stricte, elle intègre une analyse énantiomérique chirale par chromatrographie gazeuse avec des rapports d’énantiomères de (+)-Terpinène-4-ol/(−)-Terpinène-4-ol qui varient entre 63,3-69,8/36,7-30,2 et pour le (+)-𝛼-Terpinéol/(−)-𝛼-Terpinéol entre 74,2–79,5/25,8–20,5 dans l’authentique HE d’arbre à thé[78].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The new version, ISO 4730:2017, is more strict; it integrates a chiral enantiomeric analysis by gas chromatography with enantiomeric ratios of (+)-Terpinen-4-ol/(−)-Terpinen-4-ol which vary between 63.3-69.8/36.7-30.2 and ratios of (+)-𝛼-Terpineol/(−)-𝛼-Terpineol which vary between 74.2-79.5/25.8-20.5 in authentic tea tree essential oil [78].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce profil énantiomérique permet de détecter les adultérations les plus fréquentes de cette HE (Tableau2, entrée 1).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This enantiomeric profile makes it possible to detect the most frequent adulterations of this essential oil (Table2, entry 1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans l’HE de menthe verte (Mentha spicatavar.crispa), l’énantiomère (R)-(−)-Carvone, présent à plus de 87%, a un effet antispasmodique plus puissant que la (S)-(+)-Carvone.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In spearmint essential oil (Mentha spicatavar.crispa), the (R)-(−)-Carvone enantiomer, present at more than 87%, has a stronger antispasmodic effect than (S)-(+)-Carvone.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces effets, décrits à la fois pour la (R)-(−)-Carvone et l’huile de menthe verte sont expliqués comme un mode d’action de type CCB[79] (Inhibiteurs des canaux calciques).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These effects, described for both (R)-(−)-Carvone and spearmint oil, are explained as a (CCB)-type mode of action (Calcium channel blockers)[79].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="FR">
+                <seg>Le (S)-(−)-Limonène y est présent à 98,8% et les données pharmacologiques indiquent que cet énantiomère pourrait également être utilisé en aromathérapie comme agent anxiolytique[80].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>(S)-(−)-Limonene is present at 98.8%, and pharmacological data indicate that this enantiomer could also be used in aromatherapy as an anti-anxiety agent[80].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="FR">
+                <seg>^(a)Pourcentage des composants majoritaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>^(a)Percentage of major components.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="FR">
+                <seg>^(b)Pourcentage en énantiomère majoritaire (pour HE d’arbre à thé ce sont les marges en énantiomère majoritaire exigées par la norme ISO 4730:2017).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>^(b)Percentage of majority enantiomer (for tea tree essential oil, these are the majority enantiomer margins required by the ISO 4730:2017 standard).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="FR">
+                <seg>np: non précisé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>ns: not specified.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <prop type="paragraph">47</prop>
+            <tuv xml:lang="FR">
+                <seg>La distribution énantiomérique des HE de lavande est intéressante, les énantiomères (R)-(−)-Acétate de linalyle et (R)-(−)-Linalol prédominent dans la lavande fine et le lavandin hybride avec un excès énantiomérique &gt;95%. Pour la lavande aspic, le (R)-(−)-Linalol est également majoritaire à 95% avec un énantiomère (R,R)-(+)-Camphre présent à 95%.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The enantiomeric distribution of lavender essential oil is interesting; the (R)-(−)-Linalyl acetate and (R)-(−)-Linalool enantiomers predominate in fine lavender and hybrid lavandin with an enantiomeric excess of &gt;95%. For aspic lavender, (R)-(−)-Linalool is also predominant at 95%, with an (R, R)-(+)-Camphor enantiomer present at 95%.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <prop type="paragraph">47</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces marqueurs moléculaires peuvent être utilisés pour l’authenticité de ces huiles essentielles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These molecular markers can be used to establish the authenticity of these essential oils.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <prop type="paragraph">47</prop>
+            <tuv xml:lang="FR">
+                <seg>Le lavandin abrial issu de l’hybridation naturelle entre la lavande vraie et la lavande aspic possède une composition équilibrée, avec des profils énantiomériques également élevés, analogues à ceux de la lavande vraie (esters) et de la lavande aspic (camphre).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Abrial lavandin, derived from the natural hybridisation between true lavender and aspic lavender, has a balanced composition with equally high enantiomeric profiles, analogous to those of true lavender (esters) and aspic lavender (camphor).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <prop type="paragraph">48</prop>
+            <tuv xml:lang="FR">
+                <seg>Le genre Citrus est parmi les huiles essentielles naturelles les plus populaires et représente la plus grande partie des arômes naturels commerciaux et parfums[97] et les profils énantiomériques des citrus présentés dans le Tableau2 sont intéressants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The Citrus genus is among the most popular natural essential oils and accounts for the majority of commercial natural aromas and fragrances[97]; the citrus enantiomeric profiles presented in Table2 are noteworthy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <prop type="paragraph">49</prop>
+            <tuv xml:lang="FR">
+                <seg>Les huiles de néroli (Citrus aurantium amara leaf) et de petit grain bigarade (Citrus aurantium ssp. aurantium (fe))[88, 89] sont produites à partir de parties morphologiques différentes du Bigaradier, l’huile de néroli est issue de la distillation des fleurs fraîches et l’huile de petit grain de la distillation des feuilles et brindilles. On constate pourtant des différences dans la distribution des énantiomères des molécules d’𝛼-pinène et du limonène entre ces deux HE et également avec l’huile essentielle d’orange amère (Citrus aurantium Lvar. amara), issue du zeste du fruit du même arbre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Neroli (Citrus aurantium amara leaf) and petitgrain bigarade (Citrus aurantium ssp. aurantium (fe))oils[88, 89] are produced from different morphological parts of the bigarade orange (bitter orange) tree: neroli oil comes from the distillation of fresh flowers, and petitgrain oil comes from the distillation of leaves and twigs. However, one also can note differences in the distribution of the enantiomers of α-pinene and limonene molecules between these two essential oils, and also bitter orange essential oil (Citrus aurantium Lvar. amara), from the zest of the fruit of the same tree.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <prop type="paragraph">50</prop>
+            <tuv xml:lang="FR">
+                <seg>L’huile de néroli est riche en (S,S)-(−)-𝛼-Pinène alors que dans l’huile de petit grain c’est le (R,R)-(+)-𝛼-Pinène qui domine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Neroli oil is rich in (S,S)-(−)-𝛼-Pinene, whereas in petitgrain oil (R,R)-(+)-𝛼-Pinene dominates.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <prop type="paragraph">50</prop>
+            <tuv xml:lang="FR">
+                <seg>Le (R)-(+)-Limonène est l’énantiomère dominant dans les deux huiles même si dans l’huile de néroli on trouve le (S)-(−)-Limonène en plus faible quantité que dans l’huile de petit grain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>(R)-(+)-Limonene is the dominant enantiomer in both oils, even though in neroli oil (S)-(−)-Limonene is found in a smaller amount than in petitgrain oil.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <prop type="paragraph">50</prop>
+            <tuv xml:lang="FR">
+                <seg>Le (S)-(−)-𝛽-Pinène est retrouvé dans les deux huiles avec une pureté énantiomérique élevée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>(S)-(−)-𝛽-Pinene is found in both oils with high enantiomeric purity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <prop type="paragraph">51</prop>
+            <tuv xml:lang="FR">
+                <seg>L’énantiomère (S)-(+)-(E)-Nérolidol est présent entre 2–6% avec une haute pureté énantiomérique (&gt;98%) dans l’HE de néroli;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The (S)-(+)-(E)-Nerolidol enantiomer is present between 2–6% with high enantiomeric purity (&gt;98%) in neroli essential oil.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <prop type="paragraph">51</prop>
+            <tuv xml:lang="FR">
+                <seg>c’est un composé sensoriel important qui impacte les propriétés olfactives (doux, léger, fleuri) et un indicateur d’authenticité de cette HE[88, 89].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is an important sensory compound that impacts olfactory properties (soft, light, flowery) and acts as an indicator of the authenticity of this essential oil[88, 89].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <prop type="paragraph">51</prop>
+            <tuv xml:lang="FR">
+                <seg>Les propriétés olfactives de ses autres stéréoisomères ont des caractéristiques différentes qui sont répertoriées[98];</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The olfactory properties of its other stereoisomers have differing characteristics[98], listed here:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <prop type="paragraph">51</prop>
+            <tuv xml:lang="FR">
+                <seg>le R-(−)-(E)-Nérolidol a une odeur agréable, boisée, chaude, de moisi; pour le conformère (S)-(+)-(Z)-Nérolidol c’est une odeur d’écorce ligneuse, verte et fraîche; et celle du (R)-(−)-(Z)-Nérolidol est intense, fleurie, douce et fraîche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>R- (−)-(E)-Nerolidol has a pleasant, woody, warm, musty smell; the conformer (S)-(+)-(Z)-Nerolidol has an odour of woody bark, green and fresh; and that of (R)-(−)-(Z)-Nerolidol is intense, flowery, soft, and fresh.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <prop type="paragraph">52</prop>
+            <tuv xml:lang="FR">
+                <seg>L’huile essentielle d’orange amère (Citrus aurantium Lvar. amara), issue du zeste du fruit du bigaradier présente un excès énantiomérique très élevé pour trois composants, le (R)-(+)-Limonène (&gt;99%), (R,R)-(+)-𝛼-pinène avec ee &gt; 92%, (S)-(−)-𝛽-Pinène avec ee &gt; 97%. On retrouve le (R)-(+)-Limonène comme énantiomère unique (&gt;99%), dans l’orange douce (Citrus sinensis), le citron (Citrus limon) ainsi que dans le Neroli (&gt;95%).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The essential oil of bitter orange (Citrus aurantium Lvar. amara), from the zest of the fruit of the bigaradier, presents a very high enantiomeric excess (ee) for three components: (R)-(+)-Limonene (&gt;99%), (R,R)-(+)-𝛼-Pinene with ee &gt;92%, and (S)-(−)-𝛽-Pinenewith ee &gt;97%. We find (R)-(+)-Limonene as a single enantiomer (&gt;99%) in sweet orange (Citrus sinensis) and lemon (Citrus limon), as well as in Neroli (&gt;95%).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <prop type="paragraph">53</prop>
+            <tuv xml:lang="FR">
+                <seg>Le linalol y est présent (&lt;1%) sous des formes d’énantiomères différents dans les HE d’orange douce et d’orange amère.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Linalool is present (&lt;1%) in the form of different enantiomers in the sweet orange and bitter orange essential oils.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <prop type="paragraph">53</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans l’orange douce, le (S)-(+)-Linalol est présent à plus de 82% alors que dans l’orange amère c’est le (R)-(−)-Linalol à plus 89%.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In sweet orange, (S)-(+)-Linalool is present at more than 82%, whereas in the bitter orange it is the (R)-(−)-Linalool that is more than 89%.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <prop type="paragraph">53</prop>
+            <tuv xml:lang="FR">
+                <seg>Le ratio des énantiomères du linalol permet de déterminer des fraudes par l’ajout d’HE d’orange douce, moins précieuse, à l’HE d’orange amère plus chère[91].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The ratio of the enantiomers of linalool makes it possible to determine which are frauds that have added sweet orange essential oil, less precious, to the more expensive bitter orange essential oil[91].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="FR">
+                <seg>De nombreux travaux attestent des propriétés relaxantes des HE d’agrumes pour leur richesse en (R)-(+)-Limonène.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Numerous studies attest to the relaxant properties of citrus essential oils due to their richness in (R)-(+)-Limonene.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="FR">
+                <seg>L’orange amère (Citrus aurantium Lvar. amara) soulage l’anxiété chez les patients après administration ou inhalation[99, 100].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Bitter orange (Citrus aurantium Lvar. amara) relieves anxiety in patients after administration or inhalation[99, 100].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="FR">
+                <seg>L’inhalation d’huile d’orange douce (Citrus sinensis) réduit le niveau d’anxiété et améliore l’humeur des malades chez les dentistes[101].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Inhalation of sweet orange oil (Citrus sinensis) reduces anxiety levels and improves the mood of patients while at the dentist's[101].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="FR">
+                <seg>L’étude de l’activité biologique du limonène sur le système nerveux autonome humain montre que l’inhalation du (R)-(+)-Limonène a un effet sur l’élévation de la tension artérielle systolique, la vigilance et la nervosité, alors que le (S)-(−)-Limonène n’augmente que la tension artérielle systolique et n’a pas aucun effet sur d’autres paramètres psychologiques[102].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The study of the biological activity of limonene on the autonomic nervous system shows that the inhalation of (R)-(+)-Limonene has an effect on systolic blood pressure levels, alertness, and nervousness, whereas (S)-(−)-Limonene only increases systolic blood pressure and has no effect on other psychological parameters[102].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <prop type="paragraph">55</prop>
+            <tuv xml:lang="FR">
+                <seg>L’HE de sauge sclarée, composée majoritairement des énantiomères (R)-(−)-Acétate de linalyle (&gt;99%) et (R)-(−)-linalol (&gt;72%) apporte notamment un effet spasmolytique et sédatif[103] qui pourrait être un agent thérapeutique pour les patients souffrant de dépression.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Clary sage essential oil, composed mainly of (R)-(−)-linalyl acetate (&gt;99%) and (R)-(−)-linalol (&gt;72%) enantiomers, provides in particular a spasmolytic and sedative effect[103], which could be a therapeutic agent for patients suffering from depression.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <prop type="paragraph">56</prop>
+            <tuv xml:lang="FR">
+                <seg>On peut constater que le profil énantiomérique des huiles essentielles est lié à une activité pharmacologique spécifique différenciée selon les énantiomères, qui conforte l’importance de l’identification du profil énantiomérique des HE.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One can note that the enantiomeric profile of an essential oil is linked to a specific pharmacological activity that is differentiated according to enantiomers, which reinforces the importance of the identification of the enantiomeric profile of the essential oils.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <prop type="paragraph">57</prop>
+            <tuv xml:lang="FR">
+                <seg>7. Analyse chirale et identification des huiles essentielles</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>7. Chiral analysis and identification of essential oils</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="FR">
+                <seg>L’identification et la quantification des composants chimiques des HE sont fondamentales et les difficultés d’analyses déjà complexes sont significativement accrues en présence d’une discrimination chirale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The identification and quantification of the chemical components of essential oils is fundamental, and the difficulties of already complex analyses are significantly increased in the presence of chiral discrimination.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="FR">
+                <seg>Les énantiomères possèdent des propriétés physico-chimiques identiques, mêmes masses moléculaires, mêmes solubilités, mêmes points de fusion et d’ébullition, ce qui les rend difficiles à séparer et à identifier.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Enantiomers have identical physicochemical properties, the same molecular masses, the same solubilities, and the same melting and boiling points, which makes them difficult to separate and identify.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="FR">
+                <seg>Les énantiomères se différencient par leur comportement vis-à-vis de la lumière polarisée, l’un la dévie vers la droite et l’autre vers la gauche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Enantiomers differ in their behaviour towards polarised light: one deflects it to the right and the other to the left.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="FR">
+                <seg>D’ailleurs, le pouvoir rotatoire global de l’HE a longtemps été le seul élément, de la fiche technique, permettant une évaluation de la qualité chirale globale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, the overall rotatory power of the essential oil has long been the only element of the technical information guide, allowing for an assessment of the overall chiral quality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour garantir l’authenticité des lots d’huile essentielle et en déterminer les propriétés thérapeutiques, deux catégories de contrôles sont exigés:</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To guarantee the authenticity of essential oil batches and determine their therapeutic properties, two categories of quality control are required:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <prop type="paragraph">60</prop>
+            <tuv xml:lang="FR">
+                <seg>(1) Caractéristiques physico-chimiques incluant les contrôles organoleptiques et les constantes physiques:</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>(1) Physico-chemical characteristics, including organoleptic quality controls and physical constants:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <prop type="paragraph">61</prop>
+            <tuv xml:lang="FR">
+                <seg>a. Contrôles organoleptiques : à partir d’une aromathèque, constituée d’huiles essentielles certifiées, on contrôle la couleur, l’odeur et dans certains cas, la saveur des huiles essentielles analysées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>a. Organoleptic controls: from an aroma library consisting of certified essential oils, we control the colour, smell, and (in some cases) flavour of the essential oils analysed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <prop type="paragraph">61</prop>
+            <tuv xml:lang="FR">
+                <seg>b. Étude des constantes physiques à température donnée : densité, solubilité dans l’alcool, points de fusion et d’ébullition, points de congélation, pouvoir rotatoire sur la lumière polarisée, indice de réfraction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>b. Study of physical constants at a given temperature: density, solubility in alcohol, melting and boiling points, freezing points, rotational power on polarised light, refractive index.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <prop type="paragraph">62</prop>
+            <tuv xml:lang="FR">
+                <seg>(2) Méthodes d’identification chromatographiques, chiroptiques et spectroscopiques:</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>(2) Chromatographic, chiroptical, and spectroscopic identification methods:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <prop type="paragraph">63</prop>
+            <tuv xml:lang="FR">
+                <seg>Les différentes approches combinant la séparation chromatographique et des méthodes permettent d’évaluer les excès énantiomériques des molécules chirales pour parvenir à une identification précise[104, 105, 106, 107] comme:</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Different approaches combining chromatographic separation and methods that allow for evaluating the enantiomeric excesses of chiral molecules in order to obtain a precise identification[104, 105, 106, 107], such as:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <prop type="paragraph">64</prop>
+            <tuv xml:lang="FR">
+                <seg>- Techniques chiroptiques: Polarimétrie, dispersion optique rotatoire, dichroïsme circulaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Chiroptical techniques: Polarimetry, optical rotatory dispersion, circular dichroism.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <prop type="paragraph">64</prop>
+            <tuv xml:lang="FR">
+                <seg>- Analyses isotopiques: permettent de tracer l’origine par la mesure de la distribution isotopique dans les composés naturels (rapports ¹³C/¹⁴C , teneur en ¹⁴C ou ¹⁸O/¹⁷O).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Isotopic analysis: allows for tracing origin by measuring the isotopic distribution in the compounds (proportion of ¹³C/¹⁴C, amount of ¹⁴C or ¹⁸O/¹⁷O).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <prop type="paragraph">64</prop>
+            <tuv xml:lang="FR">
+                <seg>- Sectroscopies Infra-rouge et la Résonance Magnétique Nucléaire à haute résolution (400–700MHz et multinoyaux) avec agents de déplacement chiraux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Infrared Spectroscopy and Nuclear Magnetic Resonance at high resolutions (400–700MHz and multinuclear) with chiral displacement agents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <prop type="paragraph">64</prop>
+            <tuv xml:lang="FR">
+                <seg>- Diffraction de rayons X.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- X-Ray Diffraction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <prop type="paragraph">65</prop>
+            <tuv xml:lang="FR">
+                <seg>7.1. Analyse chromatographique chirale</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>7.1. Chiral chromatographic analysis</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <prop type="paragraph">66</prop>
+            <tuv xml:lang="FR">
+                <seg>L’analyse chromatographique chirale met à profit le très haut pouvoir de résolution de la chromatographie pour la séparation des énantiomères en utilisant des phases stationnaires chirales (PSC) synthétiques très performantes utilisées en phase gazeuse, liquide ou supercritique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Chiral chromatographic analysis takes advantage of the very high resolving power of chromatography in order to separate the enantiomers using high-performance synthetic chiral stationary phases (CSPs), used in the gaseous, liquid, or supercritical phase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <prop type="paragraph">66</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est la méthode la plus utilisée pour évaluer l’excès énantiomérique des principales molécules des HE.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is the most widely used method to assess the enantiomeric excess of the major molecules of the essential oils.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <prop type="paragraph">66</prop>
+            <tuv xml:lang="FR">
+                <seg>Le mécanisme de reconnaissance sur une phase stationnaire chirale est basé sur les différentes forces d’interactions des énantiomères avec un sélecteur chiral fixé sur une phase stationnaire permettant la formation de complexes diastéréoisomères élués à des vitesses différentes en impliquant souvent plusieurs techniques complémentaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The recognition mechanism on a chiral stationary phase is based on the different forces of interaction of the enantiomers, with a chiral selector fixed on a stationary phase allowing the formation of diastereomeric complexes eluted at different rates, often implicating several complementary techniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <prop type="paragraph">67</prop>
+            <tuv xml:lang="FR">
+                <seg>La difficulté de séparer des mélanges aussi complexes que les HE a mené les chimistes à utiliser des approches mixtes combinant plusieurs méthodes pour optimiser l’identification.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The difficulty of separating complex mixtures such as essential oils has led chemists to use mixed approaches, combining several methods to optimise identification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <prop type="paragraph">67</prop>
+            <tuv xml:lang="FR">
+                <seg>La chromatographie liquide haute performance (CLHP) chirale avec détection polarimétrique permet de distinguer facilement les deux énantiomères en mesurant leurs pics positifs et négatifs et de les quantifier précisément[108].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Chiral High Performance Liquid Chromatography (HPLC) with polarimetric detection makes it possible to easily distinguish the two enantiomers by measuring their positive peaks, and to quantify them precisely[108].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <prop type="paragraph">67</prop>
+            <tuv xml:lang="FR">
+                <seg>Une autre méthode, la chromatographie en phase gazeuse multidimensionnelle énantiosélective[109, 110, 111] (énantio-MDGC) s’est imposée, elle est privilégiée pour un large éventail d’applications dont la séparation d’énantiomères extrêmement chevauchants et pour les analyses des composés à l’état de trace comme dans le cas des huiles essentielles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Another method, enantioselective multidimensional gas chromatography (enantio-MDGC)[109, 110, 111], has become established. Its use is favoured for a wide range of applications, including the separation of highly overlapping enantiomers and for the analysis of trace compounds, as in the case of essential oils.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <prop type="paragraph">68</prop>
+            <tuv xml:lang="FR">
+                <seg>D’autres types de couplages sont utilisés, avec l’objectif d’améliorer l’analyse en associant soit deux techniques chromatographiques, soit en couplant deux techniques spectroscopiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Other types of couplings are used, with the objective of improving the analysis by combining either two chromatographic techniques or by coupling two spectroscopic techniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <prop type="paragraph">68</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces dernières années, le couplage d’une technique chromatographique d’individualisation des composés avec une technique spectroscopique d’identification s’est développé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In recent years, the coupling of a chromatographic technique individualising compounds with a spectroscopic identification technique has been developed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <prop type="paragraph">68</prop>
+            <tuv xml:lang="FR">
+                <seg>Les plus courants sont les couplages de :</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The most common couplings are:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <prop type="paragraph">69</prop>
+            <tuv xml:lang="FR">
+                <seg>- chromatographie en phase gazeuse- spectrométrie de masse (CPG-SM),</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- gas chromatography-mass spectrometry (GC-MS),</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <prop type="paragraph">69</prop>
+            <tuv xml:lang="FR">
+                <seg>- chromatographie liquide haute performance-spectrométrie de masse (CLHP-SM), - chromatographie liquide haute performance-spectrométrie de masse (CLHP-RMN ¹H).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- high performance liquid chromatography-mass spectrometry (HPLC-MS), - high performance liquid chromatography-proton nuclear magnetic resonance (HPLC-¹H NMR).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <prop type="paragraph">70</prop>
+            <tuv xml:lang="FR">
+                <seg>L’identification des constituants est possible par comparaison des données spectrales avec celles de produits de référence contenus dans des bibliothèques de spectres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The identification of the constituents is possible by comparison of the spectral data with those of reference products contained in spectral libraries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <prop type="paragraph">71</prop>
+            <tuv xml:lang="FR">
+                <seg>8. Règlementation et contrôle de qualité des HE</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>8. Regulation and quality control of essential oils</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <prop type="paragraph">72</prop>
+            <tuv xml:lang="FR">
+                <seg>La réglementation[112] des HE fait l’objet d’une surveillance constante avec des réévaluations périodiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The regulation[112] of essential oils is constantly monitored with periodic reassessments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <prop type="paragraph">72</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour le législateur, cela implique une surveillance attentive de leur composition en raison des risques potentiels qu’elles génèrent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For the legislator, this implies careful monitoring of their composition because of the potential risks they generate.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <prop type="paragraph">72</prop>
+            <tuv xml:lang="FR">
+                <seg>Les HE sont soumises à plusieurs régimes juridiques selon leur utilisation: cosmétique, complément alimentaire, médicament ou biocide; c’est leur destination qui détermine la réglementation applicable et les exigences auxquelles le produit doit répondre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Essential oils are subject to several legal regimes according to their use: cosmetic, food supplement, medicine, or biocide; their intended purpose determines the applicable regulations and the requirements that the product must meet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <prop type="paragraph">73</prop>
+            <tuv xml:lang="FR">
+                <seg>La commercialisation des HE est encadrée par plusieurs normes; elles ne garantissent pas leur pureté absolue mais un niveau minimal de qualité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The marketing of essential oils is supervised by several standards which do not guarantee their absolute purity, but rather a minimal level of quality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <prop type="paragraph">73</prop>
+            <tuv xml:lang="FR">
+                <seg>On peut citer les normes, AFNOR (Association Française de Normalisation), ISO (International Organization for Standarzization) et CEN (Comité Européen de Normalisation).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The standards include: AFNOR (Association Française de Normalisation), ISO (International Organization for Standardization) and CEN (European Committee for Standardization).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <prop type="paragraph">73</prop>
+            <tuv xml:lang="FR">
+                <seg>L’huile essentielle est définie par la norme NF EN ISO 9235 (2014) qui précise les matières premières aromatiques naturelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Essential oils are defined by the standard NF EN ISO 9235 (2014), which specifies natural aromatic raw materials.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <prop type="paragraph">73</prop>
+            <tuv xml:lang="FR">
+                <seg>Les normes sont très strictes, elles doivent offrir une traçabilité depuis la récolte de la plante, du mode d’extraction jusqu’au contrôle de qualité du produit final.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The standards are very strict; they require traceability starting from the harvest of the plant, from the method of extraction to the quality control of the final product.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <prop type="paragraph">73</prop>
+            <tuv xml:lang="FR">
+                <seg>La forte variabilité de la composition chimique des huiles essentielles (facteurs physiologiques, environnementaux) est l’une des principales limites à leur qualité, leur sécurité et leur efficacité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The high variability in the chemical composition of essential oils (due to physiological and environmental factors) is one of the main limitations to their quality, safety, and effectiveness.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <prop type="paragraph">74</prop>
+            <tuv xml:lang="FR">
+                <seg>Le profil énantiomérique des HE est encadré par la norme internationale ISO 22972:2004 (fr) qui spécifie une méthode générale d’analyse en phase gazeuse sur colonne capillaire chirale et détermine l’excès énantiomérique des composés chiraux qui la composent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The enantiomeric profile of the essential oils is governed by the international standard ISO 22972:2004 (en) which specifies a general method of gas phase analysis on a chiral capillary column and determines the enantiomeric excess of the chiral compounds of which it is composed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="195">
+            <prop type="paragraph">74</prop>
+            <tuv xml:lang="FR">
+                <seg>Récemment, la norme ISO 4730:2017 qui spécifiait les caractéristiques de l’HE d’arbre à thé, type terpinéne-4 ol, a fait l’objet d’un amendement (ISO 4730:2017 et addendum ISO 4730/A1:2018)[113], cette restriction précise le profil énantiomérique exigé pour le terpinèn-4-ol (correspondant à 67–71% de (S)(+)-Terpinèn-4-ol et 29–33% de (R)-(−)-Terpinén-4-ol).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recently, the ISO 4730:2017 standard that specified the characteristics of tea tree essential oil, type terpinen-4 ol, has been the subject of an amendment (ISO 4730:2017 and addendum ISO 4730/A1:2018)[113]. This restriction specifies the enantiomeric profile required for terpinen-4-ol (corresponding to 67–71% of (S)(+)-Terpinen-4-ol and 29–33% of (R)-(−)-Terpinen-4-ol).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="196">
+            <prop type="paragraph">74</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces nouvelles caractéristiques visent à garantir son authenticité, sa qualité pour une utilisation en toute sécurité, elles attestent de l’importance de l’ajout du critère de distribution énantiomérique pour l’HE d’arbre à thé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These new features aim to guarantee its authenticity and its quality for safe use. They attest to the importance of the addition of the enantiomeric distribution criterion for tea tree essential oil.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="197">
+            <prop type="paragraph">75</prop>
+            <tuv xml:lang="FR">
+                <seg>On peut confirmer l’absence d’adultération d’une HE grâce à son profil énantiomérique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We can confirm the absence of adulteration of an essential oil thanks to its enantiomeric profile.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="198">
+            <prop type="paragraph">75</prop>
+            <tuv xml:lang="FR">
+                <seg>0n citera deux exemples, le cas de la mélisse (Melissa officinalis) et celui de la bergamote (Citrus aurantium).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We can cite two examples, the cases of lemon balm (Melissa officinalis) and bergamot (Citrus aurantium).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="199">
+            <prop type="paragraph">75</prop>
+            <tuv xml:lang="FR">
+                <seg>L’HE de mélisse (Melissa officinalis) est l’une des plantes médicinales officinales les plus chères, en raison du faible rendement en huile.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Lemon balm (Melissa officinalis) is one of the most expensive medicinal plants due to low oil yield.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="200">
+            <prop type="paragraph">75</prop>
+            <tuv xml:lang="FR">
+                <seg>La majorité de l’huile de mélisse vendue sur le marché est adultérée mais il est possible de s’assurer de la composition de cette huile par le profil énantiomérique du citronellal qui la compose.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Most of the lemon balm oil sold on the market is adulterated, but it is possible to ensure the composition of this oil using the enantiomeric profile of the citronellal that composes it.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="201">
+            <prop type="paragraph">75</prop>
+            <tuv xml:lang="FR">
+                <seg>L’huile de mélisse pure contient majoritairement l’énantiomère (R)-(+)-Citronellal (98%) par rapport au (S)-(−)-Citronellal avec uniquement 2%.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Pure lemon balm oil predominantly contains the enantiomer (R)-(+)-Citronellal (98%), compared to (S)-(−)-Citronellal which is present at only 2%.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="202">
+            <prop type="paragraph">75</prop>
+            <tuv xml:lang="FR">
+                <seg>Une adultération souvent utilisée est l’ajout d’huiles essentielles riches en citronellal, moins coûteuses, comme huile Cymbopogon winterianus (citronnelle) ou d’Eucalyptus citriodora, la proportion des énantiomères peut changer jusque [(+)/(−)] à [90% /10%].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An adulteration often used is the addition of less expensive essential oils that are rich in citronellal, such as Cymbopogon winterianus (lemongrass) oil or Eucalyptus citriodora. The proportion of enantiomers can change up to [(+)/(−)] [90% /10%].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="203">
+            <prop type="paragraph">75</prop>
+            <tuv xml:lang="FR">
+                <seg>L’HE de bergamote (Citrus aurantium) possède une composition très particulière, l’huile doit contenir uniquement les énantiomères (R)-(−)-Linalool et (R)-(−)-Acétate de linalyle, présence qui se vérifie facilement par chromatographie chirale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Bergamot (Citrus aurantium) has a very distinct composition: the oil must contain only the (R)-(−)-Linalool and (R)-(−)-Linalyl acetate enantiomers. Their presence is easily verified by chiral chromatography.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="204">
+            <prop type="paragraph">76</prop>
+            <tuv xml:lang="FR">
+                <seg>9. Le chimiotype Linalol, une molécule incontournable des HE</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>9. The Linalool chemotype, an essential molecule in essential oils</seg>
+            </tuv>
+        </tu>
+        <tu tuid="205">
+            <prop type="paragraph">77</prop>
+            <tuv xml:lang="FR">
+                <seg>Le linalol (3, 7-dimethylocta-1, 6-dien-3-ol) est un alcool tertiaire, ce monoterpénolest présent naturellement dans la quasi totalité des huiles essentielles, en concentration plus ou moins importante.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Linalool (3,7-dimethylocta-1,6-dien-3-ol) is a tertiary alcohol. This monoterpenol is naturally present in almost all essential oils, in greater or lesser concentration.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="206">
+            <prop type="paragraph">77</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est composé de deux molécules énantiomères présentes, en différentes proportions, dans les plantes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is composed of two enantiomeric molecules present in different proportions in the plants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="207">
+            <prop type="paragraph">77</prop>
+            <tuv xml:lang="FR">
+                <seg>Les énantiomères présentés dans la Figure5 possèdent des senteurs différentes, le (S)-(+)-Linalol (coriandrol) possède un parfum doux, très différent de celui de l’arôme boisé du (R)-(−)-Linalol[116] et leurs seuils de détection olfactifs sont différents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The enantiomers presented in Figure5 have different scents: (S)-(+)-Linalool(coriandrol) has a sweet fragrance, very different from that of the woody aroma of (R)-(−)-Linalool[116]. Their olfactory detection thresholds are also different.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="208">
+            <prop type="paragraph">77</prop>
+            <tuv xml:lang="FR">
+                <seg>La rotation spécifique des énantiomères rapportée dans la littérature[117] est [𝛼]_(D) = −20 et + 19.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The specific rotation of the enantiomers reported in the literature [117] is [𝛼]_(D) = −20 and + 19.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="209">
+            <prop type="paragraph">78</prop>
+            <tuv xml:lang="FR">
+                <seg>Le linalol est répertorié comme un agent déodorant/parfumant, son origine est synthétique dans de nombreux produits cosmétiques (60–90%)[118].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Linalool is listed as a deodorant/perfume agent. Its origin is synthetic in many cosmetic products (60–90%)[118].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="210">
+            <prop type="paragraph">78</prop>
+            <tuv xml:lang="FR">
+                <seg>Ilfait partie des allergènes les plus ciblés de notre environnement[119, 120], pourtant, les résultats de recherches montrent que c’est la forme oxydée de cette molécule qui provoquerait des allergies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is one of the most targeted allergens in our environment [119, 120], yet research results show that it is the oxidised form of the molecule that causes allergies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="211">
+            <prop type="paragraph">78</prop>
+            <tuv xml:lang="FR">
+                <seg>Le linalol est considéré comme un pré-haptènes dans la mesure où son oxydation par l’oxygène de l’air conduit à formation d’hydroperoxydes[121], qui potentialisent son effet allergisant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Linalool is considered to be a pre-hapten in that its oxidation by oxygen from the air leads to the formation of hydroperoxides [121], which potentiate its allergenic effect.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="212">
+            <prop type="paragraph">79</prop>
+            <tuv xml:lang="FR">
+                <seg>Le linalol est le composant majeur d’un grand nombre d’huiles essentielles en proportion très variable et avec des profils énantiomériques très spécifiques pour chacune d’elle. L’énantiomère (R)-(−)-Linalol est le plus courant dans la nature mais la distribution énantiomérique des formes (R)-(−) et (S)-(+)-Linalol et celles de l’acétate de linalyle sont des indicateurs utiles de contrôle de la pureté de plusieurs huiles essentielles comme pour les HE de lavande, de bergamote ou de coriandre[122].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Linalool is the major component in a great number of essential oils in highly variable proportions and with unique enantiomeric profiles for each of them. The (R)-(−)-Linalool enantiomer is the most common in nature, but the enantiomeric distribution of the (R)-(−) and (S)-(+)-Linalool forms and those of linalyl acetate are useful indicators for monitoring the purity of several essential oils, including lavender, bergamot, and coriander[122].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="213">
+            <prop type="paragraph">80</prop>
+            <tuv xml:lang="FR">
+                <seg>Une étude sur la distribution énantiomérique des énantiomères du linalol de plusieurs huiles essentielles a été menée[123, 124], les principaux résultats sont réunis dans le Tableau3.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A study on the enantiomeric distribution of linalool enantiomers in several essential oils was conducted [123, 124]; the main results are collated in Table3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="214">
+            <prop type="paragraph">80</prop>
+            <tuv xml:lang="FR">
+                <seg>On constate que l’énantiomère (R)-(−)-Linalol est très majoritaire dans des HE comme le Bois de Ho, Cinnamomum camphora CT linalol (&gt;98%), le Bois de rose[125] Aniba rosaeodora (&gt;90%), le Basilic[126] (Ocimum basilicum) (&gt;99%), la Menthe Citronnée Mentha citrata (&gt;86%) ou la Lavandevraie (Lavandula officinalis) (&gt;97%).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One can note that the (R)-(−)-Linalool enantiomer is very predominant in essential oils such as ho wood, (Cinnamomum camphora CT linalool) (&gt;98%), pau-rosa[125] (Aniba rosaeodora) (&gt;90%), basil[126] (Ocimum basilicum) (&gt;99%), lemon mint (Mentha citrata) (&gt;86%), or truelavender (Lavandula officinalis) (&gt;97%).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="215">
+            <prop type="paragraph">80</prop>
+            <tuv xml:lang="FR">
+                <seg>L’énantiomère (S)-(+)-Linalol est retrouvé avec des excès énantiomériques très important dans les HE d’Orange douce Citrus sinensis (&gt;94%), de Coriandre Coriandrum sativum (&gt;88%), de Gingembre Rosko Zingiber roseum racines/rhizomes (90.9%), le Faux Poivre (P. du Timut) Zanthoxylum armatum (&gt;92%), la Cannelle indienne Cinnamomum tamala (&gt;99%).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The (S)-(+)-Linalool enantiomer is found with very high enantiomeric excesses in the essental oils of, sweet orange (Citrus sinensis) (&gt;94%), coriander (Coriandrum sativum) (&gt;88%), ginger rosko (Zingiber roseum) roots/rhizomes (90.9%), false/rattan (Timut) pepper (Zanthoxylum armatum) (&gt;92%), and Indian bay leaf (Cinnamomum tamala) (&gt;99%).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="216">
+            <prop type="paragraph">80</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas de l’HE de coriandre, si le profil énantiomérique présente moins de 81% de (S)-(+)-Linalol, l’HE doit être considérée comme frelatée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the case of coriander essential oil, if the enantiomeric profile has less than 81% of (S)-(+)-Linalool, essential oil should be considered adulterated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="217">
+            <prop type="paragraph">80</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour d’autres HE les deux énantiomères sont présents dans des rapports égaux ou presque, comme l’origan, la rose, le géranium, le lemongrass, le citron et le pamplemousse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For other essential oils, both enantiomers are present in nearly equal ratios, such as oregano, rose, geranium, lemongrass, lemon, and grapefruit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="218">
+            <prop type="paragraph">81</prop>
+            <tuv xml:lang="FR">
+                <seg>9.1. Activité biologique des énantiomères du linalol</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>9.1. Biological activity of linalool enantiomers</seg>
+            </tuv>
+        </tu>
+        <tu tuid="219">
+            <prop type="paragraph">82</prop>
+            <tuv xml:lang="FR">
+                <seg>L’influence de la chiralité de la molécule de linalol sur ses propriétés biologiques a fait l’objet de nombreux travaux[127]. Son utilisation dans les systèmes d’administration de médicaments a été étudiée[128] en 2018 et confirme que ses multiples bénéfices [anti-inflammatoire, antimicrobien, antihyperlipidémique, antidépresseur, neuroprotecteur et propriétés anticancéreuses], dépendent principalement du type d’énantiomère, étant donné que le (R)-(−)-Linalol et le (S)-(+)-Linalol sont chimiquement distincts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The influence of the chirality of the linalool molecule on its biological properties has been the subject of numerous studies[127]. Its use in drug delivery systems has been studied in 2018[128] and confirms that its multiple benefits (anti-inflammatory, antimicrobial, antihyperlipidemic, antidepressant, neuroprotective and anticancer properties) depend mainly on the type of enantiomer, given that (R)-(−)-Linalool and (S)-(+)-Linalool are chemically distinct.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="220">
+            <prop type="paragraph">83</prop>
+            <tuv xml:lang="FR">
+                <seg>L’inhalation de linalol à un groupe d’humains exposés à un stress provoque des réponses physiologiques selon l’énantiomère de la molécule: le (S)-(+)-Linalol agit comme un agent activateur de la pression artérielle et de la fréquence cardiaque alors que le (R)-(−)-Linalol a un effet contraire sur la fréquence cardiaque.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Inhalation of linalool by a group of humans exposed to a stressor caused physiological responses that depended on the enantiomer of the molecule: (S)-(+)-Linalool acts as an activator agent on arterial pressure and heart rate, while (R)-(−)-Linalool has an opposite effect on heart rate.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="221">
+            <prop type="paragraph">83</prop>
+            <tuv xml:lang="FR">
+                <seg>D’autres résultats considèrent cet énantiomère plutôt comme un agent anti-stress[129, 130].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Other results consider this enantiomer rather as an anti-stress agent[129, 130].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="222">
+            <prop type="paragraph">83</prop>
+            <tuv xml:lang="FR">
+                <seg>L’huile essentielle de lavande composée de plus de 97% de (R)-(−)-Linalol se comporte de la même manière, bien que l’effet de relaxation puisse être également influencé par son arôme caractéristique[131, 132].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Lavender essential oil, composed of more than 97% (R)-(−)-Linalool, behaves in the same way, although the relaxation effect can be also influenced by its characteristic aroma[131, 132].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="223">
+            <prop type="paragraph">83</prop>
+            <tuv xml:lang="FR">
+                <seg>Chez l’homme, l’inhalation d’huile essentielle de lavande, composée de (R)-(−)-Linalool, provoque une sédation, une relaxation, une réduction de l’agressivité[133].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In humans, inhalation of lavender essential oil, composed of (R)-(−)-Linalool, causes sedation, relaxation, and reduced aggressiveness[133].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="224">
+            <prop type="paragraph">83</prop>
+            <tuv xml:lang="FR">
+                <seg>L’étude montre que cet effet est dépendant de la configuration de la molécule, mais aussi des tâches assignées aux sujets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The study shows that this effect is dependent on the configuration of the molecule, but also the tasks assigned to the subjects.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="225">
+            <prop type="paragraph">83</prop>
+            <tuv xml:lang="FR">
+                <seg>L’inhalation de (R)-(−)-Linalol après avoir écouté des sons environnementaux produit un effet sédatif associé à une diminution notable des ondes bêta (ondes cérébrales de 14Hz, correspondant aux activités courantes), tandis qu’après un travail mental, l’inhalation de (R)-(−)-Linalol conduirait plutôt à un état d’agitation et de vigilance ainsi qu’à une augmentation des ondes bêta.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Inhalation of (R)-(−)-Linalool after listening to environmental sounds produces a sedative effect associated with a significant decrease in beta waves (14Hz waves, corresponding to routine activities), while after mental labor, inhalation of (R)-(−)-Linalool led rather to agitation and alertness, as well as an increase in beta waves.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="226">
+            <prop type="paragraph">84</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans un autre essai, le (S)-(+)-Linalol a eu un effet stimulant sur la fréquence cardiaque, tandis que (R)-(−)-Linalol avait un effet de sédation sur la fréquence cardiaque[134].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In another trial, (S)-(+)-Linalool had a stimulating effect on heart rate, whereas (R)-(−)-Linalool had a sedating effect on heart rate[134].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="227">
+            <prop type="paragraph">84</prop>
+            <tuv xml:lang="FR">
+                <seg>Au Brésil, l’HE de bois de rose (Aniba rosaeodora)dont la teneur en (R)-(−)-Linalol est proche de 90%, est utilisée en médecine traditionnelle en tant que sédatif, anticonvulsivant et antidépresseur[135].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In Brazil, the essential oil of rosewood (Aniba rosaeodora), with a (R)-(−)-Linalool content close to 90%, is used in traditional medicine as a sedative, anticonvulsant, and antidepressant[135].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="228">
+            <prop type="paragraph">84</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces vertus apaisantes des HE seraient donc liées à la présence majoritaire de l’énantiomère (R)-(−)-Linalol.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These soothing virtues of essential oils would therefore be linked to the majority presence of the (R)-(−)-Linalool enantiomer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="229">
+            <prop type="paragraph">85</prop>
+            <tuv xml:lang="FR">
+                <seg>Le linalol est une molécule précieuse, à fort potentiel thérapeutique, ses énantiomères constituent des marqueurs dans l’appréciation des saveurs, des parfums mais plus spécialement comme élément de contrôle de l’authenticité des huiles essentielles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These soothing virtues of essential oils would therefore be linked to the majority presence of the (R)-(−)-Linalool enantiomer. Linalool is a valuable molecule, with significant therapeutic potential. Its enantiomers constitute markers in the assessment of flavours and scents, but more especially as an element of authenticity control for essential oils.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="230">
+            <prop type="paragraph">85</prop>
+            <tuv xml:lang="FR">
+                <seg>Le profil énantiomérique ou «l’énantiotype»constitue un critère fiable d’évaluation de l’origine et de la qualité de l’huile essentielle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The enantiomeric profile or "enantiotype" is a reliable criterion for the evaluation of the origin and quality of the essential oil.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="231">
+            <prop type="paragraph">86</prop>
+            <tuv xml:lang="FR">
+                <seg>10. Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>10. Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="232">
+            <prop type="paragraph">87</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans cette mise au point, l’importance de la chiralité moléculaire, son impact sur le profil des huiles essentielles ainsi que sur leur activité biologique ont été présentés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this article, the importance of molecular chirality and its impact on the profile and biological activity of essential oils have been presented.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="233">
+            <prop type="paragraph">87</prop>
+            <tuv xml:lang="FR">
+                <seg>La signature chirale naturelle des HE «énantiotype»s’inscrit dans la continuité du chimiotype et fournit des indications précieuses quant aux énantiomères uniques ou multiples au sein d’une même espèce, qui peut servir d’empreinte digitale lorsque l’authentification est un problème.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The natural chiral signature of an essential oil "the enantiotype" is part of the continuity of the chemotype. It provides valuable guidance when it comes to single or multiple enantiomers within the same species, which can serve as a fingerprint when authenticity is a problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="234">
+            <prop type="paragraph">88</prop>
+            <tuv xml:lang="FR">
+                <seg>L’élucidation systématique de la distribution énantiomérique des huiles essentielles apporte une indication fiable et une meilleure visibilité sur les espèces et leurs origines.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Systematic elucidation of the enantiomeric distribution of essential oils provides a reliable indication and a better visibility of species and their origins.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="235">
+            <prop type="paragraph">88</prop>
+            <tuv xml:lang="FR">
+                <seg>La connaissance de l’abondance relative de la composition énantiomérique correcte des composés principaux devrait intégrer le processus de normalisation des HE.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Knowledge of the relative abundance of the correct enantiomeric composition of the main compounds should be part of the essential oil standardisation process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="236">
+            <prop type="paragraph">88</prop>
+            <tuv xml:lang="FR">
+                <seg>L’énantiotype peut constituer la meilleure option face aux réglementations diverses de plusieurs pays concernant le statut de substances «naturelles»par rapport aux «non naturelles».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The enantiotype may be the best option in the face of the various regulations of several countries concerning the status of "natural" substances compared to "unnatural."</seg>
+            </tuv>
+        </tu>
+        <tu tuid="237">
+            <prop type="paragraph">89</prop>
+            <tuv xml:lang="FR">
+                <seg>La configuration de la molécule est un élément clé du contrôle de son interaction avec son récepteur que l’on peut imaginer comme une clé déverrouillant une serrure et, par conséquent, les réponses biologiques et thérapeutiques qui peuvent en résulter.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The configuration of the molecule is a key element controlling its interaction with its receptor that can be imagined as a key unlocking a lock. It consequently impacts the resulting biological and therapeutical responses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="238">
+            <prop type="paragraph">89</prop>
+            <tuv xml:lang="FR">
+                <seg>L’insertion de cet aspect stéréochimique fondamental à l’aromathérapie scientifique s’impose, pour une utilisation plus sécuritaire des HE et une meilleure compréhension des mécanismes intervenant sur l’évaluation de l’activité pharmacologique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The insertion of this fundamental stereochemical aspect to scientific aromatherapy is necessary, for a safer use of essential oils and a better understanding of the mechanisms involved in the evaluation of pharmacological activity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="239">
+            <prop type="paragraph">90</prop>
+            <tuv xml:lang="FR">
+                <seg>¹Registration, Evaluation, Authorization and restriction of CHemicals (REACH).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>¹Registration, Evaluation, Authorisation and restriction of CHemicals (REACH).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="240">
+            <prop type="paragraph">91</prop>
+            <tuv xml:lang="FR">
+                <seg>²Valeur du seuil de perception olfactive ppb : partie par billion, le billion étant le milliard en volume.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>²Value of the olfactory perception threshold ppb: part per billion, the billion being the billion by volume.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

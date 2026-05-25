@@ -1,0 +1,1263 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-F12-1083. segId begin by 1, tuid = segId</note>
+        <url_en>https://www.isca-archive.org/interspeech_2011/lecouteux11_interspeech.pdf</url_en>
+        <url_fr>https://aclanthology.org/F12-1083.pdf</url_fr>
+        <title_en>Distant speech recognition in a smart home: comparison of several multisource ASRs in realistic conditions</title_en>
+        <title_fr>Reconnaissance automatique de la parole distante dans un habitat intelligent : méthodes multi-sources en conditions réalistes</title_fr>
+        <docid>F12-1083</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Distant Speech Recognition in a Smart Home: Comparison of Several Multisource ASRs in Realistic Conditions</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Reconnaissance automatique de la parole distante dans un habitat intelligent : comparaison de plusieurs ASR multisources en conditions réalistes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>While the smart home domain has become a major field of application of ICT to improve support and wellness of people in loss of autonomy, speech technology in smart home has, comparatively to other ICTs, received limited attention.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le domaine des maisons intelligentes s’est développé dans le but d’améliorer l’assistance aux personnes en perte d’autonomie. La reconnaissance automatique de la parole (RAP) commence à être utilisée, mais reste en retrait par rapport à d’autres technologies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>This paper presents the SWEET-HOME project whose aim is to make it possible for frail persons to control their domestic environment through voice interfaces.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce document présente le projet SWEET-HOME dont le but est de permettre aux personnes fragiles de contrôler leur environnement domestique par l'intermédiaire d'interfaces vocales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>Several state-of-the-art and novel ASR techniques were evaluated on realistic data acquired in a multiroom smart home.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs techniques de SAR de pointe et novatrices ont été évaluées sur des données enregistrées en conditions réalistes dans une maison intelligente à plusieurs pièces.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>This distant speech French corpus was recorded with 21 speakers playing scenarios including activities of daily living in a smart home equipped with several microphones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce corpus de parole en français, enregistré à distance, a été réalisé auprès de 21 locuteurs qui simulent des scénarios intégrant des activités de la vie quotidienne dans un appartement équipé de plusieurs microphones.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>Techniques acting at the decoding stage and using a priori knowledge such as DDA give better results (WER=8.8%, Domotic F-measure=96.8%) than the baseline (WER=18.3%, Domotic F-measure=89.2%) and other approaches.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les techniques opérant au cours du décodage et utilisant des connaissances a priori telles que DDA donnent de meilleurs résultats (WER = 8,8 %, F-mesure Domotic = 96,8 %) que la référence (WER = 18,3 %, F-mesure Domotic = 89,2 %) et d'autres approches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Index Terms : home automation, smart home, distant speech, multisource ASRs, keyword detection</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Termes clés : domotique, maison intelligente, discours à distance, ASR multisources, détection de mots-clés</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>Since the rise of Ubiquitous Computing , new ways of conceiving our home environment appeared.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Depuis l'avènement de l'informatique omniprésente, de nouveaux concepts d'environnement domestique ont fait leur apparition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>One of these, is the development of smart homes which are habitations equipped with a set of sensors, actuators, automated devices and centralised software which control the increasing amount of household appliances ranging from lights, automatic motorised blinds… to Hi-Fi systems, PCs, alarms systems, etc. that fit modern homes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'un d'eux est le développement de maisons intelligentes qui sont des habitations équipées d'un ensemble de capteurs, d'actionneurs, de dispositifs automatisés et de logiciels centralisés qui contrôlent le nombre croissant d'appareils ménagers allant des lumières, des stores motorisés automatiques... aux systèmes Hi-Fi, PC, systèmes d'alarme, etc. qui conviennent aux maisons modernes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>These smart homes represent a promising solution to support the elderly and disabled persons in living in their own home as autonomously as possible.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces maisons intelligentes représentent une solution prometteuse pour soutenir les personnes âgées et handicapées afin qu’elles puissent vivre chez elles aussi autant que possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>Among all the interaction and sensing technologies used in smart home, speech processing technology has a great potential to become one of the major interaction modalities in smart home. Indeed, voice interfaces are much more adapted to disabled people and the ageing population who have difficulties in moving or seeing, than tactile interfaces (e.g., remote control) which require physical and visual interaction [1, 2].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Parmi toutes les technologies d'interaction et de détection utilisées dans la maison intelligente, la technologie de traitement du langage naturel a un grand potentiel pour devenir l'une des principales modalités d'interaction dans la maison intelligente. En effet, les interfaces vocales sont beaucoup plus adaptées aux personnes handicapées et aux personnes âgées qui ont des difficultés de déplacement ou de vision, que les interfaces tactiles (par exemple, la télécommande) qui nécessitent des interactions visuelles et physiques (Vovos et al. , 2005 ; Hamill et al. , 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>Moreover, voice command is particularly suited to distress situations. A person, who cannot move after a fall but being conscious, may have still the possibility to call for assistance while a remote control may be unreachable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus les commandes vocales sont particulièrement adaptées dans les situations de détresse : une personne ne pouvant plus bouger après une chute aura toujours la possibilité d’appeler de l’aide.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>Despite all this, very few smart home projects have seriously considered speech recognition in their design [1, 2].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malgré tout cela, très peu de projets de maison intelligente ont sérieusement envisagé la reconnaissance automatique de la parole dans leur conception [1, 2].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>Part of this can be attributed to the complexity of setting up this technology in a real environment and to important challenges that still need to be overcome [3].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci est en partie dû à la complexité de mettre en place cette technologie dans un environnement réel et aux défis importants qui doivent encore être surmontés [3].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>The SWEET-HOME project has started in 2010 to address some of these challenges.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le projet Sweet-Home[1] a débuté courant 2010 et relève plusieurs défis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>One of the major issues that prevents the development of speech technology in real home setting is the poor performance of Automatic Speech Recognition (ASR) in noisy environment [3]. Indeed, ASR systems have reached correct performances with close talking microphones (e.g. head-set), but the performance decreases significantly as soon as the microphone is moved away from the mouth of the speaker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'un des principaux problèmes qui empêche le développement de la technologie de la parole dans un environnement domestique est la mauvaise performance de la reconnaissance automatique de la parole (RAP) dans un environnement bruité [3]. En effet, les systèmes de RAP obtiennent des performances correctes lorsque les locuteurs sont proches des micros, mais les performances se dégradent rapidement dès qu'ils s'en éloignent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>In realistic conditions, this deterioration is due to a broad variety of effects including reverberation and presence of undetermined background noise such as TV, radio and devices [4].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En conditions réelles, cette dégradation est due à une grande variété d'effets, y compris la réverbération et la présence de bruits de fond indéterminés tels que la télévision, la radio et les appareils [4].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>All these problems, related to the so called ‘distant speech’ context, should be taken into account in the home context [5].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous ces problèmes liés au contexte dit de « discours à distance » doivent être pris en compte dans le contexte d’une habitation [5].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>While, user linguistic preferences, dialogues and age dependant voice interfaces have been studied during this decade [1, 2, 6], distant speech in smart home received attention very recently within the speech processing community [7].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Alors que les préférences linguistiques et les interfaces vocales en fonction de l’âge ont été étudiées ces dernières décennies (Vovos et al. , 2005 ; Hamill et al. , 2009 ; Vipperla et al. , 2009), la parole distante dans les maisons intelligentes commence tout juste à être abordée dans la communauté (Barker et al. , 2011).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>This paper presents results of state-of-the-art and novel ASR techniques evaluated on realistic data acquired in a multiroom smart home.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article présente des résultats d'état de l'art et de nouvelles techniques utilisant la RAP sur des données enregistrées en conditions réalistes dans une maison intelligente à plusieurs pièces.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>Before presenting our experimental framework (Section 3), the proposed techniques are described in Section 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avant de présenter notre cadre expérimental (section 3), les techniques proposées sont décrites dans la section 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>The experiments and results are then presented in Section 4. This paper concludes with brief remarks about the results and future work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les expériences et les résultats sont ensuite présentés dans la section 4. Cette étude se termine par de brèves remarques sur les résultats et les travaux futurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>2. SWEET-HOME project and corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Le projet Sweet-home et son corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>The SWEET-HOME project (sweet-home.imag.fr) aims at designing a new smart home system based on audio technology focusing on three main aspects: to provide assistance via natural man-machine interaction (voice and tactile command), to ease social e-inclusion and to provide security reassurance by detecting situations of distress.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le projet SWEET-HOME (sweet-home.imag.fr) vise à concevoir un nouveau système de maison intelligente basé sur la technologie audio, en se concentrant sur trois aspects principaux : fournir une assistance en utilisant une interaction homme-machine naturelle (commandes vocales et tactiles), faciliter l'inclusion sociale et assurer la sécurité en détectant les situations de détresse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>If these aims are achieved, then the person will be able to pilot, from anywhere in the house, their environment at any time in the most natural way possible.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si ces objectifs sont atteints, la personne sera alors en mesure de piloter son environnement à tout instant depuis n'importe quel lieu de sa maison, et ce de la manière la plus naturelle possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>The targeted smart environments in which speech recognition must be performed thus include multi-room homes with one or more microphones per room set near the ceiling.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les environnements intelligents ciblés dans lesquels la reconnaissance vocale doit être effectuée comprennent donc les maisons à pièces multiples avec un ou plusieurs microphones par pièce placés près du plafond.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>This places the project in a distant-speech context where microphones may be far apart from each other and may thus record similar or very different sources.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette configuration place le projet dans un contexte de parole distante où les microphones peuvent être éloignés les uns des autres et enregistrer ainsi des sources similaires ou très différentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>The most close projects seem to have focused mainly on one-room microphone array [1] or one or unspecified number of microphones [2, 6].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les projets les plus proches semblent s'être focalisés principalement sur un microphone à l'intérieur d'une pièce (Vovos et al. , 2005) ou un nombre de micros non spécifié (Hamill et al. , 2009; Vipperla et al. , 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>To achieve the project goals, the DOMUS smart home depicted in Figure 1 was adapted to acquire a realistic corpus and to test the developed techniques.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour atteindre les objectifs du projet, le domicile intelligent DOMUS décrit sur la figure 1 a été adapté afin d'acquérir un corpus réaliste et de tester les techniques développées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>This smart home was set up by the Multicom team of the Laboratory of Informatics of Grenoble, partner of the project.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet habitat intelligent a été mis en place par l'équipe Multicom du Laboratoire d'Informatique de Grenoble, partenaire du projet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>It is a thirty square meters suite flat including a bathroom, a kitchen, a bedroom and a study, all equipped with sensors and effectors such as infra-red presence detectors, contact sensors, video cameras (used only for annotation purpose), etc.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il s'agit d'un appartement de 30 mètres carrés comprenant une salle de bains, une cuisine, une chambre et un bureau, tous équipés de capteurs et d'effets tels que des détecteurs de présence infrarouge, des capteurs de contact, des caméras (utilisées uniquement à des fins d'annotation), etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>In addition, seven microphones were set in the ceiling.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, sept microphones ont été placés dans les plafonds (Figure 1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: Position of the 7 microphones in the DOMUS Home</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1: Position des 7 microphones dans la DOMUS Home</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>An experiment was conducted to acquire a representative speech corpus composed of utterances of domotic order, distress call and casual sentence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une expérience a été menée afin d'acquérir un corpus parlé représentatif composé d'énoncés d'ordre domotique, d'appels de détresse et de phrases de la vie courante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>This corpus is called the SWEET-HOME speech corpus .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce corpus s'appelle le corpus de discours SWEET-HOME .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>21 persons (including 7 women) participated to a 2-phase experiment to record, among other data, speech corpus in a daily living context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>21 personnes dont 7 femmes ont participé à une expérience en deux phases pour enregistrer, entre autres données, un corpus de parole dans un contexte de vie quotidienne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>The average age of the participants was 38 . 5 ± 13 years (22-63, min-max).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’âge moyen des participants est de 38,5 ± 13 ans (22-63 ans, min-max).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>To ensure that the audio data acquired would be as close as possible to real daily living sounds, the participants were asked to perform several daily living activities in the smart home. A visit, before the experiment, was organized to make sure that the participants will find all the needed items to perform the activities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d'assurer que les données audio enregistrées soient aussi proches que possible des sons de la vie quotidienne, les participants ont été invités à effectuer plusieurs activités de la vie quotidienne dans la maison intelligente. Une visite a été organisée avant l'expérience afin de s'assurer que les participants trouveraient tous les objets nécessaires à l'accomplissement des activités.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>No instruction was given to any participant about either how they should speak or in which direction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Aucune instruction n'a été donnée aux participants sur la manière de parler ou de s'orienter.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>Consequently, no participant emitted sentences directing their voice to a particular microphone.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il en résulte que les participants n’ont pas émis de phrases en direction d’un micro particulier.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>The distance between the speaker and the closest microphone is about 2 meters.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La distance la plus courte entre un micro et le locuteur est d’environ deux mètres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>Sound data were recorded in real-time thanks to a dedicated PC embedding an 8-channel input audio card [3].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les données sonores ont été enregistrées en temps réel grâce à un PC dédié intégrant une carte son d'entrée 8 voies [3].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>The first phase ( Phase 1 ) consisted in following a scenario of activities without condition on the time spent and the manner of achieving them (having a breakfast, simulate a shower, get some sleep, clean up the flat using the vacuum, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première phase (P1) a consisté à suivre un scénario d'activités sans contrainte de temps et de manière libre (prendre un petit déjeuner ou une douche, faire une sieste, passer l'aspirateur...).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>During this first phase, participants uttered 40 predefined casual sentences on the phone (e.g., “Allo” ( Hello ), “J’ai eu du mal à dormir” ( I slept badly )) but were also free to utter any sentence they wanted (some did speak to themselves aloud).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au cours de cette phase, les participants ont prononcé 40 phrases prédéfinies de la vie courante (ex : allô, j’ai eu du mal à dormir ), mais ils étaient également libres de prononcer n'importe quelle phrase qu'ils voulaient (certains parlaient à haute voix).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>The second phase ( Phase 2 ) consisted in reading aloud a list of 44 sentences whose 9 were distress sentences (e.g., “ A[`] l’aide”( help ), “Appelez un docteur” ( call a doctor )) and 3 were domotic orders (e.g., “Allumez la lumière” ( turn on the light )).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La deuxième phase (Phase 2) consistait à lire à haute voix une liste de 44 phrases dont 9 étaient des phrases de détresse (ex : « A[`] l’aide » (aidez-moi), « Appelez un docteur » (appelez un docteur)) et 3 des ordres domotiques (ex : « Allumez la lumière » (allumez la lumière)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>In this paper, experiments are performed without device noise (TV, radio, vacuum, ..).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, les expériences sont réalisées sans bruit de l'appareil (TV, radio, aspirateur, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>Finally, the French SWEET-HOME speech corpus is made of 862 sentences (38 minutes 46s per channel in total) for Phase 1 , and 917 sentences (40 minutes 27s per channel in total) for Phase 2 all from 21 speakers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, le corpus de discours SWEET-HOME français comporte 862 phrases (38mn46s par canal, le même enregistrement étant fait sur plusieurs canaux) pour la Phase 1 et 917 phrases (40mn27s par canal) pour la Phase 2, toutes issues de 21 locuteurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>Each sentence is available for each channel and has been humanly annotated on the best Signal-to-Noise Ratio (SNR) channel.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque phrase est disponible pour chaque canal et a été annotée manuellement sur le canal ayant le meilleur rapport signal sur bruit (SNR).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>The average SNR for the considered sentences of the best SNR channel is 20.3 dB (SNR is typically around 55 db in studio record).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le SNR moyen pour les phrases considérées du meilleur canal SNR est de 20,3 dB (le SNR est généralement d'environ 55 dB en studio).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>It must be clear that the data from the 7 microphones was the only data source used in this study.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il doit être clair que les données des 7 microphones étaient la seule source de données utilisée dans cette étude.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>3. Proposed approaches for robust ASR</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Approches proposées pour un SRAS robuste</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>To detect domotic commands in the SWEET-HOME context, we propose a three-stage approach.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour détecter les commandes domotiques dans le contexte de Sweet-Home, nous proposons une approche en trois étapes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>The first one detects audio activity and classifies it as speech or other sound, the second one extracts the utterances using an ASR system and the last one recognizes a vocal command or a distress situation from the decoded utterances.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première consiste en la détection des activités audio et leur classification : parole ou bruit. La seconde extrait les phrases des sons de type parole en utilisant un SRAP. Enfin la dernière étape reconnaît les commandes vocales ou des situations de détresse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>This paper describes the two last stages, for the first stage the reader is referred to [4].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article décrit les deux dernières étapes. La première est quant à elle décrite dans (Vacher et al. , 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>To address the issues of the SWEET-HOME context (noise, distant-speech) and to benefit from it (multiple microphones which are continuously recording) we propose to test the impact of some state-of-the-art and novel techniques that fuse the streams of information at three independent levels of the speech processing: acoustic signal enhancement , decoding enhance- ment , and ASRs output combination .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour aborder les problèmes liés au contexte SWEET-HOME (bruits, parole à distance) tout en bénéficiant des conditions d’enregistrement (plusieurs micros enregistrant en continu), nous proposons de tester l’impact de techniques de pointe qui permettent de fusionner des flux d’information à différents niveaux du traitement automatique de la parole : amélioration du signal acoustique, amélioration de la décodage de la parole et de la combinaison des sorties du SRAP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>The remaining of this section presents the implemented techniques for robust ASR and the chosen method for vocal order recognition.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La suite de cette section présente les différentes techniques mises en œuvre pour obtenir un SRAP robuste et la méthode choisie pour la reconnaissance vocale de commande.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>3.1. Beamforming</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1. Formation de faisceau</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>At the acoustic level, it may be interesting to fuse the different channels in order to enhance the signal.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au niveau acoustique, il peut être intéressant de fusionner les différents canaux afin d’améliorer le signal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>However, a simple sum of signals would result in a worse single channel with echoes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, une simple somme des signaux résulterait en un signal de qualité médiocre avec échos.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>That is why a beam-forming algorithm [8] was used to merge all channels in a single one which fed an ASR system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est la raison pour laquelle un algorithme de formation de faisceau [8] a été utilisé pour fusionner tous les canaux en un seul qui a alimenté un système de reconnaissance vocale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>Beamforming involves low computational cost and combines efficiently acoustic streams to build an enhanced acoustic signal.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le beamforming nécessite peu de calculs et combine efficacement les flux acoustiques pour créer un signal acoustique amélioré.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>The acoustic beamforming algorithm is based on the weighted&amp;sum microphone array theory.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'algorithme de formation de faisceau acoustique est basé sur la théorie de l'agencement de microphones pondérés et sommés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>Given M microphones, the signal output y [ t ] is computed by: where Wm [ t ] is the weight for microphone m at time t , knowing that∑ [M] m =1 [W][m][ [t]] = 1, the signal of the m[th] channel is xm [ t ] and D[(] [m,ref][)] [ t ] is the delay between the m[th] channel and the reference channel.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Etant donnés M microphones, le signal de sortie y [ t ] est calculé par l’équation suivante : y [ t ] = ∑ M m =1 [W][m][ [t] ] [x][m][[] [t][ −][D][(] [m][,] [re f][ )][[] [t][]][ Où] [ W][m][ [t]] est le poids accordé au microphone [m] à un instant t [t] , sachant que ∑ mM =1 [W][m][ [t] ] = 1 ; le signal du] m[th] canal est [x][m][ [t] ] et [D][(] [m][,] [ref][ )][ [t] ] le délai entre le m[th] canal et le canal choisi comme référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>In our experiments, the reference channel was the one with the highest SNR overall in Phase 2 and the 7 signals were entirely combined for each speaker rather than doing a sentences based combination (the tested algorithm failed with too short sentences). Once the new signal y is computed, it can feed a monosource ASR stage.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans nos expériences, le canal de référence était celui avec le SNR le plus élevé dans la phase 2 et les 7 signaux ont été combinés entièrement pour chaque locuteur plutôt que de faire une combinaison basée sur les phrases (l'algorithme testé a échoué avec des phrases trop courtes). Une fois le nouveau signal y calculé, il peut être utilisé comme un signal ASR monosource.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>3.2. Driven Decoding Algorithm</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2. Algorithme de décodage guidé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>At the decoding level, a novel version of the Driven Decoding Algorithm (DDA) was applied. DDA aims to align and correct auxiliary transcripts by using a speech recognition engine [9, 10].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au niveau du décodage, une nouvelle version de l'algorithme de décodage guidé (DDA) a été appliquée. Le DDA vise à aligner et à corriger à la volée des transcriptions auxiliaires en utilisant un moteur de reconnaissance vocale [9, 10].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>This algorithm improves system performance dramatically by taking advantage of the availability of the auxiliary transcripts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet algorithme améliore considérablement les performances du système en tirant parti de la disponibilité des transcriptions auxiliaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>DDA acts at each new generated assumption of the ASR system. The current ASR assumption is aligned with the auxiliary transcript (from a previous decoding pass).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le DDA agit sur chaque nouvelle hypothèse générée par le SRAP : elle est alignée à la volée avec la transcription auxiliaire (issue d’un décodage précédent).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>Then a matching score α is computed and integrated with the language model [9]: where P ( wi|wi− 1 , wi− 2) is the updated trigram probability of the word wi knowing the history wi− 2 , wi− 3, and P ( wi|wi− 1 , wi− 2) is the initial probability of the trigram.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dès lors, un score de similarité α est calculé pour pondérer le modèle de langage (Lecouteux et al. , 2006) : P[˜] ( wi|wi− 1, wi− 2) = P[1] [−][α] ( wi|wi− 1, wi− 2) où P[˜] ( wi|wi− 1, wi− 2) est la probabilité pondérée du mot wi sachant son historique wi− 2, wi− 3, et P ( wi|wi− 1, wi− 2) est la probabilité initiale du trigramme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>Figure 2: DDA used with two streams: the first stream allows one to drive the second stream</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 2 : DDA utilisé avec deux flux : le premier flux permet de piloter le second flux</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>We propose to use a variant of the Driven Decoding Algorithm where the output of the first microphone is used to drive the output of the second one (cf. Figure 2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous proposons d'utiliser une variante de l'algorithme de décodage piloté où la sortie du premier microphone est utilisée pour piloter la sortie du second microphone (cf. Figure 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>This approach presents two main benefits: - The second ASR system speed is boosted by the approximated transcript (only 0.1xRT), - DDA merges truly and easily the information from the two streams while voting strategies (such as ROVER) do not merge ASR systems outputs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette approche présente deux avantages : - la vitesse du second SRAP est augmentée grâce à la présence de la transcription auxiliaire (seulement 0.1x le temps réel (TR)), - le DDA permet de fusionner efficacement l’information issue de deux flux là où une stratégie de vote (telle que ROVER) ne peut fonctionner sans mesures de confiance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>The applied strategy is dynamic and used, for each utterance to decode, the best channel for the first pass and the second best channel for the last pass. Figure 3: DDA 2-level : vocal orders are recognized from the first decoded stream which are then used to drive the decoding of the second stream</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La stratégie basée sur DDA est dynamique et utilisée pour chaque phrase décodée. Le premier décodage est effectué sur le canal de meilleur RSB et le DDA est appliqué sur le second. Figure 3 : DDA à 2 niveaux : les ordres vocaux sont reconnus à partir du premier flux décodé qui est ensuite utilisé pour piloter le décodage du second flux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>This approach was extended to take into account a priori knowledge about the expected utterances.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette approche a été étendue pour prendre en considération les connaissances a priori sur les phrases attendues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>The ASR system is driven by vocal orders recognized during the first pass.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système ASR est guidé par des commandes vocales identifiées lors du premier passage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>This method is called DDA 2-level : speech segments of the first pass are projected into the 3 − best vocal orders by using an edit distance (cf. 3.4) and injected via DDA into the ASR system for the fast second pass as presented in Figure 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthode appelée DDA à deux niveaux projette les segments de la première passe dans les 3 meilleures hypothèses de phrases attendues en utilisant une distance d'édition (cf. 3.4) et injectées via DDA dans le système ASR pour la deuxième passe rapide comme présenté sur la Figure 3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>3.3. ROVER</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3 ROVER</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>At the ASR combination level, a ROVER [11] was applied. ROVER is expected to improve the recognition results by providing the best agreement between the most reliable sources.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au niveau de la combinaison ASR, un ROVER [11] a été appliqué. Le ROVER devrait améliorer les résultats de reconnaissance en fournissant la meilleure concordance entre les sources les plus fiables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>It combines systems output into a single word transition network. Then, each branching point is evaluated with a vote scheme.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il combine les sorties des systèmes en un seul réseau de transition de mots. Ensuite, chaque point de bifurcation est évalué selon un système de vote.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>The word with the best score is selected (number of votes weighted by confidence measures).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le mot de meilleur score est alors sélectionné (nombre de votes pondéré par les mesures de confiance).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>This approach necessitates high computational resources when several sources need to be combined and real time is needed (in our case, 7 ASR systems must operate concurrently).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette approche nécessite de fortes ressources informatiques lorsqu'il faut combiner plusieurs sources et que le temps réel est nécessaire (dans notre cas, 7 systèmes ASR doivent fonctionner simultanément).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>A baseline ROVER was tested using all available channels without a priori knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre système de référence ROVER a été testé en utilisant tous les canaux disponibles sans connaissance a priori .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>In a second time, an a priori confidence measure based on the SNR was used: for each decoded segment si from the i[th] ASR system, the associated confidence score φ ( si ) was computed by φ ( si ) = 2 [R][(] [s][i][)] /∑[7] j =1[2] [R][(] [s][j][)] where R () is the function computing the SNR of a segment and si is the segment generated by the i[th] ASR system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, nous avons introduit une mesure de confiance a priori basée sur le SNR : pour chaque segment décodé si issu du i[ème] SRAP, la mesure de confiance associée φ ( si ) a été calculée de la façon suivante : φ ( si ) = 2 [R][(] [s][i][)] / ∑ j =1[2] [R][(] [s][j][)] où [R][()] est la fonction calculant le SNR d’un segment et [s][i] est le segment généré par le i[ème] SRAP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>For each annotated sentence a silence period Isil at the beginning and the end is taken around the speech signal period Ispeech .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque phrase annotée, un silence de durée Isil a été ajouté au début et à la fin du signal de parole Ispeech .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>The SNR is thus evaluated as: R ( S ) = 10 ∗ log ( ∑n∈|IsIspeechpeech |[S][ [n] ] [2] / ∑n∈|IIsilsil|[S][ [n] ][2] ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le SNR est donc évalué comme suit : R ( S ) = 10 ∗ log ( ∑ n∈|IsIspeechpeech |[S][ [n] ] [2] / ∑ n∈|IIsilsil|[S][ [n] ][2] ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>Finally, a ROVER using only the two best channels overall was tested in order to check whether other channels contain redundant information and whether good results can be reach with reasonable computational cost.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, un ROVER utilisant seulement les deux meilleurs canaux a été testé afin de vérifier si d'autres canaux contiennent des informations redondantes et si de bons résultats peuvent être obtenus avec un coût de calcul raisonnable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>3.4. Detection of domotic orders and distress sentences with proposed approaches</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.4. Détection des ordres domotiques et des phrases de détresse avec les approches proposées</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>We propose to transcript each domotic order and distress sentences in a phoneme graph in which each path corresponds to a variant of pronunciation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous proposons de transcrire chaque commande domotique et chaque phrase de détresse sous la forme d’un graphe de phonèmes, dans lequel chaque chemin correspond à une variante de prononciation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>Then the number of sentences to detect is 12 (3 domotic orders + 9 distress sentences).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le nombre de phrases à détecter est de 12 (3 ordres domotiques et 9 phrases de détresse).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>Automatic transcripts are transcribed in the same way.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les transcriptions automatiques sont transcrites de la même manière.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>In order to locate domotic orders into automatic transcripts T of size m , each sentence of size n from domotic orders H are aligned to T by using a Dynamic Time Warping (DTW [12]) algorithm at the phonetic level.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de localiser des ordres domotiques au sein des transcriptions automatiques T de taille m , chaque phrase de taille n est alignée sur T en utilisant un algorithme de distorsion temporelle dynamique (DTW [12]) au niveau phonétique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>The deletion, insertion and substitution costs were computed empirically.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les coûts de suppression, insertion, substitution sont calculés empiriquement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>The cumulative distance γ ( i, j ) between Hj and Ti is computed as: γ ( i, j ) = d ( Ti, Hj ) + min{γ ( i − 1 , j − 1) , γ ( i − 1 , j ) , γ ( i, j − 1) }</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La distance cumulée γ ( i , j ) entre H j et Ti est alors calculée : γ ( i , j ) = d ( Ti , H j ) + min{γ ( i − 1, j − 1), γ ( i − 1, j ), γ ( i , j − 1) }</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>Each domotic order is aligned and associated with an alignment score: the percentage of well aligned symbols.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque ordre domotique est aligné puis associé à un score d’alignement correspondant au pourcentage de symboles correctement alignés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>The domotic order with the best score is then selected for decision according a detection threshold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’ordre domotique de meilleur score est alors sélectionné pour prendre une décision, avec un seuil de déclenchement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>This approach takes into account some recognition errors such as word endings or slight variations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette approche prend en compte certaines erreurs de reconnaissance telles que les terminaisons de mots ou les légères variations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>Moreover, in many cases, a miss-decoded word is phonetically close from the good one (due to the close pronunciation).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, dans de nombreux cas, un mot mal décodé est phonétiquement proche du bon (en raison de la prononciation proche).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>4. Experiments and results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Expériences et résultats</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>In all experiments, the Phase 1 corpus was used for development and training whereas the Phase 2 corpus served for the evaluation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans toutes les expériences, le corpus de la phase 1 a été utilisé pour le développement et la formation, tandis que le corpus de la phase 2 a été utilisé pour l'évaluation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>This section presents the ASR tuning and the experimental results of the proposed approaches.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette section présente le réglage du SRAP et les résultats expérimentaux des approches proposées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>4.1. The Speeral ASR system</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Le système ASR Speeral</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>The LIA (Laboratoire d’Informatique d’Avignon) speech recognition tool-kit Speeral [13] was chosen as unique ASR system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le LIA (Laboratoire d'Informatique d'Avignon) a choisi son kit de reconnaissance vocale Speeral [13] comme système ASR unique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>This choice was made based on experiments we undertook with several state-of-the-art ASR systems and on the fact that DDA is only implemented in Speeral.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce choix a été fait à la suite d'expérimentations menées avec plusieurs systèmes ASR de pointe et du fait que le DDA n'est implémenté que dans Speeral.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>Speeral relies on an A[∗] decoder with HMM-based context-dependent acoustic models and trigram language models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Speeral repose sur un décodeur A[∗] avec des modèles acoustiques contextuels basés sur HMM et des modèles de langue trigramme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>HMMs are classical three-state leftright models and state tying is achieved by using decision trees.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les HMM sont des modèles classiques à trois états, et le lien entre les états est réalisé à l'aide d'arbres de décision.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>Acoustic vectors are composed of 12 PLP (Perceptual Linear Predictive) coefficients, the energy, and the first and second order derivatives of these 13 parameters.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les vecteurs acoustiques sont composés de 12 coefficients PLP (Perceptual Linear Predictive), de l’énergie ainsi que des dérivées premières et secondes de ces 13 paramètres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>In the study, the acoustic models were trained on about 80 hours of annotated speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans l'étude, les modèles acoustiques ont été formés sur environ 80 heures de parole annotée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>Given the targeted application of SWEET-HOME the computation time should not be a breach of real-time use. Thus, the 1xRT Speeral configuration was used.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné l'application ciblée de SWEET-HOME, le temps de calcul ne devrait pas être un problème pour une utilisation en temps réel. C'est pourquoi nous avons utilisé la configuration 1xRT Speeral.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>In this case, the time required by the system to decode one hour of speech signal is real-time (noted 1xRT).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cas, le temps requis par le système pour décoder une heure de signal vocal est en temps réel (noté 1xRT).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>The 1xRT system uses a strict pruning scheme.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système 1xRT utilise un schéma de taille strict.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>Furthermore, acoustic models were adapted for each of the 21 speaker by using the Maximum Likelihood Linear Regression (MLLR) and the annotated Phase 1 corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, les modèles acoustiques ont été adaptés pour chacun des 21 locuteurs en utilisant la régression linéaire par maximum de vraisemblance (MLLR) et le corpus annoté de la phase 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>MLLR adaptation is a good compromise while only a small amount of annotated data is available.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’adaptation MLLR représente un bon compromis lorsque la quantité de données annotées est restreinte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>For the decoding, a 3-gram language model (LM) with a 10K lexicon was used.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un modèle de langage (ML) 3-grammes a été utilisé avec un lexique de 10K mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>It results from the interpolation of a generic LM (weight 10%) and a specialized LM (weight 90%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il résulte de l'interpolation d'un modèle générique (pondération 10 %) et d'un modèle spécialisé (pondération 90 %).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>The generic LM was estimated on about 1000M of words from the French newspapers Le Monde and Gigaword .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le ML générique a été estimé sur environ 1000M de mots extraits des journaux français Le Monde et Gigaword.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>The specialized LM was estimated from the sentences (about 200 words) that the 21 participants had to utter during the experiment (domotic orders, casual phrases, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le modèle spécialisé a été estimé sur les phrases (environ 200 mots) que les 21 participants devaient prononcer au cours de l'expérience (ordres domotiques, phrases de tous les jours, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>4.2. Results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 Résultats</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>Results of the approaches are presented table 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats des différentes approches sont présentés dans le tableau 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>The ASR stage was evaluated using the Word Error Rate (WER) whereas the vocal order recognition (classification) stage was evaluated using recall/precision/F-measure triplet: the number of domotic orders is about 10. Domotic orders were manually specified by annotating all sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La phase de reconnaissance automatique de la parole (RAP) est évaluée via le Taux d’Erreur de Mot (TEM), tandis que la détection (classification) des ordres domotiques est évaluée en terme de rappel/précision/F-mesure : le nombre d’ordre domotiques est d’environ 10 et ils sont manuellement annotés pour chaque phrase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>During the detection, if a marked domotic order is well detected, it is considered as detected.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au cours de la détection, si une commande domotique marquée est bien détectée, elle est considérée comme détectée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>In all other cases, a detected order is considered as false detection.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans tous les autres cas, un ordre détecté est considéré comme une fausse alarme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>For each approach, the presented results are the average over the 21 speakers (plus standard deviation for the WER).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats sont présentés pour l’ensemble des 21 locuteurs (avec l’écart type associé pour le TEM).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>For the sake of comparison, results of a baseline and an oracle baseline systems are provided.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A titre de comparaison, les résultats d'un système de référence et d'un système de référence Oracle sont fournis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>The baseline system outputs the best decoding amongst 7 ASR systems according to the highest SNR.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système de référence produit la meilleure décodage parmi 7 systèmes ASR selon le SNR le plus élevé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>The oracle baseline is computed by selecting the best WER for each speaker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La ligne de base de l'oracle est calculée en sélectionnant le meilleur WER pour chaque locuteur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>Table 1: WER, Domotic orders detection</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 : TEM et détection des ordres domotiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>The baseline system achieved a 18.3 % WER (best SNR channel).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système de référence permet d’obtenir 18.3% de TEM (meilleur canal en se basant sur le RSB).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>All proposed SNR-based approaches benefited from the multiple available microphones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutes les approches basées sur le RSB proposées bénéficient des multiples microphones disponibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>Beamforming led to a 8.1% relative WER improvement.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le beamforming a permis une amélioration relative de 8,1 % du WER.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>This result shows that combining all channels increases the ASR task robustness.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce résultat montre que la combinaison des flux améliore la robustesse de la tâche de SRAP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>The DDA method showed a 37.8% relative improvement by using the SNR.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthode basée sur le DDA montre un gain relatif de 37,8 % en utilisant le SNR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>The 2 level DDA presented a 52 % relative improvement with a very high stability (SD=3.7): this gain is easily explained as the second decoding pass was perfused with a priori knowledge (i.e., domotic orders) triggered by the first pass.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'approche DDA à deux niveaux présente 52% de gain relatif avec une stabilité très intéressante (écart type de 3.7) : ce gain s'explique facilement par l'introduction de connaissances a priori (c'est-à-dire des ordres domotiques) déclenchées au cours du premier décodage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>Finally, the SNR-based ROVER led to a 33.4% relative improvement.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Finalement le ROVER basé sur le RSB permet une amélioration relative de 33.4%.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>In all accuracy of the vocal orders recognition was good: the baseline recognition gave a 89.2% F- measure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans toutes les configurations, la précision de la reconnaissance des ordres vocaux était bonne : le système de référence présentait une mesure F de 89,2 %.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>It can be observed that in other configurations the spotting task correlated with the WER.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous observons également une corrélation entre le TEM et la tâche de reconnaissance des ordres dans d'autres configurations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>Thereby, ROVER and the two DDA configurations led to a significant F-measure improvement over the baseline of about 7% absolute.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, ROVER et les deux configurations DDA ont permis d'améliorer de manière significative la mesure F par rapport à la ligne de base, d'environ 7 % en absolu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>Beamforming gain was not significant.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le gain apporté par le beamforming n’est pas significatif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>ROVER performed detections similar to the DDA approaches, but required to decode all channels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le ROVER a effectué des détections similaires aux approches DDA, mais nécessitait le décodage de tous les canaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>Finally, the best configuration was based on the 2 level DDA leading to a 96.8% F-measure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Finalement, la meilleure configuration se base sur le DDA à deux niveaux, qui permet d’atteindre une F-mesure de 96.8%.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>5. Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>Several approaches were presented to perform accurate vocal order recognition in multi-room smart-homes where audio information is captured by several microphones in a distant speech context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs approches ont été présentées pour effectuer une reconnaissance précise des ordres vocaux dans des maisons intelligentes à plusieurs pièces où les informations audio sont captées par plusieurs micros dans un contexte de discours distant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>The proposed approaches were acting at the three main levels of the ASR task: acoustic, decoding and hypothesis selection.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les approches proposées agissent sur les trois niveaux principaux de la tâche de reconnaissance automatique de la parole : l’acoustique, le décodage et la sélection d’hypothèses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>Some of them included a priori knowledge either dynamically computed such as the SNR or acquired off line such as the predefined domotic orders.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certaines d'entre elles incluaient des connaissances a priori calculées de manière dynamique, telles que le RSB, ou acquises hors ligne, telles que les ordres domotiques prédéfinis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>Results confirmed that the use of the seven microphones improved the ASR accuracy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats confirment que l'utilisation des sept microphones améliore la précision du SRAP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>Beamforming improved the WER (16.8%), however its performance were very close to the baseline one (18.3%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le beamforming a amélioré le WER (16,8 %), mais son rendement était très proche de la référence (18,3 %).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>This may be due to the fact that the seven microphones are far apart from each other and might not contain enough redundancy to obtain a really enhanced acoustic signal.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci est sans doute causé par l’éloignement des micros entre eux, n’apportant pas sufisamment de redondance pour améliorer le signal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>The Driven Decoding Algorithm gave the best performance with a 11.4% WER and 95.3% F-measure for vocal order classification.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'algorithme de décodage dirigé a donné les meilleures performances avec un TEM de 11,4 % et un F-mesure de 95,3 % pour la classification des ordres vocaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>DDA results were only slightly better than the ROVER results, however DDA needs only two channels while ROVER necessitates 7 ASR systems performing concurrently to approach DDA performances. The DDA computational cost is thus very low compared to the ROVER one.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats obtenus par le DDA sont très légèrement meilleurs à ceux du ROVER, mais le DDA nécessite seulement deux canaux tandis que le ROVER nécessite 7 systèmes ASR fonctionnant simultanément pour approcher les performances du DDA. Le coût calculatoire du DDA est donc bien inférieur à celui du ROVER.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>Moreover, the 2-level DDA approach makes it possible to include a priori knowledge to increase performances to 8.8% WER and 96.8% F-Measure with much better stability than the baseline (3.7% WER standard deviation vs. 10.3%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, l'approche DDA à deux niveaux permet d'intégrer des connaissances a priori pour améliorer les performances à 8,8 % de WER et 96,8 % de F-mesure avec une stabilité bien meilleure que celle de la référence (écart-type de 3,7 % de WER contre 10,3 %).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>However, this amelioration will be achieved only if test data contains domotic orders.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, cette amélioration ne sera atteinte que si les données de test contiennent des ordres domotiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>This study shows that good recognition rate can be obtained by adapting classical ASR systems mixing multisource and domain knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette étude montre qu'un bon taux de reconnaissance peut être obtenu en adaptant les systèmes ASR classiques en mélangeant des sources multiples et des connaissances de domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>We plan to adapt these approaches to noisy conditions notably by applying source separation techniques to real daily living records composed of uncontrolled noise.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous envisageons d'adapter ces méthodes à des conditions plus difficiles (bruitées), en appliquant des techniques de séparation de source, afin de filtrer les bruits issus de la vie courante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>6. Acknowledgements</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6. Reconnaissances</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>This work is a part of the SWEET-HOME project founded by the French National Research Agency (Agence Nationale de la Recherche / ANR-09-VERS-011)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette étude fait partie du projet SWEET-HOME financé par l'Agence Nationale de la Recherche (ANR-09-VERS-011).</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,983 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-F04-46. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/L04-1404/</url_en>
+        <url_fr>https://www.afcp-parole.org/doc/Archives_JEP/2004_XXVe_JEP_Fes/actes/jep2004/Deviren-Daoudi-Smaili.pdf</url_fr>
+        <title_en>Language Modeling using Dynamic Bayesian Networks</title_en>
+        <title_fr>Une nouvelle approche de modélisation du langage par des réseaux Bayésiens dynamiques</title_fr>
+        <docid>F04-46</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Language Modeling using Dynamic Bayesian Networks</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Modélisation linguistique à l'aide de réseaux bayésiens dynamiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Murat Deviren, Khalid Daoudi and Kamel Sma¨ıli</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Murat Deviren, Khalid Daoudi et Kamel Smaïli</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>In this paper we propose a new approach to language modeling based on dynamic Bayesian networks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous proposons une nouvelle approche de modélisation du langage basée sur des réseaux Bayésiens dynamiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>The principle idea of our approach is to find the dependence relations between variables that represent different linguistic units (word, class, concept, …) that constitutes a language model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'idée de base de notre approche est de trouver les relations de dépendance entre les variables qui représentent différentes unités linguistiques (mot, classe, concept, ...) qui constituent un modèle de langue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>In the context of this paper the linguistic units that we consider are syntactic classes and words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre de cet article, les unités linguistiques que nous considérons sont les classes syntaxiques et les mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>Our approach should not be considered as a model combination technique.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre approche ne doit pas être considérée comme une technique de combinaison de modèles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Rather, it is an original and coherent methodology that processes words and classes in the same model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il s'agit plutôt d'une méthodologie originale et cohérente qui traite les mots et les classes dans le même modèle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>We attempt to identify and model the dependence of words and classes on their linguistic context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous essayons d'identifier et de modéliser la dépendance des mots et des classes par rapport à leur contexte linguistique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>Our ultimate goal is to devise an automatic mechanism that extracts the best dependence relations between a word and its context, i.e., lexical and syntactic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre objectif ultime est de concevoir un mécanisme automatique qui extrait les meilleures relations de dépendance entre un mot et son contexte, c'est-à-dire lexical et syntaxique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>Preliminary results are very encouraging, in particular the model in which a word depends not only on previous word but also on syntactic classes of two previous words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats préliminaires sont très encourageants, en particulier le modèle dans lequel un mot dépend non seulement du mot précédent, mais aussi des classes syntaxiques des deux mots précédents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>This model outperforms the bi-gram model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce modèle surpasse le modèle bigrams.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. INTRODUCTION</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>The role of a statistical language model is to model different linguistic events in a language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le rôle d’un modèle de langage statistique est de modéliser les différents événements langagiers de la langue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>This is achieved by assigning a probability to each word sequence hw t (where h represent the history of word wt ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette modélisation est assurée par l’affectation d’une probabilité à chaque séquence de mots hwt (où h désigne l’historique du mot wt ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>These probabilities are estimated using a Markov chain of some fixed order ( usually 1 or 2 ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette probabilité est estimée à l’aide d’une châıne de Markov d’un certain ordre (souvent 1 ou 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>n-grams formulated as Markov chains are the most widely used language models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les n-grammes formulés comme des chaînes de Markov sont les modèles les plus couramment utilisés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>Based on the observation that certain words have similar behavior, one can think of clustering words into classes and construct n-class models to substitute or complement n-grams.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En partant du constat que certains mots ont un comportement similaire, leur regroupement en classes est envisageable et des modèles dits n-classes se substituent parfois aux n-grammes, et se combinent dans d’autres cas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>This approach is used to reduce model complexity, improve generalization property, handle missing data and introduce high level linguistic information (syntactic, semantic etc.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette approche est utilisée pour réduire la complexité des modèles, améliorer la propriété de généralisation, gérer les données manquantes et introduire des informations linguistiques de haut niveau (syntaxiques, sémantiques, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>Different complementary linguistic information sources can be exploited using simple linear ombination (Jelinek and Mercer, 1980) or maximum entropy (Rosenfeld, 1994) techniques.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'exploitation de différentes sources d'informations linguistiques complémentaires peut se faire par une simple combinaison linéaire (Jelinek et Mercer, 1980) ou par l'utilisation de la méthode de l'entropie maximale (Rosenfeld, 1994).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>As it will become clear in the following sections, n- gram and n-class models are actually particular cases of dynamic Bayesian networks (DBN).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme nous le verrons par la suite, les modèles n-grammes et n-classes sont en fait des cas particuliers de réseaux Bayésiens dynamiques (RBD).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>In this paper we propose to use the DBN formalism in order to achieve a better exploitation of each linguistic unit considered in modeling.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous proposons d'utiliser le formalisme des DBN afin de mieux exploiter chacune des unités linguistiques considérées dans la modélisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>We develop a unifying approach that processes each of these units in one model and construct new language models with improved performance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous développons une approche unifiée qui traite chacune de ces unités dans un seul modèle et construit de nouveaux modèles de langage avec des performances améliorées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>The principle of our approach is to construct DBNs in which a variable (word, class or any other linguistic unit) may depend on a set of context variables.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le principe de cette approche est de construire des RBD dans lesquels une variable (qui peut être un mot ou une classe, ou toute autre unité linguistique) peut dépendre d’un ensemble de variables de contexte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>These dependence links between linguistic units can be determined automatically or manually.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces liens de dépendance inter-unités linguistiques peuvent être déterminés automatiquement ou manuellement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>Our ultimate goal is to propose an automatic scheme to learn the optimal DBN structure from a training corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre objectif ultime est de proposer un schéma automatique pour apprendre la structure optimale du RBD à partir d'un corpus d'apprentissage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>With this goal in mind, in this paper we investigate the feasibility of our approach by first testing models for which the structure is specified manually.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous étudions la faisabilité de cette approche en testant d’abord des modèles pour lesquels la structure est spécifiée manuellement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>The advantage of our approach with respect to linear interpolation is that, instead of using a weighted average of models constructed over words and classes separately, our approach integrates all linguistic units in one model without any distinction between classes and words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Soulignons qu’un avantage de notre approche par rapport à l’interpolation linéaire est qu’elle intègre toutes les unités linguistiques au sein d’une même structure sans faire de distinction entre les classes et les mots, au lieu d’utiliser une moyenne pondérée entre des modèles construits séparément sur les mots et les classes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>Compared to the maximum entropy principle, we can say that our approach yields models that are much easier to interpret.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comparé au principe de maximum d’entropie, on peut dire que notre approche conduit à des modèles qui sont plus faciles à interpréter.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>2. Dynamic Bayesian networks</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Réseaux bayésiens dynamiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>Our approach is based on the framework of dynamic Bayesian networks (DBNs) which is a generalization of Bayesian networks (BNs) to dynamic processes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre approche est fondée sur le cadre des réseaux Bayésiens dynamiques (RBDs) qui est une généralisation des réseaux Bayésiens aux processus dynamiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>Briefly, the Bayesian networks formalism consists of associating a directed acyclic graph to the joint probability distribution (JPD) P ( X ) of a set of random variables X = {X 1 , …, Xn} .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Brièvement, un réseau Bayésien (statique) consiste à associer un graphe acyclique orienté à une distribution jointe de probabilités (DJP) P ( X ) d’un ensemble de variables aléatoires X = {X 1 …, Xn} .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>The nodes of this graph represent the random variables, while the arrows encode the conditional independences (CI) which (are supposed to) exist in the JPD.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les noeuds de ce graphe représentent les variables aléatoires, et les flèches codent les indépendances conditionnelles (IC) (supposées) existantes dans P ( X ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>A BN is completely defined by a graph structure S and the numerical parametrization Θ of the conditional probabilities of the variables given their parents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un réseau Bayésien est complètement défini par une structure graphique S et une paramétrisation numérique Θ de probabilités conditionnelles des variables sachant leurs parents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>Indeed, the JPD can be expressed in a factored way as P ( X ) = Π ni =1 [P][(] [X][i][|][Π] [i][)], where Π [i] denotes the parents of [ X][i] in [ S] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, la JPD peut être exprimée de manière factoriée sous la forme P (X) = Π ni =1 [P][(] [X][i][|][Π] [i][)], où Π [i] dénote les parents de Xi dans S .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>A DBN encodes the joint probability distribution of a time evolving set X [ t ] = {X 1 [ t ] , … , Xn [ t ] } of variables.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un DBN code la distribution de probabilité conjointe d'un ensemble X [ t ] = {X 1 [ t ] , … , Xn [ t ] } de variables évoluant dans le temps.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>If we consider T time slices of variables, the DBN can be considered as a (static) BN with T × n variables.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si on considère T tranches de temps des variables, le RBD peut être considéré comme un réseau Bayésien (statique) avec T × n variables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>Using the factorization property of BNs, the joint probability density of X [T] 1[=] [ {][X][[1]] [, …, X][[] [T][ ]] [}] is written as:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En utilisant la propriété de factorisation des BN, la densité de probabilité jointe de X [T] 1[=] [ {][X][[1]] [, …, X][[] [T][ ]] [}] est écrite comme suit :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>where Π it denotes the parents of Xi [ t ].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où Π it dénote les parents de Xi [ t ].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>In the BNs literature, DBNs are defined using the assumption that X [ t ] is Markovian (Friedman et al., 1998).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la littérature, les RBDs sont définis en faisant l’hypothèse que X [ t ] est un processus markovien (Friedman et al., 1998).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we relax this hypothesis to allow non-Markov processes and we consider that the process X [ t ] satisfies:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous assouplissons cette hypothèse pour permettre des processus non-markoviens et pour que le processus X [ t ] satisfasse :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>for some integers τp and τf .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>pour des entiers τp et τf .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>Graphically, the above assumption states that a variable at time t can have parents in the interval [ t − τp, t + τf ] (see (Deviren and Daoudi, 2001) for details).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Graphiquement, l'hypothèse ci-dessus signifie qu'une variable au temps t peut avoir des parents dans l'intervalle [ t−τp, t + τf ] (voir [2] pour les détails).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>From this perspective, it is obvious that classical language models can be represented as DBNs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De ce point de vue, il est clair que les modèles de langage classiques peuvent être représentés comme des RBDs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>Indeed, n -gram models assume that the probability of a word sequence is factorized over the conditional probabilities of each word in the sequence given its recent history of n− 1 words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, les modèles n-gramme supposent que la probabilité d’une séquence de mots se factorise comme le produit de probabilités conditionnelles de chaque mot sachant son historique récent de n − 1 mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>That is, if W is the word vocabulary and w 1 [T][=][w][1] […w][T][∈] [W][ T] is a word sequence, one assumes that:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Précisément, si W est le vocabulaire de mots et w 1 [T][=][w][1] […w][T][∈] [W][T] est une séquence de mots, on suppose que :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Thus, if Wt is a discrete random variable taking its values in W for every t , n -grams can be represented as the DBN shown in Fig. 1-(a) (for n = 3, i.e., trigram) which is a Markov chain of order n .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, si Wt est une variable aléatoire discrète prenant ses valeurs dans W pour tout t, les n-grammes peuvent être représentés par le RBD de la figure 1-(a) (avec n = 3, i.e., un trigramme) qui est une chaîne de Markov de l'ordre n.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>Class-based approaches represent the history on word classes rather than words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les approches à base de classes représentent l'historique sur les classes de mots plutôt que sur les mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>That is, if C = {l 1 , …, lm} is the set of class labels and c[T] 1[=] [c][1] […c][T][∈] [C][T] is an observed class sequence, one assumes that:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Précisément, si C = {l 1 , …, lm} est l’ensemble des étiquettes de classe et c[T] 1[=] [c][1] _[…c][T][∈][C][T] est une séquence de classes, on suppose que :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>Thus, if Ct is a discrete random variable taking its values in C for every t , n -class models can be represented as the DBN shown in Fig. 1-(b) (for n = 2, i.e., bi-class).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi si Ct est une variable aléatoire discrète prenant ses valeurs dans C pour tout t , un n-classe peut être représenté par le RBD de la figure 1-(b) (avec n = 2, i.e., un biclasse).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: tri-gram and bi-class models</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>FIG. 1: modèles trigramme et biclasse</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>3. DBNs for language modeling</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. RBN pour la modélisation du langage</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>n-gram and n-class models are the most commonly used language models in state-of-the-art speech recognition systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les modèles n-grammes et n-classes sont les modèles de langage les plus couramment utilisés dans les systèmes de reconnaissance vocale les plus performants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>It has been shown that n-gram models are very efficient when they are trained on a sufficiently informative corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il a été démontré que les modèles n-grammes sont très efficaces lorsqu'ils sont formés sur un corpus de données suffisamment informatif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>The principle inconvenience of these models is that they are computationally very demanding given that they require |W |[n] probabilities to be estimated, where n is the model order.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces modèles ont comme inconvénient principal d’être très exigeants en calcul étant donné que l’on doit estimer |W |[n] probabilités où n est l’ordre du modèle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>Despite the “cut-off” techniques that reduce the complexity, these models remain extremely complex.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malgré les techniques de « cut-off » qui réduisent la complexité, ces modèles demeurent extrêmement complexes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>On the other hand n-class models are less complex since the number of classes is generally much smaller than the vocabulary size.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les modèles n-classes quant à eux sont moins complexes car le nombre de classes utilisées est souvent très inférieur à celui du vocabulaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>They also have better generalization properties.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils permettent également une meilleure généralisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, they are less accurate and their perplexity is higher.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, ils sont moins précis et leur perplexité est plus importante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>For this reason they are generally combined with n-grams.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C’est pourquoi ils sont généralement combinés avec les n-grammes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>In such circumstances the realization of a language model is performed first by specifying the model order ( n ) and then the two models ( n-gram and n- class) are trained individually using maximum likelihood criteria.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans de telles circonstances, la réalisation d'un modèle de langage est d'abord effectuée en spécifiant l'ordre du modèle (n) et ensuite les deux modèles (n-gramme et n-classe) sont appris séparément en utilisant le maximum de vraisemblance comme critère d'apprentissage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>The last step is either a linear combination of these models or an integration of their respective characteristics in a single architecture using maximum entropy techniques.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'étape suivante consiste à combiner linéairement les modèles ou à intégrer leurs caractéristiques respectives dans une architecture unique en utilisant des techniques de maximum d'entropie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>This approach yields quite interesting results, however if we want to better exploit the lexical and syntactic information, a solution would be to consider them in a unique model that is trained within a single procedure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette approche est intéressante, mais si nous voulons mieux exploiter les informations lexicales et syntaxiques, il est préférable de les considérer dans un modèle unique qui est formé dans une seule procédure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>The DBN formalism provides a theoretical and computational framework to achieve our goal.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le formalisme des RBDs nous offre le cadre théorique et algorithmique pour réaliser cet objectif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>Our principle idea is to impose no a priori hypothesis on the way a language should be represented but to consider all available data (words, classes, …) as observations of the dynamic system {Wt, Ct} . Our goal then is to find the model that has the best description (in terms of perplexity) of these observations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre idée principale est de ne faire aucune hypothèse a priori sur la fac¸on de représenter le langage mais plutˆot de considérer toutes les données disponibles (mots et classes) comme des observations du système dynamique {Wt, Ct} , notre but ensuite est de trouver le modèle qui décrit ces observations au mieux (en terme de perplexité).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>In this way, we let data dictate what influences the pronunciation of a word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De cette fac¸on, nous laissons les données dicter ce qui influence la prononciation d’un mot.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>In Bayesian networks terminology this is the structure learning problem: find the graph structure (and its numerical parameterization) that explains the data at ‘’best”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la terminologie des réseaux Bayésiens, ceci est le problème d’ apprentissage structurel : trouver la structure graphique (et sa paramétrisation numérique) qui explique “au mieux” les données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>In BN literature there are algorithms that attempt to solve this (difficult) problem (Heckerman, 1995), their performances depend on the application.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la littérature BN, il existe des algorithmes qui tentent de résoudre ce problème (assez difficile) (Heckerman, 1995), leur performance dépend de l'application.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>Our objective in this paper is not to use these algorithms (note that our ultimate goal is to develop a structure learning algorithm that is well adapted to language modeling).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre but dans cet article n’est pas d’utiliser de tels algorithmes (sachant que notre objectif ultime est de développer un algorithme d’apprentissage structurel qui soit bien adapté à la modélisation du langage).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>Our objective is rather to check whether our approach could effectively overcome classical n-gram and n-class models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre but est plutôt de vérifier que notre approche peut effectivement concurrencer les modèles n-grammes et n-classes classiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>Therefore we consider a rich set of graph structures that could be plausible for language modeling.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, nous considérons un ensemble riche de structures graphiques qui pourraient être plausibles pour la modélisation du langage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>We evaluate several DBNs in this set on a concrete application and compare them to n- gram and n-class models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous évaluons plusieurs RBDs de cet ensemble sur une application concrète et les comparons aux modèles n-grammes et n-classes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>3.1. Proposed set of structures</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1. Ensemble de structures proposé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>In order to define a set of DBN structures plausible for language modeling, we need to specify CI assertions that are linguistically informative and easy to interpret.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour définir un ensemble de structures DBN plausibles pour la modélisation du langage, nous devons spécifier des hypothèses CI qui soient linguistiquement informatives et faciles à interpréter.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>We also want n-gram and n-class models to be included in this set in order to be able to exploit their linguistic properties.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous voulons également que les modèles n-grammes et n-classes soient inclus dans cet ensemble afin de pouvoir exploiter leurs propriétés linguistiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>To do so we start by relaxing the CI assumptions of n-class models. We assume that a word does not only depend on its class but also on the classes of words in a limited past and/or future context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour ce faire, nous commençons par assouplir l'hypothèse d'IC des modèles à n-classes en considérant qu'un mot peut dépendre non seulement de sa classe courante mais aussi d'autres classes dans un contexte limité dans le passé et/ou le futur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>To incorporate the properties of n- grams we authorize the dependence of the word to its lexical history.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour incorporer les propriétés des n-grammes, nous autorisons aussi la dépendance d’un mot de son historique lexical.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>And finally we consider that a class may not only depend on its history but also on the current word and/or other words in a limited past and/or future context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous considérons qu'une classe peut dépendre non seulement de son historique mais aussi du mot courant et/ou d'autres mots dans un contexte limité dans le passé et/ou le futur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>Figure 2 shows an example of a DBN in the set of structures we consider.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 2 montre un exemple de RBD dans l'ensemble des structures que nous considérons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>In this model each word depends on the previous, present and future class and each class depends on previous class.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce modèle, chaque mot (resp. classe) dépend de la classe antérieure, présente et future (resp. antérieure).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>The joint probability for a specific model is expressed as:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La probabilité jointe associée à un modèle spécifique s’exprime comme :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>where πwt (resp. πct ) is a realization of the parents Π Wt (resp. Π Ct ) of Wt (resp. Ct ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où πwt (resp. πct ) est la réalisation des parents Π Wt (resp. Π Ct ) de Wt (resp. Ct ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>The numerical parameterization of the model is given by conditional probability tables (independent of time t ) P ( wt|πwt ) and P ( ct|πct ) that we note, for Xt ∈ {Wt, Ct}, by:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les paramètres du modèle sont donnés par les tables de probabilités conditionnelles (indépendantes du temps t ) P ( wt|πwt ) and P ( ct|πct ) que nous notons, pour Xt ∈{Wt, Ct} , par :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>These parameters are estimated using maximum likelihood criterion that yields :</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces paramètres sont estimés en utilisant le critère du maximum de vraisemblance, ce qui donne :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>where Nx,j, k is the number of realizations of Xt = j, Π Xt = k .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où Nx,j, k est le nombre de réalisations Xt = j, Π Xt = k .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>The classical “smoothing” techniques are still applicable to these models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les techniques classiques de « smoothing » sont toujours applicables à ces modèles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>Figure 2: An example DBN structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 2 : Structure d'un exemple de DBN.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>4. Experiments and evaluation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Expérimentations et évaluation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>The training and test corpus are extracted from Le monde newspaper.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les corpus d’apprentissage et de test sont extraits du journal Le monde .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>We use 22M words for training and a test corpus of 2M words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé 22M de mots pour l'apprentissage et un corpus de test de 2M de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>The vocabulary consists of the most frequent 5000 words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le vocabulaire est constitué des 5000 mots les plus fréquents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>The training corpus has been labeled automatically by a set of 200 syntactic classes set by hand (Sma¨ıli et al., 1999).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus d'apprentissage a été étiqueté automatiquement par un ensemble de 200 classes syntaxiques définies manuellement (Sma¨ıli et al., 1999).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>All models used in the experiments are smoothed using absolute discounting method (Ney et al., 1994)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous les modèles utilisés dans cette expérimentation ont été lissés par la méthode de décote absolue (Ney et al., 1994).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>Table 1 shows perplexity results of 14 different Bayesian network language models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 1 montre les résultats de perplexité de 14 modèles de langage de réseaux Bayésiens différents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>The models DBN1, DBN2 and DBN3 correspond to bi-gram, bi-class and triclass models respectively.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les modèles DBN1, DBN2 et DBN3 correspondent respectivement aux modèles bigramme, biclasse et triclasse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>In order to achieve our objective to find the best model we set the bi-class model as baseline and extend it incrementally by incorporating additional lexical and/or syntactic context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d’atteindre l’objectif de trouver le meilleur modèle, nous avons pris le modèle biclasse comme modèle de base et l’avons enrichi incrémentalement par un contexte lexical et/ou syntaxique plus important.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>We also introduce the concept of right context of a word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également introduit la notion du contexte correct d’un mot.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>DBN6 is a typical example of this case that integrates not only the left class context of a word but also its right syntactic context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>DBN6 est un exemple typique de ce cas qui intègre non seulement le contexte de la classe gauche d'un mot mais aussi son contexte syntaxique droit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>We obtain a 16.6% improvement with respect to DBN4 that proves the importance of right context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On obtient ainsi une amélioration de 16 , 6% par rapport à RBD4, ce qui prouve l'importance de la prise en compte du contexte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>It is true that linguistically this is not a surprising result.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est vrai que linguistiquement parlant cela ne constitue nullement une surprise.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>On the other hand, it is difficult to realize the use of right context in speech recognition, but this could be achieved with a multi-pass decoding scheme.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En revanche, il est difficile de prendre en compte le contexte adéquat en reconnaissance de la parole, mais cela peut être rendu possible grâce à un schéma de décodage multi-passes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>DBN5, on the other hand, shows that left context is quite important. That is why its removal reduces the results by 7.8%.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autre part, le modèle DBN5 montre que l'influence du contexte gauche est importante, c'est pourquoi son omission fait baisser les résultats de 7,8 %.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>A significant perplexity reduction is observed if a word not only depends on its syntactic but also lexical context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une réduction considérable dans la perplexité est observée lorsque on fait dépendre un mot non seulement de son contexte syntaxique mais aussi lexical.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>Indeed, DBN11 yields an improvement of 24.6% with respect to DBN4.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, DBN11 apporte une amélioration de 24,6 % par rapport à DBN4.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>This results confirms that lexical history is indispensable and that syntactic history provides a significant improvement.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci confirme bien que l’historique lexical est indispensable et montre que l’historique syntaxique apporte une contribution indéniable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>Pushing forwards this strategy, we achieve a model that is not only much better than the bi-class but also better than the bi-gram.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En poussant cette stratégie encore plus, nous sommes arrivés à concevoir un modèle qui non seulement est largement meilleur que le biclasse mais qui est meilleur que le bigramme aussi.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>Indeed, the model DBN14 that is shown in Fig. 3, reduces the perplexity by 57.9% with respect to DBN2 and 2.4% with respect to DBN1 (bi-gram).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, le modèle DBN14, dont la structure graphique est montrée dans la figure 3, améliore de 57,9 % par rapport à DBN2 et de 2,4 % par rapport à DBN1 (bigramme).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>This new approach outperforms the classical bi-gram. These results show that our approach leads indeed to a new category of language models that are able to achieve better performance than classical ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette nouvelle approche surpasse le bigramme classique. Ces résultats montrent que notre approche mène effectivement à une nouvelle catégorie de modèles de langage qui peuvent atteindre de meilleurs résultats que les modèles classiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Training is performed on 11 months of “Le Monde 87”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 : L’entraînement est effectué sur 11 mois de « Le Monde 87 ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>Perplexity is computed using 1 month containing more than 1M words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La perplexité est calculée à l'aide d'un mois contenant plus de 1 million de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>Figure 3: DBN structure that yields smaller perplexity w.r.t. bi-gram.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>FIG. 3: Structure RBD donnant une perplexité plus faible que le bigramme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>5. Conclusion and perspectives</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. Conclusion et perspectives</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>We presented a new approach for language model construction based on dynamic Bayesian networks formalism.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons présenté une nouvelle approche pour la construction de modèles de langage fondée sur le formalisme des réseaux Bayésiens dynamiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>This approach has several advantages with respect to classical techniques.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette approche possède plusieurs avantages par rapport aux techniques classiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>First of all, it infers the best model for language from training data in such a way that the resulting model is the best explanation of the corpus and it is not constrained by a priori assumptions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, il infère le meilleur modèle pour le langage à partir des données d'apprentissage de telle sorte que le modèle résultant soit la meilleure explication du corpus et qu'il ne soit pas contraint par des hypothèses a priori.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>Another advantage is that all linguistic units considered in modeling are handled in one procedure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, elle incorpore en une seule et même procédure toutes les unités linguistiques considérées dans la modélisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>Hence the resulting models are consistent and easy to interpret.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les modèles qui en résultent sont ainsi consistants et faciles à interpréter.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>In this paper we tested different DBN structures in order to evaluate the potential of our approach.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous avons testé différentes structures de RBD pour évaluer le potentiel de notre approche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>The results are promising and further detailed experiments are necessary to obtain better performance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats sont prometteurs et des expérimentations plus détaillées sont nécessaires pour obtenir de meilleures performances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>On the other hand our main objective is to develop an algorithm that infer automatically the best DBN for the language under consideration from training data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais notre objectif majeur est de développer un algorithme qui permet d’inférer automatiquement à partir des corpus d’apprentissage le meilleur RBD pour modéliser le langage traité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>This will be the main direction of our future work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci sera l'objectif principal de nos futurs travaux.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

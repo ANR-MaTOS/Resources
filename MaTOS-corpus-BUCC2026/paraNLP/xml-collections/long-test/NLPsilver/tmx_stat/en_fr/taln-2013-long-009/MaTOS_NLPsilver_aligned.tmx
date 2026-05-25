@@ -1,0 +1,2007 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2013-long-009. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/P13-1049.pdf</url_en>
+        <url_fr>https://talnarchives.atala.org/TALN/TALN-2013/taln-2013-long-009.pdf</url_fr>
+        <title_en>Improving pairwise coreference models through feature space hierarchy learning</title_en>
+        <title_fr>Apprentissage d’une hiérarchie de modèles à paires spécialisés pour la résolution de la coréférence</title_fr>
+        <docid>taln-2013-long-009</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Improving pairwise coreference models through feature space hierarchy learning</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Amélioration des modèles de coréférence pair à pair grâce à l'apprentissage d'une hiérarchie d'espace de fonction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>This paper proposes a new method for significantly improving the performance of pairwise coreference models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce document propose une nouvelle méthode pour améliorer significativement la performance des modèles de coréférence à paires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>Given a set of indicators, our method learns how to best separate types of mention pairs into equivalence classes for which we construct distinct classification models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné un ensemble d’indicateurs, notre méthode apprend à séparer au mieux des types de paires de mentions en classes d’équivalence, chacune de celles-ci donnant lieu à un modèle de classification spécifique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>In effect, our approach finds an optimal feature space (derived from a base feature set and indicator set) for discriminating coreferential mention pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fait, notre approche trouve l'espace optimal de traits (dérivé d'un ensemble de traits de base et d'un ensemble d'indicateurs) pour discriminer les paires de mentions coréférentielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>Although our approach explores a very large space of possible feature spaces, it remains tractable by exploiting the structure of the hierarchies built from the indicators.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que notre approche explore un très vaste ensemble d'espaces de traits possibles, elle reste abordable en exploitant la structure des hiérarchies construites à partir des indicateurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>Our experiments on the CoNLL-2012 Shared Task English datasets (gold mentions) indicate that our method is robust relative to different clustering strategies and evaluation metrics, showing large and consistent improvements over a single pairwise model using the same base features.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nos expériences sur les données anglaises de la CoNLL-2012 Shared Task (gold mentions) indiquent que notre méthode est robuste par rapport aux différentes stratégies de clustering et aux métriques d'évaluation, montrant de grandes améliorations constantes par rapport à un modèle pair-à-pair simple utilisant les mêmes traits élémentaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Our best system obtains a competitive 67 . 2 of average F1 over MUC, B[3] , and CEAF which, despite its simplicity, places it above the mean score of other systems on these datasets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre meilleur système obtient une moyenne de 67.2 en F1-mesure MUC, B[3] et CEAF ce qui, malgré sa simplicité, le situe parmi les meilleurs systèmes testés sur ces données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>1 Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>Coreference resolution is the problem of partitioning a sequence of noun phrases (or mentions ), as they occur in a natural language text, into a set of referential entities .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La résolution de la coréférence consiste à partitionner une séquence de syntagmes nominaux (ou mentions ), tels qu'ils apparaissent dans un texte en langue naturelle, en un ensemble d'entités référentielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>A common approach to this problem is to separate it into two modules: on the one hand, one defines a model for evaluating coreference links, in general a discriminative classifier that detects coreferential mention pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une approche classique pour résoudre ce problème consiste à le diviser en deux modules : d'une part, on définit un modèle pour évaluer les liens de coréférence, en général un classifieur discriminant détectant les mentions coréférentielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>On the other hand, one designs a method for grouping the detected links into a coherent global output (i.e. a partition over the set of entity mentions).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, on conçoit une méthode pour regrouper les liens détectés en une sortie globale cohérente (c'est-à-dire une partition sur l'ensemble des mentions d'entité).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>This second step is typically achieved using greedy heuristics (McCarthy and Lehnert, 1995; Soon et al., 2001; Ng and Cardie, 2002; Bengston and Roth, 2008), although more sophisticated clustering approaches have been used, too, such as cutting graph methods (Nicolae and Nicolae, 2006; Cai and Strube, 2010) and Integer Linear Programming (ILP) formulations (Klenner, 2007; Denis and Baldridge, 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette deuxième étape est généralement réalisée à l'aide de méthodes heuristiques gourmandes (McCarthy et Lehnert, 1995 ; Soon et al., 2001 ; Ng et Cardie, 2002 ; Bengston et Roth, 2008), bien qu'il existe des approches plus sophistiquées telles que les méthodes de graph cutting (Nicolae et Nicolae, 2006 ; Cai et Strube, 2010) ou l'ILP (Klenner, 2007 ; Denis et Baldridge, 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>Despite its simplicity, this two-step strategy remains competitive even when compared to more complex models utilizing a global loss (Bengston and Roth, 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malgré sa simplicité apparente, cette approche en deux étapes demeure compétitive même lorsqu’on la compare à des modèles plus complexes utilisant des mesures de perte globale (Bengston et Roth, 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>In this kind of architecture, the performance of the entire coreference system strongly depends on the quality of the local pairwise classifier.[1]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avec ce type d'architecture, la performance du système complet dépend fortement de la qualité du classifieur local de paires.[1]</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>Consequently, a lot of research effort on coreference resolution has focused on trying to boost the performance of the pairwise classifier.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, beaucoup de travaux de recherche sur la résolution de la co-référence ont consisté à essayer d’améliorer la performance du classifieur pair à pair.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>Numerous studies are concerned with feature extraction, typically trying to enrich the classifier with more linguistic knowledge and/or more world knowledge (Ng and Cardie, 2002; Kehler et al., 2004; Ponzetto and Strube, 2006; Bengston and Roth, 2008; Versley et al., 2008; Uryupina et al., 2011).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nombre d'études se concentrent sur l'extraction de traits, en essayant typiquement d'enrichir le classifieur avec davantage de connaissances linguistiques et/ou de connaissances du monde (Ng et Cardie, 2002 ; Kehler et al., 2004 ; Ponzetto et Strube, 2006 ; Bengston et Roth, 2008 ; Versley et al., 2008 ; Uryupina et al., 2011).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>A second line of work explores the use of distinct local models for different types of mentions, specifically for different types of anaphoric mentions based on their grammatical categories (such as pronouns, proper names, definite descriptions) (Morton, 2000; Ng, 2005; Denis and Baldridge, 2008).[2]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’autres travaux cherchent à utiliser des modèles locaux distincts pour différents types de mentions, en particulier pour différents types de mentions anaphoriques en se basant sur leur catégories grammaticales (telles que pronoms, noms propres, descriptions définies). On entraîne par exemple un modèle pour les pronoms, un autre pour les SN définis, etc (Morton, 2000; Ng, 2005; Denis et Baldridge, 2008)[2] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>An important justification for such specialized models is (psycho-)linguistic and comes from theoretical findings based on salience or accessibility (Ariel, 1988).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'utilisation de modèles spécialisés trouve une justification importante en psycho-linguistique, dans des travaux théoriques sur la saillance ou l'accessibilité (Ariel, 1988).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>It is worth noting that, from a machine learning point of view, this is related to feature extraction in that both approaches in effect recast the pairwise classification problem in higher dimensional feature spaces.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est intéressant de noter que, du point de vue de l'apprentissage statistique, cela est lié à l'extraction de traits dans la mesure où les deux approches reviennent à poser le problème de la classification de paires dans un espace de plus grande dimension.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we claim that mention pairs should not be processed by a single classifier, and instead should be handled through specific models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous soutenons que les paires de mentions ne devraient pas être traitées par un seul classifieur, mais au contraire par des modèles spécifiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>But we are furthermore interested in learning how to construct and select such differential models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais nous sommes également intéressés d'apprendre comment construire et sélectionner de tels modèles différentiels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>Our argument is therefore based on statistical considerations, rather than on purely linguistic ones[3] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre argumentation se fonde sur des considérations statistiques plutôt que purement linguistiques [3] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>The main question we raise is, given a set of indicators (such as grammatical types, distance between two mentions, or named entity types), how to best partition the pool of mention pair examples in order to best discriminate coreferential pairs from non coreferential ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La question que nous posons est, étant donné un ensemble d’indicateurs (tels que les types grammaticaux, la distance entre deux mentions ou le type d’entité nommée), comment séparer les paires de mentions afin de discriminer au mieux les paires coréférentielles par rapport à celles qui ne le sont pas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>In effect, we want to learn the “best” subspaces for our different models: that is, subspaces that are neither too coarse (i.e., unlikely to separate the data well) nor too specific (i.e., prone to data sparseness and noise).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, nous cherchons à apprendre les « meilleurs » sous-espaces pour nos différents modèles : c'est-à-dire des sous-espaces ni trop grossiers (c.-à-d. peu aptes à bien séparer les données), ni trop spécifiques (c.-à-d. pouvant souffrir du manque de données ou de bruit).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>We will see that this is also equivalent to selecting a single large adequate feature space by using the data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous verrons que cette démarche est aussi équivalente à sélectionner un seul grand espace de traits adéquat pour représenter toutes les données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>Our approach generalizes earlier approaches in important ways.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre approche généralise les approches précédentes de plusieurs manières.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>For one thing, the definition of the different models is no longer restricted to grammatical typing (our model allows for various other types of indicators) or to the sole typing of the anaphoric mention (our models can also be specific to a particular type antecedent or to the two types of the mention pair).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’une part, la définition des différents modèles n’est plus restreinte au simple typage grammatical (notre modèle permet d’utiliser n’importe quel type d’indicateurs) ni au seul typage de la mention anaphorique (nos modèles peuvent aussi être associés au typage de l’antécédent ou bien au types des deux éléments de la paire).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>More importantly, we propose an original method for learning the best set of models that can be built from a given set of indicators and a training set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’autre part, nous proposons une méthode originale pour apprendre les meilleurs ensembles de modèles que l’on peut construire à partir d’un ensemble d’indicateurs donnés et des données d’apprentissage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>These models are organized in a hierarchy, wherein each leaf corresponds to a mutually disjoint subset of mention pair examples and the classifier that can be trained from it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces modèles sont organisés dans une hiérarchie où chaque feuille correspond à un sous-ensemble de paires de mentions disjointes des autres et sur lequel un classifieur est entraîné.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>Our models are trained using the Online Passive-Aggressive algorithm or PA (Crammer et al., 2006), a large margin version of the perceptron.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nos différents modèles sont entraînés en utilisant l’algorithme Online Passive-Aggressive , ou PA (Crammer et al. , 2006), qui est une version à large marge du perceptron.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>Our method is exact in that it explores the full space of hierarchies (of size at least 2[2] [n] ) definable on an indicator sequence, while remaining scalable by exploiting the particular structure of these hierarchies with dynamic programming.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre méthode peut être qualifiée d'exacte dans le sens où elle explore complètement l'espace des hiérarchies (de taille au moins 2[2] [n] ) définissables à partir d'une séquence d'indicateurs, tout en restant évolutive en exploitant la structure particulière de ces hiérarchies avec une programmation dynamique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>This approach also performs well, and it largely outperforms the single model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette approche obtient également de très bonnes performances, et dépasse largement le modèle de départ qui utilise seulement les traits élémentaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>As will be shown based on a variety of experiments on the CoNLL-2012 Shared Task English datasets, these improvements are consistent across different evaluation metrics and for the most part independent of the clustering decoder that was used.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme le montreront diverses expériences sur les données anglaises de la CoNLL-2012 Shared Task, ces améliorations sont cohérentes sur différentes métriques d'évaluation et pour la plupart indépendantes du décodeur de clustering utilisé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>The rest of this paper is organized as follows. Section 2 discusses the underlying statistical hypotheses of the standard pairwise model and defines a simple alternative framework that uses a simple separation of mention pairs based on grammatical types.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La suite de cet article est organisée comme suit : la section 2 discute les hypothèses statistiques sur lesquelles repose le modèle standard à paires et définit un cadre alternatif simple qui utilise une simple séparation des paires de mentions en fonction de leur type grammatical.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>Next, in section 3, we generalize the method by introducing indicator hierarchies and explain how to learn the best models associated with them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, dans la section 3, nous généralisons la méthode en introduisant les hiérarchies d’indicateurs et expliquons comment apprendre le meilleur modèle possible à partir de celles-ci.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>Section 4 provides a brief system description and Section 5 evaluates the various models on CoNLL-2012 English datasets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section 4 donne une brève description du système complet et la section 5 donne les résultats d’évaluation des différents modèles sur les données anglaises de CoNLL-2012.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>2 Modeling pairs</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Paires de modélisation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>Pairwise models basically employ one local classifier to decide whether two mentions are coreferential or not.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les modèles à paires emploient en principe un seul classifieur local pour décider si deux mentions sont coréférentes ou non.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>When using machine learning techniques, this involves certain assumptions about the statistical behavior of mention pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsque l’on utilise des techniques d’apprentissage automatique, cela implique certaines hypothèses sur le comportement statistique des paires de mentions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>2.1 Statistical assumptions</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.1 Hypothèses statistiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>Let us adopt a probabilistic point of view to describe the prototype of pairwise models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour commencer, adoptons un point de vue probabiliste pour décrire le prototype du modèle à paires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>Given a document, the number of mentions is fixed and each pair of mentions follows a certain distribution (that we partly observe in a feature space).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné un document, le nombre de mentions est fixé et chaque paire de mentions suit une certaine distribution (que l’on observe en partie en projetant les paires dans un espace de traits).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>The basic idea of pairwise models is to consider mention pairs independently from each other (that is why a decoder is necessary to enforce transitivity).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'idée fondamentale du modèle à paires est de considérer que les paires de mentions sont indépendantes les unes des autres (c'est pourquoi un décodeur est nécessaire pour imposer la transitivité).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>If we use a single to process all pairs, then they are supposed to be identically distributed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si on utilise un seul classifieur pour traiter toutes les paires, on suppose alors qu'elles sont identiquement distribuées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>We claim that pairs should not be processed by a single classifier because they are not identically distributed (or a least the distribution is too complex for the classifier); rather, we should separate different “types” on pairs and create a specific model for each of them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pensons que les paires ne sont pas identiquement distribuées, mais qu’il faut au contraire séparer différents “types” de paires et créer des modèles spécifiques pour ces types.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Separating different kinds of pairs and handling them with different specific models can lead to more accurate global models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Séparer différents types de paires et les traiter avec des modèles spécifiques peut amener à des modèles globaux plus précis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>For instance, some coreference resolution systems process different kinds of anaphors separately, which suggests for example that pairs containing an anaphoric pronoun behave differently from pairs with non-pronominal anaphors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certains systèmes de résolution traitent différents types d’anaphores séparément, ce qui suggère par exemple que les paires qui contiennent un pronom anaphorique se comportent différemment des autres (Morton, 2000 ; Ng, 2005 ; Denis et Baldridge, 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>One could rely on a rich set of features to capture complex distributions, but here we actually have a rather limited set of elementary features (see section 4) and, for instance, using products of features must be done carefully to avoid introducing noise in the model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pourrions essayer de capturer ces différents comportements avec un ensemble très riche de traits, mais en réalité nous ne disposons que d’un nombre assez restreint de traits élémentaires (voir la section 4) et créer de nouveaux traits en les combinant doit être fait avec prudence pour éviter d’introduire du bruit dans le modèle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>Instead of imposing heuristic product of features, we will show that a clever separation of instances leads to significant improvements of the pairwise model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au lieu d'imposer un produit heuristique de caractéristiques, nous montrerons qu'une séparation habile des instances apporte de bonnes améliorations au modèle à paires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>2.2 Feature spaces</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.2 Espaces de caractéristiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>2.2.1 Definitions</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.2.1 Définitions</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>We first introduce the problem more formally.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous allons d'abord présenter le problème de manière plus formelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>Every pair of mentions mi and mj is modeled by a random variable:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque paire de mentions mi et m j est représentée par une variable aléatoire :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>where Ω classically represents randomness, X is the space of objects (“mention pairs”) that is not directly observable and yij ( ω ) ∈Y = { +1 , − 1 } are the labels indicating whether mi and mj are coreferential or not.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où Ω dénote classiquement l’aléatoire, X est l’espace des objets “paires de mentions” qui n’est pas directement observable et yi j ( ω ) ∈Y = { +1, − 1 } sont les étiquettes indiquant si mi et m j sont coréférentes ou non.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>To lighten the notations, we will not always write the index ij .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour alléger un peu ces notations, nous n’écrirons pas toujours l’indice i j .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>Now we define a mapping:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Maintenant nous définissons un mappage :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>that casts pairs into a feature space F through which we observe them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>qui projette les paires dans un espace de traits F à travers lequel elles sont observées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>For us, F is simply a vector space over R (in our case many features are Boolean; they are cast into R as 0 and 1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour nous, F est simplement un espace vectoriel sur R (dans notre cas, la plupart des traits sont booléens ; ils sont projetés sur R avec les valeurs 0 et 1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>For technical coherence, we assume that φF 1( x ( ω )) and φF 2( x ( ω )) have the same values when projected on the feature space F 1 ∩F 2: it means that common features from two feature spaces have the same values.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour des raisons de cohérence technique, nous supposons que φF 1 ( x ( ω )) et φF 2 ( x ( ω )) conservent les mêmes valeurs lorsqu’on les projette sur l’espace de traits F 1 ∩F 2 : cela signifie simplement que les traits communs à deux espaces ont toujours les mêmes valeurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>From this formal point of view, the task of coreference resolution consists in fixing φF , observing labeled samples { ( φF ( x ) , y ) t}t∈TrainSet and, given partially observed new variables { ( φF ( x )) t}t∈TestSet , recovering the corresponding values of y .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De ce point de vue formel, la tâche de résolution de la coréférence consiste à fixer un espace de traits F , observer des échantillons étiquetés { ( φF ( x ), y ) t }t∈TrainSet et, étant donné de nouvelles variables partiellement observées { ( φF ( x )) t }t∈TestSet , tenter de retrouver la valeur correspondante de y .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>2.2.2 Formalizing the statistical assumptions</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.2.2 Formaliser les hypothèses statistiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>We claimed before that all mention pairs seemed not to be identically distributed since, for example, pronouns do not behave like nominals.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons écrit plus haut que les paires de mentions n’apparaissent pas identiquement distribuées puisque, par exemple, les pronoms ne se comportent pas de la même façon que les noms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>We can formulate this more rigorously: since the object space X is not directly observable, we do not know its complexity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons maintenant formuler cela de façon plus rigoureuse : puisque nous ne pouvons pas observer directement l’espace des objets X , nous en ignorons la complexité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>In particular, when using a mapping to a too small feature space, the classifier cannot capture the distribution very well: the data is too noisy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En particulier, lorsque nous utilisons une projection vers un espace de traits trop petit, le classifieur ne parvient pas à capturer la distribution correctement : les données semblent trop bruitées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>Now if we say that pronominal anaphora do not behave like other anaphora, we distinguish two kinds of pair i.e. we state that the distribution of pairs in X is a mixture of two distributions, and we deterministically separate pairs to their specific distribution part.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Maintenant, en remarquant que les anaphores pronominales ne se comportent pas de la même manière que les autres anaphores, nous distinguons deux types de paires, c'est-à-dire que nous voyons la distribution des paires dans X comme un mélange de deux distributions. Nous séparons déterministiquement les paires en fonction de leur distribution spécifique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>In this way, we may separate positive and negative pairs more easily if we cast each kind of pair into a specific feature space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De ce fait, nous pourrons peut-être séparer les paires positives et négatives plus facilement si nous projetons chaque type de paires dans un espace de traits spécifique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>Let us call these feature spaces F 1 and F 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Appelons ces espaces de traits F 1 et F 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>We can either create two independent classifiers on F 1 and F 2 to process each kind of pair or define a single model on a larger feature space F = F 1 ⊕F 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons ou bien définir deux classifieurs indépendants sur F 1 et F 2 pour traiter chaque type de paires ou définir un seul modèle sur un espace plus grand F = F 1 ⊕F 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>If the model is linear (which is our case), these approaches happen to be equivalent.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si le modèle est linéaire (ce qui est notre cas), ces approches se révèlent équivalentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>So we can actually assume that the random variables Pij are identically distributed, but drawn from a complex mixture.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En conséquence, nous pouvons de fait supposer que les variables aléatoires Pij sont identiquement distribuées, mais tirées d'un mélange complexe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>A new issue arises: we need to find a mapping φF that renders the best view on the distribution of the data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un nouveau problème se pose : il faut trouver une projection φF qui représente au mieux la distribution des données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>From a theoretical viewpoint, the higher the dimension of the feature space (imagine taking the direct sum of all feature spaces), the more we get details on the distribution of mention pairs and the more we can expect to separate positives and negatives accurately.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’un point de vue théorique, plus la dimension de l’espace des traits est grande (par exemple la somme directe de tous les espaces de traits dont nous disposons), plus nous avons de détails sur la distribution des paires de mentions et plus nous pouvons espérer séparer les positifs des négatifs avec précision.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>In practice, we have to cope with data sparsity: there will not be enough data to properly train a linear model on such a space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En pratique, nous sommes confrontés au problème de rareté des données : il n’y a pas assez de données pour entraîner correctement un modèle linéaire sur un tel espace.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>Finally, we seek a feature space situated between the two extremes of a space that is too big (sparseness) or too small (noisy data).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au final, nous cherchons un espace de traits qui se situe entre les deux extrêmes que constituent un espace trop grand (données rares) ou trop petit (données bruitées).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>The core of this work is to define a general method for choosing the most adequate space F among a huge number of possibilities when we do not know a priori which is the best.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'objectif principal de ce travail est de définir une méthode générale pour choisir l'espace F le plus adéquat parmi un très grand nombre de possibilités lorsque nous ne savons pas a priori lequel peut être le meilleur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>2.2.3 Linear models</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.2.3 Modèles linéaires</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>In this work, we try to linearly separate positive and negative instances in the large space F with the Online Passive-Aggressive (PA) algorithm (Crammer et al., 2006): the model learns a parameter vector w that defines a hyperplane that cuts the space into two parts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous essayons de séparer linéairement les instances positives des négatives dans l'espace F avec l'algorithme Online Passive-Aggressive (PA) (Crammer et al., 2006) : le modèle apprend un vecteur de paramètres w qui définit un hyperplan coupant l'espace en deux parties.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>The predicted class of a pair x with feature vector φF ( x ) is given by:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La classe prédite pour la paire x avec vecteur de traits φF ( x ) est donnée par :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>Linearity implies an equivalence between: (i) separating instances of two types, t 1 and t 2, in two independent models with respective feature spaces F 1 and F 2 and parameters w[1] and w[2] , and (ii) a single model on F 1 ⊕F 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La propriété de linéarité rend équivalentes les séparations des instances de deux types t 1 et t 2, dans deux modèles indépendants avec pour espace de traits respectif F 1 et F 2 et pour paramètres w[1] et w[2] , et un modèle simple sur F 1 ⊕F 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>To see why, let us define the map:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour voir pourquoi, définissons la projection :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>and the parameter vector w = F 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>et le vecteur de paramètres w = F 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>Then we have:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons ensuite:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>Now we check that the same property applies when the PA fits its parameter w .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il faut maintenant s’assurer que cette propriété s’applique lorsque le PA ajuste son paramètre w .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>For each new instance of the training set, the weight is updated according to the following rule[4] : where l ( w ; ( xt, yt )) = min(0 , 1 −yt ( w ·φF ( xt ))), so that when F = F 1 ⊕F 2, the minimum if x is 1 typed t 1 is w t +1 = w t +1 and if x is typed w t[2] t 2 is w t +1 = w t[1] where the w t[i] +1 w t[2] +1 correspond to the updates in space Fi independently from the rest.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, la mise à jour du vecteur de poids à chaque itération prend la forme suivante : w t +1 = argmin w ∈F 2 || w − w t || tq l ( w ; ( x t , yt )) = 0 où l ( w ; ( x t , yt )) = min(0, 1 − yt ( w · φF ( x t ))), de sorte que lorsque F = F 1 ⊕F 2, le minimum 1 w w[1] si x est de type t 1 est w t +1 = w t +[2] 1 et si x est de type t 2 is w t +1 = w[2] t où w [i] t +1 t t +1 correspond aux mises à jour dans l’espace Fi indépendamment du reste.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>This result can be extended easily to the case of n feature spaces.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce résultat peut être facilement étendu au cas de n espaces de traits.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>Thus, with a deterministic separation of the data, a large model can be learned using smaller independent models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, avec une séparation déterministe des données, un modèle sur un grand espace peut être appris en le décomposant en modèles indépendants sur des espaces plus petits.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>2.3 An example: separation by gramtype</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.3 Un exemple : la séparation par gramtype</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>To motivate our approach, we introduce a simple separation of mention pairs which creates 9 models obtained by considering all possible pairs of grammatical types {nominal, name, pronoun} for both mentions in the pair (a similar fine-grained separation can be found in (Chen et al., 2011)).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour motiver notre approche, nous commençons par introduire une séparation relativement simple des paires de mentions qui s’appuie sur les 9 modèles obtenus en considérant toutes les combinaisons possibles des types grammaticaux { nominal, name, pronoun } pour les deux mentions de la paire (une séparation fine similaire peut être trouvée dans (Chen et al. , 2011)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>This is equivalent to using 9 different feature spaces F 1 , … , F 9 to capture the global distribution of pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela revient à utiliser 9 espaces de traits différents F 1,…, F 9 pour capturer la distribution globale des paires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>With the PA, this is also a single model with feature space F = F 1 ⊕· · · ⊕F 9.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avec le PA, nous obtenons également un seul modèle sur l'espace de traits F = F 1 ⊕··· ⊕F 9.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>We will call it the GRAMTYPE model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous appellerons cela le modèle GRAMTYPE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>As we will see in Section 5, these separated models significantly outperform a single model that uses the same base feature set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme nous le verrons dans la section 5, ces modèles séparés obtiennent des performances qui dépassent significativement celles d’un unique modèle qui utilise les mêmes traits élémentaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>But we would like to define a method that adapts a feature space to the data by choosing the most adequate separation of pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais nous voudrions définir une méthode qui adapte l'espace de traits aux données en choisissant la séparation des paires la plus appropriée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>3 Hierarchizing feature spaces</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Hiérarchisation des espaces de traits</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>In this section, we have to keep in mind that separating the pairs in different models is the same as building a large feature space in which the parameter w can be learned by parts in independent subspaces.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette section, on gardera à l'esprit que séparer les paires dans différents modèles est la même chose que construire un grand espace de traits dans lequel le paramètre w peut être appris par parties dans des sous-espaces indépendants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>3.1 Indicators on pairs</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1 Indicateurs sur les paires</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>For establishing a structure on feature spaces, we use indicators which are deterministic functions on mention pairs with a small number of outputs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour définir une structure sur des espaces de traits, nous utilisons des indicateurs qui sont des fonctions déterministes sur des paires de mentions avec un nombre restreint de valeurs possibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>Indicators classify pairs in predefined categories in one-to-one correspondence with independent feature spaces.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les indicateurs sont utilisés pour classer les paires dans des catégories prédéfinies et en bijection avec un ensemble d’espaces de traits élémentaires indépendants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>We can reuse some features of the system as indicators, e.g. the grammatical or named entity types.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons réutiliser les traits du système comme indicateurs, par exemple, le type grammatical ou celui des entités nommées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>We can also employ functions that are not used as features, e.g. the approximate position of one of the mentions in the text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons également utiliser des fonctions qui ne sont pas des traits, par exemple la position approximative d’une des deux mentions dans le texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>The small number of outputs of an indicator is required for practical reasons: if a category of pairs is too refined, the associated feature space will suffer from data sparsity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le petit nombre de valeurs possibles pour un indicateur est requis pour des raisons pratiques : si une catégorie de paires est trop fine, l’espace de traits associé souffrira de la rareté des données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>Accordingly, distance-based indicators must be approximated by coarse histograms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En conséquence, les indicateurs basés sur les distances doivent être approximés par des histogrammes assez grossiers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>In our experiments the outputs never exceeded a dozen values.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans nos expériences, le nombre de valeurs possibles ne dépassera jamais une douzaine (ce qui sera amplement suffisant pour générer assez de combinatoire).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>One way to reduce the output span of an indicator is to binarize it like binarizing a tree (many possible binarizations).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une façon de réduire la taille de l’ensemble des valeurs d’un indicateur est de le binariser, de la même façon que l’on binarise un arbre (il y a plusieurs binarisations possibles).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>This operation produces a hierarchy of indicators which is exactly the structure we exploit in what follows.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette opération produit une hiérarchie d’indicateurs qui est exactement la structure que nous exploitons dans la suite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>3.2 Hierarchies for separating pairs</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2 Des hiérarchies pour séparer les paires</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>We hierarchies as combinations of indicators creating finer categories of mention pairs: given a finite sequence of indicators, a mention pair is classified by applying the indicators successively, each time refining a category into subcategories, just like in a decision tree (each node having the same number of children as the number of outputs of its indicator).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous définissons les hiérarchies comme des combinaisons d’indicateurs créant des catégories de plus en plus fines de paires de mentions : étant donnée une suite d’indicateurs, une paire de mentions est classée en appliquant les indicateurs successivement, chaque fois en raffinant une catégorie en sous-catégories, de la même manière que dans un arbre de décision (chaque nœud ayant le même nombre d’enfants que le nombre de valeurs prises par son indicateur).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>We allow the classification to stop before applying the last indicator, but the behavior must be the same for all the instances.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous autorisons la classification à s’arrêter avant d’appliquer le dernier indicateur, mais le comportement doit être le même pour toutes les instances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>So a hierarchy is basically a sub-tree of the complete decision tree that contains copies of the same indicator at each level.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi une hiérarchie est en principe un sous-arbre de l’arbre de décision complet qui contient des copies d’un même indicateur à chaque niveau.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>If all the leaves of the decision tree have the same depth, this corresponds to taking the Cartesian product of outputs of all indicators for indexing the categories.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si toutes les feuilles de l’arbre de décision ont la même profondeur, cela correspond à prendre le produit cartésien des valeurs de tous les indicateurs pour indexer les catégories.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>In that case, we refer to product-hierarchies .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cas, nous parlerons de hiérarchies-produit .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>The GRAMTYPE model can be seen as a two level product-hierarchy (figure 1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le modèle gramtype peut être vu comme une hiérarchie-produit à deux niveaux (figure 1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: GRAMTYPE seen as a product-hierarchy</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1 : GRAMTYPE vu comme une hiérarchie-produit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>Product-hierarchies will be the starting point of our method to find a feature space that fits the data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les hiérarchies-produit seront le point de départ de notre méthode pour trouver un espace de traits qui représente bien les données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>Now choosing a relevant sequence of indicators should be achieved through linguistic intuitions and theoretical work ( gramtype separation is one of them).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Maintenant, pour choisir une suite d’indicateurs appropriés, il faut faire appel aux intuitions linguistiques et aux travaux théoriques sur le sujet (la séparation grammatique en est un).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>The system will find by itself the best usage of the indicators when optimizing the hierarchy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système trouvera lui-même la meilleure façon d’utiliser ces indicateurs lorsqu’il optimisera la hiérarchie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>The sequence is a parameter of the model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La séquence est un paramètre du modèle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>3.3 Relation with feature spaces</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3 Relation avec les espaces de traits</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>Like we did for the GRAMTYPE model, we associate a feature space Fi to each leaf of a hierarchy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme nous l’avons fait pour le modèle gramtype , nous associons un espace de traits Fi à chacune des feuilles de la hiérarchie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>Likewise, the sum F = F- ⊕i Fi defines a large feature space. The corresponding parameter w of the model can be obtained by learning the w i in Fi .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De la même manière, la somme F = F- ⊕i Fi définit un grand espace de traits, et le paramètre correspondant w du modèle peut être appris en apprenant les w i dans les Fi .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>Given a sequence of indicators, the number of different hierarchies we can define is equal to the number of sub-trees of the complete decision tree (each non-leaf node having all its children).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donnée une séquence d’indicateurs, le nombre de hiérarchies différentes que nous pouvons définir est égal au nombre de sous-arbres de l’arbre de décision complet (chaque nœud non feuilleté ayant tous ses enfants).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>The minimal case is when all indicators are Boolean.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le cas minimal est celui d’indicateurs booléens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>The number of full binary trees of height at most n can be computed by the following recursion: T (1) = 1 and T ( n + 1) = 1 + T ( n )[2] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le nombre d’arbre binaires entiers de taille au plus n peut être calculé par la récurrence suivante : T (1) = 1 et T ( n + 1) = 1 + T ( n )[2] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>So T ( n ) ≥ 2[2] [n] : even with small values of n , the number of different hierarchies (or large feature spaces) definable with a sequence of indicators is gigantic (e.g. T (10) ≈ 3 . 8 . 10[90] ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Donc T ( n ) ≥ 2[2] [n] : même avec des petites valeurs de n , le nombre de hiérarchies différentes (ou de grand espaces de traits) définissables par une séquence d’indicateurs est gigantesque (p.ex. T (10) ≈ 3.8.10[90] ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>Among all the possibilities for a large feature space, many are irrelevant because for them the data is too sparse or too noisy in some subspaces.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Parmi toutes les possibilités pour un grand espace de traits, beaucoup ne sont pas appropriés parce qu’avec eux les données sont trop rares ou trop bruitées dans certains sous-espaces.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>We need a general method for finding an adequate space without enumerating and testing each of them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons besoin d'une méthode générale pour trouver un espace adéquat sans avoir à énumérer et tester chacun d'eux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>3.4 Optimizing hierarchies</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.4 Optimisation des hiérarchies</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>Let us assume now that the sequence of indicators is fixed, and let n be its length.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Considérons que la séquence d’indicateurs est fixée, et que n soit sa longueur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>To find the best feature space among a very high number of possibilities, we need a criterion we can apply without too much additional computation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour trouver le meilleur espace de traits parmi un très grand nombre de possibilités, nous avons besoin d’un critère de sélection applicable sans trop de calculs supplémentaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>For that we only evaluate the feature space locally on pairs, i.e. without applying a decoder on the output.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour cela, nous n’évaluons l’espace de traits que localement sur les paires, c’est-à-dire sans appliquer un décodeur à la sortie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>We employ 3 measures on pairwise classification results: precision, recall and F1-score.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous employons trois mesures sur les résultats de la classification des paires : la précision, le rappel et le F1-score.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>Now selecting the best space for one of these measures can be achieved by using dynamic programming techniques.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sélectionner le meilleur espace pour l'une de ces mesures peut être réalisé en utilisant des techniques de programmation dynamique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>In the rest of the paper, we will optimize the F1-score.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le reste du document, nous allons optimiser le F1-score.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>Training the hierarchy Starting from the product-hierarchy, we associate a classifier and its proper feature space to each node of the tree[5] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Entraînement de la hiérarchie : Partant de la hiérarchie-produit, nous associons un classifieur et son propre espace de traits à chacun des nœuds de l’arbre[5] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>The classifiers are then trained as follows: for each instance there is a unique path from the root to a leaf of the complete tree.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les classificateurs sont ensuite entraînés comme suit : pour chaque instance, il existe un unique chemin de la racine vers une feuille de l’arbre complet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>Each classifier situated on the path is updated with this instance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque classifieur situé sur ce chemin est mis à jour avec cette instance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>The number of iterations of the Passive-Aggressive is fixed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le nombre d'itérations du Passive-Aggressive est fixé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>Computing scores After training, we test all the classifiers on another set of pairs[6] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Calcul des scores : Après la phase d’apprentissage, nous testons tous les classificateurs sur un autre ensemble de paires [6] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>Again, a classifier is tested on an instance only if it is situated on the path from the root to the leaf associated with the instance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois encore, un classifieur est testé sur une instance seulement s’il est situé sur le chemin de la racine vers la feuille associée à l’instance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>We obtain TP/FP/FN numbers[7] on pair classifications that are sufficient to compute the F1-score.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous obtenons des nombres TP/FP/FN[5] sur les classifications des paires, qui suffisent pour calculer le F1-score.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>As for training, the data on which a classifier at a given node is evaluated is the same as the union of all data used to evaluate the classifiers corresponding to the children of this node.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme pour l'apprentissage, les données sur lesquelles un classifieur à un nœud donné est évalué sont les mêmes que l'union de toutes les données utilisées pour évaluer les classifieurs correspondant aux enfants de ce nœud.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>Thus we are able to compare the scores obtained at a node to the “union of the scores” obtained at its children.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C’est ainsi que nous sommes en mesure de comparer les scores obtenus au niveau d’un nœud à la “réunion des scores” obtenus au niveau de ses enfants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>Cutting down the hierarchy For the moment we have a complete tree with a classifier at each node.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Découpage de la hiérarchie : Pour le moment, nous avons un arbre complet avec un classifieur à chaque nœud.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>We use a dynamic programming technique to compute the best hierarchy by cutting this tree and only keeping classifiers situated at the leaf.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons une technique de programmation dynamique pour calculer la meilleure hiérarchie en coupant cet arbre et en ne gardant que les classifieurs situés au niveau des feuilles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>The algorithm assembles the best local models (or feature spaces) together to create larger models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’algorithme assemble les meilleurs modèles locaux (ou espaces de traits) pour créer des modèles plus grands.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>It goes from the leaves to the root and cuts the subtree starting at a node whenever it does not provide a better score than the node itself, or on the contrary propagates the score of the sub-tree when there is an improvement.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il part des feuilles pour remonter jusqu'à la racine et coupe le sous-arbre qui commence à un nœud à chaque fois qu'il ne fournit pas de meilleur score que le score du nœud seul, ou au contraire il propage le score du sous-arbre lorsqu'il y a une amélioration.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>The details are given in algorithm 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les détails sont donnés dans l’algorithme 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>Let us briefly discuss the correctness and complexity of the algorithm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Discutons brièvement de la validité et de la complexité de l'algorithme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>Each node is seen two times so the time complexity is linear in the number of nodes which is at least O (2 [n] ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque nœud n’est vu que deux fois donc la complexité est linéaire en le nombre de nœuds qui est au moins O (2 [n] ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>However, only nodes that have encountered at least one training instance are useful and there are O ( n × k ) such nodes (where k the size of the training set).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutefois, seulement les nœuds qui ont rencontré au moins une instance d’apprentissage sont utiles et il y en a O ( n × k ) (où k est la taille de l’ensemble d’apprentissage).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>So we can optimize the algorithm to run in time O ( n × k )[8] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Donc nous pouvons optimiser l'algorithme pour tourner en temps O ( n × k ) [8] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>If we scan the list obtained by breadth-first search backwards, we are ensured that every node will be processed after its children.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En parcourant à l’envers la liste obtenue par le parcours en largeur de la hiérarchie, nous sommes assurés que chaque nœud sera traité après ses enfants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>( node.children ) is the set of children of node , and ( node.score ) its score.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>( node.children ) est l’ensemble des enfants de node , et ( node.score ) est son score.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>sum-num provides TP/FP/FN by simply adding those of the children and sum-score computes the score based on these new TP/FP/FN numbers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>sum-num fournit les TP/FP/FN en sommant simplement les nombres correspondants des enfants et sum-score calcule le score basé sur ces nouveaux nombres TP/FP/FN.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>(line 6) cuts the children of a node when they are not used in the best score.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(ligne 6) coupe les enfants d'un nœud quand ils ne sont pas utilisés pour définir le meilleur score.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>The algorithm thus propagates the best scores from the leaves to the root which finally gives a single score corresponding to the best hierarchy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’algorithme propage alors les meilleurs scores depuis les feuilles vers la racine, ce qui donne au final un seul score qui correspond à celui de la meilleure hiérarchie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>Only the leaves used to compute the best score are kept, and they define the best hierarchy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Seulement les feuilles utilisées pour calculer le meilleur score sont conservées et elles définissent la meilleure hiérarchie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>Relation between cutting and the global feature space</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Relation entre le découpage et l’espace de traits global</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>We can see the operation of cutting as replacing a group of subspaces by a single subspace in the sum (see figure 2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons voir l’opération de découpage comme le remplacement d’un groupe de sous-espaces par un seul sous-espace dans la somme (voir figure 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>So cutting down the product-hierarchy amounts to reducing the global initial feature space in an optimal way.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Réduire la hiérarchie-produit revient donc à réduire l’espace de traits global de manière optimale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>To sum up, the whole procedure is equivalent to training more than O (2 [n] ) perceptrons simultaneously and selecting the best performing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En résumé, l'ensemble de la procédure équivaut à l'entraînement simultané de plus de O (2 [n] ) perceptrons et à la sélection du meilleur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>Figure 2: Cutting down the hierarchy reduces the feature space</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>FIGURE 2 – Découper la hiérarchie réduit l’espace de traits</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>4 System description</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Description du système</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>Our system consists in the pairwise model obtained by cutting a hierarchy (the PA with selected feature space) and using a greedy decoder to create clusters from the output.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre système se compose du modèle à paires séparées obtenu en découpant la hiérarchie (c’est donc un PA sur l’espace de traits sélectionné) et un décodeur glouton pour créer des clusters à partir de sa sortie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>It is parametrized by the choice of the initial sequence of indicators.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est paramétré par le choix de la séquence initiale d’indicateurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>4.1 The base features</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Les traits élémentaires</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>We used classical features that can be found in details in (Bengston and Roth, 2008) and (Rahman and Ng, 2011): grammatical type and subtype of mentions, string match and substring, apposition and copula, distance (number of separating mentions/sentences/words), gender/number match, synonymy/hypernym and animacy (using WordNet), family name (based on lists), named entity types, syntactic features (gold parse) and anaphoricity detection.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé un ensemble de traits classiques qui sont détaillés dans (Bengston et Roth, 2008) et (Rahman et Ng, 2011). Nous ne listons ici que les groupes de traits : types et sous-types grammaticaux des mentions, même chaîne/sous-chaîne de caractères, apposition, copule, distance (en nombre de mentions/phrases/mots), égalité en genre/nombre, synonymie/hyperonymie et caractère animé (en utilisant WordNet), nom de famille (à partir de liste), types d’entité nommée, traits syntaxiques ( gold parse tree ) et détection d’anaphoricité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>4.2 Indicators</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 Indicateurs</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>As indicators we used: left and right grammatical types and subtypes, entity types, a boolean indicating if the mentions are in the same sentence, and a very coarse histogram of distance in terms of sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Indicateurs : Comme indicateurs nous avons utilisé : types et sous-types grammaticaux pour les mentions gauche (antécédent) et droite (anaphore) selon l’ordre du texte, types d’entités nommées, un booléen indiquant si les mentions se trouvent dans la même phrase et un histogramme très grossier de la distance en nombre de phrase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>We systematically included right gramtype and left gramtype in the sequences and added other indicators, producing sequences of different lengths.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons systématiquement inclus le type grammaticaux droit et gauche dans les séquences et ajouté d'autres indicateurs, produisant des séquences de différentes longueurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>The parameter was optimized by document categories using a development set after decoding the output of the pairwise model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le paramètre a été optimisé par catégorie de document en utilisant les données de développement, après avoir décodé la sortie du modèle à paires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>4.3 Decoders</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.3 Décodeurs</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>We tested 3 classical greedy link selection strategies that form clusters from the classifier decision: Closest-First (merge mentions with their closest coreferent mention on the left) (Soon et al., 2001), Best-first (merge mentions with the mention on the left having the highest positive score) (Ng and Cardie, 2002; Bengston and Roth, 2008), and Aggressive-Merge (transitive closure on positive pairs) (McCarthy and Lehnert, 1995).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Décodeurs Nous avons testé trois stratégies gloutonnes classiques pour sélectionner les liens et former les clusters à partir des décisions du classifieur : Closest-First (fusionne les mentions avec la mention coréférente à gauche la plus proche, si elle existe) (Soon et al. , 2001), Best-first (fusionne les mentions avec la mention à gauche qui obtient le meilleur score positif) (Ng et Cardie, 2002; Bengston et Roth, 2008), et Aggressive-Merge (fermeture transitive sur les paires positives) (McCarthy et Lehnert, 1995).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>Each of these decoders is typically (although not always) used in tandem with a specific sampling selection at training.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chacun de ces décodeurs est généralement (mais pas toujours) utilisé en tandem avec un échantillonnage particulier lors de l'apprentissage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>Thus, Closest-First for instance is used in combination with a sample selection that generates training instances only for the mentions that occur between the closest antecedent and the anaphor (Soon et al., 2001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, Closest-First est par exemple utilisé en combinaison avec un échantillonnage qui génère des exemples d'entraînement uniquement pour les mentions qui apparaissent entre l'antécédent le plus proche et l'anaphore (Soon et al., 2001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Pairwise scores on CoNLL-2012 test.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 : Scores par paires sur l'épreuve CoNLL-2012.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>5 Experiments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Expériences</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>5.1 Data</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.1 Données</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>We evaluated the system on the English part of the corpus provided in the CoNLL-2012 Shared Task (Pradhan et al., 2012), referred to as CoNLL-2012 here.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons évalué le système sur la partie anglaise du corpus fourni dans la CoNLL-2012 Shared Task (Pradhan et al. , 2012).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>The corpus contains 7 categories of documents (over 2K documents, 1 . 3M words).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus contient 7 catégories de documents (plus de 2k documents, 1.3M de mots).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>We used the official train/dev/test data sets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé les données d’entraînement/développement/test officielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>We evaluated our system in the closed mode which requires that only provided data is used.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons évalué notre système en mode fermé, qui nécessite l'utilisation uniquement des données fournies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>5.2 Settings</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.2 Paramètres</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>Our baselines are a SINGLE MODEL, the GRAMTYPE model (section 2) and a RIGHT-TYPE model, defined as the first level of the gramtype product hierarchy (i.e. grammatical type of the anaphora (Morton, 2000)), with each greedy decoder and also the original sampling with a single model associated with those decoders.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nos points de départ sont un MODELE UNIQUE, le modèle GRAMTYPE (section 2) et un modèle RIGHT-TYPE, défini comme le premier niveau de la hiérarchie de produits gramtype (c.-à-d. le type grammatical de l'anaphore (Morton, 2000)), avec chaque décodeur gourmand et également l'échantillonnage original avec un modèle unique associé à ces décodeurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>The hierarchies were trained with 10-fold crossvalidation on the training set (the hierarchies are cut after cumulating the scores obtained by crossvalidation) and their parameters are optimized by document category on the development set: the sequence of indicators obtaining the best average score after decoding was selected as parameter for the category.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les hiérarchies ont été entraînées par validation croisée (10-fold) sur les données d'entraînement (les hiérarchies sont coupées après avoir cumulé les scores obtenus par la validation croisée) et leurs paramètres ont été optimisés par catégorie de documents sur les données de développement : la séquence d'indicateurs obtenant le meilleur score moyen après décodage a été sélectionnée comme paramètre optimal pour la catégorie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>The obtained hierarchy is referred to as the BEST HIERARCHY in the results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les résultats, nous appellerons la hiérarchie obtenue BEST HIERARCHY.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <tuv xml:lang="EN">
+                <seg>We fixed the number of iterations for the PA for all models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons fixé le nombre d’itérations du Passive-Aggressive pour tous les modèles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <tuv xml:lang="EN">
+                <seg>In our experiments, we consider only the gold mentions .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans nos expériences, nous ne prenons en compte que les mentions gold (pas de singletons ni de non-référentiels).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <tuv xml:lang="EN">
+                <seg>This is a rather idealized setting but our focus is on comparing various pairwise local models rather than on building a full coreference resolution system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est un cadre assez idéalisé, mais notre but est de comparer les divers modèles à paires locaux plutôt que de mettre en place un système complet de résolution de la coreférence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <tuv xml:lang="EN">
+                <seg>Also, we wanted to avoid having to consider too many parameters in our experiments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, nous voulions éviter d'avoir à considérer trop de paramètres dans nos expériences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <tuv xml:lang="EN">
+                <seg>5.3 Evaluation metrics</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.3 Métriques d’évaluation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <tuv xml:lang="EN">
+                <seg>We use the three metrics that are most commonly used[9] , namely:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons les trois métriques les plus couramment utilisées[9], à savoir :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <tuv xml:lang="EN">
+                <seg>MUC (Vilain et al., 1995) computes for each true entity cluster the number of system clusters that are needed to cover it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- MUC (Vilain et al. , 1995) calcule pour chaque vrai cluster-entité le nombre de clusters système nécessaires pour le recouvrir.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="195">
+            <tuv xml:lang="EN">
+                <seg>Precision is this quantity divided by the true cluster size minus one.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La précision est cette quantité divisée par la taille du vrai cluster moins un.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="196">
+            <tuv xml:lang="EN">
+                <seg>Recall is obtained by reversing true and predicated clusters.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le rappel est obtenu en inversant les clusters vrai et prédits.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="197">
+            <tuv xml:lang="EN">
+                <seg>F1 is the harmonic mean.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>F1 est la moyenne harmonique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="198">
+            <tuv xml:lang="EN">
+                <seg>B[3] (Bagga and Baldwin, 1998) computes recall and precision scores for each mention, based on the intersection between the system/true clusters for that mention.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- B[3] (Bagga et Baldwin, 1998) calcule les scores de rappel et de précision pour chaque mention, à partir de l’intersection entre le cluster système et le vrai cluster pour cette mention.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="199">
+            <tuv xml:lang="EN">
+                <seg>Precision is the ratio of the intersection and the true cluster sizes, while recall is the ratio of the intersection to the system cluster sizes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La précision est le rapport entre les tailles de l'intersection et du vrai cluster, tandis que le rappel est le rapport entre les tailles de l'intersection et des clusters du système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="200">
+            <tuv xml:lang="EN">
+                <seg>Global recall, precision, and F1 scores are obtained by averaging over the mention scores.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les rappel et précision globaux et le F1 sont obtenus en prenant la moyenne sur les scores des mentions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="201">
+            <tuv xml:lang="EN">
+                <seg>CEAF (Luo, 2005) scores are obtained by computing the best one-to-one mapping between the system/true partitions, which is equivalent to finding the best optimal alignment in the bipartite graph formed out of these partitions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- CEAF (Luo, 2005) : scores obtenus en calculant la meilleure bijection entre la vraie partition et la partition système, ce qui est équivalent à trouver l’alignement optimal dans le graphe bipartite formé par ces partitions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="202">
+            <tuv xml:lang="EN">
+                <seg>We use the φ 4 similarity function from (Luo, 2005).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons la fonction de similarité φ 4 de (Luo, 2005).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="203">
+            <tuv xml:lang="EN">
+                <seg>These metrics were recently used in the CoNLL2011 and -2012 Shared Tasks .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces métriques ont été récemment utilisées dans les Shared Task CoNLL-2011 et 2012 .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="204">
+            <tuv xml:lang="EN">
+                <seg>In addition, these campaigns use an unweighted average over the F1 scores given by the three metrics.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, ces campagnes utilisent une moyenne non pondérée sur les F1 scores donnés par ces trois métriques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="205">
+            <tuv xml:lang="EN">
+                <seg>Following common practice, we use micro-averaging when reporting our scores for entire datasets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme cela est de pratique courante, nous utilisons le micro-averaging lorsque nous donnons nos scores sur l’ensemble des données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="206">
+            <tuv xml:lang="EN">
+                <seg>5.4 Results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.4 Résultats</seg>
+            </tuv>
+        </tu>
+        <tu tuid="207">
+            <tuv xml:lang="EN">
+                <seg>The results obtained by the system are reported in table 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats obtenus par le système sont repris dans le tableau 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="208">
+            <tuv xml:lang="EN">
+                <seg>The original sampling for the single model associated to Closest-First and Best-First decoder are referred to as SOON and NGCARDIE.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les échantillonnages originaux associés aux décodeurs Closest-First et Best-First sont désignés par SOON et NGCARDIE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="209">
+            <tuv xml:lang="EN">
+                <seg>The P/R/F1 pairwise scores before decoding are given in table 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les scores pair-à-pair P/R/F1 avant décodage sont donnés dans le tableau 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="210">
+            <tuv xml:lang="EN">
+                <seg>BEST HIERARCHY obtains a strong improvement in F1 (+15), a better precision and a less significant diminution of recall compared to GRAMTYPE and RIGHT-TYPE.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>BEST HIERARCHY obtient une forte amélioration de F1 (+15), une meilleure précision et une diminution moins significative du recall par rapport à GRAMTYPE et RIGHT-TYPE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="211">
+            <tuv xml:lang="EN">
+                <seg>Table 2: CoNLL-2012 test (gold mentions): Closest-First, Best-First and Aggressive-Merge decoders.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2 : Test CoNLL-2012 (mentions or). Décodeurs Closest-First, Best-First et Aggressive-Merge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="212">
+            <tuv xml:lang="EN">
+                <seg>Despite the use of greedy decoders, we observe a large positive effect of pair separation in the pairwise models on the outputs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malgré l'utilisation de décodeurs gloutons, nous pouvons observer sur la sortie un effet positif très significatif de la séparation des paires dans les modèles pair à pair.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="213">
+            <tuv xml:lang="EN">
+                <seg>On the mean score, the use of distinct models versus a single model yields F1 increases from 6 . 4 up to 8 . 3 depending on the decoder.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’utilisation de modèles distincts plutôt qu’un seul modèle a un effet positif sur le score moyen, avec un incrément de 6.4 à 8.3 en fonction du décodeur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="214">
+            <tuv xml:lang="EN">
+                <seg>Irrespective of the decoder being used, GRAMTYPE always outperforms RIGHT-TYPE and single model and is always outperformed by BEST HIERARCHY model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quel que soit le décodeur utilisé, GRAMTYPE surpasse toujours RIGHT-TYPE et le modèle unique et est lui-même surpassé par le modèle BEST HIERARCHY.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="215">
+            <tuv xml:lang="EN">
+                <seg>Interestingly, we see that the increment in pairwise and global score are not proportional: for instance, the strong improvement of F1 between RIGHT-TYPE and GRAMTYPE results in a small amelioration of the global score.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est intéressant de voir que l'augmentation de la note pair-à-pair et de la note globale ne sont pas proportionnelles : par exemple, l'amélioration importante de F1 entre RIGHT-TYPE et GRAMTYPE n'entraîne qu'une petite amélioration de la note globale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="216">
+            <tuv xml:lang="EN">
+                <seg>Depending on the document category, we found some variations as to which hierarchy was learned in each setting, but we noticed that parameters starting with right and left gramtypes often produced quite good hierarchies: for instance right gramtype → left gramtype → same sentence → right named entity type.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Selon la catégorie du document, nous avons observé des variations quant au paramètre hiérarchique appris dans chaque contexte, mais nous avons remarqué que les paramètres commençant par right et left gramtypes produisaient souvent de bonnes hiérarchies : par exemple, right gramtype → left gramtype → même phrase → right named entity type.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="217">
+            <tuv xml:lang="EN">
+                <seg>We observed that product-hierarchies did not performed well without cutting (especially when using longer sequences of indicators, because of data sparsity) and could obtain scores lower than the single model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons observé que les hiérarchies de produits n’étaient pas performantes sans coupe (surtout lorsqu’on utilise des séquences plus longues d’indicateurs, en raison de la rareté des données) et pouvaient obtenir des scores inférieurs à ceux du modèle unique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="218">
+            <tuv xml:lang="EN">
+                <seg>Hopefully, after cutting them the results always became better as the resulting hierarchy was more balanced.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Heureusement, après les avoir coupées, les résultats étaient toujours meilleurs car la hiérarchie résultante était plus équilibrée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="219">
+            <tuv xml:lang="EN">
+                <seg>Looking at the different metrics, we notice that overall, pair separation improves B[3] and CEAF (but not always MUC) after decoding the output: GRAMTYPE provides a better mean score than the single model, and BEST HIERARCHY gives the highest B[3] , CEAF and mean score.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En regardant les trois différentes métriques, nous constatons que globalement, la séparation des paires améliore B[3] et CEAF (mais pas toujours MUC, à cause du très gros rappel du single model ) après le décodage de la sortie : gramtype donne un meilleur score que le modèle simple, et best hierarchy donne les plus hauts B[3] , CEAF et scores moyens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="220">
+            <tuv xml:lang="EN">
+                <seg>a score of 67 . 19, which would place it above the mean score (66.41) of the systems that took part in the CoNLL-2012 Shared Task (gold mentions track). Except for the first at 77.22, the best performing systems have a score around 68-69.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La meilleure combinaison de classifieur-décodeur réalise un score de 67.19, ce qui la placerait au niveau des meilleurs systèmes qui ont pris part à la CoNLL-2012 Shared Task sur la configuration gold mentions (moyenne à 66.41, le premier isolé à 77, les meilleurs suivants à 68-69).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="221">
+            <tuv xml:lang="EN">
+                <seg>Considering the simple decoding strategy we employed, our current system sets up a strong baseline.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Compte tenu de la stratégie de décodage simple que nous avons utilisée, notre système actuel constitue une base solide.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="222">
+            <tuv xml:lang="EN">
+                <seg>6 Conclusion and perspectives</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Conclusion et perspectives</seg>
+            </tuv>
+        </tu>
+        <tu tuid="223">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we described a method for selecting a feature space among a very large number of choices by using linearity and by combining indicators to separate the instances.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous avons décrit une méthode pour sélectionner un espace de traits parmi un très grand nombre de choix en utilisant la linéarité et en combinant des indicateurs pour séparer les instances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="224">
+            <tuv xml:lang="EN">
+                <seg>We employed dynamic programming on hierarchies of indicators to compute the feature space providing the best pairwise classifications efficiently.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons mis en œuvre une technique de programmation dynamique sur des hiérarchies d’indicateurs pour calculer efficacement l’espace de traits fournissant la meilleure classification des paires parmi un très grand nombre de possibilités.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="225">
+            <tuv xml:lang="EN">
+                <seg>We applied this method to optimize the pairwise model of a coreference resolution system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons appliqué cette méthode pour optimiser le modèle à paires dans un système de résolution de la coréférence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="226">
+            <tuv xml:lang="EN">
+                <seg>Using different kinds of greedy decoders, we showed a significant improvement of the system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En testant différents décodeurs gloutons, nous avons montré que cela apporte un gain significatif au système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="227">
+            <tuv xml:lang="EN">
+                <seg>Our approach is flexible in that we can use a variety of indicators.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre approche est flexible dans le sens où elle peut s'appliquer avec des indicateurs très variés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="228">
+            <tuv xml:lang="EN">
+                <seg>In the future we will apply the hierarchies on finer feature spaces to make more accurate optimizations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le futur, nous appliquerons les hiérarchies sur des espaces de traits plus fins pour pouvoir obtenir des optimisations plus précises.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="229">
+            <tuv xml:lang="EN">
+                <seg>Observing that the general method of cutting down hierarchies is not restricted to modeling mention pairs, but can be applied to problems having Boolean aspects, we aim at employing hierarchies to address other tasks in computational linguistics (e.g. anaphoricity detection or discourse and temporal relation classification wherein position information may help separating the data).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, étant donné que la méthode générale de découpage des hiérarchies n’est pas spécifique à la modélisation des paires, mais peut être appliquée à d’autres problèmes ayant des aspects booléens, nous projetons d’employer les hiérarchies pour traiter d’autres tâches en linguistique computationnelle (p.ex. détection d’anaphoricité, classification de relations de discours ou de relations temporelles où l’information de position peut aider à séparer les données).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="230">
+            <tuv xml:lang="EN">
+                <seg>In this work, we have only considered standard, heuristic linking strategies like Closest-First.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous n'avons considéré que des stratégies de liaison standard et heuristiques telles que Closest-First.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="231">
+            <tuv xml:lang="EN">
+                <seg>So, a natural extension of this work is to combine our method for learning pairwise models with more sophisticated decoding strategies (like Bestcut or using ILP).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, une extension naturelle de ce travail est de combiner notre méthode d'apprentissage de modèles pair-à-pair avec des stratégies de décodage plus sophistiquées (comme Bestcut ou l'utilisation de l'ILP).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="232">
+            <tuv xml:lang="EN">
+                <seg>Then we can test the impact of hierarchies with more realistic settings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons alors tester l'impact des hiérarchies avec des paramètres plus réalistes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="233">
+            <tuv xml:lang="EN">
+                <seg>Finally, the method for cutting hierarchies should be compared to more general but similar methods, for instance polynomial kernels for SVM and tree-based methods (Hastie et al., 2001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, la méthode de coupe des hiérarchies doit être comparée à des méthodes plus générales mais similaires, par exemple les noyaux polynomiaux pour les SVM et les méthodes basées sur les arbres (Hastie et al., 2001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="234">
+            <tuv xml:lang="EN">
+                <seg>We also plan to extend our method by breaking the symmetry of our hierarchies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous prévoyons également d'étendre notre méthode en brisant la symétrie de nos hiérarchies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="235">
+            <tuv xml:lang="EN">
+                <seg>Instead of cutting product-hierarchies, we will employ usual techniques to build decision trees[10] and apply our cutting method on their structure. The objective is twofold: first, we will get rid of the sequence of indicators as parameter. Second, we will avoid fragmentation or overfitting (which can arise with classification trees) by deriving an optimal large margin linear model from the tree structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au lieu de couper les hiérarchies de produits, nous utiliserons des techniques habituelles pour construire des arbres de décision[10] et appliquer notre méthode de coupe sur leur structure. L'objectif est double : d'abord, nous allons nous débarrasser de la séquence d'indicateurs en tant que paramètre. Ensuite, nous éviterons la fragmentation ou le surajustement (qui peuvent survenir avec les arbres de classification) en dérivant un modèle linéaire à grande marge optimale à partir de la structure de l'arbre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="236">
+            <tuv xml:lang="EN">
+                <seg>Acknowledgments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Remerciements</seg>
+            </tuv>
+        </tu>
+        <tu tuid="237">
+            <tuv xml:lang="EN">
+                <seg>We thank the ACL 2013 anonymous reviewers for their valuable comments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous remercions les évaluateurs anonymes de l'ACL 2013 pour leurs commentaires précieux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="238">
+            <tuv xml:lang="EN">
+                <seg>1 There are however no theoretical guarantees that improving pair classification will always result in overall improvements if the two modules are optimized independently.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Il n’y a toutefois aucune garantie théorique pour que l’amélioration de la classification locale ait toujours un impact positif sur la performance globale lorsque les deux modules sont optimisés séparément.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="239">
+            <tuv xml:lang="EN">
+                <seg>2 Sometimes, distinct sample selections are also adopted during the training of the distinct local models (Ng and Cardie, 2002; Uryupina, 2004).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Parfois, des échantillonnages différents sont choisis lors de la phase d’apprentissage des modèles locaux distincts (Ng et Cardie, 2002; Uryupina, 2004).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="240">
+            <tuv xml:lang="EN">
+                <seg>3 However it should be underlined that the statistical viewpoint is complementary to the linguistic work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Il faut toutefois souligner que le point de vue statistique est complémentaire du travail linguistique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="241">
+            <tuv xml:lang="EN">
+                <seg>4 The parameter is updated to obtain a margin of a least 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le paramètre est mis à jour pour obtenir une marge d’au moins 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="242">
+            <tuv xml:lang="EN">
+                <seg>It does not change if the instance is already correctly classified with such margin.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela ne change pas si l'instance est déjà correctement classifiée avec une telle marge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="243">
+            <tuv xml:lang="EN">
+                <seg>5 In the experiments, the classifiers use a copy of a same feature space, but not the same data, which corresponds to crossing the features with the categories of the decision tree.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Dans les expériences, les classificateurs utilisent une copie d'un même espace de traits, mais pas les mêmes données, ce qui correspond à croiser les traits avec les catégories de l'arbre de décision.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="244">
+            <tuv xml:lang="EN">
+                <seg>6 The training set is cut into two parts, for training and testing the hierarchy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 L’ensemble de données d’apprentissage est divisé en deux parties, pour l’apprentissage et pour tester la hiérarchie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="245">
+            <tuv xml:lang="EN">
+                <seg>We used 10-fold cross-validation in our experiments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé une validation croisée à 10 reprises dans nos expériences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="246">
+            <tuv xml:lang="EN">
+                <seg>7 True positives, false positives and false negatives.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7 Vrais positifs, faux positifs et faux négatifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="247">
+            <tuv xml:lang="EN">
+                <seg>8 In our experiments, cutting down the hierarchy was achieved very quickly, and the total training time was about five times longer than with a single model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans nos expériences, la réduction de la hiérarchie a été réalisée très rapidement, et le temps total de formation a été environ cinq fois plus long qu'avec un seul modèle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="248">
+            <tuv xml:lang="EN">
+                <seg>9 BLANC metric (Recasens and Hovy, 2011) results are not reported since they are not used to compute the CoNLL2012 global score.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats du test métrique BLANC (Recasens et Hovy, 2011) ne sont pas rapportés puisqu'ils ne sont pas utilisés pour calculer la note globale CoNLL2012.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="249">
+            <tuv xml:lang="EN">
+                <seg>However we can mention that in our experiments, using hierarchies had a positive effect similar to what was observed on B[3] and CEAF.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, nous pouvons mentionner que dans nos expériences, l'utilisation de hiérarchies a eu un effet positif similaire à ce qui a été observé sur B[3] et CEAF.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

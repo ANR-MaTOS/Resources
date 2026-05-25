@@ -1,0 +1,1495 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-F14-51. segId begin by 1, tuid = segId</note>
+        <url_en>https://ieeexplore.ieee.org/document/6854195</url_en>
+        <url_fr>https://www.afcp-parole.org/doc/Archives_JEP/2014_XXXe_JEP_LeMans/2014_XXXe_JEP_LeMans.pdf</url_fr>
+        <title_en>ORDINAL REGRESSION FOR INTERACTION QUALITY PREDICTION</title_en>
+        <title_fr>Régression ordinale pour la prédiction de la qualité d'interaction</title_fr>
+        <docid>F14-51</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>ORDINAL REGRESSION FOR INTERACTION QUALITY PREDICTION</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Régression ordinale pour la prédiction de la qualité d’interaction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>ABSTRACT</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>RÉSUMÉ</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>The automatic prediction of the quality of a dialogue is useful to keep track of a spoken dialogue system’s performance and, if necessary, adapt its behaviour.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La prédiction automatique de la qualité d’un dialogue permet d’assurer le suivi de la performance d’un système de dialogue et si nécessaire, adapter le comportement de celui-ci.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>Classifiers and regression models have been suggested to make this prediction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des classificateurs et des modèles de régression ont été proposés pour effectuer cette prédiction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>The parameters of these models are learnt from a corpus of dialogues evaluated by users or experts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les paramètres de ces modèles sont appris à partir d’un corpus de dialogues évalués par des utilisateurs ou des experts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we propose to model this task as an ordinal regression problem.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous proposons dans cet article de modéliser cette tâche en tant que problème de régression ordinale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>We apply support vector machines for ordinal regression on a corpus of dialogues where each system-user exchange was given a rate on a scale of 1 to 5 by experts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous appliquons les machines à vecteurs supports pour la régression ordinale sur un corpus de dialogues où un score allant de 1 à 5 mesurant la qualité d’interaction a été donné par des experts après chaque échange système-utilisateur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Compared to previous models proposed in the literature, the ordinal regression predictor has significantly better results according to the following evaluation metrics: Cohen’s agreement rate with experts ratings, Spearman’s rank correlation coefficient, and Euclidean and Manhattan errors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comparée aux modèles de classification et de régression précédemment proposés dans la littérature, le prédicteur de régression ordinale produit des résultats significativement meilleurs selon les métriques suivantes : le taux de concordance de Cohen avec les notes des experts, le coefficient de corrélation de Spearman ainsi que les erreurs euclidiennes et en valeur absolue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>Index Terms — Interactive Systems, Statistical Learning, Performance Evaluation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Termes clés — Systèmes interactifs, apprentissage statistique, évaluation de la performance</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>1. INTRODUCTION</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. INTRODUCTION</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>Spoken Dialogue Systems (SDS) are a compound of several modules: Automatic Speech Recognition (ASR), natural language understanding, dialogue management, natural language generation and speech synthesis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les systèmes de dialogue (SD) sont composés de plusieurs modules : la reconnaissance vocale automatique (ASR), la compréhension du langage naturel, la gestion du dialogue, la génération de langage naturel et la synthèse vocale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>An individual technical evaluation of its components is not sufficient to evaluate a system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une évaluation technique individuelle de ses composants ne suffit pas pour évaluer un système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>Indeed, the behaviour emerging from the interaction between the modules must be evaluated to ensure system appropriateness, correctness and adequacy [1]. Moreover, a technical evaluation should be carried along with a usability evaluation to measure user acceptance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, le comportement qui résulte de l'interaction entre les modules doit être évalué pour garantir la pertinence, la correction et l'adéquation du système [1]. De plus, une évaluation technique doit être effectuée en parallèle avec une évaluation de l'utilisabilité pour mesurer l'acceptation de l'utilisateur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>In this context, two kinds of evaluation campaigns are carried on SDS.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte, deux types de campagnes d'évaluation sont menées sur le SDS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>The first kind asks the user to give a numerical rating and/or fill in a questionnaire about the dialogue after its end [2, 3, 4].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le premier consiste à demander à l’utilisateur de donner un score et/ou de remplir un questionnaire après chaque interaction (Walker et al. , 1997).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>The second one involves experts instead of users [5, 6].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le second implique des experts au lieu d'utilisateurs [5, 6].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>In both cases, ratings are meant for system performance tracking and if necessary, system behaviour adaptation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les deux cas, les évaluations sont destinées au suivi des performances du système et, si nécessaire, à l'adaptation du comportement du système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>These evaluation campaigns are costly so it is desirable to build an automatic predictor of ratings to pursue online system performance tracking.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces campagnes d'évaluation sont coûteuses, il est donc souhaitable de construire un prédicteur automatique des notes afin de suivre la performance du système en ligne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>The predicted ratings might also serve to learn an optimal behaviour for the system via Reinforcement Learning (RL) [7, 8, 9]. Several models have been proposed to predict users or experts ratings in function of dialogue features [2, 10, 6].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les notes prédites peuvent également servir à apprendre un comportement optimal pour le système via l'apprentissage par renforcement (RL) [7, 8, 9]. Plusieurs modèles ont été proposés pour prédire les notes des utilisateurs ou des experts en fonction des caractéristiques du dialogue [2, 10, 6].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>This problem has been considered both as a regression [11] and a classification [12] issue.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce problème a été considéré à la fois comme un problème de régression [11] et de classification [12].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>This paper proposes ordinal regression as a bridge between classification and regression.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article propose la régression ordinale comme un pont entre la classification et la régression.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>Ordinal regression returns discrete labels but takes into account the ordering of the labels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La régression ordinale renvoie des labels discrets tout en prenant en compte l’ordre entre les labels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>Ordinal Regression with Support Vector machines (SVOR) is compared to several regression and classification models on the LEGO corpus [13] which contains 200 annotated dialogues with CMU’s Let’s Go system [14].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous comparons la Régression Ordinale avec Machines à Vecteurs Supports (SVOR) à différents modèles de régression et de classification sur le corpus LEGO (Schmitt et al. , 2012) qui contient 200 dialogues annotés collectés avec le système Let’s Go de l’université Carnegie Mellon (Raux et al. , 2003).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>Each system-user exchange was given an Interaction Quality (IQ) rating on a scale of 1 to 5 by three experts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque échange entre un utilisateur et le système a été noté sur une échelle de 1 à 5 par trois experts. Ce score d'interaction évalue la qualité de l'échange.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>It is shown on this corpus that SVOR significantly performs best on four metrics, both distance and correlation-based.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous montrons sur ce corpus que les prédictions de SVOR sont significativement meilleures selon quatre métriques mesurant la distance et la corrélation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>Section 2 reviews models previously proposed for users or experts ratings prediction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section 2 passe en revue les modèles proposés par le passé pour prédire les scores donnés par des utilisateurs ou des experts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>Section 3 explains the metrics used to compare the models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section 3 détaille les métriques utilisées pour comparer ces différents modèles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>Section 4 then gives an overview of the LEGO corpus. Section 5 describes the models compared on LEGO and Section 6 presents the results of the test of the models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, la section 4 décrit le corpus LEGO, la section 5 détaille les modèles comparés et la section 6 présente les résultats du test des modèles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>2. RELATION TO PRIOR WORK</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. LIEN AVEC LES TRAVAUX PRÉCÉDENTS</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>User satisfaction is one of the core components of SDS usability, as well as efficiency and effectiveness.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La satisfaction de l'utilisateur est l'un des éléments clés de la convivialité des SDS, ainsi que de leur efficacité et de leur efficacité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>M¨oller [15] defines usability as the “suitability of a system or service to fulfil the user’s requirements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Möller [15] définit l’utilisabilité comme la « capacité d’un système ou d’un service à répondre aux besoins de l’utilisateur ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>Includes effectiveness and efficiency of the system and results in user satisfaction”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle comprend l'efficacité et l'efficience du système et les résultats en termes de satisfaction de l'utilisateur ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>User satisfaction reflects user perception of dialogue features [16].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La satisfaction de l’utilisateur reflète sa perception des fonctionnalités du dialogue [16].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>Measuring user satisfaction is made by asking the user to give a numerical rating and/or fill in a questionnaire after each dialogue [2, 3, 4, 17].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La mesure de la satisfaction de l'utilisateur est réalisée en lui demandant de noter sur une échelle numérique et/ou de remplir un questionnaire après chaque dialogue [2, 3, 4, 17].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>Another way to measure the performance of a system is to appeal to experts and ask them to listen to dialogues and give a rating to the system according to its management of the interaction [5, 6].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une autre façon de mesurer la performance d'un système est de faire appel à des experts et de leur demander d'écouter des dialogues et de noter le système en fonction de sa gestion de l'interaction [5, 6].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>This technique enables to eliminate subjectivity biases related to the user’s environment or the perception of aspects unrelated to dialogue management such as text-tospeech voice [15, 6].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette technique permet d’éliminer les biais de subjectivité liés à l’environnement de l’utilisateur ou à la perception d’aspects non liés à la gestion du dialogue tels que la voix texte-parole [15, 6].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>This requires nevertheless that the experts are trained to avoid a great variability in their rating styles.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela nécessite cependant que les experts soient formés pour éviter une grande variabilité dans leurs styles d'évaluation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>In all that follows, users ratings will be designated as User Satisfaction (US) and experts ratings as Interaction Quality (IQ) [6].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la suite, les notes des utilisateurs seront désignées par Satisfaction Utilisateur (SU) et les notes des experts par Qualité d'Interaction (QI) [6].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>Automatically predicting US or IQ is useful to keep track of a spoken dialogue system’s performance and, if necessary, adapt its behaviour.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'évaluation automatique de la SU ou du QI est utile pour le suivi des performances d'un système de dialogue parlé et, si nécessaire, l'adaptation de son comportement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>This adaptation can be made according to rules inferred from the ratings. Witt [18] proposed to compute online the Caller Experience Metric (CEM), a score on a scale of 1 to 5 given by an expert.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette adaptation peut être faite selon des règles déduites des notes. Witt (Witt, 2011) a proposé de calculer en ligne la métrique d'expérience de l'appelant (CEM), une note sur une échelle de 1 à 5 donnée par un expert.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>To do so, he defined the rule in Equation 1 where the events are ASR rejection, user time out, user intention misunderstood, user contradicting the system and user asking to be transferred.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour ce faire, il a défini la règle dans l'équation 1 où les événements sont le rejet de la reconnaissance vocale, l'inactivité de l'utilisateur, l'incompréhension de l'intention de l'utilisateur, la contradiction du système par l'utilisateur ou la demande de transfert.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>d is a discounting factor to reduce the importance of the furthest events in time.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>d est un facteur de réduction réduisant l’importance des événements les plus éloignés dans le temps.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>Witt learnt the weight of each event on a set of annotated dialogues with three different systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Witt a appris le poids de chaque événement sur un ensemble de dialogues annotés avec trois systèmes différents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>System behaviour adaptation can also be done by applying a datadriven statistical method such as RL [19, 20, 21].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’adaptation du comportement d’un système peut aussi se faire en appliquant des méthodes d’apprentissage statistique telles que l’apprentissage par renforcement [19, 20, 21].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>An RL agent compares different strategies on the basis of a numerical reward function.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un agent apprenant par renforcement compare différentes stratégies sur la base d’une fonction de récompense numérique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>This function should evaluate the quality of a dialogue strategy. Inferring this function from US or IQ [22, 23] is therefore an efficient way to define it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette fonction doit évaluer la qualité d'une stratégie de dialogue. Inférer cette fonction à partir de US ou IQ [22, 23] est donc un moyen efficace de la définir.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Finally, another possibility is to ask experts to give an IQ rating for each system-user exchange and then train a model to predict this rating at a dialogue turn level.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, une dernière possibilité est de demander à des experts de donner un score QI après chaque échange entre le système et l’utilisateur puis d’apprendre un modèle capable de prédire ce score au niveau du tour de dialogue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>The system can then adapt its behaviour during a dialogue if its estimation of IQ degrades.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système peut alors adapter son comportement au cours du dialogue si jamais l’estimation de la QI se dégrade.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>For instance, in such a case, the SDS might prompt contextual help messages [24], change its current dialogue strategy [25] or even transfer the call to a human operator [6].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cas, le SDS peut par exemple afficher des messages d’aide contextuels [24], modifier sa stratégie de dialogue [25] ou même transférer l’appel à un opérateur humain [6].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>To predict US or IQ on a dialogue or dialogue turn level, regression and classification models were proposed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour prédire la SU ou le QI au niveau du dialogue ou du tour de dialogue, des modèles de régression et de classification ont été proposés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>Walker et. al [2] applied Multiple Linear Regression (MLR), modelling US as the optimisation of task success and minimisation of dialogue costs such as dialogue duration and ASR rejections.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Walker et al. [2] ont appliqué une régression linéaire multiple (MLR), modélisant la réussite de la tâche et la minimisation des coûts du dialogue tels que la durée du dialogue et les rejets de la reconnaissance vocale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>Evanini et. al [5] built a decision tree to predict IQ.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Evanini et. al (Evanini et al. , 2008) ont construit un arbre de décision afin de prédire la QI.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>Engelbrecht et. al [10] used Hidden Markov Models (HMM) to represent the evolution of US throughout a dialogue.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Engelbrecht et al. (Engelbrecht et al. , 2009) ont utilisé les modèles de Markov cachés pour représenter l’évolution de la SU au cours du dialogue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>Hara et. al [26] also tackled US prediction. They built an N-gram model from dialogue acts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Hara et al. (Hara et al., 2010) ont également abordé la prédiction des États-Unis. Ils ont construit un modèle N-gram à partir des actes de dialogue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>Higashinaka et. al compared HMM and CRF to estimate turn-level IQ.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Higashinaka et al. ont comparé les modèles de Markov cachés aux champs conditionnels aléatoires pour l’estimation de la QI au niveau du tour de dialogue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>For the same problem, Schmitt et. al [6] proposed Support Vector Machines (SVM).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour le même problème, Schmitt et. al (Schmitt et al. , 2011) ont proposé les Machines à Vecteurs Supports (SVM).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>Modelling IQ prediction as a pure classification issue does not enable to take into account the natural ordering of the scores.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La modélisation de la prédiction du QI en tant que problème de classification pure ne permet pas de prendre en compte l’ordre naturel entre les scores.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>Indeed, it cannot take into consideration the fact that, for an actual rating of 1, predicting 2 is better than predicting 5.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, il ne peut pas prendre en considération le fait qu'un prédicteur qui prédit 2 pour une note réelle de 1 est meilleur qu'un prédicteur qui prédit 5.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>Regression techniques do not either explicitly account for the ordering as they only try to minimise some distance metric between the ratings and the predictions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les techniques de régression ne tiennent pas non plus explicitement compte de l'ordre, car elles essaient seulement de minimiser une métrique de distance entre les notes et les prédictions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we propose SVOR for turn-level IQ prediction [27, 28].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous proposons l'approche SVOR pour la prédiction du QI au niveau du tour de dialogue (Shashua et Levin, 2002 ; Chu et Keerthi, 2007).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>Ordinal regression bridges the gap between classification and regression.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La régression ordinale fait le pont entre la classification et la régression.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>It takes as input a set of labelled examples with naturally ordered labels and then builds a predictor in order to minimise the absolute deviation from the true labels while taking into account the ordering of the labels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle prend en entrée un ensemble d'exemples labellisés avec un ordre naturel entre les labels et construit un prédicteur qui minimise la distance en valeur absolue par rapport aux labels de référence tout en prenant en compte l'ordre entre ces labels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>3. METRICS</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. METRIQUES</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>SVOR is compared to other regression and classification models on the basis of several metrics.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le SVOR est comparé à d'autres modèles de régression et de classification sur la base de plusieurs mesures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>For RL-based systems, correctly ordering the system’s dialogue strategies is important.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les systèmes de dialogue basés sur l'apprentissage par renforcement, il est important de classer correctement les stratégies de dialogue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>Indeed, if turnlevel IQ predictions are used as rewards, they must maintain the ordering of system actions that was induced by the actual experts ratings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, si l’on utilise les prédictions de QI au niveau du tour de dialogue comme récompenses pour le système, il est nécessaire que ces prédictions conservent l’ordre établi par les experts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>RL frameworks such as the Ordinal Markov Decision Process introduced by Weng [29] can then be applied to learn an optimal behaviour.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les cadres de RL tels que l'Ordinal Markov Decision Process introduit par Weng [29] peuvent alors être appliqués pour apprendre un comportement optimal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>To measure models performance on this aspect, we use Spearman’s rank correlation coefficient [30]. This coefficient measures the correlation between two rankings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour mesurer la performance des modèles sur cet aspect, nous utilisons le coefficient de corrélation de Spearman (Spearman, 1904) qui mesure la corrélation entre deux classements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>Let y = {y 1 , …, yn} and y ˆ = {y ˆ1 , …, ˆ yn} be respectively the IQ ratings and estimations on a set of n system-user exchanges.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Soit y = { y 1,…, yn} et y ˆ = { y 1,…, ˆ yn} respectivement un vecteur de scores QI et les estimations de ces scores sur un ensemble de n échanges système-utilisateur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>Let r ( y ) = {r ( y 1) , …, r ( yn ) } and r (ˆ y ) = {r (ˆ y 1) , …, r (ˆ yn ) } be their corresponding rankings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Soient r ( y ) = {r ( y 1),…, r ( yn ) } et r (ˆ y ) = {r (ˆ y 1),…, r (ˆ yn ) } leurs classements correspondants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>For instance, if y = { 1 , 15 , 3 , 12 , 27 } than r ( y ) = { 1 , 4 , 2 , 3 , 5 } .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, avec y = { 1,15,3,12,27 } , r ( y ) = { 1,4,2,3,5 } .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>As recalled in Equation 2 Spearman’s rank correlation coefficient ρ is equal to the correlation between the two rankings r ( y ) and r (ˆ y ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme rappelé dans l'équation 2, le coefficient de corrélation de Spearman ρ est égal à la corrélation entre les deux classements r(y) et r(ˆy).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>We also compare models on the distances they try to minimise, namely the Euclidean and Manhattan errors, given in Equations 3 and 4.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous comparons aussi les modèles sur la base des erreurs qu'ils essaient de minimiser, à savoir les erreurs euclidiennes et en valeur absolue, rappelées dans les équations 3 et 4.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>The agreement with the experts is measured with Cohen’s κ coefficient [31].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le taux d’accord avec les experts est mesuré à l’aide du coefficient κ de Cohen (Cohen, 1960).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>This coefficient computes the probability of agreement between y and y ˆ taking off the agreement that might occur by chance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce coefficient calcule la probabilité d’accord entre y et y ˆ en déduisant l’accord qui pourrait survenir par hasard.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>In Equation 5, P ( a ) is the probability of agreement and P ( ca ) the probability of agreement by chance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans l’équation 5, P ( a ) est la probabilité d’accord et P ( ca ) la probabilité d’accord aléatoire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>4. THE LEGO CORPUS</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. LE CORPUS LEGO</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>CMU’s Let’s Go system provides local information on bus schedules [14].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système Let’s Go de la CMU fournit des informations locales sur les horaires des bus [14].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>Schmitt et. al [13] had 200 dialogues with this system evaluated by three experts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Schmitt et al. (Schmitt et al., 2012) ont fait évaluer 200 dialogues avec ce système par trois experts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>These experts were asked to give an IQ rating on a scale of 1 to 5 after each system-user exchange.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces experts devaient donner un score de QI compris entre 1 et 5 après chaque échange entre le système et l’utilisateur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>In total, 5282 system-user exchanges were rated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au total, 5282 échanges entre utilisateurs du système ont été évalués.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>Following Schmitt et. al [6], in our experiments, we used the median value of the three ratings provided by the experts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme Schmitt et al. (Schmitt et al., 2011), dans nos expériences, nous avons utilisé la médiane des trois scores donnés par les experts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>In LEGO, each system-user exchange is described as a set of features that were automatically computed or manually annotated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le corpus LEGO, chaque échange système-utilisateur est décrit par un ensemble de caractéristiques qui ont été automatiquement calculées ou annotées manuellement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>The feature set contains parameters related to automatic speech recognition (confidence score, rejection,…), natural language understanding (user dialogue act, semantic parse,…) and dialogue management (system dialogue act).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces variables dépendent de la reconnaissance vocale (score de confiance, rejets…), de la compréhension du langage naturel (acte de dialogue utilisateur, parsing sémantique,…) et de la gestion du dialogue (acte de dialogue système).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>Following Schmitt et. al [6], we used quantifiable features such as number of ASR rejections on three different levels: the value for the current dialogue turn, the mean value up to the current dialogue turn and the mean over the last three exchanges.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Suivant Schmitt et al. [6], nous avons utilisé des caractéristiques quantifiables telles que le nombre de rejets de SRR sur trois niveaux : la valeur pour le tour de dialogue actuel, la valeur moyenne jusqu'au tour de dialogue actuel et la moyenne sur les trois derniers échanges.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>A complete list of the features can be found in [13].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La liste complète des fonctionnalités se trouve dans [13].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>For our models comparison, we only kept automatically computable features. This choice was motivated by the fact that if IQ prediction should be used for system adaptation, it should be computable online.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour notre comparaison de modèles, nous n'avons conservé que les caractéristiques automatiquement calculables. Ce choix a été motivé par le fait que si la prédiction du QI devait être utilisée pour l'adaptation du système, elle devrait être calculable en ligne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>Two features were not numerical: User Dialogue Act (UDA) and System Dialogue Act (SDA).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux variables n'étaient pas numériques : l'Acte de Dialogue Utilisateur (ADU) et l'Acte de Dialogue Système (ADS).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>UDA could take values among which UDA CONFIRM DEPARTURE, UDA LINE INFORMATION, and so on.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'UDA peut prendre des valeurs telles que UDA_CONFIRMER_DEPART, UDA_INFORMATION_LIGNE, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>In these cases, noting na the number of possible labels, we split the feature into na − 1 variables, each of which being a boolean.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cas, en notant na le nombre de labels possibles, nous avons séparé la variable en na − 1 variables booléennes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>SDA was split into 27 variables and UDA, 21.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>SDA a été séparé en 27 variables et UDA en 21.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>In total, we kept 67 features. Feature values were centered and normalised.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En tout, nous avons conservé 67 caractéristiques. Les valeurs des caractéristiques ont été centrées et normalisées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>The generalisability of the methods described in the following section was assessed with 10-fold cross validation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La généralisabilité des méthodes décrites dans la section suivante a été testée par une validation croisée 10-fold .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>5. MODELS</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. MODELES</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>5.1. Multiple Linear Regression</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.1. Régression linéaire multiple</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>To do MLR, features were selected one by one.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour effectuer la MLR, les prédicteurs ont été sélectionnés un à un.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>We computed the single regression coefficient for each feature and then we kept the feature with the highest coefficient in absolute value[1] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons calculé le coefficient de régression simple pour chaque variable puis nous avons gardé la variable avec le plus haut coefficient en valeur absolue [1] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>Let us denote ϕi this most explanatory feature and βi its corresponding coefficient.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notons ϕi cette caractéristique la plus explicative et βi son coefficient correspondant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>We then used the error IQ − βiϕi as objective value and we computed single regression coefficients for the remaining features.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons ensuite utilisé l'erreur IQ − βiϕi comme valeur d'objectif et calculé les coefficients de régression simples pour les variables restantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>We repeated this process until the squared error was minimised.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons répété ce procédé jusqu’à ce que l’erreur carrée soit minimisée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>Table 1 . Covariance matrices for Gaussian processes regression.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1. Matrices de covariance pour la régression de processus gaussiens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>5.2. Multivariate Adaptive Regression Splines MARS was introduced by Friedman [32]. It models IQ as a linear function of hinge functions of the form: Bi ( x ) = max (0 , x − s ) or Bi ( x ) = max (0 , s − x ) where s is a training sample.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La Régression Multivariée par Spline Adaptive (MARS) a été introduite par Friedman [32]. Elle modélise le QI comme fonction linéaire de fonctions charnières de la forme : Bi ( x ) = max (0, x − s ) ou Bi ( x ) = max (0, s − x ) où s est un échantillon d'entraînement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>MARS was run with the ARES toolbox for Matlab[2] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>MARS a été exécuté avec l'outil ARES pour Matlab[2] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>The algorithm requires two parameters, the maximum number of hinge functions maxFuncs and cubic , which indicates whether cubic splines should be used to smooth the edges.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet algorithme requiert deux paramètres : maxFuncs , le nombre maximum de fonctions charnières ainsi que cubic , un booléen indiquant si l’utilisation de splines cubiques pour lisser les bords est souhaitée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>Different combinations of these parameters were tried but no significant impact on the evaluation metrics was noticed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons testé différentes combinaisons de ces paramètres sans observer d'impact significatif sur les métriques d'évaluation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>Hence, the default parameters were kept (recommended in [32]), maxFuncs was set to 21 and cubic splines were not used.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons donc conservé les paramètres par défaut (recommandés dans [32]), maxFuncs a été fixé à 21 et les splines cubiques n'ont pas été utilisées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>5.3. Gaussian Processes</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.3. Processus gaussiens</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>A Gaussian Process (GP) is a set of random variables which joint distribution is a Gaussian [33].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un processus gaussien (GP) est un ensemble de variables aléatoires dont la distribution conjointe est une Gaussienne [33].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>To perform GP regression, y is modelled as: y = y ˆ + ∆ˆ y with ∆ˆ y a centered Gaussian noise vector and y ˆ is a GP which mean and variance are to be determined.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour faire une régression par GP, y est mô ˆ ˆ ˆ délisé par : y = y + ∆ y avec ∆ y un bruit Gaussien centré et y un GP dont la moyenne et la variance sont à déterminer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>One advantage in using GP over other regression methods is that it returns an entire distribution over the possible values instead of a point-based decision rule.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'un des avantages de la régression par GP est que celle-ci renvoie une distribution de probabilités sur toutes les valeurs possibles plutôt qu'une règle de décision ponctuelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>Another advantage is that it enables a Bayesian treatment of the data, inferring a posterior distribution from a prior belief and observations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un autre avantage est qu’elle permet un traitement Bayésien des données, inférant une distribution postérieure à partir d’un prior et d’observations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>Following Rasmussen and Williams [33], we defined a centered prior GP (0 , k ( x, x )) where k is the covariance function.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme Rasmussen et Williams (Rasmussen et Williams, 2005), nous définissons un prior centré GP (0, k ( x , x )) où k est la fonction de covariance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>Exact inference could then be performed from the training samples to compute the posterior distribution.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une inférence exacte a ensuite été effectuée à partir des exemples du corpus pour calculer la distribution postérieure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>We used the GPML Matlab library by Rasmussen and Nickisch[3] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé la librairie Matlab GPML proposée par Rasmussen et Nickisch[3] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>Three covariance functions were tested: linear, rational quadratic and squared exponential. Their expressions are recalled in Table 1. The parameters Λ, σ and α were all learnt by automatic relevance determination [34].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons testé trois fonctions de covariance : linéaire, rationnelle et quadratique et exponentielle. Leurs expressions sont rappelées dans le tableau 1. Les paramètres Λ, σ et α ont tous été appris par détermination automatique de la pertinence (Jung et Stone, 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>Since this computation is very costly ( O ( n[3] ) with n the number of training samples), we only kept in memory a dictionary of points as proposed by Engel [35].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Puisque ce calcul est très coûteux (O(n[3]) avec n le nombre de données), nous n’avons gardé en mémoire qu’un dictionnaire de points comme proposé par Engel (Engel et al., 2005).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>This reduced computational load to O ( m[2] n ) with m the dictionary size.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette réduction de la charge de calcul à O ( m[2] n ) avec m la taille du dictionnaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>Section 6 only presents the results with the squared exponential kernel as it was the most efficient.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section 6 ne présente que les meilleurs résultats qui sont ceux obtenus avec la covariance exponentielle car c'est la plus efficace.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>5.4. Support Vector Machines</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.4 Machines à vecteurs de support</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>Originally, SVM [36] were meant for 2-class classification.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Originellement, les SVM (Vapnik, 1998) ont été créés pour la classification binaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>They take a set of labelled examples { ( xi, yi ) } where yi ∈{− 1 , 1 } and then they look for a hyperplane in a feature space that separates the two classes so that the minimal margin between the samples is maximised.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils prennent en entrée des exemples { ( xi , yi ) } avec yi ∈{− 1,1 } et recherchent un hyperplan dans un espace de variables caractéristiques séparant les deux classes et de manière que la marge par rapport à l’hyperplan soit maximisée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>The decision function returned is given in Equation 6 where ϕ ( x ) is the projection of x into the high dimensional feature space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La fonction de décision renvoyée est celle de l’équation 6 où ϕ ( x ) est la projection de x sur l’espace de variables caractéristiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>Table 2 . Kernel functions for SVM.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2. Fonctions de noyau pour SVM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>In our experiment, γ was set to 1/67, 67 being the number of features per sample point.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre expérience, γ était fixé à 1/67, 67 étant le nombre de caractéristiques par point d'échantillon.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>SVM for Classification (SVMClass), Support Vector Machines for Regression (SVR) and SVOR solve a quadratic programming problem to find the weight vector ω and the constant b .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les SVM pour la classification (SVMClass), pour la régression (SVR) et SVOR résolvent un problème d’optimisation quadratique afin de trouver le vecteur de poids ω et la constante b .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>The difference between the approaches lies in the constraints of the problem and the form of the decision function.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La différence entre les trois approches réside dans les contraintes du problème et la forme de la fonction de décision.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>These are detailed in the following sections.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous détaillons ces trois approches dans les sections suivantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>5.4.1. Support Vector Machines for Classification</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.3.1 Machines à vecteurs supports pour la classification</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>To perform 5-class classification with SVM, a one-versus-one approach was applied.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d’effectuer une classification sur 5 classes avec des SVM, nous avons appliqué une approche un-contre-un.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>10 classifiers were learnt, each deciding between two classes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons appris 10 classifieurs, chacun séparant deux classes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>A new example was assigned the class that was the most voted for.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A chaque nouvel exemple, nous assignons la classe qui a reçu le plus de vote.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>Ties always favoured the lowest label as predicting a low IQ instead of a higher one is more critical than the other way round.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En cas d'égalité, nous avons toujours favorisé le label le plus bas car il est plus critique de prédire un QI inférieur à la vraie valeur que l'inverse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>The problem solved by each classifier is recalled in Equation 7.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le problème résolu par chaque classifieur est rappelé dans l'équation 7.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>The decision function is the one of Equation 6.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La fonction de décision est celle de l’équation 6.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>We used the LIBSVM software [37].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé le logiciel LIBSVM [37].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>As showed in Table 2, two kernel functions were tested, a linear and a radial basis function.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme le montre le tableau 2, deux fonctions noyau ont été testées : une fonction linéaire et une fonction de base radiale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>We only present the results with the radial basis kernel as it performed better.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous ne présentons que les résultats obtenus avec le noyau radial car il a été le plus performant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>5.4.2. Support Vector Machines for Regression</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.4.2 Machines à vecteurs de support pour la régression</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>Drucker et. al [38] introduced SVR. The weights of the SVM are learnt to assure that the absolute value error on each sample is less than a parameter ϵ as shown in Equation 8.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Drucker et al. [38] ont introduit les SVR. Les poids du SVM sont appris pour assurer que l'erreur en valeur absolue pour chaque donnée soit inférieure à un paramètre ε comme indiqué dans l'équation 8.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>The prediction for a new example x is f ( x ) = ω[T] x + b .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La prédiction pour un nouvel exemple x est alors f ( x ) = ω[T] x + b .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>LIBSVM was used once again for SVR with a radial basis kernel.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons à nouveau utilisé LIBSVM pour la SVR avec un noyau radial.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>The parameter ϵ was set to 0.1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le paramètre ε a été fixé à 0.1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>5.4.3. Support Vector Machines for Ordinal Regression</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.4.3 Machines à vecteurs de support pour la régression ordinale</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>Ordinal regression or ranking learning aims to build a model to predict ordinal ranks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La régression ordinale ou l'apprentissage de classement vise à construire un modèle qui prédit des classements ordinaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>SVOR [28] adds constraints so that the ordering between the scores are accounted for.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>SVOR (Chu et Keerthi, 2007) ajoute des contraintes afin que l’ordre entre les scores soit pris en compte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>The problem solved is in Equation 9 where j goes from 1 to r − 1 and C &gt; 0.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le problème résolu est dans l'équation 9 où j va de 1 à r − 1 et C &gt; 0.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>The idea is to find an optimal weight vector ω as in SVMClass but also r − 1 thresholds bj defining parallel discriminant hyperplanes for the r labels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’idée est de trouver un vecteur de poids optimal ω comme dans SVMClass mais aussi r − 1 seuils définissant b j hyperplans discriminants pour les r labels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>In short, for each example x[j] i (the upperscript j means that x[j] i belongs to the j-th category), the function value [ ω][T][ ϕ][(] [x][j] i[)] should be lower than the lower margin ( bj − 1) and each example x[j] i[+1] should have a function value ω[T] ϕ ( x[j] i[+1] ) higher than the upper margin ( bj +1 − 1). More details about this algorithm can be found in [28].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En bref, pour chaque exemple x[j] i (l'exposant [j] signifie que x[j] i appartient à la j-ème catégorie), la valeur de la fonction [ ω][T][ ϕ][(] [x][j] i[)] doit être inférieure à la marge inférieure ( bj − 1) et chaque exemple x[j] i[+1] doit avoir une valeur de fonction ω[T] ϕ ( x[j] i[+1] ) supérieure à la marge supérieure ( bj +1 − 1). De plus amples détails sur cet algorithme peuvent être trouvés dans [28].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>Table 3 . Results of the 10-fold cross validation on the LEGO corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 3. Résultats de la validation croisée à 10 reprises sur le corpus LEGO.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>95% confidence interval bounds are provided for each metric.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les limites de l'intervalle de confiance à 95 % sont fournies pour chaque métrique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>A new example x is given the label argmin i{i | ω[T] ϕ ( x ) &lt; bi} .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On associe à chaque nouvel exemple x le label argmin i{i | ω[T] ϕ ( x ) &lt; bi} .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>We computed SVOR with a Gaussian kernel using the C program available at http://www.gatsby.ucl.ac.uk/chuwei/svor.htm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons calculé SVOR avec un noyau gaussien en utilisant le programme C disponible à l'adresse http://www.gatsby.ucl.ac.uk/chuwei/svor.htm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>6. RESULTS</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6. RÉSULTATS</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>The results of the test are given in Table 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats du test sont présentés dans le tableau 3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>For the regression techniques, Cohen’s κ coefficient was computed on the rounded predictions made by the models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les techniques de régression, le coefficient κ de Cohen a été calculé sur les prédictions arrondies des modèles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>Surprisingly, MLR performed quite well on the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De manière surprenante, les résultats de la MLR sur le corpus sont plutôt bons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>Schmitt et. al applied MLR to the same corpus and after rounding the returned values, they obtained a κ of 0.35 and a ρ of only 0.46.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Schmitt et. al ont appliqué la MLR sur le même corpus et ils ont obtenu un κ de 0.35 et un ρ de 0.46 sur les valeurs arrondies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>When we round the values returned by MLR, we obtain a ρ equal to 0.805.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsque nous arrondissons les valeurs retournées par MLR, nous obtenons un ρ égal à 0,805.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>This difference of results should be explained by the features sets used in both cases. We also believe splitting categorical features into a set of boolean variables is responsible for this difference.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette différence de résultats s’explique par le fait que des ensembles différents de variables explicatives ont été utilisés et que nous avons fait le choix de séparer les variables qualitatives en variables booléennes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>GP performed better than MLR and MARS except concerning the Euclidean error.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les GP sont meilleurs que les MLR et les MARS, sauf pour l'erreur euclidienne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>Since MLR and MARS minimise this error while GP does not, this result could be expected.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Puisque MLR et MARS minimisent cette erreur alors que GP ne le fait pas, ce résultat était prévisible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>SVR, on the other hand, performed better than the previously mentioned techniques on all metrics. A significant improvement can be observed in particular concerning the Euclidean and Manhattan errors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats avec SVR sont quant à eux meilleurs qu’avec les techniques précédemment mentionnées sur toutes les métriques, notamment les erreurs euclidiennes et en valeur absolue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>The results of SVR are quite good because the constraints on the function value inferred by SVR imposed a very low absolute error on the samples.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats de SVR sont très bons car les contraintes imposées sur la valeur de fonction inférée par SVR ont imposé une erreur absolue très faible sur les échantillons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>SVOR outperforms all these methods on each metric.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>SVOR surpasse toutes ces méthodes sur l’ensemble des métriques utilisées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>A significant improvement is done on the Manhattan error and Cohen’s κ .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On observe une amélioration significative de l'erreur de Manhattan et du κ de Cohen.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>The Manhattan error is improved of 0.1 point compared to SVR.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’erreur de Manhattan est améliorée de 0.1 point comparée à SVR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>Cohen’s κ is improved of 0.06 point compared to SVMClass.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le coefficient κ est amélioré de 0.06 point par rapport à SVMClass.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>SVMClass has the lowest ranking correlation coefficient.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le coefficient de corrélation le plus faible a été obtenu avec SVMClass.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>This supports the fact that classification techniques are not the most appropriate for IQ prediction because they ignore the constraint imposed by the order of the labels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela corrobore le fait que la classification ne soit pas la technique la plus adaptée à la prédiction du QI car elle ignore la contrainte imposée par l'ordre des labels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, as expected SVMClass has the second highest κ coefficient behind SVOR.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>SVMClass est toutefois, comme l’on pouvait s’y attendre, la seconde technique la plus performante concernant κ .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>The classification performances of SVMClass and SVOR can be further compared thanks to their confusion matrices (Table 4).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les performances de classification de SVMClass et SVOR peuvent être plus amplement comparées grâce à leurs matrices de confusion respectives (Tableau 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>The results predicted by SVOR deviated less from the real values than the ones predicted by SVMClass.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats prédits par SVOR dévient moins des valeurs réelles que ceux prédits par SVMClass.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>For instance, a true 1 was predicted as a 3, a 4 or a 5 88 times with SVOR against 236 times with SVMClass.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, une donnée avec le label 1 a reçu les labels 3, 4 ou 5 88 fois avec SVOR contre 236 avec SVMClass.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>The recall and precision for critical values 1 and 2 are also significantly higher with SVOR.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les taux de rappel et de précision pour les valeurs critiques 1 et 2 sont également significativement meilleurs avec SVOR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>Table 4 . Confusion matrices for SVOR and SVMClass.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TABLE 4 – Matrices de confusion pour SVOR et SVMClass.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>T i means that i is the true value and P i means i is the predicted value.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ti signifie que i est la valeur réelle et Pi signifie que i est la valeur prédite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>7. CONCLUSION</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7. CONCLUSION</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>This paper suggested ordinal regression to model interaction quality prediction at a system-user exchange level.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article propose de modéliser la prédiction de la qualité d'interaction avec un système d'échange utilisateur comme un problème de régression ordinale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>Regression and classification models were tested on a set of evaluated dialogues and it was shown that ordinal regression provided the best results for each metric, namely Euclidean and Manhattan errors, Spearman’s rank correlation coefficient and Cohen’s κ .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons comparé différents modèles de classification et de régression à la régression ordinale sur un corpus de dialogues évalués et nous avons montré que la régression ordinale aboutissait aux meilleurs résultats en termes d’erreur euclidienne, d’erreur en valeur absolue, de coefficient de corrélation de Spearman et de coefficient κ de Cohen.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>These good results are explained by the fact that ordinal regression, unlike standard classification or regression, explicitly accounts for the natural ordering of the interaction quality ratings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces bons résultats s'expliquent par le fait que la régression ordinale, contrairement à la classification ou à la régression standard, prend explicitement en compte l'ordre naturel des notes de qualité de l'interaction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>Future work will consist of using ordinal regression on a corpus of annotated dialogues with a reinforcementlearning based system to infer a reward function from the ratings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les travaux futurs consisteront à utiliser la régression ordinale sur un corpus de dialogues annotés avec un système d'apprentissage par renforcement afin d'inférer une fonction de récompense à partir des notes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>∗ The authors would like to thank the the Dialogue Systems Group at Ulm University, Germany for providing the LEGO corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>∗ Les auteurs tiennent à remercier le groupe de recherche sur les systèmes de dialogue de l'université d'Ulm, en Allemagne, pour avoir fourni le corpus LEGO.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>1 we recall that features were centered and normalised</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. nous rappelons que les caractéristiques ont été au préalable centrées et normalisées</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>2 Jekabsons G., ARESLab: Adaptive Regression Splines toolbox for Matlab/Octave, 2011, available at http://www.cs.rtu.lv/jekabsons/</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Jekabsons G., ARESLab : Adaptive Regression Splines toolbox pour Matlab/Octave, 2011, http ://www.cs.rtu.lv/jekabsons/</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>3 http://wwww.gaussianprocesses.org/gpml</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. http ://wwww.gaussianprocesses.org/gpml</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

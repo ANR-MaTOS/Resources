@@ -1,0 +1,1548 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en" srclang="FR" tgtlang="EN" o-tmf="XML" creationdate="2024-11-15" creationid="MaTOS">
+        <note>This is the sentence alignement file for MERSENNE-mersenne13. segId begin by 1, tuid = segId</note>
+        <docid>mersenne13</docid>
+        <url_src>https://comptes-rendus.academie-sciences.fr/geoscience/articles/10.5802/crgeos.27/</url_src>
+        <url_tgt>https://comptes-rendus.academie-sciences.fr/geoscience/articles/en/10.5802/crgeos.27/</url_tgt>
+        <author>Jean-Marie Tarascon</author>
+        <title_en>Are batteries the right option for a sustainable development?</title_en>
+        <title_fr>Les batteries sont-elles la bonne option pour un développement durable?</title_fr>
+        <volume>CRGEOS, 2020, Volume 352, Facing climate change, the range of possibilities</volume>
+        <translator>Catherine W.</translator>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <prop type="paragraph">1</prop>
+            <tuv xml:lang="FR">
+                <seg>Les batteries sont-elles la bonne option pour un développement durable?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Are batteries the right option for a sustainable development?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Les enjeux liés au stockage de l’énergie ont conduit, au cours de cette dernière décennie, à un foisonnement scientifique donnant naissance à des innovations spectaculaires dans le domaine des batteries.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The challenges related to energy storage have led, over the past decade, to a scientific proliferation giving birth to spectacular innovations in battery research.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces innovations font aujourd’hui de la mobilité électrique une réalité et vont également faciliter le déploiement des énergies renouvelables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They have contributed in making todays electric mobility a reality, and have been key enablers in the deployment of renewable energies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans le contexte du déploiement massif de batteries attendu, il est légitime de se demander quelle sera la batterie du futur et, en particulier, si cette batterie sera la bonne option pour un développement durable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, it is legitimate to wonder what will be the battery of the future and, in particular, if this battery will be the right option for sustainable development.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Il s’agit d’un challenge énorme qui peut conduire à une myriade d’opportunités. C’est ce à quoi ce manuscrit va tenter de répondre en se penchant sur de nombreux aspects de la recherche. Nous traiterons en effet de l’amélioration des performances — en termes d’autonomie, de durabilité et de sécurité — du développement de batteries plus éco-compatibles, voire plus intelligentes, reposant sur de nouvelles chimies à base de matériaux abondants, ou encore de procédés de recyclage innovants ou d’injections de fonctionnalités de diagnostic-autoréparation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is what this manuscript addresses by discussing many aspects of battery research enlisting performances improvements in terms of autonomy, durability and safety. Moreover it presents on ongoing strategies aiming towards the development of more eco-compatible and smarter batteries, based either on new chemistries enlisting abundant metals (Na-ion), on innovative recycling processes or on the injections of smart sensing and self-healing functionalities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Face à ce champ des possibles, optimisme et enthousiasme doivent prévaloir sur la morosité afin d’encourager nos jeunes talents à prendre part à cette aventure passionnantes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such a diversity of fundamental scientific challenges emerging from concrete technological bottlenecks generates a myriad of fascinating opportunities to arouse new generation of talented students to take part in this exciting adventure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Le réchauffement de la planète, les réserves limitées en combustibles fossiles et la pollution des villes (les transports sont responsables de 30% des émissions de CO₂) montrent le besoin urgent de passer d’une économie basée sur le pétrole à une économie basée sur une énergie à faible teneur en carbone.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Global warming, limited fossil fuel reserves, and urban pollution (transport being responsible for 30% of CO₂ emissions) show the urgent need to move from an oil-based economy to one based on low-carbon energy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Un tel besoin plaide pour la recherche de nouvelles sources d’énergie plus respectueuses de l’environnement, comme les énergies renouvelables (solaires, éoliennes, géothermie, biomasse…) à faible empreinte CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such a need argues for seeking new sources of energy that are more environmentally friendly, such as renewable energies (solar, wind, geothermal, biomass, etc.) with a low CO₂ footprint.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est important de souligner que certaines de ces énergies sont très abondantes: par exemple, le soleil envoie vers notre planète 10 000 fois plus d’énergie que ce dont nous avons besoin.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is important to point out that some of these energies are very abundant: for example, the sun sends 10,000 times more energy to our planet than we need.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Des avancées technologiques spectaculaires dans le développement de cellules photovoltaïques ont permis de mieux maîtriser la conversion de l’énergie solaire en énergie électrique avec des rendements élevés (⩾20%) et un coût faible (⩽3 US cents par kWh).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Remarkable technological advances in the development of photovoltaic cells have made it possible to better control the conversion of solar energy into electrical energy with high efficiencies (⩾20%) and low cost (⩽3 US cents per kWh).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette énergie est ainsi devenue compétitive par rapport aux énergies conventionnelles comme le charbon ou le nucléaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This energy source has thus become competitive with conventional energy sources such as coal or nuclear power.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Les sources d’énergies renouvelables sont cependant intermittentes, ce qui entraîne de larges fluctuations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Renewable energy sources, however, are intermittent, leading to large fluctuations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Bien évidemment, ni le vent ni le soleil ne souffle ou ne brille sur commande.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Of course, neither the wind nor the sun blows or shines on command.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est donc nécessaire de coupler les systèmes de conversion de l’énergie à des systèmes de stockage de cette énergie, afin de pouvoir générer après coup, sur demande, l’électricité voulue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is therefore necessary to couple energy conversion systems to energy storage systems in order to be able to generate the desired electricity after the fact, on demand.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>De façon similaire, la transition irréversiblement amorcée des véhicules thermiques vers les véhicules électriques nécessite une énergie embarquée suffisante capable d’assurer l’autonomie du véhicule, ce qui requiert, là encore, des systèmes de stockage performants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Similarly, the irreversibly initiated transition from thermal vehicles to electric vehicles requires sufficient on-board energy capable of ensuring the autonomy of the vehicle, which again requires high-performance storage systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Le défi majeur des vingt prochaines années ne sera donc pas seulement un problème de conversion de l’énergie, mais aussi un problème de stockage, étape indispensable pour mieux gérer les ressources en énergie de notre planète.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The major challenge of the next twenty years will therefore not only be a problem of energy conversion, but also a storage problem, an indispensable step to better manage the energy resources of our planet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>L’une des façons les plus efficaces de stocker de l’énergie et de la restituer sur demande est de convertir de l’énergie chimique en énergie électrique via des dispositifs électrochimiques comme les piles à combustibles et les batteries.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One of the most efficient ways to store energy and deliver it on demand is to convert chemical energy into electrical energy via electrochemical devices such as fuel cells and batteries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Parmi ces dernières, la technologie Li-ion suscite aujourd’hui un fort engouement médiatique en raison de performances attractives défiant celles des technologies antérieures (Pb-acide, Ni–Cd ou Ni–MH à base d’électrolytes aqueux) (Figure1a).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Among the latter, Li-ion technology is now attracting much media attention due to attractive performances that challenge those of previous technologies (Pb-acid, Ni–Cd or Ni–MH based on aqueous electrolytes) (Figure1a).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>À titre de comparaison, la densité d’énergie (Wh/kg) des batteries Li-ion est de trois à cinq fois supérieure en moyenne à celles des autres technologies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In comparison, the energy density (Wh/kg) of Li-ion batteries is three to five times higher on average than other technologies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Les batteries Li-ion reposent sur l’utilisation de matériaux d’insertion (éponges à Li⁺) comme électrodes positives et négatives, séparés par un électrolyte organique à base de sels de lithium qui assure le cheminement des ions entre les deux électrodes tout en étant un isolant électrique ( Figure1b).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Li-ion batteries rely on the use of insertion materials (Li ⁺ sponges) as positive and negative electrodes, separated by an organic electrolyte based on lithium salts which ensures the path of the ions between the two electrodes while also being an electrical insulator (Figure1b).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Quant aux électrons fournis lors de la connexion des pôles positifs et négatifs de la batterie, ils proviennent de réactions d’oxydo-réduction se produisant en tandem aux électrodes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As for the electrons supplied during the connection of the positive and negative poles of the battery, they come from oxidation-reduction reactions occurring in tandem at the electrodes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces réactions impliquent l’insertion/désinsertion d’ions Li⁺ au sein de la structure hôte du matériau d’électrode avec une injection/consommation concomitante d’électrons.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These reactions involve the insertion/extraction of Li⁺ ions within the host structure of the electrode material with concomitant injection/consumption of electrons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>La structure électronique (position du niveau de Fermi) et cristallographique du matériau d’électrode (nombre de sites vacants pour accueillir les ions Li⁺) régit respectivement son potentiel redox et sa capacité électrique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The electronic structure (Fermi level position) and crystallographic structure of the electrode material (number of vacant sites to accommodate Li⁺ ions) governs its redox potential and electrical capacitance, respectively.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces caractéristiques associées au pouvoir extrêmement réducteur du lithium (−3.09 V/ESH) font que le passage d’un électrolyte aqueux à un électrolyte organique permet d’obtenir une tension de batterie 3 fois supérieure, ainsi qu’une densité d’énergie (Wh/kg) [produit du potentiel (V) en volts et de la capacité (Ah/kg)] pouvant atteindre 240 Wh/kg ou 500 Wh/l.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These characteristics, associated with the extreme reducing power of lithium (−3.09 V/SHE), mean that the transition from an aqueous electrolyte to an organic electrolyte makes it possible to obtain a battery voltage that is 3 times higher, as well as an energy density (Wh/kg) [product of potential (V) in volts and capacity (Ah/kg)] of up to 240 Wh/kg or 500 Wh/l.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>En comparaison, la densité d’énergie de la technologie Pb-acide, vieille de 200 ans, atteint aujourd’hui environ 40 Wh/kg.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In comparison, the energy density of the 200-year-old Pb-acid technology is now about 40 Wh/kg.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette lenteur des progrès dans le domaine des batteries contraste avec l’augmentation exponentielle du nombre de transistors pouvant être intégrés à des microprocesseurs, régie par la célèbre loi de Moore (doublement de densité des transistors tous les deux ans).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This slow progress in the field of batteries contrasts with the exponential increase in the number of transistors that can be integrated into microprocessors, governed by the famous Moore law (doubling of the density of transistors every two years).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>D’ailleurs, à titre indicatif, où en serions-nous si les capacités des batteries avaient suivi une évolution similaire à celle décrite par la loi de Moore?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, as a model, where would we be if the capacities of the batteries had followed a similar evolution to that described by Moore's law?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Si nous prenons la batterie Pb-acide (G. Planté — 1860) comme point de départ, l’énergie stockée par 1kg de batterie aurait dû égaler en 1908 l’énergie de la première bombe atomique, alimenter de manière continue l'Humanité en énergie pendant 1h20 en 1950 et pendant 50 000 ans en 2006.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If we take the Pb-acid battery (G. Planted — 1860) as a starting point, the energy stored per 1kg of battery should have equaLled the energy of the first atomic bomb by 1908, continuously supplying humanity with energy for 1:20 hours in 1950 and for 50,000 years in 2006.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Hélas, il n’en fut pas ainsi, car ce domaine de recherche est fortement tributaire des caprices de la chimie et du nombre d’électrons, malheureusement limité, pouvant être extraits réversiblement d’une liaison chimique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Unfortunately, this was not the case; this field of research is highly dependent on the caprices of chemistry and the unfortunately limited number of electrons that can be reversibly extracted from a chemical bond.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Letriplement de la densité d’énergie de la technologie Li-ion en 30 ans a donc été un travail de longue haleine [Tarascon 2016] qui a commencé dès 1950.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thetripling of the energy density of Li-ion technology in 30 years was therefore a long-term task [Tarascon 2016] that began in 1950.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Les pionniers de ces travaux, J.B. Goodenough, M. S. Whittingham et A. Yoshino, ont reçu le prix Nobel 2019 de Chimie pour avoir identifié les matériaux d’électrodes et les électrolytes présents aujourd’hui encore dans les batteries à ions Li.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The pioneers of this work, J.B. Goodenough, M.S. Whittingham, and A. Yoshino, received the 2019 Nobel Prize in Chemistry for identifying electrode materials and electrolytes still present today in Li ion batteries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Le succès de cette technologie est telle que ces batteries sont vues comme l’un des nerfs de la guerre pour le développement rapide de véhicules électriques et, à plus long terme, pour le stockage — et donc l’utilisation massive — des énergies renouvelables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The success of this technology is such that these batteries are seen as one of the driving forces for the rapid development of electric vehicles and, in the longer term, for the storage — and therefore the massive use — of renewable energies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>En dehors des prix Nobel, un autre homme clé, Elon Musk, a joué un rôle essentiel dans la révolution que connait aujourd’hui le monde des batteries.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Apart from the Nobel laureates, another key man, Elon Musk, played an essential role in the revolution that the world of batteries is experiencing today.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Visionnaire hors pair au parcours atypique venant du monde de l’ingénierie et des affaires (fondateur de Zip2, SpaceX, CEO de SolarCity puis de Tesla), il s’est engagé mondialement en avril 2015 à mettre à disposition de tous les êtres humains, où qu’ils habitent, de l’énergie propre en grande quantité et à bas coût grâce aux batteries.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An unparalleled visionary with an atypical background from the world of engineering and business (founder of Zip2, SpaceX, CEO of SolarCity and then Tesla), he made a worldwide commitment in April 2015 to provide all human beings, wherever they live, with clean energy in large quantities and at low cost thanks to batteries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Il lança ainsi la construction de la première usine de fabrication de batteries d’une capacité de plusieurs dizaines de Gigawatt-heure, appelée gigafactory, dans le Nevada (USA) ayant une capacité annuelle de production de 5 milliards de cellules.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>He thus launched the construction of the first manufacturing plant for batteries with a capacity of several dozen gigawatt-hours, called gigafactory, in Nevada (USA), with an annual production capacity of 5 billion cells.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>L’usine est en plus alimentée en majeure partie par l’énergie solaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, most of the plant is powered by solar energy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, sur la base de ces annonces et réalisations, le prix du kWh stocké a été divisé par 10 sur les dix dernières années avec l’objectif de passer en dessous des 100€ d’ici 2025 (Figure2a).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, on the basis of these announcements and achievements, the price per stored kWh has been divided by 10 over the last ten years with the objective of falling below €100 by 2025 (Figure2a).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Tout ceci, associé à l’amélioration constante de la chimie, explique le boom actuel de l’industrie des véhicules électriques, avec plus de 400 modèles pour 2019, la batterie Li-ion constituant la clef de voûte de cette technologie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>All this, combined with the constant improvement in chemistry, explains the current boom in the electric vehicle industry with more than 400 models in 2019, the Li-ion battery being the keystone of this technology.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>La vision d’E. Musk se propage et de telles usines de batteries voient le jour partout dans le monde comme chez les géants asiatiques ou en Europe à travers l’Alliance Européenne des Batteries qui souhaite assurer pour l’industrie automobile de pointe de l’Union une indépendance énergétique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The vision of E. Musk is spreading and such battery factories are emerging everywhere in the world, including among Asian giants and in Europe through the European Battery Alliance which wants to ensure energy independence for the cutting-edge automotive industry of the Union.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>La première gigafactory européenne a vu le jour en Suède et une dizaine d’autres sont planifiées (Figure2a) avec notamment un projet franco-allemand qui prévoit deux usines, une en Allemagne et l’autre en France, en s’appuyant sur les industriels européens du domaine (SAFT, Solvay, Siemens et autres).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first European gigafactory was set up in Sweden and a dozen others are planned (Figure2a), notably a Franco-German project proposing two factories, one in Germany and the other in France, supported by European manufacturers in the industry (SAFT, Solvay, Siemens and others).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, la quantité totale d’énergie stockée par des batteries Li-ion en Europe devrait au minimum passer de 10 GWh à 400 GWh lors de la prochaine décennie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, the total amount of energy stored by Li-ion batteries in Europe is expected to increase from 10 GWh to 400 GWh at least over the next decade.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce développement de la mobilité électrique est un atout pour diminuer notre empreinte CO₂, à la condition sine qua non que l’énergie électrique rechargeant ces batteries provienne d’énergies renouvelables voire des centrales nucléaires et non de centrales thermiques à charbon (grandes émettrices de CO₂).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This development of electric mobility is an asset to reduce our CO₂ footprint, under the necessary condition that the electrical energy recharging these batteries comes from renewable energies or even from nuclear power plants, not from coal-fired thermal power plants (large CO₂ emitters).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>Bien que dominante, la technologie à Li-ion, commercialisée depuis 1990, est encore perfectible, notamment au niveau de sa densité d’énergie, de sa durée de vie, de sa sécurité et de son empreinte environnementale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although it is dominant, Li-ion technology, which has been on the market since 1990, can still be improved, particularly in terms of its energy density, its lifetime, its safety, and its environmental footprint.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>Tous ces aspects font des batteries un sujet de recherche diversifié, passionnant et innovant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>All these aspects make batteries a diverse, exciting, and innovative research topic.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>Le format de cet article fait que je ne pourrai pas exposer tous les travaux actuels et passés sur les batteries.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The format of this article means that I will not be able to present all the current and past work on batteries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>Les travaux décrits ci-après ont donc été choisis afin de donner un aperçu des recherches actuelles fondamentales, appliquées et futuristes visant (i) à augmenter la densité d’énergie de la technologie Li-ion via de nouveaux concepts de matériaux, (ii) à concevoir des batteries plus éco-compatibles telles que les batteries Na-ion et (iii) à développer des batteries intelligentes via l’injection de nouvelles fonctionnalités, avant d’aborder la problématique du recyclage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The works described below have therefore been selected to give an overview of current key research studies, both applied and futuristic. These are aimed at (i) increasing the energy density of Li-ion technology via new material concepts, (ii) designing more eco-compatible batteries such as Na-ion batteries, and (iii) developing smart batteries via the injection of new functionalities. The issue of recycling is then addressed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>1.1. Augmenter la densité énergétique de la technologie Li-ion</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>1.1. Increasing the energy density of Li-ion technology</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>De nombreuses familles de batteries à ions Li sont actuellement développées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Many families of Li-ion batteries are currently being developed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Elle reposent toutes sur l’utilisation de graphite comme électrode négative mais diffèrent de par la nature de l’électrode positive dont les composés les plus utilisés pour la mobilité électrique sont des oxydes de structure lamellaire Li(Ni_(1∕3)Mn_(1∕3)Co_(1∕3))O₂ et Li(Ni_(x)CoyAl_(1−x−y))O₂, dénotés NMC et NCA respectivement [Padhi etal. 1997].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They are all based on the use of graphite as a negative electrode, but differ in the nature of the positive electrode. The compounds most used for electrical mobility are oxides with lamellar structure Li(Ni_(1/3)Mn_(1/3)Co_(1/3))O₂ and Li(Ni_(x)CoyAl_(1−x−y))O₂, denoted NMC and NCA respectively [Padhi etal. 1997].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces batteries, en raison d’une densité d’énergie gravimétrique élevée, détrônent celles utilisant des positives à base de phosphates (LiFePO₄) qui sont plus attractives en termes de sécurité et d’impacts environnementaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These batteries, due to a high gravimetric energy density, dethrone those using phosphate-based positives (LiFePO₄) that are more attractive in terms of safety and environmental impacts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Cependant, une inquiétude liée aux électrodes NMC et NCA repose sur leur taux élevé en Co, un élément chimique très peu abondant dont l’extraction minière soulève des problèmes éthiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, a concern with the NMC and NCA electrodes is based on their high levels of Co, a very sparse chemical element whose mining raises ethical concerns.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Les matériaux d’électrodes à faibles taux de Co deviennent de plus en plus prisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Electrode materials with low Co levels are becoming increasingly popular.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Les acteurs du domaine développent des phases lamellaires [Rozier and Tarascon 2015] de type 811, (ces chiffres désignant les proportions de Ni/Mn/Co dans le matériau: LiNi_(0.8)Co_(0.1)Ni_(0.1)O₂) plus appauvries en Co que les phases 622 (LiNi_(0,6)Co_(0,2)Ni_(0,2)O₂) actuellement commercialisées (Figure3a), ainsi que de nouvelles phases riches en lithium de type Li(Li_(1,2)Ni_(0,3)Co_(0,13)Mn_(0,54)O₂) [Lu and Dahn 2002; Thackeray etal. 2007] qui, outre le faible taux de Co, présentent des capacités exacerbées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The actors in the domain are developing lamellar phases [Rozier and Tarascon 2015] of type 811, (these figures indicating the proportions of Ni/Mn/Co in the material: LiNi_(0.8)Co_(0.1)Ni_(0.1)O₂) which is more reduced in Co than the phases 622 (LiNi_(0.6)Co_(0.2)Ni_(0.2)O₂) currently marketed (Figure3a), as well as new lithium-rich phases of type Li(Li_(1.2)Ni_(0.3)Co_(0.13)Mn_(0.54)O₂ [Luand Dahn 2002; Thackeray etal. 2007] which, in addition to low Co levels, have heightened capacities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces dernières phases dont la capacité repose sur un nouveau concept de redox anionique mis à jour pour la première fois dans le groupe que je dirige au Collège de France [Assat and Tarascon 2018; Sathiya etal. 2013] laissent espérer une augmentation de 20% de la densité gravimétrique de la cellule.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These last phases whose capacity is based on a new concept of anionic redox, updated for the first time in the group that I lead at the Collège de France [Assat and Tarascon 2018; Sathiya etal. 2013], suggest a 20% increase in the gravimetric density of the cell.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Cependant, des verrous technologiques liés aux chutes de potentiel lors du cyclage ainsi qu’à des problèmes d’hystérèses influençant négativement les performances en puissance et en efficacité énergétique de ces matériaux restent à lever pour concrétiser commercialement ces nouveaux matériaux riches en Li [Assat and Tarascon 2018].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, technological barriers related to potential drops during cycling, as well as hysteresis problems negatively influencing the performance in terms of power and energy efficiency of these materials, remain to be addressed in order to concretely commercialise these new materials that are rich in Li [Assat and Tarascon 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Les interfaces électrodes-électrolytes qui gouvernent les performances en puissance, durabilité et vie calendaire font également l’objet d’études intenses.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The electrode-electrolyte interfaces that govern performance in power, durability, and calendar life are also the subject of intense studies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Le défi est de taille en raison des évolutions dynamiques de ces interfaces durant le cyclage et du vieillissement de la batterie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The challenge is significant because of the dynamic changes in these interfaces during cycling and the aging of the battery.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Cependant, grâce à des recherches affinées sur la stabilisation d’électrolytes via l’ajout d’additifs combinées au développement de techniques operando de caractérisation jouissant d’une excellente résolution en temps et en espace, nous maîtrisons aujourd’hui ces interfaces comme jamais.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, thanks to refined research on the stabilisation of electrolytes through the addition of additives combined with the development of operando characterisation techniques with excellent resolution in time and space, we are now mastering these interfaces as never before.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>La durée de vie des batteries a ainsi pu être améliorée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a result, battery life has been improved.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>D’ailleurs, une étude récente [Harlow etal. 2019] de trois années de tests sur des cellules Li-ion de type NMC(532)/C, à des températures variées, montre que la durée de vie des batteries des véhicules électriques pourrait leur permettre d’atteindre 3 millions de kilomètres parcourus à 20^(°)C, soit une durée de vie de 25 ans en supposant une décharge de 100% par jour (Figure3b).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, a recent study [Harlow etal. 2019] of three years of tests on Li-ion cells of type NMC(532)/C, at various temperatures, shows that the lifetime of the batteries of electric vehicles could allow them to reach 3 million kilometers travelled at 20^(°)C, i.e. a lifetime of 25 years assuming a discharge of 100% per day (Figure3b).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>De plus, sur la base des progrès effectués au niveau des oxydes lamellaires avec l’apport des composés riches en Li ainsi que sur l’électrode de C par ajout de Li, l’obtention de densité d’énergie autour de 700–800 Wh/l et de 350–400 Wh/kg est envisagée pour 2025.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, on the basis of the progress made in terms of lamellar oxides with the addition of Li-rich compounds as well as on the C electrode via the addition of Li, obtaining an energy density of around 700–800 Wh/l and 350–400 Wh/kg is envisaged for 2025.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, la question de savoir si nous serons capables d’aller au-delà des 800Wh/l demeure.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, the question remains whether we will be able to go beyond 800Wh/l.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Beaucoup d’espoir repose sur les batteries dites «tout solide» qui suscitent un engouement dans le monde des fabricants de voitures électriques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Much hope rests on the so-called "all-solid" batteries, which are popular in the world of electric car manufacturers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, Toyota annonçait déjà en 2017 qu’il prévoyait de concurrencer les voitures Tesla dès 2022 avec des batteries de ce type à charge rapide.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For example, Toyota already announced in 2017 that it planned to compete with Tesla cars in 2022 with batteries of this type featuring fast charge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Il s’agit là d’une renaissance pour cette technologie qui a été développée initialement par J. Akridge à Eveready^(@) en 1986 [Jones and Akridge 1992] dans une version couche mince (TiS₂/LiPON-LiI/Li.)</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is a revival for this technology which was originally developed by J. Akridge at Eveready^(@) in 1986 [Jones and Akridge 1992] in a thin-film version (TiS₂/LiPON-LiI/Li.)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est la découverte par Kanno en 2011 [Kanno and Murayama 2001] du thiophosphate Li₁₀GeP₂S₁₂ présentant une conductivité ionique exceptionnellement élevée de 10⁻²S/cm², comparable, voire supérieure, à celle d’un électrolyte liquide, qui relança l’intérêt pour les batteries tout-solide.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The discovery by Kanno in 2011 [Kanno and Murayama 2001] of Li₁₀GeP₂S₁₂ thiophosphate with an exceptionally high ionic conductivity of 10⁻²S/cm², comparable to or even greater than that of a liquid electrolyte, rekindled interest in all-solid batteries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce fut un vrai déclic, au point qu’il est difficile de trouver un laboratoire, un fabriquant de batteries ou un constructeur automobile qui, aujourd’hui, ne travaille pas sur les batteries tout solide.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It was a true trigger, to the point that it is difficult to find a laboratory, a battery manufacturer, or a car manufacturer who does not currently work on solid batteries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces batteries sont sur la feuille de route de toutes les institutions et compagnies asiatiques, dont le Japon, qui anticipe une pénétration importante du marché automobile pour 2030 (Figure4b).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These batteries are on the roadmap of all Asian institutions and companies, including Japan, which anticipates a significant penetration of the automotive market by 2030 (Figure4b).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>L’Europe se mobilise également avec le lancement de nombreux projets dans le cadre des programmes H-2020.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Europe is also mobilising with the launch of many projects under the H-2020 programmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces batteries seraient potentiellement plus sûres, en raison de l’absence d’électrolyte liquide mais aussi plus attractives en termes d’énergie volumétrique en raison de l’utilisation du Li métallique en remplacement de l’électrode négative de carbone graphite (Figure4a) et aussi de leur possibilité d’assemblage en configuration bipolaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These batteries would be potentially safer because of the absence of liquid electrolyte, but also more attractive in terms of volumetric energy because of the use of metallic Li instead of the graphite carbon negative electrode (Figure4a). They are also of interest because of the possibility of assembling them in a bipolar configuration.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette euphorie commence cependant à retomber par la prise de conscience croissante des difficultés récurrentes liées à l’instabilité des interfaces et notamment du fait de la fenêtre de potentiel limitée par la stabilité thermodynamique des conducteurs ioniques, que ce soient ceux de la famille des thiophosphates (Li₃PS₄, Li₁₀GeP₂S₁₂) ou des grenats (Li₇La₃Zr₂O₁₂) [Thangadurai etal. 2014].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, this euphoria is beginning to fall back due to the growing awareness of the recurrent difficulties related to interface instability and in particular due to the potential window limited by the thermodynamic stability of the ionic conductors, whether those of the family of thiophosphates (Li₃PS₄, Li₁₀GeP₂S₁₂) or garnets (Li₇La₃Zr₂O₁₂ [Thangadurai etal. 2014].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>La problématique de la croissance dendritique à l’électrode de Li, qui a conduit à l’abandon de la technologie Li-métal à électrolyte liquide dans les années 80, n’est pas à ce jour entièrement résolue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The problem of dendritic growth at the Li electrode, which led to the abandonment of Li-metal liquid electrolyte technology in the 1980s, has not yet been fully resolved.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>La diffusion du Li qui est plus lente dans le Li métallique que dans le conducteur ionique provoque l’apparition d’une porosité à l’interface propice à la formation de ces dendrites.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The diffusion of Li, which is slower in the metallic Li than in the ionic conductor, causes the appearance of porosity at the interface that is conducive to the formation of these dendrites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>À ce jour, ce problème ne peut pas être totalement résolu malgré l’utilisation de traitements de surface et le maintien de la batterie sous pression mécanique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To date, this problem cannot be completely solved despite the use of surface treatments and maintaining the battery under mechanical pressure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Tout aussi complexe est la maîtrise de l’interface oxyde lamellaire-conducteur ionique à l’électrode positive, tant au niveau de la compatibilité chimique de l’électrolyte solide avec le matériau d’électrode actif qu’au niveau de son élasticité pour absorber les changements de volume répétés associés à l’insertion/désinsertion du Li⁺.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Equally complex is the control of the lamellar oxide-ionic conductor interface at the positive electrode, both in terms of the chemical compatibility of the solid electrolyte with the active electrode material and in terms of its elasticity to absorb the repeated volume changes associated with the insertion/extraction of Li⁺.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Lever ces verrous scientifiques et technologiques reste encore un défi majeur qui focalise les efforts de nombreux groupes de recherche dans le monde.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Removing these scientific and technological barriers remains a major challenge that concentrates the efforts of many research groups around the world.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Les pistes poursuivies se concentrent autour de méthodes d’enrobage variées incluant le dépôt de couches tampons d’oxydes pour minimiser les réactions de décomposition, d’alliages pour assurer une meilleure mouillabilité de l’interface Li métal/ électrolyte ou enfin de couches minces de conducteurs ioniques hybrides (inorganique-polymère) pour assurer une élasticité de l’interface sans en affecter le transport ionique [Famprikis etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The research directions pursued are focused on various coating methods, including the deposition of oxide buffer layers to minimise decomposition reactions, alloys to ensure better wettability of the Li metal/ electrolyte interface, and finally thin layers of hybrid (inorganic-polymer) ionic conductors to ensure elasticity of the interface without affecting ionic transport [Famprikis etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Bien que certaines études soient prometteuses, la problématique des interfaces au sein des batteries tout solide est loin d’être maîtriséece qui confère un aspect quelque peu irréaliste à certaines annonces annonçant la batterie tout solide pour 2022 (date qui a d’ailleurs déjà été repoussée).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although some studies are promising, the problem of interfaces within all-solid batteries is far from being mastered. This gives a somewhat unrealistic appearance to some announcements announcing the all-solid battery for 2022 (a date which has already been postponed).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>En résumé, les batteries tout solide sont prometteuses, mais la route sera longue, tant au niveau fondamental ou appliqué, avant leur commercialisation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In summary, all-solid batteries are promising, but the road will be long, both at the fundamental and applied levels, before they can be commercialised.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Restons humble et ne répétons pas l’histoire de la technologie Li-air qui fut largement survendue pour être, 5 ans plus tard, totalement oubliée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Let us remain humble and not repeat the history of Li-air technology which was largely oversold only to be totally forgotten 5 years later.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>1.2. Conception de batteries plus éco-compatibles</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>1.2. Design of more eco-compatible batteries</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>Outre l’autonomie de la batterie, son éco-compatibilité revêt une importance capitale pour des raisons sociétales et planétaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition to battery life, its eco-compatibility is of paramount importance for societal and global reasons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous serions bien naïfs de penser qu’une batterie suit parfaitement les préceptes du développement durable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We would be very naïve to think that a battery perfectly follows the principles of sustainable development.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette crainte est renforcée par des analyses du cycle de vie énergétique des batteries qui révèlent qu’une énergie de 400 kWh est nécessaire pour fabriquer une batterie Li-ion stockant 1 kWh par cycle, qui s’accompagne de l’émission d’environ 75 kg de CO₂ [Larcher and Tarascon 2015].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This fear is reinforced by analyses of the batteries' energy life cycle, which reveal that 400 kWh of energy is needed to manufacture a Li-ion battery storing 1 kWh per cycle. This is accompanied by the emission of about 75 kg of CO₂ [Larcher and Tarascon 2015].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>Un tel constat a conduit à une réorientation de nos thématiques de recherche qui se focalisent à ce jour sur l’exploration de nouveaux concepts de design de matériaux d’électrodes à base d’éléments abondants conçus à partir de procédés de synthèse moins énergivores.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such an observation has led to a reorientation of our research themes which are currently focused on exploring new concepts of electrode material design based on abundant elements and designed using less energy-intensive synthesis processes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>La recherche s’intéresse également au développement de nouvelles chimies, au-delà du Li, pour minimiser l’empreinte environnementale de la production des batteries.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Research is also interested in the development of new chemical compositions, beyond Li, to minimise the environmental footprint of battery production.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>L’enjeu est aussi de répondre aux interrogations légitimes sur les réserves disponibles de lithium dans le monde, au vu de la demande croissante de cet élément par l’industrie automobile et le déploiement des énergies renouvelables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The challenge is also to answer legitimate questions about the available lithium reserves in the world, given the growing demand for this element by the automotive industry and the deployment of renewable energies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>De plus, ces réserves sont situées dans un nombre limité de pays, dont certains sont géopolitiquement à risque, avec la crainte de voir le prix du Li fluctuer comme celui de l’or noir [Tarascon 2010].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, these reserves are located in a limited number of countries, some of which are geopolitically at risk, with the fear that the price of Li will fluctuate like that of black gold [Tarascon 2010].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces inquiétudes ont conduit au développement de nouvelles technologies métal-air (Li–O₂, Zn–O₂), Li–S, Na-ion, Mg(Ca)-ion, Zn–MnO₂ et «Redox-Flow» qui, bien que qualifiées de «nouvelles», reposent toutes sur des chimies déjà connues, mais délaissées pour différentes raisons.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These concerns have led to the development of new metal-air technologies (Li-O₂, Zn–O₂), Li-S, Na-ion, Mg(Ca)-ion, Zn–MnO₂ and "Redox-Flow" which, although described as "new", are all based on already known chemistries, but neglected for various reasons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Parmi les chimies mentionnées ci-dessus, la plus mature et intéressante dans le contexte du développement durable est sans nul doute celle au sodium.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Of the chemistries mentioned above, the most mature and interesting in the context of sustainable development is undoubtedly sodium.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>En effet, les ressources en Na sont illimitées, accessibles partout dans le monde et exploitables à un coût très faible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, Na resources are unlimited, accessible anywhere in the world, and exploitable at a very low cost.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>De plus, si quelques critères notamment massiques (Na⁺ trois fois plus lourd que Li⁺) peuvent apparaître pénalisants, ces désavantages sont contrebalancés par la possibilité de remplacer le collecteur de courant de l’électrode négative en Cu dans la technologie à ions Li par de l’aluminium qui est plus léger, meilleur marché, et qui ne forme pas d’alliage avec le sodium.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, although some criteria may appear to be disadvantageous, in particular mass criteria (Na⁺ being three times heavier than Li⁺), these disadvantages are counterbalanced by the possibility of replacing the current collector of the Cu negative electrode in Li-ion technology with aluminum, which is lighter, cheaper, and does not form an alloy with sodium.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Deux technologies à ions Na sont actuellement développées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two Na-ion technologies are currently being developed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Elles partagent la même électrode négative qui est du carbone mais diffèrent par le fait que l’une utilise des composés polyanioniques Na₃V₂(PO₄)₂F₃ [Ponrouch etal. 2013] et l’autre des composés lamellaires Na_(2∕3)Mn_(0.5)Fe_(0.5)O₂ [Yabuuchi etal. 2012] comme électrode positive.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They share the same negative electrode made from carbon but differ in that one uses polyanionic compounds Na₃V₂(PO₄)₂F₃ [Ponrouch etal. 2013] and the other uses lamellar compounds Na_(2/3)Mn_(0.5)Fe_(0.5)O₂ [Yabuuchi etal. 2012] as a positive electrode.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Le système Na₃V₂(PO₄)₂F₃/C Na-ion, développé à ce jour au sein du Réseau français sur le stockage électrochimique de l’énergie (RS2E) est le plus attractif.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The Na₃V₂(PO₄)₂F₃/C Na-ionsystem, currently developed within the French Research Network on Electrochemical Energy Storage (RS2E), is the most attractive.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Grâce à des efforts au niveau de la chimie et de la morphologie du matériau Na₃V₂(PO₄)₂F₃ couplés à la confection d’électrolytes à bases d’additifs spécifiques [Cometto etal. 2019], nous avons pu obtenir en piles boutons des performances en cyclage sur un large domaine de température (−15^(°)CC +55^(°)CC) n’ayant rien à envier à la technologie Li-ion (Figure5).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thanks to efforts in the chemistry and morphology of the Na₃V₂(PO₄)₂F₃ material coupled with the production of electrolytes based on specific additives [Cometto etal. 2019], we were able to obtain cycling performance in button cells over a wide temperature range (−15^(°)CC +55^(°)CC +55°CC) that is unimaginable with Li-ion technology (Figure5).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette chimie Na₃V₂(PO₄)₂F₃/C a été intégrée avec succès à des cellules 18650 au sein de la filière française Na-ion récemment créée et portée par une start-up du nom de TIAMAT.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This Na₃V₂(PO₄)₂F₃/C chemistry has been successfully integrated into 18650 cells within the recently created French Na-ion sector and supported by a start-up named TIAMAT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Des cellules de 120 Wh/kg avec une longue durée de vie ( &gt;3 000 cycles) et des performances en puissance (5–10W/kg) attractives sont à ce jour produites.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Cells of 120 Wh/kg with a long lifetime (&gt;3000 cycles) and attractive power performance (5–10W/kg) have been produced to date.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Bien que la technologie Na-ion dérive de la technologie à ions Li car utilisant des types d’électrodes et d’électrolytes similaires, elle n’est pas compétitive avec le Li-ion en termes d’énergie (120 vs. 240 Wh/kg) et ce en raison du poids du Na, supérieur à celui de Li, et de son moindre caractère réducteur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although Na-ion technology derives from Li-ion technology as it uses similar types of electrodes and electrolytes, it is not competitive with Li-ion in terms of energy (120 vs. 240 Wh/kg) due to the weight of Na, which is greater than that of Li, and its lower reducing character.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Son rôle dans des applications nécessitant une densité d’énergie élevée, comme pour les véhicules électriques, sera limité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Its role in high-energy-density applications, such as electric vehicles, will be limited.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette faible densité d’énergie n’est cependant pas un handicap pour les applications réseaux où le volume n’est pas une contrainte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, this low energy density is not a handicap for network applications where volume is not a constraint.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Un atout majeur de la technologie Na₃V₂(PO₄)₂F₃/C reste les performances en puissance due à la structure tridimensionnelle de Na₃V₂(PO₄)₂F₃ qui possède des canaux permettant une rapide diffusion du Na⁺, et ainsi, des décharges et charges complètes en moins de 5 minutes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A major advantage of the Na₃V₂(PO₄)₂F₃/C technology remains its power performance. This is due to the three-dimensional structure of Na₃V₂(PO₄)₂F₃ which has channels that allow for a rapid diffusion of Na ⁺ and thus complete discharges and charges in less than 5 minutes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Elle surpasse ses homologues Li-ion et rivalise même favorablement avec les batteries Li-ion à charge ultra rapide (SCIB) de TOSHIBA — la référence dans le domaine — à un coût moindre par kWh [Tarascon 2020].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It outperforms its Li-ion counterparts and even competes favorably with TOSHIBA's ultra-fast-charging Li-ion batteries (SCiB) — the benchmark in the field — at a lower cost per kWh [Tarascon 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, la batterie Na₃V₂(PO₄)₂F₃/C a définitivement un rôle clé à jouer dans l’industrie automobile pour des fonctions demandeuses en puissance (véhicule hybride 48 V, fonctions de récupération et de démarrage/arrêt) ainsi que dans le secteur des applications réseaux pour le lissage des fréquences.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, the Na₃V₂(PO₄)₂F₃/C battery certainly has a key role to play in the automotive industry for functions with high power needs (48 V hybrid vehicle, recovery, and start/stop functions), as well as in the sector of network applications for frequency smoothing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Un autre aspect attractif des batteries Na-ion est qu’elles peuvent être, au contraire des batteries Li-ion, déchargées ou maintenues à zéro volt sans aucun risque d’altérer ses performances ultérieures.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Another attractive aspect of Na-ion batteries is that, unlike Li-ion batteries, they can be discharged or kept at zero volts without any risk of impairing its subsequent performance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>La raison s’explique par le fait de pouvoir utiliser des collecteurs de courant en aluminium, qui ne forment pas d’alliage avec le Na contrairement au Li avec qui ils forment un alliage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The reason lies in the fact that it is possible to use aluminum current collectors, which do not form an alloy with Na, unlike Li, with which they form an alloy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est pour pallier à la formation d’alliages que nous utilisons un collecteur de courant à base de Cu pour les cellules Li-ion avec cependant le risque qu’il puisse s’oxyder, lorsque les cellules sont à zéro volt et entraîner des problèmes d’explosion via la formation de dendrites de Cu.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To mitigate this formation of alloys, we use a Cu-based current collector for Li-ion cells. However, it comes with the risk that it may oxidise when the cells are at zero volts, leading to the problem of explosions from the formation of Cu dendrites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>De ce fait, les cellules Li-ion ne peuvent pas être transportées en étant déchargées, au contraire des batteries Na-ion: ces dernières sont donc exemptes de toute réglementation de transport.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a result, Li-ion cells cannot be transported while being discharged, unlike Na-ion batteries: the latter are therefore exempt from any transport regulations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour conclure, la technologie Na-ion est en train de devenir une réalité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To conclude, Na-ion technology is becoming a reality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Cependant, cette idée n’est pas révolutionnaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, this idea is not revolutionary.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>La preuve en est qu’en 1869 un écrivain visionnaire français, Jules Verne, avait déjà identifié les avantages de cette technologie de batterie dans son roman «20 000 lieues sous les mers».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proof of this is that in 1869, a French visionary writer, Jules Verne, had already identified the advantages of this battery technology in his novel "20,000 leagues under the sea".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Comme écrit dans son œuvre, «Monsieur, le sodium seul est consommé et c’est la mer qui me le fournit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As is written in his book, "Sir, sodium alone is consumed and it is the sea that provides me with it.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Je vous dirai également que les batteries au sodium doivent être considérées comme les plus énergétiques».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>I will also tell you that sodium batteries must be considered the most energetic".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Bien qu’imaginée depuis bien longtemps, la technologie Na-ion n’émerge que maintenant et se présente comme une option attrayante pour des batteries plus vertes et plus durables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although imagined for a long time, Na-ion technology is only emerging now and presents itself as an attractive option for greener and more sustainable batteries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>1.3. Vers des batteries intelligentes</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>1.3. Towards smart batteries</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Toujours afin d’abaisser l’empreinte environnementale des batteries mais aussi le coût de l’énergie stockée, beaucoup d’espoir repose sur les études visant à leur offrir une seconde vie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to lower the environmental footprint of batteries but also the cost of stored energy, much hope relies on studies aimed at offering them a second life.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>L’idée est que, lorsqu’elles atteignent leur fin de vie dans un véhicule électrique (avec un critère de fin de vie correspondant à une diminution de 20% de la capacité nominale), elles pourraient être, selon leur degré d’usure, remises en conformité pour des applications réseaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The idea is that when they reach their end of life in an electric vehicle (with an end of life criterion corresponding to a 20% reduction in nominal capacity), they could, depending on their degree of wear, be brought back into compliance for network applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce basculement de fonctionnalité n’est aujourd’hui qu’utopique (i) quand on voit la diversité des modèles de packs tous différents les uns des autres et la sophistication des systèmes de gestion de batteries (BMS) pour un usage conservatif mais sûr et (ii) en absence de traçabilité ou de possibilité d’intervenir sur l’état de santé des batteries de façon non invasive.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This change in functionality is today only a utopian ideal (i) when we see the diversity of pack models, all different from each other, and the sophistication of battery management systems (BMS) for conservative but safe use and (ii) in the absence of traceability or the possibility of intervening in the health status of the batteries in a non-invasive way.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Des méthodes de détection non-invasives visant à fournir une meilleure connaissance des processus se déroulant dans les batteries — un état de santé en quelque sorte — sont donc nécessaires pour donner une seconde vie à la batterie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Non-invasive detection methods aimed at providing a better knowledge of the processes taking place in batteries — their state of health in a way — are therefore necessary to give a second life to the battery.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Nos approches s’inspirent fortement du domaine médical.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our approaches are strongly inspired by the medical field.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>À ce titre, on mentionnera l’introduction de fibres optiques munies de réseaux de Bragg au sein de nos accumulateurs pour obtenir par interrogation optique (déplacement de longueur d’onde du signal émis) une cartographie en température de l’intérieur de la batterie, ainsi qu’une évolution de sa pression lors de son étape de formation, de son cyclage ou de son utilisation selon des conditions de puissance élevée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As such, we note the introduction of optical fibers equipped with Bragg gratings into our accumulators in order to obtain a temperature mapping of the interior of the battery via optical interrogation (wavelength shift of the signal emitted), as well as an evolution of its pressure during its formation stage, its cycling, or its use under high power conditions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Grâce à notre capacité actuelle à décrypter les informations chimiques contenues dans ces signaux optiques en termes de réactions parasites, de croissance d’interfaces et de cinétiques de réaction [Huang etal. 2020], nous pouvons peaufiner leur chimie via l’ajout d’additifs spécifiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thanks to our current ability to decipher the chemical information contained in these optical signals in terms of side reactions, interface growth, and reaction kinetics [Huang etal. 2020], we can refine their chemistry through the addition of specific additives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>La collecte dans le temps de ces données nous permettra de connaitre l’état de santé des batteries.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The collection of this data over time will allow us to know the state of health of the batteries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>On établira ainsi un «suivi médical» pour chaque batterie qui nous permettra d’en établir son degré d’usure avant de lui affecter une application de seconde vie appropriée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This will establish a "medical monitoring" for each battery that will allow us to ascertain its degree of wear before assigning it an appropriate second life application.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est bien évident qu’un tel diagnostic n’a de sens, comme dans le domaine médical, que s’il va de pair avec l’autoréparation, d’où la naissance d’une nouvelle science, à la croisée de plusieurs disciplines, vouée à l’auto-guérison des batteries en agissant au niveau des électrodes et des séparateurs via une chimie de greffage innovante.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is quite obvious that as in the medical field, such a diagnosis only makes sense if it goes hand in hand with self-healing. We thus see the birth of a new science at the crossroads of several disciplines, dedicated to the self-healing of batteries by acting at the level of electrodes and separators via innovative grafting chemistry.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Un programme européen vient d’ailleurs de démarrer pour développer un système d’administration à la demande de molécules via des stimuli physiques pour solubiliser un dépôt résistif ou injecter des polymères auto-réparateurs opérant via des interactions supramoléculaires afin de restaurer une interface électrode/électrolyte défectueuse dans la batterie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A European program has just started with the aim of developing a system for delivering molecules on demand via physical stimuli. This will allow for solubilising a resistive deposit or injecting self-repairing polymers operating via supramolecular interactions in order to restore a defective electrode/electrolyte interface in the battery.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>À titre d’illustration inspirée des membranes cellulaires dotées de canaux ioniques assurant le transport membranaire dans nos cellules et agissant comme régulateurs d’ions, nous avons utilisé un canal protéique inséré dans une membrane lipidique, comme nanopore biologique pour la détection et la régulation sélective du transport d’espèces indésirables (S_(x))^(n−) au sein d’une batterie, via la formation de complexes d’inclusion avec la cyclodextrine [Bétermier etal. 2020].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For an illustrative example, inspired by cell membranes featuring ion channels that provide membrane transport in our cells and act as ion regulators, we used a protein channel inserted into a lipid membrane as a biological nanopore for the detection and selective regulation of transport of undesirable chemical species (S_(x))^(n−) within a battery, via the formation of inclusion complexes with cyclodextrin [Bétermier etal. 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>De plus, les propriétés spécifiques de complexation de la cyclodextrine lui confèrent la possibilité de capter ou libérer des espèces sur un domaine étroit de température.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, the specific complexation properties of cyclodextrin give it the possibility of capturing or releasing chemical species over a narrow temperature range.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, la conception de membranes fonctionnalisées par CD en utilisant la température comme stimulus physique pour réguler des espèces devient du domaine du possible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, the design of CD-functionalised membranes using temperature as a physical stimulus to regulate chemical species becomes possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>L’approche couplée diagnostic/auto-guérison est disruptive, si bien que les batteries futures pourraient avoir en dehors des pôles positifs et négatifs une sortie analytique supplémentaire (Figure6) pour communiquer avec un BMS, qui couplé à un actuateur, pourra déclencher le stimulus souhaité pour administrer le traitement requis afin de répondre au problème identifié.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The coupled diagnostic/self-healing approach is disruptive, so much that future batteries could have an additional analytical output besides the positive and negative poles (Figure6) to communicate with a BMS, which, when coupled with an actuator, can trigger the desired stimulus to deliver the required treatment that addresses the identified problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette détection/autoréparation avancée facilitera non seulement la seconde vie des batteries mais sera également d’une valeur capitale pour en augmenter la durabilité et la fiabilité : Une façon indirecte de réduire considérablement leur empreinte environnementale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This advanced detection/self-repair will not only facilitate the second life of the batteries but will also be of crucial value for increasing their durability and reliability: an indirect way to significantly reduce their environmental footprint.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>1.4. Recyclage</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>1.4. Recycling</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>L’arrivée de la technologie Li-ion et des applications qui l’ont accompagnée, tant au niveau de la communication, de la mobilité électrique, des énergies renouvelables, des drones et de la médecine, est une révolution au service d’une meilleure planète.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The advent of Li-ion technology and the applications that have accompanied it - in terms of communication, electric mobility, renewable energies, drones, and medicine - is a revolution in the service of a better planet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est cependant essentiel de ne pas refaire les erreurs du passé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, it is essential not to repeat the mistakes of the past.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>On peut rappeler que les polymères, dont le plastique avec les milliers d’applications qui ont suivi sa découverte au milieu du XIXième siècle, ont ravi dans un premier temps nos sociétés, avant de devenir aujourd’hui un problème majeur en raison d’un recyclage complexe et non réalisé à ce jour.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One can recall that polymers, including plastics with the thousands of applications that followed its discovery in the mid-nineteenth century, initially delighted our societies before becoming a major problem today due to a complex recycling process that is not fully carried out to date.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Bien que moins couverte par la presse et les médias, la chimie du recyclage, dont le libellé n’est pas très sophistiqué et attrayant, est inévitable et devient un impératif.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although less covered by the press and the media, the chemistry of recycling, a term that is not very sophisticated and attractive, is inevitable and becomes an imperative.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Des milliards de batteries devront être récupérées et à ce jour, nous n’avons pas une idée claire de la façon dont cela sera fait efficacement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Billions of batteries will have to be recovered and to date we do not have a clear idea of how this will be done efficiently.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Le recyclage résonne parmi les scientifiques plus comme une vieille que comme une nouvelle science.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recycling sounds more like an old rather than a new science among scientists.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette science repose actuellement sur des procédés pyro- ou hydro-métallurgiques à étapes multiples [Harper etal. 2019] dont la demande en énergie et en solvant devra être réduite.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This science is currently based on multi-stage pyro- or hydro-metallurgical processes [Harper etal. 2019] whose energy and solvent demand will have to be reduced.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Il faut repenser ces procédés de recyclage et favoriser les circuits courts à une seule étape.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We need to rethink these recycling processes and encourage short circuits in a single stage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Cependant, l’innovation est là encore possible dans ce domaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, innovation is still possible in this area.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs équipes travaillent sur un procédé dénommé «Direct Recycling» [Chen etal. 2016] mettant en jeu une chimie préservant les éléments structuraux de l’électrode de manière à permettre une simple étape de recuit (Figure7a).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Several teams are working on a process called "Direct Recycling" [Chen etal. 2016] involving a chemistry that preserves the structural elements of the electrode so as to allow for a simple annealing step (Figure7a).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Le recyclage n’aura de sens qu’avec une collecte et un système de récupération efficaces reposant sur des mines urbaines faciles et moins coûteuses à exploiter.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recycling will only make sense with efficient collection and recovery systems based on urban mines that are easy and less expensive to exploit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est ainsi plus économique de recycler le Co des batteries que de l’extraire des mines.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is thus more economical to recycle the Co of the batteries than to extract it from the mines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans le même esprit, nous préciserons qu’il faut seulement traiter 28 tonnes de batteries Li-ion pour récupérer une tonne de Li, alors qu’il faut manipuler 250 tonnes de spodumène (minerai contenant le Li) ou 750 tonnes de saumure pour en obtenir la même quantité [Tetgar 2011].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the same spirit, we note that only 28 tonnes of Li-ion batteries need to be treated to recover one tonne of Li, whereas 250 tonnes of spodumene (ore containing Li) or 750 tonnes of brine need to be handled in order to obtain the same quantity [Tetgar 2011].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>La norme européenne fixant que 60% du poids de la batterie doit être récupéré ne va pas suffisamment loin.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The European standard that 60% of the weight of the battery must be recovered is not sufficient.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Elle devra être rehaussée avec la prise de conscience conjointe des fabricants et utilisateurs que le recyclage doit être considéré comme une valeur de la chaine de la batterie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It will need to be enhanced with the joint awareness of manufacturers and users that recycling should be seen as a value of the battery supply chain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>En plus des procédés de recyclage [Gaines 2018], il faut également repenser la configuration des batteries qui n’a guère évoluée depuis des décennies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition to recycling processes [Ducts 2018], it is also necessary to rethink the configuration of the batteries, which has hardly changed in decades.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>Il serait temps de concevoir des batteries de type «LEGO» où chaque composant de la batterie pourra être recyclé indépendamment (Figure7b).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It may be the time to design “LEGO” batteries where each battery component can be recycled independently (Figure7b).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>Il ne s’agit pas d’un rêve puisque dans le passé la recharge mécanique des piles Zn-air par remplacement de l’électrode de Zn fut mise en pratique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is not a fantasy; in the past, the mechanical recharging of Zn-air batteries by replacing the Zn electrode was put into practice.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est en matière de nouveaux procédés et de nouvelles configurations que le recyclage pourrait trouver sa propre évolution et redevenir attractive vis-à-vis des futures générations tant la cause est noble.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>New processes and new configurations would allow recycling to make its own evolution and become attractive to future generations, as the cause is so noble.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>1.5. Conclusions/perspectives</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>1.5. Conclusions/perspectives</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>En raison de son impact sociétal et planétaire, la technologie à ions Li est vue à ce jour, et à juste titre, comme une grande découverte du XXième siècle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Because of its societal and planetary impact, Li-ion technology is now seen as a great discovery of the 20th century, and rightly so.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Je répondrai par l’affirmative à la question posée au départ de cette tribune.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>I will answer the question from the beginning of this examination in the affirmative.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Les batteries sont une bonne option pour un développement durable, mais à condition de remplir quelques critères.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Batteries are a good option for sustainable development, but only if they meet certain criteria.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Ils incluent la nécessité (i) d’utiliser de l’énergie primaire provenant d’énergies renouvelables pour les recharger; (ii) d’élaborer des matériaux d’électrodes de plus haute capacité et à base de métaux abondants via des procédés moins énergivores; (iii) de développer des technologies de batteries plus éco-compatibles, (iv) d’injecter de l’intelligence dans les batteries via des capteurs et des fonctionnalités auto-réparatrices pour repousser l’âge pivot de recyclage et permettre de donner une seconde vie à la batterie et enfin (v) de lancer une politique de recyclage agressive incluant des procédés et circuits courts de récupération et la mise en place de normes strictes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They include the need to (i) use primary energy from renewable energies to recharge them; (ii) develop higher-capacity, metal-abundant electrode materials through less energy-intensive processes; (iii) develop more eco-compatible battery technologies; (iv) inject intelligence into batteries through sensors and self-healing functionalities to extend the age of recycling and allow a second life for the battery; and finally (v) launch an aggressive recycling policy including short-circuit recovery processes and the establishment of strict standards.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Il s’agit là de défis scientifiques fondamentaux résultant de l‘existence de verrous technologiques concrets qui nécessiteront, outre une approche multidisciplinaire, une synergie profonde entre recherche fondamentale et appliquée renforçant ainsi l’intérêt de ce domaine de recherche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These are fundamental scientific challenges resulting from the existence of concrete technological barriers which will require, in addition to a multidisciplinary approach, a profound synergy between fundamental and applied research, thus strengthening the interest of this field of research.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Bien qu’une recherche performante se fasse en Europe, c’est l’Asie qui domine à 95% le marché des batteries.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although there is a well-performing research happening in Europe, 95% of the battery market is in Asia.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est une situation inconfortable pour l’Europe de l’automobile, qui dans la course à la mobilité électrique sera dépendante de l’Asie pour son approvisionnement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is an uncomfortable situation for the automotive Europe, which in the race for electric mobility will be dependent on Asia for its supply.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour répondre à cela, une politique industrielle de fabrication de batteries se met en place en Europe via des projets de construction d’usines géantes «gigafactories».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To respond to this, an industrial policy for the manufacturing of batteries is being implemented in Europe through projects to construct giant "gigafactories".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Bien que cela apporte une certaine souveraineté au niveau du stockage, il s’agit encore d’une position défensive qui lui confèrera toujours un rôle de spectateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although this brings some sovereignty to the storage, it is still a defensive position that will always give it a spectator role.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour obtenir in fineune part substantielle de ce marché lucratif de la mobilité électrique et des énergies renouvelables, l’Europe devra se montrer plus offensive.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Ultimately, in order to obtain a substantial share of this lucrative electric mobility and renewable energy market, Europe will have to be more offensive.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Ils’agira de mettre en place dans le temps des stratégies de recherche disruptives et innovantes, visant à apporter une valeur ajoutée aux batteries, grâce à de nouveaux paradigmes mobilisant des approches systémiques impliquant de nouveaux secteurs de recherche et d’acteurs industriels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The aim will be to put in place disruptive and innovative research strategies over time, aimed at adding value to batteries. This can be achieved through new paradigms mobilising systemic approaches that involve new research sectors and industrial actors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Les investissements industriels actuels pour les gigafactories doivent aller de pair avec des investissements dans le secteur académique si nous ne voulons pas répéter l’histoire et voir s’affirmer à nouveau dans les années à venir la suprématie de l’Asie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Current industrial investments in gigafactories must go hand in hand with investments in the academic sector if we are not to repeat history and see Asia's supremacy once again assert itself in the years to come.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous ne répéterons pas assez l’importance de la synergie entre les connaissances scientifiques et technologiques pour sécuriser une chaîne de valeur européenne totale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We cannot insist enough on the importance of synergy between scientific and technological knowledge to securing a total European value chain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>Le lancement récent du flagship européen «Battery 2030⁺», dont les trois piliers fondateurs sont (i) l’utilisation de l’intelligence artificielle pour la découverte accélérée de nouveaux matériaux et la maitrise des interfaces, (ii) le développement de nouvelles stratégies de diagnostic/autoréparation pour la conception de batteries intelligentes et (iii) la mise au point de nouveaux concepts de recyclage et de configurations d’accumulateurs, est la preuve de la prise de conscience de l’Europe des efforts à fournir pour conquérir le leadership dans le domaine des batteries.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The recent launch of the European flagship "Battery 2030⁺", whose three founding pillars are (i) the use of artificial intelligence for the accelerated discovery of new materials and interface control, (ii) the development of new diagnostic/self-repair strategies for the design of smart batteries, and (iii) the development of new recycling concepts and battery configurations, is proof of Europe's awareness of the efforts needed to conquer leadership in the field of batteries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous ne pouvons que nous en réjouir et œuvrer tous avec enthousiasme pour réussir ce pari dont l’enjeu pour la France et l’Europe est de retrouver une véritable indépendance énergétique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We can only rejoice at this and work enthusiastically to succeed in this endeavour, the challenge of which for France and Europe will be to regain true energy independence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>Remerciements</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Acknowledgements</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>Je souhaite remercier Benjamin Campech pour ses conseils et les relectures apportées à cette tribune.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>I would like to thank Benjamin Campech for his advice and feedback given to this article.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,1087 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2010-long-040. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/L10-1486/</url_en>
+        <url_fr>https://talnarchives.atala.org/TALN/TALN-2010/taln-2010-long-040.pdf</url_fr>
+        <title_en>A Morphological Lexicon for the Persian Language</title_en>
+        <title_fr>Développement de ressources pour le persan: lexique morphologique et chaîne de traitements de surface</title_fr>
+        <docid>taln-2010-long-040</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>A Morphological Lexicon for the Persian Language</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un lexique morphologique pour la langue persane</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>We introduce PerLex, a large-coverage and freely-available morphological lexicon for the Persian language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons PerLex, un lexique morphologique du persan à large couverture et librement disponible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>We describe the main features of the Persian morphology, and the way we have represented it within the Alexina formalism, on which PerLex is based.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous décrivons les principales caractéristiques de la morphologie du persan, et la façon dont nous l’avons représentée dans le formalisme lexical Alexina, sur lequel repose PerLex.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>We focus on the methodology we used for constructing lexical entries from various sources, as well as the problems related to typographic normalisation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous insistons sur la méthodologie que nous avons employée pour construire les entrées lexicales à partir de diverses sources, ainsi que sur les problèmes liés à la normalisation typographique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>The resulting lexicon shows a satisfying coverage on a reference corpus and should therefore be a good starting point for developing a syntactic lexicon for the Persian language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le lexique obtenu a une couverture satisfaisante sur un corpus de référence, et devrait donc constituer un bon point de départ pour le développement d’un lexique syntaxique du persan. Mots-clés : Lexique morphologique, Persan, Développement de lexiques, Traitements de surface.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Most Natural Language Processing (NLP) tasks such as part-of-speech tagging, shallow or deep parsing and natural language generation, as well as most NLP applications such as data mining, information extraction, or automatic translation require or strongly benefit from the availability of large-scale lexical resources.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La majorité des tâches de traitement automatique des langues (TAL), comme le balisage de la partie du discours, l’analyse syntaxique et la génération de langage naturel ainsi que la plupart de ses applications tels que la fouille de textes, l’extraction d’informations et la traduction automatique nécessitent, ou du moins bénéficient largement, de la disponibilité de ressources lexicales à large couverture et de traitements de surface de qualité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>Among them, morphological lexicons are the most basic yet the most needed resources.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Parmi les ressources lexicales, les lexiques morphologiques constituent les plus simples, mais néanmoins les plus indispensables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>They associate a lemma and a morphosyntactic tag with each known wordform (form, in short).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils associent à chaque forme fléchie (ou forme abrégée) un lemme et une étiquette morphosyntaxique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>However, for at least two reasons, such resources are virtually available only for a restricted set of welldescribed languages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, pour deux raisons au moins, ce type de ressources ne semble accessible que pour un nombre bien restreint de langues convenablement décrites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>First, many languages are resourcescarce, and existing lexical resources for these languages, if any, do not have a large coverage.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'une part, de nombreuses langues font preuve d'un manque important de ressources et même lorsqu'il arrive qu'il existe des ressources pour ces langues, celles-ci ont le plus souvent une couverture limitée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>Second, existing lexical resources are not always freely available, although experience shows that free availability is the fastest way to high-quality resources.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’autre part, les ressources lexicales existantes ne sont pas toujours librement disponibles, et ce alors même que l’expérience montre que la libre disponibilité représente le moyen le plus rapide pour le développement de ressources de qualité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we introduce PerLex, a new large-scale and freely available morphological lexicon for the Persian language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous présentons PerLex, un lexique morphologique du persan à large couverture, librement disponible et dont une version préliminaire a déjà été présentée à la conférence LREC en mai 2010 (Sagot &amp; Walther, 2010), ainsi qu’une version persane de la chaîne de traitements de surface SXPipe (Sagot &amp; Boullier, 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>We briefly describe the Persian language and Persian morphology, the Alexina framework used for our lexical development work, the origin of the lexical data in PerLex, and the resulting lexical resource.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous décrivons brièvement la langue et la morphologie persanes, le cadre Alexina utilisé pour notre travail de développement lexical, l'origine des données lexicales dans PerLex et la ressource lexicale obtenue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>2. Related Work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Travaux connexes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>The first NLP project of importance on Persian language is the Shiraz project, targeted towards Persian to English automatic translation (Amtrup et al., 2000).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le premier projet de traitement automatique ayant eu une importance notable pour le persan est le projet Shiraz, qui a été consacré à la traduction automatique du persan vers l’anglais (Amtrup et al., 2000).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>It resulted, among others, in the construction of a 50,000 terms bilingual lexicon,[1] based in part on a unification-based description of the Persian morphology (Megerdoomian, 2000), later redesigned for using the Xerox finite-state machinery (Megerdoomian, 2004).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il a eu notamment pour résultat la mise en place d’un lexique bilingue d’environ 50 000 entrées[2] qui s’appuie sur une description du persan au sein d’un modèle de grammaire d’unification (Megerdoomian, 2000). Ce lexique a ensuite été adapté aux outils Xerox pour les automates à états finis (Megerdoomian, 2004).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>Apart from the work related to the Shiraz project, some other NLP tools, such as morphological tools and lemmatisers, have been developed. Yet they have not led to the construction of a large-scale lexicon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Outre les travaux réalisés dans le cadre du projet Shiraz, d’autres outils d’analyse morphologique ou de lemmatisation ont été développés, mais n’ont pas conduit à la construction d’un lexique à large couverture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>Among those works are those of (2008), especially their freely available lemmatiser PerStem.[2]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Parmi ces travaux, on peut citer ceux de Dehdari &amp; Lonsdale (2008), et notamment leur lemmatiseur PerStem, librement disponible[3] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>Other recent work in the development of NLP tools and resources for Persian processing is mostly focused on designing part-of-speech taggers (QasemiZadeh and Rahimi, 2006; Tasharofi et al., 2007; Shamsfard and Fadaee, 2008), parsers (Hafezi, 2004; Dehdari and Lonsdale, 2008) or automatic translation systems (Feili and Ghassem-Sani, 2004; Saedi et al., 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autres travaux récents dans le développement d'outils et de ressources de traitement du langage naturel pour le persan se concentrent principalement sur la conception de balises de parties du discours (QasemiZadeh et Rahimi, 2006 ; Tasharofi et al., 2007 ; Shamsfard et Fadaee, 2008), d'analyseurs syntaxiques (Hafezi, 2004 ; Dehdari et Lonsdale, 2008) ou de systèmes de traduction automatique (Feili et Ghassem-Sani, 2004 ; Saedi et al., 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>3. The Persian Language</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. La langue persane</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>The Persian language is a inflectional SOV language with a relatively fixed word order, belonging to the Western Iranian branch of Indo-European languages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le persan est une langue indo-européenne de la famille des langues iraniennes occidentales. Le persan se caractérise par un ordre des mots de type SOV relativement fixe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>It is spoken by around 130 million people, mainly in Iran, Afghanistan and Tajikistan and Uzbekistan but also in Pakistan, Bahrain, Iraq, Kazakhstan and the Iranian diaspora.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est parlé par environ 130 millions de personnes, principalement en Iran, en Afghanistan, au Tadjikistan et en Ouzbékistan, mais aussi au Pakistan, à Bahreïn, en Irak, au Kazakhstan et dans la diaspora iranienne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>In Iran, where Persian functions as the official language, it is also often referred to as Dari, Farsi or Parsi.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En Iran, où le persan est la langue officielle, on l'appelle aussi souvent dari, farsi ou parsi.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>3.1. Persian Script and Transliteration</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1 Écriture et translittération persane</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>Persian is written from right to left and uses a modified version of the Arabic script. Some characters have been added, others are not used and some show a slightly modified shape.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le persan s’écrit de droite à gauche au moyen d’une variante de l’alphabet arabe, avec quelques caractères en plus, d’autres en moins, et d’autres qui ont une forme légèrement modifiée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>As in Arabic, the only diacritic representation of short vowels is usually not written, nor is there a difference between capital and lower case letters.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De même qu’en arabe, les voyelles brèves ne sont pas transcrites et la distinction entre majuscules et minuscules n’existe pas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>Moreover, two adjacent characters may either be joined (that is written with one uninterrupted line, possible only with some letters) or juxtaposed (that is following each other directly yet without being joined) or separated by a white space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, deux caractères consécutifs peuvent être liés (c’est-à-dire écrits d’un seul trait, ce qui n’est possible que pour certains caractères), collés (juxtaposés sans être liés) ou séparés par un espace.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>Depending on whether a given character is joined to or isolated from its adjacent characters, this same character can adopt up to three different shapes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Selon qu’il est isolé ou lié au caractère précédent et/ou suivant, un même caractère peut prendre jusqu’à trois formes différentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>Therefore, encoding these characters within Unicode can be done in two different ways: either one directly uses the appropriate contextual character which represents the exact shape a given character has to adopt in that one given context (left- or right-joined or not), or one resorts to the use of generic characters whose shape automatically varies according to the context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'encodage de ces caractères au moyen de la norme Unicode peut ainsi se faire de deux façons : soit au moyen de caractères contextuels, qui représentent la forme précise que doit prendre le caractère (lié ou non, à droite et à gauche), soit au moyen de caractères génériques, dont la forme varie en fonction du contexte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>Using contextual characters has however become obsolete nowadays since they do not allow for the representation letters by one unique character each.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’encodage au moyen des caractères contextuels est aujourd’hui considéré comme obsolète, car il ne respecte pas l’unicité de représentation de chaque caractère.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>Using the generic character therefore sometimes requires the insertion of zero-width non-joiners ( ZWNJ ) between two characters to indicate that in a particular case they must not be joined whereas otherwise they could.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’encodage au moyen des caractères génériques nécessite cependant parfois l’introduction d’espaces de longueur nulle (ZWNJ) entre deux caractères pour indiquer qu’ils ne doivent pas être liés alors qu’ils pourraient l’être.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>Some Persian affixes for example have to be written without being separated by a white space but must yet not be joined to the preceding morpheme even if the letters they are represented by normally would.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En persan, certains affixes doivent être écrits collés mais non liés au morphème auquel ils se rattachent, quand bien même ce rattachement rapproche deux caractères qui seraient autrement liés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>Some of the resources we developed during on our work is based on a transliteration of Persian into Latin characters.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certains outils et ressources développés au cours de notre travail reposent sur une translittération du persan en caractères latins.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>We have adopted the bijective transliteration system which has been developed within the PerGram project and which has a version solely based on characters that can be found within the ISO-8859-2 (or Latin-2) encoding.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons adopté le système de translittération bijective développé dans le cadre du projet PerGram, dont une variante ne fait usage que de caractères que l’on peut représenter au moyen de l’encodage ISO-8859-2 (dit Latin-2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>This allows for an effortless use of tools that internally require 8-bit encodings, i.e., encodings for which the typographic and electronic notions of character coincide.[3]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela permet une utilisation sans problème d'outils qui nécessitent en interne des encodages 8 bits, c'est-à-dire des encodages pour lesquels les notions typographiques et électroniques de caractère coïncident[3].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>3.2. Persian Morphology in Brief</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2 Aperçu de la morphologie du persan</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>Within Persian morphology, the nominal system is relatively simple.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la morphologie persane, le système nominal est relativement simple.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>There is no case system, nor gender distinction (except for a few animate Arabic loanwords which take the feminine ending -e ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il n'y a pas de système de cas, ni de distinction de genre (mis à part pour quelques emprunts arabes animés qui prennent la marque arabe du féminin en -e).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>Persian shows but two number features, singular and plural, of which only the plural is marked by either the suffix -hâ (which works for all countable nouns) or, for some animated nouns only, the more formal suffix -ân , or one of the Arabic plural markers -ât , -un , -in etc. attaching solely to Arabic loanwords (Lazard et al., 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le persan n’a que deux nombres, le singulier et le pluriel, dont seul le pluriel se distingue par une marque morphologique spécifique, soit le suffixe -hâ (possible pour tous les noms comptables), soit, pour certains noms désignant principalement des animés, le suffixe -ân , plus formel. S’ajoutent à cela quelques marques de pluriel arabes, -ât , -un , -in etc., qui ne s’attachent qu’à des emprunts arabes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>Persian also possesses a few broken plurals directly inherited with Arabic loanwords. But those plurals are no longer treated within morphology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le persan a également hérité d’un certain nombre de pluriels dits brisés , mais ces derniers ne s’analysent plus directement en morphologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>Further, there exists a specific enclitic particle -(y)e for marking modified nouns, called Ezafe.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, il existe également une particule enclitique spécifique, appelée Ézafé , qui fonctionne comme un marqueur de dépendance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>It can either mark a given noun or a full noun phrase as a modified element (Samvelian, 2007; Lazard et al., 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il peut marquer aussi bien les noms que les phrases nominales en tant qu’éléments modifiés (Samvelian, 2007 ; Lazard et al., 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>Moreover there is an enclitic indefinite article -i which doesn’t have separate forms for singular and plural; if it attaches to a noun modified by an adjective, it may either directly follow the noun or the adjective.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, le persan dispose d’un déterminant indéfini enclitique -i , sans formes séparées pour le singulier et le pluriel. Si cette particule se combine avec un nom modifié par un adjectif, il peut soit s’attacher directement au nom, soit suivre l’adjectif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>In the first case, the noun does not take the Ezafe particle, whereas in the second case it does (Samvelian, 2007; Lazard et al., 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le premier cas, le nom ne prend pas la particule Ezafe, alors que dans le second cas, il la prend (Samvelian, 2007 ; Lazard et al., 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Other enclitic particles are -i combined with the relative particle -ke , the optional finite marker -(h)e and object marking postposition -râ .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les autres particules enclitiques du persan sont le -i qui se combine avec le marqueur relatif -ke , le marqueur optionnel de définitude -(h)e et la postposition -râ indiquant l’objet direct défini.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>Adjectives only vary in degree by taking the suffixes -tar for the comparative and -tarin for the superlative form.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les adjectifs, quant à eux, ne varient qu’en degré, prenant le suffixe -tar au comparatif et le suffixe -tarin au superlatif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>But they can also take the Ezafe enclitic when following a further modified noun or taking a direct or indirect object.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais ils peuvent également être suivis de l'Ézafé lorsqu'ils suivent un nom modifié plus précisément ou lorsqu'ils prennent un objet direct ou indirect.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>This last point especially holds for adjectives derived from verbal forms (Lazard et al., 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce dernier point s’applique en particulier au adjectifs dérivés de verbes (Lazard et al. , 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>Concerning the verbal class, Persian like most Iranian languages possesses only a very limited amount of verbal lexemes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En ce qui concerne la classe verbale, le persan, comme la plupart des langues iraniennes, ne possède qu'un nombre très limité de lexèmes verbaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>They form a closed word class of about 200 elements. Most verbal meanings known from the more extensively described Indo-European languages are expressed through complex verbal predicates built from a light verbal head and a predicative element which can be either a noun or an adjective.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils constituent une classe fermée de seulement 200 éléments environ. La majorité des sens connus des langues indo-européennes plus largement décrites sont exprimés par des prédicats verbaux complexes construits à partir d'une tête verbale légère et d'un élément prédicatif qui peut être un nom ou un adjectif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>Verbal morphology is slightly more complex but follows a rather simple pattern.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La morphologie verbale du persan est légèrement plus complexe mais suit un schéma assez simple.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>Persian morphological descriptions usually (Lazard et al., 2006) state the existence of two distinct verbal stems, one for the present tense forms (SI), one for the past tense forms (SII).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les descriptions morphologiques persanes indiquent habituellement (Lazard et al., 2006) l'existence de deux radicaux distincts par verbe, l'un servant à la formation des temps du présent, du participe présent, du gérondif et de l'impératif, l'autre aux temps du passé ainsi qu'aux participes passé et d'obligation/de possibilité et aux infinitifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>SI is used in the formation of all present tenses, the present participle, the gerund and the imperative forms whereas SII forms the past tenses, the past participle, the participle of possibility or obligation and the two infinitives.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le SI est utilisé dans la formation de tous les temps présents, du participe présent, du gérondif et des formes impératives, tandis que le SII forme les temps passés, le participe passé, le participe de possibilité ou d'obligation et les deux infinitifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>Compound tenses as well as the passive voice are derived from the past participle.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les temps composés et la voix passive sont dérivés à partir du participe passé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>All Persian verbal paradigms consist of the combination of a given stem with a set of pre- and suffixes, such as in the following representation:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous les paradigmes verbaux persans consistent en la combinaison d'un radical donné avec un ensemble de préfixes et de suffixes, comme dans la représentation suivante :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>Modal/Temporal Prefix(es) - Stem - Personal Suffix(es) .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Préfixe(s) modal/temporel - Racine - Suffixe(s) personnel(s) .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>The paradigm of temporal/modal prefixes consists of mi- and be- , respectively for building the indicative and subjunctive/imperative forms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le paradigme des préfixes temporels/modaux est constitué de mi- et be- , respectivement pour construire les formes indiquant l'indicatif et le subjonctif/impératif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>The possible personal suffixes are -am , -i , -ad/-e/ø , -im , -id/-in and -and/-an .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les suffixes personnels possibles sont -am , -i , -ad/-e/ø , -im , -id/-in et -and/-an .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>These combinations generate seven different tensed forms for six different persons each, as well as five nominal verbforms to which the above mentioned enclitics can be attached.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les combinaisons que l'on peut ainsi obtenir génèrent sept formes verbales différentes pour six personnes chacun, ainsi que cinq formes verbales nominales pouvant à leur tour se combiner avec les particules enclitiques citées plus haut.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>The negational prefixes n- or m- (more formal, used for the imperative only) can also be attached to the thereby created verbforms (Lazard et al., 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les préfixes de négation n- ou m- (formel pour les formes de l’impératif notamment) peuvent également se combiner avec les formes verbales ainsi générées (Lazard et al. , 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>Moreover Persian also displays two distinct paradigms of the present indicative forms for the verb budan ’to be’, one being constitutive of plain words whereas the other is formed of enclitic particles which may attach to nouns or adjectives.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, on note également que le persan possède deux paradigmes de l'indicatif présent du verbe budan 'être', l'un étant constitué de mots pleins, l'autre de formes enclitiques qui peuvent venir s'attacher à des noms ou des adjectifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>This second paradigm is also used attached to the past participle to form both the perfect and imperfect compound tenses (Lazard et al., 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce deuxième paradigme est également utilisé avec le participe passé pour former les temps composés parfaits et imparfaits (Lazard et al., 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>Finally, Persian also has pronominal suffixes which can combine with nouns, pronouns, verbs, prepositions, adjectives and some adverbs (Lazard et al., 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, le persan possède un paradigme de suffixes pronominaux qui peuvent se combiner aussi bien avec des noms qu’avec des pronoms, des verbes, des prépositions, des adjectifs et certains adverbes (Lazard et al., 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>4. The Alexina Framework</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Le formalisme lexical Alexina</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>We developed the morphological lexicon PerLex within the Alexina framework (Sagot, 2010).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons développé le lexique morphologique PerLex dans le cadre du formalisme Alexina (Sagot, 2010).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>This framework covers both the morphological and the syntactic level (e.g., valency), which shall be useful in further stages of PerLex development.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce formalisme couvre à la fois le niveau morphologique et le niveau syntaxique (p.ex. la valence), ce qui sera utile pour le développement futur de PerLex[6] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>Alexina allows for representing lexical information in a complete, efficient and readable way, that is meant to be independent of the language and of any grammatical formalism. It is compatible with the LMF standard[4] (Francopoulo et al., 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Alexina permet de représenter les informations lexicales d'une façon complète, efficace et lisible, qui est censée être indépendante de la langue et de tout formalisme grammatical. Elle est compatible avec la norme LMF [4] (Francopoulo et al., 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>Numerous resources are already being developed within this framework, such as the Le fff , a large-coverage morphological and syntactic lexicon for French (Sagot, 2010), the Le ff e for Spanish, SoraLex for Sorani Kurdish, and lexical resources for Galician, Polish, Slovak and soon English.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un certain nombre de ressources sont déjà développées dans ce cadre, telles que le Le fff , un lexique morphologique et syntaxique à large couverture pour le français (Sagot, 2010), le Le ff e pour l'espagnol, SoraLex pour le kurde sorani, et des ressources pour le galicien, le polonais, le slovaque et bientôt l'anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>The Alexina model is based on a two-level representation that separates the description of a lexicon from its use: - The intensional lexicon factorises the lexical information by associating each lemma with a morphological class (defined in a formalised morphological description) and deep syntactic information; it is used for lexical resource development; - The extensional lexicon, which is generated automatically by compiling the intensional lexicon, associates each inflected form with a detailed structure that represents all its morphological and syntactic information; it is directly used by NLP tools such as parsers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le modèle Alexina est basé sur une représentation à deux niveaux qui sépare la description du lexique de son utilisation : - le lexique intensionnel factorise les informations lexicales en associant à chaque lemme une classe morphologique (définie dans une description morphologique formalisée) et des informations syntaxiques profondes ; il est utilisé pour le développement de la ressource ; - le lexique extensionnel, produit automatiquement par compilation du lexique intensionnel, associe à chaque forme fléchie une structure détaillée qui représente l’ensemble de ses propriétés morphologiques et syntaxiques ; il est directement utilisé par les outils TAL tels que les étiqueteurs ou les parseurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>In this paper, the syntactic level is left aside, since we are yet building the morphological lexicon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, le niveau syntaxique est laissé de côté, car nous construisons encore le lexique morphologique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>5. Formalising Persian Morphology</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Formalisation de la morphologie du persan</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>Among the various enclitic particles listed in Section 3.2., not all shall be treated within morphology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Parmi les diverses particules enclitiques citées à la section 3.2, toutes n’ont pas été retenues pour être traitées en morphologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>In this matter, PerLex makes the following linguistically motivated choices (Samvelian, 2007): - plural markers, the Ezafe -(y)e (when it has a written counterpart), the indefinite marker -i , comparative and superlative markers -tar and -tarin , personal suffixes and enclitic forms of the auxiliary (except when used for building the perfect forms) are considered as inflectional suffixes, - combined with the relative ke , the enclitic particle -i forms a compound i ke that is agglutinated to the preceding form, - other enclitics, including the copula and the -râ definite direct object marker, are considered as independent (agglutinated) forms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>PerLex suit les choix linguistiques adoptés au sein du projet PerGram, définis notamment dans (Samvelian, 2007) : - les marques de pluriel, l’Ézafé -(y)e (dès lors qu’il est représenté à l’écrit), le marqueur indéfini -i , le comparatif et le superlatif -tar et -tarin , les suffixes personnels (les désinences verbales) et les formes enclitiques de l’auxiliaire être sont considérés comme des suffixes flexionnels, - dans sa combinaison avec le marqueur relatif ke , la particule enclitique -i est considérée comme un mot composé amalgamé au mot précédent, - les autres enclitiques, y compris la copule lorsqu’elle ne sert pas à former les temps du parfait et de l’imparfait composé, et le -râ marqueur de l’objet direct défini, sont interprêtés comme des formes indépendantes quoique amalgamées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>Having in mind the linguistic choices mentioned in 3.2., we developed a complete description of Persian morphology in the Alexina morphological language (Sagot, 2007), based on the data in (Lazard et al., 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En ayant en tête les choix linguistiques mentionnés au point 3.2, nous avons développé une description complète de la morphologie du persan dans le formalisme morphologique d’Alexina (Sagot, 2007), à partir des données de (Lazard et al., 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>In this format, inflection is modelled as the affixation of a prefix and a suffix around a stem, while sandhi phenomena may occur at morpheme boundaries, sometimes conditioned by stem properties.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce formalisme, la flexion est modélisée comme l’affixation d’un préfixe et d’un suffixe de part et d’autre d’un radical. Des phénomènes de sandhi[7] peuvent avoir lieu aux frontières de ces unités, qui sont éventuellement conditionnés par des propriétés du radical.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>Our description contains in particular 27 verb tables and 5 nouns tables.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre description contient entre autres 27 tables verbales et 5 tables nominales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>6. The Construction of the PerLex Lexicon</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Construction du lexique PerLex</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>Lexical entries have been obtained through the three following steps that we describe below:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les entrées lexicales ont été obtenues par les trois étapes suivantes que nous décrivons ci-dessous :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>(1) constructing a basic set of lexical entries using a certain amount of resources; (2) cleaning the obtained lexical entries; (3) adding manually missing entries that were present in the BijanKhan corpus but not yet covered by the already built lexical entries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(1) construire un ensemble de base d'entrées lexicales à l'aide d'une certaine quantité de ressources ; (2) nettoyer les entrées lexicales obtenues ; (3) ajouter manuellement les entrées manquantes qui étaient présentes dans le corpus BijanKhan mais qui n'étaient pas encore couvertes par les entrées lexicales déjà construites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>6.1. Gathering Lexical Information</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.1. Collecte d'informations lexicales</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>We gathered lexical information from various sources, the importance of which is variable among categories: - the BijanKhan corpus (BijanKhan, 2004; Amiri et al., 2007), an automatically POS-annotated corpus,</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons exploité différentes sources d'informations lexicales librement disponibles, avec une importance respective qui varie d'une catégorie à l'autre : - le corpus BijanKhan (BijanKhan, 2004; Amiri et al., 2007), un corpus annoté automatiquement en parties du discours ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>- the Persian Wikipedia[5]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- la Wikipédia en persan[5]</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>- a lexicon of Persian nouns under development by M. Ghassemi at Université Paris-Est (Ghassemi, p.c.), - the reference grammar of (Lazard et al., 2006), - introspection by linguists who are native speakers of Persian.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- la Wikipedia Persane[8] , - un lexique nominal du Persan en cours de construction par Mehdi Ghassemi à l’Université Paris-Est (Ghassemi, c.p.), - la grammaire de référence de Lazard et al. (2006), - l’introspection par des linguistes locuteurs natifs du Persan.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>6.2. Building a Base Lexicon</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.2. Construction du lexique de base</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>Lexical entries were obtained as follows.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les entrées lexicales ont été obtenues comme suit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>A list of verbal lemmas (infinitive form) was developed manually from freely available Internet resources and checked manually.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, nous avons développé et vérifié manuellement une liste de lemmes verbaux (à l'infinitif) à partir de conjugueurs en ligne librement disponibles sur internet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>We associated each of them with one (sometimes several) inflection class(es) from our morphological description.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons associé à chacun de ces lemmes une des classes flexionnelles de notre description morphologique (parfois plusieurs).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>We used the Persian Wikipedia for collecting proper nouns.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé la version persane de Wikipedia pour collecter les noms propres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>Those were found through the titles of Wikipedia articles indicating either a city or a person category .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons fait un inventaire des articles de Wikipédia indiquant une catégorie de personne ou de ville.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>We collected and normalised the titles of these articles as well as those of all the articles redirecting towards them. We were thereby able to build a lexicon for proper nouns consisting in person and city names which we completed with a list of country names found in the corresponding Wikipedia article.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons collecté et normalisé les titres de ces articles ainsi que ceux de tous les articles qui les redirigent. Nous avons ainsi pu constituer un lexique de noms de personnes et de noms de villes. Nous avons complété ces données par la liste des pays telle que disponible dans l'article correspondant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>These tasks resulted in a set of over 10,000 proper noun lemmas which all received a inflectional noun class that doesn’t allow for the formation of plural forms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces tâches ont abouti à un ensemble de plus de 10 000 lemmes de noms propres, auxquels nous avons attribué une classe de flexion nominale ne permettant pas la formation de formes au pluriel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>A list of nominal lemmas was extracted from Ghassemi’s data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, une liste de lemmes nominaux a été extraite à partir des données de Mehdi Ghassemi.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>Some of them were already associated with their plural form(s).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certains d’entre eux étaient déjà associés à leur forme de pluriel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>For others, a statistical look-up in the BijanKhan corpus allowed us to assign their corresponding plural form(s).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les autres, une recherche dans le corpus BijanKhan a permis d’assigner leur forme(s) de pluriel correspondante(s).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>The result is an inflection class associated with each nominal lemma. Entries for other categories were extracted from the BijanKhan corpus,[6] and manually completed on the basis of (Lazard et al., 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le résultat est une classe d'inflexion associée à chaque lemme nominal. Les entrées pour les autres catégories ont été extraites du corpus BijanKhan[6], et complétées manuellement sur la base de (Lazard et al., 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>Apart from adjectives, that all receive the unique adjectival class, prepositions and some adverbs (see 3.2.), all entries for these categories are considered invariable, except for some adverbs that may receive the indefinite marker -i , the Ezafe or personal suffixes.[7]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Outre les adjectifs, qui reçoivent tous la classe adjectivale unique, les prépositions et certains adverbes (voir 3.2), toutes les entrées de ces catégories sont considérées comme invariables, à l'exception de certains adverbes qui peuvent recevoir le marqueur indéfini -i , l'Ézafé ou les suffixes personnels[7].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>6.3. Cleaning the Base Lexicon</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.3. Nettoyage du lexique de base</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>At this stage of our lexicon development, and despite the filtering mentioned in footnote 6, there still remains a significant number of incorrect entries, notably among those extracted from the BijanKhan corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À ce stade de notre développement du lexique, et malgré le filtrage évoqué à la note 6, il reste encore un nombre significatif d'entrées incorrectes, notamment parmi celles extraites du corpus BijanKhan.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>This follows from the fact that this corpus has been annotated automatically, that is with a nonzero error rate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est là une conséquence immédiate du fait que ce corpus a été annoté automatiquement, avec un taux d'erreur non nul.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>We therefore removed a certain amount of lexical entries, especially all the nominal and adjectival entries that had been extracted from the BijanKhan corpus and looking like typical plural forms (that is that seemed to end in the plural suffix -hâ , followed or not by the Ezafe, the indefinite suffix or the personal suffixes).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons donc supprimé un certain nombre d’entrées lexicales, et notamment toutes les entrées nominales et adjectivales extraites du corpus BijanKhan correspondant à des formes de pluriel typiques (suffixe -hâ , suivi ou non de l’Ezafe, du suffixe de l’indéfini ou des suffixes personnels).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>We also eliminated numerous entries which seemed to contain typographic errors, especially those whose ZWNJ had been omitted or replaced by a white space (such as the incorrect entries for the pronouns ân hâ and ânhâ instead of correct ân hâ ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également éliminé les nombreuses entrées correspondant manifestement à des erreurs typographiques, en particulier lorsqu’un espace de longueur nulle a été supprimé, ou à l’inverse remplacé par un espace (ainsi les entrées erronnées pour les pronoms ân hâ et ânhâ au lieu du correct ân hâ ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>Finally we suppressed all superfluous characters, such as the diacritic signs for marking vocalisation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous avons supprimé tous les caractères jugés superflus, tels que les signes diacritiques pour la vocalisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>The resulting base lexicon forms the first version of our morphological lexicon for the Persian language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le résultat de ce lexique de base constitue une première version de lexique morphologique du persan.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>6.4. Expanding the Lexicon</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.4. Extension du lexique de base</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>Once this first version of PerLex had been completed, we have searched the BijanKhan corpus for attested word forms that had not yet been taken into account by our lexicon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois cette première version de PerLex construite, nous avons cherché les formes attestées dans le corpus BijanKhan mais non couvertes par notre lexique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>Those forms may as well be unknown missing forms as they may be incorrect entries or spelling or typographic errors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces formes peuvent correspondre à des formes manquantes, à des entrées incorrectes, à des erreurs orthographiques ou à des erreurs typographiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>We therefore sorted them according to their frequency of apparition and manually completed the lexicon from the resulting list.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous les avons donc classées par fréquence d’apparition, et avons complété manuellement le lexique à partir de ces données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>The missing entries were mostly, on the one hand, proper nouns belonging to categories other than those extracted from the Persian Wikipedia (continent names, names of different regions of Iran, etc.), and, on the other hand, several broken plurals.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les entrées manquantes étaient principalement des noms propres appartenant à des catégories différentes de celles extraites de la version persane de Wikipedia (noms de continents, noms de régions d’Iran, etc.), ainsi que des pluriels brisés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>However we were able to observe that a very large amount of unknown forms were in fact due to typographical errors that had not been spotted during the cleaning step.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons cependant constaté que de très nombreuses formes inconnues étaient en fait dues à des erreurs typographiques qui n’avaient pas été détectées pendant la phase de nettoyage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>7. The PerLex Lexicon</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7. Le lexique PerLex</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>The resulting lexicon contains 35,914 lemma-level entries that generate 524,700 form-level entries corresponding to 494,488 distinct forms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le lexique obtenu contient 35 914 entrées de niveau lemme qui produisent 524 700 entrées de niveau forme pour 494 488 formes distinctes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>Some insight into the distribution according the category is given in Table 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quelques informations complémentaires sur la distribution par catégorie sont fournies dans le tableau 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Quantitative data about PerLex</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 : Données quantitatives sur PerLex</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>8. Conclusion and Future Work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>8. Conclusion et perspectives de travail</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>We introduced the first version of a large-coverage lexicon for the Persian language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons présenté la première version d'un lexique à large couverture pour la langue persane.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>It is now restricted to the morphological level which is currently undergoing manual validation work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il se limite désormais au niveau morphologique qui fait actuellement l'objet d'un travail de validation manuelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>The next step of our lexical development work will be to add syntactic information including subcategorisation frames, starting with verbs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La prochaine étape de notre travail de développement lexical sera l'ajout d'informations syntaxiques, y compris les cadres de sous-catégorisation, en commençant par les verbes. Les autres catégories devront également voir leurs entrées complétées par des informations syntaxiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>In parallel, PerLex will be extended for describing the important phenomenon of complex verbal predicates in Persian.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, PerLex sera étendu à la description du phénomène des prédicats verbaux complexes, important en Persan.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>Both these tasks shall be achieved by semi-automatic techniques already used for the development of other Alexina lexicons, and followed by a manual validation step.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces deux tâches seront réalisées au moyen de techniques semi-automatiques déjà utilisées pour le développement d'autres lexiques Alexina (Nicolas et al. , 2008), puis suivies d'étapes de validation manuelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>PerLex is freely available under an LGPL-LR license on the web page of the Alexina project.[8]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>PerLex est disponible gratuitement sous une licence LGPL-LR sur la page web du projet Alexina[8].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>Acknowledgements</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Remerciements</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>This work was supported in part by the PerGram FrenchGerman project, funded by the Deutsche Forschungsgemeinschaft and the Agence Nationale de la Recherche (Grant Number MU 2822/3-1) and jointly headed by Pollet Samvelian (Université Paris 3) and Stefan M¨uller (Freie Universit¨at Berlin).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce travail a été soutenu en partie par le projet PerGram FrenchGerman, financé par la Deutsche Forschungsgemeinschaft et l'Agence Nationale de la Recherche (Grant Number MU 2822/3-1) et dirigé conjointement par Pollet Samvelian (Université Paris 3) et Stefan Müller (Freie Universität Berlin).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>1 This lexicon doesn’t seem to be freely available.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Ce lexique ne semble cependant pas être disponible librement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>2 http://sourceforge.net/projects/perstem/</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 http://sourceforge.net/projects/perstem/</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>3 In this paper we use a more standard phonetic transcription of the Persian words and affixes that also represents the short vowels and in that sense differs from the described transliteration.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Dans cet article, nous utilisons une transcription phonétique plus standard des mots et affixes persans qui représente également les voyelles brèves et qui diffère donc de la translittération décrite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>4 Lexical Markup Framework, the ISO/TC37 standard for NLP lexicons.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Lexical Markup Framework, la norme ISO/TC37 pour les lexiques de NLP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>5 The Persian Wikipedia is available under the following URL http://fa.wikipedia.org.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 La Wikipedia persane est disponible à l'adresse suivante http://fa.wikipedia.org.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>We used the extracted wiki version of February 16th 2010.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé l'extrait de la version wiki en date du 16 février 2010.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>6 For lemmas with an ambiguous category in the corpus, we discarded entries corresponding to categories that were assigned with a frequency below 1% among occurrences of this lemma.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Pour les lemmes auxquels le corpus associe plusieurs catégories, nous avons éliminé automatiquement les entrées correspondant à des catégories concernant moins de 1% de ses occurrences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>This reduces the amount of noise that comes from annotation errors in the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela permet de réduire le bruit qui provient des erreurs d’annotation du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>7 Adverbial entries that also exist as adjectives with the same meaning were discarded.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7 Les entrées adverbiales qui correspondaient à une entrée adjectivale pour le même lemme ont été éliminées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>8 http://alexina.gforge.inria.fr</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>8 http://alexina.gforge.inria.fr</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

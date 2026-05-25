@@ -1,0 +1,1871 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2015-long-015. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/P15-1091.pdf</url_en>
+        <url_fr>https://aclanthology.org/2015.jeptalnrecital-long.15.pdf</url_fr>
+        <title_en>A Unified Kernel Approach for Learning Typed Sentence Rewritings</title_en>
+        <title_fr>Noyaux de réécriture de phrases munis de types lexico-sémantiques fonction noyau</title_fr>
+        <docid>taln-2015-long-015</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>A Unified Kernel Approach for Learning Typed Sentence Rewritings</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une approche de noyau unifié pour l'apprentissage des réécritures de phrases munies de types lexico-sémantiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>Many high level natural language processing problems can be framed as determining if two given sentences are a rewriting of each other.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nombreux problèmes en traitement automatique des langues requièrent de déterminer si deux phrases sont des réécritures l’une de l’autre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we propose a class of kernel functions, referred to as type-enriched string rewriting kernels, which, used in kernel-based machine learning algorithms, allow to learn sentence rewritings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous proposons une classe de fonctions noyau, appelées noyaux de réécriture de chaînes enrichis par un typage, qui, utilisés dans les algorithmes d'apprentissage automatique basés sur les noyaux, permettent d'apprendre la réécriture de phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>Unlike previous work, this method can be fed external lexical semantic relations to capture a wider class of rewriting rules.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contrairement aux travaux précédents, cette méthode peut être alimentée par des relations sémantiques lexicales externes pour capturer une classe plus large de règles de réécriture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>It also does not assume preliminary syntactic parsing but is still able to provide a unified framework to capture syntactic structure and alignments between the two sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il ne suppose pas non plus de parsing syntaxique préliminaire, mais est toujours capable de fournir un cadre unifié pour capturer la structure syntaxique et les alignements entre les deux phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>We experiment on three different natural sentence rewriting tasks and obtain state-of-the-art results for all of them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous expérimentons sur trois tâches différentes de réécriture de phrases naturelles et obtenons des résultats de pointe pour chacune d'elles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>1 Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>Detecting implications of sense between statements stands as one of the most sought-after goals in computational linguistics. Several high level tasks look for either one-way rewriting between single sentences, like recognizing textual entailment (RTE) (Dagan et al., 2006), or two-way rewritings like paraphrase identification (Dolan et al., 2004) and semantic textual similarity (Agirre et al., 2012).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La détection des implications de sens entre les déclarations est l'un des objectifs les plus recherchés en linguistique computationnelle. Plusieurs tâches de haut niveau cherchent soit une réécriture unidirectionnelle entre des phrases simples, comme la reconnaissance d'implication textuelle (RTE) (Dagan et al., 2006), soit une réécriture bidirectionnelle comme l'identification de paraphrases (Dolan et al., 2004) et la similarité sémantique textuelle (Agirre et al., 2012).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>In a similar fashion, selecting sentences containing the answer to a question can be seen as finding the best rewritings of the question among answer candidates.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De la même manière, le fait de sélectionner des phrases contenant la réponse à une question peut être considéré comme la recherche des meilleures réécritures de la question parmi les candidats de réponse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>These problems are naturally framed as classification tasks, and as such most current solutions make use of supervised machine learning. They have to tackle several challenges: picking an adequate language representation, aligning semantically equivalent elements and extracting relevant features to learn the final decision.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces problèmes sont naturellement encadrés comme des tâches de classification et, en tant que telles, la plupart des solutions actuelles utilisent l'apprentissage automatique supervisé. Elles doivent relever plusieurs défis : choisir une représentation adéquate du langage, aligner des éléments sémantiquement équivalents et extraire des caractéristiques pertinentes pour apprendre la décision finale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>Bag-of-words and by extension bag-of-ngrams are traditionally the most direct approach and features rely mostly on lexical matching (Wan et al., 2006; Lintean and Rus, 2011; Jimenez et al., 2013).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le « sac de mots » et, par extension, le « sac de n-grammes » sont traditionnellement l'approche la plus directe et les caractéristiques reposent essentiellement sur un appariement lexical (Wan et al., 2006 ; Lintean et Rus, 2011 ; Jimenez et al., 2013).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>Moreover, a good solving method has to account for typically scarce labeled training data, by enriching its model with lexical semantic resources like WordNet (Miller, 1995) to bridge gaps between surface forms (Mihalcea et al., 2006; Islam and Inkpen, 2009; Yih et al., 2013).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, une bonne méthode de résolution doit tenir compte des données d'apprentissage étiquetées, généralement rares, en enrichissant son modèle avec des ressources sémantiques lexicales telles que WordNet (Miller, 1995) pour combler les lacunes entre les formes de surface (Mihalcea et al., 2006 ; Islam et Inkpen, 2009 ; Yih et al., 2013).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>Models based on syntactic trees remain the typical choice to account for the structure of the sentences (Heilman and Smith, 2010; Wang and Manning, 2010; Socher et al., 2011; Calvo et al., 2014). Usually the best systems manage to combine effectively different methods, like Madnani et al.’s meta-classifier with machine translation metrics (Madnani et al., 2012).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les modèles basés sur les arbres syntaxiques restent le choix typique pour représenter la structure des phrases (Heilman et Smith, 2010 ; Wang et Manning, 2010 ; Socher et al., 2011 ; Calvo et al., 2014). Les meilleurs systèmes parviennent généralement à combiner efficacement différentes méthodes, comme le méta-classifieur de Madnani et al. (2012) avec des métriques de traduction automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>A few methods (Zanzotto et al., 2007; Zanzotto et al., 2010; Bu et al., 2012) use kernel functions to learn what makes two sentence pairs similar.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quelques méthodes (Zanzotto et al., 2007 ; Zanzotto et al., 2010 ; Bu et al., 2012) utilisent des fonctions noyau pour apprendre ce qui rend deux couples de phrases similaires. (Zanzotto et al. , 2007) proposent une fonction noyau de comparaison de couples d’arbres syntaxiques, étendue ensuite à des graphes (Zanzotto et al. , 2010). (Bu et al. , 2012) introduisent un noyau de réécriture de chaînes de caractères ( string rewriting kernel ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>Building on this work, we present a typeenriched string rewriting kernel giving the opportunity to specify in a fine-grained way how words match each other.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En nous appuyant sur ce travail, nous présentons un noyau de réécriture de chaînes enrichi par du typage, qui donne la possibilité de spécifier de manière fine comment les mots peuvent être appariés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>Unlike previous work, rewriting rules learned using our framework account for syntactic structure, term alignments and lexicosemantic typed variations in a unified approach.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contrairement aux travaux précédents, les règles de réécriture apprises à l'aide de notre cadre tiennent compte de la structure syntaxique, des alignements de termes et des variations de type lexicosémantique dans une approche unifiée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>We detail how to efficiently compute our kernel and lastly experiment on three different high-level NLP tasks, demonstrating the vast applicability of our method.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous détaillons comment calculer efficacement notre noyau et nous l'évaluons enfin sur trois tâches de NLP de haut niveau, démontrant la grande applicabilité de notre méthode.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>Our system based on type-enriched string rewriting kernels obtains state-of-the-art results on paraphrase identification and answer sentence selection and outperforms comparable methods on RTE.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre système basé sur des noyaux de réécriture de chaînes enrichies de types obtient des résultats de pointe sur l'identification de paraphrases et la sélection de phrases de réponse et surpasse les méthodes comparables sur RTE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>2 Type-Enriched String Rewriting Kernel</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Noyau de réécriture de chaînes enrichi par type</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>Kernel functions measure the similarity between two elements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les fonctions noyau ( kernel en anglais) mesurent la similarité de deux éléments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>Used in machine learning methods like SVM, they allow complex decision functions to be learned in classification tasks (Vapnik, 2000).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Utilisées dans des méthodes d’apprentissage supervisé telles que les SVM (Vapnik, 2000), elles permettent d’apprendre des fonctions de décision complexes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>The goal of a well-designed kernel function is to have a high value when computed on two instances of same label, and a low value for two instances of different label.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'objectif d'une fonction noyau bien conçue est d'avoir une valeur élevée lorsqu'elle est calculée sur deux instances de même étiquette, et une valeur faible pour deux instances d'étiquette différente.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>2.1 String rewriting kernel</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.1 Noyau de réécriture de chaînes de caractères</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>String rewriting kernels (Bu et al., 2012) count the number of common rewritings between two pairs of sentences seen as sequences of words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les noyaux de réécriture de phrases (Bu et al., 2012) comptent le nombre de réécritures communes entre deux couples de phrases vues comme séquences de leurs mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>The rewriting rule (A) in Figure 1 can be viewed as a kind of phrasal paraphrase with linked variables (Madnani and Dorr, 2010).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La règle de réécriture (A) de la figure 1 peut être considérée comme une sorte de paraphrase sous-phrastique avec variables liées (Madnani &amp; Dorr, 2010).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>Rule (A) rewrites (B)’s first sentence into its second but it does not however rewrite the sentences in (C), which is what we try to fix in this paper.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La règle (A) réécrit la première phrase de (B) en sa seconde, mais elle ne réécrit pas les phrases de (C), ce que nous essayons de corriger dans cet article.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>Following the terminology of string kernels, we use the term string and character instead of sentence and word .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Suivant la terminologie des noyaux de chaîne, nous utilisons le terme chaîne et caractère au lieu de mot et de phrase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>We denote ( s, t ) ∈ (Σ [∗] × Σ [∗] ) an instance of string rewriting, with a source string s and a target string t , both finite sequences of elements in Σ the finite set of characters.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On note ( s, t ) ∈ (Σ [∗] × Σ [∗] ) une instance de réécriture de chaînes, avec une chaîne source s et une chaîne cible t , toutes deux des séquences finies d’éléments de Σ l’ensemble fini de caractères.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>Suppose that we are given training data of such instances labeled in { +1 , − 1 } , for paraphrase/nonparaphrase or entailment/non-entailment in applications.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Supposons que l'on dispose de données d'entraînement d'instances étiquetées par { +1 , − 1 } pour paraphrase/non-paraphrase ou implication/non-implication dans les applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>We can use a kernel method to train on this data and learn to automatically classify unlabeled instances.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est possible d'appliquer une méthode à noyau pour entraîner un système à classifier automatiquement les instances non étiquetées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>A kernel on string rewriting instances is a map:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un noyau sur des instances de réécriture de phrases est une fonction :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>where Φ maps each instance into a high dimension feature space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où Φ projette chaque instance dans l’espace de grande dimension de ces caractéristiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>Kernels allow us to avoid the potentially expensive explicit representation of Φ through the inner product space they define.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les fonctions noyaux permettent d’éviter la représentation explicite potentiellement coûteuse de Φ par l’intermédiaire de l’espace de produit scalaire qu’elles définissent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>The purpose of the string rewriting kernels is to measure the similarity between two pairs of strings in term of the number of rewriting rules of a set R that they share.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le rôle des noyaux de réécriture de phrases est de mesurer la similarité de deux couples de phrases en termes du nombre de règles de réécriture d’un ensemble de règles R qu’elles partagent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>Φ is thus naturally defined by Φ( s, t ) = ( φr ( s, t )) r∈R with φr ( s, t ) = n the number of contiguous substring pairs of ( s, t ) that rewriting rule r matches.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Φ est donc naturellement définie par Φ( s, t ) = ( φr ( s, t )) r∈R avec chaque caractéristique φr ( s, t ) = n le nombre de couples de sous-séquences de ( s, t ) que r réécrit .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>2.2 Typed rewriting rules</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.2 Règles de réécriture typées</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>Let the wildcard domain D ⊆ Σ [∗] be the set of strings which can be replaced by wildcards.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Soit le domaine joker D ⊆ Σ [∗] l’ensemble des phrases qui peuvent être remplacées par un joker ∗ .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>We now present the formal framework of the typeenriched string rewriting kernels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons maintenant le formalisme des noyaux de réécriture de chaînes de caractères enrichies de types.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>Let Γ p be the set of pattern types and Γ v the set of variable types .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Soit Γ p l’ensemble des types motif et Γ v l’ensemble des types variable .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>To a type γp ∈ Γ p , we associate the typing relation γp ≈ ⊆ Σ × Σ.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On associe à un type γp ∈ Γ p la relation de type γp ≈ ⊆ Σ × Σ.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>To a type γv ∈ Γ v ,we associate the typing relation γv ; ⊆ D × D .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On associe à un type γv ∈ Γ v la relation de type ⇝ ⊆ D × D .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>Together with the typing relations, we call the association of Γ p and Γ v the typing scheme of the kernel.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avec les relations de typage, on appelle l'association de Γ p et Γ v le schéma de typage du noyau.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>Let Σ p be defined as</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Soit Σ p défini par</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>We finally define typed rewriting rules.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Définissons enfin les règles de réécriture typées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>A typed rewriting rule is a triple r = ( βs, βt, τ ), where βs, βt ∈ (Σ p ∪{∗} ) [∗] denote source and target string typed patterns and τ ⊆ ind∗ ( βs ) ×ind∗ ( βt ) denotes the alignments between the wildcards in the two string patterns.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une règle de réécriture typée est un triplet r = ( βs, βt, τ ), où βs, βt ∈ (Σ p ∪{∗} ) [∗] désignent les motifs typés source et cible et τ ⊆ ind∗ ( βs ) × ind∗ ( βt ) définit les alignements entre jokers dans les deux motifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Here ind∗ ( β ) denotes the set of indices of wildcards in β .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ici, ind∗ ( β ) désigne l’ensemble des indices des jokers de β .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>We say that a rewriting rule ( βs, βt, τ ) matches a pair of strings ( s, t ) if and only if the following conditions are true:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On dit qu'une règle de réécriture ( βs, βt, τ ) correspond à un couple de phrases ( s, t ) si et seulement si les conditions suivantes sont vraies :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>- string patterns βs , resp. βt , can be turned into s , resp. t , by: - substituting each element [ a|b ] of Σ p in the string pattern with an a or b ( ∈ Σ)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Le motif βs , resp. βt , peut être transformé en s , resp. t , en : - substituant chaque élément [ a|b ] de Σ p dans le motif par a ou b ( ∈ Σ)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>- substituting each wildcard in the string pattern with an element of the wildcard domain D - ∀ ( i, j ) ∈ τ , s, resp. t, substitutes the wildcards at index i , resp. j , by s∗ ∈ D , resp. t∗ , such that there exists a variable type γ ∈ Γ v γ with s∗ ; t∗ .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- substituant chaque joker dans le motif par un élément du domaine joker D - ∀ ( i, j ) ∈ τ , s, resp. t, substitue les jokers à l’indice i , resp. j , par s∗ ∈ D , resp. t∗ , tel qu’il existe un type variable γ - γ ∈ Γ v avec s∗ ⇝ t∗ .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>A type-enriched string rewriting kernel (TESRK) is simply a string rewriting kernel as defined in Equation 1 but with R a set of typed rewriting rules.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un noyau de réécriture de phrases avec types (TESRK) est simplement un noyau de réécriture de phrases comme défini à l’équation 1 mais avec R un ensemble de règles de réécriture typées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>This class of kernels depends on wildcard domain D and the typed rewriting rules R which can be tuned to allow for more flexibility in the matching of pairs of characters in a rewriting rule.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette classe de fonctions noyau dépend du domaine joker D et de l’ensemble R , qui peut être choisi de façon à permettre plus de flexibilité dans l’appariement de couples de caractères dans les règles de réécriture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>Within this framework, the k -gram bijective string rewriting kernel (kb-SRK) is defined by the wildcard domain D = Σ and the ruleset R = { ( βs, βt, τ ) | βs, βt ∈ (Σ p∪{∗} ) [k] , τ bijective } id id under Γ p = Γ v = {id} with a ≈ b , resp. a ; b , if and only if a = b .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cadre, le noyau de réécriture de chaînes bijectif sur k-grammes (kb-SRK) est défini par le domaine joker D = Σ et les règles R = { ( βs, βt, τ ) | βs, βt ∈ (Σ p∪{∗} ) [k] , τ bijective } id id sous Γ p = Γ v = {id} avec a ≈ b , resp. a ; b , si et seulement si a = b .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: Rewriting rule (A) matches pair of strings (B) but does not match (C).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1 : La règle de réécriture (A) correspond à un couple de chaînes (B) mais ne correspond pas à (C).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>We now present an example of how kb-SRK is applied to real pairs of sentences, what its limitations are and how we can deal with them by reworking its typing scheme.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette section, nous présentons un exemple d'application de kb-SRK à un couple réel de phrases, en mettant en avant les limites du noyau et comment il est possible de les dépasser en changeant de schéma de types.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>Let us consider again Figure 1,</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Reprenons la figure 1 :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>(A) is a rewriting rule with βs = ( heard , ∗ , ∗ ), βt = ( ∗ , was , ∗ ), τ = { (2 , 1); (3 , 3) } .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(A) est une règle de réécriture avec βs = ( heard , ∗ , ∗ ), βt = ( ∗ , was , ∗ ), τ = { (2 , 1); (3 , 3) } .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>Each string pattern has the same length, and pairs of wildcards in the two patterns are aligned bijectively.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque motif a la même longueur, et les couples de jokers dans les deux motifs sont alignés de manière bijective.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>This is a valid rule for kb-SRK.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est une règle valide pour kb-SRK.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>It matches the pair of strings (B): each aligned pair of wildcards is substituted in source and target sentences by the same word and string patterns of (A) can indeed be turned into pairs of substrings of the sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle correspond au couple de phrases (B) : chaque couple de jokers peut en effet être substitué dans les phrases source et cible par le même mot et les motifs de (A) peuvent ainsi être transformés en couple de sous-phrases de (B).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>However, it cannot match the pair of sentences (C) in the original kb-SRK.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, il ne peut pas correspondre au couple de phrases (C) dans l'original kb-SRK.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>We change Γ p to { hypernym, id } where a ≈ b if and only if a and b have a common hypernym in WordNet.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Redéfinissons alors Γ p en { hypernym, hypernym id } où a ≈ b si et seulement si a et b ont un hypernyme commun dans WordNet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>And we change Γ v to Γ v = { same pronoun, en- same pronoun tailment, id } where a ;b if and only if a and b are a pronoun of the same person and same number, and a[entailment] ; b if and only if verb a has a relation of entailment with b in WordNet.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Changeons aussi Γ v en Γ v = same pronoun {_ same_pronoun, entailment, id } où a ⇝ b si et seulement si a et b sont un pronom de même personne et même entailment nombre, et où a ⇝ b si et seulement si le verbe a a une relation sémantique entailment avec b dans WordNet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>By redefining the typing scheme, rule (A) can now match (C).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En rédéfinissant ainsi le schéma de types, la règle (A) peut maintenant correspondre à (C).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>3 Computing TESRK</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Calcul de TESRK</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>3.1 Formulation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1 Formulation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>The k-gram bijective string rewriting kernel can be computed efficiently (Bu et al., 2012).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le noyau de réécriture de chaîne bijective k-gram peut être calculé efficacement (Bu et al., 2012).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>We show that we can compute its type-enriched equivalent at the price of a seemingly insurmountable loosening of theoretical complexity boundaries. Experiments however show that its computing time is of the same order as the original kernel.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette section montre qu’il est possible d’en calculer efficacement une version enrichie de types. S’il est impossible de conserver les mêmes bornes théoriques de complexité en temps, les expériences menées montrent que le temps de calcul est du même ordre de grandeur que le noyau original.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>A type-enriched kb-SRK is parameterized by k the length of k-grams, and its typing scheme the sets Γ p and Γ v and their associated relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le kb-SRK avec types est paramétré par k la longueur des k-grammes, et par son schéma de types constitué des ensembles Γ p and Γ v et des relations associées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>The annotations of Γ p and Γ v to Kk and K[¯] k will be omitted for clarity and because they typically will not change while we test different values for k .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les annotations de Γ p et Γ v à Kk et K[¯] k seront omises pour des raisons de clarté et parce que ces paramètres resteront d’ordinaire constants pour des valeurs de k variables dans nos expériences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>We rewrite the inner product in Equation 1 to better fit the k-gram framework:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous réécrivons le produit scalaire de l'équation 1 pour mieux refléter les contraintes imposées par les k-grammes :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>where K[¯] k is the number of different rewriting rules which match two pairs of k-grams (the same rule cannot trigger twice in k-gram substrings):</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où K[¯] k est le nombre de règles de réécriture différentes qui correspondent à deux paires de k-grammes (la même règle ne peut pas se déclencher deux fois dans des paires de k-grammes) :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>with 1 r the indicator function of rule r : 1 if r matches the pair of k-grams, 0 otherwise.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>avec 1 r la fonction indicatrice de la règle r : 1 si r réécrit le couple de k-grammes considéré, 0 sinon.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>Computing Kk as defined in Equation 3 is obviously intractable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le calcul de Kk tel que défini dans l'équation 3 est évidemment intractable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>There is O (( n − k + 1)[4] ) terms in the sum, where n is the length of the longest string, and each term involves enumerating every rewriting rule in R .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La somme contient O (( n − k + 1)[4] ) termes, avec n la longueur de la phrase la plus longue, et chaque terme implique d’énumérer toutes les règles de réécriture de R .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>3.2 Computing K[¯] k in type-enriched kb-SRK</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2 Calcul de K[¯] k pour kb-SRK enrichi en types</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>Enumerating all rewriting rules in Equation 4 is itself intractable: there are more than | Σ |[2] [k] rules without wildcards, where | Σ | is conceivably the size of a typical lexicon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'énumération elle-même des règles de réécriture, à l'équation 4, n'est pas calculable en temps raisonnable : il y a plus de | Σ |[2] [k] règles sans jokers et sans autre relation de type que l'identité, et | Σ | sera sans doute la taille d'un lexique d'une langue dans toute application pertinente.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>In fact, we just have to constructively generate the rules which substitute their string patterns correctly to simultaneously produce both pairs of k-grams ( αs 1 , αt 1) and ( αs 2 , αt 2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En réalité, il suffit de générer de manière constructiviste les règles dont les motifs de chaîne sont correctement substitués pour produire simultanément les deux paires de k-grammes ( αs 1 , αt 1) et ( αs 2 , αt 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>Let the operator ⊗ be such that α 1 ⊗ α 2 = (( α 1[1] , α 2[1]) , …, ( α 1[ k ] , α 2[ k ])).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Soit l’opérateur ⊗ tel que α 1 ⊗ α 2 = (( α 1[1] , α 2[1]) , …, ( α 1[ k ] , α 2[ k ])).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>This operation is generally known as zipping in functional programming.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette opération est en général appelée zip en programmation fonctionnelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>We use the function CountPerfectMatchings computed by Algorithm 1 to recursively count the number of rewriting rules matching both ( αs 1 , αt 1) and ( αs 2 , αt 2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons la fonction CompterCouplagesParfaits calculée par l'algorithme 1 pour dénombrer récursivement les règles de réécriture correspondant à la fois à ( αs 1 , αt 1) et ( αs 2 , αt 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>The workings of the algorithm will make clearer why we can compute K[¯] k with the following formula:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le fonctionnement de l'algorithme explique pourquoi nous pouvons calculer K[¯] k avec la formule suivante :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>K ¯ k (( αs 1 , αt 1) , ( αs 2 , αt 2)) = CountPerfectMatchings( αs 1 ⊗ αs 2 , αt 1 ⊗ αt 2) (5)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>K ¯ k (( αs 1 , αt 1) , ( αs 2 , αt 2)) = CountPerfectMatchings( αs 1 ⊗ αs 2 , αt 1 ⊗ αt 2) (5)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>Algorithm 1 takes as input remaining character pairs in αs 1 ⊗ αs 2 and αt 1 ⊗ αt 2, and outputs the number of ways they can substitute aligned wildcards in a matching rule.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'algorithme 1 prend en entrée les couples de caractères restants de αs 1 ⊗ αs 2 et αt 1 ⊗ αt 2 et produit en sortie le nombre de façons dont ils peuvent remplacer des jokers alignés dans une règle de correspondance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>First (lines 2 and 3) we have the base case where both remaining sets are empty.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Premièrement (lignes 2 et 3), le cas de base où les deux ensembles restants sont vides est géré.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>There is exactly 1 way the empty set’s wildcards can be aligned with each other: nothing is aligned.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il y a exactement 1 façon de faire correspondre les jokers de l’ensemble vide entre eux : rien ne correspond.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>In lines 4 to 9, there is no source pairs anymore, so the algorithm continues to deplete target pairs as long as they have a common pattern type, i.e. as long as they do not have to substitute a wildcard.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Puis, aux lignes 4 à 9, il ne reste plus de couples de mots source, donc l’algorithme continue d’épuiser les couples cible tant qu’ils ont un type motif commun, c’est-à-dire tant qu’ils n’ont pas à remplacer un joker.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>If a candidate wildcard is found, as the opposing set is empty, we cannot align it and we return 0.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si un joker de remplacement est trouvé, comme l'ensemble opposé est vide, nous ne pouvons pas l'aligner et nous retournons 0.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>In the general case (lines 11 to 19), consider the first character pair ( a 1 , a 2) in the reminder of αs 1 ⊗ αs 2 in line 12.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas général (lignes 11 à 19), on considère le premier couple de mots ( a 1 , a 2) dans le reste de αs 1 ⊗ αs 2 à la ligne 12.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>What follows in the computation depends on its types.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le reste du calcul dépend de ses types.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>Every character pair in αt 1 ⊗ αt 2 that can be paired through variable types with ( a 1 , a 2) (lines 15 to 19) is a new potential wildcard alignment, so we try all the possible alignment and recursively continue the computation after removing both aligned pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tout couple de mots dans αt 1 ⊗ αt 2 qui peut s’associer par ses types variable avec ( a 1 , a 2) (lignes 15 à 19) est un nouvel alignement commun de jokers potentiel donc l’algorithme teste tous les alignements possibles et continue récursivement le calcul après avoir retiré les deux couples alignés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>And if ( a 1 , a 2) does not need to substitute a wildcard because it has common pattern types (lines 13 and 14), we can choose to not create any wildcard pairing with it and ignore it in the recursive call.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Et si ( a 1 , a 2) ne nécessitent pas de joker car ils ont un type de motif commun (lignes 13 et 14), nous pouvons choisir de ne pas créer de nouvel alignement à cette étape, mais juste de continuer la récursion en « oubliant » le couple motif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>This algorithm enumerates all configurations such that each character pair has a common pattern type or is matched 1-for-1 with a character pair with common variable types, which is exactly the definition of a rewriting rule in TESRK.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet algorithme énumère toutes les configurations de sorte que chaque couple de caractères ait un type de motif commun ou soit aligné 1-pour-1 avec un couple de caractères dont il partage les types variables, ce qui correspond exactement à la définition d'une règle de réécriture dans TESRK.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>This problem is actually equivalent to counting the perfect matchings of the bipartite graph of potential wildcards.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce problème est en fait équivalent au dénombrement des couplages parfaits dans le graphe biparti des jokers potentiels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>It has been shown intractable (Valiant, 1979) and Algorithm 1 is a naive recursive algorithm to solve it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(Valiant, 1979) démontre que ce problème n’est pas calculable efficacement. L’algorithme 1 est un algorithme récursif naïf pour le résoudre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>In our implementation we represent the graph with its biadjacency matrix, and if our typing relations are independent of k , the function has a O ( k ) time complexity without including its recursive calls.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre implémentation, nous représentons le graphe par sa matrice de biadjacence, et si nos relations de type sont indépendantes de k, la fonction a une complexité temporelle de O ( k ) sans inclure ses appels récursifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>The number of recursive calls can be greater than k [2] which is the number of perfect matchings in a complete bipartite graph of 2 k vertices.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le nombre d’appels récursifs peut dépasser k [2] qui est le nombre de couplages parfaits d’un graphe biparti complet à 2 k sommets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>In our experiments on linguistic data however, we observed a linear number of recursive calls for low values of k , and up to a quadratic number for k &gt; 10 –which is way past the point where the kernel becomes ineffective. Algorithm 1: Counting perfect matchings</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans nos expériences sur des données linguistiques, nous avons observé un nombre linéaire d’appels récursifs pour de faibles valeurs de k , et jusqu’à un nombre quadratique pour des valeurs de k supérieures à 10 – ce qui est bien au-delà du point où le noyau devient inefficace. Algorithm 1: Counting perfect matchings</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>Figure 2: Bipartite graph of character pairs, with edges between potential wildcards</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 2 : Graphique biparti des paires de caractères, avec des arêtes entre les wildcards potentiels</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>As an example, Figure 2 shows the zipped k- grams for source and target as a bipartite graph with 2 k vertices and potential wildcard edges.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 2 montre un exemple de k-grammes source et cible zippés vus comme graphe biparti et avec des arêtes reliant les potentiels jokers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>Assuming that vertices ( a, a ) and ( b, b[′] ) have common pattern types, they can be ignored as in lines 7 and 14.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En supposant que les sommets ( a, a ) et ( b, b[′] ) ont un type de motif commun, ils peuvent être ignorés comme aux lignes 7 et 14.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>( c 1 , c 2) to ( f 1 , f 2) however must substitute wildcards in a matching rewriting rule.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>( c 1 , c 2) à ( f 1 , f 2) doivent toutefois remplacer des jokers dans une règle de réécriture correspondante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>If we align ( c 1 , c 2) with ( e 1 , e 2) in line 16, the recursive call will return 0 because the other two pairs cannot be aligned.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas où la ligne 16 aligne ( c 1 , c 2) avec ( e 1 , e 2), l’appel récursif retourne 0 car les deux autres couples ne peuvent pas être alignés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>A valid rule is generated if c ’s are paired with f ’s and d ’s with e ’s.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une règle valide est générée si les c sont liés aux f et les d aux e .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>This kind of choices is the main source of computational cost.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce type de choix est la principale source de coût informatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>This problem did not arise in the original kb-SRK because of the transitivity of its only type ( identity ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce problème ne se posait pas dans le kb-SRK d'origine en raison de la transitivité de son seul type (identité) (Bu et al., 2012).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>In type-enriched kb-SRK, wildcard pairing is less constrained.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour kb-SRK enrichis par des types, il y a moins de contraintes sur les appariements de jokers, ce qui donne une meilleure expressivité mais entraîne aussi l’explosion combinatoire du calcul.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>3.3 Computing Kk</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3 Calcul de Kk</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>Even with an efficient method for computing K[¯] k , implementing Kk directly by applying Equation 3 remains impractical.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Même avec une méthode efficace pour calculer K[¯] k , l’implémentation de Kk en appliquant directement l’équation 3 reste coûteuse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>The main idea is to efficiently compute a reasonably sized set C of elements (( αs 1 , αt 1) , ( αs 2 , αt 2)) which has the essential property of including all elements such that K ¯ k (( αs 1 , αt 1) , ( αs 2 , αt 2)) ̸ = 0.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’idée principale de notre algorithme est de déterminer efficacement un ensemble de taille raisonnable C d’éléments (( αs 1 , αt 1) , ( αs 2 , αt 2)) ayant la propriété fondamentale d’inclure tous les éléments tels que K ¯ k (( αs 1 , αt 1) , ( αs 2 , αt 2)) ̸ = 0.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>By definition of C, we can compute efficiently</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par définition de C, il est possible de calculer efficacement :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>There are a number of ways to do it, with a trade-off between computation time and number of elements in the reduced domain C.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il existe de multiples façons de réaliser cette réduction de domaine, avec un équilibre à trouver entre temps de calcul et taille du domaine C conservé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>The¯ main idea of our own algorithm is that Kk (( αs 1 , αt 1) , ( αs 2 , αt 2)) = 0 if the character pairs ( a 1 , a 2) ∈ αs 1 ⊗ αs 2 with no common pattern type are not all matched with pairs ( b 1 , b 2) ∈ γ γ αt 1 ⊗ αt 2 such that a 1 ; b 1 and a 2 ; b 2 for some γ ∈ Γ v .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre méthode suit la propriété suivante : Kk (( αs 1 , αt 1) , ( αs 2 , αt 2)) = 0 si il existe un couple de mots ( a 1 , a 2) ∈ αs 1 ⊗ αs 2 sans type motif en commun tel qu’on ne trouve pas un couple ( b 1 , b 2) ∈ αt 1 ⊗ αt 2 lui étant compatible pour un type variable, c’est-à-dire avec a 1 γ⇝ b 1 et a 2 γ⇝ b 2 pour un γ ∈ Γ v .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>This is conversely true for character pairs in αt 1 ⊗ αt 2 with no common pattern type.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est évidemment aussi vrai pour un couple de αt 1 ⊗ αt 2 sans type de motif commun.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>More simply, character pairs with no common pattern type are mismatched and have to substitute a wildcard in a rewriting rule matching both ( αs 1 , αt 1) and ( αs 2 , αt 2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus simplement, les paires de caractères qui ne relèvent pas d'un même type de motif sont incompatibles et doivent nécessairement substituer un joker dans une règle de réécriture correspondant à la fois ( αs 1 , αt 1) et ( αs 2 , αt 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>But introducing a wildcard on one side of the rule means that there is a matching wildcard on the other side, so we can eliminate k-gram quadruples that do not fill this wildcard inclusion.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais l'introduction d'un joker d'un côté de la règle signifie qu'il y a un joker correspondant de l'autre côté, donc nous pouvons éliminer les quadruples de k-grammes qui ne remplissent pas cette inclusion de joker.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>This filtering can be done efficiently and yields a manageable number of quadruples on which to compute K[¯] k .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce filtrage peut être effectué efficacement et donne un nombre gérable de quadruples sur lesquels calculer K[¯] k .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>Algorithm 2 computes a set C to be used in Equation 6 for computing the final value of kernel Kk .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’algorithme 2 calcule un ensemble C à utiliser dans l’équation 6 pour obtenir la valeur finale de la fonction noyau Kk .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>In our experiments, it efficiently produces a reasonable number of inputs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans nos expériences, il produit efficacement un nombre raisonnable d'entrées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>All maps in the algorithm are maps to multisets, and multisets are used extensively throughout.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutes les maps de l'algorithme désignent une implémentation à base de tables de hachage et sont des maps vers des multiensembles (multiset en anglais). Les multiensembles sont utilisés de manière extensive.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>Multisets are an extension of sets where elements can appear multiple times, the number of times being called the multiplicity .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les multiensembles sont une extension des ensembles où les éléments peuvent apparaître en plusieurs exemplaires, ce nombre d’exemplaires étant appelé la multiplicité .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>Typically implemented as hash tables from set elements to integers, they allow for constant-time retrieval of the number of a given element.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Généralement implémentés sous la forme de tables de hachage d'éléments de jeux vers des entiers, ils permettent de récupérer en temps constant le nombre d'un élément donné.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>Union ( ∪ ) and intersection ( ∩ ) have special definitions on multisets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les opérations d’union et d’intersection ont des définitions spéciales pour les multiensembles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>If 1 A ( x ) is the multiplicity of x in A , we have 1 A∪B ( x ) = max (1 A ( x ) , 1 B ( x )) and 1 A∩B ( x ) = min (1 A ( x ) , 1 B ( x )).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si 1 A ( x ) désigne la multiplicité de x dans A , on a 1 A∪B ( x ) = max ( 1 A ( x ) , 1 B ( x )) et 1 A∩B ( x ) = min ( 1 A ( x ) , 1 B ( x )).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>Algorithm 2: Computing a set including all elements on which K[¯] k = 0</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Algorithme 2 : Calcul d'un ensemble incluant tous les éléments pour lesquels K[¯] k = 0</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>Let us now comment on how the algorithm unfolds.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Commentons le déroulement de l'algorithme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>In lines 1 to 4, we index characters in source strings by characters in target strings which have common variable types, and vice versa.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Aux lignes 1 à 4, on indexe les caractères des chaînes source par les caractères des chaînes cible qui ont des types variables communs, et vice versa.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>It allows in lines 15 to 19 to quickly map a character pair to the set of opposing k-gram pairs with a matching –in the sense of variable types– character pair, i.e. potential aligned wildcards.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela permet aux lignes 15 à 19 d’associer efficacement un couple de caractères avec l’ensemble des paires de k-grammes opposées contenant un couple de caractères avec des types variables communs, c’est-à-dire les couples de k-grammes avec lesquels il pourrait substituer un joker aligné.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>In lines 20 to 28 we keep only the k-gram quadruples whose wildcard candidates (character pairs with no common pattern) from one side all find matches on the other side.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Aux lignes 20 à 28, seuls les quadruplets de k-grammes dont les couples de caractères sans motif commun d’un côté ont chacun un couple associé pour les types variables de l’autre côté sont conservés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>We do not check for the other inclusion, hence the name of the function OneWayInclusion .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous ne vérifions pas l'autre inclusion, d'où le nom de la fonction OneWayInclusion .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>At line 26, we did not find any character pair with no common pattern, so we save the k-gram pair as ”all-pattern”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A la ligne 26, il n'y a pas de couple de mots sans motif commun ; nous sauvegardons donc ce couple de k-grammes sous le nom de « motif global ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>All-pattern k-grams will be paired in lines 8 to 10 in the result.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les k-grammes de tous les motifs sont appariés aux lignes 8 à 10 du résultat.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>Finally, in line 11, we add the union of one-way compatible k-gram quadruples; calling swap on all the pairs of one set is necessary to consistently have sources on the left side and targets on the right side in the result.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, à la ligne 11, l’algorithme calcule l’union des quadruples de k-grammes compatibles dans un sens ; l’appel de swap sur tous les paires d’un ensemble est nécessaire pour toujours avoir les sources du côté gauche et les cibles du côté droit dans le résultat.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>4 Experiments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Expériences</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>4.1 Systems</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Systèmes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>We experimented on three tasks: paraphrase identification, recognizing textual entailment and answer sentence selection.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nos expérimentations portent sur trois tâches : l'identification de paraphrases, la reconnaissance d'implications textuelles et la sélection de phrases de réponses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>The setup we used for all experiments was the same save for the few parameters we explored such as: k, and typing scheme.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La configuration que nous avons utilisée pour tous les expérimentes était la même, à l'exception des quelques paramètres que nous avons voulu étudier, tels que : k, et le schéma de saisie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>We implemented 2 kernels, kb-SRK, henceforth simply denoted SRK , and the type-enriched kbSRK, denoted TESRK .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons implémentés deux noyaux, le noyau initial kb-SRK, dénommé par la suite SRK , et le noyau enrichi, dénommé TESRK .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>All sentences were tokenized and POS-tagged using OpenNLP (Morton et al., 2005). Then they were stemmed using the Porter stemmer (Porter, 2001) in the case of SRK.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutes les phrases ont été segmentées et étiquetées en fonction de leur catégorie grammaticale à l'aide d'OpenNLP (Morton et al., 2005). Puis, elles ont été racinées à l'aide de l'algorithme de Porter (Porter, 2001) dans le cas de SRK.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>Various other pre-processing steps were applied in the case of TESRK: they are considered as types in the model and are detailed in Table 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Différents prétraitements sont réalisés pour TESRK, ils sont considérés comme des types dans le modèle et sont détaillés dans le Tableau 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>We used LIBSVM (Chang and Lin, 2011) to train a binary SVM classifier on the training data with our two kernels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé LIBSVM (Chang &amp; Lin, 2011) pour entraîner un classifieur SVM binaire sur les données d'entraînement avec nos deux noyaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>The default SVM algorithm in LIBSVM uses a parameter C, roughly akin to a regularization parameter.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’algorithme SVM par défaut de LIBSVM utilise un paramètre C, qui peut être grossièrement vu comme un paramètre de régularisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>We 10-fold cross-validated this parameter on the training data, optimizing with a grid search for f-score, or MRR for question-answering.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons validé ce paramètre par croisement 10 fois sur les données d'entraînement, en optimisant avec une recherche en grille pour le f-score ou le MRR pour la question-réponse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>All kernels were normalized using K[˜] ( x, y ) = K ( x,y ) √K ( x,x ) [√]K ( y,y ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous les noyaux ont été normalisés par K[˜] ( x, y ) = K ( x,y ) √K ( x,x ) [√]K ( y,y ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>We denote by ”+” a sum of kernels, with normalizations applied both before and after summing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous notons « + » une somme de noyaux, avec des normalisations appliquées avant et après la somme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>Following Bu et al. (Bu et al., 2012) experimental setup, we introduced an auxiliary vector kernel denoted PR of features named unigram precision and recall , defined in (Wan et al., 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons suivi le protocole expérimental de Bu et al. (Bu et al. , 2012), et avons introduit un noyau de vecteurs supplémentaire, dénommé PR , composé de deux traits représentant la précision sur des uni-grammes et le rappel , définis dans (Wan et al. , 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>In our experiments a linear kernel seemed to yield the best results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans nos tests, le noyau linéaire semble fournir les meilleurs résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>Our Scala implementation of kb-SRKs has an average throughput of about 1500 original kbSRK computations per second, versus 500 typeenriched kb-SRK computations per second on a 8- core machine.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre implémentation Scala des kb-SRK a un débit moyen d'environ 1500 calculs kbSRK originaux par seconde, contre 500 calculs kb-SRK enrichis de type par seconde sur une machine à 8 cœurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>It typically takes a few hours on a 32-core machine to train, cross-validate and test on a full dataset.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il faut généralement quelques heures sur une machine à 32 cœurs pour former, valider et tester l'ensemble des données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>Finally, Table 1 presents an overview of our types with how they are defined and implemented.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, le tableau 1 présente un aperçu de nos types avec la façon dont ils sont définis et implémentés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>Every type can be used both as a pattern type or as a variable type, but the two roles are different.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque type peut être utilisé à la fois comme type de motif ou comme type de variable, mais les deux rôles sont différents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>Pattern types are useful to unify different surface forms of rewriting rules that are semantically equivalent, i.e. having semantically similar patterns.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les types de modèle sont utiles pour unifier différentes formes de surface de règles de réécriture qui sont sémantiquement équivalentes, c'est-à-dire ayant des modèles sémantiquement similaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>Variable types are useful for when the semantic relation between 2 entities across the same rewriting is more important than the entities themselves.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les types de variables sont utiles lorsque la relation sémantique entre 2 entités dans la même réécriture est plus importante que les entités elles-mêmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>That is why some types in Table 1 are inherently more fitted to be used for one role rather than the other.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est pourquoi certains types de la table 1 sont intrinsèquement plus adaptés à un rôle que l'autre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>For example, it is unlikely that replacing a word in a pattern of a rewriting rule by one of its holonyms will yield a semantically similar rewriting rule, so holonym would not be a good pattern type for most applications.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, il est peu probable que le remplacement d'un mot dans un modèle d'une règle de réécriture par un de ses holonymes produise une règle de réécriture sémantiquement similaire, de sorte que holonyme ne serait pas un bon type de modèle pour la plupart des applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>On the contrary, it can be very useful in a rewriting rule to type a wildcard link with the relation holonym, as this provides constrained semantic roles to the linked wildcards in the rule, thus holonym would be a good variable type.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au contraire, il peut être très utile dans une règle de réécriture de taper un lien de type wildcard avec la relation holonyme, car cela fournit des rôles sémantiques contraints aux wildcards liés dans la règle, donc holonyme serait un bon type de variable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>4.2 Paraphrase identification</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 Reconnaissance de paraphrase</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>Paraphrase identification asks whether two sentences have the same meaning.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La reconnaissance de paraphrases consiste à déterminer si deux phrases ont le même sens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>The dataset we used to evaluate our systems is the MSR Paraphrase Corpus (Dolan and Brockett, 2005), containing 4,076 training pairs of sentences and 1,725 testing pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le jeu de données que nous avons utilisé pour évaluer nos systèmes est le MSR Paraphrase Corpus (Dolan &amp; Brockett, 2005), qui contient 4076 couples de phrases d’entraînement et 1725 couples de test en langue anglaise.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>For example, the sentences ”An injured woman co-worker also was hospitalized and was listed in good condition.” and ”A woman was listed in good condition at Memorial’s HealthPark campus, he said.” are paraphrases in this corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, les phrases “An injured woman co-worker also was hospitalized and was listed in good condition.” et “A woman was listed in good condition at Memorial’s HealthPark campus, he said.” sont des paraphrases dans ce corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>On the other hand, ”’There are a number of locations in our community, which are essentially vulnerable,’ Mr Ruddock said.” and ”’There are a range of risks which are being seriously examined by competent authorities,’ Mr Ruddock said.” are not paraphrases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En revanche, “There are a number of locations in our community, which are essentially vulnerable,” Mr Ruddock said. et “There are a range of risks which are being seriously examined by competent authorities,” Mr Ruddock said. ne sont pas des paraphrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>We report in Table 2 our best results, the system TESRK + PR , defined by the sum of PR and typed-enriched kb-SRKs with k from 1 to 4, with types Γ p = Γ v = {stem, synonym} .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La table 2 présente nos meilleurs résultats, avec le système TESRK + PR , défini par la somme de PR et de kb-SRK de k allant de 1 à 4, munis des types Γ p = Γ v = {stem, synonym} .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>We observe that our results are state-of-the-art and in particular, they improve on the orignal kb-SRK by a good margin.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous constatons que nos résultats sont à la pointe de la technologie et en particulier, ils sont nettement meilleurs que ceux du kb-SRK original.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>We tried other combinations of types but it did not yield good results, this is probably due to the nature of the MSR corpus, which did not contain much more advanced variations from WordNet.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons aussi essayé d'autres combinaisons de types mais elles ne donnaient pas de meilleurs résultats : on peut probablement attribuer cela à la nature du corpus de MSR, qui ne semble pas contenir des variations lexico-sémantiques des mots très avancées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>The only statistically significant improvement we obtained was between TESRK + PR and our PR baseline ( p &lt; 0 . 05).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La seule amélioration statistiquement significative que nous avons obtenue était entre TESRK + PR et notre PR de référence (p &lt; 0,05).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>The performances obtained by all the cited systems and ours are not significantly different in any statistical sense.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les performances obtenues par tous les systèmes cités et par le nôtre ne sont pas significativement différentes dans un sens statistique quelconque.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>We made a special effort to try to reproduce as best as we could the original kb-SRK performances (Bu et al., 2012), although our implementation and theirs should theoretically be equivalent.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons fait notre possible pour reproduire les perfomances du kb-SRK original (Bu et al. , 2012) : notre implémentation et la leur devraient théoriquement être équivalente.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>Figure 3 plots the average number of recursive calls to CountPerfectMatchings (algorithm 1) during a kernel computation, as a function of k .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 3 représente le nombre d’appels récursifs moyens à CountPerfectMatchings (algorithme 1) pendant l’exécution de TESRK en fonction de k .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>Composing with logk , we can observe whether the empiric number of recursive calls is closer to O ( k ) or O ( k[2] ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En composant ce nombre avec logk , nous pouvons observer si le nombre empirique d'appels récursifs est plus proche de O ( k ) ou de O ( k[2] ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>We conclude that this element of complexity is linear for low values of k , but tends to explode past k = 7.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous concluons que cette complexité est linéaire pour les faibles valeurs de k, mais tend à exploser au-delà de k = 7.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>Thankfully, counting common rewriting rules on pairs of 7-to-10-grams rarely yields non-zero results, so in practice using high values of k is not interesting.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Heureusement, compter le nombre de règles de réécriture communes sur des paires de (7 à 10)-grammes donne rarement des résultats non nuls, donc il n’est pas intéressant d’utiliser ces valeurs de k.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>Figure 4 plots the average size of set C computed by algorithm 2, as a function of k (divided by the sum of lengths of the 4 sentences involved in the kernel computation).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 4 représente la taille moyenne de l’ensemble C produit par l’algorithme 2 en fonction de k , divisée par la somme des tailles des 4 phrases impliquées dans le calcul du noyau.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>We can observe that this quantity is small, except for a peak at low values of k , which is not an issue because the computation of K[¯] k is very fast for those values of k . Table 1: Types</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut voir que cette quantité est petite, à l'exception d'un pic pour les petites valeurs de k, ce qui n'est pas un problème, puisque le calcul de K[¯] k est très rapide pour ces valeurs de k . Tableau 1 : Types</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>Table 2: Evaluation results on MSR Paraphrase</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2 : Résultats d'évaluation sur MSR Paraphrase</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>Figure 3: Evolution of the number of recursive calls to CountPerfectMatchings with k Figure 4: Evolution of the size of C with k</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>FIGURE 3 : Evolution du nombre d’appels récursifs à CountPerfectMatchings avec k FIGURE 4 : Evolution de la taille de C avec k</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>Table 3: Evaluation results on RTE-3</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TABLE 3 – Résultats d’évaluation sur RTE-3</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>4.3 Recognizing textual entailment</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.3 Reconnaître l’implicite textuel</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>Recognizing Textual Entailment asks whether the meaning of a sentence hypothesis can be inferred by reading a sentence text .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Reconnaître l’implication textuelle consiste à déterminer si une phrase hypothèse peut être raisonnablement déduite en lisant une phrase texte .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>The dataset we used to evaluate our systems is RTE-3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le jeu de données que nous avons utilisé pour évaluer nos systèmes est RTE-3 (Dagan et al. , 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>Following similar work (Heilman and Smith, 2010; Bu et al., 2012), we took as training data (text, hypothesis) pairs from RTE-1 and RTE-2’s whole datasets and from RTE-3’s training data, which amounts to 3,767 sentence pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme les travaux similaires (Heilman &amp; Smith, 2010 ; Bu et al., 2012), nous avons pris comme données d'entraînement (textes, hypothèses) les couples de RTE-1 et RTE-2 et les données d'entraînement de RTE-3, ce qui donne 3767 couples de phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>We tested on RTE-3 testing data containing 800 sentence pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons testé sur l'ensemble de test RTE-3 contenant 800 couples de phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>For example, a valid textual entailment in this dataset is the pair of sentences ”In a move widely viewed as surprising, the Bank of England raised UK interest rates from 5% to 5.25%, the highest in five years.” and ”UK interest rates went up from 5% to 5.25%.” : the first entails the second.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un exemple d’implication textuelle valide trouvé dans ce jeu de données est le couple de phrases “In a move widely viewed as surprising, the Bank of England raised UK interest rates from 5% to 5.25%, the highest in five years.” et “UK interest rates went up from 5% to 5.25%.” : la première implique la seconde.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>On the other hand, the pair ”Former French president General Charles de Gaulle died in November.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En revanche, les phrases “Former French president General Charles de Gaulle died in November.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>More than 6,000 people attended a requiem mass for him at Notre Dame cathedral in Paris.” and ”Charles de Gaulle died in 1970.” does not constitute a textual entailment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>More than 6,000 people attended a requiem mass for him at Notre Dame cathedral in Paris.” et “Charles de Gaulle died in 1970.” ne constituent pas d’implication textuelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>We report in Table 3 our best results, the system TESRK (All) + PR , defined by the sum of PR, 1b-SRK and typed-enriched kb-SRKs with k from 2 to 4, with types Γ p = { stem, synonym } and Γ v = { stem, synonym, hypernym, hyponym, entailment, holonym } .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La table 3 présente nos meilleurs résultats, avec le système TESRK (All) + PR , défini comme la somme de PR, 1b-SRK (the original kb-SRK for k = 1) et des kb-SRK avec types pour k de 2 à 4. Les types utilisés sont Γ p = { stem, synonym } and Γ v = { stem, synonym, hypernym, hyponym, entailment, holonym } .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>Our results are to be compared with systems using techniques and resources of similar nature, but as reference the top performance at RTE-3 is still reported.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il semble intéressant de comparer nos résultats uniquement avec les systèmes utilisant des techniques et ressources de même nature, mais nous incluons tout de même le meilleur système à RTE-3 pour référence (Hickl et al. , 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>This time we did not manage to fully reproduce Bu et al. 2012’s performance, but we observe that type-enriched kb-SRK greatly improves upon our original implementation of kb-SRK and outperforms their system anyway.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette fois nous n’avons pas réussi à reproduire fidèlement les performances de (Bu et al. , 2012), mais nous observons tout de même que kb-SRK avec types améliore significativement les performances du kb-SRK de base, allant même jusqu’à faire mieux que l’implémentation originale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <tuv xml:lang="EN">
+                <seg>Combining TESRK and the PR baseline yields significantly better results than either one alone ( p &lt; 0 . 05), and performs significantly better than the system of (Heilman and Smith, 2010), the only one which was evaluated on the same three tasks as us ( p &lt; 0 . 10).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La combinaison de TESRK et de la base de référence PR donne des résultats significativement meilleurs que chacun pris individuellement (p &lt; 0,05), et se montre significativement plus performante que le système de (Heilman et Smith, 2010), le seul à avoir été évalué sur les trois mêmes tâches que nous (p &lt; 0,10).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <tuv xml:lang="EN">
+                <seg>We tried with less types in our system TESRK (Syn) + PR by removing all WordNet types but synonyms but got lower performance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons aussi expérimenté avec des types moins riches pour le système TESRK (Syn) + PR en enlevant tous les types WordNet sauf les synonymes, ce qui aboutit cependant à des performances moins élevées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <tuv xml:lang="EN">
+                <seg>This seems to indicate that rich types indeed help capturing more complex sentence rewritings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela semble vouloir indiquer qu’un système de types riche aide effectivement à capturer des réécritures plus complexes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <tuv xml:lang="EN">
+                <seg>Note that we needed for k = 1 to replace the type-enriched kb-SRK by the original kernel in the sum, otherwise the performance dropped significantly.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notons que nous avons eu besoin de remplacer le kb-SRK enrichi par le noyau original dans la somme pour k = 1, sinon les performances chutaient considérablement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <tuv xml:lang="EN">
+                <seg>Our conclusion is that including richer types is only beneficial if they are captured within a context of a couple of words and that including all those variations on unigrams only add noise.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre conclusion est que l'inclusion de types plus riches n'est vraiment utile que s'ils sont capturés au sein d'un contexte de quelques mots et que l'inclusion de toutes ces variations sur les unigrams ne fait qu'ajouter du bruit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <tuv xml:lang="EN">
+                <seg>4.4 Answer sentence selection</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.4 Sélection de la phrase de réponse</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <tuv xml:lang="EN">
+                <seg>Answer sentence selection is the problem of selecting among single candidate sentences the ones containing the correct answer to an open-domain factoid question.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La sélection de phrases de réponse est le problème de sélection parmi les phrases candidates simples, celles qui contiennent la réponse correcte à une question de fait à domaine ouvert.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="195">
+            <tuv xml:lang="EN">
+                <seg>The dataset we used to evaluate our system on this task was created by (Wang et al., 2007) based on the QA track of past Text REtrieval Conferences (TREC-QA)[1] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'ensemble de données que nous avons utilisé pour évaluer notre système sur cette tâche a été créé par (Wang et al., 2007) sur la base de la piste QA des conférences passées sur la recherche d'informations textuelles (TREC-QA)[1].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="196">
+            <tuv xml:lang="EN">
+                <seg>The training set contains 4718 question/answer pairs, for 94 questions, originating from TREC 8 to 12.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'ensemble d'entraînement contient 4718 paires de questions/réponses, pour 94 questions, provenant de TREC 8 à 12.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="197">
+            <tuv xml:lang="EN">
+                <seg>The testing set contains 1517 pairs for 89 questions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'ensemble de test contient 1517 paires pour 89 questions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="198">
+            <tuv xml:lang="EN">
+                <seg>As an example, a correct answer to the question ”What do practitioners of Wicca worship?” is ”An estimated 50,000 Americans practice Wicca, a form of polytheistic nature worship.”</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, une réponse correcte à la question « Qu’est-ce que les pratiquants de la Wicca adorent ? » est « On estime à 50 000 le nombre d’Américains qui pratiquent la Wicca, une forme de culte polythéiste de la nature. »</seg>
+            </tuv>
+        </tu>
+        <tu tuid="199">
+            <tuv xml:lang="EN">
+                <seg>On the other hand, the answer candidate ”When people think of Wicca, they think of either Satanism or silly mumbo jumbo.” is incorrect.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En revanche, la réponse « Quand les gens pensent à la Wicca, ils pensent au satanisme ou à des conneries » est incorrecte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="200">
+            <tuv xml:lang="EN">
+                <seg>Sentences with more than 40 words and questions with only positive or only negative answers were filtered out (Yao et al., 2013).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les phrases comportant plus de 40 mots et les questions comportant uniquement des réponses positives ou négatives ont été filtrées (Yao et al., 2013).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="201">
+            <tuv xml:lang="EN">
+                <seg>The average fraction of correct answers per question is 7.4% for training and 18.7% for testing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La fraction moyenne de réponses correctes par question est de 7,4 % pour la formation et de 18,7 % pour le test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="202">
+            <tuv xml:lang="EN">
+                <seg>Performances are evaluated as for a re-ranking problem, in term of Mean Average Precision (MAP) and Mean Reciprocal Rank (MRR).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les performances sont évaluées comme pour un problème de ré-classement, en termes de précision moyenne (MAP) et de rang réciproque moyen (MRR).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="203">
+            <tuv xml:lang="EN">
+                <seg>We report our results in Table 4.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons nos résultats dans le tableau 4.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="204">
+            <tuv xml:lang="EN">
+                <seg>We evaluated several combinations of features.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons évalué plusieurs combinaisons de caractéristiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="205">
+            <tuv xml:lang="EN">
+                <seg>IDF word-count (IDF) is a baseline of IDF-weighted common word counting, integrated in a linear kernel.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le nombre de mots IDF (IDF) est une base de comptage de mots communs pondérés IDF, intégrée dans un noyau linéaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="206">
+            <tuv xml:lang="EN">
+                <seg>Then we implemented SRK and TESRK (with k from 1 to 5) with two typing schemes: WN stands for Γ p = { stem, synonym } and Γ v = { stem, synonym, hypernym, hyponym, entailment, holonym } , and WN+NE adds type ne to both sets of types.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons ensuite implémenté SRK et TESRK (avec k de 1 à 5) avec deux schémas de typage : WN signifie Γ p = { mot de base, synonyme } et Γ v = { mot de base, synonyme, hyperonyme, hyponyme, implication, holonyme } et WN+NE ajoute le type ne aux deux ensembles de types.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="207">
+            <tuv xml:lang="EN">
+                <seg>We finally summed our kernels with the IDF baseline kernel.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons finalement ajouté nos noyaux au noyau de référence IDF.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="208">
+            <tuv xml:lang="EN">
+                <seg>We observe that types which make use of WordNet variations seem to increase the most our performance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous observons que les types qui utilisent les variations de WordNet semblent augmenter le plus notre performance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="209">
+            <tuv xml:lang="EN">
+                <seg>Our assumption was that named entities would be useful for question answering and that we could learn associations between question type and answer type through variations:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons supposé que les entités nommées seraient utiles pour répondre aux questions et que nous pourrions apprendre les associations entre le type de question et le type de réponse à travers les variations :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="210">
+            <tuv xml:lang="EN">
+                <seg>NE does seem to help a little when combined with WN alone, but is less useful once TESRK is combined with our baseline of IDF-weighted common words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>NE semble aider un peu lorsqu'il est combiné avec WN seul, mais est moins utile une fois que TESRK est combiné avec notre base de données de mots communs pondérés par IDF.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="211">
+            <tuv xml:lang="EN">
+                <seg>Overall, typing capabilities allow TESRK to obtain way better performances than SRK in both MAP and MRR, and our best system combining all our features is comparable to state-of-the-art systems in MRR, and significantly outperforms SRK + IDF , the system without types ( p &lt; 0 . 05).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans l'ensemble, les capacités de saisie permettent à TESRK d'obtenir des performances bien supérieures à celles de SRK à la fois en MAP et en MRR, et notre meilleur système combinant toutes nos caractéristiques est comparable aux systèmes de pointe en MRR, et surpasse de manière significative SRK + IDF, le système sans types (p &lt; 0,05).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="212">
+            <tuv xml:lang="EN">
+                <seg>Table 4: Evaluation results on QA</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 4: Résultats de l’évaluation de l’assurance qualité</seg>
+            </tuv>
+        </tu>
+        <tu tuid="213">
+            <tuv xml:lang="EN">
+                <seg>5 Related work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Travaux connexes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="214">
+            <tuv xml:lang="EN">
+                <seg>Lodhi et al. (Lodhi et al., 2002) were among the first in NLP to use kernels: they apply string kernels which count common subsequences to text classification.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lodhi et al. (Lodhi et al., 2002) ont été parmi les premiers dans le domaine du traitement automatique des langues naturelles à utiliser des noyaux : ils appliquent des noyaux de chaîne qui comptent les sous-séquences communes à la classification de texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="215">
+            <tuv xml:lang="EN">
+                <seg>Sentence pair classification however require the capture of 2 types of links: the link between sentences within a pair, and the link between pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La classification des paires de phrases nécessite cependant la capture de 2 types de liens : le lien entre les phrases d'un même couple et le lien entre les couples.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="216">
+            <tuv xml:lang="EN">
+                <seg>Zanzotto et al. (Zanzotto et al., 2007) used a kernel method on syntactic tree pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Zanzotto et al. (Zanzotto et al., 2007) ont utilisé une méthode de noyau sur des paires d'arbres syntaxiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="217">
+            <tuv xml:lang="EN">
+                <seg>They expanded on graph kernels in (Zanzotto et al., 2010).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils ont développé des noyaux de graphe dans (Zanzotto et al., 2010).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="218">
+            <tuv xml:lang="EN">
+                <seg>Their method first aligns tree nodes of a pair of sentences to form a single tree with placeholders.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leur méthode consiste tout d'abord à aligner les nœuds d'arbre d'un couple de phrases pour former un seul arbre avec des espaces réservés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="219">
+            <tuv xml:lang="EN">
+                <seg>They then use tree kernel (Moschitti, 2006) to compute the number of common subtrees of those trees.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils utilisent ensuite le noyau d'arbre (Moschitti, 2006) pour calculer le nombre de sous-arbres communs de ces arbres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="220">
+            <tuv xml:lang="EN">
+                <seg>Bu et al. (Bu et al., 2012) introduced a string rewriting kernel which can capture at once lexical equivalents and common syntactic dependencies on pair of sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bu et al. (Bu et al., 2012) ont introduit un noyau de réécriture de chaînes qui peut capturer à la fois les équivalents lexicaux et les dépendances syntaxiques communes sur une paire de phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="221">
+            <tuv xml:lang="EN">
+                <seg>All these kernel methods require an exact match or assume prior partial matches between words, thus limiting the kind of learned rewriting rules.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous ces méthodes de noyau nécessitent une correspondance exacte ou supposent des correspondances partielles entre les mots, limitant ainsi le type de règles de réécriture apprises.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="222">
+            <tuv xml:lang="EN">
+                <seg>Our contribution addresses this issue with a typeenriched string rewriting kernel which can account for lexico-semantic variations of words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre contribution aborde ce problème avec un noyau de réécriture de chaînes enrichi de types qui peut prendre en compte les variations lexicosémantiques des mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="223">
+            <tuv xml:lang="EN">
+                <seg>Limitations of our rewriting rules include the impossibility to skip a pattern word and to replace wildcards by multiple words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les limitations de nos règles de réécriture incluent l'impossibilité de sauter un mot du modèle et de remplacer des caractères génériques par plusieurs mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="224">
+            <tuv xml:lang="EN">
+                <seg>Some recent contributions (Chang et al., 2010; Wang and Manning, 2010) also provide a uniform way to learn both intermediary representations and a decision function using potentially rich feature sets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certaines contributions récentes (Chang et al., 2010 ; Wang et Manning, 2010) fournissent également une méthode uniforme pour apprendre à la fois des représentations intermédiaires et une fonction de décision à l'aide de jeux de caractéristiques potentiellement riches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="225">
+            <tuv xml:lang="EN">
+                <seg>They use heuristics in the joint learning process to reduce the computational cost, while our kernel approach with a simple sequential representation of sentences has the benefit of efficiently computing an exact number of common rewriting rules between rewriting pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils utilisent des heuristiques dans le processus d'apprentissage conjoint pour réduire le coût de calcul, tandis que notre approche de noyau avec une représentation séquentielle simple des phrases a l'avantage de calculer efficacement un nombre exact de règles de réécriture communes entre les paires de réécriture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="226">
+            <tuv xml:lang="EN">
+                <seg>This in turn allows to precisely fine-tune the shape of desired rewriting rules through the design of the typing scheme.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela permet à son tour de peaufiner avec précision la forme des règles de réécriture souhaitées grâce à la conception du schéma de typage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="227">
+            <tuv xml:lang="EN">
+                <seg>6 Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="228">
+            <tuv xml:lang="EN">
+                <seg>We developed a unified kernel-based framework for solving sentence rewriting tasks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons développé un cadre unifié basé sur un noyau pour résoudre les tâches de réécriture de phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="229">
+            <tuv xml:lang="EN">
+                <seg>Types allow for an increased flexibility in counting common rewriting rules, and can also add a semantic layer to the rewritings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les types fournissent une plus grande flexibilité dans le décompte des règles de réécritures communes et peuvent aussi ajouter une couche sémantique aux réécritures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="230">
+            <tuv xml:lang="EN">
+                <seg>We show that we can efficiently compute a kernel which takes types into account, called type-enriched k-gram bijective string rewriting kernel.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous montrons qu'il est possible de calculer efficacement un noyau qui prend en compte les types, appelé noyau de réécriture de chaînes bijective sur les k-grammes enrichi de types.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="231">
+            <tuv xml:lang="EN">
+                <seg>A SVM classifier with this kernel yields state-of-the-art results in paraphrase identification and answer sentence selection and outperforms comparable systems in recognizing textual entailment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un classifieur SVM utilisant ce noyau fournit des résultats de pointe en matière d'identification de paraphrases et de sélection de phrases de réponse et surpasse les systèmes comparables en reconnaissance d'implications textuelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="232">
+            <tuv xml:lang="EN">
+                <seg>1 Available at http://nlp.stanford.edu/ mengqiu/data/qg-emnlp07-data.tgz</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Disponible à l'adresse suivante : http://nlp.stanford.edu/mengqiu/data/qg-emnlp07-data.tgz</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

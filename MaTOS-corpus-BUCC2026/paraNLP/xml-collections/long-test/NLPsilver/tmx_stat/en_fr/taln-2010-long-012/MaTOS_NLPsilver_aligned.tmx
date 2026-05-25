@@ -1,0 +1,1879 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2010-long-012. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/P10-1079.pdf</url_en>
+        <url_fr>https://talnarchives.atala.org/TALN/TALN-2010/taln-2010-long-012.pdf</url_fr>
+        <title_en>A hybrid rule/model-based finite-state framework for normalizing SMS messages</title_en>
+        <title_fr>Une approche hybride traduction/correction pour la normalisation des SMS</title_fr>
+        <docid>taln-2010-long-012</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>A hybrid rule/model-based finite-state framework for normalizing SMS messages</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un cadre à états finis hybride basé sur des règles/modèles pour la normalisation des SMS</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>In recent years, research in natural language processing has increasingly focused on normalizing SMS messages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces dernières années, la recherche en traitement du langage naturel s'est de plus en plus concentrée sur la normalisation des messages SMS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>Different well-defined approaches have been proposed, but the problem remains far from being solved: best systems achieve a 11% Word Error Rate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Différentes approches bien définies ont été proposées, mais le problème reste loin d'être résolu : les meilleurs systèmes atteignent un taux d'erreur de 11 %.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>This paper presents a method that shares similarities with both spell checking and machine translation approaches.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article présente une méthode qui partage des similitudes avec les approches de correction orthographique et de traduction automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>The normalization part of the system is entirely based on models trained from a corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La partie du système qui assure la normalisation utilise exclusivement des modèles entraînés sur corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>Evaluated in French by 10-fold-cross validation, the system achieves a 9.3% Word Error Rate and a 0.83 BLEU score.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Evalué en français par validation croisée, le système obtient un taux d’erreur au mot de 9.3% et un score BLEU de 0.83.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Keywords: SMS messages, normalization, finite-state machines, hybrid approach, machine translationlike, spell checking-like, corpus-based learning.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mots-clés : SMS, normalisation, machines à états finis, approche hybride, orienté traduction, orienté correction, apprentissage sur corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>1 Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>Introduced a few years ago, Short Message Service (SMS) offers the possibility of exchanging written messages between mobile phones. SMS has quickly been adopted by users.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Introduit il y a quelques années, le « Short Message Service » (SMS), moyen de communication qui a été rapidement adopté par les utilisateurs, offre la possibilité d’échanger des messages écrits entre téléphones mobiles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>These messages often greatly deviate from traditional spelling conventions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces messages s’écartent souvent considérablement des conventions orthographiques traditionnelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>As shown by specialists (Thurlow and Brown, 2003; Fairon et al., 2006; Bieswanger, 2007), this variability is due to the simultaneous use of numerous coding strategies, like phonetic plays ( 2m1 read ‘demain’, “tomorrow”), phonetic transcriptions ( kom instead of ‘comme’, “like”), consonant skeletons ( tjrs for ‘toujours’, “always”), misapplied, missing or incorrect separators ( j esper for ‘j’espère’, “I hope”; j’croibi1k , instead of ‘je crois bien que’, “I am pretty sure that”), etc.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme l'ont montré les spécialistes (Thurlow &amp; Brown, 2003; Fairon et al., 2006), cette variabilité tient à l'usage simultané de plusieurs stratégies de codage, comme les jeux et les transcriptions phonétiques (2m1 pour demain, « demain » ; kom pour comme), les squelettes consonantiques (toujours pour tjrs), les séparateurs abusifs, manquants ou incorrects (j esper pour j'espère ; j'croibi1k pour je crois bien que), etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>These deviations are due to three main factors: the small number of characters allowed per text message by the service (140 bytes), the constraints of the small phones’ keypads and, last but not least, the fact that people mostly communicate between friends and relatives in an informal register.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces écarts sont dus à trois facteurs principaux : le faible nombre de caractères autorisé par le service (140 octets), les contraintes dues au clavier des téléphones portables et, enfin et surtout, le fait que les usagers du SMS communiquent principalement entre amis ou parents, dans un registre informel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>Whatever their causes, these deviations considerably hamper any standard natural language processing (NLP) system, which stumbles against so many Out-Of-Vocabulary words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quelles qu’en soient les causes, ces écarts entravent considérablement le fonctionnement de tout système TAL traditionnel, qui n’est pas prévu pour gérer tant de mots hors-vocabulaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>For this reason, as noted by Sproat et al. (2001), an SMS normalization must be performed before a more conventional NLP process can be applied. As defined by Yvon (2008), “SMS normalization consists in rewriting an SMS text using a more conventional spelling, in order to make it more readable for a human or for a machine.”</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De ce fait, comme le remarquent Sproat et al. (2001), une normalisation SMS, c'est-à-dire la réécriture d'un SMS en orthographe conventionnelle, doit être réalisée avant qu'un processus de PNL plus conventionnel puisse être appliqué. Comme le définit Yvon (2008), « la normalisation SMS consiste à réécrire un SMS en utilisant une orthographe plus conventionnelle, afin de le rendre plus lisible pour un humain ou pour une machine ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>The SMS normalization we present here was developed in the general framework of an SMSto-speech synthesis system[1] . This paper, however, only focuses on the normalization process. Evaluated in French, our method shares similarities with both spell checking and machine translation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthode de normalisation que nous présentons ici, développée dans le cadre général d’un système de synthèse de la parole à partir de SMS[1] , se situe à mi-chemin entre les approches orientées correction et traduction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>The machine translation-like module of the system performs the true normalization task. It is entirely based on models learned from an SMS corpus and its transcription, aligned at the character-level in order to get parallel corpora. Two spell checking-like modules surround the normalization module.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le module de type traduction automatique du système effectue la tâche de normalisation. Il est entièrement basé sur des modèles appris à partir d'un corpus de SMS et de sa transcription, alignés au niveau des caractères afin d'obtenir des corpus parallèles. Deux modules de vérification orthographique entourent le module de normalisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>The first one detects unambiguous tokens, like URLs or phone numbers, to keep them out of the normalization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le premier détecte les tokens non ambigus, comme les URL ou les numéros de téléphone, afin de les exclure de la normalisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>The second one, applied on the normalized parts only, identifies non-alphabetic sequences, like punctuations, and labels them with the corresponding token.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le second, appliqué uniquement sur les parties normalisées, identifie les séquences non alphabétiques, comme les signes de ponctuation, et les étiquette avec le jeton correspondant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>This greatly helps the system’s print module to follow the basic rules of typography.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela aide grandement le module d’impression du système à respecter les règles de base de la typographie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>This paper is organized as follows.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article est organisé comme suit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>Section 2 proposes an overview of the state of the art.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section 2 propose un état de l’art du domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>Section 3 presents the general architecture of our system, while Section 4 focuses on how we learn and combine our normalization models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section 3 donne ensuite une vue d’ensemble du système, tandis que la section 4 se concentre sur la manière dont nous apprenons et dont nous combinons les modèles de normalisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>Section 5 evaluates the system and compares it to previous works.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section 5 évalue le système et le compare aux travaux antérieurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>Section 6 draws conclusions and considers some future possible improvements of the method.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section 6, enfin, fait un point sur le travail accompli et propose quelques améliorations envisageables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>2 Related work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Travaux antérieurs</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>As highlighted by Kobus et al. (2008b), SMS normalization, up to now, has been handled through three well-known NLP metaphors: spell checking, machine translation and automatic speech recognition.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Kobus et al. (2008b) ont souligné que la normalisation SMS a jusqu’à présent été formalisée au travers de trois métaphores bien connues de la PNL : correction orthographique, traduction automatique et reconnaissance de la parole.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>In this section, we only present the pros and cons of these approaches.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette section, nous ne présentons que les avantages et les inconvénients de ces approches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>Their results are given in Section 5, focused on our evaluation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leurs résultats sont présentés à la section 5, axée sur notre évaluation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>The spell checking metaphor (Guimier de Neef et al., 2007; Choudhury et al., 2007; Cook and Stevenson, 2009) performs the normalization task on a word-per-word basis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La métaphore de correction orthographique (Guimier de Neef et al., 2007 ; Choudhury et al., 2007 ; Cook et Stevenson, 2009) réalise la tâche de normalisation mot à mot.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>On the assumption that most words should be correct for the purpose of communication, its principle is to keep InVocabulary words out of the correction process.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Partant de l’hypothèse que la plupart des mots sont corrects pour les besoins de la communication, le principe est ici de garder les mots connus en dehors du processus de correction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>Guimier de Neef et al. (2007) proposed a rulebased system that uses only a few linguistic resources dedicated to SMS, like specific lexicons of abbreviations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Guimier de Neef et al. (2007) ont proposé un système basé sur des règles qui utilise seulement quelques ressources linguistiques dédiées aux SMS, comme des lexiques d’abréviations spécifiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>Choudhury et al. (2007) and Cook and Stevenson (2009) preferred to implement the noisy channel metaphor (Shannon, 1948), which assumes a communication process in which a sender emits the intended message W through an imperfect (noisy) communication channel, such that the sequence O observed by the recipient is a noisy version of the original message.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Choudhury et al. (2007) et Cook &amp; Stevenson (2009) ont préféré implémenter la métaphore du canal bruité (Shannon, 1948), qui pose un processus de communication dans lequel l’émetteur envoie le message voulu W au travers d’un canal de communication imparfait (bruité) tel que la séquence O observée par le destinataire est une version bruitée de W .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>On this basis, the idea is to recover the intended message W hidden behind the sequences of observations O , by maximizing:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur cette base, l’idée est de retrouver le message W caché derrière les séquences d’observations O , en maximisant :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>where P ( O ) is ignored because constant, P ( O|W ) models the channel’s noise, and P ( W ) models the language of the source.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où P ( O ) est ignoré parce que constant, P ( O|W ) modélise le bruit du canal, et P ( W ) modélise le langage de la source.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>Choudhury et al. (2007) implemented the noisy channel through a Hidden-Markov Model (HMM) able to handle both graphemic variants and phonetic plays as proposed by (Toutanova and Moore, 2002), while Cook and Stevenson (2009) enhanced the model by adapting the channel’s noise P ( O|W, wf ) according to a list of predefined observed word formations {wf} : stylistic variation, word clipping, phonetic abbreviations, etc.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Choudhury et al. (2007) ont implémenté le canal bruité à l'aide d'un modèle caché de Markov (HMM) capable de gérer à la fois les variantes graphémiques et les jeux phonétiques, comme proposé par (Toutanova et Moore, 2002), tandis que Cook et Stevenson (2009) ont amélioré le modèle en adaptant le bruit du canal P (O|W, wf) en fonction d'une liste de formations de mots observées prédéfinies {wf} : variation stylistique, abréviation de mots, abréviations phonétiques, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>Whatever the system, the main limitation of the spell checking approach is the excessive confidence it places in word boundaries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quelle que soit l'implémentation proposée, cependant, la limitation principale de cette approche de vérification orthographique est la confiance excessive qu'elle accorde aux frontières de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>The machine translation metaphor, which is historically the first proposed (Bangalore et al., 2002; Aw et al., 2006), considers the process of normalizing SMS as a translation task from a source language (the SMS) to a target language (its standard written form).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La métaphore de la traduction automatique, qui est historiquement la première proposée (Bangalore et al., 2002 ; Aw et al., 2006), considère le processus de normalisation des SMS comme une tâche de traduction depuis une langue source (le SMS) vers une langue cible (l’écrit standard).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>This standpoint is based on the observation that, on the one side, SMS messages greatly differ from their standard written forms, and that, on the other side, most of the errors cross word boundaries and require a wide context to be handled.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce point de vue se base sur l'observation que d'une part, les SMS diffèrent fortement de leur forme écrite standard et que d'autre part, la plupart des erreurs dépassent la frontière du mot et ne peuvent être gérées qu'au sein d'un contexte plus large.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>On this basis, Aw et al. (2006) proposed a statistical machine translation model working at the phrase-level, by splitting sentences into their k most probable phrases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur cette base, Aw et al. (2006) ont proposé un modèle de traduction automatique statistique fonctionnant au niveau de la phrase, en divisant les phrases en leurs k phrases les plus probables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>While this approach achieves really good results, Kobus et al. (2008b) make the assertion that a phrase-based translation can hardly capture the lexical creativity observed in SMS messages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que cette approche obtienne de très bons résultats (voir section 5), Kobus et al. (2008) considèrent qu’une traduction au niveau du groupe n’est pas à même de capturer la grande créativité lexicale des messages SMS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>Moreover, the translation framework, which can handle many-to-many correspondences between sources and targets, exceeds the needs of SMS normalization, where the normalization task is almost deterministic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, le cadre de la traduction automatique, qui peut gérer des correspondances multiples entre source et cible, dépasse largement les besoins de la normalisation SMS, qui est presque déterministe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>Based on this analysis, Kobus et al. (2008b) proposed to handle SMS normalization through an automatic speech recognition (ASR) metaphor.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur cette base, Kobus et al. (2008b) ont proposé de gérer la normalisation SMS selon la métaphore de la reconnaissance de la parole automatique (ASR).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>The starting point of this approach is the observation that SMS messages present a lot of phonetic plays that sometimes make the SMS word ( sré , mwa ) closer to its phonetic representation ([sKe], [mwa]) than to its standard written form ( serai , “will be”, moi , “me”).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le point de départ de cette approche est l'observation que les messages SMS présentent de nombreux jeux phonétiques qui rendent parfois la forme SMS (sré, mwa) plus proche de sa représentation phonétique ([sKe], [mwa]) que de sa forme normalisée (serai, moi).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>Typically, an ASR system tries to discover the best word sequence within a lattice of weighted phonetic sequences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Typiquement, un système ASR tente de découvrir la meilleure séquence de mots cachée derrière un treillis de séquences phonétiques pondérées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>Applied to the SMS normalization task, the ASR metaphor consists in first converting the SMS message into a phone lattice, before turning it into a word-based lattice using a phoneme-to-grapheme dictionary.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Appliquée à la tâche de normalisation des SMS, la métaphore ASR consiste à convertir d'abord le message SMS en un treillis de phones, avant de le transformer en un treillis de séquences de mots, à l'aide d'un dictionnaire phonèmes-graphèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>A language model is then applied on the word lattice, and the most probable word sequence is finally chosen by applying a best-path algorithm on the lattice.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un modèle de langue est ensuite appliqué au treillis de mots, et la séquence de mots la plus probable est finalement choisie en appliquant un algorithme de meilleur chemin sur le treillis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>One of the advantages of the grapheme-to-phoneme conversion is its intrinsic ability to handle word boundaries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un des avantages de la conversion graphème-phonème est sa capacité intrinsèque à gérer les frontières de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>However, this step also presents an important drawback, raised by the authors themselves: it prevents next normalization steps from knowing what graphemes were in the initial sequence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, cette étape présente également un inconvénient important, soulevé par les auteurs eux-mêmes : elle empêche les étapes de normalisation suivantes de savoir quels graphèmes étaient présents dans la séquence initiale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>Our approach, which is detailed in Sections 3 and 4, shares similarities with both the spell checking approach and the machine translation principles, trying to combine the advantages of these methods, while leaving aside their drawbacks: like in spell checking systems, we detect unambiguous units of text as soon as possible and try to rely on word boundaries when they seem reliable enough ; but like in the machine translation task, our method intrinsically handles word boundaries in the normalization process if needed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre approche, détaillée en sections 3 et 4, partage des similitudes avec les deux premières métaphores, en essayant de combiner leurs avantages, tout en évitant leurs inconvénients : comme les systèmes de correction, nous détectons au plus tôt les unités de texte non ambiguës et nous utilisons les frontières de mots lorsqu’elles semblent suffisamment fiables ; mais comme les approches orientées traduction, notre processus de normalisation utilise des modèles exclusivement appris à partir de corpus parallèles. Dans notre cas, il s’agit d’un corpus SMS et de sa transcription, alignés au niveau du caractère.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>3 Overview of the system</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Vue d’ensemble du système</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>3.1 Tools in use</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1 Outils utilisés</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>In our system, all lexicons, language models and sets of rules are compiled into finite-state machines (FSMs) and combined with the input text by composition ( ◦ ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre système, tous les lexiques, les modèles de langue et les règles sont compilés en machines à états finis (FSMs) et combinés avec le texte d'entrée par composition (◦).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>The reader who is not familiar with FSMs and their fundamental theoretical properties, like composition, is urged to consult the state-of-the-art literature (Roche and Schabes, 1997; Mohri and Riley, 1997; Mohri et al., 2000; Mohri et al., 2001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le lecteur qui ne maîtriserait pas les FSMs et leurs propriétés fondamentales, comme la composition, est invité à consulter la littérature de référence (Roche et Schabes, 1997 ; Mohri et Riley, 1997 ; Mohri et al., 2000 ; Mohri et al., 2001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>We used our own finite-state tools: a finite-state machine library and its associated compiler (Beaufort, 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé nos propres outils à états finis : une bibliothèque de machines à états finis et son compilateur associé (Beaufort, 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>In conformance with the format of the library, the compiler builds finite-state machines from weighted rewrite rules, weighted regular expressions and n -gram models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Conformément au format de la bibliothèque, le compilateur construit des automates à états finis à partir de règles de réécriture pondérées, d'expressions régulières pondérées et de modèles d'n-grammes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>3.2 Aims</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2 Objectifs</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>We formulated four constraints before fixing the system’s architecture.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons formulé quatre contraintes avant de fixer l'architecture du système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>First, special tokens, like URLs, phones or currencies, should be identified as soon as possible, to keep them out of the normalization process.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, les tokens spéciaux, comme les URL, les numéros de téléphone ou les devises, doivent être identifiés dès que possible, afin de les exclure du processus de normalisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>Second, word boundaries should be taken into account, as far as they seem reliable enough .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, les limites de mots doivent être prises en compte, dans la mesure où elles semblent suffisamment fiables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>The idea, here, is to base the decision on a learning able to catch frequent SMS sequences to include in a dedicated In-Vocabulary (IV) lexicon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'idée, ici, est de baser la décision sur un apprentissage capable de saisir des séquences de SMS fréquentes à inclure dans un lexique dédié In-Vocabulary (IV).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>Third, any other SMS sequence should be considered as Out-Of-Vocabulary (OOV), on which in-depth rewritings may be applied.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Troisièmement, toute autre séquence de SMS doit être considérée comme « Out-Of-Vocabulary » (OOV), sur laquelle des réécritures approfondies peuvent être appliquées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>Fourth, the basic rules of typography and typesettings should be applied on the normalized version of the SMS message.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quatrièmement, les règles de base de la typographie et de la mise en page doivent être appliquées à la version normalisée du message SMS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>3.3 Architecture</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3 Architecture</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>The architecture depicted in Figure 1 directly relies on these considerations. In short, an SMS message first goes through three SMS modules, which normalize its noisy parts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'architecture illustrée dans la figure 1 repose directement sur ces considérations. En bref, un SMS passe d'abord par trois modules SMS qui normalisent les parties bruitées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>Then, two standard NLP modules produce a morphosyntactic analysis of the normalized text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux modules TAL réalisent ensuite une analyse morphosyntaxique du texte normalisé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>A last module, finally, takes advantage of this linguistic analysis either to print a text that follows the basic rules of typography, or to synthesize the corresponding speech signal.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le dernier module, enfin, tire parti de cette analyse linguistique pour imprimer un texte qui respecte les règles de base de la typographie, ou pour synthétiser le signal de parole correspondant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>Because this paper focuses on the normalization task, the rest of this section only presents the SMS modules and the “smart print” output.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné que cet article est consacré à la tâche de normalisation, le reste de cette section ne présente que les modules SMS et la sortie « impression intelligente ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>The morphosyntactic analysis, made of state-of-the-art algorithms, is described in (Beaufort, 2008), and the text-to-speech synthesis system we use is presented in (Colotte and Beaufort, 2005).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'analyse morphosyntaxique, réalisée à l'aide d'algorithmes de pointe, est décrite dans (Beaufort, 2008), et le système de synthèse de la parole que nous utilisons est présenté dans (Colotte et Beaufort, 2005).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>3.3.1 SMS modules</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3.1 Modules SMS</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: Architecture of the system</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1: Architecture du système</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>SMS preprocessing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Prétraitement SMS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>This module relies on a set of manually-tuned rewrite rules. It identifies paragraphs and sentences, but also some unambiguous tokens: URLs, phone numbers, dates, times, currencies, units of measurement and, last but not least in the context of SMS, smileys[2] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce module repose sur un ensemble de règles de réécriture manuellement ajustées. Il identifie les paragraphes et les phrases, mais aussi certains éléments non ambigus : URL, numéros de téléphone, dates, heures, monnaies, unités de mesure et, dernier élément mais non le moindre dans le contexte des SMS, les smileys[2] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>These tokens are kept out of the normalization process, while any other sequence of characters is considered – and labelled – as noisy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces séquences, identifiées à l’aide de grammaires locales, sont considérées comme des unités non ambiguës et évitent l’étape de normalisation. Toute autre séquence de caractères est considérée comme une unité bruitée et subit l’étape de normalisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>SMS normalization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Normalisation SMS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>This module only uses models learned from a training corpus (cf. Section 4). It involves three steps.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce module utilise uniquement des modèles appris à partir d'un corpus d'entraînement (cf. Section 4). Il comprend trois étapes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>First, an SMSdedicated lexicon look-up, which differentiates between known and unknown parts of a noisy token. Second, a rewrite process, which creates a lattice of weighted solutions. The rewrite model differs depending on whether the part to rewrite is known or not.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Premièrement, une recherche de lexique dédiée au SMS, qui différencie les parties connues et inconnues d'un token bruité. Deuxièmement, un processus de réécriture, qui crée un treillis de solutions pondérées. Le modèle de réécriture diffère selon que la partie à réécrire est connue ou non.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>Third, a combination of the lattice of solutions with a language model, and the choice of the best sequence of lexical units.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Troisièmement, une combinaison du maillage des solutions avec un modèle de langue, et le choix de la meilleure séquence d'unités lexicales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>At this stage, the normalization as such is completed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À ce stade, la normalisation en tant que telle est terminée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>SMS postprocessing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Post-traitement SMS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>Like the preprocessor, the postprocessor relies on a set of manuallytuned rewrite rules.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme le préprocesseur, le postprocesseur repose sur un ensemble de règles de réécriture manuellement réglées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>The module is only applied on the normalized version of the noisy tokens, with the intention to identify any non-alphabetic sequence and to isolate it in a distinct token.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le module est appliqué uniquement sur la version normalisée des jetons bruités, dans le but d'identifier toute séquence non alphabétique et de l'isoler dans un jeton distinct.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>At this stage, for instance, a point becomes a ‘strong punctuation’.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À ce stade, par exemple, un point devient une « ponctuation forte ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>Apart from the list of tokens already managed by the preprocessor, the postprocessor handles as well numeric and alphanumeric strings, fields of data (like bank account numbers), punctuations and symbols.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Outre la liste des jetons déjà gérés par le préprocesseur, le postprocesseur gère également les chaînes de caractères numériques et alphanumériques, les champs de données (comme les numéros de compte bancaire), les ponctuations et les symboles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>3.3.2 Smart print</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3.2 Impression intelligente</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>The smart print module, based on manually-tuned rules, checks either the kind of token (chosen by the SMS pre-/post-processing modules) or the grammatical category (chosen by the morphosyntactic analysis) to make the right typography choices, such as the insertion of a space after certain tokens (URLs, phone numbers), the insertion of two spaces after a strong punctuation (point, question mark, exclamation mark), the insertion of two carriage returns at the end of a paragraph, or the upper case of the initial letter at the beginning of the sentence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le module d'impression intelligent, basé sur des règles réglées manuellement, vérifie le type de jeton (choisi par les modules de pré-/post-traitement SMS) ou la catégorie grammaticale (choisie par l'analyse morphosyntaxique) pour faire les bons choix typographiques, tels que l'insertion d'un espace après certains jetons (URL, numéros de téléphone), l'insertion de deux espaces après une ponctuation forte (point, point d'interrogation, point d'exclamation), l'insertion de deux sauts de ligne à la fin d'un paragraphe, ou la majuscule de la première lettre au début de la phrase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>4 The normalization models</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Les modèles de normalisation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>4.1 Overview of the normalization algorithm</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Vue d’ensemble de l’algorithme de normalisation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>Our approach is an approximation of the noisy channel metaphor (cf. Section 2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre approche est une approximation de la métaphore du canal bruité (cf. Section 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>It differs from this general framework, because we adapt the model of the channel’s noise depending on whether the noisy token (our sequence of observations) is In-Vocabulary or Out-OfVocabulary:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle se différencie de ce cadre général, car nous adaptons le modèle du bruit du canal en fonction du fait que le token bruité (notre séquence d'observations) soit In-Vocabulary ou Out-Of-Vocabulary :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>Indeed, our algorithm is based on the assumption that applying different normalization models to IV and OOV words should both improve the results and reduce the processing time.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, notre algorithme est basé sur l'hypothèse que l'application de différents modèles de normalisation aux mots IV et OOV devrait à la fois améliorer les résultats et réduire le temps de traitement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>For this purpose, the first step of the algorithm consists in composing a noisy token T with an FST Sp whose task is to differentiate between sequences of IV words and sequences of OOV words, by labelling them with a special IV or OOV marker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À cet effet, la première étape de l'algorithme consiste à composer un jeton bruité T avec un FST Sp dont la tâche est de différencier les séquences de mots IV des séquences de mots OOV, en les étiquetant avec un marqueur spécial IV ou OOV.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>The token is then split in n segments sgi according to these markers:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'unité est ensuite divisée en n segments sgi en fonction de ces marqueurs :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>In a second step, each segment is composed with a rewrite model according to its kind: the IV rewrite model RIV for sequences of IV words, and the OOV rewrite model ROOV for sequences of OOV words:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans une seconde étape, chaque segment est composé avec le modèle de réécriture correspondant à son type : le modèle RIV pour les séquences de mots IV, et le modèle ROOV pour les séquences de mots OOV :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>All rewritten segments are then concatenated together in order to get back the complete token:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous les segments réécrits sont ensuite concaténés ensemble, de manière à récupérer l'unité complète :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>where ⊙ is the concatenation operator.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où ⊙ est l’opérateur de concaténation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>The third and last normalization step is applied on a complete sentence S .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La troisième et dernière étape de normalisation est appliquée sur une phrase complète S .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>All tokens Tj of S are concatenated together and composed with the lexical language model LM .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutes les unités Tj de S sont concaténées ensemble et composées avec le modèle de langue lexical LM .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>The result of this composition is a word lattice, of which we take the most probable word sequence S[′] by applying a best-path algorithm:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le résultat de cette composition est un treillis de mots, dont on ne retient que la séquence de mots la plus probable S[′] en appliquant un algorithme de meilleur chemin :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>where m is the number of tokens of S .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où m est le nombre d’unités de S .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>In S[′] , each noisy token Tj of S is mapped onto its most probable normalization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans S[′] , chaque unité bruitée Uj de S est associée à sa normalisation la plus probable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>4.2 The corpus alignment</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 L'alignement du corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>Our normalization models were trained on a French SMS corpus of 30,000 messages, gathered in Belgium, semi-automatically anonymized and manually normalized by the Catholic University of Louvain (Fairon and Paumier, 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nos modèles de normalisation ont été entraînés sur un corpus français de 30 000 messages, collectés en Belgique, anonymisés semi-automatiquement et normalisés manuellement par l’Université catholique de Louvain (Fairon &amp; Paumier, 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>Together, the SMS corpus and its transcription constitute parallel corpora aligned at the message-level.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensemble, le corpus SMS et sa transcription constituent des corpus parallèles alignés au niveau du message.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>However, in order to learn pieces of knowledge from these corpora, we needed a string alignment at the character-level .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, afin d'apprendre des connaissances à partir de ces corpus, nous avions besoin d'un alignement au niveau du caractère .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>One way of implementing this string alignment is to compute the edit-distance of two strings, which measures the minimum number of operations (substitutions, insertions, deletions) required to transform one string into the other (Levenshtein, 1966).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une façon de mettre en œuvre cet alignement de chaînes consiste à calculer la distance d'édition entre deux chaînes, qui mesure le nombre minimal d'opérations (substitutions, insertions, suppressions) nécessaires pour transformer une chaîne en l'autre (Levenshtein, 1966).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>Using this algorithm, in which each operation gets a cost of 1, two strings may be aligned in different ways with the same global cost.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En utilisant cet algorithme, dans lequel chaque opération a un coût de 1, deux chaînes peuvent être alignées de différentes manières avec le même coût global.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>This is the case, for instance, for the SMS form kozer ([koze]) and its standard transcription causé (“talked”), as illustrated by Figure 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est le cas, par exemple, pour le mot SMS kozer ([koze]) et sa transcription standard causé (« parlé »), comme l'illustre la figure 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>However, from a linguistic standpoint, alignment (1) is preferable, because corresponding graphemes are aligned on their first character .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, du point de vue linguistique, l’alignement (1) est préférable, car les graphèmes correspondants sont alignés sur leur premier caractère.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>In order to automatically choose this preferred alignment, we had to distinguish the three editoperations, according to the characters to be aligned.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de choisir automatiquement cet alignement préféré, il fallait distinguer les trois opérations d'édition, en fonction des caractères à aligner.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>For that purpose, probabilities were required.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour cela, des probabilités étaient nécessaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>Computing probabilities for each operation according to the characters to be aligned was performed through an iterative algorithm described in (Cougnon and Beaufort, 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le calcul des probabilités pour chaque opération en fonction des caractères à aligner a été effectué à l'aide d'un algorithme itératif décrit dans (Cougnon &amp; Beaufort, 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>In short, this algorithm gradually learns the best way of aligning strings. On our parallel corpora, it converged after 7 iterations and provided us with a result from which the learning could start. Figure 2: Different equidistant alignments, using a standard edit-cost of 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En bref, cet algorithme apprend graduellement la meilleure façon d'aligner des chaînes de caractères. Sur nos corpus parallèles, il a convergé après 7 itérations et nous a fourni un résultat à partir duquel l'apprentissage pouvait commencer. Figure 2 : Différentes alignements équidistants, utilisant un coût d'édition standard de 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>Underscores (‘_’) mean insertion in the upper string, and deletion in the lower string.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les tirets bas (_) signifient insérer dans la chaîne supérieure et supprimer dans la chaîne inférieure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>4.3 The split model Sp</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.3 Le modèle de segmentation Sp</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>In natural language processing, a word is commonly defined as “a sequence of alphabetic characters between separators”, and an IV word is simply a word that belongs to the lexicon in use.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le traitement automatique du langage naturel, un mot est généralement défini comme « une séquence de caractères alphabétiques entre séparateurs », et un mot IV est simplement un mot qui appartient au lexique en usage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>In SMS messages however, separators are surely indicative, but not reliable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les messages SMS, les séparateurs sont certes indicatifs, mais pas fiables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>For this reason, our definition of the word is far from the previous one, and originates from the string alignment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour cette raison, notre définition du mot est très différente de la précédente et provient de l’alignement des séquences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>After examining our parallel corpora aligned at the character-level, we decided to consider as a word “the longest sequence of characters parsed without meeting the same separator on both sides of the alignment”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après avoir examiné nos corpus parallèles alignés au niveau du caractère, nous avons décidé de considérer comme mot « la plus longue suite de caractères parcourue sans rencontrer le même séparateur de part et d’autre de l’alignement ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>For instance, the following alignment is split as follows according to our definition:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, l'alignement (a) ci-dessous est divisé comme suit selon notre définition :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>since the separator in “J esper” is different from its transcription, and “ktu” does not contain any separator.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>puisque le séparateur dans « J esper » est différent de sa transcription, et que « ktu » ne contient pas de séparateur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>Thus, this SMS sequence corresponds to 3 SMS words: [ J esper ], [ ktu ] and [ va ].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, cette séquence SMS correspond à 3 mots SMS : [ J esper ], [ ktu ] et [ va ].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>A first parsing of our parallel corpora provided us with a list of SMS sequences corresponding to our IV lexicon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un premier parcours de nos corpus parallèles nous a fourni une liste de séquences SMS correspondant à notre lexique IV.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>The FST Sp is built on this basis:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le FST Sp est construit sur cette base :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>where:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>- I is an FST corresponding to the lexicon, in which IV words are mapped onto the IV marker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- I est un FST correspondant au lexique, dans lequel chaque mot est mappé sur le marqueur KN.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>- O is the complement of I[3] . In this OOV lexicon, OOV sequences are mapped onto the OOV marker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- O est le complément de I[3] . Dans ce lexique OOV, les séquences inconnues sont projetées sur le marqueur UNK .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>- • S is an FST corresponding to the list of separators (any non-alphabetic and nonnumeric character), mapped onto a SEP marker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>– Sep est un FST correspondant à la liste des séparateurs (tout caractère non alphabétique et non numérique), projetés sur un marqueur SEP .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>- G is an FST able to detect consecutive sequences of IV (resp. OOV) words, and to group them under a unique IV (resp. OOV) marker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- G est un FST capable de détecter les suites de séquences IV (resp. OOV) et de les regrouper sous un unique marqueur IV (resp. OOV).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>By gathering sequences of IVs and OOVs, SEP markers disappear from Sp .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En rassemblant des séquences de IV et OOV, les marqueurs SEP disparaissent de Sp .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>Figure 3 illustrates the composition of Sp with the SMS sequence J esper kcv b1 ( J’espère que ça va bien , “I hope you are well”).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 3 illustre la composition de Sp avec la séquence SMS « J esper kcv b1 » (J’espère que ça va bien, « J’espère que vous allez bien »).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>For the example, we make the assumption that kcv was never seen during the training.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet exemple, nous partons du principe que « kcv » n’a pas été rencontré au cours de l’entraînement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>Figure 3: Application of the split model Sp .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 3 : Application du modèle fractionné Sp .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>The OOV sequence starts and ends with separators.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La séquence OOV commence et se termine par des séparateurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>4.4 The IV rewrite model RIV</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.4 Le modèle de réécriture IV RIV</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>This model is built during a second parsing of our parallel corpora. In short, the parsing simply gathers all possible normalizations for each SMS sequence put, by the first parsing, in the IV lexicon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce modèle est construit au cours d'un second parcours de nos corpus parallèles. En bref, l'analyse syntaxique rassemble toutes les normalisations possibles pour chaque séquence SMS placée, par le premier parcours, dans le lexique IV.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>Contrary to the first parsing, this second one processes the corpus without taking separators into account , in order to make sure that all possible normalizations are collected.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contrairement au premier parcours, ce second parcours traite le corpus sans tenir compte des séparateurs, afin de collecter toutes les normalisations possibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>Each normalization w ¯ for a given SMS sequence w is weighted as follows:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque normalisation w ¯ pour une séquence SMS donnée w est pondérée comme suit :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>where Occ( x ) is the number of occurrences of x in the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où Occ( x ) note le nombre d’occurrences de x dans le corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>The FST RIV is then built as follows:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le FST RIV est ensuite construit comme suit :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>- IVR is a weighted lexicon compiled into an FST, in which each IV sequence is mapped onto the list of its possible normalizations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- IVR est un lexique pondéré compilé dans un FST, dans lequel chaque séquence IV est associée à la liste de ses normalisations possibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>- SIV is a weighted lexicon of separators, in which each separator is mapped onto the list of its possible normalizations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- SIV est un lexique pondéré de séparateurs, dans lequel chaque séparateur est associé à la liste de ses normalisations possibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>The deletion is often one of the possible normalization of a separator.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La suppression est souvent l’une des normalisations possibles d’un séparateur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>Otherwise, the deletion is added and is weighted by the following smoothed probability:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsque ce n’est pas le cas, cette possibilité de suppression (DEL) est ajoutée, et pondérée comme suit :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>4.5 The OOV rewrite model ROOV</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.5 Le modèle de réécriture des séquences inconnues ROOV</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>In contrast to the other models, this one is not a regular expression made of weighted lexicons.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contrairement aux autres modèles, celui-ci n'est pas une expression régulière construite à partir de lexiques pondérés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>It corresponds to a set of weighted rewrite rules (Chomsky and Halle, 1968; Johnson, 1972; Mohri and Sproat, 1996) learned from the alignment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il correspond à un ensemble de règles de réécriture pondérées (Chomsky et Halle, 1968 ; Johnson, 1972 ; Mohri et Sproat, 1996) apprises à partir de l'alignement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>Developed in the framework of generative phonology, rules take the form</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Développées dans le cadre de la phonologie générative, les règles prennent la forme</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>which means that the replacement φ → ψ is only performed when φ is surrounded by λ on the left and ρ on the right, and gets the weight w .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce qui signifie que le remplacement φ → ψ n'est effectué que lorsque φ est entouré de λ à gauche et de ρ à droite, et obtient le poids w .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>However, in our case, rules take the simpler form</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, dans notre cas, les règles prennent la forme la plus simple</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>which means that the replacement φ → ψ is always performed, whatever the context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>ce qui signifie que la substitution φ → ψ est toujours effectuée, quel que soit le contexte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>Inputs of our rules ( φ ) are sequences of 1 to 5 characters taken from the SMS side of the alignment, while outputs ( ψ ) are their corresponding normalizations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les entrées de nos règles (φ) sont des séquences de 1 à 5 caractères prises du côté SMS de l’alignement, tandis que les sorties (ψ) sont leurs normalisations correspondantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>Our rules are sorted in the reverse order of the length of their inputs: rules with longer inputs come first in the list.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nos règles sont triées dans l'ordre inverse de la longueur de leurs entrées : les règles avec des entrées plus longues viennent en premier dans la liste.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>Long-to-short rule ordering reduces the number of proposed normalizations for a given SMS sequence for two reasons:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'ordre de la règle longue-à-courte réduit le nombre de normalisations proposées pour une séquence SMS donnée pour deux raisons :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>1. the firing of a rule with a longer input blocks the firing of any shorter sub-rule. This is due to a constraint expressed on lists of rewrite rules: a given rule may be applied only if no more specific and relevant rule has been met higher in the list;</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Le déclenchement d'une règle avec une entrée plus longue bloque le déclenchement de toute sous-règle plus courte. Cela est dû à une contrainte exprimée sur les listes de règles de réécriture : une règle donnée ne peut être appliquée que si aucune règle plus spécifique et plus pertinente n'a été rencontrée plus haut dans la liste.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>2. a rule with a longer input usually has fewer alternative normalizations than a rule with a shorter input does, because the longer SMS sequence likely occurred paired with fewer alternative normalizations in the training corpus than did the shorter SMS sequence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Une règle avec une entrée plus longue a généralement moins de normalisations alternatives qu'une règle avec une entrée plus courte, car la séquence SMS plus longue est probablement associée à moins de normalisations alternatives dans le corpus d'entraînement que la séquence SMS plus courte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>Among the wide set of possible sequences of 2 to 5 characters gathered from the corpus, we only kept in our list of rules the sequences that allowed at least one normalization solely made of IV words . It is important to notice that here, we refer to the standard notion of IV word : while gathering the candidate sequences from the corpus, we systematically checked each word of the normalizations against a lexicon of French standard written forms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Du large ensemble de séquences possibles de 2 à 5 caractères collectées dans le corpus, nous n’avons gardé dans notre liste de règles que les séquences qui autorisent au moins une normalisation faite exclusivement de mots appartenant à la langue : lors du recensement des séquences candidates dans le corpus, nous avons systématiquement vérifié chaque forme normalisée dans un lexique de formes françaises standard.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>The lexicon we used contains about 430,000 inflected forms and is derived from Morlex[4] , a French lexical database.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le lexique utilisé contient 430 000 formes fléchies et est dérivé de la base de données lexicales Morlex[4] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>Figure 4 illustrates these principles by focusing on 3 input sequences: aussi , au and a .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 4 illustre ces principes en se concentrant sur 3 séquences d'entrée : aussi , au et a .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>As shown by the Figure, all rules of a set dedicated to the same input sequence (for instance, aussi ) are optional (? → ), except the last one, which is obligatory ( → ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme le montre la figure, toutes les règles d'un ensemble dédié à la même séquence d'entrée (par exemple aussi) sont optionnelles (? → ), sauf la dernière, qui est obligatoire ( → ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>In our finite-state compiler, this convention allows the application of all concurrent normalizations on the same input sequence, as depicted in Figure 5.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre compilateur à états finis, cette convention permet l'application de toutes les normalisations concurrentes sur la même séquence d'entrée, comme illustré dans la figure 5.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>In our real list of OOV rules, the input sequence a corresponds to 231 normalizations, while au accepts 43 normalizations and aussi , only 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre vraie liste de règles OOV, la séquence d'entrée a correspond à 231 normalisations, tandis que au en accepte 43 et aussi , seulement 3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>This highlights the interest, in terms of efficiency, of the long-to-short rule ordering.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela met en évidence l'intérêt, en termes d'efficacité, de l'ordre de la règle long-à-court.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>4.6 The language model</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.6 Le modèle de langue</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>Our language model is an n -gram of lexical forms, smoothed by linear interpolation (Chen and Goodman, 1998), estimated on the normalized part of our training corpus and compiled into a weighted FST LMw .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre modèle de langue statistique est un n-gramme de formes lexicales, lissé par interpolation linéaire (Chen &amp; Goodman, 1998), estimé sur la partie normalisée de notre corpus d’entraînement et compilé en un FST pondéré LMw .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>At this point, this FST cannot be combined with our other models, because it works on lexical units and not on characters .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A ce stade, ce FST ne peut pas être combiné avec nos autres modèles, parce que l’alphabet sur lequel il est défini est fait de formes lexicales et non de caractères .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>This problem is solved by composing LMw with another FST L , which represents a lexicon mapping each input word, considered as a string of characters, onto the same output words, but considered here as a lexical unit.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce problème est résolu en composant LMw avec un autre FST L , qui représente un lexique associant chaque mot, considéré comme une séquence de caractères, avec le même mot, considéré cette fois comme une forme lexicale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>Lexical units are then permanently removed from the language model by keeping only the first projection (the input side) of the composition:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les formes lexicales sont ensuite supprimées définitivement du modèle de langue en ne conservant que la première projection (l’entrée) de la composition :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>In this model, special characters, like punctuations or symbols, are represented by their categories (light, medium and strong punctuations, question mark, symbol, etc.), while special tokens, like URLs or phone numbers, are handled as token values (URL, phone, etc.) instead of as sequences of characters.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce modèle, les caractères spéciaux, tels que les signes de ponctuation ou les symboles, sont représentés par leurs catégories (signes de ponctuation légers, moyens et forts, point d’interrogation, symbole, etc.), tandis que les jetons spéciaux, tels que les URL ou les numéros de téléphone, sont traités comme des valeurs de jeton (URL, téléphone, etc.) au lieu de séquences de caractères.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>This reduces the complexity of the model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela réduit la complexité du modèle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>As we explained earlier, tokens of a same sentence S are concatenated together at the end of the second normalization step.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme nous l'avons expliqué plus haut, les tokens d'une même phrase S sont concaténés ensemble à la fin de la deuxième étape de normalisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>During this concatenation process, sequences corresponding to special tokens are automatically replaced by their token values.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pendant le processus de concaténation, les séquences correspondant aux jetons spéciaux sont automatiquement remplacées par leurs valeurs de jeton.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>Special characters, however, are still present in S .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les caractères spéciaux, cependant, sont toujours présents dans S .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>For this reason, S is first composed with an FST Reduce , which maps each special character onto its corresponding category:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour cette raison, S est d'abord composé avec un FST Reduce , qui associe chaque caractère spécial à sa catégorie correspondante :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>Figure 4: Samples from the list of OOV rules.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 4 : Exemples de règles OOV.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>Rules’ weights are negative logarithms of probabilities: smaller weights are thus better.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les poids des règles sont des logarithmes négatifs des probabilités : les poids plus petits sont donc meilleurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>Asterisks indicate normalizations solely made of French IV words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les astérisques indiquent des normalisations faites uniquement à partir de mots de l'IV français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>Figure 5: Application of the OOV rules on the input sequence aussi .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 5 : Application des règles OOV sur la séquence d'entrée aussi .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>All normalizations corresponding to this sequence were allowed, while rules corresponding to shorter input sequences were ignored.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutes les normalisations correspondant à cette séquence étaient autorisées, tandis que les règles correspondant à des séquences d'entrée plus courtes étaient ignorées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Efficiency of the system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1: Efficacité du système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>5 Evaluation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Evaluation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>The performance and the efficiency of our system were evaluated on a MacBook Pro with a 2.4 GHz Intel Core 2 Duo CPU, 4 GB 667 MHz DDR2 SDRAM, running Mac OS X version 10.5.8.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’efficacité et les performances de notre système ont été évaluées sur un MacBook Pro, Intel Core Duo 2,4 GHz, 4 Go SDRAM 667 MHz DDR2, tournant sous Mac OS X version 10.5.8.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>The evaluation was performed on the corpus of 30,000 French SMS presented in Section 4.2, by ten-fold cross-validation (Kohavi, 1995).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'évaluation a été réalisée sur le corpus de 30 000 SMS présenté en section 4, par validation croisée en 10 blocs (Kohavi, 1995).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>The principle of this method of evaluation is to split the initial corpus into 10 subsets of equal size.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le principe de cette méthode d'évaluation est de diviser le corpus initial en 10 sous-ensembles de taille égale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>The system is then trained 10 times, each time leaving out one of the subsets from the training corpus, but using only this omitted subset as test corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système est ensuite entraîné et testé 10 fois, chaque bloc étant à son tour exclu du corpus d’entraînement, mais le seul à servir de corpus de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>The language model of the evaluation is a 3-gram.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le modèle de langage de l'évaluation est un 3-gramme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>We did not try a 4-gram. This choice was motivated by the experiments of Kobus et al. (2008a), who showed on a French corpus comparable to ours that, if using a larger language model is always rewarded, the improvement quickly decreases with every higher level and is already quite small between 2-gram and 3-gram.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous n'avons pas essayé de 4-gramme. Ce choix était motivé par les expériences de Kobus et al. (2008a), qui ont montré sur un corpus français comparable au nôtre que, si l'utilisation d'un plus grand modèle de langue est toujours récompensée, l'amélioration diminue rapidement à chaque niveau supérieur et est déjà assez faible entre 2-gramme et 3-gramme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <tuv xml:lang="EN">
+                <seg>Table 1 presents the results in terms of efficiency.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 1 présente les résultats en termes d'efficacité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <tuv xml:lang="EN">
+                <seg>The system seems efficient, while we cannot compare it with other methods, which did not provide us with this information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système semble donc efficace, étant donné le temps considérable passé dans le modèle UNK. Sur ce point, il n’est malheureusement pas possible de proposer une comparaison avec les autres systèmes, qui ne fournissent pas cette information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <tuv xml:lang="EN">
+                <seg>Table 2, part 1, presents the performance of our approach ( Hybrid ) and compares it to a trivial copy-paste ( Copy ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 2, partie 1, présente les performances de notre approche (Hybride) et les compare à un simple copier-coller (Copie).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <tuv xml:lang="EN">
+                <seg>The system was evaluated in terms of BLEU score (Papineni et al., 2001), Word Error Rate (WER) and Sentence Error Rate (SER). Concerning WER, the table presents the distribution between substitutions (Sub), deletions (Del) and insertions (Ins).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons évalué le système en termes de score BLEU (Papineni et al., 2001), de taux d'erreur à la phrase (SER) et de taux d'erreur au mot (WER), le WER se subdivisant lui-même en substitutions (Sub), suppressions (Del) et insertions (Ins).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <tuv xml:lang="EN">
+                <seg>The copy-paste results just inform about the real deviation of our corpus from the traditional spelling conventions, and highlight the fact that our system is still at pains to significantly reduce the SER, while results in terms of WER and BLEU score are quite encouraging.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats du copier-coller donnent une idée du réel écart de notre corpus par rapport aux conventions d'orthographe traditionnelles, et mettent en évidence le fait que notre système a encore des difficultés à réduire le SER, alors que les résultats en termes de WER et de score BLEU sont plutôt encourageants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <tuv xml:lang="EN">
+                <seg>Table 2, part 2, provides the results of the state-of-the-art approaches.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 2, partie 2, reproduit les résultats des approches de pointe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <tuv xml:lang="EN">
+                <seg>The only results truly comparable to ours are those of Guimier de Neef et al. (2007), who evaluated their approach on the same corpus as ours[5] ; clearly, our method outperforms theirs. Our results also seem a bit better than those of Kobus et al. (2008a), although the comparison with this system, also evaluated in French, is less easy: they combined the French corpus we used with another one and performed a single validation, using a bigger training corpus (36.704 messages) for a test corpus quite similar to one of our subsets (2.998 SMS). Other systems were evaluated in English, and results are more difficult to compare; at least, our results seem in line with them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les seuls résultats véritablement comparables sont ceux de Guimier de Neef et al. (2007), qui ont évalué leur approche sur le même corpus que nous, mais sans validation croisée, parce que leur système expert ne nécessite pas d’apprentissage. Notre méthode semble également un peu meilleure que celle de Kobus et al. (2008a), bien que la comparaison avec ce système, également évalué en français, soit moins facile : ils ont combiné le corpus français que nous avons utilisé à un autre corpus et ont effectué une seule validation, basée sur un corpus d’entraînement plus important (36 704 messages) pour un corpus de test comparable à l’un de nos sous-ensembles (2 998 SMS). Les autres systèmes ont été évalués en anglais, et les résultats sont plus difficiles à comparer ; du moins, nos résultats semblent être en ligne avec eux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="195">
+            <tuv xml:lang="EN">
+                <seg>The analysis of the normalizations produced by our system pointed out that, most often, errors are contextual and concern the gender ( quel(le) , “what”), the number ( bisou(s) , “kiss”), the person ( [tu t’]inquiète(s) , “you are worried”) or the tense ( arrivé / arriver , “arrived”/“to arrive”).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'analyse des normalisations produites par notre système a montré que, le plus souvent, les erreurs sont contextuelles et concernent le genre (quel(le) , « ce »), le nombre ( bisou(s) , « baiser »), la personne ( [tu t’]inquiète(s) , « tu te ») ou le temps ( arrivé / arriver , « arrivé »/« à venir »).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="196">
+            <tuv xml:lang="EN">
+                <seg>That contextual errors are frequent is not surprising. In French, as mentioned by Kobus et al. (2008b), n - gram models are unable to catch this information, as it is generally out of their scope.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, comme le soulignent Kobus et al. (2008b), la fréquence de ces erreurs n’est pas surprenante en français, langue dans laquelle les modèles n -grammes sont souvent incapables de modéliser cette information, hors de leur portée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="197">
+            <tuv xml:lang="EN">
+                <seg>On the other hand, this analysis confirmed our initial assumptions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'un autre côté, cette analyse a confirmé nos hypothèses initiales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="198">
+            <tuv xml:lang="EN">
+                <seg>First, special tokens (URLs, phones, etc.) are not modified.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, les jetons spéciaux (URL, téléphones, etc.) ne sont pas modifiés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="199">
+            <tuv xml:lang="EN">
+                <seg>Second, agglutinated words are generally split ( Pensa ms → Pense à mes , “think to my”), while misapplied separators tend to be deleted ( G t → J’étais , “I was”).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, les mots agglutinés sont généralement séparés (Pensa ms → Pense à mes), tandis que les séparateurs mal appliqués ont tendance à être supprimés (G t → J’étais).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="200">
+            <tuv xml:lang="EN">
+                <seg>Of course, we also found some errors at word boundaries ( [il] l’arrange → [il] la range , “[he] arranges” → “[he] pits in order”), but they were fairly rare.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien sûr, nous avons également trouvé des erreurs aux frontières de mots ( [il] l’arrange → [il] la range , « [il] arrange » → « [il] range »), mais elles étaient assez rares.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="201">
+            <tuv xml:lang="EN">
+                <seg>6 Conclusion and perspectives</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Conclusion et perspectives</seg>
+            </tuv>
+        </tu>
+        <tu tuid="202">
+            <tuv xml:lang="EN">
+                <seg>Table 2: Performance of the system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2: Performances du système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="203">
+            <tuv xml:lang="EN">
+                <seg>( ∗ ) Kobus 2008-1 corresponds to the ASR-like system, while Kobus 2008-2 is a combination of this system with a series of open-source machine translation toolkits.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(∗) Kobus 2008-1 correspond au système de type ASR, tandis que Kobus 2008-2 est une combinaison de ce système avec une série de boîtes à outils de traduction automatique open source.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="204">
+            <tuv xml:lang="EN">
+                <seg>( ∗∗ ) Scores obtained on noisy data only, out of the sentence’s context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(∗∗) Scores obtenus sur des données bruitées et hors contexte de la phrase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="205">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we presented an SMS normalization framework based on finite-state machines and developed in the context of an SMS-to-speech synthesis system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous avons présenté un cadre de normalisation SMS basé sur des machines à états finis et développé dans le contexte d’un système de synthèse de la parole à partir de SMS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="206">
+            <tuv xml:lang="EN">
+                <seg>With the intention to avoid wrong modifications of special tokens and to handle word boundaries as easily as possible, we designed a method that shares similarities with both spell checking and machine translation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d'éviter la modification erronée des unités spéciales et de gérer les limites de mots aussi facilement que possible, nous avons conçu une méthode qui partage des similitudes avec la vérification orthographique et la traduction automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="207">
+            <tuv xml:lang="EN">
+                <seg>Our normalization algorithm is original in two ways.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre algorithme de normalisation est original à deux niveaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="208">
+            <tuv xml:lang="EN">
+                <seg>First, it is entirely based on models learned from a training corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Premièrement, il repose entièrement sur des modèles appris à partir d'un corpus de formation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="209">
+            <tuv xml:lang="EN">
+                <seg>Second, the rewrite model applied to a noisy sequence differs depending on whether this sequence is known or not.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, le modèle de réécriture appliqué à un segment d'unité bruitée change selon que le segment est connu ou non.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="210">
+            <tuv xml:lang="EN">
+                <seg>Evaluated by ten-fold cross-validation, the system seems efficient, and the performance in terms of BLEU score and WER are quite encouraging.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Evalué par validation croisée, le système semble efficace, et les performances en termes de score BLEU et de WER sont plutôt encourageantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="211">
+            <tuv xml:lang="EN">
+                <seg>However, the SER remains too high, which emphasizes the fact that the system needs several improvements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, le SER reste trop élevé, ce qui met en évidence le fait que le système a besoin d’être amélioré.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="212">
+            <tuv xml:lang="EN">
+                <seg>First of all, the model should take phonetic similarities into account, because SMS messages contain a lot of phonetic plays.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avant tout, le modèle devrait prendre en compte les similarités phonétiques, car les SMS contiennent de nombreux jeux de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="213">
+            <tuv xml:lang="EN">
+                <seg>The phonetic model, for instance, should know that o , au , eau , … , aux can all be pronounced [o], while è , ais , ait , … , aient are often pronounced [E].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le modèle phonétique, par exemple, devrait savoir que o , au , eau , …, aux se prononcent [o], tandis que è , ais , ait , …, aient sont souvent prononcés [E].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="214">
+            <tuv xml:lang="EN">
+                <seg>However, unlike Kobus et al. (2008a), we feel that this model must avoid the normalization step in which the graphemic sequence is converted into phonemes, because this conversion prevents the next steps from knowing which graphemes were in the initial sequence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, contrairement à Kobus et al. (2008a), nous pensons que ce modèle doit éviter l'étape de normalisation dans laquelle la séquence graphémique est convertie en phonèmes, car cette conversion empêche les étapes suivantes de connaître les graphèmes présents dans la séquence initiale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="215">
+            <tuv xml:lang="EN">
+                <seg>Instead, we propose to learn phonetic similarities from a dictionary of words with phonemic transcriptions, and to build graphemes-to-graphemes rules.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A la place, nous proposons d’ apprendre les similarités phonétiques à partir d’un dictionnaire de mots accompagnés de leurs transcriptions phonétiques, et de construire des règles graphèmes–graphèmes .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="216">
+            <tuv xml:lang="EN">
+                <seg>These rules could then be automatically weighted, by learning their frequencies from our aligned corpora.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces règles pourraient ensuite être pondérées, en apprenant leurs fréquences à partir de nos corpus alignés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="217">
+            <tuv xml:lang="EN">
+                <seg>Furthermore, this model should be able to allow for timbre variation, like [e]–[E], in order to allow similarities between graphemes frequently confused in French, like ai ([e]) and ais / ait / aient ([E]).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce modèle – devrait également autoriser les variations de timbre, comme [e] [E], afin d’accepter des similarités entre graphèmes fréquemment confondus en français, comme ai ([e]) et ais / ait / aient ([E]).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="218">
+            <tuv xml:lang="EN">
+                <seg>Last but not least, the graphemes-tographemes rules should be contextualized, in order to reduce the complexity of the model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, les règles graphèmes-phonèmes doivent être contextualisées afin de réduire la complexité du modèle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="219">
+            <tuv xml:lang="EN">
+                <seg>It would also be interesting to test the impact of another lexical language model, learned on nonSMS sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il serait également intéressant de tester l'impact d'un autre modèle de langue lexical, entraîné sur des phrases non-SMS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="220">
+            <tuv xml:lang="EN">
+                <seg>Indeed, the lexical model must be learned from sequences of standard written forms , an obvious prerequisite that involves a major drawback when the corpus is made of SMS sentences: the corpus must first be transcribed , an expensive process that reduces the amount of data on which the model will be trained.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, le modèle lexical doit être appris à partir de séquences de formes écrites standard, ce qui implique un inconvénient majeur lorsque le corpus est constitué de phrases SMS : le corpus doit d'abord être transcrit, un processus coûteux qui réduit le nombre de données sur lesquelles le modèle sera formé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="221">
+            <tuv xml:lang="EN">
+                <seg>For this reason, we propose to learn a lexical model from non-SMS sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est pourquoi nous proposons d'apprendre un modèle lexical à partir de phrases non SMS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="222">
+            <tuv xml:lang="EN">
+                <seg>However, the corpus of external sentences should still share two important features with the SMS language: it should mimic the oral language and be as spontaneous as possible.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus de phrases externes devrait cependant partager deux points communs avec le langage SMS : il devrait mimer la syntaxe de l’oral et être le plus spontané possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="223">
+            <tuv xml:lang="EN">
+                <seg>With this in mind, our intention is to gather sentences from Internet forums. But not just any forum, because often forums share another feature with the SMS language: their language is noisy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avec ceci à l'esprit, notre intention est de récolter des phrases de forums Internet, mais pas n'importe lesquels, parce que les forums partagent souvent une autre caractéristique avec le langage SMS : leur langage est bruité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="224">
+            <tuv xml:lang="EN">
+                <seg>Thus, the idea is to choose a forum asking its members to pay attention to spelling mistakes and grammatical errors, and to avoid the use of the SMS language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De ce fait, l'idée est de choisir un forum dont les membres sont invités à faire attention aux fautes d'orthographe et aux erreurs grammaticales, et à éviter l'utilisation du langage SMS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="225">
+            <tuv xml:lang="EN">
+                <seg>Acknowledgments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Remerciements</seg>
+            </tuv>
+        </tu>
+        <tu tuid="226">
+            <tuv xml:lang="EN">
+                <seg>This research was funded by grants no. 716619 and 616422 from the Walloon Region of Belgium, and supported by the Multitel research centre.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette recherche a été co-financée par les subventions n° 716619 et 616422 de la Région wallonne de Belgique, et soutenue par le centre de recherche Multitel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="227">
+            <tuv xml:lang="EN">
+                <seg>We sincerely thank our anonymous reviewers for their insightful and helpful comments on the first version of this paper.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous remercions sincèrement nos réviseurs anonymes pour leurs commentaires perspicaces et utiles sur la première version de cet article.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="228">
+            <tuv xml:lang="EN">
+                <seg>1 The Vocalise project.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Le projet Vocalise.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="229">
+            <tuv xml:lang="EN">
+                <seg>See cental.fltr.ucl.ac.be/team/projects/vocalise/.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Voir : http://cental.fltr.ucl.ac.be/team/projects/vocalise/</seg>
+            </tuv>
+        </tu>
+        <tu tuid="230">
+            <tuv xml:lang="EN">
+                <seg>2 Our list contains about 680 smileys.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Notre liste compte environ 680 smileys distincts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="231">
+            <tuv xml:lang="EN">
+                <seg>3 Actually, the true complement of I accepts sequences with separators, while these sequences were removed from O .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 En réalité, le vrai complément de I accepte toutes les séquences avec séparateurs, alors que Unk ne les accepte pas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="232">
+            <tuv xml:lang="EN">
+                <seg>4 See http://bach.arts.kuleuven.be/pmertens/.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Voir : http://bach.arts.kuleuven.be/pmertens/</seg>
+            </tuv>
+        </tu>
+        <tu tuid="233">
+            <tuv xml:lang="EN">
+                <seg>5 They performed an evaluation without ten-fold cross-validation, because their rule-based system did not need any training.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils ont effectué une évaluation sans validation croisée décuple, car leur système basé sur des règles n'avait pas besoin d'être formé.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

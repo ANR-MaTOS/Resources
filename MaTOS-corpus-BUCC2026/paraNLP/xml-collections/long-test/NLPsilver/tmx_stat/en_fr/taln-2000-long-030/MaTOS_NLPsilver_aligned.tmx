@@ -1,0 +1,1567 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2000-long-030. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/W00-1323.pdf</url_en>
+        <url_fr>https://talnarchives.atala.org/TALN/TALN-2000/taln-2000-long-030.pdf</url_fr>
+        <title_en>Combining Lexical and Formatting Cues for Named Entity Acquisition from the Web</title_en>
+        <title_fr>Fouille du Web pour la collecte d'Entités Nommées</title_fr>
+        <docid>taln-2000-long-030</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Combining Lexical and Formatting Cues for Named Entity Acquisition from the Web</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Combiner les indices lexicaux et de mise en forme pour l’acquisition d’entités nommées à partir du Web</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>Because of their constant renewal, it is necessary to acquire fresh named entities (NEs) from recent text sources.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En raison de leur renouvellement constant, il est nécessaire d'acquérir de nouvelles entités nommées (EN) à partir de sources de texte récentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>We present a tool for the acquisition and the typing of NEs from the Web that associates a harvester and three parallel shallow parsers dedicated to specific structures (lists, enumerations, and anchors). The parsers combine lexical indices such as discourse markers with formatting instructions (HTML tags) for analyzing enumerations and associated initializers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons un outil pour l'acquisition et la saisie de NEs depuis le Web qui associe un moissonneur et trois analyseurs surfaciques parallèles dédiés à des structures spécifiques (listes, énumérations et ancres). Les analyseurs combinent des indices lexicaux tels que des marqueurs de discours avec des instructions de mise en forme (balises HTML) pour analyser les énumérations et les initialiseurs associés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>1 Overview</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Vue d'ensemble</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>Lexical acquisition from large corpora has long been considered as a means for enriching vocabularies (Boguraev and Pustejovsky, 1996).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’acquisition lexicale à partir de corpus électroniques est désormais considérée comme une technique classique d’enrichissement des vocabulaires (Boguraev &amp; Pustejovsky, 1996).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>Depending on the studies, different issues are considered: the acquisition of terms (Daille, 1996), the acquisition of subcategorization frames (Basili et al., 1993), the acquisition of semantic links (Grefenstette, 1994), etc. While traditional electronic corpora such as journal articles or corpus resources (BNC, SUSANNE, Brown corpus) are satisfactory for classical lexical acquisition, Web corpora are another source of knowledge (Crimmins et al., 1999) that can be used to acquire NEs because of the constant updating of online data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Selon les études, différentes questions sont abordées : l'acquisition des termes (Daille, 1996), l'acquisition des cadres de subcatégorisation (Basili et al., 1993), l'acquisition des liens sémantiques (Grefenstette, 1994), etc. Alors que les corpus électroniques traditionnels tels que les articles de revues ou les ressources de corpus (BNC, SUSANNE, Brown corpus) sont satisfaisants pour l'acquisition lexicale classique, les corpus du Web sont une autre source de connaissances (Crimmins et al., 1999) qui peuvent être utilisées pour acquérir les EN en raison de la constante mise à jour des données en ligne.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>The purpose of our work is to propose a technique for the extraction of NEs from the Web through the combination of a harvester and shallow parsers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le but de notre travail est de proposer une technique d'extraction de NEs à partir du Web par la combinaison d'un harvester et de parseurs superficiels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>Our study also belongs to corpus-based acquisition of semantic relationships through the analysis of specific lexico-syntactic contexts (Hearst, 1998) because hypernym relationships are acquired together with NEs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre étude appartient également à l'acquisition basée sur le corpus de relations sémantiques à travers l'analyse de contextes lexicaux et syntaxiques spécifiques (Hearst, 1998) car les relations hyperonyme sont acquises avec les NEs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>The unique contribution of our technique is to offer an integrated approach to the analysis of HTML documents that associates lexical cues with formatting instructions in a single and cohesive framework.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La contribution unique de notre technique est d'offrir une approche intégrée de l'analyse des documents HTML qui associe des indices lexicaux à des instructions de mise en forme dans un cadre unique et cohérent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>The combination of structural information and linguistic patterns is also found in wrapper induction, an emerging topic of research in artificial intelligence and machine learning (Kushmerick et al., 1997).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La combinaison d'informations structurelles et de modèles linguistiques se retrouve également dans l'induction de wrappers, un sujet émergent de recherche en intelligence artificielle et en apprentissage automatique (Kushmerick et al., 1997).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>Our work differs from the MUC-related NE tagging task and its possible extension to name indexing of web pages (Aone et al., 1997) for the following reasons: - The purpose of our task is to build lists of NEs, not to tag corpora.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre travail diffère de la tâche de balisage NE lié au MUC et de sa possible extension à l'indexation de noms de pages web (Aone et al., 1997) pour les raisons suivantes : - Le but de notre tâche est de construire des listes de NEs, et non de baliser des corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>For this reason, we only collect non-ambiguous contextindependent NEs; partial or incomplete occurrences such as anaphora are considered as incorrect. -</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est pourquoi nous ne collectons que des NEs non ambigus et indépendants du contexte ; les occurrences partielles ou incomplètes telles que les anaphores sont considérées comme incorrectes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>The types of NEs collected here are much more accurate than the four basic types defined in MUC. The proposed technique could be extended to the collection of any non-MUC names which can be grouped under a common hypernym: botanic names, mechanical parts, book titles, events… - We emphasize the role of document structure in web-based collection.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les types de NEs collectés ici sont bien plus précis que les quatre types de base définis dans MUC. La technique proposée pourrait être étendue à la collecte de n'importe quel nom non MUC qui peut être regroupé sous un hyperonyme commun : noms botaniques, pièces mécaniques, titres de livres, événements... Nous soulignons le rôle de la structure du document dans la collecte sur le Web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>2 Focusing on Definitory Contexts</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Focaliser sur les contextes définitoires</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>Two issues are addressed in this paper:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux problèmes sont abordés dans cet article :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>1. While traditional electronic corpora can be accessed directly and entirely through large-scale filters such as shallow parsers, access to Web pages is restricted to the narrow and specialized medium of a search engine.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Alors que les corpus électroniques traditionnels peuvent être consultés directement et en totalité grâce à des filtres de grande envergure tels que les parseurs superficiels, l'accès aux pages Web est limité au médium étroit et spécialisé des moteurs de recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>In order to spot and retrieve relevant text chunks, we must focus on linguistic cues that can be used to access pages containing typed NEs with high precision.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de repérer et de récupérer les morceaux de texte pertinents, nous devons nous concentrer sur les indices linguistiques qui permettent d'accéder aux pages en ligne contenant des EN typées avec une grande précision.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>2. While Web pages are full of NEs, only a small proportion of them are relevant for the acquisition of public, fresh and wellknown NEs (the name of someone’s cat is not relevant to our purpose).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Alors que les pages Web sont pleines d'EN, seule une petite partie d'entre elles correspond à des EN publiques, fraîches et largement connues (le nom d'un perroquet sur une page personnelle ne doit pas être inclus dans un dictionnaire d'EN).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>So that automatically acquired NEs can be used in a NE recognition task, they are associated with types such as actor (PERSON), lake (LOCATION), or university (ORGANIZATION).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin que les NEs acquis automatiquement puissent être utilisés dans une tâche de reconnaissance de NEs, ils sont associés à des types tels que PERSONNE, LIEU ou ORGANISATION.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>The need for selective linguistic cues (wrt to the current facilities offered by search engines) and for informative and typifying contexts has led us to focus on collections, a specific type of definitory contexts (Pdry-Woodley, 1998). Because they contain specific linguistic triggers such as following or such as, definitory contexts can be accessed through phrase queries to a search engine.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le besoin d'indices linguistiques sélectifs (en ce qui concerne les installations actuelles offertes par les moteurs de recherche) et de contextes informatifs et typiques nous a conduit à nous concentrer sur les collections, un type spécifique de contexte définitoire (Péry-Woodley, 1998). Les amorces de ces collections ont une structure remarquable : elles contiennent des déclencheurs linguistiques tels que following (suivant) ou such as (tel que) qui, combinés aux types des EN, forment des requêtes suffisamment précises pour être utilisables par un moteur de recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>In addition, these contexts use the classical scheme genus/differentia to define NEs, and thus provide, through the genus, a hypernym of the NEs they define.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, ces contextes utilisent le schéma classique genus/differentia pour définir les EN et fournissent ainsi, par le genre, un hyperonyme ou un type de l’EN qu’elles définissent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>Our study extends (Hearst, 1998) to Webbased and spatially formatted corpora.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre étude prolonge le travail de (Hearst, 1998) aux corpus du Web ayant une mise en forme spatiale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>3 Architecture and Principles</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Architecture et principes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>To acquire NEs from the Web, we have developed a system that consists of three sequential modules (see Figure 1):</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour acquérir les EN à partir du Web, nous avons développé un système qui se compose de trois modules séquentiels (voir figure 1) :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>1. A harvester that downloads the pages retrieved by a search engine from the four following query strings - (1.a) following (NE) (1.c) (NE) such as (1.b) list of (NE) (1.d) such (NE) as in which (NE) stands for a typifying hypernym of NEs such as Universities, politicians, or car makers (see list in 4).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Un moissonneur chargé de rapatrier les pages ramenées par un moteur de recherche sur les quatre familles de requêtes suivantes - (1.a) following (NE) (1.c) (NE) such as (1.b) list of (NE) (1.d) such (NE) as dans lesquelles (NE) représente un hyperonyme typant une famille d’EN tel que Universities (Universités), politicians (politiciens), ou car makers (fabricant de voiture). (voir la liste en 4).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>2. Three parallel shallow parsers Pc, P1 and Pa which extract candidate NEs respectively from enumerations, lists and tables, and anchors. 3. A post-filtering module that cleans up the candidate NEs from leading determiners or trailing unrelated words and splits coordinated NEs into unitary items.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Trois analyseurs surfaciques Pc, P1 et Pa qui extraient les entités nommées candidates respectivement à partir des énumérations, des listes et des tables et des ancres. 3. Un module de post-filtrage qui nettoie les entités nommées candidates des déterminants initiaux ou des mots non liés en fin de ligne et divise les entités nommées coordonnées en unitaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>Corpus Harvesting</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Moissonnage de corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: Architecture The four strings (1.a-d) given above are used to query a search engine. They consist of an hypernym and a discourse marker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1 : Architecture Les quatre chaînes données en (1.a-d), composées d’un nom d’hyperonyme et d’un marqueur discursif, sont utilisées pour construire des requêtes pour les moteurs de recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>They are expected to be followed by a collection of NEs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils devraient être suivis d'une collection de NEs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>Figure 2 shows five prototypical examples of collections encountered in HTML pages retrieved through one of the strings (1.a-d)1</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 2 montre cinq exemples prototypiques de collections rencontrées dans les pages HTML récupérées par l'une des requêtes (1.a-d)1</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>The first collection is an enumeration and consists of a coordination of three NEs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première collection est une énumération ; elle est formée d’une coordination de trois EN.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>The second collection is a list organized into two sublists.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La deuxième collection est une liste organisée en deux sous-listes enchâssées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>Each sublist is introduced by a hypernym.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chacune des sous-listes est introduite par un hyperonyme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>The third structure is a list marked by bullets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La troisième structure est également une liste dont les articles débutent par une marque graphique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>Such lists can be constructed through an HTML table (this example), or by using enumeration marks (&lt;ul&gt; or &lt;ol&gt;).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De telles listes s’obtiennent en HTML au moyen de tables (notre exemple) ou au moyen des marques d’énumération ( &lt;ul&gt; ou &lt;ol&gt;).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>The fourth example is also a list built by using a table structure but displays a more complex spatial organization and does not employ graphical bullets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le quatrième exemple est également une liste construite au moyen d’une structure de table, mais elle présente une organisation spatiale plus complexe et n’utilise pas de puces graphiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>The fifth example is an anchor to a collection not provided to the reader within the document, but which can be reached by following an hyperlink instead.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cinquième exemple, la liste n’est pas présente dans le document, mais elle est accessible au moyen d’un hyperlien dont l’ancre contient l’amorce.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>The corpus of HTML pages is collected through two search engines with different capabilities: AltaVista (AV) and Northern Light (NL).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus de pages HTML est récolté au moyen de deux moteurs de recherche avec des capacités différentes : AltaVista (AV) et Northern Light (NL).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>2 AV offers the facility of double-quoting the query strings in order to search for exact strings (also called phrases in IR). NL does not support phrase search.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 AV propose la possibilité de mettre les chaînes de caractères entre guillemets doubles afin de rechercher des chaînes de caractères exactes (également appelées phrases dans IR). NL ne prend pas en charge la recherche de phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>However, in AV, the number of retrievable documents is limited to the 200 highest ranked documents while it is potentially unlimited in NL.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En revanche, dans AV, le nombre de documents accessibles est limité aux 200 premiers documents, tandis qu’il est potentiellement illimité dans NL.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>For NL, the number of retrieved documents was however restricted to 2000 in order to limit processing times.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les Pays-Bas, le nombre de documents récupérés a toutefois été limité à 2000 afin de limiter les temps de traitement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>The choice of these two search engines is intended to evaluate whether a poorer query mode (bags of words in NL instead of strings in AV) can be palliated by accessing more documents (2000 max. for NL instead of 200 max. for AV).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces deux types de moteurs de recherche ont été choisis afin d'évaluer dans quelle mesure un mode de recherche plus pauvre (sacs de mots dans NL au lieu de chaînes dans AV) peut être compensé par un accès à un plus grand nombre de documents (2000 max. pour NL au lieu de 200 max. pour AV).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>The corpus collected by the two search engines and the four f~.milies of queries is 2,958Mb large (details are given in Section 4).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus collecté par les deux moteurs de recherche et les quatre familles de requêtes est de 2 958 Mo (les détails sont donnés dans la section 4).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>Figure 2: Five different types of formatting used for enumerating NEs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 2 : Cinq types de mise en forme différents utilisés pour l’énumération des NEs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>Acquisition of Candidate NEs</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Acquisition d’EN candidates</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Three parallel shallow parsers Pc, Pl. and Pa are used to extract NEs from the corpora collected by the harvester.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Trois analyseurs surfaciques parallèles Pc, Pl et Pa servent à extraire les EN des documents récoltés par le moissonneur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>The parsers rely on the query string to detect the sentence introducing the collection of NEs (the initializer in (Péry-Woodley, 1998)). The text and HTML marks after the initializer are parsed jointly in order to retrieve one of the following three spatio-syntactic structures:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les analyseurs utilisent la chaîne de requête pour détecter la phrase introduisant la collection de NEs (l'initialiseur dans (Péry-Woodley, 1998)). Le texte et les marques HTML après l'initialiseur sont analysés conjointement afin de récupérer l'une des trois structures spatio-syntaxiques suivantes :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>1. a textual enumeration (parser Pc, top-most example in Figure 2), 2. a list or a table (parser Pl, the next three examples in Figure 2), 3. an anchor toward a page containing a list (parser Pa, bottom example in Figure 2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les trois types suivants de structures spatio-syntaxiques sont recherchés : 1. une énumération textuelle (analyseur Ae, exemple le plus haut de la figure 2), 2. une liste ou un tableau (analyseur Al, les trois exemples suivants de la figure 2), 3. une ancre vers une page contenant une liste (analyseur Aa, dernier exemple de la figure 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>In brief, these parsers combine string matching (the initial lexical cue), syntactic analysis (enumerations in Pe), analysis of formatting instructions (lists and tables in Pl), and access to linked documents through anchors detected by Pa.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En bref, ces analyseurs combinent la recherche de chaînes (la requête initiale), l'analyse syntaxique (énumérations dans Pe), l'analyse des instructions de mise en forme (listes et tableaux dans Pl) et l'accès aux documents liés par les ancres détectées par Pa.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>The results presented in this paper only concern the first two parsers. Since anchors raise specific problems in linguistic analysis (Amitay, 1999), they will be analyzed in another pubhcation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats présentés dans cet article ne concernent que les deux premiers analyseurs. Étant donné que les ancres posent des problèmes spécifiques en analyse linguistique (Amitay, 1999), ils seront analysés dans une autre publication.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>The resulting candidate NEs are cleaned up and filtered by a post-filtering module that splits associations of NEs, suppresses initial determiners or trailing modifiers and punctuations, and rejects incorrect NEs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les NE candidats résultants sont nettoyés et filtrés par un module de post-filtrage qui divise les associations de NE, supprime les déterminants initiaux ou les modificateurs de fin et les ponctuations, et rejette les NE incorrects.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>The Enumeration Parser Pe</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’analyseur d’énumérations Pe</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>The enumerations are expected to occur inside the sentences containing the query string.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les énumérations sont attendues à l'intérieur des phrases contenant la chaîne de requête.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>Pe uses a traditional approach to parsing through conjunction splitting in which a NE pattern NE is given by (3) and an enumeration by (4).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pe utilise une approche traditionnelle pour analyser la division des conjonctions, dans laquelle un NE pattern NE est donné par (3) et une énumération par (4).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>3 The List Parser P1</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 L’analyseur de listes P1</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>The lists are expected to occur no further than four lines after the sentence containing the query string.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les listes sont attendues dans les quatre lignes suivant la phrase qui contient la chaîne de recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>The lists are extracted through one of the following three patterns. They correspond to three alternatives commonly used by HTML authors in order to build a spatial construction of aligned items (lists, line breaks, or tables).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les listes sont extraites au moyen d'un des trois modèles suivants. Ils correspondent aux trois modes principaux utilisés par les auteurs HTML pour construire une structure spatiale d'éléments alignés (listes, sauts de ligne ou tableaux).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>They are expressed by case-insensitive regular expressions in which the selected string is the shortest acceptable underlined pattern:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elles sont exprimées par des expressions régulières insensibles à la casse, dans lesquelles la chaîne sélectionnée est la plus courte séquence soulignée acceptable :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>In addition, after the removal of the HTML mark-up tags, only the longest subpart of the string accepted by (3) is produced as output to the final filter.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après suppression des étiquettes HTML, seules les plus longues sous-parties des chaînes acceptées par (3) sont fournies au module de post-filtrage final.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>These patterns do not cover all the situations in which a formatted text denotes a list. Some specific cases of lists such as pre-formatted text in a verbatim environment (&lt;we&gt;), or items marked by a paragraph tag (&lt;p&gt;) are not considered here.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces modèles ne couvrent pas toutes les situations dans lesquelles un texte mis en forme indique une liste. Certains cas spécifiques de listes, tels que le texte préformaté dans un environnement littéral (&lt;we&gt;) ou les éléments marqués par un balise de paragraphe (&lt;p&gt;) ne sont pas pris en compte ici.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>They would produce too inaccurate results because they are not typical enough of lists.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces modes de construction sont ignorés parce que, n’étant pas assez typiques des listes, ils produiraient des résultats trop imprécis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>Postfilterlng</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le module de post-filtrage</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>The pre-candidate NEs produced by the shallow parsers are processed by filters before being proposed as candidate NEs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les EN précandidates produites par les analyseurs sont filtrées avant d’être proposées comme EN candidates.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>The roles of the filters are (in this order): - removal of trailing lower-case words, - deletion of the determiner the and the coordinating conjunctions and and or and the words which follow them, - rejection of pre-candidates that contain the characters @, {, # , ", $, ! or ?. - suppression of item marks such as 1., — * or a),</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les rôles des filtres sont, dans cet ordre, de : - supprimer les mots en minuscules terminaux, les déterminants et les conjonctions de coordination, et les mots qui les suivent, - rejeter les pré-candidats contenant les caractères @, {, #, ~, $, ! ou ?, - supprimer les marques d'articles telles que 1., -, ou a), les marques HTML, les conjonctions de coordination, et les appositions suivant un tiret ou une virgule, - transformer les mots en majuscules en mots dont seule la première lettre est capitalisée dans les EN candidates qui ne sont pas des organismes (dans l'hypothèse où seuls les noms d'organismes contiennent des sigles en majuscules).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>- suppression of HTML markups, - suppression of leading coordinating conjunctions,</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- suppression des balises HTML, - suppression des coordonnants en début de phrase,</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>- suppression of appositive sequences after a comma or a hyphen,</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- suppression des séquences appositives après une virgule ou un trait d'union,</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>- transformation of upper-case words into initial upper-case in non-organization candidate NEs because only organization names are expected to contain acronyms,</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- transformation des mots en majuscules en majuscules initiales dans les NE de candidats non organisés, car seuls les noms d’organisations sont censés contenir des acronymes,</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>- rejection of NEs containing words in a stop list such as Next, Top, Web, or Click.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- rejet des NE contenant des mots figurant dans une liste d'interdiction tels que Next, Top, Web ou Click.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>Postfiltering is completed by discarding single-word candidates, that are described as common words in the CELEX 4 database, and multi-word candidates that contain more than 5 words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le post-filtrage s'achève par une suppression des candidats monolexicaux qui sont des mots simples non capitalisés de la base CELEX[6] et des candidats polylexicaux de plus de 5 mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>4 Experiments and Evaluations</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Expériences et évaluations</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>Data Collection</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Collecte de données</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>The acquisition of NEs is performed on 34 types of NEs chosen arbitrarily among three subtypes of the MUC typology: ORGANIZATION (American companies, international organizations, universities, political organizations, international agencies, car makers, terrorist groups, financial institutions, museums, international companies, holdings, sects, and realtors), PERSON (politicians, VIPs, actors, managers, celebrities, actresses, athletes, authors, film directors, top models, musicians, singers, and journalists), and LOCATION (countries, regions, states, lakes, cities, rivers, mountains, and islands).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’acquisition est faite sur 34 types d’EN choisies arbitrairement parmi les trois sous-types de la typologie des évaluations Message Understanding Conference (MUC-6, 1995) pour lesquelles une tâche d’identification des EN a été définie : ORGANISME ( American companies , international organizations , universities , political organizations , international agencies , car makers , terrorist groups , financial institutions , museums , international companies , holdings , sects , et realtors ), PERSONNE ( politicians , VIPs , actors , managers , celebrities , actresses , athletes , authors , film directors , top models , musicians , singers , et journalists ) et LIEU ( countries , regions , states , lakes , cities , rivers , mountains , et islands ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>Each of these 34 types (a (NE) string) is combined with the four discourse markers given in (1.a-d), yielding 136 queries for the two search engines.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chacun de ces 34 types est combiné avec les quatre marqueurs discursifs donnés en (1.a-d), produisant 136 requêtes pour les deux moteurs de recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>Each of the 272 corpora collected through the harvester is made of the 200 documents downloadable through AV for the phrase search (or less if less are retrieved) and 2,000 documents though NL.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chacun des 272 corpus collectés par le moissonneur est constitué de 200 documents téléchargeables sur AV en mode de recherche par chaîne (ou moins s'il y en a moins) et de 2000 documents par NL en mode de recherche standard.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>Each of these corpora is parsed by the enumeration and the list parsers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chacun de ces documents est traité par les analyseurs d’énumérations et de listes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>Two aspects of the data are evaluated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux aspects des données sont évalués.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>First, the size of the yield is measured in order to compare the productivity of the 272 queries according to the type of query (type of NE and type of discourse marker) and the type .of search engine (rich versus plain queries and low versus high number of downloaded documents).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, la taille du rendement est mesurée afin de comparer la productivité des 272 requêtes selon le type de requête (type de NE et type de marqueur de discours) et le type de moteur de recherche (requêtes riches versus simples et nombre de documents téléchargés faible versus élevé).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>Second, the quality of the candidate NEs is measured through human inspection of accessible Web pages containing each NE.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, la qualité des NEs candidats est mesurée par l'inspection humaine des pages Web accessibles contenant chaque NE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>Corpus Size</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Taille du corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>The 272 corpora are 2,958 Mb large: 368 Mb for the corpora collected through AV and 2,590 Mb for those obtained through NL.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les 272 corpus font 2 958 Mb : 368 Mb pour les corpus collectés par AV et 2 590 Mb pour ceux obtenus par NL.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>Detailed sizes of corpora are shown in Table 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les tailles détaillées des corpus sont présentées dans le tableau 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>The corpora collected through NL for the pattern list o/ (NE / represent more than a half of the NL collection (1,307 Mb).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les corpus collectés par NL pour la liste de modèles o/ (NE / représentent plus de la moitié de la collection NL (1 307 Mb).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>The most productive pattern for AV is (NE) such as through which 41% of the AV collection is downloaded (150 Mb).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le modèle le plus productif pour AV est (NE) such as par lequel 41% des documents récupérés par AV sont obtenus (150 Mb).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>The sizes of the corpora also depends on the type of NEs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La taille des corpus dépend également du type de NEs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>For each search engine, the total sizes are reported for each pattern (1.ad).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque moteur de recherche, les tailles totales sont indiquées pour chaque modèle (1.ad).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>In addition, the largest corpus for each of the three types of NEs is indicated in the last three lines.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, le plus grand corpus pour chacun des trois types de NEs est indiqué dans les trois dernières lignes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>The variety of sizes and distribution among the types of NEs shows that using search engines with different capabilities yields different figures for the collections of pages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La variété des tailles et la répartition entre les types de NEs montrent que l'utilisation de moteurs de recherche dotés de capacités différentes donne des chiffres différents pour les collections de pages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>Therefore, the subsequent process of NE acquisition heavily depends on the means used to collect the basic textual data from which knowledge is acquired.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, le processus ultérieur d'acquisition de connaissances en langage naturel dépend fortement des moyens utilisés pour collecter les données textuelles de base à partir desquelles les connaissances sont acquises.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>Quantitative Evaluation of Acquisition</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Évaluation quantitative de l'acquisition</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>Table 2 presents, for each pattern and each search engine, the number of candidates, the productivity, the ratios of the number of enumerations to lists, and the rate of redundancy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 2 présente, pour chaque motif et pour chaque moteur de recherche, le nombre de candidats, la productivité, les rapports entre le nombre d'énumérations et de listes, et le taux de redondance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>In all, 17,176 candidates are produced through AV and 34,978 through NL.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au total, 17 176 candidats sont produits à partir des corpus AV et 34 978 à partir des corpus NL.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>The lowest accuracy of the NL query mode is well palliated by a larger collection of pages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La précision la plus faible du mode de requête NL est bien compensée par un corpus plus important.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>Productivity. The productivity is the ratio of the number of candidates to the size of the collection.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Productivité. La productivité est le rapport entre le nombre de candidats et la taille du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>Using a unit of number of candidates per Mb, the productivity of AV is 46.7 while it is 3.5 times lower for NL (13.5). Thus, collecting NEs from a coarser search engine, such as NL, requires downloading 3.5 times larger corpora for the same yield. A finer search engine with phrase query facilities, such as AV, is more economical with respect to knowledge acquisition based on discourse markers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La productivité est 3,5 fois plus élevée pour AV (46,7) que pour NL (13,5), ce qui signifie que la collecte de NEs à partir d'un moteur de recherche plus grossier, tel que NL, nécessite de télécharger 3,5 fois plus de corpus pour le même rendement. Un moteur de recherche plus fin, avec des requêtes de phrases, tel que AV, est plus économique en ce qui concerne l'acquisition de connaissances basée sur des marqueurs de discours.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>As was the case for the size of the collection, the productivity of the corpora also depends on the types of NEs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme pour la taille de la collection, la productivité des corpus dépend également des types de NEs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>Universities (28.1), celebrities (53.0) and countries (36.5) are the most productive NEs in their categories while international agencies (4.0), film directors (4.4) and states (8.7) are the less productive ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les universités (28,1), les célébrités (53,0) et les pays (36,5) sont les NO les plus productifs dans leurs catégories, tandis que les agences internationales (4,0), les réalisateurs de films (4,4) et les États (8,7) sont les moins productifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>These discrepancies certainly depend on the number of existing names in these categories.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces écarts dépendent certainement du nombre de noms existants dans ces catégories.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>For instance, there are many more names of celebrities than .film directors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, il y a beaucoup plus de noms de célébrités que de réalisateurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>In fact, the productivity of NL is significantly lower than the productivity of AV only for the pattern list of NE.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fait, la productivité de NL est significativement plus faible que la productivité de AV uniquement pour la liste de modèles de NE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>Since this pattern corresponds to the largest corpus (see Table 1), its poor performance in acquisition has a strong impact on the overall productivity of NL.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné que ce modèle correspond au plus grand corpus (voir tableau 1), sa faible performance en acquisition a un impact important sur la productivité globale de NL.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>Avoiding this pattern would make NL more suitable for acquisition with a productivity of 23.2 (only 2 times lower than AV).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En évitant ce modèle, NL serait plus adapté à l'acquisition avec une productivité de 23,2 (seulement 2 fois inférieure à AV).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>Ratios enumerations/lists. The ratios in the third lines of the tables correspond to the quotient of the number of candidates acquired by analyzing enumerations (Pe parser) to the number of candidates obtained from the analysis of lists (P1 parser).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les ratios d'énumérations/listes. Les ratios des troisième ligne des tableaux correspondent au quotient du nombre de candidats acquis par l'analyse des énumérations (Pe parser) par rapport au nombre de candidats obtenus à partir de l'analyse des listes (P1 parser).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>Following NE mainly yields NEs through the analysis of lists, probably because enumerations using coordinations are better introduced by such as.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le suivi de NE produit principalement des NE par l'analyse des listes, probablement parce que les énumérations utilisant des coordonnées sont mieux introduites par des expressions telles que.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>The outcome is more balanced for list of NE. It could be expected that this pattern tends to introduce only lists, but there are only 1.66 times more NEs obtained from lists than from enumerations through list off NE.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le résultat est plus équilibré pour la liste de NE. Comme on pouvait s'y attendre, ce modèle tend à introduire seulement des listes, mais il y a seulement 1,66 fois plus de NE obtenus à partir de listes que d'énumérations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>The large number of NEs produced from enumerations after this pattern certainly relies on the combination of linguistics and formatting cues in the construction of meaning.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le grand nombre d'éléments non-énoncés produits à partir d'énumérations après cette structure est certainement dû à l'effet de la combinaison des informations linguistiques et des marques de mise en forme dans la construction du sens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>The writer avoids using (the word) list when the text is followed by a (physical) list.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le rédacteur évite d'utiliser le mot "list" (liste) quand le texte est suivi par une liste (physique).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>Lastly, in all, 11 times more NEs are obtained from enumerations than from lists after the pattern NE such as, and 18 times more after such NE as.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, on obtient en tout 11 fois plus de NEs à partir d'énumérations qu'à partir de listes après le motif NE comme, et 18 fois plus après un tel NE comme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>This shows that the linguistic pattern such as preferably introduces textual enumerations through coordinations (Hearst, 1998).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela montre que le modèle linguistique tel que préfère introduire des énumérations textuelles par des coordonnées (Hearst, 1998).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Size of the corpora of HTML pages (in Mb) collected on the four patterns (1.a-d) through AltaVista (AV) and Northern Light (NL).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 : Taille des corpus de pages HTML (en Mo) collectées sur les quatre modèles (1.a-d) via AltaVista (AV) et Northern Light (NL).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>Table 2: Size of the number of candidate NEs acquired from the web-based corpora described in Table 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2 : Taille du nombre d’EN candidates acquises à partir des corpus web décrits dans le tableau 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>Redundancy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La suppression d'emplois.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>There are two main causes of redundancy in acquisition. A first cause is that the same NE can be acquired from several collections in the same corpus. Redundancy in the fourth lines of the tables is the ratio of duplicates among the yield of candidate NEs for each search engine and each query.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il existe deux causes principales de redondance en acquisition. La première est que le même NE peut être acquis à partir de plusieurs listes ou énumérations distinctes au sein du même corpus. La redondance dans les quatrième lignes des tableaux est le taux de doublons parmi le rendement des candidats NE pour chaque moteur de recherche et chaque requête.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>This value is relatively stable whatever the search engine or the query pattern.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette valeur est relativement stable quel que soit le moteur de recherche ou le modèle de requête.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>On average, redundancy is 2.09: each candidate is acquired slightly more than two times.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En moyenne la redondance est de 2,09. Chaque candidat est acquis un peu plus de deux fois.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>Acquisition through NL is slightly more re.~:dundant (2.18) than through AV (1.92).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'acquisition par le NL est légèrement plus redondante (2,18) que par l'AV (1,92).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>This difference is not significant since the number of NEs acquired through NL is twice as large as the number of NEs acquired through AV.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette différence n’est pas significative puisque le nombre d’EN acquis par le biais de NL est deux fois plus élevé que le nombre d’EN acquis par le biais de AV.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>Overlap.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chez-vous des chevauchements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>Another cause of multiple acquisition is due to the concurrent exploitation of two search engines.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une autre cause de l'acquisition multiple est due à l'exploitation simultanée de deux moteurs de recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>If these engines were using similar techniques to retrieve documents, the overlap would be large.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si ces moteurs utilisaient des techniques similaires pour récupérer des documents, le chevauchement serait important.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>Since we have chosen two radically different modes of query (phrase vs. bag-of-word technique), the overlap—the ratio of the number common candidates to the number of total candidates–is low (15%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné que nous avons choisi deux modes de requête radicalement différents (technique de phrase vs. sac de mots), le recouvrement - le rapport du nombre de candidats communs au nombre total de candidats - est faible (15 %).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>The two search engines seem to be complementary rather than competitive because they retrieve different sets of documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans un tel cadre, les deux moteurs de recherche apparaissent plus comme complémentaires que comme concurrentiels parce qu’ils ramènent des ensembles de documents différents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>Precision of Acquisition</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Précision d'acquisition</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>In all, 31,759 candidates are produced by postfiltering the acquisition from the corpora retrieved by the two search engines. A set of 504 candidates is randomly chosen for the purpose of evaluation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au total, 31 759 candidats sont produits par le post-filtrage de l'acquisition des corpus récupérés par les deux moteurs de recherche. Un ensemble de 504 candidats est choisi au hasard à des fins d'évaluation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>For each candidate, AV is queried with a phrase containing the string of the NE. The topmost 20 pages retrieved by AV are downloaded and then used for manual inspection in case of doubt about the actual status of the candidate. We assume that if a candidate is correct, an unambiguous reference with the expected type should be found at least in one of the topmost 20 pages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque candidat, on formule une requête avancée sur AV composée de la chaîne de cette EN et on relève les 20 premières pages rapportées par le moteur de recherche. Ces pages sont analysées manuellement afin de vérifier que l’EN candidate désigne sans ambiguïté une personne, un lieu ou un organisme du type attendu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>Two levels of precision are measured:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux niveaux de précision sont mesurés:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>1. A NE is correct if its full name is retrieved and if its fine-grained type (the 34 types given at the beginning of this section) is correct.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Un NE est correct si son nom complet est récupéré et si son type de type fin (les 34 types donnés au début de cette section) est correct.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>The manual inspection of the 504 candidates indicates a precision of 62.8%. 2. A NE is correct if its full name is retrieved and if its MUC type (ORGANIZATION, PERSON, or LOCATION) is correct. In this case, the precision is 73.6%.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'inspection manuelle des 504 candidats indique une précision de 62,8 %. 2. Un NE est correct si son nom complet est récupéré et si son type MUC (ORGANISATION, PERSONNE ou LIEU) est correct. Dans ce cas, la précision est de 73,6 %.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>The errors can be classified into the following categories:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les erreurs peuvent être classées dans les catégories suivantes :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>- Wrong type</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Type erroné</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>Many errors in NE typing are due to an incorrect connection between a query pattern and a collection in a document.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nombreux erreurs dans le typage des EN sont dues à une connexion incorrecte entre un modèle de requête et une collection dans un document.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>For instance, Ashley Judd is incorrectly reported as an athlete (she is an actress) from the occurrence</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, Ashley Judd (une actrice) est incorrectement extraite comme une athlète de l'événement</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>His clientele includes stars and athletes such as Ashley Judd (below) and Mats Sundin.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(Sa clientèle inclut des vedettes et des athlètes tels que Ashley Judd et Mats Sundin.)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>The error is due to a partial analysis of the initializer (underlined above). Only athletes is seen as the hypernym while stars is also part of it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'erreur vient d'une analyse partielle de l'initialiseur (souligné ci-dessus). Seul athletes (athlètes) est vu comme hyperonyme alors que stars (vedettes) en fait aussi partie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>A correct analysis of the occurrence would have led to a type ambiguity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une analyse correcte de l'événement aurait conduit à une ambiguïté de type.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>In this context, there is no clue for deciding whether Ashley Judd is a star or an athlete.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte, il n'y a aucune indication pour décider si Ashley Judd est une star ou une athlète.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>Other wrong types are due to polysemy. For instance, HorseFlySwarm is extracted from a list of actors in a page describing the commands and procedures for programming a video game.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autres types incorrects proviennent de la polysémie. Par exemple, HorseFlySwarm est extrait d'une liste d'acteurs dans une page décrivant les commandes et procédures pour programmer un jeu vidéo.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>Here actors has the meaning of a virtual actor, a procedure in a programming environment, and not a movie star.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ici, le mot « acteur » a le sens d’un acteur virtuel, d’une procédure dans un environnement de programmation, et non d’une vedette de cinéma.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>- Incomplete Partial extraction of candidates is mainly due to parsing errors or to collections containing partial names of entities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Extraction partielle incomplète des candidats est principalement due à des erreurs de parsing ou à des collections contenant des noms partiels d'entités.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>As an illustration of the second case, the author’s name Goffman is drawn from the occurrence</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, le nom de l'auteur Goffman est extrait de l'occurrence</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>Readings are drawnfrom the work o] such authors as Laing, Szasz, Goffman, Sartre, Bateson, and Freud.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les lectures sont extraites des travaux d'auteurs tels que Laing, Szasz, Goffman, Sartre, Bateson et Freud.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>Since this enumeration ,does not contain the first names of the authors, it is not appropriate for an acquisition of unambiguous author’s names.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette énumération ne contenant pas les prénoms des auteurs, elle ne permet pas une acquisition désambiguïsée des noms d'auteurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>Other names such as Lucero are ambiguous even though they are completely extracted because they correspond to a first name or to a name that is part of several other ones. They are also counted as errors since they will be responsible of spurious identifications in a name tagging task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autres noms tels que Lucero sont ambigus, même s'ils sont complètement extraits, car ils correspondent à un prénom ou à un nom qui fait partie de plusieurs autres. Ils sont également comptés comme des erreurs car ils seront responsables de reconnaissances incorrectes dans une tâche d'étiquetage de noms. Par exemple, Lucero est une compagnie de logiciels, une chanteuse et actrice mexicaine, le nom de famille d'un sculpteur, une revue, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>- Over-complete</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Trop complet</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>Excessive extractions are due to parsing errors or to collections that contain words accompanying names that are incorrectly collected together with the name.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les extractions excessives sont dues à des erreurs de parsing ou à des collections qui contiennent des mots accompagnant des noms qui sont collectés de manière incorrecte avec le nom.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>For instance, Director Lewis Burke FFrumkes is extracted as an author’s name from a list in which the actual name Lewis Burke Frumkes is preceded by the title Director.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, le nom de l'auteur Lewis Burke FFrumkes est extrait d'une liste dans laquelle le nom réel Lewis Burke Frumkes est précédé du titre Directeur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>- Miscellaneous</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Divers</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>Other types of errors do not show clear connection between the extracted sequence and a NE. They are mainly due to errors in the analysis of the web page.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’autres erreurs ne montrent pas de lien clair entre la séquence extraite et une entité nommée. Elles sont principalement dues à des erreurs dans l’analyse de la page Web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>These types of errors are distributed as follows: wrong type 25%, incomplete 24%, overcomplete 8% and miscellaneous 43%.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces types d'erreurs sont répartis comme suit: 25 % de mauvais type, 24 % d'incomplet, 8 % d'excédentaire et 43 % de divers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>5 Refinement of the Types of NEs</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. Raffinement des types d’EN</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>So far, the type of the candidate NEs is provided by the NE hypernym given in (1.a-d).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Jusqu'à présent, le type des EN candidates est fourni par l'hyperonyme de l'EN donné dans les séquences (1.a-d).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>However, the initializer preceding the collection of NEs to be extracted can contain more information on the type of the following NEs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, l'initialiseur qui précède la collection d'EN à extraire peut contenir des précisions supplémentaires sur le type des EN qui la suivent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>In fact the initializer fulfills four distinct functions: 1. introduces the presence and the proximity of the collection, e.g. Here is</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fait, l'initialiseur remplit quatre fonctions distinctes : 1. introduire la présence et la proximité de la collection, par exemple, Here is (Voici) ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>2. describes the structure of the collection, e.g. a list of</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. décrit la structure de la collection, par exemple, une liste de ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>3. gives the type of each item of the collection, e.g. universities</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. donne le type de chaque élément de la collection, par exemple universités</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>4. specifies the particular characteristics of each item. e.g. universities in Vietnam</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. précise les caractéristiques particulières de chaque article. Par exemple, universités au Vietnam</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>The cues used by the harvester are elements which either introduce the collection (e.g. the .following) or describe the structure (e.g. list of).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les requêtes utilisées par le moissonneur sont des éléments qui introduisent la collection (par exemple, the following (suivant)), ou qui décrivent la structure (par exemple, a list of (une liste de)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>In initializers in general, these first 2 functions need not be expressed explicitly by lexical means, as the layout itself indicates the presence and type of the collection.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En général dans un initialiseur, il n’est pas obligatoire d’exprimer ces deux fonctions de manière explicite en utilisant des marques lexicales, parce que la structure du texte elle-même indique la présence et le type de la collection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>Readers exploit the visual properties of written text to aid the construction of meaning (P6ry-Woodley, 1998).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les lecteurs exploitent les propriétés visuelles d’un texte écrit pour en construire le sens (Péry-Woodley, 1998).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>However it is necessary to be explicit when defining the items of the collection as this information is not available to the reader via structural properties.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est, par contre, nécessaire de rendre explicite les articles d'une collection, puisque le lecteur ne peut pas déduire ces détails des propriétés structurelles du texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>Initializers generally contain additional characteristics of the items which provide the differentia (underlined here):</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les amorces contiennent généralement des caractéristiques supplémentaires des éléments qui fournissent la différentiation (soulignés dans cet exemple) :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>This is a list off American companies with business interests in Latvia.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>This is a list of American companies with business interests in Latvia.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>This example is the most explicit form an initializer can take as it contains a lexical element which corresponds to each of the four functions outlined above.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette séquence est la forme la plus explicite d'une amorce, contenant quatre éléments lexicaux dont chacun correspond à une des fonctions décrites ci-dessus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>It is fairly simple to extract the details of the items from initializers with this basic form, as the modification of the hypernym takes the form of a relative clause, a prepositional phrase or an adjectival phrase.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est assez simple d'extraire les détails des articles à partir des initialiseurs avec cette forme de base, car la modification de l'hyperonyme prend la forme d'une proposition relative, d'un syntagme prépositionnel ou d'un syntagme adjectival.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>A detailed grammar of this form of initializer is as shown in Figure 3. 5</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une grammaire détaillée de cette forme d'initialisateur est présentée dans la figure 3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>Figure 3: The structure of a basic initializer</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 3 : Structure d'un initialiseur de base</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>We tag the collection by part of speech using the TreeTagger (Schmid, 1999).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous étiquetons la collection par partie du discours à l'aide du TreeTagger (Schmid, 1999).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>The elements which express the differentia are extracted by means of pattern matching: they are always the modifiers of the plural noun in the string, which is the hypernym of the items of the collection.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les éléments qui expriment les différentiæ sont extraits au moyen de la correspondance de modèle : ils sont toujours les modificateurs du nom au pluriel dans la séquence, ce nom étant l’hyperonyme des articles de la collection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>Initializers containing the search string such as behave somewhat differently.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les amorces qui contiennent la requête such as (tel que) ont un comportement légèrement différent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>They are syntactically incomplete, and the missing constituent is provided by each item of the collection (Virbel, 1985).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elles sont syntaxiquement incomplètes et l'élément manquant est fourni par chaque élément de la collection (Virbel, 1985).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>These phrases vary considerably in structure and can require relatively complex syntactic rearrangement to extract the properties of the hypernym.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces phrases peuvent prendre plusieurs formes et nécessitent un réarrangement syntaxique relativement complexe pour extraire les propriétés de l’hyperonyme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>We will not discuss these in more detail here.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous ne les étudierons pas plus en détail ici.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>One type of error in this system occurs when a paragraph containing the search string is followed by an unrelated list.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un type d'erreur fréquent dans ce système se produit lorsqu'un paragraphe contenant la chaîne de recherche est suivi d'une liste non liée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>For example the harvester recognizes Ask the long list of American companies who have unsuccessfully marketed products in Japan.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, le moissonneur reconnaît la séquence Ask the long list of American companies who have unsuccessfully marketed products in Japan.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>as an initializer when in fact it is not related to any collection.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>comme initialisation alors qu’il n’est pas lié à une collection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>If it happened to be followed on the page by an collection of any kind the system would mistakenly collect the items as NEs of the type specified by the search string.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si cette séquence était suivie sur la page par une collection de n’importe quel type, le système collecterait les éléments en les attribuant à une classe incorrecte, celle fournie par la chaîne de recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>The cue list of is commonly used in discursive texts, so some filtering is required to identify collections which are not employed as initializers and to reduce the collection of erroneous items.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La liste de repère est couramment utilisée dans les textes discursifs, il est donc nécessaire de faire un filtrage pour repérer les séquences qui ne jouent pas le rôle d’amorce et pour réduire la collection des éléments erronés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>Analyzing the syntactic forms h:has allowed us to construct a set of regular expressions which are used to eliminate noninitializers and disregard any items collected following them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’analyse des structures syntaxiques a contribué à la construction de plusieurs expressions régulières qui servent à éliminer des non amorces , et à ignorer tous les articles qui les suivent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>We have extracted 1813 potential initializers from the corpus of HTML pages collected via AV &amp; NL for the query string list of NE.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons extrait 1 813 amorces potentielles du corpus de pages HTML collectées via AV &amp; NL pour la requête list of NE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>Using lexico-syntactic patterns in order to identify correct initializers, we have designed a shallow parser for filtering and analyzing the strings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En utilisant des modèles lexicaux et syntaxiques pour identifier les amorces correctes, nous avons conçu un analyseur superficiel pour filtrer et analyser les séquences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>This parser consists of 14 modules, 4 of which carry out pre-filtering to prepare and tag the corpus, and 10 of which carry out a fine-grained syntactic analysis, removing collections that do not function as initializers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce parseur est composé de 14 modules, dont 4 font du préfiltrage afin de préparer et d’étiqueter le corpus et 10 autres modules font une analyse syntaxique à grain fin, en rejetant des séquences qui ne jouent pas le rôle d’amorces.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>After filtering, the corpus contains 520 collections.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après le filtrage, le corpus est composé de 520 collections.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>The process has a precision of 78% and a recall of 90%.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le processus a une précision de 78 % et un taux de rappel de 90 %.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>6 Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6. Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>This study is another application that demonstrates the usability of the WWW as a resource for NLP (see, for instance, (Grefenstette, 1999) for an application of using WWW frequencies in selecting translations).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette étude est une autre application qui démontre l'utilisabilité du WWW comme source de connaissance pour le TAL (voir, par exemple, (Grefenstette, 1999) pour l'utilisation des fréquences du WWW dans la sélection de traductions).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>It also confirms the interest of non-textual linguistic features, such as formatting markups, inNLP for structured documents such as Web pages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle confirme également l'intérêt des caractéristiques linguistiques non textuelles, telles que les balises de mise en forme, dans le domaine de la PNL pour les documents structurés tels que les pages Web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>Further work on Web-based NE acquisition could take advantage of machine learning techniques as used for wrapper induction (Kushmerick et al., 1997).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les travaux ultérieurs sur l'acquisition des EN basés sur le Web pourraient tirer parti des techniques d'apprentissage automatique utilisées pour l'induction des enveloppes (Kushmerick et al., 1997).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <tuv xml:lang="EN">
+                <seg>1 (NE) is international organzzations, here.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 (NE) est les organisations internationales, ici.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <tuv xml:lang="EN">
+                <seg>The typographical mark-up of the query string in the figure is ours.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les mises en relief typographiques de la chaîne de requête dans la figure ont été ajoutées par nous.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <tuv xml:lang="EN">
+                <seg>The hypernym is in bold italics and the discourse marker is in bold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'hyperonyme est en italique et le marqueur de discours est en gras.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <tuv xml:lang="EN">
+                <seg>2 The harvester that retrieves Web pages through a search engine is a combination of wget available from ftp://sunsite, auc. dk/pub/infosystems/wget/ **ànd**Perl scripts.`</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Le moissonneur qui récupère les pages Web à travers un moteur de recherche est une combinaison de wget disponible à l'URL ftp://sunsite.auc.dk/pub/infosystems/wget/ **et** des scripts en Perl.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <tuv xml:lang="EN">
+                <seg>3 The patterns are slightly more complicated in order to accept diacriticized letters, and possible abbreviations composed of a single letter followed by a dot.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Les modèles sont légèrement plus complexes afin d'accepter les lettres diacritiques et les abréviations possibles composées d'une seule lettre suivie d'un point.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <tuv xml:lang="EN">
+                <seg>4 The CELEX database for the English language is available from the Consortium for Lexical Resources at ~. Idc. upenn, **èdu/readme_files/celex, readme,**html.`</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 La base de données CELEX pour l’anglais est disponible auprès du Consortium for Lexical Resources à l’URL www.ldc.upenn.edu/readme_files/celex.readme.html .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <tuv xml:lang="EN">
+                <seg>5 pp = prepositional phrase, Ns = noun (singular), Npl = noun (plural), Vp = verb in present tense, rel.cl. = relative clause.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 pp = syntagme prépositionnel, Ns = nom (singulier), Npl = nom (pluriel), Vp = verbe au présent, rel.cl. = proposition relative.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

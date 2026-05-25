@@ -1,0 +1,2415 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-TAL-2013-Claveau. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/C12-1039.pdf</url_en>
+        <url_fr>https://aclanthology.org/2013.tal-1.1.pdf</url_fr>
+        <title_en>Unsupervised and Semi-Supervised Morphological Analysis for Information Retrieval in the Biomedical Domain</title_en>
+        <title_fr>Analyse morphologique non supervisée et semi-supervisée pour la recherche d'information dans le domaine biomédical</title_fr>
+        <docid>TAL-2013-Claveau</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Unsupervised and semi-supervised morphological analysis for Information Retrieval in the biomedical domain</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Analyse morphologique non supervisée et semi-supervisée pour la recherche d'information en domaine biomédical</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>However, in most of Indo-European languages, these terms are complex morphological structures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, dans la plupart des langues indo-européennes, ces termes sont des structures morphologiques complexes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>The aim of the presented work is to identify the various meaningful components of these terms and use this analysis to improve biomedical Information Retrieval.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'objectif du travail présenté est d'identifier les différents composants significatifs de ces termes et d'utiliser cette analyse pour améliorer la recherche d'information biomédicale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>We present an approach combining an automatic alignment using a pivot language, and an analogical learning that allows an accurate morphological analysis of terms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une approche combinant un alignement automatique avec une langue pivot particulière, et un apprentissage par analogie permettant de produire des analyses morphologiques fines des termes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>These morphological analysis are used to improve the indexing of medical documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces analyses morphologiques sont utilisées pour améliorer l'indexation de documents médicaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>The experiments reported in this paper show the validity of this approach with a 10% improvement in MAP over a standard IR system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les expériences rapportées dans cet article montrent la validité de cette approche avec des gains en MAP de plus de 10 % par rapport à un système de RI standard.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Keywords: Morphology, biomedical terminology, alignment, analogical learning, morphosemantic indexing, biomedical information retrieval.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>MOTS-CLÉS : morphologie, terminologie biomédicale, alignement, apprentissage par analogie, indexation morphosémantique, recherche d’information biomédicale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>1 Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>In the biomedical domain, terminologies are the keystone of many applications.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le domaine biomédical, les terminologies sont la pierre angulaire de nombreuses applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>They are used for structuring the knowledge as well as retrieving and formalizing information contained in documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elles sont utilisées pour structurer les connaissances mais aussi pour indexer et formaliser l’information contenue dans des documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>For instance, the well-known MeSH®(Medical Subject Headings) www.nlm.nih.gov/mesh terminology is developed to index the very popular PubMED database ( www.pubmed.gov ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'exemple le plus connu est sans doute la terminologie MeSH® (Medical Subject Headings, www.nlm.nih.gov/mesh) qui a été développée pour indexer la très populaire base de données PubMED®/MEDLINE® (www.pubmed.gov).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>In most Indo-European languages, biomedical terms also have interesting inner characteristics in that they tend to be complex morphological constructions. Indeed, they are often resulting from the composition of several Greek or Latin roots, prefixes, and suffixes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la plupart des langues indo-européennes, les termes biomédicaux ont des caractéristiques internes intéressantes en ce qu'ils ont tendance à être des constructions morphologiques complexes. En effet, ils résultent souvent de la composition de plusieurs racines grecques ou latines, préfixes et suffixes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>This morphological complexity is an important point to take into account for basic operations like handling, understanding, translating or building semantic relationships between these terms, and furthermore for higher level applications like machine translation or, as we demonstrate in this paper, Information Retrieval (IR).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette complexité morphologique est un point important à prendre en compte pour les opérations de base (manipulation, compréhension, traduction ou mise en relation sémantique de ces termes), et de ce fait, pour des opérations de haut niveau telles que la traduction automatique ou, comme nous le montrons dans cet article, pour la recherche d’information (RI).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we investigate the development of morphological resources and show how a biomedical Information Retrieval task can benefit from such resources.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous nous intéressons au développement de ressources morphologiques et nous montrons comment une tâche de recherche d'information biomédicale peut en bénéficier.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>More precisely, we present several techniques aiming at breaking up a term into its morphological components, namely morphs[1] , while labeling these morphs with some semantic information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, nous présentons une technique permettant de segmenter un terme en ses constituants morphologiques, à savoir des morphes[1] tout en leur assignant des informations sémantiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>To the contrary of existing studies (Deléger et al., 2008; Markó et al., 2005a, for example) which are chiefly based on human expertise, the techniques proposed here rely on unsupervised or semi-supervised approaches.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contrairement aux études existantes (Deléger et al., 2008 ; Markó et al., 2005a, par exemple) qui sont principalement basées sur une expertise humaine, les techniques proposées ici reposent sur des approches non supervisées ou semi-supervisées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>The original idea at the heart of our approach is to use the multilingualism of existing terminological databases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’idée originale au cœur de notre approche est d’utiliser l’aspect multilingue des bases terminologiques existantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>We exploit Japanese as a pivot language, or more precisely terms written in Kanjis, to help decompose the terms of other languages into morphs and associate them with the corresponding Kanjis, in a fully automatic way.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons le japonais comme langue pivot, et plus précisément les termes en kanjis, pour aider à la décomposition des termes d’autres langues en morphes et associer ceux-ci aux kanjis correspondants, de manière entièrement automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>Thus, Kanjis play the role of a semantic representation for morphs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, les kanjis jouent un rôle de représentation sémantique pour les morphes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>The main advantage of Kanjis in this respect is that Japanese terms can be seen as a concatenation of elementary independent words that may even be found in general language dictionaries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'intérêt principal des kanjis à ce titre est que les termes japonais peuvent être vus comme une concaténation de mots élémentaires indépendants (cf. section 2.2 pour une discussion détaillée des intérêts de cette représentation pivot) ; ils peuvent même être trouvés dans un dictionnaire généraliste.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>For example, the term photochemotherapy can be translated in Japanese by 光化学法; splitting and aligning these two terms gives: photo ↔ 光 (’light’), chemo ↔ 化学 (’chemistry’, ’medicine’), therapy ↔ 法 (’therapy’).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, le terme photochemotherapy peut être traduit en japonais par 光化学療法 ; la décomposition et l’alignement de ces deux termes donnent : - photo ↔ 光 (’lumière’) ; – chemo ↔ 化学 (’chimie’, ’médicament’) ; – therapy ↔ 療法 (’thérapie’).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>As it is shown here, each morph is associated with Kanjis that may be used as descriptors more convenient to index a document than the term itself.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme nous le voyons ici, chaque morph est associé à des kanjis pouvant être utilisés comme des descripteurs plus adaptés à l'indexation d'un document que le terme complet initial.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>In particular, we demonstrate here how such correspondences between morphs and Kanjis can be exploited, in different ways, to improve the results of an IR system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En particulier, nous démontrons ici comment ces correspondances entre morphes et kanjis peuvent être exploitées, de différentes manières, pour améliorer les résultats d'un système IR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>The morphological analysis, and the document indexing that it allows, thus relies on an alignment step between morphs and Kanjis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette analyse morphologique, et l’indexation des documents qu’elle permet, repose donc principalement sur l’étape d’alignement entre morphes et kanjis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>This alignment is performed with an original technique, suited to the biomedical domain and based on a Forward-Backward algorithm and on analogy learning.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet alignement est effectué avec une technique originale, adaptée au domaine biomédical et basée sur un algorithme Forward-Backward et sur l'apprentissage par analogie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>In this paper, different versions of this alignment approach are proposed, either fully unsupervised, or semi-supervised.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, différentes versions de cette approche d'alignement sont proposées, soit entièrement non supervisées, soit semi-supervisées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>The paper is structured as follows.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’article est structuré comme suit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>After a review of the related studies in Section 2, we present the unsupervised alignment technique, its semi-supervised variants and their results respectively in Sections 3, 4 and 5.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après un examen des travaux connexes en section 2, nous présentons successivement la technique d’alignement non supervisé, ses variantes semi-supervisées et leurs résultats respectifs en sections 3, 4 et 5.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>Then, in Section 6, the use of the obtained morphological decompositions in an IR framework is explained.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'utilisation des décompositions morphologiques obtenues dans un cadre de RI est ensuite expliquée en section 6.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>Evaluations, conducted on a biomedical IR test collection, are detailed in Section 7.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les évaluations, menées sur une collection de test IR biomédicale, sont détaillées en section 7.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>2 Related work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Travaux connexes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>Many studies have used morphology for terminological analysis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nombreux travaux se sont appuyés sur la morphologie à des fins d’analyse terminologique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>This is more particularly the case in the biomedical domain where terminologies are central to many applications and where terms are constructed by operations like neo-classical composition (e.g. chemotherapy , built from the Greek pseudo-word chemo , and therapy ), which are very regular, and very productive.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est plus particulièrement le cas dans le domaine biomédical où les terminologies sont centrales pour de nombreuses applications et où les termes sont construits par des opérations comme la composition néoclassique (par exemple, la chimiothérapie, construite à partir du pseudo-mot grec chimio et du mot thérapie), qui sont très régulières et très productives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>Unfortunately, no comprehensive database of morphs with semantic information is available, and splitting a term into morphs is still an issue.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malheureusement, aucune base de données exhaustive des morphèmes avec des informations sémantiques n'est disponible, et le processus d'analyse morphologique d'un terme à partir de telles listes reste un problème.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>One can distinguish two views of the use of morphology as a tool for term (or word) analysis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut distinguer deux visions de l’utilisation de la morphologie comme outil d’analyse (lexicale ou terminologique).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>In the lexematic view, relations between terms rely on the word form, but without the need to split them into morphs (Grabar and Zweigenbaum, 2002; Claveau and L’Homme, 2005; Hathout, 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la vision lexématique, les relations entre les termes reposent sur la forme des mots, mais sans avoir recours à leur décomposition en morphèmes (Grabar et Zweigenbaum, 2002 ; Claveau et L’Homme, 2005 ; Hathout, 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>Beside this implicit use of morphology, the morphemic view chiefly relies on splitting the term into morphs as a first step.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Outre cette utilisation implicite de la morphologie, la vision morphémique repose essentiellement sur une première étape d’analyse en morphèmes des termes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>Many studies have been made in this framework.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nombreux travaux ont été réalisés dans ce cadre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>They either rely on partially manual approaches in which an expert gives morphs and combination rules (Deléger et al., 2008; Markó et al., 2005a) or heuristics (Baud et al., 1999), or on more automatic approaches.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils s'appuient soit sur des approches partiellement manuelles dans lesquelles un expert donne des morphes et des règles de combinaison (Deléger et al., 2008 ; Markó et al., 2005a) ou des heuristiques (Baud et al., 1999), soit sur des approches plus automatiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>The latter usually try to find recurrent letter patterns in word lists as morph-candidates (Kurimo et al., 2010).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces dernières tentent le plus souvent de trouver des séquences ou des modèles de lettres récurrents dans des listes de mots en tant que morphes (Kurimo et al., 2010).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>But such techniques cannot associate a semantic meaning with these morphs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, de telles techniques ne peuvent associer aucune connaissance sémantique aux morphes découverts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>To our knowledge, our approach is the first to make the most of a pivot language to perform an automatic morphological analysis, as we propose in this study.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À notre connaissance, notre approche est la première à tirer le meilleur parti d'une langue pivot pour effectuer une analyse morphologique automatique, comme nous le proposons dans cette étude.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>It can be explained by three peculiarities of the biomedical domain:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela peut s'expliquer par trois particularités du domaine biomédical :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>the morphology of its terms is known to be very regular, with few exceptions, the morphological composition (producing compounds) is very fertile, and there exists many multilingual terminologies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La morphologie de ses termes est connue pour être très régulière, à quelques exceptions près, la composition morphologique (produisant des composés) est très fertile, et il existe de nombreuses terminologies multilingues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>From a more technical point of view, the use of a bilingual terminology also evokes studies in transliteration, particularly Katakana or Arabic (Tsuji et al., 2002; Knight and Graehl, 1998, for example), or in translation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'un point de vue plus technique, l'utilisation que nous faisons de terminologies bilingues évoque aussi les travaux sur la translitération, en particulier de l'arabe ou de l'alphabet katakana, que ce soit pour la traduction directe (Knight et Graehl, 1998, par exemple), ou la recherche de traduction (Chiao et Zweigenbaum, 2002 ; Tsuji et al. , 2002).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>In this framework, Morin and Daille (2010) propose to map complex terms written in Kanjis with French ones, by using morphological rules.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cadre, citons les travaux de Morin et Daille (2010). Ils proposent de faire correspondre les termes en kanjis aux termes en français à l’aide de règles morphologiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>Yet, here again, these rules are to be given by an expert, and this study only concerns a special case of derivation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, là encore, ces règles sont proposées par un expert, et cette étude ne concerne qu’un cas particulier de dérivation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>Moreover such an approach cannot handle neo-classical compounds.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, une telle approche ne peut pas gérer les composés néoclassiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>In other studies, translation methods for biomedical terms which considers terms as simple sequences of letters have been proposed (Claveau, 2009, inter alia).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans d'autres travaux, des techniques de traduction de termes biomédicaux ont été proposées (Claveau, 2009, entre autres).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>Such approaches share some similarities with the one presented here: they require aligning the words at the letter level.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces approches partagent des similitudes avec celle présentée ici : elles nécessitent l'alignement des mots au niveau des lettres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>In most cases, this is performed with 1-1 alignment algorithms (one character, possibly empty, of the source language word is aligned with one another character of the target language word), but in recent work about phonetization (Jiampojamarn et al., 2007), authors have shown that the interest of many-to-many alignment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces alignements sont le plus souvent faits avec des algorithmes 1-1, c’est-à-dire seulement capables d’aligner un caractère (éventuellement vide) de la langue source avec un caractère de la langue cible. Cependant, dans des travaux plus récents sur la phonétisation (Jiampojamarn et al. , 2007), les auteurs ont montré l’intérêt de considérer des alignements many-to-many .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>Concerning the use of morphological processing in Information Retrieval, the literature is more important (Moreau and Sébillot, 2005, for a panorama).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En ce qui concerne l'utilisation d'un traitement morphologique dans le cadre de la recherche d'information, la littérature est plus importante (Moreau et Sébillot, 2005, pour un panorama).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>Although the results depend on numerous factors (language, morphological tool, size of collection, domain…), there is a broad consensus about the benefit of simple processes like stemming (or, rarer in IR, lemmatization): such tools are available in many languages, conceptually simple, and they usually improve the results of IR systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que les résultats dépendent de nombreux facteurs (langue, outil morphologique, taille de la collection, domaine…), il y a un consensus large sur l’intérêt de processus simples comme la racinisation ( stemming ). En effet, les raciniseurs sont disponibles dans de nombreuses langues, sont conceptuellement simples même si leur implémentation s’éloigne souvent de la réalité linguistique, et améliorent les performances des systèmes de RI. La lemmatisation, plus rarement utilisée en RI, améliore également les résultats dans la plupart des cas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>It is noteworthy that the only morphological phenomena addressed by these tools are inflection and derivation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il faut noter que les seuls phénomènes morphologiques visés par ces outils sont la flexion et la dérivation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>As they mostly perform simple operations on the prefix and suffix of the words, morphological composition remains out of their scope.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme ils fonctionnent uniquement à partir d'opérations simples sur les préfixes et les suffixes des mots, la composition morphologique reste hors de leur portée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>Yet, many authors have noted the importance of clever tokenisation based on morpheme for the biomedical indexing (Jiang and Zhai, 2007; Trieschnigg et al., 2007), but without proposing effective solutions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nombreux auteurs ont souligné l'importance d'une tokenisation intelligente basée sur les morphèmes pour l'indexation biomédicale (Jiang et Zhai, 2007 ; Trieschnigg et al., 2007), mais sans proposer de solutions efficaces.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>Recently, advanced morphological tools developed in the framework of MorphoChallenge have been applied to IR problems (Kurimo et al., 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Récemment, des outils d'analyse morphologique plus élaborés, développés dans le cadre de MorphoChallenge, ont été appliqués à des problèmes de IR (Kurimo et al. , 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>Here again, the authors have observed an improvement for some languages, such as Finnish which is highly compositional, but results on English were significantly lower than when using a simple stemmer.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ici aussi, les auteurs ont observé une amélioration sur certaines langues, comme le finnois, langue fortement composée, mais les résultats sur l'anglais étaient significativement plus faibles qu'avec un simple raciniseur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>In that respect, the good results presented in the next sections confirm the interest of our approach.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À ce titre, les bons résultats présentés dans les sections suivantes confirment l'intérêt de notre approche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>3 Analogy for Alignment</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Analogie pour l'alignement</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>As it was previously explained, our morphological decomposition technique relies on the alignment of terms with their translation in a pivot language (Japanese, Kanjis). Thus, this approach makes a strong parallelism assumption: the term in Kanjis must be built in the same way than the one in the studied language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme cela a été expliqué précédemment, notre technique de décomposition morphologique repose sur l'alignement des termes avec leur traduction dans une langue pivot (japonais, kanjis). Ainsi, cette approche suppose un parallélisme fort : le terme en kanjis doit être construit de la même manière que celui de la langue étudiée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>This hypothesis may appear as unrealistic, but the results presented hereafter show that it is reasonable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette hypothèse peut paraître peu réaliste, mais les résultats présentés ci-après montrent qu'elle est raisonnable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>It is noteworthy that the choice of Kanjis as pivot is not fortuitous.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est également important de noter que le choix des kanjis comme pivot n’est pas fortuit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>Kanjis do not have morphology, their form is therefore invariable whatever their position in the term.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les kanjis n'ont pas de morphologie, leur forme est donc invariable quelle que soit leur position dans le terme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>One only needs to test a few combinations when trying to segment a term made of Kanjis, compared with a term written with the latin alphabet.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il suffit de tester quelques combinaisons lors de la segmentation d'un terme composé de kanjis, par rapport à un terme écrit en alphabet latin.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>Kanjis are independent of the Greek and Latin roots used in most European languages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les kanjis sont indépendants des racines grecques et latines utilisées dans la plupart des langues européennes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>This prevents learning irrelevant regularities based on common etymology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela empêche d'apprendre des régularités non pertinentes fondées sur une étymologie commune.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>Last, a segment of a Kanji term is most of the time a valid Kanji term by itself (to the contrary of morphs).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, un segment d'un terme en kanji est, la plupart du temps, un terme valide en lui-même (contrairement aux morphèmes).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>It is thus possible to use dictionaries to access their meaning.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est donc possible en théorie d’utiliser un dictionnaire pour accéder à leur sens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>These different reasons make Kanji-based Japanese a very good pivot when compared to other alternatives.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces différentes raisons font du japonais basé sur les kanjis un pivot très efficace comparé aux autres langues possibles et disponibles dans les terminologies multilingues que nous utilisons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>Our alignment technique is mainly based on an Expectation-Maximization (EM) algorithm that we briefly present in the next sub-section (Jiampojamarn et al., 2007, for more details and examples of its use).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet alignement repose sur un algorithme Expectation-Maximization (EM) que nous présentons brièvement dans la sous-section suivante (Jiampojamarn et al. , 2007, pour plus de détails et des exemples d’utilisation).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>The second sub-section explains the modification made to this standard algorithm so that it can naturally and automatically handle morphological variation, which is a phenomenon inherent to our morph splitting problem.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La deuxième sous-section explique la modification apportée à cet algorithme standard pour qu’il manipule naturellement et automatiquement la variation morphologique, un phénomène inhérent à notre problème de décomposition en morphèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>3.1 EM Alignment</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1. Alignement EM</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>The alignment algorithm at the heart of our approach is standard: it is a Baum-Welch algorithm, extended to map symbol sub-sequences and not only 1-1 alignments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’algorithme d’alignement au cœur de notre approche est standard : il s’agit d’un algorithme de type Baum-Welch (Rabiner, 1989, pour une présentation didactique), étendu pour faire correspondre des séquences de symboles et non plus seulement produire des alignements 1-1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>In our case, it takes as input French terms with their Kanji translations, taken from a multilingual terminology for instance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre cas, il prend en entrée des termes en français avec leurs traductions en kanji, extraits, par exemple, d’une terminologie multilingue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>The maximum length of the sub-sequences of letters and Kanjis considered for alignment are parametrized by maxX and maxY .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La longueur maximale des sous-séquences de lettres et de Kanjis considérées pour l'alignement est paramétrée par maxX et maxY .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>For each term pair ( x[T] , y[V] ) to be aligned ( T and V being the lengths of the terms in letters or Kanjis), the EM algorithm (see Algorithm 1) proceeds as follows.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque paire de termes ( x[T] , y[V] ) à aligner (T et V étant la longueur des termes en lettres ou kanjis), l'algorithme EM (voir Algorithme 1) procède comme suit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>It first computes the partial counts of every possible mapping between sub-sequences of Kanjis and letters ( Expectation step).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans l'étape d'Expectation, il compte tout d'abord les nombres d'occurrences de tous les alignements possibles entre sous-séquences de kanjis et de lettres (les longueurs maximales des sous-séquences de lettres et kanjis considérés pour l'alignement sont respectivement paramétrées par maxX et maxY).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>These counts are stored in table γ , and are then used to estimate the alignment probabilities in table δ ( Maximization step).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces comptes sont collectés dans la table γ , et sont ensuite utilisés dans l’étape de Maximization pour estimer les probabilités d’alignement (table δ , voir l’extrait en figure 3).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>The Expectation step relies on a forward-backward approach (Algorithm 4): it computes the forward probabilities α and backward probabilities β .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'étape d'Expectation repose sur une approche forward-backward (algorithme 4) : elle calcule les probabilités forward α et backward β .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>For each position t, v in the terms, αt,v is the sum of the probabilities of all the possible alignments of ( x[t] 1 [, y] 1 [v][), that is, from the beginning of the terms to the current position, according to the current alignment probabilities in δ (cf. Algorithm 2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque position t, v des termes, αt,v est la somme des probabilités de tous les alignements possibles de ( x[t] 1 [, y] 1 [v]), c'est-à-dire du début des termes jusqu'à la position courante, selon les probabilités d'alignement de δ (cf. Algorithm 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>βt,v is computed in a similar way by considering ( x[T] t[, y] v[V] ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De manière similaire, βt,v est calculé en considérant ( x[T] t[,y] v[V] ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>These probabilities are then used to re-estimate the counts in [γ] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces probabilités sont alors utilisées pour réestimer les comptes dans γ .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>In this version of the EM algorithm, the Maximization (Algorithm 3) simply consists in computing the δ alignment probabilities by normalizing the counts in γ .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette version de l’algorithme EM, l’étape de Maximization (algorithme 3) consiste simplement à estimer les probabilités d’alignement δ en normalisant les comptes de γ . Figure 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>Algorithm 1 EM</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Algorithme 1 Algorithme EM</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>Algorithm</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Algorithme</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>Algorithm 3 Maximization</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Algorithme 3 Maximisation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>Algorithm 4 Expectation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Algorithme 4 Expectation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>Algorithm 2 Forward-many2many</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>|Algorithme 2 Forward-many2many|</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>The EM process is repeated until the probabilities δ are stable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le processus EM est répété jusqu’à ce que les probabilités δ soient stables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>When the convergence is reached, the alignment simply consists in finding the mapping that maximizes α ( T, V ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quand la convergence est atteinte, l'alignement consiste simplement à trouver, pour chaque paire, les correspondances maximisant α ( T, V ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>In addition to this resulting alignment, we also store the final alignment probabilities δ , which are used to split unseen terms (cf. Section 6.2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En plus de cet alignement résultant, nous conservons également les probabilités d’alignement finales δ , que nous utilisons en section 6.2 pour décomposer les termes inconnus (absents des données d’alignement).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>This technique is not very from the one used in statistical translation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette technique n'est pas très différente de celle utilisée en traduction statistique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>Yet, some particularities are worth noting: this approach allows us to handle fertility , that is the capacity to align from or to empty substrings (for lack of space, it does not appear in the above simplified version); conversely, distortion , that is reordering of morphs, cannot be handled easily without major changes in this algorithm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais certaines particularités sont importantes à noter. D'une part, cette approche permet de gérer la fertilité , c'est-à-dire la capacité d'aligner depuis ou vers une chaîne vide (par souci de place, ces cas ne sont pas présentés dans les algorithmes simplifiés présentés ci-dessus). En revanche, comme nous l'avons expliqué, la distorsion , c'est-à-dire le réordonnancement de morphes, ne peut pas être facilement géré par ce type d'algorithme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>3.2 Automatic morphological normalisation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2. Normalisation morphémique automatique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>The maximization step simply compute the translation probabilities of a Kanji sequence into a letter sequence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme nous l’avons vu, l’étape de Maximization sert à calculer la probabilité de traduction d’une séquence de kanjis par une séquence de lettres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>For example, for the Kanji 菌 (’ bacteria ’), there may exist one entry in δ associating it with bactérie, one with bactério (as in bactério/lyse) and another one with bactéri (in myco/bactéri/ose), each with a certain probability.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, pour le kanji 菌 (’ bactérie ’), il peut y avoir plus d’une entrée dans la table δ l’associant par exemple à bactérie, à bactério (comme dans bactério/lyse) et à bactéri (dans myco/bactéri/ose), chacune avec une certaine probabilité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>This dispersion of probabilities, which is of course harmful for the algorithm, is caused by morphemic variation: bactério, bactérie, and bactéri are 3 morphs of the same morpheme, and we would like their probabilities to reinforce each other.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette dispersion de probabilité, qui est bien sûr néfaste pour l’algorithme, est causée par la variation morphémique : bactério, bactérie, et bactéri sont trois morphes du même morphème, et nous souhaiterions que leurs probabilités se renforcent les unes les autres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>The adaptation we propose aims at making the maximization phase able to automatically group the different morphs belonging to a same morpheme.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’adaptation que nous proposons vise à rendre la phase de maximisation capable de regrouper automatiquement les différents morphes appartenant à un même morphème.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>To achieve this goal, we use a simple but well suited technique relying on formal analogical calculus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour atteindre cet objectif, nous utilisons une technique simple mais adaptée s'appuyant sur le calcul d'analogies formelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>3.2.1 Analogy</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2.1 Analogie</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>An analogy is a relation between 4 elements that we note: a : b :: c : d which can be read a is for b what c is for d (Lepage, 2000, for more details about analogies).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une analogie est une relation entre quatre éléments que nous notons a : b :: c : d , et qui peut se lire a est à b ce que c est à d (Lepage, 2000, pour une présentation plus détaillée).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>Analogies have been used in many NLP studies, especially for translation of sentences (Lepage, 2000) or terms (Langlais and Patry, 2007; Langlais et al., 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les analogies ont été utilisées dans de nombreux travaux de TAL, notamment pour la traduction de phrases (Lepage, 2000) ou de termes (Langlais et Patry, 2007 ; Langlais et al. , 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>Analogies are also a key component in the previously mentioned work on terminology structuring (Claveau and L’Homme, 2005). We rely on this latter work to formalize our normalization problem.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les analogies sont également un élément clé des travaux précédemment mentionnés sur la structuration terminologique (Claveau et L’Homme, 2005). Nous nous inspirons de ces derniers pour formaliser notre problème de normalisation. L’idée originale que nous souhaitons mettre en œuvre est d’appliquer cet outil standard de la morphologie non pas à l’échelle du mot-forme, comme en morphologie lexématique, mais à l’échelle du morphe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>In our framework, one possible analogy may be: dermato : dermo :: hémato : hémo.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre cadre, une analogie possible est : dermato : dermo :: hémato : hémo.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>Knowing that dermato and dermo belong to a same morpheme, one can infer that this is the case for hémato and hémo.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sachant que dermato et dermo appartiennent au même morphème, on peut inférer que c’est aussi le cas pour hémato et hémo.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>Such an analogy, build on the graphemic representation of words, is said a formal analogy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une telle analogie, construite sur la représentation graphémique des mots, est dite formelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>After Stroppa and Yvon (2005), formal analogies can be in terms of factorizations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Selon Stroppa et Yvon (2005), les analogies formelles peuvent être définies en termes de factorisations .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>Let us note [←−] ⊕ the (non-commutative) concatenation operator at the right ( abc[←−] ⊕ d = abcd ), and [←−] ⊖ its associated string subtraction operator ( abc[←−] ⊕ d[←−] ⊖ d = abc[←−] ⊖ c[←−] ⊕ c = abc ), and similarly for [−→] ⊕ and [−→] ⊖ operating at the left of the first argument.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notons [←−] ⊕ l’opérateur (non commutatif) de concaténation à droite ( abc[←−] ⊕ d = abcd ), et [←−] ⊖ l’opérateur associé de soustraction ( abc[←−] ⊕ d[←−] ⊖ d = abc[←−] ⊖ c[←−] ⊕ c = abc ) ; similairement, nous notons [−→] ⊕ et [−→] ⊖ les opérateurs concaténant ou soustrayant à la gauche du premier argument.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>Let a be a string (a term in our case) over an alphabet Σ, a factorization of a , noted fa , is a sequence of n factors fa = ( fa[1] [, …, f] a[ n]), such that a = [ f] a[ 1] ←−⊕ fa[2] ←−⊕ …[←−] ⊕ fa[n].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Soit a une séquence de caractères (un terme dans notre cas) sur un alphabet Σ, une factorisation de a , notée fa est une séquence de n facteurs fa = ( fa[1] [,…,f] a[ n] ), telle que [ a][ =] [ f] a[ 1] ←−⊕ fa[2] ←−⊕ …[←−] ⊕ fa[n] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>A formal analogy can be defined by as:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une analogie formelle peut être définie comme suit :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>Definition 1 ∀ ( a, b, c, d ) ∈ Σ , [ a : b :: c : d ] there exist factorizations ( fa, fb, fc, fd ) ∈ (Σ [∗][n] )[4] of ( a, b, c, d ) such that, ∀i ∈ [1 , n ] , ( fb[i][, f] c[ i][)] [ ∈] {( fa[i][, f] d[ i][)] [,] [ (] [f] d[ i][, f] a[ i][)] }.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Définition 1 ∀ ( a,b,c,d ) ∈ Σ , [ a : b :: c : d ] ssi il existe des factorisations ( fa,fb,fc,fd ) ∈ (Σ [∗][n] )[4] de ( a,b,c,d ) telles que, ∀i ∈ [1 ,n ] , ( fb[i][,f] c[ i][)] ∈ {( fa[i][,f] d[ i][)] [,][(] [f] d[ i][,f] a[ i][)] }.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>The smallest n for which this definition holds is called the degree of the analogy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le plus petit n pour lequel cette définition est vérifiée est appelé le degré de l’analogie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>For most European languages, as French and English, morphology is mostly concerned with prefixation and suffixation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour la plupart des langues européennes, comme le français et l’anglais, la morphologie concerne principalement la préfixation et la suffixation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>Thus, we are looking for formal analogies of degree at most 3 (ie, 3 factors: prefix ⊕ base ⊕ suffix).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous nous intéressons donc aux analogies de degré au plus trois, c'est-à-dire avec trois facteurs : préfixe ⊕ base ⊕ suffixe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>In our approach, such analogies are searched by trying to build a rule rewriting the prefixes and the suffixes to move from dermato to dermo and to check that this rule also applies to hémato-hémo.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre approche, de telles analogies sont recherchées en essayant de construire une règle de réécriture des préfixes et des suffixes pour passer de dermato à dermo et vérifier que cette règle s'applique également à hémato-hémo.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>The base is considered as the longest common sub-string (lcss) between the 2 words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La base est définie comme étant la plus longue sous-chaîne commune (lcss) entre les deux mots (par exemple, lcss(dermato-dermo) = derm).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>In the previous example, the rewriting rule r would be: r = lcss(morph1,morph2) [←−] ⊖ ato [←−] ⊕ o.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans l'exemple précédent, la règle de réécriture r serait : r = lcss(morph1,morph2) [←−] ⊖ ato [←−] ⊕ o.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>This rule makes it possible to rewrite dermato into dermo and hémato into hémo; thus, hémato,hémo is in analogy with dermato,dermo.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette règle permet bien de réécrire hémato en hémo, donc, hémato,hémo est en analogie avec dermato,dermo.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>3.2.2 Using analogy for normalization</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2.2 Utilisation de l'analogie pour la normalisation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>The main problem is that we do not have examples of morphs that are known a priori to be related (like dermato and dermo in the previous example).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le principal problème est que nous n'avons pas d'exemples de morphes qui sont connus a priori comme étant liés (comme dermato et dermo dans l'exemple précédent).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>Thus, we use a simple bootstrapping technique: if two morphs are stored in γ as possible translations of the same Kanji sequence, and if these two morphs share a sub-string longer than a certain threshold, then we assume that they both belong to the same morpheme.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, nous utilisons une technique simple d’amorçage : si deux morphes sont recensés dans γ comme des traductions d’une même séquence de kanjis, et si ces deux morphes partagent une sous-chaîne commune de longueur supérieure à un certain seuil, alors nous supposons qu’ils appartiennent à un même morphème.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>From these bootstrap pairs, we build the prefixation and suffixation rewriting rules allowing us to detect analogies, and thus to group pairs of morphs (which can be very short, unlike the bootstrapping pairs).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À partir de ces paires d'amorçage, nous construisons les règles de préfixation et de suffixation qui nous permettent de détecter des analogies et ainsi de regrouper des paires de morphèmes (qui peuvent être très courts, contrairement aux paires d'amorçage).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>The more a rule is found, the more certain it will be.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus une règle est trouvée fréquemment, plus elle est considérée comme sûre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>Therefore, we keep all the analogical rules generated at each iteration along with their number of occurrence, and we only apply the most frequently found ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous conservons donc toutes les règles analogiques générées à chaque itération avec leur nombre d'occurrences, et nous n'appliquons que les plus fréquentes à l'itération suivante (contrairement aux amorces, ces règles peuvent alors être appliquées à des morphes très courts).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>The whole process is thus completely automatic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’ensemble du processus est donc entièrement automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>This new Maximization step is summarized in Algorithm 5.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette nouvelle étape de Maximization est résumée dans l'algorithme 5.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>It ensures that all the morphs supposed to belong to the same morpheme have equal and reinforced alignment probabilities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle permet que tous les morphes considérés comme appartenant à un même morphème aient une probabilité d'alignement égale et renforcée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>4 Semi-supervision and bootstrapping</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Semi-supervision et bootstrap</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>Algorithm 5 Maximization with analogical normalization</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Algorithme 5 Maximisation avec normalisation analogique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>The approach described above can be considered as unsupervised since no example of alignment or decomposition is provided.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'approche décrite ci-dessus peut être considérée comme non supervisée puisqu'aucun exemple d'alignement ou de décomposition n'est fourni.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>Yet, in some cases, expert knowledge is available and can be used to add some supervision to this morpho-semantic alignment task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pourtant, dans certains cas, des connaissances spécialisées sont disponibles et peuvent être utilisées pour ajouter une certaine supervision à cette tâche d'alignement morphosémantique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>It is important to note that this human intervention can be more or less costly and requires more or less expertise.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est important de noter que cette intervention humaine peut être plus ou moins coûteuse et nécessite plus ou moins d'expertise.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>While manually building a full morphological resource from scratch is a tedious task, providing light information during the alignment process is more accessible.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que la construction manuelle d'une ressource morphologique complète à partir de zéro soit une tâche fastidieuse, fournir des informations légères pendant le processus d'alignement est plus accessible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>In the following sub-sections, we propose different strategies to improve the unsupervised alignment process, implementing different trade-off between human cost and performance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les sous-sections suivantes, nous proposons différentes stratégies pour améliorer le processus d'alignement non supervisé, en mettant en œuvre différents compromis entre le coût humain et la performance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>4.1 Active alignment</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Alignement actif</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>In analogy with active learning (Settles, 2009), the semi-supervised strategy that we propose is active alignment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En analogie avec l'apprentissage actif (Settles, 2009), la stratégie semi-supervisée que nous proposons est l'alignement actif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>Its principle is the following: a human expert, the oracle, adds information about the pair during the expectation step.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Son principe est le suivant : un expert humain, l'oracle, ajoute des informations sur la paire au cours de l'étape d'attente.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>Different information can be used: decomposition of the Kanji term, of the English term, partial or full alignment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Différentes informations peuvent être utilisées : décomposition du terme Kanji, du terme anglais, alignement partiel ou complet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>The interest of these pieces of information is twofold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'intérêt de ces informations est double.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>First, it helps reduce the complexity, by avoiding to consider certain alignments in the pair.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, cela permet de réduire la complexité, en évitant de considérer certains alignements dans la paire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>Secondly, it possibly improves the final results by reinforcing the probability for this pair on a few realistic alignments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, cela améliore éventuellement les résultats finaux en renforçant la probabilité de cette paire sur quelques alignements réalistes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>From an algorithmic point-of-view, the implementation is straightforward.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'un point de vue algorithmique, la mise en œuvre est simple.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>The information provided by the oracle is interpreted as a set of constraints on the possible decomposition and/or alignments used to compute αt,v , βt,v , and γ ( x[t] t−i +1 [, y] v[v] −j +1) in the Forward, Backward, and Expectation steps respectively.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les informations fournies par l'oracle sont interprétées comme un ensemble de contraintes sur la décomposition et/ou les alignements possibles utilisés pour calculer αt,v , βt,v et γ ( x[t] t−i +1 [, y] v[v] −j +1) dans les étapes Forward, Backward et Expectation respectivement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>As for active learning, one can think of different strategies to choose the pairs to be presented to the oracle (Settles, 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En ce qui concerne l'apprentissage actif, on peut penser à différentes stratégies pour choisir les paires à présenter à l'oracle (Settles, 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>The goal is of course to find the strategy that best helps the alignment algorithm and thus results in a faster convergence and/or better performance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le but est bien sûr de trouver la stratégie qui aide le mieux l'algorithme d'alignement et qui aboutit ainsi à une convergence plus rapide et/ou à de meilleures performances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>In this paper, two strategies are experimented and both will ask the oracle for providing full alignment of a pair.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, deux stratégies sont expérimentées et les deux demanderont à l'oracle de fournir un alignement complet d'un couple.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>The first one is a random strategy and serves as baseline: at each iteration, randomly selected pairs are proposed to the oracle.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première est une stratégie aléatoire et sert de référence : à chaque itération, des paires sélectionnées au hasard sont proposées à l'oracle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>The second strategy is a difficulty-driven one: at each iteration, pairs with many equi-probable alignments are proposed to the oracle.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La deuxième stratégie est une stratégie basée sur la difficulté : à chaque itération, des paires avec de nombreuses alignements équiprobables sont proposées à l'oracle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>In practice, the equi-probability is measured with the probability gathered at the previous iteration.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En pratique, l'équiprobabilité est mesurée avec la probabilité obtenue lors de l'itération précédente.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>4.2 Bootstrapping the oracle</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 Initialisation de l'oracle</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>The previous active alignment approach can also be used, to some extent, without human intervention.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'approche d'alignement actif précédente peut également être utilisée, dans une certaine mesure, sans intervention humaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>Indeed, when processing multiple languages, it is sometimes possible to make the most of the existing probabilities from a language L1 to help estimate the alignment probabilities for the new language L2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, lors du traitement de plusieurs langues, il est parfois possible de tirer parti des probabilités existantes d'une langue L1 pour aider à estimer les probabilités d'alignement pour la nouvelle langue L2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>Several ways to use these alignment probabilities of other languages can be imagined.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs manières d'utiliser ces probabilités d'alignement d'autres langues peuvent être imaginées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>In the experiments presented below, we used a simple approach.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les expériences présentées ci-dessous, nous avons utilisé une approche simple.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>We adopt the difficulty-driven presented above, but instead of presenting the pairs (of L2) to a human oracle, they are processed as follows:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous adoptons la difficulté-pilotée présentée ci-dessus, mais au lieu de présenter les paires (de L2) à un oracle humain, elles sont traitées comme suit :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>– if the Kanji term is known in the L1 alignment pairs, the closest term of L1 (edit distance) among the known translations is chosen; this L1-term and the Kanji term are then aligned and the alignment is propagated to the L2 pair.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>– si le terme kanji est connu dans les paires d’alignement L1, le terme le plus proche de L1 (distance d’édition) parmi les traductions connues est choisi ; ce terme de L1 et le terme kanji sont ensuite alignés et l’alignement est propagé à la paire L2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>This step is done by representing alignment as characters in the L1 term and by adding the marks in L2 so that it minimizes the edit distance. – if the Kanji is not known, the most probable alignment, based on the previous iteration probabilities is proposed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette étape consiste à représenter l'alignement sous la forme de caractères dans le terme L1 et à ajouter les marques dans L2 afin de minimiser la distance d'édition. – si le kanji n'est pas connu, l'alignement le plus probable, en fonction des probabilités de l'itération précédente, est proposé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>5 Experiments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 expériences</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>5.1 Evaluation Data</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.1 Données d'évaluation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>The data used in the experiments presented below come from the UMLS MetaThesaurus (Tuttle et al., 1990).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les données utilisées dans les expériences rapportées ci-après sont issues du MetaThesaurus de l’UMLS (Tuttle et al. , 1990).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>The MetaThesaurus groups several terminologies for several languages and associates to each term a concept identifier (CUI).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le MetaThesaurus regroupe plusieurs terminologies dans plusieurs langues et associe à chaque terme un identifiant conceptuel (CUI, Concept Unique Identifier ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>The CUI are language independent and thus make it easy to build lists of terms in the spotted language with their Japanese equivalents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les CUI sont indépendants de la langue ; ils permettent donc de construire très facilement des listes de termes dans la langue étudiée associés à leur équivalent en japonais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we present experiments for English and French.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous présentons les résultats pour deux langues, le français et l’anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>In both cases, we only considered Japanese terms composed of Kanjis, and only simple (one-word) French or English terms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les deux cas, nous ne considérons que les termes japonais entièrement écrits en kanjis, et uniquement les termes simples (composés d’un seul mot-forme) français ou anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>About 14,000 English-Kanjis pairs and 8,000 French-Kanjis ones are formed this way.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Environ 14 000 paires anglaiskanjis et 8 000 français-kanjis sont collectées de cette façon.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>An ending mark (’;’) is added to each French or English term.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un symbole de fin de chaîne (’ ;’) est ajouté aux termes français et anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>We randomly selected 1,600 pairs for French and 500 for English in order to evaluate the performance of our alignment technique.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons sélectionné aléatoirement 1 600 paires pour le français et 500 pour l’anglais pour évaluer les performances de notre technique d’alignement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>These pairs have been aligned manually to serve as gold standard.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces paires ont été alignées manuellement pour servir de référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>5.2 Alignment results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.2 Résultats d'alignement</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>In the experiments presented below, the performance is evaluated in terms of precision: an alignment is counted as correct only if all the components of the pair are correctly aligned (thus, it is equivalent to the sentence error rate in standard machine translation).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les différentes expériences rapportées ci-dessous, les performances sont évaluées en termes de précision : un alignement est considéré comme correct si tous les composants de la paire sont correctement alignés (c’est l’équivalent du taux d’erreur de phrase en traduction automatique).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>For each pair, the EM algorithm indicates the probability of the proposed alignment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque paire, l’algorithme EM indique la probabilité de l’alignement proposé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>Therefore, it is possible to only consider alignments having a probability greater than a given threshold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est donc possible de ne considérer que les alignements de probabilités supérieures à un certain seuil.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>By varying this threshold, we can compute a precision according to the number of terms aligned.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En faisant varier ce seuil, nous pouvons calculer une précision selon le nombre de termes alignés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>Figures 1 and 2 respectively present the results obtained on the French and English test pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les figures 1 et 2 présentent respectivement les résultats obtenus pour les paires de tests françaises et anglaises.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>We indicate the curves produced by the EM algorithm with and without our morphemic normalization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous indiquons les courbes produites par l'algorithme EM avec et sans normalisation morphémique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>For comparison purpose, we also report the results of giza++ (Och and Ney, 2003), a reference tool in machine translation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À des fins de comparaison, nous indiquons aussi les résultats de GIZA++ (Och et Ney, 2003), un outil de référence dans le domaine de la traduction automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>The different IBM models and sets of parameters available in giza++ were tested; the results reported are the best ones (obtained with IBM model 4 without distortion).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les différents modèles IBM et jeux de paramètres de GIZA++ ont été testés ; les résultats rapportés sont les meilleurs obtenus (avec un modèle IBM 4 sans distorsion). Figure 4. Précision de l’alignement français-kanjis selon le nombre de paires de tests alignées</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>As expected, the interest of the morphemic normalization appears clearly in these two experiments; in the worst case (that is, when all the terms are kept for alignment), it yields a 70% precision for French and 80% for English.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme espéré, l’intérêt de la normalisation morphémique apparaît clairement dans ces deux expériences. Dans le pire cas (c’est-à-dire quand on tente d’aligner toutes les paires), on obtient 70 % de précision pour le français et 80 % pour l’anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>Indeed, the normalization brings a 10% improvement whatever the number of aligned pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, la normalisation apporte une amélioration de 10 % quel que soit le nombre de paires alignées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>Normalization also has an interest in terms of complexity since it reduces the needed iteration number by improving the convergence of the EM estimation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La normalisation a également un intérêt en termes de complexité puisqu'elle réduit le nombre d'itérations nécessaires en améliorant la convergence de l'estimation EM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: Precision of French-Kanji alignment according to the number of test pairs aligned</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1 : Précision de l’alignement français-kanji selon le nombre de paires de tests alignées</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>Figure 2: Precision of English-Kanji alignment according to the number of test pairs aligned</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 2 : Précision de l'alignement anglais-kanji selon le nombre de paires d'essai alignées</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>A manual examination of the results shows that most of the errors are caused by the falsification of our hypothesis: some French-Japanese pairs cannot be decomposed in a similar way.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un examen manuel des résultats montre que la plupart des erreurs sont dues à la falsification de notre hypothèse : certaines paires français-japonais ne peuvent pas être décomposées de manière similaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>For example, the French term anxiolytiques (anxiolytics) is translated by a sequence of Kanjis meaning literally ’drugs for depression’.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, le terme anxiolytiques (anxiolytics) est traduit en kanjis par un terme se lisant littéralement "médicament pour la dépression".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>Among these errors, some pairs imply terms that are not neo-classical compounds in French, Japanese or both (eg. méninges (meninges) is translated by 膜 ’brain membrane’).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Parmi ces erreurs, certaines impliquent un terme qui n’est pas un composé soit du côté français, soit du côté japonais, soit des deux ; par exemple, méninges est traduit par le terme 脳膜 qui se lit littéralement ’cerveau membrane’.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <tuv xml:lang="EN">
+                <seg>Other errors are caused by a lack of training data: some morphs or sequences only appear once, or only combined with another morph, which mislead the segmentation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les autres erreurs sont causées par un manque de données d’entraînement : quelques morphes ou séquences apparaissent seulement une fois, ou toujours combinés avec un autre morphe, ce qui trompe le processus de segmentation. Tableau 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <tuv xml:lang="EN">
+                <seg>5.3 Semi-supervised approaches</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.3 Approches semi-supervisées</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <tuv xml:lang="EN">
+                <seg>To compare the two active alignment strategies and the bootstrapped one presented in Section 4, we are interested in the alignment performance and the convergence speed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour comparer les deux stratégies d'alignement actives et l'alignement par bootstrap présenté dans la section 4, nous sommes intéressés par la performance d'alignement et la vitesse de convergence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <tuv xml:lang="EN">
+                <seg>Thus, Figure 4 presents, for these three semi-supervised approaches together with the original unsupervised version, the precision on the French dataset after different number of iterations of the EM loop.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, la figure 4 présente, pour ces trois approches semi-supervisées ainsi que pour la version originale non supervisée, la précision sur l'ensemble de données français après un certain nombre d'itérations de la boucle EM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <tuv xml:lang="EN">
+                <seg>For comparison purposes, we also report the results of the original unsupervised version.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A des fins de comparaison, nous rapportons également les résultats de la version non supervisée d'origine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <tuv xml:lang="EN">
+                <seg>For a fair comparison between the unsupervised versions requiring the oracle, the same amount of pairs (20) is presented to the oracle at each iteration.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour une comparaison équitable entre les versions non supervisées nécessitant l'oracle, la même quantité de paires (20) est présentée à l'oracle à chaque itération.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <tuv xml:lang="EN">
+                <seg>The bootstrapped version is based on the alignment probabilities gathered from the English-Kanji alignment task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La version bootstrapped est basée sur les probabilités d'alignement recueillies à partir de la tâche d'alignement anglais-kanji.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="195">
+            <tuv xml:lang="EN">
+                <seg>Of course, to prevent any bias, none of the pairs processed by the oracle are used as test pairs. As expected, the three active alignment strategies converge faster than the original one, but also yield better overall results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien sûr, pour éviter tout biais, aucune des paires traitées par l'oracle n'est utilisée comme paire de test. Comme prévu, les trois stratégies d'alignement actives convergent plus rapidement que l'original, mais elles produisent également de meilleurs résultats globaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="196">
+            <tuv xml:lang="EN">
+                <seg>Adding information at each iteration clearly helps the alignment to produce more relevant association between Kanjis and morphs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ajouter des informations à chaque itération aide clairement l'alignement à produire une association plus pertinente entre les kanjis et les morphèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="197">
+            <tuv xml:lang="EN">
+                <seg>The difficulty-driven strategy obtains good results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La stratégie axée sur la difficulté obtient de bons résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="198">
+            <tuv xml:lang="EN">
+                <seg>In particular, it outperforms the random strategy after a few iterations. Before that, when iteration &lt; 5, the probabilities collected are not reliable enough to propose interesting pairs to the oracle, and the oracle even seems to decrease the performance of the alignment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En particulier, elle surpasse la stratégie aléatoire après quelques itérations. Avant cela, lorsque l'itération &lt; 5, les probabilités collectées ne sont pas suffisamment fiables pour proposer des paires intéressantes à l'oracle, et l'oracle semble même diminuer la performance de l'alignement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="199">
+            <tuv xml:lang="EN">
+                <seg>The combination of this strategy with the bootstrapping also performs better than the original version, but not as well as the real oracle one. This result can be explained by the fact that the difficulty-driven strategy asks for pairs that are difficult to align, not only for the studied language (here, French), but also for the one serving as bootstrap (English).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La combinaison de cette stratégie avec le bootstrapping fonctionne également mieux que la version originale, mais pas aussi bien que la version avec véritable oracle. Ce résultat peut s'expliquer par le fait que la stratégie axée sur la difficulté demande des paires de termes difficiles à aligner, non seulement pour la langue étudiée (ici, le français), mais aussi pour celle servant de point de départ (l'anglais).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="200">
+            <tuv xml:lang="EN">
+                <seg>Nonetheless, it still remains a good option to improve the results without any human supervision.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, il reste toujours une bonne option pour améliorer les résultats sans aucune supervision humaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="201">
+            <tuv xml:lang="EN">
+                <seg>Figure 3: Morpheme-Kanji graph</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 3 : Graphique morphème-kanji.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="202">
+            <tuv xml:lang="EN">
+                <seg>Figure 4: Precision of semi-supervised and unsupervised alignments according to the number of iterations</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 4 : Précision des alignements semi-supervisés et non supervisés selon le nombre d'itérations</seg>
+            </tuv>
+        </tu>
+        <tu tuid="203">
+            <tuv xml:lang="EN">
+                <seg>6 Morpho-semantic analysis for Information Retrieval</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Analyse morphosémantique pour la recherche d’information</seg>
+            </tuv>
+        </tu>
+        <tu tuid="204">
+            <tuv xml:lang="EN">
+                <seg>As it was previously said, biomedical Information Retrieval (IR) has some important characteristics due to the use of specialized terms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme cela a été souligné précédemment, la recherche d’information dans le domaine biomédical a quelques spécificités du fait de l’utilisation de termes spécialisés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="205">
+            <tuv xml:lang="EN">
+                <seg>In that respect, taking into account rich morphological information has already been proved useful, but only with hand-crafted resources (Markó et al., 2005b).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À ce titre, l’utilité de prendre en compte des informations morphologiques riches a déjà été démontrée, mais seulement avec des ressources développées manuellement (Markó et al. , 2005b).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="206">
+            <tuv xml:lang="EN">
+                <seg>Beside the intrinsic evaluation of our approach presented in the previous section, we evaluate its use in a large scale IR experiment in English.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En complément des évaluations intrinsèques de notre approche présentées dans la section précédente, nous évaluons ci-après son intérêt dans une tâche de recherche d’information sur une grande collection de documents biomédicaux en anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="207">
+            <tuv xml:lang="EN">
+                <seg>6.1 Morpho-semantic graphs</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.1 Graphes morphosémantiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="208">
+            <tuv xml:lang="EN">
+                <seg>Once all the terms are aligned, one can study the recurrent correspondences between English morphs and Kanjis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois tous les termes alignés, il est possible d'étudier les correspondances récurrentes entre les morphes anglais et les kanjis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="209">
+            <tuv xml:lang="EN">
+                <seg>The more a morph is aligned with a sequence of Kanjis, the more they are ’semantically’ related.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus un morphème est aligné avec une séquence de kanjis, plus ils sont liés sémantiquement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="210">
+            <tuv xml:lang="EN">
+                <seg>All these links can be represented as a graph: the vertices represent Kanjis and morphemes (i.e a set of morphs grouped during the analogical step of the alignment), and the edges are weighted according to the number of times that a particular morpheme is aligned with a Kanji sequence among the 14,000 training pairs from the umls.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous ces liens forment un graphe : les nœuds sont les kanjis et les morphèmes (un ensemble de morphes groupés pendant l'étape analogique de l'alignement), et les arcs entre kanjis et morphèmes sont pondérés en fonction du nombre de fois qu'un morphème particulier est aligné avec une séquence kanji parmi les 14 000 paires d'entraînement de l'UMLS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="211">
+            <tuv xml:lang="EN">
+                <seg>Figure 3 shows a toy example of such a graph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 8 illustre un tel graphe sur un exemple jouet ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="212">
+            <tuv xml:lang="EN">
+                <seg>The size of the edge lines is proportional to the associated weight.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'épaisseur des lignes de contour est proportionnelle aux poids associés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="213">
+            <tuv xml:lang="EN">
+                <seg>This representation allows us to shed light on types of semantic relations between the morphemes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette représentation nous permet de mettre au jour différents types de relations sémantiques entre les morphèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="214">
+            <tuv xml:lang="EN">
+                <seg>It is done by exploring the neighborhood of each morpheme: each vertex receives an amount of energy which is propagated to the connected vertices proportionally to the edge’s weight.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour ce faire, nous explorons le voisinage de chaque morphème en suivant les arcs et en tenant compte des poids associés à ces liens (de manière similaire à l’algorithme de Folk-Fulkerson (Heineman et al. , 2008) ; cela revient à donner à chaque nœud une certaine quantité d’énergie qui la distribue à ses voisins proportionnellement à la force du lien qui les unit, ceux-ci la distribuant à leur tour, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="215">
+            <tuv xml:lang="EN">
+                <seg>For instance, Figure 5 presents the closest morphemes reached, in the form of tag clouds, for the French morpheme ome (oma in English, a suffix for cancer-related terms). The size and color represent the energy that reach the neighboring morpheme vertices.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 5 présente les morphèmes les plus proches atteints, sous la forme de nuages de mots (la taille et la couleur représentent l'énergie atteignant les voisins morphème), pour le morphème français ome (oma en anglais, un suffixe pour les termes liés au cancer). La taille et la couleur représentent l'énergie atteignant les voisins morphème.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="216">
+            <tuv xml:lang="EN">
+                <seg>The reached vertices are expected to be conceptually related and to exhibit synonym or quasi-synonym morphemes of the suffix ome.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les sommets atteints sont considérés comme conceptuellement proches et sont supposés mettre en évidence des synonymes ou quasi-synonymes du morphème ome.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="217">
+            <tuv xml:lang="EN">
+                <seg>It is interesting to see that other related are found, but also like onco.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est intéressant de voir que d'autres domaines connexes sont présents, mais aussi comme onco.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="218">
+            <tuv xml:lang="EN">
+                <seg>Figure 5: Cloud of 1st order for French morpheme ome</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 5 : Nuage de 1er ordre pour le morphème français ome</seg>
+            </tuv>
+        </tu>
+        <tu tuid="219">
+            <tuv xml:lang="EN">
+                <seg>Figure 6: Cloud of 2nd order affinities for French morpheme gastro</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 6 : Nuage d'affinités de 2ème ordre pour le morphème français gastro</seg>
+            </tuv>
+        </tu>
+        <tu tuid="220">
+            <tuv xml:lang="EN">
+                <seg>The alignment and the segmentation produced by our algorithm also make it possible to study the co-occurrences of morphemes in English (or French) terms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’alignement et la segmentation produits par notre algorithme permettent aussi d’étudier les cooccurrences des morphèmes dans les termes anglais (ou français).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="221">
+            <tuv xml:lang="EN">
+                <seg>One can study first-order affinities (which morphemes are frequently associated with other morphemes) and, more interesting, second order affinities (morphemes sharing the same co-occurring morphemes).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut ainsi s'intéresser aux affinités de premier ordre (quels morphèmes sont fréquemment associés à d'autres morphèmes) et, plus intéressant, aux affinités de second ordre (les morphèmes partageant les mêmes morphèmes cooccurrants).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="222">
+            <tuv xml:lang="EN">
+                <seg>The second-order affinity allows us to group morpheme according to their paradigm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces affinités de second ordre doivent nous permettre de grouper les morphèmes en fonction de leur paradigme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="223">
+            <tuv xml:lang="EN">
+                <seg>For instance, the tag cloud in Figure 6 illustrates the morphemes associated with gastro (morpheme for stomach) according to this second order affinity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, le nuage de la figure 11 regroupe les morphèmes associés au mot gastro (signifiant estomac), selon cette affinité de second ordre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="224">
+            <tuv xml:lang="EN">
+                <seg>Most of the morphemes identify organs, and the closest ones are for biologically close organs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La plupart de ces morphèmes désignent des organes, et les plus proches sont ceux des organes anatomiquement les plus proches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="225">
+            <tuv xml:lang="EN">
+                <seg>This information of nature makes it possible to identify relationships between terms, or build synonyms, or explore the termbase using these morphological elements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces informations de différentes natures nous permettent d’identifier des relations entre termes grâce à leurs composants, à construire des synonymes, ou, plus largement, à explorer la base terminologique grâce à ces éléments morphologiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="226">
+            <tuv xml:lang="EN">
+                <seg>Yet, to our knowledge, such specialized morpho-semantic resources do not exist.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, à notre connaissance, aucune ressource morphosémantique comparable et suffisamment complète n’existe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="227">
+            <tuv xml:lang="EN">
+                <seg>It makes a direct evaluation of these three different uses of the alignment results not possible.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela rend une évaluation directe de ces trois utilisations différentes des résultats d'alignement impossible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="228">
+            <tuv xml:lang="EN">
+                <seg>But in the remaining of this paper, we propose to evaluate them in an Information Retrieval framework.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais dans la suite de cet article, nous proposons de les évaluer dans un cadre de recherche d'information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="229">
+            <tuv xml:lang="EN">
+                <seg>6.2 Morphemic representation for Information Retrieval</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.2 Représentation morphémique pour la recherche d’information</seg>
+            </tuv>
+        </tu>
+        <tu tuid="230">
+            <tuv xml:lang="EN">
+                <seg>In order to integrate the morphological information in an IR system, we adopt a simple indexing representation: the documents are considered as bags-of-morphemes and words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d'intégrer les informations morphologiques dans un système de RI, nous adoptons une représentation simple des documents pour l'indexation : ils seront considérés comme des sacs de morphèmes et de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="231">
+            <tuv xml:lang="EN">
+                <seg>The morphemes are those obtained by decomposing biomedical terms, and for some experiments those associated to the former ones as second order affinities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les morphèmes sont ceux obtenus en décomposant les termes biomédicaux, et pour certains systèmes ceux qui leur sont liés (au sens des affinités de deuxième ordre discutées dans la sous-section précédente).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="232">
+            <tuv xml:lang="EN">
+                <seg>The goal is of course to be able to associate a query containing stomachalgia with a document containing gastrodynia.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le but de ces expériences est bien sûr d’être capable d’associer une requête contenant stomachalgia à un document contenant gastrodynia.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="233">
+            <tuv xml:lang="EN">
+                <seg>Thus, when indexing the collection, terms are decomposed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lors de l’indexation de la collection, les termes sont décomposés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="234">
+            <tuv xml:lang="EN">
+                <seg>Two cases may occur: the term is either known as it appears in the alignment pairs, either not.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux cas peuvent se produire : soit le terme est connu car il apparaît dans les paires servant à l'alignement, soit il est inconnu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="235">
+            <tuv xml:lang="EN">
+                <seg>In the first case, we simply use the decomposition produced by the alignment algorithm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le premier cas, nous utilisons simplement la décomposition telle qu’elle est produite par l’algorithme d’alignement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="236">
+            <tuv xml:lang="EN">
+                <seg>In the second case, we make the most of the δ probabilities to generate the most probable translation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le second cas, nous tirons le meilleur parti des probabilités δ pour générer la traduction la plus probable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="237">
+            <tuv xml:lang="EN">
+                <seg>To do so, we use a simple approach: the translation probability in δ are used by a Viterbi algorithm to generate the most probable Kanji translation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour ce faire, nous utilisons une approche simple : les probabilités de traduction dans δ sont utilisées par un algorithme de Viterbi pour générer la traduction Kanji la plus probable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="238">
+            <tuv xml:lang="EN">
+                <seg>We do not use language modeling.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous n'utilisons pas de modélisation linguistique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="239">
+            <tuv xml:lang="EN">
+                <seg>It is important to note that this translation process produces at the same time the decomposition of the initial term by associating each morph with its Kanji translation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est important de noter que ce processus de traduction produit en même temps la décomposition du terme initial en associant chaque morphème à sa traduction en kanji.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="240">
+            <tuv xml:lang="EN">
+                <seg>This translation process is thus equivalent to the desired morpho-semantic analysis for unknown terms (i.e. absent from the pair list used in the alignment step).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce processus de traduction est donc équivalent à l'analyse morphosémantique souhaitée pour les termes inconnus (c'est-à-dire absents de la liste de paires utilisée lors de l'étape d'alignement).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="241">
+            <tuv xml:lang="EN">
+                <seg>In these two cases, another alignment product is also used: the analogical rewriting rules collected at the last alignment iteration.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ces deux cas, un autre produit de l'algorithme d'alignement est également utilisé : il s'agit des règles de réécriture produites par les analogies et collectées à la dernière itération.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="242">
+            <tuv xml:lang="EN">
+                <seg>They allow us to detect the morphs belonging to a same morpheme.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elles nous permettent de détecter les morphes appartenant aux mêmes morphèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="243">
+            <tuv xml:lang="EN">
+                <seg>Such information makes it possible to match a query containing hemo with a document containing haemo, hemato or even emia;.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces informations permettent de mettre en correspondance une requête contenant hemo avec des documents contenant haemo, hemato ou même emia;.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="244">
+            <tuv xml:lang="EN">
+                <seg>A baseline system and four indexing systems using the morphological information are proposed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous proposons un système de référence et quatre systèmes utilisant les informations morphologiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="245">
+            <tuv xml:lang="EN">
+                <seg>They all rely on a standard IR approach, namely a vector space model with an Okapi BM25 weighting scheme (Robertson et al., 1998, for details, see) and a tokenizer similar to Terrier’s one (Ounis et al., 2006); the standard values of the BM25 parameters b , k 1, k 3 have been kept.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous reposent sur une approche IR standard connue pour ses bonnes performances, à savoir un modèle vectoriel avec un schéma de pondération Okapi BM-25 (Robertson et al., 1998, pour plus de détails) et un tokenizer similaire à celui de l'outil de RI TERRIER (Ounis et al., 2006); les valeurs par défaut des paramètres b , k 1, k 3 de cette pondération ont été gardées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="246">
+            <tuv xml:lang="EN">
+                <seg>The baseline system performs a standard indexing of the documents with a Porter stemming (Porter, 1980).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système de référence effectue une indexation classique des documents fondée sur les mots avec une racinisation de Porter (Porter, 1980).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="247">
+            <tuv xml:lang="EN">
+                <seg>1 – The morphologically-enhanced system is morpheme-based.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1) Le premier système utilisant des informations morphologiques que nous proposons repose sur les morphèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="248">
+            <tuv xml:lang="EN">
+                <seg>It simply considers the morphemes produced by the decomposition of the term in the documents (and queries) as words to index (the original terms are no longer used for indexing, only its morphemes).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il considère simplement les morphèmes produits par la décomposition des mots des documents (et des requêtes) comme les éléments d’indexation (les termes originaux ne sont plus utilisés pour l’indexation, seuls leurs morphèmes le sont).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="249">
+            <tuv xml:lang="EN">
+                <seg>The morpheme weights take the decomposition probability into account; it is defined as the product of this probability and the BM-25 weight.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le poids assigné à chaque morphème prend en compte la probabilité de décomposition : c’est le produit de cette probabilité et du poids BM-25.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="250">
+            <tuv xml:lang="EN">
+                <seg>2 – The second system is Kanji-based.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2) Le deuxième système repose sur les kanjis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="251">
+            <tuv xml:lang="EN">
+                <seg>Here again, the terms of the documents are decomposed, and the closest Kanjis are used as indexing words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Là encore, les termes des documents sont décomposés, et les kanjis les plus proches sont utilisés comme éléments d’indexation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="252">
+            <tuv xml:lang="EN">
+                <seg>These Kanjis are those identified in the neighborhood of the morphs produced when decomposing the terms (see Section 6.1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces kanjis sont ceux identifiés dans le voisinage des morphes produits par la décomposition des termes (voir la section 6.1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="253">
+            <tuv xml:lang="EN">
+                <seg>3 – The third system adopts the same morpheme-based representation as the system, but expands the queries with first-order affinities of their morphemes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3) Le troisième système reprend la même représentation que le premier, mais étend les requêtes avec les affinités de premier ordre de ses morphèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="254">
+            <tuv xml:lang="EN">
+                <seg>The morphemes used as expansion are weighted according to their proximity in the graph and the weight of the morphemes that they expand.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les morphèmes utilisés en extension sont pondérés selon leur proximité dans le graphe et le poids des morphèmes qu’ils étendent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="255">
+            <tuv xml:lang="EN">
+                <seg>4 – The last system is similar to the third one but uses the second-order to expand the queries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4) Le dernier système est similaire au troisième mais utilise cette fois les affinités de second ordre pour étendre les requêtes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="256">
+            <tuv xml:lang="EN">
+                <seg>7 Biomedical IR experiments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7 Expériences biomédicales d'IR</seg>
+            </tuv>
+        </tu>
+        <tu tuid="257">
+            <tuv xml:lang="EN">
+                <seg>7.1 Experimental setting</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7.1 Contexte expérimental</seg>
+            </tuv>
+        </tu>
+        <tu tuid="258">
+            <tuv xml:lang="EN">
+                <seg>For the following experiments, we use the dataset built for the track of the TREC-9 conference.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les expériences rapportées ci-après, nous utilisons le jeu de données construit pour la tâche de la conférence TREC-9.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="259">
+            <tuv xml:lang="EN">
+                <seg>This dataset is itself based on the document collection ohsumed, which is composed of about 350,000 medline abstracts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce jeu de données s'appuie lui-même sur la collection OHSUMED, qui est composée de 350 000 résumés de MEDLINE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="260">
+            <tuv xml:lang="EN">
+                <seg>In addition to this, about 4,000 queries and the corresponding relevance judgments were developed for TREC-9.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En plus de cela, environ 4 000 requêtes et leurs jugements de pertinence ont été développés pour TREC-9.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="261">
+            <tuv xml:lang="EN">
+                <seg>The queries are composed of several fields: the subject, which a MeSH term, and a definition of this term.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les requêtes comportent plusieurs champs : le sujet, qui est un terme de la terminologie MeSH, et la définition de ce terme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="262">
+            <tuv xml:lang="EN">
+                <seg>Although the collection was initially built for evaluating filtering systems, here we use this dataset as a standard IR collection, and only consider the subject field as the query.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que la collection ait été initialement créée pour évaluer les systèmes de filtrage, nous l'utilisons ici comme une collection d'IR standard, et ne considérons que le champ sujet pour les requêtes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="263">
+            <tuv xml:lang="EN">
+                <seg>7.2 Results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7.2 Résultats</seg>
+            </tuv>
+        </tu>
+        <tu tuid="264">
+            <tuv xml:lang="EN">
+                <seg>Table 1 presents the results of the baseline IR system and the system based on the morphological analysis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 1 présente les résultats du système de référence et du système basé sur l'analyse morphologique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="265">
+            <tuv xml:lang="EN">
+                <seg>The performance of the systems are evaluated using the standard IR evaluation measures: we compute precision on top 5, 10… 1,000 documents (P@x), mean average precision (MAP), interpolated average precision (IAP) and the R-precision (R-prec).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les performances des systèmes sont évaluées à l'aide des mesures d'évaluation standard en IR : la précision sur les 5, 10, ... , 1 000 premiers documents (P@x), la précision moyenne interpolée (IAP) et la R-précision (R-prec).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="266">
+            <tuv xml:lang="EN">
+                <seg>In order to assess if the between the two systems are statistically significant, we run a Wilcoxon test ( p = 0 . 05) (Hull, 1993); those differences with the baseline that are not judged statistically significant are italicized.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour s’assurer que les différences constatées entre deux systèmes sont statistiquement significatives, nous utilisons un test de Wilcoxon ( p = 0 , 05) (Hull, 1993) ; les différences avec le système de référence qui ne sont pas statistiquement significatives apparaissent en italique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="267">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Performance of the morpheme and Kanji based IR systems on the OHSUMED collection, with the TREC queries</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 : Performances des systèmes IR basés sur les morphèmes et les kanji sur la collection OHSUMED, avec les requêtes TREC</seg>
+            </tuv>
+        </tu>
+        <tu tuid="268">
+            <tuv xml:lang="EN">
+                <seg>The morpheme-based system, only relying on decomposing term and grouping its morph into morpheme, yields very good results with a 13% MAP gain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système fondé morphèmes, reposant uniquement sur la décomposition et le groupement des morphes en morphèmes obtient d’excellents résultats, avec un gain de MAP de 13 %.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="269">
+            <tuv xml:lang="EN">
+                <seg>As expected, decomposing the terms improves more specifically the performance at the end of the retrieved document list (P@100 and higher), since it makes it possible to retrieve relevant documents even though they do not contain the exact terms of the queries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme attendu, cette décomposition améliore plus spécifiquement les performances en fin de listes (P@100 et supérieurs), puisqu’elle permet de ramener des documents pertinents même s’ils ne contiennent pas exactement les termes de la requête.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="270">
+            <tuv xml:lang="EN">
+                <seg>The Kanji-based system yields very similar results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système fondé sur les kanjis obtient des résultats très similaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="271">
+            <tuv xml:lang="EN">
+                <seg>Although the Kanjis were expected to be a more generic representation, no additional gain is obtained.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que les kanjis soient censés être une représentation plus générique, aucun gain supplémentaire n'est obtenu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="272">
+            <tuv xml:lang="EN">
+                <seg>In practice, in some queries, the Kanjis are too generic to capture the specific meaning expected or bring no additional information compared with the original morphemes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’une part, en pratique, dans certaines requêtes, il apparaît que les kanjis sont de fait trop génériques pour capturer le sens exact attendu, ou n’apportent aucune information additionnelle par rapport aux morphèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="273">
+            <tuv xml:lang="EN">
+                <seg>Moreover, no selection is performed on the morpheme to be translated into Kanjis, and some Kanjis have properties (document frequencies) that highly differ from the source morpheme since they can be translation of different morphemes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autre part, aucune sélection n'est faite sur les morphèmes à remplacer par leurs kanjis associés, et certains kanjis ont des propriétés (notamment leur fréquence documentaire) qui diffèrent fortement des morphèmes sources puisqu'ils peuvent aussi être associés à d'autres morphèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="274">
+            <tuv xml:lang="EN">
+                <seg>A weighting scheme taking the initial document frequencies into account seems an important foreseen work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un système de pondération qui prendrait en compte les fréquences initiales du document semble être un travail important à prévoir.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="275">
+            <tuv xml:lang="EN">
+                <seg>Table 2 presents the results of the two last systems, based on query expansion.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 2 présente les résultats des deux derniers systèmes, fondés sur l’extension de requête.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="276">
+            <tuv xml:lang="EN">
+                <seg>The two expansion-based systems have more contrasted results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces deux systèmes ont des résultats plus contrastés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="277">
+            <tuv xml:lang="EN">
+                <seg>On the one hand, expanding the queries with first-order affinities gives good results; although it yields a lower precision at the top of list than system 1, it obtains a slightly better recall.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'une part, l'extension des requêtes avec des affinités de premier ordre donne de bons résultats ; bien que cela donne une précision inférieure au système 1, le rappel est légèrement meilleur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="278">
+            <tuv xml:lang="EN">
+                <seg>On the other hand, second-order affinities produce bad results compared with morphological decomposition alone.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En revanche, les affinités de second ordre dégradent clairement les performances par rapport à la décomposition morphologique seule.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="279">
+            <tuv xml:lang="EN">
+                <seg>The affinities added to the query, most of the time, break the specificity of the information asked; it makes the system retrieve too much non-related documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les affinités ajoutées à la requête, la plupart du temps, cassent la spécificité de l’information demandée initialement, ce qui amène le système à ramener des documents portant sur des sujets proches mais pas suffisament pertinents pour la requête.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="280">
+            <tuv xml:lang="EN">
+                <seg>8 Conclusion and future work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>8. Conclusion et perspectives de travail</seg>
+            </tuv>
+        </tu>
+        <tu tuid="281">
+            <tuv xml:lang="EN">
+                <seg>The original idea of making the most of another language like Japanese in order to help the morphological decomposition and analysis of compounds offers many new opportunities to automatically handle biomedical terms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'idée originale de tirer le meilleur parti d'une autre langue comme le japonais afin d'aider à la décomposition et à l'analyse morphologique des composants offre de nombreuses nouvelles opportunités pour manipuler automatiquement les termes biomédicaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="282">
+            <tuv xml:lang="EN">
+                <seg>The new alignment approach based on analogy that we propose takes the particularities of the data into account, and also offers different ways to balance quality, convergence speed and human intervention through the semi-supervised approaches proposed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La nouvelle approche d'alignement basée sur l'analogie que nous proposons prend en compte les particularités des données, et offre également différentes façons d'équilibrer la qualité, la vitesse de convergence et l'intervention humaine grâce aux approches semi-supervisées proposées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="283">
+            <tuv xml:lang="EN">
+                <seg>The high quality results obtained allow us to address IR problems caused by the morphological complexity of the biomedical terminology that could not be addressed with usual IR tools like stemmers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats de haute qualité obtenus nous ont ainsi permis de nous attaquer aux problèmes causés par la complexité morphologique de la terminologie biomédicale qui ne peuvent être capturés par les outils habituels tels que les raciniseurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="284">
+            <tuv xml:lang="EN">
+                <seg>In this respect, our concerns about the role of morphology to access information are similar to existing studies (Markó et al., 2005a; Deléger et al., 2008), but to our knowledge, we are the first to propose an automatic process, directly available for many languages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À ce titre, nos préoccupations sur le rôle de la morphologie pour l’accès à l’information sont similaires à celles des études existantes (Markó et al., 2005a ; Deléger et al., 2008), mais, à notre connaissance, nous sommes les premiers à proposer un processus automatique, directement disponible pour de nombreuses langues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="285">
+            <tuv xml:lang="EN">
+                <seg>Of course, our approach chiefly relies on the availability of multilingual terminologies, but such databases like UMLS are now widely developed, on the contrary of usable morphological resources.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien sûr, notre approche repose essentiellement sur l’existence de terminologies multilingues, mais les bases de données telles que l’UMLS sont maintenant largement développées, contrairement aux ressources morphologiques utilisables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="286">
+            <tuv xml:lang="EN">
+                <seg>Table 2: Performance of the expansion based IR systems on the OHSUMED collection, with the TREC queries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2 : Résultats des systèmes IR basés sur l'expansion sur la collection OHSUMED, avec les requêtes TREC.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="287">
+            <tuv xml:lang="EN">
+                <seg>Many perspectives are foreseen from this work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nombreuses perspectives sont prévues par ce travail.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="288">
+            <tuv xml:lang="EN">
+                <seg>First, from a technical point of view, we plan to consider more complex segmentation than the linear one we implemented.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tout d’abord, d’un point de vue technique, nous envisageons de considérer des segmentations plus complexes que les simples segmentations linéaires que nous avons implémentées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="289">
+            <tuv xml:lang="EN">
+                <seg>Indeed, the syntactic properties of the Kanjis (some of them expect an agent or object), could help to better structure the different morphemes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, les propriétés syntaxiques des kanjis (certains attendent des arguments de type agent ou objet, par exemple), pourraient nous aider à mieux structurer les différents morphèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="290">
+            <tuv xml:lang="EN">
+                <seg>One could also exploit the semantic relations between Kanjis that can be easily found in general Japanese dictionaries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On pourrait également exploiter les relations sémantiques entre kanjis qui peuvent être facilement trouvées dans les dictionnaires japonais en général.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="291">
+            <tuv xml:lang="EN">
+                <seg>Concerning the analysis aspects illustrated in the last section, many possibilities are also under consideration.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Concernant les aspects d'analyse illustrés dans la dernière section, de nombreuses possibilités sont également envisagées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="292">
+            <tuv xml:lang="EN">
+                <seg>As the links between morphs that we produce are not typed, the use of heuristics (such as string inclusion used by Grabar and Zweigenbaum (2002)) or techniques from distributional analysis could provide useful additional information to better characterize the relationships.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme les liens entre morphes que nous produisons ne sont pas typés, l'utilisation d'heuristiques (telles que l'inclusion de chaîne utilisée par Grabar et Zweigenbaum (2002)) ou des techniques utilisées en analyse distributionnelle pourraient fournir des informations utiles supplémentaires pour mieux caractériser ces relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="293">
+            <tuv xml:lang="EN">
+                <seg>Yet, the problem of evaluating this type of work arises, especially the ground truth construction, since such resources do not exist.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien sûr, se pose alors le problème de l’évaluation de ce type de travaux, et particulièrement de la construction de la vérité terrain, puisque de telles ressources de référence n’existent pas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="294">
+            <tuv xml:lang="EN">
+                <seg>The IR setting used in this paper could be used again, possibly with more biomedical collections such as the TREC Genomics ones (Hersch and Voorhees, 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le paramètre IR utilisé dans cet article pourrait être utilisé de nouveau, éventuellement avec d'autres collections biomédicales telles que celles de la tâche TREC Genomics (Hersch et Voorhees, 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="295">
+            <tuv xml:lang="EN">
+                <seg>Finally, an adaptation of these principles for complex terms is under study.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, une adaptation de ces principes aux termes complexes est envisageable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="296">
+            <tuv xml:lang="EN">
+                <seg>The main difficulty in this case is to manage the reordering of the words composing these terms, and thus manage the distortion in the alignment algorithm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La principale difficulté dans ce cas est de gérer le réordonnancement des mots composant ces termes, et donc de gérer la distorsion dans l'algorithme d'alignement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="297">
+            <tuv xml:lang="EN">
+                <seg>This issue is important for IR since these multiword terms are known to occurs with many variants and thus prevent to match queries and documents with different variants of the same term (Nenadic et al., 2005).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce problème est important pour l'IR puisque les termes complexes sont connus pour apparaître sous de nombreuses variantes et empêchent ainsi la mise en correspondance entre les requêtes et les documents contenant des variantes d'un même terme (Nenadic et al., 2005).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="298">
+            <tuv xml:lang="EN">
+                <seg>Acknowledgments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Remerciements</seg>
+            </tuv>
+        </tu>
+        <tu tuid="299">
+            <tuv xml:lang="EN">
+                <seg>This work was partly funded by OSEO, the French innovation agency, in the framework of the Quæro project.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce travail a été en partie financé par OSEO, l’agence française de l’innovation, dans le cadre du programme de recherche Quæro ( www.quaero.org ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="300">
+            <tuv xml:lang="EN">
+                <seg>1 Following Mel’čuk (2006), we distinguish between morphs, elementary linguistic signs (segments), and morphemes, equivalence classes with identical signified and close signifiers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Dans cet article, à l'image de Mel'čuk (2006), nous distinguons le morphe, signe linguistique élémentaire dont le signifiant est un segment de la chaîne parlée, du morphème, une classe d'équivalence de morphes partageant un signifié identique et un signifiant proche, c'est-à-dire de réalisations sémantiquement équivalentes et formellement proches (Anderson, 2013, pour une vue exhaustive et historique des différentes écoles de définitions linguistiques du morphème).</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

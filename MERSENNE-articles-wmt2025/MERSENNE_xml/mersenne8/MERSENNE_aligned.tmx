@@ -1,0 +1,1422 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en" srclang="FR" tgtlang="EN" o-tmf="XML" creationdate="2024-11-15" creationid="MaTOS">
+        <note>This is the sentence alignement file for MERSENNE-mersenne8. segId begin by 1, tuid = segId</note>
+        <docid>mersenne8</docid>
+        <url_src>https://comptes-rendus.academie-sciences.fr/geoscience/articles/10.5802/crgeos.25/</url_src>
+        <url_tgt>https://comptes-rendus.academie-sciences.fr/geoscience/articles/en/10.5802/crgeos.25/</url_tgt>
+        <author>Didier Roux</author>
+        <title_en>Energy and climate: challenges and innovations</title_en>
+        <title_fr>Énergie et climat: défis et innovations</title_fr>
+        <volume>CRGEOS, 2020, Volume 352, Facing climate change, the range of possibilities</volume>
+        <translator>Romain Dziegielinski</translator>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <prop type="paragraph">1</prop>
+            <tuv xml:lang="FR">
+                <seg>Énergie et climat: défis et innovations</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Energy and climate: challenges and innovations</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>L’accès à l’énergie est un facteur clé du développement économique des pays.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Access to energy is a key factor in the economic development of countries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>On examinera dans un premier temps l’évolution des différents modes d’accès à l’énergie et sa corrélation avec la population mondiale et le PIB des pays.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We will first examine the evolution of different ways to access to energy and their correlations with world population and countries’ GDP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous verrons que les objectifs de diminution des émissions de gaz carbonique qui demandent une transformation profonde de notre accès à l’énergie seront très difficiles à atteindre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We will see that the objectives of reducing carbon dioxide emissions which requirea profound transformation of our access to energy will be very difficult to achieve.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous verrons aussi que l’amélioration thermique des bâtiments, et en particulier la rénovation de l’habitat ancien, est une des pistes possibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We will also see that the thermal improvement of buildings, and in particular the renovation of existing housing, is one of the possible objective.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>L’énergie est une notion qui a mis longtemps à être correctement définie en physique (seulement au cours des travaux du XIX^(ème) siècle).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Energy is a notion that took a long time to be properly defined in physics (only in the 19^(th) century).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Aujourd’hui, nous en avons une idée précise et sommes capable de comprendre comment la décrire et comment l’utiliser.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Today, we have a clear idea of it and are able to understand how to describe it and how to use it.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>La notion la plus importante est la notion de conservation: l’énergie se conserve dans un système isolé: c’est le premier principe de la thermodynamique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The most important notion is the notion of conservation: energy is conserved in an isolated system: this is the first principle of thermodynamics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>L’autre notion importante, plus difficile à appréhender, est le fait que la plupart des transformations réelles de l’énergie sont irréversibles et qu’il a fallu introduire la notion d’entropie pour expliquer le comportement expérimental des transformations d’énergie entre systèmes. Une conséquence de cette notion d’entropie est qu’au cours d’une transformation énergétique irréversible (ce qui est pratiquement toujours le cas) d’une énergie à une autre, l’entropie ne peut qu’augmenter et ne permet pas d’avoir accès à la totalité de l’énergie utile disponible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The other important notion, which is more difficult to grasp, is the fact that most real energy transformations are irreversible and that it was necessary to introduce the notion of entropy to explain the experimental behaviour of energy transformations between systems. A consequence of this notion of entropy is that during an irreversible energy transformation (which is almost always the case) from one energy to another, entropy can only increase and does not allow access to all the useful energy available.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>L’homme a toujours utilisé de l’énergie pour permettre aux sociétés d’évoluer et de progresser.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Humans have always used energy to enable societies to evolve and progress.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>D’abord et avant tout, il a utilisé l’énergie de son corps ou celle des animaux, mais très rapidement il a réalisé que d’autres sources, non animales, pouvaient remplacer le travail animal.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First and foremost, we used the energy of our body or that of animals, but we very quickly realised that other, non-animal sources, could replace animal labour.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, aujourd’hui, l’homme utilise, en moyenne dans le monde, environ dix mille fois plus d’énergie que celle qu’il est capable de produire avec son corps, car cette énergie est produite par des moyens industriels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a result, today, humans use, on average accross the world, about ten thousand times more energy than we are able to produce with our bodies, because this energy is produced by industrial means.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>2. Quelles sont ces énergies? D’oùproviennent-elles?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>2. What are these energies? Where do they come from?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>On classe le plus souvent les sources énergétiques utilisées par l’homme en deux catégories: les sources non renouvelables et celles qui sont renouvelables. Ce terme indique simplement que, dans le premier cas, l’homme épuise un stock préexistant sur terre et que, dans le second cas, il utilise une source qui se renouvelle sur une échelle de temps assez courte pour que les ressources soient reconstituées au fur et à mesure de leur consommation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Energy sources used by humans are most often classified into two categories: non-renewable and renewable. This term simply indicates that, in the first case, humans deplete a pre-existing stock on earth and, in the second case, he uses a source that renews itself over a sufficiently short time scale so that the resources are replenished as they are consumed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Ainsi les énergies fossiles (charbon, pétrole, gaz) ne sont pas renouvelables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, fossil fuels (coal, oil, gas) are not renewable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Elles représentent un «stock» ayant mis des centaines de milliers d’années à se constituer dans le passé et elles sont consommées en masse depuis une centaine d’année.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They represent a "stock" that has taken hundreds of thousands of years to build up in the past and they have been consumed en masse for a hundred years.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Elles seront probablement épuisées à cette échelle de temps.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They will probably be depleted on this time scale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>De même, l’uranium, à la base de l’énergie nucléaire, est utilisé en consommant le minerai présent dans le sol terrestre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Similarly, uranium, which is the basis of nuclear energy, is used by consuming the ore present in the earth's soil.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Il n’est pas à proprement parlé renouvelable, même si certaines technologies (comme les générateurs à neutrons rapides ou la fusion) ont un potentiel de production qui ne feraient consommer qu’une petite partie du stock disponible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is not strictly speaking renewable, although some technologies (such as fast neutron generators or fusion) have production potential that would consume only a small part of the available stock.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Par contre, l’énergie photovoltaïque et/ou l’énergie éolienne qui prélèvent, sans que la source n’en soit affectée, de l’énergie issue du soleil ou bien qui provient des vents, sont des énergies renouvelables (en considérant que le soleil a une durée de vie infinie, ce qui est acceptable à l’échelle de la vie humaine).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, photovoltaic energy and/or wind energy, which draws energy from the sun or from winds without affecting the source, are renewable energies (considering that the sun has an infinite life span, which is acceptable on the scale of human life).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>L’énergie hydraulique est aussi une parfaite illustration d’énergie renouvelable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hydropower is also a perfect example of renewable energy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>En effet, les pluies d’hiver permettent de remplir les réservoirs en altitude, puis l’eau stockée est ensuite utilisée pour faire tourner des turbines par gravité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Winter rains fill the reservoirs at altitude, the stored water is then used to turn turbines by gravity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>La biomasse (bois, plantes, etc.) peut aussi être considérée comme renouvelable, à condition que l’on replante la même quantité de végétal que l’on prélève (l’exemple de la gestion de la forêt landaise en est une parfaite illustration).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Biomass (wood, plants, etc.) can also be considered renewable, provided that the same amount of plant is replanted as is harvested (the example of the management of the Landes forest is a perfect example).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Toutes ces énergies permettent d’une façon ou d’une autre de produire du travail mécanique et de la chaleur, ce qui facilite la vie des hommes et a permis le développement des sociétés modernes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>All these energies, in one way or another, make it possible to produce mechanical work and heat, which facilitates human life and has allowed the development of modern societies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>En fait, l’homme ne produit pas de l’énergie, il ne fait que la transformer d’une forme à une autre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In fact, humans do not produce energy, we merely transform it from one form to another.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, il transforme la chaleur en énergie mécanique dans les moteurs thermiques puis éventuellement en énergie électrique avec des turbines et des alternateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For example, we convert heat into mechanical energy in heat engines and then possibly into electrical energy with turbines and alternators.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette électricité est ensuite utilisée pour produire de nouveau de la chaleur, du travail mécanique ou toute autre forme d’énergie (de la lumière par exemple).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This electricity is then used to produce heat, mechanical work or any other form of energy, such as light.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Les sources d’énergies sont donc gratuites et à notre disposition: les énergies fossiles sont, depuis des millénaires, stockées dans le sol; le soleil et le vent sont aussi disponibles pour tous. Le coût de l’énergie n’est donc pas le coût pour «produire» de l’énergie puisque l’homme ne produit pas d’énergie en tant que telle mais le prix de l’accès aux matières premières (la rente) et du coût de la transformation (souvent liés à des investissements industriels).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The sources of energy are therefore free and available to us: fossil fuels have been stored in the soil for thousands of years; the sun and the wind are also available to everyone. The cost of energy is therefore not the cost of "producing" energy since humans do not produce energy as such but the price of access to raw materials (rent) and the cost of transformation (often linked to industrial investments).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>3. Évolution des consommations énergétiques</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>3. Trends in energy consumption</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Lorsque l’on suit la consommation énergétique mondiale¹ comparée à l’accroissement de la population,² on remarque non seulement que les courbes suivent une croissance quasiment exponentielle depuis le début de l’ère industrielle (XIX^(ème) siècle), mais aussi que leur croissance est relativement équivalente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>When monitoring global energy consumption compared to¹ population growth, we notice not only² that the curves have been growing almost exponentially since the beginning of the industrial era (19^(th) century), but also that their growth is relatively equivalent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Donc, on peut dire qu’au premier ordre, la consommation énergétique suit l’accroissement de la population.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, it can be said that in the first order, energy consumption follows population growth.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Lorsque l’on calcule la consommation énergétique mondiale par habitant,³ on s’aperçoit cependant, qu’au deuxième ordre, elle augmente aussi exponentiellement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>When calculating global energy consumption per capita,³ however, we see, that in the second order, it also increases exponentially.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Plus généralement, il y a une très forte corrélation entre le Produit Intérieur Brut (PIB) et la consommation énergétique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More generally, there is a very strong correlation between Gross Domestic Product (GDP) and energy consumption.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>⁴ Si l’on regarde pays par pays, il est intéressant de voir que si, en moyenne, on retrouve cette corrélation, il y a cependant une certaine dispersion dans les courbes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>⁴ If we look country by country, it is interesting to see that if, on average, we find this correlation, there is however a certain dispersion in the curves.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour le même PIB, certains pays peuvent dépenser presque 10 fois plus d’énergie que d’autres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For the same GDP, some countries spend almost 10 times more energy than others.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>On peut donc en conclure que, de façon non surprenante, la consommation énergétique est liée à l’activité économique à la fois par la taille de la population et par la «production» de richesses.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It can therefore be concluded that, unsurprisingly, energy consumption is linked to economic activity both by the size of the population and by the "production" of wealth.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Cependant, il existe des différences notables entre pays à peu près identiques du fait que des différences culturelles entrainent des variations importantes dans la consommation énergétique d’un pays.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, there are significant differences between countries that are roughly identical because cultural differences lead to large variations in the energy consumption of a country.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Intéressons-nous maintenant aux évolutions des différentes sources énergétiques au cours du temps.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Let us now look at the evolution of the different energy sources over time.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>La première source d’énergie extérieure à l’homme lui-même a été le bois et plus généralement la biomasse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first source of energy besides humans themselves was wood and more generally biomass.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Tant que la densité humaine était assez faible et que le prélèvement sur l’environnement n’était que marginal par rapport à la quantité produite naturellement, cette ressource était renouvelable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As long as the human density was low enough and the environmental exploitation was only marginal compared to the amount produced naturally, this resource was renewable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Malheureusement, la combinaison de l’accroissement de la population et de l’usage de plus en plus répandu d’une température des logements plus confortable pour y vivre, donc plus élevée, a conduit à des prélèvements massifs qui ont contribué, dans certains endroits du globe, à la disparition des forêts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Unfortunately, the combination of population growth and the increasingly widespread use of heating for higher, more confortable temperature in housing has led to massive removals that have contributed, in some parts of the world, to deforestation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Il a fallu, alors, trouver d’autres sources de chaleur pour produire bien-être et travail.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Other sources of heat had to be found to produce well-being and work.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>La découverte des énergies fossiles a été une révolution du fait de leur abondance, de leur facilité d’accès et d’utilisation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The discovery of fossil fuels was a revolution because of their abundance, ease of access and use.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Le charbon a été, dès le début du XIX^(ème) siècle, une source importante d’énergie et a largement contribué à l’industrialisation de l’Europe puis du reste du monde.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>From the beginning of the 19^(th) century, coal has been an important source of energy and has greatly contributed to the industrialisation of Europe and the rest of the world.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>L’examen des consommations des différentes formes d’énergie fossile se montre intéressant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An examination of the consumption of different forms of fossil energy is interesting.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>⁵ Pendant près de 100 ans, on a pu constater une augmentation de l’utilisation du charbon par habitant, pour atteindre finalement un plafond depuis le début du XX^(ème) siècle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>⁵ For nearly 100 years, there has been an increase in the use of coal per capita, finally reaching a ceiling since the beginning of the 20^(th) century.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Le pétrole a pris ensuite le relai vers la fin du XIX^(ème) siècle et il n’a pas encore cessé de croitre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Oil then took over towards the end of the 19^(th) century and has not yet stopped growing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Plus récemment, au début du XX^(ème) siècle, le gaz naturel est apparu.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More recently, at the beginning of the 20^(th) century, natural gas was introduced.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Son utilisation par habitant est toujours en augmentation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Its use per capita is still increasing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>L’électricité, historiquement produite avec des énergies fossiles, a vu se diversifier les sources de production.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Electricity, historically produced with fossil fuels, has seen a diversification of production sources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>L’hydroélectricité, tout d’abord, avec la construction des barrages qui s’est échelonnée en France des années 30 jusqu’aux années 70.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hydroelectricity, first of all, with the construction of dams which took place in France from the 1930s to the 1970s.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Puis, juste après la seconde guerre mondiale, une nouvelle forme de production d’énergie électrique liée à l’énergie nucléaire est apparue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, just after the Second World War, a new form of electrical power generation linked to nuclear energy emerged.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Des réacteurs nucléaires civils se sont développés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Civilian nuclear reactors have been developed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Dès les années 60, La France a pris la décision (décision renforcée par les crises pétrolières des années 70) d’implémenter cette technologie aboutissant à une pleine puissance de production à la fin des années 90, soit 30 à 40 ans après la décision de lancer le programme.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As early as the 1960s, France took the decision (a decision reinforced by the oil crises of the 1970s) to implement this technology, leading to full production power at the end of the 1990s, i.e. 30 to 40 years after the decision to launch the programme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Cet exemple nous montre que la mise en place et les évolutions de l’utilisation des ressources énergétiques à l’échelle d’un pays se font sur des temps très longs, soit plusieurs dizaines d’années.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This example shows us that the implementation and evolution of the use of energy resources at a national scale take place over very long periods of time, several decades.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Il faut donc anticiper longtemps à l’avance les évolutions, faute de quoi la réaction dans l’urgence conduit à des difficultés qui peuvent être majeures.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is therefore necessary to anticipate developments well in advance, otherwise reacting in a hurry leads to difficulties that can be major.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Lorsque l’on fait le bilan des consommations énergétiques d’un pays, la distinction entre énergie finale et énergie primaire se révèle importante.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>When assessing a country's energy consumption, the distinction between final and primary energy is important.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>En effet, selon que l’on compte en énergie finale ou en énergie primaire, de sérieuses différences apparaissent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, depending on whether one counts in final energy or in primary energy, serious differences appear.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela provient du fait que si les énergies fossiles sont considérées comme des énergies primaires, l’énergie électrique n’est pas considérée comme une énergie primaire: l’électricité provient de la transformation d’une énergie primaire en énergie électrique et, comme nous l’avons vu, une partie de l’énergie primaire est «perdue» (non utilisable) dans cette transformation…</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is because while fossil fuels are considered primary energies, electrical energy is not considered: electricity comes from the transformation of primary energy into electrical energy and, as we have seen, part of the primary energy is "lost" (not usable) in this transformation…</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>L’électricité provient en grande partie de la transformation de chaleur en énergie mécanique puis électrique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Electricity comes largely from the transformation of heat into mechanical and then electrical energy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>L’exemple des centrales à gaz (ou à charbon ou au fuel) est démonstratif: un combustible fossile est brûlé pour produire de la chaleur (énergie thermique), avec laquelle on fait de la vapeur d’eau sous pression qui fait tourner des turbines (énergie mécanique) permettant de produire de l’électricité avec des alternateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The example of gas (or coal or oil) power plants proves useful: a fossil fuel is burnt to produce heat (thermal energy), with which pressurised steam is made, which turns turbines (mechanical energy) to produce electricity with alternators.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Le rapport entre l’énergie thermique dépensée et l’énergie électrique disponible est de l’ordre de 3, soit un rendement de 30% environ.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The ratio between the thermal energy consumed and the electrical energy supplied is of the order of 3, i.e. an efficiency of about 30%.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Ainsi pour 1kWh d’énergie thermique primaire on obtient 0,3kWh d’énergie électrique finale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, for 1kWh of primary thermal energy, we obtain 0.3kWh of final electrical energy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Si ensuite on utilise cette électricité pour chauffer un immeuble, il est assez logique d’appliquer un facteur multiplicatif lorsque l’on compte en énergie primaire: donc 3 fois plus que l’énergie finale utilisée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If this electricity is then used to heat a building, it is quite logical to apply a multiplication factor when counting in primary energy: thus 3 times more than the final energy used.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Une conséquence est que, lorsque l’on compte en énergie finale, la consommation d’énergie fossile (charbon, pétrole, gaz) en France est de 70% de l’énergie totale, alors qu’elle n’est que de 48% si l’on compte en énergie primaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One consequence is that, when counted in final energy, fossil fuel consumption (coal, oil, gas) in France is 70% of the total energy, whereas it is only 48% when counted in primary energy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas de l’énergie nucléaire, les choses sont plus complexes et il a été décidé d’appliquer, arbitrairement, un facteur correspondant au rendement thermique des turbines, sans revenir à la véritable source «primaire» de l’énergie nucléaire qui serait la fission des noyaux atomiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the case of nuclear energy, things are more complex and it has been decided to apply, arbitrarily, a factor corresponding to the thermal efficiency of the turbines, without returning to the true “primary” source of nuclear energy, which would be the fission of atomic nuclei.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, en France, l’énergie primaire électrique correspond en moyenne à 2,58 fois (par convention) l’énergie finale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, in France, primary electrical energy corresponds on average to 2.58 times (by convention) the final energy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>Il faut réaliser que ce chiffre est conventionnel (surtout dans le cas du nucléaire) mais il est d’importance, quand il s’agit, par exemple, de calculer le DPE (Diagnostic de Performance Énergétique) d’un bâtiment.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It must be realised that this figure is conventional (especially in the case of nuclear power) but it is important, when it comes to, for example, calculating the EPC (Energy performance certificate) of a building.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Ceci explique la différence importante entre les poids comparés d’énergie fossile selon que l’on compte en énergie finale ou primaire. Avec cette convention, la consommation d’électricité en France correspond à 20% environ de l’énergie finale totale, mais à environ 38% de l’énergie primaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This explains the significant difference between the comparative weights of fossil energy according to whether one counts in final energy or primary energy. With this convention, electricity consumption in France corresponds to about 20% of total final energy, but about 38% of primary energy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>On peut tirer de l’ensemble des chiffres présentés quelques idées simples.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A few simple ideas can be drawn from the figures presented.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Aujourd’hui, la consommation en énergie finale au niveau mondiale est de 84% en énergie fossile (70% pour la France).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Today, 84% of the world's final energy consumption is fossil energy (70% for France).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous sommes donc globalement encore dans une énergie très majoritairement d’origine fossile et donc carbonée (c’est-à-dire émettant du CO₂ en excès).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Overall, therefore, we are still using energy that is mainly of fossil origin and therefore carbon-based (i.e. emitting excess CO₂).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Les temps caractéristiques d’évolution des consommations énergétiques sont de l’ordre de 30 à 40 ans.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The characteristic times of changes in energy consumption are of the order of 30 to 40 years.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>On voit donc que tous les discours expliquant que l’on vise d’ici 10–20 ans à une neutralité carbone par un changement profond de nos consommations énergétiques sont d’un optimisme extrême ou tout simplement irréalistes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We can therefore see that all the speeches explaining that we aim for carbon neutrality within 10–20 years through a profound change in our energy consumption are extremely optimistic or simply unrealistic.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>4. Le rôle des énergies renouvelables</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>4. The role of renewable energy</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>En ce qui concerne les énergies renouvelables, la montée en puissance de la production par ces énergies nouvelles n’a aucune raison d’être plus rapide que ce que nous avons vu dans le passé pour la montée en puissance des différentes énergies fossiles ou du nucléaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As far as renewables are concerned, there is no reason why the increase in the production of these new energies should be any faster than what we have seen in the past for the increase in the production of various fossil fuels or nuclear power.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>En effet, il y a plusieurs problèmes technologiques à résoudre pour pouvoir remplacer quantitativement le système actuel largement dominé par les énergies fossiles, par de l’électricité d’origine renouvelable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, there are several technological problems to be solved to quantitatively replace the current system, which is largely dominated by fossil fuels, with electricity from renewable sources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Les trois grands postes de consommation d’énergie sont: le chauffage des bâtiments, le transport et la production industrielle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The three main items of energy consumption are: heating of buildings, transport and industrial production.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Le remplacement massif d’énergie fossile ou de l’énergie électrique d’origine nucléaire par des énergies renouvelables demandera des adaptations fondamentales, à la fois des moyens de productions, mais aussi des moyens de distribution de ces énergies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The massive replacement of fossil fuel or nuclear power by renewable energies will require fundamental adaptations, both in the means of production and also in the means of distribution of these energies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Ceci n’est pas inenvisageable, mais sera forcément long et certainement pas en une ou deux dizaines d’années.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is not unthinkable, but will necessarily take a long time and certainly not in one or two decades.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Examinons quelques-uns des défis à surmonter: tout d’abord, les transports.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Let's look at some of the challenges: first of all, transport.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Ils consomment environ 1/3 de l’énergie primaire et utilisent très massivement les énergies fossiles (proche de 100%); dans ce cas, remplacer le pétrole par l’électricité, même si un début de solution est apparu avec la voiture électrique, est loin d’être simple (coût, autonomie, évolution du parc…).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They consume about 1/3 of primary energy and use fossil fuels very heavily (close to 100%); in this case, replacing oil with electricity, even if the beginnings of solution have appeared with the electric car, is far from simple (cost, autonomy, evolution of the fleet...).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour les camions, les avions ou les bateaux, il n’existe pas aujourd’hui de solutions viables à une échéance de temps compatible avec une neutralité carbone d’ici à 20 ans.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For trucks, planes or ships, there are currently no viable solutions with a timeframe compatible with carbon neutrality in 20 years.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour ces moyens lourds, l’hydrogène pourrait être une solution, encore faut-il que sa production se fasse de façon décarbonée, avec un coût acceptable, et que les questions de sécurité (en particulier pour les avions) ne soient pas un obstacle infranchissable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For these heavy vehicles, hydrogen could be a solution, provided that it is produced in a decarbonised manner, at an acceptable cost, and safety issues (particularly for planes) are not be an insurmountable obstacle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Il reste la production de carburant liquide, identique au pétrole, mais avec une source de carbone renouvelable (biomasse).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There remains the production of liquid fuel, identical to oil, but with a renewable carbon source (biomass).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cas là encore, si l’on prend en compte les quantités à produire ainsi que le coût, on est très loin d’avoir une solution acceptable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Here again, if we take into account the quantities to be produced as well as the cost, we are very far from having an acceptable solution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour l’industrie, l’électricité est déjà une source importante d’énergie mais encore faut-il que sa production soit décarbonée (nucléaire ou renouvelable).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For industry, electricity is already an important source of energy, but its production needs to be decarbonised (nuclear or renewable).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>De plus, les industries très énergivores (cimenteries, haut-fourneaux…) qui émettent de grandes quantités de CO₂ n’ont pas de solutions de remplacement viables à l’échelle de l’ensemble de la production.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, highly energy-intensive industries (cement plants, blast furnaces, etc.) that emit large quantities of CO₂ do not have viable alternatives on a production-wide scale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>La possibilité de capter et de stocker le CO₂ lors de son émission par des usines est envisageable, maiscela demande d’utiliser l’oxygène et non l’air comme comburant et d’avoir des solutions de stockage géologique ayant fait leurs preuves.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The possibility of capturing and storing CO₂ when it is emitted by factories is conceivable, but this requires the use of oxygen rather than air as an oxidant and proven geological storage solutions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous n’en sommes encore qu’aux essais pilotes avec un surcoût important.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We are still only in the pilot tests with a significant additional cost.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>5. Le bâtiment, peut-être une cible privilégiée pour économiser l’énergie</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>5. Buildings, perhaps a prime target for energy conservation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>En effet, l’utilisation de la géothermie, de la biomasse ou de l’électricité décarbonée peut être envisagée à condition d’investir massivement dans les changements de systèmes de chauffage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, the use of geothermal energy, biomass or decarbonised electricity can be considered provided that massive investments are made to change to heating systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>A temps court, il est probable que le plus sûr moyen d’infléchir nos émissions de CO₂ consiste à diminuer la consommation énergétique, en particulier dans le bâtiment, car c’est le poste sur lequel on peut espérer le plus d’économie d’énergie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the short term, it is likely that the safest way to reduce our CO₂ emissions is to reduce energy consumption, particularly in buildings, as this is the area where we can expect the most energy savings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>Examinons maintenant de plus près la situation des dépenses énergétiques du bâtiment.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Let's now take a closer look at the energy expenditure situation in buildings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Avec une population mondiale de l’ordre de 7 milliards dont 56% d’habitants vivent dans les villes et le reste en milieu rural, le monde évolue face à des défis importants en termes de logements.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With a world population of around 7 billion, 56% of whom live in cities and the rest in rural areas, the world is facing major challenges in terms of housing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Les projections des démographes pour 2050 n’envisagent pas moins de 10 milliards d’habitants dont 66% vivront en milieu urbain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Demographers' projections for 2050 predict no less than 10 billion inhabitants, 66% of whom will live in urban areas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Un rapide calcul nous permet de réaliser qu’entre 2010 et 2050, il faudra construire autant de bâtiments en ville que ce qui existe aujourd’hui.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A quick calculation shows that between 2010 and 2050, as many buildings will have to be constructed in the city as exist today.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Il faudra donc doubler la capacité mondiale des villes sur la planète.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This will require a doubling of the global capacity of cities around the world.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour comprendre le rôle crucial des bâtiments dans les défis énergétiques et environnementaux qui nous attendent, il faut se rappeler qu’à ce jour, dans les pays occidentaux, le bâtiment est le pôle de consommation énergétique le plus important et l’un des plus gros pôles d’émission de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To understand the crucial role of buildings in the energy and environmental challenges that lie ahead, it is important to remember that, to date, in Western countries, buildings are the largest consumer of energy and one of the largest emitters of CO₂.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Avec pour l’Europe, 42% de la consommation d’énergie (26% pour les transports et 32% pour l’industrie), cela correspond à presque la moitié de l’énergie que nous consommons, car cette énergie est utilisée pour chauffer ou refroidir les bâtiments dans lesquels nous vivons et travaillons.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With 42% of Europe's energy consumption (26% for transport and 32% for industry), this corresponds to almost half of the energy we consume, as this energy is used to heat or cool the buildings in which we live and work.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour bien comprendre l’enjeu, il faut avoir en tête que la moyenne des bâtiments consomme environ de l’ordre de 320kWhEP/m²/an (EP indique que le calcul est fait en énergie primaire, comme la réglementation le demande).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To fully understand the issue, it is important to bear in mind that the average building consumes around 320kWhEP/m²/year (EP indicates that the calculation is made in primary energy, as required by the regulations).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Par comparaison, un bâtiment d’habitation neuf en France, construit selon la réglementation thermique en vigueur (la RT2012) doit consommer de l’ordre de 40kWhEP/m²/an.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By comparison, a new residential building in France, built according to the thermal regulations in force (RT2012) must consume around 40kWhEP/m²/year.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>La moyenne de consommation des bâtiments existants est donc presque dix fois plus grande que celle des bâtiments neufs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The average consumption of existing buildings is therefore almost ten times greater than that of new buildings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="FR">
+                <seg>On peut envisager une autre façon de voir la situation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There is another way of looking at the situation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="FR">
+                <seg>Si nous ramenions la moyenne à 100kWhEP/m²/an, cela permettrait d’économiser pratiquement la même quantité d’énergie que celle que nous consommons dans les transports.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If we were to reduce the average to 100kWhEP/m²/year, this would save practically the same amount of energy as we consume in transport.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="FR">
+                <seg>Tous les gouvernements occidentaux ont conscience de cette situation et ils ont promulgué deux sortes de mesures: des réglementations thermiques pour les bâtiments neufs et des plans de rénovation des bâtiments anciens.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>All Western governments are aware of this situation and have enacted two kinds of measures: thermal regulations for new buildings and renovation plans for old buildings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="FR">
+                <seg>Il faut en effet tenir compte du fait que, à cause du très faible taux de renouvellement des bâtiments ancien (de l’ordre de 1% par an), on ne peut pas compter sur les seules réglementations thermiques des bâtiments neufs pour améliorer la situation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It must be taken into account that, because of the very low rate of renewal of old buildings (around 1% per year), we cannot rely solely on the thermal regulations for new buildings to improve the situation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs technologies permettent de diminuer le besoin d’énergie d’un bâtiment,en particulier l’isolation thermique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There are several technologies that can be used to reduce the energy requirement of a building, in particular thermal insulation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>L’air immobilisé dans un matériau poreux léger est la technique la plus accessible pour isoler un bâtiment.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Air immobilised in a lightweight porous material is the most accessible technique for insulating a building.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>L’objectif d’un matériau poreux consiste à empêcher la convection qui, en permettant à l’air de se mettre en mouvement, augmenterait fortement les échanges thermiques que l’on veut éviter.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The purpose of a porous material is to prevent convection which, by allowing the air to move, would greatly increase the heat exchanges that we want to avoid.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>On peut ainsi utiliser des fibres légères enchevêtrées (laine de verre, laine de roche, laine debois…) ou des mousses synthétiques (polyester, polyuréthane…).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is thus possible to use entangled lightweight fibres (glass wool, rock wool, wood wool, etc.) or synthetic foams (polyester, polyurethane, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Compte tenu des exigences de plus en plus grandes liées à l’augmentation des performances des bâtiments, l’épaisseur des isolants dans les murs va en augmentant, pouvant atteindre 30 à 50 cm selon les climats.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Due to the ever increasing requirements related to improving building performance, the thickness of the insulation in the walls is increasing, up to 30 to 50 cm depending on the climate.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Si ces épaisseurs sont acceptables pour des bâtiments neufs, cela pose de plus en plus de problèmes pour la rénovation, en particulier, pour les isolations par l’intérieur, car de la surface habitable peut être perdue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While these thicknesses are acceptable for new buildings, they are increasingly problematic for renovation, in particular for internal insulation, as living space may be lost.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est donc nécessaire de trouver des isolants plus performants permettant, pour des résistances thermiques équivalentes, d’atteindre des épaisseurs sensiblement plus faibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is therefore necessary to find more efficient insulating materials which, for equivalent thermal resistances, can achieve significantly lower thicknesses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Deux technologies peuvent être mise en œuvre: les isolants sous vide et les aérogels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two technologies can be used: vacuum insulation and aerogels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>La première consiste à utiliser des isolants sous vide.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first is to use vacuum insulation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>Ils sont fabriqués en recouvrant des plaques de silice pyrogénée (silice très fine) d’un emballage constitué d’un film d’aluminium.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They are made by covering panels of fumed silica (very fine silica) with an aluminium foil package.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>Auparavant, on a retiré l’air des plaques et elles ont été refermées de façon étanche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Beforehand, the air was removed from the panels and they were sealed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>De cette manière, on arrive à augmenter la performance d’un facteur 5 à 7 par rapport à un isolant classique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this way, the performance can be increased by a factor of 5 to 7 compared to conventional insulation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="FR">
+                <seg>La deuxième technologie fait intervenir des aérogels: ils sont fabriqués à partir de silice précipitée en formant des pores de très petite taille.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second technology involves aerogels: they are made from precipitated silica by forming very small pores.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="FR">
+                <seg>Si la taille des pores devient de l’ordre de grandeur du libre parcours moyen des molécules d’air (de l’ordre de la centaine de nanomètres), on a une diminution très forte de la conductivité thermique de l’air.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If the size of the pores becomes of the order of magnitude of the mean free path of air molecules (of the order of a hundred nanometres), the thermal conductivity of the air is greatly reduced.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="FR">
+                <seg>Cet effet a été découvert par Martin Knudsen [Knudsen 1934] en 1934 à l’université technique du Danemark.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This effect was discovered by Martin Knudsen [Knudsen 1934] in 1934 at the Technical University of Denmark.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela permet, sans passer par le vide, d’avoir des matériaux très isolants améliorant la performance d’un facteur 2 environ par rapport à de l’air immobilisé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This makes it possible, without using vacuum, to have highly insulating materials improving performance by a factor of approximately 2 compared to immobilised air.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>Si l’amélioration de l’isolation des murs est nécessaire, elle n’est pas suffisante.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While improving wall insulation is necessary, it is not sufficient.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>Il faut aussi améliorer l’isolation des parois vitrées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is also necessary to improve the insulation of glass walls.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour cela, l’apparition du double vitrage avec l’introduction d’un gaz (Argon, Xenon…) entre les parois a permis de faire des progrès notoires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To this end, the appearance of double glazing with the insertion of a gas (Argon, Xenon, etc.) between the walls has made it possible to make significant progress.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce double vitrage est maintenant devenu la norme.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This double glazing has now become the norm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>D’autres progrès, plus récents, ont encore permis l’amélioration des performances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Other, more recent advances have further improved performance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>L’introduction d’un «coating», c’est à dire d’une série de couches très fines (quelques nanomètres) de matériaux conducteurs (l’argent le plus souvent) et de matériaux diélectriques, permet de transformer la vitre en véritable interféromètre laissant passer librement le rayonnement visible mais réfléchissant vers l’intérieur les infra-rouges (qui transportent une grande partie de l’énergie de radiation thermique).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The introduction of a coating, i.e. a series of very thin layers (a few nanometers) of conductive materials (most often silver) and dielectric materials, makes it possible to transform the pane into a true interferometer, allowing visible radiation to pass freely but reflecting infra-reds (which carry a large part of the thermal radiation energy) towards the interior.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce verre «bas-émissif» permet encore d’économiser de l’énergie en hiver comme en été.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This "low-emissive" glass also saves energy in winter and summer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>Très récemment, sont arrivées des vitres dont la transparence peut être contrôlée par une différence de potentiel entre deux plaques de verre rendues conductrices.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Very recently, windows whose transparency can be controlled by a potential difference between two conductive glass plates have been developed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces vitres électrochromes sont des piles contenant des ions métalliques qui selon leur degré d’oxydation absorbent ou non la lumière.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These electrochromic windows are batteries containing metal ions which, depending on their degree of oxidation, absorb light or not.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>⁶ Elles permettent de réguler l’entrée des radiations lumineuses dans le bâtiment diminuant ainsi les apports de chaleur et permettant une adaptation continue de la luminosité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>⁶ They make it possible to regulate the entry of light radiation into the building, thus reducing heat inputs and allowing continuous adaptation of the brightness.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>Indépendamment de l’amélioration des performances des parois, il est nécessaire de mesurer sur le bâtiment final l’effet de l’introduction de ces technologies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Apart from the improved performance of the walls, it is necessary to measure the effect of the introduction of these technologies on the final building.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>Si la physique du bâtiment permet de calculer assez précisément ce que l’on peut espérer des performances théoriques d’un bâtiment bien construit, il est étonnant de voir que peu de techniques de mesures globales ont été développées jusqu’ici.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While the physics of buildings allows to calculate fairly precisely what can be expected from the theoretical performance of a well-constructed building, it is surprising to see that few comprehensive measurement techniques have been developed so far.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>La performance de chacun des matériaux entrant dans une construction est bien sûr mesurée et contrôlée, par contre, en comparaison, peu de contrôles de performance sont réalisés sur le bâtiment final.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The performance of each of the materials used in a building is of course measured and controlled, on the other hand, in comparison, few performance checks are carried out on the final building.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>Une des raisons en est la difficulté relative de mettre au point des techniques rapides et légères de mesure.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One of the reasons for this is the relative difficulty of developing fast and light measurement techniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>Depuis quelques années, de telles mesures sont apparues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In recent years, such measures have emerged.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>Leur principe en est simple mais la mise en œuvre demande un peu d’astuces.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Their principle is simple, but the implementation requires a few tricks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>Il s’agit de considérer un bâtiment comme un circuit électrique (composé d’au moins une résistance et un condensateur) et d’utiliser des méthodes de perturbation pour mesurer la résistance thermique et la capacité calorifique du bâtiment [Mangematin etal. 2012; Boisson and Bouchié 2014].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This involves considering a building as an electrical circuit (composed of at least one resistor and one capacitor) and using perturbation methods to measure the thermal resistance and heat capacity of the building [Mangematin etal. 2012; Boisson and Bouchié 2014].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <prop type="paragraph">43</prop>
+            <tuv xml:lang="FR">
+                <seg>6. Conclusions</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>6. Conclusions</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="FR">
+                <seg>Le bilan des liens entre énergie et impact sur le climatdémontre clairement que les émissions de CO₂ provenant principalement de la production énergétique, il est nécessaire de jouer sur les deux tableaux: réduire notre consommation et décarboner la production énergétique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The assessment of the links between energy and climate impact clearly shows that CO₂ emissions come mainly from energy production, it is necessary to play on both fronts: reducing our consumption and decarbonising energy production.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="FR">
+                <seg>De ce point de vue, on peut se réjouir qu’au niveau mondial, depuis 1990, le rapport production énergétique divisé par le PIB a baissé de 30% environ ainsi que les émissions de CO₂ par habitant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>From this point of view, we can be pleased that, at world level, since 1990, the ratio of energy production to GDP has fallen by around 30%, as have CO₂ emissions per capita.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="FR">
+                <seg>Malheureusement, les PIB mondiaux ainsi que la population augmentent plus vite que ces baisses relatives, ce qui fait que loin de diminuer, la consommation énergétique mondiale et les émissions de CO₂ augmentent dans l’absolu.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Unfortunately, global GDP and population are growing faster than these relative declines, so that, far from decreasing, global energy consumption and CO₂ emissions are increasing in absolute terms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour la France, les objectifs de la stratégie bas carbone sont très ambitieux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For France, the objectives of the low-carbon strategy are very ambitious.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="FR">
+                <seg>Ils visent pour 2050 à une neutralité carbone du pays en baissant d’un facteur 6 les émissions et en compensant le reste par des puits de carbone.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They aim to make the country carbon neutral by 2050 by reducing emissions by a factor of 6 and offsetting the rest with carbon sinks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces objectifs sont d’autant plus ambitieux que le passé récent nous a montré que notre pays, comme d’ailleurs bien d’autres, s’était auparavant fixé des objectifs moins ambitieux et qu’il n’a pas pu les respecter.⁷</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These objectives are all the more ambitious because the recent past has shown us that our country, like many others, has previously set less ambitious objectives and has not been able to meet them.⁷</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="FR">
+                <seg>On peut donc légitimement se poser la question du réalisme des ambitions de notre pays comme du reste du monde vis-à-vis du défi climatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We can therefore legitimately ask ourselves the question of the realism of our country's ambitions as well as those of the rest of the world with regard to the climate challenge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="FR">
+                <seg>¹https://en.wikipedia.org/wiki/World_energy_consumption.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>¹https://en.wikipedia.org/wiki/World_energy_consumption.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="FR">
+                <seg>²https://en.wikipedia.org/wiki/World_population.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>²https://en.wikipedia.org/wiki/World_population.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <prop type="paragraph">47</prop>
+            <tuv xml:lang="FR">
+                <seg>³https://ourworldindata.org/energy.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>³https://ourworldindata.org/energy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <prop type="paragraph">48</prop>
+            <tuv xml:lang="FR">
+                <seg>⁴https://www.eea.europa.eu/data-and-maps/figures/correlation-of-per-capita-energy.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>⁴https://www.eea.europa.eu/data-and-maps/figures/correlation-of-per-capita-energy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <prop type="paragraph">49</prop>
+            <tuv xml:lang="FR">
+                <seg>⁵https://ourworldindata.org/fossil-fuels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>⁵https://ourworldindata.org/fossil-fuels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <prop type="paragraph">50</prop>
+            <tuv xml:lang="FR">
+                <seg>⁶https://en.wikipedia.org/wiki/Smart_glass.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>⁶https://en.wikipedia.org/wiki/Smart_glass.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <prop type="paragraph">51</prop>
+            <tuv xml:lang="FR">
+                <seg>⁷https://www.ecologique-solidaire.gouv.fr/suivi-strategie-nationale-bas-carbone.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>⁷https://www.ecologique-solidaire.gouv.fr/suivi-strategie-nationale-bas-carbone.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

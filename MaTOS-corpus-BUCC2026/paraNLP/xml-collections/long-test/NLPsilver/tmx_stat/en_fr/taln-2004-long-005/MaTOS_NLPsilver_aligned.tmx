@@ -1,0 +1,1375 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2004-long-005. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/C04-1194.pdf</url_en>
+        <url_fr>https://aclanthology.org/2004.jeptalnrecital-long.5.pdf</url_fr>
+        <title_en>Discovering word senses from a network of lexical cooccurrences</title_en>
+        <title_fr>Découvrir des sens de mots à partir d’un réseau de cooccurrences lexicales</title_fr>
+        <docid>taln-2004-long-005</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Discovering word senses from a network of lexical cooccurrences</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Découvrir des sens de mots à partir d’un réseau de cooccurrences lexicales</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>Lexico-semantic networks such as WordNet have been criticized about the nature of the senses they distinguish as well as on the way they define these senses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les réseaux lexico-sémantiques de type WordNet ont fait l'objet de nombreuses critiques concernant la nature des sens qu'ils distinguent ainsi que la façon dont ils caractérisent ces distinctions de sens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>In this article, we present a possible solution to overcome these limits by defining the sense of words from the way they are used.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous présentons une solution possible pour surmonter ces limites en définissant le sens des mots à partir de leur usage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>More precisely, we propose to differentiate the senses of a word from a network of lexical cooccurrences built from a large corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, nous proposons de différencier les sens d'un mot à partir d'un réseau de cooccurrences lexicales construit à partir d'un large corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>This method was tested both for French and English and was evaluated for English by comparing its results with WordNet.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthode a été testée à la fois pour le français et pour l’anglais et a été évaluée pour l’anglais en comparant ses résultats avec WordNet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>Keywords: Lexical semantics, word sense discovery, lexico-semantic networks</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mots Clés: Sémantique lexicale, découverte du sens des mots, réseaux lexico-sémantiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>1 Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>Semantic resources have proved to be useful in information retrieval and information extraction for applications such as query expansion (Voorhees, 1998), text summarization (Harabagiu and Maiorano, 2002) or question/answering (Pasca and Harabagiu, 2001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’intérêt de l’utilisation de ressources sémantiques en recherche ou en extraction d’information a été montré depuis quelque temps déjà au travers de travaux allant de l’expansion de requêtes (Voorhees, 1998) à la synthèse de texte (Harabagiu et Maiorano, 2002) ou la question/réponse (Pasca et Harabagiu, 2001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>But this work has also shown that these resources must be used with caution: they bring on an improvement of results only if word sense disambiguation is performed with a great accuracy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces travaux ont également mis en avant le fait qu’une telle utilisation devait être entourée de précautions : une amélioration des performances n’est observée que si la disambiguation du sens des mots est réalisée avec une très bonne fiabilité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>These findings bring one of the first roles of a semantic resource to light: discriminating and characterizing the senses of a set of words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces conclusions mettent en lumière l'un des premiers rôles d'une ressource sémantique : discriminer et caractériser les sens d'un ensemble de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>The main semantic resources with a wide coverage that can be exploited by computers are lexico-semantic networks such as WordNet.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les principales ressources sémantiques exploitables sous forme électronique et présentant une large couverture sont des réseaux lexico-sémantiques du type WordNet (Miller, 1995).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>Because of the way they were built, mainly by hand, these networks are not fundamentally different from traditional dictionaries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De par leur mode de construction, essentiellement manuel, ces réseaux ne se démarquent pas fondamentalement des dictionnaires sous forme papier.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>Hence, it is not very surprising that they were criticized, as in (Harabagiu et al. , 1999), for not being suitable for Natural Language Processing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il n'est donc pas très surprenant qu'elles aient été critiquées, comme par exemple dans (Harabagiu et al. , 1999), pour leur inadéquation vis-à-vis du traitement automatique des langues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>They were criticized both about the nature of the senses they discriminate and the way they characterize them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces critiques portent à la fois sur la nature des sens qu’ils distinguent et sur leur caractérisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>Their senses are considered as too fine-grained but also incomplete.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces sens sont jugés à la fois trop fins et incomplets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>Moreover, they are generally defined through their relations with synonyms, hyponyms and hyperonyms but not by elements that describe the contexts in which they occur.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, leur caractérisation, réalisée pour l’essentiel au travers des relations de synonymie, d’hyperonymie et d’hyponymie, manque d’éléments définissant leur contexte d’usage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>One of the solutions for solving this problem consists in automatically discovering the senses of words from corpora.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'une des solutions pour résoudre ce problème consiste à découvrir automatiquement les sens des mots à partir de corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>Each sense is defined by a list of words that is not restricted to synonyms or hyperonyms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque sens est défini par une liste de mots qui ne se limite pas à des synonymes ou des hyperonymes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>The work done in this area can be divided into three main trends.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les travaux déjà menés dans ce cadre se répartissent en trois grandes tendances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>The first one, represented by (Pantel and Lin, 2002), is not focused on the problem of discovering word senses: its main objective is to build classes of equivalent words from a distributionalist viewpoint, hence to gather words that are mainly synonyms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première, illustrée par (Pantel, Lin, 2002), ne place pas la découverte des différents sens des mots au centre de ses préoccupations. Son objectif premier est en effet de rassembler les mots en classes d’équivalence et donc plutôt de former des classes de synonymes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>In the case of (Pantel and Lin, 2002), the discovering of word senses is a side effect of the clustering algorithm, Cluster By Committee, used for building classes of words: as a word can belong to several classes, each of them can be considered as one of its senses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas de (Pantel et Lin, 2002), la découverte des sens des mots est un effet secondaire de l’algorithme de clustering, Clustering by Committee, utilisé pour construire des classes de mots : comme un mot peut appartenir à plusieurs classes, chacune d’entre elles peut être considérée comme l’un de ses sens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>The second main trend, found in (Schütze, 1998), (Pedersen and Bruce, 1997) and (Purandare, 2003), represents each instance of a target word by a set of features that occur in its neighborhood and applies an unsupervised clustering algorithm to all its instances.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La deuxième tendance observée, que l’on retrouve dans (Schütze, 1998), (Pedersen et Bruce, 1997) et (Purandare, 2003), représente chaque instance d’un mot cible par un ensemble de caractéristiques qui se produisent dans son environnement et applique un algorithme de classification non supervisée à toutes ses instances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>Each cluster is then considered as a sense of the target word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque classe est alors considérée comme un sens du mot cible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>The last trend, explored by (Véronis, 2003), (Dorow and Widdows, 2003) and (Rapp, 2003), starts from the cooccurrents of a word recorded from a corpus and builds its senses by gathering its cooccurrents according to their similarity or their dissimilarity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La dernière approche, explorée par (Véronis, 2003), (Dorow et Widdows, 2003) et (Rapp, 2003), part des cooccurrents d'un mot enregistrés à partir d'un corpus et construit ses sens en regroupant ses cooccurrents suivant leur similarité ou leur dissimilarité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>Our work takes place in this last trend.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre travail se situe dans cette dernière tendance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>2 Overview</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Vue d'ensemble</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>The starting point of the method we present in this article is a network of lexical cooccurrences, that is a graph whose vertices are the significant words of a corpus and edges represent the cooccurrences between these words in the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le point de départ de la méthode que nous présentons est un réseau de cooccurrences lexicales, c'est-à-dire un graphe dont les nœuds sont les mots constituant le vocabulaire significatif d'un corpus et les arêtes représentent les cooccurrences observées entre ces mots dans le corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>The discovering of word senses is performed word by word and the processing of a word only relies on the subgraph that contains its cooccurrents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La découverte des sens des mots est réalisée mot par mot et le traitement d'un mot ne fait intervenir que le sous-graphe rassemblant les cooccurrents de ce mot.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>The first step of the method consists in building a matrix of similarity between these cooccurrents by exploiting their relations in the subgraph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première étape de la méthode consiste à construire une matrice de similarité de ces cooccurrents sur la base de leurs relations dans le sous-graphe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>An unsupervised clustering algorithm is then applied for grouping these cooccurrents and giving rise to the senses of the considered word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une méthode de classification automatique non supervisée est alors appliquée afin de regrouper ces cooccurrents et former les différents sens du mot considéré.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>This method, as the ones presented in (Véronis, 2003), (Dorow and Widdows, 2003) and (Rapp, 2003), relies on the following hypothesis: in the subgraph gathering the cooccurrents of a word, the number of relations between the cooccurrents defining a sense is higher than the number of relations that these cooccurrents have with those defining the other senses of the considered word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthode, comme celles présentées dans (Véronis, 2003), (Dorow et Widdows, 2003) et (Rapp, 2003), repose sur l'hypothèse suivante : dans le sous-graphe rassemblant les cooccurrents d'un mot, le nombre de relations entre les cooccurrents définissant un sens est plus élevé que le nombre de relations que ces cooccurrents ont avec ceux définissant les autres sens du mot considéré.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>The clustering algorithm that we use is an adaptation of the Shared Nearest Neighbors (SNN) algorithm presented in (Ertöz et al. , 2001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthode de classification que nous utilisons est une adaptation de la méthode Shared Nearest Neighbors (SNN), exposée dans (Ertöz et al., 2001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>This algorithm particularly fits our problem as it automatically determines the number of clusters, in our case the number of senses of a word, and does not take into account the elements that are not representative of the clusters it builds.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthode convient particulièrement à notre problème car elle détermine automatiquement le nombre de classes, c'est-à-dire le nombre de sens dans le cas présent, et ne prend pas en compte les éléments qui ne sont pas représentatifs des classes qu'elle construit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>This last point is especially important for our application as there is a lot of “noise” among the cooccurrents of a word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce dernier point est particulièrement important pour notre application car il y a beaucoup de « bruit » parmi les cooccurrents d’un mot.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>3 Networks of lexical cooccurrences</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Les réseaux de cooccurrence lexicale</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>The method we present in this article for discovering word senses was applied both for French and English.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthode que nous présentons dans cet article pour découvrir les sens des mots a été appliquée à la fois au français et à l'anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>Hence, two networks of lexical cooccurrences were built: one for French, from the Le Monde newspaper (24 months between 1990 and 1994), and one for English, from the L.A. Times newspaper (2 years, part of the TREC corpus).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons donc construit un réseau de cooccurrences lexicales pour ces deux langues. Celui pour le français a été constitué à partir de 24 mois du journal Le Monde sélectionnés entre 1990 et 1994 ; celui pour l’anglais à partir de deux ans du journal Los Angeles Times , issus du corpus TREC.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>The size of each corpus was around 40 million words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La taille de chaque corpus était d'environ 40 millions de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>The building process was the same for the two networks. First, the initial corpus was preprocessed in order to characterize texts by their topically significant words. Thus, we retained only the lemmatized form of plain words, that is, nouns, verbs and adjectives.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le processus de construction était le même pour les deux réseaux. Tout d'abord, le corpus initial a été prétraité afin de caractériser les textes par leurs mots les plus significatifs sur le plan thématique. Ainsi, nous n'avons conservé que la forme lemmatisée des mots simples, c'est-à-dire les noms, les verbes et les adjectifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>Cooccurrences were classically extracted by moving a fixed-size window on texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les cooccurrences ont ensuite été extraites en déplaçant une fenêtre de taille fixe sur les textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>Parameters were chosen in order to catch topical relations: the window was rather large, 20word wide, and took into account the boundaries of texts; moreover, cooccurrences were indifferent to word order.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les paramètres de cette extraction ont été fixés afin de favoriser la capture de relations sémantiques et thématiques : la fenêtre était assez large (20 mots), respectait la fin des textes et l’ordre des cooccurrences n’était pas conservé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>As (Church and Hanks, 1990), we adopted an evaluation of mutual information as a cohesion measure of each cooccurrence. This measure was normalized according to the maximal mutual information relative to the considered corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme l'ont fait Church et Hanks (1990), nous avons adopté une évaluation de l'information mutuelle comme mesure de la cohésion de chaque cooccurrence, mesure normalisée dans notre cas par l'information mutuelle maximale relative au corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>After filtering the less significant cooccurrences (cooccurrences with less than 10 occurrences and cohesion lower than 0.1), we got a network with approximately 23,000 words and 5.2 million cooccurrences for French, 30,000 words and 4.8 million cooccurrences for English.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après filtrage des cooccurrences les moins significatives (cohésion &lt; 0,1 et moins de 10 occurrences), nous avons obtenu un réseau d’approximativement 23 000 mots et 5,2 millions de cooccurrences pour le français et un réseau de 30 000 mots et 4,8 millions de cooccurrences pour l’anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>4 Word sense discovery algorithm</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Algorithme de découverte des sens</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>4.1 Building of the similarity matrix between cooccurrents</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Construction de la matrice de similarité entre cooccurrents</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>The number and the extent of the clusters built by a clustering algorithm generally depend on a set of parameters that can be tuned in one way or another.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le nombre et l'étendue des clusters construits par un algorithme de clustering dépendent généralement d'un ensemble de paramètres qui peuvent être ajustés d'une manière ou d'une autre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>But this possibility is implicitly limited by the similarity measure used for comparing the elements to cluster.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais cette possibilité est implicitement limitée par la mesure de similarité définie pour comparer les éléments à regrouper.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>In our case, the elements to cluster are the cooccurrents in the network of lexical cooccurrences of the word whose senses have to be discriminated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas présent, les éléments à classer sont les cooccurrents dans le réseau de cooccurrence lexicale du mot dont on cherche à découvrir les sens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>Within the same framework, we tested two measures for evaluating the similarity between the cooccurrents of a word in order to get word senses with different levels of granularity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le même cadre, nous avons testé deux mesures de similarité entre les cooccurrents d'un mot afin d'obtenir des sens de mot avec différents niveaux de granularité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>The first measure corresponds to the cohesion measure between words in the cooccurrence network.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première mesure correspond à la mesure de cohésion entre les mots dans le réseau de cooccurrence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>If there is no relation between two words in the network, the similarity is equal to zero.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>S’il n’existe pas de relation entre deux mots dans le réseau, leur similarité est considérée comme nulle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>This measure has the advantage of being simple and efficient from an algorithmic viewpoint but some semantic relations are difficult to catch only from cooccurrences in texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette mesure possède l'avantage de la simplicité et de l'efficacité algorithmique mais elle est limitée par le fait que certaines relations sémantiques sont difficiles à saisir uniquement à partir de cooccurrences dans les textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>For instance, we experimentally noticed that there are few synonyms of a word among its cooccurrents[1] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, nous avons constaté expérimentalement qu'il existe peu de synonymes d'un mot parmi ses cooccurrents[1] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>Hence, we can expect that some senses that are discriminated by the algorithm actually refer to one sense.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut donc s’attendre à ce que certains sens distingués par l’algorithme ne soient en fait qu’un seul et même sens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>To overcome this difficulty, we also tested a measure that relies not only on first order cooccurrences but also on second order cooccurrences, which are known to be “less sparse and more robust” than first order ones (Schütze, 1998).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour prévenir ce risque, nous avons expérimenté une mesure de similarité entre cooccurrents reposant non seulement sur une relation de cooccurrence de premier niveau mais également de deuxième niveau, cette dernière étant réputée plus stable (Schütze, 1998).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>This measure is based on the following principle: a vector whose size is equal to the number of cooccurrents of the considered word is associated to each of its cooccurrents. This vector contains the cohesion values between this cooccurrent and the other ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette mesure est basée sur le principe suivant : un vecteur dont la taille est égale au nombre de cooccurrents du mot considéré est associé à chacun de ses cooccurrents. Ce vecteur contient les valeurs de cohésion entre ce cooccurrent et les autres cooccurrents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>As for the first measure, a null value is taken when there is no relation between two words in the cooccurrence network.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En ce qui concerne la première mesure, une valeur nulle est prise lorsqu’il n’y a pas de relation entre deux mots dans le réseau de cooccurrence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>The similarity matrix is then built by applying the cosine measure between each couple of vectors, i.e. each couple of cooccurrents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La matrice de similarité est ensuite construite en appliquant la mesure cosinus entre chaque couple de vecteurs, c'est-à-dire chaque couple de cooccurrents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>With this second measure, two cooccurrents can be found strongly linked even though they are not directly linked in the cooccurrence network: they just have to share a significant number of words with which they are linked in the cooccurrence network.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avec cette seconde mesure de similarité, deux cooccurrents peuvent être considérés comme fortement liés même s'ils ne sont pas directement liés dans le réseau de cooccurrence : ils doivent simplement partager un nombre significatif de mots avec lesquels ils sont liés dans le réseau de cooccurrence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>4.2 The Shared Nearest Neighbors (SNN) algorithm</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 Algorithme SNN (Shared Nearest Neighbors)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>The SNN algorithm is representative of the algorithms that perform clustering by detecting the high-density areas of a similarity graph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'algorithme SNN (Ertöz et al., 2001) est représentatif des algorithmes qui effectuent le regroupement en détectant les zones à forte densité d'un graphe de similarité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>In such a graph, each vertex represents an element to cluster and an edge links two vertices whose similarity is not null.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans un tel graphe, chaque nœud représente un élément à classer et une arête relie deux nœuds lorsque la similarité entre les éléments qu’ils représentent est non nulle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>In our case, the similarity graph directly corresponds to the cooccurrence network with the first order cooccurrences whereas with the second order cooccurrences, it is built from the similarity matrix described in Section 4.1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre cas, le graphe de similarité correspond directement au réseau de cooccurrence avec les cooccurrences de premier ordre, tandis que pour les cooccurrences de second ordre, il est construit à partir de la matrice de similarité décrite dans la section 4.1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>The SNN algorithm can be split up into two main steps: the first one aims at finding the elements that are the most representative of their neighborhood by masking the less important relations in the similarity graph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans son principe général, l’algorithme SNN comporte deux grandes étapes : la première vise à mettre en évidence les éléments les plus représentatifs de leur voisinage en masquant les relations les moins importantes du graphe de similarité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>These elements are the seeds of the final clusters that are built in the second step by aggregating the remaining elements to those selected by the first step.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces éléments constituent les embryons des futures classes, formées dans un second temps en agrégeant les autres éléments à ceux sélectionnés lors de la première phase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>More precisely, the SNN algorithm is applied to the discovering of the senses of a target word as follows:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, l'algorithme SNN est appliqué à la découverte des sens d'un mot cible comme suit :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>1. sparsification of the similarity graph: for each cooccurrent of the target word, only the links towards the k (k=15 in our experiments) most similar other cooccurrents are kept.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. « éclaircissement » du graphe de similarité : pour chaque cooccurrent, seules les arêtes en direction des k (k = 15 en l’occurrence) plus proches cooccurrents sont conservées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>2. building of the shared nearest neighbor graph: this step only consists in replacing, in the sparsified graph, the value of each edge by the number of direct neighbors shared by the two cooccurrents linked by this edge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. construction du graphe des plus proches voisins partagés : cette étape consiste à remplacer dans le graphe « éclairci » la valeur portée par chaque arête par le nombre de voisins directs que les deux cooccurrents reliés par l’arête ont en commun.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>3. computation of the distribution of strong links among cooccurrents: as for the first step, this one is a kind of sparsification.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. calcul de la distribution des liens forts parmi les cooccurrents : comme pour la première étape, il s'agit d'une sorte d'éclaircissement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>Its aim is to help finding the seeds of the senses, i.e. the cooccurrents that are the most representative of a set of cooccurrents. This step is also a means for discarding the cooccurrents that have no relation with the other ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Son but est de repérer les cooccurrents les plus représentatifs d'un ensemble de cooccurrents, c'est-à-dire les germes des sens. Cette étape permet également de rejeter les cooccurrents qui n'ont aucune relation avec les autres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>More precisely, two cooccurrents are considered as strongly linked if the number of the neighbors they share is higher than a fixed threshold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, deux cooccurrents sont considérés comme fortement liés si le nombre de voisins qu'ils partagent est supérieur à un seuil fixe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>The</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>higher than a fixed threshold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>supérieure à un seuil fixe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>The number of strong links of each cooccurrent is then computed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On caractérise ensuite chaque cooccurrent par le nombre de liens forts qu’il possède.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>4. identification of the sense seeds and filtering of noise: the sense seeds and the cooccurrents to discard are determined by comparing their number of strong links with a fixed threshold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. détermination des germes de sens et élimination du bruit : les germes de sens et les cooccurrents à éliminer sont déterminés par simple comparaison de leur nombre de liens forts par rapport à un seuil fixe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>5. building of senses: this step mainly consists in associating to the sense seeds identified by the previous step the remaining cooccurrents that are the most similar to them. The result is a set of clusters that each represents a sense of the target word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. construction des sens : cette étape consiste principalement à associer aux germes se sens trouvés à l’étape précédente les cooccurrents non déjà sélectionnés comme germe de sens ou bruit pour former des classes représentant les sens du mot considéré.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>For associating a cooccurrent to a sense seed, the strength of the link between them must be higher than a given threshold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour associer un cooccurrent à un germe de sens, la force du lien qui les unit doit être supérieure à un seuil donné.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>If a cooccurrent can be tied to several seeds, the one that is the most strongly linked to it is chosen.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si un raccourci peut être associé à plusieurs graines, le raccourci le plus fortement lié est choisi.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>Moreover, the seeds that are considered as too close from each other for giving rise to separate senses can also be grouped during this step in accordance with the same criteria than the other cooccurrents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, les graines qui sont considérées comme trop proches les unes des autres pour donner lieu à des sens distincts peuvent également être regroupées au cours de cette étape en fonction des mêmes critères que les autres cooccurrents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>6. extension of senses: after the previous steps, a set of cooccurrents that are not considered as noise are still not associated to a sense.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6. élargissement des sens : à l'issue des étapes précédentes, un nombre plus ou moins important de cooccurrents n'ayant pas été considérés comme du bruit se retrouvent néanmoins sans affectation à un sens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>The size of this set depends on the strictness of the threshold controlling the aggregation of a cooccurrent to a sense seed but as we are interested in getting homogeneous senses, the value of this threshold cannot be too low.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce nombre dépend bien entendu de la sévérité du seuil de rattachement à un germe de sens mais l’objectif étant de former des classes homogènes, celle-ci ne peut pas être trop faible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, we are also interested in having a definition as complete as possible of each sense.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, nous sommes également intéressés par une définition aussi complète que possible de chaque sens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>As senses are defined at this point more precisely than at step 4, the integration into these senses of cooccurrents that are not strongly linked to a sense seed can be performed on a larger basis, hence in a more reliable way.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les sens étant caractérisés à ce stade de façon plus précise qu'à l'étape 4, il est possible de les rattacher à des cooccurrents qui ne sont pas fortement liés à une graine de sens, sur une base plus large, et donc de façon plus fiable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>4.3 Adaptation of the SNN algorithm</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.3 Adaptation de l'algorithme SNN</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>For implementing the SNN algorithm presented in the previous section, one of the points that must be specified more precisely is the way its different thresholds are fixed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour mettre en œuvre l'algorithme SNN présenté dans la section précédente, l'un des points qui doivent être précisés est la façon dont ses différents seuils sont fixés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>In our case, we chose the same method for all of them: each threshold is set as a quantile of the values it is applied to. In this way, it is adapted to the distribution of these values.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre cas, nous avons choisi la même méthode pour tous : chaque seuil est exprimé comme un certain quantile des valeurs auxquelles il est appliqué. De cette façon, il est adapté à la distribution de ces valeurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>For the identification of the sense seeds (threshold equal to 0.9) and for the definition of the cooccurrents that are noise (threshold equal to 0.2), the thresholds are quantiles of the number of strong links of cooccurrents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour la détermination des germes de sens (seuil égal à 0,9) et pour la définition des cooccurrents qui sont du bruit (seuil égal à 0,2), les seuils sont des quantiles du nombre de liens forts des cooccurrents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>For defining strong links (threshold equal to 0.65), associating cooccurrents to sense seeds (threshold equal to 0.5) and aggregating cooccurrent to senses (threshold equal to 0.7), the thresholds are quantiles of the strength of the links between cooccurrents in the shared nearest neighbor graph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour définir les liens forts (seuil égal à 0,65), associer les cooccurrents aux germes (seuil égal à 0,5) et regrouper les cooccurrents par sens (seuil égal à 0,7), les seuils sont des quantiles de la force des liens entre les cooccurrents dans le graphe des plus proches voisins partagés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Statistics about the results of our word sense discovery algorithm</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1: Statistiques sur les résultats de notre algorithme de découverte des sens des mots</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>We also introduced two main improvements to the SNN algorithm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également introduit deux améliorations principales de l'algorithme SNN.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>The first one is the addition of a new step between the last two ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première est l'ajout d'une nouvelle étape entre les deux dernières.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>This comes from the following observation: although a sense seed can be associated to another one during the step 5, which means that the two senses they represent are merged, some clusters that actually correspond to one sense are not merged.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela découle de l'observation suivante : bien qu'un germe de sens puisse être associé à un autre au cours de l'étape 5, ce qui signifie que les deux sens qu'ils représentent sont fusionnés, certains groupes qui correspondent en fait à un sens ne sont pas fusionnés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>This problem is observed with the first and the second order cooccurrences and cannot be solved, without merging unrelated senses, only by adjusting the threshold that controls the association of a cooccurrent to a sense seed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce problème est observé avec les cooccurrences de premier et de deuxième ordre et ne peut être résolu, sans fusionner des sens non liés, uniquement en ajustant le seuil qui contrôle l'association d'un cooccurrent à une graine de sens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>In most of these cases, the “split” sense is scattered over one large cluster and one or several small clusters that only contain 3 or 4 cooccurrents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la plupart de ces cas, le sens « divisé » est réparti entre une ou plusieurs classes ne regroupant que 3 à 4 mots et une classe de plus grande ampleur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>More precisely, the sense seeds of the small clusters are not associated to the seed of the large cluster while most of the cooccurrents that are linked to them are associated to this seed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En pratique, les germes de sens des petites classes ne sont pas associés à la classe « majoritaire » alors que la plupart des cooccurrents qui leur étaient liés s’y sont rattachés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>Instead of defining a specific mechanism for dealing with these small clusters, we chose to let the SNN algorithm to solve the problem by only deleting these small clusters (size &lt; 6) after the step 5 and marking their cooccurrents as unclassified.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plutôt que de définir un mécanisme spécifique pour traiter ces petits groupes, nous avons choisi de laisser l'algorithme SNN résoudre le problème en supprimant ces petits groupes (taille &lt; 6) après l'étape 5 et en marquant leurs cooccurrents comme non classifiés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>The last step of the algorithm aggregates in most of the cases these cooccurrents to the large cluster.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La dernière étape de l'algorithme rassemble dans la plupart des cas ces cooccurrents dans la grande classe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>Moreover, this new step makes the built senses more stable when the parameters of the algorithm are only slightly modified.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, ce nouveau mécanisme permet d'obtenir une plus grande stabilité des sens formés lorsque les paramètres de l'algorithme sont modifiés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>The second improvement, which has a smaller impact than the first one, aims at limiting the noise that is brought into clusters by the last step.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une seconde amélioration, d’impact plus faible, a été opérée afin de s’assurer que les cooccurrents rattachés lors de la dernière étape n’introduisent pas de bruit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>In the algorithm of (Ertöz et al. , 2001), an element can be associated to a cluster when the strength of its link with one of the elements of this cluster is higher than a given threshold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans l'algorithme d'Ertöz et al. (2001), un élément peut être associé à un cluster lorsqu'il a un lien plus fort qu'un seuil donné avec un des éléments de ce cluster.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>This condition is stricter in our case as it concerns the average strength of the links between the unclassified cooccurrent and those of the cluster.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette condition est plus stricte dans notre cas puisqu'elle concerne la force moyenne des liens entre le cooccurrent non classé et les éléments du cluster.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>5 Experiments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Expérimentation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>We applied our algorithm for discovering word senses to the two networks of lexical cooccurrences we have described in Section 3 (LM: French; LAT: English) with the parameters given in Section 4.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons appliqué notre algorithme de découverte de sens aux deux réseaux de cooccurrences lexicales que nous avons décrits dans la section 3 (LM : français ; LAT : anglais) avec les paramètres précisés dans la section 4.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>For each network, we tested the use of first order cooccurrences (LM-1 and LAT-1) and second order ones (LM-2 and LAT-2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque réseau, nous avons testé l’utilisation initiale de cooccurrences d’ordre 1 (LM-1 et LAT-1) et d’ordre 2 (LM-2 et LAT-2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>For English, the use of second order cooccurrences was tested only for the subpart of the words of the network that was selected for the evaluation of Section 6 (LAT-2.no).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour l'anglais, l'utilisation de cooccurrences de deuxième ordre a été testée uniquement sur le sous-ensemble des mots du réseau qui a été sélectionné pour l'évaluation de la section 6 (LAT-2.no).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>Table 1 gives some statistics about the results of the discovered senses for the different cases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 1 donne des statistiques sur les résultats des sens découverts dans les différentes configurations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>We can notice that a significant percentage of words do not have any sense, even with second order cooccurrences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On remarquera qu’un pourcentage significatif de mots n’ont pas sens, même avec les cooccurrences d’ordre 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>This comes from the fact that their cooccurrents are weakly linked to each other in the cooccurrence network they are part of, which probably means that their senses are not actually represented in this network.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela vient du fait que leurs cooccurrents sont faiblement liés entre eux dans le réseau de cooccurrences auquel ils appartiennent, ce qui signifie probablement que leurs sens ne sont pas représentés dans ce réseau.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>We can also notice that the use of second order cooccurrence actually leads to have a smaller number of senses by word, hence to have senses with a larger definition.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, on notera que l'utilisation des cooccurrences d'ordre 2 conduit effectivement à réduire le nombre de sens par mot, et donc à avoir des sens avec une définition plus large.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>As Véronis (2003), we give in Table 2 as an example of the results of our algorithm some of the words defining the senses of the polysemous French word barrage , which was part of the ROMANSEVAL evaluation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme Véronis (2003), nous donnons dans le Tableau 2, à titre d'exemple des résultats de notre algorithme, quelques-uns des mots caractérisant les sens du mot barrage, polysémique, qui faisait partie de l'évaluation ROMANSEVAL.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>Whatever the kind of cooccurrences it relies on, our algorithm finds three of the four senses distinguished in (Véronis, 2003): dam (senses 1.3 and 2.1); barricading, blocking (senses 1.1, 1.2 and 2.2); barrier, frontier (senses 1.4 and 2.3).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quel que soit le type de cooccurrences sur lesquelles il repose, notre algorithme trouve trois des quatre sens distingués dans (Véronis, 2003) : barrage (sens 1.3 et 2.1), barrage routier (sens 1.2 et 2.2), barrière (sens 1.4 et 2.3).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>The sense play-off game ( match de barrage ), which refers to the domain of sport, is not found as it is weakly represented in the cooccurrence network and is linked to words, such as division , that are also ambiguous (it refers both to the sport and the military domains).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le sens match de barrage, qui se rapporte au domaine du sport, n'est pas représenté car faiblement présent au niveau des cooccurrences et de plus, au travers de certains mots ambigus, comme division , qui renvoient aussi à d'autres domaines que le sport.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>It should be note that barrage has only 1,104 occurrences in our corpus while it has 7,000 occurrences in the corpus of (Véronis, 2003), built by crawling from the Internet the pages found by a meta search engine queried with this word and its morphological variants.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il faut préciser que barrage ne comporte ici que 1104 occurrences, à comparer avec environ 7000 occurrences pour (Véronis, 2003), construit en crawlant sur Internet les pages trouvées par un moteur de recherche métas, interrogé avec ce mot et ses variantes morphologiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>This example is also a good illustration of the difference of granularity of the senses built from first order cooccurrences and those built from the second order ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet exemple illustre également la différence de granularité des sens induite par l’utilisation des cooccurrences de premier ordre ou de second ordre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>The sense 1.1, which is close to the sense 1.2 as the two refers to demonstrations in relation to a category of workers, disappears when the second order cooccurrences are used.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le sens 1.1, qui est assez proche du sens 1.2, les deux faisant référence à des manifestations de colère liée à une profession, disparaît ainsi lorsqu’on fait appel aux cooccurrences de deuxième ordre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>Table 3 gives examples of discovered senses from first order cooccurrences only, one for French (LM-1) and two for English (LAT-1). Table 2: Senses found by our algorithm for the word barrage</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 3 donne des exemples de sens découverts à partir de cooccurrences de premier ordre, un pour le français (LM-1) et deux pour l’anglais (LAT-1). Tableau 2 : Sens trouvés par notre algorithme pour le mot barrage</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>6 Evaluation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Évaluation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>The discovering of word senses, as most of the work dedicated to the building of linguistic resources, comes up against the problem of evaluating its results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La découverte de sens, comme la plupart des travaux dédiés à la construction de ressources linguistiques, se heurte à la difficulté de l'évaluation du résultat obtenu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>The most direct way of doing it is to compare the resource to evaluate with a similar resource that is acknowledged as a golden standard.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La voie la plus directe pour ce faire est la comparaison avec une ressource de référence que l’on considère comme un standard de référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>For word senses, the WordNet-like lexicosemantic networks can be considered as such a standard.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas des sens des mots, les réseaux lexicosémantiques de type WordNet peuvent être considérés comme une telle ressource de référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>Using this kind of networks for evaluating the word senses that we find is of course criticizable as our aim is to overcome their insufficiencies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Utiliser ce type de réseaux pour évaluer les sens trouvés est certes critiquable puisqu’un des objectifs d’une telle découverte est de dépasser les limites de ces réseaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, as these networks are carefully controlled, such an evaluation provides at least a first judgment about the reliability of the discovered senses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, étant donné le caractère contrôlé de ces réseaux, une telle évaluation apporte au moins un élément de jugement important quant à la fiabilité des sens mis en évidence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>We chose to take up the evaluation method proposed in (Pantel and Lin, 2002). This method relies on WordNet and shows a rather good agreement between its results and human judgments (88% for Pantel and Lin).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons choisi de reprendre la méthode d'évaluation proposée dans (Pantel et Lin, 2002). Cette méthode s'appuie sur WordNet et montre un accord raisonnablement bon entre ses résultats et les jugements humains (88% pour Pantel et Lin).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>As a consequence, our evaluation was done only for English, and more precisely with WordNet 1.7.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre évaluation ne portera donc que sur l'anglais et a été réalisée avec Wordnet 1.7.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>For each considered word, the evaluation method tries to map one of its discovered senses with one of its synsets in WordNet by applying a specific similarity measure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque mot considéré, la méthode d'évaluation tente de mettre en correspondance l'un des sens qu'elle a découvert avec l'un de ses synsets dans WordNet en appliquant une mesure de similarité spécifique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>Hence, only the precision of the word sense discovering algorithm is evaluated but Pantel and Lin indicate that recall is not very significant in this context: a discovered sense may be correct and not present in WordNet and conversely, some senses in WordNet are very close and should be joined for most of the applications using WordNet.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il s'agit donc d'une mesure de précision. Pantel et Lin précisent qu'une mesure de rappel n'est dans le cas présent que faiblement significative : un sens découvert peut être valide et non présent dans WordNet et à l'inverse certaines distinctions de sens dans WordNet ne sont pas nécessairement souhaitables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>They define a recall measure but only for ranking the results of a set of systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils définissent néanmoins une mesure de rappel mais destinée seulement à classer un ensemble de systèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>Hence, it cannot be applied in our case.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle n'est donc pas applicable à notre cas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>The similarity measure between a sense and a synset used for computing precision relies on the Lin’s similarity measure between two synsets:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La mesure de similarité entre un sens et un synset utilisée pour le calcul de la précision s’appuie sur la mesure de similarité entre synsets définie par Lin :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>where s is the most specific synset that subsumes s1 and s2 in the WordNet hierarchy and P(s) represents the probability of the synset s estimated from a reference corpus, in this case the SemCor corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où s est le synset le plus spécifique subsumant les synset s1 et s2 dans la hiérarchie de WordNet et où P(s) représente la probabilité du synset s calculée à partir d’un corpus de référence, en l’occurrence le SemCor.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>We used the implementation of this measure provided by the Perl module WordNet ::Similarity v0.06 (Patwardhan and Pedersen, 2003).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour le calcul de cette mesure, nous nous avons utilisé le module Perl WordNet::Similarity v0.06 (Patwardhan, Pedersen, 2003).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>The similarity between a sense and a synset is more precisely defined as the average value of the similarity values between the words that characterize the sense, or a subset of them, and the synset.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La similarité entre un sens et un synset est plus précisément définie comme la moyenne des similarités entre les mots qui caractérisent le sens, ou une partie de ceux-ci, et le synset.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>The similarity between a word and a synset is equal to the highest similarity value among those between the synset and the synsets to which the word belongs to.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La similarité entre un mot et un synset est égale à la plus forte des similarités entre le synset et les synsets auxquels le mot considéré appartient.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>Each of these values is given by (1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chacune de ces valeurs est définie par (1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>A sense is mapped to the synset that is the most similar to it, providing that the similarity between them is higher than a fixed threshold (equal to 0.25 as in (Pantel and Lin, 2002)).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un sens est affecté au synset qui lui est le plus similaire, à condition toutefois que la similarité entre les deux soit supérieure à un seuil fixe (égal ici à 0,25 comme dans (Pantel et Lin, 2002)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>Finally, the precision for a word is given by the proportion of its senses that match one of its synsets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, la précision d'un mot est donnée par le rapport entre le nombre de ses sens s'appariant avec un de ses synsets et le nombre total de ses sens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>organe (1300)[2] patient, transplantation, greffe, malade, thérapeutique, médical, médecine, greffer, rein ( patient, transplantation, transplant, sick person, therapeutic, medical, medicine, to transplant, kidney )</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>organe (1300)[2] patient, transplantation, greffe, malade, thérapeutique, médical, médecine, greffer, rein ( patient, transplantation, transplant, malade, thérapeutique, médical, médecine, greffer, rein )</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>Table 3: Senses found by our algorithm from first order cooccurrences (LM-1 and LAT-1)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 3 : Sens découverts par notre algorithme à partir de cooccurrences de premier ordre (LM-1 et LAT-1)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>Table 4 gives the results of the evaluation of our algorithm for the words of the English cooccurrence network that are nouns only and for which at least one sense was discovered.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 4 donne les résultats de l'évaluation de notre algorithme pour les mots du réseau de cooccurrences anglais qui ne sont que des noms et pour lesquels au moins un sens a été découvert.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>As Pantel and Lin, we only take into account for evaluation 4 words of each sense, whatever the number of words that define it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme Pantel et Lin, nous ne prenons en compte que 4 mots de chaque sens pour l’évaluation, quel que soit le nombre de mots qui le définissent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>But, because of the way our senses are built, we have not a specific measure of the similarity between a word and the words that characterize its senses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais en raison de la façon dont nos sens sont construits, nous n'avons pas de mesure spécifique de la similarité entre un mot et les mots qui caractérisent ses sens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>Hence, we computed two variants of the precision measure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons donc calculé deux variantes de la mesure de précision.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>The first one selects the four words of each sense by relying on their number of strong links in the shared nearest neighbor graph. The second one selects the four words that have the highest similarity score with one of the synsets of the target word, which is called “optimal choice” in Table 4[3] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le premier sélectionne les quatre mots de chaque sens en se basant sur leur nombre de liens forts dans le graphe des voisins les plus proches. Le second sélectionne les quatre mots ayant le score de similarité le plus élevé avec l'un des synonymes du mot cible, appelé « choix optimal » dans le tableau 4[3].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>A clear difference can be noted between the two variants. With the optimal choice of the four words, we get results that are similar to those of Pantel and Lin: their precision is equal to 60.8 with an average number of words defining a sense equal to 14. On the other hand, Table 4 shows that the words selected on the basis of their number of strong links are not strongly linked in WordNet (according to Lin’s measure) to their target word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous constatons à l'évidence un écart important entre ces deux mesures : la précision des sens distingués est comparable à celle obtenue par Pantel et Lin lorsque le choix des 4 mots représentatifs d'un sens est optimal (Pantel et Lin obtiennent une précision de 60,8 pour un nombre de mots par sens égal à 14) mais les mots choisis pour représenter un sens dans notre cas ne sont pas fortement liés dans WordNet (selon la mesure de Lin) au mot caractérisé par ce sens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>This does not mean that the selected words are not interesting for describing the senses of the target word but more probably that the semantic relations that they share with the target word are different from hyperonymy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela ne signifie pas que les mots sélectionnés ne soient pas intéressants pour décrire les sens du mot cible, mais plus sûrement que leur lien avec lui repose sur des relations sémantiques autres que l’hyperonymie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>The results of Pantel and Lin can be explained by the fact that their algorithm is based on the clustering of similar words, i.e. words that are likely to be synonyms, and not on the clustering of the cooccurrents of a word, which are not often synonyms of that word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le meilleur résultat obtenu par Pantel et Lin sur ce point s’explique par le fait que leur algorithme est basé sur le regroupement de mots similaires, c'est-à-dire des mots susceptibles d'être des synonymes, et non sur le regroupement des cooccurrents d'un mot, qui ne comportent pas souvent de synonymes de ce mot.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>Moreover, their initial corpus is much larger (around 144 millions words) than ours and they make use of more elaborated tools, such as a syntactic analyzer.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, il est à noter que leur corpus de départ est beaucoup plus large (de l’ordre de 144 millions de mots) et qu’ils font appel à des moyens d’analyse plus élaborés, en l’occurrence un analyseur syntaxique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>Table 4: Average precision of discovered senses for English in relation with WordNet</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 4 : Précision moyenne des sens découverts pour l'anglais par rapport à WordNet</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>As expected, the results obtained with first order cooccurrences (LAT-1.no), which produce a higher number of senses by word, are lower than the results obtained with second order cooccurrences (LAT-2.no).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sans surprise, les résultats obtenus avec les cooccurrences de premier ordre (LAT-1.no), qui conduisent à un nombre de sens plus important, sont inférieurs à ceux obtenus avec les cooccurrences de deuxième ordre (LAT-2.no).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>However, without a recall measure, it is difficult to draw a clear conclusion from this observation: some senses of LAT-1.no probably result from the artificial division of an actual word sense but the fact to have more homogeneous senses in LAT-2.no also facilitates in this case the mapping with WordNet’s synsets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, en l'absence de mesure de rappel, il est difficile de tirer une conclusion claire de cette observation : il est probable que certains sens de LAT-1.no résultent de la division artificielle d'un sens de mot réel, mais le fait d'avoir des sens plus homogènes dans LAT-2.no facilite également le mappage avec les synonymes de WordNet dans ce cas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>7 Related work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7 Travaux connexes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>As they rely on the detection of high-density areas in a network of cooccurrences, (Véronis, 2003) and (Dorow and Widdows, 2003) are the closest methods to ours.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme ils reposent sur la détection de zones de forte densité dans un réseau de cooccurrences, (Véronis, 2003) et (Dorow et Widdows, 2003) sont les méthodes les plus proches de la nôtre. Malgré une proximité d'approche générale avec (Rapp, 2003), la distance avec ce dernier est plus grande car il ne repose pas sur la détection de composantes de forte densité dans un graphe de cooccurrence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, two main differences can be noted with our work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, deux différences principales peuvent être notées avec notre travail.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>The first one concerns the direct use they make of the network of cooccurrences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première est l’utilisation directe du graphe de cooccurrence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>In our case, we chose a more general approach by working at the level of a similarity graph: when the similarity of two words is given by their relation of cooccurrence, our situation is comparable to the one of (Véronis, 2003) and (Dorow and Widdows, 2003); but in the same framework, we can also take into account other kinds of similarity relations, such as the second order cooccurrences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons opté pour notre part pour une approche plus générale en travaillant au niveau d’un graphe de similarité : lorsque la similarité entre deux mots est donnée par leur relation de cooccurrence, notre situation est comparable à celle des travaux cités (Véronis, 2003) et (Dorow et Widdows, 2003) ; mais dans le même cadre, nous pouvons également prendre en compte d’autres types de relations de similarité, telles que les cooccurrences de second ordre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>The second main difference is the fact they discriminate senses in an iterative way.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La seconde différence est le fait qu'ils distinguent les sens de manière itérative.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>This approach consists in selecting at each step the most obvious sense and then, to update the graph of cooccurrences by discarding the words that make up the new sense. The other senses are then easier to discriminate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette procédure consiste à sélectionner à chaque étape le sens se détachant le plus clairement puis à actualiser le graphe de cooccurrence en en éliminant les constituants du sens formé, ce qui permet de faire apparaître plus distinctement les sens résiduels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>We preferred to put emphasis on the ability to gather close or identical senses that are artificially distinguished (see Section 4.3).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons préféré mettre l'accent sur la possibilité de réunir des sens très proches, voire identiques, artificiellement séparés (voir section 4.3).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>From a global viewpoint, these two differences lead (Véronis, 2003) and (Dorow and Widdows, 2003) to build finer senses than ours.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus globalement, les deux différences pointées (Véronis, 2003) et (Dorow et Widdows, 2003) conduisent à des distinctions de sens plus fines que celles que nous mettons en évidence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, as methods for discovering word senses from a corpus tend to find a too large number of close senses, it was more important from our viewpoint to favour the building of stable senses with a clear definition rather than to discriminate very fine senses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, les méthodes de découverte de sens à partir de corpus ayant plutôt tendance à distinguer un trop grand nombre de sens proches, il nous a semblé plus important de favoriser la mise en évidence de sens stables et nettement délimités que de rechercher une très grande finesse dans les distinctions de sens réalisées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>8 Conclusion and future work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>8 Conclusion et perspectives de travail</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>In this article, we have presented a new method for discriminating and defining the senses of a word from a network of lexical cooccurrences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons présenté dans cet article une nouvelle méthode pour différencier et caractériser le sens des mots à partir d’un réseau de cooccurrences lexicales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>This method consists in applying an unsupervised clustering algorithm, in this case the SNN algorithm, to the cooccurrents of the word by relying on the relations that these cooccurrents have in the cooccurrence network.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthode consiste à appliquer un algorithme de classification non supervisé, l’algorithme SNN, aux cooccurrents des mots en se fondant sur les relations que ces cooccurrents entretiennent dans le réseau de cooccurrence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>We have achieved a first evaluation based on the methodology defined in (Pantel and Lin, 2002). This evaluation has shown that in comparison with WordNet taken as a reference, the relevance of the discriminated senses is comparable to the relevance of Pantel and Lin’s word senses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons réalisé une première évaluation suivant la méthodologie définie dans (Pantel et Lin, 2002). Cette évaluation a montré que la pertinence des sens discriminés est comparable à celle des sens formés par Pantel et Lin, par rapport à WordNet pris comme référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>But it has also shown that the similarity between a discovered sense and a synset larity between a discovered sense and a synset of WordNet must be evaluated in our case by taking into account a larger set of semantic relations, especially those implicitly present in the glosses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais cela a également montré que la similarité entre un sens découvert et un synset de WordNet doit être évaluée dans notre cas en prenant en compte un ensemble plus vaste de relations sémantiques, en particulier celles implicitement présentes dans les « glosses » associées aux synsets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>Moreover, an evaluation based on the use of the built senses in an application such as query expansion is necessary to determine the actual interest of this kind of resources in comparison with a lexicosemantic network such as WordNet.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, une évaluation au travers d’une utilisation dans une tâche telle que l’expansion de requêtes nous semble également nécessaire afin de juger de l’apport véritable de ce type de ressource par rapport à une ressource de type WordNet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>1 This observation comes from the intersection, for each word of the L.A. Times network, of its cooccurrents in the network and its synonyms in WordNet.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Cette observation provient de l'intersection, pour chaque mot du réseau construit à partir du Los Angeles Times, de ses cooccurrents dans le réseau et de ses synonymes dans WordNet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>2 Each word is given with its frequency in the corpus used for building the cooccurrence network.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Chaque mot est accompagné de sa fréquence dans le corpus utilisé pour construire le réseau de cooccurrence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>3 This selection procedure is only used for evaluation and we do no rely on WordNet for building our senses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Cette procédure de sélection n'est utilisée que pour l'évaluation et nous ne nous appuyons pas sur WordNet pour construire nos sens.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

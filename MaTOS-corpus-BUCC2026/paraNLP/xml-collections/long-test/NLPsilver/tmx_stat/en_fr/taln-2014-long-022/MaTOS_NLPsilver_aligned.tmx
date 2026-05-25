@@ -1,0 +1,1615 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2014-long-022. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/C14-1206.pdf</url_en>
+        <url_fr>https://aclanthology.org/F14-1022.pdf</url_fr>
+        <title_en>Unsupervised extraction of semantic relations using discourse cues</title_en>
+        <title_fr>Extraction non supervisée de relations sémantiques lexicales</title_fr>
+        <docid>taln-2014-long-022</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Unsupervised extraction of semantic relations using discourse cues</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Extraction non supervisée de relations sémantiques utilisant des indices de discours</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>This paper presents a knowledge base containing triples involving pairs of verbs associated with semantic or discourse relations. The relations in these triples are marked by discourse connectors between two adjacent instances of the verbs in the triple in the large French corpus, frWaC.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons une base de connaissances comportant des triplets de paires de verbes associés avec une relation sémantique/discursive, extraits du corpus français frWaC par une méthode s’appuyant sur la présence d’un connecteur discursif reliant deux verbes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>We detail several measures that evaluate the relevance of the triples and the strength of their association.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous détaillons plusieurs mesures visant à évaluer la pertinence des triplets et la force d’association entre les relations sémantiques/discursives et les paires de verbes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>We use manual annotations to evaluate our method, and also study the coverage of our resource with respect to the discourse annotated corpus Annodis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons des annotations manuelles pour évaluer notre méthode et étudier la couverture de notre ressource par rapport au corpus annoté discursivement Annodis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>Our positive results show the potential impact of our resource for discourse analysis tasks as well as other semantically oriented tasks like temporal and causal information extraction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette étude produit des résultats prometteurs démontrant l'utilité potentielle de notre ressource pour les tâches d'analyse discursive mais aussi des tâches de nature sémantique comme l'extraction d'informations temporelles et causales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>1 Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Relational lexical resources, which describe semantic relations between lexical items, have traditionally focused on relations like synonymy or similarity in thesauri, perhaps including some hierarchical semantic relations like hyperonymy or hyponomy or part-whole relations as in the resource Wordnet (Felbaum, 1998).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les ressources lexicales relationnelles, qui décrivent les relations sémantiques entre les éléments lexicaux, se sont traditionnellement concentrées sur les relations telles que la synonymie ou la similarité dans les thésaurus, éventuellement avec des relations hiérarchiques (hyperonymie ou hyponymie), à l'exemple de la ressource Wordnet (Felbaum, 1998), qui inclut également des relations de partie à tout.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>Some distributional thesauri contain more varied relations, see e.g. (Grefenstette, 1994), however these relations are not typed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certains thésaurus distributionnels incluent des relations plus variées, voir par exemple (Grefenstette, 1994), mais ces relations ne sont pas typées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>The lexical semantics given by FrameNet (Baker et al., 1998) does include causal and temporal relations, as does Verbocean (Chklovski and Pantel, 2004), but coverage is limited and empirical validation of these resources is partial and still largely remains to be done.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les exceptions sont rares : le lexique sémantique FrameNet (Baker et al. , 1998) inclut des relations de causalité ou de précédence temporelle entre des éléments désignant des événements, à l'intérieur de scénarios prototypiques, mais ces relations sont peu nombreuses et relativement négligeables par rapport au contenu de ce lexique ; la base Verbocean (Chklovski &amp; Pantel, 2004) comporte des relations sémantiques de plusieurs types entre verbes transitifs : relations de type causal ( enablement , par exemple fight/win ), précédence temporelle ( marry/divorce ), similarité, antonymie, force ( wound/kill ), mais sa couverture est assez faible (environ 4000 paires de verbes dans sa version filtrée).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>Lexical relations, in particular between verbs, are nevertheless crucial for understanding natural language and for many information processing tasks. They are needed for textual inference, in which one has to infer certain relations between eventualities (Hashimoto et al., 2009; Tremper and Frank, 2013), for information extraction tasks, like finding temporal relations between eventualities mentioned in a text (UzZaman et al., 2013), for automatic summarization (Liu et al., 2007), and for discourse parsing in the absence of explicit discourse markers (Sporleder and Lascarides, 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les relations lexicales, notamment entre verbes, sont pourtant cruciales pour la compréhension du langage naturel, et sont utilisées par exemple dans la tâche d’inférence textuelle, où il s’agit de trouver les implications entre certains événements (Hashimoto et al. , 2009; Tremper &amp; Frank, 2013), dans certaines tâches d’extraction, par exemple de relations temporelles (UzZaman et al. , 2013), dans l’analyse discursive en l’absence de marques explicites (Sporleder &amp; Lascarides, 2008), ou bien encore pour le résumé automatique (Liu et al. , 2007). Certains travaux se sont consacrés à l’inventaire de tels liens pour des relations spécifiques : par exemple les liens causaux (Do et al. , 2011), les liens temporels (Chambers &amp; Jurafsky, 2008), les liens d’implication ( entailment ) (Hashimoto et al. , 2009), implication et présupposition (Tremper &amp; Frank, 2013).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>In this paper we report on our efforts to extract semantic relations essential to the analysis of discourse and its interpretation, in which links are made between units of text or rather their semantic representations as in (1) in virtue of semantic information about the two main verbs of those clauses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous rapportons nos efforts pour extraire les relations sémantiques essentielles à l'analyse du discours et son interprétation, dans lesquelles des liens sont établis entre des unités de texte ou plutôt leurs représentations sémantiques comme dans (1) en vertu de l'information sémantique sur les deux verbes principaux de ces clauses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>(1) The candidate demonstrated his expertise during the interview.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(1) Le candidat a démontré tout son savoir-faire lors de l'entretien.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>The committee was completely convinced.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le comité était complètement convaincu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>We follow similar work on the extraction of causal, temporal, entailment and presuppositional relations from corpora (Do et al., 2011; Chambers and Jurafsky, 2008; Hashimoto et al., 2009; Tremper and Frank, 2013), though our goals and validation methods are different.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous suivons des travaux similaires sur l'extraction de relations causales, temporelles, implicites et présupposées à partir de corpus (Do et al., 2011 ; Chambers et Jurafsky, 2008 ; Hashimoto et al., 2009 ; Tremper et Frank, 2013), bien que nos objectifs et méthodes de validation soient différents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>While one of our goals is to use this information to improve performance in predicting discourse relations between clauses, we believe that such a lexical resource will have other uses in other tasks in which semantic information is needed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que l'un de nos objectifs soit d'utiliser ces informations pour améliorer les performances de prédiction des relations de discours entre les clauses, nous pensons qu'une telle ressource lexicale aura d'autres utilisations dans d'autres tâches nécessitant des informations sémantiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>Discourse analysis is a difficult task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’analyse discursive est une tâche difficile.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>Rhetorical relations are frequently implicit and require for their identification inference using diverse sources of lexical and compositional semantic information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, les relations rhétoriques sont fréquemment implicites et nécessitent des inférences pour être identifiées en utilisant diverses sources d'informations sémantiques lexicales et compositionnelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>In the Penn Discourse Treebank corpus for example, 52% of the discourse relations are unmarked (Prasad et al., 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le corpus Penn Discourse Treebank par exemple, 52 % des relations du discours sont non marquées (Prasad et al., 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>Accordingly, annotation with discourse structure is a slow and error prone task, and relatively little annotated data is currently available ; and so machine learning approaches have had limited success in this area.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En conséquence, l'annotation de la structure du discours est une tâche fastidieuse et souvent imprécise, et peu de données annotées sont actuellement disponibles ; de ce fait, les approches d'apprentissage automatique ont eu un succès limité dans ce domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>Our approach addresses this problem, using non annotated data with features that can be automatically detected to find typical contexts (pairs of discourse units) in which various discourse relations occur.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre approche aborde ce problème en utilisant des données non annotées avec des caractéristiques qui peuvent être automatiquement détectées pour trouver des contextes typiques (paires d'unités de discours) dans lesquels diverses relations de discours se produisent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>We suppose with (Sporleder and Lascarides, 2008; Braud and Denis, 2013) that such contexts display regular lexical associations, in particular with verbs in those discourse units.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous supposons avec (Sporleder et Lascarides, 2008 ; Braud et Denis, 2013) que de tels contextes affichent des associations lexicales régulières, en particulier avec les verbes dans ces unités de discours.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>An explicit, manually compiled list of all possible associations between two verbs and the semantic relations they suggest is infeasible, so we present here an automatic method for compiling such a list, inspired by the Verbocean project (Chklovski and Pantel, 2004).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une liste explicite, compilée manuellement, de toutes les associations possibles entre deux verbes et les relations sémantiques qu'ils suggèrent est difficilement réalisable, c'est pourquoi nous présentons ici une méthode automatique, inspirée du projet Verbocean (Chklovski et Pantel, 2004), pour compiler une telle liste.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>Our hypothesis, supported by existing corpora, is that adjacent clauses are often arguments of discourse relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre hypothèse, soutenue par les corpus existants, est que les clauses adjacentes sont souvent des arguments de relations de discours.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>When these clauses contain certain adverbs or other discourse connectors, we can recover automatically one or more discourse relations that we associate with the main verbs of those clauses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsque ces clauses contiennent certains adverbes ou autres connecteurs discursifs, nous pouvons récupérer automatiquement une ou plusieurs relations discursives associées aux verbes principaux de ces clauses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>We extract triples consisting of the two verbs and a semantic relation from a large corpus with the aim of inferring that such a pair of verbs can suggest the semantic relation even in the absence of an explicit discourse marker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous extraisons des triplets composés de deux verbes et d'une relation sémantique à partir d'un grand corpus dans le but d'inférer qu'une telle paire de verbes peut suggérer la relation sémantique même en l'absence d'un marqueur discursif explicite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>We thus also suppose, with (Sporleder and Lascarides, 2008; Braud and Denis, 2013), that such discourse markers are at least partially redundant ; inferring a discourse relation between two clauses relies not only the marker but on the two verbs in the related clauses as well. All of our work has been done on French data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous supposons donc, avec (Sporleder et Lascarides, 2008 ; Braud et Denis, 2013), que ces marqueurs de discours sont au moins partiellement redondants ; l'inférence d'une relation de discours entre deux clauses repose non seulement sur le marqueur, mais également sur la paire de verbes employée dans les clauses associées. Tout notre travail a été effectué sur des données en français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>Our paper is organized as follows.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre article est organisé comme suit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>We describe first the knowledge base of verb semantic relation triples that we have constructed (section 2) ; we then present our methods for isolating verb pairs implicating discourse or temporal information (section 3).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous détaillons d'abord la base de connaissances de triples de relations sémantiques de verbes que nous avons construite (section 2), puis nous présentons ensuite les méthodes utilisées pour isoler des paires de verbes susceptibles d'apporter des informations discursives ou temporelles (section 3).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>A third section describes our methods of evaluation (section 4) and a fourth discusses related work (section 5).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une troisième section décrit nos méthodes d'évaluation (section 4) et une quatrième fait une comparaison avec d'autres approches (section 5).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>2 Exploring relations between verbs in a corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Explorer les relations entre verbes en corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>We built a knowledge base (V[2] R )[1] using the frWaC corpus(Baroni et al., 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons construit une base de connaissances (V[2] R )[1] à partir du corpus frWaC (Baroni et al., 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>frWaC contains about 1.6 billion words and was collected on the Web on the .fr domain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>frWaC contient environ 1,6 milliards de mots et a été collecté sur le Web dans le domaine .fr.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>We first parsed the documents in our corpus using BONSAI[2] , which first produced a morpho-syntactic labeling using MElt (Denis and Sagot, 2012) and then a syntactic analysis in the form of dependency trees via a French version of the MaltParser (Nivre et al., 2007).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons d'abord analysé les documents de notre corpus à l'aide de BONSAI[2] , qui a d'abord produit un étiquetage morpho-syntaxique à l'aide de MElt (Denis et Sagot, 2012) et ensuite une analyse syntaxique sous forme d'arbres de dépendances via une version française du MaltParser (Nivre et al., 2007). Le format de sortie est de type CONLL.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>Our goal is to find pairs of verbs linked by a relation explicitly marked by a discourse connector in the corpus, as an indication of a regular semantic relation between the two verbs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre objectif est de trouver des paires de verbes liés par une relation explicitement marquée par un connecteur dans le corpus, comme indication d'une relation sémantique régulière entre les deux verbes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>The relations we have considered are common to most theories of discourse analysis, and they can be grouped into four classes (Prasad et al., 2008) : causal ( contingency ) relations, temporal relations, comparison relations (mainly contrast type relations), and expansion relations (e.g. elaboration or continuation).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les relations que nous avons considérées sont communes à la plupart des théories de l'analyse du discours, et elles peuvent être regroupées en quatre classes (Prasad et al., 2008) : relations causales (contingence), relations temporelles, relations de comparaison (principalement des relations de type contrastif), et relations d'expansion (par exemple, élaboration ou continuation).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>To find explicitly marked relations, we used a lexicon of discourse connectors for French, the manually constructed LEXCONN resource (Roze et al., 2012)[3] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de repérer les relations discursives marquées explicitement, on dispose en français du lexique LEXCONN (Roze et al. , 2012)[4] , construit manuellement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>LEXCONN includes 358 connectors and gives their syntactic category as well as associated discourse relations inspired from (Asher and Lascarides, 2003).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>LEXCONN comprend 358 connecteurs et donne leur catégorie syntaxique ainsi que les relations discursives associées, inspirées de (Asher et Lascarides, 2003).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>Some connectors are ambiguous in that they are associated with several relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certains connecteurs sont ambigus dans le sens où ils sont associés à plusieurs relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>We used only the unambiguous connectors (263 in all) in LEXCONN, as a first step.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, dans un but de simplification, nous avons choisi de ne conserver que les connecteurs non ambigus, au nombre de 263.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>We regrouped the LEXCONN relations into classes[4] : explanation relations ( parce que /because) and result ( ainsi /thus) form the causal class ; temporal relations ( puis, après que /then,after that) form the narration group.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons regroupé les relations LEXCONN en classes[4] : les relations d'explication ( parce que / because) et de résultat ( ainsi / thus) forment la classe causale ; les relations temporelles ( puis, après que / then,after that) forment le groupe de narration.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>We also considered other relations like contrast ( mais /but), continuation ( et, encore /and,again), background ( alors que /while), temporal location ( quand, pendant que /when), detachment ( de toutes façons /anyway), elaboration ( en particulier /in particular), alternation ( ou /or), commentary ( au fait /by the way), rephrasing ( du moins /at least), and evidence ( effectivement /indeed).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les autres relations considérées sont des relations structurelles de contraste ( mais ), continuation ( et, encore ), arrière-plan ( alors que ), localisation temporelle ( quand, pendant que ), détachement ( de toutes façons ), élaboration ( en particulier ), alternance ( ou ), commentaire ( au fait ), reformulation ( du moins ), évidence ( effectivement ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>We searched our syntactically parsed corpus for connectors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons effectué une recherche de connecteurs dans notre corpus syntaxiquement analysé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>When a connector is found and its syntactic category verified, if it is close enough to the root of the sentence (at most one dependency link from the root), we look for an inter-sentential link.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsqu'un connecteur est rencontré (après vérification de sa catégorie syntaxique), si celui-ci se trouve suffisamment proche de la racine de la phrase (à un maximum d'un lien de dépendance de la racine), nous recherchons une relation interphrastique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>The first verb of our pair corresponds in this case to the last verb of the previous sentence in the case of connectors for narration, or to its main verb for all the other relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le premier verbe de la paire correspond alors au dernier verbe de la phrase précédente pour le cas des connecteurs de narration, ou au verbe principal de celle-ci pour toutes les autres relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>We search for the second verb in the pair within a window of two dependency links after the connector.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le second verbe de la paire est recherché dans une fenêtre de deux liens de dépendances après le connecteur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>If the connector is not close enough to the root of the sentence, we look for a intra-sentential link.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si le connecteur n’est pas suffisamment proche de la racine, une relation intraphrastique est recherchée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>In this case, we look for the two verbs of the pair in the same sentence within a forward and backward window of two dependency links.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour cela, les deux verbes de la paire sont recherchés au sein de la même phrase, de part et d’autre du connecteur dans une fenêtre de deux liens de dépendances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>If two verbs are found, we examine their local context to better characterize their usage and to improve our results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si deux verbes sont identifiés, nous examinons leur contexte local afin de mieux caractériser leur usage et d'améliorer nos résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>If one of the verbs is a modal or support verb, we look for the verb dependent on the modal or support verb and use that as the verb in our pair (if it exists), while keeping the presence of the support verb in memory.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si l'un des verbes est un verbe modale ou un verbe de soutien, nous cherchons le verbe dépendant du verbe modale ou de soutien et l'utilisons comme verbe de notre paire (s'il existe), tout en mémorisant la présence du verbe de soutien.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>Unlike support verbs, we use the presence of a negation or a reflexive particle in the local context to distinguish verbs with different meanings ; e.g., comprendre /understand vs. ne pas comprendre /not understand, agir /act vs. s’agir /concern are all distinct entries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contrairement aux verbes d'appui, nous utilisons la présence d'une négation ou d'une particule réflexive dans le contexte local pour distinguer les verbes ayant des significations différentes ; par exemple, comprendre et ne pas comprendre, agir et s'agir sont des entrées distinctes. Par ailleurs, afin de distinguer les différents sens des verbes, deux types de traitement sont effectués.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>To get at different verb senses, we search for idiomatic usage of prepositions using the Dicovalence resource (Van Den Eynde and Mertens, 2010), which contains valency frames for more than 3700 simple French verbs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour obtenir différents sens de verbes, nous recherchons l'usage idiomatique de prépositions à l'aide de la ressource Dicovalence (Van Den Eynde &amp; Mertens, 2010), qui contient des cadres de valence pour plus de 3700 verbes simples du français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>We also use the Lefff resource (Sagot, 2010) to find idiomatic verbal locutions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons également la ressource Lefff (Sagot, 2010) pour trouver des locutions verbales idiomatiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>We also encode other information that do not lead to distinct lexical entries : tense, and voice.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’autres informations sont également mémorisées mais ne sont pas distinctives : temps du verbe, voix passive ou active.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>TABLE 1 – Distribution of relations in V[2] R ;commentary, reformulation and evidence occur with negligible frequency.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TABLEAU 1 – Répartition des relations dans V[2] R ; les commentaires, reformulations et preuves se produisent à une fréquence négligeable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>Once we have obtained a list of verb pairs associated with a connector, we aggregate this data to get a list of triple types (verb1, verb2, relation).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois la liste des paires de verbes associées à un connecteur obtenue, une agrégation de ces résultats est effectuée afin de les regrouper en types de triplets distincts (verbe 1, verbe 2, relation).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>Given that we have used only unambiguous connectors (so classifed by LEXCONN), the association of a relation with a connector is immediate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné que seuls les connecteurs non ambigus ont été conservés (classés par LEXCONN), l’association d’une relation avec un connecteur est immédiate.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>We associate to each triple type the number of intra-sentential, intersentential and total number of occurrences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À chaque triplet sont associés le nombre d’occurrences intraphrastiques, interphrastiques, et le nombre total d’occurrences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>The other features mentioned above are stored in a separate table.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les autres caractéristiques mentionnées ci-dessus sont conservées dans une table séparée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>Our method has isolated more than 1 million distinct types of triples for V[2] R and 2 million occurrences, of which 95% are intra-sentential[5] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre méthode a isolé plus de 1 million de types distincts de triplets pour V[2] R et 2 millions d'occurrences, dont 95% sont intra-phrastiques[5] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>Among these triples, 6.2% have 5 or more occurrences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Parmi ces triplets, 6,2 % présentent 5 occurrences ou plus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>Table 1 summarizes the distribution of triples by relation in V[2] R.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 1 résume la distribution des triplets par relation dans V[2] R.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>Note that triples with contrast and causal relations comprise the majority.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons noter que les triples avec des relations de contraste et de cause sont largement majoritaires dans la base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>This does not mean that these are the most frequent relations in the corpus but only that they are the most frequently marked by the connectors we considered.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci ne signifie pas forcément que ce sont les relations les plus fréquentes dans le corpus, mais plutôt qu’elles sont le plus fréquemment marquées par les connecteurs considérés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>This makes for a very different distribution than that of the French manually annotated discourse corpus Annodis (Afantenos et al., 2012).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela se traduit par une distribution très différente de celle du corpus de discours annoté manuellement Annodis (Afantenos et al., 2012).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>3 Measuring the association of a pair of verbs with a relation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Mesurer l’association sémantique d’une paire de verbes avec une relation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>In the last section we presented our extraction method. We now present the measures we have used to rank verb pairs with respect to the strength of their association with a particular discourse relation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la dernière section, nous avons présenté notre méthode d'extraction. Nous présentons maintenant les mesures que nous avons utilisées pour classer les paires de verbes en fonction de la force de leur association avec une relation de discours particulière.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>We adapted versions of standard lexical association measures like PMI ( pointwise mutual information ) and their variants, as well as some measures specific to the association of a causal relation between items (Do et al., 2011).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons adapté des versions de mesures standard d'association lexicale telles que l'information mutuelle pointuelle (PMI) et leurs variantes, ainsi que certaines mesures spécifiques à l'association d'une relation causale entre éléments (Do et al., 2011).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>We also experimented with a new measure specifically designed for our knowledge base.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également expérimenté une nouvelle mesure spécialement conçue pour notre base de connaissances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>Measures of lexical association used in research on co-occurrences in distributional semantics pick out significant associations, taking into account the frequency of the related items.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les mesures d’association lexicale utilisées dans la recherche de cooccurrences dans la sémantique distributionnelle permettent de repérer des associations significatives, en tenant compte de la fréquence des items reliés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>We examined over 10 measures ; we discuss the ones with the best results (see section 4).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons examiné plus de 10 mesures ; nous discutons celles qui ont les meilleurs résultats (voir section 4).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>One simple measure, PMI, and its variants, normalized , local (Evert, 2005), discounted (Lin and Pantel, 2002), which are designed to reduce biases in the original measure, work well.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une mesure simple, la PMI (pointwise mutual information) et ses variantes, locale, normalisée, pondérée, sensées atténuer les biais de la mesure originale (Evert, 2005), et ses variantes, discounted (Lin et Pantel, 2002), qui sont conçues pour réduire les biais de la mesure originale, fonctionnent bien.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>The idea behind PMI is to estimate whether the probability of the co-occurrence of two items is greater than the a priori probability of the two items appearing independently.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'idée derrière la PMI est d'estimer si la probabilité de l'apparition simultanée de deux items est supérieure à la probabilité a priori des deux items apparaissant indépendamment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>In distributional semantics, the measure is also used to estimate the significance of two items co-occurring with a particular grammatical dependency relation like the subject or object relation between an NP and a verb.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En sémantique distributionnelle, la mesure est également utilisée pour estimer l'importance de deux éléments co-occurrant avec une relation de dépendance grammaticale particulière, comme la relation sujet ou objet entre un NP et un verbe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>This use of PMI measures over triples in distributional semantics fits perfectly with our task of measuring the significance of triples consisting of a pair of verbs and a particular semantic or discourse relation ; our PMI measures estimate whether the co-occurrence of two items with a particular discourse relation is higher than the a priori probability of the three items occurring independently.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette utilisation de la mesure de PMI sur les triplets dans la sémantique distributionnelle correspond parfaitement à notre tâche de mesurer l'importance des triplets constitués d'une paire de verbes et d'une relation sémantique ou discursive particulière ; nos mesures de PMI estiment si la co-occurrence de deux éléments avec une relation discursive particulière est supérieure à la probabilité a priori des trois éléments apparaissant indépendamment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>Our measures consider co-occurrences of two lexical items in a certain relation denoted by an explicit discourse marker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour toutes nos mesures, nous considérons en fait l’événement consistant en l’apparition de deux items lexicaux dans une certaine relation indiquée par un marqueur explicite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>PMI and normalized PMI are defined as :</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La PMI et la PMI normalisée sont définies comme suit :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>Indeed, when we have a complete co-occurrence of the three items, we have : P ( V 1) = P ( V 2) = P ( R ) = P ( V 1 , V 2 , R ), and PMI = − 2 log( P ( V 1 , V 2 , R )).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, lorsque nous avons une co-occurrence complète des trois éléments, nous avons : P ( V 1) = P ( V 2) = P ( R ) = P ( V 1 , V 2 , R ), et PMI = − 2 log( P ( V 1 , V 2 , R )).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>The values of normalized PMI lie between − 1 and 1, approaching − 1 when the items never appear together, taking the value 0 in the case of independence, and the value 1 when they always appear together.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les valeurs de PMI normalisé sont comprises entre -1 et 1, s'approchant de -1 lorsque les items n'apparaissent jamais ensemble, prenant la valeur 0 en cas d'indépendance, et la valeur 1 en cas de cooccurrence complète.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>We also considered a weighted PMI measure (Lin and Pantel, 2002) that corrects the bias of PMI for rare triples.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également envisagé une mesure de PMI pondérée (Lin &amp; Pantel, 2002) qui corrige le biais de la PMI pour les triplets peu fréquents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>A specificity measure (Mirroshandel et al., 2013), originally used to measure the precision of subcategorization frames, also performed well :</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une mesure de spécificité (Mirroshandel et al., 2013), initialement utilisée pour mesurer la précision des cadres de sous-catégorisation, a également bien fonctionné :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>A version of Do et al. (2011)’s measure for triples involving causal relations did not fare so well on other types of relation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une version de la mesure de Do et al. (2011) pour les triples impliquant des relations causales n’a pas si bien marché sur d’autres types de relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>The definition of the measure can be found in (Do et al., 2011).[6]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La définition de la mesure peut être trouvée dans (Do et al., 2011).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>Finally, we investigated a measure that evaluates the contribution of each element in the triple to the significance measure (this measure is similar to specificity).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous avons défini une mesure permettant d’évaluer l’apport de chaque composant du triplet à son informativité, similaire à la spécificité décrite ci-dessus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>4 Evaluating extracted relations</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Évaluation des relations extraites</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>We evaluated V[2] R in several ways ; we provided : (i) an intrinsic evaluation of the relations between verbs (section 4.1) and (ii) an extrinsic evaluation where we evaluated the coverage of the resource on a discourse annotated corpus and its potential to help in predicting discourse relations in contexts with no explicit marking (section 4.2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons évalué V[2] R de plusieurs manières ; nous avons fourni : (i) une évaluation intrinsèque des relations entre les verbes (section 4.1) et (ii) une évaluation extrinsèque où nous avons évalué la couverture de la ressource sur un corpus annoté en discours et son potentiel à aider à prédire les relations discursives dans des contextes sans marque explicite (section 4.2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>4.1 Intrinsic evaluation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Evaluation intrinsèque</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>Our intrinsic evaluation first evaluates the feasibility of assigning an “inherent” semantic link to a verb pair, independently of any linguistic context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre évaluation intrinsèque évalue d'abord la faisabilité d'attribuer un lien sémantique «inhérent» à une paire de verbes, indépendamment de tout contexte linguistique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>For example, is it possible to judge that there is a typical causality link between push and fall , in scenarios where they share some arguments (subject, object, …), these scenarios being left to the annotator’s imagination (section 4.1.1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, est-il possible de juger qu'il y a un lien de causalité typique entre les verbes pousser et tomber , dans des scénarios où ils partagent des arguments (sujet, objet, …), ces scénarios étant laissés à l'appréciation de l'annotateur (section 4.1.1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>In a second stage, we selected several verb pairs linked with different relations in V[2] R , and 40 contexts in which these verbs occur together in the original corpus, to judge the semantic link in context (section 4.1.2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans un deuxième temps, nous avons sélectionné plusieurs paires de verbes liées à différentes relations dans V[2] R, et 40 contextes dans lesquels ces verbes apparaissent ensemble dans le corpus d'origine, pour juger du lien sémantique en contexte (section 4.1.2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>In both cases we restricted the study to three relation groups : causal, contrastive, and narrative.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les deux cas, nous avons restreint l’étude à trois groupes de relations, causales, contrastives et narratives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>These are the most often marked relations and correspond to different types of links with a meaningful semantic aspect (as opposed to the “continuation” relation for instance, which is often marked too).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce sont les relations les plus souvent marquées et correspondent à différents types de liens avec une composante sémantique significative (à l'inverse de la relation « continuation », par exemple, qui est également très marquée).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>4.1.1 Out of context evaluation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1.1 Evaluation hors contexte des paires</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>For out of context judgments, we adopted the following protocol : one of the authors chose for each relation 100 verbs with equivalent proportions of good and bad normalized PMI scores.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les jugements hors contexte, nous avons suivi le protocole suivant : un des auteurs a choisi pour chaque relation 100 verbes avec des proportions équivalentes de bonnes et de mauvaises PMI normalisées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>Then the other three authors judged the validity of associating each of the 300 pairs with the corresponding relation, without any knowledge of the source of these pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, les trois autres auteurs ont dû juger pour chacune des 300 paires si elle pouvait ou non être reliée avec la relation considérée, sans connaître l’origine des paires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>We measured the inter-annotator agreements with Cohen’s Kappa (Carletta, 1996), which resulted in : 0.17 for cause, 0.42 for narration and 0.56 for contrast as mean values.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons mesuré les accords inter-annotateurs avec le kappa de Cohen (Carletta, 1996), qui a donné les valeurs moyennes suivantes : 0,17 pour la cause, 0,42 pour la narration et 0,56 pour le contraste.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>If a 0.6 kappa serves a measure for a feasible semantic judgment task, out of context judgments appear very difficult, with only contrastive pairs as a relative exception.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si un kappa de 0.6 sert de mesure pour une tâche de jugement sémantique faisable, les jugements hors contexte semblent très difficiles, à l'exception des paires contrastives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>We decided to only consider judgments about contrast, after an adjudication phase, and we evaluated the measures presented in section 3 to see if they could discriminate between the two verb groups, those judged positively or negatively according to human annotations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons donc décidé d'ignorer les jugements sur la cause et la narration, et avons évalué les mesures présentées dans la section 3 pour voir si elles pouvaient discriminer entre les deux groupes de verbes, ceux jugés positivement ou négativement selon les annotations humaines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>A MannWhitney U statistical test showed all of our measures to be discriminative, with the exception of raw co-occurrence counts for which p&gt;0.05.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un test statistique de MannWhitney-U a montré que toutes nos mesures étaient discriminantes, à l'exception des comptes de co-occurrence bruts pour lesquels p&gt;0,05.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>4.1.2 In context evaluation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1.2 Evaluation en contexte</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>We also judged associations in context. This task was easier and also gave more fine-grained results, because with it we can quantify the degree of association, and the typicality of the link, as a proportion of contexts where the two verbs appear together in a given semantic relation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également évalué les associations en contexte. Cette tâche était plus facile et donnait également des résultats plus précis, car nous pouvions quantifier le degré d'association et la typicité du lien, en tant que proportion des contextes où les deux verbes apparaissent ensemble dans une relation sémantique donnée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>We can then observe if this proportion is correlated with the association measures we already presented.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut ensuite observer si cette proportion est corrélée avec les mesures d’association présentées précédemment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, this is a costly way of evaluating a verb pair, as we require a number of judgments on each pair.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, c'est une méthode coûteuse pour évaluer un couple de verbes, car nous avons besoin d'un certain nombre de jugements sur chaque couple.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>It is also not easy to sample the possible pairs with different values to be able to observe significant correlations, because we cannot predict in advance how they will be judged by the annotators.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, il n'est pas facile d'échantillonner les paires possibles avec des valeurs différentes pour pouvoir observer des corrélations significatives, car on ne peut pas préjuger des valeurs attribuées par l'annotation humaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>We selected 40 contexts for each of the 15 pairs of verbs we chose, 5 for each of the target relation (cause, narration, contrast).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons finalement choisi 40 contextes exemples pour chacune des 15 paires de verbes sélectionnées (5 pour chaque relation : cause, narration, contraste) ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>Selected pairs range over different values of normalized PMI, again chosen by one of the authors independently of the others, who annotated the 600 contexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les paires sélectionnées varient selon des valeurs différentes de PMI normalisée, et encore une fois par l'un des auteurs indépendamment des trois autres, qui ont réalisé l'annotation séparément, avant de procéder à une adjudication des 600 contextes pour la référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>Prior to adjudication, raw agreement was 78% on average, for an average kappa of 0.46 (and a maximum of 0.49).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pré-adjudication, l’accord brut sur les décision est de 78% en moyenne, pour un kappa moyen de 0,46 et un kappa maximum de 0,49.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>These values seem moderately good, as the task is also rather difficult.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces valeurs semblent modérément bonnes, étant donné la difficulté de la tâche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>TABLE 2 – For each relation, the list of verb pairs manually evaluated in context (and an approximate translation), and the association percentage resulting from the adjudicated human annotation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TABLE 2 – Pour chaque relation, la liste des paires de verbes évaluées manuellement en contexte (et une traduction approximative), et le pourcentage d’association résultant de l’annotation humaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>Table 2 shows the results after adjudication : for each pair, the proportion of contexts in which the considered relation is judged to appear.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 2 montre les résultats après jugement : pour chaque paire, la proportion de contextes dans lesquels la relation considérée est jugée apparaître.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>We computed two correlation values between the association ratio in contexts manually annotated and each association measure considered : one based on all annotated contexts, and one on the subset of contexts devoid of explicit markers of a semantic relation (implicit contexts).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons ensuite calculé deux valeurs de corrélation entre le ratio d'association dans les contextes annotés manuellement et chaque mesure d'association considérée : l'une sur la base de tous les contextes annotés, et l'autre sur le sous-ensemble des contextes dépourvus de marqueurs explicites de relation sémantique (contextes implicites).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>The latter is important to quantify the actual impact of the method, since explicit marking is already used as the basis of verb association in the same corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette dernière mesure est importante pour quantifier l'apport effectif de la méthode, puisque le marquage explicite est déjà utilisé comme base de l'association de verbes dans le même corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>Implicit contexts, however, never appeared in the computation of the verb pair associations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les contextes implicites, cependant, n'ont jamais été pris en compte dans le calcul des associations de paires de verbes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>TABLE 3 – Pearson correlation for the 15 pairs considered and measures from section 3, in decreasing order.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TABLE 5 – Les corrélations de Pearson pour les 15 paires considérées et pour les mesures présentées à la section 3, par ordre décroissant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>TABLE 4 – Ten best triples in the database.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TABLEAU 4 – Les dix meilleurs triples de la base de données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>Table 3 shows that mutual information measures are well correlated with human annotations, and that our W_combined seems useful too.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 3 montre que les mesures d’information mutuelle sont bien corrélées avec les annotations humaines, et que notre W_combinée semble également utile.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>We also observed results on each relation separately, although one should be careful drawing conclusions from these results since the correlations are then computed on 5 points only. These results (not shown here) show a lot of variation between relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également observé les résultats pour chaque relation séparément, bien qu'il faille être prudent lors de l'interprétation de ces résultats puisque les corrélations sont calculées sur 5 points seulement. Ces résultats (non détaillés ici) montrent de grandes variations entre les relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>The U_do measure, designed for causal relations, does indeed produce good results for these relations, but does not generalize well to our other chosen relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La mesure U_do, conçue pour les relations causales, produit en effet de bons résultats pour ces relations, mais ne se généralise pas bien sur l'ensemble des relations ni sur les autres relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>Also, local PMI seems to work very well on narration and causal relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, la mesure de PMI locale semble fonctionner très bien pour les relations de narration et de cause.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>This needs to be confirmed with more verb pairs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela doit être confirmé avec plus de paires de verbes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>We conclude that the best three measures are : normalized PMI, specificity, and W_combined.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous concluons que les trois meilleures mesures sont : la PMI normalisée, la spécificité et W_combinée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>The last two assign their maximal value to several pairs, so we used them in a lexicographical ordering to sort all associated pairs, using normalized PMI to break ties.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les deux dernières attribuent leur valeur maximale à plusieurs paires, nous les avons donc utilisées dans un ordre lexicographique pour trier toutes les paires associées, en utilisant la PMI normalisée pour départager les meilleures paires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>Table 4 shows the best triples with our lexicographical ranking.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 4 montre les meilleures triples avec notre classement lexicographique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>4.2 Extrinsic evaluation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 Evaluation extrinsèque</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>In order to evaluate the performance of our resource relative to its main intended application— predicting rhetorical relations in text, we intend to use our association measures as additional features to an inductive prediction model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d'évaluer la performance de notre ressource par rapport à son application principale visée - la prédiction des relations rhétoriques dans le texte, nous avons l'intention d'utiliser nos mesures d'association comme caractéristiques additionnelles dans un modèle de prédiction inductif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>Whether this evaluation produces results depends on the proportion of cases in which this information could help and on the coverage of our resource with respect to these cases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Que cette évaluation produise des résultats dépend de la proportion de cas dans lesquels cette information pourrait être utile et de la couverture de notre ressource par rapport à ces cas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>We used the Annodis corpus (Afantenos et al., 2012), a set of French texts annotated with rhetorical relations, for our study.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé le corpus Annodis (Afantenos et al., 2012), un ensemble de textes français annotés avec des relations rhétoriques, pour notre étude.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>To improve existing models, a significant number of the predictions to be made must involve a verb pair for which we have information in the resource.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour améliorer les modèles existants, un nombre significatif des prédictions à effectuer doivent impliquer des paires de verbes pour lesquelles nous disposons d'informations dans la ressource.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>A first indication of its usefulness is also that the verb pair appears most frequently with the relation group to which the annotation belongs, for instance the fact that two verbs are related with a causal relation whenever we want to predict an explanation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un premier indicateur de son utilité est également que le couple de verbes apparaît le plus souvent avec le groupe de relations auquel appartient l'annotation, par exemple le fait que deux verbes soient reliés par un lien causal lorsque nous voulons prédire une explication.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>This is interesting only in the absence of an explicit marking of the target relation, i.e for implicit relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci n'est intéressant qu'à la condition que l'instance en question ne présente pas déjà un marquage direct de la relation, c'est-à-dire pour les relations implicites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>Beyond that, it should be interesting to use all the available information about other semantic relations too : for instance a potential causal link between two events could indicate the relevance of a temporal link for the prediction of a relation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, il est intéressant d'utiliser toutes les informations disponibles sur les autres relations sémantiques : par exemple, un lien causal potentiel entre deux événements peut indiquer la pertinence d'un lien temporel pour la prédiction d'une relation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>We relied again on the Lexconn marker database.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour mener cette étude, nous nous sommes reposés là encore sur la base de marqueurs Lexconn.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>As an approximation we considered that a relation between two discourse units is explicit when a Lexconn marker is present in any of the two segments, and one of the potential senses of the marker is the annotated relation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En première approximation, nous avons considéré qu’une instance de relation entre deux segments de discours était explicite quand un connecteur de Lexconn était présent dans un des deux segments, et qu’un de ses sens recensés était celui de la relation présente dans le corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>This may overestimate the number of explicit instances but ensures that all implicit instances are indeed implicit (assuming a good enough coverage of the marker resource).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela peut surestimer le nombre d'exemples explicites, mais assure que tous les exemples implicites considérés le sont effectivement (en supposant une couverture suffisante de la ressource de marqueur).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>The Annodis corpus lists rhetorical relations between elementary discourse units (EDUs), typically clauses, and complex discourse units (sets of EDUs) ; as a simplification we only consider EDUs, since the question of what is a main verb of a complex unit is difficult to answer.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus Annodis répertorie les relations rhétoriques entre unités discursives élémentaires (UDE), généralement des clauses, et des unités discursives complexes (ensembles d'UDE) ; pour simplifier, nous n'avons considéré que les UDE, car la question de ce qui constitue un verbe principal d'une unité complexe est difficile à répondre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>This is a relatively small corpus, as it includes about 2000 instances of relations between elementary discourse units.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il s'agit d'un corpus relativement petit, puisqu'il comprend environ 2000 occurrences de relations entre des unités discursives élémentaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>Table 5 present results for coverage, for the main relations in the annotated corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 5 présente les résultats de couverture, pour les relations principales dans le corpus annoté.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>Note that only a small part of the set of relations between EDUs is considered when we restrict instances to both EDUs with verbs (about 20% of the whole). It turns out that a lot of EDUs in Annodis are short segments (incises, detached segments, …).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il faut noter qu'un petit nombre d'instances du corpus sont concernées (environ 20 % du total) lorsque l'on restreint les instances aux deux EDUs avec des verbes. Il s'avère qu'un grand nombre d'EDUs dans Annodis sont des segments courts (incises, segments détachés, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>TABLE 5 – Coverage of verb pairs in V[2] R with respect to EDU pairs in the Annodis corpus containing two verbs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TABLE 5 – Couverture des paires de verbes dans V[2] R par rapport aux paires EDU du corpus Annodis impliquant deux verbes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>Except for the first line, all numbers are percentages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A part la première ligne, tous les chiffres sont en pourcentage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>Pair = verb pairs in the EDUs linked by a rhetorical relation R , Triple=verb pair associated with a relation R in V[2] R , BG = Background, cont.=continuation, elab.=elaboration. Our table includes : the proportion of verb pairs found in Annodis EDUs that appear in V[2] R , the proportion of triples from Annodis that appear in V[2] R (with the correct relation), and the restriction of these proportions to implicit contexts in Annodis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pair = paires de verbes dans les EDUs liées par une relation rhétorique R , Triple=paire de verbes associée à une relation R dans V[2] R , BG = Arrière-plan, cont.=continuation, elab.=élaboration. Notre table inclut : la proportion de paires de verbes trouvées dans les EDUs d'Annodis qui apparaissent dans V[2] R , la proportion de triplets d'Annodis qui apparaissent dans V[2] R (avec la relation correcte), et la restriction de ces proportions aux contextes implicites d'Annodis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>Except for a few exceptions due to lemmatisation errors, all verbs in Annodis are in V[2] R in at least one pair, and we can see that the pairs in V[2] R cover most of the pairs appearing in Annodis (almost 70% globally and between 60 and 80% depending on the relation), and a little less of implicit cases (around 55% on average).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À l'exception de quelques exceptions dues à des erreurs de lemmatisation, tous les verbes dans Annodis sont en V[2] R dans au moins une paire, et nous pouvons voir que les paires en V[2] R couvrent la plupart des paires apparaissant dans Annodis (presque 70 % globalement et entre 60 et 80 % selon la relation), et un peu moins de cas implicites (environ 55 % en moyenne).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>We note that a high proportion of the implicit cases contains verb pairs that have been collected in a marked context, even for rarely marked relations like elaboration or continuation—contexts with these relations are the majority in Annodis. Furthermore more than half of these contexts are associated with the right relation in V[2] R .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est très encourageant de noter qu'une forte proportion de contextes implicites contiennent des paires de verbes qui ont été collectées dans un contexte marqué, même pour des relations peu marquées comme élaboration ou continuation, et qui plus est une bonne part de ces contextes (plus de la moitié) sont correctement associés à la bonne relation dans V[2] R.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>Thus the hypothesis of the partial redundancy of connectors appears useful when isolating verbal associations relevant for discourse from a large corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’hypothèse de la redondance partielle des connecteurs semble utile pour isoler des associations verbales pertinentes pour le discours dans un grand corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>We also looked at semantic neighbors of the verbs in V[2] R but this did not increase coverage significantly.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également examiné les voisins sémantiques des verbes dans V[2] R, mais cela n’a pas augmenté la couverture de manière significative.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>A good test of the predictive power of the semantic information we gathered is also to include the association measures as additional features to a predictive model, to improve classically low results on implicit discourse relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un bon test du pouvoir prédictif des informations sémantiques que nous avons rassemblées est également d'inclure les mesures d'association comme caractéristiques supplémentaires à un modèle prédictif, pour améliorer les résultats classiquement faibles sur les relations de discours implicites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>The only available discursive corpus in French, Annodis, is small, and as shown above only about 400 instances have a verb in both related EDUs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le seul corpus discursif disponible en français, Annodis, est petit et, comme indiqué ci-dessus, seulement environ 400 occurrences comportent un verbe dans les deux EDU associées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>We trained and tested a maximum entropy model with and without the association measures as features, on top of features presented in Muller et al. (2012), who trained a relation model on the same corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons formé et testé un modèle d'entropie maximale avec et sans les mesures d'association comme caractéristiques, en plus des caractéristiques présentées dans Muller et al. (2012), qui ont formé un modèle de relation sur le même corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>We did a 10-fold cross-validation on the 400 instance subset as evaluation, and did not find a significant difference between the two set-ups (F1 score was in the range .40–.42, similar to the cited paper), which is unsurprising given the size of the subset.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons effectué une validation croisée à 10 reprises sur le sous-ensemble de 400 instances en tant qu'évaluation, et nous n'avons pas trouvé de différence significative entre les deux configurations (le score F1 était compris entre 0,40 et 0,42, similaire à l'article cité), ce qui n'est pas surprenant étant donné la taille du sous-ensemble.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>We plan to evaluate our method relative to discourse parsing by building an English resource like V[2] R ; we will then be able to use the much larger PDTB corpus (10 times as large as Annodis) as a source of implicit discourse relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous prévoyons d'évaluer notre méthode par rapport à l'analyse du discours en construisant une ressource anglaise comme V[2] R ; nous pourrons alors utiliser le corpus PDTB (10 fois plus grand qu'Annodis) comme source de relations de discours implicites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>This should prove a much more telling evaluation of the usefulness of association measures in predicting implicit discourse relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela devrait permettre d'évaluer plus précisément l'utilité des mesures d'association dans la prédiction des relations discursives implicites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>5 Related work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Travaux reliés</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>There are two different groups of related work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons distinguer deux différents types de travaux reliés à notre approche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>The first group aims to alleviate the lack of annotated data for discourse parsing by using a weakly supervised approach, exploiting the presence of discourse connectors in a large non-annotated corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le premier groupe vise à atténuer le manque de données annotées pour le décodage du discours en utilisant une approche faiblement supervisée, exploitant la présence de marqueurs explicites dans un grand corpus non annoté.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>Each pair of elementary discourse units is automatically annotated with the discourse relation triggered by the presence of the connector (connectors are often filtered for non-discursive uses).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque paire d'unités discursives élémentaires est ainsi annotée automatiquement avec la relation discursive correspondant au marqueur (les marqueurs sont souvent filtrés par rapport à leurs usages non-discursifs).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>Those connectors are afterwards eliminated from the corpus so that the model trained on this dataset will not be informed by the presence of those connectors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces connecteurs sont ensuite éliminés du corpus afin que le modèle formé à partir de cette base de données ne soit pas informé de la présence de ces connecteurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>The pioneering article in this group is Marcu and Echihabi (2002).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’article pionnier de cette approche est celui de Marcu et Echihabi (2002).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>Such learning methods with such “artificial data” obtain low scores, barely above chance as shown in Sporleder and Lascarides (2008). Braud and Denis (2013) observe that the performance of a classifier for the prediction of implicit relations is much lower when using “artificial” data than on “natural” data (implicit relations annotated by a human being).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthode d'apprentissage avec de telles « données artificielles » obtient des scores faibles, à peine au-dessus du hasard comme l'ont montré Sporleder et Lascarides (2008). Braud et Denis (2013) observent que les performances d'un classifieur pour la prédiction de relations implicites sont beaucoup plus faibles lorsqu'il utilise des données « artificielles » que lorsqu'il utilise des données « naturelles » (relations implicites annotées par un être humain).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>They propose a method which exploits these two different kinds of datasets together in various mixtures and on the level of the prediction algorithm, obtaining thus a significant improvement on the Annodis corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils ont proposé une méthode qui exploite ces deux types de données ensemble dans diverses combinaisons et au niveau de l'algorithme de prédiction, obtenant ainsi une amélioration significative sur le corpus ANNODIS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>Our approach is different and complementary ; we isolate the semantic relations between pairs of verbs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre approche est différente et complémentaire ; nous isolons les relations sémantiques entre les paires de verbes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>We can use that as a feature on discourse units for discourse parsing but it has other uses as well.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons utiliser cela comme fonctionnalité sur les unités de discours pour le découpage du discours, mais cela a d'autres utilisations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>A second group aims at identifying discourse relations (implicit or not) by focusing on the use of finegrained lexical relations as another feature during the training phase.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un deuxième groupe de travaux vise à identifier les relations discursives (implicites ou non) en se focalisant sur l’utilisation des relations lexicales fines comme un autre indice pendant la phase d’apprentissage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>Most of this work focuses mainly on the use of lexical relations between two verbs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La plupart des travaux se concentrent principalement sur l'utilisation des relations lexicales entre deux verbes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>Chklovski and Pantel (2004), for example, rely on specific patterns constructed manually for each semantic relation between ( similarity, strength, antonymy, enablement and temporal happens-before ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chklovski &amp; Pantel (2004) par exemple, se sont appuyés sur des patrons spécifiques construits manuellement pour chaque relation sémantique parmi ( similarity, strength, antonymy, enablement et temporal happens-before ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>They use the web as a corpus in order to estimate the PMI between a pattern and a pair of verbs (a precise measurement cannot be achieved over the web since the probability of a pattern is not precisely known over all the web).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils utilisent le web comme corpus afin d'estimer la PMI entre un motif et un couple de verbes (un calcul précis ne peut pas être réalisé sur le web puisque la probabilité d'un motif n'est pas connue avec précision sur l'ensemble du web).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>A threshold on the value of the PMI (manually fixed) permits thus to determine the pairs of verbs that are related to the relation denoted by the pattern.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un seuil (fixé manuellement) sur les valeurs de PMI a ainsi permis de déterminer les paires de verbes considérées comme liées par la relation indiquée par le patron.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>In the same spirit, Kozareva (2012) is using a weakly supervised approach for the extraction of pairs of verbs that are potentially implied in a cause-effect relation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le même esprit, Kozareva (2012) s’est basée sur une approche faiblement supervisée pour réaliser l’extraction de paires de verbes potentiellement impliqués dans une relation cause-effet .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>Her method consists in using patterns applied to the web in order to extract pairs and generate new seeds.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sa méthode consiste à utiliser des modèles appliqués sur le Web pour extraire des paires et générer de nouvelles graines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>Do et al. (2011) focus on causal relations and take into account not only verbs but also event denoting nouns.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Do et al. (2011) se concentrent sur les relations causales et prennent en compte non seulement les verbes mais aussi les noms dénotant un événement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>According to this paper, an event is denoted by a predicate with a specific number of arguments and thus the association of the events is the sum of the association between predicates, between predicates and arguments and between arguments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Selon leur travail, un événement est un prédicat avec un certain nombre d'arguments et donc l'association d'événements est la somme d'associations entre prédicats, entre prédicats et arguments et entre arguments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>Their association measures are based on PMI and are quite complex. Our results show that their measures do not generalize well to association with all discourse relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leurs mesures d'association sont basées sur la PMI et sont assez complexes. Nos résultats montrent que leurs mesures ne se généralisent pas bien à l'association avec toutes les relations du discours.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>Using Gigaword as a corpus and a reimplementation of Lin et al. (2014) they have extracted discourse relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À l’aide du Gigaword comme corpus et d’une réimplémentation de (Lin et al. , 2014), ils ont alors extrait les relations discursives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>An inductive logic programming approach is finally used exploiting the interaction between causal pairs and discourse relations in order to extract causal links.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un système de programmation logique inductive est finalement utilisé, exploitant les interactions entre paires causales et relations discursives afin d’extraire les liens causaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>Those papers focus on specific relations with the exception of Chklovski and Pantel (2004) who do not present a systematic evaluation of their results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces travaux se concentrent donc sur des relations particulières, à l’exception de Chklovski &amp; Pantel (2004), qui ne présentent pas d’évaluation systématique de leurs résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>An important difference of our approach is also to consider predicates and their negation as separate entries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une différence importante de notre approche est également de considérer les prédicats et leur négation comme des entrées séparées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>Finally, we mention the approaches which while focusing on the learning of discourse structures, nonetheless enrich their systems with lexical information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, il faut mentionner les travaux qui, tout en se concentrant sur l'apprentissage des structures discursives, enrichissent leur système en ajoutant de l'information lexicale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>Feng and Hirst (2012) have used HILDA (Hernault et al., 2010) adding more features.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Feng &amp; Hirst (2012) ont utilisé HILDA (Hernault et al. , 2010), y ajoutant d’avantage de traits.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>A specific family of features represents lexical similarity based on the hierarchical distance in VERBNET and WORDNET.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une famille de traits représente la similarité lexicale fondée sur les distance dans les hiérarchies VERBNET et WORDNET.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>In a similar fashion, Wellner et al. (2006) focus on intra-sentential discourse relations adding lexical information on the features based on measures proposed by Lin (1998) calculated on the British National Corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’une façon similaire, Wellner et al. (2006) se sont focalisés sur les relations discursives intraphrastiques et ont ajouté de l’information lexicale dans des traits basés sur les mesures proposées par Lin (1998) et calculées sur le British National Corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>Those approaches use thus only information on lexical similarity without semantically typing this link. The impact of this information seems limited.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces approches n'utilisent donc que des liens lexicaux de similarité, sans typage sémantique de ce lien, et l'impact de cette information semble limité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>As far as evaluation is concerned, our method is similar to that followed in Tremper and Frank (2013) for implication relations combining in and out of context evaluation for verbal associations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Du point de vue de l’évaluation, notre méthode est assez proche de celle suivie dans les travaux sur la relation d’implication dans (Tremper &amp; Frank, 2013), combinant évaluation hors et en contexte d’associations verbales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>Their inter-annotator agreement is similar to ours (0.42-0.44 of Kappa) with very different choices : the annotators were supposed to discriminate verbal links between the different possible sub-cases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les accords inter-annotateurs sont similaires aux nôtres (0.42-0.44 de Kappa), avec des choix légèrement différents : les annotateurs étaient censés discriminer le lien verbal entre les différents sous-cas possibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>The pairs of verbs were identified by the system of Lin and Pantel.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les paires de verbes étaient identifiées par le système de Lin et Pantel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>These authors also present a classification model among the different types of relationships, assuming that two verbs are semantically related.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces auteurs présentent également un modèle de classification parmi les différents types de relations, en supposant donné le fait que deux verbes sont liés sémantiquement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>6 Conclusions</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>We have presented a knowledge base of triples involving pairs of verbs associated with semantic or discourse relations. We extracted these triples from the large French corpus, frWaC, using discourse connectors as markers of relations between two adjacent clauses containing verbs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons présenté ici une base de connaissances comportant des triplets de paires de verbes associés avec une relation sémantique/discursive, extraits du corpus français frWaC par une méthode s’appuyant sur la présence d’un connecteur discursif reliant deux clauses adjacentes contenant des verbes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>We investigated several measures to give the strength of association of a pair of verbs with a relation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons détaillé plusieurs mesures visant à évaluer la force d'association d'un couple de verbes avec une relation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <tuv xml:lang="EN">
+                <seg>We used manual annotations to evaluate our method and select the best measures, and we also studied the coverage of our resource on the discourse annotated corpus Annodis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des évaluations par annotation manuelle nous ont permis de valider notre approche et de sélectionner les meilleures mesures. Nous avons également réalisé une étude de la couverture de la ressource par rapport aux triplets annotés manuellement du corpus Annodis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <tuv xml:lang="EN">
+                <seg>Our positive results show our resource has the potential to help discourse analysis as well as other semantically oriented tasks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces résultats positifs montrent que notre ressource a le potentiel d'aider l'analyse du discours ainsi que d'autres tâches de nature sémantique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <tuv xml:lang="EN">
+                <seg>This work has been supported by the French agency Agence Nationale de la Recherche (ANR-12-CORD-0004).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce travail a bénéficié d'une aide de l'Agence Nationale de la Recherche portant la référence (ANR-12-CORD-0004).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <tuv xml:lang="EN">
+                <seg>It is licenced under a Creative Commons Attribution 4.0 International License.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est concédé sous une licence Creative Commons Attribution 4.0 International.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <tuv xml:lang="EN">
+                <seg>Page numbers and proceedings footer are added by the organizers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les numéros de page et le pied de page des procès-verbaux sont ajoutés par les organisateurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <tuv xml:lang="EN">
+                <seg>License details : http://creativecommons.org/licenses/by/4.0/.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Détails de la licence : http://creativecommons.org/licenses/by/4.0/.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <tuv xml:lang="EN">
+                <seg>1. Available as an SQLite database at https://dl.dropboxusercontent.com/u/78938139/v2r_db</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Disponible sous forme de base de données SQLite à https://dl.dropboxusercontent.com/u/78938139/v2r_db</seg>
+            </tuv>
+        </tu>
+        <tu tuid="195">
+            <tuv xml:lang="EN">
+                <seg>2. http://alpage.inria.fr/statgram/frdep/fr_stat_dep_parsing.html or (Candito et al., 2010)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. http://alpage.inria.fr/statgram/frdep/fr_stat_dep_parsing.html ou (Candito et al., 2010)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="196">
+            <tuv xml:lang="EN">
+                <seg>3. Freely available at : https://gforge.inria.fr/frs/download.php/31052/lexconn.tar.gz.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Disponible librement : https://gforge.inria.fr/frs/download.php/31052/lexconn.tar.gz.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="197">
+            <tuv xml:lang="EN">
+                <seg>4. We illustrate each relation with examples of potentially ambiguous markers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Nous illustrons chaque relation avec des exemples de marqueurs potentiellement ambigus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="198">
+            <tuv xml:lang="EN">
+                <seg>5. The low proportion of inter-sentential occurrences comes from our conservative scheme for finding these occurrences, which uses only those connectors at the beginning of the second sentence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. La faible proportion d’occurrences interphrastiques provient du schéma prudent choisi pour le repérage de ces occurrences, considérant uniquement les connecteurs présents en début de la seconde phrase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="199">
+            <tuv xml:lang="EN">
+                <seg>Other schemes are possible but would, we fear, introduce too much noise into the data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autres schémas sont possibles mais, nous craignons, introduiraient trop de bruit dans les données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="200">
+            <tuv xml:lang="EN">
+                <seg>6. We simplified their measure by ignoring IDF (inverse document frequency) and the distance between the verbs, as neither measure applies to our task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6. Nous avons simplifié leur mesure en ignorant l'IDF (fréquence inverse de document) et la distance entre les verbes, car aucune mesure ne s'applique à notre tâche.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,1335 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2007-poster-009. segId begin by 1, tuid = segId</note>
+        <url_en>http://www.lrec-conf.org/proceedings/lrec2008/pdf/743_paper.pdf</url_en>
+        <url_fr>https://talnarchives.atala.org/TALN/TALN-2007/taln-2007-poster-009.pdf</url_fr>
+        <title_en>Characterization of scientific and popular science discourse in French, Japanese and Russian</title_en>
+        <title_fr>Caractérisation des discours scientifiques et vulgarisés en français, japonais et russe</title_fr>
+        <docid>taln-2007-poster-009</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Characterization of scientific and popular science discourse in French, Japanese and Russian</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Caractérisation des discours scientifiques et vulgarisés en français, japonais et russe</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>We aim to characterize the comparability of corpora, we address this issue in the trilingual context through the distinction of expert and non expert documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre objectif est de caractériser la comparabilité des corpus, et nous abordons cette question dans un contexte trilingue en cherchant à distinguer les documents d'experts et les documents non experts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>We work separately with corpora composed of documents from the medical domain in three languages (French, Japanese and Russian) which present an important linguistic distance between them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous travaillons séparément sur des corpus composés de documents du domaine médical dans trois langues (le français, le japonais et le russe) qui présentent une forte distance linguistique entre elles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>In our approach, documents are characterized in each language by their topic and by a discursive typology positioned at three levels of document analysis: structural, modal and lexical.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre approche, les documents sont caractérisés dans chaque langue selon leur thématique et une typologie discursive qui se situe à trois niveaux de l’analyse des documents : structurel, modal et lexical.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>The document typology is implemented with two learning algorithms (SVMlight and C4.5).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le typage des documents est implémenté avec deux algorithmes d’apprentissage (SVMlight et C4.5).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>Evaluation of results shows that the proposed discursive typology can be transposed from one language to another, as it indeed allows to distinguish the two aimed discourses (science and popular science).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’évaluation des résultats montre que la typologie discursive proposée est transposable d’une langue à l’autre car elle permet en effet de distinguer les deux discours visés (science et vulgarisation scientifique).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>However, we observe that performances vary a lot according to languages, algorithms and types of discursive characteristics.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous constatons néanmoins des performances très variées selon les langues, les algorithmes et les types de caractéristiques discursives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>Comparable corpora are sets of texts in different languages that are not translations of each others but share some characteristics (Bowker and Pearson, 2002).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un corpus comparable est un ensemble de textes dans différentes langues qui ne sont pas des traductions les uns des autres mais qui partagent certaines caractéristiques (Bowker et Pearson, 2002).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>These characteristics can refer to the text creation context (period, author…), or to the text itself (topic, genre…).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces caractéristiques peuvent concerner le contexte de création du texte (période, auteur...) ou le texte lui-même (thème, genre...).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>The choice of the common characteristics which define the content of corpus depends on its finality.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le choix des caractéristiques communes qui définissent le contenu du corpus dépend de son objectif final.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>This affects the degree of comparability , notion used to quantify how two corpora can be comparable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il influe sur le degré de comparabilité du corpus, notion permettant de quantifier la comparabilité d’un corpus (aux valeurs maximales dans un corpus parallèle par exemple).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>We aim to create a tool to assist comparable corpora compilation from the Web.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous visons à créer un outil pour aider à la compilation de corpus comparables à partir du Web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>This kind of corpus is increasingly used for multilingual and translingual information retrieval.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce type de corpus est de plus en plus utilisé pour la recherche d'informations multilingues et translingues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>It overcomes the lack of translated bilingual resources.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il permet de pallier le manque de ressources bilingues traduites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>Moreover, these corpora are richer than parallel corpora because they supply more information with respect to linguistic and cultural particularities of each language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, ces corpus sont plus riches que les corpus parallèles car ils fournissent plus d'informations sur les particularités linguistiques et culturelles de chaque langue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>We work on language for special purposes corpora (especially coming from scientific domains) in three languages with high linguistic dissimilarities: French, Japanese and Russian.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre travail, nous étudions un corpus de langues spécialisées (en particulier dans les domaines scientifiques) dans trois langues à forte distance linguistique : le français, le japonais et le russe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>We want to guarantee a high degree of comparability in our corpus. Thus, the first common characteristic that we choose is the document’s topic, the second one being the distinction between scientific and popular science discourses, or levels of communication.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de garantir une grande comparabilité des documents de notre corpus, nous prenons en compte une caractéristique classique, relative à la thématique du corpus, mais aussi une caractéristique discursive : distinction entre les documents selon qu’ils relèvent du discours scientifique ou vulgarisé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>We base our choice on Ducrot and Schaeffer (1999) discourse definition: every enunciator’s utterances set characterized by a global topic unity .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous nous basons ici sur la définition de discours telle qu’elle est définie par Ducrot et Schaeffer (1999) : « Tout ensemble d’énoncés d’un énonciateur caractérisé par une unité globale de thème ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>In order to automate a part of comparable corpora compilation, it is necessary to recognise automatically those two characteristics.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d'automatiser une partie de la compilation de corpus comparables, il est nécessaire de reconnaître automatiquement ces deux caractéristiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>A document’s topic can be recognised by the keywords used for its web search, while a document’s discourse is harder to identify, and should be supported by a classification system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le thème d’un document peut être identifié par les mots-clés utilisés pour sa recherche sur le web, alors que le discours d’un document est plus difficile à identifier et doit être soutenu par un système de classification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>To characterize scientific and popular science discourses, we compile a training corpus in three languages and analyze it. Inspired from Karlgren (1998), we apply a stylistic and contrastive analysis on the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour caractériser les discours scientifiques et de vulgarisation, nous compilons un corpus d'entraînement dans trois langues et l'analysons. Inspirés des travaux de Karlgren (1998), nous appliquons une analyse stylistique et contrastive sur le corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>We then manually create a multilingual typology of science and popular science discourse from this analysis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous créons ensuite manuellement une typologie multilingue du discours scientifique et de vulgarisation à partir de cette analyse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>This typology has three levels: structural, modal and lexical; and is composed of features characterising the discourse of documents (Biber et al., 1998).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette typologie comprend trois niveaux : structurel, modal et lexical ; et est composée de caractéristiques qui caractérisent le discours des documents (Biber et al., 1998).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>We use the typology to adapt machine learning algorithms to the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons la typologie pour adapter les algorithmes d'apprentissage automatique au corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>In this paper, our objective is to check if this three levels typology can actually characterize a Web document’s discourse, and refine the notion of corpus comparability .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’objectif principal de notre travail consiste à vérifier si cette typologie, basée sur ces trois niveaux, permet effectivement de caractériser le discours d’un document du Web et d’affiner la notion de comparabilité des documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>We may observe the performance of the typology for each one of the three languages composing the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En travaillant sur un corpus trilingue, nous pourrons aussi observer le comportement de cette typologie selon les langues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>2. Corpus compilation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Compilation du corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>Our training corpus is a comparable one, involving French, Japanese and Russian languages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre corpus de travail est un corpus comparable comportant des documents en trois langues à grande distance linguistique : le français, le japonais et le russe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>As we work on multilingual information retrieval, we want to garantee a high degree of comparability in our corpus, without weakening cultural and linguistic characteristics of each language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre de notre étude, relative à la recherche d’information multilingue, nous souhaitons disposer d’un corpus au degré de comparabilité assez élevé, sans pour autant effacer les diversités culturelles et linguistiques propres à chacune des langues étudiées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>We consider two comparability levels:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous considérons deux niveaux de comparabilité :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>- the first comparability level is assured by a common topic in the corpus’ documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- comme c’est souvent le cas en recherche d’information, nous assurons un premier niveau de comparabilité grâce à la thématique commune partagée par les documents du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>The topic we choose, ”diabetes and diet”, belongs to medical domain. This topic refers to a wide public and guarantees a diversified compilation of documents from the Web.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le thème que nous avons choisi, "diabète et alimentation", appartient au domaine médical. Ce thème concerne un large public et garantit une compilation diversifiée de documents sur le web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>From an applicative point-of-view, a common topic implies common linguistic features and vocabulary for each languages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Du point de vue applicatif, un thème commun implique des caractéristiques linguistiques et un vocabulaire communs pour chaque langue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>- since we work on medical domain, two major discourses (or levels of communication) appears: scientific and popular science.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- puisque nous travaillons dans le domaine médical, deux grands discours (ou niveaux de communication) apparaissent : scientifique et vulgarisé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>In this section, we present our methodology for corpus compilation and principal characteristics of our corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la suite de cette section, nous présentons notre méthodologie de constitution du corpus et ses principales caractéristiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>2.1. Methodology for corpus compilation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.1 Méthodologie de constitution des corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Corpus characteristics</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1: Caractéristiques du corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>We work on a trilingual comparable corpus involving French, Japanese and Russian languages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous travaillons sur un corpus comparable trilingue impliquant les langues française, japonaise et russe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>Documents are extracted from the Web.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les documents sont extraits du Web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>Corpus compilation consists of three steps: 1. Web documents search, according to the chosen topic; 2. Selection of relevant web pages; 3. Classification of these web pages according to their discourse.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La démarche de constitution du corpus repose sur trois étapes principales : 1. Recherche de pages web correspondant à la thématique visée, 2. Sélection des pages pertinentes, 3. Classement de ces pages selon leur type de discours.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>Web page search is made using classical Web search tools: (1) National Web search engines; (2) specialized portals; (3) Link collections.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La recherche sur les pages web se fait à l'aide d'outils de recherche web classiques : (1) Moteurs de recherche nationaux ; (2) Portails spécialisés ; (3) Collections de liens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>Methods (1) and (2) require keywords.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les méthodes 1 et 2 nécessitent l'utilisation de mots clés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>In order to collect a wide range of documents, queries are composed of various combinations of keywords as diet , diabetes and obesity extended with i) synonymous terms found in thesaurus; ii) semantically linked terms found in web documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d’obtenir un large spectre de documents, les requêtes utilisées sont formées avec des combinaisons variées de mots clés tels que alimentation , diabète et obésité étendus avec i) leurs synonymes relevés dans les dictionnaires, et ii) aux termes équivalents extraits des pages visitées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>In the case of specialized web portals, keywords are adapted.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas d'un portail web spécialisé, les mots clés sont adaptés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Among documents gathered by web search, we manually selected relevant documents to the topic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Parmi les documents recueillis par la recherche sur le web, nous avons sélectionné manuellement les documents pertinents pour la thématique visée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>Selected pages were then classified according to their discourse.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les pages sélectionnées ont ensuite été classées selon le type de discours.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>Manual classification is based on the following heuristics: - a scientific document is written by specialists, for specialists; - we distinguish two levels of popular science: texts written by specialists for the general public and texts written by the general public for the general public.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lors de la classification manuelle, nous utilisons les heuristiques suivantes : – un document scientifique est rédigé par des spécialistes à destination de spécialistes. – en ce qui concerne la vulgarisation scientifique, nous distinguons deux niveaux de vulgarisation : les textes écrits par des spécialistes à destination du grand public, et les textes écrits par le grand public à destination du grand public.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>Without distinction of these last two levels, we privileged documents written by specialists, assuming that they may be richer in content and vocabulary (for example advices from a doctor would be richer and longer than forum discussions).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sans distinction de ces deux derniers niveaux, nous avons privilégié les documents écrits par des spécialistes, en supposant qu'ils peuvent être plus riches en contenu et en vocabulaire (par exemple, les conseils d'un médecin seraient plus riches et plus longs que les discussions sur des forums).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>Our manual classification is based on the two previous heuristics, and endorsed by several empirical elements: website’s origin, vocabulary used, etc.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre classification manuelle est donc basée sur les deux heuristiques précédentes, et appuyée par plusieurs éléments empiriques : l'origine du site, le vocabulaire utilisé, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>Our manual classification method is still empirical, thus we did not consider ambiguous documents (unclassified or for which judgements were different) in our training corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il faut noter cependant que la tâche de classification manuelle reste assez empirique. Cela nous a conduit à ne pas inclure certains documents “ambigus” (documents inclassables ou sur lesquels les avis divergeaient) dans les corpus d’apprentissage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>2.2. Corpus characteristics</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.2 Caractéristiques des corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>Table 1 presents the main features of the corpus: the number of documents and the number of words for each language and discourse (SC: scientific; PS: popular science).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 1 présente les principales caractéristiques du corpus ainsi constitué : le nombre de documents et le nombre de mots dans chacune des langues et pour chaque type de discours (SC : scientifique ; PS : vulgarisation scientifique).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>This corpus is composed of more than 1.5 million words in three languages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce corpus rassemble ainsi plus de 1 500 000 mots dans trois langues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>Since the number of words is hard to evaluate in a Japanese document, we indicated the number of characters.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné que le nombre de mots est difficile à évaluer dans un document japonais, nous avons indiqué le nombre de caractères.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>All the documents collected represent more than three alphabets (Cyrillic, Latin, Hiragana, Katakana…) and several charset encodings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous les documents collectés représentent plus de trois alphabets (cyrillique, latin, hiragana, katakana...) et plusieurs encodages de caractères.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>Thus we chose to use Unicode, the only encoding allowing Latin, Cyrillic and Japanese alphabets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est pourquoi nous avons choisi d'utiliser Unicode, le seul codage permettant de traiter les alphabets latin, cyrillique et japonais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>Our documents are from different formats: classical web formats and other formats (pdf, ps, doc, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nos documents sont de différents formats : les formats classiques du web et d'autres formats (pdf, ps, doc, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>Every document is stored in the corpus in his original format and converted into text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque document est conservé dans le corpus dans son format original et converti en texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>All the Web genres (Bretan et al., 1998) are not present in the French corpus, which holds mostly reports and articles (press and scientific).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous les genres du Web (Bretan et al., 1998) ne sont pas tous représentés dans le corpus français, dans lequel on trouve en majorité des rapports et articles (de presse ou scientifiques), contrairement au corpus japonais dans lequel on trouve une grande diversité (allant du rapport scientifique à l’offre d’emploi).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>However, Japanese and Russian corpus holds a large panel of genres (scientific report, articles, cooking recipes or job offerings, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, le corpus russe et japonais contient un grand nombre de genres (rapports scientifiques, articles, recettes de cuisine, offres d'emploi, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>3. Stylistic analysis of the corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Analyse stylistique du corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>Stylistic analysis is a linguistic field with a scientific application in the textual classification domain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’analyse stylistique est une discipline linguistique ayant une application scientifique dans le domaine de la catégorisation textuelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>In this domain, works are based on automatic classification methods.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce domaine, les travaux se basent sur des méthodes de classification automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>Most known algorithms are support vector machines (SVM), neural networks, Bayesian classifiers, decision trees (Sebastiani, 2002).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les algorithmes d’apprentissage les plus connus sont les séparateurs à vastes marges (SVM), les réseaux de neurones, les classifieurs de Bayes et les arbres de décision (Sebastiani, 2002).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>We distinguish two types of stylistic analysis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux types d'analyse stylistique se distinguent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>First, the inductive approach consists in the analysis of a corpus, and the detection of correlations specifying similarity classes (which can vary according to the chosen correlations).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Premièrement, l'approche inductive consiste en l'analyse d'un corpus et la détection de corrélations déterminant des classes de similarités (qui peuvent varier en fonction du type de corrélations choisi).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>This method leads to create inductive typologies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthode permet de créer des typologies dites inductives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>In the automatic classification field, this method is called unsupervised classification , or clustering .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre de la classification automatique, cette méthode s'apparente à la classification non-supervisée, ou clustering.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>The second approach is the deductive one: an analysis is made on a classified corpus to find elements characterising the classes. The characteristics are collected to constitute a typology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La seconde démarche, appelée démarche déductive , consiste à analyser un ensemble de documents préclassés afin de caractériser l’appartenance d’un élément à une classe, sous la forme d’une typologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>In this approach, two methods lead to create a typology: an analysis of the documents one at a time, or a contrastive analysis of documents from two different classes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avec cette approche, deux méthodes permettent de créer une typologie : l'analyse des documents un à un, ou l'analyse contrastive de documents appartenant à deux classes distinctes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>We choose the deductive and contrastive analysis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre travail, nous avons choisi d'utiliser l'analyse déductive et contrastive.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>Textual classification algorithms are applied to several kinds of typologies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les algorithmes de catégorisation textuelle s’appliquent à de nombreuses typologies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>Most frequent kinds are topic or genre typologies (Bretan et al., 1998).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les plus fréquentes sont les typologies thématiques ou de genres (Bretan et al. , 1998).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>Since works on discourse typologies are less frequent, we adapt deductive and contrastive approaches on genres and themes to build our discourse typology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné que les travaux portant sur les typologies de discours sont moins fréquents, nous adaptons les approches déductives et contrastives sur les genres et les thèmes pour construire notre typologie de discours.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>As documents from our corpus are collected from the web, they present a proper structure that we cannot overlook.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les documents de notre corpus, collectés sur le Web, présentent une structure propre que nous ne pouvons pas négliger.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>Thus, we analyzed both structure and content of the documents, our discourse typology is based on these two types of information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, nous avons analysé à la fois la structure et le contenu des documents, notre typologie de discours est basée sur ces deux types d'informations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>Sinclair worked on text and corpus typologies and introduced the concept of levels in a textual typology (Sinclair, 1996b; Sinclair, 1996a).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sinclair a travaillé sur les typologies de textes et de corpus et a introduit le concept de niveaux dans les typologies textuelles (Sinclair, 1996b ; Sinclair, 1996a).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>According to him, it is appropriate to consider two levels of criteria: - external criteria : “features of the non-linguistic environment or society in which the text occurs”, - internal criteria : “differentiating features of the language of the texts”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Selon lui, il est approprié de considérer deux niveaux de critères : - les critères externes : « les caractéristiques de l'environnement non linguistique ou de la société dans laquelle le texte se situe », - les critères internes : « les caractéristiques linguistiques du texte ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>Table 2: Structural characteristics</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2: Caractéristiques structurelles</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>Since our corpus is made of web documents, we consider external criteria as all the features related to the creation of documents and their structure (non-linguistic features).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre corpus étant constitué de documents issus du Web, nous considérons les critères externes comme étant les caractéristiques relatives à la création du document et à sa structure (caractéristiques « non-linguistiques »).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>Internal criteria are the linguistic features of the documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les critères internes sont les caractéristiques linguistiques des documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>However, stylistic analysis enlights several granularity levels among internal criteria.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, l'analyse stylistique met en évidence différents niveaux de granularité parmi les critères internes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>First, in order to distinguish between scientific and popular science documents, we need to consider the speaker in his speech: the modality.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour distinguer les documents scientifiques des documents vulgarisés, il faut prendre en compte le locuteur dans son discours, c'est-à-dire la modalité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>Then scientific discourse can be characterized by the vocabulary used, words length and other lexical features.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, le discours scientifique peut se caractériser par le vocabulaire employé, la longueur des mots, et autres critères relevant du lexique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>Therefore our typology is based on three analysis levels:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La typologie que nous adoptons distingue donc trois niveaux d’analyse des documents :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>- Structural criteria : textual and graphical structure of documents; - Modal criteria : elements characterising the modality in texts; - Lexical criteria : lexical features of texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Critères structurels : structure graphique et textuelle des documents ; - Critères modaux : éléments caractérisant la modalité dans le texte ; - Critères lexicaux : éléments relatifs au lexique employé dans le texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>Structural features (table 2) gather mainly graphical (format, images, tables…) and structural elements of documents, by dint of HTML tags (paragraphs, item lists, titles…).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les caractéristiques structurelles, présentées dans le tableau 2, concernent en majeure partie l’aspect graphique du document (format, images, fonds, …) ainsi que les éléments de sa structure pris en compte ici grâce aux balises HTML (paragraphes, listes, titre, …).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>All of these features fit to the three languages involved in our study.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutes ces caractéristiques sont présentes dans les trois langues étudiées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>Modal characteristics (table 3) correspond to linguistic elements characterizing modality in documents, ie speaker attitude in his own speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les caractéristiques modales (tableau 3) correspondent aux éléments linguistiques caractérisant la modalité dans les documents, c'est-à-dire l'attitude du locuteur dans son propre discours.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>These features are directly inspired from Charaudeau (1992) and adapted to our corpus (Krivine et al., 2006; Nakao, 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces critères sont directement inspirés des théories de Charaudeau (1992), et ont été adapté à notre corpus (Krivine et al. , 2006; Nakao, 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>Among the acts of locution from Charaudeau (1992), we kept those which were operational (easy to identify automatically).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Parmi les actes locutifs énoncés par Charaudeau (1992), nous n’avons conservé que ceux qui sont opérationnels (facilement identifiables automatiquement).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>For example, opinion modality can be detected in French using verbs like penser (to think), parâıtre (to appear), sembler (to seem).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, la modalité de l’opinion peut être détectée en français grâce aux verbes comme penser, paraître, sembler .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>Most of these features appear in the three languages, but some (judgement, interdiction) are specific to one of them, because the typology instantiation is based on isolated studies of each languages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si, dans leur majorité, ces critères se retrouvent dans les trois langues, quelques critères (jugement, interdiction) s’avèrent spécifiques à une ou deux des langues traitées, essentiellement parce que l’instantiation de la typologie était basée sur des études assez isolées des corpus dans chaque langue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>Table 4 presents lexical features.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 4 présente les caractéristiques lexicales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>Contrary to modal and structural features, lexical features present a high reliance on the language, like the use of hiragana and katakana characters in Japanese texts or Latin alphabets in Russian texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contrairement aux caractéristiques modales et structurelles, les caractéristiques lexicales présentent une forte dépendance à la langue, comme l'usage des caractères hiragana et katakana pour les textes japonais ou l'alphabet latin pour les textes russes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>Some of the features are specific to scientific articles style, like bibliographies, bibliographic quotes, specialized vocabulary or units of measurement.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notons aussi que certains de ces critères sont spécifiques aux articles scientifiques, comme les bibliographies et citations bibliographiques, le vocabulaire spécialisé ou les unités de mesure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>Table 3: Modal characteristics</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 3: Caractéristiques des modes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>Table 4: Lexical characteristics</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 4: Caractéristiques lexicales</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>4. Automatic discourse classification</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Classification automatique des discours</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>Our objective is to apply machine learning algorithms to our three levels typology, in order to classify automatically documents according to their discourse: science or popular science.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre objectif est d'appliquer des algorithmes d'apprentissage automatique à notre typologie tripartite, afin de classifier automatiquement les documents en fonction de leur discours : scientifique ou vulgarisé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>In this section, we present machine learning algorithms and our evaluation methods.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette section, nous présentons les algorithmes d'apprentissage machine et nos méthodes d'évaluation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>4.1. Learning machine algorithms</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1. Apprentissage des algorithmes de machine</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>Table 5: Precision and recall of classification in each category with classifiers SVM light and C4.5 for every language</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 5 : Précision et taux de récupération de la classification dans chaque catégorie avec les classificateurs SVM light et C4.5 pour chaque langue</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>Table 6: Results for each feature category</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 6 : Résultats pour chaque catégorie de caractéristiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>A machine learning system uses documents as vectors, where elements of vectors are values for each criteria of the typology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, les systèmes d'apprentissage automatique perçoivent les documents sous forme de vecteurs, où chaque élément du vecteur représente la valeur d'un critère pour le document correspondant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>Vector’s length corresponds to the frequency (rough or balanced) of each criteria in a document.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La longueur d’un vecteur correspond à la fréquence (brute ou pondérée) de chaque critère dans le document traité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>Starting from a learning corpus, where documents are divided into two classes (science and popular science) and a list of criteria, machine learning algorithms create a classification model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En partant d'un corpus d'apprentissage, où les documents sont répartis en deux classes (scientifique et vulgarisé), et d'une liste de critères, les algorithmes d'apprentissage automatique génèrent un modèle de classification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>This model is then check proofed with other data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce modèle est ensuite vérifié avec d'autres données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>There are several textual classification algorithms (neural networks, Bayasian classifier, support vector machines, etc.). Sebastiani (2002) gathered and compared them:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il existe plusieurs algorithmes de classification de texte (réseaux de neurones, classifieurs de Bayes, machines à vecteurs de support, etc.). Sebastiani (2002) a rassemblé et comparé ces techniques :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>working on a Reuters newswires corpus, these algorithms have different performances depending on the supervised or unsupervised method, corpus size, number of classes, number of features…</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Appliquées sur un corpus de dépêches Reuters, ces techniques ont ainsi montré des performances variables en fonction de l’utilisation des approches supervisée ou non-supervisée, de la taille du corpus, du nombre de catégories, du nombre de caractéristiques, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>We chose to use support vector machines with SVMlight (Joachims, 2002) and decision trees with C4.5 (Quinlan, 1993).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons choisi d'utiliser les machines à vecteurs de support avec SVMlight (Joachims, 2002) et les arbres de décision avec C4.5 (Quinlan, 1993).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>As we want a fast classification system, we analyze superficially our documents and their content. Hence, we privileged simple techniques based on lexical or lexico-syntactic patterns to implement our features.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme nous voulons un système de classification rapide, nous analysons superficiellement nos documents et leur contenu. Par conséquent, nous avons privilégié des techniques simples basées sur des modèles lexicaux ou lexicaux-syntaxiques pour implémenter nos critères.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>Thus our categorization system is based on the detection of patterns: based on HTML tags for graphical features or on lexical and lexico-syntactic patterns characterizing modality or lexicon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, notre système de catégorisation est basé sur la détection de modèles : sur la base des balises HTML pour les caractéristiques graphiques ou sur les modèles lexicaux et lexicogrammaticaux caractérisant la modalité ou le lexique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>4.2. Evaluation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 Évaluation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>As we only have a learning corpus, we need to split it into two parts: a training one and a testing one.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme nous n'avons qu'un corpus d'apprentissage, nous devons le diviser en deux parties : une partie d'apprentissage et une partie de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>To do this, we use N-fold cross validation (Cornuéjols and Miclet, 2002).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour cela, nous avons utilisé la méthode dite par validation croisée ( N-fold cross validation )(Cornuéjols &amp; Miclet, 2002).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>This method consists in splitting our corpus into N equal parts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthode consiste à diviser le corpus en n parties égales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>Then the i[th] fold is chosen for the testing part, the other n − 1 folds are used to learn a model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On retient ensuite un des n échantillons (celui de numéro i) qui sera utilisé pour la phase de test, les autres servant à l’apprentissage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>Once the model is tested, this operation is reiterated, i varying from 1 to N .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois le modèle testé, cette opération est réitérée, i variant de 1 à N.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>We set n = 5.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons choisi de poser n = 5.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>For each iteration, we use 80% of our documents to learn a classification model, the other 20% are used to test the models created.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque itération, nous utilisons 80 % de nos documents pour apprendre un modèle de classification, les 20 % restants sont utilisés pour tester les modèles créés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>Results presented in section 5. are averages of the 5-fold cross validation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats présentés dans la section 5 sont les moyennes sur les 5 partitionnements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>We use precision and recall metrics to evaluate our results. Precision is defined to be the number of documents correctly assigned in a class c divided by total number of documents assigned in c . Recall is the number of documents correctly assigned in c divided by the total number of documents belonging to c .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons les métriques de précision et de rappel pour évaluer nos résultats. La précision est définie comme étant le nombre de documents correctement assignés dans une classe C divisé par le nombre total de documents assignés dans la classe C. Le rappel est le nombre de documents correctement assignés dans la classe C divisé par le nombre total de documents appartenant à la classe C.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>5. Results and discussion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. Résultats et discussion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>We applied SVMlight and C4.5 to our corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons donc appliqué les algorithmes SVMlight et C4.5 à notre corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>Classification results are presented in tables 5 and 6.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats de la classification pour ces deux algorithmes figurent dans les tableaux 5 et 6.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>In table 5, we can see that our classification model is better for popular science discourse than scientific one, whatever the language and the classifier are.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le tableau 5, nous pouvons voir que notre modèle de classification est meilleur pour le discours de vulgarisation scientifique que pour le discours scientifique, quels que soient la langue et le classifieur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>Results for French documents are satisfying with an average recall of 87%, and an average precision of 90% whatever the classifier is (which represents more than 200 well classified documents on the 250 of the corpus).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats obtenus avec les documents en français sont dans l'ensemble assez satisfaisants, avec un rappel moyen de 87%, et une précision moyenne de 90% toutes catégories confondues pour le classifieur C4.5 (soit plus de 200 documents bien classés parmi les 250 du corpus).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>Classification results for Japanese documents are good for popular science documents, but quite bad for scientific ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats de la classification en japonais sont bons pour les documents de vulgarisation scientifique, mais assez médiocres pour les documents scientifiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>At last, classification of Russian documents gives good results with SVMlight , with a recall higher than 75% and a precision of 87%.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Finalement, avec les documents russes, on obtient de meilleurs résultats avec le système SVMlight, avec un rappel supérieur à 75 % et une précision de 87%.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>Low results for classification of Japanese and Russian scientific documents can be explained by the high proportion of popular science documents in the corpus (see table 1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats faibles de la catégorisation des documents scientifiques en japonais et en russe peuvent être expliqués par la forte proportion de documents vulgarisés pour ces langues, au détriment des documents scientifiques (voir le tableau 1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>Vector normalization is performed to overcome this ratio but a larger learning corpus would provide more information, represent larger range of scientific documents and generate a fuller language model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La normalisation des vecteurs d’apprentissage permet de pallier ces trop grandes variations mais il est évident qu’un corpus d’apprentissage plus grand contient des données plus variées et permet de générer un modèle de la langue plus complet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>Classification results of French scientific documents are surprising: occurrences are almost twice numerous in scientific corpus, despite documents are less numerous.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats de la classification des documents scientifiques en français sont surprenants : le nombre d'occurrences dans le corpus scientifique y est presque deux fois plus important, même si le nombre de documents scientifiques reste inférieur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>Results for Japanese documents are in average lower than the others, it can be explained by the high diversity of genres in the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats pour les documents japonais sont en moyenne moins performants que les autres, ce qui peut s'expliquer par la forte disparité des genres dans le corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>Thus it is harder to characterize a discourse with a stable set of features.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, il est plus difficile de caractériser ce type de discours par un ensemble de caractéristiques “stable”.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>We may not have enough manual classification criteria and they may have to be refined.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est possible que les critères de classification manuelle ne soient pas suffisants et qu'ils doivent être affinés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>Table 6 presents results of each features category for each language and classifier.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 6 présente les résultats obtenus par chacune des catégories de caractéristiques pour chaque langue et chaque algorithme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>Each category seems to be relevant and important for the classification.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque catégorie semble être pertinente et importante pour la classification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>In fact, whatever the classifier is, results in each language show that it is possible to classify more than a half of the documents using only features of one category.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, quel que soit le type de classifieur, les résultats obtenus dans chaque langue indiquent qu’il est possible de classer correctement plus de la moitié de nos documents en tenant compte des critères n’appartenant qu’à une seule catégorie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>However, none of the categories can be distinguished from the others within this test, and best categories varies according to the classifier used.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, aucune des catégories ne se distingue de façon significative dans ces tests. Par ailleurs, les meilleures catégories ne sont pas les mêmes selon le classifieur utilisé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>With SVMlight , structural and lexical categories seem to be better in the three languages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avec SVMlight , les caractéristiques structurelles et lexicales semblent être meilleures dans les trois langues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>With C4.5 , the best category varies according to the language: modality for French, lexicon for Japanese and structure for Russian.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avec C4.5 , la meilleure catégorie varie en fonction de la langue : la modalité en français, le lexique en japonais et la structure en russe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>Most relevant features are: URL pattern, delocutive pronouns and narrative sentences for French; documents length, elocutive pronouns and politeness maker in sentences end for Japanese; documents title, images and specialized vocabulary for Russian.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les caractéristiques les plus pertinentes sont : le modèle d'URL, les pronoms délocutifs et les phrases narratives pour le français ; la longueur des documents, les pronoms élocutifs et les formules de politesse en fin de phrases pour le japonais ; le titre des documents, les images et le vocabulaire spécialisé pour le russe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>6. Conclusion and perspectives</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Conclusion et perspectives</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>Starting with a trilingual comparable corpora composed of Web documents in French, Japanese and Russian, we made a contrastive stylistic analysis and created a typology for science and popular science web documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En partant d'un corpus comparable composé de documents issus du Web en français, japonais et russe, nous avons mené une analyse stylistique et contrastive et avons élaboré une typologie pour la caractérisation des documents scientifiques et vulgarisés sur le Web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>Our typology is based on three aspects of web documents: structural, modal and lexical.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre typologie se base sur trois aspects des documents du Web : l’aspect structurel, l’aspect modal et l’aspect lexical.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>This typology, implemented through machine learning algorithms support vector machines ( SVMlight ) and decision trees ( C4.5 ) gives good results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette typologie, implémentée grâce aux algorithmes d’apprentissage des machines à vecteurs de support (SVMlight) et aux arbres de décision (C4.5) donne de bons résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>Thus we can estimate the discourse of a web document.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons ainsi estimer le type de discours d’un document du Web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>Furthermore, these results show that each level of the typology is relevant to characterize the discourse.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces résultats montrent en outre que chacune des catégories de la typologie est pertinente pour caractériser le discours.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>In fact, each of them provide satisfying results, and their combination improves the results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, chacune d’elles permet d’obtenir des résultats acceptables, tandis que leur combinaison permet de les améliorer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>Web documents discourse can therefore be characterized through these three aspects.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le discours d’un document du Web peut donc être caractérisé selon ces trois aspects.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>We note that some of the features appear in three languages, so we assume that our typology may be universal.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous remarquons par ailleurs que certains des critères de la typologie sont présents quelle que soit la langue, ce qui permet de statuer sur leur caractère « universel ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>There seems to be recurrent elements appearing in documents from three different languages characterising science or popular science discourse, and our typology seems to be carriable from a language to another.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il semble donc qu'il existe des éléments récurrents dans les documents en trois langues différentes qui caractérisent le discours scientifique ou populaire, et notre typologie semble être transposable d'une langue à une autre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>One of the major limit of our work seems to come from the limited size of the corpus, especially for Japanese and Russian scientific documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'une des principales limites de notre travail semble provenir de la taille insuffisante des corpus, en particulier pour les documents scientifiques en japonais et en russe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>Moreover, low results for Japanese scientific documents can be explained by a high genre diversity in the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, les faibles résultats de la classification des documents scientifiques japonais sont dus également à la diversité des genres dans ce corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>Through this observation, we wonder about our corpus composition and our manual classification.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette constatation nous amène à nous interroger sur la composition et la catégorisation manuelle de notre corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>Looking to hierarchical classification of Malrieu and Rastier (2002), a distinction into discourse and genre would help us refining our results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En se basant sur la classification hiérarchique de Malrieu et Rastier (2002), une distinction entre discours et genre nous aiderait à affiner nos résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>Addind a genre distinction in the corpus, our classes would be homogeneous and would guarantee a higher degree of comparability in our comparable corpora.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En ajoutant une distinction des genres dans le corpus, nos catégories seraient plus homogènes et garantiraient un plus fort degré de comparabilité dans les corpus comparables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>Finally, our binary classification may not be legitimate, we think it would be more interesting to consider science and popular science classes as a continuum.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, notre catégorisation binaire peut ne pas être légitime, nous pensons qu'il serait plus intéressant de considérer les classes de sciences et de vulgarisation comme un continuum.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>This would lead us to evaluate a scientific degree instead of a class belonging.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci conduirait à évaluer un degré scientifique plutôt qu'un type de document.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>7. Acknowledgement</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7. Remerciements</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>This research program has been funded by CNRS as part of the TCAN program for 2004-2006 with NII and INaLCO research laboratories.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce programme de recherche a été financé par le CNRS dans le cadre du programme TCAN pour 2004-2006 avec les laboratoires de recherche NII et INaLCO.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>We thank Estelle Dubreil, Sonia Krivine and Masaru Tomimitsu for their participationin comparable corpus compilation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous remercions Estelle Dubreil, Sonia Krivine et Masaru Tomimitsu pour leur participation à la construction du corpus comparable.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

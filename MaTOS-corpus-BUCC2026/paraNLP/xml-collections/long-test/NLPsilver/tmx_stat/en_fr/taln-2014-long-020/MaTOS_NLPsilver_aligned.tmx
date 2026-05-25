@@ -1,0 +1,1767 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2014-long-020. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/C14-1067.pdf</url_en>
+        <url_fr>https://talnarchives.atala.org/TALN/TALN-2014/taln-2014-long-020.pdf</url_fr>
+        <title_en>Improving distributional thesauri by exploring the graph of neighbors</title_en>
+        <title_fr>Explorer le graphe de voisinage pour améliorer les thésaurus distributionnels</title_fr>
+        <docid>taln-2014-long-020</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Improving distributional thesauri by exploring the graph of neighbors</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Explorer le graphe de voisinage pour améliorer les thésaurus distributionnels</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we address the issue of building and improving a distributional thesaurus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous abordons le problème de construction et d'amélioration d'un thésaurus distributionnel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>We first show that existing tools from the information retrieval domain can be directly used in order to build a thesaurus with state-of-the-art performance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous montrons d'une part que les outils de recherche d'information peuvent être directement utilisés pour la construction de ces thésaurus, en offrant des performances comparables à l'état de l'art.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>Secondly, we focus more specifically on improving the obtained thesaurus, seen as a graph of k -nearest neighbors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous nous intéressons d’autre part plus spécifiquement à l’amélioration des thésaurus obtenus, vus comme des graphes de plus proches voisins.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>By exploiting information about the neighborhood contained in this graph, we propose several contributions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En tirant parti de certaines des informations de voisinage contenues dans ces graphes nous proposons plusieurs contributions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>1) We show how the lists of neighbors can be globally improved by examining the reciprocity of the neighboring relation, that is, the fact that a word can be close of another and vice-versa.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1) Nous montrons comment améliorer globalement les listes de voisins en prenant en compte la réciprocité de la relation de voisinage, c’est-à-dire le fait qu’un mot soit un voisin proche d’un autre et vice-versa.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>2) We also propose a method to associate a confidence score to any lists of nearest neighbors (i.e. any entry of the thesaurus).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2) Nous proposons également une méthode permettant d'associer à chaque liste de voisins (i.e. à chaque entrées du thésaurus construit) un score de confiance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>3) Last, we demonstrate how these confidence scores can be used to reorder the closest neighbors of a word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3) Enfin, nous montrons comment utiliser ces scores de confiance pour réordonner les voisins les plus proches d'un mot.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>These different contributions are validated through experiments and offer significant improvement over the state-of-the-art.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces différentes contributions sont validées expérimentalement et offrent des améliorations significatives sur l’état de l’art.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>Keywords: distributional thesaurus, k nearest neighbor graph, Parzen window, Hungarian algorithm, T-norms, information retrieval.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mots-clés : thésaurus distributionnel, graphe de k proches voisins, fenêtre de Parzen, algorithme hongrois, T- normes, recherche d’information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>1 Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>Distributional thesauri are useful for many NLP tasks and their construction is an issue widely discussed for several years (Grefenstette, 1994).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les thésaurus distributionnels sont utiles à de nombreuses tâches du TAL et leur construction est un problème largement abordé depuis plusieurs années (Grefenstette, 1994).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>However this is still a very active research field, maintained by the increasingly large number of available corpus and by many applications.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela reste néanmoins un champ de recherche très actif, entretenu par la mise à disposition de corpus toujours plus volumineux et de nombreuses applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>These thesauri associate each of their entry with a list of words that are desired semantically close to the entry.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces thésaurus associent à chacune de leurs entrées une liste de mots qui se veulent proches sémantiquement de l’entrée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>This notion of proximity varies (synonymy, other paradigmatic relations, syntagmatic relations (Budanitsky and Hirst, 2006; Adam et al., 2013, for a discussion)), but the methods used for the automatic construction of thesauri are often shared.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette notion de proximité est variable selon les travaux (synonymie, autres relations paradigmatiques, relations syntagmatiques (Budanitsky &amp; Hirst, 2006; Adam et al. , 2013, pour une discussion)), mais les méthodes utilisées pour la construction automatique de ces thésaurus sont souvent partagées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>For the most part, these methods rely on the distributional hypothesis of (Firth, 1957): each word is characterized by the set of contexts in which it appears, and the semantic proximity of two words can be inferred from the proximity of their contexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour une grande part, ces méthodes reposent sur l’hypothèse distributionnelle de Firth (1957) : chaque mot est caractérisé par l’ensemble des contextes dans lesquels il apparaît, et la proximité sémantique de deux mots peut être déduite de la proximité de leurs contextes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>This hypothesis has been implemented in different ways, and several propositions to improve the results have been explored (see next section for a state of the art).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette hypothèse a donc été mise en œuvre de différentes façons, et plusieurs pistes pour en améliorer les résultats ont été suivies (voir section suivante pour un état de l’art).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>The work presented in this article are part of this framework. We propose several contributions on the creation of these distributional thesauri and their improvement.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les travaux présentés dans cet article s'inscrivent dans ce cadre, et nous proposons plusieurs contributions portant sur la création de ces thésaurus distributionnels et sur leur amélioration.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>We first show that models from information retrieval (IR) can provide information on semantic relationships, and are thus adapted to the task of creating these thesauri. In addition, they offer very competitive results compared to the state of the art, while enjoying existing tools (Section 3).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous montrons tout d'abord que les modèles de recherche d'information (RI) peuvent fournir des informations sur les relations sémantiques et sont ainsi adaptés à la tâche de création de ces thésaurus. De plus, ils offrent des résultats très compétitifs par rapport à l'état de l'art, tout en bénéficiant d'un outillage déjà existant (section 3).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>The most important part of our work then focuses on the exploitation of such semantic neighborhood relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le cœur de notre travail se situe ensuite sur l’exploitation des relations de voisinage sémantique ainsi mesurées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>The IR models indeed provide lists ordering all words by decreasing similarity, that form a graph of nearest neighbors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les modèles de RI fournissent en effet des listes ordonnées par similarité décroissante de tous les mots, formant un graphe de plus-proches voisins.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>We propose to take advantage of some of the neighborhood information contained in this graph and we derive three contributions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous proposons de tirer parti de certaines des informations de voisinage contenues dans ce graphe et nous déclinons en trois contributions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>1) We globally improve neighbor lists by taking into account the reciprocity of the neighborhood relationship, that is to say the fact that a word is a close neighbor of another and vice versa (Section 4).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1) Nous montrons comment améliorer globalement les listes de voisins en prenant en compte la réciprocité de la relation de voisinage, c’est-à-dire le fait qu’un mot soit un voisin proche d’un autre et vice-versa (section 4).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>2) We also propose a method that associates each neighbor list (i.e. each entry of the thesaurus built) with a confidence score (Section 5).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2) Nous proposons également une méthode permettant d’associer à chaque liste de voisins (i.e. à chaque entrée du thésaurus construit) un score de confiance (section 5).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>This method uses the nearest neighbor graph to estimate the probabilities that a given word is the i -th neighbor of another word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthode repose sur l'estimation, à l'aide du graphe de plus proches voisins, des probabilités de trouver un mot donné comme ième voisin d'un autre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>3) Finally, on the basis of this work, we show how to use this confidence score and these probabilities to reorder the list of nearest neighbors (Section 6).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3) Enfin, sur la base de ce travail, nous montrons comment utiliser ce score de confiance et ces probabilités pour réordonner les listes de voisins les plus proches (section 6).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>To achieve this goal, we model the reranking as an optimization problem of assignments, solved by the Hungarian algorithm (Kuhn and Yaw, 1955).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour ce faire, nous modélisons ce réordonnancement comme un problème d’optimisation de profit, résolu par l’algorithme hongrois (Kuhn &amp; Yaw, 1955).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>2 Related work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Travaux connexes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>The notion of distributional thesaurus, as it was initially defined by Grefenstette (1994), followed by Lin (1998a) and Curran and Moens (2002), is not often considered specifically, probably because of its strong link with the notion of semantic similarity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La notion de thésaurus distributionnel, telle qu'elle a été initialement définie par Grefenstette (1994), puis par Lin (1998a) et Curran et Moens (2002), n'est pas souvent considérée spécifiquement, probablement à cause de ses liens étroits avec la notion de similarité sémantique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>As a consequence, the improvement of distributional thesauri has been first a side effect of the improvement of the distributional similarity measures used for their building and more precisely, of the distributional data they rely on. Both the nature of the constituents of distributional contexts and their weighting have been considered in this regard.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, l'amélioration des thésaurus de distribution a d'abord été un effet secondaire de l'amélioration des mesures de similarité de distribution utilisées pour leur construction et, plus précisément, des données de distribution sur lesquelles ils s'appuient. La nature des constituants des contextes de distribution et leur pondération ont été considérées à cet égard.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>Concerning their weighting, Broda et al. (2009) proposed to turn the weights of context constituents into ranks to make them less dependent on a specific weighting function while Zhitomirsky-Geffet and Dagan (2009), extended by Yamamoto and Asakura (2010), defined a bootstrapping method for modifying the weights of constituents in the distributional context of a word according to the similarity with its semantic neighbors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En ce qui concerne leur pondération, Broda et al. (2009) ont proposé de transformer les poids des constituants du contexte en rangs pour les rendre moins dépendants d'une fonction de pondération spécifique. Zhitomirsky-Geffet et Dagan (2009), prolongés par Yamamoto et Asakura (2010), ont défini une méthode de réinitialisation pour modifier les poids des constituants dans le contexte distributionnel d'un mot en fonction de la similarité avec ses voisins sémantiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>The nature of distributional contexts has been first considered through the distinction between windowbased and syntactic co-occurrents (Grefenstette, 1994; Curran and Moens, 2002).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La nature des contextes de distribution a été considérée pour la première fois à travers la distinction entre les cooccurrents syntaxiques et basés sur la fenêtre (Grefenstette, 1994 ; Curran et Moens, 2002).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>However, most of the work related to this issue has focused on the fact that the “traditional” representation of distributional contexts is very sparse and redundant, as illustrated by Hagiwara et al. (2006). Hence, several methods for dimension reduction were tested in this context: from Latent Semantic Analysis (Landauer and Dumais, 1997), extended for syntactic co-occurrents (Pad´o and Lapata, 2007), to Random Indexing (Sahlgren, 2001), Non-negative Matrix Factorization (Van de Cruys, 2010) and more recently, lexical representations learnt by neural networks (Huang et al., 2012; Mikolov et al., 2013).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une partie des travaux visant à améliorer l'approche distributionnelle s'est donc focalisée sur l'application de méthodes de réduction de dimensions, depuis l'Analyse Sémantique Latente (Landauer &amp; Dumais, 1997), étendue par Padó &amp; Lapata (2007) aux cooccurrents syntaxiques, jusqu'à la factorisation de matrice non négative (Van de Cruys, 2010) en passant par le Random Indexing (Sahlgren, 2001). Ces méthodes ont cependant donné des résultats limités (Van de Cruys, 2010). Dans ce cadre, l'apprentissage de représentations distribuées réalisées au moyen de réseaux de neurones (Huang et al. , 2012; Mikolov et al. , 2013) est également à mentionner, même si ces travaux sortent un peu du cadre distributionnel traditionnel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>The work we present in this article follows a different perspective as our objective is to improve an existing distributional thesaurus by relying on its structure through a reranking of its neighbors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les travaux que nous présentons dans cet article suivent une perspective différente, car notre objectif est d'améliorer un thésaurus distributionnel existant en exploitant sa structure par un ré-ordre de ses voisins.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>Such approach was adopted to some extent by Zhitomirsky-Geffet and Dagan (2009) as it exploited the neighbors of an entry in an initial thesaurus for reweighting its distributional representation and finally, reranking its neighbors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette approche a été adoptée dans une certaine mesure par Zhitomirsky-Geffet et Dagan (2009) car elle exploite les voisins d'une entrée dans un thésaurus initial pour rééquilibrer sa représentation distributionnelle et enfin, réévaluer ses voisins.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>Ferret (2013) proposed a more indirect method in which the reranking is based on the downgrading of the neighbors that are detected as not similar to their entry through a pseudo word sense disambiguation task: such detection occurs if a certain proportion of the occurrences of a neighbor are not tagged as the entry.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ferret (2013) a proposé une méthode plus indirecte dans laquelle le réévaluation est basée sur la dégradation des voisins qui sont détectés comme non similaires à leur entrée à travers une tâche de pseudo-disambiguation du sens des mots : une telle détection se produit si une certaine proportion des occurrences d'un voisin ne sont pas étiquetées comme l'entrée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>Finally, the closest work to ours is (Ferret, 2012), which selects in an unsupervised way a set of examples of semantically similar words from an initial thesaurus for training a classifier whose decision function is used for reranking the neighbors of each entry.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, le travail le plus proche du nôtre est (Ferret, 2012), qui sélectionne de manière non supervisée un ensemble d'exemples de mots sémantiquement similaires à partir d'un thésaurus initial pour former un classificateur dont la fonction de décision est utilisée pour réévaluer les voisins de chaque entrée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>Its unsupervised selection of examples is more precisely based on the symmetry of semantic similarity relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Son réordonnancement des exemples non supervisé est plus précisément basé sur la symétrie des relations de similarité sémantique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>As Ferret (2012), our work exploits a certain kind of symmetry in the relation of distributional neighborhood between words but extends it to a larger scale by considering the initial thesaurus as a k-nearest neighbor graph and using the relations in this graph for reranking the neighbors of each entry, similarly to Pedronette et al. (2014) in the context of image retrieval.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme Ferret (2012), notre travail exploite un certain type de symétrie dans la relation de voisinage de distribution entre les mots, mais l'étend à une plus grande échelle en considérant le thésaurus initial comme un graphe de k-voisins les plus proches et en utilisant les relations dans ce graphe pour réévaluer les voisins de chaque entrée, de manière similaire à Pedronette et al. (2014) dans le contexte de la recherche d'images.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>3 IR models for building distributional thesauri</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Modèles IR pour la construction de thésaurus distributionnels</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>3.1 Principles</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1 Principes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>As mentioned in the state of the art, distributional approaches aim to calculate similarities between textual representations of word contexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme cela apparaît dans les travaux cités de l’état-de-l’art, le cœur des approches distributionnelles est de calculer des similarités entre représentations textuelles des contextes des mots étudiés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>Methods to calculate similarities from IR seem then relevant for this problem.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les méthodes de calcul de similarité utilisées en recherche d’information semblent donc pertinentes pour ce problème.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>For a given word, the set of contexts of all its occurrences is considered as a document.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour un mot donné, l’ensemble des contextes de ses occurrences est considéré comme un document.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>The proximity between two words is then measured on their contexts by a similarity function from IR.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La proximité entre deux mots est alors mesurée par une fonction de similarité IR sur leur contexte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>This idea has many links with the work from the state of the art, but seems relatively unexplored, with the exeption of (Vechtomova and Robertson, 2012) in the specific context of similar named entities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette idée a beaucoup de liens avec les travaux de l’état de l’art, mais semble relativement peu explorée, à l’exception de Vechtomova &amp; Robertson (2012) dans le cas particulier de la recherche d’entités nommées similaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>It offers the advantage of being easily implementable because of the numerous IR tools available.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle offre l'avantage d'être facilement implémentable du fait des nombreux outils de RI disponibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>Some adaptations are of course required.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien entendu, quelques adaptations doivent être faites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>In contrast to IR, the stop words are kept as well as their positions relative to the considered occurrence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contrairement à la RI, les mots de ponctuation sont conservés, ainsi que leurs positions par rapport à l'occurrence considérée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>Lemmatization instead of stemming is performed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La lemmatisation est effectuée au lieu de la réduction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>For example, in ” the excerpt: … all forms of restrictions on freedom of expression, threats …”, the indexing terms restriction-2, on-1, of+1, expression+2 are added to the context of freedom noted C (freedom).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, pour l’occurrence de freedom dans l’extrait : « … all forms of restrictions on freedom of expression , threats … », les termes d’indexation restrictions-2, on-1, of+1, expression+2 sont ajoutés à la description de freedom (i.e. sont ajoutés à C (freedom)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>The whole set of collected contexts for a word is used as a query in order to find its distributional neighbors. According to an IR similarity measure, the nearest words of this query (those whose contexts are closest) are returned.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour trouver les voisins distributionnels d’un mot, l’ensemble des contextes collectés pour ce mot sert de requête, qui est alors utilisée pour trouver les mots les plus proches (i.e. dont les contextes sont les plus proches) au sens d’une mesure de similarité IR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>We tested some of the most classical similarity measures used in IR: Hellinger (Escoffier, 1978; Domengès and Volle, 1979), TF-IDF/cosinus, and Okapi-BM-25 (Robertson et al., 1998).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les expériences que nous présentons ci-dessous, nous avons testé quelques unes des mesures les plus classiquement utilisées en RI : la similarité d’Hellinger (Escoffier, 1978; Domengès &amp; Volle, 1979), un TF-IDF/cosinus, et une similarité Okapi-BM-25 (Robertson et al. , 1998).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>The last model can be seen as a variation of TF-IDF that better takes into account the difference between document sizes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce dernier modèle peut être vu comme une version plus moderne du TF-IDF, prenant notamment mieux en compte les différences de tailles des documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>This point is of importance since in our case the documents (namely the set of contexts of a word) are actually of very variable sizes, due to the very variable number of occurrences of each word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce point est important puisque dans notre cas, les documents, c’est-à-dire l’ensemble des contextes d’un mot, sont effectivement de tailles très variables du fait du nombre d’occurrences lui-même très variable des différents mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>The Okapi-BM25 similarity between a word wi ( C ( wi ) being the query), and wj ( C ( wj ) being a document), is given in Eqn 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La similarité Okapi-BM25 entre un mot wi (C(wi) est vu comme une requête), et wj (C(wj) vu comme un document), s'exprime par l'équation 1 dans laquelle les composants correspondent respectivement au poids du mot considéré dans la requête, à son TF et à son IDF dans le document.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>qtf is the number of occurrences of the word t in the query ( C ( wi )), dl is the size of C ( wj )), dlavg the average size of all contexts, n is the number of documents (that means in our case the number of considered words/thesaurus entries). df ( t ) is the number of contexts ( C ( · )) containing t . Finally, k 1, k 3 and b are some constants, with default values k 1 = 2, k 3 = 1000 and b = 0 . 75.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>qtf est le nombre d’occurrence du mot t dans le contexte de la requête C ( wi ), et similairement tf est le nombre d’occurrences dans C ( wj ), dl est la taille des contextes de wj (nombre de mots dans C ( wj )), dlavg la taille moyenne des contextes, n est le nombre de documents, c’est-à-dire dans notre cas le nombre de mots examinés (nombre d’entrées du thésaurus), df ( t ) est le nombre de contextes ( C ( · )) dans lesquels t apparaît, et enfin k 1, k 3 et b sont des constantes, fixées par défaut à k 1 = 2, k 3 = 1000 et b = 0 . 75.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>Details of these classical IR models are not given here but can be found in (Manning et al., 2008). In the following experiments, the context of an occurrence is defined by the two words before and after the occurrence, and we also use an adjusted version of Okapi-BM25 similarity that enhances the influence of the document size and gives more importance to the most discriminating context words by setting b = 1 and putting the IDF squared to give more importance to the most discriminating context words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les détails de ces modèles de RI classiques ne sont pas détaillés ici mais peuvent être trouvés dans (Manning et al., 2008). Dans les expériences suivantes, le contexte d'une occurrence est défini par les deux mots avant et après l'occurrence, et nous utilisons également une version ajustée de la similarité Okapi-BM25 qui renforce l'influence de la taille du document et donne plus d'importance aux mots de contexte les plus discriminants en prenant b = 1 et en mettant l'IDF au carré.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>3.2 Experimental setup</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2 Contexte expérimental</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>For the sake of comparison, we use in our experiments the data and baselines provided by Ferret (2013).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A titre de comparaison, nous utilisons dans nos expériences les données et les références fournies par Ferret (2013).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>The corpus used to build the distributional thesaurus is AQUAINT-2. It is a collection of articles from press containing about 380 million words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour construire les thésaurus distributionnels, le corpus utilisé est AQUAINT-2, une collection d’articles de presse en anglais d’environ 380 millions de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>The thesaurus entries are all the nouns in the corpus with a frequency &gt; 10. That represents 25,000 entries (i.e. unique nouns), denoted by n in the remaining.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous les noms du corpus avec une fréquence &gt; 10 sont considérés, soit 25 000 noms (on note n ce nombre dans la suite) ; ils formeront les entrées des thésaurus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>The corpus is labeled in parts of speech by TreeTagger (Schmid, 1994). In this way, we can identify the names that form the thesaurus entries and thus compare to existing work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus est étiqueté en parties-du-discours par TreeTagger (Schmid, 1994). De cette façon, nous pouvons identifier les noms qui formeront les entrées du thésaurus et les comparer aux travaux existants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>However this information is not used to build the thesaurus, ensuring the portability of the method to other languages, similarly to (Freitag et al., 2005).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces informations ne sont pas utilisées pour la suite de la construction du thésaurus, ce qui assure une certaine portabilité de la méthode à d’autres langues (Freitag et al. , 2005).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>To evaluate the built thesauri, WordNet 3.0 synonyms (Miller, 1990) and Moby (Ward, 1996) are used as references, either separately, or jointly.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour évaluer les thésaurus produits, les synonymes de WordNet 3.0 (Miller, 1990) et le thésaurus Moby (Ward, 1996) sont utilisés comme références, soit séparément, soit conjointement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>These two resources exhibit quite different and complementary characteristics: on the one hand, WordNet indicates strong paradigmatic links between words (synonyms or quasi-synonyms).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces deux ressources ont des caractéristiques assez différentes et complémentaires : d'une part, WordNet indique des liens paradigmatiques forts entre les mots (synonymes ou quasi-synonymes).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>On the other hand, Moby groups words sharing more extended syntagmatic and paradigmatic relations, including synonymy, hyper/hypo-nymy, meronymy, but also many more complex types such as the composition of co-hyponymy and hyponymy ( abolition – annulment , cataclysm – debacle ) or hypernymy and co-hyponymy ( abyss – rift , algorithm – routine ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En revanche, Moby regroupe des mots partageant des relations syntagmatiques et paradigmatiques plus étendues, notamment la synonymie, l'hyper/hyponymie, la meronymie, mais aussi de nombreux types plus complexes tels que la composition de la co-hyponymie et de l'hyponymie (abolition - annulation, cataclysme - débâcle) ou de l'hypernymie et de la co-hyponymie (abîme - faille, algorithme - routine).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>As a result, WordNet provides lists of 3 neighbors on average for the 10,473 names of the corpus it covers, while Moby provides lists of 50 neighbors on average for 9,216 names.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, WordNet fournit des listes de 3 voisins en moyenne pour les 10 473 noms du corpus, tandis que Moby fournit des listes de 50 voisins en moyenne pour 9 216 noms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>When combined, the two resources provide a reference of 38 neighbors on average for 12,243 names.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les deux ressources combinées donnent une référence de 38 voisins en moyenne pour 12 243 noms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>It is this combination of WordNet and Moby that will be used as the main reference in all evaluations of this article.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C’est cette combinaison de WordNet et Moby qui sera utilisée comme référence dans toutes les évaluations de cet article.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>Some results restricted to WordNet or Moby only as reference are also given in some cases to illustrate the impact of our methods on semantic simlarity versus semantic relatedness relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quelques résultats limités à WordNet ou Moby uniquement comme référence sont également donnés dans certains cas pour illustrer l'impact de nos méthodes sur les relations de similarité sémantique versus relations de pertinence sémantique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>Through this intrinsic evaluation framework, the semantic neighbors of about half of the entries of our thesauri are evaluated, which can be considered as a very large evaluation set compared to classical benchmarks such as WordSim 353 for instance (Gabrilovich and Markovitch, 2007).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Grâce à ce cadre d'évaluation intrinsèque, les voisins sémantiques d'environ la moitié des entrées de nos thésaurus sont évalués, ce qui peut être considéré comme un ensemble d'évaluation très important par rapport à des jeux de test classiques (e.g. WordSim 353) (Gabrilovich et Markovitch, 2007).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>This kind of intrinsic evaluation is of course limited by the relations that are present in the resources used as gold standards, often restricted to “classical” relation types such as synonymy or hypernymy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce type d'évaluation intrinsèque est bien entendu limité par les relations présentes dans les ressources utilisées comme étalons-or, souvent limitées aux types de relations « classiques » tels que la synonymie ou l'hyperonymie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>In our case, this limitation holds true for WordNet’s synonyms but can be considered as far less restrictive for the related words of Moby, due to the diversity of their underlying relation types.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre cas, cette limite est vraie pour les synonymes de WordNet, mais peut être considérée comme beaucoup moins restrictive pour les mots associés de Moby, en raison de la diversité de leurs types de relations sous-jacentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Performance of IR models for distributional thesaurus building with the references WordNet, Moby and WordNet+Moby</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 : Performances des modèles IR pour la construction de thésaurus distributionnels avec les référentiels WordNet, Moby et WordNet+Moby</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>3.3 Results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3 Résultats</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>For a given name, our approach by IR models returns a list of names ordered by decreasing similarity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour un nom donné, notre approche par modèles IR, comme les autres approches de l'état de l'art, retourne une liste de noms ordonnés par similarité décroissante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>This list is compared to the reference one by computing several classical measures (expressed in % in the following): the precision after k first names, denoted P@k, the Mean Average Precision (MAP) which is the mean of the average precision scores for each query after a reference synonym is found, and the R-precision (precision at R -th position in the ranking of results, where R is the number of relevant names for the query).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette liste est comparée à la liste de référence, et plusieurs mesures classiques d'évaluation sont calculées (exprimées en % ci-dessous) : la précision après k premiers noms, notée P@k, la précision moyenne (MAP, Mean Average Precision), qui est la moyenne des scores de précision après chaque synonyme de référence trouvé, et la précision R (précision à la position R dans le classement des résultats, où R est le nombre de noms pertinents pour la requête).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>Table 1 indicates the performance of different models of IR similarities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 1 recense les performances des différents modèles de similarités RI.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>For purposes of comparison, we show the results obtained under the same conditions by Ferret (2013), with both a state of the art approach based on using cosine similarity over pointwise mutual information between contexts (referred as base in the table), and an improved version by learning as described in section 2 (referred as best rerank ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À des fins de comparaison, nous indiquons les résultats obtenus dans les mêmes conditions par Ferret (2013), avec d'une part une approche standard de l'état de l'art reposant sur des calculs de similarité de cosinus sur l'information mutuelle point par point entre les contextes (désignée comme base dans le tableau), et d'autre part, une version améliorée par apprentissage (cf. section 2). Nous détaillons également certains de ces résultats selon les références WordNet et Moby prises séparément.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>We also give the results on the same corpus on an approach based on syntactic co-occurrents (Ferret, 2014 in press), extracted with the Minipar syntactic parser as in (Lin, 1998b).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons également les résultats sur le même corpus d'une approche basée sur les co-occurrences syntaxiques (Ferret, 2014 in press), extraites avec le parseur syntaxique Minipar comme dans (Lin, 1998b).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>In these early results, it is worth noting that some IR similarities are quite inefficient, including the TF alone or Hellinger similarity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ces premiers résultats, il est intéressant de noter que certaines similarités IR sont assez peu performantes, notamment le TF seul ou la similarité d’Hellinger.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>This is hardly surprising since these similarities use very basic weights that do not enhance the discriminative contexts of words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela est peu surprenant puisque ces similarités utilisent des pondérations basiques qui ne permettent pas de mettre en valeur les contextes discriminants des mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>The similarities that include a notion of IDF get better results in this.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les similarités incluant une notion d’IDF obtiennent en cela de meilleurs résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>Okapi BM25-based similarities offer good results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les similarités de type Okapi-BM25 offrent de bons résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>The standard Okapi version yields performance similar to the state of the art, and the adjusted version even widely outperforms the two systems from Ferret (2013), in particular in terms of overall quality (measured by the MAP).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>la version standard d’Okapi obtient des performances similaires à l’état de l’art, et la version ajustée dépasse même largement les deux systèmes de (Ferret, 2013a), notamment en terme de qualité globale (mesurée par la MAP), quelle que soit la référence utilisée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>Moreover, the results of this adjusted version are comparable to those obtained with syntactic co-occurrents while it only exploits window-based co-occurents, known to give usually worst results than syntactic co-occurrents, without even lemmatization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, les résultats de cette version ajustée sont comparables à ceux obtenus avec les cooccurrents syntaxiques alors qu'elle n'exploite que des cooccurrents basés sur des fenêtres, connus pour donner généralement de moins bons résultats que les cooccurrents syntaxiques, sans même la lemmatisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>This latest version of the system serves as reference for the rest of this article.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C’est cette dernière version du système qui nous sert de référence pour la suite de cet article.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>4 Reciprocity in the graph of k-NN</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Réciprocité dans le graphe des k-NN</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>Computing all the similarities between all pairs of words produces a weighted graph of neighbors: Each word is connected with certain strength to the n other words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le calcul de toutes les similarités entre toutes les paires de mots produit un graphe pondéré de voisinage : chaque mot est lié, avec une certaine force, aux n autres mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>The results above do not reflect this structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats obtenus ci-dessus ne tiennent pas compte de cette structure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>The following sections aim to examine how take advantage of the neighborhood relations embedded in this graph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’objet des sections suivantes est d’examiner comment tirer parti au mieux des relations de voisinage enfouies dans ce graphe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>It must be first noted that some of the IR similarity measures we used are not symmetric, including Okapi-BM25.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il faut préalablement noter que certaines des mesures de similarités RI que nous avons utilisées, notamment Okapi-BM25, ne sont pas symétriques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>The similarity between a word wi , used as query, and another word wj does not give the same value as the similarity between the query wj and wi .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La similarité entre un mot wi , utilisé comme requête, et un autre mot wj ne donne pas la même valeur que la similarité entre la requête wj et wi .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>Apart from that, even if the similarity measure it-self is symmetric, nearest neighbor relationships are not.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Indépendamment de cela, même si la mesure de similarité elle-même est symétrique, les relations de plus-proches voisins ne le sont pas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>It seems then reasonable to assume that the reciprocity between two adjacent words (each belonging to the k nearest neighbors of the other) is a sign of confidence on the proximity between these words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il semble alors raisonnable de penser que la réciprocité de voisinage entre deux mots (chacun est dans les k plus proches voisins de l’autre) est tout de même un gage de confiance sur la proximité entre ces mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>Using this information to improve the previous results is discussed in this section.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’utilisation de cette information pour améliorer les résultats précédents est examinée dans cette section.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>In the following, τwi ( wj ) denotes the rank of the word wj in the list of neighbors of wi. τwi ( wj ) thus varies from 1 to n .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la suite, on note τwi ( wj ) le rang de wj dans la liste des voisins de wi , qui varie donc entre 1 et n .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>4.1 Distributional neighborhood graph</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Graphe de voisinage distributionnel</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>Reciprocal relationship in distributional neighborhood has already been discussed and used in some work (Ferret, 2013) on distributional semantic, or more generally, on nearest neighbors graphs (Pedronette et al., 2014).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La réciprocité de la relation de voisinage distributionnel a déjà été examinée et utilisée dans certains travaux (Ferret, 2013b) en sémantique distributionnelle, ou plus généralement sur des graphes de plus proches voisins (Pedronette et al. , 2014).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>In these papers, the reciprocity was considered for giving a new similarity score in a simple way.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ces derniers travaux, la prise en compte de la réciprocité pour mener à un nouveau score de similarité a été faite de manière simple.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>For a word wi and its neighbor wj , the maximal or the minimal rank between τwi ( wj ) and τwj ( wi ) is taken as the new rank.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour un mot wi et son voisin wj , le maximum ou le minimum des rangs ( τwi ( wj ) et τwj ( wi )) est pris comme nouveau rang.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>These two operators have too severe effects as only one rank is taken into consideration to decide the final score. This leads to highly degraded performance as shown later.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces deux opérateurs ont des effets trop brutaux car seul un rang est pris en considération pour décider du score final. Cela se traduit par des performances très dégradées comme nous allons le voir.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>Many other aggregation operators have however been proposed in other contexts with a behavior may be more appropriate to the task, including fuzzy logic (Detyniecki, 2000).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, beaucoup d'autres opérateurs d'agrégation, avec des comportements peut-être plus appropriés à la tâche ont été proposés dans d'autres cadres, notamment en logique floue (Detyniecki, 2000, pour une revue très complète).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>These operators carry some semantic that allow to comprehend their behavior, such as T-norms (fuzzy logic AND) and S-norms (or T-conorms, fuzzy OR).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces opérateurs ont une certaine sémantique permettant d’appréhender leur comportement, comme par exemple les T-normes (ET en logique floue) et S-normes (ou T-conormes, OU flou).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>In this section, we test some of these operators without claiming to be exhaustive.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la suite de cette section, nous testons quelques uns de ces opérateurs sans prétention d’exhaustivité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>These are defined on [0 , 1][2] , 1 being the certainty. They are used to generate a new similarity score according to:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils sont définis sur [0 , 1][2] , 1 représentant la certitude. Ils sont utilisés pour générer un nouveau score de similarité sous la forme : score wi ( wj ) = Agreg(1 − τwi ( wj ) /n, 1 − τwj ( wi ) /n )</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>where Aggreg is an aggregation operator.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où Aggreg est un opérateur d’agrégation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>The new scores are then used to produce a new list of nearest neighbors of wi (the higher the score, the greater proximity is proven).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les scores obtenus sont alors utilisés pour produire une nouvelle liste de plus proches voisins de wi (plus le score est élevé, plus la proximité sera avérée).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>We thus perceive the semantic associated with these operators.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On a ainsi la sémantique associée à ces opérateurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>For example, if the aggregation function is max, we get the expected behavior of the fuzzy OR associated with this S-norm: wj will be ranked very close to wi in the new list if wj was close to wi or if wi was close to wj .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>par exemple, si la fonction d’agrégation est max, on a bien le comportement de OU flou attendu associé à cette S-norme : wj sera classé très proche de wi dans la nouvelle liste si wj était proche de wi ou si wi était proche de wj .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>For the T-norm min, this happens if wj is close to wi and wi is close to wj .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour la T-norme min, il faut que wj soit proche de wi et que wi soit proche de wj .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>4.2 Results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 Résultats</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>Besides the min and max aggregation operators, Figure 1 reports the results obtained with the following T-norms (or T-norm families dependent on a parameter γ ) used as aggregation function Aggreg:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Outre les opérateurs d'agrégation min et max, la figure 1 rapporte les résultats obtenus avec les T-normes (ou familles de T-normes dépendant d'un paramètre γ ) suivantes utilisées comme fonction d'agrégation Agreg :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>We also tested the standard related S-norms, obtained by generalization of the De Morgan’s law: S ( x, y ) = 1 − T (1 − x, 1 − y ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous testons aussi les S-normes associées, obtenues par généralisation de la loi de De Morgan : S ( x, y ) = 1 −T (1 −x, 1 − y ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>For the T-norm families dependent on a parameter, we varied this parameter value in a systematic way. The results reported correspond to the parameter values that maximize the MAP.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les familles de T-normes dépendant d'un paramètre, nous avons fait varier ce dernier de manière systématique et les résultats rapportés correspondent aux valeurs de paramètres maximisant la MAP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>All these operators get very different results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On remarque que ces opérateurs obtiennent des résultats très divers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>Some operators, such as min, max, Lukasiewicz, and others for some γ , induce a threshold effect which degrades the performance: they return a default value generating too much ex aequo among the neighbors, for some values of τwi ( wj ) and τwj ( wi ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certains opérateurs, tels que min, max, Lukasiewicz et d'autres pour certains γ , induisent un effet seuil qui dégrade les performances : ils renvoient une valeur par défaut générant trop d'ex æquo parmi les voisins, pour certaines valeurs de τwi ( wj ) et τwj ( wi ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>T-norms, focusing on pairs of words symmetrically close to each other, are too restrictive.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les T-normes, privilégiant les paires de mots proches l’une de l’autre dans les deux sens, sont trop contraignantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>This is consistent with the conclusions of the work cited: if the reciprocity condition is applied too strictly, it does not improve the nearest neighbor lists over all the words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela rejoint les conclusions des travaux cités : la condition de réciprocité, appliquée trop strictement, ne permet pas d’améliorer les listes de plus proches voisins sur l’ensemble des mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>In contrast, S-norms seem better able to take advantage of the ranking.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En revanche, les S-normes semblent mieux à même de tirer parti du classement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>The improvements are modest in terms of overall quality (MAP), but important at some ranks (e.g. P@10).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les améliorations sont modestes en terme de qualité globale (MAP), mais importantes à certains niveaux (P@10).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>Finally, it is important to note that these results depend heavily on the resource used as reference. We tested the aggregation rank with SHamacher, γ = 0 . 95, on Moby and WordNet references separately.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, il est important de noter que ces résultats dépendent beaucoup de la ressource utilisée comme référence. Nous avons testé le classement d'agrégation avec SHamacher, γ = 0,95, sur Moby et WordNet séparément.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>Results are given in Table 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats sont indiqués dans le tableau 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>Because Wordnet is based on a synonymy relationship strong enough (and therefore reciprocal), the performance gains on WordNet are much higher than on Moby.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné que WordNet est basé sur une relation de synonymie assez forte et donc réciproque, les gains obtenus par notre approche sont bien plus importants que sur la référence issue de Moby.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: Performance of reciprocal rank aggregation, on the reference WordNet+Moby</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1 : Performance de l’agrégation de classements réciproques, sur la référence WordNet+Moby</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>Table 2: Performance and gains (%) of reciprocal rank aggregation, relatively to adjusted Okapi-BM25, on the references WordNet and Moby taken separately, with aggregation operator SHamacher, γ = 0 . 95</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2 : Performances et gains (%) de l'agrégation de classement réciproque, par rapport à Okapi-BM25 ajusté, sur les référentiels WordNet et Moby pris séparément, avec l'opérateur d'agrégation SHamacher, γ = 0,95</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>5 Confidence estimation for a distributional neighborhood list</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Estimation de la confiance d’une liste de voisins distributionnels</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>In the previous section, the rank of wi in the list of neighbors of wj is used to improve the ranking of wj in the list of neighbors of wi .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la section précédente, le rang de wi dans la liste des voisins de wj est utilisé pour améliorer le classement de wj dans la liste des voisins de wi .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>We can also be interested in a more general way to the relative positions of wi and wj in all neighbor lists of all the words. Thereby, we expect to derive a more complete information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut aussi s’intéresser d’une manière plus générale aux positions relatives de wi et wj dans toutes les listes de voisins de tous les mots pour en tirer une information peut-être plus complète.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>As a first step, we define a confidence criterion associated with each list of nearest neighbors, only based on the neighborhood graph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, nous proposons d'en tirer un critère de confiance associé à chaque liste de plus-proches voisins en se basant uniquement sur le graphe de voisinage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>5.1 Principle</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.1 Principe</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>We make the following assumption: the nearest neighbor list of a word w is probably of good quality if the distance (in terms of rank) between w and each of its neighbors wi , denoted δ ( w, wi ), is consistent with the distance observed between these same words ( w , wi ) in other lists.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On fait l’hypothèse suivante : la liste de plus proches voisins d’un mot w est probablement de bonne qualité si la proximité (en terme de rang) entre w et chacun de ses voisins wi est cohérente avec la proximité observée entre ces mêmes mots ( w , wi ) dans les listes de voisins d’autres mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>The intuition here is that words supposed to be close should also be found close to the same other words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'intuition est que des mots supposés proches doivent aussi se retrouver proches des mêmes mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>If k nearest neighbors of w have this property, then we attribute a high confidence to the neighbor list of w .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si les k plus proches voisins de w ont cette qualité, alors on accorde une certaine confiance à cette liste de voisins.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>Formally, we define the confidence of the k -nearest neighbor list of w by:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Formellement, nous définissons la confiance de la liste des k plus proches voisins de w par :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>where p ( δ ( w, wi ) = τw ( wi )) is the probability that wi is the τw ( wi )-th neighbor of w .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>avec p ( δ ( w, wi ) = τw ( wi )) la probabilité que wi soit le τw ( wi )ème voisin de w (i.e. l’écart en terme de nombre de voisins, noté δ ( w, wi ), est de τw ( wi )).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>The problem is then to estimate the probability distribution p ( δ ( w, wi )) for each pair of words ( w, wi ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le problème est alors d’estimer pour chaque couple de mots ( w, wi ) la distribution de probabilité p ( δ ( w, wi )).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>To achieve this goal, we use the Parzen windows which is a method for nonparametric density estimation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour atteindre cet objectif, nous utilisons la fenêtre de Parzen, une méthode d'estimation de densité non-paramétrique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>We describe below how this classic method (Parzen, 1962; Wasserman, 2005) is applied in our context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous décrivons comment cette méthode classique (Parzen, 1962; Wasserman, 2005) est appliquée dans notre cas ci-après.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>5.2 Parzen-window density estimation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.2 Estimation de densité par fenêtres de Parzen</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>Let xab = δ ( wa, wb ) be the distance (in terms of ranks) between two words wa and wb in a list of neighbors of any given word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Soit xab = δ (wa, wb) la distance (en termes de rangs) entre deux mots wa et wb dans une liste des voisins d’un mot quelconque.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>Considering the n words of the thesaurus, we have a sample of n realizations assumed iid : ( x[1] ab , x[2] ab, … , x[n] ab ), which are the observed distances between [ w][a] et [ w][b] in each (complete) neighbor list of each word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Compte tenu des n mots du thésaurus, on dispose d'un échantillon de n réalisations supposées iid : ( x[1] ab , x[2] ab , … , x[n] ab ), qui sont les distances observées entre wa et wb dans chacune des listes (complètes) des voisins de chaque mot.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>These counts can be represented by an histogram as illustrated in Figure 2 (a).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces comptes peuvent être représentés par un histogramme comme illustré dans la figure 2 (a).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>Using the Parzen window technique, we can then estimate the probability density of xab with a kernel density estimator with Eqn 4 where h is a smoothing parameter called the bandwidth, and K ()[˙] is a kernel that we choose Gaussian. The resulting density is illustrated in Figure 2 (b).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En utilisant la technique des fenêtres de Parzen, on peut estimer la densité de probabilité de xab avec un estimateur à noyau (équation 4) avec h un paramètre de lissage appelé largeur de bande, et K un noyau que nous choisissons gaussien. La densité résultante est illustrée dans la figure 2 (b).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>Thus, the resulting probability is a mixture of Gaussians centered on each x[i] ab .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La probabilité résultante est donc un mélange de gaussiennes centrées sur chaque x[i] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>These methods are known to be sensitive to the bandwidth h , which controls the regularity of the estimation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces méthodes sont connues pour être sensibles au paramètre de bande passante h , qui contrôle la régularité de l’estimation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>The problem of choosing h is crucial in density estimation and was widely discussed in the literature.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le problème du choix de h est crucial dans l'estimation de la densité et a été largement discuté dans la littérature.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>We use Silverman’s rule of thumb (Silverman, 1986, page 48, eqn (3.31)) to set its value.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour le fixer, nous utilisons la règle empirique de Silverman (Silverman, 1986, page 48, eqn (3.31)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>Under the assumption of normality of the underlying distribution, this rule provides a simple way to calculate the optimal parameter h when Gaussian functions are used to approximate univariate data (Eqn 5 where σ ˆ is the standard deviation of the samples, and q 3 − q 1 is the interquartile range).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sous l’hypothèse de normalité de la distribution sous-jacente, cette règle propose une façon simple de calculer le paramètre h optimum lorsque des fonctions gaussiennes sont utilisées pour approximer des données univariées (équation 4 où σ ˆ est l’écart type estimé sur l’échantillon, q 1 et q 3 respectivement les premier et troisième quartiles).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>Once these probabilities have been estimated on each of the k -nearest neighbors of w , we can calculate the confidence score Q ( w ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois ces probabilités estimées sur chacun des k plus proches voisins de w , on peut alors calculer le score de confiance Q ( w ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>The complexity of this estimation for all neighbor lists is O ( k ∗ n[2] ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La complexité de ce calcul pour l’ensemble des listes de voisinage est donc en O ( k ∗ n[2] ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>Figure 2: (a) Example of two distributions of distances xab and xac between a word wa and two of its neighbors wb and wc , represented as histograms (blue and red)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>FIGURE 2: (a) Deux histogrammes (en bleu et en rouge) des écarts entre un mot wa et deux de ses voisins wb et wc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>(b) Same distributions represented by densities estimated with the Parzen-windows method.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(b) Mêmes distributions représentées par des densités estimées par la méthode des fenêtres de Parzen.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>5.3 Using the confidence score</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.3 Utilité du score de confiance</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>The expected benefit of using the confidence score is to have an a priori indication on the quality of a neighbor list for a given word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’intérêt attendu du score de confiance est de permettre d’avoir un indice a priori de la qualité d’une liste de voisins pour un mot donné.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>Such a score may thus be useful for many applications using thesauri produced by our approach (e.g. for expanding queries in information retrieval tasks).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un tel score peut ainsi être utile pour de nombreuses applications exploitant les thésaurus produits par notre approche (par exemple pour l'expansion des requêtes dans les tâches de recherche d'informations).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>An evaluation of the confidence score through such applications would certainly be the most suitable, but beyond the scope of this article.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une évaluation du score de confiance par le biais de telles applications serait certainement le plus adapté, mais dépasse le cadre de cet article.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>We use default direct assessment towards the MAP: we measure the correlation between MAP and the confidence score, the idea being that an entry with a neighbor list of low quality matches an entry with low MAP.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons à défaut une évaluation directe vis-à-vis de la MAP : nous mesurons la corrélation entre la MAP et le score de confiance, l’idée étant qu’une entrée avec une liste de voisins de faible qualité correspond à une entrée ayant une MAP faible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>We use Spearman’s correlation ρ and the Kendall’s rank correlation coefficient τ , which do not make any assumption about linearity and compare only the order of words classified according to their MAP with the order according to their confidence score.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons les corrélations de Spearman ρ et de Kendall τ qui ne font pas d’hypothèse de linéarité et comparent uniquement l’ordre des mots classés selon la MAP à l’ordre selon le score de confiance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>The results of these coefficients are given in Table 3, along with p-value of the associated test of significance. A coefficient value of 1 indicates a perfect correlation, 0 no correlation and -1 an inverse correlation. A low p-value, for example &lt; 0 . 05, indicates a statistically significant result.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats de ces coefficients sont donnés dans le tableau 3, avec la valeur p du test de significativité associé. Une valeur de 1 indique une corrélation parfaite, 0 une absence de corrélation et -1 une corrélation inverse. Une valeur p faible, par exemple &lt; 0.05, indique un résultat statistiquement significatif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>The confidence scores are obtained with k = 20.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les scores de confiance sont obtenus avec k = 20 ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>Other experiments, not reported here, show that this parameter k has little influence on the correlation, for values between 5 and 100.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’autres expériences non rapportées ici montrent que ce paramètre k a peu d’influence sur la corrélation, pour des valeurs entre 5 et 100.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>Table 3: Correlation coefficient values between the MAP and the confidence score, and their statistical significance (p-value).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 3: Valeurs des coefficients de corrélation entre le MAP et le score de confiance, et leur signification statistique (p-valeur).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>Figure 3: Average MAP computed on words with a confidence score lower than a threshold q (x-axis, log-scale), and cumulative proportion of concerned words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 3 : MAP moyenne calculée sur les mots ayant un score de confiance inférieur à un seuil q (axe des x, échelle logarithmique), et proportion cumulée des mots concernés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>These measures attest to some statistically significant correlation between our confidence score and the MAP, however this correlation is imperfect and non-linear.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces mesures montrent une corrélation certaine et statistiquement significative entre notre score de confiance et la MAP, mais néanmoins imparfaite et non linéaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>We compute the average MAP on neighbor lists with a confidence score lower than a threshold q . Figure 3 represents the average MAP (y-axis) in function of the threshold q (x-axis). It shows that the confidence score is still a good indicator of quality, as the MAP decreases with the confidence score.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous calculons la MAP moyenne sur les listes de voisins ayant un score de confiance inférieur à un seuil q. La figure 3 représente la MAP moyenne (axe des y) en fonction du seuil q (axe des x). Elle montre que le score de confiance est toujours un bon indicateur de qualité, car la MAP diminue avec le score de confiance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>The confidence score can be used to improve the performance of aggregation techniques presented in Section 4 by integrating it in the final score:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le score de confiance peut être utilisé pour améliorer les résultats des techniques d’agrégation présentées en section 4 en l’intégrant dans le score final :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>As shown in Table 4, using this information allows even greater gains than those reported in the previous section (a Wilcoxon test ( p &lt; 0 . 05) (Hull, 1993) is performed to ensure that the differences are statistically significant; non-significant ones are shown in italics).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme on le voit dans le tableau 4, l'utilisation de cette information permet des gains encore plus importants que ceux rapportés dans la section précédente. Un test de Wilcoxon (p &lt; 0,05) (Hull, 1993) est effectué pour s'assurer que les différences sont statistiquement significatives ; les différences non significatives sont indiquées en italique).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>In the next section, we propose another use of the confidence scores to improve results more specifically on the head of the lists, that is to say on the neighbors judged closest.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la section suivante, nous proposons une autre utilisation des scores de confiance pour améliorer les résultats plus spécifiquement en début de liste, c'est-à-dire sur les voisins jugés les plus proches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>Table 4: Performance gains (%) by reciprocal rank aggregation using the confidence score, on WordNet+Moby reference.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TABLE 4: Performances et gains (%) par agrégation des rangs réciproques prenant en compte le score de confiance sur la référence WordNet+Moby</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>Table 5: Performance gains (%) of reranking with the Hungarian algorithm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 5 : Gains de performance (%) du ré-ordre avec l'algorithme de Hungarian.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>6 Local reranking</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Réordonnancement local</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>The previous method gives an overall score to the list, but one can also make use of the individual ranking probabilities p ( δ ( wi, wj )), estimated according to the method of Parzen windows.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthode précédente donne un score global à la liste, mais on peut aussi exploiter les probabilités de classements individuelles (les p ( δ ( wi, wj ))) calculées selon la méthode des fenêtres de Parzen.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>For a given word w , we have for each of its neighbors wj the probability of his current rank: p ( δ ( w, wj )) = τw ( wj ). For a given neighbor wj , we can also calculate the probability of any other rank τ : p ( δ ( w, wj )) = τ with τ = 1 , 2 , …</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour un mot donné w , on dispose pour chacun de ses voisins wj d’un score de confiance individuel lié à son rang actuel ( p ( δ ( w, wj )) = τw ( wj )), et l’on peut également calculer les probabilités de voir ce voisin à n’importe quel autre rang τ (probabilité que ce mot soit au rang 1, 2…).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>In this section, we propose to rely on these more local information to improve the performance by reranking the k -nearest neighbors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette section, on se propose d'utiliser ces informations plus locales pour améliorer les performances en réévaluant les k-plus-proches voisins.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>6.1 Reranking by the Hungarian algorithm</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.1 Réordonner par l’algorithme hongrois</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>A simple approach would be to reorder the list based on this criterion, from the most probable neighbors to the least ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une première approche consisterait à réordonner la liste sur la base de ce critère, des voisins les plus probables aux moins probables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>But ranking probability estimation for each word is imperfect, and such a reranking strongly degrades the results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais l'estimation de la probabilité de classement pour chaque mot est imparfaite, et un tel réordonnancement dégrade fortement les résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>We therefore propose instead a method to rerank the k -nearest neighbors on a more local and controlled manner: a word that was not originally in the k -nearest neighbors can not become a k -nearest neighbor, and a word can not be reranked too far from its original rank.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On propose donc à la place une méthode permettant de réordonner les k-plus-proches voisins de manière locale (un mot qui n’était pas dans les k-plus-proches ne peut pas y entrer) et contrôlée (un mot ne peut pas s’éloigner trop de son rang initial).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>Our problem is expressed by the following matrix M profit. The rows correspond to words in their original ranks (denoted w 1 to wk ), the columns to new ranks τ at which these words can be assigned, and matrix values are the probabilities of each word wj to appear at rank τ .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre problème s'exprime par la matrice suivante, dite matrice de profit, dans laquelle les lignes correspondent aux mots dans l'ordre du classement actuel (notés w 1 à wk ), et les colonnes correspondent aux nouveaux rangs auxquels assigner ces mots. Les valeurs de la matrice sont les probabilités de chaque mot wj d'apparaître au rang τ .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>Given these probabilities, the goal is to find the most likely permutation of the k -nearest neighbors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant données les probabilités de chaque mot wj d’apparaître à un rang τ , l’objectif est de trouver la permutation des k plus proches voisins la plus probable, c’est-à-dire celle qui « profite » le plus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>As pointed out, we want to avoid that an initially very close neighbor was moved far away and vice versa.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme nous l’avons souligné, on souhaite par ailleurs éviter que des voisins initialement très proches soient déplacés loin et inversement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>This constraint is added by multiplying the matrix M profit by a penalty matrix M penalty (see below) with the Hadamard product (element by element matrix product, denoted ◦ ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette contrainte est ajoutée en multipliant la matrice de profit M par une matrice de pénalité M (voir ci-dessous) avec le produit d'Hadamard (produit de matrices composante par composante, noté ◦ ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>We then face a combinatorial optimization problem which can be solved in polynomial time by the Hungarian method (Kuhn and Yaw, 1955, for a description of the algorithm) on the matrix of assignment costs M profit ◦M penalty.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On se trouve alors face à un problème d’optimisation combinatoire, qui peut se résoudre en un temps polynomial en appliquant l’algorithme hongrois (Kuhn &amp; Yaw, 1955, pour une description de l’algorithme) sur M profit ◦M pénalité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>This algorithm was originally proposed to optimize the assignment of workers (in our case, the neighbors) on tasks (in our case, ranks), according to the profit generated by each worker for each task (in our case, the probability that a neighbor stands at a given rank).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet algorithme a été initialement proposé pour optimiser l’assignation de travailleurs (dans notre cas les voisins) sur des tâches (dans notre cas, le rang), selon le profit dégagé par chaque travailleur pour chaque tâche (ici, la probabilité que ce voisin soit à ce rang).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <tuv xml:lang="EN">
+                <seg>The result of this algorithm therefore indicates a new rank for each word.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le résultat de cet algorithme indique donc un nouveau rang pour chaque mot.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <tuv xml:lang="EN">
+                <seg>The algorithm converges to an optimal solution with a complexity O ( k[3] ) (for reranking the k -nearest neighbors).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’algorithme converge sur une solution optimale et est de complexité O ( k[3] ) (pour le réordonnancement des k -plus-proches voisins).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <tuv xml:lang="EN">
+                <seg>6.2 Results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.2 Résultats</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <tuv xml:lang="EN">
+                <seg>Table 5 presents the performance achieved by our local reranking method compared to the adjusted Okapi-BM25 reference using the same experimental conditions as above.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 5 présente les performances obtenues par rapport à notre référence Okapi-BM25 ajusté selon les mêmes modalités expérimentales que précédemment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <tuv xml:lang="EN">
+                <seg>As before, the considered neighborhood is set to k = 20.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme précédemment, on a fixé le voisinage considéré à k = 20 ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <tuv xml:lang="EN">
+                <seg>Precisions beyond this threshold are unchanged and thus not reported.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les précisions au-delà de ce seuil sont donc inchangées et ne sont pas reportées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <tuv xml:lang="EN">
+                <seg>We test the effectiveness of the local reranking on all neighbor lists and on a third of lists with the lowest quality scores.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous testons l’efficacité de ce réordonnancement sur l’ensemble des listes de voisins et sur le tiers des listes ayant les scores de qualité les plus faibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="195">
+            <tuv xml:lang="EN">
+                <seg>It appears that the reranking on the whole lists does not provide a real gain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il en ressort que le réordonnancement sur l’ensemble des listes n’apporte pas de véritable gain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="196">
+            <tuv xml:lang="EN">
+                <seg>However, the gain is substantial on the lists with low confidence score.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En revanche, sur les listes dont le score de confiance est faible, le gain est substantiel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="197">
+            <tuv xml:lang="EN">
+                <seg>Moreover, unlike the experiments of section 4, these gains apply by construction to the heads of lists, which are most likely to be used in practice.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, contrairement aux expériences de la section 4, ces gains portent par construction sur les têtes de listes, qui sont les plus à même d’être utilisées en pratique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="198">
+            <tuv xml:lang="EN">
+                <seg>This difference between results on the whole set of words and on those with the lowest confidence scores can be explained in two ways.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La différence entre le traitement de l’ensemble des mots et celui sur le tiers ayant le score de confiance le plus bas s’explique de deux manières.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="199">
+            <tuv xml:lang="EN">
+                <seg>First, the lists with the highest confidence scores correspond largely to the lists with the best MAP, as expected and illustrated in Figure 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'une part, les listes ayant les plus forts scores de confiance correspondent en majeure partie aux listes ayant les meilleures MAP, comme attendu (et illustré en figure 3).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="200">
+            <tuv xml:lang="EN">
+                <seg>This therefore suggests a priori little room for improvement.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Celles-ci laissent donc a priori peu de marge à l’amélioration.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="201">
+            <tuv xml:lang="EN">
+                <seg>Second, regardless of MAP, we can also assume that these lists already have an optimum arrangement of individual probabilities that explains the high confidence score. The reranking thus concerns only few neighbors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autre part, indépendamment de leur MAP, on peut aussi supposer que ces mêmes listes ont déjà un arrangement optimal des probabilités individuelles qui explique le fort score de confiance, le réordonnancement ne concernant alors que peu de voisins.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="202">
+            <tuv xml:lang="EN">
+                <seg>7 Conclusion and future work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7 Conclusion et perspectives de travail</seg>
+            </tuv>
+        </tu>
+        <tu tuid="203">
+            <tuv xml:lang="EN">
+                <seg>The different contributions proposed in this article do not place themselves all at the same level.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les différentes contributions proposées dans cet article ne se placent pas toutes au même niveau.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="204">
+            <tuv xml:lang="EN">
+                <seg>The thesaurus construction using tools from the IR is not a major conceptual innovation, but this approach seems curiously unexplored although it provides very competitive results while requiring minimum implementations through existing tools from IR.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La construction de thésaurus en utilisant des outils issus de la RI n’est pas une innovation conceptuelle majeure, mais cette approche semble curieusement inexplorée bien qu’elle fournisse des résultats très compétitifs en demandant un minimum de travail de mise-en-œuvre grâce aux outils existants de la RI.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="205">
+            <tuv xml:lang="EN">
+                <seg>The various propositions exploiting the neighborhood graph to improve the thesaurus are part of a more original approach where the whole thesaurus is considered.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les différentes propositions exploitant le graphe de voisinage pour améliorer le thésaurus relèvent d'une démarche plus originale où l'ensemble du thésaurus est considéré.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="206">
+            <tuv xml:lang="EN">
+                <seg>We have specifically examined the aspects of reciprocity and distance, in terms of rank, between two words to offer several contributions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous y avons en particulier examiné les aspects de réciprocité et de distance, en terme de rang, entre deux mots pour proposer plusieurs contributions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="207">
+            <tuv xml:lang="EN">
+                <seg>The improvements obtained by aggregation over all neighbors or by the local reranking from confidence scores validate our approach.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les améliorations obtenues par l'agrégation sur l'ensemble des voisins ou par le réordonnancement local à partir des scores de confiance valident globalement notre démarche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="208">
+            <tuv xml:lang="EN">
+                <seg>It should be noted that the gains are small in absolute terms, but, compared to those observed in the field, correspond to significant improvements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il convient de noter à ce propos que les gains obtenus sont petits en valeur absolue, mais constituent, par rapport à ceux observés dans le domaine, des améliorations significatives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="209">
+            <tuv xml:lang="EN">
+                <seg>The various aspects of this work open up many prospects of research.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les différents aspects de ce travail ouvrent de nombreuses pistes de recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="210">
+            <tuv xml:lang="EN">
+                <seg>For example, many other aggregate functions in addition to those tested in section 4 exist in the literature.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, beaucoup d’autres fonctions d’agrégation outre celles testées en section 4 existent dans la littérature.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="211">
+            <tuv xml:lang="EN">
+                <seg>Some may even offer the possibility of integrating the confidence score associated with each neighbor, as Choquet’s or Sugeno’s integrals (Detyniecki, 2000).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certaines pourraient d’ailleurs offrir la possibilité d’incorporer le score de confiance associé à chaque voisin, comme les intégrales de Choquet ou de Sugeno (Detyniecki, 2000).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="212">
+            <tuv xml:lang="EN">
+                <seg>More generally, it would be interesting to iteratively use improvements of neighbor lists to update the confidence scores, etc., in the spirit for example of what is proposed by Pedronette et al. (2014).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus largement, il serait intéressant d’utiliser itérativement les améliorations des listes de voisins pour mettre à jour les scores de confiance, etc., en s’inspirant par exemple de ce qui est proposé par Pedronette et al. (2014).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="213">
+            <tuv xml:lang="EN">
+                <seg>A detailled analysis of the impact of these techniques according to the type of semantic relation is still to be performed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une analyse détaillée de l'impact de ces techniques en fonction du type de relation sémantique reste à réaliser.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="214">
+            <tuv xml:lang="EN">
+                <seg>Beyond the distributional thesauri construction, the proposed methods to compute confidence scores or reorder lists of neighbors can be applied to other problems where the k -nearest neighbor graphs of are built.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au-delà de la construction des thésaurus distributionnels, les méthodes proposées pour calculer des scores de confiance ou réordonner les listes de voisins peuvent s’appliquer à d’autres problèmes où ces graphes de k plus proches voisins sont construits.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="215">
+            <tuv xml:lang="EN">
+                <seg>Also note that we have only considered a small part of the information carried by the neighborhood graph.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notons également que nous n’avons considéré qu’une petite partie de l’information portée par le graphe de voisinage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="216">
+            <tuv xml:lang="EN">
+                <seg>We focused on the aspects of reciprocity, but taking into account other aspects of the graph (in particular the transitivity, or more generally its topology), could lead to further improvements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous nous sommes concentrés sur les aspects de réciprocité, mais d’autres travaux, prenant en compte d’autres aspects de ce graphe (la transitivité notamment, ou plus globalement sa topologie), pourraient mener à d’autres améliorations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="217">
+            <tuv xml:lang="EN">
+                <seg>This work is licenced under a Creative Commons Attribution 4.0 International License.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette œuvre est sous licence Creative Commons Attribution 4.0 International.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="218">
+            <tuv xml:lang="EN">
+                <seg>Page numbers and proceedings footer are added by the organizers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les numéros de page et le pied de page des procès-verbaux sont ajoutés par les organisateurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="219">
+            <tuv xml:lang="EN">
+                <seg>License details: http://creativecommons.org/licenses/by/4.0/</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Détails de la licence : http://creativecommons.org/licenses/by/4.0/</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

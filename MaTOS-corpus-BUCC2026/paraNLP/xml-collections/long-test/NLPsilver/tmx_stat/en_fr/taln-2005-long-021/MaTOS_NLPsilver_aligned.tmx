@@ -1,0 +1,999 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2005-long-021. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/anthology-files/anthology-files/pdf/J/J06/J06-1002.pdf</url_en>
+        <url_fr>https://aclanthology.org/2005.jeptalnrecital-long.21.pdf</url_fr>
+        <title_en>Improving Text Segmentation Using Latent Semantic Analysis: A Reanalysis of Choi, Wiemer-Hastings, and Moore (2001)</title_en>
+        <title_fr>Amélioration de la segmentation automatique des textes grâce aux connaissances acquises par l'analyse sémantique latente Segmentation automatique de textes Analyse sémantique latente (ASL) Automatic text segmentation</title_fr>
+        <docid>taln-2005-long-021</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Improving Text Segmentation Using Latent Semantic Analysis: A Reanalysis of Choi, Wiemer-Hastings, and Moore (2001)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Amélioration de la segmentation automatique des textes grâce aux connaissances acquises par l’analyse sémantique latente. Une réanalyse de Choi, Wiemer-Hastings et Moore (2001)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>Choi, Wiemer-Hastings, and Moore (2001) proposed to use Latent Semantic Analysis (LSA) to extract semantic knowledge from corpora in order to improve the accuracy of a text segmentation algorithm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Choi, Wiemer-Hastings et Moore (2001) ont proposé d’employer l’analyse sémantique latente (ASL) pour extraire des connaissances sémantiques à partir de corpus afin d’améliorer l’efficacité d’un algorithme de segmentation des textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>By comparing the accuracy of the very same algorithm, depending on whether or not it takes into account complementary semantic knowledge, they were able to show the benefit derived from such knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En comparant l’efficacité du même algorithme selon qu’il prend en compte des connaissances sémantiques complémentaires ou non, ils ont pu montrer les bénéfices apportés par ces connaissances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>In their experiments, semantic knowledge was, however, acquired from a corpus containing the texts to be segmented in the test phase.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans leurs expériences cependant, les connaissances sémantiques avaient été extraites d’un corpus qui contenait les textes à segmenter dans la phase de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>If this hyper-specificity of the LSA corpus explains the largest part of the benefit, one may wonder if it is possible to use LSA to acquire generic semantic knowledge that can be used to segment new texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si cette hyperspécificité du corpus d’apprentissage explique la plus grande partie de l’avantage observé, on peut se demander s’il est possible d’employer l’ASL pour extraire des connaissances sémantiques génériques pouvant être employées pour segmenter de nouveaux textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>The two experiments reported here show that the presence of the test materials in the LSA corpus has an important effect, but also that the generic semantic knowledge derived from large corpora clearly improves the segmentation accuracy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les deux expériences présentées ici montrent que la présence dans le corpus d’apprentissage du matériel de test a un effet important, mais également que les connaissances sémantiques génériques dérivées de grands corpus améliorent l’efficacité de la segmentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>1. Improving Text Segmentation by Using Complementary Semantic Knowledge</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Améliorer la segmentation des textes par l'adjonction de connaissances sémantiques complémentaires</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>For the last ten years, many methods have been proposed for the segmentation of texts in topically related units on the basis of lexical cohesion.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pendant les dix dernières années, de nombreuses méthodes ont été proposées pour segmenter automatiquement des textes en unités thématiquement liées sur la base de la cohésion lexicale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>The major distinction between these methods is in the contrast between the approaches based exclusively on the information contained in the text to be segmented, such as lexical repetition (e.g., Choi 2000; Hearst 1997; Heinonen 1998; Kehagias, Pavlina, and Petridis 2003; Utiyama and Isahara 2001), and those approaches that rest on complementary semantic knowledge extracted from dictionaries and thesauruses (e.g., Kozima 1993; Lin et al. 2004; Morris and Hirst 1991), or from collocations collected in large corpora (Bolshakov and Gelbukh 2001; Brants, Chen, and Tsochantaridis 2002; Choi et al. 2001; Ferret 2002; Kaufmann 1999; Ponte and Croft 1997).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La distinction principale entre ces méthodes réside dans le contraste entre les approches basées exclusivement sur l’information contenue dans le texte à segmenter comme la cohésion lexicale (par exemple, Choi, 2000 ; Hearst, 1997 ; Heinonen, 1998 ; Kehagias, Pavlina, Petridis, 2003 ; Utiyama, Isahara, 2001), et celles qui reposent sur des connaissances sémantiques complémentaires extraites de dictionnaires et de thesaurus (par exemple, Kozima 1993 ; Lin, Nunamaker, Chau, Chen, 2004 ; Morris, Hirst, 1991), ou des collocations observées dans de grands corpus (Bolshakov, Gelbukh 2001 ; Choi et al. , 2001 ; Ferret, 2002 ; Kaufmann, 1999 ; Ponte, Croft, 1997).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>According to their authors, methods that use additional knowledge allow for a solution to problems encountered when sentences belonging to a unique topic do not share common words due to the use of hyperonyms or synonyms and allow words that are semantically related to be taken as positive evidence for topic continuity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Selon leurs auteurs, les méthodes qui utilisent des connaissances supplémentaires apportent une réponse aux problèmes posés par les phrases qui relèvent du même thème tout en ne partageant aucun mot commun ou par la présence de synonymes et d’hyperonymes. Ces méthodes permettent de considérer les mots sémantiquement liés comme des preuves positives de la continuité du thème.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>Empirical arguments in favor of these methods have been provided recently by Choi et al. (2001) in a study using Latent Semantic Analysis (Latent Semantic Indexing, Deerwester et al. 1990) to extract a semantic space from a corpus allowing determination of the similarity of meanings of words, sentences, or paragraphs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des arguments empiriques en faveur de ces méthodes ont été récemment présentés par Choi et al. (2001) dans une étude basée sur l’analyse sémantique latente (ASL : Latent semantic analysis, Latent semantic indexing, Deerwester et al., 1990), une technique statistique d’extraction d’espaces sémantiques à partir de corpus qui permet l’estimation de la similarité sémantique entre des mots, des phrases ou des paragraphes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>By comparing the accuracy of the very same algorithm according to whether or not it takes into account complementary semantic knowledge, they were able to show the benefit derived from such knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En comparant l'efficacité du même algorithme selon qu'il prend en compte ou non ces connaissances sémantiques complémentaires, Choi et al. (2001) ont mis en évidence l'avantage dérivé de telles connaissances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>However, implications of Choi et al.’s study for text segmentation and for the use of LSA in natural language processing are unclear due to the methodology employed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutefois, les implications de l'étude de Choi et al. pour la segmentation des textes et, plus généralement, pour l'utilisation de l'ASL dans le traitement automatique du langage sont peu claires en raison de la méthodologie qu'ils ont employée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>In their experiments, semantic knowledge was acquired from a corpus containing the materials to be segmented in the test phase.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans leurs expériences, les connaissances sémantiques ont été extraites d'un corpus qui contenait les textes qui ont été segmentés dans la phase de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>One could speculate whether the largest part of the benefit obtained thanks to the addition of semantic knowledge was not due to this hyper-specificity of the LSA corpus (i.e., the inclusion of the test materials).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut donc se demander si la plus grande partie des bénéfices obtenus grâce à l'ajout de connaissances sémantiques n'est pas due à cette hyperspécificité du corpus LSA (c.-à-d. l'inclusion du matériel de test).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>If this were the case, it would call into question the possibility of using LSA to acquire generic semantic knowledge that can be used to segment new texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si c’est le cas, cela met en question la possibilité d’employer l’ASL pour extraire des connaissances sémantiques génériques pouvant être utilisées pour segmenter de nouveaux textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>A priori, the problem does not seem serious for at least two reasons.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A priori, le problème ne semble pas grave pour au moins deux raisons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>First, Choi et al.’s segmentation procedure does not rely on supervised learning in which a system learns how to efficiently segment a text from training data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, la procédure de segmentation de Choi et al. ne repose pas sur l'apprentissage supervisé dans lequel un système apprend à segmenter efficacement un texte à partir de données d'apprentissage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>The LSA corpus only intervenes in an indirect manner by allowing the extraction of semantic proximities between words that are then used to compute similarities between parts of the text to segment (see Section 2 for details).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus LSA n'intervient que de manière indirecte en permettant l'extraction de proximités sémantiques entre les mots qui sont ensuite utilisées pour calculer des similarités entre des parties du texte à segmenter (voir la Section 2 pour plus de détails).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>Second, Choi et al. employed a large number of small test samples to evaluate their algorithm, each making up—on average—0.15% of the LSA corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, Choi et al. ont utilisé un grand nombre de petits échantillons de test pour évaluer leur algorithme, chaque échantillon ne représentant en moyenne que 0,15 % du corpus LSA.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>The present study shows, however, that the presence of the test materials in the LSA corpus has an important effect, but also that the generic semantic knowledge derived from large corpora clearly improves the segmentation accuracy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La présente étude montre, toutefois, que la présence du matériel de test dans le corpus LSA a un effet important, mais également que les connaissances sémantiques génériques dérivées de grands corpus améliorent nettement l’efficacité de l’algorithme de segmentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>This conclusion is drawn from two experiments in which the presence or absence of the test materials in the LSA corpus is manipulated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette conclusion est issue de deux expériences dans lesquelles la présence ou l’absence du matériel de test dans le corpus d’apprentissage pour l’ASL est manipulée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>The first experiment is based on the original materials from Choi et al., which consisted of a small corpus (1,000,000 words).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première expérience est basée sur le matériel original de Choi et al., qui consistait en un petit corpus de 1 000 000 de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>The second experiment is based on a much larger corpus (25,000,000 words).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La deuxième expérience est basée sur un corpus beaucoup plus grand (25.000.000 mots).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>Before reporting these experiments, Choi’s algorithm and the use of LSA within this framework are described.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avant de présenter ces expériences, l’algorithme de Choi et l’utilisation de l’ASL dans ce cadre sont décrits.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>2. The Two Versions of Choi’s Algorithm</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Les deux versions de l’algorithme de Choi</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>The segmentation algorithm proposed by Choi (2000) is made up of the three steps usually found in any segmentation procedure based on lexical cohesion.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’algorithme de segmentation proposé par Choi (2000) se compose des trois étapes habituellement présentes dans les procédures de segmentation basées sur la cohésion lexicale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>Firstly, the document to be segmented is divided into minimal textual units, usually sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Premièrement, le document à segmenter est divisé en unités textuelles minimales, habituellement les phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>Then, a similarity index between every pair of adjacent units is calculated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, un indice de similarité entre chaque paire d’unités adjacentes est calculé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>Each raw similarity value is cast on an ordinal scale by taking the proportion of neighboring values that are smaller than it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque valeur brute de similarité est réexprimée sous une forme ordinale en prenant la proportion de valeurs voisines qui sont plus petites qu’elle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>Lastly, the document is segmented recursively according to the boundaries between the units that maximize the sum of the average similarities inside the segments thus comprised (divisive clustering).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour finir, le document est segmenté de manière récursive selon les frontières entre les unités qui maximisent la somme des similarités moyennes à l'intérieur des segments ainsi constitués (groupement divisif).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>The step of greatest interest here is the one that calculates the inter-sentence similarities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'étape la plus intéressante pour la présente étude est celle qui calcule les similarités entre les phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>The procedure initially proposed by Choi (2000), C99, rests exclusively on the information contained in the text to be segmented.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La procédure initialement proposée par Choi (2000), C99, reposait exclusivement sur l’information contenue dans le texte à segmenter.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>According to the vector space model, each sentence is represented by a vector of word frequency count, and the similarity between two sentences is calculated by means of the cosine measure between the corresponding vectors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Selon le modèle d'espace vectoriel, chaque phrase est représentée par un vecteur de comptage de fréquence de mot, et la similarité entre deux phrases est calculée au moyen de la mesure de cosinus entre les vecteurs correspondants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>In a first evaluation based on the procedure described below, Choi showed that its algorithm outperforms several other approaches such as TextTiling (Hearst 1997) and Segmenter (Kan, Klavans, and McKeown 1998).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans une première évaluation basée sur la procédure décrite ci-dessous, Choi a montré que son algorithme était plus efficace que plusieurs autres approches telles que TextTiling (Hearst, 1997) et Segmenter (Kan, Klavans, McKeown, 1998).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>Choi et al. (2001) claimed that it was possible to improve the inter-sentence similarities index by taking into account the semantic proximities between words estimated on the basis of Latent Semantic Analysis (LSA).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Choi et al. (2001) ont proposé d’améliorer la mesure de similarité inter-phrases en prenant en compte les proximités sémantiques entre les mots estimées sur la base de l’analyse sémantique latente (ASL).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>Briefly stated, LSA rests on the thesis that analyzing the contexts in which words occur permits an estimation of their similarity in meaning (Deerwester et al. 1990; Landauer and Dumais 1997).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Brièvement, l’ASL s’appuie sur la thèse qu’il est possible d’estimer la similarité sémantique entre des mots en analysant les contextes dans lesquels ces mots apparaissent (Deerwester et al. 1990 ; Landauer et Dumais 1997).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>The first step in the analysis is to construct a lexical table containing an information-theoretic weighting of the frequencies of the words occurrence in each document (i.e. sentence, paragraph, or text) included in the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première étape de l'analyse est de construire un tableau lexical contenant un poids informationnel des fréquences d'occurrence des mots dans chaque document (c'est-à-dire une phrase, un paragraphe ou un texte) inclus dans le corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>This frequency table undergoes a Singular Value Decomposition that extracts the most important orthogonal dimensions, and, consequently, discards the small sources of variability in term usage.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce tableau de fréquence subit une décomposition en valeurs singulières qui extrait les dimensions orthogonales les plus importantes et qui, par conséquent, élimine les petites sources de variabilité dans l’utilisation des termes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>After this step, every word is represented by a vector of weights indicating its strength of association with each of the dimensions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après cette étape, chaque mot est représenté par un vecteur de poids indiquant sa force d’association avec chacune des dimensions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>This makes it possible to measure the semantic proximity between any two words by using, for instance, the cosine measure between the corresponding vectors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci permet de mesurer la proximité sémantique entre deux mots quelconques en utilisant, par exemple, la mesure de cosinus entre les vecteurs correspondants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>Proximity between any two sentences (or any other textual units), even if these sentences were not present in the original corpus, can be estimated by computing a vector for each of these units—which corresponds to the weighted sum of the vectors of the words that compose it—and then by computing the cosine between these vectors (Deerwester et al. 1990).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La proximité entre deux phrases (ou toutes autres unités textuelles), même lorsque ces phrases ne font pas partir du corpus initial, peut être estimée en calculant un vecteur pour chacune de ces phrases – correspondant à la somme pondérée des vecteurs des mots qui les composent – et puis en calculant le cosinus entre ces vecteurs (Deerwester et al. 1990).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>Choi et al. (2001) have shown that using this procedure to compute the inter-sentence similarities results in the previous version of the algorithm (based solely on word repetition) being outperformed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Choi et al. (2001) ont montré que l’utilisation de cette procédure pour calculer les similarités inter-phrases produit des performances supérieures à celles enregistrées au moyen de la version précédente de l’algorithme (basé seulement sur la répétition de mots).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>3. Experiment 1</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Expérience 1</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>The aim of this experiment is to determine the impact of the presence of the test materials in the LSA corpus on the results obtained by Choi et al. (2001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le but de cette expérience est de déterminer l’impact de la présence du matériel de test dans le corpus d’apprentissage de l’ASL sur les résultats obtenus par Choi et al. (2001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Does semantic knowledge acquired from a corpus that does not include the test materials also improve the segmentation accuracy?</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Est-ce que les connaissances sémantiques extraites d’un corpus qui n’inclut pas le matériel de test améliorent également l’efficacité de la segmentation ?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>3.1 Method</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1 Méthode</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>This experiment was based on the procedure and test materials designed by Choi (2000), which was also used by several authors as a benchmark for comparing segmentation systems (Brants et al. 2002; Ferret 2002; Kehagias et al. 2003; Utiyama and Isahara 2001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette expérience est basée sur la procédure et les matériaux d'essai conçus par Choi (2000), qui a également été utilisée par plusieurs auteurs comme référence pour comparer les systèmes de segmentation (Brants et al., 2002 ; Ferret, 2002 ; Kehagias et al., 2003 ; Utiyama et Isahara, 2001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>The task consists in finding the boundaries between concatenated texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La tâche consiste à retrouver les frontières entre des textes concaténés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>Each test sample is a concatenation of ten text segments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque échantillon de test est une concaténation de dix segments de textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>Each segment consisted in the first n sentences of a randomly selected text from two sub-sections of the Brown corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque segment est composé des n premières phrases d’un texte aléatoirement choisi dans deux sous-sections du corpus de Brown.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>For the present experiment, I used the most general test materials built by Choi (2000), in which the size of the segments within each sample varies randomly from 3 to 11 sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour l'expérience, j'ai utilisé le matériel de test le plus général proposé par Choi (2000) dans lequel la taille des segments dans chaque échantillon varie aléatoirement de 3 à 11 phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>It is composed of 400 samples.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est composé de 400 échantillons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>The analysis related to the comparison between the accuracy of the algorithm when the test materials were included in the LSA corpus ( Within ) and when it was not ( Without ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'analyse porte sur la comparaison entre l'exactitude de l'algorithme lorsque le matériel de test est inclus dans le corpus LSA (condition "Within") et lorsqu'il ne l'est pas (condition "Without").</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>One Within semantic space, which corresponds to the one used by Choi et al., was built using the entire Brown corpus as the LSA corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un espace sémantique non autonome, correspondant à celui utilisé par Choi et al., a été construit en utilisant l'entièreté du corpus de Brown comme corpus d'apprentissage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>Four hundred different Without spaces were built, one for each test sample, by each time removing from the Brown corpus only the sentences that make this sample.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quatre cents espaces autonomes différents ont été construits, un pour chaque échantillon de test, en retirant à chaque fois du corpus de Brown uniquement les phrases qui composent cet échantillon.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>To extract the LSA space and to apply the segmentation algorithm, a series of parameters had to be set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour extraire l’espace sémantique par l’ASL et pour appliquer l’algorithme de segmentation, une série de paramètres ont dû être fixés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>First of all, paragraphs were used as documents for building the lexical tables because Choi et al. observed that such middle-sized units were more effective than shorter units (i.e., sentences).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tout d’abord, les paragraphes ont été utilisés comme documents pour construire le tableau lexical parce que Choi et al. ont observé que de telles unités de taille moyenne étaient plus efficaces que des unités plus courtes comme les phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>The words on Choi’s stoplist were removed, as were those that appeared only once in the whole corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les mots repris dans la liste de mots-outils ( stoplist ) de Choi ont été supprimés, ainsi que ceux qui n’apparaissaient qu’une seule fois dans l’ensemble du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>Words were not stemmed, as in Choi et al. (2001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les mots n'ont pas été tronqués en fonction de leur racine (stemming), comme dans Choi et al. (2001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>To build the LSA space, the singular value decomposition was realized using the program SVDPACKC (Berry 1992; Berry et al. 1993), and the first 300 singular vectors were retained.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour établir l'espace LSA, la décomposition en valeurs singulières a été réalisée par le programme SVDPACKC (Berry, 1992 ; Berry et al., 1993), et les 300 premiers vecteurs singuliers ont été conservés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>Concerning the segmentation algorithm, I used the version in which the number of boundaries to be found is imposed, and thus fixed at nine.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En ce qui concerne l’algorithme de segmentation, j’ai utilisé la version dans laquelle le nombre de frontières à trouver est imposé et fixé ici à neuf.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>An 11 × 11 rank mask was used for the ordinal transformation, as recommended by Choi (2000).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un masque de 11 x 11 a été employé pour la transformation ordinale, comme recommandé par Choi (2000).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>Table 1 Error rates and variance (in parentheses) for the Within and the Without conditions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 Taux d'erreur et variance (entre parenthèses) pour les conditions « avec » et « sans ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>3.2 Results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2 Résultats</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>The segmentation accuracy was evaluated by means of the index reported by Choi et al. (2001): the Pk measure of segmentation inaccuracy (Beeferman, Berger, and Lafferty 1999), which gives the proportion of sentences that are wrongly predicted to belong to the same segment or wrongly predicted to belong to different segments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’efficacité de la segmentation a été évaluée au moyen de l’indice utilisé par Choi et al. (2001) : le taux Pk d’erreur de segmentation (Beeferman, Berger, Lafferty, 1999) qui indique la proportion de phrases qui sont incorrectement classées comme appartenant au même segment ou incorrectement classées comme appartenant à des segments différents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>I also report, for potential future comparison, Pevzner and Hearst’s (2002) WindowDiff index, which remedies several problems in the Pk measure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Je signale également, pour une comparaison potentielle à l’avenir, l’indice WindowDiff de Pevzner et Hearst (2002), qui remédie à plusieurs problèmes de la mesure Pk.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>Results are provided in Table 1.[1]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats[1] sont présentés dans le Tableau 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>Compared with the Within condition, the performance in the Without condition is definitely worse, as confirmed by t tests for paired sample (each test sample being used as an observation) that are significant for an alpha smaller than 0.0001.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comparé à la condition « Within », les performances dans la condition « Without » sont nettement plus faibles, comme le confirme le test t pour échantillon apparié (chaque échantillon de test étant utilisé comme une observation) qui est significatif pour un alpha plus petit que 0,0001.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>The C99 algorithm, which does not employ LSA to estimate the similarities between the sentences, produces a Pk of 0.13 (Choi et al. 2001, Table 3, line 3: No stemming).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’algorithme C99, qui n’utilise pas l’ASL pour estimer les similarités entre les phrases, produit un Pk de 0.13 (Choi et al. , 2001, tableau 3, ligne 3 : no stemming ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>It appears that although the Without condition is still better than C99, the benefit is very small.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il s’avère donc que, si la condition autonome est meilleure que C99, l’avantage est très faible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>Before concluding that the presence of the test materials in the LSA corpus strongly modified the semantic space, an alternative explanation must be considered.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avant de conclure que la présence du matériel de test dans le corpus d’apprentissage de l’ASL a fortement modifié l’espace sémantique, une explication alternative doit être considérée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>The loss of accuracy in the Without condition could potentially be due to the fact that the words indexed in the corresponding LSA spaces are systematically slightly fewer than those present in the Within space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La perte d'exactitude en condition autonome pourrait être due au fait qu'il y a systématiquement légèrement moins de mots indexés dans les espaces sémantiques autonomes que dans l'espace non autonome.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>Removing each test sample led to the loss—on average— of 23 different words out of the 25,847 words that are indexed in the Within space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La suppression de chaque échantillon de test a entraîné la perte en moyenne de 23 mots différents sur un total de 25.847 mots qui sont indexés dans l’espace non autonome .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>In the Without spaces, these words are no longer available to estimate the similarity of the sentences, whereas they are employed in the Within space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les espaces autonomes, ces mots ne sont plus disponibles pour estimer la similarité entre les phrases, tandis qu'ils sont utilisés dans l'espace non autonome.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>In order to determine whether this factor can explain the difference in performance, a complementary analysis was carried out on the Within space in which, for each test sample, only the words present in the corresponding Without space were taken into account.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de déterminer si ce facteur peut expliquer la différence d’efficacité, une analyse complémentaire a été effectuée sur l’espace « Within » dans laquelle, pour chaque échantillon de test, uniquement les mots présents dans l’espace « Without » correspondant ont été pris en compte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>In this manner, only the semantic relations can come into play.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De cette manière, seules les relations sémantiques peuvent jouer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>Compared with the complete Within space, almost no drop in performance was observed: the Pk error rate went from 0.084 to 0.085 in the new analysis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comparé à l'espace complet, presque aucune diminution d'efficacité n'a été observée : le taux d'erreur Pk est passé de 0,084 à 0,085 dans la nouvelle analyse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>This result indicates that it is not the words selected for the calculation of the proximities that matter, but the semantic relations in the spaces extracted from the word co-occurrences by the Singular Value Decomposition.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce résultat indique que ce ne sont pas les mots choisis pour le calcul des proximités qui importent, mais les relations sémantiques dans les espaces extraites des co-occurrences de mots par la décomposition en valeurs singulières.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>4. Experiment 2</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Expérience 2</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>Experiment 1 was conducted on the Choi et al. (2001) LSA corpus, a 1,000,000-word collection of texts from very different genres and with varied themes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’expérience 1 a été menée sur le corpus d’apprentissage de Choi et al. (2001), un corpus de 1.000.000 de mots issus de textes de genres et de thèmes très différents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>The smallness of the corpus and diversity of the texts could have affected the results at two levels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La petite taille du corpus et la diversité des textes pourraient avoir affecté les résultats de deux manières.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>First, removing a few sentences of a text should have less impact if the corpus contains a lot of texts on similar topics.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Retirer les premières phrases d’un texte devrait avoir moins d’effet si le corpus contient beaucoup de textes sur des thèmes similaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>Second, a larger corpus would probably also permit the extraction of a more stable and efficient semantic space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En second lieu, un corpus plus volumineux permettrait probablement l’extraction d’un espace sémantique plus stable et plus efficace.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>This could produce a greater difference between the LSA version of the algorithm and the version that does not use additional semantic knowledge (C99).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci pourrait produire une plus grande différence entre la version « LSA » de l’algorithme et celle qui n’utilise pas de connaissances sémantiques supplémentaires (C99).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>For these reasons, a second experiment was conducted on the basis of a much larger corpus consisting of the articles published during 1997 and 1998 in the Belgian French-speaking newspaper Le Soir (roughly 52,000 articles and 26,000,000 words).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour ces raisons, une deuxième expérience a été menée sur la base d’un corpus beaucoup plus volumineux, comprenant les articles parus durant les années 1997 et 1998 dans le journal de langue française belge Le Soir (approximativement 52.000 articles et 26.000.000 mots).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>In this corpus, the test materials from each sample account for—on average—0.0066% of the complete corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce corpus, chaque échantillon du matériel de test correspond en moyenne à 0.0066% du corpus complet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>This second experiment also made it possible to compare the Within and Without spaces with a Former space composed of articles published in the same newspaper, but during the years 1995 and 1996 (roughly 50,000 articles and more than 22,000,000 words).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette deuxième expérience a également permis de comparer les conditions « dans » et « hors » espaces à une condition antérieure basée sur les articles parus dans le même journal, mais pendant les années 1995 et 1996 (environ 50 000 articles et plus de 22 000 000 mots).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>This condition will show the possibility of using LSA to build even more generic semantic knowledge, since the LSA corpus is earlier than the text to segment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette condition nous informera de la possibilité d'employer l'ASL pour extraire des connaissances sémantiques plus génériques, puisque le corpus d'apprentissage de l'ASL est antérieur aux textes à segmenter.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>4.1 Method</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Méthode</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>The test materials were extracted from the 1997–1998 corpus following the guidelines given in Choi (2000).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le matériel de test a été extrait du corpus 1997-1998 suivant les directives données dans Choi (2000).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>It is composed of 400 samples of ten segments, of which the length varies randomly from 3 to 11 sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il se compose de 400 échantillons de dix segments, dont la longueur varie aléatoirement de 3 à 11 phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>Three types of LSA space were composed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Trois types d’espace d’apprentissage pour l’ASL ont été composés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>The Within space is based on the whole 1997–1998 corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'espace Within est basé sur l'ensemble du corpus 1997-1998.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>Four hundred different Without spaces were built as described in Experiment 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quatre cents espaces autonomes différents ont été construits comme décrit dans l’expérience 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>Finally, a Former space was built from the 1995–1996 corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, un espace antérieur a été établi à partir du corpus 1995-1996.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>The parameters employed to build the semantic spaces are identical to those used in Experiment 1 with one exception: in order to reduce the size of the lexical tables the whole articles and not the paragraphs were used as documents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les paramètres utilisés pour construire les espaces sémantiques sont identiques à ceux utilisés dans l'expérience 1 à une exception près : afin de réduire la taille des tableaux lexicaux, les articles entiers et non les paragraphes ont été utilisés comme documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>4.2 Results</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 Résultats</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>Although the results are mostly similar to those obtained in Experiment 1, Table 2 shows some interesting differences. The discrepancy between the Within and Without condition is much smaller, even if it remains statistically significant ( p &lt; 0.0001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que les résultats soient globalement similaires à ceux obtenus lors de l'expérience 1, le tableau 2 montre des différences intéressantes. La différence entre les conditions « avec » et « sans » est beaucoup plus faible, même si elle reste statistiquement significative (p &lt; 0,0001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>Using a corpus from the same source, but with earlier years, still returns a poorer performance ( p &lt; 0.0001). The C99 algorithm, which is not based on LSA, produces a Pk error rate of 0.150, a value definitely worse than those obtained with the Without and Former spaces.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, en utilisant un corpus de la même source, mais avec des années antérieures, on obtient de moins bons résultats (p &lt; 0,0001). L'algorithme C99, qui n'est pas basé sur l'analyse sémantique latente, produit un taux d'erreur Pk de 0,150, une valeur nettement plus mauvaise que celles obtenues avec les espaces autonomes (0,084) et avec l'espace antérieur (0,098).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>This confirms the usefulness of semantic knowledge acquired from large corpora in estimating inter-sentence similarities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci confirme l'utilité des connaissances sémantiques extraites de grands corpus pour estimer les similarités entre phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>5. Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>The two experiments showed that the presence of the test materials in the LSA corpus increases the algorithm accuracy even when a corpus of more than 25,000,000 words is used.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les deux expériences rapportées ici montrent que la présence du matériel de test dans le corpus d’apprentissage de l’ASL augmente l’efficacité de l’algorithme de segmentation même lorsqu’un corpus de plus de 25.000.000 mots est utilisé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>They also showed that the use of independent semantic knowledge improves the segmentation accuracy and that this can be observed even when the semantic knowledge is extracted from former years of the same source.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elles montrent également que l'utilisation de connaissances sémantiques indépendantes améliore l'efficacité de la segmentation et que ceci s'observe même lorsque ces connaissances sont extraites d'années antérieures de la même source.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>This observation underlines the possibility of building relatively generic semantic knowledge; that is, knowledge which could be employed to process new linguistic data, as has been recently proposed in a anaphora resolution algorithm, in a continuous speech recognition system, or in machine translation (Bellegarda 2000; Klebanov and Wiemer-Hastings 2002; Kim, Chang, and Zhang 2003).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette observation souligne la possibilité de constituer des connaissances sémantiques plus ou moins génériques, c'est-à-dire des connaissances qui pourraient être utilisées pour traiter de nouvelles données, comme cela a été récemment proposé dans un algorithme de résolution de l'anaphore, dans un système de reconnaissance de la parole ou en traduction automatique (Bellegarda, 2000 ; Klebanov et Wiemer-Hastings, 2002 ; Kim, Chang et Zhang, 2003).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>A question the present study does not answer concerns the possibility of employing a corpus drawn from another source, such as another newspaper.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une question à laquelle la présente étude ne répond pas concerne la possibilité d’utiliser un corpus tiré d’une autre source, telle qu’un autre journal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>Bellegarda (2000) observed in speech recognition tasks that such a semantic space is definitely less effective.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bellegarda (2000) a observé, en reconnaissance automatique de la parole, qu’un tel espace sémantique est moins efficace.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>It is nevertheless possible that evaluating the semantic proximity between two sentences is less affected by the style of composition of the source than predicting the next word of a statement.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, évaluer la proximité sémantique entre deux phrases est probablement moins affecté par la source du corpus que de prédire le prochain mot d’un énoncé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>Table 2 Error rates and variance (in parentheses) for the Within , Without and Former conditions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2 Taux d'erreur et variance (entre parenthèses) pour les conditions « Within », « Without » et « Former ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>Recently, several authors have proposed segmentation algorithms, based mainly on dynamic programming, that equal or even outperform Choi’s results (Ji and Zha 2003, Kehagias et al. 2003; Utiyama and Isahara 2001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Récemment, plusieurs auteurs ont proposé des algorithmes de segmentation, basés principalement sur la programmation dynamique, qui égalent ou même surpassent les résultats de Choi (Ji, Zha, 2003, Kehagias et al., 2003 ; Utiyama, Isahara, 2001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>These algorithms do not rest on additional semantic knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces algorithmes ne s’appuient pas sur des connaissances sémantiques supplémentaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>According to the results of the present study, they could still be improved by taking into account such knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats de la présente étude suggèrent que leur efficacité pourrait encore être améliorée en prenant en compte de telles connaissances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>Finally, this study allows a more general conclusion about the use of LSA for natural language processing. If one’s objective is to analyze a linguistic phenomenon in a large corpus such as for instance the factors determining the use of causal connectives (Degand, Spooren, and Bestgen 2004), it is preferable to extract the semantic space from the corpus at hand.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, cette étude permet de tirer une conclusion plus générale sur l'utilisation de l'ASL pour le traitement automatique du langage naturel. Si l'objectif est d'analyser un phénomène linguistique dans un grand corpus, comme par exemple les facteurs déterminant l'utilisation des connecteurs causaux (Degand, Spooren et Bestgen, 2004), il est préférable d'extraire l'espace sémantique à partir du corpus en question.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>The two experiments did indeed show that such specific corpora allow the extraction of a more efficient semantic space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les deux expérimentations ont en effet montré que de tels corpus spécifiques permettent l'extraction d'un espace sémantique plus efficace.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>However, if the objective is to test the effectiveness of an algorithm intended to process new linguistic data on the basis of a semantic space built beforehand, one must avoid including the material to analyze in the LSA corpus since that would produce an over-estimate of the effectiveness of the procedure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, si l'objectif est de tester l'efficacité d'un algorithme destiné à traiter de nouveaux données linguistiques sur la base d'un espace sémantique construit au préalable, il faut éviter d'inclure le matériel à analyser dans le corpus LSA, car cela produirait une surestimation de l'efficacité de la procédure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>Acknowledgments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Remerciements</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>Yves Bestgen is research fellow of the Belgian National Fund for Scientific Research (FNRS).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Yves Bestgen est chercheur qualifié du Fonds National de la Recherche Scientifique (FNRS).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>This work was supported by grant FRFC 2.4535.02 and by a grant (Action de Recherche concerte) of the government of the French-language community of Belgium.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette recherche est financée par le projet FRFC n° 2.4535.02 et par une “Action de Recherche concertée” du Gouvernement de la Communauté française de Belgique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>A previous version was presented at TALN 2005 (Traitement Automatique des Langues Naturelles, Dourdan, France).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une version précédente a été présentée au TALN 2005 (Traitement Automatique des Langues Naturelles, Dourdan, France).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>Thanks to the anonymous reviewers for their valuable comments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous remercions les évaluateurs anonymes pour leurs commentaires précieux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>∗ Center for Text and Discourse Studies, PSOR, Place du Cardinal Mercier 10, B-1348 Louvain-la-Neuve Belgium</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>∗ Centre d'Études des Textes et Discours, PSOR, Place du Cardinal Mercier 10, B-1348 Louvain-la-Neuve Belgique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>1 The error rate is in fact slightly better than that reported by Choi et al. (2001). The difference could be due to several factors, such as the pre-processing of the Brown corpus (e.g., tokenization and paragraph identification) or the scaling function applied to the raw frequencies, which was here the standard information-theoretic weighting described in Landauer, Foltz, and Laham (1998).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Le taux d'erreur est en fait légèrement meilleur que celui obtenu par Choi et al. (2001). La différence peut être due à plusieurs facteurs tels que le prétraitement du corpus de Brown (identification des mots et des paragraphes) ou la fonction de pondération appliquée aux fréquences brutes, qui était ici la formule de pondération décrite dans Landauer, Foltz, et Laham (1998).</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

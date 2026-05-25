@@ -1,0 +1,1263 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-F14-3. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/L14-1621/</url_en>
+        <url_fr>http://mohamedmorchid.free.fr/articles/jep2014_mohamed_morchid.pdf</url_fr>
+        <title_en>A LDA-Based Topic Classification Approach from Highly Imperfect Automatic Transcriptions</title_en>
+        <title_fr>Classification de transcriptions automatiques imparfaites : Doit-on adapter le calcul du taux d'erreur-mot ?</title_fr>
+        <docid>F14-3</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>A LDA-Based Topic Classification Approach from Highly Imperfect Automatic Transcriptions</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Approche de classification de sujets basée sur LDA à partir de transcriptions automatiques très imparfaites</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>Although the current transcription systems could achieve high recognition performance, they still have a lot of difficulties to transcribe speech in very noisy environments. The transcription quality has a direct impact on classification tasks using text features.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que les systèmes de transcription actuels puissent atteindre des performances de reconnaissance élevées, ils ont encore beaucoup de difficultés à transcrire la parole dans des environnements très bruyants. La qualité de la transcription a un impact direct sur les tâches de classification utilisant des caractéristiques de texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we propose to identify themes of telephone conversation services with the classical Term Frequency-Inverse Document Frequency using Gini purity criteria (TF-IDF-Gini) method and with a Latent Dirichlet Allocation (LDA) approach.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous proposons d'identifier les thèmes des services de conversation téléphonique au moyen de la méthode classique de fréquence de termes-fréquence inverse de documents (TF-IDF-Gini) et au moyen de l'approche de répartition latente de Dirichlet (LDA).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>These approaches are coupled with a Support Vector Machine (SVM) classification to resolve theme identification problem.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces deux approches sont couplées à une classification par machine à vecteurs de support (SVM) afin de résoudre le problème d'identification des thèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>Results show the effectiveness of the proposed LDA-based method compared to the classical TF-IDF-Gini approach in the context of highly imperfect automatic transcriptions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats montrent l'efficacité de la méthode basée sur la LDA par rapport à l'approche classique TF-IDF-Gini dans le contexte de transcriptions automatiques très imparfaites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>Finally, we discuss the impact of discriminative and non-discriminative words extracted by both methods in terms of transcription accuracy. Keywords:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous discutons de l'impact des mots discriminants et non-discriminants extraits par les deux méthodes en termes de précision de la transcription. Mots-clés :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>The application considered in this paper concerns the automatic analysis of telephone conversations between an agent and a customer in a customer care service of the Paris transportation system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’application étudiée dans cet article concerne l’analyse automatique de conversations téléphoniques entre un agent et un client dans le cadre du service d’assistance aux usagers du système de transport parisien.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>The agent follows a conversation protocol to address customer requests or complains.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’agent doit suivre un protocole particulier pendant la conversation afin de répondre aux requêtes ou plaintes des usagers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>One purpose of the application is to identify themes that appear in the conversation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'une des finalités de l'application est d'identifier les thèmes qui apparaissent dans la conversation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>A conversation may contain more than one semantically related theme, but not all of them are relevant for the application task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un dialogue peut contenir plusieurs thèmes sémantiquement liés, mais tous ne sont pas pertinents pour la tâche de l'application.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>For example, a customer may inquiry about an object lost on a transportation mean that was late.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, un client peut demander des informations sur un objet perdu dans un moyen de transport en retard.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>In such a case, the loss is a much more relevant theme than the traffic state.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cas, la perte est un thème beaucoup plus pertinent que l'état du trafic.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>In this situation, agents annotate a conversation with what they consider the major theme of the customer request.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cas, les agents annotent une conversation avec ce qu’ils considèrent comme le thème principal de la demande du client.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>This leads to annotate a theme for each conversation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela conduit à annoter un thème pour chaque conversation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>This paper presents a system for the automatic extraction of themes from conversations acquired during the daily operation of a call centre in Paris.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce document présente un système permettant l’extraction automatique de thèmes à partir de conversations acquises au cours de l’exploitation quotidienne d’un centre d’appel à Paris.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>The system generates hypotheses about the most relevant theme of each conversation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système génère des hypothèses sur le thème le plus pertinent de chaque conversation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>The major difficulty of this classification task concerns the unpredictable behavior of the customers. Conversations may contain very noisy segments and are decoded by an Automatic Speech Recognition (ASR) component.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La principale difficulté de cette tâche de classification concerne le comportement imprévisible des clients. Les conversations peuvent contenir des segments très bruités et sont décodées par un composant de reconnaissance automatique de la parole (RAP).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>In the context of Information Retrieval (IR) tasks, the main feature used is the word term frequency .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le contexte des tâches de recherche d'information (IR), la caractéristique principale utilisée est la fréquence des termes .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>This specific feature allows to obtain a subset of discriminative words for a considered class (a “theme” in this study).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette caractéristique spécifique permet d'obtenir un sous-ensemble de mots discriminants pour une classe considérée (un thème dans cette étude).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>The term “discriminative” is associated to a word if it permits to discern a class from the others.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le terme « discriminant » est associé à un mot s'il permet de distinguer une classe des autres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>Finally, this set of discriminative words should permit to compose a vector representation of conversation themes in the semantic space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au final, cet ensemble de mots discriminants doit permettre une représentation vectorielle des thèmes d’une conversation dans un espace sémantique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>While the term frequency is a performant feature in the context of manually written texts, its application to automatic transcriptions seems to be more difficult since transcription errors are inevitable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que la fréquence des mots soit une caractéristique performante dans le contexte de textes écrits ou transcrits manuellement, son application aux transcriptions automatiques semble être beaucoup plus difficile, et ce, à cause des erreurs de transcription.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>Indeed, these errors would lead to an incorrect representation of the discriminative words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, ces erreurs peuvent conduire à une représentation incorrecte des mots discriminants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>For this reason, the projection of the automatically transcribed words in a more abstracted space could increase the robustness to the ASR errors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour cette raison, la projection des mots transcrits automatiquement dans un espace de représentation plus abstrait pourrait améliorer la robustesse des applications face aux erreurs du système ASR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we propose to compare two unsupervised representations of discriminative words to automatically identify themes of telephone conversations in different configurations of highly imperfect transcriptions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous proposons de comparer deux représentations non supervisées de mots discriminants pour identifier automatiquement les thèmes de conversations téléphoniques dans différentes configurations de transcriptions très imparfaites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>The classical Term Frequency-Inverse Document Frequency with Gini purity criteria (TF-IDF-Gini) method (Robertson, 2004) is firstly applied to extract discriminative words for each theme to identify from transcriptions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthode classique à base de fréquences de mots (TF-IDF avec le critère de pureté Gini (Robertson, 2004)) est tout d’abord appliquée pour extraire les mots discriminants pour chaque thème à identifier.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>We secondly propose to explore a topic space representation of discriminative words with the use of the Latent Dirichlet Allocation (LDA) approach (Blei et al., 2003).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous proposons ensuite d’étudier une représentation des mots discriminants avec des espaces de thèmes au moyen de l’approche Latent Dirichlet Allocation (LDA) (Blei et al. , 2003).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>Each representation is finally used to train a Support Vector Machine (SVM) classifier to automatically associate a theme to a conversation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque représentation est ensuite utilisée pour apprendre un classifieur de type Support Vector Machine (SVM) afin d’associer automatiquement un thème à une conversation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>We also propose in this article a discussion about the classification performance impact of discriminative and nondiscriminative words chosen by both methods in terms of transcription accuracy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous proposons également dans cet article une discussion autour de l'impact sur les performances de classification des mots discriminants et non-discriminants choisis par les deux méthodes en termes de précision de la transcription.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>2. Related work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Travaux antérieurs</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>Recent reviews for spoken conversation analysis, speech analytics, topic identification and segmentation can be found in (Tur and De Mori, 2011), (Melamed and Gilbert, 2011), (Hazen, 2011) and (Purver, 2011) respectively.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Différents résumés de travaux récents ont été réalisés autour de l’analyse de conversations (Tur et De Mori, 2011), du traitement de la parole (Melamed et Gilbert, 2011), de l’identification (Hazen, 2011) et de la segmentation de thèmes (Purver, 2011).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>The classical Term Frequency-Inverse Document Frequency (TF-IDF) (Robertson, 2004) has been widely used for extracting discriminative words from texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’approche classique à base de fréquences de mots, Term Frequency-Inverse Document Frequency (TF-IDF) (Robertson, 2004), a été très largement utilisée afin d’extraire les mots discriminants contenus dans des textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>Works also found improvements associating TF-IDF with the Gini purity criteria (Dong et al., 2011).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des améliorations ont également été constatées en associant le TF-IDF au critère de pureté Gini (Dong et al., 2011).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>Other approaches proposed to consider the document as a mixture of latent topics.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’autres approches ont proposé de considérer le document comme un mélange de thèmes latents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>These methods, such as Latent Semantic Analysis (LSA) (Deerwester et al., 1990; Bellegarda, 1997), Probabilistic LSA (PLSA) (Hofmann, 1999) or Latent Dirichlet Allocation (LDA) (Blei et al., 2003), build a higher-level representation of the document in a topic space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces méthodes, telles que Latent Semantic Analysis (LSA) (Deerwester et al. , 1990; Bellegarda, 1997), Probabilistic LSA (PLSA) (Hofmann, 1999), ou Latent Dirichlet Allocation (LDA) (Blei et al. , 2003), permettent un niveau de représentation plus élevé des mots au moyen d’un espace de thèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>All of these methods are commonly used in the Information Retrieval (IR) field.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous ces méthodes sont couramment utilisées dans le domaine de la recherche d'information (IR).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>They consider documents as a bag-of-words (Salton, 1989) without taking account of word order; nevertheless, they demonstrated their performance on various tasks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les documents sont alors considérés comme des sacs-de-mots (Salton, 1989) sans tenir compte de l'ordre des mots ; néanmoins, leurs performances ont pu être démontrées sur de nombreuses tâches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>LDA is a generative model which considers a document, seen as a bag-of-words, as a mixture probability of latent topics.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>LDA est un modèle génératif qui considère un document, vu comme un sac de mots, comme une probabilité de mélange de sujets latents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>In opposition to a multinomial mixture model, LDA considers that a theme is associated to each occurrence of a word composing the document, rather than associate a topic with the complete document.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contrairement à un modèle de mélange multinomial, LDA considère qu'un thème est associé à chaque occurrence d'un mot composant le document, plutôt que d'associer un thème au document complet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>Thereby, a document can change of topics from a word to another.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, un document peut changer de thèmes d’un mot à un autre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>However, the word occurrences are connected by a latent variable which controls the global respect of the distribution of the topics in the document.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, les occurrences des mots sont connectées par une variable latente qui contrôle le respect global de la distribution des thèmes dans le document.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>These latent topics are characterized by a distribution of word probabilities which are associated with them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces thèmes latents sont caractérisés par une distribution des probabilités des mots qui leur sont associées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>PLSA and LDA models have been shown to generally outperform LSA on IR tasks (Hofmann, 2001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les modèles PLSA et LDA obtiennent généralement de meilleurs résultats que le modèle LSA sur les tâches de recherche d’information (Hofmann, 2001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>Moreover, LDA provides a direct estimate of the relevance of a topic knowing a word set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, LDA fournit une estimation directe de la pertinence d'un thème en connaissant un ensemble de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Support Vector Machines (SVM) are a set of supervised learning techniques.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les machines à vecteurs de support, Support Vector Machines (SVM), sont un ensemble de techniques d’apprentissage supervisé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>Knowing a sample, SVMs determine a separation plan between parts of the sample called support vector .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sachant un échantillon, les SVM déterminent un plan séparateur entre les parties de l’échantillon appelé vecteur de support .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>Then, a separating hyperplane that maximizes the margin between the support vectors and the hyperplane separator (Vapnik, 1963) is calculated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, un hyperplan séparateur maximisant la marge entre les vecteurs de support et l’hyperplan séparateur (Vapnik, 1963) est calculé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>SVMs were used for the first time by (Boser et al., 1992) both in regression (M¨uller et al., 1997) and in classification (Joachims, 1999) tasks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les SVM ont été utilisés pour la première fois par (Boser et al. , 1992), pour des tâches de régression (Müller et al. , 1997) et de classification (Joachims, 1999).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>The SVM popularity is due to the good results achieved in these two specific tasks and the low number of parameters requiring adjustment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La popularité des SVM est due aux bons résultats atteints dans ces deux tâches et au faible nombre de paramètres nécessitant un ajustement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>A LDA-based approach combined with a SVM tion process has recently been studied in various domains, such as biology (hua Yeh and hsing Chen, 2010), text classification (Zrigui et al., 2012), stylometry (Arun et al., 2009), audio information retrieval (Kim et al., 2009), social event detection (Morchid et al., 2013a) or image detection (Tang et al., 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une approche à base de LDA, combinée avec un processus de classification SVM, a été récemment étudiée dans de nombreux domaines, tels que la biologie (Hua Yeh et Hsing Chen, 2010), la classification de textes (Zrigui et al. , 2012), la stylométrie (Arun et al. , 2009), la recherche d’information (Kim et al. , 2009), la détection d’évènements sociaux (Morchid et al. , 2013), ou la détection d’images (Tang et al. , 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>To our knowledge, a combined LDA-SVM approach has not yet been applied to theme classification of highly imperfect automatic transcriptions but was used in the context of keyword and keyphrase extraction in automatic transcriptions (Sheeba and Vivekanandan, 2012).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À notre connaissance, une approche LDA-SVM n’a jamais été appliquée à la classification de thèmes au moyen de transcriptions automatiques très imparfaites, mais a été utilisée dans le contexte d’extraction de mots clés dans des transcriptions automatiques (Sheeba et Vivekanandan, 2012).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>The TF-IDF extraction method coupled with a SVM classification, which constitutes our baseline system, has been widely studied in text classification such as (Lan et al., 2005; Georgescul et al., 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthode TF-IDF couplée avec une classification SVM, qui constitue notre système de base, a été très largement étudiée dans le contexte de la classification de textes, comme par exemple dans (Lan et al. , 2005; Georgescul et al. , 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>3. Theme identification methods</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Méthodes d'identification de thèmes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>This section presents the proposed theme classification system using discriminative words extracted from highly imperfect transcriptions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette partie présente le système de classification de thèmes proposé utilisant les mots discriminants extraits à partir de transcriptions très imparfaites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>The system is composed of two main parts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système est composé de deux parties principales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>The first one creates a vector representation of words with two different unsupervised approaches: a term frequency Okapi/BM25 vector (Robertson, 2004) with the TFIDF-Gini method (Dong et al., 2011) and a topic space representation with the LDA approach (Blei et al., 2003).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première crée une représentation vectorielle des mots au moyen de deux approches non-supervisées : un vecteur de fréquences de mots Okapi/BM25 (Robertson, 2004) avec la méthode TF-IDF-Gini (Dong et al. , 2011), et une représentation par espace de thèmes avec l’approche LDA (Blei et al. , 2003).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>The second part uses the extracted vectors to learn SVM classifiers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La seconde partie utilise les vecteurs extraits afin d’apprendre des classifieurs SVM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>Figure 1 presents the global architecture of the proposed classification system using manual (TRS) and automatic (ASR) transcriptions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 1 présente l’architecture globale du système de classification proposé utilisant des transcriptions manuelles (TRS) et automatiques (ASR).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: General approach of the classification system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>FIGURE 1 – Approche générale du système de classification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>3.1. Description of dialogue features</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1 Description des fonctionnalités de dialogue</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>To perform the classification task, a features representation of each dialogue is needed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour effectuer la tâche de classification, une représentation des caractéristiques de chaque dialogue est nécessaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>Thus, the next sections describe two different representations of a dialogue using a discriminative terms list and a topic space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, les sections suivantes décrivent deux représentations différentes d'un dialogue en utilisant une liste de termes discriminants et un espace de sujets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>3.1.1. Discriminative terms</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1.1. Termes discriminatoires</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>Let’s consider a corpus D of dialogues d with a word vocabulary V = {w 1 , … , wN } of size N where d is seen as a bag-of-words (Salton, 1989).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Considérons un corpus D de dialogues d ayant un vocabulaire V = {w 1,…, wN } de taille N où d est vu comme un sac-de-mots (Salton, 1989).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>A term of V is chosen according to its importance δt in the theme t by calculating its Term Frequency (TF), its Inverse Document Frequency (IDF) (Robertson, 2004) and the Gini purity criteria (Dong et al., 2011) that is common for all the themes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un mot de V est choisi en fonction de son importance δt dans le thème t en calculant sa fréquence (TF), sa fréquence inverse (IDF) (Robertson, 2004), et le critère de pureté Gini (Dong et al. , 2011) commun pour tous les thèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>This set of scores δ composes the frequency model f :</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet ensemble de scores δ compose le modèle de fréquence f :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>Then the words with highest scores ∆ for all themes T are extracted and constitute a discriminative word subset V∆ (each theme t ∈ T has its own score δt ) and its own frequency γ in the model f (Morchid et al., 2013b):</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, les mots ayant les scores les plus élevés ∆ pour tous les thèmes T sont extraits et constituent le sous-ensemble de mots discriminants V ∆ (chaque thème t ∈ T possède son propre score δt ) et sa propre fréquence γ dans le modèle f :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>Note that a same word w can be present in different themes, but with different scores (TF-IDF-Gini) depending of its relevance in the theme:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notez qu'un même mot w peut être présent dans différents thèmes, mais avec des scores différents (TF-IDF-Gini) en fonction de sa pertinence dans le thème:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>3.1.2. Semantic representation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1.2. Représentation sémantique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>For each dialogue d ∈ D , a semantic feature vector Vd[s] is determined.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque dialogue d ∈ D , un vecteur de caractéristiques sémantiques Vd[s] est déterminé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>The n[th] (1 ≤ n ≤| V∆ | ) feature Vd[s][[] [n][]][,] is composed with the number of occurrences of the word wn ( |wn| ) in d and the score ∆ of wn (see eq 1) in the discriminative word set V∆ :</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La nieme (1 ≤ n ≤| V ∆ | ) caractéristique Vd[s][ [n] ] contient le nombre d’occurrences du mot [w][n](|[w][n]|) dans d , et le score ∆ de wn (voir équation 3.1.1) dans l’ensemble des mots discriminants V ∆ :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>3.1.3. Topic representation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1.3 Représentation du thème</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>The topic representation is performed using a Latent Dirichlet Allocation (LDA) based approach (see section 2.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La représentation par espace de thèmes est réalisée au moyen de l’approche LDA (voir partie 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>A thematic space m of n topics is then obtained with, for each theme z , the probability of each word w of V knowing z ( P ( w|z ) = Vz[w]) and for the entire model [ m], the probability of each theme z knowing the model m ( P ( z|m ) = Vm[z]).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un espace thématique m de n thèmes est alors obtenu avec, pour chaque thème z , la probabilité de chaque mot w de V sachant z ( P ( w|z ) = Vz[w] ), et pour le modèle complet [m], la probabilité de chaque thème z sachant le modèle m ( P ( z|m ) = Vm[z]).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>For every dialogue d of a corpus D , a first parameter θ is drawn according to a Dirichlet law of parameter α .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque dialogue d du corpus D , un premier paramètre θ est défini en fonction d’une loi de Dirichlet de paramètre α .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>A second parameter φ is drawn according to the same Dirichlet law of parameter β .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un second paramètre φ est défini en fonction de la même loi de Dirichlet de paramètre β .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>Then, to generate every word w of the document d , a latent topic z is drawn from a multinomial distribution on θ .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, pour générer tous les mots w du document d , un thème latent z est défini à partir d’une distribution multinomiale sur θ .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>Knowing this topic z , the distribution of the words is a multinomial of parameters φ .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sachant ce thème z , la distribution des mots est une multinomiale de paramètres φ .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>The parameter θ is drawn for all the documents from the same prior parameter α .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le paramètre θ est défini pour tous les documents à partir du même paramètre initial α .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>This allows to obtain a parameter binding the documents all together (Blei et al., 2003).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela permet d’obtenir un paramètre reliant tous les documents ensemble (Blei et al. , 2003).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>Mapping of conversations/topic space</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Projection des conversations/espace de thèmes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>The Gibbs sampling algorithm and Steyvers, 2002) was used to infer a dialogue d with the n topics of the thematic space m .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’algorithme de Gibbs sampling (Griffiths et Steyvers, 2002) est utilisé pour inférer un dialogue d avec les n thèmes de l’espace thématique m .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>This algorithm is based on the Markov Chain Monte Carlo (MCMC) method.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet algorithme s’appuie sur la méthode Markov Chain Monte Carlo (MCMC).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>Thus, the Gibbs sampling allows to obtain samples of the distribution parameters θ knowing a word w of a test document and a given topic z .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, le Gibbs sampling permet d’obtenir des échantillons des paramètres de distribution θ sachant un mot w d’un document de test et un thème donné z .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>A feature vector Vz[d] of the topic representation of d is then obtained.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un vecteur de caractéristiques Vz[d] de la représentation du thème de d est alors obtenu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>The k[th] feature Vz[d][[] [k][]] (where 1 ≤ k ≤ n ) is the probability of the topic zk knowing the dialogue d :</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La k-ième caractéristique (où 1 ≤ k ≤ n ) est la probabilité du thème zk sachant le dialogue d :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>3.2. SVM classification</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2 Classification à base de SVM</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>tation of words to automatically assign the most relevant theme to each conversation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Durant cette étape, les mots sont analysés afin d’attribuer automatiquement le thème le plus pertinent à chaque conversation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>The classification of conversations requires a multi-class classifier.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La classification des conversations nécessite un classifieur multi-classes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>The one-againstone method is chosen with a linear kernel.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthode one-againstone est choisie avec un noyau linéaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>This method gives a better testing accuracy than the one-against-rest method (Yuan et al., 2012).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthode donne une meilleure précision de test que la méthode one-against-rest (Yuan et al., 2012).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>For this multi-theme problem, T denotes the number of themes and ti, i = 1 , … , T denotes the T themes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour ce problème multi-thème, T représente le nombre de thèmes et ti , i = 1,…, T représente les thèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>A binary classifier is used with a linear kernel for every pair of distinct theme. As a result, all together binary classifiers T ( T − 1) / 2 are constructed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un classifieur binaire est utilisé avec un noyau linéaire pour chaque paire de thèmes distinct. En conséquence, tous les classifieurs binaires T ( T − 1) / 2 sont construits.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>The binary classifier Ci,j is trained from example data where ti is a positive class and tj a negative class ( i ̸ = j ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le classifieur binaire Ci, j est entrainé à partir de données d'exemples où ti est une classe positive et tj une classe négative (i ≠ j).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>For a new vector representation (semantic eq. 2 or topic eq. 3) of a dialogue d from the test corpus, if Ci,j means that d is in the theme ti , then the vote for the class ti is added by one.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour une nouvelle représentation vectorielle (équation sémantique 2 ou équation de thème 3) d'un dialogue d du corpus de test, si Ci,j signifie que d est dans le thème ti, alors le vote pour la classe ti est ajouté d'une unité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>Otherwise, the vote for the theme tj is increased by one.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas contraire, le vote pour le thème tj est augmenté d'une unité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>The dialogue d is finally assigned with the theme having the highest number of votes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois le vote de tous les classifieurs achevé, du thème ayant le plus grand nombre de votes est attribué au dialogue d .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>4. Experiments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Expériences</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>The next sections describe the experimental protocol and evaluate both dialogue representations and classification methods.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les sections suivantes décrivent le protocole expérimental et évaluent les deux représentations de dialogue et les méthodes de classification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>Furthermore, a short study gives some interesting perspectives for WER consideration and determination knowing a task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, une brève étude donne des perspectives intéressantes pour la considération et la détermination de WER en connaissant une tâche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>4.1. Experimental protocol</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Protocole expérimental</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>In order to perform experiments on the conversation theme identification, the corpus of the DECODA project was used (Bechet et al., 2012).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les expériences sur l’identification du thème d’une conversation sont menées sur le corpus du projet DECODA (Bechet et al. , 2012).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>This corpus is composed of 1,067 telephone conversations split into a train set (740 dialogues) and a test set (327 dialogues), and manually annotated with 8 conversation themes: problems of itinerary , lost and found , time schedules , transportation cards , state of the traffic , fares , infractions and special offers .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce corpus est composé de 1 076 conversations téléphoniques découpées en un corpus d’apprentissage (740 dialogues) et un corpus de test (327 dialogues). Ces dialogues ont été manuellement annotés selon 8 thèmes : problème d’itinéraire , objet perdu et trouvé , horaire , carte de transport , état du traffic , prix du ticket , infraction et offre spéciale .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>The train set is used to compose a subset of discriminative words (section 3.1.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’ensemble de formation est utilisé pour définir un sous-ensemble de mots discriminants (voir partie 3.1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>This set allows to elaborate a semantic space for each conversation of the test corpus with the basic TF-IDF-Gini method.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce sous-ensemble permet d’élaborer un espace sémantique pour chaque conversation du corpus de test au moyen de la méthode basique TF-IDF-Gini.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>In the experiments, the number of discriminative words has been varied from 800 to the total number of words contained in the train corpus (7,920 words).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ces expériences, le nombre de mots discriminants a été varié de 800 à 7 920 mots (nombre total de mots du corpus d'apprentissage).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>The test corpus contains 3,806 words (70.8% occur in the train corpus).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus de test contient 3 806 mots (70,8 % étant contenu dans le corpus d’apprentissage).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>In the same way, a topic vector is calculated by mapping each dialogue of the test corpus with each topic space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De la même manière, un vecteur de thèmes est calculé en projetant chaque dialogue du corpus de test dans chaque espace de thèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>A set of 25 topic spaces with a different topic number ( { 5 , … , 600 } ) is elaborated by using a LDA model in the train corpus (example: test = TRS → LDA train corpus = TRS) . The topic spaces are made with the Mallet Java implementation (McCallum, 2002) of LDA.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un ensemble de 25 espaces de thèmes associé à un nombre de thèmes différents ( { 5,…, 600 } ) est élaboré au moyen d’un modèle LDA construit à partir du corpus d’apprentissage avec l’outil Mallet (McCallum, 2002).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>Then, a SVM classifier is learned with the LIBSVM library (Chang and Lin, 2011).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, un classifieur SVM est entrainé au moyen de la librairie LIBSVM (Chang et Lin, 2011).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>SVM parameters are optimized by cross validation on train corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les paramètres SVM sont optimisés par validation croisée sur le corpus d’apprentissage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>The LIA-Speeral ASR system is used for the experiments (Linarès et al., 2007).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système de RAP Speeral (Linarès et al. , 2007) a été utilisé pour les expériences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>This system results in an overall Word Error Rate (WER) of 45.8% (train set) and of 58.0% (test set).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce système aboutit à un taux d’erreur-mot (TEM) global de 45,8 % sur le corpus d’apprentissage et de 58,0 % sur le corpus de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>These high error rates are mainly due to speech disfluencies and to adverse acoustic environments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces taux d'erreurs élevés sont principalement dus à la présence de nombreuses disfluences, et à des conditions acoustiques défavorables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>A “stop list” of 126 words[1] was used to remove unnecessary words which results in a WER of 33.8% (train set) and of 49.5% (test set).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une liste de rejet de 126 mots[1] a été utilisée, ce qui donne au final un TEM de 33,8 % (apprentissage), et 49,5 % sur l’ensemble (test).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>Experiments are conducted with the two unsupervised methods (TF-IDF-Gini / LDA) on the manual (TRS) and the automatic transcriptions only (ASR).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les expériences sont menées au moyen des deux méthodes non-supervisées proposées (TF-IDF-Gini / LDA) sur les transcriptions manuelles (TRS) et les transcriptions automatiques (ASR) seules.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>We also propose to study the combination of both manual and automatic transcriptions (TRS+ASR) in order to see if ASR errors can be supplied by the correct reference words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous proposons également d'étudier la combinaison des transcriptions manuelles et automatiques (TRS+ASR) afin de voir si les erreurs de RAP peuvent être compensées par les mots corrects (i.e. issus de la référence).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>4.2. Theme classification performance</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 Performance de classification des thèmes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>Figure 2 presents the theme accuracy obtained by the TF-IDF-Gini and the LDA approaches on the test corpus for all transcription configurations (TRS/ASR) when varying the word extraction conditions (number of discriminative words and number of topics).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 2 présente les précisions de la classification de thèmes obtenues par les approches TF-IDF-Gini et LDA sur le corpus de test pour toutes les configurations de transcription (TRS/ASR) en faisant varier les conditions d’extraction des mots (nombre de mots discriminants et nombre de thèmes).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>We can see that the LDA-based method outperforms the best theme classification accuracies obtained by the TF-IDF-Gini approach (see table 1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons noter que la méthode LDA surpasse les meilleures accuracies de classification de thèmes obtenues par l'approche TF-IDF-Gini (voir tableau 1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>Figure 2: Theme performance by varying the number of discriminative words (a) and the number of topic spaces (b).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 2 : Performances des thèmes en variant le nombre de mots discriminants (a) et le nombre d’espaces de thèmes (b).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>Figure 3: Word Error Rate of the n most discriminative words using TF-IDF-Gini (a) and LDA (b) approaches.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 3 : Taux d'erreur de mots des n mots les plus discriminants utilisant les approches TF-IDF-Gini (a) et LDA (b).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Theme accuracy ( interval of ± 3 . 69% for the LDA system )</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1: Précision des thèmes (intervalle de ± 3,69 % pour le système LDA)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>As expected, the TRS train / TRS test (TRS → TRS) gives the best classification results with a gain of 6.9 points with the LDA method.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme attendu, la configuration TRS train / TRS test (TRS → TRS) donne les meilleurs résultats de classification avec un gain de 6,9 points avec la méthode LDA.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>When comparing the training corpus types, we can also note that best performance on the ASR test is obtained with the ASR training data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si nous comparons les types de corpus d’apprentissage, nous notons également que les meilleures performances sur le test de RAP sont obtenues avec le corpus d’apprentissage RAP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>A gain of 10.9 points is noted with the LDA method compared to the TF-IDF-Gini approach on the automatic transcriptions of conversations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un gain de 10,9 points est constaté avec la méthode LDA en comparaison de l’approche TF-IDF-Gini sur les transcriptions automatiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>It seems clear that using comparable training and testing configurations allows to achieve the best classification performance, whether it be on manual or on automatic transcriptions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il semble évident qu’utiliser des configurations d’apprentissage et de test comparables permet d’atteindre les meilleurs résultats de classification, et ce, peu importe que l’on traite des transcriptions manuelles ou automatiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>We can finally note that the LDA approach performance has a tendency to fluctuate when varying the number of topics.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons enfin noter que les performances obtenues avec l’approche LDA ont tendance à fluctuer lorsque le nombre de thèmes varie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>This could be explained by the high Word Error Rate (WER) of the targeted corpus: indeed, the words chosen as discriminative in particular topic number conditions could be wrongly transcribed in a high proportion.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci peut s'expliquer par le taux d'erreur-mot (TEM) élevé du corpus ciblé : en effet, les mots choisis comme discriminants dans des conditions particulières de l'espace de thèmes peuvent être mal transcrits dans des proportions élevées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>We can support this assumption by analyzing results obtained using 90 topics on the figure 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons étayer cette remarque en analysant les résultats obtenus avec 90 thèmes (voir figure 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>An important performance drop is observed for the ASR training conditions (ASR → ASR and ASR → TRS) while a smaller performance lost is seen when including the reference transcriptions during the training process (ASR+TRS → ASR and TRS → TRS).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une baisse importante des performances est observée pour les conditions d'apprentissage ASR (ASR → ASR et ASR → TRS) alors qu'une faible baisse est constatée lorsque les transcriptions de référence sont ajoutées dans le processus d'apprentissage (ASR+TRS → ASR et TRS → TRS).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>4.3. Transcription accuracy of discriminative words</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.3 Précision de la transcription des mots discriminants</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>While the performance with the TF-IDF-Gini approach is clearly better on manual transcriptions (table 1), the performance is almost identical on manual and on automatic transcriptions with the LDA method (respectively 86.6% and 81.4% of classification accuracy).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Alors que l’approche TF-IDF-Gini est clairement meilleure sur les transcriptions manuelles (tableau 1), les performances sont quasiment identiques sur les transcriptions manuelles et automatiques avec la méthode LDA (avec une précision respective de 86,6 % et 81,4 %).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>We think that the LDA-based approach can better manage the errors contained in the automatic transcriptions by choosing discriminative words depending on their transcription accuracy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pensons que l'approche basée sur la LDA peut mieux gérer les erreurs contenues dans les transcriptions automatiques en choisissant les mots discriminants en fonction de leur précision de transcription.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>Figure 3 compares the Word Error Rates (WER) of the n most discriminative words using TF-IDF-Gini and LDA approaches on all the configurations (TRS/ASR).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 3 permet de comparer les taux d’erreur-mot (TEM) des n mots discriminants extraits au moyen des méthodes TF-IDF-Gini et LDA sur toutes les configurations (TRS/ASR).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>The score s ( w ) used to find the most relevant words for the LDA approach is computed with: where [−→] V[w] is the vector representation of a word w in all topics z of the topic space m , [−−→] V[m] is the vector representation of all the topics z in m and ⟨·, ·⟩ is the inner product.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le score s ( w ) est utilisé pour trouver les mots les plus pertinents de l’approche LDA selon la formule : s(w) = P(w|m) = ∫z[P][(] [w][|][z][)] [P][(] [z][|][m][)][dz] où [−→] V[w] est la représentation vectorielle d’un mot w dans tous les thèmes z de l’espace de thèmes m , [−→] V[m] est la représentation vectorielle de tous les thèmes z dans m et ·· est le produit scalaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>The WER is then classically computed on the n most discriminative words (weight of 1 for each word).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le TEM est ensuite calculé sur les n mots les plus discriminants (poids de 1 pour chaque mot).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>If we firstly compare the different configurations (TRS/ASR), we can note that the higher the theme classification accuracy is (table 1), the lower the WER is.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si nous comparons tout d’abord les différentes configurations (TRS/ASR), nous pouvons noter que plus la précision de la classification est élevée (tableau 1), moins le WER l’est.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>This can be observed on both methods.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce constat est observé pour les deux méthodes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>More, we can see that the WER obtained with the LDA approach is slightly lower than the one obtained with the TF-IDF-Gini method, no matter the configuration considered.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, nous pouvons voir que le TEM obtenu avec l’approche LDA est légèrement plus bas que celui obtenu avec la méthode TF-IDF-Gini, peu importe la configuration considérée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>This means that a better transcription accuracy is associated to the discriminative words extracted with the LDA approach in comparison to the one obtained with the TF-IDF-Gini method, which could explain the higher classification performance reached by the LDA-based configuration.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela signifie que les mots discriminants extraits avec l’approche LDA sont mieux transcrits en comparaison de ceux obtenus avec la méthode TF-IDF-Gini, ce qui peut expliquer les meilleures performances de classification obtenues avec l’approche LDA.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>5. Conclusions</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Conclusions</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we presented an architecture to identify conversation themes from highly imperfect transcriptions using two different conversation representations coupled with a SVM classification step.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous avons présenté une architecture permettant d'identifier les thèmes de conversation à partir de transcriptions très imparfaites en utilisant deux représentations de conversation couplées à une étape de classification SVM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>We shown that the proposed topic representation using a LDA-based method outperforms the classification results obtained by the classical TF-IDF-Gini approach.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons montré que la représentation de thèmes proposée avec la méthode LDA surpasse les résultats de classification obtenus avec la représentation classique TF-IDF-Gini.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>The classification accuracy reaches 86.6% on manual transcriptions and 81.4% on automatic transcriptions with a respective gain of 6.9 and 10.9 points.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La précision de la classification atteint 86,6 % sur les transcriptions manuelles et 81,4 % sur les transcriptions automatiques, avec un gain respectif de 6,9 et 10,9 points.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>We also discussed the possible link between classification performance and transcription accuracy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également discuté du lien possible entre performance de classification et précision de la transcription.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>The proposed analysis showed that the best classification results are obtained on configurations which extract the discriminative words having a lower Word Error Rate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’analyse proposée a montré que les meilleurs résultats de classification sont obtenus avec des configurations extrayant les mots discriminants ayant les taux d’erreur-mot les plus faibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>The promising observations will lead to a more detailed qualitative study in a future work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces résultats prometteurs conduiront à une analyse qualitative plus détaillée dans des travaux futurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>Indeed, this preliminary study could be greatly extended with new analysis by taking into account, for example, the discriminative word weights in the transcription accuracy evaluation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, cette étude préliminaire pourrait être fortement étendue avec de nouvelles analyses, en prenant par exemple en compte le poids des mots discriminants dans l’évaluation de la précision des transcriptions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>A general perspective would be to propose a solution to estimate the classification performance depending on the transcription accuracy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une perspective générale serait de proposer une solution pour estimer les performances de classification selon la qualité des transcriptions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>In the context of evaluation metrics, it would also be interesting to find another way to estimate the accuracy of automatic transcriptions in the context of a specific task since the classical WER is not a good indicator of transcription quality in an applicative context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans un contexte lié aux métriques d’évaluation, il serait intéressant de trouver une façon d’estimer la précision des transcriptions automatiques sur des tâches spécifiques, le taux d’erreur-mot n’étant pas un bon indicateur de la qualité d’une transcription dans un cadre applicatif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>6. Acknowledgements</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6. Reconnaissances</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>This work was funded by the SUMACC and DECODA projects supported by the French National Research Agency (ANR) under contract ANR-10-CORD-007 and ANR-09-CORD-005.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>∗ . Ce travail a été réalisé dans le cadre des projets SUMACC et DECODA financés par l’Agence Nationale de la Recherche (ANR) sous les contrats ANR-10-CORD-007 et ANR-09-CORD-005.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>1http://code.google.com/p/stop-words/</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1http://code.google.com/p/stop-words/</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

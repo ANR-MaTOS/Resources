@@ -1,0 +1,1807 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-F12-1098. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/L12-1438/</url_en>
+        <url_fr>https://aclanthology.org/F12-1098.pdf</url_fr>
+        <title_en>Leveraging study of robustness and portability of spoken language understanding systems across languages and domains: the PORTMEDIA corpora spoken language</title_en>
+        <title_fr>Robustesse et portabilités multilingue et multi-domaines des systèmes de compréhension de la parole : les corpus du projet PortMedia</title_fr>
+        <docid>F12-1098</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Leveraging study of robustness and portability of spoken language understanding systems across languages and domains: the PORTMEDIA corpora</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Exploitation de l'étude de la robustesse et de la portabilité des systèmes de compréhension de la parole multilingue et multi-domaines : les corpus du projet PORTMEDIA</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>The PORTMEDIA project is intended to develop new corpora for the evaluation of spoken language understanding systems. The newly collected data are in the field of human-machine dialogue systems for tourist information in French in line with the MEDIA corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le projet PORTMEDIA a pour objectif de développer de nouveaux corpus pour l'évaluation des systèmes de compréhension de la langue parlée. Les données récemment collectées portent sur les systèmes de dialogue homme-machine pour l'information touristique en français, en ligne avec le corpus MEDIA.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>Transcriptions and semantic annotations, obtained by low-cost procedures, are provided to allow a thorough evaluation of the systems’ capabilities in terms of robustness and portability across languages and domains.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les transcriptions et annotations sémantiques, obtenues par des procédures peu coûteuses, sont fournies pour permettre une évaluation approfondie des capacités des systèmes en termes de robustesse et de portabilité à travers les langues et les domaines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>A new test set with some adaptation data is prepared for each case: in Italian as an example of a new language, for ticket reservation as an example of a new domain. Finally the work is complemented by the proposition of a new high level semantic annotation scheme well-suited to dialogue data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un nouveau jeu de données d'adaptation est préparé pour chaque cas : en italien comme exemple d'une nouvelle langue, pour la réservation de billets comme exemple d'un nouveau domaine. Enfin, le travail est complété par la proposition d'un nouveau schéma d'annotation sémantique de haut niveau bien adapté aux données de dialogue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>Keywords: spoken language understanding system, human-machine dialogue corpus, portability</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mots clés : système de compréhension de la langue parlée, corpus de dialogue homme-machine, portabilité</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>With the ever growing spread of human-machine communications (call centers, telephone services, smartphones, etc.), Spoken Language Understanding (SLU) received an increasing interest over the past few years.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avec le développement rapide des communications homme-machine (centres d’appels, services téléphoniques, smartphones…), la compréhension automatique de la parole (CAP) a reçu un intérêt croissant ces dernières années.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>SLU systems have been deployed on real world applications but with a limited success so far.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les systèmes de CAP ont été déployés dans des applications industrielles mais avec un succès limité jusqu’à présent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>Firstly SLU systems are usually available in only one language and don’t support multilinguality.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, les systèmes de CAP sont généralement disponibles dans une seule langue et ne supportent donc pas le multilinguisme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>Secondly existing services with SLU components are very constrained and restricted by the task or the domain of application.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, les services existants utilisant des composants de CAP sont très contraints et limités par la tâche ou le domaine d’application.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>Finally the quality of the user-system interaction is still far from being enjoyable and natural.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin la qualité de l’interaction utilisateur/système est toujours loin d’être agréable et naturelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>An important aspect of the SLU system’s development is the possibility to evaluate them individually of the other system’s components (as in (Hahn et al., 2010)).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un aspect important du développement du système SLU est la possibilité de les évaluer individuellement des autres composants du système (comme dans (Hahn et al., 2010)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>The MEDIA evaluation campaign has allowed to setup an evaluation paradigm based on a flat and segmental conceptual annotation and to collect and process data accordingly (Bonneau-Maynard et al., 2005).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La campagne d'évaluation MEDIA a permis de mettre en place un paradigme d'évaluation basé sur une annotation conceptuelle plate et segmentale et de collecter et traiter les données en conséquence (Bonneau-Maynard et al., 2005).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>The PORTMEDIA project is a follow-up of the MEDIA project (2003-2007) for which a 1258 dialogue French corpus for the touristic domain was produced.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le projet PORTMEDIA est la suite du projet MEDIA (2003-2007) pour lequel un corpus de dialogues français pour le domaine touristique a été produit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>The PORTMEDIA project tries to address some remaining issues by developing new corpora targeting three distinct but complementary objectives:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le projet PORTMEDIA tente d’apporter des solutions à ces difficultés en développant de nouveaux corpus visant trois objectifs distincts mais complémentaires :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>- Robustness of SLU systems to recognition errors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Robustesse des systèmes de CAP aux erreurs de reconnaissance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>Automatic speech recognition errors have to be included in the understanding process and thus automatic transcripts must be made available with training data to evaluate the robustness of SLU systems to recognition errors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les erreurs dues à la reconnaissance automatique de la parole doivent être prises en compte dans le processus de compréhension et pour cela des transcriptions automatiques doivent être mises à disposition avec les données d’apprentissage pour évaluer la robustesse des systèmes SLU aux erreurs de reconnaissance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>- Portability across domains and languages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Portabilité multilingue et multi-domaines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>SLU systems are very language and domain dependent.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les systèmes de CAP sont très dépendants de la langue et du domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>Adapting a system to a new domain or a new language usually requires to collect a new large speech database of the target domain/language. This process is costly per se and involves an important development effort.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Adapter un système à un nouveau domaine ou une nouvelle langue requiert habituellement la collecte très coûteuse d’une nouvelle grande base de données de dialogues du langage ou domaine visé et un effort important de développement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>PORTMEDIA intends to leverage the evaluation of the genericity and adaptability of new approaches for SLU systems by providing data allowing contrastive experiments of portability from a source to a target language or domain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>PORTMEDIA vise à exploiter l’évaluation de la généricité et de la portabilité de nouvelles approches pour les systèmes de CAP en fournissant des données permettant des expériences comparatives de portabilité d’une source vers une langue ou un domaine cible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>- High level semantic knowledge representation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Représentation sémantique de haut niveau.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>High Level Semantic (HLS) representation is needed to take into account the semantic composition process occurring inside and between consecutive user’s interactions. HLS is viewed as a mean to improve the expressiveness of the annotation conveying the speaker’s intentions and expectations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une représentation sémantique haut-niveau (HLS) est nécessaire pour prendre en compte le processus de composition sémantique intervenant au sein et entre des interactions successives de l’utilisateur. HLS est considérée comme un moyen d’améliorer l’expressivité de l’annotation qui transmet les intentions et attentes de l’orateur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>Starting from the flat segmental conceptual segmentation proposed in the MEDIA project, PORTMEDIA investigates the settlement of a new highly relevant hierarchical annotation scheme.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Partant de la segmentation conceptuelle segmentaire proposée dans le projet MEDIA, PORTMEDIA étudie l'établissement d'un nouveau système d'annotation hiérarchique hautement pertinent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>2. The PORTMEDIA spoken dialogue databases</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Les corpus de dialogues oraux du projet PORTMEDIA</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>State of the art of SLU systems use statistical models that need to be trained on large corpora of dialogues ( e.g. acoustic and language models, conceptual models, dialogue models for some systems).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les systèmes de CAP de l'état-de-l'art reposent sur des modèles statistiques qui doivent être entraînés à l'aide de grands corpus de dialogues (par exemple, des modèles acoustiques et linguistiques, des modèles conceptuels, des modèles de dialogue pour certains systèmes).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>There are very few publicly available corpora of Human-Computer spoken dialogues.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il existe très peu de corpus de dialogues homme-machine disponibles publiquement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>Indeed, unlike other kind of speech, like read speech or broadcast news, the only large spoken dialogue corpus publicly available through LDC[1] are Human-Human dialogues ( e.g. CallHome, CallFriend, Fisher corpus).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fait, contrairement aux autres types de parole, comme la parole lue ou les émissions télédiffusées, les seuls corpus disponibles chez LDC[1] sont des dialogues humain-humain (CallHome, CallFriends, Fisher…).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>The lack of data can be explained by the difficulty of collecting such corpora.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce manque de données peut s’expliquer par la difficulté à collecter de tels corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>Either a SLU system needs to be set-up to collect the data or one can simulate a machine through a Wizard-ofOz protocol.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Soit un système SLU doit être mis en place pour collecter les données, soit on peut simuler une machine par un protocole de Magicien d’Oz.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>Once the data is collected, annotations can be performed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois les données collectées, des annotations peuvent être effectuées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>While orthographic transcription is a well defined task, setting-up a semantic annotation framework is non trivial and requires a lot of expertise.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Alors que la transcription orthographique est une tâche bien définie, mettre au point un protocole d’annotation sémantique est bien plus complexe et requiert beaucoup d’expertise.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Corpus statistics for MEDIA, PM-LANG and PM-DOM</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1: Statistiques du corpus pour MEDIA, PM-LANG et PM-DOM</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>The largest Human-Computer dialogue corpora have been collected by the telecom industry on prototypes or deployed systems like the AT&amp;T how may I help you? (Gorin et al., 1997) but are unfortunately not available publicly.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les plus grands corpus de dialogues Homme-Machine ont été collectés par l'industrie des télécoms sur des prototypes ou des systèmes déployés comme chez AT&amp;T how may I help you ? (Gorin et al., 1997) mais malheureusement ne sont pas disponibles publiquement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>PORTMEDIA has produced two new corpora to study robustness and adaptability of SLU systems among languages and domains.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>PORTMEDIA a produit deux nouveaux corpus spécifiques pour étudier la robustesse et l'adaptabilité des systèmes de SLU entre langues et domaines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>The first corpus is made of 604 dialogues for the Italian language on the touristic domain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le premier corpus est composé de 604 dialogues en italien toujours sur le domaine touristique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>The second one includes 700 dialogues in French for ticket reservation in the scope of the 2010 Festival d’Avignon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le second comprend 700 dialogues en français pour la réservation de billets de spectacles dans le cadre du Festival d’Avignon 2010.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>Detailed statistics on the corpus are given in Table 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les statistiques détaillées sur le corpus sont présentées dans le tableau 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>2.1. PM-LANG : the PORTMEDIA Italian corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.1 PM-LANG : le corpus PORTMEDIA en italien</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>The Italian database, called PM-LANG, has been recorded, transcribed and annotated with the same specifications and configurations as the MEDIA corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La base de données en italien, nommée PM-LANG, a été enregistrée, transcrite et annotée en suivant les mêmes spécifications et configurations que le corpus MÉDIA initial.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>The only difference between the French MEDIA corpus and the Italian PMLANG corpus is the language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La seule différence entre les corpus MEDIA français et les corpus PM-LANG italien est la langue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>In 2004, to collect the MEDIA corpus, 250 scenarios were used and a telephony recording platform was set-up.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En 2004, 250 scénarii avaient été utilisés pour la collecte de MEDIA et une plateforme d’enregistrement téléphonique mise au point.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>The recording platform included an automatic sentence generator to help the agents in their responses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La plateforme d'enregistrement inclut un générateur automatique de phrases afin d'aider les agents dans leurs réponses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>For the Italian database, the same tools, protocols, scenarios and constraints were used to collect the dialogues.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour la base de données italienne, les mêmes outils, protocoles, scénarii et contraintes ont été retenus pour la collecte des dialogues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>The only adaptation was to translate the prompts and the scenarios from French to Italian, but no changes were made to the content of the scenarios.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La seule adaptation a été de traduire les messages du WoZ et les scénarios du français vers l'italien, mais aucun changement n'a été opéré sur le contenu des scénarios.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>The recording protocol is detailed in (Devillers et al., 2004).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le protocole d’enregistrement est complètement décrit dans (Devillers et al. , 2004).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>One hundred and thirty native Italian speakers were recruited and asked to call the vocal tourist telephony information server.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cent trente locuteurs italiens natifs ont été recrutés et invités à appeler le serveur vocal d'informations touristiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>Each speaker believes she or he is talking to a machine whereas in fact he or she is talking to a human being who simulates the behavior of a tourist information server.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque locuteur croit parler à une machine alors qu'en fait il parle à un être humain qui simule le comportement d'un serveur d'informations touristiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>In order to do this simulation, the operator uses a graphical tool which generates responses that are spoken out to the caller.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour effectuer cette simulation, l'opérateur utilise un outil graphique qui génère des réponses qui sont prononcées à l'appelant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>The generated sentences are obtained by completing a sentence template with the information obtained by consulting a real touristic information website and taking into account the caller’s request.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les phrases générées sont obtenues en complétant un modèle de phrase avec les informations obtenues en consultant un site web d'information touristique réel et en tenant compte de la demande de l'appelant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>In order to have enough variety for the dialogues, speakers were asked to follow predefined scenarios for their requests.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d'avoir suffisamment de variété pour les dialogues, les locuteurs ont été invités à suivre des scénarios prédéfinis pour leurs demandes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>Eight levels of complexity were defined for the scenarios with different constraints (price, date, hotel standing, equipment, etc) from a simple reservation to multiple reservations and organisation of conferences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Huit niveaux de complexité ont été définis pour les scénarios avec des contraintes différentes (prix, date, standing hôtelier, équipement, etc.) allant d'une simple réservation à des réservations multiples et l'organisation de conférences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>In addition to the scenarios, the operator can be cooperative or not, give explicit feedback or not and simulate some recognition errors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En plus des scénarios, l'opérateur peut être coopératif ou non, donner ou non un feedback explicite et simuler des erreurs de reconnaissance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>Technically, the recording platform is made of a PC with a 4-lines telephony acquisition card and recording software.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Techniquement, la plateforme d'enregistrement est constituée d'un PC équipé d'une carte d'acquisition téléphonique à 4 lignes et d'un logiciel d'enregistrement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>The dialogues are recorded in Microsoft RIFF stereo wav files with separate channels for the operator and the caller.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les dialogues sont enregistrés dans des fichiers wav stéréo Microsoft RIFF avec des canaux séparés pour l’opérateur et l’appelant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>The annotation procedure and guidelines are described the same as for MEDIA and are described in (BonneauMaynard et al., 2005).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La procédure d'annotation et les recommandations sont décrites de la même manière que pour MEDIA et sont décrites dans (BonneauMaynard et al., 2005).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>The resulting database is a corpus of 604 dialogues orthographically transcribed and semantically annotated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La base de données résultante est un corpus de 604 dialogues transcrits et annotés sémantiquement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>2.2. PM-DOM : the PORTMEDIA new domain corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.2 PM-DOM : le corpus PORTMEDIA en français sur un nouveau domaine</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>To study adaptation techniques among domains, we developed a French Human-Computer dialogue corpus (PMDOM) with the same paradigm and specifications as MEDIA but on a different domain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d’étudier de nouvelles techniques pour l’adaptation entre domaines, nous avons développé un corpus de dialogues homme-machine en français (PM-DOM) avec le même paradigme et les mêmes spécifications que MEDIA mais sur un domaine différent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>While MEDIA was addressing the touristic information domain , the French PORTMEDIA corpus addresses ticket reservation within the 2010 Festival d’Avignon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Alors que MEDIA s’intéressait au domaine de l’information touristique, le corpus français PORTMEDIA vise le domaine de la réservation de billets pour le Festival d’Avignon 2010.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>We tried to remain as close as possible to the specifications, tools and paradigm of MEDIA and to minimize the differences between the two databases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons tenté de rester aussi proche que possible des spécifications, outils et paradigmes de MEDIA et de minimiser les différences entre les deux bases de données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>The only adaptation was to create new scenarios for the callers, to adapt the dialogue management system for the agents and to develop the ontology of the domain for semantic annotation. The same recording platform and protocols were used.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La seule adaptation a été de créer de nouveaux scénarios pour les appelants, d’adapter le système de gestion du dialogue pour les agents et de développer une ontologie du domaine pour l’annotation sémantique. La même plateforme d’enregistrement et les mêmes protocoles ont été utilisés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>The dialogues are stored in 2 channels Microsoft RIFF wav files, with one channel for the caller and one channel for the speaker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les dialogues sont enregistrés dans des fichiers Microsoft RIFF wav à 2 canaux, un canal pour l'appelant et un canal pour l'interlocuteur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>This corpus is made of 700 dialogues with orthographic transcription and semantic annotation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce corpus comprend 700 dialogues avec transcriptions orthographiques et annotations sémantiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>Transcriptions of all databases were done with Transcriber[2] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les transcriptions de toutes les bases de données ont été faites avec Transcriber[2].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>In addition to the verbatim transcriptions, markers for speaker and environment noises are added to the transcriptions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En plus des transcriptions textuelles, des repères pour les bruits de l'environnement et les intervenants sont ajoutés aux transcriptions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>The transcriptions are segmented into speaker turns and at each speaker breath.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les transcriptions sont segmentées en fonction des prises de parole et des respirations de chaque locuteur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>Since the recordings were done in stereo with separate channels for the caller and the operator, it is easy to separate the speech of the caller and the operator.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné que les enregistrements ont été effectués en stéréo avec des canaux distincts pour l'appelant et l'opérateur, il est facile de séparer la parole de l'appelant et de l'opérateur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>The semantic annotation was done with Semantizer[3] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'annotation sémantique a été réalisée avec Semantizer[3].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>The semantic annotation representation for MEDIA, PM-LANG and PM-DOM uses a flat 3-tuple representation (mode, concept, normalised value) with:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La représentation d'annotation sémantique pour MEDIA, PM-LANG et PM-DOM utilise une représentation 3-tuple plate (mode, concept, valeur normalisée) avec :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>- the mode: “+” (affirmative) / “-” (negative) / “?” interrogative / “‘‘ optional”[˜]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- le mode: « + » (affirmatif) / « - » (négatif) / « ? » interrogatif / « ‘’ facultatif »[˜]</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>- the name of the concept (“date”, “name”, “number”, etc)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- le nom du concept (“date”, “nom”, “numéro”, etc.)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>- the normalised value of the concept (“11/03/2012”,”hotel Hilton”, “4”)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- la valeur normalisée du concept (“11/03/2012”, “hôtel Hilton”, “4”)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>For instance, here is a representation of a speaker’s utterance taken from PM-LANG:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Voici, par exemple, une représentation d'une énonciation d'un locuteur extraite de PM-LANG :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>speaker: prenotare vorrei prenotare / un albergo / per 4 notti</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>locuteur : prenotare vorrei prenotare / un albergo / per 4 notti</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>- +:command-tache:reservation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- +:commande-tache:réservation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>- +:objetBD:hotel +:sejour-nbNuit:4</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- +:objetBD:hôtel +:sejour-nbNuit:4</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>The order of the 3-tuples in the semantic representation follows the order of the utterance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'ordre des 3-tuples dans la représentation sémantique suit l'ordre de l'énoncé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>The detailed ontology for PM-LANG is described in (Bonneau-Maynard et al., 2005).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'ontologie détaillée de PM-LANG est décrite dans (Bonneau-Maynard et al., 2005).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>For PM-DOM, we adopted a down-to-top approach for building the ontology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour PM-DOM, nous avons adopté une approche descendante pour construire l'ontologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>We started with basic concepts and asked the annotators to propose new concepts during the annotation process.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons commencé par des concepts de base et avons demandé aux annotateurs de proposer de nouveaux concepts pendant le processus d'annotation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>Regular meetings were organised to discuss and harmonize the ontology and to revise the annotated dialogues.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des réunions régulières ont été organisées pour discuter et harmoniser l'ontologie et réviser les dialogues annotés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>This iterative process allowed us to build an ontology for the new domain efficiently.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce processus itératif nous a permis de construire une ontologie pour le nouveau domaine de manière efficace.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>During the semantic annotation process of PM-LANG and PM-DOM, Inter-annotator Agreements (IAgs) were measured for quality assurance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pendant le processus d'annotation sémantique de PM-LANG et PM-DOM, des accords inter-annotateurs (IAg) ont été mesurés pour l'assurance qualité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>For this purpose we randomly selected several sets of dialogues that were annotated twice by two annotators.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À cette fin, nous avons sélectionné au hasard plusieurs ensembles de dialogues qui ont été annotés deux fois par deux annotateurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>The annotators were not aware that some dialogues were given to different people for measuring the IAgs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les annotateurs ignoraient que certains dialogues étaient donnés à différentes personnes pour mesurer les IAgs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>Three IAgs were conducted for each database.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Trois EAG ont été réalisés pour chaque base de données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>The error rate was computed by aligning the sequence of 3-tuples of each annotator and counting the number of insertion, deletion, substitution in the same way as it is done in speech recognition with word error rate (Hunt, 1990).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le taux d'erreur a été calculé en alignant la séquence des 3-tuples de chaque annotateur et en comptant le nombre d'insertions, de suppressions et de substitutions de la même manière que dans la reconnaissance vocale avec le taux d'erreur de mots (Hunt, 1990).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>The metric was very strict since the order of the annotation is taken into account and any difference in the mode, the concept or the value for a semantic segment is counted as an error.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La métrique était très stricte puisque l'ordre de l'annotation est pris en compte et toute différence dans le mode, le concept ou la valeur pour un segment sémantique est comptabilisée comme une erreur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>If we compare the annotations of the three corpora, reported in Table 2, we can observe that the most used concepts are very generic like answer (yes/no), localization, date or number.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si l'on compare les annotations des trois corpus, rapportées dans le tableau 2, on observe que les concepts les plus utilisés sont très génériques comme réponse (oui/non), localisation, date ou nombre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>3. Pre-transcription and semantic pre-annotation Transcriptions and semantic annotations of PM-LANG and PM-DOM have been done in a semi-automatic way.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Pré-transcription et pré-annotation sémantique Les transcriptions et annotations sémantiques de PM-LANG et PM-DOM ont été réalisées de manière semi-automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>Thanks to the availability of the MEDIA corpus, LIUM developed a speech recognizer to transcribe the PM-DOM corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Grâce à la disponibilité du corpus MEDIA, le LIUM a développé un reconnaisseur de parole performant pour transcrire le corpus PM-DOM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>Once the data was transcribed, it has been manually corrected by human transcribers, thanks to the tool Semantizer.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois les données transcrites, elles ont été corrigées manuellement par des transcripteurs humains, grâce à l'outil Semantizer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>The development of the speech recognizer was done iteratively.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le développement du reconnaisseur de parole a été fait de manière itérative.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>A first set of dialogues was automatically transcribed and then corrected manually.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un premier ensemble de dialogues a été transcrit automatiquement puis corrigé manuellement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>The corrections were sent back to LIUM to retrain models and improve the speech recognition system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les corrections ont été retournées au LIUM afin de ré-entraîner les modèles et d’améliorer le système de reconnaissance de parole.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>Then a new batch of data was automatically transcribed, manually corrected and sent back for system improvement.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Puis un nouveau lot de données était transcrit automatiquement, manuellement corrigé et retourné pour l’amélioration du système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>More details on the LIUM speech recognition system can be found in 3.1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les détails sur le système de reconnaissance de la parole du LIUM peuvent être trouvés dans la section 3.1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>For semantic annotations, LIA/LIG pre-annotated both databases automatically.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les annotations sémantiques, le LIA et le LIG ont pré-annoté les deux corpus automatiquement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>The pre-annotation was then corrected manually by two linguists per language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La pré-annotation a ensuite été validée manuellement par deux linguistes pour chacune des langues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>The same iteration process as for the transcription task took place for semantic annotations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le même processus itératif que pour les transcriptions a été activé pour les annotations sémantiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>Details on the LIA/LIG SLU modules are given in Section 3.2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les détails sur les modules LIA/LIG SLU sont donnés dans la section 3.2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>3.1. Speech recognition system for French</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1 Système de reconnaissance vocale en français</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>The LIUM-PM ASR system is a five-pass system based on the open-source CMU Sphinx system (version 3 and 4), similar to the LIUM’08 French ASR system described in (Deléglise et al., 2009):</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le système LIUM-PM ASR est un système à 5 passes basé sur le système open-source SPHINX (versions 3 et 4), similaire au système LIUM’08 français décrit dans (Deléglise et al., 2009) :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>the first pass uses generic acoustic models with 6500 tied states and 22 Gaussians per state, and a 3-gram language model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>la première passe utilise des modèles acoustiques génériques avec 6500 états liés et 22 Gaussiens par état, et un modèle de langage 3-grammes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>The best hypotheses generated by the first pass are used to compute a CMLLR transformation for each speaker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les meilleures hypothèses générées par la première passe sont utilisées pour estimer une transformation CMLLR pour chaque locuteur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>Using Speaker Adaptive Training (Anastasakos et al., 1997) and Minimum Phone Error (Povey and Woodland, 2002) acoustic models (with 7500 tied states and 22 Gaussians per state) and Constrained maximum likelihood linear regression (Digalakis et al., 1995) transformations, the second pass generates word-graphs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À l'aide de modèles acoustiques utilisant la méthode d'adaptation de l'orateur (Anastasakos et al., 1997) et le minimum d'erreur de téléphone (Povey et Woodland, 2002) (avec 7500 états liés et 22 Gaussiennes par état) et des transformations de régression linéaire à maximum de vraisemblance contraintes (Digalakis et al., 1995), la deuxième passe génère des graphes de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>In the third pass, word-graphs are rescored by using a better inter-word acoustic scoring: same acoustic and linguistic models as the ones used during the previous pass are used, but the decoding algorithm is different.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la troisième passe, les graphes de mots sont re-scorés en utilisant un score acoustique inter-mots plus performant. Les mêmes modèles acoustiques et linguistiques que ceux utilisés lors de la passe précédente sont utilisés, mais l'algorithme de décodage est différent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>The fourth pass consists in recomputing with a 4-gram language model the linguistic scores of the updated wordgraphs of the third pass.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La quatrième étape consiste à recalculer les scores linguistiques des graphes de mots mis à jour de la troisième étape avec un modèle de langue de 4 grammes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>The last pass generates a confusion network from the word-graphs and applies the consensus method to extract the final one-best hypothesis (Mangu et al., 2000).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La dernière étape génère un réseau de confusion à partir des graphes de mots et applique la méthode du consensus pour extraire l'hypothèse finale (Mangu et al., 2000).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>Acoustic models were estimated on the ESTER 1 corpus (Galliano et al., 2005), the ESTER 2 corpus (Galliano et al., 2009) and the EPAC corpus (Estève et al., 2010): this constitutes a data set of almost 280 hours of broadcast news.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les modèles acoustiques ont été estimés sur les corpus ESTER-1 (Galliano et al. , 2005), ESTER 2 (Galliano et al. , 2009) et EPAC (Estève et al. , 2010) : l’ensemble représentant environ 280 heures d’émissions radio-télédiffusées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>Language models and vocabulary were computed from the MEDIA corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les modèles de langage et le vocabulaire ont été extraits du corpus MEDIA.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>In order to process the first data set of audio recordings of the PM-DOM data, the LIUM-PM ASR system used a vocabulary and a language model estimated on the training data of the MEDIA corpus. Vocabulary size was about 5000 words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de traiter le premier lot de données enregistrées de PM-DOM, le système LIUM-PM ASR a utilisé un vocabulaire et un modèle de langue estimés sur les données d'apprentissage du corpus MEDIA. La taille du vocabulaire était d'environ 5000 mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>The word error rate of this ASR system on the MEDIA test corpus was 25.2% on the caller utterances.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le taux d'erreur mots de ce système sur le corpus de test MEDIA était de 25,2 % sur les énoncés des appelants uniquement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>Table 3 is populated with the word error rates reached by the LIUM-PM ASR system for each iteration of the pretranscription process presented in Section 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 3 est rempli avec les taux de mots erreurs atteints par le système LIUM-PM ASR pour chaque itération du processus de pré-transcription présenté dans la section 3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>Four data sets were automatically processed, leading to a total of 700 dialogues.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quatre ensembles de données ont été traités automatiquement, ce qui a conduit à un total de 700 dialogues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>For each iteration, language models and ASR vocabulary were updated according to the manual correction of the previous iteration.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À chaque itération, le vocabulaire et les modèles de langage étaient mis à jour d’après les corrections manuelles de l’itération précédente.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>3.2. SLU systems for French and Italian</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2 Les systèmes de SLU pour le français et l’italien</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>In order to perform the semantic pre-annotation of the French and Italian corpora, an SLU tagger is trained based on statistical models: the conditional random fields (CRF) (Lafferty et al., 2001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin de pouvoir réaliser la pré-annotation sémantique pour les corpus français et italien, nous avons utilisé un étiqueteur SLU basé sur une méthode statistique : les champs conditionnels aléatoires (Conditional Random Fields, CRFs) (Lafferty et al., 2001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>A semantically annotated corpus is needed to train this tagger.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un corpus sémantiquement annoté est nécessaire pour entraîner ce système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>For the French PM-DOM corpus, semantic pre-annotation was obtained combining MEDIA understanding models and a new Named Entities system. In a first step, the CRF models trained on the entire MEDIA corpus were directly applied on the PM-DOM corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour le corpus français PM-DOM, une pré-annotation sémantique a été obtenue en combinant des modèles de compréhension MEDIA et un nouveau système d'entités nommées. Dans une première étape, les modèles CRF entraînés sur l'ensemble du corpus MEDIA ont été appliqués directement sur le corpus PM-DOM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>This is an efficient way to easily find all concepts that can be shared between both corpora due to their similar lexical constituents.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est un moyen efficace de trouver facilement tous les concepts qui peuvent être partagés entre les deux corpus en raison de leurs constituants lexicaux similaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>For instance, concepts dealing with command, location or payment take part in both MEDIA and PM-DOM applications.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, des concepts relatifs à la commande, à l'emplacement ou au paiement participent aux deux types d'applications, MEDIA et PM-DOM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>As an illustration, 2262 command tache concepts are generated by the MEDIA CRF tagger while PM-DOM contains 2459 of them (3758 answer concepts out of 3755 to be found, or even 1342 temps date out of 1238 in the reference annotation).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À titre d'illustration, le taggage MEDIA CRF génère 2262 concepts de commande tache alors que PM-DOM en contient 2459 (3758 concepts de réponse sur 3755 à trouver, voire 1342 temps date sur 1238 dans l'annotation de référence).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>However, the drawback of such a direct use of concepts extracted from the source domain is the generation of concepts out of domain with respect to the target data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, l'inconvénient d'une telle utilisation directe de concepts extraits du domaine source est la génération de concepts hors domaine par rapport aux données cibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>This is case with concepts very specific of the hotel reservation task ( e.g. 29 sejour nbEnfant , 2 chambre equipement , 47 localisation lieuRelatif general etc.) but they represent only 280 semantic pre-annotations (2% of the hypotheses generated).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est le cas pour des concepts très spécifiques de la tâche de réservation d'hôtel (ex : 29 sejour nbEnfant , 2 chambre equipement , 47 localisation lieuRelatif general etc.) mais ils ne représentent que 280 prédéfinitions sémantiques (2% des hypothèses générées).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>Overall, this first-step system generates 41 different concepts while only 36 of then exists in the PM-DOM semantic specifications with a match of only 23 common concepts for a total of 13,555 automatic semantic annotations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans l'ensemble, ce système de première étape génère 41 concepts différents, alors que seuls 36 d'entre eux existent dans les spécifications sémantiques PM-DOM, avec un match de seulement 23 concepts communs pour un total de 13 555 annotations sémantiques automatiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>Table 2: Top 5 concepts of the semantic annotation for MEDIA, PM-LANG and PM-DOM</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2 : Les 5 principaux concepts de l’annotation sémantique pour MEDIA, PM-LANG et PM-DOM</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>Table 3: Word error rate (%) of automatic pre-transcription for each iteration.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 3 : Taux d’erreur de reconnaissance (%) de la pré-transcription automatique pour chaque itération.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>Woz utterances and callers utterances are distinguished in the last two columns.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les propos de Woz et les propos des appelants sont distingués dans les deux dernières colonnes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>Figure 2: Example of concepts projection from source to target language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 2 : Exemple de projection de concepts de la langue source vers la langue cible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: Example of pre-annotation ( PreAnnot ) and its reference annotation ( Annot ) for the given transcription ( Trans ) of a whole user utterance meaning ”so I would like to book for Jean Baptiste Sastre and the title it is la tragdie du roi Richard II so number of seats three all that for July eight”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1 : Exemple de pré-annotation (PreAnnot) et de sa référence d’annotation (Annot) pour la transcription (Trans) d’une expression entière du locuteur signifiant « Donc, je voudrais réserver pour Jean Baptiste Sastre et le titre c’est la tragédie du roi Richard II, donc le nombre de places trois, tout ça pour juillet huit ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>For each semantic component, the +/- mode, the name and the value (in square brackets) of the corresponding concept are given.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque composante sémantique, le mode +/- est indiqué, ainsi que le nom et la valeur (entre crochets) du concept correspondant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>The second step consists in applying a Named Entity tagger to take advantage of the knowledge coming from the festival program (representing here the general prior knowledge on the domain, which would more often be encompassed into a database).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La deuxième étape consiste à appliquer un taggé de noms d'entités pour tirer parti des connaissances issues du programme du festival (qui représente ici les connaissances générales sur le domaine, qui seraient plus souvent incluses dans une base de données).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>A pretty simple system based on regular expressions is implemented here to limit the time spent in manual developments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un système assez simple basé sur des expressions régulières est implémenté ici pour limiter le temps passé en développement manuel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>The list of searched patterns is composed by the prior-known Named Entities: author names, play titles and locations (305 values).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La liste des modèles de recherche est composée des entités nommées connues à l'avance : noms d'auteurs, titres de pièces de théâtre et lieux (305 valeurs).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>This lead to the automatic generation of 1157 semantic annotations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela a permis de générer automatiquement 1157 annotations sémantiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>The final step consists in merging the outputs of the two previous automatic annotations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'étape finale consiste à fusionner les résultats des deux annotations automatiques précédentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>Rules in the second step are applied so as to have neither overlaps nor splits between concepts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les règles de la deuxième étape sont appliquées de manière à ce qu'il n'y ait ni chevauchements ni divisions entre les concepts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>Finally, 14712 concepts are automatically obtained while 17859 are expected (as shown in Table 1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Finalement, 14712 concepts sont obtenus automatiquement alors que 17859 sont attendus (comme indiqué dans le tableau 1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>This pre-annotation system is simplistic but has the advantage to be pretty efficient (low effort/good productivity gain).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce système de pré-annotation est simpliste mais a l'avantage d'être assez efficace (faible effort/bon gain de productivité).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>Obviously new domain-dependent concepts are not exclusively linked to domain Named Entities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De toute évidence, les nouveaux concepts dépendants du domaine ne sont pas exclusivement liés aux entités nommées du domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>A new approach based on Latent Dirichlet Allocation has been proposed in (Camelin et al., 2011) to automatically discover concepts and to provide a semantic annotation without any prior knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une nouvelle approche basée sur l'allocation latente de Dirichlet a été proposée dans (Camelin et al., 2011) pour découvrir automatiquement des concepts et fournir une annotation sémantique sans aucune connaissance préalable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>However the technique tested on the MEDIA corpus with promising results could not be applied to PORTMEDIA due to time constraints.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, la technique testée sur le corpus MEDIA avec des résultats prometteurs ne pouvait pas être appliquée à PORTMEDIA en raison de contraintes de temps.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>Figure 1 depicts an example of a pre-annotation with it reference annotation for a given transcription.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 1 illustre un exemple d'annotation préliminaire avec son annotation de référence pour une transcription donnée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>It is interesting to note that concept name, value and mode are proposed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est intéressant de noter que les noms de concepts, les valeurs et les modes sont proposés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>This can be helpful for manual annotation and an obvious source of time gain annotation (see Section 3.3.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela peut être utile pour l’annotation manuelle et représente une source évidente d’économie de temps (voir Section 3.3).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>Also it can be noticed that the automatic pre-annotation system proposes a segmentation in semantic components quite coherent.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On remarque également que le système de pré-annotation automatique propose une segmentation en composants sémantiques assez cohérente.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>But this definition of the concept boundaries is a crucial issue for the manual annotation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais cette définition des limites du concept est un problème crucial pour l'annotation manuelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>If too approximative, it can induce a waste of time compare to define them from scratch.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>S'ils sont trop approximatifs, ils peuvent induire un gaspillage de temps par rapport à une définition à partir de zéro.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>Table 4: Evaluation (CER %) of Italian models on two different data tests</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 4 : Évaluation (CER %) des modèles italiens sur deux tests de données différents</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>For PM-LANG since we did not have an initial comparable corpus in the target language, we proposed to automatically port the French MEDIA corpus to Italian.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme il n’existe pas de corpus équivalent pour la langue cible du corpus PM-LANG, nous avons proposé de porter automatiquement le corpus MEDIA français en italien.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>Multiple approaches for SLU portability across languages were investigated and compared (Jabaian et al., 2010; Lefevre et al., 2010) and we used the best one to create a new annotated corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs approches pour la portabilité d'un système de CAP entre langues ont été étudiées et comparées (Jabaian et al., 2010 ; Lefevre et al., 2010) et la meilleure a été appliquée pour créer un nouveau corpus annoté.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>The retained approach consists in automatically translating the French MEDIA corpus into Italian and then to port the annotation of the French corpus to the translated one.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’approche retenue consiste à traduire automatiquement le corpus MEDIA français en italien puis à porter l’annotation sémantique du corpus français sur le corpus italien.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>The automatic translation was carried out by a phrase-based statistical machine translation system trained on a parallel corpus (obtained by manually translating a subset of the French data to Italian[4] ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La traduction a été réalisée par un système de traduction automatique statistique à base de segments sous-phrastiques (Phrase-based Statistical Machine Translation, PB-SMT) entraîné sur un corpus parallèle (obtenu en traduisant manuellement un sous-ensemble des données françaises en italien[4] ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>The annotation transfer was based on the automatic alignment between French and Italian sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le transfert de l’annotation est basé sur un alignement automatique entre les phrases françaises et italiennes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>In other words, this method consists in a concept projection using word to word alignments between French and Italian sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En d’autres termes, la méthode consiste en la projection des concepts à l’aide de l’alignement mot à mot entre les phrases françaises et italiennes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>Since the French training corpus was already annotated at the chunk level, we proposed to use the alignment information between this corpus and its translation to match directly the semantic concepts to the chunks in the Italian corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné que le corpus de formation français était déjà annoté au niveau des segments, nous avons proposé d'utiliser directement l'information d'alignement entre ce corpus et sa traduction pour faire correspondre les concepts sémantiques aux segments du corpus italien.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>To do so, we elaborated an algorithm that uses alignment information and boundaries between chunks in French to infer concepts on the Italian side. For each chunk of the French corpus, the algorithm maps the corresponding Italian words based on the alignment information, and then attributes them the corresponding concept.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour ce faire, nous avons développé un algorithme qui utilise les informations d'alignement et de segmentation entre les morceaux en français pour inférer les concepts du côté italien. Pour chaque morceau du corpus français, l'algorithme associe les mots correspondants en italien en se référant à l'alignement et leur attribue le concept correspondant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>Figure 2 depicts an example of concepts projection using word to word alignment information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 2 illustre un exemple de projection de concepts à l'aide d'informations d'alignement mot par mot.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>This strategy allowed to annotate the entire Italian translated corpus (including both the initial manually-translated part and the subsequent automatically translated subset).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette stratégie a permis d’annoter l’ensemble du corpus traduit en italien (y compris la partie traduite manuellement et le sous-ensemble traduit automatiquement par la suite).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>The ported Italian corpus is then used for training a semantic tagger which can be used to perform the first iteration of Italian pre-annotation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus italien porté est ensuite utilisé pour entraîner un étiqueteur sémantique qui peut être utilisé pour effectuer la première itération de pré-annotation en italien.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>For the second and third iterations the manual correction of the pre-annotation is added to the training data. Eventually a brand new model can be trained on the final training data set after the iterative blocks are randomly split into training and test sets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les itérations suivantes, la correction manuelle de la pré-annotation est ajoutée au corpus d'entraînement. Enfin, un tout nouveau modèle peut être entraîné sur le jeu de données d'entraînement final après que les blocs itératifs ont été divisés de manière aléatoire en jeux d'entraînement et de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>3.3. Productivity gains</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3 Gains de productivité</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>During the transcription and semantic annotation processes we regularly compared the productivity gains due to the semi-automatic transcription/annotation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Durant la transcription et l’annotation sémantique, nous avons régulièrement comparé les gains de productivité dus aux pré-transcriptions et annotations semi-automatiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>In this purpose, the following protocol was implemented.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette optique, le protocole suivant a été implémenté.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>Regularly a set of 10 dialogues was transcribed (resp. annotated) twice by two different annotators.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un ensemble de 10 dialogues était régulièrement transcrit (resp. annoté) deux fois par deux annotateurs différents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>The first annotator did the transcription (resp. annotation) from the pre-transcription (resp. pre-annotation) while the second annotator transcribed (resp. annotated) the same 10 dialogues from scratch.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le premier annotateur a réalisé la transcription (resp. annotation) à partir de la pré-transcription (resp. pré-annotation) tandis que le second annotateur a réalisé la transcription (resp. annotation) des 10 dialogues à partir de zéro.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>The productivity gains are plotted in Figure 3 for the 3 main iterations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les gains en productivité mesurés sont représentés dans la figure 3 pour les 3 principales itérations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>The quality of the first iteration for PM-DOM was too bad to be usable by the annotators, so it is considered an initialisation seed instead (and the 0% gain is not represented in the figure).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La qualité de la première itération pour PM-DOM était trop mauvaise pour être utilisable par les annotateurs, elle est donc considérée comme une graine d'initialisation (et le gain de 0 % n'est pas représenté dans la figure).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>For the transcriptions, the time to transcribe a whole dialogue was halved using the automatic pre-transcriptions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les transcriptions, le temps mis à transcrire un dialogue est divisé par deux avec l’utilisation des pré-transcriptions automatiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>For semantic annotations, the productivity gains are superior to 50% for Italian and 40% for French.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour l’annotation sémantique, les gains de productivité sont de plus de 50% pour l’italien et 40% pour le français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>During the annotation of the Italian data, we evaluated the model used for pre-annotation at each iteration.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pendant l'annotation des données italiennes, nous avons évalué le modèle utilisé pour la pré-annotation à chaque itération.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>The influence of the additional manual corrected data can be seen by the decrease of the CER from one iteration to another on the same test set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'influence des données corrigées manuellement supplémentaires peut être observée par la diminution du CER d'une itération à l'autre sur le même jeu de données d'essai.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>Otherwise the CER obtained by the same model on the different blocks (represented in Table 5), shows that block01 is more complex than the others (21.9% vs. 20.9% for block00 and 21.1% for block02) which can explain that productivity gain decreases in the second iteration despite the improvement of the pre-annotation model (from 20.8% to 18.7%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Autrement, le CER obtenu par le même modèle sur les différents blocs (représenté dans le tableau 5), montre que block01 est plus complexe que les autres (21,9 % contre 20,9 % pour block00 et 21,1 % pour block02) ce qui peut expliquer que la productivité gagnée diminue dans la deuxième itération malgré l'amélioration du modèle de pré-annotation (de 20,8 % à 18,7 %).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>3.4. SLU evaluation on the new test sets</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.4. Évaluation de SLU sur les nouveaux jeux de données d’essai</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>To be comparable to MEDIA, a subset of 200 dialogues was selected from each new corpus as a test set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour être comparable à MEDIA, un sous-ensemble de 200 dialogues a été sélectionné à partir de chaque nouveau corpus comme ensemble de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>We evaluate the Italian model used for the pre-annotation and the one trained on the new data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous évaluons le modèle italien utilisé pour la pré-annotation et celui formé sur les nouvelles données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>Two test sets are used for this evaluation; the translated MEDIA test set and the PM-LANG test set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux jeux de tests sont utilisés pour cette évaluation, le jeu de tests MEDIA traduit et le jeu de tests PM-LANG.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>For this experiment the evaluation criteria was the concept error rate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour cette expérience, le critère d'évaluation était le taux d'erreur de concept.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>Results of this evaluation are given in Table 4.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats de cette évaluation sont présentés dans le tableau 4.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>Results show the robustness of the Italian MEDIA model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats montrent la robustesse du modèle italien MEDIA.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>Performance of this model on the two test sets are very similar (20.5% vs. 20.8%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les performances de ce modèle sur les deux jeux de données d'évaluation sont très similaires (20,5 % contre 20,8 %).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>This model performs well for a new test set built from scratch as well as for a test set translated from another corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce modèle fonctionne bien pour un nouvel ensemble de tests construit à partir de zéro, ainsi que pour un ensemble de tests traduits à partir d'un autre corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>The PM-LANG model gives a CER of 18.9% on its corresponding test set, while its performance is lower for the MEDIA test set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le modèle PM-LANG donne un CER de 18,9 % sur son ensemble de données de test correspondant, tandis que ses performances sont plus faibles pour l'ensemble de données de test MEDIA.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>This spread in performance may be explained by a difference in concept coverage between the MEDIA and the PM-LANG corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette dispersion des performances peut s’expliquer par une différence de couverture des concepts entre les corpus MEDIA et PM-LANG.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <tuv xml:lang="EN">
+                <seg>The new domain model trained on the PM-DOM corpus gives a CER of 19.1%, which is very comparable to the performance of the PM-LANG model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le nouveau modèle de domaine entraîné sur le corpus PM-DOM donne un CER de 19,1 %, ce qui est très comparable à la performance du modèle PM-LANG.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <tuv xml:lang="EN">
+                <seg>4. High-level semantic annotation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Annotation sémantique de haut niveau</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <tuv xml:lang="EN">
+                <seg>The annotation of the MEDIA corpus with a High Level Semantic (HLS) is investigated: a hierarchical sentence-wise semantic representation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’annotation du corpus MEDIA avec une sémantique haut-niveau (High Level Semantic, HLS), une représentation sémantique hiérarchique, a été étudiée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <tuv xml:lang="EN">
+                <seg>For this purpose, we referred to the MultiModal Interface Language (MMIL) for generating ontology-oriented structures that bears relevant linguistic information from syntax up to discourse (Denis et al., 2010).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À cet effet, nous nous sommes référés au langage pour les interfaces multimodales (MultiModal Interface Language, MMIL) pour générer des structures guidées par l’ontologie du domaine qui supportent les informations linguistiques utiles de la syntaxe jusqu’au discours (Denis et al., 2010).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <tuv xml:lang="EN">
+                <seg>Therefore, fine-grained features describing dialogue acts, predicates and arguments were defined for the spoken utterances in the corpus. Table 5: CER(%) for each iteration of the semantic annotation process on the data sets (block00 to 02) and on the test set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, des caractéristiques fines décrivant les actes de dialogue, prédicats et arguments ont été définies pour les énoncés du corpus. Tableau 5 : CER(%) pour chaque itération du processus d’annotation sémantique sur les ensembles de données (block00 à 02) et sur l’ensemble de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <tuv xml:lang="EN">
+                <seg>PM-LANG test set has been compiled afterwards with data from every block.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'ensemble de test PM-LANG a été compilé par la suite avec des données de chaque bloc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <tuv xml:lang="EN">
+                <seg>Figure 3: Productivity gains for transcription and semantic annotation in percentage over 3 iterations for sc PM-dom and PM-LANG.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 3 : Gains de productivité pour la transcription et l’annotation sémantique en pourcentage sur 3 itérations pour sc PM-dom et PM-LANG.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="195">
+            <tuv xml:lang="EN">
+                <seg>block00 of PM-DOM was manually transcribed from scratch and thus is not considered in the plot.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le bloc00 de PM-DOM a été transcrit manuellement à partir de zéro et n'est donc pas pris en compte dans le graphique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="196">
+            <tuv xml:lang="EN">
+                <seg>Figure 4 depicts a French utterance represented as a request to reserve :</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure 4 représente une énonciation française représentée comme une demande de réservation :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="197">
+            <tuv xml:lang="EN">
+                <seg>- The communicative act is Request .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- L'acte communicatif est la demande .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="198">
+            <tuv xml:lang="EN">
+                <seg>- The predicate (or event ) is Reserve</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Le prédicat (ou événement) est Réserve</seg>
+            </tuv>
+        </tu>
+        <tu tuid="199">
+            <tuv xml:lang="EN">
+                <seg>- The arguments or participants : the speaker, the beneficiary, the room and the place.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Les arguments ou les participants : le locuteur, le destinataire, la salle et le lieu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="200">
+            <tuv xml:lang="EN">
+                <seg>The beneficiary and the patient are two different roles, the beneficiary is the person, not necessarily the same speaker, who will use the object reserved ( e.g. rooms).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le bénéficiaire et le patient sont deux rôles différents, le bénéficiaire est la personne, pas forcément le même locuteur, qui utilisera l'objet réservé (par exemple des salles).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="201">
+            <tuv xml:lang="EN">
+                <seg>- The features : Syntactic, semantic ( e.g. domain specific concepts), pragmatic ( e.g. referring expressions) and discourse ( e.g. communicative act).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Les caractéristiques : syntaxique, sémantique (par exemple, concepts spécifiques à un domaine), pragmatique (par exemple, expressions de référence) et discursive (par exemple, acte communicatif).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="202">
+            <tuv xml:lang="EN">
+                <seg>- The segmentation : Each element ( i.e communicative act, events, participants and features) is mapped to segments of utterances.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- La segmentation : Chaque élément (c'est-à-dire acte communicatif, événements, participants et caractéristiques) est mappé sur des segments d'énoncés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="203">
+            <tuv xml:lang="EN">
+                <seg>The table shows how the graph (the HLS representation) is mapped to the utterance and the features of the room are mapped to small segments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau montre comment le graphique (la représentation HLS) est associé à l’énoncé et comment les caractéristiques de la pièce sont associées à de petits segments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="204">
+            <tuv xml:lang="EN">
+                <seg>Figure 4: HLS representation for the French utterance “je voudrais faire une réservation d’ une chambre pour une personne à Niort” (So I would like to make a reservation for a room for one person in Niort).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 4 : Représentation HLS de l’énoncé en français « je voudrais faire une réservation d’ une chambre pour une personne à Niort ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="205">
+            <tuv xml:lang="EN">
+                <seg>We were specially interested in annotating complex turns, containing overlapped predicates and arguments, as well as elliptical phrases containing either implicit predicates or implicit arguments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons été particulièrement intéressés par l'annotation des tournures complexes, contenant des prédicats et des arguments se chevauchant et des phrases elliptiques contenant des prédicats et/ou des arguments implicites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="206">
+            <tuv xml:lang="EN">
+                <seg>First, the annotation guidelines was elaborated5 and annotated manually a subset of utterances which were supposed to be representative of the most complex aspects of the HLS annotation, in terms of their semantic constituents (Rojas-Barahona et al., 2011).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons élaboré le guide d’annotation et annoté manuellement un sous-ensemble d’énoncés supposés être représentatifs des aspects les plus complexes de l’annotation HLS, en terme de constituants (Rojas-Barahona et al., 2011).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="207">
+            <tuv xml:lang="EN">
+                <seg>In a second step, a baseline pre-annotation system was elaborated from a rule-based annotation system and we provided metrics to evaluate the automatic annotation (RojasBarahona and Quignard, 2011).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans une deuxième étape, un système de pré-annotation de base a été élaboré à partir d'un système d'annotation basé sur des règles et nous avons fourni des mesures pour évaluer l'annotation automatique (Rojas-Barahona et Quignard, 2011).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="208">
+            <tuv xml:lang="EN">
+                <seg>This baseline is available to be used for comparing the performance of different learning models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette base de référence est disponible pour comparer les performances de différents modèles d’apprentissage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="209">
+            <tuv xml:lang="EN">
+                <seg>Finally, since the overall objective is the generation of a gold standard, linguist experts are hired to correct the baseline pre-annotation hypothesis.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, puisque l'objectif global est la génération d'un gold standard, des experts linguistes sont engagés pour corriger l'hypothèse de pré-annotation de base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="210">
+            <tuv xml:lang="EN">
+                <seg>This gold standard will serve for evaluating machine learning methods for this complex semantics.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette norme de référence servira à évaluer les méthodes d'apprentissage automatique pour cette sémantique complexe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="211">
+            <tuv xml:lang="EN">
+                <seg>5. Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="212">
+            <tuv xml:lang="EN">
+                <seg>The MEDIA corpus is already available in ELRA catalogue6.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus MEDIA est déjà disponible dans le catalogue ELRA6.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="213">
+            <tuv xml:lang="EN">
+                <seg>Two new PORTMEDIA corpora have been collected, transcribed and annotated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux nouveaux corpus PORTMEDIA ont été collectés, transcrits et annotés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="214">
+            <tuv xml:lang="EN">
+                <seg>They will be added to ELRA catalogue before mid-20127, after data validation. The finalization of the feasibility assessment of the proposed high level semantic annotation is still under progress and should be made available with the MEDIA corpus afterwards. So in a very close future the overall MEDIA and PORTMEDIA corpora will provide a comprehensive data and tool suite for the evaluation of spoken language understanding systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elles seront ajoutées au catalogue ELRA avant mi-20127, après validation des données. La finalisation de l'évaluation de faisabilité de l'annotation sémantique de haut niveau proposée est toujours en cours et devrait être disponible avec le corpus MEDIA par la suite. Ainsi, dans un avenir très proche, les corpus MEDIA et PORTMEDIA fourniront une suite complète de données et d'outils pour l'évaluation des systèmes de compréhension de la langue parlée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="215">
+            <tuv xml:lang="EN">
+                <seg>6. Acknowledgements</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6. Remerciements</seg>
+            </tuv>
+        </tu>
+        <tu tuid="216">
+            <tuv xml:lang="EN">
+                <seg>This work is supported by the ANR funded PORTMEDIA project (ANR 08 CORD 026 01).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce travail a été partiellement financé par l'Agence Nationale pour la Recherche : projet PORTMEDIA (ANR 08 CORD 026 01).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="217">
+            <tuv xml:lang="EN">
+                <seg>For more information about the PORTMEDIA project, please visit the project website, www.port-media.org&gt; 4</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour plus d'informations sur le projet PORTMEDIA, veuillez visiter le site web du projet, www.port-media.org.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="218">
+            <tuv xml:lang="EN">
+                <seg>This small manual translation effort is indeed the weak link of the method and the reason why we consider it to be semisupervised and not unsupervised.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet effort de traduction manuelle est en effet le maillon faible de la méthode et la raison pour laquelle nous la considérons comme semi-supervisée et non supervisée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="219">
+            <tuv xml:lang="EN">
+                <seg>1 Linguistic Data Consortium</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Linguistic Data Consortium</seg>
+            </tuv>
+        </tu>
+        <tu tuid="220">
+            <tuv xml:lang="EN">
+                <seg>2 http://trans.sourceforge.net</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 http://trans.sourceforge.net</seg>
+            </tuv>
+        </tu>
+        <tu tuid="221">
+            <tuv xml:lang="EN">
+                <seg>3 http://perso.limsi.fr/Individu/hbm/</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 http://perso.limsi.fr/Individu/hbm/</seg>
+            </tuv>
+        </tu>
+        <tu tuid="222">
+            <tuv xml:lang="EN">
+                <seg>5 Please refer to http://www.portmedia.org/doku.php?id=general mmil specifications and http://www.port-media.org/doku.php?id=mmil for annotating media for a full description of the HLS annotation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Veuillez vous reporter à http://www.portmedia.org/doku.php?id=general_mmil_specifications et http://www.port-media.org/doku.php?id=mmil pour annoter les médias pour une description complète de l'annotation HLS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="223">
+            <tuv xml:lang="EN">
+                <seg>6 http://catalog.elra.info/product info.php?products id=998</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 http://catalog.elra.info/product info.php?products id=998</seg>
+            </tuv>
+        </tu>
+        <tu tuid="224">
+            <tuv xml:lang="EN">
+                <seg>7 http://catalog.elra.info/</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7 http://catalog.elra.info/</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

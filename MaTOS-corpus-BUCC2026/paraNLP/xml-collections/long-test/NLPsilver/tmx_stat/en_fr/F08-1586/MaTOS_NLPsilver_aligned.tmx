@@ -1,0 +1,1111 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-F08-1586. segId begin by 1, tuid = segId</note>
+        <url_en>https://www.isca-archive.org/interspeech_2008/woehrling08_interspeech.pdf</url_en>
+        <url_fr>https://perso.limsi.fr/madda/publications/PDF/2008_jepCW_1586.pdf</url_fr>
+        <title_en>A corpus-based prosodic study of Alsatian, Belgian and Swiss French</title_en>
+        <title_fr>Aspects prosodiques du français parlé en Alsace, Belgique et Suisse</title_fr>
+        <docid>F08-1586</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>A corpus-based prosodic study of Alsatian, Belgian and Swiss French</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étude prosodique corpus-basée du français parlé en Alsace, Belgique et Suisse</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>RESUME</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>The object of this paper is a prosodic study of the French language as it is spoken in Alsace, Belgium and Switzerland, also compared with standard French through large corpora (over 100 hours) of scripted and spontaneous speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'objet de cet article est une étude prosodique de la langue française telle qu'elle est parlée en Alsace, en Belgique et en Suisse, également comparée au français standard à travers de grands corpus (plus de 100 heures) de discours scriptés et spontanés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>The data were segmented into phones by automatic alignment; pitch values were extracted and averaged over segments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les données ont été segmentées en fonction des téléphones par un alignement automatique ; les valeurs de hauteur ont été extraites et calculées en moyenne sur les segments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>Two features are addressed: initial stress (through pitch and duration correlates) and penultimate lengthening.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous nous intéresserons ensuite successivement à l'accentuation initiale (à travers les corrélats de hauteur et de durée) et au comportement de la pénultième syllabe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>Different patterns enable us to distinguish the three varieties under investigation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les différents motifs permettent de distinguer les trois variétés en question.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>Swiss speakers exhibit pitch rise and polysyllabic word onset lengthening in clitic–nonclitic sequences, while Alsatians tend to lengthen the initial vowel of nonclitic words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les locuteurs suisses présentent une élévation du ton et une longueur accrue de l'initiale des mots polysyllabiques dans les séquences clitiques et non clitiques, tandis que les Alsaciens ont tendance à allonger la voyelle initiale des mots non clitiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Belgians show prepausal penultimate lengthening whereas the Swiss tend to lengthen the last two prepausal vowels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les Belges montrent un allongement pré-pausal avant-dernier alors que les Suisses ont tendance à allonger les deux dernières voyelles pré-pausales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>Index Terms : regional accents, French prosody</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mots-clés : accents régionaux, prosodie française</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. INTRODUCTION</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>Whether in terms of linguistic knowledge or for speech processing applications, we are still ill-informed about phonetic differences between French varieties.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Que ce soit en termes de connaissances linguistiques ou pour des applications de traitement du langage, nous sommes encore mal informés sur les différences phonétiques entre les variétés du français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>This article is a corpus-based study of prosodic variation in the French language as spoken in Alsace, Belgium and Romand Switzerland.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article est une étude corpus-basée de la variation prosodique dans le français parlé en Alsace, en Belgique et en Suisse romande.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>Linguistic publications concerning these regions essentially focus on language contact, diglossia and resulting code switchings [2][7][11].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les publications linguistiques sur ces régions portent essentiellement sur le contact de langues, la diglossie et les alternances de codes qui en résultent [2][7][11].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>Some work on phonetic/ phonological pecularities exists [13][10], but there are fewer prosodic studies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des travaux existent aussi sur les particularités phonétiques/ phonologiques [13][10], mais les études portant sur la prosodie sont plus rares.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>Other languages [12] or French varieties [4] have been approached from the angle of prosody.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’autres langues [12] ou d’autres variétés de français [4] ont été abordées sous cet angle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>Carton et al. [4] in particular highlighted the role of penultimate syllable in the perception of an eastern (Lorraine) or northern French accent.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Carton et al . en particulier [4] ont mis en évidence le rôle important joué par la pénultième syllabe dans la perception d’un accent de l’est (Lorraine) ou du nord de la France.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>The lengthening of the vowel nuclei of penultimate and final syllables has also been studied for the French variety spoken in Belgium (especially Liège) [7].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’allongement des voyelles noyaux des syllabes pénultième et finale a également été bien étudié pour le français de Belgique (en particulier de Liège) [7].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>Concerning the prosody of Alsatian French, it has been noted that the Germanic stress, usually word-initial, sharply contrasts with the word-final French stress [13].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Concernant la prosodie du français d’Alsace, on peut mentionner l’observation suivante : « l’accent tonique germanique, situé en général sur la première syllabe, contraste fortement avec l’accent tonique français, placé sur la syllabe finale » [13].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>For the French variety spoken in Romand Switzerland, a resistance to the standard French intonational scheme or a tendency to initial stress in disyllabic words may be mentioned [11].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour le français de Suisse romande, on peut citer « une certaine résistance au schéma accentuel et donc au schéma intonatif du français standard », « une tendance à l’accentuation de la première syllabe d’un mot bisyllabique, qui entraîne généralement une montée de la courbe mélodique » [11].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>According to other scholars, this Swiss variety presents “more pitch movement on penultimate syllables in phonological phrases than Parisian French” [6] or a pitch rise on the syllable preceding word-final stress [10] (a feature shared with other varieties according to the latter author).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Selon d'autres chercheurs, cette variété suisse présente « un mouvement mélodique plus marqué en pénultième que le français standard parisien » [6] ou une « élévation de la voix sur la syllabe précédant immédiatement la tonique » [10] (trait d'après le dernier auteur partagé avec d'autres variétés).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>These descriptions lack precision and empirical grounding since they are only based on scarce data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces descriptions manquent de précision et de fondement empirique puisqu'elles ne sont basées que sur des données rares.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>Singy’s [11] account, for example, suggests a tendency towards initial stress but does not allow a distinction with a specific pitch pattern on the penultimate syllable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le compte-rendu de Singy [11], par exemple, suggère une tendance vers le stress initial, mais ne permet pas de distinguer un schéma de hauteur spécifique sur la pénultième syllabe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>The considerable amounts of data at our disposal and advances in the domain of automatic speech processing now allow us to confront different linguistic hypothesis with large amounts of speech data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les quantités considérables de données à notre disposition et les progrès dans le domaine du traitement automatique du langage nous permettent désormais de confronter différentes hypothèses linguistiques à de larges quantités de données de parole.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>In the following, we will examine the realisation of word-initial and penultimate syllables in a large corpus which enables a comparison of the French varieties spoken in Alsace, Belgium and Romand Switzerland with “standard” French.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous examinerons ci-après la réalisation des syllabes initiale et pénultième dans un grand corpus qui permet de comparer les variétés françaises parlées en Alsace, en Belgique et en Suisse romande au français « standard ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>The next section describes the corpus analysed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section suivante décrit le corpus analysé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>Then we will successively address word-initial stress and the prosodic behaviour of prepausal syllables in line with the clausula concept [4]: a clausula refers to the last three syllables preceding a pause.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous aborderons ensuite successivement le stress initial et le comportement prosodique des syllabes pré-pausales en nous appuyant sur le concept de clausula [4] : une clausula désigne les trois dernières syllabes précédant une pause.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>Finally, results are discussed and possible perspectives are considered.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, les résultats sont discutés et des perspectives possibles sont envisagées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>2. Corpus and method</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Corpus et méthode</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>2.1. Corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.1. Corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>The main corpus stems from the “Phonology of Contemporary French” (PFC) project [5].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre corpus est en majeure partie issu du projet « Phonologie du Français Contemporain » (PFC) [5].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>This project has undertaken to collect recordings covering a wide Frenchspeaking territory, of informants who are firmly rooted geographically (about ten speakers per investigation point).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce projet a pour but de recueillir des enregistrements couvrant un vaste territoire francophone, d’informateurs bien ancrés géographiquement (environ 10 par point d’enquête).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>For the present study, data were analysed from 11 investigation points: 6 in the North of the Loire, considered as standard French (Brécey, Brunoy, Dijon, Lyon-Villeurbanne, Roanne, Treize-Vents), 1 in Alsace (Boersch), 3 in Belgium (Tournai, Gembloux, Liège) and 1 in Romand Switzerland (Canton de Vaud).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour la présente étude, nous avons analysé 11 points d’enquête : 6 au nord de la Loire, considérés comme français standard (Brécey, Brunoy, Dijon, LyonVilleurbanne, Roanne, Treize-vents), 1 en Alsace (Boersch), 3 en Belgique (Tournai, Gembloux, Liège) et 1 en Suisse romande (Nyon).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>The data come from over 150 speakers, as many males as females of balanced age categories (45 yearsold on average), from varied educational and professional backgrounds.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les données proviennent de plus de 150 locuteurs, autant d'hommes que de femmes appartenant à des catégories d'âge équilibrées (45 ans en moyenne), issus de milieux sociaux et professionnels variés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>For each speaker, we have at our disposal scripted speech (the reading of a 20-sentence text), as well as 10 minutes of spontaneous speech (directed interviews and free conversations).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque locuteur, nous avons à notre disposition de la lecture (un texte d’une vingtaine de phrases) ainsi qu’une dizaine de minutes de parole spontanée (entretien guidé et conversation libre).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>The total amount of data represents almost 100 hours of speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces données représentent au total près de 100 heures de parole.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>For this study, we have not analysed the spontaneous speech of the PFC project Alsatian speakers which were only partially available at the beginning of this work.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous n’avons pas pour cette étude analysé la parole spontanée des locuteurs alsaciens du projet PFC, qui n’était disponible que partiellement au début de ce travail.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>We completed our corpus by adding 40 telephone conversations between Alsatian speakers (1/3 male).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons complété notre corpus par 40 conversations téléphoniques entre locuteurs alsaciens (1/3 d’hommes).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>The average duration of a conversation is 13 minutes, totalling about 4 hours of speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La durée moyenne d’une conversation est de 13 minutes, ce qui donne au total environ 4 heures de parole conversationnelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>From the same corpus, telephone conversations between standard French speakers (over 30 hours of data) were used for comparison.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Issues du même corpus, les conversations téléphoniques mettant en jeu des locuteurs de français standard (plus de 30 heures de données) ont été utilisées pour comparaison.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>Results reported in the following tables all refer to the PFC corpus, except for Alsatians’ spontaneous speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats consignés dans les tables qui suivent font tous référence au corpus PFC, sauf pour la parole spontanée des Alsaciens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>2.2. Automatic alignment and feature extraction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2.2. Alignement et extraction des paramètres</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>The orthographically transcribed corpus was phonemically labelled by automatic alignment [1], using different contextindependent acoustic models with Gaussian mixtures for faceto-face and telephone speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus, transcrit orthographiquement, a été segmenté en phonèmes grâce à l’alignement automatique [1], en utilisant des modèles acoustiques indépendants du contexte avec des mélanges gaussiens pour la parole en face à face et la parole téléphonique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>The segmentation allows to compute the average durations and the standard deviations for both vowels and consonants (see Table 1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La segmentation nous permet de calculer les durées moyennes et les écarts-types pour les voyelles et les consonnes (voir Tableau 1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>Whether considering all phone segments (pauses excluded) or only vowels or consonants, the Swiss and Alsatian speakers show a slightly slower speech rate than the other speakers, particularly in spontaneous speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Que l’on considère tous les segments de parole (pauses exclues) ou bien uniquement les voyelles ou les consonnes, les Suisses et les Alsaciens montrent un débit légèrement plus lent que les autres locuteurs, plus particulièrement en parole spontanée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>This feature is sometimes cited as characteristic of the Swiss accent (or at least its representations); here it is also observed for Alsatians.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce trait est parfois cité comme caractéristique de l’accent suisse (ou du moins de ses représentations) [11] ; nous l’observons ici également pour les Alsaciens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>Duration distributions (not shown here) reveal that Swiss and Alsatian speakers exhibit fewer short segments and more long segments than the other speakers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les distributions de durées (non présentées ici) révèlent que les locuteurs suisses et alsaciens présentent moins de segments courts et plus de segments longs que les autres locuteurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Table 1. Average segment duration [standard deviations] (in ms) for the text reading and spontaneous speech (for vowel, consonant, both).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 : Durée moyenne des segments (en ms) pour la lecture de texte et le discours spontané (pour les voyelles, les consonnes, les deux).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>The fundamental frequency ( F 0) was extracted by using the standard options of the PRAAT software (www.praat.org): for instance, values under a 75 Hz threshold are considered as undefined.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons extrait du signal la fréquence fondamentale ( F 0) à l’aide du logiciel PRAAT (http://www.praat.org), dont nous avons utilisé les options standard : par exemple, les valeurs au dessous d’un seuil de 75 Hz sont considérées comme non-définies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>The mean value of measurements taken every 10 ms was then computed in order to obtain one F 0 value per phone segment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons ensuite calculé la moyenne des mesures prélevées toutes les 10 ms afin d’obtenir une valeur de F 0 pour chaque phonème.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>3. Word-initial stress</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Stress initial du mot</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>To characterise initial stress, clitic–nonclitic sequences, which are good candidates to receive a stress on the nonclitic wordinitial syllable [1] were examined.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour caractériser l'accentuation initiale, nous avons examiné les séquences clitique non-clitique, qui sont de bons candidats pour recevoir un accent sur la syllabe initiale non-clitique [1].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>For clitics, we kept a set of about 30 monosyllabic words among the most frequent French words: le, la, les (“the) , un, une (“a”) , de (“of”) , du, des (“some”) , en (“in”) , pour (“to”) … These words allow for a good coverage of the selected pattern [3].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons retenu comme clitiques une trentaine de monosyllabes parmi les mots les plus fréquents du français ( le, la, les, un, une, de, du, des, en, pour …), lesquels assurent une bonne couverture du contexte étudié [3].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>For nonclitics, the study is restricted to polysyllabic words (without counting the final schwa which can be pronounced).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les non-clitiques, l'étude est restreinte aux mots polysyllabiques (sans compter le schwa final qui peut être prononcé).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>F 0 and duration variations between the clitic vowel and the first vowel of the following nonclitic word were measured, as well as the duration of the nonclitic onset.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons mesuré les variations de F 0 et de durée entre la voyelle noyau du clitique et celle de la première syllabe du mot suivant, ainsi que la durée de l’attaque du non-clitique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>For example, in the case of the sequence pour trouver (/pu t uve/, “to find”), the vowel nuclei are the two /u/s and the onset is /t /.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, dans le cas de la séquence pour trouver (/pu t uve/, « trouver »), les noyaux vocaliques sont les deux /u/ et l'attaque est constituée de la séquence /t /.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>3.1. Pitch rise</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1. Augmentation du ton</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>We computed the cumulative percentages of occurrences in which the pitc F 0 = F 0 nonclitic – F 0 clitic in semitones (ST) was greater than a given threshold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons calculé le pourcentage cumulé d'occurrences pour lesquelles la différence de fréquence fondamentale F 0 = F 0 non-clitique – F 0 clitique en demi-tons (ST) était supérieure à un seuil donné.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>Table 2 shows results F 0 greater than 0, 1, 2 or 3 ST (3 ST corresponding to the threshold above which a prosodic prominence can play a linguistic role [14]).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le tableau 2 montre les résultats pour des valeurs de F 0 supérieures à 0, 1, 2 ou 3 demi-tons (3 demi-tons correspondant au seuil au-dessus duquel une prosodie peut jouer un rôle linguistique [14]).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>The numbers of occurences from which percentages are computed are also reported, for the read texts and spontaneous speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les nombres d’occurrences de contextes à partir desquels les pourcentages sont exprimés sont également donnés, pour la lecture et la parole spontanée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>For all speech styles and thresholds, it can be seen that percentages are greater for the Swiss than for the other speakers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quel que soit le style et le seuil considéré, on peut remarquer dans la Table 2 que les pourcentages sont plus élevés pour les Suisses que pour les autres locuteurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>The phenomenon can easily be observed in the distribution curve (see Figure 1 for spontaneous speech).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le phénomène s’observe clairement dans la courbe de distribution (voir la figure 1 pour le discours spontané).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>It is even more marked on reading: in Table 2, the difference with standard French reaches 20%, as compared to 14% (41%– 27%) for spontaneous speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est encore plus marqué pour la lecture : dans le tableau 2, l’écart avec le français standard atteint 20 %, contre 14 % pour la parole spontanée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>On the contrary, the values obtained for Alsace and Belgium are lower than those of standard French.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les valeurs obtenues pour l’Alsace et la Belgique sont au contraire plus basses que celles du français standard.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>As a comparison, the values computed on the telephone speech corpus for standard French are the same as the ones presented here within a margin of 3%.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À titre de comparaison, les valeurs obtenues pour le français standard sur le corpus téléphonique sont identiques à celles qui sont présentées ci-dessous à 3 % près.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>Table 2. Number of occurrences and percentage of 0 (nonclitic–clitic) greater than a given threshold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Table 2 : nombre d’occurrences et pourcentage de 0 (non-clitique-clitique) supérieur à un seuil donné.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>Figure 1. -initial and clitic vowels (in semitones) for spontaneous speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 1. - voyelles initiales et clitiques (en demi-tons) pour le discours spontané.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>Results go the same way when the analysis is restricted to nonclitic words of at least 3 syllables instead of considering all polysyllabic words. (The number of occurrences is of course lower.)</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats vont dans le même sens si l’on restreint l’analyse aux mots non-clitiques d’au moins trois syllabes au lieu de considérer tous les mots polysyllabiques — le nombre de cas examinés est bien entendu moins élevé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>The ranking is preserved: Switzerland, standard French, Belgium and Alsace from the greatest to the lowest percentages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La hiérarchie est préservée : la Suisse, le français standard, la Belgique et l’Alsace affichent les pourcentages du plus au moins élevés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>On words with at least three syllables, the proportion o F 0 greater than 3 ST varies between 16 and 58% in reading and between 7 and 18% in spontaneous speech according to the region.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur les mots de longueur au moins égale à trois syllabes, la proportion o F 0 supérieure à 3 ST varie entre 16 et 58 % en lecture et entre 7 et 18 % en parole spontanée selon les régions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>3.2. Stress syllable nucleus lengthening</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2. Allongement de la durée de la syllabe tonique sous tension</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>The difference Δduration = duration nonclitic – duration clitic was calculated for vowels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La différence Δdurée = durée non-clitique – durée clitique a été calculée pour les voyelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>Results for polysyllabic and at least trisyllabic words are presented in Table 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats pour les polysyllabes et les mots d’au moins trois syllabes sont présentés dans la Table 3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>Alsatians show the highest percentage of of the proposed thresholds (0 and 20 ms) in spontaneous speech and to a lesser extent in reading.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les Alsaciens présentent le plus fort pourcentage de durée supérieur à chacun des deux seuils proposés (0 et 20 ms) en parole spontanée, et dans une moindre mesure en lecture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>The same tendency is observed with a 30 ms threshold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La même tendance s’observe avec un seuil de 30 ms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>When the nonclitics are restricted to at least trisyllabic words, which allows us to distinguish between initial and penultimate syllables, the difference between Alsatians speakers and the others is more marked.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si l’on restreint les non-clitiques aux mots d’au moins trois syllabes, ce qui nous permet de faire la part entre syllabes initiales et pénultièmes, la différence entre les locuteurs alsaciens et les autres est encore plus marquée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>In the standard French telephone corpus, the values obtained are similar to those of Table 3 (within 5%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le corpus téléphonique standard français, les valeurs obtenues sont semblables à celles de la Table 3 (à moins de 5 %).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>Percentages of the PFC corpus, which leaves a 10% difference between Alsatian and standard French.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les pourcentages du corpus PFC, qui laisse une différence de 10 % entre l'alsacien et le français standard.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>We may consider that the difference observed is not only due to the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut donc considérer que la différence observée n’est pas uniquement due au corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>Table 3. Number of occurrences and percent clitic–clitic greater than a given threshold (for polysyllabic and at least trisyllabic nonclitics).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 3. Nombre d'occurrences et pourcentage de clitiques supérieurs à un seuil donné (pour les mots non clitiques polysyllabiques et au moins trisyllabiques).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>Average durations of the clitic vowels and the subsequent nonclitic word-initial vowels are given in Table 4.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les durées moyennes des voyelles clitiques et des voyelles initiales de syllabe non-clitiques sont présentées dans le Tableau 4.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>The average duration of the nonclitic vowel nucleus is indicated even though it does not add much information: we simply notice that there is little cross-region variation of this average duration, especially in spontaneous speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La durée moyenne du noyau du non-clitique est indiquée bien qu’elle n’apporte pas beaucoup d’information : on peut simplement constater qu’il y a peu de variation de cette durée moyenne entre les régions, surtout en parole spontanée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>As for the first vowel of the content word that follows, it behaves as expected from calculations: Alsatians have the longest average durations, which is not only attributable to a slower speech rate because Swiss speakers, who also have a slow speaking rate, exhibit a very different behaviour when reading texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Quant à la première voyelle du mot plein qui suit, elle se comporte comme on pouvait l’attendre d’après les calculs de durée : les Alsaciens ont les durées moyennes les plus longues, ce qui n’est pas seulement imputable à un débit plus lent car les Suisses, qui ont aussi un débit de parole lent, montrent un comportement très différent lors de la lecture de textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>3.3. Onset lengthening</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3. Allongement de la durée de début</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>According to [9][8], onset lengthening is a correlate of wordinitial stress.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’après [9][8], l’allongement de l’attaque est un corrélat de l’accentuation initiale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>The average duration of content word onsets following a clitic were measured: results are given in Table 4 (also restricted to simple onsets).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons mesuré la durée moyenne des attaques des mots pleins suivant un clitique : les résultats sont donnés dans la Table 4 (le cas échéant restreints aux attaques simples).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>The number of occurrences considered in each case can be deducted from the figures reported in Table 3, from which clitic–nonclitic sequences without onset (about 15% of cases) must be subtracted.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le nombre de contextes considérés dans chaque cas se déduit du chiffre indiqué dans la Table 3, auquel il faut soustraire les suites clitique non-clitique ne comportant pas d’attaques (soit environ 15 % des cas).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>Occurrences with a simple onset represent about 2/3 of the numbers of occurrences given in Table 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les contextes avec attaque simple, eux, représentent environ 2/3 des nombres d’occurrences donnés dans le Tableau 3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>Alsatians, who produce the longest polysyllabic wordinitial vowels following clitics, do not seem to lengthen onsets,whereas the Swiss tend to have longer onsets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les Alsaciens, qui produisent les voyelles les plus longues en syllabe initiale de polysyllabe suivant un clitique, ne semblent pas allonger l’attaque. Ce sont les Suisses qui montrent des attaques plus longues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>Table 4. Average duration in ms of the clitic nucleus (Vc), the onset and the word-initial nucleus (Vnc) of polysyllabic or at least trisyllabic nonclitics.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 4. Durée moyenne en ms du noyau clitique (Vc), du début de syllabe et du noyau initial de mot (Vnc) des mots non-clitiques polysyllabiques ou au moins trisyllabiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>Between brackets, only simple onsets are taken into account.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Entre parenthèses, seuls les débuts de syllabes simples sont pris en compte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>Thus, initial stress for the Swiss speakers seems to be achieved by a pitch rise and a slight onset lengthening — features which are well described in the literature [9][8].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, l'accentuation initiale chez nos locuteurs suisses se manifeste par une augmentation de F 0 et un léger allongement de l'attaque, indices bien décrits dans la littérature [9][8].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>Alsatians instead show polysyllabic word-initial vowel lengthening.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les Alsaciens montrent plutôt un allongement de la voyelle initiale de polysyllabes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>Whether these features should be interpreted in terms of word-initial stress or differently, our results suggest that acoustic correlates differentiate the prosody of French varieties spoken in Alsace and Romand Switzerland.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Que l’on interprète ces traits en terme d’accentuation initiale ou autrement, nos résultats suggèrent que des corrélats acoustiques différencient la prosodie du français parlé en Alsace et en Suisse romande.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>Belgium shows little specificity compared to standard French with regard to these parameters; but it might be distinguished by other prosodic features.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La Belgique ne montre guère de spécificité par rapport au français standard, au regard de ces paramètres. Mais elle peut se distinguer par d’autres faits prosodiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>4. Behaviour of prepausal syllables</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Comportement des syllabes pré-pausales</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>The behaviour of penultimate and final syllables before a pause (a silence of over 50 ms) was examined.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le comportement des syllabes pénultièmes et finales avant une pause (un silence de plus de 50 ms) a été examiné.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>No clear tendency appears when the analysis is not restricted to prepausal words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Aucune tendance claire ne se dégage lorsque l'analyse n'est pas limitée aux mots pré-pausaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>Also, we did not observe marked regiondependent tendencies concerning pitch variation between penultimate and final syllables before a pause.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous n’avons pas pu observer de tendance marquée selon la région concernant la variation de F 0 entre les syllabes pénultième et finale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, the percentage of penultimate vowels that are longer than final vowels (schwa excluded) allows us to capture a kind of penultimate lengthening.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, le pourcentage d’avant-dernières voyelles plus longues que les finales (schwa exclu) permet de saisir une sorte d’allongement pénultième.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>This percentage is given for each region in Table 5 with the average durations of the vowel nuclei of the two prepausal syllables.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce pourcentage est donné pour chaque région dans le tableau 5, avec les durées moyennes des noyaux de voyelles des deux syllabes précédant une pause.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>Similar patterns are obtained when the duration of each vowel is normalised by its average duration computed on the whole corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On obtient des patrons similaires en normalisant la durée de chaque voyelle par sa durée moyenne calculée sur l’ensemble du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>For the read speech style, percentages are quite close between regions, when considering polysyllabic or at least trisyllabic words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En lecture, les pourcentages sont assez proches entre les régions, qu’on se limite ou non aux mots de trois syllabes ou plus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>Again, this configuration avoids confusions between initial and penultimate lengthening.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Encore une fois, cette configuration évite toute confusion entre allongement initial et pénultième.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>Results differ more on spontaneous speech: Belgian speakers (from Liège, Tounai and Gembloux) realise more f = durationpenultimate – durationfinal &gt; 0 ms than standard French speakers (around 10% difference), while Alsatian and Swiss speakers produce fewer penultimate lengthenings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les chiffres diffèrent davantage sur la parole spontanée : les locuteurs belges (de Liège, Gembloux et Tournai) réalisent plus de duréef = duréepénultième – duréefinale &gt; 0 ms que ceux de français standard (différence de 10 %), tandis que les Alsaciens et les Suisses en réalisent moins.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>Yet the differences observed should be taken with caution as far as Alsatians’ spontaneous speech is concerned.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les écarts observés doivent toutefois être considérés avec précaution en ce qui concerne la parole spontanée des Alsaciens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>Figures for standard French were very similar between PFC and the telephone corpus regarding initial stress, whereas considerable variation is here observed, with 12–18% lower percentages for the telephone corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, si les chiffres pour le français standard étaient très proches entre PFC et le corpus téléphonique en matière d’accentuation initiale, on observe ici des variations importantes, avec des pourcentages de 12–18 % inférieurs dans le corpus téléphonique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>These differences may be due to the type of interaction which, in telephone conversations, favours penultimate lengthening especially at the end of speaker turns.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces différences peuvent être dues au type d'interaction qui, dans les conversations téléphoniques, favorise l'allongement avant-dernier, en particulier à la fin des prises de parole.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>Table 5. Number of occurrences and percentage of prepausal positive f (penultimate–final); average durations of the last two vowels in ms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Table 5 : nombre d’occurrences et pourcentage de f positif pré-pausal (avant la dernière syllabe) ; durées moyennes des deux dernières voyelles en ms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>Nasal vowels are known to be longer than oral vowels (112 vs 80 ms on average, in our corpus).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les voyelles nasales sont connues pour être plus longues que les orales (112 vs 80 ms en moyenne, dans notre corpus).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>Indeed, the gap slightly widens (reaching 15%) between Belgian and standard French speakers when considering polysyllabic words whose penultimate vowel is a nasal vowel.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De fait, l’écart se creuse légèrement entre locuteurs belges et français standard (atteignant 15 %) quand on considère les polysyllabes dont la voyelle pénultième est une nasale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>Based on average durations or percentages of occurrences longer than a given threshold, the Swiss have long final vowels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fonction des durées moyennes ou des pourcentages d'occurrences plus longues qu'un seuil donné, les Suisses ont des voyelles finales assez longues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>In comparison to standard French, they also have long penultimate vowels, which explains the lower f values.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En comparaison avec le français standard, leurs voyelles pénultièmes sont aussi plus longues, ce qui explique les valeurs plus faibles de f.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>The latter result does not support a tendency toward penultimate lengthening in Romand Switzerland, but it leaves open the possibility that the Swiss lengthen both penultimate and final vowels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce dernier résultat n’étaye pas une tendance à l’allongement pénultième en Suisse romande, mais il laisse ouverte la possibilité que les Suisses allongent à la fois les voyelles pénultièmes et finales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>To study it, we looked at antepenultimate vowels of at least trisyllabic words preceding a pause, and computed p = durationpenultimate – durationantepenultimate (see Table 6).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour l'étudier, nous avons examiné les voyelles antépénultièmes de mots au moins trisyllabiques précédés d'une pause, et calculé p = durée pénultième – durée antépénultième (voir tableau 6).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>Table 6. Percentage of prepausal p, (penultimate–antepenultimate), average durations of antepenultimate vowels in ms and percentages of antepenultimate vowels longer than 70 ms in at least trisyllabic words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 6. Pourcentage de p pré-pausal, (avant-avant-dernier), durées moyennes des voyelles avant-avant-dernières en ms et pourcentages de voyelles avant-avant-dernières de plus de 70 ms dans au moins des mots trisyllabiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>In reading especially the Swiss have the highest percentage of p (i.e. penultimate vowels longer than antepenultimate vowels), the lowest average duration of antepenultimate vowels and the lowest percentage of antepenultimate vowels longer than 70 ms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En lecture, les Suisses ont le pourcentage le plus élevé de p (c'est-à-dire de voyelles avant-dernières plus longues que les voyelles antépénultièmes), la durée moyenne la plus faible des voyelles antépénultièmes et le pourcentage le plus faible de voyelles antépénultièmes plus longues que 70 ms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>The latter percentage is also the lowest in spontaneous speech (with the same 26% value): Swiss, Belgian and standard French speakers have antepenultimate vowels of comparable duration.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce dernier pourcentage est également le plus faible dans le discours spontané (avec la même valeur de 26 %) : les suisses, les belges et les locuteurs de français standard ont des voyelles antépénultième de durée comparable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>The Swiss have rather short antepenultimate vowels compared to penultimate and final vowels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les Suisses ont des voyelles avant-dernières plutôt courtes par rapport aux voyelles avant-dernières et finales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>Unsurprisingly, Alsatian speakers have the longest antepenultimate (in most cases also the initial) vowels of prepausal words with at least three syllables.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De manière surprenante, les locuteurs alsaciens ont les voyelles antépénultième (dans la plupart des cas aussi l'initiale) les plus longues des mots pré-pausés avec au moins trois syllabes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>This is in keeping with the word-initial vowel lengthening described in 3.2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela est conforme à la longueur de la voyelle initiale décrite au point 3.2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>At least in spontaneous speech, Belgian speakers have the highest percentages of penultimate vowels longer than antepenultimate and final vowels (see Tables 5 and 6).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au moins dans le discours spontané, les locuteurs belges ont les pourcentages les plus élevés de voyelles pénultièmes plus longues que les voyelles antépénultièmes et finales (voir les tableaux 5 et 6).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>This reinforces the penultimate lengthening hypothesis in Belgian French which holds true when restricting the analysis to the longest segments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela renforce l'hypothèse de la pénultième longueur en français de Belgique qui se vérifie lorsque l'on se limite à l'analyse des segments les plus longs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>Also, when comparing the pitch patterns of the last three prepausal vowels across regions, Belgian speakers show more valleys while Swiss speakers show more peaks on penultimate vowels.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, lors de la comparaison des modèles de hauteur des trois dernières voyelles pré-pausales dans les différentes régions, les locuteurs belges montrent davantage de creux, tandis que les locuteurs suisses montrent davantage de pics sur les voyelles avant-dernières.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>Pitch contours definitely deserve more in-depth investigation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les contours de la pente méritent certainement une investigation plus approfondie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>5. Discussion and perspectives</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. DISCUSSION ET PERSPECTIVES</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>Automatic alignment of large spoken corpora and pitch tracking enabled us to reveal or at least quantify prosodic differences between French varieties spoken in Alsace, Belgium and Romand Switzerland.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’alignement de grands corpus de parole et l’extraction de fréquence fondamentale ont permis de révéler ou du moins de quantifier des différences prosodiques entre variétés de français parlées en Alsace, en Belgique et en Suisse romande.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>While prepausal penultimate vowel lengthening seems to be typical of Belgian speech, lengthening the last two syllables and a tendency to initial stress (pitch rise and onset lengthening) would rather characterise Romand Swiss contrary to certain predictions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tandis que l’allongement de la voyelle pénultième précédant une pause semble typique de la Belgique, c’est contrairement à certaines prédictions [6][10] une tendance à l’accentuation initiale (montée de la mélodie et allongement de l’attaque) qui caractériserait plutôt la Suisse romande.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>In Alsace, what can also be interpreted as initial stress under the influence of language contact would be manifested by wordinitial vowel lengthening.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En Alsace, ce qui peut également s’interpréter comme une accentuation initiale sous l’influence du contact de langues se manifesterait davantage par un allongement de la voyelle initiale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>In spite of different data sources for Alsace (which may also be viewed as an additional validation), these acoustic correlates appear to be relatively robust to style changes (scripted or spontaneous speech).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malgré des sources différentes pour l’Alsace (ce qui peut aussi être vu comme une validation supplémentaire), ces corrélats acoustiques paraissent relativement robustes au changement de style (lu ou spontané).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>The study should be continued for this region and enriched by consonant devoicing cues.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’étude doit bien sûr être poursuivie pour cette région, et enrichie d’indices de dévoisement des consonnes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>Voicing rates, zero-crossing rates and the alignment of voiced consonants as unvoiced should allow this devoicing to be measured.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les taux de voisement, de passage par zéro de la forme d’onde et d’alignement de consonnes sonores comme sourdes devraient permettre de mesurer ce dévoisement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>Finally, the same type of analysis may be extended to the intensity parameter. It shows that large-scale quantitative prosodic studies are possible, beyond “lab speech” and impressionistic accounts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, le même type d'analyse peut être étendu au paramètre d'intensité. Cela montre que des études prosodiques quantitatives à grande échelle sont possibles, au-delà du « discours de laboratoire » et des comptes-rendus impressionnistes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>6. Acknowledgements</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6. REMERCIEMENTS</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>This work has been partially financed by OSEO under the Quaero program.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce travail a été partiellement financé par OSEO dans le cadre du programme Quaero.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>It was also partially funded by the ANR PFC-Cor project.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce travail a également été partiellement financé par le projet ANR PFC-Cor.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>We are grateful to A-C Simon for the recordings made in Alsace applying the PFC protocol.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous sommes reconnaissants à A.-C. Simon pour les enregistrements faits en Alsace en appliquant le protocole PFC.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>Our thanks also go to the leaders of this wide project.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous exprimons également notre profonde gratitude aux responsables de ce vaste projet.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

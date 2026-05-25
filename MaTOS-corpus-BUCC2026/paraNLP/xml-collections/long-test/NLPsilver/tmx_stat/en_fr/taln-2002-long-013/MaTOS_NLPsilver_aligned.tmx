@@ -1,0 +1,1423 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-taln-2002-long-013. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/C02-1033.pdf</url_en>
+        <url_fr>https://aclanthology.org/2002.jeptalnrecital-long.13/</url_fr>
+        <title_en>Using collocations for topic segmentation and link detection</title_en>
+        <title_fr>Segmenter et structurer thématiquement des textes par l'utilisation conjointe de collocations et de la récurrence lexicale</title_fr>
+        <docid>taln-2002-long-013</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Using collocations for topic segmentation and link detection</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Utiliser des collocations pour la segmentation thématique et la détection de liens</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>We present in this paper a method for achieving in an integrated way two tasks of topic analysis: segmentation and link detection.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons dans cet article une méthode permettant de réaliser de façon intégrée deux tâches de l’analyse thématique : la segmentation et la détection de liens thématiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>This method combines word repetition and the lexical cohesion stated by a collocation network to compensate for the respective weaknesses of the two approaches.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthode combine la récurrence des mots dans les textes et les liens issus d’un réseau de collocations afin de compenser les faiblesses respectives des deux approches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>We report an evaluation of our method for segmentation on two corpora, one in French and one in English, and we propose an evaluation measure that specifically suits that kind of systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons une évaluation de notre méthode de segmentation sur deux corpus, l'un en français et l'autre en anglais, et nous proposons une mesure d'évaluation spécifiquement adaptée à ce type de systèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>Keywords: Discourse analysis, topic analysis, topic segmentation, link detection.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mots Clés : Analyse du discours, analyse thématique, segmentation, détection de liens thématiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>1 Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Topic analysis, which aims at identifying the topics of a text, delimiting their extend and finding the relations between the resulting segments, has recently raised an important interest.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’analyse thématique, dont le but est d’identifier les thèmes d’un texte, d’en délimiter l’étendue et de trouver les relations entre les segments ainsi délimités, a suscité un intérêt important récemment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>The largest part of it was dedicated to topic segmentation, also called linear text segmentation, and to the TDT (Topic Detection and Tracking) initiative (Fiscus et al., 1999), which addresses all the tasks we have mentioned but from a domain-dependent viewpoint and not necessarily in an integrated way.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La plus grande partie d'entre eux était consacrée à la segmentation thématique, également appelée segmentation linéaire du texte, et à l'initiative TDT (Topic Detection and Tracking) (Fiscus et al., 1999), qui aborde toutes les tâches mentionnées ci-dessus mais en se plaçant dans des domaines restreints et en les considérant principalement sous l'angle de tâches indépendantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>Systems that implement this work can be categorized according to what kind of knowledge they use.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les systèmes implémentant ces travaux peuvent être catégorisés en fonction du type des connaissances dont ils font usage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>Most of those that achieve text segmentation only rely on the intrinsic characteristics of texts: word distribution, as in (Hearst, 1997), (Choi, 2000) and (Utiyama and Isahara, 2001), or linguistic cues as in (Passonneau and Litman, 1997).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La plupart de ceux qui atteignent la segmentation thématique ne s'appuient que sur les caractéristiques intrinsèques des textes : la distribution des mots (Hearst, 1997 ; Choi, 2000 ; Utiyama, Isahara, 2001) ou des marqueurs linguistiques (Passonneau, Litman, 1997).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>They can be applied without restriction about domains but have low results when a text doesn’t characterize its topical structure by surface clues.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils peuvent être utilisés sans restriction quant au domaine abordé mais leurs performances sont faibles lorsque la structure thématique des textes ne transparaît pas au travers des marques de surface qu’ils exploitent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>Some systems exploit domain-independent knowledge about lexical cohesion: a network of words built from a dictionary in (Kozima, 1993); a large set of collocations collected from a corpus in (Ferret, 1998), (Kaufmann, 1999) and (Choi, 2001). To some extend, this knowledge permits these systems to discard some false topical shifts without losing their independence with regard to domains.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un second type de systèmes utilise des connaissances caractérisant la notion de cohésion lexicale. Ces connaissances, non liées à un domaine, prennent la forme d’un réseau de mots construit à partir d’un dictionnaire (Kozima, 1993 ; Morris, Hirst, 1991) ou d’un large ensemble de collocations issues d’un corpus (Ferret, 1998 ; Kaufmann, 1999 ; Choi, 2001). Grâce aux relations entre mots qu’elles contiennent (synonymie, hyperonymie …), ces connaissances permettent d’écarter des changements de thème erronés définis sur la base de ruptures existant au niveau de la récurrence des mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>The last main type of systems relies on knowledge about the topics they may encounter in the texts they process.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un dernier type de systèmes s’appuie sur des connaissances directement liées aux thèmes apparaissant dans les textes qu’ils traitent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>This is typically the kind of approach developed in TDT where this knowledge is automatically built from a set of reference texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est typiquement le genre d'approche développé dans le TDT où ces connaissances sont construites de manière automatique à partir d'un ensemble de textes de référence caractérisant chaque thème considéré.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>The work of Bigi (Bigi et al., 1998) stands in the same perspective but focuses on much larger topics than TDT.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le travail de Bigi (Bigi et al., 1998) se situe dans la même perspective mais s’intéresse à des thèmes plus larges que les événements propres à TDT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>These systems have a limited scope due to their topic representations but they are also more precise for the same reason.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces systèmes ont un champ d’action assez limité du fait de leur dépendance vis-à-vis de représentations de thèmes mais ils sont plus précis pour la même raison.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>Hybrid systems that combine the approaches we have presented were also developed and illustrated the interest of such a combination: (Jobbins and Evett, 1998) combined word recurrence, collocations and a thesaurus; (Beeferman et al., 1999) relied on both collocations and linguistic cues.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des systèmes hybrides qui combinent les approches que nous avons présentées ont également été développés et ont illustré l'intérêt d'une telle combinaison : (Jobbins et Evett, 1998) ont combiné la récurrence des mots, les collocations et un thésaurus ; (Beeferman et al., 1999) se sont appuyés à la fois sur les collocations et sur des indices linguistiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>The topic analysis we propose implements such a hybrid approach: it relies on a general language resource, a collocation network, but exploits it together with word recurrence in texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'analyse thématique que nous proposons met en oeuvre une telle approche hybride : elle s'appuie sur une ressource linguistique générale, un réseau de collocations, mais l'exploite en conjonction avec la récurrence des mots dans les textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>Moreover, it simultaneously achieves topic segmentation and link detection, i.e. determining whether two segments discuss the same topic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, il assure simultanément une segmentation thématique des textes et une détection de liens, c'est-à-dire la détermination de deux segments qui discutent du même thème.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>We detail in this paper the implementation of this analysis by the TOPICOLL system, we report evaluations of its capabilities concerning segmentation for two languages, French and English, and finally, we propose an evaluation measure that integrates both segmentation and link detection.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous détaillons dans cet article l’implémentation de cette méthode par le système TOPICOLL, son évaluation en matière de segmentation pour le français et l’anglais ainsi qu’une évaluation plus globale de ses capacités par une nouvelle mesure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>2 Overview of TOPICOLL</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Vue d’ensemble du système TOPICOLL</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>In accordance with much work about discourse analysis, TOPICOLL processes texts linearly: it detects topic shifts and finds links between segments without delaying its decision, i.e. , by only taking into account the part of text that has been already analyzed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Conformément à de nombreux travaux portant sur l'analyse du discours, TOPICOLL traite les textes linéairement : il détecte les changements de thème et identifie les liens entre segments sans différer sa décision, c'est-à-dire en tenant compte uniquement des éléments qu'il a pu extraire de la partie du texte déjà analysée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>A window that delimits the current focus of the analysis is moved over each text to be processed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fenêtre délimitant l'espace de focalisation de l'analyse est déplacée sur l'ensemble du texte considéré.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>This window contains the lemmatized content words of the text, resulting from its pre-processing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette fenêtre contient sous forme lemmatisée les mots du texte issus de son pré-traitement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>A topic context is associated to this focus window.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un contexte thématique est associé à cette fenêtre de focalisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>It is made up of both the words of the window and the words that are selected from a collocation network[1] as strongly linked to the words of the window.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est constitué à la fois des mots de la fenêtre et des mots d'un réseau de collocations jugés les plus fortement liés aux mots de la fenêtre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>The current segment is also given a topic context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les segments se voient également associer un contexte thématique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>This context results from the fusion of the contexts associated to the focus window when this window was in the segment space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce contexte résulte de la fusion des contextes associés à la fenêtre de focalisation lorsque cette fenêtre se situait dans l'espace de segment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>A topic shift is then detected when the context of the focus window and the context of the current segment are not similar any more for several successive positions of the focus window.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un changement de thème est détecté dès lors qu’une différence significative et durable est observée entre le contexte de la fenêtre et celui du segment dans lequel elle se trouve.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>This process also performs link detection by comparing the topic context of each new segment to the context of the already delimited segments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce processus effectue également la détection de liens en comparant le contexte thématique de chaque nouveau segment avec celui des segments déjà délimités.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>The use of a collocation network permits TOPICOLL to find relations beyond word recurrence and to associate a richer topical representation to segments, which facilitates tasks such as link detection or topic identification.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'utilisation d'un réseau de collocations[2] permet à TOPICOLL de trouver des relations entre les mots au-delà de la simple réitération et d'associer à chaque segment une représentation thématique plus riche, ce qui facilite des tâches comme la détection de liens thématiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>But work such as (Kozima, 1993), (Ferret, 1998) or (Kaufmann, 1999) showed that using a domainindependent source of knowledge for text segmentation doesn’t necessarily lead to get better results than work that is only based on word distribution in texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, des travaux tels que (Kozima, 1993), (Ferret, 1998) ou (Kaufmann, 1999) ont montré que le recours à des connaissances lexicales générales n’améliore souvent pas les performances par rapport à l’exploitation de la seule distribution des mots dans les textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>One of the reasons of this fact is that these methods don’t precisely control the relations they select or don’t take into account the sparseness of their knowledge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'une des raisons de ce fait est que ces méthodes ne contrôlent pas assez précisément le type des relations qu'elles sélectionnent ou ne tiennent pas compte de l'incomplétude de leurs connaissances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>Hence, while they discard some incorrect topic shifts found by methods based on word recurrence, they also find incorrect shifts when the relevant relations are not present in their knowledge or don’t find some correct shifts because of the selection of non relevant relations from a topical viewpoint.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De ce fait, tout en permettant d'invalider à juste titre certains des changements de thème correspondant à une rupture dans l'usage du vocabulaire, elles introduisent également des ruptures thématiques incorrectes du fait de l'absence dans leurs connaissances des relations lexicales adéquates ou passent à côté de changements de thème réels à cause de la sélection de relations lexicales non pertinentes du point de vue thématique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>By combining word recurrence and relations selected from a collocation network, TOPICOLL aims at exploiting a domain-independent source of knowledge for text segmentation in a more accurate way.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En combinant la récurrence des mots et la sélection de relations dans un réseau de collocations, TOPICOLL vise donc à exploiter de façon plus précise une source de connaissances non liée à un domaine pour la segmentation de texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>3 Collocation networks</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Les réseaux de collocations</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>TOPICOLL depends on a resource, a collocation network, that is language-dependent.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TOPICOLL s’appuie sur un réseau de collocations propre à chaque langue qu’il traite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>Two collocation networks were built for it: one for French, from the Le Monde newspaper (24 months between 1990 and 1994), and one for English, from the L.A. Times newspaper (2 years, part of the TREC corpus).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux réseaux de collocations ont été construits pour cela : l'un pour le français, à partir du journal Le Monde (24 mois entre 1990 et 1994), et l'autre pour l'anglais, à partir du journal Los Angeles Times (2 ans, faisant partie du corpus TREC).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>The size of each corpus was around 40 million words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les deux cas, le corpus contient environ 40 millions de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>The building process was the same for the two networks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le processus de construction a été le même pour les deux réseaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>First, the initial corpus was preprocessed in order to characterize texts by their topically significant words. Thus, we retained only the lemmatized form of plain words, that is, nouns, verbs and adjectives.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque réseau, le corpus initial a d'abord été pré-traité afin de caractériser les textes par leurs mots les plus thématiquement significatifs, en l'occurrence les noms, les verbes et les adjectifs, donnés sous forme lemmatisée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>Collocations were extracted according to the method described in (Church and Hanks, 1990) by moving a window on texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les collocations ont ensuite été extraites en utilisant une fenêtre glissante selon la méthode décrite dans (Church et Hanks, 1990) sur des textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>Parameters were chosen in order to catch topical relations: the window was rather large, 20-word wide, and took into account the boundaries of texts; moreover, collocations were indifferent to word order.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les paramètres de cette extraction ont été fixés pour favoriser la capture de relations thématiques : une fenêtre assez large (20 mots), respectant la fin des textes et ne conservant pas l’ordre des collocations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>We also adopted an evaluation of mutual information as a cohesion measure of each collocation. This measure was normalized according to the maximal mutual information relative to the considered corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également adopté une évaluation de l'information mutuelle en tant que mesure de cohésion de chaque collocation. Cette mesure a été normalisée en fonction de l'information mutuelle maximale relative au corpus considéré.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>After filtering the less significant collocations (collocations with less than 10 occurrences and cohesion lower than 0.1), we got a network with approximately 23,000 words and 5.2 million collocations for French, 30,000 words and 4.8 million collocations for English.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après filtrage des collocations les moins significatives (cohésion &lt; 0,1 et moins de 10 occurrences), nous avons obtenu un réseau d’environ 23.000 mots et 5,2 millions de collocations pour le français et un réseau de 30.000 mots et 4,8 millions de collocations pour l’anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>4 Description of TOPICOLL</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Description du système TOPICOLL</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>TOPICOLL is based on the creation, the update and the use of a topical representation of both the segments it delimits and the content of its focus window at each position of a text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TOPICOLL est basé sur la création, la mise à jour et l'utilisation d'une représentation thématique des segments qu'il définit et du contenu de sa fenêtre de focalisation à chaque position d'un texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>These topical representations are called topic contexts .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces représentations thématiques sont appelées des contextes thématiques .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>Topic shifts are found by detecting that the topic context of the focus window is not similar anymore to the topic context of the current segment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les changements de sujet sont détectés lorsque le contexte de sujet de la fenêtre de focalisation n'est plus similaire au contexte de sujet du segment courant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>Link detection is performed by comparing the context of a new segment to the context of the previous segments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La détection de liens est effectuée en comparant le contexte d'un nouveau segment avec le contexte des segments précédents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>4.1 Topic contexts</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Les contextes thématiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>A topic context characterizes the topical dimension of the entity it is associated to by two vectors of weighted words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un contexte thématique caractérise la dimension thématique de l’entité à laquelle il est associé par l’intermédiaire de deux vecteurs de mots pondérés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>One of these vectors, called text vector , is made up of words coming from the text that is analyzed. The other one, called collocation vector , contains words selected from a collocation network and strongly linked to the words of the processed text. For both vectors, the weight of a word expresses its importance with regard to the other words of the vector.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'un de ces vecteurs, appelé vecteur texte, est composé des mots provenant du texte analysé. L'autre, appelé vecteur de collocations, contient des mots sélectionnés dans un réseau de collocations et fortement liés aux mots du texte traité. Pour les deux vecteurs, la valeur d'un mot exprime son importance par rapport aux autres mots du vecteur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>4.1.1 Topic context of the focus window</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1.1 Contexte thématique de la fenêtre de focalisation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>The text vector of the context associated to the focus window is made up of the content words of the window.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le vecteur texte du contexte associé à la fenêtre de focalisation est constitué des mots de contenu de cette fenêtre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>Their weight is given by:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leur poids est donné par:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>where occNb(w) is the number of occurrences of the word w in the window and signif(w) is the significance of w .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où occNb(w) est le nombre d'occurrences du mot w dans la fenêtre et signif(w) est la signification de w .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>The weight given by (1) combines the importance of w in the part of text delimited by the window and its general significance. This significance is defined as in (Kozima, 1993) as its normalized information in a reference corpus[2] :</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leur poids combine leur importance dans la partie du texte délimitée par la fenêtre, donnée par leur nombre d’occurrences, et leur degré de spécificité hors contexte, exprimé comme dans (Kozima, 1993) par l’information normalisée par rapport à un corpus de référence[2] :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>where fw is the number of occurrences of the word w in the corpus and Sc , the size of the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où fw est le nombre d'occurrences du mot w dans le corpus et Sc, la taille du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>The building of the collocation vector for the window’s context comes from the procedure presented in (Ferret, 1998) for evaluating the lexical cohesion of a text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La construction du vecteur collocation du contexte de la fenêtre de focalisation s’inspire de la procédure présentée dans (Ferret, 1998) pour évaluer la cohésion lexicale d’un texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>It consists in selecting words of the collocation network that are topically close to those in the window.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle consiste à sélectionner les mots du réseau de collocations thématiquement proches de ceux de la fenêtre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>We assume that this closeness is related to the number of links that exist between a word of the network and the words of the window.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous faisons l'hypothèse que cette proximité est liée au nombre de liens existant entre un mot du réseau et les mots de la fenêtre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>Thus, a word of the network is selected if it is linked to at least wst (3 in our experiments) words of the window.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un mot du réseau est ainsi retenu s'il est lié à un nombre minimum – 3 dans nos expériences – de mots de la fenêtre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>A collocation vector may also contain some words of the window as they are generally part of the collocation network and may be selected as its other words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un vecteur de collocations peut également contenir certains mots de la fenêtre, car ils font généralement partie du réseau de collocations et peuvent être sélectionnés comme les autres mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>Each selected word from the network is then assigned a weight. This weight is equal to the sum of the contributions of the window words to which it is linked to. The contribution of a word of the window to the weight of a selected word is equal to its weight in the window, given by (1), modulated by the cohesion measure between these two words in the network (see Figure 1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque mot sélectionné du réseau se voit ensuite assigner un poids, égal à la somme des contributions des mots de la fenêtre auxquels il est lié. La contribution d'un mot de la fenêtre est égale à son poids dans la fenêtre, donné par (1), modulé par la mesure de cohésion entre ces deux mots dans le réseau (voir Figure 1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>More precisely, the combination of these two factors is achieved by a geometric mean:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, la combinaison de ces deux facteurs est obtenue par une moyenne géométrique:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>where coh(w,wi) is the measure of the cohesion between w and wi in the collocation network.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>avec coh(m,mi) , la valeur de cohésion entre m et mi dans le réseau de collocations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>4.1.2 Topic context of a segment</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1.2 Le contexte thématique d’un segment</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>The topic context of a segment results from the fusion of the contexts associated to the focus window when it was inside the segment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le contexte thématique d'un segment résulte de la fusion des contextes associés à la fenêtre de focalisation lorsque celle-ci se trouvait dans le segment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>The fusion is achieved as the segment is extended: the context associated to each new position of the segment is combined with the current context of the segment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette fusion est réalisée à chaque nouvelle extension du segment : le contexte associé à la nouvelle position englobée est aussitôt combiné au contexte courant du segment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>This combination, which is done separately for text vectors and collocation vectors, consists in merging two lists of weighted words. First, the words of the window context that are not in the segment context are added to it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette combinaison, réalisée séparément pour les vecteurs texte et collocation, consiste à fusionner deux listes de mots pondérés : les mots du contexte de la fenêtre qui ne sont pas dans celui du segment y sont ajoutés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>Then, the weight of each word of the resulting list is computed according to its weight in the window context and its previous weight in the segment context:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, le poids de chaque mot de la liste résultante est calculé en fonction de son poids dans le contexte de la fenêtre et de son précédent poids dans le contexte du segment :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>with Cw , the context of the window, Cs , the context of the segment and wghtx(w,C{s,w},t) , the weight of the word w in the vector x ( txt or coll ) of the context C{s,w} for the position t .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>avec Cf , le contexte de la fenêtre, Cs , celui du segment, wghtx(w,C{s,w},t) , le poids du mot w dans le vecteur x ( txt ou coll ) du contexte C{s,w} pour la position t .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>For the words from the window context that are not part of the segment context, wghtx(w,Cs,t-1) is equal to 0.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les mots du contexte de la fenêtre qui ne font pas partie du contexte du segment, wghtx(w,Cs,t-1) est égal à 0.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>The revaluation of the weight of a word in a segment context given by (4) is a solution halfway between a fast and a slow evolution of the content of segment contexts. The context of a segment has to be stable because if it follows too narrowly the topical evolution of the window context, topic shifts could not be detected. However, it must also adapt itself to small variations in the way a topic is expressed when progressing in the text in order not to detect false topic shifts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La réévaluation du poids d'un mot dans un contexte de segment, donnée par (4), est une solution à mi-chemin entre une évolution rapide et lent de la teneur des contextes de segment. Le contexte d'un segment doit être stable car s'il suit trop étroitement l'évolution thématique du contexte de la fenêtre, les changements de thème ne pourraient pas être détectés. Cependant, il doit également s'adapter aux micro-variations dans la façon dont un thème est exprimé au sein d'un segment tout en suivant les évolutions thématiques du contexte de la fenêtre de près pour ne pas passer à côté d'un changement de thème.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>4.1.3 Similarity between contexts</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1.3 La similarité entre contextes thématiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>In order to determine if the content of the focus window is topically coherent or not with the current segment, the topic context of the window is compared to the topic context of the segment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour déterminer si le contenu de la fenêtre de focalisation est thématiquement cohérent avec le segment courant, on compare les contextes associés à ces deux entités.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>This comparison is performed in two stages: first, a similarity measure is computed between the vectors of the two contexts; then, the resulting values are exploited by a decision procedure that states if the two contexts are similar.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette comparaison est réalisée en deux étapes : une mesure de similarité est d’abord calculée entre les vecteurs des deux contextes ; les valeurs obtenues sont ensuite exploitées par une procédure de décision statuant sur la similarité des deux contextes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>As (Choi, 2000) or (Kaufmann, 1999), we use the cosine measure for evaluating the similarity between a vector of the context window ( Vw ) and the equivalent vector in the segment context ( Vs ):</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De même que (Choi, 2000) et (Kaufmann, 1999), nous utilisons la mesure du cosinus pour évaluer le degré de similarité entre un vecteur du contexte de la fenêtre ( Vf ) et le vecteur de même type dans le contexte du segment ( Vs ) :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>where wgx(wi,C{s,w}) is the weight of the word wi in the vector x ( txt or coll ) of the context C{s,w} .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où wgx(wi,C{s,w}) est le poids du mot wi dans le vecteur x (txt ou coll) du contexte C{s,w}.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>As we assume that the most significant words of a segment context are the most recurrent ones, the similarity measure takes into account only the words of a segment context whose the recurrence[3] is above a fixed threshold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme nous supposons que les mots les plus importants d'un contexte de segment sont les plus récurrents, la mesure de similarité ne prend en compte que les mots d'un contexte de segment dont la récurrence [3] est supérieure à un seuil fixe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>This one is higher for text vectors than for collocation vectors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce seuil est plus exigeant pour les vecteurs texte que pour les vecteurs de collocations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>This filtering is applied only when the context of a segment is considered as stable (see 4.2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce filtrage n’est appliqué que lorsque le contexte d’un segment est considéré comme stable (voir 4.2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>The decision stage takes root in work about combining results of several systems that achieve the same task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La procédure de décision s’inspire quant à elle des travaux relatifs à la combinaison de plusieurs systèmes réalisant la même tâche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>In our case, the evaluation of the similarity between Cs and Cw at each position is based on a vote that synthesizes the viewpoint of the text vector and the viewpoint of the collocation vector.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans notre cas, l'évaluation de la similarité entre Cs et Cw à chaque position est basée sur un vote qui synthétise le point de vue du vecteur texte et celui du vecteur de collocation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>First, the value of the similarity measure for each vector is compared to a fixed threshold and a positive vote in favor of the similarity of the two contexts is decided if the value exceeds this threshold.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, la valeur de la mesure de similarité pour chaque vecteur est comparée à un seuil fixe et un vote positif en faveur de la similarité des deux contextes est décidé si la valeur est supérieure à ce seuil.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>Then, the global similarity of the two contexts is rejected only if the votes for the two vectors are negative.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, la similarité globale des deux contextes est rejetée uniquement si les votes des deux types de vecteurs sont négatifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>4.2 Topic segmentation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 Segmentation thématique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>The algorithm for detecting topic shifts is taken from (Ferret and Grau, 2000) and basically relies on the following principle: at each text position, if the similarity between the topic context of the focus window and the topic context of the current segment is rejected (see 4.1.3), a topic shift is assumed and a new segment is opened.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'algorithme de détection des changements de thème est repris de (Ferret et Grau, 2000) et repose sur le principe suivant : à chaque position du texte, si la similarité entre le contexte thématique de la fenêtre de focalisation et le contexte thématique du segment actif est rejetée (voir 4.1.3), TOPICOLL en déduit la présence d'un changement de thème à la position correspondante et le segment actif est fermé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>Otherwise, the active segment is extended up to the current position.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sinon, le segment actif est étendu jusqu'à la position courante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>This algorithm assumes that the transition between two segments is punctual.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet algorithme de base suppose que la transition entre deux segments est ponctuelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>As TOPICOLL only operates at word level, its precision is limited.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme TOPICOLL ne fonctionne qu'au niveau du mot, sa précision est limitée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>This imprecision makes necessary to set a short delay before deciding that the active segment really ends and similarly, before deciding that a new segment with a stable topic begins.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette imprécision rend nécessaire l'introduction d'un court délai avant de décider si le segment actif se termine et, de même, avant de décider si un nouveau segment avec un sujet stable commence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>Hence, the algorithm for detecting topic shifts distinguishes four states: – the NewTopicDetection state takes place when a new segment is going to be opened.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'algorithme de détection de changement de sujet distingue donc quatre états : – l'état NewTopicDetection se produit lorsqu'un nouveau segment doit être ouvert.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>This opening is then confirmed provided that the content of the focus window context doesn’t change for several positions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette ouverture est ensuite confirmée à condition que le contenu du contexte de la fenêtre de focus ne change pas sur plusieurs positions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>Moreover, the core of the segment context is defined when TOPICOLL is in this state; – the InTopic state is active when the focus window is inside a segment with a stable topic; – the EndTopicDetection state occurs when the focus window is inside a segment but a difference between the context of the window and the context of the current segment suggests that this segment could end soon.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, le noyau du contexte de segment est défini lorsque TOPICOLL est dans cet état ; – l'état InTopic est actif lorsque la fenêtre en focus est à l'intérieur d'un segment avec un sujet stable ; – l'état EndTopicDetection se produit lorsque la fenêtre en focus est à l'intérieur d'un segment mais qu'une différence entre le contexte de la fenêtre et le contexte du segment actuel suggère que ce segment pourrait bientôt se terminer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>As for the NewTopicDetection state, this difference has to be confirmed for several positions before a change of state is decided; – the OutOfTopic state is active between two segments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour l'état NewTopicDetection, cette différence doit être confirmée pour plusieurs positions avant qu'un changement d'état soit décidé ; – l'état OutOfTopic est actif entre deux segments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>Generally, TOPICOLL stays in this state no longer than 1 or 2 positions but when neither the words from text nor the words selected from the collocation network are recurrent, i.e. no stable topic can be detected according to these features, this number of positions may be equal to the size of a segment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En général, TOPICOLL ne reste pas plus de 1 ou 2 positions dans cet état, mais lorsque ni les mots du texte ni les mots sélectionnés du réseau de collocations ne sont récurrents, c'est-à-dire qu'aucun thème stable ne peut être détecté selon ces caractéristiques, ce nombre de positions peut être égal à la taille d'un segment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>The transition from one state to another follows the automaton of Figure 2 according to three parameters:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La transition d'un état à un autre suit l'automate de la figure 2 selon trois paramètres :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>– its current state; – the similarity between the context of the focus window and the context of the current segment: Sim or no Sim ;</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- son état actuel ; - la similarité entre le contexte de la fenêtre de focalisation et le contexte du segment courant : Sim ou non Sim ;</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>– the number of successive positions of the focus window for which the current state doesn’t change: confirmNb.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- le nombre de positions successives de la fenêtre de focalisation pour lesquelles l'état courant ne change pas : confirmNb.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>It must exceed the Tconfirm threshold (equal to 3 in our experiments) for leaving the NewTopicDetection or the EndTopicDetection state.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il doit être supérieur au seuil Tconfirm (égal à 3 dans nos expériences) pour sortir des états DétectionNouveauThème et DétectionFinThème.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>4.3 Link detection</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.3 Détection de liens thématiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>The algorithm of TOPICOLL for detecting identity links between segments is closely associated to its algorithm for delimiting segments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’algorithme de TOPICOLL pour détecter les liens d’identité thématique entre segments est étroitement lié à son algorithme de segmentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>When TOPICOLL goes from the NewTopicDetection state to the InTopic state, it first checks whether the current context of the new segment is similar to one of the contexts of the previous segments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsque TOPICOLL passe de l'état NewTopicDetection à l'état InTopic, il vérifie d'abord si le contexte du nouveau segment est similaire à celui de l'un des segments précédents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>In this case, the similarity between contexts only relies on the similarity measure (see (5)) between their collocation vectors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cas, la similarité entre les contextes ne repose que sur la mesure de similarité (voir (5)) entre leurs vecteurs de collocation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>A specific threshold is used for the decision.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un seuil spécifique est utilisé pour la décision.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>If the similarity value exceeds this threshold, the new segment is linked to the corresponding segment and takes the context of this one as its own context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si la valeur de similarité dépasse ce seuil, le nouveau segment est lié au segment correspondant et adopte son contexte comme contexte propre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>In this way, TOPICOLL assumes that the new segment continues to develop a previous topic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TOPICOLL fait ainsi l’hypothèse que le nouveau segment continue à développer le thème déjà abordé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>When several segments fulfills the condition for link detection, TOPICOLL selects the one with the highest similarity value.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsque plusieurs segments remplissent la condition de détection de lien, TOPICOLL choisit celui pour lequel la similarité des contextes est la plus forte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>5 Experiments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 Expérimentations</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>Figure 2 – Automaton for topic shift detection</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 2 – Automate de détection de changement de thème</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>The processing of a segment starts with the OutOfTopic state, after the end of the previous segment or at the beginning of the text.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le traitement d'un segment commence par l'état OutOfTopic, après la fin du segment précédent ou au début du texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>As soon as the context of the focus window is stable enough between two successive positions, TOPICOLL enters into the NewTopicDetection state.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dès que le contexte de la fenêtre de focus est suffisamment stable entre deux positions successives, TOPICOLL entre dans l'état NewTopicDetection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>The InTopic state can then be reached only if the window context is found stable for the next confirmNb -1 positions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'état InTopic ne peut être atteint que si le contexte de la fenêtre est stable pendant les positions suivantes confirmNb -1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>Otherwise, TOPICOLL assumes that it is a false alarm and returns to the OutOfTopic state.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas contraire, TOPICOLL considère que c'est une fausse alarme et retourne à l'état OutOfTopic.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>The detection of the end of a segment is symmetrical to the detection of its beginning.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La détection de la fin d'un segment est symétrique à la détection de son début.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>TOPICOLL goes into the EndTopicDetection state as soon as the content of the window context begins to change significantly between two successive positions but the transition towards the OutOfTopic state is done only if this change is confirmed for the next confirmNb -1 next positions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TOPICOLL passe en état EndTopicDetection dès que le contenu du contexte de fenêtre commence à changer significativement entre deux positions successives, mais la transition vers l'état OutOfTopic n'est effectuée que si ce changement est confirmé pour les positions suivantes confirmNb -1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>This algorithm is completed by a specific mechanism related to the OutOfTopic state.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet algorithme est complété par un mécanisme spécifique lié à l'état OutOfTopic.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>When TOPICOLL stays in this state for a too long time (this time is defined as 10 positions of the focus window in our experiments), it assumes that the topic of the current part of text is difficult to characterize by using word recurrence or selection from a collocation network and it creates a new segment that covers all the concerned positions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsque TOPICOLL reste dans cet état pendant trop longtemps (dans nos expérimentations, ce temps est défini comme 10 positions de la fenêtre de focus), il considère que le sujet du texte actuel est difficile à caractériser en utilisant la récurrence des mots ou la sélection d'un réseau de collocations et il crée un nouveau segment qui couvre toutes les positions concernées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>5.1 Topic segmentation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.1 Segmentation thématique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>For evaluating TOPICOLL about segmentation, we applied it to the “classical” task of discovering boundaries between concatenated texts. TOPICOLL was adapted for aligning boundaries with ends of sentences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour évaluer les capacités de segmentation de TOPICOLL, nous l’avons appliqué à la tâche classique de découverte des frontières d’un ensemble de textes concaténés. TOPICOLL a été adapté pour aligner les frontières avec les fins de phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>We used the probabilistic error metric Pk proposed in (Beeferman et al., 1999) for measuring segmentation accuracy[4] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé la mesure d'erreur probabiliste Pk proposée dans (Beeferman et al., 1999) pour mesurer la précision de la segmentation[4] .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>Recall and precision was computed for the Le Monde corpus to compare TOPICOLL with older systems[5] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons également calculé la précision et le rappel pour le corpus Le Monde afin de comparer TOPICOLL avec des systèmes plus anciens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>In this case, the match between a boundary from TOPICOLL and a document break was accepted if the boundary was not farther than 9 plain words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cas, la correspondance entre une limite de TOPICOLL et une rupture de document était acceptée si la limite n’était pas située à plus de 9 mots simples.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>5.1.1 Le Monde corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.1.1 Corpus du Monde</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>The evaluation corpus for French was made up of 49 texts, 133 words long on average, from the Le Monde newspaper.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’évaluation pour le français a été réalisée sur un ensemble de 49 textes longs de 133 mots en moyenne, extraits du journal Le Monde.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>Results in Tables 1 and 2 are average values computed from 10 different sequences of them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats des Tableaux 1 et 2 sont des valeurs moyennes calculées à partir de 10 séquences différentes de ces textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>The baseline procedure consisted in randomly choosing a fixed number of sentence ends as boundaries.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La procédure de référence consistait à choisir aléatoirement un nombre fixe de fins de phrase comme bornes de segment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>Its results in Tables 1 and 2 are average values from 1,000 draws.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ses résultats dans le Tableau 1 sont des moyennes sur 1.000 tirages au sort.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>Table 1 – Precision/recall for Le Monde corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 – Précision/rappel pour le corpus Le Monde</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>TOPICOLL1 is the system described in section 4.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TOPICOLL1 est le système décrit au paragraphe 4.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>TOPICOLL2 is the same system but without its link detection part.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TOPICOLL2 est le même système mais sans sa partie de détection de liens.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>The results of these two variants show that the search for links between segments doesn’t significantly debase TOPICOLL’s capabilities for segmentation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats de ces deux variantes indiquent que la recherche de liens entre segments ne dégrade pas significativement les capacités de segmentation de TOPICOLL.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>TOPICOLL3 is a version of TOPICOLL that only relies on word recurrence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TOPICOLL3 est une version de TOPICOLL qui ne repose que sur la récurrence des mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>SEGCOHLEX and SEGAPSITH are the systems described in (Ferret, 1998) and (Ferret and Grau, 2000).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>SEGCOHLEX et SEGAPSITH sont les systèmes décrits dans (Ferret, 1998) et (Ferret et Grau, 2000).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>TextTiling is our implementation of Hearst’s algorithm with its standard parameters.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>TextTiling est notre implémentation de l'algorithme de Hearst avec ses paramètres standards.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>Table 2 – Pk for Le Monde corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2 – Pk pour le corpus Le Monde</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>First, Table 1 shows that TOPICOLL is more accurate when its uses both word recurrence and collocations. Furthermore, it shows that TOPICOLL gets better results than a system that only relies on a collocation network such as SEGCOHLEX.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le Tableau 1 montre clairement que TOPICOLL est plus précis lorsqu'il utilise à la fois la récurrence des mots et les collocations. De plus, il montre que TOPICOLL obtient de meilleurs résultats qu'un système qui ne se fonde que sur un réseau de collocations tel que SEGCOHLEX.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>It also gets better results than a system such as TextTiling that is based on word recurrence and as TOPICOLL, works with a local context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il obtient également de meilleurs résultats que des systèmes tels que TEXTTILING qui s'appuient sur la récurrence lexicale et qui, comme TOPICOLL, travaillent à partir d'un contexte local.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>Thus, Table 1 confirms the fact reported in (Jobbins and Evett, 1998) that using collocations together with word recurrence is an interesting approach for text segmentation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, le tableau 1 confirme le fait rapporté dans (Jobbins et Evett, 1998) que l’utilisation conjointe de collocations et de la récurrence lexicale est une approche intéressante pour la segmentation de texte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>Moreover, TOPICOLL is more accurate than a system such as SEGAPSITH that depends on topic representations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, TOPICOLL est plus précis que des systèmes tels que SEGAPSITH qui dépendent de représentations de thème.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>Its accuracy is also slightly higher than the one reported in (Bigi et al., 1998) for a system that uses topic representations in a probabilistic way: 0.75 as precision, 0.80 as recall and 0.77 as f1-measure got on a corpus made of Le Monde ’s articles too.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ses performances sont également légèrement supérieures à celles obtenues par (Bigi et al. , 1998) en exploitant de telles représentations dans un cadre probabiliste : précision de 0,75, rappel de 0,80 et f1-mesure de 0,77 sur un corpus constitué d’articles du Monde, a priori différents des nôtres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>5.1.2 C99 corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.1.2 Corpus C99</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>For English, we used the artificial corpus built by Choi (Choi, 2000) for comparing several segmentation systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour l'anglais, nous avons utilisé un corpus construit par Choi (Choi, 2000) pour comparer des systèmes de segmentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>This corpus is made up of 700 samples defined as follows: “A sample is a concatenation of ten text segments. A segment is the first n sentences of a randomly selected document for the Brown corpus”.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce corpus est composé de 700 échantillons définis comme suit : « Un échantillon est une concaténation de dix segments de texte. Un segment est la première partie de n phrases d'un document sélectionné au hasard du corpus Brown ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>Each column of Table 3 states for an interval of values for n .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Chaque colonne du tableau 3 indique une plage de valeurs pour n.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>Table 3 – Pk for C99 corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 3 – Pk pour le corpus C99</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>The first seven lines of Table 3 results from Choi’s experiments (Choi, 2001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les sept premières lignes du Tableau 3 proviennent des expériences réalisées par Choi (Choi, 2001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>The baseline is a procedure that partitions a document into 10 segments of equal length.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La procédure de base partitionne systématiquement chaque document en 10 segments de même longueur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>CWM is described in (Choi, 2001), U00 in (Utiyama and Isahara, 2001), C99 in (Choi, 2000), DotPlot in (Reynar, 1998) and Segmenter in (Kan et al., 1998).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>CWM est décrit dans (Choi, 2001), U00 dans (Utiyama et Isahara, 2001), C99 dans (Choi, 2000), DotPlot dans (Reynar, 1998) et Segmenter dans (Kan et al., 1998).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>Table 3 confirms first that the link detection part of TOPICOLL doesn’t debase its segmentation capabilities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le Tableau 3 confirme tout d'abord que la partie de détection de liens de TOPICOLL ne dégrade pas ses capacités de segmentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>It also shows that TOPICOLL’s results on this corpus are significantly lower than its results on the Le Monde corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il montre également que les résultats de TOPICOLL sur ce corpus sont significativement inférieurs à ceux obtenus sur le corpus du Monde .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>This is partially due to our collocation network for English: its density, i.e. the ratio between the size of its vocabulary and its number of collocations, is 30% lower than the density of the network for French, which has certainly a significant effect.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une des causes possibles de cette différence réside dans notre réseau de collocations pour l’anglais : sa densité, c’est-àdire le rapport entre la taille de son vocabulaire et son nombre de collocations, est inférieure de 30% à celle du réseau pour le français, ce qui a certainement un impact significatif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>Table 3 also shows that TOPICOLL has worse results than systems such as CWM, U00, C99 or DotPlot. This can be explained by the fact that TOPICOLL only works with a local context whereas these systems rely on the whole text they process.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le Tableau 3 montre aussi que TOPICOLL a des performances inférieures à des systèmes tels que CWM, U00, C99 ou DotPlot. Cela peut s'expliquer par le fait que TOPICOLL ne fonctionne qu'avec un contexte local, tandis que ces systèmes traitent globalement les textes qui leur sont soumis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>As a consequence, they have a global view on texts but are more costly than TOPICOLL from an algorithmic viewpoint.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En conséquence, ils ont une vue globale sur les textes mais sont plus coûteux que TOPICOLL d'un point de vue algorithmique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>Moreover, link detection makes TOPICOLL functionally richer than they are.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, la détection de liens thématiques rend TOPICOLL fonctionnellement plus riche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>5.2 Global evaluation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.2 Évaluation globale</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>The global evaluation of a system such as TOPICOLL faces a problem: a reference for link detection is relative to a reference for segmentation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'évaluation globale d'un système tel que TOPICOLL se heurte à un problème : une référence pour la détection de liens est nécessairement liée à une segmentation de référence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>Hence, mapping it onto the segments delimited by a system to evaluate is not straightforward.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Or, projeter cette référence sur les segments définis par le système à évaluer n’est pas une opération directe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>To bypass this problem, we chose an approach close the one adopted in TDT for the link detection task: we evaluated the probability of an error in classifying each couple of positions in a text as being part of the same topic ( Cpsame ) or belonging to different topics ( Cpdiff ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour contourner ce problème, nous avons choisi une méthode proche de celle adoptée dans TDT pour la tâche de détection de liens : nous avons évalué la probabilité d'une erreur dans la classification de chaque couple de positions d'un texte comme faisant partie du même thème (Cpsame) ou appartenant à des thèmes différents (Cpdiff).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>A miss is detected if a couple is found about different topics while they are about the same topic and a false alarm corresponds to the complementary case.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un faux négatif est détecté lorsque les positions d'un couple sont supposées relever de thèmes différents alors qu'ils sont relatifs au même thème. Une fausse alarme correspond au cas complémentaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>Table 4 – Error rates for Le Monde corpus</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 4 : Taux d'erreur pour le corpus du Monde</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>As the number of Cpdiff couples is generally much larger than the number of Cpsame couples, we randomly selected a number of Cpdiff couples equal to the number of Cpsame couples in order to have a large range of possible values.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le nombre de couples Cpdiff étant en général beaucoup plus grand que le nombre de couples Cpident , nous avons aléatoirement sélectionné un nombre de couples Cpdiff égal au nombre de couples Cpident de manière à préserver une plage de valeurs assez étendue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>Table 4 shows the results of TOPICOLL for the considered measure and compares them to a baseline procedure that randomly set a fixed number of boundaries and a fixed number of links between the delimited segments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le Tableau 4 montre les résultats de TOPICOLL pour la mesure considérée et les compare à une procédure de base qui fixe aléatoirement un nombre fixe de bornes et un nombre fixe de liens entre les segments délimités.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>This measure is a first proposition that should certainly be improved, especially for balancing more soundly misses and false alarms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette mesure est une première proposition qui doit encore être améliorée, en particulier pour obtenir un meilleur équilibre entre les faux négatifs et les fausses alarmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>6 Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>We have proposed a method for achieving both topic segmentation and link detection by using collocations together with word recurrence in texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons proposé une méthode permettant à la fois la segmentation thématique et la détection de liens dans les textes en utilisant des collocations et la récurrence lexicale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>Its evaluation showed the soundness of this approach for working with a local context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Son évaluation a montré la pertinence de cette approche pour des systèmes travaillant avec un contexte local.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>We plan to extend it to methods that rely on the whole text they process.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous envisageons de l'étendre à des méthodes se fondant sur une appréhension globale des textes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>We also aim at extending the evaluation part of this work by improving the global measure we have proposed and by comparing our results to human judgments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, nous souhaitons étendre l'évaluation de ce travail en améliorant la mesure globale que nous avons proposée et en confrontant nos résultats à des jugements humains.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>1 A collocation network is a set of collocations between words. This set can be viewed as a network whose nodes are words and edges are collocations. 2 In our case, this is the corpus used for building the collocation network.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Un réseau de collocations est un ensemble de collocations entre des mots. Cet ensemble peut être considéré comme un réseau dont les nœuds sont des mots et les arêtes sont des collocations. 2 Dans notre cas, c'est le corpus utilisé pour construire le réseau de collocations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>3 The recurrence of a word in a segment context is given by the ratio between the number of window contexts in which the word was present and the number of window contexts gathered by the segment context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 La fréquence d'une occurrence d'un mot dans un contexte de segment est donnée par le rapport entre le nombre de contextes de fenêtre dans lesquels le mot est présent et le nombre de contextes de fenêtre réunis dans le contexte de segment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>4 Pk evaluates the probability that a randomly chosen pair of words, separated by k words, is wrongly classified, i.e. they are found in the same segment by TOPICOLL while they are actually in different ones (miss of a document break) or they are found in different segments by TOPICOLL while they are actually in the same one (false alarm).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Pk évalue la probabilité qu'un couple de mots choisis aléatoirement dans un texte et séparés par k mots soit mal classé, c'est-à-dire qu'ils soient trouvés dans le même segment par TOPICOLL alors qu'ils sont en fait dans des segments différents (faux négatif) ou qu'ils soient trouvés dans des segments différents par TOPICOLL alors qu'ils sont en fait dans le même segment (fausse alarme).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>5 Precision is given by Nt / Nb and recall by Nt / D , with D the number of document breaks, Nb the number of boundaries found by TOPICOLL and Nt the number of boundaries that are document breaks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 La précision est définie par Nt / Nb et le rappel par Nt / D , où D est le nombre de ruptures de document, Nb le nombre de bornes trouvées par TOPICOLL, Nt le nombre de bornes qui sont des ruptures de document.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

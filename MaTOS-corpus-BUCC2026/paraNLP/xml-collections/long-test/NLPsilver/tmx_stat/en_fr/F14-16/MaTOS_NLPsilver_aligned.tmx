@@ -1,0 +1,1607 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-F14-16. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/L14-1298/</url_en>
+        <url_fr>https://hal.science/hal-00975897</url_fr>
+        <title_en>ROOTS: a toolkit for easy, fast and consistent processing of large sequential annotated data collections</title_en>
+        <title_fr>ROOTS : un outil pour manipuler facilement, efficacement et avec cohérence des corpus annotés de séquences</title_fr>
+        <docid>F14-16</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>ROOTS: a toolkit for easy, fast and consistent processing of large sequential annotated data collections</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>ROOTS : un outil pour manipuler facilement, efficacement et avec cohérence des corpus annotés de séquences de grande taille</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>The development of new methods for given speech and natural language processing tasks usually consists in annotating large corpora of data before applying machine learning techniques to train models or to extract information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le développement de nouvelles méthodes pour les tâches de traitement de la parole et du langage naturel consiste généralement à annoter de grands ensembles de données avant d’appliquer des techniques d’apprentissage automatique pour former des modèles ou extraire des informations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>Beyond scientific aspects, creating and managing such annotated data sets is a recurrent problem.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au-delà des aspects scientifiques, la création et la gestion de tels jeux de données annotés est un problème récurrent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>While using human annotators is obviously expensive in time and money, relying on automatic annotation processes is not a simple solution neither.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que l’utilisation d’annotateurs humains soit évidemment coûteuse en temps et en argent, se fier à des processus d’annotation automatiques n’est pas une solution simple non plus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>Typically, the high diversity of annotation tools and of data formats, as well as the lack of efficient middleware to interface them all together, make such processes very complex and painful to design.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, la grande diversité des outils d’annotation et des formats de données, ainsi que l’absence de middleware efficace pour les interfacer, rendent ces processus très complexes et difficiles à concevoir.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>To circumvent this problem, this paper presents the toolkit ROOTS, a freshly released open source toolkit (http://roots-toolkit.gforge.inria.fr) for easy, fast and consistent management of heterogeneously annotated data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour contourner ce problème, cet article présente ROOTS, un outil libre récemment publié (http://roots-toolkit.gforge.inria.fr) pour la gestion facile, rapide et homogène de données annotées de manière hétérogène.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>ROOTS is designed to efficiently handle massive complex sequential data and to allow quick and light prototyping, as this is often required for research purposes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>ROOTS est conçu pour gérer efficacement des données séquentielles complexes massives et permettre une prototypage rapide et léger, comme cela est souvent nécessaire à des fins de recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>To illustrate these properties, three sample applications are presented in the field of speech and language processing, though ROOTS can more generally be easily extended to other application domains.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour illustrer ces propriétés, trois exemples d'applications sont présentés dans le domaine du traitement du langage et de la parole, bien que ROOTS puisse plus généralement être facilement étendu à d'autres domaines d'application.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>Keywords: Toolkit, corpus management, speech and language processing, annotated data representation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mots-clés : Boîte à outils, gestion de corpus, traitement du langage, représentation de données annotées</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>The development of new methods for given speech and natural language processing (NLP) tasks usually faces, beyond scientific aspects, various technical and practical data management problems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le développement de nouvelles méthodes pour les tâches de traitement automatique de la parole et du langage naturel (TAL) est généralement confronté, outre les aspects scientifiques, à divers problèmes techniques et pratiques de gestion des données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>First, the sets of required annotated features and their desired distribution in the training data are rarely the same for two different tasks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, les ensembles de descripteurs annotés nécessaires et leur distribution souhaitée dans les données d'entraînement sont rarement les mêmes pour deux tâches différentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>For instance, in the field of NLP, developing a named entity extractor on texts mainly requires morphosyntactic and syntactic annotations, and relies on corpora with a high proportion of named entities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, dans le domaine du traitement automatique des langues (TAL), le développement d’un extracteur d’entités nommées requiert généralement un corpus de textes annotés en informations morphosyntaxiques et syntaxiques et dont la proportion d’entités nommées est élevée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>At the opposite, a word phonetizer is trained on alignments between graphemes and phonemes, eventually augmented with etymological information, whereas word and phoneme distributions are of lesser importance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A l'inverse, un phonétiseur de mots est formé à partir d'alignements entre graphèmes et phonèmes, éventuellement agrémentés d'informations étymologiques, tandis que les distributions de mots et de phonèmes sont de moindre importance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>Second, many dedicated systems or expert resources exist to provide annotations, e.g., part of speech (POS) taggers, named entity extractors, pronunciation dictionaries, list of proper names, etc. However, most of these tools use different file formats, time scales, or alphabets of tags.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, il existe de nombreux systèmes spécialisés ou ressources expertes capables de fournir des annotations, par exemple des étiqueteurs de parties du discours (POS), des extracteurs d'entités nommées, des dictionnaires de prononciation, des listes de noms propres, etc. Cependant, la plupart de ces outils utilisent des formats spécifiques, travaillent sur des échelles temporelles différentes ou s'appuient sur des jeux d'étiquettes qui leur sont propres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>This assessment also stands for manual annotation tools since many of them coexist without sharing interoperable formats.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce constat est également valable pour les outils d’annotation manuelle puisque de multiples logiciels co-existent sans véritablement partager de format en commun.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>This heterogeneity frequently causes wastes of time when addressing elaborate tasks since a significant part of their resolution is spent in repeatedly converting data representations to others, and in aligning information coming from various tools.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette hétérogénéité induit souvent un travail long et rébarbatif de conversion et d’alignement des informations issues de différents outils.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>Possibly, some information is altered, simplified or even lost, while some other is redundantly stored over different files.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Éventuellement, certaines informations sont altérées, simplifiées ou même perdues, tandis que d'autres sont redondantes car stockées de différentes manières dans divers fichiers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>Beyond the waste of time, this data management complexity can lead to errors in programs and in results, all the more frequently that addressed tasks are nowadays more and more elaborate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au delà de la perte de temps, cette complexité peut conduire à des erreurs dans les programmes et dans les résultats, ceci d’autant plus fréquemment que les tâches à résoudre sont aujourd’hui de plus en plus élaborées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>The objective of this paper is to introduce a toolkit, called ROOTS, which homogenizes the management of such annotated data and thus simplifies application developments, especially for research purposes, in the frame of speech processing and NLP.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’objectif de cet article est de présenter un outil, appelé ROOTS, qui homogénéise la gestion de ces données annotées et permet de simplifier le développement d’applications, notamment à des fins de recherche, dans le cadre du traitement de la parole et du langage naturel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>ROOTS has been recently released on the Internet[1] under the terms of the GNU Lesser General Public Licence (LGPL) v3.0.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>ROOTS a été récemment publié sur Internet [1] sous les termes de la licence GNU Lesser General Public Licence (LGPL) v3.0.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>This paper presents this first public version of the toolkit.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article présente cette première version publique de l'outil.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>Precisely, after positioning ROOTS according to related tools in Section 2, the main features of the proposed toolkit are detailed in Section 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après avoir positionné ROOTS en fonction des outils connexes dans la section 2, la section 3 détaille les principales caractéristiques de l’outil proposé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>Following sections then illustrate its performances on three sample tasks. An unsupervised process to create an annotated corpus of e-books is presented in Section 4, while Section 5 demonstrates how simply statistics can be extracted from this corpus using ROOTS, and how it can be interfaced with a more advanced application, namely corpus reduction over a set of constraints.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les sections suivantes illustrent ses performances sur trois tâches d'échantillonnage. Une procédure non supervisée pour créer un corpus annoté de livres électroniques est présentée à la section 4, tandis que la section 5 montre comment des statistiques simples peuvent être extraites à partir de ce corpus à l'aide de ROOTS, et comment il peut être interfacé avec une application plus avancée, à savoir la réduction de corpus sur un ensemble de contraintes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>2. Positioning</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Positionnement</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>In order to homogenize and to synchronize different annotation levels, (Barbot et al., 2011) have initially proposed ROOTS as a theoretical solution based on matrix algebraic relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d’homogénéiser et de synchroniser les différents niveaux d’annotation d’un corpus, (Barbot et al. , 2011) ont initialement proposé ROOTS (pour Rich Object Oriented Transcription System ) comme une solution fondée sur des relations algébriques matricielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>A Perl prototype of this solution has been validated in (Bo¨effard et al., 2012) by implementing an audiobook corpus construction process for text-to-speech (TTS).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un prototype en Perl implémentant cette solution a été validé dans (Boëffard et al. , 2012) par la mise au point d’un processus de construction automatique d’un corpus de livres audio à des fins de synthèse vocale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>This process was taking advantage of ROOTS to consistently represent numerous annotation levels ranging from speech signal segments to syntactic information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce processus tirait profit de ROOTS pour représenter de manière homogène de nombreux niveaux d’annotations allant des segments de signaux de parole à l’information syntaxique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>Since, a new implementation in C++ has been developed, and ROOTS is now a real complete user-friendly toolkit able to efficiently process large data collections.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Depuis, une nouvelle implémentation en C++ a été développée, et ROOTS est maintenant un véritable ensemble d'outils convivial et complet, capable de traiter de larges collections de données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>Other tools share this ability in the speech, NLP and multimedia communities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autres outils partagent cette capacité dans les communautés de la parole, de la NLP et des multimédias.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>Among them, GATE (Cunningham et al., 2002) proposes a framework to develop NLP pipelines.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Parmi eux, GATE (Cunningham et al., 2002) propose un cadre pour développer des pipelines de NLP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>However, GATE rather focuses on delivering tools for (manual or automatic) data labeling through an integrated development environment, but does not provide facilities to switch between bundled processing components and external tools.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, GATE se concentre plutôt sur la fourniture d'outils pour le marquage de données (manuel ou automatique) via un environnement de développement intégré, mais ne fournit pas de moyens pour basculer entre les composants de traitement fournis et les outils externes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>Figure 1: Hierarchical organization of data in ROOTS.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>FIGURE 1 – Organisation logique des données dans ROOTS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>More recently, the NITE XML Toolkit, or NXT, has been proposed to manage multimodal corpora (Carletta et al., 2005; Calhoun et al., 2010).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus récemment, le NITE XML Toolkit, ou NXT, a été proposé pour gérer des corpus multimodaux (Carletta et al., 2005 ; Calhoun et al., 2010).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>NXT proposes a generic data organization model able to represent large corpora with a wide range of annotation types.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>NXT propose un modèle générique d'organisation des données, capable de représenter de grands corpus avec une large gamme de types d'annotation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>Its philosophy is to consider corpora as databases from which data is accessed through a query language.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sa philosophie est de considérer les corpus comme des bases de données auxquelles on accède par le biais d'un langage de requête.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>On the contrary, in ROOTS, the user browses data as he sees fit.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En revanche, dans ROOTS, l'utilisateur navigue dans les données comme il l'entend.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>Furthermore, mechanisms to link heterogeneous annotations are not optimized in NXT whereas this is central in ROOTS.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, les mécanismes de liaison d'annotations hétérogènes ne sont pas optimisés dans NXT alors qu'ils sont au centre de ROOTS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>In a more general approach, UIMA (Ferrucci and Lally, 2004; Ferrucci et al., 2006) proposes software engineering standards for unstructured data management, including annotation and processing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans une approche plus générale, UIMA (Ferrucci et Lally, 2004 ; Ferrucci et al., 2006) propose des standards d'ingénierie logicielle pour la gestion de données non structurées, y compris l'annotation et le traitement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>While this project is supported by the Apache Software Fundation, UIMA is technically too advanced for fast and light prototyping.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que ce projet soit soutenu par la fondation Apache Software, UIMA est techniquement trop avancé pour un prototypage rapide et léger.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>It is rather devoted to industrial developments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est plutôt dédié aux développements industriels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>Moreover, UIMA’s commitment stands in imposing a common format to data processing tools whereas ROOTS’ philosophy rather aims at bridging adhoc formats to easily pipeline data processing tools.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, l'engagement d'UIMA consiste à imposer un format commun aux outils de traitement des données, tandis que la philosophie de ROOTS vise plutôt à relier des formats ad hoc pour faciliter le pipeline des outils de traitement des données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>In this spirit, ROOTS is close to work done within the TTS system Festival (Black et al., 2002).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet esprit, ROOTS se rapproche des travaux réalisés dans le cadre du système TTS Festival (Black et al., 2002).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>This system relies on a formalism called HRG, standing for Heterogenous Relation Graphs, which offers a unique representation of different information levels involved in the TTS system (Taylor et al., 2001).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce système repose sur un formalisme appelé HRG, qui signifie Heterogenous Relation Graphs, et qui offre une représentation unique des différents niveaux d'information impliqués dans le système TTS (Taylor et al., 2001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>HRG proposes a C++ library with classes for many linguistic, phonological, acoustic, etc., structures and the relations between them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>HRG propose une bibliothèque C++ avec des classes pour de nombreuses structures linguistiques, phonologiques, acoustiques, etc., et les relations entre elles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Our tool is different from HRG in the sense that the latter is part of the TTS system Festival whereas ROOTS is completely autonomous.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre outil est différent de HRG dans le sens où ce dernier fait partie du système TTS Festival tandis que ROOTS est complètement autonome.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>Moreover, ROOTS comes along with a true application programming interface (API), in C++ and Perl for the moment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, ROOTS est livré avec une véritable interface de programmation (API), en C++ et Perl pour le moment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>Finally, handling and analyzing massive collections of annotated data—which is nowadays often referred to as the “big data” problem—also implies problems to store very large amounts, e.g., petabytes, of information (Jacobs, 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, la manipulation et l'analyse de collections massives de données annotées, qui sont désormais souvent désignées comme le problème des « big data », impliquent également des problèmes de stockage de très grandes quantités d'informations, par exemple des pétaoctets (Jacobs, 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>Solutions exist to deal with such storage issues, e.g., the system Hadoop (Shvachko et al., 2010).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des solutions existent pour gérer ces problèmes de stockage, par exemple le système Hadoop (Shvachko et al., 2010).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>However, this aspect is voluntarily left aside in this paper, as well as in ROOTS in general terms. The next section draws an overview of the toolkit ROOTS. Figure 2: Example of three sequences linked by two relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, cet aspect est volontairement laissé de côté dans cet article, ainsi que dans ROOTS en termes généraux. La section suivante donne un aperçu de l'outil ROOTS. FIGURE 2 – Exemple de 3 séquences liées par 2 relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>3. Presentation of the toolkit Roots</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Présentation de la boîte à outils Roots</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>ROOTS stems from Rich Object Oriented Transcription System.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>ROOTS est issu de Rich Object Oriented Transcription System.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>Basically, it provides many mechanisms enabling annotated sequential data generation, management and processing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il fournit de nombreux mécanismes permettant la génération, la gestion et le traitement de données séquentielles annotées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>This section gives a broad description of ROOTS by presenting the proposed architecture of data, the storage capabilities, and facilities made available to users through the API and wrappers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette section donne une description générale de ROOTS en présentant l'architecture des données proposée, les capacités de stockage et les fonctionnalités mises à disposition des utilisateurs via l'API et les wrappers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>Finally, a minimal example of code is presented.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, un exemple minimal de code est présenté.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>3.1. Logical architecture</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1. Architecture logique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>As summarized in Figure 1, data are organized hierarchically in ROOTS, starting from fine grain information in items and moving to macroscopic representations as corpora.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme le résume la figure 1, les données sont structurées hiérarchiquement dans ROOTS, à partir d'informations de fine granularité dans les éléments et se déplaçant vers des représentations macroscopiques en tant que corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>Figure 3: Example of file structure for a corpus of broadcast news shows.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 3 : Exemple de structure de fichier pour un corpus de journaux télévisés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>As a fundamental concept, data in ROOTS is modeled as sequences of items.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Fondamentalement, les données sont modélisées comme des séquences d’items.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>These items can be of many types, e.g., words, graphemes, named entity classes, signal segments, etc., and can thus represent various annotation levels of the same data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces éléments peuvent être de nombreux types, par exemple, mots, graphèmes, classes d'entités nommées, segments de signaux, etc., et peuvent donc représenter différents niveaux d'annotations des mêmes données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>Correspondences between items from different sequences are then defined as algebraic relations, leading to a graph where nodes are items and edges are derived from relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les correspondances entre les éléments des différentes séquences sont ensuite définies comme des relations algébriques, ce qui conduit à un graphe où les nœuds sont des éléments et les arêtes sont dérivées des relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>An example of a sequence of words along with corresponding POS and phonemes is given in Figure 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’exemple d’une séquence de mots annotée en POS et en phonèmes est donnée en figure 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>Relations Rpos[w] and [R] ph[w] , respectively between words and POS, and between words and phonemes, are implemented as (sparse) matrices.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les relations Rpos[w] et [R] ph[w] , respectivement entre les mots et les POS, et entre les mots et les phonèmes, sont implémentées sous la forme de matrices (parsemées).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>For instance, Rph[w] can be written as:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, Rph[w] peut être écrit comme suit :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>where columns denotes phonemes and rows denotes words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où les colonnes représentent les phonèmes et les lignes représentent les mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>Then, requesting a given target annotation for a source item simply consists in finding all paths from this item to all possible items in the target sequence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, la demande d'une annotation cible donnée pour un élément source consiste simplement à trouver tous les chemins de cet élément vers tous les éléments possibles de la séquence cible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>In practice, this is done by composing relations by means of matrix multiplications and transpositions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En pratique, cela se fait en composant des relations au moyen de multiplications et de transpositions de matrices.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>For instance, the relation Rpos[ph] between phonemes and POS can be computed as Rpos[ph][=] [R] ph[w] ⊺ · Rposw .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, la relation Rpos[ph] entre les phonèmes et les POS peut être calculée comme Rpos[ph][=] [R] ph[w] ⊺ · Rposw .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>All theoretical details are exposed in (Barbot et al., 2011).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tous les détails théoriques sont exposés dans (Barbot et al., 2011).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>Then, interrelated sequences are gathered into utterances.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les séquences interreliées sont ensuite regroupées en énoncés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>According to the application domain, utterances can refer to sentences, breath groups, or any relevant unit.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Selon le domaine d'application, les énoncés peuvent correspondre à des phrases, des groupes de souffle ou toute autre unité pertinente.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>Finally, a list of utterances forms a corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, une liste d'énoncés forme un corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>Hence, many structures can be considered as a corpus: paragraphs, book chapters, news reports, broadcast news shows, etc.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, de nombreuses structures peuvent être considérées comme un corpus : des paragraphes, des chapitres de livres, des reportages télévisés, des émissions d'actualités...</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>To hierarchize structures, a corpus can be chunked into subcorpora, for instance to represent a chapter as a list of paragraphs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour hiérarchiser ces structures, un corpus peut être divisé en sous-corpus, par exemple pour représenter un chapitre comme une liste de paragraphes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>Regarding usage, chunks are considered as real autonomous corpora, which makes it easy to test programs on small chunks first before applying it on their full embedding corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En ce qui concerne l'utilisation, les chunks sont considérés comme de véritables corpora autonomes, ce qui permet de tester les programmes sur de petits chunks avant de les appliquer sur leur corpus d'incorporation complet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>Finally, besides this “vertical” slicing, corpora can also be partitioned “horizontally” into layers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, outre ce découpage « vertical », les corpus peuvent aussi être découpés « horizontalement » en couches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>These layers are meant to gather annotations from a same field.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces couches permettent de rassembler des annotations d'un même domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>For instance, if dealing with broadcast news shows, 3 layers of interest may be imagined to separate metadata, linguistic and acoustic information. The choice of this segmentation scheme is up to the corpus designer and should match the needs of future users.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, dans le cadre d’un corpus de journaux télévisés, il peut être intéressant de découper le corpus en 3 couches : l’une pour les métadonnées, l’autre pour les informations linguistiques et l’autre pour les informations acoustiques. Le choix de ce schéma de segmentation dépend du concepteur du corpus et doit correspondre aux besoins des utilisateurs futurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>3.2. Data storage In ROOTS, information is stored in files, as opposed to databases, because files are easy to move, save, copy through operations that most of users know, whereas database management systems usually require more advanced skills.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2. Stockage des données Dans ROOTS, les informations sont stockées dans des fichiers, et non dans des bases de données, car les fichiers sont faciles à déplacer, à enregistrer et à copier grâce à des opérations que la plupart des utilisateurs connaissent, tandis que les systèmes de gestion de bases de données nécessitent généralement des compétences plus avancées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>Furthermore, this is the most common usage in the speech and NLP research communities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, c'est l'usage le plus courant dans les communautés de recherche en traitement du langage naturel et en langage naturel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>In this frame, ROOTS enables storing data in various ways.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cadre, ROOTS permet de stocker des données de différentes manières.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>Basically, a corpus is stored as one file containing all utterances, sequences, items and relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En principe, un corpus est stocké dans un fichier unique contenant toutes les énonciations, séquences, éléments et relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>However, a corpus can be segmented into several files by independently storing every chunk and every layer, and thus making read/write operations lighter.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, un corpus peut être segmenté en plusieurs fichiers en stockant chaque morceau et chaque couche indépendamment, et ainsi rendre les opérations de lecture/écriture plus légères.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>An example of a segmented corpus is drawn in Figure 3. The top-level file all shows.json represents a corpus of daily broadcast news shows, and enumerates the files containing the show of each day. Then, every show file points to alls layers of each news report.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un exemple de corpus segmenté est représenté sur la figure 3. Le fichier de niveau supérieur all-shows.json représente un corpus de journaux télévisés diffusés quotidiennement et répertorie les fichiers contenant les émissions de chaque jour. Ensuite, chaque fichier d’émission pointe vers les couches de chaque reportage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>On a user point of view, this file tree is hidden, and loading and saving operations are transparent, though controllable if needed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Du point de vue de l'utilisateur, cet arbre de fichiers est caché et les opérations de chargement et d'enregistrement sont transparentes, bien qu'il soit possible de les contrôler si nécessaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>Users simply request access to utterances and sequences via identifiers (indices or names).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les utilisateurs demandent simplement l'accès aux énoncés et aux séquences via des identificateurs (indices ou noms).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>Merges and splittings of utterances when loading and saving corpora are handled automatically by ROOTS.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les regroupements et les séparations d'énoncés lors du chargement et de l'enregistrement des corpus sont gérés automatiquement par ROOTS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>Moreover, memory is efficiently managed by postponing file loadings, and thus memory allocations, until it is really needed, and thanks to a cache over chunks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, la mémoire est gérée de manière efficace en reportant le chargement des fichiers, et donc les allocations de mémoire, jusqu'à ce qu'ils soient vraiment nécessaires, et grâce à un cache par blocs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>This cache prevents from reloading data from files too frequently.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce cache empêche de charger les données des fichiers trop fréquemment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>It also limits the maximum number of allocated utterances at runtime.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il limite également le nombre maximum de phrases attribuées à l'exécution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>Two file formats are currently available: XML and JSON.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux formats de fichier sont actuellement disponibles : XML et JSON.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>Those formats have been chosen because they are human readable, and because they are particularly suited for the development of Web services.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces formats ont été choisis car ils sont lisibles par l'homme et particulièrement adaptés au développement de services Web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>Other formats will be added in future versions, especially a binary format to fasten read/write operations in time-critical applications, or formats of other popular data management toolkits like those presented in Section 2, e.g., UIMA or NXT.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autres formats seront ajoutés dans les versions futures, notamment un format binaire pour accélérer les opérations de lecture/écriture dans les applications critiques en temps, ou des formats d'autres ensembles d'outils populaires de gestion de données, comme ceux présentés dans la Section 2, par exemple UIMA ou NXT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>Of course, it is still possible for users to develop wrappers to load from or dump to other formats.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien entendu, les utilisateurs peuvent toujours développer des enveloppes pour charger ou décharger d'autres formats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>For instance, CSV-like formats are very easy to parse with ROOTS’ API.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, les formats similaires au CSV sont très faciles à analyser avec l’API de ROOTS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>3.3. API and tools</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.3. API et outils</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>Since the prototype presented in (Barbot et al., 2011) and (Bo¨effard et al., 2012), a new implementation of the toolkit has been written with a core library in C++ and a collection of utility scripts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Depuis le prototype présenté dans (Barbot et al., 2011) et (Bo¨effard et al., 2012), une nouvelle implémentation de la boîte à outils a été écrite avec une bibliothèque principale en C++ et un ensemble d’utilitaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>The library represents about 33K lines of code and is widely documented, providing a rich API.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La bibliothèque représente environ 33 000 lignes de code et est largement documentée, offrant une API riche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>The main useful operations accessible through this API are listed below for each type of element in ROOTS.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les principales opérations utiles accessibles via cette API sont listées ci-dessous pour chaque type d'élément dans ROOTS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>- Item: get and set the content or characteristics, e.g., gender, number for POS ; get items which are in relation with another item ; dump[2] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Item : obtenir et définir le contenu ou les caractéristiques, comme le genre et le nombre pour un POS ; obtenir les items liés dans d’autres séquences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>- Sequence: add, remove, get, and update one or several items ; dump.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Séquence : ajout, suppression, extraction et mise à jour d’un ou plusieurs items.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>- Relation: get items related to another ; link or unlink items ; dump.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Relation : obtenir des éléments liés à un autre ; lier ou délier des éléments ; supprimer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>- Utterance: add, remove, get, and update sequences ; add, remove, and update relations ; get direct or composed relations ; dump.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Utterance : ajout, suppression, extraction et mise à jour des séquences et relations ; obtenir des relations directes ou composées entre séquences ; combiner, scinder et sauvegarder.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>- Corpus: add, remove, get, and update an utterance ; add and remove a chunk or a layer ; dump.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Corpus : ajout, suppression, extraction et mise à jour d’un énoncé ; ajout et suppression d’un morceau ou d’une couche ; extraction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>As C++ is an object-oriented language, the API can be very easily extended, for instance to integrate new types of items and new file formats.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné que C++ est un langage orienté objet, l'API peut être très facilement étendue, par exemple pour intégrer de nouveaux types d'éléments et de nouveaux formats de fichiers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>For simple and fast prototyping, a Perl binding of this API is also available. This binding has been generated by the open source automatic interface generator SWIG[3] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour permettre le prototypage simple et rapide de programmes, une interface Perl de cette API est aussi disponible grâce au générateur automatique d’interface SWIG[3].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>As SWIG is a rich tool, ROOTS’ C++ API could be ported to many other programming languages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme SWIG est un outil riche, l'API C++ de ROOTS peut être portée vers beaucoup d'autres langages de programmation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>For instance, a binding for Python, which is very popular in the scientific community, is scheduled.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, un portage vers le langage Python, très populaire dans le milieu scientifique, est prévu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>Algorithm 1: Sample code using ROOTS’ Perl API. Furthermore, the toolkit comes with various wrapping scripts developed using the Perl API. Those scripts provide facilities for simple operations, e.g., merges of corpora and layers, statistics extraction, search, textual and graphical visualization, etc.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Algorithme 1 : Exemple de code utilisant l'API Perl de ROOTS. De plus, le kit contient divers scripts d'enveloppe développés à l'aide de l'API Perl. Ces scripts fournissent des fonctionnalités pour des opérations simples, par exemple, les fusions et découpages de corpus et de couches, l'extraction de statistiques, la recherche, la visualisation textuelle et graphique des données, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>Other scripts enable commandline imports and exports with the standard speech and language processing tools HTK (Young et al., 2009), Praat (Boersma, 2002), Transcriber (Barras et al., 2001), and WaveSurfer (Sj¨olander and Beskow, 2000).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D’autres scripts permettent également les imports et exports depuis et vers les outils de traitement de la parole HTK (Young et al. , 2009), Praat (Boersma, 2002), WaveSurfer (Sjölander et Beskow, 2000) et Transcriber (Barras et al. , 2001).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>All sources, scripts and documentations, as well as tutorials, are freely available on http://roots-toolkit.gforge.inria.fr.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutes les sources, les scripts et la documentation, ainsi que les tutoriels, sont disponibles gratuitement en ligne sur http://roots-toolkit.gforge.inria.fr.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>The API is illustrated on a first minimal example of code in the next section.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'API est illustrée sur un premier exemple minimal de code dans la section suivante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>3.4. Sample code</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.4 Exemple de code</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>Let us assume a text file containing sentences where words are given with their lemma.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Supposons qu'un fichier texte contienne des phrases où les mots sont donnés avec leur lemme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>The considered input format is one word per line, words and lemmas are separated by a tabulation, and the end of a sentence is marked by an empty line or the end of file. One wants to write a program which converts the text into a ROOTS corpus and prints the content of this corpus sentence by sentence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le format de saisie considéré est un mot par ligne, les mots et les mots-types sont séparés par une tabulation et la fin de phrase est marquée par une ligne vide ou la fin du fichier. On veut écrire un programme qui convertit le texte en un corpus ROOTS et qui affiche le contenu de ce corpus phrase par phrase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>An example of input and the corresponding expected output are shown in Table 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un exemple d'entrée et la sortie attendue correspondante sont présentés dans le tableau 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Example of input and output for Algorithm 1. Algorithm 1 presents one possible way to write this program using ROOTS’ API. This example, and following ones in the paper, is written in Perl as it is more compact than C++.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 : Exemple d'entrée et de sortie pour l'algorithme 1. L'algorithme 1 présente une façon possible d'écrire ce programme en utilisant l'API ROOTS. Cet exemple, et les suivants dans le document, sont écrits en Perl car ils sont plus compacts que C++.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>In practice, the same code could be written in C++ with only minor changes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En pratique, le même code pourrait être écrit en C++ avec seulement de légers changements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>First, the package for ROOTS is imported (line 1), and empty objects are created (l. 3-9): a corpus, an utterance, two temporary items of word type$word and $lemma[4] , two sequences of word type items called “Word” and “Lemma” respectively, and a relation between these two sequences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, le package pour ROOTS est importé (ligne 1), et des objets vides sont créés (l. 3-9) : un corpus, une énonciation, deux éléments temporaires de type de mot $word et $lemma[4], deux séquences d'éléments de type de mot appelées « Word » et « Lemma » respectivement, et une relation entre ces deux séquences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>The sequences and the relation are inserted into the utterance (l. 11-13).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les séquences et la relation sont insérées dans l'énoncé (l. 11-13).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>Then, each line of the input file is parsed (l. 15-30).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, chaque ligne du fichier d’entrée est analysée (l. 15-30).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>If the line is not empty, the pair of strings for a word and its lemma are read (l. 18), the content of temporary items are set and items inserted into the sequences[5] (l. 19-23).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si la ligne n'est pas vide, la paire de chaînes pour un mot et son lemme sont lues (l. 18), le contenu des éléments temporaires est défini et les éléments sont insérés dans les séquences[5] (l. 19-23).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>Based on positions m and n in the sequences, a link between inserted items is set in the relation (l. 23).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fonction des positions m et n dans les séquences, un lien entre les éléments insérés est défini dans la relation (l. 23).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>If the line is empty and the sequence of words is not empty (l. 25), the utterance is added to the corpus (l. 26) before clearing the sequences in anticipation to a new sentence (l. 27-28).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si la ligne est vide et que la séquence de mots n'est pas vide (l. 25), l'énoncé est ajouté au corpus (l. 26) avant de supprimer les séquences en prévision d'une nouvelle phrase (l. 27-28).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>This latter action implicitly removes all the links in the relation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette dernière action supprime implicitement tous les liens de la relation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>Similarly, when the end of file is reached, the utterance is added to the corpus if relevant (l. 31), and the corpus is saved into a JSON file (l. 32). Finally, the corpus is browsed (l. 34-39).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De la même manière, lorsqu'on atteint la fin du fichier, l'énoncé est ajouté au corpus s'il est pertinent (l. 31), et le corpus est enregistré dans un fichier JSON (l. 32). Enfin, le corpus est parcouru (l. 34-39).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>For each index i , a copy of the corresponding utterance is retrieved (l. 35), its word and lemma sequences are read and printed to the standard output (l. 36-38).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque index i, une copie de l'énoncé correspondant est récupérée (l. 35), ses séquences de mots et de lemme sont lues et imprimées en sortie standard (l. 36-38).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>At the end of each iteration, the utterance copy is destroyed in order to free memory (l. 39). Following the same principles as those presented in this section, the two next sections present examples of more complex corpus creation and processing tasks using ROOTS.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À la fin de chaque itération, la copie de l'énoncé est détruite afin de libérer de la mémoire (l. 39). En suivant les mêmes principes que ceux présentés dans cette section, les deux sections suivantes présentent des exemples de tâches de création et de traitement de corpus plus complexes utilisant ROOTS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>4. Application to corpus generation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Application à la génération de corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>ROOTS has been developed to help users creating and processing corpora with a large variety of information coming from various dedicated data analysis tools.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>ROOTS a été développé pour aider les utilisateurs à créer et traiter des corpus avec une grande variété d'informations provenant de divers outils d'analyse de données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>While Section 5 deals with corpus processing, this section first demonstrates how ROOTS is effective for corpus generation on a real-life example. Precisely, an automatic text annotation process for French is introduced before applying it to a collection of e-books and briefly analyzing the resulting corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette section démontre d'abord les capacités de ROOTS pour la génération de corpus sur un exemple concret, puis sur une tâche de calcul de statistiques à partir d'un corpus créé via ROOTS. Plus précisément, un processus d'annotation automatique de texte en français est présenté avant d'être appliqué à une collection de livres électroniques et d'analyser brièvement le corpus résultant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>4.1. Automatic annotation process</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Processus d'annotation automatique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>Based on a raw text in French, we designed an automatic processing chain which enriches the text with the following labels: graphemes, POS, lemmas, named entities, syntax trees, phonemes, non speech sounds and syllables.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons conçu une chaîne de traitement automatique qui, à partir d'un texte brut en français, enrichit le texte avec les étiquettes suivantes : graphèmes, POS, lemmes, entités nommées, arbres syntaxiques, phonèmes, sons non vocaux et syllabes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>As shown in Figure 4, this is achieved by augmenting a rudimentary textual layer containing the sole sequences of raw words and corresponding graphemes with a linguistic and a phonological layer.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme illustré par la figure 4, ce processus consiste à compléter une couche d'informations textuelles rudimentaires, composées des seules séquences de mots bruts et des graphèmes correspondants, avec une couche linguistique et une couche phonologique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>Information of those two layers are produced using two state-of-the-art dedicated tools: an NLP toolkit developed by Synapse Développement[6] ; and a grapheme-to-phoneme conversion Web service from Voxygen[7] .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les informations de ces deux couches sont produites à l'aide de deux outils spécialisés de pointe : un kit de développement logiciel pour le TAL développé par Synapse Développement[6] ; et un service web de conversion graphème-phonème de Voxygen[7].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>As NLP tools usually rely on their own specific word tokenization[8] , three different word sequences are considered: raw words, words from linguistic processing, and words as considered by the phonetizer. Graphemes are used as pivots to navigate between these sequences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme les outils de NLP s'appuient généralement sur leur propre découpage en mots[8] , trois séquences différentes de mots sont considérées : les mots bruts, les mots issus du traitement linguistique et les mots considérés par le phonétiseur. Les graphèmes sont utilisés comme pivot pour naviguer entre ces séquences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>Outputs of the annotation tools are parsed and transformed into ROOTS objects using glue scripts in Perl (about 2 , 000 lines).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les sorties des outils d’annotations sont converties en objets ROOTS à l’aide de scripts Perl écrits pour l’occasion (environ 2 000 lignes de code).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>Figure 4: Schematic view of relations between sequences. 4.2. Creation of a corpus of e-books</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 4 : Vue schématique des relations entre les séquences. 4.2. Création d'un corpus de livres électroniques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>The automatic annotation process described above has been applied to 1 , 300 free e-books (classics) in French collected from http://www.ebooksgratuits.com.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le processus d'annotation automatique décrit ci-dessus a été appliqué à 1 300 livres numériques gratuits (classiques) en français collectés depuis http://www.ebooksgratuits.com.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>Precisely, after converting the e-books[9] and cleaning the resulting raw texts, a first ROOTS corpus made of the sole raw word and grapheme sequences has been created.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, après la conversion des livres électroniques [9] et le nettoyage des textes bruts résultants, un premier corpus ROOTS composé uniquement de séquences de mots et de graphèmes bruts a été créé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>Then, the annotation process has been executed in parallel on a computer powered by a 64 core 2 GHz Intel Xeon CPU and 120 GB RAM.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, le processus d'annotation a été exécuté en parallèle sur un ordinateur équipé d'un processeur Intel Xeon 2 GHz à 64 cœurs et de 120 Go de RAM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>Table 2: Numbers of automatically generated items in the corpus of e-books. The annotation process resulted in a ROOTS corpus whose statistics about items are presented in Table 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 2 : Nombre d'éléments générés automatiquement dans le corpus de livres électroniques. Le processus d'annotation a donné lieu à un corpus ROOTS dont les statistiques sur les éléments sont présentées dans le tableau 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>This corpus is spread over 35 , 388 JSON files for a total disk usage of about 220 GB. Processing time was about 15 hours. Individually, this is about 27 files, 173 MB, and 45 min per e-book.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce corpus est réparti en 35 388 fichiers JSON qui occupent un total de 220 Go (environ 27 fichiers et 173 Mo par livre). Le temps de traitement était d'environ 15 heures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>Let us note that most of the execution time is due to calls to the external tools, especially the remote phonetizer.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notons que la majeure partie du temps d'exécution est due aux appels aux outils externes, en particulier le phonétiseur distant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>Furthermore, files could be highly compressed since JSON is a verbose format. An example of a generated utterance is drawn in Figure 5.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, les fichiers pourraient être fortement compressés puisque JSON est un format très verbeux. Un exemple d'énoncé généré est présenté à la figure 5.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>This visualization has been automatically computed by a powerful alignment algorithm developed for ROOTS.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette visualisation a été calculée automatiquement par un puissant algorithme d'alignement développé pour ROOTS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>Drawn sequences have been manually selected to maintain readability. Especially, intermediate word sequences from linguistic and phonological tagging are not displayed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les séquences dessinées ont été sélectionnées manuellement pour maintenir la lisibilité. En particulier, les séquences de mots intermédiaires issues de la balise linguistique et phonologique ne sont pas affichées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>Two items are one above the other if and only if there exists a relation linking them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux éléments sont situés l'un au-dessus de l'autre s'il existe une relation les reliant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>5. Application to corpus processing</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. Application à l'analyse de corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>This section demonstrates how the toolkit is particularly convenient for annotated data processing through two sample tasks: statistics extraction, and corpus reduction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette section montre comment le kit de développement est particulièrement pratique pour le traitement de données annotées à l'aide de deux tâches d'exemple : l'extraction de statistiques et la réduction de corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>5.1. Statistics extraction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.1 Extraction de statistiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>A first considered data processing task is to compute frequencies over syllables in a textual corpus. Precisely, one wishes to highlight how frequently each syllable is found at the end of a word in a corpus. To make the objective a bit more complex, and to show a more advanced usage of ROOTS, it is further constrained to discard mono-syllabic words from frequency computation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le premier objectif de traitement des données est de calculer les fréquences des syllabes dans un corpus. Plus précisément, on veut savoir à quelle fréquence chaque syllabe se trouve à la fin d'un mot dans un corpus. Pour rendre l'objectif un peu plus complexe et montrer une utilisation plus avancée de ROOTS, on restreint en plus le calcul de fréquence pour ne pas inclure les mots monosyllabiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>This target task is realized using the short script presented in Algorithm 2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette tâche cible est réalisée à l'aide du script court présenté dans l'algorithme 2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>This code is split into two parts: the function count last syllables (lines 3-18); and the “main” code (l. 20-31).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce code est divisé en deux parties : la fonction count_last_syllables (lignes 3-18) et le code principal (l. 20-31).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>The main code declares a map %frequency to store syllable counts (l. 20). Then, a ROOTS corpus is created and populated by loading a JSON file (l. 22).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le code principal déclare une table associative pour stocker le nombre de syllabes (l. 20). Puis, un corpus ROOTS est créé et rempli en chargeant un fichier JSON (l. 22).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>Similarly to Algorithm 1, the corpus is browsed (l. 23-27). Precisely, last syllables are count by iteratively updating the map %frequency for each utterance (l. 25).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De la même manière que pour l'algorithme 1, le corpus est parcouru (l. 23-27). Plus précisément, les dernières syllabes sont comptées en mettant à jour de manière itérative la table %frequency pour chaque énoncé (l. 25).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>Finally, all encountered syllables are printed with their respective total frequency (l. 29-31).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, toutes les syllabes rencontrées et leur nombre d’occurrences respectif sont affichés (l. 29-31).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>Regarding the function count last syllables, arguments, i.e., the reference to the map of counts and a reference to the current utterance, are read (l. 4-5).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La fonction compter_dernieres_syllabes prend en entrée la référence vers la table des comptes et une référence vers l'énoncé courant, contenant une phrase (l. 4-5).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>Then, the word sequence of this utterance is retrieved (line 7) and all the words are browsed (l. 9).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La séquence de mots de cette phrase est récupérée (l. 6) et parcourue (l. 7).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>For each word, the list of related syllables is computed (l. 10).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque mot, la liste des syllabes correspondantes est calculée (l. 10).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>After checking if the word is not monosyllabic (l. 11), the last syllable is accessed and its string value is got (l. 12). Finally, the frequency of the current syllable is either initialized or updated (l. 13-15).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après avoir vérifié que le mot ne contient pas qu’une seule syllabe (l. 11), la dernière syllabe est lue et convertie en une chaîne de caractères (l. 12). Enfin, la fréquence de la syllabe courante est soit initialisée soit incrémentée (l. 13-15).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>Figure 5: Automatically generated display of an utterance with ROOTS.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Figure 5 : Affichage automatique d'une énonciation avec ROOTS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>Algorithm 2: Perl script for syllable frequency computation based on ROOTS. Table 3: List of the 10 syllables which most frequently end words in the corpus of French e-books. This script has been applied on the ROOTS corpus of e-books from Section 4 using the same parallelized computational setup as previously.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Algorithme 2 : Script Perl pour le calcul de la fréquence des syllabes basé sur ROOTS. Tableau 3 : Liste des 10 syllabes qui terminent le plus fréquemment les mots dans le corpus des livres numériques en français. Ce script a été appliqué sur le corpus ROOTS des livres numériques de la section 4 en utilisant la même configuration de calcul parallèle que précédemment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>The overall execution has lasted about 20 min, with a duration of 1 min and a 300 MB memory usage on average per e-book.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’ensemble a duré 20 min, soit environ 1 min par livre. En complément, l’utilisation moyenne de la mémoire centrale a été d’environ 300 Mo par livre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>The resulting top 10 most frequent syllables is given in Table 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le résultat des 10 syllabes les plus fréquentes est donné par la table 3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>A quick analysis on these results show that most words end with /m˜A/, which is a typical ending for adverbs in French, or with /e/ or /E/, which are verb inflection marks in French for past participles and the imperfect tense, respectively.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une analyse rapide de ces résultats montre que la plupart des mots se terminent par /m˜A/, suffixe typique des adverbes, ou par /e/, /E/ ou /˜A/, marques des flexions verbales du participe passé, de l’imparfait et du gérondif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>Hence, the results are consistent with the narrative style of the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, ces résultats sont cohérents avec le style narratif du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>5.2. Corpus reduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.2. Réduction du corpus</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>Besides simplicity, delivering efficient processing skills is a key aspect.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Outre la simplicité, la capacité de traitement efficace est un aspect clé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>This section now shows that ROOTS is perfectly suited for such a demand by addressing a corpus reduction problem as a second sample task.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette section montre maintenant que ROOTS est parfaitement adapté à une telle demande en abordant un problème de réduction de corpus comme une deuxième tâche d'échantillonnage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>Corpus reduction consists in extracting from a huge corpus a minimal sized subset which satisfies a set of constraints over features of the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La réduction de corpus consiste à extraire d'un corpus volumineux un sous-ensemble de taille minimale qui satisfait un ensemble de contraintes sur les caractéristiques du corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>Corpus reduction is a prerequisite for some tasks where the quality of results mainly depends on the diversity of the reference corpus content but where considering a very large corpus is prohibitive.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La réduction du corpus est une condition préalable à certaines tâches où la qualité des résultats dépend principalement de la diversité du contenu du corpus de référence, mais où la prise en compte d'un corpus très large est prohibitive.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>(Chevelu et al., 2008) proposed an efficient greedy algorithm to reduce corpora.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(Chevelu et al., 2008) ont proposé un algorithme gourmand efficace pour réduire les corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>Since ROOTS structures heterogeneous annotations, a simple and practical usage of this corpus reduction method consists in feeding the algorithm with information derived from a ROOTS corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné que ROOTS structure des annotations hétérogènes, une utilisation simple et pratique de cette méthode de réduction de corpus consiste à nourrir l'algorithme avec des informations dérivées d'un corpus ROOTS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>In practice, this has been done in our experiments by generating a sparse matrix of features using ROOTS’ C++ API, before processing this matrix with the corpus reduction algorithm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la pratique, nous avons généré une matrice de caractéristiques à l’aide de l’API C++ de ROOTS, avant de traiter cette matrice avec l’algorithme de réduction de corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>To illustrate the work flow, corpus reduction has been applied to the annotated corpus of e-books of Section 4.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour illustrer le flux de travail, la réduction du corpus a été appliquée au corpus annoté des livres électroniques de la section 4.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>Two constraints for the target reduced corpus were considered: - every phoneme paired with its corresponding POS should appear at least twice; - and every trigram of phonemes, independently of their related POS, should appear at least once.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux contraintes ont été prises en compte pour le corpus cible réduit : - chaque phonème associé à son POS correspondant doit apparaître au moins deux fois ; - et chaque trigramme de phonèmes, indépendamment de leur POS associé, doit apparaître au moins une fois.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>The corpus covers 10 , 246 unique phoneme-POS pairs and 31 , 612 unique phoneme trigrams.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus comprend 10 246 paires de phonèmes-POS uniques et 31 612 trigrammes de phonèmes uniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>Using the same experimental setup as previously, the process compiled information from e-books during about 3 h 30 min (ROOTS) before computing a solution in only 2 min 40 s (specialized algorithm).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avec la même configuration expérimentale que précédemment, le processus a compilé des informations à partir d'e-books pendant environ 3 h 30 min (ROOTS) avant de calculer une solution en seulement 2 min 40 s (algorithme spécialisé).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>As a result, while the full corpus is made of 6 . 2 million sentences and sizes 309 million phoneme instances, the returned solution contains only 17 , 846 sentences (0 . 3 % of the full corpus) and 547 , 111 phoneme instances (0 . 2 % of the full corpus).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En conséquence, alors que le corpus complet est composé de 6,2 millions de phrases et contient 309 millions d'exemples de phonèmes, la solution renvoyée ne contient que 17 846 phrases (0,3 % du corpus complet) et 547 111 phonèmes (0,2 % du corpus complet).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>A major interest of ROOTS is that this work flow can be applied to any corpus without changing anything except the names of sequences under study and requested minimal frequencies of their items.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'un des principaux intérêts de ROOTS est que ce flux de travail peut être appliqué à n'importe quel corpus sans rien changer, sauf les noms des séquences à l'étude et les fréquences minimales requises de leurs éléments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>6. Conclusion and further developments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6. Conclusion et développements futurs</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we have presented a powerful toolkit called ROOTS which enables easy, fast and consistent generation, management and processing of large annotated sequential data collections.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous avons présenté un outil puissant appelé ROOTS qui permet de générer, gérer et traiter facilement, efficacement et avec cohérence de grands corpus de données séquentielles annotées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>After presenting the toolkit itself, these abilities have been demonstrated through three application examples.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après avoir présenté l'outil lui-même, ces capacités ont été démontrées à travers trois exemples d'application.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>This toolkit is efficient, fully operational, open source, widely documented, and easily extensible.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette boîte à outils est efficace, entièrement opérationnelle, open source, largement documentée et facile à étendre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>Further developments are already planed for future releases. First, a graphical user interface to allow manual editing and annotation correction will be added.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autres développements sont déjà prévus pour les futures versions. Tout d'abord, une interface graphique permettant une édition manuelle et une correction d'annotation seront ajoutées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <tuv xml:lang="EN">
+                <seg>New file formats should be integrated to optimize read/write performances for time-critical applications, or to become compliant with standards from various communities.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nouveaux formats de fichiers doivent être intégrés pour optimiser les performances de lecture/écriture pour les applications critiques en termes de temps, ou pour être conformes aux normes de diverses communautés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <tuv xml:lang="EN">
+                <seg>Likewise, more wrappers for existing automatic taggers and data processing tools will be integrated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De même, davantage d'enveloppes pour les baliseurs automatiques et les outils de traitement de données existants seront intégrées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <tuv xml:lang="EN">
+                <seg>More fundamentally, sequences should be extended to lattices in order to enable information uncertainty modeling when needed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus fondamentalement, les séquences doivent être étendues à des treillis afin de permettre la modélisation de l’incertitude de certaines informations lorsque cela est nécessaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <tuv xml:lang="EN">
+                <seg>Finally, corpora generated using ROOTS on free data sets should be made available. Especially, the corpus of French e-books should be published in the near future.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, les corpus générés avec ROOTS à partir de données libres devraient être mis à disposition. En particulier, le corpus de livres électroniques en français devrait être publié dans un avenir proche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <tuv xml:lang="EN">
+                <seg>7. Acknowledgements This work has been partially funded by the Agence Nationale de la Recherche (France) as part of the project ANR-CONTINT 2011 Phorevox.&gt; 1 http://roots-toolkit.gforge.inria.fr.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7. Acknowledgements Ce travail a été partiellement financé par l'Agence Nationale de la Recherche (France) dans le cadre du projet ANR-CONTINT 2011 Phorevox.&gt; 1 http://roots-toolkit.gforge.inria.fr.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <tuv xml:lang="EN">
+                <seg>2 Dump refers to input/output operations in raw text, XML and JSON formats.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 Dump fait référence aux opérations d'entrée/sortie au format texte brut, XML et JSON.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <tuv xml:lang="EN">
+                <seg>3 http://www.swig.org.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 http://www.swig.org.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="195">
+            <tuv xml:lang="EN">
+                <seg>4 There is no structural difference between a lemma and a word since lemmas are real words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Il n'y a pas de différence structurelle entre un lemme et un mot puisque les lemmes sont des mots réels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="196">
+            <tuv xml:lang="EN">
+                <seg>5 Inserted elements are copies of the original element.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les éléments insérés sont des copies de l’élément d’origine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="197">
+            <tuv xml:lang="EN">
+                <seg>6 http://www.synapse-developpement.fr.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 http://www.synapse-developpement.fr.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="198">
+            <tuv xml:lang="EN">
+                <seg>7 http://www.voxygen.fr. 8 For instance, a tool may consider acronyms as one word while another may explode them into sequences of capitals.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7 http://www.voxygen.fr. 8 Par exemple, un outil peut considérer les acronymes comme un mot alors que l’autre peut les exploser en séquences de majuscules.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="199">
+            <tuv xml:lang="EN">
+                <seg>9 Conversion has been achieved using Calibre by Kovid Goyal (http://calibre-ebook.com).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La conversion a été réalisée à l'aide de Calibre de Kovid Goyal (http://calibre-ebook.com).</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

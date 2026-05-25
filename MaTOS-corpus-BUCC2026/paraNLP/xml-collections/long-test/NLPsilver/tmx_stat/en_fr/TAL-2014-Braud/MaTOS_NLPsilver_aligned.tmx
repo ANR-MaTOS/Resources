@@ -1,0 +1,2399 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="EN" o-tmf="XML" creationdate="2026-03-30" creationid="MaTOS">
+        <note>This is the sentence alignement file for NLPsilver-TAL-2014-Braud. segId begin by 1, tuid = segId</note>
+        <url_en>https://aclanthology.org/C14-1160.pdf</url_en>
+        <url_fr>https://aclanthology.org/2014.tal-1.5.pdf</url_fr>
+        <title_en>Combining Natural and Artificial Examples to Improve Implicit Discourse Relation Identification</title_en>
+        <title_fr>Identifier les relations discursives implicites en combinant données naturelles et données artificielles</title_fr>
+        <docid>TAL-2014-Braud</docid>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="EN">
+                <seg>Combining Natural and Artificial Examples to Improve Implicit Discourse Relation Identification</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Combiner des exemples naturels et artificiels pour améliorer l'identification des relations discursives implicites</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="EN">
+                <seg>Abstract</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Résumé</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="EN">
+                <seg>This paper presents the first experiments on identifying implicit discourse relations (i.e., relations lacking an overt discourse connective) in French.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article présente les premières expériences sur l’identification automatique des relations discursives implicites (i.e., non marquées par un connecteur) en français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="EN">
+                <seg>Given the little amount of annotated data for this task, our system resorts to additional data automatically labeled using unambiguous connectives, a method introduced by (Marcu and Echihabi, 2002).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné la faible quantité de données annotées pour cette tâche, notre système utilise des données automatiquement étiquetées à l’aide de connecteurs non ambigus, une méthode introduite par (Marcu et Echihabi, 2002).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="EN">
+                <seg>We first show that a system trained solely on these artificial data does not generalize well to natural implicit examples, thus echoing the conclusion made by (Sporleder and Lascarides, 2008) for English.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous montrons tout d'abord qu'un système formé uniquement sur ces données artificielles ne généralise pas bien aux exemples implicites naturels, ce qui confirme la conclusion de (Sporleder et Lascarides, 2008) pour l'anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="EN">
+                <seg>We then explain these initial results by analyzing the different types of distribution difference between natural and artificial implicit data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous expliquons ensuite ces premiers résultats en analysant les différents types de différences de distribution entre les données implicites naturelles et artificielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="EN">
+                <seg>This finally leads us to propose a number of very simple methods, all inspired from work on domain adaptation, for combining the two types of data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce constat nous a finalement amenés à proposer un certain nombre de méthodes très simples, toutes inspirées du travail sur l'adaptation de domaine, visant à combiner plus efficacement les deux types de données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="EN">
+                <seg>Through various experiments on the French ANNODIS corpus, we show that our best system achieves an accuracy of 41 . 7%, corresponding to a 4 . 4% significant gain over a system solely trained on manually labeled data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons effectué diverses expériences sur le corpus ANNODIS français, et nous avons constaté que notre meilleur système atteignait une précision de 41,7 %, ce qui correspond à un gain significatif de 4,4 % par rapport à un système formé uniquement à partir de données manuellement étiquetées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="EN">
+                <seg>1 Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="EN">
+                <seg>An important bottleneck for automatic discourse understanding is the proper identification of implicit relations between discourse units. What makes these relations difficult is that they lack strong surface cues like a discourse marker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un important obstacle pour la compréhension automatique du discours est l'identification correcte des relations implicites entre les unités de discours. Ce qui rend ces relations difficiles, c'est qu'elles manquent de signaux de surface forts comme un marqueur de discours.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="EN">
+                <seg>This point is illustrated in the French examples (1) and (2). [1] In (1), the connective mais ( but ) triggers a relation of contrast , whereas in (2), there is no explicit connective to signal the explanation relation, and the relation has to be inferred through other ways (in this case, a causal relation between having injured players and loosing).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce point est illustré dans les exemples français (1) et (2). [1] Dans (1), le connecteur mais (mais) déclenche une relation de contraste, tandis que dans (2), il n'y a pas de connecteur explicite pour signaler la relation d'explication, et la relation doit être inférée par d'autres moyens (dans ce cas, une relation causale entre les joueurs blessés et la défaite).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="EN">
+                <seg>- (1) La hulotte est un rapace nocturne, mais elle peut vivre le jour.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- (1) { { [La hulotte est un rapace nocturne]1 [mais elle peut vivre le jour.]2 }contraste [La hulotte mesure une quarantaine de centimètres.]3 }continuation (ANNODIS - document WK_-_hulotte)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="EN">
+                <seg>The tawny owl is a nocturnal bird of prey, but it can live in the daytime.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le hibou grand-duc est un oiseau de proie nocturne, mais il peut vivre le jour.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="EN">
+                <seg>- (2) L’équipe a perdu lamentablement hier.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- (2) L’équipe a perdu lamentablement hier.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="EN">
+                <seg>Elle avait trop de blessés.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle avait trop de blessés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="EN">
+                <seg>The team lost miserably yesterday.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'équipe a perdu lamentablement hier.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="EN">
+                <seg>It had too many injured players.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il y avait trop de joueurs blessés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="EN">
+                <seg>Implicit relations are very widespread in naturally-occurring data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les relations implicites sont très répandues dans les données naturelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="EN">
+                <seg>Thus, they make up between 39 . 5% and 54% of the annotated examples in the Penn Discourse TreeBank (PDTB) (Prasad et al., 2008), depending on the relation types used.[2]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, ils représentent entre 39,5 % et 54 % des exemples annotés dans le Penn Discourse TreeBank (PDTB) (Prasad et al., 2008), en fonction des types de relations utilisés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="EN">
+                <seg>A quick look at other discourse corpora suggests that the problem is as pervasive (if not more) in other languages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un rapide coup d'œil sur d'autres corpus de discours laisse à penser que le problème est aussi répandu (sinon plus) dans d'autres langues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="EN">
+                <seg>The French ANNODIS corpus does not annotate the distinction between explicit and implicit relations, but a projection of a French connective lexicon on the data gives a proportion of 47 . 4 to 71% of implicit relations, depending on the set of relations. [3]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus ANNODIS français (Afantenos et al. , 2012) n'a pas annoté la distinction entre les relations explicites et implicites, mais une projection d'un lexique connectif français sur les données donne une proportion de 47,4 à 71 % de relations implicites, selon l'ensemble des relations. [3]</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="EN">
+                <seg>For the German discourse corpus of (Gastel et al., 2011), (Versley, 2013) report 65% of implicit relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour le corpus de discours allemand de (Gastel et al., 2011), (Versley, 2013) rapportent 65 % de relations implicites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="EN">
+                <seg>In this paper, we tackle the problem of automatically identifying implicit discourse relations in French.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous abordons le problème de l'identification automatique des relations discursives implicites en français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="EN">
+                <seg>To date, the large majority of studies on this task have focused on English, and to a lesser extent on German.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Jusqu'à présent, la grande majorité des études sur cette tâche se sont concentrées sur l'anglais et, dans une moindre mesure, sur l'allemand.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="EN">
+                <seg>Performance remain relatively low compared to explicit relations, due to the lack of strong predictors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les performances restent relativement faibles par rapport aux relations explicites, en raison du manque de prédicteurs forts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <tuv xml:lang="EN">
+                <seg>Because it relies on more complex, interacting factors, the identification of implicit relations requires a lot of data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'identification des relations implicites nécessite de nombreuses données car elle repose sur des facteurs plus complexes et interactifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <tuv xml:lang="EN">
+                <seg>But the available annotated for French is scarce: while the PDTB contains about 40 , 000 examples, the French ANNODIS only has about 3 , 000 examples.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais les annotations disponibles pour le français sont rares : alors que le PDTB contient environ 40 000 exemples, l'ANNODIS français n'en contient que 3 000 environ.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <tuv xml:lang="EN">
+                <seg>An additional challenge for building such a system for French compared to English is the lack of external lexical ressources (e.g., semantic verb classification, polarity database).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un défi supplémentaire pour construire un tel système pour le français par rapport à l'anglais est le manque de ressources lexicales externes (par exemple, classification sémantique des verbes, base de données de polarité).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <tuv xml:lang="EN">
+                <seg>A natural approach to deal with the lack of annotated implicit data is to resort to additional data automatically obtained from explicit examples in which the connective is removed (Marcu and Echihabi, 2002).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour faire face à ce manque de données, Marcu et Echihabi (2002) ont proposé une méthode simple visant à créer automatiquement de nouveaux exemples de relations implicites à partir de données brutes. Cette méthode repose sur une détection des segments et un repèrage automatique des connecteurs, idéalement non ambigus (ou désambiguïsés) en emploi et en relation : ces connecteurs sont alors supprimés[4] et utilisés comme annotation de la relation identifiée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <tuv xml:lang="EN">
+                <seg>Provided that one could reliably identify discourse connectives, this approach makes it possible to create large amounts of additional implicit data from raw texts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À condition de pouvoir identifier de manière fiable les connecteurs de discours, cette approche permet de créer de grandes quantités de données implicites supplémentaires à partir de textes bruts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <tuv xml:lang="EN">
+                <seg>Unfortunately, (Sporleder and Lascarides, 2008) show that a system trained on this type of artificially generated data does not generalize well, leading to important performance degradation compared to a system solely trained on natural data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malheureusement, (Sporleder et Lascarides, 2008) montrent qu'un système formé sur ce type de données générées artificiellement ne se généralise pas bien, ce qui entraîne une importante dégradation des performances par rapport à un système formé uniquement sur des données naturelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <tuv xml:lang="EN">
+                <seg>The central question we address in this paper is how to better leverage the large amount of automatically generated data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La question centrale que nous abordons dans ce document est de savoir comment mieux exploiter la grande quantité de données générées automatiquement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <tuv xml:lang="EN">
+                <seg>We first show that the bad generalization performance of the system trained on artificial data lies in important distribution differences between the two datasets.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous montrons tout d'abord que les mauvaises performances de généralisation du système entraîné sur des données artificielles résultent de différences importantes dans la distribution des deux ensembles de données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <tuv xml:lang="EN">
+                <seg>This analysis in turn leads us to investigate various simple schemes for combining natural and artificial data methods inspired from the field of domain adaptation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette analyse nous amène à son tour à étudier différents schémas simples pour combiner des méthodes de données naturelles et artificielles inspirées du domaine de l'adaptation de domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <tuv xml:lang="EN">
+                <seg>Our best combined system yields a significant improvement of 4 . 4% over a system solely trained on the available manually annotated data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre meilleur système combiné donne une amélioration significative de 4,4 % par rapport à un système uniquement formé sur les données naturelles disponibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <tuv xml:lang="EN">
+                <seg>The rest of this paper is organized as follows.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le reste de cet article est organisé comme suit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <tuv xml:lang="EN">
+                <seg>Section 2 summarizes previous works on implicit relation identification.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La section 2 résume les travaux précédents sur l’identification implicite de relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <tuv xml:lang="EN">
+                <seg>In section 3, we describe the problems introduced by the use of artificial data and the methods we develop to deal with them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la section 3, nous décrivons les problèmes introduits par l'utilisation de données artificielles et les méthodes que nous développons pour y faire face.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <tuv xml:lang="EN">
+                <seg>In section 4, we give a description of the data used, and in section 5, we detail our feature set. Our experiments are then summarized in section 6.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous présentons enfin les données (section 5) puis les caractéristiques (section 6). Nous résumons ensuite les expériences réalisées et les résultats obtenus (section 6).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <tuv xml:lang="EN">
+                <seg>2 Related Work</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Travaux connexes</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <tuv xml:lang="EN">
+                <seg>To date, there have been only a few attempts at building full document-based discourse parsers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Jusqu'à présent, il n'y a eu que quelques tentatives de création de parseurs de discours basés sur des documents complets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <tuv xml:lang="EN">
+                <seg>On the RST-DT (Carlson et al., 2001), the best performing system is (Joty et al., 2013), who report an F1 score of 55 . 71 for labeled stuctures (with 23 relations).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur le RST-DT (Carlson et al., 2001), le système le plus performant est (Joty et al., 2013), qui rapportent un score F1 de 55,71 pour les structures étiquetées (avec 23 relations).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <tuv xml:lang="EN">
+                <seg>On the same corpus, (Sagae, 2009) and (Hernault et al., 2010) report F1 scores of 44 . 5 and 47 . 3, respectively.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur le même corpus, (Sagae, 2009) et (Hernault et al., 2010) rapportent des scores F1 de 44,5 et 47,3, respectivement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <tuv xml:lang="EN">
+                <seg>On the PDTB, the parser of Lin et al. (2010) obtains an F1 score of 33 (16 explicit relations, 11 implicit relations).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur le PDTB, le parseur de Lin et al. (2010) obtient un score F1 de 33 (16 relations explicites, 11 relations implicites).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <tuv xml:lang="EN">
+                <seg>On the ANNODIS corpus, Muller et al. (2012) reports F1 scores of 36 . 1 (17 relations) and 46 . 8 (4 relations).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur le corpus ANNODIS, Muller et al. (2012) rapportent des scores F1 de 36,1 (17 relations) et 46,8 (4 relations).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <tuv xml:lang="EN">
+                <seg>These still modest performance are due to wrong attachment decisions, as well as to errors in relation labeling.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces performances encore modestes sont dues à des décisions d'attachement erronées, ainsi qu'à des erreurs dans l'étiquetage des relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <tuv xml:lang="EN">
+                <seg>Most of these latter errors are mostly imputable to wrong classifications of implicit relations. Thus, the current best accuracy performance on explicit PDTB relations are 94 . 15% on 4 relations (Pitler and Nenkova, 2009), and 86 . 77% on 16 relations (Lin et al., 2010).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La plupart de ces derniers erreurs sont principalement imputables à de mauvaises classifications de relations implicites. Ainsi, les meilleures performances actuelles en termes de précision sur les relations explicites du PDTB sont de 94,15 % sur 4 relations (Pitler et Nenkova, 2009), et de 86,77 % sur 16 relations (Lin et al., 2010).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <tuv xml:lang="EN">
+                <seg>By contrast, the best identification system for implicit PDTB relations obtains an accuracy of 65 . 4% on 4 relations in (Pitler et al., 2009), and down to 40 . 2% for 11 of the level 2 relations of PDTB (Lin et al., 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En revanche, le meilleur système d'identification des relations PDTB implicites obtient une précision de 65,4 % sur 4 relations (Pitler et al., 2009), et jusqu'à 40,2 % pour 11 des relations de niveau 2 du PDTB (Lin et al., 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <tuv xml:lang="EN">
+                <seg>For German, Versley (2013)’s study on implicit relations reports 42 . 5 in F1 for 5 relations and 18 . 7 for 21 relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour l’allemand, l’étude de Versley (2013) sur les relations implicites indique 42,5 en F1 pour 5 relations et 18,7 pour 21 relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <tuv xml:lang="EN">
+                <seg>For French, Muller et al. (2012) report an accuracy score of 63 . 6% for their relation labeling system (over 17 relations), but they do not provide separate scores for explicit vs. implicit relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour le français, Muller et al. (2012) rapportent un score d'exactitude de 63,6 % pour leur système d'étiquetage de relations (sur 17 relations), mais ils ne fournissent pas de scores séparés pour les relations explicites et implicites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <tuv xml:lang="EN">
+                <seg>This performance drop reflects the difficulty of identifying a rhetorical relation in the absence of an explicit discourse marker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette baisse de performance reflète la difficulté d'identifier une relation rhétorique en l'absence d'un marqueur de discours explicite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <tuv xml:lang="EN">
+                <seg>As shown by (Park and Cardie, 2012), the identification of implicit relations relies on more diverse and noisy predictors from syntax (in the form of prediction rules) and (lexical) semantics (e.g., polarity, semantic classes and fine-grained semantic tags for verbs).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme l'ont montré Park et Cardie (2012), l'identification des relations implicites repose sur des prédicteurs plus divers et plus « bruités » issus de la syntaxe (sous la forme de règles de prédiction) et de la sémantique (par exemple, la polarité, les classes sémantiques et les balises sémantiques fines pour les verbes).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <tuv xml:lang="EN">
+                <seg>Unfortunately, most of the semantic resources used to derive features for English (polarity database, Inquirer tags) are not available for French. Zhou et al. (2010) try to predict the implicit connectives annotated in the PDTB as a way of predicting the relation, a method only possible with this corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malheureusement, la plupart des ressources sémantiques utilisées pour dériver des caractéristiques pour l'anglais (base de données de polarité, balises Inquirer) ne sont pas disponibles pour le français. Zhou et al. (2010) tentent de prédire les connecteurs implicites annotés dans le PDTB comme moyen de prédire la relation, une méthode seulement possible avec ce corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <tuv xml:lang="EN">
+                <seg>They obtain results lower than those reported by (Park and Cardie, 2012). In another context, Sporleder (2008) shows that using WordNet is less effective than lemmatisation for capturing semantic generalization, and (Wang et al., 2010) use tree kernels in order to better capture important syntactic information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils obtiennent des résultats inférieurs à ceux rapportés par (Park et Cardie, 2012). Dans un autre contexte, Sporleder (2008) montre que l'utilisation de WordNet est moins efficace que la lemmatisation pour capturer la généralisation sémantique, et (Wang et al., 2010) utilisent des arbres de kernel afin de mieux capturer les informations syntaxiques importantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <tuv xml:lang="EN">
+                <seg>In another context, Sporleder (2008) shows that using WordNet is less effective than lemmatisation for capturing semantic generalization, and (Wang et al., 2010) use tree kernels in order to better capture important syntactic information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans un autre contexte, Sporleder (2008) montre que l'utilisation de WordNet est moins efficace que la lemmatisation pour capturer la généralisation sémantique, et (Wang et al., 2010) utilisent des arbres de kernel afin de mieux capturer les informations syntaxiques importantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <tuv xml:lang="EN">
+                <seg>Another set of studies we directly build upon explore the idea that many connectives unambiguously trigger a unique relation, thus allowing to construct massive amount of (artificially) labelled implicit examples from raw data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un autre ensemble d'études sur lesquelles nous nous appuyons directement explore l'idée que de nombreux connecteurs déclenchent de manière non ambiguë une relation unique, ce qui permet de construire une quantité massive d'exemples implicites (artificiellement) étiquetés à partir de données brutes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <tuv xml:lang="EN">
+                <seg>Marcu and Echihabi (2002) were the first to use this method: they were mainly interested in showing that a removed connective could be recovered from its linguistic context.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Marcu et Echihabi (2002) ont été les premiers à utiliser cette méthode : ils étaient principalement intéressés à montrer qu'un connectif supprimé pouvait être récupéré à partir de son contexte linguistique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <tuv xml:lang="EN">
+                <seg>In turn, they only tested their approach on examples that were also generated automatically, and not on manually annotated implicit examples.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils n'ont testé leur approche que sur des exemples générés automatiquement et non sur des exemples implicites annotés manuellement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <tuv xml:lang="EN">
+                <seg>In this setting, they report an accuracy of 49 . 7 (6 classes), significantly above luck.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cadre, ils rapportent une précision de 49,7 (6 classes), significativement supérieure au hasard.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <tuv xml:lang="EN">
+                <seg>Reusing the same approach, Sporleder and Lascarides (2008) then showed that a system trained on a large amount of artificial examples (72000 examples) performs much worse than the same system trained on a much smaller amount of natural examples (1 , 051 examples) implicit examples, with accuracies of 25 . 8 and 40 . 3, respectively.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En utilisant la même approche, Sporleder et Lascarides (2008) ont montré qu'un système formé à partir d'un grand nombre d'exemples artificiels (72 000 exemples) affiche des performances bien plus faibles que le même système formé à partir d'un nombre bien plus réduit d'exemples naturels (1 051 exemples) d'exemples implicites, avec des accuracies de 25,8 et 40,3 respectivement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <tuv xml:lang="EN">
+                <seg>Marcu and Echihabi’s (2002) original approach was based on the idea of finding pairs of semantically related words that together trigger a relation (such as “nocturne/jour” (“nocturnal/daytime”) in example 1 of contrast ).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'approche originale de Marcu et Echihabi (2002) était basée sur l'idée de trouver des paires de mots sémantiquement liés qui déclenchent ensemble une relation (comme « nocturne/jour » dans l'exemple 1 de contraste).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <tuv xml:lang="EN">
+                <seg>Interestingly, Pitler et al. (2009) showed that word pairs extracted from artificial data are not helpful for implicit relation identification and, moreover, that the most informative word pairs are not semantically related. Blair-Goldensohn et al. (2007) showed that, for cause and contrast at least, results can be enhanced by improving the quality of the artificial data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'étude de Pitler et al. (2009) montre que les paires de mots extraites de données artificielles ne sont pas utiles pour l'identification de relations implicites et, de plus, que les paires de mots les plus informatives ne sont pas sémantiquement liées. Blair-Goldensohn et al. (2007) montrent que, pour les relations de cause et de contraste, les résultats peuvent être améliorés en améliorant la qualité des données artificielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <tuv xml:lang="EN">
+                <seg>Finally, Wang et al. (2012) propose a first approach that exploits both natural and artificial data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, Wang et al. (2012) proposent une première approche qui exploite à la fois des données naturelles et artificielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <tuv xml:lang="EN">
+                <seg>Specifically, they select the most informative training points among natural and artificial examples, both coming from the PDTB or the RST DT.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus particulièrement, ils sélectionnent les points de formation les plus informatifs parmi les exemples naturels et artificiels, provenant tous deux du PDTB ou du RST DT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <tuv xml:lang="EN">
+                <seg>They define deterministic rules for identifying so-called “typical” examples of a relation, the “seed” sets that are then expanded using a simple clustering algorithm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des règles définissent des règles déterministes pour identifier les exemples dits « typiques » d'une relation, les ensembles « graines » qui sont ensuite développés à l'aide d'un algorithme de clustering simple.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <tuv xml:lang="EN">
+                <seg>They report performance results well over those of (Pitler et al., 2009), but using a different evaluation protocole.4</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils rapportent des résultats de performance bien supérieurs à ceux de (Pitler et al., 2009), mais en utilisant un protocole d'évaluation différent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <tuv xml:lang="EN">
+                <seg>Also, their method is not easy to repoduce, especially for French, where we can not define the same deterministic rules as some of these depend on polarity information, for which we do not have external resources. Furthermore, their approach only extracts 1 to 5% of the data as seed examples, which would represent too few examples on our corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, leur méthode n'est pas facile à reproduire, en particulier pour le français, où nous ne pouvons pas définir les mêmes règles déterministes car certaines d'entre elles dépendent des informations de polarité, pour lesquelles nous n'avons pas de ressources externes. De plus, leur approche ne permet d'extraire que 1 à 5 % des données en tant qu'exemples de graines, ce qui représenterait trop peu d'exemples sur notre corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <tuv xml:lang="EN">
+                <seg>Finally, we are interested in finer-grained relations, thus more difficult to discriminate using these kind of rules.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous sommes intéressés par des relations plus fines, donc plus difficiles à discriminer en utilisant ce type de règles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <tuv xml:lang="EN">
+                <seg>3 Proposed Approach</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Approche proposée</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <tuv xml:lang="EN">
+                <seg>Our approach builds upon and extends the method of (Marcu and Echihabi, 2002) and (Sporleder and Lascarides, 2008) by investigating different strategies for combining natural and artificial examples of implicit discourse relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre approche s'appuie et étend la méthode de (Marcu et Echihabi, 2002) et (Sporleder et Lascarides, 2008) en examinant différentes stratégies pour combiner des exemples naturels et artificiels de relations de discours implicites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <tuv xml:lang="EN">
+                <seg>These different combination schemes are inspired from domain adaptation and are motivated by the fact that artificial and natural examples follow different probability distributions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces différents schémas de combinaison sont inspirés de l'adaptation de domaine et sont motivés par le fait que les exemples artificiels et naturels suivent différentes distributions de probabilité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <tuv xml:lang="EN">
+                <seg>3.1 Distribution Differences</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1 Différences de distribution</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <tuv xml:lang="EN">
+                <seg>Most machine learning algorithms are based on the assumption that data from training and test samples are independently and identically distributed (i.e., the i.i.d. sampling assumption). Yet, it seems that the use of artificial data clearly undermines this assumption.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La plupart des algorithmes d'apprentissage automatique sont basés sur l'hypothèse que les données d'entraînement et de test sont indépendamment et identiquement distribuées (i.i.d.). Il semble que l'utilisation de données artificielles remette clairement en cause cette hypothèse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <tuv xml:lang="EN">
+                <seg>There is indeed no guarantee that our artificial examples should follow a distribution similar to that of the manual examples.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Rien en effet dans cette méthode ne garantit qu’on obtienne, pour nos données artificielles, une distribution proche de celle des données naturelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <tuv xml:lang="EN">
+                <seg>This leads to the problem of learning from non-iid data, a problem that has attracted growing attention these last years in machine learning and NLP (Sogaard, 2013), (Hand, 2006).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce qui pose le problème d'un apprentissage à partir de données non i.i.d., un problème qui a attiré une attention croissante ces dernières années dans le domaine de l'apprentissage automatique et de la PNL (Sogaard, 2013), (Hand, 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <tuv xml:lang="EN">
+                <seg>In this particular context, we have two sets of data with the same output space (i.e., the discourse relations), and the same kind of inputs space (i.e., spans of text). But our data samples can differ in a number of ways.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte particulier, nous avons deux ensembles de données avec le même espace de sortie (c'est-à-dire les relations du discours) et le même type d'espace d'entrée (c'est-à-dire des segments de texte). Mais nos échantillons de données peuvent différer de plusieurs manières.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <tuv xml:lang="EN">
+                <seg>Following the terminology in (Moreno-Torres et al., 2012), we may encounter all the different kinds of shift that can appear in a classification problem.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Suivant la terminologie utilisée dans (Moreno-Torres et al., 2012), on peut rencontrer tous les différents types de décalage qui peuvent apparaître dans un problème de classification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <tuv xml:lang="EN">
+                <seg>Prior Probability Shift</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Changement de probabilité antérieur</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <tuv xml:lang="EN">
+                <seg>This shift describes changes in the marginal distribution of the output (i.e., the relations).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette modification décrit les changements dans la distribution marginale des classes (c'est-à-dire les relations).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <tuv xml:lang="EN">
+                <seg>The artificial data do not have the same class distribution as the natural ones (see section 4).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les données artificielles n'ont pas la même répartition des classes que les données naturelles (voir section 4).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <tuv xml:lang="EN">
+                <seg>Neither do they have the same distribution as the natural explicit, because of the automatic extraction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils n'ont pas non plus la même distribution que les données explicites naturelles, en raison de l'extraction automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <tuv xml:lang="EN">
+                <seg>This problem can be easily handled by resampling artificial data (see section 4).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce problème peut être facilement géré en rééchantillonnant les données artificielles (voir section 4).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <tuv xml:lang="EN">
+                <seg>Covariate Shift This shift describes changes in the marginal distribution of the input (i.e., the pairs of spans of text).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2.2. Shift des covariables : Ce changement décrit les modifications de la distribution marginale des entrées (c'est-à-dire les paires de segments de texte).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <tuv xml:lang="EN">
+                <seg>Artifical examples are originally explicit examples minus their connective, so it is reasonnable to think that these examples will have a different distribution from the natural implicit examples.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les exemples artificiels sont des exemples explicites originaux moins leur connecteur, il est donc raisonnable de penser que ces exemples auront une distribution différente des exemples implicites naturels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <tuv xml:lang="EN">
+                <seg>Moreover, it is possible that, by removing the connective, we have made these examples semantically unfelicitous or even ungrammatical.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, la suppression du connecteur peut aboutir à des exemples sémantiquement peu heureux ou même non grammaticaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <tuv xml:lang="EN">
+                <seg>Segmentation is another issue, since it is automatic and based on heuristics (see section 4). For example, artificial examples can not be multi-sentential whereas it can be the case for natural ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La segmentation est un autre problème, car elle est automatique et basée sur des hypothèses (voir la section 4). Par exemple, les exemples artificiels ne peuvent pas être multi-phrastiques, tandis que c'est le cas pour les exemples naturels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <tuv xml:lang="EN">
+                <seg>Concept Shift This shift describes changes in the joint distribution of inputs and outputs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2.3. Association entre étiquettes et paires de segments (concept shift ou relation fonctionnelle change) Dans ce cas la différence porte sur la distribution jointe entre classes et paires de segments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <tuv xml:lang="EN">
+                <seg>Consider for instance the occurrences of relations within inter- and intra-sentential contexts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Prenons par exemple les occurrences de relations dans des contextes inter et intrasententiels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <tuv xml:lang="EN">
+                <seg>The proportion of inter-sentential examples in natural and artificial datasets is the same for contrast (57 . 1%), it is similar for result (resp. 45 . 7% and 39 . 8%), but very different for continuation (resp. 70% and 96 . 5%) and for explanation (resp. 21 . 4% and 53 . 0%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La proportion d'exemples inter-phrastiques dans les ensembles de données naturelles et artificielles est la même pour le contraste (57,1 % d'inter-phrastiques dans les deux types de données), proche pour le résultat (45,7 % d'inter-phrastiques dans les données naturelles, 39,8 % dans les données artificielles) mais très différente pour la continuation (70,0 % d'inter-phrastiques dans les données naturelles, 96,5 % dans les données artificielles), et pour l'explication (21,4 % dans les données naturelles, 53,0 % dans les données artificielles). On observe également que la proportion d'occurrences de relations inter-phrastiques dans les données artificielles ne reflète pas celle des données explicites, ceci étant dû à notre heuristique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <tuv xml:lang="EN">
+                <seg>Moreover, the extraction method is prone to errors, and it may be the case that we wrongly identify a word form as a discourse connective.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, la méthode d'extraction est sujette aux erreurs, et il peut arriver que nous identifions à tort une forme de mot comme un connecteur de discours.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <tuv xml:lang="EN">
+                <seg>Thus, we may produce examples annotated with a wrong relation or that do not involve any discourse relation at all.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, nous pouvons produire des exemples annotés avec une relation erronée ou qui ne comportent aucune relation de discours.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <tuv xml:lang="EN">
+                <seg>Finally, deleting a connective can make the discourse ackward or even incoherent (Asher and Lascarides, 2003).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, la suppression d'un connectif peut rendre le discours maladroit ou même incohérent (Asher et Lascarides, 2003).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <tuv xml:lang="EN">
+                <seg>We can actually witness this with example (1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons en fait le constater avec l'exemple (1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <tuv xml:lang="EN">
+                <seg>As shown by (Sporleder and Lascarides, 2008), deleting the connective can also change the inferred relation. They found examples of explanation in which an implicit relation becomes the only one inferable after removing the explicit marker.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme l'ont montré Sporleder et Lascarides (2008), la suppression du connecteur peut également modifier la relation inférée. Ils ont trouvé des exemples d'explication dans lesquels une relation implicite devient la seule relation inférable après la suppression du marqueur explicite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <tuv xml:lang="EN">
+                <seg>The deletion can also change the inferred relation (Sporleder and Lascarides, 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La suppression peut également modifier la relation déduite (Sporleder et Lascarides, 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <tuv xml:lang="EN">
+                <seg>We found an even worse effect in our French corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons trouvé un effet encore plus grave dans notre corpus français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <tuv xml:lang="EN">
+                <seg>In example (3), the connective puisqu(e) ( because ) triggers an explanation , thus the events are ordered following the causal law.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans l'exemple (3), le connectif puisqu(e) ( car ) déclenche une explication, donc les événements sont ordonnés selon la loi causale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <tuv xml:lang="EN">
+                <seg>The cause, “migrer” (“migrate”), comes before the effect, “deviennent” (“becomes”).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La cause, « migrer », précède l’effet, « deviennent ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <tuv xml:lang="EN">
+                <seg>But when we delete the connective, the order of the events seems to be reversed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais lorsque nous supprimons le connectif, l'ordre des événements semble être inversé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <tuv xml:lang="EN">
+                <seg>Keeping the first clause as the first argument, we then obtain a result relation in this sentence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En conservant la première clause comme premier argument, on obtient une relation de résultat dans cette phrase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <tuv xml:lang="EN">
+                <seg>- (3) Les Amorrites deviennent à la période suivante de sérieux adversaires des souverains d’Ur, puisqu ’ils commencent alors à migrer en grand nombre vers la Mésopotamie.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- (3) Les Amorrites deviennent à la période suivante de sérieux adversaires des souverains d’Ur, puisqu ’ils commencent alors à migrer en grand nombre vers la Mésopotamie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <tuv xml:lang="EN">
+                <seg>- In the next period, Amorrites become severe opponents of the sovereigns of Ur, because they then begin to migrate in large numbers to Mesopotamia.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>- Au cours de la période suivante, les Amorrites deviennent de sérieux adversaires des souverains d'Ur, car ils commencent alors à migrer en grand nombre vers la Mésopotamie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <tuv xml:lang="EN">
+                <seg>3.2 Methods Inspired by Domain Adaptation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2 Méthodes inspirées par l'adaptation de domaine</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <tuv xml:lang="EN">
+                <seg>A way to deal with all the distribution differences observed is to reframe our problem within the framework of domain adaptation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une façon de traiter toutes les différences de distribution observées est de reformuler notre problème dans le cadre de l’adaptation de domaine. En effet, l’adaptation de domaine fait référence à des situations d’apprentissage où l’on dispose d’ensembles de données suivant des distributions différentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <tuv xml:lang="EN">
+                <seg>Informally, the task of domain adaptation is to port some system from one domain, the source , to another, the target .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En termes informels, la tâche de l'adaptation de domaine consiste à transférer un système d'un domaine, la source, à un autre, la cible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <tuv xml:lang="EN">
+                <seg>Informally, we have a distribution Ds for the source data and a distribution Dt for the target data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De manière informelle, on dispose d’une distribution Ds pour les données sources et d’une distribution Dt pour les données cibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <tuv xml:lang="EN">
+                <seg>The goal of the classifier is to build a good approximation of Dt .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le but du classifieur est de construire une bonne approximation de Dt .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <tuv xml:lang="EN">
+                <seg>If one uses data following the distribution Ds in order to build this approximation, then the performance will depend of the similarity between Ds and Dt .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si l'on utilise des données suivant la distribution Ds pour construire cette approximation, le rendement dépendra de la similarité entre Ds et Dt .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <tuv xml:lang="EN">
+                <seg>If these distributions are too dissimilar, the approximation will be bad and so will be the performance. It is the case in particular when the domains (e.g., text genres) are different.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si ces distributions sont trop dissemblables, l'approximation sera mauvaise et le rendement aussi. C'est le cas en particulier lorsque les domaines (par exemple, les genres de texte) sont différents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <tuv xml:lang="EN">
+                <seg>The goal of domain adaptation is precisely to deal with data from different distributions (Jiang, 2008), (Mansour et al., 2009).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'objectif de l'adaptation de domaine est précisément de traiter les données issues de différentes distributions (Jiang, 2008), (Mansour et al., 2009).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <tuv xml:lang="EN">
+                <seg>We are not exactly in the same setting, but we can regard the artificial data as the source , and the natural data, on which we evaluate, as the target .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous ne sommes pas exactement dans le même cadre, mais nous pouvons considérer les données artificielles comme la source et les données naturelles, sur lesquelles nous évaluons, comme la cible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <tuv xml:lang="EN">
+                <seg>As a first step, we decided to investigate the simplest domain adaptation methods there is, such as those described in (Daumé III, 2007).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons commencé par les méthodes les plus simples de l'adaptation de domaine, telles que celles décrites dans (Daumé III, 2007).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <tuv xml:lang="EN">
+                <seg>These methods either combine directly the data or the models built on each set of data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les différentes méthodes de combinaison que nous proposons diffèrent selon que la combinaison s’opère directement au niveau des jeux de données ou au niveau des modèles entraînés sur ceux-ci.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <tuv xml:lang="EN">
+                <seg>Performance of all these systems will be compared to the base systems trained on only one set of data, in section 6.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les performances de tous les systèmes seront comparées à celles des systèmes de base entraînés sur un seul ensemble de données, dans la section 6.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <tuv xml:lang="EN">
+                <seg>Data combination</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Combinaison des données</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <tuv xml:lang="EN">
+                <seg>The first possibility is to combine the data. The first model is trained on all natural and artificial data together (UNION).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La première possibilité est de combiner les données. Le premier modèle est entraîné sur toutes les données naturelles et artificielles ensemble (UNION).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <tuv xml:lang="EN">
+                <seg>This method does not allow us to control the importance of the two sets of data nor to evaluate their influence on the system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthode ne permet pas de gérer l’importance de chacun des deux ensembles de données ni d’en estimer l’impact sur le système.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <tuv xml:lang="EN">
+                <seg>We thus refine it in two ways.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous la perfectionnons donc de deux manières.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <tuv xml:lang="EN">
+                <seg>First, we only add to the manual data randomly selected samples from the artificial data (ARTSUB).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une première stratégie consiste à ajouter des échantillons aléatoires des données artificielles (ARTSUB) aux données manuelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <tuv xml:lang="EN">
+                <seg>Alternatively, we keep all the artificial examples but reweight (or, equivalently, duplicate) the manual examples (NATW). Both these schemes allow us to avoid a massive imbalance between the two kinds of data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Alternativement, on conserve tous les exemples artificiels mais on pondère (ou équivalemment, on duplique) les exemples manuels (NATW). Ces deux méthodes nous permettent d'éviter un déséquilibre massif entre les deux types de données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <tuv xml:lang="EN">
+                <seg>Model combination</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Combinaison des modèles</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <tuv xml:lang="EN">
+                <seg>The second strategy consists in combining the models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La deuxième stratégie consiste à combiner les modèles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <tuv xml:lang="EN">
+                <seg>A first set of methods involve adding new features.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un premier ensemble de méthodes consiste à ajouter de nouvelles fonctionnalités.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <tuv xml:lang="EN">
+                <seg>That is, we train a model on the artificial data, then run it on the natural examples. We use these predictions as new attributes for the natural model (ADDPRED).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est-à-dire que nous formons un modèle sur les données artificielles, puis nous l'appliquons sur les exemples naturels. Nous utilisons ces prédictions comme nouveaux attributs pour le modèle naturel (ADDPRED).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <tuv xml:lang="EN">
+                <seg>The parameter associated to the attribute therefore measures the importance to be given to the predictions made by the model trained on artificial data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le paramètre associé à ce descripteur mesure donc l’importance à accorder aux prédictions du modèle entraîné sur les données artificielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <tuv xml:lang="EN">
+                <seg>We propose a variation of this method by adding the probabilities of each prediction as supplementary attributes (ADDPROB).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une variante de cette méthode en ajoutant les probabilités de chaque prédiction en tant qu'attributs supplémentaires (ADDPROB).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <tuv xml:lang="EN">
+                <seg>The intuition is that even if the classifier is wrong, it could still be consistent in its errors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'intuition est que même si le classifieur est erroné, il pourrait tout de même être cohérent dans ses erreurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <tuv xml:lang="EN">
+                <seg>Yet another model combination consists in using the parameters of the artificial model as initial values for the manual model parameters (ARTINIT).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une autre combinaison de modèle consiste à utiliser les paramètres du modèle artificiel comme valeurs initiales pour les paramètres du modèle manuel (ARTINIT).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <tuv xml:lang="EN">
+                <seg>This method allows to give an initial information to the natural model rather than a random intialization.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthode permet de fournir une information a priori au modèle entraîné sur les données naturelles, plutôt que de l’initialiser aléatoirement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <tuv xml:lang="EN">
+                <seg>Finally, we also build a model by linearly interpolating the two basic models (LININT).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous construisons également un modèle par interpolation linéaire des deux modèles de base (LININT).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <tuv xml:lang="EN">
+                <seg>In addition to these combination schemes, we also add a method to automatically select examples among the artificial set based on the confidence of the artificial model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En plus de ces schémas de combinaison, nous avons également ajouté une méthode pour sélectionner automatiquement des exemples parmi l'ensemble artificiel en fonction de la confiance du modèle artificiel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <tuv xml:lang="EN">
+                <seg>Its aim is to filter out noisy examples, our hypothesis being that the more confident the model, the less noisy the example.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Son but est de filtrer les exemples bruyants, notre hypothèse étant que plus le modèle est sûr de lui, moins l’exemple est bruyant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <tuv xml:lang="EN">
+                <seg>4 Data</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Données</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <tuv xml:lang="EN">
+                <seg>In this work, we choose to focus on 4 relations, contrast , result , continuation and explanation , each of which can be either explicit or implicit.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous avons choisi de nous concentrer sur 4 relations : contraste, résultat, continuation et explication, chacune d'entre elles pouvant être explicite ou implicite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <tuv xml:lang="EN">
+                <seg>These are the same as the relations used in (Sporleder and Lascarides, 2008), allowing for easy comparison across languages, with the exception of the relation summary which does not appear in the ANNODIS corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce sont les mêmes relations utilisées dans (Sporleder et Lascarides, 2008), ce qui permet une comparaison facile entre les langues, à l'exception de la relation résumé qui n'apparaît pas dans le corpus ANNODIS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <tuv xml:lang="EN">
+                <seg>Although it is difficult to map these relations onto the relation set of the PDTB, we can say that our relations are closer to level 2 and level 3 (i.e., fine-grained) PDTB relations than level 1 (i.e., coarse-grained) ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien qu'il soit difficile de relier ces relations au jeu de relations du PDTB, nous pouvons dire que nos relations sont plus proches des relations de niveau 2 et 3 (c'est-à-dire, de niveau fin) que des relations de niveau 1 (c'est-à-dire, de niveau grossier).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <tuv xml:lang="EN">
+                <seg>4.1 Manually Annotated Data: ANNODIS</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1 Données annotées manuellement : ANNODIS</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <tuv xml:lang="EN">
+                <seg>Our natural implicit examples are taken from the ANNODIS corpus, which is to date the only available French corpus annotated at the discourse level. Its annotations are based on the SDRT framework (Asher and Lascarides, 2003).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nos exemples implicites naturels sont tirés du corpus ANNODIS, qui est à ce jour le seul corpus français annoté au niveau du discours. Ses annotations sont basées sur le cadre SDRT (Asher et Lascarides, 2003).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <tuv xml:lang="EN">
+                <seg>It consists of 86 newspaper and Wikipedia articles.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est composé de 86 articles de journaux et de Wikipédia.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <tuv xml:lang="EN">
+                <seg>3,339 examples have been annotated using 17 relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au total, 3 339 exemples sont annotés avec 17 relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <tuv xml:lang="EN">
+                <seg>In way of comparison, note that the PDTB has roughly 12 times more annotated relations than ANNODIS.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À titre de comparaison, notons que le PDTB dispose d'environ 12 fois plus de relations annotées que ANNODIS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <tuv xml:lang="EN">
+                <seg>Documents are segmented in Elementary Discourse Units (EDUs) which can be clauses, prepositionnal phrases and some adverbials and parentheticals if the span of text describes an event.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les documents sont segmentés en unités discursives élémentaires (EDU) qui peuvent être des clauses, des phrases prépositionnelles et certains adverbiaux et parenthèses si la longueur du texte décrit un événement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <tuv xml:lang="EN">
+                <seg>The relations link EDUs and complex segments, adjacent or not.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les relations relient les EDU et les segments complexes, adjacents ou non.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <tuv xml:lang="EN">
+                <seg>The connectives are not annotated, which means that the examples of implicit relations had to be extracted automatically.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les connecteurs discursifs ne sont pas annotés, ce qui signifie que les exemples de relations implicites ont dû être extraits automatiquement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <tuv xml:lang="EN">
+                <seg>The corpus has been pre-processed using the MELt tagger (Denis and Sagot, 2009) for POS-tagging, lemmatization and morphological markings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le corpus a été pré-traité avec le MElt tagger (Denis et Sagot, 2009) pour l'étiquetage POS, la lemmatisation et les marques morphologiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <tuv xml:lang="EN">
+                <seg>Then, the documents have been parsed using the the MSTParser (McDonald and Pereira, 2006) trained for French by (Candito et al., 2010).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les documents ont ensuite été analysés à l'aide du MSTParser (McDonald et Pereira, 2006) formé pour le français (Candito et al., 2010).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <tuv xml:lang="EN">
+                <seg>In order to identify implicit examples, we used the French lexicon of connectives (LexConn) developed by Roze et al. (2012).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d'identifier les exemples implicites, nous avons utilisé le lexique des connecteurs (LexConn) développé par Roze et al. (2012).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <tuv xml:lang="EN">
+                <seg>We simply matched all possible connective forms associated with the annotated relations (discarding à , which is too ambiguous).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons une méthode simple : nous projetons le lexique (sauf la forme à jugée trop ambiguë) sur les données, ce qui nous permet d’identifier tout token correspondant à un connecteur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <tuv xml:lang="EN">
+                <seg>We did not add constraints on the connective position, as we wanted to be sure to exclude all explicit examples, this method led us to miss a few implicit examples.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous n'avons pas ajouté de contraintes sur la position du connecteur, car nous voulions nous assurer d'exclure tous les exemples explicites. Cette méthode nous a fait manquer quelques exemples implicites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <tuv xml:lang="EN">
+                <seg>Out of 1 , 108 examples annotated with one of the 4 relations considered, 494 were found to be implicit (see table 2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur les 1 108 exemples annotés avec l'une des 4 relations considérées, 494 ont été jugés implicites (voir tableau 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <tuv xml:lang="EN">
+                <seg>4.2 Automatically Annotated Data</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 Données annotées automatiquement</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <tuv xml:lang="EN">
+                <seg>The artificial data are automatically extracted from raw data using heuristic rules.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les données artificielles sont automatiquement extraites des données brutes en utilisant des règles heuristiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <tuv xml:lang="EN">
+                <seg>We use LexConn to mine explicit instances in the corpus Est Républicain composed of newspaper articles (9M sentences), with the same pre-processings as ANNODIS.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons LexConn pour extraire automatiquement des exemples explicites dans le corpus Est Républicain composé d'articles de journaux (9 M de phrases), avec les mêmes pré-traitements que pour ANNODIS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <tuv xml:lang="EN">
+                <seg>LexConn contains 329 connectives, among them, 131 are unambiguous for our 4 relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le lexique LexConn contient en tout 329 connecteurs, dont 131 ne peuvent exprimer qu’une seule relation parmi les 4 que nous avons choisies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <tuv xml:lang="EN">
+                <seg>We grouped pragmatic relations (i.e., the relation is between speech acts) and non pragmatic relations (i.e., the relation is between facts) relations, assuming they involve the same kind of predictors, and the 3 contrastive relations, as only one type of contrast is annotated in ANNODIS.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons regroupé les relations pragmatiques (c'est-à-dire la relation entre actes de langage) et les relations non pragmatiques (c'est-à-dire la relation entre faits), en supposant qu'elles impliquent le même type de prédicteurs, et les 3 relations contrastives, car un seul type de contraste est annoté dans ANNODIS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <tuv xml:lang="EN">
+                <seg>We did not take into account 3 connectives corresponding to unknown part-of-speech.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous n'avons pas pris en compte 3 connecteurs qui ne sont associés à aucune catégorie morphosyntaxique dans le lexique (catégorie morphosyntaxique inconnue, comme d'où que ).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <tuv xml:lang="EN">
+                <seg>Our first evaluation led us to delete 6 connectives, very ambiguous between discourse and non discourse readings, such as “maintenant” (“now”).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après une première évaluation, nous avons choisi de supprimer 6 connecteurs particulièrement ambigus, entre emploi discursif et non discursif, comme « maintenant ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <tuv xml:lang="EN">
+                <seg>We eventually settled on 122 connectives, among which 100 were seen in the corpus in a configuration matching one of our pre-defined patterns.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons finalement retenu 122 connecteurs, parmi lesquels 100 ont été vus dans le corpus dans une configuration correspondant à l'un de nos modèles prédéfinis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <tuv xml:lang="EN">
+                <seg>As a comparison, (Sporleder and Lascarides, 2008) only had 50 such connectives.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À titre de comparaison, (Sporleder et Lascarides, 2008) n'en comptaient que 50.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <tuv xml:lang="EN">
+                <seg>We finally use 122 connectives, among which 100 were seen in a correct configuration in the corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous disposons finalement de 122 connecteurs, dont 100 ont été vus dans une configuration correcte dans le corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <tuv xml:lang="EN">
+                <seg>As a comparison, 50 were used in (Sporleder and Lascarides, 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour comparaison, 50 ont été utilisées dans (Sporleder et Lascarides, 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <tuv xml:lang="EN">
+                <seg>Table 1: Defined patterns with some examples.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 1 : Modèles définis avec quelques exemples.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <tuv xml:lang="EN">
+                <seg>“A1” stands for the first argument, “A2” for the second and “ C ” stands for the connective ; “beg” and “end” stand resp. for the beginning and the end of an argument ; “(x)” indicates that “x” is not necessary, depending on the connective form.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>« A1 » désigne le premier argument, « A2 » le second et « C » le connecteur ; « beg » et « end » désignent respectivement le début et la fin d’un argument ; « (x) » indique que « x » n’est pas nécessaire, en fonction de la forme du connecteur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <tuv xml:lang="EN">
+                <seg>Some patterns are only possible for some sets of connectives based on their part-of-speech (Subordinating Conjunction (SC), Preposition (Prep.), Averbials (Adv.)).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certains modèles ne sont possibles que pour certains ensembles de connecteurs en fonction de leur catégorie grammatical (conjonction subordonnante (SC), préposition (Prep.), verbes à l'infinitif (Adv.)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <tuv xml:lang="EN">
+                <seg>The heuristic used to extract the examples has two main steps.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’heuristique utilisée pour extraire les exemples se fait en deux étapes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <tuv xml:lang="EN">
+                <seg>First, we search forms used in discourse readings using patterns (see table 1) that were manually defined for each connective based on its position, its part-of-speechand the punctuation around it.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous identifions d'abord les formes en emploi discursif en utilisant des motifs (voir tableau 1) définis manuellement pour chaque connecteur en fonction de sa position, de sa catégorie morphosyntaxique et de la ponctuation qui l'entoure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <tuv xml:lang="EN">
+                <seg>Second, we identify the connectives arguments using the same information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, nous identifions les arguments des connecteurs en utilisant les mêmes informations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <tuv xml:lang="EN">
+                <seg>We make the same simplifying assumptions as in the previous studies: an argument covers at most one sentence, and we have at most 2 EDUs within a sentence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous faisons les mêmes hypothèses simplificatrices que dans les études précédentes : un argument couvre au plus une phrase et nous avons au plus 2 EDU dans une phrase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <tuv xml:lang="EN">
+                <seg>As additional constraint, we also require the presence of a verb in each relation argument.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En tant que contrainte supplémentaire, nous exigeons également la présence d'un verbe dans chaque argument de relation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <tuv xml:lang="EN">
+                <seg>When two connectives occur in the same segment, it is possible that one modifies the other. In turn, a naive extraction could produce two examples with different relations but the same arguments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsque deux connecteurs se trouvent dans le même segment, il est possible qu'un connecteur modifie l'autre. En conséquence, une extraction naïve pourrait produire deux exemples avec des relations différentes mais les mêmes arguments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <tuv xml:lang="EN">
+                <seg>To avoid the creation of spurious examples, we extract two examples in these cases only if one is inter- and the other intra-sentential according to our extraction patterns. Table 2: Number of examples in our corpora, for the natural dataset, only the implicit examples are used.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d'éviter la création d'exemples erronés, nous ne sélectionnons que deux exemples dans ces cas, l'un étant inter-sententiel et l'autre intra-sententiel, selon nos modèles d'extraction. Tableau 2 : Nombre d'exemples dans nos corpus, pour l'ensemble des données naturelles, seuls les exemples implicites sont utilisés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <tuv xml:lang="EN">
+                <seg>This simple method allows to quickly generate a large amount of data. In total, we extracted 392 , 260 examples (see table 2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthode simple permet de générer rapidement de gros volumes de données : au total, nous avons pu extraire 392 260 exemples (voir tableau 4).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <tuv xml:lang="EN">
+                <seg>This initial dataset was rebalanced in a way to keep the maximum number of available examples (thus dealing with the prior probability shift).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette base de données initiale a été rééquilibrée de manière à conserver le nombre maximum d'exemples disponibles (et donc de gérer le changement de probabilité antérieur).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <tuv xml:lang="EN">
+                <seg>We used 80% of the data as training set, and 10% the development and test set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé 80 % des données comme ensemble d'entraînement, et 10 % comme ensemble de développement et de test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <tuv xml:lang="EN">
+                <seg>Note that there are some important differences in the label distributions between natural and artificial data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notons quelques différences importantes de distribution entre les données naturelles et artificielles. La continuation la plus représentée dans les naturelles devient la moins représentée dans les artificielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <tuv xml:lang="EN">
+                <seg>For instance, the most represented relation in the natural data ( continuation ) is the least represented in the artificial data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, la relation la plus représentée dans les données naturelles (continuation) est la moins représentée dans les données artificielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <tuv xml:lang="EN">
+                <seg>This is because the connectives that trigger this relation are highly ambiguous between discourse and non-discourse readings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci est dû à la forte ambiguïté des connecteurs qui déclenchent cette relation entre les lectures discursives et non discursives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <tuv xml:lang="EN">
+                <seg>Finally, this method generates some noise: out of 250 random examples, we found 37 errors in span boudaries and 18 cases in which the connective form does not have a discourse reading.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, cette méthode génère du bruit : sur 250 exemples choisis aléatoirement, on trouve 37 erreurs de frontières d’arguments et 18 cas d’emplois non discursifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <tuv xml:lang="EN">
+                <seg>5 Features</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 caractéristiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <tuv xml:lang="EN">
+                <seg>We adapted various features used in previous studies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons adapté diverses caractéristiques utilisées dans les études précédentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <tuv xml:lang="EN">
+                <seg>The lack of ressources for French prevented us from using them all, especially the semantic ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le manque de ressources en français nous a empêché d'en utiliser toutes, en particulier les ressources sémantiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <tuv xml:lang="EN">
+                <seg>These features correspond to surface information and others more linguistic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces caractéristiques correspondent à des informations de surface et d'autres plus linguistiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <tuv xml:lang="EN">
+                <seg>As a comparison, (Marcu and Echihabi, 2002) only used pairs of words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À titre de comparaison, (Marcu et Echihabi, 2002) n'ont utilisé que des paires de mots.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <tuv xml:lang="EN">
+                <seg>Sporleder and Lascarides (2008) used various linguistic features but no syntaxic ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sporleder et Lascarides (2008) ont utilisé diverses caractéristiques linguistiques, mais aucune syntaxique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <tuv xml:lang="EN">
+                <seg>(Wang et al., 2012) used semantic, syntaxic and lexical information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>(Wang et al., 2012) ont utilisé des informations sémantiques, syntaxiques et lexicales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <tuv xml:lang="EN">
+                <seg>We used lexico-syntaxic information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé des informations lexico-syntaxiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <tuv xml:lang="EN">
+                <seg>Finally, note that our goal is to evaluate the efficiency of data combinations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, notons que notre objectif est d'évaluer l'efficacité des combinaisons de données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <tuv xml:lang="EN">
+                <seg>Thus we did not try to optimize this feature set, as it would have introduced another parameter in our model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous n'avons donc pas cherché à optimiser cet ensemble de caractéristiques, car cela aurait introduit un autre paramètre dans notre modèle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <tuv xml:lang="EN">
+                <seg>Indication of syntactic complexity: we compute the number of nominal, verbal, prepositional, adjectival and adverbial phrases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Indicateur de complexité syntaxique : on compte le nombre de phrases nominales, verbales, prépositionnelles, adjectivales et adverbiales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <tuv xml:lang="EN">
+                <seg>Information concerning the heads of the arguments: we keep the lemma of negative element linked to the head, we also get some temporal/aspectual information (number of auxiliaries dependent of the head, tense, person, number of the auxiliaries), information about the heads dependents (if an object, a by-object or a modifier is present ; if a preposition dependent of the head, subject or object is present ; part-of-speech of the modifiers and prepositional dependents of the head, subject and object) and some morphological information (tense and person of the head if verbal, gender if non verbal, number of the head, precise part-of-speech, “VPP”, and simplified,“V”).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Information concernant les têtes des arguments : on conserve le lemme de l'élément négatif lié à la tête, on obtient également des informations temporelles/aspectuelles (nombre d'auxiliaires dépendants de la tête, temps, personne, nombre des auxiliaires), des informations sur les dépendants de la tête (si un objet, un par-objet ou un modificateur est présent ; si un préposition dépendante de la tête, sujet ou objet est présent ; catégorie grammaticale des modificateurs et prépositionnels dépendants de la tête, sujet et objet) et des informations morphologiques (temps et personne de la tête si verbale, genre si non verbale, nombre de la tête, catégorie grammaticale précise, « VPP » et simplifiée, « V »).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <tuv xml:lang="EN">
+                <seg>We also add features pairing the tenses for verbal heads and the heads numbers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous ajoutons également des fonctionnalités permettant d'associer les temps aux formes verbales et les nombres aux formes de base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <tuv xml:lang="EN">
+                <seg>Position: we add a feature indicating if the example is inter or intra-sentential.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Position : nous ajoutons une caractéristique indiquant si l'exemple est inter ou intrasententiel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <tuv xml:lang="EN">
+                <seg>Indication of thematic continuity: we compute general lemma overlap and lemma overlap for open class words.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Indication de la continuité thématique : nous calculons le chevauchement des lemmes généraux et le chevauchement des lemmes pour les mots de classe ouverte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <tuv xml:lang="EN">
+                <seg>6 Experiments</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 expériences</seg>
+            </tuv>
+        </tu>
+        <tu tuid="195">
+            <tuv xml:lang="EN">
+                <seg>Our main objective is to assess whether one can use the artificial data to improve the performance of a system solely based on data manually annotated only available in small amount. We therefore test the methods described in section 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notre objectif principal est d'évaluer si l'on peut utiliser les données artificielles pour améliorer les performances d'un système basé uniquement sur des données annotées manuellement et disponibles en petite quantité. Nous testons donc les méthodes décrites dans la section 3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="196">
+            <tuv xml:lang="EN">
+                <seg>We experimented with a maximum entropy classifier from the MegaM[5] package, in multiclass classification, with a maximum of 100 iterations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons expérimenté un classifieur par maximum d’entropie issu du package MegaM[5], en classification multiclasse, avec un maximum de 100 itérations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="197">
+            <tuv xml:lang="EN">
+                <seg>We did not try to optimize the regularization parameter which is then equal to 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous n’avons pas cherché à optimiser le paramètre de régularisation, sa valeur est de 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="198">
+            <tuv xml:lang="EN">
+                <seg>We rebalance the corpus of manually annotated data to a maximum of 70 examples per relation.[6]</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous rééquilibrons le corpus de données annotées manuellement à un maximum de 70 exemples par relation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="199">
+            <tuv xml:lang="EN">
+                <seg>We have too few annotated examples to be able to construct a separate test set sufficiently large to make statistical significance test.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné le faible volume de données manuellement annotées disponibles, il n’est pas possible de construire un ensemble de test distinct suffisamment grand pour effectuer un test de significativité statistique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="200">
+            <tuv xml:lang="EN">
+                <seg>Thus, we decided to make a stratified nested cross-validation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En conséquence, nous avons décidé de faire une validation croisée stratifiée (nested cross-validation).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="201">
+            <tuv xml:lang="EN">
+                <seg>It has been shown that this method provides an estimate of the error that is very close to that one could obtain on an independent evaluation set ((Varma and Simon, 2006), (Scheffer, 1999)), as it prevents us from optimizing our hyper-parameters and performing evaluation on the same data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette méthode permet de s'assurer que l'optimisation des hyperparamètres (décrits en section 6.2) se fait sur des données différentes de celles sur lesquelles on s'évalue. Il a été montré que cette méthode permet d'obtenir une estimation réaliste de l'erreur (Scheffer, 1999 ; Varma et Simon, 2006), car elle empêche de faire l'optimisation des hyperparamètres et l'évaluation sur les mêmes données.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="202">
+            <tuv xml:lang="EN">
+                <seg>Specifically, there are two cross-validation loops: the inner loop is used for tuning the hyper-parameters (as described in section 6.2) and the outer loop estimates the generalization error.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, il existe deux boucles de validation croisée : la boucle interne sert à optimiser les hyperparamètres (comme décrit à la section 6.2) et la boucle externe estime l'erreur de généralisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="203">
+            <tuv xml:lang="EN">
+                <seg>The data are first split into N folds.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les données sont d'abord divisées en N parties.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="204">
+            <tuv xml:lang="EN">
+                <seg>We take the fold k (with 1 ≤ k ≤ N ) as the current evaluation set. The N − 1 other folds are used as training data and split into M folds used for model fitting.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le sous-ensemble k , avec 1 ≤ k ≤ N , est considéré comme l’ensemble d’évaluation et les N − 1 autres sous-ensembles servent à la sélection du modèle dans la boucle interne : l’ensemble des données correspondant à ces N − 1 sous-ensembles est découpé aléatoirement en M sous-ensembles et une validation croisée sur ces M sous-ensembles permet de déterminer les meilleures valeurs pour les hyperparamètres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="205">
+            <tuv xml:lang="EN">
+                <seg>The best model is then evaluated on the fold k . Finally, we report performance on the N folds.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le meilleur modèle est ensuite évalué sur le sous-ensemble k. Enfin, nous rapportons les performances sur les N sous-ensembles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="206">
+            <tuv xml:lang="EN">
+                <seg>We used two 5-fold cross-validation in order to select and evaluate the best models for the systems described in section 3.2.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé ici 2 validations croisées en 5 sous-ensembles pour déterminer et évaluer les meilleurs modèles pour chacun des systèmes décrits en section 4.3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="207">
+            <tuv xml:lang="EN">
+                <seg>We have no guarantee to select the best models at each test step, but this procedure allows to evaluate the stability of the system with respect to the hyper-parameters (i.e. the chosen values should not be too scattered), the overfitting (i.e. inner and outer estimations should be close) and the stability of the models (i.e. variance in the predictive capacity, between the results on the outer folds).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il n’est donc pas garanti que les meilleurs soient sélectionnés à chaque étape de test, mais cette méthode permet d’évaluer la stabilité du système par rapport au choix des hyperparamètres ( i.e. , les valeurs ne doivent pas être trop éparpillées), le surentraînement ( i.e. , si les estimations dans les boucles internes et externes sont très éloignées, c’est que la méthode d’optimisation conduit à un surentraînement) et la stabilité des modèles ( i.e. , on s’intéresse à la variance dans la capacité prédictive, sur les résultats sur les sous-ensembles de la boucle externe). Les systèmes n’utilisant aucun hyperparamètre sont simplement évalués dans la boucle externe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="208">
+            <tuv xml:lang="EN">
+                <seg>As in the previous studies, we report performance using micro-averaged accuracy and F1 score per relation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme dans les études précédentes, les performances sont données en termes d’exactitude globale (micromoyenne) sur l’ensemble des relations, des scores ventilés de mesure F1 par relation sont également fournis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="209">
+            <tuv xml:lang="EN">
+                <seg>In order to evaluate the statistical significance of our results, we use the Student’s t-test (with p - value &lt; 0 . 05) which has been proved to work with very small sample (see (de Winter, 2013)) if the effect size (computed using the Cohen coefficient) and the correlation between the sample are large enough, while, as noted in (de Winter, 2013), the Wilcoxon signed rank test (that we initially tried) could lead to overestimated p -value with such small sample.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d'évaluer la significativité statistique de nos résultats, nous utilisons le test t de Student (avec une valeur de p &lt; 0,05) qui a fait ses preuves avec des échantillons très petits (voir (de Winter, 2013)) si l'effet de taille (calculé à l'aide du coefficient de Cohen) et la corrélation entre les échantillons sont suffisamment importants, tandis que, comme indiqué dans (de Winter, 2013), le test de rangs signés de Wilcoxon (que nous avons essayé initialement) pourrait conduire à des valeurs p surestimées avec de si petits échantillons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="210">
+            <tuv xml:lang="EN">
+                <seg>The results of the most relevant systems are presented in table 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats des systèmes les plus pertinents sont présentés dans le tableau 3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="211">
+            <tuv xml:lang="EN">
+                <seg>Table 3: Most relevant systems, with or without selection of examples, overall accuracy and F1 score per relation, [∗] corresponds to a significant improvement over NATONLY.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Tableau 3 : Les systèmes les plus pertinents, avec ou sans sélection d'exemples, précision globale et score F1 par relation, [∗] correspond à une amélioration significative par rapport à NATONLY.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="212">
+            <tuv xml:lang="EN">
+                <seg>6.1 Basic Models</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.1. Modèles de base</seg>
+            </tuv>
+        </tu>
+        <tu tuid="213">
+            <tuv xml:lang="EN">
+                <seg>In the first set of experiments, we trained two classifiers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la première série d'expériences, nous avons formé deux classificateurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="214">
+            <tuv xml:lang="EN">
+                <seg>The first one is trained on the natural implicit data (NATONLY, 252 examples), and the second one on the artificial implicit data (ARTONLY, 93 , 636 examples).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le premier est formé à partir des données implicites naturelles (NATONLY, 252 exemples), et le second à partir des données implicites artificielles (ARTONLY, 93 636 exemples d'entraînement).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="215">
+            <tuv xml:lang="EN">
+                <seg>We test both models on natural implicit data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous testons les deux modèles sur des données implicites naturelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="216">
+            <tuv xml:lang="EN">
+                <seg>The overall accuracy of the NATONLY model is 37 . 3 with F1 score ranging from 15 . 0 for contrast to 47 . 9 for explanation .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le modèle NATONLY obtient une exactitude globale de 37,3 % avec un score de F1 allant de 15,0 % pour la relation de contraste à 47,9 % pour l'explication (voir tableau 5).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="217">
+            <tuv xml:lang="EN">
+                <seg>The performance on contrast is fairly low, probably because this relation is the least frequent in our training set.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La performance sur le contraste est assez faible, probablement parce que cette relation est la moins fréquente dans notre jeu d'entraînement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="218">
+            <tuv xml:lang="EN">
+                <seg>Note that the overall accuracy obtained is quite close to the 40 . 3 obtained for English by (Sporleder and Lascarides, 2008).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notez que la précision globale obtenue est assez proche de 40,3 obtenue pour l'anglais par (Sporleder et Lascarides, 2008).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="219">
+            <tuv xml:lang="EN">
+                <seg>The overall accuracy of the ARTONLY model is 47 . 8 when evaluated on the same type of data, that is, artificial ones (11 , 704 test examples), but only 23 . 0 when evaluated on natural data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le modèle ARTONLY obtient une exactitude de 47 , 8 % lorsque évalué sur le même type de données (11 704 exemples de test), mais de 23 , 0 % lorsque évalué sur les données naturelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="220">
+            <tuv xml:lang="EN">
+                <seg>This significant drop in performance has been observed in the previous studies on English.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette baisse importante de performance a été observée dans les études précédentes sur l’anglais.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="221">
+            <tuv xml:lang="EN">
+                <seg>It can be attributed to the distribution differences described in section 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle s’explique par les différences de distribution étudiées en section 3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="222">
+            <tuv xml:lang="EN">
+                <seg>We can observe that the use of the artificial data lowers the F1 score for result and explanation while, for contrast , F1 score is raised by about 10 points.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons observer que l'utilisation des données artificielles abaisse le score F1 pour le résultat et l'explication, tandis que pour le contraste, le score F1 est augmenté d'environ 10 points.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="223">
+            <tuv xml:lang="EN">
+                <seg>6.2 Models with Combinations</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.2 Modèles avec combinaisons de données</seg>
+            </tuv>
+        </tu>
+        <tu tuid="224">
+            <tuv xml:lang="EN">
+                <seg>In this section, we present the results for the systems using both natural and artificial data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette section, nous présentons les résultats des systèmes qui exploitent à la fois les données naturelles et les données artificielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="225">
+            <tuv xml:lang="EN">
+                <seg>We either directly combine the data or use the data to build separate models that are then combined.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous combinons directement les données ou utilisons les données pour construire des modèles séparés qui sont ensuite combinés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="226">
+            <tuv xml:lang="EN">
+                <seg>Some of these models use hyper-parameters.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certains de ces modèles utilisent des hyperparamètres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="227">
+            <tuv xml:lang="EN">
+                <seg>When weighting the natural examples, we test weights c ∈ [0 . 5 , 1 , 5] and c ∈ [10; 2000] with an increment of 10 until 100, of 50 until 1000 and of 500 until 2000.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, pour la pondération des exemples naturels nous testons différents coefficients de pondération c avec c ∈ [0 , 5 , 1 , 5] et c ∈ [10 ; 2 000] avec un incrément de 10 jusqu’à 100, de 50 jusqu’à 1 000 et de 500 jusqu’à 2 000.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="228">
+            <tuv xml:lang="EN">
+                <seg>When adding random subsets of artificial data, we add each time k times the number of natural examples artificial examples with k ∈ [0 . 1; 600] with an increment of 0 . 1 until 1, of 10 until 100 and of 50 until 600.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour l’ajout de sous-ensembles des données artificielles, nous ajoutons à chaque fois n exemples parmi ces données où n = k fois le nombre de données naturelles disponibles avec k ∈ [0 , 1 ; 600] avec un incrément de 0 , 1 jusqu’à 1, de 10 jusqu’à 100 et de 50 jusqu’à 600.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="229">
+            <tuv xml:lang="EN">
+                <seg>Finally, when taking a linear interpolation of the models, we build a new model by weighting the artificial model by α ∈ [0 . 1; 0 . 9] with increments of 0 . 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, pour l'interpolation linéaire des modèles, nous construisons un nouveau modèle en pondérant le modèle artificiel avec α ∈ [0 , 1 ; 0 , 9] avec des incréments de 0 , 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="230">
+            <tuv xml:lang="EN">
+                <seg>In general, we observe that most of the systems lead to similar or higher accuracy than NATONLY, but none of the improvements is statistically significant.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De manière générale, l’ensemble de ces systèmes avec les bons hyperparamètres conduit à des résultats au moins équivalents et parfois supérieurs en exactitude par rapport à NATONLY. Si la tendance générale est plutôt d’une hausse des performances, aucune des différences observées à ce stade ne semble cependant être statistiquement significative.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="231">
+            <tuv xml:lang="EN">
+                <seg>The best system is ARTINIT (accuracy 40 . 1, p -value of 0 . 18 and a small effect size, 0 . 39).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le meilleur score d’exactitude est obtenu avec le système ARTINIT (40 , 1 % d’exactitude, p -valeur de 0 , 18 avec un effet de taille faible, 0 , 39).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="232">
+            <tuv xml:lang="EN">
+                <seg>Two other systems get an accuracy score better than 39, that is ADDPRED (39 . 3) and LININT (39 . 3), but not significantly better than NATONLY.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux autres systèmes obtiennent un score d'exactitude supérieur à 39 %, ADDPRED et LININT, avec des résultats toujours non significatifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="233">
+            <tuv xml:lang="EN">
+                <seg>The system ADDPROB, similar to ADDPRED, leads to lower accuracy, showing that adding the probabilities decrease the performance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le modèle ADDPROB, similaire à ADDPRED, mène à une légère diminution de la précision, ce qui suggère que l'ajout des probabilités dégrade les performances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="234">
+            <tuv xml:lang="EN">
+                <seg>For these systems, the scores on each of the outer folds are close[7] , specially for ADDPRED, revealing a high model stability.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour ces systèmes, les scores d’exactitude obtenus sur chaque sous-ensemble sont très proches[7] , notamment pour ADDPRED, ce qui suggère une bonne stabilité des modèles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="235">
+            <tuv xml:lang="EN">
+                <seg>The other systems allow to evaluate the impact of the artificial data on the final results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les autres systèmes nous permettent d’évaluer l’effet des données artificielles dans les résultats finaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="236">
+            <tuv xml:lang="EN">
+                <seg>The only method leading to lower results is when training on the union of the data sets (UNION), the accuracy (22 . 6) is similar to ARTONLY.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La seule configuration qui mène à des résultats négatifs est l’union simple des corpus d’entraînement (UNION). Ce système obtient 22 , 6 % d’exactitude donc de l’ordre d’un entraînement sur les seules données artificielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="237">
+            <tuv xml:lang="EN">
+                <seg>This was expected, as the natural data are about 372 times less numerous than the artificial ones, the new model is thus more influenced by the latter.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces résultats ne sont pas surprenants : les données naturelles étant environ 372 fois moins nombreuses que les données artificielles, le nouveau modèle est donc plus influencé par ces dernières.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="238">
+            <tuv xml:lang="EN">
+                <seg>Note that Wang et al. (2012) also experiment this setting but do not observe such a gap, maybe because their artificial data are based on manually annotated explicit examples, which are likely to be less noisy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notez que Wang et al. (2012) ont également testé cette configuration, mais n'ont pas observé de tels écarts, peut-être parce que leurs données artificielles sont basées sur des exemples explicites annotés manuellement, qui sont susceptibles d'être moins bruités.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="239">
+            <tuv xml:lang="EN">
+                <seg>When directly combining the data, either by adding random subsets of the artificial data (ARTSUB, accuracy 34 . 5) or by weighting the natural examples (NATW, accuracy 38 . 9), we observe, on the inner folds, an inverse trend.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lors de la combinaison directe des données, soit en ajoutant des sous-ensembles aléatoires des données artificielles (ARTSUB, 34,5 % d'exactitude) soit en pondérant les exemples naturels (NATW, 38,9 % d'exactitude), nous observons, sur les plis internes, une tendance inverse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="240">
+            <tuv xml:lang="EN">
+                <seg>As expected, the accuracy increases as the influence of the artificial data decreases, that is, decreasing the coefficients for ARTSUB and increasing the weights for NATW.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme prévu, la précision augmente au fur et à mesure que l'influence des données artificielles diminue, c'est-à-dire que les coefficients pour ARTSUB diminuent et que les pondérations pour NATW augmentent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="241">
+            <tuv xml:lang="EN">
+                <seg>Observing the results in the inner folds reveals a same trend about the relative importance of the two kinds of data: natural data have to be around 2 . 5 times more important than the artificial ones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'observation des résultats dans les plis internes révèle une tendance similaire quant à l'importance relative des deux types de données : les données naturelles doivent être environ 2,5 fois plus importantes que les données artificielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="242">
+            <tuv xml:lang="EN">
+                <seg>We also observe this effect with LININT, with the mean of the choosen α values equals to 0 . 3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous observons également cet effet avec LININT, avec une moyenne des valeurs α choisies égale à 0,3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="243">
+            <tuv xml:lang="EN">
+                <seg>We also note that the variance for the values of the hyper-parameter for ARTSUB is pretty high, probably caused by the randomness of the subsamples selection. It is a bit lower for NATW and LININT showing that these methods are more robust.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous notons également que l'écart-type pour les valeurs de l'hyper-paramètre pour ARTSUB est assez élevé, probablement dû au caractère aléatoire du choix des sous-échantillons. Il est un peu plus faible pour NATW et LININT, ce qui montre que ces méthodes sont plus robustes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="244">
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, the strategy does not give an a priori good value for the hyperparameter but restricts the space of values (1020 plus or minus 272 for NATW and 0 . 3 plus or minus 0 . 18 for LININT).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, la stratégie ne donne pas de valeur a priori pour le paramètre hyper, mais restreint l'espace de valeurs (1020 plus ou moins 272 pour NATW et 0,3 plus ou moins 0,18 pour LININT).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="245">
+            <tuv xml:lang="EN">
+                <seg>6.3 Models with Automatic Selection of Examples</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.3. Modèles avec sélection automatique d’exemples</seg>
+            </tuv>
+        </tu>
+        <tu tuid="246">
+            <tuv xml:lang="EN">
+                <seg>Previous experiments showed that adding artificial data mostly improves the performance but still not significantly.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les expériences précédentes ont montré que l'ajout de données artificielles améliorait le plus souvent les performances, mais ces gains restent relativement modestes, voire non significatifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="247">
+            <tuv xml:lang="EN">
+                <seg>We assume that a lot of the artificial data are noisy, which could hurt the systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous supposons que de nombreux exemples artificiels sont bruités, ce qui pourrait nuire aux systèmes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="248">
+            <tuv xml:lang="EN">
+                <seg>The method of selection of examples thus aims at eliminating potentially noisy examples.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La méthode de sélection d’exemples que nous proposons a pour objectif d’éliminer les exemples potentiellement bruités.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="249">
+            <tuv xml:lang="EN">
+                <seg>The artificial model is used on the training set, and we keep the examples that are predicted with a probability higher than a threshold s ∈ [0 . 3; 0 . 85] with an increment of 0 . 1 until 0 . 5 and of 0 . 05 until 0 . 85.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le modèle artificiel est utilisé sur l'ensemble d'entraînement et nous conservons les exemples prédits avec une probabilité supérieure à un seuil s ∈ [0 , 3 ; 0 , 85] avec un incrément de 0 , 1 jusqu'à 0 , 5 et de 0 , 05 jusqu'à 0 , 85.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="250">
+            <tuv xml:lang="EN">
+                <seg>If the model is confident enough about its prediction, the example might not correspond to noise, that is, a word form that does not have a discourse readings and/or a segmentation error.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si ce modèle est assez sûr de sa prédiction, l'exemple ne correspond pas à du bruit, c'est-à-dire à une forme de mot qui n'a pas de lecture discursive et/ou à une erreur de segmentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="251">
+            <tuv xml:lang="EN">
+                <seg>We also check whether the connective is redundant.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous vérifions aussi si le connecteur est redondant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="252">
+            <tuv xml:lang="EN">
+                <seg>For each threshold, we rebalance the data based on the least represented relation (+SELEC systems).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour chaque seuil, nous rééquilibrons les données en nous fondant sur la relation la moins représentée (système + SELEC). Les scores des systèmes sont repris dans le tableau 7.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="253">
+            <tuv xml:lang="EN">
+                <seg>The automatic selection of examples allows to improve previous results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La sélection automatique d’exemples permet d’améliorer les résultats précédents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="254">
+            <tuv xml:lang="EN">
+                <seg>The accuracy of the ARTONLY model moves from 23 . 0 to 25 . 0 with selection, and the system UNION move from 22 . 6 to 40 . 1 with selection.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La précision du modèle ARTONLY passe de 23,0 à 25,0 avec la sélection, et le système UNION passe de 22,6 à 40,1 avec la sélection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="255">
+            <tuv xml:lang="EN">
+                <seg>The best results are obtained when we use artificial data to create new features but when we add only the relation predicted by the artificial model (ADDPRED+SELEC). With this system, we observe a clear tendency toward significance (accuracy 41 . 7 with a large effect size, 0 . 756, and a high correlation, 0 . 842).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les meilleurs résultats sont obtenus lorsque nous utilisons des données artificielles pour créer de nouvelles caractéristiques, mais lorsque nous n'ajoutons que la relation prédite par le modèle artificiel (ADDPRED + SELEC). Avec ce système, nous observons une tendance claire vers une amélioration significative en termes d'exactitude (exactitude de 41,7 avec un effet de taille important de 0,756 et une corrélation forte de 0,842).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="256">
+            <tuv xml:lang="EN">
+                <seg>The F1 scores for all classes are improved : 20 . 8 for contrast , 51 . 0 for result , 31 . 2 for continuation and 53 . 9 for explanation .</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les scores de F1 pour toutes les classes sont améliorés : 20 , 8 % pour contraste , 51 , 0 % pour résultat , 31 , 2 % pour continuation et 53 , 9 % pour explication .</seg>
+            </tuv>
+        </tu>
+        <tu tuid="257">
+            <tuv xml:lang="EN">
+                <seg>Two other systems get an accuracy over 40: NATW+SELEC (accuracy 41 . 3, with a trend toward significance[8] ) and UNION+SELEC (no significantly higher than NATONLY).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Deux autres systèmes obtiennent un score d’exactitude supérieur à 40 % : NATW + SELEC (41 , 3 %, avec une tendance vers une amélioration significative[9] ) et UNION + SELEC (40 , 1 %, non significativement meilleur).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="258">
+            <tuv xml:lang="EN">
+                <seg>We note that ADDPRED corresponds to the best baseline in (Daumé III and Marcu, 2006), which shows the relevance of dealing with the distributions differences in our data through domain adaptation methods.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Notons que le système ADDPRED correspond à la meilleure base de référence dans (Daumé III et Marcu, 2006), ce qui montre la pertinence de traiter les différences de distribution dans nos données par le biais de méthodes d'adaptation de domaine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="259">
+            <tuv xml:lang="EN">
+                <seg>The automatic selection step allows a more important weight on the informations provided by the artificial data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La phase de sélection automatique permet d'accorder une importance plus grande aux informations fournies par les données artificielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="260">
+            <tuv xml:lang="EN">
+                <seg>For LININT+SELEC, the best results are obtained with an almost equal influence of the two models.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour le système LININT + SELEC, les meilleurs résultats sont obtenus avec une influence quasiment égale des deux modèles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="261">
+            <tuv xml:lang="EN">
+                <seg>In the same way, the mean of the choosen values for the coefficient for NATW+SELEC is much lower, and it increases a lot for ARTSUB+SELEC allowing for larger subsamples.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De même, pour NATW + SELEC, la moyenne des coefficients choisis est beaucoup plus basse, et elle augmente largement pour ARTSUB + SELEC, autorisant des sous-ensembles plus larges.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="262">
+            <tuv xml:lang="EN">
+                <seg>Even if the choosen values are widly scattered, these observations tend to prove that the selection improves the quality of our artificial corpus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Même si les valeurs choisies sont largement dispersées, ces observations tendent à prouver que la sélection améliore la qualité de notre corpus artificiel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="263">
+            <tuv xml:lang="EN">
+                <seg>Regarding the choosen values for the thresholds, the mean over all the systems is 0 . 7, with a variable standard deviation but always greater than 0 . 1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au niveau des seuils choisis, la moyenne sur toutes les expériences est aux alentours de 0 , 7, avec un écart-type variable selon les systèmes mais supérieur à 0 , 1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="264">
+            <tuv xml:lang="EN">
+                <seg>This deviation is pretty high, this hyper-parameter probably needs a better optimisation, by repeating the inner loop for example, but these experiments will allow to reduce the search space.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet écart est assez important, cet hyper-paramètre nécessite probablement une meilleure optimisation, par exemple en répétant la boucle interne, mais ces expériences permettront de réduire l'espace de recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="265">
+            <tuv xml:lang="EN">
+                <seg>The automatic selection of examples leads to one system, namely ADDPRED+SELEC, significantly improving the accuracy of NATONLY.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La sélection automatique d'exemples mène à un système, à savoir ADDPRED+SELEC, qui améliore de manière significative la précision de NATONLY.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="266">
+            <tuv xml:lang="EN">
+                <seg>This shows that the artificial data, when rightly integrated, can thus be used to improve a system identifying implicit relations, especially if their influence is low, the model is driven towards the good distribution.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela montre que les données artificielles, lorsqu'elles sont correctement intégrées, peuvent être utilisées pour améliorer un système identifiant les relations implicites, en particulier si leur influence est faible, le modèle étant guidé vers la bonne distribution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="267">
+            <tuv xml:lang="EN">
+                <seg>6.4 Effects on the Identification of the Relations</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6.4 Effets sur l'identification des relations</seg>
+            </tuv>
+        </tu>
+        <tu tuid="268">
+            <tuv xml:lang="EN">
+                <seg>Looking at the F1 score per relation, we observed that these systems have dissimilar behaviors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En examinant le score F1 par relation, nous avons observé que ces systèmes ont des comportements différents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="269">
+            <tuv xml:lang="EN">
+                <seg>A larger influence of the artificial model allows improvements for contrast : the best result for this relation is obtained when only the artificial data are used for training (at best, 28 . 8 F1 score with ARTONLY+SELEC).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une influence plus importante du modèle artificiel permet d'améliorer le contraste : le meilleur résultat pour cette relation est obtenu lorsque seuls les données artificielles sont utilisées pour l'apprentissage (au mieux, 28,8 F1 score avec ARTONLY+SELEC).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="270">
+            <tuv xml:lang="EN">
+                <seg>The identification of the relation continuation seems to be also improved by the influence of the artificial data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'identification de la continuation de la relation semble également être améliorée par l'influence des données artificielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="271">
+            <tuv xml:lang="EN">
+                <seg>We can observe it with the linear interpolation of the models: the mean of the F1 score increases with the increasing of the α coefficient for these relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On peut l'observer avec l'interpolation linéaire des modèles : la moyenne du score F1 augmente avec l'augmentation du coefficient α pour ces relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="272">
+            <tuv xml:lang="EN">
+                <seg>For continuation , however, the best mean F1 is obtained with α = 0 . 8, this relation needs a certain degree of influence from the natural data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour la continuation, cependant, la meilleure moyenne F1 est obtenue avec α = 0,8, cette relation nécessite un certain degré d'influence des données naturelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="273">
+            <tuv xml:lang="EN">
+                <seg>Some support for this proposition can be found in the fact that the best result for this relation is obtained with NATW (at best, 44 . 7 F1 score).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un certain soutien à cette proposition peut être trouvé dans le fait que le meilleur résultat pour cette relation est obtenu avec NATW (au mieux, un score F1 de 44,7).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="274">
+            <tuv xml:lang="EN">
+                <seg>For the other relations, a large weight on the artificial data clearly decreases the F1 score.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les autres relations, un poids important sur les données artificielles diminue clairement le score F1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="275">
+            <tuv xml:lang="EN">
+                <seg>However, the identification of explanation is improved when we add the predictions of the artificial model (at best, ADDPRED+SELEC, 53 . 9 F1 score).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, l'identification de l'explication est améliorée lorsque l'on ajoute les prédictions du modèle artificiel (au mieux, ADDPRED+SELEC, score F1 de 53,9).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="276">
+            <tuv xml:lang="EN">
+                <seg>Improvement is fairly low for result (at best, 51 . 0 with ADDPRED+SELEC).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'amélioration est assez faible pour le résultat (au mieux, 51,0 avec ADDPRED+SELEC).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="277">
+            <tuv xml:lang="EN">
+                <seg>The relation contrast might take advantage of less noisy artificial data as most of the examples are extracted using the connective mais ( but ) always in discourse readings. For explanation , predictions of the artificial model could be quiet coherent as most of the artificial examples correspond to the pragmatic relation explanation[∗] . Moreover, if we look at the feature distribution (850 features overall), we observe a gap of more than 30% for 2 and 5 features for result and explanation that is not observed for contrast and continuation , the relations that make the most of the artificial data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le contraste de relation pourrait tirer parti de données artificielles moins bruitées car la plupart des exemples sont extraits en utilisant le connectif mais (mais) toujours dans les lectures du discours. Pour expliquer , les prédictions du modèle artificiel pourraient être assez cohérentes car la plupart des exemples artificiels correspondent à la relation pragmatique [∗] . De plus, si nous regardons la distribution des caractéristiques (850 caractéristiques au total), nous observons un écart de plus de 30 % pour 2 et 5 caractéristiques pour résultat et explication qui n'est pas observé pour contraste et continuation , les relations qui tirent le plus parti des données artificielles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="278">
+            <tuv xml:lang="EN">
+                <seg>7 Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7. Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="279">
+            <tuv xml:lang="EN">
+                <seg>We have presented the first system that identifies implicit discourse relations for French.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons présenté le premier système d'identification des relations discursives implicites pour le français.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="280">
+            <tuv xml:lang="EN">
+                <seg>This kind of relation is difficult to identify because of the lack of specific predictors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces relations sont difficiles à identifier en raison du manque d’indices spécifiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="281">
+            <tuv xml:lang="EN">
+                <seg>In the previous studies on English, the performance on this task are fairly low despite the use of complex features, probably because of a lack of manually annotated data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les études précédentes sur l'anglais, les performances sur cette tâche sont assez faibles malgré l'utilisation de caractéristiques complexes, probablement en raison d'un manque de données annotées manuellement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="282">
+            <tuv xml:lang="EN">
+                <seg>To deal with this issue, even more crucial for French, our system also resorts to additional data, automatically annotated using discourse connectives.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour résoudre ce problème, encore plus crucial en français, notre système utilise également des données supplémentaires, annotées automatiquement à l’aide de connecteurs de discours.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="283">
+            <tuv xml:lang="EN">
+                <seg>These new data, however, do not generalize well to natural implicit data, because of distribution differences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces nouvelles données ne se généralisent pas bien aux données implicites naturelles, en raison de différences de distribution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="284">
+            <tuv xml:lang="EN">
+                <seg>We thus test methods inspired by domain adaptation in order to combine natural and artificial data. We add an automatic selection of examples among the artificial data to deal with noise generated by the method of automatic annotation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons donc testé des méthodes inspirées de l’adaptation de domaine pour combiner ces données en ajoutant une étape de sélection automatique des exemples artificiels pour gérer le bruit induit par leur création. Cette stratégie nous permet d’aboutir à des améliorations significatives par rapport au modèle n’utilisant que les données naturelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="285">
+            <tuv xml:lang="EN">
+                <seg>We manage to get significant improvement over a system solely trained using available data manually annotated by using automatic selection and the addition of features corresponding to the predictions of the artificial model. In future work, we will explore more sophisticated methods to deal with data samples that follow different distributions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous arrivons à obtenir une amélioration significative par rapport à un système uniquement formé à l'aide de données disponibles annotées manuellement en utilisant la sélection automatique et l'ajout de caractéristiques correspondant aux prédictions du modèle artificiel. Dans les travaux futurs, nous explorerons des méthodes plus sophistiquées pour traiter des échantillons de données qui suivent des distributions différentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="286">
+            <tuv xml:lang="EN">
+                <seg>We will also explore ways to deal with imbalanced data and use our methods on all the relations annotated in our French corpus. Finally, we will test these methods on English corpora, in order to compare their efficiency with previous studies.&gt;</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous explorerons également des moyens de traiter les données déséquilibrées et d'utiliser nos méthodes sur toutes les relations annotées dans notre corpus français. Enfin, nous testerons ces méthodes sur des corpus anglais, afin de comparer leur efficacité avec les études précédentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="287">
+            <tuv xml:lang="EN">
+                <seg>This work is licenced under a Creative Commons Attribution 4.0 International License.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce travail est sous licence Creative Commons Attribution 4.0 International License.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="288">
+            <tuv xml:lang="EN">
+                <seg>Page numbers and proceedings footer are added by the organisers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les numéros de page et le pied de page des procès-verbaux sont ajoutés par les organisateurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="289">
+            <tuv xml:lang="EN">
+                <seg>License details: http://creativecommons.org/licenses/by/4.0/</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Détails de la licence : http://creativecommons.org/licenses/by/4.0/</seg>
+            </tuv>
+        </tu>
+        <tu tuid="290">
+            <tuv xml:lang="EN">
+                <seg>1 All our examples are taken from the ANNODIS corpus: http://redac.univ-tlse2.fr/corpus/annodis/.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1 Tous nos exemples sont extraits du corpus ANNODIS : http://redac.univ-tlse2.fr/corpus/annodis/.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="291">
+            <tuv xml:lang="EN">
+                <seg>2 The former count does not include AltLex , EntRel and NoRel as implicit examples, whereas the latter does.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2 L'ancien compte n'inclut pas AltLex , EntRel et NoRel comme exemples implicites, tandis que le dernier compte le fait.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="292">
+            <tuv xml:lang="EN">
+                <seg>3 The first count does not include attribution , e-elaboration and frame examples.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3 Le premier décompte ne comprend pas les exemples d'attribution, d'élaboration électronique et de cadrage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="293">
+            <tuv xml:lang="EN">
+                <seg>4 Wang et al. (2012) only use the first annotated relation and ignore the Entity relation, whereas Pitler et al. (2009) keep all the annotations and map Entity examples to the Expansion class.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4 Wang et al. (2012) n'utilisent que la première relation annotée et ignorent la relation Entité, tandis que Pitler et al. (2009) conservent toutes les annotations et mappent les exemples d'entité à la classe Expansion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="294">
+            <tuv xml:lang="EN">
+                <seg>5 http://www.umiacs.umd.edu/~hal/megam/version0_3/</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5 http://www.umiacs.umd.edu/~hal/megam/version0_3/</seg>
+            </tuv>
+        </tu>
+        <tu tuid="295">
+            <tuv xml:lang="EN">
+                <seg>6 Our focus is on the methodology of data combination, so we left for future work the issue of dealing with the highly imbalanced relation distribution of the natural data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6 Notre objectif est la méthodologie de la combinaison des données, nous avons donc laissé pour des travaux futurs la question de la gestion de la répartition très déséquilibrée des relations des données naturelles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="296">
+            <tuv xml:lang="EN">
+                <seg>Incidentally, note that this setting prevents us from getting a system solely performing well on highly frequent relations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, notez que ce paramètre nous empêche d'obtenir un système dont les performances sont optimales pour les relations très fréquentes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="297">
+            <tuv xml:lang="EN">
+                <seg>7 ARTINIT : standard deviation (sd) = 0 . 074, mean = 40 . 1 ; ADDPRED : sd = 0 . 037, ADDPROB sd = 0 . 061, mean ≃ 39</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7 ARTINIT : écart-type (sd) = 0 , 074, moyenne = 40 , 1 ; ADDPRED : sd = 0 , 037, ADDPROB sd = 0 , 061, moyenne ≃ 39.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="298">
+            <tuv xml:lang="EN">
+                <seg>8 p -value = 0 . 077, large effect size, 0 . 68 and high correlation, 0 . 67</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>8 p-valeur = 0 , 077, effet de taille large de 0 , 68 et importante corrélation 0 , 67.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>
