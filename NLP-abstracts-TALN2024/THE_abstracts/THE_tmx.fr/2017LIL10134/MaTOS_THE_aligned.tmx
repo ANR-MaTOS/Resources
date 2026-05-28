@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017LIL10134. segId begin by 1, tuid = segId</note>
+        <docid>2017LIL10134</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le partitionnement consiste à rechercher une partition d'éléments, de sorte que les éléments d'un même cluster soient plus similaires que les éléments de différents clusters.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Clustering is the task of finding a partition of items, such that items in the same cluster are more similar than items in different clusters.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les données proviennent de différentes sources et prennent des formes différentes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One challenge consists in designing a system capable of taking benefit of the different sources of data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'un des défis consiste à concevoir un système capable de tirer parti des différentes sources de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Objects can also be described by a graph which captures the relationships objects have with each others.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Certaines contraintes peuvent être connues sur les données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition to this, some constraints can be known about the data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>On peut savoir qu'un objet est d'un certain type ou que deux objets partagent le même type ou sont de types différents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It can be known that an object is of a certain type or that two objects share the same type or are of different types.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>On peut également savoir qu'à l'échelle globale, les différents types d'objets apparaissent avec une fréquence connue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It can also be known that on a global scale, the different types of objects appear with a known frequency.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous nous concentrons sur le partitionnement avec trois types de contraintes : les contraintes d'étiquettes, les contraintes de paires et les contraintes de lois de puissance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we focus on clustering with three different types of constraints: label constraints, pairwise constraints and power-law constraint.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Une contrainte d'étiquette spécifie dans quel cluster appartient un objet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A label constraint specifies in which cluster an object belong.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Les contraintes par paire spécifient que les paires d'objets doivent ou ne doivent pas partager le même cluster.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Pairwise constraints specify that pairs of object should or should not share the same cluster.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Enfin, la contrainte de loi de puissance est une contrainte globale qui spécifie que la distribution des tailles de cluster est soumise à une loi de puissance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, the power-law constraint is a cluster-level constraint that specifies that the distribution of cluster sizes are subject to a power-law.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous voulons montrer que l'introduction de la semi-supervision aux algorithmes de clustering peut modifier et améliorer les solutions retournées par des algorithmes de clustering non supervisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We want to show that introducing semi-supervision to clustering algorithms can alter and improve the solutions returned by unsupervised clustering algorithms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous contribuons à cette question en proposant des algorithmes pour chaque type de contraintes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We contribute to this question by proposing algorithms for each type of constraints.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Nos expériences sur les ensembles de données UCI et les jeux de données en langage naturel montrent la bonne performance de nos algorithmes et donnent des indications pour des travaux futurs prometteurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our experiments on UCI data sets and natural language processing data sets show the good performance of our algorithms and give hints towards promising future works.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

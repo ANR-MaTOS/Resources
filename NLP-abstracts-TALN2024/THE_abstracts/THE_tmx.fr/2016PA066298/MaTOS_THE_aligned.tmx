@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016PA066298. segId begin by 1, tuid = segId</note>
+        <docid>2016PA066298</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse aborde le problème de la détection automatique des comparaisons figuratives dans des textes littéraires en prose écrits en français ou en anglais et propose un canevas pour décrire ces comparaisons d'un point de vue stylistique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis tackles the problem of the automatic recognition of similes in literary texts written in English or in French and proposes a framework to describe them from a stylistic perspective.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Une comparaison figurative correspond ici à toute structure syntaxique qui met en parallèle au moins deux entités, déroge au principe de compositionnalité et crée une image mentale dans l'esprit de ceux à qui elle est destinée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For the purpose of this study, a simile has been defined as a syntactic structure that draws a parallel between at least two entities, lacks compositionality and is able to create an image in the receiver's mind.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Trois éléments principaux distinguent notre approche des travaux précédents : son ancrage dans les théories linguistiques et cognitives sur les comparaisons littérales et figuratives, sa capacité à gérer des marqueurs appartenant à différentes catégories grammaticales et sa flexibilité qui lui permet d'envisager différents scénarios syntaxiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Three main points differentiate the proposed approach from existing ones: it is strongly influenced by cognitive and linguistic theories on similes and comparisons, it takes into consideration a wide range of markers and it can adapt to diverse syntactic scenarios.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>De fait, nous proposons une méthode comprenant trois modules complémentaires : - un module syntaxique qui utilise des dépendances syntaxiques et des règles manuelles pour identifier les comparaisons potentielles ainsi que leurs composantes ; - un module sémantique qui mesure la saillance des motifs détectés et la similarité sémantique des termes comparés en se basant sur une base de données préétablie ; - et un module d'annotation qui fournit entre autres des informations sur le type de comparaison (idiomatique, sensorielle…) et sur les catégories sémantiques employées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Concretely speaking, it relies on three interconnected modules: - a syntactic module, which extracts potential simile candidates and identifies their components using grammatical roles and a set of handcrafted rules, - a semantic module which separates creative similes from both idiomatic similes and literal comparisons based on the salience of the ground and semantic similarity computed from data automatically retrieved from machine-readable dictionaries;-and an annotation module which makes use of the XML format and gives among others information on the type of comparisons (idiomatic, perceptual…) and on the semantic categories used.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Pour finir, au vu des données recueillies au cours des deux campagnes d'annotation que nous avons menées, il paraît clair que la détection automatique des comparaisons figuratives doit tenir compte de plusieurs facteurs parmi lesquels la saillance, la catégorisation et la syntaxe de la phrase.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, the two annotation tasks we designed show that the automatic detection of figuration in similes must take into consideration.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2014GRENL012. segId begin by 1, tuid = segId</note>
+        <docid>2014GRENL012</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons un modèle de vérification grammaticale automatique gauche-droite issu de l'analyse d'un corpus d'erreurs tapuscrites.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis presents a model for automated left-right grammar checking based on analysis of a corpus of typescript errors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les travaux menés en psychologie cognitive ont montré que le processus de révision procède au travers de la confrontation d'une attente à un résultat.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Studies in cognitive psychology have shown that the revision process works by confronting expectations with results.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, la détection d'une erreur grammaticale reposerait, chez l'humain, sur une attente du réviseur non comblée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For humans, detecting a grammatical error therefore relies on an unfulfilled expectation on the part of the revisor.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ce principe est à la base du modèle que nous avons élaboré.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The model presented here is based on this principle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Pour faciliter la gestion des attentes du point de vue traitement numérique, nous convions deux concepts courants en TAL : le principe d'unification et la segmentation en chunks.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to deal with expectations from the point of view of computational processing, two common concepts in NLP are called upon: the unification principle and chunk segmentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Le premier est particulièrement adapté à la vérification des accords et le second constitue une unité de calcul intermédiaire permettant de définir des bornes simplifiant la recherche d'incohérences grammaticales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The former is particularly adapted to checking agreements, while the latter provides an intermediate computational unit to delimit, and therefore simplify, detection of grammatical inconsistencies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Enfin, l'originalité de ce modèle réside dans une analyse gauche-droite construite au fur et à mesure de la lecture/écriture.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, the model's originality lies in the left-right analysis it provides, which is constructed as the text is produced/read.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

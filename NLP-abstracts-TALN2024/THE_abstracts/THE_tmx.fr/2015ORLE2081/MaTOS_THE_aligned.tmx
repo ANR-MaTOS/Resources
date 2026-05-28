@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2015ORLE2081. segId begin by 1, tuid = segId</note>
+        <docid>2015ORLE2081</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le sociologue Bourdieu définit le capital social comme : "L'ensemble des ressources actuelles ou potentielles qui sont liées à la possession d'un réseau durable de relations".</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Bourdieu, a sociologist, defines social capital as: "The set of current or potential ressources linked to the possession of a lasting relationships network".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Sur Twitter, les abonnements, mentions et retweets créent un réseau de relations pour chaque utilisateur dont les ressources sont l'obtention d'informations pertinentes, la possibilité d'être lu, d'assouvir un besoin narcissique, de diffuser efficacement des messages.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On Twitter,the friends, followers, users mentionned and retweeted are considered as the relationships network of each user, which ressources are the chance to get relevant information, to be read, to satisfy a narcissist need, to spread information or advertisements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Certains utilisateurs Twitter-appelés capitalistes sociaux-cherchent à maximiser leur nombre d'abonnements pour maximiser leur capital social.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We observe that some Twitter users that we call social capitalists aim to maximize their follower numbers to maximize their social capital.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous introduisons leurs techniques, basées sur l'échange d'abonnements et l'utilisation de hashtags dédiés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We introduce their methods, based on mutual subscriptions and dedicated hashtags.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Afin de mieux les étudier, nous détaillons tout d'abord une méthode pour détecter à l'échelle du réseau ces utilisateurs en se basant sur leurs abonnements et abonnés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to study them, we first describe a large scale detection method based on their set of followers and followees.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Puis, nous montrons avec un compte Twitter automatisé que ces techniques permettent de gagner efficacement des abonnés et de se faire beaucoup retweeter.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, we show with an automated Twitter account that their methods allow to gain followers and to be retweeted efficiently.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous établissons ensuite que ces dernières permettent également aux capitalistes sociaux d'occuper des positions qui leur accordent une bonne visibilité dans le réseau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Afterwards, we bring to light that social capitalists methods allows these users to occupy specific positions in the network allowing them a high visibility.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>De plus, ces méthodes rendent ces utilisateurs influents aux yeux des principaux outils de mesure.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, these methods make these users influent according to the major tools.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous mettons en place une méthode de classification supervisée pour détecter avec précision ces utilisateurs et ainsi produire un nouveau score d'influence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We thus set up a classification method to detect accurately these user and produce a new influence score.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

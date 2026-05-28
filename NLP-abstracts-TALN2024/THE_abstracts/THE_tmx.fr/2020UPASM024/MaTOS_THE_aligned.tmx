@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020UPASM024. segId begin by 1, tuid = segId</note>
+        <docid>2020UPASM024</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse nous étudions plusieurs problèmes d'apprentissage automatique qui sont tous liés à la minimisation d'une fonction bruitée, qui sera souvent convexe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis we study several machine learning problems that are all linked with the minimization of a noisy function, which will often be convex.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Du fait de leurs nombreuses applications nous nous concentrons sur des problèmes d'apprentissage séquentiel, qui consistent à traiter des données ``à la volée'', ou en ligne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Inspired by real-life applications we focus on sequential learning problems which consist in treating the data ``on the fly'', or in an online manner.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La première partie de cette thèse est ainsi consacrée à l'étude de trois différents problèmes d'apprentissage séquentiel dans lesquels nous rencontrons le compromis classique ``exploration vs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first part of this thesis is thus devoted to the study of three different sequential learning problems which all face the classical ``exploration vs. exploitation''trade-off.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous étudions tous ces problèmes à l'aide de techniques d'optimisation stochastique convexe, et nous proposons et analysons des algorithmes pour les résoudre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We demonstrate that all of these problems can be studied under the scope of stochastic convex optimization, and we propose and analyze algorithms to solve them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans la deuxième partie de cette thèse nous nous concentrons sur l'analyse de l'algorithme de descente de gradient stochastique qui est vraisemblablement l'un des algorithmes d'optimisation stochastique les plus utilisés en apprentissage automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second part of this thesis we focus on the analysis of the Stochastic Gradient Descent algorithm, which is likely one of the most used stochastic optimization algorithms in machine learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous en présentons une analyse complète dans le cas convexe ainsi que dans certaines situations non convexes en étudiant le modèle continu qui lui est associé, et obtenons de nouveaux résultats de convergence optimaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We provide an exhaustive analysis in the convex setting and in some non-convex situations by studying the associated continuous-time model, and obtain new optimal convergence results.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-s234991. segId begin by 1, tuid = segId</note>
+        <docid>s234991</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le texte a été le moyen dominant de stocker des données dans des systèmes informatiques et d'envoyer des informations sur le Web.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Text has been the dominant way of storing data in computer systems and sending information around the Web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>L'extraction de représentations significatives hors du texte a été un élément clé de la modélisation de langage afin de traiter des tâches de la NLP telles que la classification de texte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Extracting meaningful representations out of text has been a key element for modelling language in order to tackle NLP tasks like text classification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ces représentations peuvent ensuite former des groupes que l'on peut utiliser pour des problèmes d'apprentissage supervisé. Plus spécifiquement, on peut utiliser ces groupes linguistiques à des fins de régularisation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These representations can then form groups that one can use for supervised learning problems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Enfin, ces structures peuvent être utiles dans un autre domaine important, le calcul de distance entre documents texte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More specifically, one can utilize these linguistic groups for regularization purposes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, en examinant de nouvelles représentations de texte basées sur des graphes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main goal of this thesis is to study the aforementioned problems; first, by examining new graph-based representations of text.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, nous avons étudié comment des groupes de ces représentations peuvent aider à la régularisation dans des modèles d'apprentissage automatique pour la classification de texte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Next, we studied how groups of these representations can help regularization in machine learning models for text classification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous avons traité des ensembles et de la mesure des distances entre les documents, en utilisant les groupes linguistiques que nous avons proposés, ainsi que des approches basées sur des graphes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Last, we dealt with sets and measuring distances between documents, utilizing our proposed linguistic groups, as well as graph-based approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans la première partie de la thèse, nous avons étudié les représentations de texte basées sur des graphes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first part of the thesis, we have studied graph-based representations of text.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Transformer le texte en graphiques n'est pas anodin et existait avant même que les mots incorporés ne soient introduits dans la communauté NLP.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Turning text to graphs is not trivial and has been around even before word embeddings were introduced to the NLP community.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Dans notre travail, nous montrons que les représentations graphiques de texte peuvent capturer efficacement des relations telles que l'ordre, la sémantique ou la structure syntaxique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In our work, we show that graph-based representations of text can capture effectively relationships like order, semantic or syntactic structure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>De plus, ils peuvent être créés rapidement tout en offrant une grande polyvalence pour de multiples tâches.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, they can be created fast while offering great versatility for multiple tasks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Dans la deuxième partie, nous nous sommes concentrés sur la régularisation structurée du texte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second part, we focused on structured regularization for text.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Les données textuelles souffrent du problème de dimensionnalité, créant de grands espaces de fonctionnalités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Textual data suffer from the dimensionality problem, creating huge feature spaces.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>La régularisation est essentielle pour tout modèle d'apprentissage automatique, car elle permet de remédier au surajustement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Regularization is critical for any machine learning model, as it can address overfitting.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Dans notre travail, nous présentons de nouvelles approches pour la régularisation de texte, en introduisant de nouveaux groupes de structures linguistiques et en concevant de nouveaux algorithmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In our work we present novel approaches for text regularization, by introducing new groups of linguistic structures and designing new algorithms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Dans la dernière partie de la thèse, nous étudions de nouvelles méthodes pour mesurer la distance dans le mot englobant l'espace.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the last part of the thesis, we study new methods to measure distance in the word embedding space.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Premièrement, nous présentons diverses méthodes pour améliorer la comparaison entre des documents constitués de vecteurs de mots.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, we introduce diverse methods to boost comparison between documents that consist of word vectors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, en présentant la comparaison des documents comme une correspondance bipartite pondérée, nous montrons comment nous pouvons apprendre des représentations cachées et améliorer les résultats pour la tâche de classification de texte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Next, representing the comparison of the documents as a weighted bipartite matching, we show how we can learn hidden representations and improve results for the text classification task.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous conclurons en résumant les principaux points de la contribution totale et en discutant des orientations futures.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we conclude by summarizing the main points of the total contribution and discuss future directions.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

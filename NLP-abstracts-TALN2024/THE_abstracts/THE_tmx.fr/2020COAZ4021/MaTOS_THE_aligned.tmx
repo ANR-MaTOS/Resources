@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020COAZ4021. segId begin by 1, tuid = segId</note>
+        <docid>2020COAZ4021</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La sclérose en plaques (SEP) est la maladie neurologique évolutive la plus courante chez les jeunes adultes dans le monde et représente donc un problème de santé publique majeur avec environ 90 000 patients en France et plus de 500 000 personnes atteintes de SEP en Europe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Multiple Sclerosis (MS) is the most common progressive neurological disease of young adults worldwide and thus represents a major public health issue with about 90,000 patients in France and more than 500,000 people affected with MS in Europe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Afin d'optimiser les traitements, il est essentiel de pouvoir mesurer et suivre les altérations cérébrales chez les patients atteints de SEP.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to optimize treatments, it is essential to be able to measure and track brain alterations in MS patients.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En fait, la SEP est une maladie aux multiples facettes qui implique différents types d'altérations, telles que les dommages et la réparation de la myéline.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In fact, MS is a multi-faceted disease which involves different types of alterations, such as myelin damage and repair.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Selon cette observation, la neuroimagerie multimodale est nécessaire pour caractériser pleinement la maladie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Under this observation, multimodal neuroimaging are needed to fully characterize the disease.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>L'imagerie par résonance magnétique (IRM) est devenue un biomarqueur d'imagerie fondamental pour la sclérose en plaques en raison de sa haute sensibilité à révéler des anomalies tissulaires macroscopiques chez les patients atteints de SEP.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Magnetic resonance imaging (MRI) has emerged as a fundamental imaging biomarker for multiple sclerosis because of its high sensitivity to reveal macroscopic tissue abnormalities in patients with MS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>L'IRM conventionnelle fournit un moyen direct de détecter les lésions de SEP et leurs changements, et joue un rôle dominant dans les critères diagnostiques de la SEP.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Conventional MR scanning provides a direct way to detect MS lesions and their changes, and plays a dominant role in the diagnostic criteria of MS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>De plus, l'imagerie par tomographie par émission de positons (TEP), une autre modalité d'imagerie, peut fournir des informations fonctionnelles et détecter les changements tissulaires cibles au niveau cellulaire et moléculaire en utilisant divers radiotraceurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, positron emission tomography (PET) imaging, an alternative imaging modality, can provide functional information and detect target tissue changes at the cellular and molecular level by using various radiotracers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cependant, en milieu clinique, toutes les modalités ne sont pas disponibles pour diverses raisons.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, in clinical settings, not all the modalities are available because of various reasons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous nous concentrons donc sur l'apprentissage et la prédiction des altérations cérébrales dérivées des modalités manquantes dans la SEP à partir de données de neuroimagerie multimodale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we therefore focus on learning and predicting missing-modality-derived brain alterations in MS from multimodal neuroimaging data.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

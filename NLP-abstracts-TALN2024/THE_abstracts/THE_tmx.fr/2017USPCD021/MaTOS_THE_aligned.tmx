@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017USPCD021. segId begin by 1, tuid = segId</note>
+        <docid>2017USPCD021</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La quantité de contenu généré par l'utilisateur sur le Web croît à un rythme rapide.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The quantity of user-generated content on the Web is constantly growing at a fast pace.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Une grande partie de ce contenu est constituée des opinions et avis sur des produits et services.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A great share of this content is made of opinions and reviews on products and services.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Vu leur impact, ces avis sont un facteur important dans les décisions concernant l'achat de ces produits ou services.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This electronic word-of-mouth is also an important factor in decisions about purchasing these products or services.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les utilisateurs ont tendance à faire confiance aux autres utilisateurs, surtout s'ils peuvent se comparer à ceux qui ont écrit les avis, ou, en d'autres termes, ils sont confiants de partager certaines caractéristiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Users tend to trust other users, especially if they can compare themselves to those who wrote the reviews, or, in other words, they are confident to share some characteristics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Par exemple, les familles préféreront voyager dans les endroits qui ont été recommandés par d'autres familles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For instance, families will prefer to travel in places that have been recommended by other families.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous supposons que les avis qui contiennent des expériences vécues sont plus précieuses, puisque les expériences donnent aux avis un aspect plus subjective, permettant aux lecteurs de se projeter dans le contexte de l'écrivain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We assume that reviews that contain lived experiences are more valuable, since experiences give to the reviews a more subjective cut, allowing readers to project themselves into the context of the writer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En prenant en compte cette hypothèse, dans cette thèse, nous visons à identifier, extraire et représenter les expériences vécues rapportées dans les avis des utilisateurs en hybridant les techniques d'extraction des connaissances et de traitement du langage naturel,afin d'accélérer le processus décisionnel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With this hypothesis in mind, in this thesis we aim to identify, extract, and represent reported lived experiences in customer reviews by hybridizing Knowledge Extraction and Natural Language Processing techniques in order to accelerate the decision process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Pour cela, nous avons défini opérationnellement une expérience vécue d'un utilisateur comme un événement mentionné dans un avis, où l'auteur est présent parmi les participants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Forthis, we define a lived user experience as an event mentioned in a review, where the authoris among the participants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Cette définition considère que les événements mentionnés dans le texte sont les éléments les plus importants dans les expériences vécues : toutes les expériences vécues sont basées sur des événements, qui sont clairement définis dans le temps et l'espace.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This definition considers that mentioned events in the text are the most important elements in lived experiences: all lived experiences are based on events,which on turn are clearly defined in time and space.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, nous proposons une approche permettant d'extraire les événements à partir des avis des utilisateurs, qui constituent la base d'un système permettant d'identifier et extraire les expériences vécues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There fore, we propose an approach to extract events from user reviews, which constitute the basis of an event-based system to identify and extract lived experiences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Pour l'approche d'extraction d'événements, nous avons transformé les avis des utilisateur sen leurs représentations sémantiques en utilisant des techniques de machine reading.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For the event extraction approach, we transform user reviews into their semantic representations using machine reading techniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous avons effectué une analyse sémantique profonde des avis et détecté les cadres linguistiques les plus appropriés capturant des relations complexes exprimées dans les avis.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We perform a deep semantic parsing of reviews, detecting the linguistic frames that capture complex relations expressed in there views.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Le système d'extraction des expériences vécues repose sur trois étapes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The event-based lived experience system is carried out in three steps.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>La première étape opère un filtrage des avis, basé sur les événements, permettant d'identifier les avis qui peuvent contenir des expériences vécues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first step operates an event-based review filtering, which identifies reviews that may contain lived experiences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>La deuxième étape consiste à extraire les événements pertinents avec leurs participants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second step consists of extracting relevant events together with their participants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Afin de tester notre hypothèse, nous avons effectué quelques expériences pour vérifier si les expériences vécues peuvent être considérées comme des motivations pour les notes attribuées par les utilisateurs dans le système de notation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to test our hypothesis, we carried out some experiments to verify whether lived experiences can be considered as triggers for the ratings expressed by users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, nous avons utilisé les expériences vécues comme des caractéristiques dans un système de classification, en comparant avec les notes associées avec des avis dans un ensemble de données extraites et annotées manuellement de Tripadvisor.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, we used lived experiences as features in a classification system, comparing with the ratings of the reviews in a dataset extracted and manually annotated from Tripadvisor.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Les résultats montrent que les expériences vécues sont corrélées avec les notes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results show that lived experiences are actually correlated with the ratings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse fournit des contributions intéressantes dans le domaine de l'analyse d'opinion.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In conclusion, this thesis provides some interesting contributions in the field of opinionmining.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, l'application avec succès de machine reading afin d'identifier les expériences vécues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First of all, the successful application of machine reading to identify lived experiences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, La confirmation que les expériences vécues sont liées aux notations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Second, the confirmation that lived experiences are correlated to ratings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="FR">
+                <seg>Enfin, l'ensemble de données produit pour tester notre hypothèse constitue également une contribution importante de la thèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally,the dataset produced to test our hypothesis constitutes also an important contribution of the thesis.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

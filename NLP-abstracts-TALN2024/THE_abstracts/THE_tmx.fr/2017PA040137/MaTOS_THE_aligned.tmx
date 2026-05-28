@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017PA040137. segId begin by 1, tuid = segId</note>
+        <docid>2017PA040137</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre de notre thèse, nous avons proposé une approche générique multilingue d'extraction automatique de connaissances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we proposed a multilingual generic approach for the automatic information extraction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous avons validé l‟approche sur l'extraction des événements de variations des cours pétroliers et l‟extraction des expressions temporelles liées à des référentiels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Particularly, events extraction of price variation and temporal information extraction linked to temporal referential.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Notre approche est basée sur la constitution de plusieurs cartes sémantiques par analyse des données non structurées afin de formaliser les traces linguistiques textuelles exprimées par des catégories d'un point de vue de fouille.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our approach is based on the constitution of several semantic maps by textual analysis in order to formalize the linguistic traces expressed by categories.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous avons mis en place un système expert permettant d‟annoter la présence des catégories en utilisant des groupes de règles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We created a database for an expert system to identify and annotate information (categories and their characteristics) based on the contextual rule groups.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Deux algorithmes d'annotation AnnotEV et AnnotEC ont été appliqués, dans la plateforme SemanTAS.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two algorithms AnnotEC and AnnotEV have been applied in the SemanTAS platform to validate our assumptions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Le rappel et précision de notre système d'annotation est autour de 80%.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have obtained a satisfactory result; Accuracy and recall are around 80%.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous avons présenté les résultats aussi sous forme des fiches de synthèses.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We presented extracted knowledge by a summary file.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

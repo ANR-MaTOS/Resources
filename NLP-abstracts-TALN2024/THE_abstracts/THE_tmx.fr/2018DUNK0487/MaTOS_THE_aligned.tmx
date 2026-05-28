@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018DUNK0487. segId begin by 1, tuid = segId</note>
+        <docid>2018DUNK0487</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse porte sur le traitement du langage naturel et l'exploration de texte, à l'intersection de l'apprentissage automatique et de la statistique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis deals with natural language processing and text mining, at the intersection of machine learning and statistics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous nous intéressons plus particulièrement aux schémas de pondération des termes (SPT) dans le contexte de l'apprentissage supervisé et en particulier à la classification de texte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We are particularly interested in Term Weighting Schemes (TWS) in the context of supervised learning and specifically the Text Classification (TC) task.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans la classification de texte, la tâche de classification multi-étiquettes a suscité beaucoup d'intérêt ces dernières années.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In TC, the multi-label classification task has gained a lot of interest in recent years.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La classification multi-étiquettes à partir de données textuelles peut être trouvée dans de nombreuses applications modernes telles que la classification de nouvelles où la tâche est de trouver les catégories auxquelles appartient un article de presse en fonction de son contenu textuel (par exemple, politique, Moyen-Orient, pétrole), la classification du genre musical (par exemple, jazz, pop, oldies, pop traditionnelle) en se basant sur les commentaires des clients, la classification des films (par exemple, action, crime, drame), la classification des produits (par exemple, électronique, ordinateur, accessoires).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Multi-label classification from textual data may be found in many modern applications such as news classification where the task is to find the categories that a newswire story belongs to (e.g., politics, middle east, oil), based on its textual content, music genre classification (e.g., jazz, pop, oldies, traditional pop) based on customer reviews, film classification (e.g. action, crime, drama), product classification (e.g. Electronics, Computers, Accessories).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La plupart des algorithmes d'apprentissage ne conviennent qu'aux problèmes de classification binaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Traditional classification algorithms are generally binary classifiers, and they are not suited for the multi-label classification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, les tâches de classification multi-étiquettes sont généralement transformées en plusieurs tâches binaires à label unique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The multi-label classification task is, therefore, transformed into multiple single-label binary tasks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Cependant, cette transformation introduit plusieurs problèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, this transformation introduces several issues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Premièrement, les distributions des termes ne sont considérés qu'en matière de la catégorie positive et de la catégorie négative (c'est-à-dire que les informations sur les corrélations entre les termes et les catégories sont perdues).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, terms distributions are only considered in relevance to the positive and the negative categories (i.e., information on the correlations between terms and categories is lost).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, il n'envisage aucune dépendance vis-à-vis des étiquettes (c'est-à-dire que les informations sur les corrélations existantes entre les classes sont perdues).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Second, it fails to consider any label dependency (i.e., information on existing correlations between classes is lost).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Enfin, puisque toutes les catégories sauf une sont regroupées dans une seule catégories (la catégorie négative), les tâches nouvellement créées sont déséquilibrées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, since all categories but one are grouped into one category (the negative category), the newly created tasks are imbalanced.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Ces informations sont couramment utilisées par les SPT supervisés pour améliorer l'efficacité du système de classification.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This information is commonly used by supervised TWS to improve the effectiveness of the classification system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, après avoir présenté le processus de classification de texte multi-étiquettes, et plus particulièrement le SPT, nous effectuons une comparaison empirique de ces méthodes appliquées à la tâche de classification de texte multi-étiquette.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hence, after presenting the process of multi-label text classification, and more particularly the TWS, we make an empirical comparison of these methods applied to the multi-label text classification task.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Nous constatons que la supériorité des méthodes supervisées sur les méthodes non supervisées n'est toujours pas claire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We find that the superiority of the supervised methods over the unsupervised methods is still not clear.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons ensuite que ces méthodes ne sont pas totalement adaptées au problème de la classification multi-étiquettes et qu'elles ignorent beaucoup d'informations statistiques qui pourraient être utilisées pour améliorer les résultats de la classification.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show then that these methods are not fully adapted to the multi-label classification problem and they ignore much statistical information that coul be used to improve the classification results.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons donc un nouvel SPT basé sur le gain d'information.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, we propose a new TWS based on information gain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Cette nouvelle méthode prend en compte la distribution des termes, non seulement en ce qui concerne la catégorie positive et la catégorie négative, mais également en rapport avec toutes les autres catégories.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This new method takes into consideration the term distribution, not only regarding the positive and the negative categories but also in relevance to all classes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Enfin, dans le but de trouver des SPT spécialisés qui résolvent également le problème des tâches déséquilibrées, nous avons étudié les avantages de l'utilisation de la programmation génétique pour générer des SPT pour la tâche de classification de texte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, aiming at finding specialized TWS that also solve the issue of imbalanced tasks, we studied the benefits of using genetic programming for generating TWS for the text classification task.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Contrairement aux études précédentes, nous générons des formules en combinant des informations statistiques à un niveau microscopique (par exemple, le nombre de documents contenant un terme spécifique) au lieu d'utiliser des SPT complets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Unlike previous studies, we generate formulas by combining statistical information at a microscopic level (e.g., the number of documents that contain a specific term) instead of using complete TWS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>De plus, nous utilisons des informations catégoriques telles que (par exemple, le nombre de catégories dans lesquelles un terme apparaît).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, we make use of categorical information such as (e.g., the number of categories where a term occurs).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Des expériences sont effectuées pour mesurer l'impact de ces méthodes sur les performances du modèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Experiments are made to measure the impact of these methods on the performance of the model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons à travers ces expériences que les résultats sont positifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show through these experiments that the results are positive.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

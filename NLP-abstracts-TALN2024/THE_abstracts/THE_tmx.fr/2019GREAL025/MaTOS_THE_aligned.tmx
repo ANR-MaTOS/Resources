@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019GREAL025. segId begin by 1, tuid = segId</note>
+        <docid>2019GREAL025</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Depuis peu, émerge une réelle dynamique de constitution et de diffusion de corpus d’écrits scolaires, notamment francophones.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In recent years, there has been an actual effort to constitute and promote children’s writings corpora especially in French.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ces corpus, qui appuient les travaux en didactique de l’écriture, sont souvent de taille restreinte et peu diffusés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first research works on writing acquisition relied on small corpora that were not widely distributed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Des corpus longitudinaux, c'est-à-dire réalisant le suivi d’une cohorte d’élèves et permettant de s’intéresser à la progressivité des apprentissages, n’existent pas à ce jour pour le français.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Longitudinal corpora, monitoring a cohort of children’s productions from similar collection conditions from one year to the next, do not exist in French yet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, bien que le traitement automatique des langues (TAL) ait outillé des corpus de natures très diverses, peu de travaux se sont intéressés aux écrits scolaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, although natural language processing (NLP) has provided tools for a wide variety of corpora, few studies have been conducted on children's writings corpora.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Ce nouveau champ d’application représente un défi pour le TAL en raison des spécificités des écrits scolaires, et particulièrement les nombreux écarts à la norme qui les caractérisent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This new scope represents a challenge for the NLP field because of children's writings specificities, and particularly their deviation from the written norm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Les outils proposés à l’heure actuelle ne conviennent donc pas à l’exploitation de ces corpus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hence, tools currently available are not suitable for the exploitation of these corpora.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Il y a donc un enjeu pour le TAL à développer des méthodes spécifiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There is therefore a challenge for NLP to develop specific methods for these written productions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse présente deux apports principaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis provides two main contributions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>D’une part, ce travail a permis la constitution d’un corpus d’écrits scolaires longitudinal (CP-CM2), de grande taille et numérisé, le corpus Scoledit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the one hand, this work has led to the creation of a large and digitized longitudinal corpus of children's writings (from 6 to 11 years old) named the Scoledit corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Par « constitution », nous entendons le recueil, la numérisation et la transcription des productions, l’annotation des données linguistiques et la diffusion de la ressource ainsi constituée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Its constitution implies the collection, the digitization and the transcription of productions, the annotation of linguistic data and the dissemination of the resource thus constituted.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>D’autre part, ce travail a donné lieu à l’élaboration d’une méthode d’exploitation de ce corpus, appelée approche par comparaison, qui s’appuie sur la comparaison entre la transcription des productions et une version normalisée de ces productions pour produire des analyses.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, this work enables the development of a method exploiting this corpus, called the comparison approach, which is based on the comparison between the transcription of children’s productions and their standardized version.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Cette méthode a nécessité le développement d’un aligneur de formes, appelé AliScol, qui permet de mettre en correspondance les formes produites par l’élève et les formes normalisées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to create a first level of alignment, this method compared transcribed forms to their normalized counterparts, using the aligner AliScol.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Cet outil représente un premier niveau d’alignement à partir duquel différentes analyses linguistiques ont été menées (lexicales, morphographiques, graphémiques).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It also made possible the exploration of various linguistic analyses (lexical, morphographic, graphical).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>La conception d’un aligneur en graphèmes, appelé AliScol_Graph, a été nécessaire pour conduire une étude sur les graphèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>And finally, in order to analyse graphemes, an aligner of transcribed and normalized graphemes, called AliScol_Graph was created.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

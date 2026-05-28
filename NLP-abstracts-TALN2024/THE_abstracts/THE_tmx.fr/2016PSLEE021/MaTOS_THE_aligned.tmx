@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016PSLEE021. segId begin by 1, tuid = segId</note>
+        <docid>2016PSLEE021</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les humains sont au coeur de nombreux problèmes de vision par ordinateur, tels que les systèmes de surveillance ou les voitures sans pilote.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>People are at the center of many computer vision tasks, such as surveillance systems or self-driving cars.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ils sont également au centre de la plupart des contenus visuels, pouvant amener à des jeux de données très larges pour l’entraînement de modèles et d’algorithmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They are also at the center of most visual contents, potentially providing very large datasets for training models and algorithms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, si les données stéréoscopiques font l’objet d’études depuis longtemps, ce n’est que récemment que les films 3D sont devenus un succès commercial.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While stereoscopic data has been studied for long, it is only recently that feature-length stereoscopic ("3D") movies became widely available.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous étudions comment exploiter les données additionnelles issues des films 3D pour les tâches d’analyse des personnes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we study how we can exploit the additional information provided by 3D movies for person analysis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous explorons tout d’abord comment extraire une notion de profondeur à partir des films stéréoscopiques, sous la forme de cartes de disparité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We first explore how to extract a notion of depth from stereo movies in the form of disparity maps.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>En s’appuyant sur la relative facilité de la tâche de détection de personne dans les films 3D, nous développons une méthode pour collecter automatiquement des exemples de personnes dans les films 3D afin d’entraîner un détecteur de personne pour les films non 3D. Nous nous concentrons ensuite sur la segmentation de plusieurs personnes dans les vidéos.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Leveraging the relative ease of the person detection task in 3D movies, we develop a method to automatically harvest examples of persons in 3D movies and train a person detector for standard color movies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous formulons ce problème comme un problème d’étiquetage de graphe multi-étiquettes, et notre méthode intègre un modèle des occlusions pour produire une segmentation multi-instance par plan.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We formulate the segmentation problem as a multi-label Conditional Random Field problem, and our method integrates an occlusion model to produce a layered, multi-instance segmentation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Après avoir montré l’efficacité et les limitations de cette méthode, nous proposons un second modèle, qui ne repose lui que sur des détections de personne à travers la vidéo, et pas sur des estimations de posture.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>After showing the effectiveness of this approach as well as its limitations, we propose a second model which only relies on tracks of person detections and not on pose estimates.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous formulons ce problème comme la minimisation d’un coût quadratique sous contraintes linéaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We formulate our problem as a convex optimization one, with the minimization of a quadratic cost under linear equality or inequality constraints.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Ces contraintes encodent les informations de localisation fournies par les détections de personne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These constraints weakly encode the localization information provided by person detections.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Cette méthode ne nécessite pas d’information de posture ou des cartes de disparité, mais peut facilement intégrer ces signaux supplémentaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This method does not explicitly require pose estimates or disparity maps but can integrate these additional cues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Elle peut également être utilisée pour d’autres classes d’objets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our method can also be used for segmenting instances of other object classes from videos.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Nous évaluons tous ces aspects et démontrons la performance de cette nouvelle méthode.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We evaluate all these aspects and demonstrate the superior performance of this new method.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

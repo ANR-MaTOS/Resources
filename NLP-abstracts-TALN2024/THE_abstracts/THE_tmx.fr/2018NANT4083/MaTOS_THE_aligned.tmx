@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018NANT4083. segId begin by 1, tuid = segId</note>
+        <docid>2018NANT4083</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Stimulé par des applications comme l’annotation de documents ou d’images, l’apprentissage multi-label a connu un fort développement cette dernière décennie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Stimulated by many applications such as documents or images annotation, multilabel learning have gained a strong interest during the last decade.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Mais les algorithmes classiques se heurtent aux nouveaux volumes des données multi-label extrême (XML) où le nombre de labels peut atteindre le million.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>But, standard algorithms cannot cope with the volumes of the recent extreme multi-label data (XML) where the number of labels can reach millions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse explore trois directions pour aborder la complexité en temps et en mémoire du problème : la réduction de dimension multi-label, les astuces d’optimisation et d’implémentation et le découpage arborescent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis explores three directions to address the complexity in time and memory of the problem: multi-label dimension reduction, optimization and implementation tricks, and tree-based methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Elle propose d’unifier les approches de réduction à travers une typologie et deux formulations génériques et d’identifier des plus performantes avec une méta-analyse originale des résultats de la littérature.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It proposes to unify the reduction approaches through a typology and two generic formulations and to identify the most efficient ones with an original meta-analysis of the results of the literature.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Une nouvelle approche est développée pour analyser l’apport du couplage entre le problème de réduction et celui de classification.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A new approach is developed to analyze the interest of coupling the reduction problem and the classification problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Pour réduire la complexité mémoire en maintenant les capacités prédictives, nous proposons également un algorithme d’estimation des plus grands paramètres utiles d’un modèle classique de régression one-vs-rest qui suit une stratégie inspirée de l’analyse de données en flux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To reduce the memory complexity of a classical one-vs-rest regression model while maintaining its predictive performances, we also propose an algorithm for estimating the largest useful parameters that follows a strategy inspired by data stream analysis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous présentons un nouvel algorithme CRAFTML qui apprend un ensemble d’arbres de décision diversifiés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we present a new algorithm called CRAFTML that learns an ensemble of diversified decision trees.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Les apports de la thèse sont complétés par la présentation d’un outil logiciel VIPE développé avec Orange Labs pour l’analyse d’opinions multi-label.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The contributions of the thesis are completed by the presentation of a software called VIPE that is developed with Orange Labs for multilabel opinion analysis.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2012MON20260. segId begin by 1, tuid = segId</note>
+        <docid>2012MON20260</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse s'inscrit dans le cadre du traitement automatique du langage naturel, et traite plus précisément de l'alignement sous-phrastique bilingue classiquement lié à la traduction automatique statistique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This research belongs to the Natural Language Processing (NLP) field and more specifically focuses on topic Sub-sentential Alignment which is closely related to Machine Translation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les travaux exposés s'en distinguent en proposant une mécanique évolutive à base d'exemples initiée par des annotateurs non-experts via une interface adaptée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The originality of this work consists in an example-based approach bootstrapped by the participation of non-expert annotators through an appropriate interface.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'approche est principalement motivée par la recherche d'une expressivité comparable à celle observée dans les alignements manuels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Seeking for a greater expressivity, such as observed in manual alignments, mainly motivates the whole approach.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Une partie importante de ce travail consiste à définir un cadre formel sous-tendant une architecture originale à base d'exemples alignés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An important effort has been made to define a formal environment for this original architecture based on aligned examples.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Deux nouvelles méthodes d'alignement sont comparées à des références connues via des mesures d'accord classiques et trois distances transformationnelles sont introduites.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A couple of new alignment methods were compared with state-of-the-art measures and three transformational metrics were introduced.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

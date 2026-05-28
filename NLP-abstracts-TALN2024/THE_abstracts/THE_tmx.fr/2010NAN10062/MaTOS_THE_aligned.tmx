@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2010NAN10062. segId begin by 1, tuid = segId</note>
+        <docid>2010NAN10062</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse propose plusieurs contributions sur le thème de la détection d'implications textuelles (DIT).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis presents several contributions on the theme of recognising textual entailment (RTE).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La DIT est la capacité humaine, étant donné deux textes, à pouvoir dire si le sens du second texte peut être déduit à partir de celui du premier.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The RTE is the human capacity, given two texts, to determine whether the meaning of the second text could be deduced from the meaning of the first or not.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Une des contributions apportée au domaine est un système de DIT hybride prenant les analyses d'un analyseur syntaxique stochastique existant afin de les étiqueter avec des rôles sémantiques, puis transformant les structures obtenues en formules logiques grâce à des règles de réécriture pour tester finalement l'implication à l'aide d'outils de preuve.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One of the contributions made to the field is a hybrid system of RTE taking analysis of an existing stochastic parser to label them with semantics roles, then turning obtained structures in logical formulas using rewrite rules to finally test the entailment using proof tools.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L'autre contribution de cette thèse est la génération de suites de tests finement annotés avec une distribution uniforme des phénomènes couplée avec une nouvelle méthode d'évaluation des systèmes utilisant les techniques de fouille d'erreurs développées par la communauté de l'analyse syntaxique permettant une meilleure identification des limites des systèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Another contribution of this thesis is the generation of finely annotated tests suites with a uniform distribution of phenomena coupled with a new methodology of systems evaluation using error minning techniques developed by the community of parsing allowing better identification of systems limitations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Pour cela nous créons un ensemble de formules sémantiques puis nous générons les réalisations syntaxiques annotées correspondantes à l'aide d'un système de génération existant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For this, we create a set of formulas, then we generate annotated syntactics realisations corresponding by using an existing generation system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous testons ensuite s'il y a implication ou non entre chaque couple de réalisations syntaxiques possible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, we test whether or not there is an entailment between each pair of possible syntactics realisations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Enfin nous sélectionnons un sous-ensemble de cet ensemble de problèmes d'une taille donnée et satisfaisant un certain nombre de contraintes à l'aide d'un algorithme que nous avons développé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we select a subset of this set of problems of a given size and a satisfactory a certain number of constraints using an algorithm that we developed</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

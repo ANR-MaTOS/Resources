@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2015GREAM065. segId begin by 1, tuid = segId</note>
+        <docid>2015GREAM065</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les malwares, autrement dit programmes malicieux ont grandement évolué ces derniers temps et sont devenus une menace majeure pour les utilisateurs grand public, les entreprises et même le gouvernement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recently, malware, short for malicious software has greatly evolved and became a major threat to the home users, enterprises, and even to the governments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Afin de limiter ces problèmes, les chercheurs spécialisés dans les malwares ont proposé différentes approches comme l'exploration des données (data mining) ou bien l'apprentissage automatique (machine learning) pour détecter et classifier les échantillons de malwares en fonction de leur propriétés statiques et dynamiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To mitigate this problem, malware researchers have proposed various data mining and machine learning approaches for detecting and classifying malware samples according to the their static or dynamic feature set.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>De plus les méthodes proposées sont efficaces sur un petit ensemble de malwares, le passage à l'échelle de ses méthodes pour des grands ensembles est toujours en recherche et n'a pas été encore résolu.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although the proposed methods are effective over small sample set, the scalability of these methods for large data-set are in question.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Il est évident aussi que la majorité des malwares sont une variante des précédentes versions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, it is well-known fact that the majority of the malware is the variant of the previously known samples.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, le volume des nouvelles variantes créées dépasse grandement la capacité d'analyse actuelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Consequently, the volume of new variant created far outpaces the current capacity of malware analysis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>C'est pourquoi développer la classification des malwares est essentiel pour lutter contre cette augmentation pour la communauté informatique spécialisée en sécurité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus developing malware classification to cope with increasing number of malware is essential for security community.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Le challenge principal dans l'identification des familles de malware est de réussir à trouver un équilibre entre le nombre d'échantillons augmentant et la précision de la classification.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The key challenge in identifying the family of malware is to achieve a balance between increasing number of samples and classification accuracy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Pour atteindre notre objectif, premièrement nous avons développé une version portable, évolutive et transparente d'analyse de malware appelée VirMon pour analyse dynamique de malware visant les OS windows.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To achieve our goal, firstly we developed a portable, scalable and transparent malware analysis system called VirMon for dynamic analysis of malware targeting Windows OS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Deuxièmement, nous avons mis en place un cluster de 5 machines pour notre module d'apprentissage en ligne (Jubatus);qui permet de traiter une quantité importante de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Secondly we set up a cluster of five machines for our online learning framework module (i.e. Jubatus), which allows to handle large scale of data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Cette configuration permet à chaque machine d'exécuter ses tâches et de délivrer les résultats obtenus au gestionnaire du cluster.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This configuration allows each analysis machine to perform its tasks and delivers the obtained results to the cluster manager.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Notre outil proposé consiste essentiellement en trois niveaux majeures.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Essentially, the proposed framework consists of three major stages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Le premier niveau permet l'extraction des comportements des échantillons surveillés et observe leurs interactions avec les ressources de l'OS.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first stage consists in extracting the behavior of the sample file under scrutiny and observing its interactions with the OS resources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Durant cette étape, le fichier exemple est exécuté dans un environnement « sandbox ».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>At this stage, the sample file is run in a sandboxed environment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Notre outil supporte deux « sandbox » :VirMon et Cuckoo.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our framework supports two sandbox environments: VirMon and Cuckoo.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Durant le second niveau, nous appliquons des fonctionnalités d'extraction aux rapports d'analyses.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>During the second stage, we apply feature extraction to the analysis report.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Le label de chaque échantillon est déterminé Virustotal, un outil regroupant plusieurs anti-virus permettant de scanner en ligne constitués de 46 moteurs de recherches.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The label of each sample is determined by using Virustotal, an online multiple anti-virus scanner framework consisting of 46 engines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Enfin au troisième niveau, la base de données de malware est partitionnée en ensemble de test et d'apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then at the final stage, the malware dataset is partitioned into training and testing sets.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

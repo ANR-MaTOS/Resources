@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016LORR0060. segId begin by 1, tuid = segId</note>
+        <docid>2016LORR0060</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous présentons notre méthodologie de la connaissance interactive et itérative pour une extraction des textes-le système KESAM : Un outil pour l'extraction des connaissances et le Management de l'Annotation Sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we present a methodology for interactive and iterative extracting knowledge from texts-the KESAM system: A tool for Knowledge Extraction and Semantic Annotation Management.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Le KESAM est basé sur l'analyse formelle du concept pour l'extraction des connaissances à partir de ressources textuelles qui prend en charge l'interaction aux experts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>KESAM is based on Formal Concept Analysis for extracting knowledge from textual resources that supports expert interaction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans le système KESAM, l'extraction des connaissances et l'annotation sémantique sont unifiées en un seul processus pour bénéficier à la fois l'extraction des connaissances et l'annotation sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the KESAM system, knowledge extraction and semantic annotation are unified into one single process to benefit both knowledge extraction and semantic annotation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les annotations sémantiques sont utilisées pour formaliser la source de la connaissance dans les textes et garder la traçabilité entre le modèle de la connaissance et la source de la connaissance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Semantic annotations are used for formalizing the source of knowledge in texts and keeping the traceability between the knowledge model and the source of knowledge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le modèle de connaissance est, en revanche, utilisé afin d'améliorer les annotations sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The knowledge model is, in return, used for improving semantic annotations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Le processus KESAM a été conçu pour préserver en permanence le lien entre les ressources (textes et annotations sémantiques) et le modèle de la connaissance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The KESAM process has been designed to permanently preserve the link between the resources (texts and semantic annotations) and the knowledge model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Le noyau du processus est l'Analyse Formelle de Concepts (AFC) qui construit le modèle de la connaissance, i.e. le treillis de concepts, et assure le lien entre le modèle et les annotations des connaissances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The core of the process is Formal Concept Analysis that builds the knowledge model, i.e. the concept lattice, and ensures the link between the knowledge model and annotations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Afin d'obtenir le résultat du treillis aussi près que possible aux besoins des experts de ce domaine, nous introduisons un processus itératif qui permet une interaction des experts sur le treillis.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to get the resulting lattice as close as possible to domain experts' requirements, we introduce an iterative process that enables expert interaction on the lattice.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Les experts sont invités à évaluer et à affiner le réseau ; ils peuvent faire des changements dans le treillis jusqu'à ce qu'ils parviennent à un accord entre le modèle et leurs propres connaissances ou le besoin de l'application.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Experts are invited to evaluate and refine the lattice; they can make changes in the lattice until they reach an agreement between the model and their own knowledge or application's need.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Grâce au lien entre le modèle des connaissances et des annotations sémantiques, le modèle de la connaissance et les annotations sémantiques peuvent co-évoluer afin d'améliorer leur qualité par rapport aux exigences des experts du domaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thanks to the link between the knowledge model and semantic annotations, the knowledge model and semantic annotations can co-evolve in order to improve their quality with respect to domain experts' requirements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>En outre, à l'aide de l'AFC de la construction des concepts avec les définitions des ensembles des objets et des ensembles d'attributs, le système KESAM est capable de prendre en compte les deux concepts atomiques et définis, à savoir les concepts qui sont définis par un ensemble des attributs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, by using FCA to build concepts with definitions of sets of objects and sets of attributes, the KESAM system is able to take into account both atomic and defined concepts, i.e. concepts that are defined by a set of attributes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Afin de combler l'écart possible entre le modèle de représentation basé sur un treillis de concept et le modèle de représentation d'un expert du domaine, nous présentons ensuite une méthode formelle pour l'intégration des connaissances d'expert en treillis des concepts d'une manière telle que nous pouvons maintenir la structure des concepts du treillis.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to bridge the possible gap between the representation model based on a concept lattice and the representation model of a domain expert, we then introduce a formal method for integrating expert knowledge into concept lattices in such a way that we can maintain the lattice structure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>La connaissance d'expert est codée comme un ensemble de dépendance de l'attribut qui est aligné avec l'ensemble des implications fournies par le concept du treillis, ce qui conduit à des modifications dans le treillis d'origine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The expert knowledge is encoded as a set of attribute dependencies which is aligned with the set of implications provided by the concept lattice, leading to modifications in the original lattice.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>La méthode permet également aux experts de garder une trace des changements qui se produisent dans le treillis d'origine et la version finale contrainte, et d'accéder à la façon dont les concepts dans la pratique sont liés à des concepts émis automatiquement à partir des données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The method also allows the experts to keep a trace of changes occurring in the original lattice and the final constrained version, and to access how concepts in practice are related to concepts automatically issued from data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Nous pouvons construire les treillis contraints sans changer les données et fournir la trace des changements en utilisant des projections extensives sur treillis.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The method uses extensional projections to build the constrained lattices without changing the original data and provide the trace of changes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>À partir d'un treillis d'origine, deux projections différentes produisent deux treillis contraints différents, et, par conséquent, l'écart entre le modèle de représentation basée sur un treillis de réflexion et le modèle de représentation d'un expert du domaine est rempli avec des projections</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>From an original lattice, two different projections produce two different constrained lattices, and thus, the gap between the representation model based on a concept lattice and the representation model of a domain expert is filled with projections.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

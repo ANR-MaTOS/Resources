@@ -1,0 +1,2799 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en" srclang="EN" tgtlang="FR" o-tmf="XML" creationdate="2024-11-15" creationid="MaTOS">
+        <note>This is the sentence alignement file for MERSENNE-mersenne21. segId begin by 1, tuid = segId</note>
+        <docid>mersenne21</docid>
+        <url_src>https://comptes-rendus.academie-sciences.fr/geoscience/articles/10.5802/crgeos.129/</url_src>
+        <url_tgt>https://comptes-rendus.academie-sciences.fr/geoscience/articles/fr/10.5802/crgeos.129/</url_tgt>
+        <author>Wilfried Blanc , Luca Schenato , Carlo Molardi , Luca Palmieri , Andrea Galtarossa , Daniele Tosi</author>
+        <title_en>Distributed fiber optics strain sensors: from long to short distance</title_en>
+        <title_fr>Capteurs distribués de contrainte à fibres optiques: de la longue à la courte distance</title_fr>
+        <volume>CRGEOS, 2022, Volume 352, Le verre, un matériau omniprésent</volume>
+        <translator>Romain Dziegielinski</translator>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <prop type="paragraph">1</prop>
+            <tuv xml:lang="EN">
+                <seg>Distributed fiber optics strain sensors: from long to short distance</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Capteurs distribués de contrainte à fibres optiques: de la longue à la courte distance</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>Developed for more than forty years, optical fibers have features that make them particularly attractive for making sensors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Développées depuis plus de quarante ans, les fibres optiques présentent des caractéristiques qui les rendent particulièrement attractives pour la réalisation de capteurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>One of the strengths of these sensors is that they can measure different physical parameters in a distributed manner over a wide range of lengths (from a few cm up to tens of kilometers) with a spatial resolution ranging from millimeters to meters.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L’un des points forts de ces capteurs est qu’ils peuvent mesurer différents paramètres physiques de manière distribuée sur une large gamme de longueurs (de quelques cm à des dizaines de kilomètres) avec une résolution spatiale allant du millimètre au mètre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>In this article, we are particularly interested in distributed fiber sensors, mainly based on light scattering processes, for measuring strain variations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, nous nous intéressons particulièrement aux capteurs à fibre distribuée, principalement basés sur des procédés de diffusion de la lumière, pour mesurer les variations de déformation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>This review concerns both applications requiring long lengths of fiber in a geological context, as well as those using length less than one meter for the medical sector.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette revue concerne à la fois les applications nécessitant de grandes longueurs de fibre dans un contexte géologique, ainsi que celles utilisant des longueurs inférieures à un mètre pour le secteur médical.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>While distributed fiber optics sensors have already shown their great potential for long-range applications, short-range applications are a niche sector emerging in the last few years.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Alors que les capteurs à fibre optique distribués ont déjà montré leur grand potentiel pour les applications à longue portée, les applications à courte portée sont un secteur de niche émergeant ces dernières années.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>In 1842 two articles were published in the Comptes-Rendus de l’Académie des Sciences which marked the beginning of guided optics and optical fibers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En 1842, deux articles publiés dans les Comptes-Rendus de l'Académie des Sciences marquent le début de l'optique guidée et des fibres optiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>In the first article, J. D. Colladon describes the experience of the luminous fountain that he had just discovered the previous year [Colladon 1842].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le premier article, J. D. Colladon décrit l'expérience de la fontaine lumineuse qu'il venait de découvrir l'année précédente [Colladon 1842].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>Upon receipt of this article, F. Arago, then perpetual secretary of the Academy of Sciences invites Babinet to describe his experience of guiding light in a glass rod [Babinet 1842].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dès réception de cet article, F. Arago, alors secrétaire perpétuel de l'Académie des Sciences invite Babinet à décrire son expérience de guidage de la lumière dans une tige de verre [Babinet 1842].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>Although Babinet attached little importance to his discovery, he nevertheless mentioned two potential applications concerning lighting for microscopes as well as for medicine.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que Babinet ait accordé peu d'importance à sa découverte, il a néanmoins mentionné deux applications potentielles concernant l'éclairage pour les microscopes ainsi que pour la médecine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>These two ideas will be applied at the end of the 19th century and the beginning of the 20th century and will lead to the advent of optical fiber in the 1960s following the work of C. K. Kao, Nobel Prize for Physics in 2009 [Kao and Hockham 1966].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces deux idées seront appliquées à la fin du XIXe siècle et au début du XXe siècle et conduiront à l'avènement de la fibre optique dans les années 1960 à la suite des travaux de C. K. Kao, prix Nobel de physique en 2009 [Kao et Hockham 1966].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>If the telecommunications industry has been a major player in the development of optical fiber technology, the characteristics of these waveguides quickly proved to be very attractive for other applications such as lasers and sensors [Koester and Snitzer 1964; Culshaw and Kersey 2008].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si l'industrie des télécommunications a été un acteur majeur dans le développement de la technologie des fibres optiques, les caractéristiques de ces guides d'ondes se sont rapidement révélées très attractives pour d'autres applications telles que les lasers et les capteurs [Koester et Snitzer 1964 ; Culshaw et Kersey 2008].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>Indeed, they are small in size (125μm in diameter), insensitive to electro-magnetic interference, passive and resistant to harsh environment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, ils sont de petite taille (125μm de diamètre), insensibles aux interférences électromagnétiques, passifs et résistants aux environnements difficiles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>In addition, sensors based on conventional optical fibers (telecom fiber) benefit from all the technology already developed for telecommunications networks (light sources, detectors, optical components, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, les capteurs à base de fibres optiques classiques (fibres de télécommunications) bénéficient de toute la technologie déjà développée pour les réseaux de télécommunications (sources lumineuses, détecteurs, composants optiques, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>Optical fiber-based sensors therefore offer many advantages over mechanical or electrical sensors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les capteurs à base de fibres optiques offrent donc de nombreux avantages par rapport aux capteurs mécaniques ou électriques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>In particular, the monitoring of the physical parameters (such as temperature, strain, chemical concentrations, etc.) can be carried out in a distributed manner all along the fiber.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En particulier, la surveillance des paramètres physiques (tels que la température, la contrainte, les concentrations chimiques, etc.) peut être effectuée de manière distribuée tout au long de la fibre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>Measurement range (maximum length of the sensing fiber) can vary from a few centimeters to several tens of kilometers, while the spatial resolution can vary from less than one millimeter [Luo etal. 2019] to a few meters [Palmieri and Schenato 2013].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La plage de mesure (longueur maximale de la fibre de détection) peut varier de quelques centimètres à plusieurs dizaines de kilomètres, tandis que la résolution spatiale peut varier de moins d'un millimètre [Luo etal. 2019] à quelques mètres [Palmieri et Schenato 2013].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>Another distinctive feature of optical fiber sensors is the capability of having many sensing points along a single fiber or cable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une autre caractéristique distinctive des capteurs à fibres optiques est la capacité d'avoir de nombreux points de détection le long d'une seule fibre ou d'un seul câble.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>This can be obtained either by exploiting scattering phenomena in the so-called distributed sensing, with more than 1,000,000 sensing points per fiber [Denisov etal. 2016], or by using Fiber-Bragg gratings (FBGs) multiplexing, up to thousands of sensing point per fiber, in some specific implementation [Guo etal. 2015] and [Götten etal. 2020].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci peut être obtenu soit en exploitant des phénomènes de diffusion dans la détection dite distribuée, avec plus de 1 000 000 de points de détection par fibre [Denisov etal. 2016], ou en utilisant le multiplexage des fibres à réseau de Bragg (FBG, fiber Bragg grating en anglais), jusqu'à des milliers de points de détection par fibre, dans une mise en œuvre spécifique [Guo etal. 2015] et [Götten etal. 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>However, one major drawback is the cost of the interrogators, which is quite high compared to those employed by most classical sensor technologies, such as thermocouples or strain gauges.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, l'un des principaux inconvénients est le coût des interrogateurs, qui est assez élevé par rapport à ceux utilisés par la plupart des technologies de capteurs classiques, tels que les thermocouples ou les jauges de déformation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>Nonetheless, the cost per sensing point becomes favorable for fibre optic sensors (FOS) when large numbers of sensing points are required.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, le coût par point de détection devient favorable pour les capteurs à fibres optiques (FOS, fiber optic sensor) lorsqu'un grand nombre de points de détection est nécessaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="EN">
+                <seg>In this review we focus our interest on fiber sensors for strain detection, of interest not only for geosciences but also for medical sciences.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette revue, nous nous intéressons aux capteurs à fibres pour la détection de contrainte, qui présentent un intérêt non seulement pour les géosciences mais aussi pour les sciences médicales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="EN">
+                <seg>In Section2, we describe the three main scattering mechanisms involved in the detection, i.e. Raman, Brillouin and Rayleigh scattering.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la partie2, nous décrivons les trois principaux mécanismes de diffusion impliqués dans la détection, à savoir la diffusion Raman, Brillouin et Rayleigh.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="EN">
+                <seg>Section3 is devoted to fiber fabrication (FBGs and nanoparticle-containing fibers).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La partie3 est consacrée à la fabrication des fibres (FBG et fibres contenant des nanoparticules).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="EN">
+                <seg>Long-range applications in geophyscial and geotechnical areas are described in Section4.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les applications à longue portée dans les domaines géophysiques et géotechniques sont décrites dans la partie4.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="EN">
+                <seg>Last section deals with short-range applications for the medical domain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La dernière section traite des applications à courte portée pour le domaine médical.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="EN">
+                <seg>2. Scattering mechanism</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Mécanisme de diffusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="EN">
+                <seg>Scattering phenomena occurring in optical fibers are the ground principle of operation of the present generation of distributed optical fiber sensors [Bao and Chen 2012; Schenato 2017], as they provide a continuous reflectivity in each span of the fiber that can be localized with optical time- or frequency-domain reflectometry methods.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les phénomènes de diffusion se produisant dans les fibres optiques sont le principe de base du fonctionnement de la génération actuelle de capteurs à fibres optiques distribués [Bao et Chen 2012 ; Schenato 2017], car ils fournissent une réflectivité continue dans chaque segment de la fibre qui peut être localisée avec des méthodes de réflectométrie optique dans le domaine temporel ou fréquentiel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="EN">
+                <seg>Figure1(a) shows a sketch of the scattering events that occur in an optical fiber, which are caused by the interaction between the incoming light and the optical medium.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure1(a) montre un schéma des événements de diffusion qui se produisent dans une fibre optique, qui sont causés par l'interaction entre la lumière entrante et le milieu optique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="EN">
+                <seg>When light is propagating into an optical fiber, it interacts with the constitutive atoms and molecules that are part of the fiber.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lorsque la lumière se propage dans une fibre optique, elle interagit avec les atomes et molécules constitutifs de la fibre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="EN">
+                <seg>The light electric field that travels in each section of the fiber generates time-dependent electric dipoles, which cause secondary light waves that scatter around the fiber.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le champ électrique lumineux qui se déplace dans chaque section de la fibre génère des dipôles électriques dépendant du temps, qui provoquent des ondes lumineuses secondaires qui se diffusent autour de la fibre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="EN">
+                <seg>The scattering signal has a power several orders of magnitude inferior to the input light, and therefore it does not affect the light propagation in a significant matter.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le signal de diffusion a une puissance inférieure de plusieurs ordres de grandeur à celle de la lumière incidente, et n'affecte donc pas la propagation de la lumière de manière significative.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="EN">
+                <seg>The light scattered by the fiber instead is emitted in a broad range of directions; a part of this emission is coupled backwards into the fiber, and constitutes the so-called backscattering that we can observe in each section of the optical fiber.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La lumière diffusée par la fibre est au contraire émise dans un grand nombre de directions; une partie de cette émission est couplée en retour dans la fibre, et constitue ce que l'on appelle la rétrodiffusion que l'on peut observer dans chaque section de la fibre optique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="EN">
+                <seg>Distributed optical sensors interrogate the backscattering signal that is continuously emitted by the fiber under test, and detect the intensity changes and the frequency shift occurring in each section of the fiber.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des capteurs optiques distribués interrogent le signal de rétrodiffusion qui est émis en continu par la fibre testée et détectent les changements d'intensité et le décalage de fréquence qui se produisent dans chaque section de la fibre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="EN">
+                <seg>In this regard, distributed sensors differ from other optical fiber sensors because they do not use devices that are inscribed (such as gratings) or externally fabricated (such as interferometers) into the fiber to act as a sensing device, but rather the fiber itself behaves as a continuous sensor, resolving the physical measurand along the fiber length [Bao and Chen 2012].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À cet égard, les capteurs distribués diffèrent des autres capteurs à fibres optiques parce qu'ils n'utilisent pas de dispositifs qui sont inscrits (tels que des réseaux) ou fabriqués à l'extérieur (tels que des interféromètres) dans la fibre pour agir comme un dispositif de détection, mais plutôt la fibre elle-même se comporte comme un capteur continu, résolvant le mesurande physique tout au long de la fibre [Bao et Chen 2012].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="EN">
+                <seg>Distributed sensors can interrogate Rayleigh, Raman, or Brillouin scattering phenomena, which have a wavelength dependency illustrated in Figure1(b).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les capteurs distribués peuvent interroger les phénomènes de diffusion Rayleigh, Raman ou Brillouin, qui dépendent de la longueur d'onde, comme illustré à la figure1(b).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="EN">
+                <seg>Rayleigh scattering is used in several distributed sensors, most notably by optical backscatter reflectometry (OBR) [Froggatt and Moore 1998] for short-distance sensing, and phase optical time-domain reflectometry (𝜙-OTDR) for long-range sensing [Eickhoff and Ulrich 1981].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La diffusion Rayleigh est utilisée dans plusieurs capteurs distribués, notamment par réflectométrie à rétrodiffusion optique (OBR, optical backscatter reflectometry en anglais) [Froggatt et Moore 1998] pour la détection à courte distance, et par réflectométrie optique de phase dans le domaine temporel (𝜙-OTDR, optical time-domain reflectometry en anglais) pour la détection à longue distance [Eickhoff et Ulrich 1981].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="EN">
+                <seg>The key characteristic of Rayleigh scattering is that the reflected waves have the same wavelength as that of the input wave, and therefore it is an elastic scattering.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La caractéristique clé de la diffusion Rayleigh est que les ondes réfléchies ont la même longueur d'onde que celle de l'onde incidente, et qu'il s'agit donc d'une diffusion élastique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="EN">
+                <seg>Optically, it can be modelled as a space/time-dependent variation of the refractive index of the fiber core; since the refractive index of silica depends on the temperature and on the strain exerted on the fiber, the interrogation of Rayleigh scattering is directly linked to distributed measurements of strain or temperature [Bao and Chen 2012; Froggatt and Moore 1998].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Optiquement, elle peut être modélisée comme une variation de l'indice de réfraction du cœur de la fibre en fonction de l'espace et du temps; comme l'indice de réfraction de la silice dépend de la température et de la contrainte exercée sur la fibre, l'interrogation de la diffusion Rayleigh est directement liée aux mesures distribuées de la contrainte ou de la température [Bao et Chen 2012 ; Froggatt et Moore 1998].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>Inelastic scattering instead involves a change of frequency of the light waves scattered by the fiber with respect to the input wave.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La diffusion inélastique implique au contraire un changement de fréquence des ondes lumineuses diffusées par la fibre par rapport à l'onde incidente.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>The wavelength of the light backreflected by inelastic scattering events has both components that are red-shifted (Stokes) and blue-shifted (anti-Stokes) with respect to the input light [Bao and Chen 2012].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La longueur d'onde de la lumière rétroréfléchie par des événements de diffusion inélastiques a à la fois des composantes qui sont décalées vers le rouge (Stokes) et vers le bleu (anti-Stokes) par rapport à la lumière incidente [Bao et Chen 2012].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>Raman scattering involves the widest wavelength shift between the input and Stokes/anti-Stokes components, about 90nm for sensors operating at 1550 nm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La diffusion Raman implique le plus grand décalage de longueur d'onde entre l'incidence et les composants Stokes/anti-Stokes, environ 90nm pour les capteurs fonctionnant à 1550nm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>Although not used directly in strain sensing, Raman scattering is at the base of long-range distributed temperature sensors, as the ratio between the anti-Stokes and Stokes light intensity depends on the temperature [Farahani and Gogolla 1999]; for this reason, Raman scattering is one building block of distributed temperature and strain sensors (DTSS) which are used in pipeline monitoring [Inaudi and Glisic 2010].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien qu'elle ne soit pas utilisée directement dans la détection des contraintes, la diffusion Raman est à la base des capteurs de température distribués à longue portée, car le rapport entre l'intensité lumineuse anti-Stokes et Stokes dépend de la température [Farahani et Gogolla 1999] ; pour cette raison, la diffusion Raman est un élément constitutif des capteurs distribués de température et de contrainte (DTSS, distributed temperature and strain sensors en anglais) qui sont utilisés dans la surveillance des pipelines [Inaudi et Glisic 2010].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>Brillouin scattering involves the acoustic oscillations of glass, and for this reason it allows the detection of dynamic strain or acoustic signals along the fiber [Coscetta etal. 2020].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La diffusion Brillouin implique les oscillations acoustiques du verre, et permet pour cette raison la détection de contraintes dynamiques ou de signaux acoustiques le long de la fibre [Coscetta etal. 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>The acoustic fields acting on the fiber induce periodical variations of the fiber refractive index due to the elasto-optic effect, which results in a backreflected wave having a slight wavelength shift (about 90 pm at 1550 nm) that is proportional to the acoustic wave velocity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les champs acoustiques agissant sur la fibre induisent des variations périodiques de l'indice de réfraction de la fibre dues à l'effet élasto-optique, ce qui se traduit par une onde rétroréfléchie présentant un léger décalage de longueur d'onde (environ 90 pm à 1550 nm) qui est proportionnel à la vitesse de l'onde acoustique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>A wide range of distributed strain and acoustic distributed sensors has been developed, either analyzing the light reflected by the fiber, or using two optical sources at each side of the sensing fiber [Brillouin optical time-domain analyzer (BOTDA) Li etal. 2008a].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une large gamme de capteurs distribués de contrainte et acoustiques a été développée, soit en analysant la lumière réfléchie par la fibre, soit en utilisant deux sources optiques de part et d'autre de la fibre de détection [Brillouin optical time-domain analyzer (BOTDA) Li etal. 2008a].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="EN">
+                <seg>Rayleigh scattering (and in minor part inelastic scattering) is a loss factor of optical fibers, and for this reason research efforts have been addressed to design single-mode fibers (SMFs) that minimize light scattering, down to the current attenuation of 0.14dB/km [Hasegawa etal. 2018].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La diffusion Rayleigh (et, dans une moindre mesure, la diffusion inélastique) est un facteur de perte des fibres optiques, et c'est pourquoi des efforts de recherche ont été déployés pour concevoir des fibres optiques monomodes (SMFs, single-mode fibers en anglais) qui minimisent la diffusion de la lumière, jusqu'à l'atténuation actuelle de 0,14dB/km [Hasegawa etal. 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="EN">
+                <seg>The advent of distributed sensors, however, has recently reversed the trend [Tosi etal. 2020b]: as scattering is the signal detected by distributed sensors, researchers have tried to engineer fibers that have a higher scattering, at the expense of higher propagation losses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, l'avènement des capteurs distribués, a récemment inversé la tendance [Tosi etal. 2020b] : comme la diffusion est le signal détecté par les capteurs distribués, les chercheurs ont essayé de concevoir des fibres qui ont une diffusion plus élevée, aux dépens de pertes de propagation plus importantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="EN">
+                <seg>Enhanced backscattering fibers (EBFs) accomplish two goals: they return a higher signal-to-noise ratio in strain sensing, which has improved the accuracy in shape sensing technologies for medical imaging [Parent etal. 2018]; and they enable scattering-level multiplexing (SLMux) [Tosi etal. 2020b] which converts a single-channel interrogator into a multi-fiber sensing network, which is essential for shape sensing or rigid medical devices in three dimensions [Beisenova etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les fibres de rétrodiffusion améliorées (EBFs, enhanced backscattering fibers en anglais) atteignent deux objectifs: elles renvoient un rapport signal/bruit plus élevé dans la détection de contrainte, ce qui a amélioré la précision des technologies de détection des formes pour l'imagerie médicale [Parent etal. 2018]; et elles permettent le multiplexage au niveau de la diffusion (SLMux, scattering-level multiplexing en anglais) [Tosi etal. 2020b] qui convertit un interrogateur à un seul canal en un réseau de détection multifibre, ce qui est essentiel pour la détection des formes ou les dispositifs médicaux rigides en trois dimensions [Beisenova etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="EN">
+                <seg>A successful implementation of an EBF makes use of MgO-based nanoparticles elongated in the fiber core, to increase the local reflectivity by a significant amount.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une mise en œuvre réussie d'un EBF utilise des nanoparticules à base de MgO allongées dans le cœur de la fibre, pour augmenter la réflectivité locale de manière significative.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="EN">
+                <seg>Figure2(a) shows the scattering trace of such EBF, which achieves a scattering increment of about five orders of magnitude [Tosi etal. 2020a].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure2(a) montre la trace de diffusion d'un tel EBF, qui atteint un incrément de diffusion d'environ cinq ordres de grandeur [Tosi etal. 2020a].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="EN">
+                <seg>The scattering gain is defined as the increment of scattering provided by the EBF with respect to a SMF, and is measured at the EBF–SMF interconnection; the fiber reported in Figure2(a) has a gain G = 48.4dB, and is one of the highest values recorded so far as it approaches the reflectivity levels of weak gratings.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le gain de diffusion est défini comme l'incrément de diffusion fourni par l'EBF par rapport à un SMF, et est mesuré au niveau de l'interconnexion EBF–SMF; la fibre présentée dans la figure2(a) a un gain G = 48,4dB, et est l'une des valeurs les plus élevées enregistrées jusqu'à présent car elle s'approche des niveaux de réflectivité des réseaux faibles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="EN">
+                <seg>Conversely, EBF fibers have a high two-way attenuation (2𝛼), which is estimated as the slope of the scattering trace (37.7dB/m).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À l'inverse, les fibres EBF présentent une forte atténuation bidirectionnelle (2𝛼), estimée dans la pente de la trace de diffusion (37,7dB/m).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="EN">
+                <seg>Different designs of the MgO-based fibers have shown attenuation ranging from 300dB/m down to the recently reported 14.3dB/m [Tosi etal. 2021].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Différents modèles de fibres à base de MgO ont montré une atténuation allant de 300dB/m jusqu'aux 14,3dB/m récemment rapportés [Tosi etal. 2021].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="EN">
+                <seg>Since nanoparticles have a rather random distribution in the fiber, in terms of local density and relative position with respect to the core, the attenuation is not constant but rather fluctuates: Figure2(b) shows the attenuation of a low-loss MgO-based nanoparticle-doped fiber, which ranges from 6.0dB/m to 13.0dB/m two-way, and is one of the lowest values reported so far for high-scattering fibers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné que les nanoparticules ont une distribution plutôt aléatoire dans la fibre, en termes de densité locale et de position relative par rapport au cœur, l'atténuation n'est pas constante mais plutôt fluctuante: la figure2(b) montre l'atténuation d'une fibre dopée aux nanoparticules à base de MgO à faible perte, qui varie de 6,0dB/m à 13,0dB/m dans les deux sens, et qui est l'une des valeurs les plus faibles rapportées jusqu'à présent pour les fibres à forte diffusion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="EN">
+                <seg>The main alternatives to the MgO-doped fibers are based on increasing the local reflectivity in the fiber through the inscription of nano-gratings [Yan etal. 2017], distributed Bragg reflectors [Monet etal. 2019], nanopores [Reupert etal. 2019; Donko etal. 2018; Blanc etal. 2020] or other nanoparticles composition [Veber etal. 2019; Bulot etal. 2021]; most relevantly a 25-cm inscription of a broadband weak reflector using a fs laser, achieving up to 45 dB scattering gain, was reported by Yan etal. [2017].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les principales alternatives aux fibres dopées au MgO sont basées sur l'augmentation de la réflectivité locale dans la fibre par l'inscription de nano-réseaux [Yan etal. 2017], de réflecteurs Bragg distribués [Monet etal. 2019], de nanopores [Reupert etal. 2019 ; Donko etal. 2018 ; Blanc etal. 2020] ou d'autre composition de nanoparticules [Veber etal. 2019 ; Bulot etal. 2021]; plus pertinent encore, une inscription de 25 cm d'un réflecteur faible à large bande utilisant un laser fs, atteignant un gain de diffusion jusqu'à 45 dB, a été rapportée par Yan etal. [2017].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="EN">
+                <seg>3. Optical fiber fabrication</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Fabrication de fibres optiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="EN">
+                <seg>Optical fibers are generally obtained by drawing at high temperature a rod called a preform.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les fibres optiques sont généralement obtenues par étirage à haute température d'une tige appelée préforme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="EN">
+                <seg>The advent of preform preparation processes by chemical vapor deposition in the 1970s significantly reduced optical attenuation, from 1000 down to 0.2dB/km in 10 years.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'avènement des procédés de préparation de préformes par dépôt chimique en phase vapeur dans les années 1970 a considérablement réduit l'atténuation optique, de 1000 à 0,2dB/km en 10 ans.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="EN">
+                <seg>Vapor phase deposition consists of reacting gases (SiCl₄ and O₂ for example) to form soot (SiO₂) which is deposited on a substrate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le dépôt en phase vapeur consiste à faire réagir des gaz (SiCl₄ et O₂ par exemple) pour former de la suie (SiO₂) qui est déposée sur un substrat.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="EN">
+                <seg>The main preform manufacturing processes are Outside Vapor Deposition (OVD), Vapor Axial Deposition (VAD) and Modified Chemical Vapor Deposition (MCVD).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les principaux procédés de fabrication des préformes sont le OVD (Outside Vapor Deposition, dépôt externe en phase vapeur), le VAD (Vapor Axial Deposition, dépôt axial en phase vapeur) et le MCVD (Modified Chemical Vapor Deposition, dépôt chimique en phase vapeur modifié).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="EN">
+                <seg>These processes have been developed in order to prepare a “perfect” glass: (i)the most homogeneous glass to reduce light scattering (i.e. to improve the transparency) and (ii)to limit the presence of defects or impurities that can induce absorption bands.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces procédés ont été développés pour préparer un verre «parfait»: (i)le verre le plus homogène possible pour réduire la diffusion de la lumière (c'est-à-dire pour améliorer la transparence) et (ii)pour limiter la présence de défauts ou d'impuretés pouvant induire des bandes d'absorption.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="EN">
+                <seg>The fibers presented in this review rely instead on the presence of these defects.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les fibres présentées dans cette revue reposent plutôt sur la présence de ces défauts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="EN">
+                <seg>Defects such as Oxygen Deficient Center (ODC) make glass photosensitive [Skuja 1998] and allow to photo-inscribe Bragg gratings, and the presence of nanoparticles increases light scattering.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des défauts tels que les ODC (Oxygen Deficient Center, centre de lacune d'oxygène) rendent le verre photosensible [Skuja 1998] et permettent de photo-inscrire des réseaux de Bragg, et la présence de nanoparticules augmente la diffusion de la lumière.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="EN">
+                <seg>3.1. Fiber-Bragg gratings</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.1. Fibres à réseaux de Bragg</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>Initially developed for telecommunication industry, FBGs are now commonly used in sensing applications [Kashyap 2009], also in harsh and extreme environments [Mihailov 2012; Kumari etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Initialement développés pour l'industrie des télécommunications, les FBG sont maintenant couramment utilisés dans les applications de détection [Kashyap 2009], ainsi que dans des environnements difficiles et extrêmes [Mihailov 2012 ; Kumari etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>Basically, FBG is an optical filter that reflects targeted wavelengths.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Fondamentalement, le FBG est un filtre optique qui reflète les longueurs d'onde ciblées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>To reach this goal, the structure of a FBG corresponds to a longitudinal periodic modulation of the refractive index of the fiber core.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour atteindre cet objectif, la structure d'un FBG correspond à une modulation périodique longitudinale de l'indice de réfraction du cœur de la fibre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>The interaction between the light and the FBG can be analyzed through the Bragg condition expressed as 𝜆_(B) = 2 ⋅ n_(eff) ⋅𝛬_(G) where n_(eff) is the effective refractive index seen by the light, and 𝛬_(G) is the period of the index variation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'interaction entre la lumière et le FBG peut être analysée à l'aide de la condition de Bragg exprimée par la formule: 𝜆_(B) = 2 ⋅ n_(eff) ⋅𝛬_(G) où n_(eff) est l'indice de réfraction effectif vu par la lumière, et 𝛬_(G) est la période de la variation de l'indice.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>All the Bragg wavelengths (𝜆_(B)) satisfying this condition are reflected.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutes les longueurs d'onde de Bragg (𝜆_(B)) satisfaisant cette condition sont réfléchies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>As both the refractive index and the grating period vary with temperature or mechanical perturbations, FBG can be used as sensor by measuring the Bragg wavelength shift [Kersey etal. 1997].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme l'indice de réfraction et la période de réseau varient en fonction de la température ou des perturbations mécaniques, le FBG peut être utilisé comme capteur en mesurant le décalage de la longueur d'onde de Bragg [Kersey etal. 1997].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>The most common manner to obtain a FBG is by using the photo-sensitivity of the fiber core.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La manière la plus courante d'obtenir un FBG est d'utiliser la photosensibilité du cœur de fibre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>Doping elements such as germanium (commonly used in telecommunication fibers to raise refractive index) induce refractive index increase when they are exposed to visible or UV light.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les éléments dopants tels que le germanium (couramment utilisé dans les fibres de télécommunication pour augmenter l'indice de réfraction) induisent une augmentation de l'indice de réfraction lorsqu'ils sont exposés à la lumière visible ou UV.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>To obtain the spatial modulation in the longitudinal direction, a diffraction grating such as a phase mask is used to create interference pattern.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour obtenir la modulation spatiale dans le sens longitudinal, on utilise un réseau de diffraction tel qu'un masque de phase pour créer un motif d'interférence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>FBGs can be discriminated, based on their formation mechanism.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les FBG peuvent être distingués en fonction de leur mécanisme de formation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>The most common FBG is the type I.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le FBG le plus courant est le type I.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>Small refractive index change can be obtained by irradiating with UV light (typically 244 nm) to excite the ODC.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un faible changement d'indice de réfraction peut être obtenu en irradiant avec une lumière UV (typiquement 244 nm) pour exciter l'ODC.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>Densification of glass allows to increase refractive index change.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La densification du verre permet d'augmenter le changement d'indice de réfraction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>Such FBG can operate to temperature up to 400–500°C.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce type de FBG peut fonctionner à une température allant jusqu'à 400–500°C.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>In addition, type I FBGs can be written through different coatings also by using IR femtosecond laser [Habel etal. 2017].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, les FBG de type I peuvent être inscrits à travers différents revêtements en utilisant également un laser femtoseconde IR [Habel etal. 2017].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>For type II, a high peak power UV femtosecond laser is used.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour le type II, un laser femtoseconde UV de haute puissance de crête est utilisé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>Refractive index change is caused by multiphoton ionization which modifies the amorphous glass network.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le changement d'indice de réfraction est provoqué par l'ionisation multiphotonique qui modifie le réseau de verre amorphe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>High reflectivity and high operating temperature (800–1000°C) characterize these FBGs.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces FBG sont caractérisés par une réflectivité élevée et une température de fonctionnement élevée (800–1000°C).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>As they necessitate a single shot laser exposure, type II gratings can be photowritten while the fiber is drawn [Askins etal. 1994].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme ils nécessitent une seule exposition au laser, les réseaux de type II peuvent être photo-inscrits lors de l'étirage de la fibre [Askins etal. 1994].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="EN">
+                <seg>The photosensitivity of fibers can be enhanced by exposing the fiber to high pressure of hydrogen (“hydrogen loading”).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La photosensibilité des fibres peut être améliorée en exposant la fibre à une pression élevée d'hydrogène («charge d'hydrogène»).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="EN">
+                <seg>Nonetheless, according to the literature, this process may hamper the temperature stability of the FBGs, which can be recovered upon proper thermal treatment of the fibers, such as thermal annealing [Li etal. 2008b], which is a well-known method to obtain regenerated FBGs [Polz etal. 2021].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, selon la littérature, ce procédé peut nuire à la stabilité thermique des FBG, qui peut être rétablie par un traitement thermique approprié des fibres, tel qu'un recuit thermique [Li etal. 2008b], qui est une méthode bien connue pour obtenir des FBG régénérés [Polz etal. 2021].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="EN">
+                <seg>Hydrogen loading, in this sense, is important, but not essential, to obtain an index modulation with sufficient magnitude for extreme temperature operation [Canning etal. 2008, 2010]; nonetheless, it has been shown that regeneration can be obtained even without hydrogen loading, although for FBGs limited to lower temperature operation [Linder etal. 2009].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La charge en hydrogène, en ce sens, est importante, mais pas essentielle, pour obtenir une modulation d'indice avec une amplitude suffisante pour un fonctionnement à des températures extrêmes [Canning etal. 2008, 2010]; néanmoins, il a été démontré que la régénération peut être obtenue même sans charge d'hydrogène, bien que pour des FBG limités à un fonctionnement à basse température [Linder etal. 2009].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="EN">
+                <seg>Another class of Bragg gratings is the so-called long-period gratings (LPGs) [Wang 2010].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une autre classe de réseaux de Bragg est celle des réseaux dits à longue période (LPG, Long-Period Gratings en anglais) [Wang 2010].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="EN">
+                <seg>They differ from standard FBG because their refractive index varies with a period of hundreds of micrometers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ils diffèrent des FBG standards car leur indice de réfraction varie avec une période de plusieurs centaines de micromètres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="EN">
+                <seg>Due to the longer grating period, the fundamental core guided mode couples to discrete, forward-propagating cladding modes, which quickly attenuate during the propagation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En raison de la période de réseau plus longue, le mode guidé du cœur fondamental se couple à des modes de gaine discrets à propagation vers l'avant, qui s'atténuent rapidement pendant la propagation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="EN">
+                <seg>Therefore, the transmission spectra present a series of loss bands corresponding to a distinct cladding mode coupling.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, les spectres de transmission présentent une série de bandes de perte correspondant à un couplage de mode de gaine distinct.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="EN">
+                <seg>The corresponding transmitted peak-loss wavelength is given by λ_(m) = (n_(eff) − n_(clad)^((m)))Λ_(G), where n_(eff) and n_(clad)^((m)) are the effective index of the mode travelling in the core, and the LP_(0m) cladding mode to which the core mode is coupled, respectively.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La longueur d'onde de perte de crête transmise correspondante est donnée par λ_(m) = (n_(eff) − n_(gaine)^((m)))Λ_(G), où n_(eff) et n_(gaine)^((m)) sont respectivement l'indice effectif du mode se déplaçant dans le cœur, et le mode de gaine LP_(0m) auquel le mode de cœur est couplé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="EN">
+                <seg>Moreover, other single point sensors, exploiting interferometric effects such as Fabry–Perot and Michelson cavity can be directly fabricated on an optical fiber [Miliou 2021].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, d'autres capteurs ponctuels, exploitant des effets interférométriques tels que la cavité Fabry–Perot et Michelson peuvent être directement fabriqués sur une fibre optique 2021].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="EN">
+                <seg>Despite the interest due to the intrinsic high resolution and accuracy, these sensors are difficult to multiplex and, therefore, they are outside the scope of this review.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malgré l'intérêt suscité par leur résolution et leur précision intrinsèque, ces capteurs sont difficiles à multiplexer et, par conséquent, ils sortent du cadre de cette revue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="EN">
+                <seg>3.2. Fibers containing particles</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3.2. Fibres contenant des particules</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>The MCVD technique is the process used to prepare preforms drawn into particle-containing fibers reported in this review [Blanc etal. 2011].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La technique MCVD est le procédé utilisé pour préparer les préformes étirées en fibres contenant des particules rapportées dans cette revue [Blanc etal. 2011].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>Since its development in the 1970s, this method is commonly used in industry to prepare specialty optical fibers such as fiber lasers or sensors [Li 2012].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Depuis son développement dans les années 1970, cette méthode est couramment utilisée dans l'industrie pour préparer des fibres optiques spéciales telles que les lasers à fibre ou les capteurs [Li 2012].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>As a first step, vitreous layers are deposited inside a silica tube.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, des couches vitreuses sont déposées à l'intérieur d'un tube de silice.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>The composition of those layers are determined by the use of different reactive gases carried in the tube by oxygen.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La composition de ces couches est déterminée par l'utilisation de différents gaz réactifs transportés dans le tube par l'oxygène.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>Gaseous species are limited to SiCl₄, GeCl₄, POCl₃, fluorine and boron carriers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les espèces gazeuses sont limitées aux porteurs de SiCl₄, GeCl₄, POCl₃, fluor et bore.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>Additive elements (such as Mg) are incorporated during the solution doping step.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des éléments additifs (tels que Mg) sont incorporés lors de l'étape de dopage en solution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>In this method, a porous layer, deposited by MCVD on the inner surface of the silica tube, is soaked with a solution of salts of metal chlorides (e.g. MgCl₂) dissolved in alcohol or water.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avec ce procédé, une couche poreuse, déposée par MCVD sur la surface interne du tube de silice, est imbibée d'une solution de sels de chlorures métalliques (par exemple MgCl₂) dissous dans de l'alcool ou de l'eau.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>After removing the solution, the porous layer is dried, densified and vitrified at high temperature (up to 1800°C).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Après élimination de la solution, la couche poreuse est séchée, densifiée et vitrifiée à haute température (jusqu'à 1800°C).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>Finally, the tube is closed during the so-called collapse step (at temperature higher than 2000°C) to form a rod called preform.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, le tube est fermé lors de l'étape dite d'effondrement (à une température supérieure à 2000°C) pour former une tige dite préforme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>To draw this preform into fiber, temperature must be higher than the softening temperature (≈1650°C for silica glass), typically 2000°C.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour étirer cette préforme en fibre, la température doit être supérieure à la température de ramollissement (≈1650°C pour le verre de silice), typiquement 2000°C.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="EN">
+                <seg>Typical SEM images of the preform and the fiber containing MgO-based silicate nanoparticles are presented in Figure3.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des images MEB typiques de la préforme et de la fibre contenant des nanoparticules de silicate à base de MgO sont présentées dans la figure3.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="EN">
+                <seg>Particles, whose average diameter depends on the concentration in the doping solution, are whiter than the glass matrix because magnesium is mostly partitioned in the silicate particles.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les particules, dont le diamètre moyen dépend de la concentration dans la solution de dopage, sont plus blanches que la matrice de verre car le magnésium est majoritairement réparti dans les particules de silicate.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="EN">
+                <seg>However, their composition follows a complex path.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, leur composition suit un chemin complexe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="EN">
+                <seg>Indeed, it has been reported that the composition of the particles depends on their sizes: a higher concentration of Mg is measured in the largest particles [Blanc etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, il a été rapporté que la composition des particules dépend de leur taille: une concentration plus élevée de Mg est mesurée dans les plus grosses particules [Blanc etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="EN">
+                <seg>For particles much larger than 10nm, the drawing stage is an important step to be considered as they can elongate and even break-up due to Rayleigh–Plateau instability [Vermillac etal. 2017, 2019].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les particules beaucoup plus grandes que 10nm, l'étape d'étirage est une étape importante à considérer car elles peuvent s'allonger et même se briser en raison de l'instabilité de Rayleigh-Plateau [Vermillac etal. 2017, 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="EN">
+                <seg>Then, characteristics of the porous layer, concentration of the doping solution and drawing conditions must be carefully determined to optimize particle features (size, density, morphology, etc), i.e. to tune light scattering properties.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ensuite, les caractéristiques de la couche poreuse, la concentration de la solution de dopage et les conditions d'étirage doivent être soigneusement déterminées pour optimiser les caractéristiques des particules (taille, densité, morphologie, etc.), c'est-à-dire pour régler les propriétés de diffusion de la lumière.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="EN">
+                <seg>4. Long-range applications in geophysical and geotechnical applications</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Applications à longue portée dans les domaines géophysique et géotechnique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="EN">
+                <seg>In the last 20 years, distributed optical fiber sensors have been proposed to address monitoring problems in many different fields.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au cours des 20 dernières années, des capteurs à fibres optiques distribuées ont été proposés pour traiter des problèmes de surveillance dans de nombreux domaines différents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="EN">
+                <seg>One particular field of application where the exploitation of distributed optical fiber sensing has greatly flourished is geophysical and geotechnical monitoring.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La surveillance géophysique et géotechnique est un domaine d'application particulier où l'exploitation de la détection par fibre optique distribuée a connu un grand essor.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="EN">
+                <seg>Indeed, the capability of measuring different physical parameters over very long distances with a high spatial density of measuring points, the remote powering and control, and the sensor ruggedness make this technology befitting to tackle the specific challenges of these fields of application.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En effet, la capacité de mesurer différents paramètres physiques sur de très longues distances avec une forte densité spatiale de points de mesure, l'alimentation et le contrôle à distance, ainsi que la robustesse des capteurs font que cette technologie est adaptée pour relever les défis spécifiques de ces domaines d'application.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="EN">
+                <seg>Since these monitoring fields often require covering large areas, distributed FOS (DFOS) has started to be used.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné que ces domaines de surveillance nécessitent souvent de couvrir de vastes zones, des FOS distribués (DFOS, distributed fiber optic sensor) ont commencé à être utilisés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="EN">
+                <seg>Some DFOS solutions have even reached the market and have become well-explored and widely-accepted tools.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certaines solutions de DFOS ont même atteint le marché et sont devenues des outils bien étudiés et largement acceptés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>In this section, we will introduce some selected examples of DFOS for geophysical and geotechnical long-range monitoring.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette partie, nous présenterons quelques exemples sélectionnés de DFOS pour la surveillance géophysique et géotechnique à longue distance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>With the term long-range, we specifically intend those applications where the sensing optical fiber length ranges from a few tens of meters up to some kilometers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Avec le terme «longue distance», nous envisageons spécifiquement les applications où la longueur de la fibre optique de détection varie de quelques dizaines de mètres à quelques kilomètres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>Although many specific applications of DFOS exist, we have opted to address and summarize only some selected works related to static strain and temperature monitoring of geohazards, and seismic monitoring.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien qu'il existe de nombreuses applications spécifiques des DFOS nous avons choisi d'aborder et de résumer seulement quelques travaux sélectionnés liés à la surveillance des contraintes statiques et de la température des risques géologiques, et à la surveillance sismique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>The interested reader is referred to the ample reviews of literature for details [Schenato 2017; Fenta etal. 2021; Shi etal. 2021].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le lecteur intéressé est invité à consulter les nombreuses revues de la littérature pour plus de détails [Schenato 2017 ; Fenta etal. 2021 ; Shi etal. 2021].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="EN">
+                <seg>The most commonly used distributed sensing technology for strain and displacement monitoring is the Brillouin-scattering-based sensing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La technologie de détection distribuée la plus couramment utilisée pour la surveillance des contraintes et des glissements est la détection par diffusion Brillouin.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="EN">
+                <seg>In contrast, Raman-scattering-based sensing, which is insensitive to strain, is the most used for temperature monitoring.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En revanche, la détection par diffusion Raman, qui est insensible aux contraintes, est la plus utilisée pour la surveillance de la température.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="EN">
+                <seg>Additionally, Rayleigh-scattering-based sensors are also used for static strain monitoring in geotechnics, but they are mostly employed for seismic monitoring.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, les capteurs basés sur la diffusion Rayleigh sont également utilisés pour la surveillance des contraintes statiques en géotechnique, mais ils sont principalement utilisés pour la surveillance sismique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="EN">
+                <seg>4.1. Distributed strain sensing</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.1. Détection de contrainte distribuée</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="EN">
+                <seg>Regarding static strain monitoring, DFOS are widely used for monitoring geomorphic processes e.g., for landslides, subsidence and ground motion, levee, and dike.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En ce qui concerne la surveillance des contraintes statiques, les DFOS sont largement utilisés pour surveiller les processus géomorphologiques, par exemple, pour les glissements de terrain, les affaissements et mouvement du sol, les levées et les digues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="EN">
+                <seg>Landslides are often triggered by heavy rainfall that saturates the soil, thereby destabilizing it and determining its failure under shear stress.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les glissements de terrain sont souvent déclenchés par de fortes précipitations qui saturent le sol, le déstabilisant ainsi et déterminant sa rupture sous contrainte de cisaillement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="EN">
+                <seg>Early ground movement detection is crucial to give enough time to the authorities for the evacuation of the population.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La détection précoce des mouvements de terrain est cruciale pour donner suffisamment de temps aux autorités pour l'évacuation de la population.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="EN">
+                <seg>With the aim of monitoring the strain exerted by the soil movement, the optical fibers need to be coupled to the soil, so to be dragged by the ground movement: when the soil undergoes collapse or sliding, the fiber gets stretched accordingly.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le but de surveiller la contrainte exercée par le mouvement du sol, les fibres optiques doivent être couplées au sol, afin d'être entraînées par le mouvement du sol: lorsque le sol subit un effondrement ou un glissement, la fibre s'étire en conséquence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="EN">
+                <seg>The sensing optical fiber cables are often embedded in shallow trenches or simply anchored to the ground through stakes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les câbles de détection sont souvent enfouis dans des tranchées peu profondes ou simplement ancrés au sol par des piquets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="EN">
+                <seg>Depending on the installation, both shallow landslides and slow slope movements can be detected through the elongation induced in the sensing fiber.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Selon l'installation, des glissements de terrain peu profonds et des mouvements de pente lents peuvent être détectés grâce à l'allongement induit dans la fibre de détection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>One of the first examples of landslide monitoring employing Brillouin-based DFOS is provided in Yoshida etal. [2002].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'un des premiers exemples de surveillance des glissements de terrain utilisant un DFOS basé sur la diffusion Brillouin est présenté dans Yoshida etal.g [2002].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>The landslide area, consisting of approx. 70ha (1500 × 500m) was instrumented with approximately 1200m of fiber.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La zone de glissement de terrain, d'un surface d'environ 70ha (1500 × 500m) a été instrumentée avec environ 1200m de fibre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>The fiber was arranged in a square grid layout running 90m in the landslide moving direction and 80m in the transverse one.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La fibre a été disposée en quadrillage de 90m dans la direction de déplacement du glissement de terrain et de 80m dans la direction transversale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>Part of the cable was buried under the ground at 50cm depth, and part was anchored via fixing metal plates.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une partie du câble a été enterrée à 50cm de profondeur, et une autre partie a été ancrée en la fixant avec des plaques métalliques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>The spatial resolution of the Brillouin interrogator was limited to 1m, enough to provide a detailed map of the strain field in the monitored area.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La résolution spatiale de l'interrogateur Brillouin a été limitée à 1m, suffisamment pour fournir une carte détaillée du champ de déformation dans la zone surveillée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>A similar approach, with a Brillouin-based sensor and with the cable transversely intercepting the landslide movement, has been proposed in Iten etal.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une approche similaire, avec un capteur basé sur la diffusion Brillouin et avec le câble interceptant transversalement le mouvement de glissement de terrain, a été proposée dans Iten etal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>[2009].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>[2009].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>In this work, only 80m of cable was laid in the ground beneath a hiking path, inside a small trench, and coupled to the soil by micro-anchors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, seulement 80m de câble ont été posés dans le sol sous un sentier de randonnée, à l'intérieur d'une petite tranchée, et couplés au sol par des micro-ancres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>In the same paper, mention is made of the implementation of a geotechnical DFOS monitoring system applied to a 60km LNG pipeline section in Peru, affected by geohazards.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le même article, il est fait mention de la mise en œuvre d'un système de surveillance équipé de DFOS géotechnique appliqué à un tronçon de 60km de GNL au Pérou, affecté par des risques géologiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="EN">
+                <seg>Another approach, enabled by the long range capability of the DFOSs, consists in installing the fiber in loop configuration through an array of soil nails, inclinometers tubes, and frame beams, such as in Shi etal.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une autre approche, rendue possible par la capacité de longue portée des DFOS, consiste à installer la fibre dans une configuration en boucle à travers un réseau de clous d'ancrage, de tubes inclinomètres et de poutres de cadre, comme dans Shi etal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="EN">
+                <seg>[2008].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>[2008].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="EN">
+                <seg>A similar deployment was also proposed by Hoepffner etal. [2008], at the Aggenalm landslide (Bavarian Alps) where a Brillouin interrogator (along with a Raman interrogator for temperature compensation) was used to probe a 90m long sensing cable, partly embedded in the soil and partly inside an inclinometer borehole in a loop configuration.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un déploiement similaire a également été proposé par Hoepffner etal. [2008], au glissement de terrain d'Aggenalm (Alpes bavaroises) où un interrogateur Brillouin (ainsi qu'un interrogateur Raman pour la compensation de température) a été utilisé pour sonder un câble de détection de 90m de long, en partie enfoui dans le sol et en partie à l'intérieur d'un trou de forage inclinométrique dans une configuration en boucle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="EN">
+                <seg>More recently, in Kogure and Okuda [2018], a DFOS-based on Rayleigh backscattering, was installed in a borehole to a depth of 16 m to detect the vertical strain profile of a landslide with 10cm spatial resolution.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus récemment, à Kogure et Okuda [2018], un DFOS basé sur la rétrodiffusion Rayleigh a été installé dans un trou de forage à une profondeur de 16m pour détecter le profil de déformation verticale d'un glissement de terrain avec une résolution spatiale de 10cm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="EN">
+                <seg>Despite the limited length of the fiber deployed in the borehole, the overall cable length was more than 450m with the remote interrogator hosted at more than 200m from the borehole in a safe structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malgré la longueur limitée de la fibre déployée dans le trou de forage, la longueur totale du câble était de plus de 450m avec l'interrogateur à distance hébergé à plus de 200m du trou de forage dans une structure protégée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="EN">
+                <seg>In this study, the strain variation along the borehole depth was correlated with the soil stratigraphy, while its temporal evolution showed a clear correlation with the precipitation data that triggered the landslide (Figure4).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette étude, la variation de la déformation le long de la profondeur du trou de forage a été corrélée avec la stratigraphie du sol, tandis que son évolution temporelle a montré une corrélation claire avec les données de précipitations qui ont déclenché le glissement de terrain (Figure4).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="EN">
+                <seg>Similarly, Zhang etal. [2018] embedded a fiber optic cable into a borehole and mapped the compaction or rebound zone along the vertical profile up to 150m depth by means of Brillouin-based technique.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De même, Zhang etal. [2018] ont intégré un câble dans un trou de forage et cartographié la zone de compaction ou de rebond le long du profil vertical jusqu'à 150m de profondeur au moyen de la technique de diffusion Brillouin.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="EN">
+                <seg>The simultaneous deployment of DFOS-equipped boreholes and cables laid across the boundary of a landslide has also been used to produce and validate more accurate models on the shear deformation at different locations of a landslide as in Sang etal.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le déploiement simultané de forages et de câbles équipés de DFOS installés de part et d’autre de la zone d'un glissement de terrain a également été utilisé pour produire et valider des modèles plus précis sur la déformation de cisaillement à différents endroits d'un glissement de terrain comme dans Sang etal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="EN">
+                <seg>[2019].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>[2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>The limited invasiveness of the fiber optic cable allows also the integration of DFOS in soil anchors, which are geotechnical sub-horizontal reinforcements for remediation of unstable slopes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'invasivité limitée du câble permet également l'intégration de DFOS dans les ancrages au sol, qui sont des renforcements géotechniques subhorizontaux mis en place pour remédier aux pentes instables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>A soil anchor is a hollow steel bar, installed by a self-drilling technique in the soil or rock, and it is often integrated with tendons cemented in the inner hole.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un système d'ancrage de sol est composé d'une barre d'acier creuse, installée par une technique d'auto-forage dans le sol ou la roche, et elle est souvent intégrée à des armatures cimentées dans le trou intérieur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>In Cola etal. [2019], the authors installed an optical fiber cable within the hole of some soil anchors, side-by-side to the tendons and cemented with them.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans Cola etal. [2019], les auteurs ont installé un câble dans le trou de certains ancrages de sol, côte à côte avec les armatures et cimenté avec eux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>The anchors were 40-m long and the fiber cables were interrogated by a Rayleigh-based OFDR with 1 cm spatial resolution with the aim of determining the distributed strain profile along the nails.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les ancrages mesuraient 40 m de long et les câbles étaient interrogés par un OFDR (Optical Frequency Domain Reflectometer) basé sur la diffusion Rayleigh avec une résolution spatiale de 1 cm dans le but de déterminer le profil de déformation réparti le long des clous.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>The system ultimately measures both the axial force distribution in the anchor and the soil–anchor interface friction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En définitif, le système mesure à la fois la répartition de la force axiale dans l'ancrage et le frottement d'interface sol-ancre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>More specifically, the integration of DFOS makes possible to infer information about the health condition of the anchor, but also promotes the anchor itself as a sensor, allowing to probe the evolution of the stress field in the surrounding soils and therefore providing information about the landslide, such as the position of the sliding interface.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, l'intégration de DFOS permet de déduire des informations sur l'état de santé de l'ancre, mais favorise également l'ancre elle-même en tant que capteur, permettant de sonder l'évolution du champ de contraintes dans les sols environnants et donc de fournir des informations sur le glissement de terrain, telles que la position de l'interface de glissement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>Similarly, information about the structural health and about the soil friction can be inferred by embedding DFOS in foundation piles under static load testing [Pelecanos etal. 2018; Bersan etal. 2018].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De même, des informations sur la santé structurelle et sur le frottement du sol peuvent être déduites en incorporant le DFOS dans des pieux de fondation soumis à des essais de charge statique [Pelecanos etal. 2018 ; Bersan etal. 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="EN">
+                <seg>Although those installations could resemble an inclinometer, DFOSs measure strain or its variation, whereas inclinometers measure slope inclination changes and actual deformation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que ces installations puissent ressembler à un inclinomètre, les DFOS mesurent la déformation ou sa variation, tandis que les inclinomètres mesurent les changements d'inclinaison de la pente et la déformation réelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="EN">
+                <seg>Despite that, several authors have tried to implement DFOS inclinometers equipping borehole tubes or casings, up to some tens of meters depth, with three or more optical fibers and exploiting the Euler–Bernoulli beam theory and relying on the application of a quadratic integral method or classical conjugate beam method [Lenke etal. 2011; Minardo etal. 2014; Sun etal. 2016; Huang etal. 2018; Minutolo etal. 2020; Zhang etal. 2020].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malgré cela, plusieurs auteurs ont essayé de mettre en œuvre des inclinomètres à DFOS équipant des tuyaux ou des boîtiers de forage, jusqu'à quelques dizaines de mètres de profondeur, de trois fibres optiques ou plus et exploitant la théorie d'Euler-Bernoulli et s'appuyant sur l'application d'une méthode de quadrature ou d'une méthode classique du faisceau conjugué [Lenke etal. 2011 ; Minardo etal. 2014 ; Sun etal. 2016 ; Huang etal. 2018 ; Minutolo etal. 2020 ; Zhang etal. 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="EN">
+                <seg>An example of one of this inclinometer, installed in a landslide at the Three Gorges Reservoir Area is shown in Figure5.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Exemple d'un de ces inclinomètres, installé dans un glissement de terrain dans la zone du réservoir des Trois-Gorges, illustré à la figure5.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="EN">
+                <seg>Over the years, the improvement in the spatial resolution of the interrogators, allowed to perform experiments in physical models, where centimeters-scale spatial resolution is required due to the limited size of the setup.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au fil des ans, l'amélioration de la résolution spatiale des interrogateurs, a permis d'effectuer des expériences sur des modèles physiques, où une résolution spatiale à l'échelle du centimètre est nécessaire en raison de la taille limitée de l'installation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="EN">
+                <seg>For example, in Schenato etal. [2017], the researchers instrumented a large-scale physical model (6 × 2 × 3.5m) with 30m of engineered corrugated fiber cable deployed in a meandering path oriented along the landslide direction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, dans Schenato etal. [2017], les chercheurs ont instrumenté un modèle physique à grande échelle (6 × 2 × 3,5m) avec 30m de câble conçu en fibre ondulée déployé sur une trajectoire sinueuse orientée le long de la direction du glissement de terrain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="EN">
+                <seg>The fiber was deployed below the surface at a pre-determined sliding interface and the corrugation on the fiber sheath guaranteed sufficient coupling to the soil.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La fibre a été déployée sous la surface à une interface de glissement prédéterminée et l'ondulation sur la gaine de fibre garantissait un couplage suffisant avec le sol.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="EN">
+                <seg>By means of artificial rainfall, the slope was driven to collapse while monitoring the strain along the fiber.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au moyen de précipitations artificielles, la pente a été poussée à s'effondrer tout en surveillant la déformation le long de la fibre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="EN">
+                <seg>The authors were therefore able to provide a detail map of the strain spatial distribution and evolution over time, with indication about the coupling efficiency and even early signs of slope failure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les auteurs ont donc été en mesure de fournir une carte détaillée de la distribution spatiale de la déformation et de son évolution dans le temps, avec des indications sur l'efficacité du couplage et même des signes précoces de rupture de pente.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="EN">
+                <seg>Figure6 shows the physical model on the left and the map of the strain field at different stages of the landslide and soil–cable coupling: from left to right are shown the initial coupling, the full coupling, the partial coupling and the post-collapse phase.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure6 montre le modèle physique sur la gauche et la carte du champ de déformation aux différents stades du glissement de terrain et du couplage sol-câble: de gauche à droite sont représentés le couplage initial, le couplage complet, le couplage partiel et la phase de post-effondrement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="EN">
+                <seg>Similar experiments were carried out by other groups, but in smaller physical models, exploiting both Brillouin- [Damiano etal. 2017; Song etal. 2017; Darban etal. 2019] and Rayleigh-based techniques [Papini etal. 2020].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des expériences similaires ont été menées par d'autres groupes, mais dans des modèles physiques plus petits, exploitant à la fois les techniques de Brillouin [Damiano etal. 2017 ; Song etal. 2017 ; Darban etal. 2019] et de Rayleigh [Papini etal. 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="EN">
+                <seg>Distributed strain sensing has been applied also to river embankments since the very early 2000s [Naruse etal. 2000; Zhang etal. 2010; Lei etal. 2012; Zhou etal. 2013].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La détection distribuée des déformations est également appliquée aux digues des cours d'eau depuis le tout début des années 2000 [Naruse etal. 2000 ; Zhang etal. 2010 ; Lei etal. 2012 ; Zhou etal. 2013].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="EN">
+                <seg>The aim of these works was the early detection of collapse, via Brillouin-based technique for strain monitoring.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'objectif de ces travaux était la détection précoce de l'effondrement, via une technique de surveillance des déformations au moyen de la technique de diffusion Brillouin.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="EN">
+                <seg>Typically, the fiber cables were buried at few tens of centimeter depth in the embankment scarps in meandering path whose strands follow the direction of the embankment.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En général, les câbles ont été enterrés à quelques dizaines de centimètres de profondeur dans les escarpements des digues en une trajectoire sinueuse dans le sens des digues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="EN">
+                <seg>Only few of them implemented temperature compensation with portion of fibers left in strain-free conditions or by employing an additional Raman-based system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Seuls quelques-uns d'entre eux ont mis en œuvre la compensation de température avec une partie des fibres laissées dans des conditions où elles ne subissent pas de déformation ou en employant un système supplémentaire basé sur la diffusion Raman.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="EN">
+                <seg>To improve the spatial coverage of sensors over the embankment scarp, Nöther etal. [2008] and Artières etal. [2010] proposed the use of engineered geotextiles equipped with optical fibers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour améliorer la couverture spatiale des capteurs sur l'escarpement des berges, Nöther etal. [2008] et Artières etal. [2010] ont proposé l'utilisation de géotextiles équipés de fibres optiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="EN">
+                <seg>4.2. Distributed temperature and pressure sensing</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.2 Détection distribuée de la température et de la pression</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="EN">
+                <seg>Embankment monitoring is also one of the most early application of DFOS for the distributed measurement of temperature within the soil, via Raman-based technique.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La surveillance des digues est également l'une des applications les plus précoces de DFOS pour la mesure distribuée de la température dans le sol, via la technique basée sur la diffusion Raman.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="EN">
+                <seg>The goal of this kind of monitoring is the detection of anomalous temperature behavior within the soil, often correlated to dangerous filtration path and seepages, which may lead to the erosion and the final collapse of the structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le but de ce type de surveillance est la détection d'un comportement anormal de la température dans le sol, souvent corrélé à un flux de filtration dangereux et à des infiltrations, qui peuvent conduire à l'érosion et à l'effondrement définitif de la structure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="EN">
+                <seg>In order to effectively identify critical events, it is mandatory to have an a-priori long term measurement campaign to determine the normal thermal behavior of the structure, which fluctuates with season.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Afin d'identifier efficacement les événements critiques, il est a priori obligatoire d'effectuer une campagne de mesure à long terme pour déterminer le comportement thermique normal de la structure, qui fluctue en fonction des saisons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, the sensing system has to probe the structure with an adequate spatial resolution, as early filtration paths are likely very small.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, le système de détection doit sonder la structure avec une résolution spatiale adéquate, car les premiers flux de filtration sont probablement très petits.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="EN">
+                <seg>Current standard commercial Raman interrogators provide a spatial resolution of 0.25–1m over a range of some kilometers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les interrogateurs Raman commerciaux standard actuels offrent une résolution spatiale de 0,25-1m sur une portée de quelques kilomètres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="EN">
+                <seg>Nonetheless, despite this long range capability, in most of the reported installations the fiber length is limited to some hundreds of meters [Shanafield etal. 2018].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, malgré cette capacité de longue portée, dans la plupart des installations rapportées, la longueur des fibres est limitée à quelques centaines de mètres [Shanafield etal. 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="EN">
+                <seg>The accuracy needed to detect anomalous temperature change has to be quite large, in the order of 0.1°C, as very often the filtration water flow rapidly reaches thermal equilibrium with the surrounding soil.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La précision nécessaire pour détecter un changement de température anormal doit être assez grande, de l'ordre de 0,1°C, car très souvent l'écoulement d'eau de filtration atteint rapidement l'équilibre thermique avec le sol environnant.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="EN">
+                <seg>This usually requires long measurement time, in the order of some minutes, still matching with the needs of this field of application [Bersan etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci nécessite généralement un long temps de mesure, de l'ordre de quelques minutes, ce qui correspond encore aux besoins de ce domaine d'application [Bersan etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="EN">
+                <seg>Based on these premises, the early installations of temperature DFOSs in embankments [Albalat and Garnero 1995; Fry 1997; Aufleger etal. 1997; Johansson and Sjödahl 2004], struggled to effectively identify such anomalies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur la base de ces hypothèses, les premières installations de DFOS de température dans les digues [Albalat et Garnero 1995 ; Fry 1997 ; Aufleger etal. 1997 ; Johansson et Sjödahl 2004], ont eu du mal à identifier efficacement ces anomalies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="EN">
+                <seg>Nowadays, much of the research on the use of DFOS in embankment monitoring are based on the so-called “heat-up” or “active” thermometric method [Perzlmaier etal. 2004; Sayde etal. 2010; Cola etal. 2021].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Aujourd'hui, une grande partie de la recherche sur l'utilisation de DFOS dans la surveillance des digues est basée sur la méthode thermométrique dite «chauffante» ou «active» [Perzlmaier etal. 2004 ; Sayde etal. 2010 ; Cola etal. 2021].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="EN">
+                <seg>This method consists of measuring the temperature along an heated optical fiber; usually the heating is achieved by injecting current into electrical wires bundled with the fibers in the same cable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce procédé consiste à mesurer la température le long d'une fibre optique chauffée; généralement le chauffage est obtenu par injection de courant dans des fils électriques regroupés avec les fibres optiques dans le même câble.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="EN">
+                <seg>Instead of the actual temperature, the time-constant of the heating and cooling phases are used to characterize the degree of saturation of the soil and also to track active filtration flows that dissipate the heat more rapidly [Pyayt etal. 2014], as shown in Figure7.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au lieu de la température réelle, la constante de temps des phases de chauffage et de refroidissement est utilisée pour caractériser le degré de saturation du sol et également pour suivre les flux de filtration actifs qui dissipent la chaleur plus rapidement [Pyayt etal. 2014], comme le montre la figure7.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="EN">
+                <seg>About the use of other DFOS technologies for temperature measurement, few works can be found in the literature, either Brillouin- or Rayleigh-based ones: these solutions require the fibers not to be affected by the strain and are mostly limited to small-scale physical models [Zhu etal. 2007; Wang etal. 2016; Bersan etal. 2017; Cheng etal. 2021].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En ce qui concerne l'utilisation d'autres technologies de DFOS pour la mesure de la température, peu d'ouvrages peuvent être trouvés dans la littérature, qu'elles soient basées sur la diffusion Brillouin ou Rayleigh: ces solutions nécessitent que les fibres ne soient pas affectées par la déformation et sont principalement limitées aux modèles physiques à petite échelle [Zhu etal. 2007 ; Wang etal. 2016 ; Bersan etal. 2017 ; Cheng etal. 2021].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="EN">
+                <seg>Alternatively, the distributed measurement of pressure has been envisaged as an effective way to monitor an embankment’s health.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, la mesure distribuée de la pression a été envisagée comme un moyen efficace de surveiller l'état d'une digue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="EN">
+                <seg>Pore-water and total pressures lead to the development of hydraulic forces that affect the dam’s shear strength, determining a dangerous localized strain.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La pression de l'eau interstitielle et la pression totales entraînent le développement de forces hydrauliques qui affectent la résistance au cisaillement du barrage, déterminant une déformation localisée dangereuse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="EN">
+                <seg>These processes occur well before the collapse but may lead to a rapid failure as they determine the backward erosion piping mechanism.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces processus se produisent bien avant l'effondrement, mais peuvent conduire à une défaillance rapide car ils déterminent le mécanisme d'érosion régressive par conduits.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="EN">
+                <seg>These anomalous pressure regimes, if detected, could be used as precursory signals of failure because they take place well before the strain arises, which initially occur without any surface evidence.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces régimes de pression anormaux, s'ils sont détectés, pourraient être utilisés comme signaux précurseurs de défaillance parce qu'ils ont lieu bien avant l'apparition de la déformation, qui se produit initialement sans trace de signe avant-coureur en surface.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="EN">
+                <seg>Unfortunately, high spatial and pressure resolution are required for that aim.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malheureusement, une haute résolution à la fois spatiale et de pression sont nécessaires pour atteindre cet objectif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="EN">
+                <seg>Despite many types of FBG-based pressure sensors having been reported in the literature [Zhou etal. 2006; Wei etal. 2018; Schenato etal. 2019; Ho etal. 2021], to date, there have been only a few examples of distributed pressure sensors capable of achieving such performances, and they have been implemented only in bare fibers [Teng etal. 2016; Kim etal. 2016; Schenato etal. 2020a] by means of Brillouin-based techniques.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que de nombreux types de capteurs de pression à base de FBG aient été rapportés dans la littérature [Zhou etal. 2006 ; Wei etal. 2018 ; Schenato etal. 2019 ; Ho etal. 2021], à ce jour, il n'y a eu que quelques exemples de capteurs distribués de pression capables d'atteindre de telles performances, et ils n'ont été mis en œuvre que dans des fibres nues [Teng etal. 2016 ; Kim etal. 2016 ; Schenato etal. 2020a] au moyen de la technique de diffusion Brillouin.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="EN">
+                <seg>Recently, a proof-of-concept of a very high-sensitive, high-spatial-resolution distributed pressure sensing cable based on an engineered cable cross-section and suitable for hydrological applications has been proposed [Schenato etal. 2020b].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Récemment, il a été proposé une preuve de concept d'un câble équipé de capteurs distribués de pression, très sensibles et à haute résolution spatiale, basé sur une section de câble conçu et adapté à des applications hydrologiques [Schenato etal. 2020b].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="EN">
+                <seg>The cable was designed to transfer effectively the external pressure into strain affecting the embedded fiber, then measured by means of a Rayleigh-based technique.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le câble a été conçu pour transférer efficacement la pression externe en déformation affectant la fibre intégrée, puis mesurée au moyen de la technique de diffusion Rayleigh.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="195">
+            <prop type="paragraph">43</prop>
+            <tuv xml:lang="EN">
+                <seg>4.3. Distributed acoustic sensing</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4.3. Système de détection acoustique distribuée</seg>
+            </tuv>
+        </tu>
+        <tu tuid="196">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="EN">
+                <seg>An additional technology that has entered powerfully in geophysics is the distributed acoustic sensing (DAS) technology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une autre technologie qui a fait une entrée remarquée en géophysique est la technologie de détection acoustique distribuée (DAS, distributed acoustic sensing).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="197">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="EN">
+                <seg>DAS is based on the coherent-detection of the Rayleigh backscattering generated by a narrow band source.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le DAS s'appuie détection cohérente de la rétrodiffusion Rayleigh générée par une source à bande étroite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="198">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="EN">
+                <seg>Upon the illumination of a coherent source, the heterogeneity and density fluctuations of the silica generate coherent backscattering signals that vectorially sum, resulting in a specific interference pattern, which encodes the spatial distribution of the heterogeneity and the corresponding relative optical phases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sous l'effet de l'illumination d'une source cohérente, l'hétérogénéité et les fluctuations de densité de la silice génèrent des signaux de rétrodiffusion cohérents qui s'additionnent vectoriellement, donnant lieu à une figure d'interférence spécifique, qui codifie la distribution spatiale de l'hétérogénéité et les phases optiques relatives correspondantes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="199">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="EN">
+                <seg>Strain and temperature variations affect and perturb that interference pattern, and therefore, they can be measured through its variation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les variations de déformation et de température affectent et perturbent cette figure d'interférence, et par conséquent, peuvent donc être mesurées par le biais de sa variation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="200">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="EN">
+                <seg>Several optical schemes to retrieve such a pattern at a very high speed have been implemented, all substantially based on the so-called 𝜙OTDR [Juškaitis etal. 1994; He and Liu 2021].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs schémas optiques pour récupérer un tel motif à très grande vitesse ont été mis en œuvre, tous basés essentiellement sur la méthode dite «𝜙OTDR » [Juškaitis etal. 1994 ; He and Liu 2021].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="201">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="EN">
+                <seg>This technique promotes the optical fiber to act as an array of in-phase geophones, measuring the surrounding acoustic or vibration field with a resolution of some meters over a range of several kilometers [Zhan 2020].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette technique permet à la fibre optique d'agir comme un réseau de géophones en phase, mesurant le champ acoustique ou vibratoire environnant avec une résolution de quelques mètres sur une portée de plusieurs kilomètres [Zhan 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="202">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="EN">
+                <seg>Differently from a geophone, which records ground motion (velocity), a DAS typically measures strain-rate, and the data from the DAS requires a proper spatial integration to be converted into geophone-equivalent data [Lior etal. 2021].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Contrairement à un géophone, qui enregistre le mouvement du sol (vitesse), un DAS mesure généralement le taux de déformation, et les données du DAS nécessitent une intégration spatiale appropriée pour être converties en données équivalentes à celles d'un géophone [Lior etal. 2021].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="203">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="EN">
+                <seg>Initial applications of DAS in geophysics have regarded the vertical seismic profiling in the oil and gas industry [Mestayer etal. 2011; Daley etal. 2013; Mateeva etal. 2013; Parker etal. 2014].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les premières applications de la DAS en géophysique ont porté sur le profilage sismique vertical dans l'industrie pétrolière et gazière [Mestayer etal. 2011 ; Daley etal. 2013 ; Mateeva etal. 2013 ; Parker etal. 2014].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="204">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="EN">
+                <seg>Nowadays, several works have been published about the use of DAS as long-range distributed earthquake seismometers [Lindsey etal. 2017; Jousset etal. 2018; Williams etal. 2019; Sladen etal. 2019; Lellouch etal. 2021].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nos jours, plusieurs travaux ont été publiés sur l'utilisation des DAS comme sismomètres distribués à longue portée [Lindsey etal. 2017 ; Jousset etal. 2018 ; Williams etal. 2019 ; Sladen etal. 2019 ; Lellouch etal. 2021].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="205">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="EN">
+                <seg>In these works, dark fibers, i.e., unused laid optical fibers with no traffic running on it, in existing standard telecom cables have been probed with a DAS.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ces travaux, des fibres optiques noires, c'est-à-dire des fibres optiques installées mais pas encore activées, dans des câbles de télécommunications standard existants ont été sondées avec une DAS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="206">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="EN">
+                <seg>These works showed that even micro-earthquakes hundreds of kilometers away can be successfully detected [Sladen etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces travaux ont montré que même des microséismes à des centaines de kilomètres peuvent être détectés avec succès [Sladen etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="207">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="EN">
+                <seg>In Williams etal. [2019], the system was shown to be able to record the seismic waves of different types (see Figure8).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans Williams etal. [2019], il a été démontré que le système était capable d'enregistrer les ondes sismiques de différents types (voir Figure8).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="208">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="EN">
+                <seg>Moreover, a deep earthquake with moment magnitude 8.2 striking the Fiji area was detected with a 40km-long ocean-bottom fiber optic cable offshore Belgium.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, un tremblement de terre profond d'une magnitude de 8,2 frappant les Fidji a été détecté avec un câble à fibre optique de 40km de long au large de la Belgique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="209">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="EN">
+                <seg>DAS has also been proposed for vibration-based landslide monitoring as a replacement for geophones.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La DAS a également été proposé pour la surveillance des glissements de terrain basée sur les vibrations en remplacement des géophones.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="210">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="EN">
+                <seg>The sensitivity of DAS is typically worse than that of geophones per single sensing point.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La sensibilité du DAS est généralement moins bonne que celle des géophones par point de détection unique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="211">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="EN">
+                <seg>Still, this approach’s advantage consists of the very large number of coherent sensing points that can be probed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, l'avantage de cette approche réside dans le très grand nombre de points de détection cohérents qui peuvent être sondés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="212">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="EN">
+                <seg>The feasibility of this method has been tested so far in a small-scale physical model of a landslide [Michlmayr etal. 2017], and more recently in a physical model of debris flows [Schenato etal. 2020c].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Jusqu'à présent, la faisabilité de cette méthode a été testée avec un modèle physique à petite échelle d'un glissement de terrain [Michlmayr etal. 2017], et plus récemment dans un modèle physique de coulées de débris [Schenato etal. 2020c].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="213">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="EN">
+                <seg>In this last work, despite the smaller size of the model (approx. 2m-long), 800m of fiber coiled in 20mandrels have been deployed, and probed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce dernier travail, malgré la taille plus petite du modèle (env. 2m de long), 800m de fibre enroulée en 20mandrins ont été déployés, et sondés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="214">
+            <prop type="paragraph">47</prop>
+            <tuv xml:lang="EN">
+                <seg>Other geophysical applications where seismic monitoring is of paramount importance are related to ocean bottom surveys and volcano-triggered earthquakes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autres applications géophysiques où la surveillance sismique est d'une importance capitale sont liées aux études des fonds marins et aux tremblements de terre déclenchés par les volcans.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="215">
+            <prop type="paragraph">47</prop>
+            <tuv xml:lang="EN">
+                <seg>Despite occurring in completely diverse environments, they share similar issues related to the extreme harshness of the operative conditions and the required spatial extensiveness of monitoring.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que ces études se déroulent dans des environnements complètement différents, ces applications partagent des problèmes similaires liés à l'extrême rigueur des conditions opérationnelles et à l'étendue spatiale requise de la surveillance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="216">
+            <prop type="paragraph">47</prop>
+            <tuv xml:lang="EN">
+                <seg>Initially addressed by massive arrays of quasi-distributed FBGs [Kringlebotn 2010; Sorge etal. 2005], they have been only recently addressed by DAS technology, with outstanding results [Williams etal. 2019; Nishimura etal. 2021; Jousset etal. 2022].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Initialement abordées par des réseaux massifs de FBG quasi-distribués [Kringlebotn 2010 ; Sorge etal. 2005], elles n'ont été abordées que récemment par la technologie DAS, avec des résultats remarquables [Williams etal. 2019 ; Nishimura etal. 2021 ; Jousset etal. 2022].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="217">
+            <prop type="paragraph">48</prop>
+            <tuv xml:lang="EN">
+                <seg>Worthy of mention, in ocean environment, is the wildlife monitoring of baleen whales in the Arctic using DAS that employs the globally available infrastructure of sub-sea telecommunication fiber optic cables [Bouffaut etal. 2022].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il convient de mentionner, dans le domaine de l'environnement océanique, la surveillance de la faune des baleines à fanons dans l'Arctique à l'aide du DAS qui utilise l'infrastructure mondiale des câbles à fibre optique de télécommunications sous-marines [Bouffaut etal. 2022].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="218">
+            <prop type="paragraph">49</prop>
+            <tuv xml:lang="EN">
+                <seg>5. Short-range applications in medical sciences</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. Applications à courte portée en sciences médicales</seg>
+            </tuv>
+        </tu>
+        <tu tuid="219">
+            <prop type="paragraph">50</prop>
+            <tuv xml:lang="EN">
+                <seg>5.1. Distributed fiber optics strain sensors</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.1. Capteurs de déformation distribués à fibre optique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="220">
+            <prop type="paragraph">51</prop>
+            <tuv xml:lang="EN">
+                <seg>While distributed fiber optics strain sensing has found its own place in modern science and technology showing great potential in long-range applications, particularly in the field of geotechnical applications. the applications for the short-distance have started emerging over the last few years.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Alors que la détection distribuée de déformation par fibre optique a trouvé sa place dans la science et la technologie modernes, montrant un grand potentiel dans les applications à longue portée, en particulier dans le domaine des applications géotechniques, celles à courte portée ont commencé à émerger au cours des dernières années.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="221">
+            <prop type="paragraph">51</prop>
+            <tuv xml:lang="EN">
+                <seg>The key factor that creates interest regarding distributed fiber sensing for short-range applications is the possibility to compact a large number of sensing points in a short space, thereby obtaining sub-centimeter detection.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le facteur clé qui suscite de l'intérêt en ce qui concerne la détection distribuée par fibre optique pour des applications à courte portée est la possibilité de compacter un grand nombre de points de détection dans un espace réduit, ce qui permet d'obtenir une détection inférieure au centimètre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="222">
+            <prop type="paragraph">51</prop>
+            <tuv xml:lang="EN">
+                <seg>The main short distance class of applications that can fully exploit the potential of distributed fiber sensing is the field of bio-medical applications [Tosi etal. 2018].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La principale catégorie d'applications à courte distance qui peut exploiter pleinement le potentiel de la détection distribuée par fibre optique est le domaine des applications biomédicales [Tosi etal. 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="223">
+            <prop type="paragraph">52</prop>
+            <tuv xml:lang="EN">
+                <seg>Concerning bio-medical applications, there are some niche sectors that can strongly benefit from the use of distributed fiber optics strain sensing, mainly where high level of precise measurements, as well as minimal invasive sensing, is required [Amanzadeh etal. 2018].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En ce qui concerne les applications biomédicales, il existe certains secteurs de niche qui peuvent bénéficier fortement de l'utilisation de la détection distribuée de déformation à fibre optique, principalement lorsque des mesures précises et avancées sont requises ainsi qu'une technique de détection avec une invasivité minimale [Amanzadeh etal. 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="224">
+            <prop type="paragraph">52</prop>
+            <tuv xml:lang="EN">
+                <seg>Some of these sectors include colonoscopy, epidural administration, intra-arterial therapies, cardiac procedures, end ophthalmic robotic surgery, i.e. applications where it can be beneficial to use a needle catheter equipped with optical fiber sensors for strain measurement or shape reconstruction [Mandal etal. 2016; Gonenc etal. 2017; Khan etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Parmi ces secteurs, citons la coloscopie, l'anesthésie péridurale, les thérapies intra-artérielles, les procédures cardiaques et la chirurgie robotique ophtalmique, c'est-à-dire des applications où il peut être avantageux d'utiliser un cathéter à aiguille équipé de capteurs à fibres optiques pour la mesure de la déformation ou la reconstruction de forme [Mandal etal. 2016 ; Gonenc etal. 2017 ; Khan etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="225">
+            <prop type="paragraph">52</prop>
+            <tuv xml:lang="EN">
+                <seg>In this regard, it is also necessary to stress that the use of optical fiber technology is not only beneficial for the purpose of precise strain sensing, but also introduces advantages given by the nature and the material of the sensing medium.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>A cet égard, il est également nécessaire de souligner que l'utilisation de la technologie des fibres optiques est non seulement avantageuse pour la détection précise des déformations, mais présente également des avantages liés à la nature et au matériau de l'instrument de détection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="226">
+            <prop type="paragraph">52</prop>
+            <tuv xml:lang="EN">
+                <seg>In fact, glass optical fiber presents peculiar properties such as compact size, robustness, chemical inertness, bio-compatibility, and immunity to external electromagnetism, that makes fiber sensors perfect for bio-medical applications [Lee 2003].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En fait, la fibre optique de verre présente des propriétés particulières telles que la compacité, la robustesse, l'inertie chimique, la biocompatibilité et l'immunité à l'électromagnétisme externe, ce qui rend les capteurs à fibres optiques parfaits pour les applications biomédicales [Lee 2003].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="227">
+            <prop type="paragraph">53</prop>
+            <tuv xml:lang="EN">
+                <seg>It is worth noting that the research for new and innovative bio-medical devices based on fiber optics sensing technology has been mainly focused on the use of FBGs or arrays of FBGs, since they represent a mature technology, reliable, and easily available on the market.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il convient de noter que la recherche de dispositifs biomédicaux nouveaux et innovants basés sur la technologie de détection par fibre optique s'est principalement concentrée sur l'utilisation de FBG ou de réseaux de FBG, car ils représentent une technologie mature, fiable et facilement disponible sur le marché.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="228">
+            <prop type="paragraph">53</prop>
+            <tuv xml:lang="EN">
+                <seg>In the field of medical devices that require strain measurement to enable their functionalities, the use of FBGs is a good solution until the precision of the measurement and the spatial concentration of the sensing points become a mandatory requirement for the sensing system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le domaine des dispositifs médicaux qui nécessitent une mesure de la déformation pour permettre leurs fonctionnalités, l'utilisation de FBG est une bonne solution jusqu'à ce que la précision de la mesure et la concentration spatiale des points de détection deviennent une exigence obligatoire pour le système de détection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="229">
+            <prop type="paragraph">53</prop>
+            <tuv xml:lang="EN">
+                <seg>The FGB, in fact, is a single point sensor and the information on the strain measurement is limited to its spatial location.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le FBG, en effet, est un capteur à point unique et l'information sur la mesure de la déformation est limitée à sa position spatiale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="230">
+            <prop type="paragraph">53</prop>
+            <tuv xml:lang="EN">
+                <seg>The use of arrays of FBGs can improve the situation by promoting the system to a multi-point sensing device, however the technology of FBGs inscription limits the distance between the elements of the array to roughly 1 cm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'utilisation de matrices de FBG peut améliorer la situation en promouvant le système à un dispositif de détection multipoint, cependant la technologie d'inscription de FBG limite la distance entre les éléments de la matrice à environ 1 cm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="231">
+            <prop type="paragraph">53</prop>
+            <tuv xml:lang="EN">
+                <seg>For some applications it does not represent a problem, in a way that the limited number of sensing points or the distance center-to-center between the sensing points can be overcome by a careful analysis of the output data, as it can be in the case of a catheter for colon endoscopy whose bending can be reconstructed with a certain amount of precision by using a set of FBG arrays [Waltermann etal. 2014].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour certaines applications, cela ne pose pas de problème, dans la mesure où le nombre limité de points de détection ou la distance centre à centre entre les points de détection peuvent être surmontés par une analyse minutieuse des données de sortie, comme dans le cas d'un cathéter pour endoscopie du côlon dont la courbure peut être reconstruite avec une certaine précision en utilisant un ensemble de réseaux FBG [Waltermann etal. 2014].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="232">
+            <prop type="paragraph">53</prop>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, other applications can be significantly improved by the use of sub-centimeter distributed fiber sensing.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autre part, d'autres applications peuvent être considérablement améliorées par l'utilisation de la détection distribuée inférieure au centimètre par fibre optique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="233">
+            <prop type="paragraph">53</prop>
+            <tuv xml:lang="EN">
+                <seg>An interesting case is represented by the identification of the achievement of epidural space during the procedure of epidural anesthesia.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un cas intéressant est représenté par l'identification des limites de l'espace péridural lors de la procédure d'anesthésie péridurale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="234">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>Epidural anesthesia is a largely used pain-relief method, whose main use is delivering anesthetic to pregnant women during labour [Eltzschig etal. 2003].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'anesthésie péridurale est une méthode de soulagement de la douleur très répandue, dont la principale utilisation est d'administrer un anesthésique aux femmes enceintes pendant le travail [Eltzschig etal. 2003].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="235">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>The procedure consists in reaching the epidural space, a small space of 2–6cm located in spinal cord between ligamentum flavum and dura mater.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La procédure consiste à atteindre l'espace péridural, un petit espace de 2–6cm situé dans la moelle épinière entre le ligamentum flavum et la dure-mère.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="236">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>The success of this method of anesthesia depends on the correct identification of the epidural space, which can be a difficult target to reach.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le succès de cette méthode d'anesthésie dépend de l'identification correcte de l'espace péridural, qui peut être une cible difficile à atteindre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="237">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>Even if some manual methodologies have been developed in medical practice for improving the procedure of epidural anesthesia [Hoffmann etal. 1999], the success of the operation results in a certain percentage of failure, which can be quantified to be around 10% [Hermanides etal. 2012].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que certaines méthodologies manuelles ont été développées dans la pratique médicale pour améliorer la procédure d'anesthésie péridurale [Hoffmann etal. 1999], le succès de l'opération se traduit par un certain pourcentage d'échec, qui peut être quantifié à environ 10% [Hermanides etal. 2012].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="238">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>To improve the success of achieving epidural space and to assist the clinicians during the procedure, different quantitative technological methodologies and tools have been proposed, some of them making use of fiber optics sensing technology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour améliorer le succès de l'identification de l'espace péridural et pour aider les cliniciens pendant la procédure, différentes méthodologies et outils technologiques quantitatifs ont été proposés, dont certains font appel à la technologie de détection par fibre optique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="239">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>An FBG was inserted inside the epidural needle nearby the tip in order to detect the pressure variation that occurred during the penetration of the needle into the spine tissue by Carotenuto etal. [2017].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un FBG a été inséré à l'intérieur de l'aiguille péridurale près de la pointe afin de détecter la variation de pression qui se produit lors de la pénétration de l'aiguille dans le tissu de la colonne vertébrale par Carotenuto etal. [2017].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="240">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>A similar approach has been studied by equipping a needle for lumbar punctures in order to detect the force occurring on the device [Ambastha etal. 2016].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une approche similaire a été étudiée en équipant une aiguille utilisée pour les ponctions lombaires afin de détecter la force exercée sur le dispositif [Ambastha etal. 2016].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="241">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>Both these solutions rely on the use of a single point of sensing since the physical property to detect is limited to the pressure/force occurring on the tip of the device.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces deux solutions reposent sur l'utilisation d'un seul point de détection puisque la propriété physique à détecter est limitée à la pression/force exercée sur la pointe du dispositif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="242">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>Even if the scientific result is valid, a larger amount of sensing data can be retrieved by equipping the epidural needle with an optical fiber sensor and by using a distributed approach.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Même si le résultat scientifique est valide, une plus grande quantité de données de détection peut être récupérée en équipant l'aiguille péridurale d'un capteur à fibre optique et en utilisant une approche distribuée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="243">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>Based on this idea, Beisenova etal. [2018] have glued an SMF-28 fiber longitudinally along an epidural needle and measured the distributed strain occurring during needle penetration into a custom-made phantom.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur la base de cette idée, Beisenova etal. [2018] ont collé de manière longitudinale une fibre SMF-28 le long d'une aiguille péridurale et ont mesuré la déformation distribuée se produisant lors de la pénétration de l'aiguille dans un fantôme fait sur mesure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="244">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>The distributed stain measurement has been obtained by using a Luna OBR interrogator.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La mesure de la déformation distribuée obtenue à l'aide d'un interrogateur Luna OBR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="245">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>The typical strain map is shown in Figure9.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La carte de déformation typique est illustrée sur la figure9.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="246">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>In the figure it is possible to distinguish the change of strain associated with the passage in different layers of the phantom, representing the anatomy of the spine.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur la figure, il est possible de distinguer le changement de contrainte associé au passage dans les différentes couches du fantôme, représentant l'anatomie de la colonne vertébrale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="247">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>The fact that the entire strain measurement along the needle is detected permits, in principle, to have a wider collection of information.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le fait que la totalité de la mesure de la déformation le long de l'aiguille soit détectée permet, en principe, d'obtenir une plus grande quantité d'informations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="248">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>Therefore a more precise behavior of the needle can be reconstructed including: rotation, misalignment, and displacement.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, un comportement plus précis de l'aiguille peut être reconstruit, y compris: la rotation, le désalignement et le déplacement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="249">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="EN">
+                <seg>Moreover, this approach introduces a more comprehensive perspective for distributed stain measurement, which involves the reconstruction of the 3D shape sensing of the medical device, for tracing the direction of the needle during the insertion.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, cette approche introduit une perspective plus complète de mesure distribuée de la déformation, qui implique la reconstruction 3D des formes détectées par le dispositif médical, pour suivre la direction de l'aiguille lors de l'insertion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="250">
+            <prop type="paragraph">55</prop>
+            <tuv xml:lang="EN">
+                <seg>5.2. 3D shape sensing for medical application</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5.2. Détection des formes 3D pour application médicale</seg>
+            </tuv>
+        </tu>
+        <tu tuid="251">
+            <prop type="paragraph">56</prop>
+            <tuv xml:lang="EN">
+                <seg>The impact of shape sensing, for both industrial and medical applications, has significantly triggered the interest of the scientific community in the last decade [Waltermann etal. 2015].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'impact de la détection des formes, pour les applications industrielles et médicales, a suscité un intérêt considérable de la part de la communauté scientifique au cours de la dernière décennie [Waltermann etal. 2015].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="252">
+            <prop type="paragraph">56</prop>
+            <tuv xml:lang="EN">
+                <seg>There is no doubt that shape sensors based on fiber optics technology, mainly in the context of precision bio-medical applications, present advantages with respect to shape sensors based on electronic technology [Amanzadeh etal. 2018].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il ne fait aucun doute que les capteurs de forme basés sur la technologie des fibres optiques, principalement dans le contexte des applications biomédicales de précision, présentent des avantages par rapport aux capteurs de forme basés sur la technologie électronique [Amanzadeh etal. 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="253">
+            <prop type="paragraph">56</prop>
+            <tuv xml:lang="EN">
+                <seg>The small size of sensors based on fiber optics technology is intrinsically associated with the possibility of having both multi-point or distributed sensing configuration; the first uses the FBGs technology, the second exploits the natural back-scattering, occurring in the fiber, and the OFDR detection strategy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La petite taille des capteurs basés sur la technologie de la fibre optique est intrinsèquement associée à la possibilité d'avoir à la fois une configuration de détection multipoint ou distribuée; la première utilise la technologie FBG, la seconde exploite la rétrodiffusion naturelle, se produisant dans la fibre, et la stratégie de détection OFDR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="254">
+            <prop type="paragraph">57</prop>
+            <tuv xml:lang="EN">
+                <seg>The problem of shape sensing, achieved by using fiber technology, can be translated to the problem of detecting the fiber bending curvature and direction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le problème de la détection des formes, obtenu en utilisant la technologie des fibres, peut être traduit par le problème de la détection de la courbure et de la direction de courbure de la fibre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="255">
+            <prop type="paragraph">57</prop>
+            <tuv xml:lang="EN">
+                <seg>In order to measure the bending, there are two different approaches proposed in literature: the first is measuring the change of optical intensity in a multi-core fiber, the second is to detect the strain induced by the fiber bending.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour mesurer la courbure, deux approches différentes sont proposées dans la littérature: la première consiste à mesurer le changement d'intensité optique dans une fibre multicœurs, la seconde consiste à détecter la déformation induite par la courbure de la fibre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="256">
+            <prop type="paragraph">57</prop>
+            <tuv xml:lang="EN">
+                <seg>The last detecting strategy has become predominant, mainly because of the maturity of the FBG technology, that offers a consistent and reliable sensing platform.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La dernière stratégie de détection est devenue prédominante, principalement en raison de la maturité de la technologie FBG, qui offre une plate-forme de détection cohérente et fiable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="257">
+            <prop type="paragraph">57</prop>
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, it is well known that a FBG offers a single point measurement, so that to target a complete shape sensing we need to equip the device with multiple fibers with inscribed arrays of FBGs [Roesthuis etal. 2014].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, il est bien connu qu'un FBG offre une mesure en un seul point, de sorte que pour cibler une détection de forme complète, nous devons équiper le dispositif de multiples fibres sur lesquelles sont inscrit des réseaux de FBG [Roesthuis etal. 2014].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="258">
+            <prop type="paragraph">57</prop>
+            <tuv xml:lang="EN">
+                <seg>Another possibility relies on the use of multi-core fiber provided with inscribed FBGs [Flockhart etal. 2003].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une autre possibilité repose sur l'utilisation de fibres multicœurs munies de FBG inscrits [Flockhart etal. 2003].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="259">
+            <prop type="paragraph">57</prop>
+            <tuv xml:lang="EN">
+                <seg>The geometrical arrangement of the fibers, used to equip the device, is strictly dependent on the geometry of the object whose shape is to be detected.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La disposition géométrique des fibres, utilisées pour équiper le dispositif, dépend strictement de la géométrie de l'objet dont on veut détecter la forme.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="260">
+            <prop type="paragraph">57</prop>
+            <tuv xml:lang="EN">
+                <seg>In case of object with beam shape, which is a common geometry for medical devices like catheters and needles, a full 3D shape measurement can be achieved by using three fibers (or a fiber with three cores) arrange in a triangular shape [Waltermann etal. 2014].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas d'un objet en forme de tige, qui est une géométrie courante pour les dispositifs médicaux tels que les cathéters et les aiguilles, une mesure de la forme complète en 3D peut être réalisée en utilisant trois fibres optiques (ou une fibre à trois cœurs) disposées en forme de triangle [Waltermann etal. 2014].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="261">
+            <prop type="paragraph">57</prop>
+            <tuv xml:lang="EN">
+                <seg>By twisting the fibers it is also possible to detect the twist of the beam [Askins etal. 2008], while by adding a fourth fiber it is possible to compensate for the temperature [Beisenova etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En tordant les fibres optiques, il est également possible de détecter la torsion de l'aiguille [Askins etal. 2008], alors qu'en ajoutant une quatrième fibre optique il est possible de compenser la température [Beisenova etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="262">
+            <prop type="paragraph">57</prop>
+            <tuv xml:lang="EN">
+                <seg>Fibers presenting multiple cores, with a number larger than four, can be used to implement advanced shape reconstruction algorithms in order to improve the precision [Floris etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des fibres présentant de multiples cœurs, dont le nombre est supérieur à quatre, peuvent être utilisées pour exécuter des algorithmes avancés de reconstruction de forme afin d'améliorer la précision [Floris etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="263">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="EN">
+                <seg>As mentioned before, the use of multi-point fiber sensors can be a limitation in the case of precise and critical bio-medical applications.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme mentionné précédemment, l'utilisation de capteurs à fibres optiques multipoints peut montrer ses limites dans le cas d'applications biomédicales précises et critiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="264">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="EN">
+                <seg>In this case, a larger number of sensing points, located on the longitudinal direction of the device is required.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans ce cas, un plus grand nombre de points de détection, situés dans le sens longitudinale du dispositif est nécessaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="265">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="EN">
+                <seg>Distributed strain sensing is the solution for boosting the accuracy of shape sensors [Bao and Chen 2012].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La détection de contrainte distribuée est la solution pour augmenter la précision des capteurs de forme [Bao et Chen 2012].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="266">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="EN">
+                <seg>However to achieve shape sensing of a medical tool, like a needle or a catheter, it is necessary to supply the tool with a number of optical fibers, three or four according to the standard configurations proposed in literature.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, pour réaliser la détection des formes sur un outil médical, tel qu'une aiguille ou un cathéter, il est nécessaire de fournir à l'outil un certain nombre de fibres optiques, trois ou quatre selon les configurations standard proposées dans la littérature.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="267">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="EN">
+                <seg>This, in principle, represents a problem since detection systems like OBR can be fed with only one fiber sensor as input.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela représente en principe un problème puisque les systèmes de détection tel que l'OBR ne peuvent être alimentés qu'avec les données d'un seul capteur à fibre optique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="268">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="EN">
+                <seg>A parallel of optical fiber, used to feed the OBR, will result in an incoherent overlap of the back-scattering coming from each fiber, making it impossible to detect the strain and its spatial location.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des fibres optiques parallèles, utilisées pour alimenter l'OBR, entraîneront un chevauchement incohérent de la rétrodiffusion provenant de chaque fibre, rendant impossible la détection de la déformation et de son emplacement dans l'espace.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="269">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="EN">
+                <seg>Beisenova etal. solved this, apparently tough, issue by using a nanoparticle-doped high scattering fiber with an operating protocol called SLMux [Beisenova etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Beisenova etal. ont résolu ce problème, apparemment épineux, en utilisant une fibre optique à haute diffusion dopée aux nanoparticules avec un protocole opératoire appelé SLMux [Beisenova etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="270">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="EN">
+                <seg>The high back-scattering is generated by the presence of MgO-based nanoparticles located in the fiber core [Blanc etal. 2011].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La forte rétrodiffusion est générée par la présence de nanoparticules à base de MgO situées dans le cœur de la fibre [Blanc etal. 2011].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="271">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="EN">
+                <seg>Exploiting the high scattering, a parallel of fiber can be created, so that the high scattering fiber overlaps only with low scattering SMF pigtails.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En exploitant la forte diffusion, il est possible de disposer des fibres optiques parallèles, de sorte que la fibre à forte diffusion ne se chevauche qu'avec des pigtails SMF à faible diffusion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="272">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="EN">
+                <seg>Because the scattering level of MgO-based nanoparticle fiber is 30–40dB higher that the normal fiber scattering, the SMF-28 scattering can be treated as noise.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Etant donné que le niveau de diffusion de la fibre à nanoparticules à base de MgO est supérieur de 30 à 40dB à la diffusion normale de la fibre, la diffusion SMF-28 peut être traitée comme du bruit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="273">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="EN">
+                <seg>Beisenova etal. exploited the new SLMux capability for demonstrating 3D shape sensing of an epidural needle [Beisenova etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Beisenova etal. ont exploité la nouvelle capacité SLMux pour démontrer la détection de forme 3D d'une aiguille péridurale [Beisenova etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="274">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="EN">
+                <seg>As shown in Figure10(a), four cuts of nanoparticle-doped fibers have been glued longitudinally on an epidural needle, connected to the OBR by the SLMux configuration.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme le montre la figure10(a), quatre segments de fibres optiques dopées aux nanoparticules ont été collées longitudinalement sur une aiguille péridurale, reliée à l'OBR par la configuration SLMux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="275">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="EN">
+                <seg>The fibers were organized in a 90°configuration, so that each couple of opposite fibers measures the strain along one of the coordinate axis, as depicted in Figure10(b).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les fibres optiques ont été agencées en angle droit autour de l'aiguille, de sorte que chaque couple de fibres opposées mesure la contrainte le long de l'un des axes de coordonnées, comme le montre la figure10(b).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="276">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="EN">
+                <seg>Counting two fibers for each axis permits improving the precision of the strain measurement.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Compter deux fibres pour chaque axe permet d'améliorer la précision de la mesure de la déformation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="277">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="EN">
+                <seg>Moreover, since the geometrical problem of 3D shape sensing requires three fibers to be fully determined, the presence of four fibers can be used to discriminate the offset given by the presence of temperature, which affects uniformly all the four fibers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, étant donné que la détection de forme 3D nécessite trois fibres optiques pour être entièrement déterminé, la présence d'une quatrième fibre optique permet de discriminer le décalage provoqué par l'effet uniforme de la température sur les quatre fibres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="278">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="EN">
+                <seg>The strain on the fiber sensors has been detected with a resolution of 2 mm by the OBR.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La déformation sur les capteurs à fibres optiques a été détectée avec une résolution de 2 mm par l'OBR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="279">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="EN">
+                <seg>The strain information has been converted into bending data by a simple algorithm.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les informations de déformation ont été converties en données de courbure par un algorithme simple.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="280">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="EN">
+                <seg>Several insertions into a custom-made phantom have been performed to validate the 3D shape sensing model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs insertions dans un fantôme fait sur mesure ont été effectuées pour valider le modèle de détection de forme 3D.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="281">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="EN">
+                <seg>An example of 3D reconstruction is shown in Figure10(c,d).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un exemple de reconstruction 3D est présenté sur la figure10(c,d).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="282">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="EN">
+                <seg>As it is possible to notice, the system is able to detect minimal bending angle, permitting an ultra-precise shape reconstruction, impossible for FBG-based systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme il est possible de le remarquer, le système est capable de détecter un angle de courbure minimal, permettant une reconstruction de forme ultra-précise, impossible pour les systèmes basés sur les FBG.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="283">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="EN">
+                <seg>This new distributed strain sensing paradigm can potentially open new frontiers in critical bio-medical applications like ophthalmic surgery.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce nouveau paradigme de détection de déformation distribuée peut potentiellement ouvrir de nouvelles frontières dans des applications biomédicales critiques telles que la chirurgie ophtalmique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="284">
+            <prop type="paragraph">60</prop>
+            <tuv xml:lang="EN">
+                <seg>6. Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6. Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="285">
+            <prop type="paragraph">61</prop>
+            <tuv xml:lang="EN">
+                <seg>Thanks to its characteristics (small size, immune to electromagnetic interference, passive, resistant to harsh environment, etc.), optical fibers have become in recent decades a technology of choice for making sensors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Grâce à ses caractéristiques (petite taille, insensible aux interférences électromagnétiques, passive, résistantes aux environnements difficiles, etc.), la fibre optique est devenue au cours des dernières décennies une technologie de choix pour la fabrication de capteurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="286">
+            <prop type="paragraph">61</prop>
+            <tuv xml:lang="EN">
+                <seg>In addition, its ability to be sensitive over lengths ranging from cm to more than 100km makes it possible to produce distributed sensors for fields as diverse as geology or medicine.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, sa capacité à être sensible sur des longueurs allant du centimètre à plus de 100km permet de produire des capteurs distribués pour des domaines aussi divers que la géologie ou la médecine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="287">
+            <prop type="paragraph">62</prop>
+            <tuv xml:lang="EN">
+                <seg>In the context of geology, detection mainly exploits Brillouin scattering to detect strain and Raman scattering for temperature measurements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le contexte de la géologie, la détection exploite principalement la diffusion Brillouin pour détecter la déformation et la diffusion Raman pour les mesures de température.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="288">
+            <prop type="paragraph">62</prop>
+            <tuv xml:lang="EN">
+                <seg>To monitor geomorphic processes such as landslides, DFOS are embedded in shallow trenches or simply anchored to the ground.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour surveiller les processus géomorphologiques tels que les glissements de terrain, les DFOS sont enfouis dans des tranchées peu profondes ou simplement ancrés au sol.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="289">
+            <prop type="paragraph">62</prop>
+            <tuv xml:lang="EN">
+                <seg>A detailed map of the strain field in the monitored area can be obtained thanks to the ability of the fibers to be arranged in a square grid.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une carte détaillée du champ de déformation dans la zone surveillée peut être obtenue grâce à la capacité des fibres optiques à être disposées dans une grille carrée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="290">
+            <prop type="paragraph">62</prop>
+            <tuv xml:lang="EN">
+                <seg>The vertical strain profile can be detected by installing the DFOS in a borehole.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le profil de déformation verticale peut être détecté en installant le DFOS dans un trou de forage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="291">
+            <prop type="paragraph">62</prop>
+            <tuv xml:lang="EN">
+                <seg>Such DFOS are also of interest to monitor the health condition of river embankments and soil anchors.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces DFOS présentent également un intérêt pour surveiller l'état des berges et des ancrages au sol.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="292">
+            <prop type="paragraph">62</prop>
+            <tuv xml:lang="EN">
+                <seg>Coupled to a Raman-based technique, distributed measurement of temperature can be performed to detect early filtration path.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Couplée à une technique basée sur la diffusion Raman, la mesure distribuée de la température peut être effectuée pour détecter un flux de filtration précoce.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="293">
+            <prop type="paragraph">62</prop>
+            <tuv xml:lang="EN">
+                <seg>Based on the coherent-detection of the Rayleigh backscattering, the distributed acoustic sensing is an additional technology to measure the acoustic or vibration field.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Basé sur la détection cohérente de la rétrodiffusion Rayleigh, la détection acoustique distribuée est une technologie supplémentaire pour mesurer le champ acoustique ou vibratoire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="294">
+            <prop type="paragraph">62</prop>
+            <tuv xml:lang="EN">
+                <seg>Long-range distributed earthquake seismometers and landslide monitors are based on this technology.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les sismomètres sismiques distribués à longue portée et les moniteurs de glissement de terrain sont basés sur cette technologie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="295">
+            <prop type="paragraph">63</prop>
+            <tuv xml:lang="EN">
+                <seg>For the applications relying on short-range DFOS, strain and temperature detection is mainly based on FBG technology and Rayleigh backscattered light.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les applications reposant sur les DFOS à courte portée, la détection de la déformation et de la température est principalement basée sur la technologie FBG et la rétrodiffusion Rayleigh.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="296">
+            <prop type="paragraph">63</prop>
+            <tuv xml:lang="EN">
+                <seg>Due to the minimally invasive size and its biocompatibility, short-range DFOS are of interest in bio-medical applications.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En raison de sa petite taille (donc de son invasivité minimale) et de sa biocompatibilité, le DFOS à courte portée présente un intérêt pour les applications biomédicales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="297">
+            <prop type="paragraph">63</prop>
+            <tuv xml:lang="EN">
+                <seg>For instance, fibers glued around a needle allow monitoring of strain to reconstruct its shape during the insertion.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, les fibres optiques collées autour d'une aiguille permettent de surveiller la déformation pour reconstituer sa forme lors de l'insertion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="298">
+            <prop type="paragraph">63</prop>
+            <tuv xml:lang="EN">
+                <seg>Such DFOS can be based on multi-core fiber or FBGs photo-inscribed in fiber core.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce type de DFOS peut être basé sur une fibre optique multicœurs ou sur des FBG photo-inscrits dans le cœur de la fibre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="299">
+            <prop type="paragraph">63</prop>
+            <tuv xml:lang="EN">
+                <seg>Recently, the use of nanoparticle-doped high scattering fibers promoted a new protocol (SLMux) to measure simultaneously information from several fibers with a large number of sensing points.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Récemment, l'utilisation de fibres optiques à forte diffusion dopées aux nanoparticules a favorisé l'émergence un nouveau protocole (SLMux) pour mesurer simultanément les informations provenant de plusieurs fibres optiques avec un grand nombre de points de détection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="300">
+            <prop type="paragraph">64</prop>
+            <tuv xml:lang="EN">
+                <seg>DFOSs have found a place in modern science and technology showing great potential in long-range applications, particularly in the field of geophysics.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les DFOS ont trouvé une place dans la science et la technologie modernes, montrant un grand potentiel dans les applications à longue portée, en particulier dans le domaine de la géophysique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="301">
+            <prop type="paragraph">64</prop>
+            <tuv xml:lang="EN">
+                <seg>The applications for short distance are in niche sectors and are emerging in the last few years.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les applications à courte distance, apparues ces dernières années, se situent dans des secteurs de niche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="302">
+            <prop type="paragraph">64</prop>
+            <tuv xml:lang="EN">
+                <seg>The new distributed strain sensing paradgim (SLMux) can potentially open new frontiers in critical bio-medical applications.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le nouveau paradigme de détection distribuée des déformations (SLMux) peut potentiellement ouvrir de nouvelles frontières dans des applications biomédicales critiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="303">
+            <prop type="paragraph">65</prop>
+            <tuv xml:lang="EN">
+                <seg>Conflicts of interest</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Conflits d’intérêts</seg>
+            </tuv>
+        </tu>
+        <tu tuid="304">
+            <prop type="paragraph">66</prop>
+            <tuv xml:lang="EN">
+                <seg>The authors declare no competing financial interest.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les auteurs ne déclarent aucun intérêt financier concurrent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="305">
+            <prop type="paragraph">67</prop>
+            <tuv xml:lang="EN">
+                <seg>Dedication</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dédicace</seg>
+            </tuv>
+        </tu>
+        <tu tuid="306">
+            <prop type="paragraph">68</prop>
+            <tuv xml:lang="EN">
+                <seg>The manuscript was written through contributions of all authors. All authors have given approval to the final version of the manuscript.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le manuscrit a été rédigé grâce aux contributions de tous les auteurs. Tous les auteurs ont donné leur accord à la version finale du manuscrit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="307">
+            <prop type="paragraph">69</prop>
+            <tuv xml:lang="EN">
+                <seg>Acknowledgements</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Remerciements</seg>
+            </tuv>
+        </tu>
+        <tu tuid="308">
+            <prop type="paragraph">70</prop>
+            <tuv xml:lang="EN">
+                <seg>The authors thank Martiane Cabie (CP2M, Marseille, France) for the SEM images.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les auteurs remercient Martiane Cabie (CP2M, Marseille, France) pour les images MEB.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="309">
+            <prop type="paragraph">70</prop>
+            <tuv xml:lang="EN">
+                <seg>This work was partly funded by ANR Project NanoSlim (ANR-17-CE08-0002), and by Nazarbayev University, under grants EPICGuide (code: 240919FD3908) and SMARTER (code: 091019CRP2117).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce travail a été en partie financé par le projet ANR NanoSlim (ANR-17-CE08-0002), et par l'Université Nazarbayev, dans le cadre de subventions EPICGuide (code: 240919FD3908) et SMARTER (code: 091019CRP2117).</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

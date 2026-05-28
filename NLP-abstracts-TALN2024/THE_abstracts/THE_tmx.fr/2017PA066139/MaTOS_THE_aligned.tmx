@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017PA066139. segId begin by 1, tuid = segId</note>
+        <docid>2017PA066139</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le laboratoire i3 et le laboratoire LGIPH, utilisent des approches à haut débit pour l’étude du système immunitaire et ces disfonctionnements.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The i3 lab and the LGIPH, applies these approaches in various experimental setups.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Des limites ont été observées quant à l’utilisation des approches classiques pour l’annotation des signatures d’expression des gènes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, limitations have been observed when using conventional approaches for annotating gene expression signatures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L’objectif principal a été de développer une approche d’annotation pour répondre à ce besoin.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main objective of this thesis was to develop an alternative annotation approach to overcome this problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L’approche que nous avons développée est une approche basée sur la contextualisation des gènes et de leurs produits puis sur la modélisation des voies biologiques pour la production de bases de connaissances pour l’étude de l’expression des gènes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The approach we have developed is based on the contextualization of genes and their products, and then biological pathways modeling to produce a knowledge base for the study of gene expression.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous définissons ici un contexte d’expression des gènes comme suit : population cellulaire+compartiment anatomique+état pathologique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We define a gene expression context as follows: cell population+ anatomical compartment+ pathological condition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons ici que notre package a des performances meilleures que un outil de référence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show here that it ensures better performance for text annotation the reference tool.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Pour la modélisation des voies biologiques nous avons développé en collaboration avec le LIPAH une méthode de modélisation basée sur un algorithme génétique qui permet de combiner les résultats de mesure de la proximité sémantique sur la base des annotations des gènes et les données d’interactions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To model the biological pathways we have developed, in collaboration with the LIPAH lab a modeling method based on a genetic algorithm that allows combining the results semantics proximity using the Biological Process ontology and the interactions data from db-string.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

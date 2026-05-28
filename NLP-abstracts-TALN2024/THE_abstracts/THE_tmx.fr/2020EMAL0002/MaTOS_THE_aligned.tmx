@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020EMAL0002. segId begin by 1, tuid = segId</note>
+        <docid>2020EMAL0002</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Une jurisprudence est un corpus de décisions judiciaires représentant la manière dont sont interprétées les lois pour résoudre un contentieux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A case law is a corpus of judicial decisions representing the way in which laws are interpreted to resolve a dispute.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Elle est indispensable pour les juristes qui l'analysent pour comprendre et anticiper la prise de décision des juges.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is essential for lawyers who analyze it to understand and anticipate the decision-making of judges.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Son analyse exhaustive est difficile manuellement du fait de son immense volume et de la nature non-structurée des documents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Its exhaustive analysis is difficult manually because of its immense volume and the unstructured nature of the documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L'estimation du risque judiciaire par des particuliers est ainsi impossible car ils sont en outre confrontés à la complexité du système et du langage judiciaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The estimation of the judicial risk by individuals is thus impossible because they are also confronted with the complexity of the judicial system and language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>L'automatisation de l'analyse des décisions permet de retrouver exhaustivement des connaissances pertinentes pour structurer la jurisprudence à des fins d'analyses descriptives et prédictives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The automation of decision analysis enable an exhaustive extraction of relevant knowledge for structuring case law for descriptive and predictive analyses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Afin de rendre la compréhension d'une jurisprudence exhaustive et plus accessible, cette thèse aborde l'automatisation de tâches importantes pour l'analyse métier des décisions judiciaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to make the comprehension of a case law exhaustive and more accessible, this thesis deals with the automation of some important tasks for the expert analysis of court decisions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En premier, est étudiée l'application de modèles probabilistes d'étiquetage de séquences pour la détection des sections qui structurent les décisions de justice, d'entités juridiques, et de citations de lois.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, we study the application of probabilistic sequence labeling models for the detection of the sections that structure court decisions, legal entities, and legal rules citations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, l'identification des demandes des parties est étudiée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, the identification of the demands of the parties is studied.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>L'approche proposée pour la reconnaissance des quanta demandés et accordés exploite la proximité entre les sommes d'argent et des termes-clés appris automatiquement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed approach for the recognition of the requested and granted quanta exploits the proximity between sums of money and automatically learned key-phrases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons par ailleurs que le sens du résultat des juges est identifiable soit à partir de termes-clés prédéfinis soit par une classification des décisions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also show that the meaning of the judges'result is identifiable either from predefined keywords or by a classification of decisions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Enfin, pour une catégorie donnée de demandes, les situations ou circonstances factuelles où sont formulées ces demandes sont découvertes par regroupement non supervisé des décisions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, for a given category of demands, the situations or factual circumstances in which those demands are made, are discovered by clustering the decisions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>A cet effet, une méthode d'apprentissage d'une distance de similarité est proposée et comparée à des distances établies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For this purpose, a method of learning a similarity distance is proposed and compared with established distances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse discute des résultats expérimentaux obtenus sur des données réelles annotées manuellement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis discusses the experimental results obtained on manually annotated real data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Le mémoire propose pour finir une démonstration d'applications à l'analyse descriptive d'un grand corpus de décisions judiciaires françaises.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, the thesis proposes a demonstration of applications to the descriptive analysis of a large corpus of French court decisions.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018PESC1068. segId begin by 1, tuid = segId</note>
+        <docid>2018PESC1068</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Ces dernières années, le besoin de données géographiques de référence a significativement augmenté.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nowadays, the need for very up to date authoritative spatial data has significantly increased.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Pour y répondre, il est nécessaire de mettre jour continuellement les données de référence existantes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, to fulfill this need, a continuous update of authoritative spatial datasets is a necessity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cette tâche est coûteuse tant financièrement que techniquement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This task has become highly demanding in both its technical and financial aspects.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Pour ce qui concerne les réseaux routiers, trois types de voies sont particulièrement complexes à mettre à jour en continu : les chemins piétonniers, les chemins agricoles et les pistes cyclables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In terms of road network, there are three types of roads in particular which are particularly challenging for continuous update: footpath, tractor and bicycle road.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cette complexité est due à leur nature intermittente (elles disparaissent et réapparaissent régulièrement) et à l’hétérogénéité des terrains sur lesquels elles se situent (forêts, haute montagne, littoral, etc.).En parallèle, le volume de données GPS produites par crowdsourcing et disponibles librement augmente fortement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They are challenging due to their intermittent nature (e.g. they appear and disappear very often) and various landscapes (e.g. forest, high mountains, seashore, etc.).Simultaneously, GPS data voluntarily collected by the crowd is widely available in a large quantity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Le nombre de gens enregistrant leurs positions, notamment leurs traces GPS, est en augmentation, particulièrement dans le contexte d’activités sportives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The number of people recording GPS data, such as GPS traces, has been steadily increasing, especially during sport and spare time activities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Ces traces sont rendues accessibles sur les réseaux sociaux, les blogs ou les sites d’associations touristiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The traces are made openly available and popularized on social networks, blogs, sport and touristic associations'websites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cependant, leur usage actuel est limité à des mesures et analyses simples telles que la durée totale d’une trace, la vitesse ou l’élévation moyenne, etc.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, their current use is limited to very basic metric analysis like total time of a trace, average speed, average elevation, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Une attention particulière est portée aux voies existantes mais absentes du référentiel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Particular attention is paid on roads that exist in reality but are not represented in authoritative datasets (missing roads).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>L’approche proposée se compose de trois étapes :</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The approach we propose consists of three phases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>La première consiste à évaluer et augmenter la qualité des traces GPS acquises par la communauté.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first phase consists of evaluation and improvement of VGI traces quality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Cette qualité a été augmentée en filtrant (1) les points extrêmes à l’aide d’un approche d’apprentissage automatique et (2) les points GPS qui résultent d’une activité humaine secondaire (en dehors de l’itinéraire principal).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The quality of traces was improved by filtering outlying points (machine learning based approach) and points that are a result of secondary human behaviour (activities out of main itinerary).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Les points restants sont ensuite évalués en termes de précision planimétrique par classification automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Remained points are then evaluated in terms of their accuracy by classifying into low or high accurate (accuracy) points using rule based machine learning classification.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>La seconde étape permet de détecter de potentielles mises à jour.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second phase deals with detection of potential updates.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Pour cela, nous proposons une solution d’appariement par distance tampon croissante.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For that purpose, a growing buffer data matching solution is proposed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Cette distance est adaptée à la précision planimétrique des points GPS classifiés pour prendre en compte la forte hétérogénéité de la précision des traces GPS.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The size of buffers is adapted to the results of GPS point’s accuracy classification in order to handle the huge variations in VGI traces accuracy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Nous obtenons ainsi les parties des traces n’ayant pas été appariées au réseau de voies des données de référence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a result, parts of traces unmatched to authoritative road network are obtained and considered as candidates for missing roads.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Ces parties sont alors considérées comme de potentielles voies manquantes dans les données de référence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, in the third phase we propose a decision method where the “missing road” candidates should be accepted as updates or not.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Finalement nous proposons dans la troisième étape une méthode de décision multicritère visant à accepter ou rejeter ces mises à jour possibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This decision method was made in multi-criteria process where potential missing roads are qualified according to their degree of confidence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Les voies manquantes dans les données de références IGN BDTOPO</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Missing roads in IGN authoritative database BDTopo® were successfully detected and proposed as potential updates</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

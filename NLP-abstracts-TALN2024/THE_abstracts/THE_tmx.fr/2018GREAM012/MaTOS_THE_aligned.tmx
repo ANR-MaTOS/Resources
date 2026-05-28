@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018GREAM012. segId begin by 1, tuid = segId</note>
+        <docid>2018GREAM012</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse s'inscrit dans la problématique de l'extraction de sens à partir de textes et flux textuels, produits dans notre cas lors de processus collaboratifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis is part of the problematics of the extraction of meaning from texts and textual flows, produced in our case during collaborative processes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, nous nous intéressons aux courriels de travail et aux documents textuels objets de collaboration, avec une première application aux documents éducatifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More specifically, we are interested in work-related emails and collaborative textual documents, with a first application to educational documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La motivation de cet intérêt est d'aider les utilisateurs à accéder plus rapidement aux informations utiles ; nous cherchons donc à les repérer dans les textes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The motivation for this interest is to help users gain access to useful information more quickly; we hence seek to locate them in the texts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, nous nous intéressons aux tâches dans les courriels, et aux fragments de documents éducatifs qui concernent les thèmes de leurs intérêts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, we are interested in the tasks referred to in the emails, and to the fragments of educational documents which concern the themes of their interests.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Deux corpus, un de courriels et un de documents éducatifs, principalement en français, ont été constitués.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two corpora, one of e-mails and one of educational documents, mainly in French, have been created.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Cela était indispensable, car il n'y a pratiquement pas de travaux antérieurs sur ce type de données en français.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This was essential because there is virtually no previous work on this type of data in French.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Notre première contribution théorique est une modélisation générique de la structure de ces données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our first theoretical contribution is a generic modeling of the structure of these data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous l'utilisons pour spécifier le traitement formel des documents, prérequis au traitement sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We use it to specify the formal processing of documents, a prerequisite for semantic processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous démontrons la difficulté du problème de segmentation, normalisation et structuration de documents en différents formats source, et présentons l'outil SEGNORM, première contribution logicielle de cette thèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We demonstrate the difficulty of the problem of segmentation, standardization and structuring of documents in different source formats, and present the SEGNORM tool, the first software contribution of this thesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>SEGNORM segmente et normalise les documents (en texte brut ou balisé), récursivement et en unités de taille paramétrable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>SEGNORM segments and normalizes documents (in plain or tagged text), recursively and in units of configurable size.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Dans le cas des courriels, il segmente les messages contenant des messages cités en messages individuels, en conservant l'information du chaînage entre les fragments entremêlés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the case of emails, it segments the messages containing quotations of messages into individual messages, thereby keeping the information about the chaining between the intertwined fragments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Il analyse également les métadonnées des messages pour reconstruire les fils de discussions, et retrouve dans les citations les messages dont on ne possède pas le fichier source.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It also analyzes the metadata of the messages to reconstruct the threads of discussions, and retrieves in the quotations the messages of which one does not have the source file.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Nous abordons ensuite le traitement sémantique de ces documents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We then discuss the semantic processing of these documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une modélisation (ontologique) de la notion de tâche, puis décrivons l'annotation d'un corpus de plusieurs centaines de messages issus du contexte professionnel de VISEO et du GETALP.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose an (ontological) modeling of the notion of task, then describe the annotation of a corpus of several hundred messages originating from the professional context of VISEO and GETALP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons alors la deuxième contribution logicielle de cette thèse, un outil de repérage de tâches et d'extraction de leurs attributs (contraintes temporelles, assignataires, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We then present the second software contribution of this thesis: the tool for locating tasks and extracting their attributes (temporal constraints, assignees, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Cet outil, basé sur une combinaison d'une approche experte et d'apprentissage automatique, est évalué selon des critères classiques de précision, rappel et F-mesure, ainsi que selon la qualité d'usage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This tool, based on a combination of an expert approach and machine learning, is evaluated according to classic criteria of accuracy, recall and F-measure, as well as according to the quality of use.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous présentons nos travaux sur la plate-forme MACAU-CHAMILO, troisième contribution logicielle, qui aide à l'apprentissage par (1) structuration de documents pédagogiques selon deux ontologies (forme et contenu), (2) accès multilingue à du contenu initialement monolingue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we present our work on the MACAU-CHAMILO platform, third software contribution, which helps learning by (1) structuring of educational documents according to two ontologies (form and content), (2) multilingual access to content initially monolingual.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Il s'agit donc de nouveau de structuration selon les deux axes, forme et sens.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is therefore again about structuring along the two axes, form and meaning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>(1) L'ontologie des formes permet d'annoter les fragments des documents par des concepts comme théorème, preuve, exemple, par des niveaux de difficulté et d'abstraction, et par des relations comme élaboration_de, illustration_de.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>(1) The ontology of forms makes it possible to annotate the fragments of documents by concepts such as theorem, proof, example, by levels of difficulty and abstraction, and by relations such as elaboration_of, illustration_of…</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>L'ontologie de domaine modélise les objets formels de l'informatique, et plus précisément les notions de complexité calculatoire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The domain ontology models the formal objects of informatics, and more precisely the notions of computational complexity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="FR">
+                <seg>Cela permet de suggérer aux utilisateurs des fragments utiles pour la compréhension de notions d'informatique perçues comme abstraites ou difficiles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This makes it possible to suggest to the users fragments useful for understanding notions of informatics perceived as abstract or difficult.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="FR">
+                <seg>(2) L'aspect relatif à l'accès multilingue a été motivé par le constat que nos universités accueillent un grand nombre d'étudiants étrangers, qui ont souvent du mal à comprendre nos cours à cause de la barrière linguistique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>(2) The aspect related to multilingual access has been motivated by the observation that our universities welcome a large number of foreign students, who often have difficulty understanding our courses because of the language barrier.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="FR">
+                <seg>Nous avons proposé une approche pour multilingualiser du contenu pédagogique avec l'aide d'étudiants étrangers, par post-édition en ligne de pré-traductions automatiques, puis, si besoin, amélioration incrémentale de ces post-éditions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We proposed an approach to multilingualize educational content with the help of foreign students, by online post-editing of automatic pre-translations, and, if necessary, incremental improvement of these post-editions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="FR">
+                <seg>(Nos expériences ont montré que des versions multilingues de documents peuvent être produites rapidement et sans coût.)</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>(Our experiments have shown that multilingual versions of documents can be produced quickly and without cost.)</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <tuv xml:lang="FR">
+                <seg>Ce travail a abouti à un corpus de plus de 500 pages standard (250 mots/page) de contenu pédagogique post-édité vers le chinois.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This work resulted in a corpus of more than 500 standard pages (250 words/page) of post-edited educational content into Chinese.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

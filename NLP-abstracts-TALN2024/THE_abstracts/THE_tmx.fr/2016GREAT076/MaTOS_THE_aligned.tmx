@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016GREAT076. segId begin by 1, tuid = segId</note>
+        <docid>2016GREAT076</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre de la rééducation orthophonique des troubles de la parole associés à un mauvais positionnement de la langue, il peut être utile au patient et à l’orthophoniste de visualiser la position et les mouvements de cet articulateur naturellement très peu visible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the framework of speech therapy for articulatory troubles associated with tongue misplacement, providing a visual feedback might be very useful for both the therapist and the patient, as the tongue is not a naturally visible articulator.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>L’imagerie échographique peut pallier ce manque, comme en témoignent de nombreuses études de cas menées depuis plusieurs années dans les pays anglo-saxons.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the last years, ultrasound imaging has been successfully applied to speech therapy in English speaking countries, as reported in several case studies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Appuyés par de nombreux travaux sur les liens entre production et perception de la parole, ces études font l’hypothèse que ce retour articulatoire visuel faciliterait la rééducation du patient.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The assumption that visual articulatory biofeedback may facilitate the rehabilitation of the patient is supported by studies on the links between speech production and perception.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Lors des séances orthophoniques, le patient semble, en effet, mieux appréhender les déplacements de sa langue, malgré la difficulté d’interprétation sous-jacente de l’image échographique liée au bruit inhérent à l’image et à l’absence de vision des autres articulateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>During speech therapy sessions, the patient seems to better understand his/her tongue movements, despite the poor quality of the image due to inherent noise and the lack of information about other speech articulators.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous développons dans cette thèse le concept d’échographie linguale augmentée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We develop in this thesis the concept of augmented lingual ultrasound.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons deux approches afin d’améliorer l’image échographique brute, et présentons une première application clinique de ce dispositif.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose two approaches to improve the raw ultrasound image, and describe a first clinical application of this device.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>La première approche porte sur le suivi du contour de la langue sur des images échographiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first approach focuses on tongue tracking in ultrasound images.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une méthode basée sur une modélisation par apprentissage supervisé des relations entre l’intensité de l’ensemble des pixels de l’image et les coordonnées du contour de langue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a method based on supervised machine learning, where we model the relationship between the intensity of all the pixels of the image and the contour coordinates.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Une étape de réduction de la dimension des images et des contours par analyse en composantes principales est suivie d’une étape de modélisation par réseaux de neurones.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The size of the images and of the contours is reduced using a principal component analysis, and a neural network models their relationship.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous déclinons des implémentations mono-locuteur et multi-locuteur de cette approche dont les performances sont évaluées en fonction de la quantité de contours manuellement annotés (données d’apprentissage).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We developed speaker-dependent and speaker-independent implementations and evaluated the performances as a function of the amount of manually annotated contours used as training data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous obtenons pour des modèles mono-locuteur une erreur de 1,29 mm avec seulement 80 images, performance meilleure que celle de la méthode de référence EdgeTrak utilisant les contours actifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We obtained an error of 1.29 mm for the speaker-dependent model with only 80 annotated images, which is better than the performance of the EdgeTrak reference method based on active contours.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous construisons tout d’abord un modèle d’association entre les images échographiques et les paramètres de contrôle de la langue acquis sur ce locuteur de référence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, we build a mapping model between ultrasound images and tongue control parameters acquired on the reference speaker.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Nous adaptons ensuite ce modèle à de nouveaux locuteurs dits locuteurs source.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We then adapt this model to new speakers referred to as source speakers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Nous comparons cette approche avec une régression directe par GMR entre données du locuteur source et paramètre de contrôle de la tête parlante.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This approach is compared to a direct GMR regression between the source speaker data and the control parameters of the talking head.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons que l’approche par C-GMR réalise le meilleur compromis entre quantité de données d’adaptation d’une part, et qualité de la prédiction d’autre part.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that C-GMR approach achieves the best compromise between amount of adaptation data and prediction quality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous évaluons la capacité de généralisation de l’approche C-GMR et montrons que l’information a priori sur le locuteur de référence exploitée par ce modèle permet de généraliser à des configurations articulatoires du locuteur source non vues pendant la phase d’adaptation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also evaluate the generalization capability of the C-GMR approach and show that prior information of the reference speaker helps the model generalize to articulatory configurations of the source speaker unseen during the adaptation phase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous présentons les premiers résultats d’une application clinique de l’échographie augmentée à une population de patients ayant subi une ablation du plancher de la bouche ou d’une partie de la langue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we present preliminary results of a clinical application of augmented ultrasound imaging to a population of patients after partial glossectomy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Les premiers résultats montrent une amélioration des performances des patients, notamment sur le placement de la langue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first results show an improvement of the patients’ performance, especially for tongue placement.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2010ISAR0028. segId begin by 1, tuid = segId</note>
+        <docid>2010ISAR0028</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous proposons un processus d'adaptation thématique non supervisée qui vise à spécialiser le modèle de langue (ML) et le vocabulaire d'un système de reconnaissance de la parole (RAP) en fonction du thème de chaque document à transcrire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this work, we propose a new unsupervised process to adapt the language model (LM) and the vocabulary of an automatic speech recognition system to the topic of each spoken document to be transcribed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ce processus a comme singularité de ne nécessiter aucune connaissance a priori sur les éventuels thèmes rencontrés et d'intégrer des techniques de traitement automatique des langues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This process is particularly original since it firstly avoids the use of any a priori knowledge about potentially encountered topics and secondly integrates natural language processing techniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Il consiste à caractériser le thème d'un document audio par des mots-clés extraits automatiquement et à construire un corpus de pages Web du même thème.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to achieve these goals, we characterize the topic of a spoken document by automatically extracting keywords from a first-pass automatic transcription before building a topic-specific corpus of Web pages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous ré-estimons alors le ML en fonction d'une terminologie issue de ce corpus, puis intégrons au système de nouveaux mots propres au thème en assimilant ceux-ci à d'autres avec lesquels il partagent des relations paradigmatiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, the LM is re-estimated thanks to a terminology acquired from this corpus, and new topic-specific words are added to the vocabulary and integrated to the LM by relying on paradigmatic relations with in-vocabulary words.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nos expériences sur le corpus ESTER montrent que l'utilisation des ML et vocabulaire ainsi adaptés produit des améliorations du taux de reconnaissance d'un système de RAP.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Experiments done on French-speaking broadcast news show that using these topic-adapted vocabulary and LM lead to recognition accuracy improvements.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018EMAL0002. segId begin by 1, tuid = segId</note>
+        <docid>2018EMAL0002</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Face au danger de la désinformation et de la prolifération de fake news (fausses nouvelles) sur le Web, la notion de véracité des données constitue un enjeu crucial.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The notion of data veracity is increasingly getting attention due to the problem of misinformation and fake news.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte, il devient essentiel de développer des modèles qui évaluent de manière automatique la véracité des informations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With more and more published online information it is becoming essential to develop models that automatically evaluate information veracity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>De plus, la quantité d'informations disponibles sur le Web rend cette tâche quasiment impossible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, the amount of information that is available nowadays makes this task time-consuming.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous nous concentrons sur les modèles de découverte de la vérité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis we focus on Truth Discovery models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Ces approches analysent les assertions émises par différentes sources afin de déterminer celle qui est la plus fiable et digne de confiance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These approaches address the data veracity problem when conflicting values about the same properties of real-world entities are provided by multiple sources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, les modèles de la littérature sont des modèles non supervisés qui reposent sur un postulat : les informations exactes sont principalement fournies par des sources fiables et des sources fiables fournissent des informations exactes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More precisely, they are unsupervised models that are based on the rationale stating that true information is provided by reliable sources and reliable sources provide true information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Les approches existantes faisaient jusqu'ici abstraction de la connaissance a priori d'un domaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main contribution of this thesis consists in improving Truth Discovery models considering a priori knowledge expressed in ontologies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous insistons principalement sur deux approches : la prise en compte de la hiérarchisation des concepts de l'ontologie et l'identification de motifs dans les connaissances qui permet, en exploitant certaines règles d'association, de renforcer la confiance dans certaines assertions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First of all, we explore the semantic dependencies that may exist among different values, i.e. the ordering of values through certain conceptual relationships.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans le premier cas, deux valeurs différentes ne seront plus nécessairement considérées comme contradictoires ;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, two different values are not necessary conflicting.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>elles peuvent, en effet, représenter le même concept mais avec des niveaux de détail différents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They may represent the same concept, but with different levels of detail.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Pour intégrer cette composante dans les approches existantes, nous nous basons sur les modèles mathématiques associés aux ordres partiels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to integrate this kind of knowledge into existing approaches, we use the mathematical models of partial order.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Dans le second cas, nous considérons des modèles récurrents (modélisés en utilisant des règles d'association) qui peuvent être dérivés à partir des ontologies et de bases de connaissances existantes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, we consider recurrent patterns that can be derived from ontologies.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

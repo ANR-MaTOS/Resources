@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-s230006. segId begin by 1, tuid = segId</note>
+        <docid>s230006</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'apprentissage profond (deep learning) est une avancée majeure de l'intelligence artificielle de ces dernières années.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Deep learning is a major advance in Artificial Intelligence (A.I) in recent years.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>L'apprentissage profond s'est rapidement imposé comme un standard dans de plusieurs domaines en pulvérisant les records des précédentes méthodes de l'état de l'art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It has quickly established itself as a standard in many fields by beating other machine learning records in its primary domains of application: computer vision and natural language processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ses domaines de prédilection sont principalement l'analyse d'image et le traitement du langage naturel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Deep learning algorithms are promising in many other domains of science and especially in precision medicine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans ce projet, nous nous intéressons plus spécifiquement à la prédiction de phénotypes (diagnostique, pronostique, réponse à un traitement) à partir de données transcriptomiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we will focus on the prediction of phenotypes (diagnosis, prognosis, response to treatment) from gene expression profiles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La grande majorité des articles publiés a moins de deux ans et parmi eux, seulement une poignée s'intéresse à la prédiction de phénotypes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Most of these articles appeared in the past two years and only a small part deals with phenotype prediction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Alors que les réseaux de neurones profonds traitant des images ou du langage naturel sont construits à partir de plusieurs centaines de milliers ou millions d'exemples, les jeux de données transcriptomiques contiennent très peu de patients (&amp;lt;5000).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Contrary to images or natural language where several hundred thousand or million examples are available, GE sets contain very few patients (&amp;lt;5000).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>À cause de ce faible nombre d'exemples, l'apprentissage des réseaux de neurones profonds se heurte à des problèmes de sur-apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Due to this small number of samples, the model is overfitting.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous nous inspirerons des méthodes les plus performantes actuellement sur les images tel que les adversarial autoencoders, les ladder networks, ou les generative adversarial networks, et les adapterons au problème spécifique des données d'expression.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We will use the state-of-the-art methods on images such as adversarial autoencoders, ladder networks or generative adversarial networks and adapt them to the specific problem of expression data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Une autre solution serait de pouvoir d'intégrer des jeux de données issus de différentes plateformes de production de données transcriptomiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Another solution is to integrate datasets coming from different production platforms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Ce problème d'intégration n'a pour le moment pas de solutions satisfaisantes en raison des liens complexes entre les mesures des différentes plateformes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Until now, any satisfying solution has been found to resolve this problem because of the presence of complex links among the measures of the different platforms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Une mesure d'expression sur une plateforme A peut à la fois se repartir sur plusieurs expressions et se mélanger à d'autres expressions sur une plateforme B. Notre idée est de faire apprendre par un réseau de neurones la correspondance entre deux plateformes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, a GE measure from a platform A can be spread over several expressions and mixed with other expressions from a platform B. Our idea is to build a neural network able to learn the correspondence between two platforms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Pour cela, nous nous inspirerons des méthodes de transfert de domaine telles que CycleGAN.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To do this, we will use domain transfer methods such as CycleGAN.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Un autre défi majeur concerne l'interprétation des réseaux de neurones et de leurs prédictions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Another major challenge concerns the interpretation of neural networks and their predictions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>L'Union Européenne a adopté récemment un texte imposant aux utilisateurs d'algorithmes d'apprentissage automatique d'être capables d'expliquer les décisions d'un modèle prédictif.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The General Data Protection Regulation (GDPR), adopted recently by the European Union, imposes that the user of machine learning algorithms must be able to explain the decision of a given model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Il y a donc un réel besoin de rendre les réseaux de neurones plus interprétables et cela est particulièrement vrai dans le domaine médical pour deux raisons.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There is a real need to make neural networks more interpretable and this is particularly true in the medical field for two reasons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Premièrement, il est important de s'assurer que le réseau de neurones base ses prédictions sur une représentation fiable des patients et ne se concentre pas sur des artefacts non pertinents présents dans les données d'apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, it is important to ensure that the neural network bases its predictions on a reliable representation of the data and does not focus on irrelevant artifacts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Sans explications des prédictions, les médecins ne peuvent pas faire confiance à un réseau de neurones quelles que soient ses performances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Without explanation, doctors cannot trust the decision of a neural network regardless of its performances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>L'interprétation des réseaux de neurones se fera avec des méthodes de perturbation et de rétro-propagation du signal de sortie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The interpretation of neural networks will be carried out using perturbation and back-propagation of the output signal methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Dans ce projet, nous collaborons avec l'Institut de Cardiométabolisme et de Nutrition (ICAN) qui nous fournira le profil d'expression génétique de plusieurs milliers de patients atteint de maladies cadiométabolomiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we will collaborate with the Institute of Cardiometabolism and Nutrition (ICAN), which will provide us with the GE profile of patients suffering from cardiometabolic diseases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Ils nous donneront également accès aux données du projet européen Metacardis qui contient les données cliniques et d'expression de gènes de plus de 2000 patients.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They will also give us access to the data of the European Metacardis project, which contains clinical and GE data from more than 2000 patients.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="FR">
+                <seg>Résultat attendu: Nous proposerons de nouvelles approches d'apprentissage profond adaptées à la prédiction à partir de données transcriptomiques et pour l'interprétation biologique des réseaux de neurones.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Expected result: We will propose appropriate deep learning approaches for the prediction from GE data and the biological interpretation of neural networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="FR">
+                <seg>Nous mettrons également à disposition de la communauté les réseaux que nous aurons construits sur des grands jeux de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The networks that will be trained on large datasets will be available to the scientific community.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="FR">
+                <seg>Par « transfert learning », les chercheurs pourront utiliser nos réseaux sur des jeux de données plus petits et améliorer leurs résultats.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, by transfer learning, researchers will be able to use our networks on smaller datasets and improve their results.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="FR">
+                <seg>L'objectif est de fournir pour les données transcriptomiques un équivalent des réseaux VGG ou ResNet en analyse d'image.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The objective is to provide an equivalent of the VGG or ResNet for GE data.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

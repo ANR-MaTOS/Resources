@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2009METZ037S. segId begin by 1, tuid = segId</note>
+        <docid>2009METZ037S</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'objectif de cette thèse est de formaliser une méthodologie visant à valider l'architecture d'un système d'aide à l'installation d'outils d'assistance pour le pilotage d'un fauteuil électrique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The objective of this thesis is to formalize a methodology aiming to validate the architecture of system of assistive tools installation making for piloting of electric wheelchair.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous voulons redonner un début de mobilité suffisant à la personne embarquée, en utilisant des expériences de navigations dans des environnements virtuels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We want to give again a sufficient beginning of mobility to the onboard person, by using experiments of navigations in virtual environments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Pour cela il faut concevoir un système capable de trouver les améliorations pertinentes à apporter au fauteuil électrique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>So we have to conceive a system able to find the relevant improvements to bring to the electric wheelchair.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous avons élaboré une architecture basée sur des cycles "Expérience ? Analyse ? Modification du fauteuil roulant".</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We worked out an architecture based on cycles "Experiment ?Analyze and decision-making ? Modification of the wheelchair ".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cette architecture se décompose en trois modules : un simulateur, un évaluateur, un configurateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This architecture contains three modules: a simulator, an evaluator, a configurator.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ce travail s'inscrit dans le projet VAHM (développé au LASC) qui utilise des fauteuils électriques du commerce sur lesquels ont été ajoutés une série de capteurs et un calculateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This work is a part of the VAHM (developed in LASC) project using commercial electric wheelchairs enhanced by several sensors and a calculator.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Notre simulateur remplace la partie physique du VHAM.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our simulator replaces the physical part of VAHM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>A partir de l'analyse des données issues de l'étape d'expérience, nous avons calculé des critères représentatifs de comportements ou/et de situations particulières survenues lors de la navigation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>From the analysis of the data resulting from the experiments, we have calculated criteria representative of behaviours or/and particular situations which have occurred during navigation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous avons répertorié, en qualité de roboticiens, l'ensemble des situations problématiques selon différents aspects.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We indexed as robotics engineers, the whole of the problematic situations according to several aspects.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous avons identifié et caractérisé chaque aspect par un ensemble de critères.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have identified and characterized each aspect by a whole of criteria.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Le vecteur contenant les valeurs des critères constitue l'entrée d'un système d'aide à la décision qui indiquera en sortie la ou les fonctionnalités à installer pour améliorer la mobilité du patient en fauteuil électrique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The vector of criteria constitutes the input of a decision-making system which will indicate at exit the functionalities to be installed to improve the mobility of the patient in powered wheelchair.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>La base de connaissance du système d'aide à la décision s'appuie sur des réflexions, concernant les comportements et situations particulières qu'une personne handicapée va rencontrer pendant la navigation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The base of knowledge of the decision-making system is supported by reflections, concerning the behaviours and particular situations that a handicapped person will meet during navigation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>L'originalité de notre travail provient de l'application orientée handicap permettant d'évaluer et de mettre en évidence les difficultés d'un groupe de personnes très physiquement handicapées, ne pouvant pas se déplacer en fauteuil électrique dans des mondes réels, en utilisant des mises en situation dans des environnements virtuels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The originality of our work comes from the handicap directed application allowing to evaluate and to highlight the difficulties of a group of people with severe motor disabilities, not able to move in real worlds, by using settings in virtual environments situations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>L'architecture du système a permis de fournir des solutions d'assistance en passant par un système d'aide à la décision évolutif basé sur la logique floue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The architecture of the system let to provide solutions of assistance using an evolutionary decision-making system based on fuzzy logic.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

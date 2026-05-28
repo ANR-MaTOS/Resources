@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2008PA070095. segId begin by 1, tuid = segId</note>
+        <docid>2008PA070095</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le traitement des entités nommées fait aujourd'hui figure d'incontournable en Traitement Automatique des Langues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Introduced as part of the last Message Understanding Conferences dedicated to information extraction, Named Entity extraction is a well-studied task in Natural Language Processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Fort de ce succès, le traitement des entités nommées s'oriente désormais vers de nouvelles perspectives, avec la désambiguïsation et une annotation enrichie de ces unités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Following this success, named entity treatment is moving towards new research prospects with, among others, disambiguation,and fined-grained annotation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ces nouveaux défis rendent cependant d'autant plus cruciale la question du statut théorique des entités nommées, lequel n'a guère été discuté jusqu'à aujourd'hui.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, this new challenges make even more crucial the question of named entity definition, which was not much discussed until now.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Deux axes de recherche ont été investis durant ce travail de thèse avec, d'une part, la proposition d'une définition des entités nommées et, d'autre part, des méthodes de désambiguïsation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two main lines were explored during this PhD project: first we tried to propose a definition of named entities and then we experimented disambiguation methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>A la suite d'un état des lieux de la tâche de reconnaissance de ces unités, il fut nécessaire d'examiner, d'un point de vue méthodologique, comment aborder la question de la définition les entités nommées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>After a presentation and a state of the art of the named entity recognition task, we had to examine, from a methodological point of view, how to tackle the question of the definition of named entities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>La démarche adoptée invita à se tourner du côté de la linguistique (noms propres et descriptions définies) puis du côté du traitement automatique, ce parcours visant au final à proposer une définition tenant compte tant des aspects du langage que des exigences des systèmes informatiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our approach led us to study, firstly, the linguistic side, with proper names and definite descriptions and, secondly, the Computing side, this development aiming at, finally, proposing a named entity definition that takes into account language aspects but also informatic Systems capacities and requirements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>La suite du mémoire rend compte d'un travail davantage expérimental, avec l'exposé d'une méthode d'annotation fine tout d'abord, de résolution de métonymie enfin.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The continuation of the dissertation is about more experimental works, with a presentation of experiments about fined-grained named entity annotation and metonymy resolution methods.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

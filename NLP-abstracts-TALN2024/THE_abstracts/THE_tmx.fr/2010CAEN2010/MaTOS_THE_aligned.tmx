@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2010CAEN2010. segId begin by 1, tuid = segId</note>
+        <docid>2010CAEN2010</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'objectif de cette thèse est de montrer que, contrairement aux idées reçues, les mots de basses fréquences peuvent être mis à profit de façon efficace en traitement automatique des langues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The goal of this thesis dissertation is to show that, contrary to preconceived ideas, one can efficiently take advantage of low frequency words in natural language processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous les mettons à contribution en alignement sous-phrastique, tâche qui constitue la première étape de la plupart des systèmes de traduction automatique fondée sur les données (traduction probabiliste ou par l'exemple).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We use them in sub-sentential alignment, which constitutes the first step of most data-driven machine translation systems (statistical or example-based machine translation).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons que les mots rares peuvent servir de fondement même dans la conception d'une méthode d'alignement sous-phrastique multilingue, à l'aide de techniques différentielles proches de celles utilisées en traduction automatique par l'exemple.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that rare words can be used as a foundation in the design of a multilingual sub-sentential alignment method, using differential techniques similar to those found in example-based machine translation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cette méthode est réellement multilingue, en ce sens qu'elle permet le traitement simultané d'un nombre quelconque de langues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This method is truly multilingual, in that sense, it allows the simultaneous processing of any number of languages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Elle se veut de surcroît très simple, anytime, et permet un passage à l'échelle naturel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, it is very simple, anytime, and scales up naturally.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous comparons notre implémentation, Anymalign, à deux ténors statistiques du domaine sur des tâches bilingues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We compare our implementation, Anymalign, to two statistical tools proven in the domain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Bien qu'à l'heure actuelle ses résultats sont en moyenne légèrement en retrait par rapport à l'état de l'art en traduction automatique probabiliste par segments, nous montrons que la qualité propre des lexiques produits par notre méthode est en fait supérieure à celle de l'état de l'art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although its current results are in average slightly behind those of state of the art methods in phrase-based statistical machine translation, we show that the intrinsic quality of our lexicons is actually superior to that of lexicons produced by state of the art methods.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

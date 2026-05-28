@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016ENST0047. segId begin by 1, tuid = segId</note>
+        <docid>2016ENST0047</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans une interaction humain-agent, l’engagement de l’utilisateur est un élément essentiel pour atteindre l’objectif de l’interaction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In human-agent interaction the engagement of the user is an essential aspect to complete the goal of the interaction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous étudions comment l’engagement de l’utilisateur pourrait être favorisé par le comportement de l’agent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis we study how the user’s engagement could be favoured by the agent’s behaviour.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Basé sur les résultats de la dernière étude, nous proposons un Gestionnaire de Sujets axé sur l’engagement (modèle computationnel) qui personnalise les sujets d’une interaction dans des conversations où l’agent donne des informations à un utilisateur humain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Based on the outcomes of the latter study we propose an engagement-driven Topic Manager (computational model) that personalises the topics of an interaction in human-agent information-giving chat.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Le Modèle de Sélection des Sujets du Gestionnaire de Sujets décide sur quoi l’agent devrait parler et quand.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The Topic Selection component of the Topic Manager decides what the agent should talk about and when.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Pour cela, il prend en compte la perception par l’agent de l’utilisateur, qui est dynamiquement mis à jour, ainsi que l’état mental et les préférences de l’agent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For this it takes into account the agent’s dynamically updated perception of the user as well as the agent’s own mental state.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Le Modèle de Transition de Sujets du Gestionnaire de Sujet, basé sur une étude empirique, calcule comment l’agent doit présenter les sujets dans l’interaction en cours sans perdre la cohérence de l’interaction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The Topic Transition component of the Topic Manager, based upon an empirical study, computes how the agent should introduce the topics in the ongoing interaction without loosing the coherence of the interaction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous avons implémenté et évalué le Gestionnaire de Sujets dans un agent virtuel conversationnel qui joue le rôle d’un visiteur dans un musée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We implemented and evaluated the Topic Manager in a conversational virtual agent that plays the role of a visitor in amuseum.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

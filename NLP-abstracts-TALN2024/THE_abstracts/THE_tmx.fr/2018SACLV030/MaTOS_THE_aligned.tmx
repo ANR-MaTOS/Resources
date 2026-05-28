@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018SACLV030. segId begin by 1, tuid = segId</note>
+        <docid>2018SACLV030</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La France connaît un vieillissement de sa population sans précédent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>French population is rapidly aging.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La part des séniors s'accroît et notre société se doit de repenser son organisation pour tenir compte de ce changement et mieux connaître cette population.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Senior citizens ratio is increasing and our society needs to rethink its organization, taking into account this change, better knowing this fast growing population group.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>De nombreuses cohortes de personnes âgées existent déjà à travers le monde dont quatre en France et, bien que la part de cette population vivant dans des structures d'hébergement collectif (EHPAD, cliniques de soins de suite) augmente, la connaissance de ces seniors reste lacunaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Even if numerous cohorts of elderly people already exist worldly with four in France and, even as they live in growing numbers in nursing homes and out-patient treatment clinics, knowledge of this population segment is still missing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Aujourd'hui les groupes privés de maisons de retraite et d'établissements sanitaires comme Korian ou Orpéa s'équipent de grandes bases de données relationnelles permettant d'avoir de l'information en temps réel sur leurs patients/résidents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Today several health and medico-social structures groups as Korian and Orpéa invest in big relational data bases enabling them to get real-time information about their patients/residents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Depuis 2010 les dossiers de tous les résidents Korian sont dématérialisés et accessibles par requêtes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since 2010 all Korian residents' files are dematerialized and accessible by requests.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ils comprennent à la fois des données médico-sociales structurées décrivant les résidents et leurs traitements et pathologies, mais aussi des données textuelles explicitant leur prise en charge au quotidien et saisies par le personnel soignant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They contain at the same time, structured medico-social data describing the residents as well as their treatments and pathologies, but also free-textual data detailing their daily care by the medical staff.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Au fil du temps et alors que le dossier résident informatisé (DRI) avait surtout été conçu comme une application de gestion de base de données, il est apparu comme une nécessité d'exploiter cette mine d'informations et de construire un outil d'aide à la décision destiné à améliorer l'efficacité des soins.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Through time and as the computerized resident file (DRI) was mainly conceived as a data base management application, it appeared essential to mine these data and build a decision-making tool intended to improve the care efficiency.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>L'Institut du Bien Vieillir IBV devenu entretemps la Fondation Korian pour le Bien Vieillir a alors choisi, dans le cadre d'un partenariat Public/Privé de financer un travail de recherche destiné à mieux comprendre le potentiel informatif de ces données, d'évaluer leur fiabilité et leur capacité à apporter des réponses en santé publique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The Ageing Well Institute becoming meanwhile the Korian Ageing Well Foundation chose then, working in a private/public partnership, to finance a research work intented to better understand these datas' informative potential, to assess their reliability and response to public health threats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Ce travail de recherche et plus particulièrement cette thèse a alors été pensée en plusieurs étapes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This research work and this thesis were then designed in several steps:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>- D'abord l'analyse de contenu du data warehouse DRI, l'objectif étant de construire une base de données recherche, avec un versant social et un autre de santé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- First, a content analysis of the data warehouse DRI, the objective being to build a research data base, with a social side and a health side.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Ce fut le sujet du premier article.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This was the first paper subject.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>- Ensuite, par extraction directe des informations socio-démographiques des résidents dès leur entrée, de leurs hospitalisations et décès puis, par un processus itératif d'extractions d'informations textuelles de la table des transmissions et l'utilisation de la méthode Delphi, nous avons généré vingt-quatre syndromes, ajouté les hospitalisations et les décès et construit une base de données syndromique, la Base du Bien Vieillir (BBV).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Then, by direct extraction of the residents' socio-demographic information at nursing home (NH) entry, adding hospitalizations and deaths, and finally, by an iterative textual extraction process of the transmissions data and by using the Delphi method, we created twenty-four syndromes, added hospitalizations and deaths and built a syndromic data base, the Ageing Well data base.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Ce système d'informations d'un nouveau type a permis la constitution d'une cohorte de santé publique à partir de la population des résidents de la BBV et l'organisation d'un suivi longitudinal syndromique de celle-ci.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This information system of a new kind, allowed the constitution of a public health cohort for elderly people from the BBV residents' population and its syndromic longitudinal follow-up.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>La BBV a également été évaluée scientifiquement dans un cadre de surveillance et de recherche en santé publique au travers d'une analyse de l'existant : contenu, périodicité, qualité des données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The BBV was also scientifically assessed for surveillance and public health research through present situation analysis: content, periodicity and data quality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>La cohorte construite a ainsi permis la constitution d'un outil de surveillance. Cet échantillon de population a été suivi en temps réel au moyen des fréquences quotidiennes d'apparitions des 26 syndromes des résidents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This cohort then gave us the opportunity to build a surveillance tool and follow the residents' population in real-time by watching their 26 daily frequency syndromic distributions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>La méthodologie d'évaluation était celle des systèmes de surveillance sanitaire proposée par le CDC d'Atlanta et a été utilisée pour les syndromes grippaux et les gastro entérites aiguës. Ce fut l'objet du second article.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The methodology for that assessment, Atlanta CDCs' health surveillance systems method, was used for flu and acute gastro enteritis syndroms and was the second paper subject.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>- Enfin la construction d'un nouvel outil de santé publique : la distribution de chacun des syndromes dans le temps (dates de transmissions) et l'espace (les EHPAD de transmissions) a ouvert le champ de la recherche à de nouvelles méthodes d'exploration des données et permis d'étudier plusieurs problématiques liées à la personne âgée : chutes répétées, cancer, vaccinations et fin de vie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Finally, the building of a new public health tool: each syndrom's distribution through time (transmissions dates) and space (transmissions NH ids) opened the research field to new data exploration methods. I used these to study different health problems afflicting senior citizens: frequent falls, cancer, vaccinations and the end of life.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

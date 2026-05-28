@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016USPCD042. segId begin by 1, tuid = segId</note>
+        <docid>2016USPCD042</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'objectif de cette thèse est d'étudier la fonction argumentale afin d'élaborer une méthode pour l'acquisition automatique des termes d'une manière pertinente et efficace.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis aims to study the argumental function for finding an efficient method to automatically acquire the terms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous avons d'abord discuté du profilage du corpus et de la constitution du corpus web pour le traitement automatique des langues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We start with a discussion on the problematic of the corpus which is: what kind of corpus should we choose and how should we construct the web corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, trois méthodes ont été développées en nous fondant sur les caractéristiques morphologiques des unités lexicales et la relation d'appropriation entre les prédicats appropriés et leurs arguments.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, three methods are developed which are based on the morphological characteristics of lexical units and the relation between the appropriate predicates and their arguments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La méthode distributionnelle a pour objet d'exploiter les structures prédicat-argument pour repérer les arguments de la classe sémantique donnée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The distributional method tries to exploit the predicate-argument structures for identifying the arguments of the given semantic class.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La méthode morphosémantique est développée en se fondant sur les structures internes des unités lexicales en vue d'étendre la liste de termes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The morph-semantic method is developed on the basis of the morphological characteristics of the lexical units in order to extend the list of terms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>La méthode combinatoire qui associe les deux premières approches permet d'améliorer la pertinence du résultat.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The mixed method which combines the two precedent approaches permit to improve the result.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Finalement, nous avons développé une réflexion sur la particularité de la langue, la classe sémantique, la langue de spécialité et la récursivité de la langue dans la perspective du traitement automatique des langues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we try to develop a statement on the natural language character, on the semantic class, on the specialized language and on the recursive nature of language in the perspective of natural language processing.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

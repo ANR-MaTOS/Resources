@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020UBFCA025. segId begin by 1, tuid = segId</note>
+        <docid>2020UBFCA025</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous étudions ces deux aspects de la mobilité humaine en proposant des algorithmes de machine learning adapté aux sources d'information disponibles dans chacun des contextes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In our work, we investigate both aspects in proposing machine learning-based algorithms adapted to the different information sources that can be collected.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Pour l'étude de la mobilité en environnement extérieur, nous utilisons les données de coordonnées GPS collectées pour découvrir les schémas de mobilité quotidiens des utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In terms of outdoor mobility, we use the collected GPS coordinate data to discover the daily mobility patterns of the users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cette méthode de segmentation est basée sur l'estimation des densités de probabilité des trajectoires, ce qui atténue les problèmes causés par le bruit des données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This clustering method is based on estimating probability densities of the trajectories, which alleviate the problems caused by the data noise.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Concernant l'étude de la mobilité humaine dans les bâtiments, nous utilisons les données d'empreintes digitales WiFi collectées par les smartphones.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By contrast, we utilize the collected WiFi fingerprint data to study indoor human mobility.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>De plus, en ce qui concerne la localisation précise en intérieur, nous supposons qu'il existe une distribution latente régissant l'entrée et la sortie en même temps.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, as for accurate indoor location recognition, we presume that there exists a latent distribution governing the input and output at the same time.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Sur la base de cette hypothèse, nous avons développé un modèle d'apprentissage semi-supervisé basé sur le variational autoencoder (VAE).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Based on this assumption, we develop a variational auto-encoder (VAE)-based semi-supervised learning model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans la procédure d'apprentissage non supervisé, nous utilisons un modèle VAE pour apprendre une distribution latente de l'entrée qui est composée de données d'empreintes digitales WiFi.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the unsupervised learning procedure, we employ a VAE model to learn a latent distribution of the input, the WiFi fingerprint data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans la procédure d'apprentissage supervisé, nous utilisons un réseau de neurones pour calculer la cible, coordonnées par l'utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the supervised learning procedure, we use a neural network to compute the target, the user coordinates.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>De plus, sur la base de la même hypothèse utilisée dans le modèle d'apprentissage semi-supervisé basé sur le VAE, nous exploitons la théorie des goulots d'étranglement de l'information pour concevoir un modèle basé sur le variational information bottleneck (VIB).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, based on the same assumption used in the VAE-based semi-supervised learning model, we leverage the information bottleneck theory to devise a variational information bottleneck (VIB)-based model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Il s'agit d'un modèle d'apprentissage en profondeur de bout en bout plus facile à former et offrant de meilleures performances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is an end-to-end deep learning model which is easier to train and has better performance.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019NORMR030. segId begin by 1, tuid = segId</note>
+        <docid>2019NORMR030</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les données cliniques sont produites par différents professionnels de santé, dans divers lieux et sous diverses formes dans le cadre de la pratique de la médecine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Clinical data are produced as part of the practice of medicine by different health professionals, in several places and in various formats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Elles présentent par conséquent une hétérogénéité à la fois au niveau de leur nature et de leur structure mais également une volumétrie particulièrement importante et qualifiable de massive.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They therefore present an heterogeneity both in terms of their nature and structure and are furthermore of a particularly large volume, which make them considered as Big Data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le travail réalisé dans le cadre de cette thèse s’attache à proposer une méthode de recherche d’information efficace au sein de ce type de données complexes et massives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The work carried out in this thesis aims at proposing an effective information retrieval method within the context of this type of complex and massive data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L’accès aux données cliniques se heurte en premier lieu à la nécessité de modéliser l’information clinique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, the access to clinical data constrained by the need to model clinical information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Ceci peut notamment être réalisé au sein du dossier patient informatisé ou, dans une plus large mesure, au sein d’entrepôts de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This can be done within Electronic Health Records and, in a larger extent, within data Warehouses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Je propose dans ce mémoire une preuve de concept d’un moteur de recherche permettant d’accéder à l’information contenue au sein de l’entrepôt de données de santé sémantique du Centre Hospitalier</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, I proposed a proof of concept of a search engine allowing the access to the information contained in the Semantic Health Data Warehouse of the Rouen University Hospital.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Afin de fournir des fonctionnalités de recherche adaptées à cette représentation générique, un langage de requêtes permettant l’accès à l’information clinique par le biais des diverses entités qui la composent a été développé et implémenté dans le cadre de cette thèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to provide search functionalities adapted to this generic representation of data, a query language allowing access to clinical information through the various entities of which it is composed has been developed and implemented as a part of this thesis’s work.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>En second lieu, la massivité des données cliniques constitue un défi technique majeur entravant la mise en oeuvre d’une recherche d’information efficace.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Second, the massiveness of clinical data is also a major technical challenge that hinders the implementation of an efficient information retrieval.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>L’implémentation initiale de la preuve de concept sur un système de gestion de base de données relationnel a permis d’objectiver les limites de ces derniers en terme de performances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The initial implementation of the proof of concept highlighted the limits of a relational database management systems when used in the context of clinical data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Une migration vers un système NoSQL orienté clé</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A migration to a NoSQL key-value store has been then completed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Enfin, l’apport de ce travail dans le contexte plus général de l’entrepôt de données de santé sémantique du CHU de Rouen a été évalué.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, the contribution of this work within the general context of the Semantic Health Data Warehouse of the Rouen University Hospital was evaluated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>La preuve de concept proposée dans ce travail a ainsi été exploitée pour accéder aux descriptions sémantiques afin de répondre à des critères d’inclusion et d’exclusion de patients dans des études cliniques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proof of concept proposed in this work was used to access semantic descriptions of information in order to meet the criteria for including and excluding patients in clinical studies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Dans cette évaluation, une réponse totale ou partielle a pu être apportée à 72,97% des critères.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this evaluation, a total or partial response is given to 72.97% of the criteria.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>De plus, la généricité de l’outil a également permis de l’exploiter dans d’autres contextes tels que la recherche d’information documentaire et bibliographique en santé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, the genericity of the tool has also made it possible to use it in other contexts such as documentary and bibliographic information retrieval in health.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

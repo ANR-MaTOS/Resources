@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2013GRENH004. segId begin by 1, tuid = segId</note>
+        <docid>2013GRENH004</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L’apprentissage collaboratif assisté par ordinateur et les technologies d’e-learning devenant de plus en plus populaires et intégrés dans des contextes éducatifs, le besoin se fait sentir de disposer d’outils d’évaluation automatique et d’aide aux enseignants ou tuteurs pour les deux activités, fortement couplées, de compréhension de textes et collaboration entre pairs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With the advent and increasing popularity of Computer Supported Collaborative Learning (CSCL) and e-learning technologies, the need of automatic assessment and of teacher/tutor support for the two tightly intertwined activities of comprehension of reading materials and of collaboration among peers has grown significantly.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Bien qu’une analyse de surface de ces activités est aisément réalisable, une compréhension plus profonde et complète du discours en jeu est nécessaire, complétée par une analyse de l’information méta-cognitive disponible par diverses sources, comme par exemples les auto-explications des apprenants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Whereas a shallow or surface analysis is easily achievable, a deeper understanding of the discourse is required, extended by meta-cognitive information available from multiple sources as self-explanations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Plus spécifiquement, nous nous sommes centrés sur la dimension individuelle de l’apprentissage, analysée à partir de l’identification de stratégies de lecture et sur la mise au jour d’un modèle de la complexité textuelle intégrant des facteurs de surface, lexicaux, morphologiques, syntaxiques et sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As specificity of the analysis, in terms of individual learning we have focused on the identification of reading strategies and on providing a multi-dimensional textual complexity model integrating surface, word specific, morphology, syntax and semantic factors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>En complément, la dimension collaborative de l’apprentissage est centrée sur l’évaluation de l’implication des participants, ainsi que sur l’évaluation de leur collaboration par deux modèles computationnels : un modèle polyphonique, défini comme l’inter-animation de voix selon de multiples perspectives, un modèle spécifique de construction sociale de connaissances, fondé sur le graphe de cohésion et un mécanisme d’évaluation des tours de parole.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Complementarily, the collaborative learning dimension is centered on the evaluation of participants’ involvement, as well as on collaboration assessment through the use of two computational models: a polyphonic model, defined in terms of voice inter-animation, and a specific social knowledge-building model, derived from the specially designed cohesion graph corroborated with a proposed utterance scoring mechanism.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Notre approche met en œuvre des techniques avancées de traitement automatique de la langue et a pour but de formaliser une évaluation qualitative du processus d’apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our approach integrates advanced Natural Language Processing techniques and is focused on providing a qualitative estimation of the learning process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Des validations cognitives de nos différents systèmes d’évaluation automatique ont été réalisées, et nous avons conçu des scénarios d’utilisation de ReaderBench, notre système le plus avancé, dans différents contextes d’enseignement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Various cognitive validations for all our automated evaluation systems have been conducted and scenarios including the use of ReaderBench, our most advanced system, in different educational contexts have been built.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>L’un des buts principaux de notre modèle est de favoriser la compréhension vue en tant que « médiatrice de l’apprentissage », en procurant des rétroactions automatiques aux apprenants et enseignants ou tuteurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One of the most important goals of our model is to enhance understanding as a “mediator of learning” by providing automated feedback to both learners and teachers or tutors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Leur avantage est triple : leur flexibilité, leur extensibilité et, cependant, leur spécificité, car ils couvrent de multiples étapes de l’activité d’apprentissage, de la lecture de matériel d’apprentissage à l’écriture de synthèses de cours en passant par la discussion collaborative de contenus de cours et la verbalisation métacognitive de jugements de compréhension, afin d’obtenir une perspective complète du niveau de compréhension et de générer des rétroactions appropriées sur le processus d’apprentissage collaboratif.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main benefits are its flexibility, extensibility and nevertheless specificity for covering multiple stages, starting from reading classroom materials, to discussing on specific topics in a collaborative manner, and finishing the feedback loop by verbalizing metacognitive thoughts in order to obtain a clear perspective over one’s comprehension level and appropriate feedback about the collaborative learning processes.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

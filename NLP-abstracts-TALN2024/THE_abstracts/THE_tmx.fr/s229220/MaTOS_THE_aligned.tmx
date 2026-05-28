@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-s229220. segId begin by 1, tuid = segId</note>
+        <docid>s229220</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse se situe au croisement de deux domaines de recherche, le Traitement Automatique des Langues (TAL) d'une part, et l'Apprentissage Automatique (AP) d'autre part.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recent deep learning architectures and algorithms have shown impressive results for several Natural Language Processing (NLP) tasks such as Named entity recognition, Part-of-Speech tagging, Dependency parsing and Semantic role labelling.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Le sujet propose d'exploiter les connaissances expertes et les ressources linguistiques disponibles pour améliorer la performance des modèles de réseaux de neurones profonds pour les domaines et langues peu dotées en données d'apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The actual performance of certain NLP tools for English evaluated on in-domain data is close to human level, thanks to deep learning models trained on huge annotated datasets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le sujet de thèse proposé a pour but d'explorer et d'expérimenter de nouvelles approches pour l'intégration de connaissances expertes et de ressources linguistiques dans des modèles neuronaux profonds en vue d'améliorer leur performance pour les domaines et langues peu dotées en données d'apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Contrariwise, approaching human-level accuracy on more complex domains and low-resource languages is still a hard issue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Un premier défi de cette thèse réside dans la définition d'un mécanisme de représentation de ces connaissances expertes et de ces ressources linguistiques de nature variées pour une intégration optimale dans le modèle neuronal.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis falls within the scope of incorporating expert knowledge and linguistic resources in Deep Neural Networks (DNNs) in order to improve the performance of NLP tools for specialty areas and low-resource languages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le problème s'avère plus difficile face à des connaissances expertes ou des ressources linguistiques hétérogènes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed subject aims to explore and experiment new approaches for incorporating expert knowledge and linguistic resources in deep neural networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons d'aborder cette problématique selon les axes suivants, dans le prolongement des travaux déjà réalisés au laboratoire LASTI (Laboratoire Analyse Sémantique Texte et Image) :</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose to tackle this issue along the following key aspects, as an extension of the research work already carried out at LASTI (Laboratoire Analyse Sémantique Texte et Image) laboratory:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>- Prise en compte de connaissances expertes et de ressources linguistiques hétérogènes : Ontologies, Bases de données terminologiques, Lexiques, Règles de reconnaissance d'entités nommées, Règles d'identification de relations de dépendance syntaxique, etc.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Taking into account heterogeneous expert knowledge and linguistic resources: Ontologies, Terminology databases, Lexicons, Named entity recognition rules, Dependency parsing recognition rules, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>- Développement d'un formalisme permettant de décrire les connaissances expertes et les ressources linguistiques dans un ensemble de représentations disposées par étages.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Implementing a formalism to describe expert knowledge and linguistic resources in a multi-level representation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>L'idée est que chaque type de connaissance experte ou de ressource linguistique a une représentation séparée mais que l'ensemble des représentations est décrit dans le même format (modèle).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The objective is to define a structure in which the different types of expert knowledge and linguistic resources will be represented separately but the whole representation would be described in the same format (model).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>- Exploration de nouvelles stratégies pour l'intégration des connaissances expertes et des ressources linguistiques dans les réseaux de neurones profonds.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>- Exploring new strategies for incorporating expert knowledge and linguistic resources in deep neural networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>L'idée sous-jacente est de proposer un mécanisme d'intégration qui s'adapte à chaque type de connaissance externe ou de ressource linguistique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The underlying idea is to propose an integration mechanism which can be adapted to each expert knowledge and linguistic resource.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

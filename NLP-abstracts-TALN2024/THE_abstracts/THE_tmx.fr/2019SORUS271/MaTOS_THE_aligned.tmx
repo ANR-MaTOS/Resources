@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019SORUS271. segId begin by 1, tuid = segId</note>
+        <docid>2019SORUS271</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans le contexte de l'interaction humain-agent, notre objectif était d'améliorer la qualité de l'interaction en : (1) dotant l'agent de la capacité d'exprimer des attitudes sociales telles que la dominance ou l'amicalité ce qui renforcent ses compétences sociales ; (2) adaptant le comportement de l'agent selon le comportement de l'utilisateur, par conséquent l'agent et l'utilisateur s'influencent mutuellement par le biais d'une boucle interactive ; (3) prédisant le niveau d'engagement de l'utilisateur et adaptant en conséquence le comportement de l'agent, ce qui contribue à maintenir l'intérêt et la motivation de l'utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this context, we aimed at enhancing the quality of the interaction between users and Embodied Conversational Agents ECAs by (1) endowing the ECA with the capacity to express social attitudes, such as being friendly or dominant depending its role or relationship with its interaction partners; (2) adapting the agent's behavior according to the user's behavior, hence, the conversation partners influence each others through an interaction loop, thus, enhancing the interaction quality; (3) predicting the user's engagement level and adapting the agent's behavior accordingly.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous nous basons sur les progrès récents dans le domaine de l'apprentissage automatique, plus particulièrement de l'extraction de séquences temporelles et des réseaux de neurones.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We take advantage of the recent advances in machine learning, more specifically, temporal sequence mining and neural networks to model these capacities in the ECA.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le premier est utilisé pour apprendre des séquences pertinentes de signaux non-verbaux qui représentent au mieux les variations d'attitude, puis les reproduire par l'agent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first model is used to learn relevant patterns (sequences) of non-verbal signals that best represent attitude variations, and then reproduce them on the agent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Le seconde est utilisé pour englober la dynamique des signaux non verbaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The latter is used to encompass the dynamics of non-verbal signals.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Deux cas d'utilisation ont été explorés à l'aide du modèle LSTM : l'adaptation du comportement de l'agent en fonction de l'historique de comportement de l'agent et de l'utilisateur ; et la prédiction de l'engagement de l'utilisateur basée sur son propre historique de comportement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two use cases have been explored using the well-known LSTM model: agent's behavior adaptation based on both agent's and user's behavior history, and user's engagement prediction based on his/her own behavior history.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>La pertinence des modèles et des algorithmes implémentés a été validée au moyen de nombreuses études approfondies et d'une évaluation quantitative rigoureuse des résultats obtenus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The implemented models and algorithms have been validated through a number of perceptive studies as well as through rigorous quantitative analysis of the obtained results.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>De plus, les travaux réalisés ont été intégrés dans une plateforme d'agents virtuels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, the realized models have been integrated into a virtual-agent platform.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

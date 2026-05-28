@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019GREAT035. segId begin by 1, tuid = segId</note>
+        <docid>2019GREAT035</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'un des aspects d'une interface homme-machine réussie (p. ex. interaction homme-robot, chatbots, parole, écriture manuscrite, etc.) est la possibilité d'avoir une interaction personnalisée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One aspect of a successful human-machine interface (e.g. human-robot interaction, chatbots, speech, handwriting…,etc) is the ability to have a personalized interaction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cela affecte l'expérience humaine globale et permet une interaction plus fluide.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This affects the overall human experience, and allow for a more fluent interaction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Actuellement, il y a beaucoup de travaux qui utilisent l'apprentissage machine afin de modéliser de telles interactions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>At the moment, there is a lot of work that uses machine learning in order to model such interactions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cependant, ces modèles n'abordent pas la question du comportement personnalisé : ils tentent de faire la moyenne des différents exemples provenant de différentes personnes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, these models do not address the issue of personalized behavior: they try to average over the different examples from different people in the training set.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>L'identification des styles humains (persona) ouvre la possibilité de biaiser la sortie des modèles pour prendre en compte la préférence humaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Identifying the human styles (persona) opens the possibility of biasing the models output to take into account the human preference.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous nous sommes concentrés sur le problème des styles dans le contexte de l'écriture manuscrite.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we focused on the problem of styles in the context of handwriting.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>L'objectif de cette thèse est d'étudier ces problèmes de styles, dans le domaine de l'écriture.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The objective of my thesis is to study these problems of styles, in the domain of handwriting.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous disposons d'un jeu de données IRONOFF, un jeu de données d'écriture manuscrite en ligne, avec 410 rédacteurs, avec ~25K exemples de dessins en majuscules, minuscules et chiffres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Available to us is IRONOFF dataset, an online handwriting datasets, with 410 writers, with ~25K examples of uppercase, lowercase letters and digits drawings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Pour le problème de l'apprentissage par transfert, nous avons utilisé un jeu de données supplémentaire, QuickDraw!, un jeu de données de dessin d'esquisses contenant environ 50 millions de dessins sur 345 catégories.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For transfer learning, we used an extra dataset, QuickDraw!, a sketch drawing dataset containing ~50 million drawing over 345 categories.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Les principales contributions de ma thèse sont :</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Major contributions of my thesis are:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>1) Proposer un pipeline de travail pour étudier le problème des styles d'écriture.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>1) Propose a work pipeline to study the problem of styles in handwriting.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Il s'agit de proposer une méthodologie, des repères et des paramètres d'évaluation (et de fonder ces paramètres d'évaluation).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This involves proposing methodology, benchmarks and evaluation metrics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Nous choisissons le paradigme des modèles génératifs temporels dans l'apprentissage profond afin de générer des dessins et d'évaluer leur proximité/pertinence par rapport aux dessins de vérité voulus/de terrain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We choose temporal generative models paradigm in deep learning in order to generate drawings, and evaluate their proximity/relevance to the intended/ground truth drawings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Nous avons proposé deux métriques, pour évaluer la courbure et la longueur des dessins générés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We proposed two metrics, to evaluate the curvature and the length of the generated drawings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Afin d'enraciner ces métis, nous avons proposé de multiples repères - dont nous connaissons le pouvoir relatif à l'avance -, puis vérifié que les mesures respectent effectivement la relation de pouvoir relatif.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to ground those metics, we proposed multiple benchmarks - which we know their relative power in advance -, and then verified that the metrics actually respect the relative power relationship.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>2) Proposer un cadre pour l'étude et l'extraction des styles, et vérifier son avantage par rapport aux repères proposés précédemment.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>2) Propose a framework to study and extract styles, and verify its advantage against the previously proposed benchmarks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Nous nous sommes mis d'accord sur l'idée d'utiliser un auto-encodeur conditionné en profondeur pour résumer et extraire les informations de style, sans avoir besoin de nous concentrer sur l'identité de la tâche (puisqu'elle est donnée comme une condition).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We settled on the idea of using a deep conditioned-autoencoder in order to summarize and extract the style information, without the need to focus on the task identity (since it is given as a condition).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Nous validons ce cadre par rapport au repère proposé précédemment à l'aide de nos paramètres d'évaluation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We validate this framework to the previously proposed benchmark using our evaluation metrics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Nous visualisons également les styles extraits, ce qui nous permet d'obtenir des résultats passionnants !</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also to visualize on the extracted styles, leading to some exciting outcomes!</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>3) En utilisant le cadre proposé, proposer un moyen de transférer l'information sur les styles entre les différentes tâches, et un protocole afin d'évaluer la qualité du transfert.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>3) Using the proposed framework, propose a way to transfer the information about styles between different tasks, and a protocol in order to evaluate the quality of transfer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="FR">
+                <seg>Nous avons exploité le codeur automatique conditionné profond utilisé précédemment, en extrayant la partie codeur - qui, selon nous, contenait les informations pertinentes sur les styles - et en l'utilisant dans de nouveaux modèles formés sur de nouvelles tâches.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We leveraged the deep conditioned-autoencoder used earlier, by extract the encoder part in it - which we believe had the relevant information about the styles - and use it to in new models trained on new tasks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="FR">
+                <seg>Nous testons intensivement ce paradigme sur une gamme différente de tâches, à la fois sur les ensembles de données IRONOFF et QuickDraw!.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We extensively test this paradigm over a different range of tasks, on both IRONOFF and QuickDraw! datasets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons que nous pouvons transférer avec succès les informations de style entre différentes tâches.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that we can successfully transfer style information between different tasks.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

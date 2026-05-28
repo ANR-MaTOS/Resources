@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2012PA112128. segId begin by 1, tuid = segId</note>
+        <docid>2012PA112128</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La reconnaissance automatique des émotions dans la parole est un sujet de recherche relativement récent dans le domaine du traitement de la parole, puisqu'il est abordé depuis une dizaine d'années environs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Automatic emotion recognition in speech is a relatively recent research subject in the field of natural language processing considering that the subject has been proposed for the first time about ten years ago.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ce sujet fait de nos jours l'objet d'une grande attention, non seulement dans le monde académique mais aussi dans l'industrie, grâce à l'augmentation des performances et de la fiabilité des systèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This subject is nowadays the object of much attention, not only in academia but also in industry, thank to the increased models performance and system reliability.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Les premiers travaux étaient fondés sur des donnés jouées par des acteurs, et donc non spontanées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first studies were based on acted data and non spontaneous speech.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Même aujourd'hui, la plupart des études exploitent des séquences pré-segmentées d'un locuteur unique et non une communication spontanée entre plusieurs locuteurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Up until now, most experiments carried out by the research community on emotions were realized pre-segmented sequences and with a unique speaker and not on spontaneous speech with several speaker.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cette méthodologie rend les travaux effectués difficilement généralisables pour des informations collectées de manière naturelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With this methodology the models built on acted data are hardly usable on data collected in natural context</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Les travaux entrepris dans cette thèse se basent sur des conversations de centre d'appels, enregistrés en grande quantité et mettant en jeu au minimum 2 locuteurs humains (un client et un agent commercial) lors de chaque dialogue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The studies we present in this thesis are based on call center's conversation with about 1620 hours of dialogs and with at least two human speakers (a commercial agent and a client) for each conversation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Notre but est la détection, via l'expression émotionnelle, de la satisfaction client.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our aim is the detection, via emotional expression, of the client satisfaction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans une première partie nous présentons les scores pouvant être obtenus sur nos données à partir de modèles se basant uniquement sur des indices acoustiques ou lexicaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first part of this work we present the results we obtained from models using only acoustic or linguistic features for emotion detection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons que pour obtenir des résultats satisfaisants une approche ne prenant en compte qu'un seul de ces types d'indices ne suffit pas.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that to obtain correct results an approach taking into account only one of these features type is not enough.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons pour palier ce problème une étude sur la fusion d'indices de types acoustiques, lexicaux et syntaxico-sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To overcome this problem we propose the combination of three type of features (acoustic, lexical and semantic).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons que l'emploi de cette combinaison d'indices nous permet d'obtenir des gains par rapport aux modèles acoustiques même dans les cas ou nous nous basons sur une approche sans pré-traitements manuels (segmentation automatique des conversations, utilisation de transcriptions fournies par un système de reconnaissance de la parole).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that the use of models with features fusion allows higher score for the recognition step in all case compared to the model using only acoustic features. This gain is also obtained if we use an approach without manual pre-processing (automatic segmentation of conversation, transcriptions based on automatic speech recognition).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Dans une seconde partie nous remarquons que même si les modèles hybrides acoustiques/linguistiques nous permettent d'obtenir des gains intéressants la quantité de données utilisées dans nos modèles de détection est un problème lorsque nous testons nos méthodes sur des données nouvelles et très variées (49h issus de la base de données de conversations).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second part of our study we notice that even if models based on features combination are relevant for emotion detection the amount of data we use in our training set is too small if we used it on large amount of data test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Pour remédier à ce problème nous proposons une méthode d'enrichissement de notre corpus d'apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To overcome this problem we propose a new method to automatically complete training set with new data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Ces ajouts nous permettent de doubler la taille de notre ensemble d'apprentissage et d'obtenir des gains par rapport aux modèles de départ.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These additions allow us to double the amount of data in our training set and increase emotion recognition rate compare to the non-enrich models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Enfin, dans une dernière partie nous choisissons d'évaluées nos méthodes non plus sur des portions de dialogues comme cela est le cas dans la plupart des études, mais sur des conversations complètes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, in the last part we choose to evaluate our method on entire conversation and not only on conversations turns as in most studies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons pour cela les modèles issus des études précédentes (modèles issus de la fusion d'indices, des méthodes d'enrichissement automatique) et ajoutons 2 groupes d'indices supplémentaires :</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To define the classification of a dialog we use models built on the previous steps of this works and we add two new features group:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>i) Des indices « structurels » prenant en compte des informations comme la durée de la conversation, le temps de parole de chaque type de locuteurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>i) structural features including information like the length of the conversation, the proportion of speech for each speaker in the dialog</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>ii) des indices « dialogiques » comprenant des informations comme le thème de la conversation ainsi qu'un nouveau concept que nous nommons « implication affective ».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>ii) dialogic features including informations like the topic of a conversation and a new concept we call “affective implication”.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Celui-ci a pour but de modéliser l'impact de la production émotionnelle du locuteur courant sur le ou les autres participants de la conversation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The aim of the affective implication is to represent the impact of the current speaker's emotional production on the other speakers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons que lorsque nous combinons l'ensemble de ces informations nous arrivons à obtenir des résultats proches de ceux d'un humain lorsqu'il s'agit de déterminer le caractère positif ou négatif d'une conversation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that if we combined all information we can obtain results close to those of humans.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2013PA112191. segId begin by 1, tuid = segId</note>
+        <docid>2013PA112191</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La traduction automatique des documents est considérée comme l’une des tâches les plus difficiles en traitement automatique des langues et de la parole.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Machine Translation is one of the most difficult tasks in natural language and speech processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les particularités linguistiques de certaines langues, comme la langue arabe, rendent la tâche de traduction automatique plus difficile.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The linguistic peculiarities of some languages makes the machine translation task more difficult.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Notre objectif dans cette thèse est d'améliorer les systèmes de traduction de l'arabe vers le français et vers l'anglais.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we present a detailed study of machine translation systems from arabic to french and to english.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les principales recherches portent à la fois sur la construction de corpus parallèles, le prétraitement de l'arabe et sur l'adaptation des modèles de traduction et de langue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our principle researches carry on building parallel corpora, arabic preprocessing and adapting translation and language models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, un corpus comparable journalistique a été exploré pour en extraire automatiquement un corpus parallèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a method for automatic extraction of parallel news corpora from a comparable corpora.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, différentes approches d’adaptation du modèle de traduction sont exploitées, soit en utilisant le corpus parallèle extrait automatiquement soit en utilisant un corpus parallèle construit automatiquement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two approaches for translation model adaptation are explored using whether parallel corpora extracted automatically or parallel corpora constructed automatically.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous démontrons que l'adaptation des données du système de traduction permet d'améliorer la traduction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We demonstrate that adapting data used to build machine translation system improves translation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Un texte en arabe doit être prétraité avant de le traduire et ceci à cause du caractère agglutinatif de la langue arabe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Arabic texts have to be preprocessed before machine translation and this because of the agglutinative character of arabic language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons notre outil de segmentation de l'arabe, SAPA (Segmentor and Part-of-speech tagger for Arabic), indépendant de toute ressource externe et permettant de réduire les temps de calcul.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A prepocessing tool for arabic, SAPA (Segmentor and Part-of-speech tagger for Arabic), much faster than the state of the art tools and totally independant of any other external resource was developed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Cet outil permet de prédire simultanément l’étiquette morpho-syntaxique ainsi que les proclitiques (conjonctions, prépositions, etc.) pour chaque mot, ensuite de séparer les proclitiques du lemme (ou mot de base).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This tool predicts simultaneously morphosyntactic tags and proclitics (conjunctions, prepositions, etc.) for every word, then splits off words into lemma and proclitics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous décrivons également dans cette thèse notre outil de détection des entités nommées, NERAr (Named Entity Recognition for Arabic), et nous examions l'impact de l'intégration de la détection des entités nommées dans la tâche de prétraitement et la pré-traduction de ces entités nommées en utilisant des dictionnaires bilingues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We describe also in this thesis, our named entity recognition tool for arabic, NERAr, and we focus on the impact of integrating named entity recognition in the preprocessing task. We used bilingual dictionaries to propose translations of the detected named entities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons par la suite plusieurs méthodes pour l'adaptation thématique des modèles de traduction et de langue expérimentées sur une application réelle contenant un corpus constitué d’un ensemble de phrases multicatégoriques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We present then many approaches to adapt thematically translation and language models using a corpora consists of a set of multicategoric sentences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Ces expériences ouvrent des perspectives importantes de recherche comme par exemple la combinaison de plusieurs systèmes lors de la traduction pour l'adaptation thématique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These experiments open important research perspectives such as combining many systems when translating.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Il serait également intéressant d'effectuer une adaptation temporelle des modèles de traduction et de langue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It would be interesting also to focus on a temporal adaptation of translation and language models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Finalement, les systèmes de traduction améliorés arabe-français et arabe-anglais sont intégrés dans une plateforme d'analyse multimédia et montrent une amélioration des performances par rapport aux systèmes de traduction de base.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, improved machine translation systems from arabic to french and english are integrated in a multimedia platform analysis and shows improvements compared to basic machine translation systems.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

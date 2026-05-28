@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017NORMR041. segId begin by 1, tuid = segId</note>
+        <docid>2017NORMR041</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les objectifs de cette thèse s’inscrivent dans la large problématique de recherche d’information dans les données issues du Dossier Patient Informatisé (DPI).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The aim of this thesis is part of the broad issue of information retrieval in Electronic Health Records (EHRs).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les aspects abordés dans cette problématique sont multiples : d’une part la mise en oeuvre d’une recherche d’information clinomique au sein du DPI et d’autre part la recherche d’information au sein de données non structurées issues du DPI.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The aspects tackled in this topic are numerous: on the one hand clinomics information retrieval within EHRs and secondly information retrieval within unstructured data from EHRs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, l’un des objectifs de cette thèse est d’intégrer au sein du DPI des informations dépassant le cadre de la médecine pour intégrer des données, informations et connaissances provenant de la biologie moléculaire ;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a first step, one of the objectives is to integrate in EHRs information beyond the scope of medicine to integrate data, information and knowledge from molecular biology ; omic data from genomics, proteomics or metabolomics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L’intégration de ce type de données permet d’améliorer les systèmes d’information en santé, leur interopérabilité ainsi que le traitement et l’exploitation des données à des fins cliniques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The integration of this type of data improves health information systems, their interoperability and the processing and exploitation of data for clinical purposes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Un enjeu important est d’assurer l’intégration de données hétérogènes, grâce à des recherches sur les modèles conceptuels de données, sur les ontologies et serveurs terminologiques et sur les entrepôts sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An important challenge is to ensure the integration of heterogeneous data, through research on conceptual models of data, ontology and terminology servers, and semantic data warehouses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>L’intégration de ces données et leur interprétation selon un même modèle de données conceptuel sont un verrou important.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The integration of this data and their interpretation into a conceptual data model is an important challenge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Enfin, il est important d’intégrer recherche clinique et recherche fondamentale afin d’assurer une continuité des connaissances entre recherche et pratique clinique et afin d’appréhender la problématique de personnalisation des soins.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, it is important to integrate clinical research and fundamental research in order to ensure continuity of knowledge between research and clinical practice and to understand personalized medicine challenges.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse aboutit ainsi à la conception et au développement d’un modèle générique des données omiques exploité dans une application prototype de recherche et visualisation dans les données omiques et cliniques d’un échantillon de 2 000 patients.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis thus leads to the design and development of a generic model of omics data exploited in a prototype application for information retrieval and visualization in omic and clinical data within a sample of 2,000 patients.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Le second objectif de ma thèse est l’indexation multi terminologique de documents médicaux à travers le développement de l’outil Extracteur de Concepts Multi-Terminologique (ECMT).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second objective of this thesis is the multi-terminological indexing of medical documents through the development of the Extracting Concepts with Multiple Terminologies tool (ECMT).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Il exploite les terminologies intégrées au portail terminologique Health Terminology/Ontology Portal (HeTOP) pour identifier des concepts dans des documents non structurés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It uses terminologies embedded in the Health Terminology/Ontology Portal (HeTOP) to identify concepts in unstructured documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, à partir d’un document rédigé par un humain, et donc porteur potentiellement d’erreurs de frappe, d’orthographe ou de grammaire,l’enjeu est d’identifier des concepts et ainsi structurer l’information contenue dans le document.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>From a document written by a human, and therefore potentially showing typing errors, spelling or grammar mistakes, the challenge is to identify concepts and thus structure the information contained in the text.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Pour la recherche d’information médicale, l’indexation présente un intérêt incontournable pour la recherche dans les documents non structurés, comme lescomptes</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In health information retrieval, indexing is of great interest for information retrieval in unstructured documents, such as reports and medical notes.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

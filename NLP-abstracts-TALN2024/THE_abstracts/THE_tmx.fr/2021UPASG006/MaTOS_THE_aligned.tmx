@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2021UPASG006. segId begin by 1, tuid = segId</note>
+        <docid>2021UPASG006</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous étudions les changements lexico-sémantiques : les variations temporelles dans l'usage et la signification des mots, également appelé extit{diachronie}.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we study lexical semantic change: temporal variations in the use and meaning of words, also called extit{diachrony}.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ces changements reflètent l'évolution de divers aspects de la société tels que l'environnement technologique et culturel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These changes are carried by the way people use words, and mirror the evolution of various aspects of society such as its technological and cultural environment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous explorons et évaluons des méthodes de construction de plongements lexicaux variant dans le temps afin d'analyser l'évolution du language.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We explore, compare and evaluate methods to build time-varying embeddings from a corpus in order to analyse language evolution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous utilisont notamment des plongements contextualisés à partir de modèles de langue pré-entraînés tels que BERT.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We focus on contextualised word embeddings using pre-trained language models such as BERT.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons plusieurs approches pour extraire et agréger les représentations contextualisées des mots dans le temps, et quantifier leur degré de changement sémantique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose several approaches to extract and aggregate the contextualised representations of words over time, and quantify their level of semantic change.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>En particulier, nous abordons l'aspect pratique de ces systèmes: le passage à l'échelle de nos approches, en vue de les appliquer à de grands corpus ou de larges vocabulaire; leur interprétabilité, en désambiguïsant les différents usages d'un mot au cours du temps; et leur applicabilité à des problématiques concrètes, pour des documents liés au COVID19 et des corpus du domaine financier.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, we address the practical aspect of these systems: the scalability of our approaches, with a view to applying them to large corpora or large vocabularies; their interpretability, by disambiguating the different uses of a word over time; and their applicability to concrete issues, for documents related to COVID19.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous évaluons l'efficacité de ces méthodes de manière quantitative, en utilisant plusieurs corpus annotés, et de manière qualitative, en liant les variations détectées dans des corpus avec des événements de la vie réelle et des données numériques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We evaluate the efficiency of these methods quantitatively using several annotated corpora, and qualitatively by linking the detected semantic variations with real-life events and numerical data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous étendons la tâche de détection de changements sémantiques au-delà de la dimension temporelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we extend the task of semantic change detection beyond the temporal dimension.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous l'adaptons à un cadre bilingue, pour étudier l'évolution conjointe d'un mot et sa traduction dans deux corpus de langues différentes; et à un cadre synchronique, pour détecter des variations sémantiques entre différentes sources ou communautés en plus de la variation temporelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We adapt it to a bilingual setting, to study the joint evolution of a word and its translation in two corpora of different languages; and to a synchronic frame, to detect semantic variations across different sources or communities on top of the temporal variation.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

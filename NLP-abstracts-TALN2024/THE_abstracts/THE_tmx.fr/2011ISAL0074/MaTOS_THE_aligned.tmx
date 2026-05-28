@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2011ISAL0074. segId begin by 1, tuid = segId</note>
+        <docid>2011ISAL0074</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les services géolocalisés (LBS) sont destinés à délivrer de l’information adéquate aux utilisateurs quelque soit le temps et l’endroit et ceci en se basant sur leur profil, contexte et position géographique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Through any location based services application (LBA) (i.e. m-tourism), users who request information while on the move, intentionally seek as well a quick and precise answer on any map.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>En général, ces données sont stockées de plusieurs bases de données géographiques (BDG) dans le monde entier.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Typically, these datasets had been collected from many geographic databases worldwide.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>D’autre part, le nombre croissant des différentes BDG couvrant la même zone géographique et la récupération des données/métadonnées non erronées pour un service quelconque, impliquent de nombreux raisonnements et de contrôles d’accès aux BDG afin de résoudre les ambiguïtés dues à la présence des objets homologues dupliqués sur l’écran mobile.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the increasing number of different GDBs covering the same area and the retrieval of accurate data/metadata for the requested service will imply lots of reasoning processes and databases’ accesses in order to avoid nearly-duplicated records when displayed on the screen.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Donc, mon but ultime sera de générer automatiquement une carte unique intégrant plusieurs interfaces des fournisseurs sur laquelle les objets homologues seront intégrés avant de les visualiser sur l’écran mobile.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In other words, my ultimate goal is to generate automatically a unique map from multiple providers’ portrayals such as Google Maps, Bing and Yahoo Maps while homologous features should be integrated to avoid duplicate icons on the mobile screen.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nos nouveaux concepts, basés sur certains algorithmes de fusion, sur l’ontologie pour assurer l’intégration au niveau sémantique et cartographique, sur l’orchestration des géo web services, sont implémentés dans des prototypes modulaires et évalués.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our conceptual framework, based on some fusion algorithms, ontology reasoning for cartographic interoperability and geo-web services orchestration, had been implemented in some modular prototypes and tested for evaluation purpose.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

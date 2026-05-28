@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017USPCB042. segId begin by 1, tuid = segId</note>
+        <docid>2017USPCB042</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>À mesure que la production de textes numériques croît exponentiellement, un besoin grandissant d'analyser des corpus de textes se manifeste dans beaucoup de domaines d'application, tant ces corpus constituent des sources inépuisables d'information et de connaissance partagées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As the production of digital texts grows exponentially, a greater need to analyze text corpora arises in various domains of application, insofar as they constitute inexhaustible sources of shared information and knowledge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ainsi proposons-nous dans cette thèse une nouvelle approche de visualisation analytique pour l'analyse de corpus textuels, mise en œuvre pour les besoins spécifiques du journalisme d'investigation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We therefore propose in this thesis a novel visual analytics approach for the analysis of text corpora, implemented for the real and concrete needs of investigative journalism.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Motivées par les problèmes et les tâches identifiés avec une journaliste d'investigation professionnelle, les visualisations et les interactions ont été conçues suivant une méthodologie centrée utilisateur, impliquant l'utilisateur durant tout le processus de développement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Motivated by the problems and tasks identified with a professional investigative journalist, visualizations and interactions are designed through a user-centered methodology involving the user during the whole development process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>En l'occurrence, les journalistes d'investigation formulent des hypothèses, explorent leur sujet d'investigation sous tous ses angles, à la recherche de sources multiples étayant leurs hypothèses de travail.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Specifically, investigative journalists formulate hypotheses and explore exhaustively the field under investigation in order to multiply sources showing pieces of evidence related to their working hypothesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La réalisation de ces tâches, très fastidieuse lorsque les corpus sont volumineux, requiert l'usage de logiciels de visualisation analytique se confrontant aux problématiques de recherche abordées dans cette thèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Carrying out such tasks in a large corpus is however a daunting endeavor and requires visual analytics software addressing several challenging research issues covered in this thesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>D'abord, la difficulté de donner du sens à un corpus textuel vient de sa nature non structurée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, the difficulty to make sense of a large text corpus lies in its unstructured nature.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous avons donc recours au modèle vectoriel et son lien étroit avec l'hypothèse distributionnelle, ainsi qu'aux algorithmes qui l'exploitent pour révéler la structure sémantique latente du corpus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We resort to the Vector Space Model (VSM) and its strong relationship with the distributional hypothesis, leveraged by multiple text mining algorithms, to discover the latent semantic structure of the corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Bien que l'exploration des sujets de haut niveau aide à localiser des sujets d'intérêt ainsi que leur voisinage, l'identification de faits précis, de points de vue ou d'angles d'analyse, en lien avec un événement ou une histoire, nécessite un niveau de structuration plus fin pour représenter des variantes de sujet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although the exploration of the coarse-grained topics helps locate topic of interest and its neighborhood, the identification of specific facts, viewpoints or angles related to events or stories requires finer level of structuration to represent topic variants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Cette structure imbriquée révélée par Bimax, une méthode de biclustering basée sur des motifs avec chevauchement, capture au sein des biclusters les co-occurrences de termes partagés par des sous-ensembles de documents pouvant dévoiler des faits, des points de vue ou des angles associés à des événements ou des histoires communes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This nested structure, revealed by Bimax, a pattern-based overlapping biclustering algorithm, captures in biclusters the co-occurrences of terms shared by multiple documents and can disclose facts, viewpoints or angles related to events or stories.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse aborde les problèmes de visualisation de biclusters avec chevauchement en organisant les biclusters terme-document en une hiérarchie qui limite la redondance des termes et met en exergue les parties communes et distinctives des biclusters.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis tackles issues related to the visualization of a large amount of overlapping biclusters by organizing term-document biclusters in a hierarchy that limits term redundancy and conveys their commonality and specificities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous avons évalué l'utilité de notre logiciel d'abord par un scénario d'utilisation doublé d'une évaluation qualitative avec une journaliste d'investigation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We evaluated the utility of our software through a usage scenario and a qualitative evaluation with an investigative journalist.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>En outre, les motifs de co-occurrence des variantes de sujet révélées par Bima. sont déterminés par la structure de sujet englobante fournie par une méthode d'extraction de sujet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, the co-occurrence patterns of topic variants revealed by Bima. are determined by the enclosing topical structure supplied by the coarse-grained topic extraction method which is run beforehand.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Cependant, la communauté a peu de recul quant au choix de la méthode et son impact sur l'exploration et l'interprétation des sujets et de ses variantes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nonetheless, little guidance is found regarding the choice of the latter method and its impact on the exploration and comprehension of topics and topic variants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Ainsi nous avons conduit une expérience computationnelle et une expérience utilisateur contrôlée afin de comparer deux méthodes d'extraction de sujet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore we conducted both a numerical experiment and a controlled user experiment to compare two topic extraction methods, namely Coclus, a disjoint biclustering method, and hierarchical Latent Dirichlet Allocation (hLDA), an overlapping probabilistic topic model.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

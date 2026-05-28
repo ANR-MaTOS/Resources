@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020ECLI0002. segId begin by 1, tuid = segId</note>
+        <docid>2020ECLI0002</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Un processus ponctuel déterminantal (DPP) génère des configurations aléatoires de points ayant tendance à se repousser.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Determinantal point processes (DPPs) generate random configuration of points where the points tend to repel each other.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La notion de répulsion est encodée par les sous-déterminants d’une matrice à noyau, au sens des méthodes à noyau en apprentissage artificiel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The notion of repulsion is encoded by the sub-determinants of a kernel matrix, in the sense of kernel methods in machine learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cette forme algébrique particulière confère aux DPP de nombreux avantages statistiques et computationnels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This special algebraic form makes DPPs attractive both in statistical and computational terms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse porte sur l'échantillonnage des DPP, c'est à dire sur la conception d'algorithmes de simulation pour ce type de processus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis focuses on sampling from such processes, that is on developing simulation methods for DPPs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les motivations pratiques sont l'intégration numérique, les systèmes de recommandation ou encore la génération de résumés de grands corpus de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Applications include numerical integration, recommender systems or the summarization of a large corpus of data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre fini, nous établissons la correspondance entre la simulation de DPP spécifiques, dits de projection, et la résolution d'un problème d'optimisation linéaire dont les contraintes sont randomisées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the finite setting, we establish the correspondence between sampling from a specific type of DPPs, called projection DPPs, and solving a randomized linear program.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous en tirons une méthode efficace d'échantillonnage par chaîne de Markov.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this light, we devise an efficient Markov-chain-based sampling method.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre continu, certains DPP classiques peuvent être simulés par le calcul des valeurs propres de matrices tridiagonales aléatoires bien choisies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the continuous case, some classical DPPs can be sampled by computing the eigenvalues of carefully randomized tridiagonal matrices.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous en fournissons une nouvelle preuve élémentaire et unificatrice, dont nous tirons également un échantillonneur approché pour des modèles plus généraux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We provide an elementary and unifying treatment of such models, from which we derive an approximate sampling method for more general models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>En dimension supérieure, nous nous concentrons sur une classe de DPP utilisée en intégration numérique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In higher dimension, we consider a special class of DPPs used for numerical integration.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une implémentation efficace d'un schéma d'échantillonnage exact connu, qui nous permet de comparer les propriétés d'estimateurs Monte Carlo dans de nouveaux régimes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We implement a tailored version of a known exact sampler, which allows us to compare the properties of Monte Carlo estimators in new regimes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>En vue d'une recherche reproductible, nous développons une boîte à outils open-source, nommée DPPy, regroupant les différents outils d'échantillonnage sur les DPP.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the context of reproducible research, we develop an open-source Python toolbox, named DPPy, which implements the state of the art sampling methods for DPPs</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

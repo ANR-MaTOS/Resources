@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018SACLS089. segId begin by 1, tuid = segId</note>
+        <docid>2018SACLS089</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La stratégie dite du transfert cross-lingue permet de contourner cette limitation : une langue peu dotée en ressources (la cible) peut être traitée en exploitant les ressources disponibles dans une autre langue (la source).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One way to bypass this limitation is the approach of cross-lingual transfer, whereby resources available in another (source) language are leveraged to help building accurate systems in the desired (target) language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les progrès accomplis sur ce plan se limitent néanmoins à des scénarios idéalisés, avec des ressources cross-lingues prédéfinies et de bonne qualité, de sorte que le transfert reste inapplicable aux cas réels de langues peu dotées, qui n'ont pas ces garanties.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, despite promising results in research settings, the standard transfer techniques lack the flexibility regarding cross-lingual resources needed to be fully usable in real-world scenarios: exploiting very sparse resources, or assorted arrays of resources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'étude est menée en utilisant l'analyse en dépendance par transition comme cadre applicatif.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This strategy is put into practice in the frame of transition-based dependency parsing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Le cœur de ce travail est l'élaboration d'un nouveau méta-algorithme de transfert, dont l'architecture en cascade permet la combinaison fine des diverses ressources, en ciblant leur exploitation à l'échelle du mot.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To this end, a new transfer framework is designed, with a cascading architecture: it enables the desired combination, while ensuring better targeted exploitation of each resource, down to the level of the word.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>L'approche cross-lingue pure n'étant en l'état pas compétitive avec la simple annotation de quelques phrases cibles, c'est avant tout la complémentarité de ces méthodes que souligne l'analyse empirique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Empirical evaluation dampens indeed the enthusiasm for the purely cross-lingual approach -- it remains in general preferable to annotate just a few target sentences -- but also highlights its complementarity with other approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Une série de nouvelles métriques permet une caractérisation fine des similarités cross-lingues et des spécificités syntaxiques de chaque langue, de même que de la valeur ajoutée de l'information cross-lingue par rapport au cadre monolingue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Several metrics are developed to characterize precisely cross-lingual similarities, syntactic idiosyncrasies, and the added value of cross-lingual information compared to monolingual training.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>L'exploitation d'informations typologiques s'avère également particulièrement fructueuse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The substantial benefits of typological knowledge are also explored.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Ces contributions reposent largement sur des innovations techniques en analyse syntaxique, concrétisées par la publication en open source du logiciel PanParser, qui exploite et généralise la méthode dite des oracles dynamiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The whole study relies on a series of technical improvements regarding the parsing framework: this work includes the release of a new open source software, PanParser, which revisits the so-called dynamic oracles to extend their use cases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse contribue sur le plan monolingue à plusieurs autres égards, comme le concept de cascades monolingues, pouvant traiter par exemple d'abord toutes les dépendances faciles, puis seulement les difficiles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Several purely monolingual contributions complete this work, including an exploration of monolingual cascading, which offers promising perspectives with easy-then-hard strategies.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

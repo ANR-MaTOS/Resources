@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2015PA112201. segId begin by 1, tuid = segId</note>
+        <docid>2015PA112201</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'objectif de cette thèse est de concevoir et de construire, un système Text-To-Speech (TTS) haute qualité à base de HMM (Hidden Markov Model) pour le vietnamien, une langue tonale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The thesis objective is to design and build a high quality Hidden Markov Model (HMM-)based Text-To-Speech (TTS) system for Vietnamese – a tonal language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Le système est appelé VTED (Vietnamese TExt-to-speech Development system).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The system is called VTED (Vietnamese TExt-tospeech Development system).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Au vu de la grande importance de tons lexicaux, un tonophone” – un allophones dans un contexte tonal – a été proposé comme nouvelle unité de la parole dans notre système de TTS.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In view of the great importance of lexical tones, a “tonophone” – an allophone in tonal context – was proposed as a new speech unit in our TTS system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Un nouveau corpus d'entraînement, VDTS (Vietnamese Di-Tonophone Speech corpus), a été conçu à partir d'un grand texte brut pour une couverture de 100% de di-phones tonalisés (di-tonophones) en utilisant l'algorithme glouton.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A new training corpus, VDTS (Vietnamese Di-Tonophone Speech corpus), was designed for 100% coverage of di-phones in tonal contexts (i.e. di-tonophones) using the greedy algorithm from a huge raw text.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Un total d'environ 4000 phrases ont été enregistrées et pré-traitées comme corpus d'apprentissage de VTED.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A total of about 4,000 sentences of VDTS were recorded and pre-processed as a training corpus of VTED.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans la synthèse de la parole sur la base de HMM, bien que la durée de pause puisse être modélisée comme un phonème, l'apparition de pauses ne peut pas être prédite par HMM.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the HMM-based speech synthesis, although pause duration can be modeled as a phoneme, the appearanceof pauses cannot be predicted by HMMs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Les niveaux de phrasé ne peuvent pas être complètement modélisés avec des caractéristiques de base.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Lower phrasing levels above words may not be completely modeled with basic features.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cette recherche vise à obtenir un découpage automatique en groupes intonatifs au moyen des seuls indices de durée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This research aimed at automatic prosodic phrasing for Vietnamese TTS using durational clues alone as it appeared too difficult to disentangle intonation from lexical tones.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Des blocs syntaxiques constitués de phrases syntaxiques avec un nombre borné de syllabes (n), ont été proposés pour prévoir allongement final (n = 6) et pause apparente (n = 10).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Syntactic blocks, i.e. syntactic phrases with a bounded number of syllables (n), were proposed for predicting final lengthening (n = 6) and pause appearance (n = 10).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Des améliorations pour allongement final ont été effectuées par des stratégies de regroupement des blocs syntaxiques simples.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Improvements for final lengthening were done by some strategies of grouping single syntactic blocks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>La qualité du modèle prédictive J48-arbre-décision pour l'apparence de pause à l'aide de blocs syntaxiques, combinée avec lien syntaxique et POS (Part-Of-Speech) dispose atteint un F-score de 81,4 % (Précision = 87,6 %, Recall = 75,9 %), beaucoup mieux que le modèle avec seulement POS (F-score=43,6%) ou un lien syntaxique (F-score=52,6%).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The quality of the predictive J48-decision-tree model for pause appearance using syntactic blocks combining with syntactic link and POS (Part-Of-Speech) features reached F-score of 81.4% Precision=87.6%, Recall=75.9%), much better than that of the model with only POS (F-score=43.6%)or syntactic link (F-score=52.6%) alone.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>L'architecture du système a été proposée sur la base de l'architecture HTS avec une extension d'une partie traitement du langage naturel pour le Vietnamien.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The architecture of the system was proposed on the basis of the core architecture of HTS with an extension of a Natural Language Processing part for Vietnamese.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>L'apparence de pause a été prédit par le modèle proposé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Pause appearance was predicted by the proposed model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Les caractéristiques contextuelles incluent les caractéristiques d'identité de “tonophones”, les caractéristiques de localisation, les caractéristiques liées à la tonalité, et les caractéristiques prosodiques (POS, allongement final, niveaux de rupture).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Contextual feature set included phone identity features, locational features, tone-related features, and prosodic features (i.e. POS, final lengthening, break levels).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Mary TTS a été choisi comme plateforme pour la mise en oeuvre de VTED.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Mary TTS was chosen as a platform for implementing VTED.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Dans le test MOS (Mean Opinion Score), le premier VTED, appris avec les anciens corpus et des fonctions de base, était plutôt bonne, 0,81 (sur une échelle MOS 5 points) plus élevé que le précédent système – HoaSung (lequel utilise la sélection de l'unité non-uniforme avec le même corpus) ; mais toujours 1,2-1,5 point de moins que le discours naturel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the MOS (Mean Opinion Score) test, the first VTED, trained with the old corpus and basic features, was rather good, 0.81 (on a 5 point MOS scale) higher than the previous system – HoaSung (using the non-uniform unit selection with the same training corpus); but still 1.2-1.5 point lower than the natural speech.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>La qualité finale de VTED, avec le nouveau corpus et le modèle de phrasé prosodique, progresse d'environ 1,04 par rapport au premier VTED, et son écart avec le langage naturel a été nettement réduit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The quality of the final VTED, trained with the new corpus and prosodic phrasing model, progressed by about 1.04 compared to the first VTED, and its gap with the natural speech was much lessened.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Dans le test d'intelligibilité, le VTED final a reçu un bon taux élevé de 95,4%, seulement 2,6% de moins que le discours naturel, et 18% plus élevé que le premier.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the tone intelligibility test, the final VTED received a high correct rate of 95.4%, only 2.6% lower than the natural speech, and 18% higher than the initial one.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Le taux d'erreur du premier VTED dans le test d'intelligibilité générale avec le carré latin test d'environ 6-12% plus élevé que le langage naturel selon des niveaux de syllabe, de ton ou par phonème.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The error rate of the first VTED in the intelligibility test with the Latin square design was about 6-12% higher than the natural speech depending on syllable, tone or phone levels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Le résultat final ne s'écarte de la parole naturelle que de 0,4-1,4%.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The final one diverged about only 0.4-1.4% from the natural speech.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

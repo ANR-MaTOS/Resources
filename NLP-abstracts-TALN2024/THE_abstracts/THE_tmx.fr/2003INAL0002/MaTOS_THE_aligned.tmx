@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2003INAL0002. segId begin by 1, tuid = segId</note>
+        <docid>2003INAL0002</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La présente thèse propose une analyse morphologique automatique des séquences de kanji dans des textes japonais, généraux ou spécialisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The present thesis proposes an automatic morphological analysis of the kanji sequences in Japanese texts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette analyse s'appuie sur les particularités graphémiques, morphologiques et syntaxiques du japonais.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This analysis is based on the graphemic, morphological and syntactic characteristics of the Japanese language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La première partie décrit le système d'écriture japonais et son codage informatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first part of the thesis describes the Japanese writing system and its encoding methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La deuxième partie décrit les parties du discours japonais, en particulier les verbes, qualificatifs, particules et suffixes flexionnels, leurs caractéristiques morphosyntaxiques étant essentielles pour l'analyse morphologique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second part deals with the Japanese parts of speech, in particular verbs, adjectives, particles and flexional suffixes which morphosyntaxic characteristics are essential for the morphological analysis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La troisième partie décrit le module d'analyse : identification et formalisation des données pour l'analyse, algorithme de l'analyse et des pré-traitements, formalisation de modèles d'objets pour la manipulation informatique du japonais.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The third part describes the module of analysis: identification and formalization of the data necessary to the analysis, algorithm of the analysis and the related treatments, formalization of models of objects necessary to the data-processing handling of Japanese.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

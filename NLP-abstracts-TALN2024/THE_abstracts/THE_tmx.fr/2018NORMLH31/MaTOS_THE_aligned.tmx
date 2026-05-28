@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018NORMLH31. segId begin by 1, tuid = segId</note>
+        <docid>2018NORMLH31</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse, présente des contributions à la résolution (sur les GPUs) de problèmes d'optimisations réels de grandes tailles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis presents contributions to the resolution (on GPUs) of real optimization problems of large sizes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les problèmes de tournées de véhicules (VRP) et ceux de localisation des hubs (HLP) sont traités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The vehicle routing problems (VRP) and the hub location problems (HLP) are treated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Un algorithme génétique (GA) parallèle sur GPU est proposé pour résoudre différentes variantes du HLP.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A parallel genetic algorithm (GA) on GPU is proposed to solve different variants of the HLP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Le GA adapte son codage, sa solution initiale, ses opérateurs génétiques et son implémentation à chacune des variantes traitées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed GA adapts its encoding, initial solution, genetic operators and its implementation to each of the variants treated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous avons utilisé le GA pour résoudre le HLP avec des incertitudes sur les données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we used the GA to solve the HLP with uncertainties on the data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Les tests numériques montrent que les approches proposées exploitent efficacement la puissance de calcul du GPU et ont permis de résoudre de larges instances jusqu'à 6000 nœuds.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The numerical tests show that the proposed approaches effectively exploit the computing power of the GPU and have made it possible to resolve large instances up to 6000 nodes.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

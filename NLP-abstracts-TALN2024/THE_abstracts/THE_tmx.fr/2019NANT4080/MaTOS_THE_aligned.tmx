@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019NANT4080. segId begin by 1, tuid = segId</note>
+        <docid>2019NANT4080</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le besoin croissant en assistance humaine a poussé les chercheurs à développer des systèmes de dialogue automatiques, intelligents et infatigables qui conversent avec les humains dans un langage naturel pour devenir soit leurs assistants virtuels ou leurs compagnons.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The increasing need of human assistance pushed researchers to develop automatic, smart and tireless dialogue systems that can converse with humans in natural language to be either their virtual assistant or their chat companion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>L’industrie des systèmes de dialogue est devenue populaire cette dernière décennie, ainsi, plusieurs systèmes ont été développés par des industriels comme des académiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The industry of dialogue systems has been very popular in the last decade and many systems from industry and academia have been developed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre de cette thèse, nous étudions les systèmes de dialogue basés sur la recherche de réponse qui cherchant la réponse la plus appropriée à la conversation parmi un ensemble de réponses prédéfini.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we study retrieval-based dialogue systems which aim to find the most appropriate response to the conversation among a set of predefined responses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Le défi majeur de ces systèmes est la compréhension de la conversation et l’identification des éléments qui décrivent le problème et la solution qui sont souvent implicites.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main challenge of these systems is to understand the conversation and identify the elements that describe the problem and the solution which are usually implicit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La plupart des approches récentes sont basées sur des techniques d’apprentissage profond qui permettent de capturer des informations implicites.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Most of the recent approaches are based on deep learning techniques which can automatically capture implicit information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Souvent, ces approches sont complexes ou dépendent fortement du domaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However these approaches are either complex or domain dependent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une approche de recherche de réponse de bout en bout, simple, efficace et indépendante du domaine et qui permet de capturer ces informations implicites.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a simple, end-to-end and efficient retrieval-based dialogue system that first matches the response with the history of the conversation on the sequence-level and then we extend the system to multiple levels while keeping the architecture simple and domain independent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous effectuons également plusieurs analyses afin de déterminer des pistes d’amélioration.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We perform several analyzes to determine possible improvements.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

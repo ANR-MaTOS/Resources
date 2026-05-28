@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020LEMA1001. segId begin by 1, tuid = segId</note>
+        <docid>2020LEMA1001</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La tâche de segmentation et de regroupement en locuteur (SRL) consiste à déterminer le nombre de locuteurs ainsi que leurs interventions dans un document audio.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The diarization task tries to determine the number of speakers as well as their interventions in an audio file.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette tâche intéresse de nombreuses entreprises qui souhaitent indexer leurs contenus audiovisuels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is an interesting task for any enterprise willing to index its audiovisual contents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En particulier, l'institut national de l'audiovisuel (INA) désire appliquer cette tâche sur ses archives afin d'en améliorer l'accessibilité mais également l'annotation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Especially, the French National Audiovisual Institute (INA) desires to apply this task on its archives so as to improve its accessibility and its annotation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cependant, les usages de l'institut requièrent une qualité minimum qui n'est, la plupart du temps, pas encore atteinte par les systèmes automatiques de SRL à l'état de l'art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the uses of the institute need a minimal quality which, most of the time, is not reached by the state-of-the-art automatic diarization systems yet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Pour atteindre les performances voulues, un humain peut corriger la sortie d'un système de SRL.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to reach the wanted effectiveness, a human can correct the output of a diarization system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, une intervention humaine est généralement chronophage et coûteuse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, a human intervention is generally time-consuming and expensive.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Afin de réduire ces coûts, une solution possible est d'utiliser un système assisté par l'humain : un humain donne des informations à un système afin qu'il améliore ses prédictions pour faire décroître son coût de correction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to reduce these costs, a possible solution is to use a computer-assisted system: a human gives some information to a system in order that it can improve its predictions so as to decrease its intervention cost.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Le présent manuscrit s'articule autour de la SRL assistée par l'humain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The present manuscript revolves around the computer-assisted diarization.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Il propose une mesure afin d'évaluer le coût d'intervention humain pour corriger une SRL, un protocole pour évaluer les interactions d'un humain pour la SRL, un automate simulant les corrections humaines à faire pour une SRL et des systèmes de SRL assistés réduisant le coût d'intervention humain total.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It proposes a metric so as to assess the human intervention cost to correct a diarization, a framework to evaluate the human corrections of a speaker diarization, an automaton simulating the human corrections to do for a diarization and some computer-assisted diarization systems decreasing the total human intervention cost.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, les systèmes de SRL assistés présentés réévaluent soit uniquement le regroupement en locuteurs, soit la segmentation et le regroupement en locuteurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More precisely, the proposed computer-assisted diarization systems reassess either only the speaker clustering or the segmentation and the speaker clustering.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

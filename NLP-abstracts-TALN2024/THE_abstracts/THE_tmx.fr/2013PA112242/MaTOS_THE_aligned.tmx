@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2013PA112242. segId begin by 1, tuid = segId</note>
+        <docid>2013PA112242</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>De nombreuses applications de flux de données ont vu le jour au cours des dernières années.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Learning from data streams is emerging as an important application area.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Lorsque l'environnement évolue, il est nécessaire de s'appuyer sur un apprentissage en ligne pouvant s'adapter aux conditions changeantes, alias dérives de concept.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>When the environment changes, it is necessary to rely on on-line learning with the capability to adapt to changing conditions a.k.a. concept drifts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'adaptation aux dérives de concept implique d'oublier une partie ou la totalité des connaissances acquises lorsque le concept change, tout en accumulant des connaissances sur le concept sous-jacent supposé stationnaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Adapting to concept drifts entails forgetting some or all of the old acquired knowledge when the concept changes while accumulating knowledge regarding the supposedly stationary underlying concept.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les méthodes d'ensemble ont été parmi les approches les plus réussies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Ensemble methods have been among the most successful approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cependant, la gestion de l'ensemble qui détermine les informations à oublier n'a pas été complètement étudiée jusqu'ici.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the management of the ensemble which ultimately controls how past data is forgotten has not been thoroughly investigated so far.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Notre travail montre l'importance de la stratégie de l'oubli en comparant plusieurs approches.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our work shows the importance of the forgetting strategy by comparing several approaches.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Les résultats ainsi obtenus nous amènent à proposer une nouvelle méthode d'ensemble avec une stratégie d'oubli conçue pour s'adapter aux dérives de concept.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results thus obtained lead us to propose a new ensemble method with an enhanced forgetting strategy to adapt to concept drifts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Des évaluations empiriques montrent que notre méthode se compare favorablement aux systèmes adaptatifs de l'état de l'art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Experimental comparisons show that our method compares favorably with the well-known state-of-the-art systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous allons plus loin en introduisant un mécanisme d'anticipation capable de détecter des états pertinents de l'environnement, de reconnaître les contextes récurrents et d'anticiper les changements de concept susceptibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In our work, we go one step further by introducing a meta-learning mechanism that is able to detect relevant states of the environment, to recognize recurring contexts and to anticipate likely concepts changes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, la méthode que nous proposons traite à la fois le défi d'optimiser le dilemme stabilité-plasticité, l'anticipation et la reconnaissance des futurs concepts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hence, the method we suggest, deals with both the challenge of optimizing the stability-plasticity dilemma and with the anticipation and recognition of incoming concepts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Ceci est accompli grâce à une méthode d'ensemble qui contrôle un comité d'apprenants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is accomplished through an ensemble method that controls a ensemble of incremental learners.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

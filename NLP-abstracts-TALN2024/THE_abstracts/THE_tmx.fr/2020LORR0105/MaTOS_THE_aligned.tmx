@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020LORR0105. segId begin by 1, tuid = segId</note>
+        <docid>2020LORR0105</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Quand les robots doivent affronter le monde réel, ils doivent s'adapter à diverses situations imprévues en acquérant de nouvelles compétences le plus rapidement possible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As soon as the robots step out in the real and uncertain world, they have to adapt to various unanticipated situations by acquiring new skills as quickly as possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les algorithmes d'apprentissage par renforcement (par exemple, l'apprentissage par renforcement profond) pourraient permettre d’apprendre de telles compétences, mais les algorithmes actuels nécessitent un temps d'interaction trop important.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Unfortunately, on robots, current state-of-the-art reinforcement learning (e.g., deep-reinforcement learning) algorithms require large interaction time to train a new skill.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Notre objectif principal est de combiner des connaissances acquises sur un simulateur avec les expériences réelles du robot afin d'obtenir un apprentissage et une adaptation rapides.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our primary focus is to incorporate prior knowledge from a simulator with real-world experiences of a robot to achieve rapid learning and adaptation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans notre première contribution, nous proposons un nouvel algorithme de recherche de politiques basé sur un modèle, appelé Multi-DEX, qui (1) est capable de trouver des politiques dans des scénarios aux récompenses rares, (2) n'impose aucune contrainte sur le type de politique ou le type de fonction de récompense et (3) est aussi efficace en termes de données que l'algorithme de recherche de politiques de l’état de l’art dans des scénarios de récompenses non rares.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In our first contribution, we propose a novel model-based policy search algorithm called Multi-DEX that (1) is capable of finding policies in sparse reward scenarios (2) does not impose any constraints on the type of policy or the type of reward function and (3) is as data-efficient as state-of-the-art model-based policy search algorithm in non-sparse reward scenarios.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans notre troisième contribution, nous présentons un algorithme de méta-apprentissage basé sur les gradients appelé FAMLE.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In our third contribution, we introduce a gradient-based meta-learning algorithm called FAMLE.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>FAMLE permet d'entraîner le modèle dynamique du robot à partir de données simulées afin que le modèle puisse être adapté rapidement à diverses situations invisibles grâce aux observations du monde réel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>FAMLE meta-trains the dynamical model of the robot from simulated data so that the model can be adapted to various unseen situations quickly with the real-world observations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En utilisant FAMLE pour améliorer un modèle pour la commande prédictive, nous montrons que notre approche surpasse plusieurs algorithmes d'apprentissage basés ou non sur un modèle, et résout les tâches données en moins de temps d'interaction que les algorithmes avec lesquels nous l’avons comparé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By using FAMLE with a model-predictive control framework, we show that our approach outperforms several model-based and model-free learning algorithms, and solves the given tasks in less interaction time than the baselines.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

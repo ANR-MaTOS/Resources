@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2015LEMA1006. segId begin by 1, tuid = segId</note>
+        <docid>2015LEMA1006</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La tâche de Segmentation et Regroupement en Locuteurs (SRL), telle que définie par le NIST, considère le traitement des enregistrements d’un corpus comme des problèmes indépendants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The task of speaker diarization, as defined by NIST, considers the recordings from a corpus as independent processes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les enregistrements sont traités séparément, et le tauxd’erreur global sur le corpus correspond finalement à une moyenne pondérée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The recordings are processed separately, and the overall error rate is a weighted average.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte, les locuteurs détectés par le système sont identifiés par des étiquettes anonymes propres à chaque enregistrement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this context, detected speakers are identified by anonymous labels specific to each recording.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Un même locuteur qui interviendrait dans plusieurs enregistrements sera donc identifié par des étiquettes différentes selon les enregistrements.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, a speaker appearing in several recordings will be identified by a different label in each of the recordings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cette situation est pourtant très fréquente dans les émissions journalistiques d’information : les présentateurs, les journalistes et autres invités qui animent une émission interviennent généralement de manière récurrente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Yet, this situation is very common in broadcast news data: hosts, journalists and other guests may appear recurrently.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>En conséquence, la tâche de SRL a depuis peu été considérée dans un contexte plus large, où les locuteurs récurrents doivent être identifiés de manière unique dans tous les enregistrements qui composent un corpus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Consequently, speaker diarization has been recently considered in a broader context, where recurring speakers must be uniquely identified in every recording that compose a corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Cette généralisation du problème de regroupement en locuteurs va de pair avec l’émergence du concept de collection, qui se réfère, dans le cadre de la SRL, à un ensemble d’enregistrements ayant une ou plusieurs caractéristiques communes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This generalization of the speaker partitioning problem goes hand in hand with the emergence of the concept of collections, which refers, in the context of speaker diarization, to a set of recordings sharing one or more common characteristics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Le travail proposé dans cette thèse concerne le regroupement en locuteurs sur des collections de documents audiovisuels volumineuses (plusieurs dizaines d’heures d’enregistrements).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The work proposed in this thesis concerns speaker clustering of large audiovisual collections (several tens of hours of recordings).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>L’objectif principal est de proposer (ou adapter) des approches de regroupement afin de traiter efficacement de gros volumes de données, tout en détectant les locuteurs récurrents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main objective is to propose (or adapt) clustering approaches in order to efficiently process large volumes of data, while detecting recurrent speakers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>L’efficacité des approches proposées est étudiée sous deux aspects : d’une part, la qualité des segmentations produites (en termes de taux d’erreur), et d’autre part, la durée nécessaire pour effectuer les traitements.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The effectiveness of the proposed approaches is discussed from two point of view: first, the quality of the produced clustering (in terms of error rate), and secondly, the time required to perform the process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons à cet effet deux architectures adaptées au regroupement en locuteurs sur des collections de documents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For this purpose, we propose two architectures designed to perform cross-show speaker diarization with collections of recordings.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une approche de simplification où le problème de regroupement est représenté par une graphe non-orienté.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a simplifying approach to decomposing a large clustering problem in several independent sub-problems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>La décompositionde ce graphe en composantes connexes permet de décomposer le problème de regroupement en un certain nombre de sous-problèmes indépendants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Solving these sub-problems is done with either of two clustering approaches which takeadvantage of the recent advances in speaker modeling.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

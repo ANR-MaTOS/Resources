@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018GREAM055. segId begin by 1, tuid = segId</note>
+        <docid>2018GREAM055</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les robots sont de plus en plus utilisés dans un cadre social.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Robots are more and more used in a social context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Il ne suffit plusde partager l'espace avec des humains, mais aussi d'interagir avec eux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They are required not only to share physical space with humans but also to interact with them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans ce cadre, il est attendu du robot qu'il comprenne un certain nombre de signaux ambiguës, verbaux et visuels, nécessaires à une interaction humaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this context, the robot is expected to understand some verbal and non-verbal ambiguous cues, constantly used in a natural human interaction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>En particulier, on peut extraire beaucoup d'information, à la fois sur l'état d'esprit des personnes et sur la dynamique de groupe à l'œuvre, en connaissant qui ou quoi chaque personne regarde.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular,knowing who or what people are looking at is a very valuable information to understand each individual mental state as well as the interaction dynamics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>On parle de la Cible d'attention visuelle, désignée par l'acronyme anglais VFOA.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is called Visual Focus of Attention or VFOA.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous nous intéressons aux données perçues par un robot humanoı̈de qui participe activement à une in-teraction sociale, et à leur utilisation pour deviner ce que chaque personne regarde.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we are interested in using the inputs from an active humanoid robot – participating in a social interaction – to estimate who is looking at whom or what.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>D'une part, le robot doit “regarder les gens”, à savoir orienter sa tête (et donc la caméra) pour obtenir des images des personnes présentes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the one hand, we want the robot to look at people, so it can extract meaningful visual information from its video camera.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons une méthode originale d'apprentissage par renforcement pour contrôler la direction du regard d'un robot.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a novel reinforcement learning method for robotic gaze control.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Cette méthode utilise des réseaux de neurones récurrents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The model is based on a recurrent neural network architecture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Le robot s'entraı̂ne en autonomie à déplacer sa tête enfonction des données visuelles et auditives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The robot autonomously learns as trategy for moving its head (and camera) using audio-visual inputs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Il atteint une stratégie efficace, qui lui permet de cibler des groupes de personnes dans un environnement évolutif.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is able to focus on groups of people in a changing environment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>D'autre part, les images du robot peuvent être utilisée pour estimer les VFOAs au cours du temps.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, information from the video camera images are used to infer the VFOAs of people along time.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Pour chaque visage visible, nous calculons laposture 3D de la tête (position et orientation dans l'espace) car très fortement corrélée avec la direction du regard.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We estimate the 3D head poses (location and orientation) for each face, as it is highly correlated with the gaze direction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Nous l'utilisons dans deux applications.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We use it in two tasks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Premièrement, nous remarquons que les gens peuvent regarder des objets qui ne sont pas visible depuis le point de vue du robot.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, we note that objects may be looked at while not being visible from the robot point of view.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Sous l'hypothèse que les dits objets soient regardés au moins une partie du temps, nous souhaitons estimer leurs positions exclusivement à partir de la direction du regard des personnes visibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Under the assumption that objects of interest are being looked at, we propose to estimate their locations relying solely on the gaze direction of visible people.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons une représentation sous forme de carte de chaleur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We formulate an ad hoc spatial representation based on probability heatmaps.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Nous avons élaboré et entraı̂né plusieurs réseaux de convolutions afin d'estimer la régression entre une séquence de postures des têtes, et les positions des objets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We design several convolutional neural network models and train them to perform a regression from the space of head poses to the space of object locations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons alors un modèle probabiliste, suggéré par des résultats en psychophysique, afin de modéliser la relation entre les postures des têtes, les positions des objets, la direction du regard et les VFOAs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this context, we introduce a Bayesian probabilistic model, inspired from psychophysics, that describes the dependency between head poses, object locations, eye-gaze directions, and VFOAs, along time.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>La formulation utilise un modèle markovien à dynamiques multiples.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The formulation is based on a switching state-space Markov model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="FR">
+                <seg>En appliquant une approches bayésienne, nous obtenons un algorithme pour calculer les VFOAs au fur et à mesure, et une méthode pour estimer les paramètres du modèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A specific filtering procedure is detailed to infer the VFOAs, as well as an adapted training algorithm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="FR">
+                <seg>Nos contributions reposent sur la possibilité d'utiliser des données, afin d'exploiter des approches d'apprentissage automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed contributions use data-driven approaches, and are addressed within the context of machine learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="FR">
+                <seg>Toutes nos méthodes sont validées sur des jeu de données disponibles publiquement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>All methods have been tested on publicly available datasets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <tuv xml:lang="FR">
+                <seg>De plus, la génération de scénarios synthétiques permet d'agrandir à volonté la quantité de données disponibles ; les méthodes pour simuler ces données sont explicitement détaillée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Some training procedures additionally require to simulate synthetic scenarios; the generation process is then explicitly detailed.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

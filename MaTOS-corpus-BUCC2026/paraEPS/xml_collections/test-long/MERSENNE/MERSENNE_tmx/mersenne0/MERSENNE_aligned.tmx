@@ -1,0 +1,927 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en" srclang="FR" tgtlang="EN" o-tmf="XML" creationdate="2024-11-15" creationid="MaTOS">
+        <note>This is the sentence alignement file for MERSENNE-mersenne0. segId begin by 1, tuid = segId</note>
+        <docid>mersenne0</docid>
+        <url_src>https://comptes-rendus.academie-sciences.fr/geoscience/articles/fr/10.5802/crgeos.31/</url_src>
+        <url_tgt>https://comptes-rendus.academie-sciences.fr/geoscience/articles/en/10.5802/crgeos.31/</url_tgt>
+        <author>Etienne Ghys, Ghislain de Marsily</author>
+        <title_en>Science is not Fuzzy...</title_en>
+        <title_fr>La Science n’est pas Floue ...</title_fr>
+        <volume>CRGEOS, 2020, Volume 352, Facing climate change, the range of possibilities</volume>
+        <translator>Romain Dziegielinski</translator>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <prop type="paragraph">1</prop>
+            <tuv xml:lang="FR">
+                <seg>La Science n’est pas Floue ...</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Science is not Fuzzy...</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Un article récent du journal Libération titrait «Les savants flous».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A recent article in the newspaper Libération headlined « Les savants flous ».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>L’image de la science dans le public a été considérablement perturbée par l’épidémie de Covid.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The public image of science has been considerably disrupted by the Covid epidemic.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Tout à coup, en l’espace de quelques semaines, le monde a pris conscience que la science n’est pas faite que de certitudes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Suddenly, within a few weeks, the world became aware that science is not only made of certainties.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Pire encore, des experts de toute nature, dont certains scientifiques éminents, ont exposé des points de vue contradictoires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Worse still, experts of all kinds, including some prominent scientists, have presented conflicting views.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Depuis quelques décennies, la science avait mauvaise presse et on lui prêtait beaucoup de maux, souvent de manière irrationnelle: OGM, énergie nucléaire, vaccins, etc.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For several decades, science had had a bad press and many ills were being attributed to it, often irrationally: GMOs, nuclear energy, vaccines, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Mais on croyait encore à la vérité scientifique: des savants, parfois vus comme des apprentis sorciers, élaboraient des théories certes indiscutables mais dont les applications pouvaient parfois aller à l’encontre du bien public.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>But we still believed in the scientific truth: scientists, sometimes seen as sorcerer's apprentices, developed undisputed theories but whose applications could sometimes go against the public good.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Et voilà que des désaccords entre scientifiques apparaissent au grand jour…!</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>And now disagreements between scientists gained exposure...!</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>Pourtant les scientifiques le savent bien: depuis toujours, la recherche est faite de débats entre opinions différentes, qui tendent vers une forme de vérité jamais véritablement atteinte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, scientists know it well: research has always been based on debates between different opinions, which tend towards a form of truth never really achieved.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>On ne compte plus les exemples de querelles dans toutes les sciences.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There are countless examples of quarrels in all sciences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>En physique, le débat a fait rage au 19^(°) siècle à l’Académie des sciences autour de l’existence des atomes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In physics, the debate raged in the 19^(th) century at the French Académie des sciences around the existence of atoms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>En biologie, c’est la théorie de l’évolution ou les microbes qui ont été mis en question.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In biology, it is the theory of evolution or microbes that have been questioned.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans les sciences de la Terre, la tectonique des plaques a mis très longtemps avant d’être acceptée dans les années 1960, et l’origine du réchauffement climatique était encore très récemment l’objet de débats houleux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In Earth sciences, plate tectonics took a very long time to be accepted in the 1960s, and the origin of global warming was still the subject of heated debate very recently.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>Même la science mathématique, pourtant considérée comme le temple de la vérité, n’est pas exempte de ce genre de questions et a dû affiner le concept de vérité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Even mathematical science, though regarded as the temple of truth, is not exempt from such questions and has had to refine the concept of truth.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>Le théorème de Pythagore est vrai dans la géométrie euclidienne qu’on enseigne à l’école mais devient faux dans la géométrie hyperbolique très utilisée aujourd’hui dans la recherche mathématique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The Pythagorean theorem is true in the Euclidean geometry taught in school but becomes false in the hyperbolic geometry widely used today in mathematical research.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans chaque discipline, le mot «vrai» a un sens extrêmement précis, bien connu des spécialistes, mais qu’il faut expliquer au néophyte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In each discipline, the word "true" has an extremely precise meaning, well known to specialists, but which must be explained to the neophyte.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>La théorie de la gravitation de Newton a été détrônée par la théorie de la relativité d’Einstein mais elle n’en demeure pas moins vraie et utile dans d’innombrables situations, de même que les théories modernes de la gravitation précisent celle d’Einstein.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Newton's theory of gravitation has been dethroned by Einstein's theory of relativity, but it is nonetheless true and useful in innumerable situations, just as modern theories of gravitation specify Einstein's theory.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>Il ne faut bien sûr pas en conclure que la vérité scientifique est relative et que ses conclusions ne sont pas solides.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Of course, we must not conclude from this that the scientific truth is relative and that its conclusions are not solid.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>La théorie de l’évolution, la tectonique des plaques, ou le réchauffement de notre planète ne seront plus jamais remis en question: ce sont des faits acquis et désormais indiscutables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The theory of evolution, plate tectonics, or global warming will never again be questioned: these are now established and indisputable facts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>Les points qui sont en discussion sont des faits «nouveaux», comme l’apparition d’un virus, qui se transformeront par la suite en «vérité scientifique» après le passage par une polémique souvent constructive.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The points under discussion are "new" facts, such as the appearance of a virus, which will subsequently turn into "scientific truth" after going through an often constructive controversy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est sur le front de la recherche que les luttes et les discussions ont lieu.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is on the research front that struggles and discussions take place.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>À l’arrière, le terrain est sécurisé et c’est tant mieux!</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>At the back, the land is secure and that's good!</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Les scientifiques ont une grande part de responsabilité dans cette image faussée de leurs disciplines.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Scientists have a lot of responsibility in this distorted image of their disciplines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Le plus souvent, ils se gardent bien de montrer publiquement leurs désaccords et ils n’expliquent que rarement la méthode scientifique, faite d’essais et d’erreurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In most cases, they are careful not to show their disagreements publicly and they rarely explain the scientific method, made up of trial and error.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Ils aiment montrer les succès et cachent les chemins tortueux qu’ils ont suivis pour y parvenir.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They like to show successes and hide the tortuous paths they have followed to achieve them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Les manuels scolaires racontent la gloire d’un Le Verrier qui découvre au 19^(°) siècle la planète Neptune «du bout de sa plume», comme disait Arago, en faisant des calculs de mécanique céleste, mais ils oublient de dire que le même Le Verrier, entraîné sur sa lancée, a «découvert» par la suite une autre planète…qui n’existe pas (et qu’il avait même baptisée Vulcain)!</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>School textbooks recount the glory of a Le Verrier who discovered the planet Neptune in the 19th century "with the tip of his pen", as Arago said, by making calculations of celestial mechanics, but they forget to say that the same Le Verrier, caught up in his momentum, later "discovered" another planet... which does not exist (and which he had even named Vulcan)!</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est vrai que, très lentement, la communauté scientifique a pris conscience de la nécessité de la diffusion des sciences, pas seulement comme une liste de résultats magnifiques, mais aussi comme un ensemble d’hypothèses et de conclusions provisoires qui sont en cours de validation, parfois contradictoires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is true that, very slowly, the scientific community has become aware of the need for the dissemination of science, not only as a list of magnificent results, but also as a set of hypotheses and provisional conclusions which are in the process of being validated, sometimes contradictory.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>En quelque sorte, le petit Corona virus est semblable à l’enfant du conte d’Andersen qui crie que le roi est nu: l’épidémie a forcé subitement les scientifiques à se dévoiler et à montrer publiquement la complexité de leur monde.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a way, the small Corona virus is similar to the child in Andersen's tale who cries that the king is naked: the epidemic has suddenly forced scientists to unveil themselves and publicly show the complexity of their world.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est dommage car la science en train de se faire est encore plus belle et passionnante quand elle est mise à nu.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It's a shame because science in the making is even more beautiful and exciting when it is revealed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>La question du climat est analogue, mais sur une échelle de temps différente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The climate issue is analogous, but on a different time scale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Il a fallu trois semaines aux Français pour comprendre ce qu’est une épidémie, un virus, ou une zoonose, mais il leur a fallu trente ans pour comprendre ce qu’est le réchauffement climatique et l’effet de serre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It took the French three weeks to understand what an epidemic, a virus, or a zoonosis is, but it took them thirty years to understand what global warming and the greenhouse effect are.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Les débats entre climatologues ont été violents et lorsque le public en a pris connaissance, il a souvent conclu que la science est décidément floue, qu’elle est incapable de prédire l’avenir, et que les experts ne sont pas d’accord.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Debates among climate scientists were fierce and when the public became aware of them, he often concluded that science is decidedly fuzzy, unable to predict the future, and that experts disagree.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Là encore, les scientifiques ont une part de responsabilité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Here again, scientists have a share of responsibility.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Ils n’ont que rarement été capables d’expliquer la complexité des problèmes, le grand nombre de vérités indiscutables, mais aussi le caractère non définitif de certaines conclusions en cours de discussion.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They have only rarely been able to explain the complexity of the issues, the large number of indisputable truths, but also the non-final nature of some of the conclusions under discussion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Les médias ont tendance à oublier les consensus et adorent mettre en avant les désaccords.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The media tend to forget consensus and love to highlight disagreements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>S’il n’y avait pas de science, nous n’aurions pris conscience que trop tard du réchauffement climatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If there was no science, we would have become aware of global warming only too late.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Il ne s’agit en effet que d’une augmentation de quelques fractions de degrés chaque année, immergées au milieu de variations de températures plus importantes, essentiellement aléatoires: le phénomène ne devient sensible qu’au long terme.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is indeed only an increase of a few fractions of degrees each year, immersed in the midst of greater, essentially random, temperature variations: the phenomenon only becomes noticeable in the long term.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Si on n’avait pas inventé le thermomètre, qui aurait pu dire avec certitude qu’il fait plus chaud aujourd’hui qu’il y a cent ans?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If we hadn't invented the thermometer, who could have said with certainty that it's warmer today than it was a hundred years ago?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>La science a joué le rôle de lanceur d’alerte, avant la catastrophe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Science played the role of whistleblower, before the disaster.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Le colloque «Face au changement climatique, le champ des possibles» est une tentative pour remédier à ce problème.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The symposium "Facing climate change, the range of possibilities" is an attempt to remedy this problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Il s’agit de proposer au public un état des lieux de ce qui est acquis et solide, mais aussi de ce qui est en train de se faire, et de ce qu’il faudrait faire à l’avenir pour éviter le pire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is to offer the public an inventory of what is acquired and solid, but also what is being done, and what should be done in the future to avoid the worst.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce n’est pas facile car le fonctionnement du système Terre est extrêmement complexe et sa compréhension met en jeu à peu près toutes les sciences: physique, météorologie, climatologie, thermodynamique, astronomie, chimie, géologie, biologie, sans oublier les mathématiques, toujours utiles et nécessaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is not easy because the functioning of the Earth system is extremely complex and its understanding involves almost all sciences: physics, meteorology, climatology, thermodynamics, astronomy, chemistry, geology, biology, not to mention mathematics, always useful and necessary.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Chacune de ces sciences fonctionne à des échelles de temps et d’espace qui leur sont propres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Each of these sciences operates on their own time and space scales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>La géologie avec ses millions d’années, la climatologie avec des centaines d’années, ou la météorologie pour laquelle on parle plutôt de jours.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Geology with its millions of years, climatology with hundreds of years, or the meteorology for which we rather speak of days.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Les unités d’espace aussi sont très variées, des milliers de kilomètres jusqu’à des tailles microscopiques, par exemple pour la physique des nuages.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Space units also vary a great deal, from thousands of kilometers to microscopic sizes, for example for cloud physics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Tout cela interagit de manière compliquée et n’est certainement pas facile à expliquer au grand public.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>All this interacts in complicated ways and is certainly not easy to explain to the general public.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>On est bien loin de la science de Galilée, facile à comprendre, qui permet de prédire avec précision le temps que met un caillou pour tomber du haut de la tour de Pise.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We are a long way from Galileo's easy-to-understand science, which allows us to accurately predict the time it takes for a pebble to fall from the top of the tower of Pisa.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Aujourd’hui, on peut prédire sans problème la position de la Lune dans mille ans à quelques mètres près, mais on a compris qu’une telle précision serait illusoire s’il s’agissait d’un million d’années.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Today, we can easily predict the position of the Moon in a thousand years to within a few meters, but we understood that such accuracy would be illusory if it were a million years.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>De la même manière, on peut prévoir avec une très bonne probabilité s’il pleuvra demain, mais il est presque impossible de savoir s’il pleuvra dans un mois.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Similarly, we can predict with a very good probability if it will rain tomorrow, but it is almost impossible to know if it will rain in a month.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Quel sera le climat dans cinquante ans?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>What will be the climate in fifty years?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est cette complexité, associant certitudes et probabilités, qui est difficile à transmettre au public général.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is this complexity, combining certainties and probabilities, that is difficult to convey to the general public.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>Il s’agit également pour les scientifiques de faire connaître les risques révélés par leur recherche, sachant que cette notion de risque voisine nécessairement celle d’incertitude.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is also a question for scientists to make known the risks revealed by their research, knowing that this notion of risk necessarily approaches that of uncertainty.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>L’incertitude n’est pas une ignorance, mais la reconnaissance d’une variété de futurs possibles, dont l’importance s’apprécie par rapport à la vulnérabilité des systèmes écologiques, économiques, sociaux qui peuvent être affectés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Uncertainty is not ignorance, but the recognition of a variety of possible futures, the importance of which is assessed in relation to the vulnerability of the ecological, economic and social systems that may be affected.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce devoir d’alerte, qui touche une très large gamme de situations dans nos vies courantes, peut donc prendre ici des formes extrêmement précises.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This duty to alert, which affects a very wide range of situations in our daily lives, can therefore take extremely precise forms here.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>L’enjeu est important.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The stakes are high.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>La communauté scientifique a le devoir de communiquer au public l’état des connaissances, en insistant à la fois sur des faits bien établis et sur les problèmes qui restent en suspens ou qui font l’objet de débats.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The scientific community has a duty to communicate the state of knowledge to the public, emphasizing both well-established facts and issues that remain unresolved or subject of debate.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>La difficulté du travail et du diagnostic des chercheurs ne les exonère pas du devoir de citoyen que chacun doit accomplir à la mesure de ses compétences.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The difficulty of the work and diagnosis of researchers does not absolve them from the duty of being citizens, which everyone must perform to the extent of their skills.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce devoir est inscrit dans notre Constitution, via le principe de précaution.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This duty is enshrined in our Constitution, via the precautionary principle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Une fois le public informé de la situation par les scientifiques, il revient à la société entière, représentée par ses élus, de prendre des décisions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Once the public has been informed of the situation by scientists, it is up to society as a whole, represented by its elected representatives, to make decisions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Les élus doivent également prendre en compte d’autres éléments, de nature économique ou éthique, par exemple.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Elected officials must also take into account other elements, of an economic or ethical nature, for example.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela s’est illustré de manière très claire récemment à l’occasion du confinement imposé à la population: la science ne peut être que l’un des arguments utilisés par les politiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This was very clearly illustrated recently in the context of the confinement imposed on the population: science can only be one of the arguments used by policymakers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce n’est peut-être que l’un des arguments, mais il est essentiel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This may be only one of the arguments, but it is essential.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>Etienne Ghys</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Etienne Ghys</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Secrétaire Perpétuel de la première division</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Permanent Secretary of the First Division</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Académie des sciences</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>French Académie des sciences</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>France</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>France</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>etienne.ghys@academie-sciences.fr</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>etienne.ghys@academie-sciences.fr</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Numéro spécial «Face au changement climatique, le champ des possibles»</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Special issue "Facing climate change, the range of possibilities"</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce numéro spécial est issu du colloque homonyme organisé par l’Académie des sciences à l’Institut de France les 28 et 29 janvier 2020.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This special issue comes from the homonymous symposium organised by the French Académie des sciences at the Institut de France on 28 and 29 January 2020.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce colloque, coordonné par Sébastien Balibar, Jean Jouzel et Hervé Le Treut, avec le concours de Didier Roux (membres de l’Académie des sciences) a réuni environ 600 personnes, sans compter les personnes ayant suivi le colloque sur leur ordinateur…</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This symposium, coordinated by Sébastien Balibar, Jean Jouzel and Hervé Le Treut, with the assistance of Didier Roux (members of the French Académie des sciences) brought together about 600 people, not to mention the people who followed the symposium on their computer…</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Le programme complet est disponible sur le site de l’Académie¹ ainsi que l’enregistrement intégral des exposés et séances de discussion.²</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The full program is available on the Académie's website¹ as well as the full recording of presentations and discussion sessions.²</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>L’organisation du colloque a été rendue possible grâce au soutien de la Compagnie Financière Jacques Cœur et de l’entreprise Saint-Gobain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The organization of the symposium was made possible thanks to the support of Compagnie Financière Jacques Cœur and the Saint-Gobain company.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Les textes réunis dans ce numéro spécial ont été préparés par ceux des orateurs du colloque qui ont bien voulu rédiger a posteriori un texte écrit reprenant le contenu de leur exposé oral; ces textes fournissent ainsi un excellent éclairage du contenu du colloque.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The texts compiled in this special issue have been prepared by the speakers of the symposium who have been kind enough to draft a written text a posteriori containing the content of their oral presentation; these texts thus provide an excellent insight into the content of the symposium.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Que leurs auteurs en soient ici remerciés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Their authors are hereby thanked for their contribution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces textes ont été relus et mis en forme par le Comité éditorial des CR-Géoscience et le Service des Comptes Rendu.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These texts have been reviewed and edited by the CR-Géoscience Editorial Committee and the Reports Department.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Le but du colloque était de fournir un état des lieux de ce qui est connu ou anticipé sur les effets du changement climatique, ainsi que sur les moyens potentiels pour en réduire les dits effets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The purpose of the symposium was to provide an overview of what is known or anticipated about the effects of climate change, as well as potential means to reduce its effects.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Ghislain de Marsily</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Ghislain de Marsily</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Editor-in-Chief</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Editor-in-Chief</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Comptes Rendus Géoscience</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Geoscience Reports</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Académie des sciences</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>French Académie des sciences</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>France</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>France</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>Ghislain.deMarsily@academie-sciences.fr</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Ghislain.deMarsily@academie-sciences.fr</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Sommaire</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Table of contents</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Etienne Ghys — Préface</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Etienne Ghys — Preface</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>Valérie Masson-Delmotte — Réchauffement climatique: état des connaissances scientifiques, enjeux, risques et options d’action</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Valérie Masson-Delmotte — Global warming, state of scientific knowledge, challenges, risks and options for action</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Mireille Delmas-Marty — Le changement climatique, une chance pour l’humanité ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Mireille Delmas-Marty — Climate change, an opportunity for humanity?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Pierre Léna et David Wilgenbus — Changement climatique et éducation</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Pierre Léna and David Wilgenbus — Climate change and education</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Venkatramani Balaji — Science des données versus science physique: la technologie des données nous conduit-elle vers une nouvelle synthèse?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Venkatramani Balaji — “Data science” versus physical science: is data technology leading us towards a new synthesis?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>Céline Guivarch — Quelles transformations pour l’atténuation du changement climatique ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Céline Guivarch — Which transformations for climate change mitigation?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>Des trajectoires d’émissions mondiales à la trajectoire française</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>From global to French emissions pathways</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>Henri Waisman — Quelles transitions pour l’atténuation du changement climatique ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Henri Waisman — What transitions for climate change mitigation?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>Transformations globales, enjeux sociétaux, et leçons pour la décision</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Global transformations, societal challenges, and insights for decision makers</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>Hervé Le Treut — Anticiper l’évolution des territoires</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hervé Le Treut — Anticipating the evolution of territories</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>Isabelle Chuine — Changement climatique et biosphère</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Isabelle Chuine — Climate change and the biosphere</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Didier Roux — Énergie et climat : défis et innovations</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Didier Roux — Energy and climate: challenges and innovations</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Vincent Viguié — Les villes et le climat : Bâtiments et urbanisme</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Vincent Viguié — Cities and climate change: buildings and urban land use</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="FR">
+                <seg>Yves Bréchet — Le rôle de l’énergie nucléaire dans la lutte contre le réchauffement climatique : atouts et faiblesses dans une approche intégrée</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Yves Bréchet — The role of nuclear energy for fighting climate change: assets and weaknesses in a global perspective</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="FR">
+                <seg>Isabelle Czernichowski-Lauriol — Captage et Stockage du CO₂ : le puits de carbone géologique</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Isabelle Czernichowski-Lauriol — CO₂ capture and storage: the geological carbon sink</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Jean-Marie Tarascon — Les batteries sont-elles la bonne option pour un développement durable ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Jean-Marie Tarascon — Are batteries the right option for a sustainable development?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>¹https://bit.ly/30efHIN</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>¹https://bit.ly/30efHIN</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="FR">
+                <seg>²https://www.academie-sciences.fr/fr/Colloques-conferences-et-debats/changement-climatique.html</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>²https://www.academie-sciences.fr/fr/Colloques-conferences-et-debats/changement-climatique.html</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

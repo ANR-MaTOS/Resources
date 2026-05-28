@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020LORR0137. segId begin by 1, tuid = segId</note>
+        <docid>2020LORR0137</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les travaux de cette thèse portent sur la modélisation des émotions pour la synthèse audiovisuelle expressive de la parole à partir du texte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The work of this thesis concerns the modeling of emotions for expressive audiovisual textto-speech synthesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Aujourd'hui, les résultats des systèmes de synthèse de la parole à partir du texte sont de bonne qualité, toutefois la synthèse audiovisuelle reste encore une problématique ouverte et la synthèse expressive l'est encore d'avantage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Today, the results of text-to-speech synthesis systems are of good quality, however audiovisual synthesis remains an open issue and expressive synthesis is even less studied.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons dans le cadre de cette thèse une méthode de modélisation des émotions malléable et flexible, permettant de mélanger les émotions comme on mélange les teintes sur une palette de couleurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As part of this thesis, we present an emotions modeling method which is malleable and flexible, and allows us to mix emotions as we mix shades on a palette of colors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans une première partie, nous présentons et étudions deux corpus expressifs que nous avons construits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first part, we present and study two expressive corpora that we have built.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La stratégie d'acquisition ainsi que le contenu expressif de ces corpus sont analysés pour valider leur utilisation à des fins de synthèse audiovisuelle de la parole.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The recording strategy and the expressive content of these corpora are analyzed to validate their use for the purpose of audiovisual speech synthesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans une seconde partie, nous proposons deux architectures neuronales pour la synthèse de la parole.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second part, we present two neural architectures for speech synthesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous avons utilisé ces deux architectures pour modéliser trois aspects de la parole : 1) les durées des sons, 2) la modalité acoustique et 3) la modalité visuelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We used these two architectures to model three aspects of speech: 1) the duration of sounds, 2) the acoustic modality and 3) the visual modality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, nous avons adopté une architecture entièrement connectée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, we use a fully connected architecture.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Cette dernière nous a permis d'étudier le comportement des réseaux de neurones face à différents descripteurs contextuels et linguistiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This architecture allowed us to study the behavior of neural networks when dealing with different contextual and linguistic descriptors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous avons aussi pu analyser, via des mesures objectives, la capacité du réseau à modéliser les émotions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We were also able to analyze, with objective measures, the network's ability to model emotions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>La deuxième architecture neuronale proposée est celle d'un auto-encodeur variationnel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second neural architecture proposed is a variational auto-encoder.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Cette architecture est capable d'apprendre une représentation latente des émotions sans utiliser les étiquettes des émotions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This architecture is able to learn a latent representation of emotions without using emotion labels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Après analyse de l'espace latent des émotions, nous avons proposé une procédure de structuration de ce dernier pour pouvoir passer d'une représentation par catégorie vers une représentation continue des émotions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>After analyzing the latent space of emotions, we presented a procedure for structuring it in order to move from a discrete representation of emotions to a continuous one.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Nous avons pu valider, via des expériences perceptives, la capacité de notre système à générer des émotions, des nuances d'émotions et des mélanges d'émotions, et cela pour la synthèse audiovisuelle expressive de la parole à partir du texte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We were able to validate, through perceptual experiments, the ability of our system to generate emotions, nuances of emotions and mixtures of emotions, and this for expressive audiovisual text-to-speech synthesis.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

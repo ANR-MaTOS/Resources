@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017MULH8193. segId begin by 1, tuid = segId</note>
+        <docid>2017MULH8193</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans le but de faciliter la tâche d'évaluation du niveau de sécurité incendie aux ingénieurs et permettre aux spécialistes impliqués dans le domaine d'utiliser leurs langages et outils préférés, nous proposons de créer un langage dédié au domaine de la sécurité incendie générant automatiquement une simulation en prenant en considération les langages métiers utilisés par les spécialistes intervenants dans le domaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to facilitate the engineers task of evaluating the fire safety level, and to allow the specialists involved in the field to use their preferred languages and tools, we propose to create a language dedicated to the field of fire safety, which automatically generates a simulation, taking into account the specific languages used by the specialists involved in the field.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ce DSL nécessite la définition, la formalisation, la composition et l'intégration de plusieurs modèles, par rapport aux langages spécifiques utilisés par les spécialistes impliqués dans le domaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This DSL requires the definition, the formalization, the composition and the integration of several models, regardig to the specific languages used by the specialists involved in the field.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le langage spécifique dédié au domaine de la sécurité incendie est conçu par composition et intégration de plusieurs autres DSLs décrits par des langages techniques et naturels (ainsi que des langages naturels faisant référence à des langages techniques).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The specific language dedicated to the field of fire safety is designed by composing and integrating several other DSLs described by technical and natural languages (as well as natural languages referring to technical ones).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ces derniers sont modélisés de manière à ce que leurs composants soient précis et fondés sur des bases mathématiques permettant de vérifier la cohérence du système (personnes et matériaux sont en sécurité) avant sa mise en œuvre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These latter are modeled in a way that their components must be precise and based on mathematical foundations, in order to verify the consistency of the system (people and materials are safe) before it implementation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte, nous proposons d'adopter une approche formelle, basée sur des spécifications algébriques, pour formaliser les langages utilisés par les spécialistes impliqués dans le système de génération, en se concentrant à la fois sur les syntaxes et les sémantiques des langages dédiés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this context, we propose to adopt a formal approach, based on algebraic specifications, to formalize the languages used by the specialists involved in the generation system, focusing on both syntaxes and semantics of the dedicated languages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans l'approche algébrique, les concepts du domaine sont abstraits par des types de données et les relations entre eux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the algebraic approach, the concepts of the domain are abstracted by data types and the relationships between them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>La sémantique des langages spécifiques est décrite par les relations, le mapping (correspondances) entre les types de données définis et leurs propriétés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The semantics of specific languages is described by the relationships, the mappings between the defined data types and their properties.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Le langage de simulation est basé sur un langage conçu par la composition de plusieurs DSL spécifiques précédemment décrits et formalisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The simulation language is based on a composition of several specific DSLs previously described and formalized.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Les différents DSLs sont implémentés en se basant sur les concepts de la programmation fonctionnelle et le langage fonctionnel Haskell bien adapté à cette approche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The DSLs are implemented based on the concepts of functional programming and the Haskell functional language, well adapted to this approach.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Le résultat de ce travail est un outil informatique dédié à la génération automatique de simulation, dans le but de faciliter la tâche d'évaluation du niveau de sécurité incendie aux ingénieurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The result of this work is a software dedicated to the automatic generation of a simulation, in order to facilitate the evaluation of the fire safety level to the engineers.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

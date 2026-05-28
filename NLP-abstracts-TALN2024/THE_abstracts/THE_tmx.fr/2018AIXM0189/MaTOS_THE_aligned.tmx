@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018AIXM0189. segId begin by 1, tuid = segId</note>
+        <docid>2018AIXM0189</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le présent travail aborde le thème de la complexité sémantique dans le langage naturel, et il propose une hypothèse basée sur certaines caractéristiques des phrases du langage naturel qui déterminent la difficulté pour l'interpretation humaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The present work deals with the problem of the semantic complexity in natural language, proposing an hypothesis based on some features of natural language sentences that determine their difficulty for human understanding.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous visons à introduire un cadre théorique général de la complexité sémantique de la phrase, dans lequel la difficulté d'élaboration est liée à l'interaction entre deux composants : la Mémoire, qui est responsable du rangement des représentations d'événements extraites par des corpus, et l'Unification, qui est responsable de la combinaison de ces unités dans des structures plus complexes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We aim at introducing a general framework for semantic complexity, in which the processing difficulty depends on the interaction between two components: a Memory component, which is responsible for the storage of corpus-extracted event representations, and a Unification component, which is responsible for combining the units stored in Memory into more complex structures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons que la complexité sémantique depend de la difficulté de construire une représentation sémantique de l'événement ou de la situation exprimée par une phrase, qui peut être récupérée directement de la mémoire sémantique ou construit dynamiquement en satisfaisant les contraintes contenus dans les constructions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose that semantic complexity depends on the difficulty of building a semantic representation of the event or the situation conveyed by a sentence, that can be either retrieved directly from the semantic memory or built dynamically by solving the constraints included in the stored representations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Pour tester nos intuitions, nous avons construit un Distributional Semantic Model pour calculer le coût de composition de l'unification des phrases.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to test our intuitions, we built a Distributional Semantic Model to compute a compositional cost for the sentence unification process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les tests sur des bases de données psycholinguistiques ont révélé que le modèle est capable d'expliquer des phénomènes sémantiques comme la mise à jour context-sensitive des attentes sur les arguments et les métonymies logiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our tests on several psycholinguistic datasets showed that our model is able to account for semantic phenomena such as the context-sensitive update of argument expectations and of logical metonymies.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

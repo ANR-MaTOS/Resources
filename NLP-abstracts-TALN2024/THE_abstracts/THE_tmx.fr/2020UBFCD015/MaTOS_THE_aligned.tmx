@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020UBFCD015. segId begin by 1, tuid = segId</note>
+        <docid>2020UBFCD015</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'objectif de cette de thèse est d'étudier à la fois des solutions matérielles et logicielles pour améliorer les conditions de travail des sapeurs-pompiers.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we present a multilevel scheme consisting of both hardware and software solutions to improve the daily operational life of firefighters.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Il s'agit de développer un système intelligent basé sur l'internet des objets pour surveiller l'état de santé des pompiers et aider à les localiser lors des interventions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a core part of this scheme, we design and develop a smart system of wearable IoT devices used for state assessment and localization of firefighters during interventions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans la première partie de la thèse, nous avons étudié et proposé plusieurs approches permettant de réduire la consommation d'énergie du système afin de maximiser sa durée de vie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To ensure a maximum lifetime for this system, we propose multiple data-driven energy management techniques for resource constraint IoT devices.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La première approche présente un modèle de prédiction basé sur la corrélation temporelle entre les mesures collectées par le même capteur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first one is an algorithm that reduces the amount of data transmitted between the sensor and the destination (Sink).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Il permet de réduire la quantité de données collectées et transmises au centre de contrôle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This latter exploits the temporal correlation of collected sensor measurements to build a simple yet robust model that can forecast future observations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ce modèle est exécuté à la fois par le capteur et le centre et qui s'auto-adapte en fonction de l'écart constaté entre les mesures réelles collectées et les mesures prédites.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, we coupled this approach with a mechanism that can identify lost packets, force synchronization, and reconstruct missing data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Une deuxième version de cette approche a été étudiée pour prendre en considération la perte de message et la synchronisation entre le capteur et le centre de contrôle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, knowing that the sensing activity does also require a significant amount of energy, we extended the previous algorithm and added an additional adaptive sampling layer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>D'un autre côté et pour réduire davantage la consommation d'énergie, nous avons couplé l'approche de prédiction avec un algorithme de collecte de données adaptatif permettant de réduire l'activité du capteur et le taux d'échantillonnage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we also proposed a decentralized data reduction approach for cluster-based sensor networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Toutes ces approches ont été testées via des simulations et de l'implémentation réelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>All the previous algorithms have been tested and validated in terms of energy efficiency using custom-built simulators and through implementation on real sensor devices.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Les résultats obtenus montrent l'efficacité de ces approches en termes de réduction de la consommation d'énergie tout en gardant l'intégrité de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results were promising as we were able to demonstrate that our proposals can significantly improve the lifetime of the network.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>La deuxième partie de cette thèse est dédiée au traitement des données issues des interventions des sapeurs-pompiers.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The last part of this thesis focusses on building data-centric decision-making tools to improve the efficiency of interventions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous avons étudié plusieurs méthodes de clustérisation permettant un prétraitement de données avant l'extraction des connaissances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since sensor data clustering is an important pre-processing phase and a stepstone towards knowledge extraction, we review recent clustering techniques for massive data management in IoT and compared them using real data for a gas leak detection sensor network.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>D'un autre côté, nous avons appliqué des méthodes d'apprentissage profond sur un grand ensemble de données concernant 200.000 interventions qui ont eu lieu pendant une période de 6 ans dans le département du Doubs, en France.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, with our hands on a large dataset containing information on 200,000 interventions that happened during a period of 6 years in the region of Doubs, France.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Le but de cette partie était de prédire le nombre d'interventions futures en fonction de variables explicatives externes, pour aider les pompiers à bien gérer leurs ressources.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We study the possibility of using Machine Learning to predict the number of future interventions and help firefighters better manage their mobile resources according to the frequency of events.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

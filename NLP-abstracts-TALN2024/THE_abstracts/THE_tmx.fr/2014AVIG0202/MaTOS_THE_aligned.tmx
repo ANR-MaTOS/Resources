@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2014AVIG0202. segId begin by 1, tuid = segId</note>
+        <docid>2014AVIG0202</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>En recherche d'information, les documents sont le plus souvent considérés comme des "sacs-de-mots".</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the Information Retrieval field, documents are usually considered as a "bag-of-words".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ce modèle ne tient pas compte de la structure temporelle du document et est sensible aux bruits qui peuvent altérer la forme lexicale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This model does not take into account the temporal structure of the document and is sensitive to noises which can alter its lexical form.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ces bruits peuvent être produits par différentes sources : forme peu contrôlée des messages des sites de micro-blogging, messages vocaux dont la transcription automatique contient des erreurs, variabilités lexicales et grammaticales dans les forums du Web...</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These noises can be produced by different sources: uncontrolled form of documents in microblogging platforms, automatic transcription of speech documents which are error prone, lexical and grammatical variabilities in Web forums...</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Le travail présenté dans cette thèse s'intéresse au problème de la représentation de documents issus de sources bruitées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The work presented in this thesis addresses issues related to document representations from noisy sources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>La thèse comporte trois parties dans lesquelles différentes représentations des contenus sont proposées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The thesis consists of three parts in which different representations of content are available.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>La première partie compare une représentation classique utilisant la fréquence des mots à une représentation de haut-niveau s'appuyant sur un espace de thèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first one compares a classical representation based on a term-frequency representation to a higher level representation based on a topic space.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Cette abstraction du contenu permet de limiter l'altération de la forme de surface du document bruité en le représentant par un ensemble de caractéristiques de haut-niveau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The abstraction of the document content allows us to limit the alteration of the noisy document by representing its content with a set of high-level features.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nos expériences confirment que cette projection dans un espace de thèmes permet d'améliorer les résultats obtenus sur diverses tâches de recherche d'information en comparaison d'une représentation plus classique utilisant la fréquence des mots.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our experiments confirm that mapping a noisy document into a topic space allows us to improve the results obtained during different information retrieval tasks compared to a classical approach based on term frequency.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Le problème majeur d'une telle représentation est qu'elle est fondée sur un espace de thèmes dont les paramètres sont choisis empiriquement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The major problem with such a high-level representation is that it is based on a space theme whose parameters are chosen empirically.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>La deuxième partie décrit une nouvelle représentation s'appuyant sur des espaces multiples et permettant de résoudre trois problèmes majeurs : la proximité des sujets traités dans le document, le choix difficile des paramètres du modèle de thèmes ainsi que la robustesse de la représentation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second part presents a novel representation based on multiple topic spaces that allow us to solve three main problems: the closeness of the subjects discussed in the document, the tricky choice of the "right" values of the topic space parameters and the robustness of the topic-based representation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Partant de l'idée qu'une seule représentation des contenus ne peut pas capturer l'ensemble des informations utiles, nous proposons d'augmenter le nombre de vues sur un même document.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Based on the idea that a single representation of the contents cannot capture all the relevant information, we propose to increase the number of views on a single document.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Cette multiplication des vues permet de générer des observations "artificielles" qui contiennent des fragments de l'information utile.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This multiplication of views generates "artificial"observations that contain fragments of useful information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Une première expérience a validé cette approche multi-vues de la représentation de textes bruités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first experiment validated the multi-view approach to represent noisy texts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Elle a cependant l'inconvénient d'être très volumineuse,redondante, et de contenir une variabilité additionnelle liée à la diversité des vues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, it has the disadvantage of being very large and redundant and of containing additional variability associated with the diversity of views.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Dans un deuxième temps, nous proposons une méthode s'appuyant sur l'analyse factorielle pour fusionner les vues multiples et obtenir une nouvelle représentation robuste,de dimension réduite, ne contenant que la partie "utile" du document tout en réduisant les variabilités "parasites".</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second step, we propose a method based on factor analysis to compact the different views and to obtain a new robust representation of low dimension which contains only the informative part of the document while the noisy variabilities are compensated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Lors d'une tâche de catégorisation de conversations,ce processus de compression a confirmé qu'il permettait d'augmenter la robustesse de la représentation du document bruité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>During a dialogue classification task, the compression process confirmed that this compact representation allows us to improve the robustness of noisy document representation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Cependant, lors de l'élaboration des espaces de thèmes, le document reste considéré comme un "sac-de-mots" alors que plusieurs études montrent que la position d'un terme au sein du document est importante.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nonetheless, during the learning process of topic spaces, the document is considered as a "bag-of-words" while many studies have showed that the word position in a document is useful.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Une représentation tenant compte de cette structure temporelle du document est proposée dans la troisième partie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A representation which takes into account the temporal structure of the document based on hyper-complex numbers is proposed in the third part.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Cette représentation s'appuie sur les nombres hyper-complexes de dimension appelés quaternions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This representation is based on the hyper-complex numbers of dimension four named quaternions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Nos expériences menées sur une tâche de catégorisation ont montré l'efficacité de cette méthode comparativement aux représentations classiques en "sacs-de-mots".</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our experiments on a classification task have showed the effectiveness of the proposed approach compared to a conventional "bag-of-words" representation.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

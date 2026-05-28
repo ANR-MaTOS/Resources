@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019SACLC038. segId begin by 1, tuid = segId</note>
+        <docid>2019SACLC038</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La problématique traitée dans cette thèse vise à développer une stratégie efficace de détection et de classification des impacts en présence d'incertitudes de modélisation du robot et de son environnement et en utilisant un nombre minimal de capteurs, notamment en l'absence de capteur d’effort.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The present thesis aims to develop an efficient strategy for impact detection and classification in the presence of modeling uncertainties of the robot and its environment and using a minimum number of sensors, in particular in the absence of force/torque sensor.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La première partie de la thèse porte sur la détection d'un impact pouvant avoir lieu à n'importe quel endroit du bras robotique et à n'importe quel moment de sa trajectoire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first part of the thesis deals with the detection of an impact that can occur at any location along the robot arm and at any moment during the robot trajectory.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Les méthodes de détection d’impacts sont généralement basées sur un modèle dynamique du système, ce qui les rend sujettes au compromis entre sensibilité de détection et robustesse aux incertitudes de modélisation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Impact detection methods are commonly based on a dynamic model of the system, making them subject to the trade-off between sensitivity of detection and robustness to modeling uncertainties.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>A cet égard, une méthodologie quantitative a d'abord été mise au point pour rendre explicite la contribution des erreurs induites par les incertitudes de modèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this respect, a quantitative methodology has first been developed to make explicit the contribution of the errors induced by model uncertainties.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cette méthodologie a été appliquée à différentes stratégies de détection, basées soit sur une estimation directe du couple extérieur, soit sur l'utilisation d'observateurs de perturbation, dans le cas d’une modélisation parfaitement rigide ou à articulations flexibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This methodology has been applied to various detection strategies, based either on a direct estimate of the external torque or using disturbance observers, in the perfectly rigid case or in the elastic-joint case.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Une comparaison du type et de la structure des erreurs qui en découlent et de leurs conséquences sur la détection d'impacts en a été déduite.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A comparison of the type and structure of the errors involved and their consequences on the impact detection has been deduced.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans une deuxième étape, de nouvelles stratégies de détection d'impacts ont été conçues : les effets dynamiques des impacts sont isolés en déterminant la marge d'erreur maximale due aux incertitudes de modèle à l’aide d’une approche stochastique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a second step, novel impact detection strategies have been designed: the dynamic effects of the impacts are isolated by determining the maximal error range due to modeling uncertainties using a stochastic approach.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Une fois l'impact détecté et afin de déclencher la réaction post-impact du robot la plus appropriée, la deuxième partie de la thèse aborde l'étape de classification.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Once the impact has been detected and in order to trigger the most appropriate post-impact robot reaction, the second part of the thesis focuses on the classification step.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>En particulier, la distinction entre un contact intentionnel (l'opérateur interagit intentionnellement avec le robot, par exemple pour reconfigurer la tâche) et un contact non-désiré (un sujet humain heurte accidentellement le robot), ainsi que la localisation du contact sur le robot, est étudiée en utilisant des techniques d'apprentissage supervisé et plus spécifiquement des réseaux de neurones feedforward.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, the distinction between an intentional contact (the human operator intentionally interacts with the robot, for example to reconfigure the task) and an undesired contact (a human subject accidentally runs into the robot), as well as the localization of the contact on the robot, is investigated using supervised learning techniques and more specifically feedforward neural networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>La généralisation à plusieurs sujet humains et à différentes trajectoires du robot a été étudiée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The challenge of generalizing to several human subjects and robot trajectories has been investigated.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

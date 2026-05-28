@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2010NAN10128. segId begin by 1, tuid = segId</note>
+        <docid>2010NAN10128</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse s'intéresse aux méthodes d'itération sur les politiques dans l'apprentissage par renforcement à grand espace d'états avec approximation linéaire de la fonction de valeur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis studies policy iteration methods with linear approximation of the value function for large state space problems in the reinforcement learning context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons d'abord une unification des principaux algorithmes du contrôle optimal stochastique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We first introduce a unified algorithm that generalizes the main stochastic optimal control methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons la convergence de cette version unifiée vers la fonction de valeur optimale dans le cas tabulaire, ainsi qu'une garantie de performances dans le cas où la fonction de valeur est estimée de façon approximative.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show the convergence of this unified algorithm to the optimal value function in the tabular case, and a performance bound in the approximate case when the value function is estimated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous étendons ensuite l'état de l'art des algorithmes d'approximation linéaire du second ordre en proposant une généralisation de Least-Squares Policy Iteration (LSPI) (Lagoudakis et Parr, 2003).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We then extend the literature of second-order linear approximation algorithms by proposing a generalization of Least-Squares Policy Iteration (LSPI) (Lagoudakis and Parr, 2003).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Notre nouvel algorithme, Least-Squares [lambda] Policy Iteration (LS[lambda]PI), ajoute à LSPI un concept venant de [lambda]-Policy Iteration (Bertsekas et Ioffe, 1996) : l'évaluation amortie (ou optimiste) de la fonction de valeur, qui permet de réduire la variance de l'estimation afin d'améliorer l'efficacité de l'échantillonnage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our new algorithm, Least-Squares [lambda] Policy Iteration (LS[lambda]PI), adds to LSPI an idea of [lambda]-Policy Iteration (Bertsekas and Ioffe, 1996): the damped (or optimistic) evaluation of the value function, which allows to reduce the variance of the estimation to improve the sampling efficiency.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>LS[lambda]PI propose ainsi un compromis biais-variance réglable qui peut permettre d'améliorer l'estimation de la fonction de valeur et la qualité de la politique obtenue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus, LS[lambda]PI offers a bias-variance trade-off that may improve the estimation of the value function and the performance of the policy obtained.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Dans un second temps, nous nous intéressons en détail au jeu de Tetris, une application sur laquelle se sont penchés plusieurs travaux de la littérature.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a second part, we study in depth the game of Tetris, a benchmark application that several works from the literature attempt to solve.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Tetris est un problème difficile en raison de sa structure et de son grand espace d'états.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Tetris is a difficult problem because of its structure and its large state space.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons pour la première fois une revue complète de la littérature qui regroupe des travaux d'apprentissage par renforcement, mais aussi des techniques de type évolutionnaire qui explorent directement l'espace des politiques et des algorithmes réglés à la main.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We provide the first full review of the literature that includes reinforcement learning works, evolutionary methods that directly explore the policy space and handwritten controllers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous constatons que les approches d'apprentissage par renforcement sont à l'heure actuelle moins performantes sur ce problème que des techniques de recherche directe de la politique telles que la méthode d'entropie croisée (Szita et Lorincz, 2006).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We observe that reinforcement learning is less successful on this problem than direct policy search approaches such as the cross-entropy method (Szita et Lorincz, 2006).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous expliquons enfin comment nous avons mis au point un joueur de Tetris qui dépasse les performances des meilleurs algorithmes connus jusqu'ici et avec lequel nous avons remporté l'épreuve de Tetris de la Reinforcement Learning Competition 2008</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We finally show how we built a controller that outperforms the previously known best controllers, and shortly discuss how it allowed us to win the Tetris event of the 2008 Reinforcement Learning Competition</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-s172707. segId begin by 1, tuid = segId</note>
+        <docid>s172707</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Une chaîne de coréférences est l'ensemble des expressions linguistiques — ou mentions — qui font référence à une même entité ou un même objet du discours.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A coreference chain is the set of linguistic expressions — or mentions — that refer to the same entity or discourse object in a given document.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La tâche de reconnaissance des chaînes de coréférences consiste à détecter l'ensemble des mentions d'un document et à le partitionner en chaînes de coréférences.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Coreference resolution consists in detecting all the mentions in a document and partitioning their set into coreference chains.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ces chaînes jouent un rôle central dans la cohérence des documents et des interactions et leur identification est un enjeu important pour de nombreuses autres tâches en traitement automatique du langage, comme l'extraction d'informations ou la traduction automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Coreference chains play a central role in the consistency of documents and interactions, and their identification has applications to many other fields in natural language processing that rely on an understanding of language, such as information extraction, question answering or machine translation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Des systèmes automatiques de reconnaissance de chaînes de coréférence existent pour plusieurs langues, mais aucun pour le français ni pour une langue parlée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Natural language processing systems that perform this task exist for many languages, but none for French — which suffered until recently from a lack of suitable annotated resources — and none for spoken language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous nous proposons dans cette thèse de combler ce manque par un système de reconnaissance automatique de chaînes de coréférences pour le français parlé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we aim to fill this gap by designing a coreference resolution system for spoken French.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>À cette fin, nous proposons un système utilisant des réseaux de neurones artificiels et ne nécessitant pas de resources externes. Ce système est viable malgré le manque d'outils de prétraitements adaptés au français parlé et obtient des performances comparable à l'état de l'art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To this end, we propose a knowledge-poor system based on an end-to-end neural network architecture, which obviates the need for the preprocessing pipelines common in existing systems while maintaining performances comparable to the state-of-the art.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons également des voies d'amélioration de ce système, en y introduisant des connaissances issues de ressources et d'outils conçus pour le français écrit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We then propose extensions on that baseline, by augmenting our system with external knowledge obtained from resources and preprocessing tools designed for written French.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous proposons un nouveau format de représentation pour l'annotation des chaînes de coréférences dans des corpus de langues écrites et parlées et en nous en donnons une exmple en proposant un nouvelle version d'ANCOR — le premier corpus de français annoté en coréférence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we propose a new standard representation for coreference annotation in corpora of written and spoken languages, and demonstrate its use in a new version of ANCOR, the first coreference corpus of spoken French.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

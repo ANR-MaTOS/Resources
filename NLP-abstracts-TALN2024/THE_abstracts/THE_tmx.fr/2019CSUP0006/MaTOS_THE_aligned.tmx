@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019CSUP0006. segId begin by 1, tuid = segId</note>
+        <docid>2019CSUP0006</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'aide ambiante à la personne (ambiant assisted living) a pour objectif d'accompagner le vieillissement de la population.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Ambient assisted living aims to support the aging population.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cela s'instancie notamment par les maisons intelligentes (smart homes), équipées de multiples capteurs connectés, dont un des objectifs est de prolonger le maintien à domicile des personnes âgées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is particularly the case with smart homes, equipped with multiple connected sensors, which enables to extend home care for the elderly.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le manuscrit s'attache d'abord à introduire la problématique générale des maisons intelligentes, avant de présenter plus avant les trois sous-thématiques qui font plus particulièrement l'objet de la thèse, à savoir la reconnaissance d'activités, la confidentialité et les systèmes de dialogue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The manuscript begins by introducing the general problem of smart homes, after presenting further the three sub-themes that are the subject of the thesis, namely the activity recognition, privacy and dialogue systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La reconnaissance d'activités consiste à déterminer les activités courantes d'une personne ou d'un groupe de personnes, à partir des données (brutes) des capteurs dont est équipée la maison.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Activity recognition is the process of determining the day-to-day activities of a person or a group of people from the (raw) sensor data that the home is equipped with.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>On peut citer comme exemple la détection de la chute d'une personne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An example of this is the detection of a person's fall.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Une maison intelligent repose typiquement sur l'internet des objets (Internet of Things, ou IoT).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A smart home is typically based on the Internet of Things (IoT).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>De nombreuses données sont produites, pouvant contenir des informations privées ou sensibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Many data are produced, which may contain private or sensitive information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Une partie de ces données doit être partagée avec l'extérieur, ce qui peut poser des problèmes de confidentialité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Some of this data must be shared externally, which may pose privacy issues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Enfin, pour interragir avec la maison intelligente, un moyen naturel pour l'utilisateur est d'utiliser le dialogue, sujet traité par les systèmes de dialogue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, a natural way of communication for the user is to use the dialogue to interact with the smart home via dialogue manager.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Ce travail de thèse propose des contributions sur ces trois versants, la plupart basées sur l'apprentissage profond.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis proposes contributions on these three sides, most of them based on deep learning.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020LIL1I030. segId begin by 1, tuid = segId</note>
+        <docid>2020LIL1I030</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Alors que nous nous représentons le monde au travers de nos sens, de notre langage et de nos interactions, chacun de ces domaines a été historiquement étudié de manière indépendante en apprentissage automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While our representation of the world is shaped by our perceptions, our languages, and our interactions, they have traditionally been distinct fields of study in machine learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Heureusement, ce cloisonnement tend à se défaire grâce aux dernières avancées en apprentissage profond, ce qui a conduit à l'uniformisation de l'extraction des données au travers des communautés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Fortunately, this partitioning started opening up with the recent advents of deep learning methods, which standardized raw feature extraction across communities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cependant, les architectures neuronales multimodales n'en sont qu'à leurs premiers balbutiements et l’apprentissage par renforcement profond est encore souvent restreint à des environnements limités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, multimodal neural architectures are still at their beginning, and deep reinforcement learning is often limited to constrained environments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Idéalement, nous aimerions pourtant développer des modèles multimodaux et interactifs afin qu’ils puissent correctement appréhender la complexité du monde réel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Yet, we ideally aim to develop large-scale multimodal and interactive models towards correctly apprehending the complexity of the world.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans cet objectif, cette thèse s’attache à la compréhension du langage combiné à la vision pour trois raisons : (i) ce sont deux modalités longuement étudiées aux travers des différentes communautés scientifiques (ii) nous pouvons bénéficier des dernières avancées en apprentissage profond pour les modèles de langues et de vision (iii) l’interaction entre l’apprentissage du langage et notre perception a été validé en science cognitives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a first milestone, this thesis focuses on visually grounded language learning for three reasons (i) they are both well-studied modalities across different scientific fields (ii) it builds upon deep learning breakthroughs in natural language processing and computer vision (ii) the interplay between language and vision has been acknowledged in cognitive science.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, nous avons conçu le jeu GuessWhat?! (KéZaKo) afin d’évaluer la compréhension de langue combiné à la vision de nos modèles : deux joueurs doivent ainsi localiser un objet caché dans une image en posant une série de questions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More precisely, we first designed the GuessWhat?! game for assessing visually grounded language understanding of the models: two players collaborate to locate a hidden object in an image by asking a sequence of questions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous explorons comment l'apprentissage par renforcement permet l’apprentissage de la langue et cimente l'apprentissage des représentations multimodales sous-jacentes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we investigate how reinforcement learning can support visually grounded language learning and cement the underlying multimodal representation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons qu’un tel apprentissage interactif conduit à des stratégies langagières valides mais donne lieu à de nouvelles problématiques de recherche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that such interactive learning leads to consistent language strategies but gives raise to new research issues.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

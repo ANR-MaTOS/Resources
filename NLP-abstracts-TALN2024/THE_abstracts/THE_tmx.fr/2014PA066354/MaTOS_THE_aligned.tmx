@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2014PA066354. segId begin by 1, tuid = segId</note>
+        <docid>2014PA066354</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Ce travail de thèse propose une nouvelle approche au traitement des langues naturelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis proposes a new approach to natural language processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Plutôt qu'essayer d'estimer directement la probabilité d'une phrase quelconque, nous identifions des structures syntaxiques dans le langage, qui peuvent être utilisées pour modifier et créer de nouvelles phrases à partir d'un échantillon initial.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Rather than trying to estimate directly the probability distribution of a random sentence, we will detect syntactic structures in the language, which can be used to modify and create new sentences from an initial sample.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'étude des structures syntaxiques est accomplie avec des ensembles de substitution Markoviens, ensembles de chaînes de caractères qui peuvent être échangées sans affecter la distribution.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The study of syntactic structures will be done using Markov substitute sets, sets of strings that can be freely substituted in any sentence without affecting the whole distribution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ce point de vue décompose l'analyse du langage en deux parties, une phase de sélection de modèle, où les ensembles de substitution sont sélectionnés, et une phase d'estimation des paramètres, où les fréquences pour chaque ensemble sont estimées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This point of view splits the issue of language analysis into two parts, a model selection stage where Markov substitute sets are selected, and a parameter estimation stage where the actual frequencies for each set are estimated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous montrons que ces processus constituent des familles exponentielles quand la structure du langage est fixée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that these substitute processes form exponential families of distributions, when the language structure (the Markov substitute sets) is fixed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Lorsque la structure du langage est inconnue, nous proposons des méthodes pour identifier des ensembles de substitution à partir d'un échantillon, et pour estimer les paramètres de la distribution.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, when the language structure is unknown, we propose methods to identify Markov substitute sets from a statistical sample, and to estimate the parameters of the distribution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Les ensembles de substitution ont quelques relations avec les grammaires hors-Contexte, qui peuvent être utilisées pour aider l'analyse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Markov substitute sets show some connections with context-Free grammars, that can be used to help the analysis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous construisons alors des dynamiques invariantes pour les processus de substitution.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We then proceed to build invariant dynamics for Markov substitute processes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Elles peuvent être utilisées pour calculer l'estimateur du maximum de vraisemblance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They can among other things be used to effectively compute the maximum likelihood estimate.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>En effet, les processus de substitution peuvent être vus comme la limite thermodynamique de la mesure invariante d'une dynamique de crossing</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, Markov substitute models can be seen as the thermodynamical limit of the invariant measure of crossing-Over dynamics.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

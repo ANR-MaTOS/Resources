@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2014BESA1002. segId begin by 1, tuid = segId</note>
+        <docid>2014BESA1002</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans l'ère de l'information et de la connaissance, la traduction automatique (TA) devient progressivement un outil indispensable pour transposer la signification d'un texte d'une langue source vers une langue cible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Machine translation (MT) has increasingly become an indispensable tool for decoding the meaning of a text from a source language into a target language in our current information and knowledge era.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La TA des noms propres (NP), en particulier, joue un rôle crucial dans ce processus,puisqu'elle permet une identification précise des personnes, des lieux, des organisations et des artefacts à travers les langues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, MT of proper names (PN) plays a crucial role in providing the specific and precise identification of persons, places, organizations, and artefacts through the languages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Malgré un grand nombre d'études et des résultats significatifs concernant la reconnaissance d'entités nommées (dont le nom propre fait partie) dans la communauté de TAL dans le monde, il n'existe presque aucune recherche sur la traduction automatique des noms propres (TANP) pour le vietnamien.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Despite a large number of studies and significant achievements of named entity recognition in the NLP community around the world, there has been almost no research on PNMT for Vietnamese language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>En raison des caractéristiques différentes d'écriture de NP, la translittération ou la transcription et la traduction de plusieurs de langues incluant l'anglais, le français, le russe, le chinois, etc. vers levietnamien, le TANP de ces langues vers le vietnamien est stimulant et problématique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Due to the different features of PN writing, transliteration or transcription and translation from a variety of languages including English, French, Russian, Chinese, etc. into Vietnamese, the PNMT from those languages into Vietnamese is still challenging and problematic issue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cette étude se concentre sur les problèmes de TANP d’anglais vers le vietnamien et de français vers le vietnamien résultant du moteurs courants de la TA et présente les solutions de prétraitement de ces problèmes pour améliorer la qualité de la TA.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This study focuses on the problems of English-Vietnamese and French-Vietnamese PNMT arising from current MT engines. First, it proposes a corpus-based PN classification, then a detailed PNMT error analysis to conclude with some pre-processing solutions in order to improve the MT quality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>A travers l'analyse et la classification d'erreurs de la TANP faites sur deux corpus parallèles de textes avec PN (anglais-vietnamien et français-vietnamien), nous proposons les solutions concernant deux problématiques importantes: (1) l'annotation de corpus, afin de préparer des bases de données pour le prétraitement et (2) la création d'un programme pour prétraiter automatiquement les corpus annotés, afin de réduire les erreurs de la TANP et d'améliorer la qualité de traduction des systèmes de TA, tels que Google, Vietgle, Bing et EVTran.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Through the analysis and classification of PNMT errors from the two English-Vietnamese and French-Vietnamese parallel corpora of texts with PNs, we propose solutions concerning two major issues: (1)corpus annotation for preparing the pre-processing databases, and (2)design of the pre-processing program to be used on annotated corpora to reduce the PNMT errors and enhance the quality of MT systems, including Google, Vietgle, Bing and EVTran.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>L'efficacité de différentes méthodes d'annotation des corpus avec des NP ainsi que les taux d'erreurs de la TANP avant et après l'application du programme de prétraitement sur les deux corpus annotés est comparés et discutés dans cette thèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The efficacy of different annotation methods of English and French corpora of PNs and the results of PNMT errors before and after using the pre-processing program on the two annotated corpora are compared and discussed in this study.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Ils prouvent que le prétraitement réduit significativement le taux d'erreurs de la TANP et, par la même, contribue à l'amélioration de traduction automatique vers la langue vietnamienne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They prove that the pre-processing solution reduces significantly PNMT errors and contributes to the improvement of the MT systems' for Vietnamese language.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

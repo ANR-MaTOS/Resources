@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2014GRENM018. segId begin by 1, tuid = segId</note>
+        <docid>2014GRENM018</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Avec la croissance explosive de la numérisation du patrimoine culturel, de nombreuses patrimoine culturel institutions ont été la conversion des objets physiques du patrimoine culturel dans la représentation numérique ou représentation descriptive.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With the explosive growth of digitization in cultural heritage, many cultural heritage institutions have been converting physical objects of cultural heritage into digital representation or descriptive representation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Toutefois, la conversion a donné lieu à plusieurs questions telles que : 1) les documents sont de nature descriptive, 2) l'ambiguïté et de la brièveté des documents, 3) le vocabulaire spécifique est utilisé dans les documents, et 4), il existe également des variations dans les termes utilisés dans le document.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the conversion resulted in several issues such as: 1) the documents are descriptive in nature, 2) ambiguity and brevity of the documents, 3) dedicated vocabulary is used in the documents, and 4) there is also variation in the terms used in the document.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En outre, l'utilisation de mots-clés inexactes également entraîné problème de requête court.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Besides, the usage of inaccurate keywords also resulted in short query problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La plupart du temps, les problèmes sont causés par la faute agrégée en annotant les documents alors que le problème de requête court est causé par l'utilisateur naïf qui a peu de connaissances et d'expérience dans le domaine du patrimoine culturel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Most of the time, the issues are caused by the aggregated fault in annotating the documents while the short query problem is caused by naive user who has little prior knowledge and experience in cultural heritage domain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans cette recherche, l'objectif principal est de modéliser le système d'accès à l'information pour surmonter partiellement les questions soulevées par le processus de documentation et le fond des utilisateurs du patrimoine culturel numérique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this research, the main aim is to model information access system to overcome partially the issues arising from the documentation process and the background of the users of digital cultural heritage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, trois types d'outils d'accès aux informations sont introduites et établies à savoir l'information système de recherche, la recherche de contexte, et jeu mobile sur le patrimoine culturel qui permettent à l'utilisateur d'accéder, d'apprendre et d'explorer les informations sur le patrimoine culturel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Therefore, three types of information access tool are introduced and established namely information retrieval system, context search, and mobile game on cultural heritage that allow the user to access, learn, and explore the information on cultural heritage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Fondamentalement, l'idée principale d'information système de recherche et contexte de recherche est d'intégrer la relation de lien entre les termes dans le modèle de la langue par l'extension de Dirichlet lissage pour résoudre les problèmes qui se posent à la fois le processus de documentation et de fond des utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Basically, the main idea for information retrieval system and context search is to incorporate the link relationship between terms into the Language Model by extending of Dirichlet Smoothing to solve the problems arising from both the documentation process and background of the users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>En outre, un modèle de préférence est présenté sur la base de la théorie de la charge d'un condensateur de quantifier le contexte cognitif basé sur le temps et les intégrer dans la longue Dirichlet lissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, a Preference Model is introduced based on the Theory of Charging a Capacitor to quantify the cognitive context based on time and integrate into the extended Dirichlet Smoothing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>En outre, un jeu mobile est introduite par l'intégration des éléments des jeux de monopole et chasse au trésor pour atténuer les problèmes découlant de l'arrière-plan des utilisateurs en particulier leur comportement décontracté.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Besides, a mobile game is introduced by integrating the elements of the games of monopoly and treasure hunt to mitigate the problems arising from the background of the users especially their casual behavior.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Les premier et deuxième approches ont été testées sur le patrimoine culturel dans CLEF (chic) ​​collection qui se compose de questions et de courts documents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first and second approaches were tested on the Cultural Heritage in CLEF (CHiC) collection that consists of short queries and documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Les résultats montrent que l'approche est efficace et donne une meilleure précision lors de la récupération.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results show that the approach is effective and yields better accuracy during the retrieval.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Enfin, une enquête a été menée pour étudier la troisième approche, et le résultat donne à penser que le jeu est en mesure d'aider les participants à explorer et apprendre les informations sur le patrimoine culturel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, a survey was carried out to investigate the third approach, and the result suggests that the game is able to help the participants to explore and learn the information on cultural heritage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>En outre, les participants ont également estimé qu'une recherche d'information outil qui est intégré avec le jeu peut fournir plus d'informations à l'utilisateur d'une manière plus pratique tout en jouant le jeu et en visitant les sites du patrimoine dans le match.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, the participants also felt that an information seeking tool that is integrated with the game can provide more information to the user in a more convenient manner while playing the game and visiting the heritage sites in the game.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>En conclusion, les résultats montrent que les solutions proposées sont en mesure de résoudre les problèmes posés par le processus de documentation et le fond des utilisateurs du patrimoine culturel numérique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In conclusion, the results show that the proposed solutions are able to solve the problems arising from the documentation process and the background of the users of digital cultural heritage.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

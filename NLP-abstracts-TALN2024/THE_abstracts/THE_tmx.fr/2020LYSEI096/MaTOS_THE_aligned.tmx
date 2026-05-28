@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020LYSEI096. segId begin by 1, tuid = segId</note>
+        <docid>2020LYSEI096</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La planification de tournées de véhicules dans des environnements urbains denses est un problème difficile qui nécessite des solutions robustes et flexibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Routing delivery vehicles in dynamic and uncertain environments like dense city centers is a challenging task, which requires robustness and flexibility.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Au lieu de cela, nous proposons dans cette thèse d'étudier l'application de méthodes d'apprentissage par renforcement multi-agent (MARL) aux DS-VRPs en s'appuyant sur des réseaux de neurones profonds (DNNs).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Their application to more complex problems has been facilitated by recent progresses in Deep Neural Networks, which can learn to represent a large class of functions in high dimensional spaces to approximate solutions with high performances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous avons ensuite proposé un nouveau modèle de décision séquentiel en relâchant la contrainte d'observabilité partielle que nous avons baptisé MDP multi-agent séquentiel (sMMDP).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To address DS-VRPs, we then introduce a new sequential multi-agent model we call sMMDP.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ce modèle permet de décrire plus naturellement les DS-VRPs, dans lesquels les véhicules prennent la décision de servir leurs prochains clients à l'issu de leurs précédents services, sans avoir à attendre les autres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This fully observable model is designed to capture the fact that consequences of decisions can be predicted in isolation.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

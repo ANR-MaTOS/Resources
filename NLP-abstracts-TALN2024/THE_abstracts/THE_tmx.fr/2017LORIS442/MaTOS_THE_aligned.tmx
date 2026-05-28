@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017LORIS442. segId begin by 1, tuid = segId</note>
+        <docid>2017LORIS442</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La conception des systèmes de contrôle-commande souffre souvent des problèmes de communication et d'interprétation des spécifications entre les différents intervenants provenant souvent de domaines techniques très variés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The design of control-command systems often suffers from problems of communication and interpretation of specifications between the various designers, frequently coming from a wide range of technical fields.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Afin de cadrer la conception de ces systèmes, plusieurs démarches ont été proposées dans la littérature.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to address the design of these systems, several methods have been proposed in the literature.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Parmi elles, la démarche dite mixte (ascendante/descendante), qui voit la conception réalisée en deux phases.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Among them, the so-called mixed method (bottom-up/top-down), which sees the design realized in two steps.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans la première phase (ascendante), un modèle du système est défini à partir d'un ensemble de composants standardisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first step (bottom-up), a model of the system is defined from a set of standardized components.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Ce modèle subit, dans la deuxième phase (descendante), plusieurs raffinages et transformations pour obtenir des modèles plus concrets (codes,applicatifs, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This model undergoes, in the second (top-down) step, several refinements and transformations to obtain more concrete models (codes, applications, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Afin de garantir la qualité des systèmes conçus par cette démarche, nous proposons dans cette thèse, deux approches de vérification formelle basées sur le Model-Checking.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To guarantee the quality of the systems designed according to this method, we propose two formal verification approaches,based on Model-Checking, in this thesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>La première approche porte sur la vérification des composants standardisés et permet la vérification d'une chaîne de contrôle-commande élémentaire complète.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first approach concerns the verification of standardized components and allows the verification of a complete elementary control-command chain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>La deuxième approche consiste en la vérification des modèles d'architecture (PandID) utilisés pour la génération des programmes de contrôle-commande.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second one consists in verifying the model of architecture (PandID) used for the generation of control programs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Cette dernière est basée sur la définition d'un style architectural en Alloy pour la norme ANSI/ISA-5.1.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The latter is based on the definition of an architectural style in Alloy for the ANSI/ISA-5.1 standard.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Pour supporter les deux approches, deux flots de vérification formelle semi-automatisés basés sur les concepts de l'IDM ont été proposés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To support both approaches, two formal semi-automated verification flows based on Model-Driven Engineering have been proposed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>L'intégration des méthodes formelles dans un contexte industriel est facilitée, ainsi, par la génération automatique des modèles formels à partir des modèles de conception maîtrisés par les concepteurs métiers.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This integration of formal methods in an industrial context is facilitated by the automatic generation of formal models from design models carried out by business designers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nos deux approches ont été validées sur un cas industriel concret concernant un système de gestion de fluide embarqué dans un navire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our two approaches have been validated on a concrete industrial case of a fluid management system embedded in a ship.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

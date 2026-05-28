@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019GREAM074. segId begin by 1, tuid = segId</note>
+        <docid>2019GREAM074</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Durant les dernières décennies, l'animation 3D s'est largement intégrée à notre vie quotidienne, que cela soit dans le domaine du jeu vidéo, du cinéma ou du divertissement plus généralement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>During the past decades 3D animation widely spread into our everyday life being for entertainment such as video games or movies, or for communication more generally.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Malgré son utilisation rependue, la création d'animation reste réservés à des animateurs expérimentés et n'est pas à la portée de novices.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Despite its common use, creating animations is still dedicated to skilled animators and not within reach of non-experts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, le processus de création d'animation doit respecter une pipeline très stricte : après une première phase de storyboarding et de design des personnages, ceux-ci sont ensuite modélisés, riggés et grossièrement positionnés dans l'espace 3D permettant de créer un premier brouillon d'animation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, the creation process traditionally follow a strict pipeline: after the initial storyboarding and character design phases, articulated characters are modeled, rigged and roughly positioned in 3D, at which point the layout of their relative poses can be established.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Les actions et mouvements des personnages sont ensuite décomposés en keyframes interpolées, constituant l'animation finale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, their actions and movements are broken down into keyframes which are interpolated to produce the final animation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le processus de keyframing est difficile et nécessite, de la part des animateurs, beaucoup de temps et d'effort, notamment pour la retouche de chaque courbe d'animation liée à un degré de liberté d’un personnage, et ceci pour chaque action.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Keyframing animations is a hard process during which animators need to spend time and efforts carefully tuning animation curves for each character's degrees of freedom and for each specific action.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ces dernières doivent aussi être correctement séquencées au cours du temps afin de transmettre les intentions des personnages et leur personnalité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They also need to consistently sequence these actions over time in order to convey the desired character's intentions and personality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Certaines méthodes telle que la motion capture rendent le processus de création plus aisé en transférant le mouvement de véritables acteurs aux mouvements de personnages virtuels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Some methods such as motion capture, aim at easing the creation process by directly transferring real recorded human motions to virtual characters.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cependant, ces animations transférées manquent souvent d'expressivité et doivent être rectifiées par des animateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, output animations still lack expressiveness and must be fixed by animators.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous introduisons une nouvelle méthode permettant de créer aisément des séquences d'animation 3D à partir d’une base de donnée d'animations individuelles comme point de départ.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we propose a way of easing the process of creating animation sequences starting from a database of individual animations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>En particulier, notre travail se concentre dans l'animation de personnages virtuels reproduisant une histoire jouée avec des objets physiques tels que des figurines instrumentées par des capteurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We focus on animating virtual characters reproducing a story played with props such as figurines instrumented with sensors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons un descripteur de mouvement invariant par translation, rotation et passage à l'échelle permettant à notre système de reconnaître des actions exécutées par l'utilisateur ;</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To reach this goal, we propose a new animation pipeline analyzing and transcribing hands motion into a sequence of animations adapted to the user hand space-time trajectories and their motion qualities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous introduisons un nouveau modèle d'animation procédural inférant l'expressivité de la qualité de mouvement de la main en tant qu'Effort de la Laban Temps et Poids.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also introduce a new procedural animation model inferring expressiveness fitting the narrator's hand motion qualities in terms of Laban Time and Weight Effort.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous étendons le système afin de permettre la manipulation de plusieurs personnages en même temps, en détectant et transférant des interactions entre personnages tout en étant fidèle aux qualités de mouvement du narrateur et permettant aux personnages d'agir selon des comportements prédéfinis, laissant l'utilisateur exprimer sa créativité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we extend our system such that it can process multiple characters at a time, detecting and transferring interactions as well as making characters act with respect to pre-defined behaviors, letting users express their narrative creativity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Nous concluons avec une discussion sur les futures directions de recherche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We conclude with a discussion of future research directions.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

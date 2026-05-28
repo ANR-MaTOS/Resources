@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018PA080011. segId begin by 1, tuid = segId</note>
+        <docid>2018PA080011</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le corpus est la matière première de la linguistique informatique et du traitement automatique du langage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Corpora are the main material of computer linguistics and natural language processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Or ces ressources contiennent beaucoup de bruit (menus, publicités, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Web resources contain lots of noise (menus, ads, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le filtrage des données parasites et des répétitions nécessite un nettoyage à grand échelle que les chercheurs font en général à la main.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Filtering boilerplate and repetitive data requires a large-scale manual cleaning by the researcher.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse propose un système automatique de constitution de corpus web nettoyés de leur bruit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis presents an automatic system that construct web corpus with a low level of noise.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le système est évalué sous l'angle de l’efficacité de la suppression du bruit et du temps d’exécution.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The system is evaluated in terms of the efficacy of noise filtering and of computing time.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nos expérimentations, faites sur quatre langues, sont évaluées à l'aide de notre propre corpus de référence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our experiments, made on four languages, are evaluated using our own gold standard corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous comparons notre méthode avec trois méthodes traitant du même problème que la nôtre, Nutch, BootCat et JusText.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We compare our method with three methods dealing with the same problem, Nutch, BootCat and JusText.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Les performances de notre système sont meilleures pour la qualité d’extraction, même si pour le temps de calcul, Nutch et BootCat dominent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The performance of our system is better as regards the extraction quality, even if for computing time, Nutch and BootCat dominate.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

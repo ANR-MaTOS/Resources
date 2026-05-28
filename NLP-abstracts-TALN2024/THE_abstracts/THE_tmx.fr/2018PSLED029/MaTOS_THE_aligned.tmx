@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018PSLED029. segId begin by 1, tuid = segId</note>
+        <docid>2018PSLED029</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L’Optimisation Combinatoire (OC) est un domaine de recherche qui est en perpétuel changement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Combinatorial Optimization (CO) is an area of research that is in a constant progress.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Résoudre un problème d’optimisation combinatoire (POC) consiste essentiellement à trouver la ou les meilleures solutions dans un ensemble des solutions réalisables appelé espace de recherche qui est généralement de cardinalité exponentielle en la taille du problème.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Solving a Combinatorial Optimization Problem (COP) consists essentially in finding the best solution (s) in a set of feasible solutions called a search space that is usually exponential in cardinality in the size of the problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Pour résoudre des POC, plusieurs méthodes ont été proposées dans la littérature.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To solve COPs, several methods have been proposed in the literature.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>On distingue principalement les méthodes exactes et les méthodes d’approximation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A distinction is made mainly between exact methods and approximation methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Ne pouvant pas viser une résolution exacte de problèmes NP-Complets lorsque la taille du problème dépasse une certain seuil, les chercheurs on eu de plus en plus recours, depuis quelques décennies, aux algorithmes dits hybrides (AH) ou encore à au calcul parallèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since it is not possible to aim for an exact resolution of NP-Complete problems when the size of the problem exceeds a certain threshold, researchers have increasingly used Hybrid (HA) or parallel computing algorithms in recent decades.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous considérons la classe POC des problèmes de conception d'un réseau fiable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis we consider the COP class of Survivability Network Design Problems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons un algorithme hybride parallèle d'approximation basé sur un algorithme glouton, un algorithme de relaxation Lagrangienne et un algorithme génétique, qui produit des bornes inférieure et supérieure pour les formulations à base de flows.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We present an approximation parallel hybrid algorithm based on a greedy algorithm, a Lagrangian relaxation algorithm and a genetic algorithm which produces both lower and upper bounds for flow-based formulations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Afin de valider l'approche proposée, une série d'expérimentations est menée sur plusieurs applications: le Problème de conception d'un réseau k-arête-connexe avec contrainte de borne (kHNDP) avec L = 2,3, le problème de conception d'un réseau fiable Steiner k-arête-connexe (SkESNDP) et ensuite deux problèmes plus généraux, à savoir le kHNDP avec L &gt;= 2 et le problème de conception d'un réseau fiable k-arête-connexe (kESNDP).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to validate the proposed approach, a series of experiments is carried out on several applications: the k-Edge-Connected Hop-Constrained Network Design Problem (kHNDP) when L = 2,3, The problem of the Steiner k-Edge-Connected Network Design Problem (SkESNDP) and then, two more general problems namely the kHNDP when L &gt;= 2 and the k-Edge-Connected Network Design Problem (kESNDP).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>L'étude expérimentale de la parallélisation est présentée après cela.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The experimental study of the parallelisation is presented after that.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Dans la dernière partie de ce travail, nous présentons deux algorithmes parallèles exactes: un Branch-and-Bound distribué et un Branch-and-Cut distribué.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the last part of this work, we present a two parallel exact algorithms: a distributed Branch-and-Bound and a distributed Branch-and-Cut.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Une série d'expérimentation a été menée sur une grappe de 128 processeurs, et des accélération intéressantes ont été atteintes pour la résolution du problèmes kHNDP avec k=3 et L=3.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A series of experiments has been made on a cluster of 128 processors and interesting speedups has been reached in kHNDP resolution when k=3 and L=3.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016SACLS004. segId begin by 1, tuid = segId</note>
+        <docid>2016SACLS004</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Étant donnée la masse toujours croissante de texte publié, la compréhension automatique des langues naturelles est à présent l'un des principaux enjeux de l'intelligence artificielle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With the ever-growing mass of published text, natural language understanding stands as one of the most sought-after goal of artificial intelligence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>En langue naturelle, les faits exprimés dans le texte ne sont pas nécessairement tous explicites : le lecteur humain infère les éléments manquants grâce à ses compétences linguistiques, ses connaissances de sens commun ou sur un domaine spécifique, et son expérience.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In natural language, not every fact expressed in the text is necessarily explicit: human readers naturally infer what is missing through various intuitive linguistic skills, common sense or domain-specific knowledge, and life experiences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes de Traitement Automatique des Langues (TAL) ne possèdent naturellement pas ces capacités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Natural Language Processing (NLP) systems do not have these initial capabilities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Incapables de combler les défauts d'information du texte, ils ne peuvent donc pas le comprendre vraiment.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Unable to draw inferences to fill the gaps in the text, they cannot truly understand it.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse porte sur ce problème et présente notre travail sur la résolution d'inférences pour la compréhension automatique de texte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This dissertation focuses on this problem and presents our work on the automatic resolution of textual inferences in the context of machine reading.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Une inférence textuelle est définie comme une relation entre deux fragments de texte : un humain lisant le premier peut raisonnablement inférer que le second est vrai.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A textual inference is simply defined as a relation between two fragments of text: a human reading the first can reasonably infer that the second is true.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Beaucoup de tâches de TAL évaluent plus ou moins directement la capacité des systèmes à reconnaître l'inférence textuelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A lot of different NLP tasks more or less directly evaluate systems on their ability to recognize textual inference.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Au sein de cette multiplicité de l'évaluation, les inférences elles-mêmes présentent une grande variété de types.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Among this multiplicity of evaluation frameworks, inferences themselves are not one and the same and also present a wide variety of different types.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous nous interrogeons sur les inférences en TAL d'un point de vue théorique et présentons deux contributions répondant à ces niveaux de diversité : une tâche abstraite contextualisée qui englobe les tâches d'inférence du TAL, et une taxonomie hiérarchique des inférences textuelles en fonction de leur difficulté.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We reflect on inferences for NLP from a theoretical standpoint and present two contributions addressing these levels of diversity: an abstract contextualized inference task encompassing most NLP inference-related tasks, and a novel hierchical taxonomy of textual inferences based on their difficulty.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>La reconnaissance automatique d'inférence textuelle repose aujourd'hui presque toujours sur un modèle d'apprentissage, entraîné à l'usage de traits linguistiques variés sur un jeu d'inférences textuelles étiquetées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Automatically recognizing textual inference currently almost always involves a machine learning model, trained to use various linguistic features on a labeled dataset of samples of textual inference.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Cependant, les données spécifiques aux phénomènes d'inférence complexes ne sont pour le moment pas assez abondantes pour espérer apprendre automatiquement la connaissance du monde et le raisonnement de sens commun nécessaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, specific data on complex inference phenomena is not currently abundant enough that systems can directly learn world knowledge and commonsense reasoning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes actuels se concentrent plutôt sur l'apprentissage d'alignements entre les mots de phrases reliées sémantiquement, souvent en utilisant leur structure syntaxique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Instead, systems focus on learning how to use the syntactic structure of sentences to align the words of two semantically related sentences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Pour étendre leur connaissance du monde, ils incluent des connaissances tirées de ressources externes, ce qui améliore souvent les performances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To extend what systems know of the world, they include external background knowledge, often improving their results.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Mais cette connaissance est souvent ajoutée par dessus les fonctionnalités existantes, et rarement bien intégrée à la structure de la phrase.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>But this addition is often made on top of other features, and rarely well integrated to sentence structure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Nos principales contributions dans cette thèse répondent au problème précédent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main contributions of our thesis address the previous concern, with the aim of solving complex natural language understanding tasks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>En partant de l'hypothèse qu'un lexique plus simple devrait rendre plus facile la comparaison du sens de deux phrases, nous décrivons une méthode de récupération de passage fondée sur une expansion lexicale structurée et un dictionnaire de simplifications.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With the hypothesis that a simpler lexicon should make easier to compare the sense of two sentences, we present a passage retrieval method using structured lexical expansion backed up by a simplifying dictionary.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Cette hypothèse est testée à nouveau dans une de nos contributions sur la reconnaissance d'implication textuelle : des paraphrases syntaxiques sont extraites du dictionnaire et appliquées récursivement sur la première phrase pour la transformer en la seconde.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This simplification hypothesis is tested again in a contribution on textual entailment: syntactical paraphrases are extracted from the same dictionary and repeatedly applied on the first sentence to turn it into the second.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Nous présentons ensuite une méthode d'apprentissage par noyaux de réécriture de phrases, avec une notion de types permettant d'encoder des connaissances lexico-sémantiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We then present a machine learning kernel-based method recognizing sentence rewritings, with a notion of types able to encode lexical-semantic knowledge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>Cette approche est efficace sur trois tâches : la reconnaissance de paraphrases, d'implication textuelle, et le question</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This approach is effective on three tasks: paraphrase identification, textual entailment and question answering.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Des tests de compréhension sont utilisés pour son évaluation, sous la forme de questions à choix multiples sur des textes courts, qui permettent de tester la résolution d'inférences en contexte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Reading comprehension tests are used for evaluation: these multiple-choice questions on short text constitute the most practical way to assess textual inference within a complete context.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="FR">
+                <seg>Notre système est fondé sur un algorithme efficace d'édition d'arbres, et les traits extraits des séquences d'édition sont utilisés pour construire deux classifieurs pour la validation et l'invalidation des choix de réponses.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our system is founded on a efficient tree edit algorithm, and the features extracted from edit sequences are used to build two classifiers for the validation and invalidation of answer candidates.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="FR">
+                <seg>Cette approche a obtenu la deuxième place du challenge "Entrance Exams" à CLEF 2015.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This approach reaches second place at the "Entrance Exams" CLEF 2015 challenge.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

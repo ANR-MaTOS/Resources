@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2014ECDL0014. segId begin by 1, tuid = segId</note>
+        <docid>2014ECDL0014</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse est consacrée à la problématique des stratégies d’apprentissage et d'intégration, quelles que soient leurs modalités (visuelles, textuelles), destinées à réaliser efficacement des opérations de détection et d'annotation de concepts visuels, problématique qui est devenue un sujet de recherche très populaire et important ces dernières années en raison de sa large gamme d'applications : indexation et récupération d'images ou de vidéos, systèmes de contrôle d'accès, vidéo-surveillance, etc.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis is dedicated to the problem of training and integration strategies of several modalities (visual, textual), in order to perform an efficient Visual Concept Detection and Annotation (VCDA) task, which has become a very popular and important research topic in recent years because of its wide range of application such as image/video indexing and retrieval, security access control, video monitoring, etc.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

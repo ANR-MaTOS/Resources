@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017GREAM091. segId begin by 1, tuid = segId</note>
+        <docid>2017GREAM091</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Face à la quantité d'information textuelle disponible sur le web en langue arabe, le développement des Systèmes de Recherche d'Information (SRI) efficaces est devenu incontournable pour retrouver l'information pertinente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Given the amount of Arabic textual information available on the web, developing effective Information Retrieval Systems (IRS) has become essential to retrieve relevant information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La plupart des SRIs actuels de la langue arabe reposent sur la représentation par sac de mots et l'indexation des documents et des requêtes est effectuée souvent par des mots bruts ou des racines.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Most of the current Arabic SRIs are based on the bag-of-words representation, where documents are indexed using surface words, roots or stems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous apportons quatre contributions au niveau de processus de représentation, d'indexation et de recherche d'information en langue arabe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Accordingly, we propose four contributions to improve Arabic content representation, indexing, and retrieval.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La première contribution consiste à représenter les documents à la fois par des termes simples et des termes complexes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first contribution consists of representing Arabic documents using Multi-Word Terms (MWTs).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Cela est justifié par le fait que les termes simples seuls et isolés de leur contexte sont ambigus et moins précis pour représenter le contenu des documents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The latter is motivated by the fact that MWTs are more precise representational units and less ambiguous than isolated SWTs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, nous avons proposé une méthode hybride pour l’extraction de termes complexes en langue arabe, en combinant des propriétés linguistiques et des modèles statistiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hence, we propose a hybrid method to extract Arabic MWTs, which combines linguistic and statistical filtering of MWT candidates.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Le filtre linguistique repose à la fois sur l'étiquetage morphosyntaxique et la prise en compte des variations pour sélectionner les termes candidats.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The linguistic filter uses POS tagging to identify MWTs candidates that fit a set of syntactic patterns and handles the problem of MWTs variation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Pour sectionner les termes candidats pertinents, nous avons introduit une mesure d'association permettant de combiner l'information contextuelle avec les degrés de spécificité et d'unité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, the statistical filter rank MWT candidate using our proposed association measure that combines contextual information and both termhood and unithood measures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, nous étudions plusieurs extensions des modèles existants de RI pour l'intégration des termes complexes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second contribution, we explore and evaluate several IR models for ranking documents using both SWTs and MWTs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>En outre, nous explorons une panoplie de modèles de proximité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Additionally, we investigate a wide range of proximity-based IR models for Arabic IR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Pour la prise en compte des dépendances de termes dans les modèles de RI, nous introduisons une condition caractérisant de tels modèle et leur validation théorique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, we introduce a formal condition that IR models should satisfy to deal adequately with term dependencies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>La troisième contribution permet de pallier le problème de disparité des termes en proposant une méthode pour intégrer la similarité entre les termes dans les modèles de RI en s'appuyant sur les représentations distribuées des mots (RDMs).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The third contribution consists of a method based on Distributed Representation of Word vectors, namely Word Embedding (WE), for Arabic IR.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>L'idée sous-jacente consiste à permettre aux termes similaires à ceux de la requête de contribuer aux scores des documents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It relies on incorporating WE semantic similarities into existing probabilistic IR models in order to deal with term mismatch.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>La dernière contribution concerne l'amélioration des modèles de rétro-pertinence (Pseudo Relevance Feedback PRF).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The last contribution is a method to incorporate WE similarity into Pseud-Relevance Feedback PRF for Arabic Information Retrieval.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Étant basée également sur les RDM, notre méthode permet d'intégrer la similarité entre les termes d'expansions et ceux de la requête dans les modèles standards PRF.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main idea is to select expansion terms using their distribution in the set of top pseudo-relevant documents along with their similarity to the original query terms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>La validation expérimentale de l'ensemble des contributions apportées dans le cadre de cette thèse est effectuée en utilisant la collection standard TREC 2002/2001 de la langue arabe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The experimental validation of all the proposed contributions is performed using standard Arabic TREC 2002/2001 collection.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

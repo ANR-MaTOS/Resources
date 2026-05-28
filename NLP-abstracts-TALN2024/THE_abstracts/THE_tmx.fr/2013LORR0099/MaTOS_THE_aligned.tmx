@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2013LORR0099. segId begin by 1, tuid = segId</note>
+        <docid>2013LORR0099</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le sujet des travaux concerne l'amélioration du comportement des machines dites \og intelligentes\fg, c'est-à-dire capables de s'adapter à leur environnement, même lorsque celui-ci évolue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The behaviour of machines is difficult to define, especially when machines have to adapt to a changing environment.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Un des domaines concerné est celui des interactions homme-machine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For example, this is the case when human-machine interactions are concerned.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La machine doit alors gérer différents types d'incertitude pour agir de façon appropriée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, the machine has to deal with several sources of uncertainty to exhibit a consistent behaviour to the user.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>D'abord, elle doit pouvoir prendre en compte les variations de comportements entre les utilisateurs et le fait que le comportement peut varier d'une utilisation à l'autre en fonction de l'habitude à interagir avec le système.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, it has to deal with the different behaviours of the users and also with a change in the behaviour of a user when he gets used to the machine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>De plus, la machine doit s'adapter à l'utilisateur même si les moyens de communication entre lui et la machine sont bruités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Secondly, the communication between the user and the machine can be noisy, which makes the transfer of information more complicated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>L'objectif est alors de gérer ces incertitudes pour exhiber un comportement cohérent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The objective is thus to deal with the different sources of uncertainty to show a consistent behaviour.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Une manière habituelle pour gérer les incertitudes passe par l'introduction de modèles : modèles de l'utilisateur, de la tâche, ou encore de la décision.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Usually, dealing with uncertainties is performed by introducing models: models of the users, the task concerned or the decision.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Un inconvénient de cette méthode réside dans le fait qu'une connaissance experte liée au domaine concerné est nécessaire à la définition des modèles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the accuracy of the solution depends on the accuracy of expert knowledge used to build the models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Si l'introduction d'une méthode d'apprentissage automatique, l'apprentissage par renforcement a permis d'éviter une modélisation de la décision \textit{ad hoc} au problème concerné, des connaissances expertes restent toutefois nécessaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If machine learning, through reinforcement learning, has successfully avoided the use of model for the decision and removed \textit{ad hoc} knowledge about it, expert knowledge is still necessary.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>La thèse défendue par ces travaux est que certaines contraintes liées à l'expertise humaine peuvent être relaxées tout en limitant la perte de généricité liée à l'introduction de modèles</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The thesis presented in this work is that some constraints related to human expertise can be slackened without a loss of generality related to the introduction of models</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

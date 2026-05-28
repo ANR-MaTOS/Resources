@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2010NAN21007. segId begin by 1, tuid = segId</note>
+        <docid>2010NAN21007</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La subjectivité des estimations et des perceptions, la complexité de l’environnement, l’interaction entre sous-systèmes, le manque de données précises, les données manquantes, une faible capacité de traitement de l’information, et l’ambiguïté du langage naturel représentent les principales formes d’incertitude auxquelles les décideurs doivent faire face lorsqu’ils prennent des décisions stratégiques à l’aide de systèmes d’intelligence économique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Subjective estimation and perception, complexity of the environment under study, interaction amongst subsystems, lack of precise data, missing data, limited information processing capacity and ambiguity in natural languages are major forms of uncertainty facing Decision Makers in the process of delivering strategic decisions in economic intelligent systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette étude utilise un paradigme de « soft computing » pour identifier et analyser l’incertitude, que nous associons à la notion de facteurs de risque d’information.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This study employs soft computing paradigm to capture and analyze uncertainty based on information risk factors via our proposed knowledge reconciliation model based on ontology and the FuzzyWatch model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Les outils de la logique floue ont été également utilisés au niveau des ontologies (« FuzzOntology »).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We extended this operation with fuzzy that is – what ontology captures is interpreted by fuzzy techniques (FuzzOntology).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>FuzzyMatch permet de réduire les problèmes de données manquantes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>FuzzyWatch assists in reducing missing data problems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>A l’aide de ces modèles, le processus de décision en intelligence économique bénéficie d’une réduction des risques liés à l’information lors du processus de recherche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Future decisional process will contend with lesser information retrieval risks in Economic Intelligence process using this model.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

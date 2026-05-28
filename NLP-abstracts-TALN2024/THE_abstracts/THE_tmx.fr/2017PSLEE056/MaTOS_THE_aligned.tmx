@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017PSLEE056. segId begin by 1, tuid = segId</note>
+        <docid>2017PSLEE056</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>De multiples problèmes en apprentissage automatique consistent à minimiser une fonction lisse sur un espace euclidien.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Many problems in machine learning are naturally cast as the minimization of a smooth function defined on a Euclidean space.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Pour l’apprentissage supervisé, cela inclut les régressions par moindres carrés et logistique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For supervised learning, this includes least-squares regression and logistic regression.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans ce manuscrit, nous considérons le cas particulier de la perte quadratique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this manuscript, we consider the particular case of the quadratic loss.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans une première partie, nous nous proposons de la minimiser grâce à un oracle stochastique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the first part, we are interestedin its minimization when its gradients are only accessible through a stochastic oracle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans une seconde partie, nous considérons deux de ses applications à l’apprentissage automatique : au partitionnement de données et à l’estimation sous contrainte de forme.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second part, we consider two applications of the quadratic loss in machine learning: clustering and estimation with shape constraints.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ce nouveau cadre suggère un algorithme alternatif qui combine les aspects positifs du moyennage et de l’accélération.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This new framework suggests an alternative algorithm that exhibits the positive behavior of both averaging and acceleration.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>La deuxième contribution est d’obtenir le taux optimal d’erreur de prédiction pour la régression par moindres carrés en fonction de la dépendance au bruit du problème et à l’oubli des conditions initiales.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second main contribution aims at obtaining the optimal prediction error rates for least-squares regression, both in terms of dependence on the noise of the problem and of forgetting the initial conditions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Notre nouvel algorithme est issu de la descente de gradient accélérée et moyennée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our new algorithm rests upon averaged accelerated gradient descent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>La troisième contribution traite de la minimisation de fonctions composites, somme de l’espérance de fonctions quadratiques et d’une régularisation convexe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The third main contribution deals with minimization of composite objective functions composed of the expectation of quadratic functions and a convex function.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous étendons les résultats existants pour les moindres carrés à toute régularisation et aux différentes géométries induites par une divergence de Bregman.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Weextend earlier results on least-squares regression to any regularizer and any geometry represented by a Bregman divergence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Dans une quatrième contribution, nous considérons le problème du partitionnement discriminatif.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a fourth contribution, we consider the the discriminative clustering framework.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons sa première analyse théorique, une extension parcimonieuse, son extension au cas multi-labels et un nouvel algorithme ayant une meilleure complexité que les méthodes existantes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose its first theoretical analysis, a novel sparse extension, a natural extension for the multi-label scenario and an efficient iterative algorithm with better running-time complexity than existing methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>La dernière contribution de cette thèse considère le problème de la sériation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The fifth main contribution deals with the seriation problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Nous adoptons une approche statistique où la matrice est observée avec du bruit et nous étudions les taux d’estimation minimax.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a statistical approach to this problem where the matrix is observed with noise and study the corresponding minimax rate of estimation.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

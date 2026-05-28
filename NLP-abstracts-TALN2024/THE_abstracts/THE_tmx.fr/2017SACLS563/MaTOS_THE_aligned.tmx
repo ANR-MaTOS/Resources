@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017SACLS563. segId begin by 1, tuid = segId</note>
+        <docid>2017SACLS563</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Aligner des macromolécules telles que des protéines, des ADN et des ARN afin de révéler ou exploiter, leur homologie fonctionnelle est un défi classique en bioinformatique, qui offre de nombreuses applications, notamment dans la modélisation de structures et l'annotation des génomes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Aligning macromolecules such as proteins, DNAs and RNAs in order to reveal, or conversely exploit, their functional homology is a classic challenge in bioinformatics, with far-reaching applications in structure modelling and genome annotation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Un certain nombre d'algorithmes et d'outils ont été proposés pour le problème d'alignement structure-séquence d'ARN.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the specific context of complex RNAs, featuring pseudoknots, multiple interactions and non-canonical base pairs, multiple algorithmic solutions and tools have been proposed for the structure sequence alignment problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cependant, en ce qui concerne les ARN complexes, comportant des pseudo-noeuds, des interactions multiples et des paires de bases non canoniques, de tels outils sont rarement utilisés dans la pratique, en partie à cause de leurs grandes exigences de calcul, et de leur incapacité à supporter des types généraux de structures.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, such tools are seldom used in practice, due in part to their extreme computational demands, and because of their inability to support general types of structures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Récemment, Rinaudo et al. ont donné un algorithme paramétré général pour la comparaison structure-séquence d'ARN, qui est capable de prendre en entrée n'importe quel type de structures comportant des pseudo-noeuds.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recently, Rinaudo et al. gave a fully general parameterised algorithm for structure-sequence comparison, which is able to take as input any type of pseudoknotted structures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>L'algorithme paramétré est un algorithme de programmation dynamique basée sur la décomposition arborescente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The parameterised algorithm is a tree decomposition based dynamic programming.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Afin de l'accélérer sans perte sensible de précision, nous avons introduit une approche de programmation dynamique par bandes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To accelerate the dynamic programming algorithm without losing two much accuracy, we introduced a banded dynamic programming.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>De plus, trois algorithmes ont été développés pour obtenir des alignements sous-optimaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then three algorithms are introduced to get the suboptimal structure-sequence alignments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Tous ces algorithmes ont été implémentés dans un logiciel nommé LiCoRNA (aLignment of Complex RNAs).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The algorithms are implemented in a software named LiCoRNA (aLignment of Complex RNAs).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Les performances de LiCoRNA ont été évaluées d'abord sur l'alignement des graines des familles de de la base de données RFAM qui comportent des pseudo-noeuds.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We first evaluate the performance of LiCoRNA on the seed alignment in the pseudoknotted RFAM families.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Comparé aux autres algorithmes de l'état de l'art, LiCoRNA obtient généralement des résultats équivalents ou meilleurs que ses concurrents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Compared to the state-of-the-art algorithms, LiCoRNA shows generally equivalent or better results than its competitors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Grâce à la grande précision démontrée par LiCoRNA, nous montrons que cet outil peut être utilisé pour améliorer les alignements de certaines familles de RFAM qui comportent des pseudo-noeuds.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With the high accuracy showed by LiCoRNA, we further curate RFAM full pseudoknotted alignment.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

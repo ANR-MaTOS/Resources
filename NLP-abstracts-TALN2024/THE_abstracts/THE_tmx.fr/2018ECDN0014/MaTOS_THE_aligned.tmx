@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018ECDN0014. segId begin by 1, tuid = segId</note>
+        <docid>2018ECDN0014</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les humanités défient les capacités du numérique depuis 60 ans.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Humanities challenges computer sciences since 60 years.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les années 90 marquent une rupture, énonçant l'espoir d'une interprétation qualitative automatique de données interopérables devenues « connaissances ».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The 90’s marks a break, announcing qualitative analysis and interpretation of interoperable data, which became «knowledge».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Depuis 2010, une vague de désillusion ternit ces perspectives, le foisonnement des humanités numériques s'intensifie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since 2010, a disillusionment tarnishes the prospects, Digital Hmanities diversity increases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cette méthode vise à co-créer des connaissances historiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This method aims at co-creating historical knowledge.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>À l'utopie d'une modélisation des connaissances qualitatives de l'historien, nous préférons l'heuristique pragmatique : l'interprétation de quantifications du corpus suscite l'émergence de nouvelles certitudes et hypothèses.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Facing the utopian modeling of qualitative knowledge in history, we designed a pragmatic process: the historian analyses quantitative data of a known corpus, this generates new hypothesis and certainties.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

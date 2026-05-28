@@ -1,0 +1,1647 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en" srclang="EN" tgtlang="FR" o-tmf="XML" creationdate="2024-11-15" creationid="MaTOS">
+        <note>This is the sentence alignement file for MERSENNE-mersenne18. segId begin by 1, tuid = segId</note>
+        <docid>mersenne18</docid>
+        <url_src>https://comptes-rendus.academie-sciences.fr/geoscience/articles/10.5802/crgeos.134/</url_src>
+        <url_tgt>https://comptes-rendus.academie-sciences.fr/geoscience/articles/fr/10.5802/crgeos.134/</url_tgt>
+        <author>Delia Brauer, Leena Hupa</author>
+        <title_en>Glass as a biomaterial: strategies for optimising bioactive glasses for clinical applications</title_en>
+        <title_fr>Le verre comme biomatériau : stratégies d'optimisation des verres bioactifs pour les applications cliniques</title_fr>
+        <volume>CRGEOS, 2022, Volume 352, Le verre, un matériau omniprésent</volume>
+        <translator>Romain Dziegielinski</translator>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <prop type="paragraph">1</prop>
+            <tuv xml:lang="EN">
+                <seg>Glass as a biomaterial: strategies for optimising bioactive glasses for clinical applications</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le verre comme biomatériau : stratégies d'optimisation des verres bioactifs pour les applications cliniques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>Bioactive glasses were the first synthetic materials to bond to human body tissue, making them ideal for replacing and regenerating bone.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les verres bioactifs ont été les premiers matériaux synthétiques à se lier aux tissus du corps humain, ce qui les rend idéaux pour remplacer et régénérer les os.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>Since their first development over half a century ago, many new bioactive glass compositions have been developed for medicine and dentistry.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Depuis leur premier développement il y a plus d'un demi-siècle, beaucoup de nouvelles compositions de verre bioactif ont été mises au point pour la médecine et la dentisterie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>This paper looks at different design strategies employed over the years as well as aspects of glass structure relevant to optimising bioactive glass performance.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet article examine les différentes stratégies de conception employées au fil des ans ainsi que les aspects de la structure du verre pertinents pour l'optimisation des performances des verres bioactifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>Statistical compositional series allowed for getting an overview of various compositions and their properties.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les séries statistiques de composition ont permis d'obtenir une vue d'ensemble des différentes compositions et de leurs propriétés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>Since the improvement of structural analysis techniques, particularly solid-state NMR, we can directly relate several bioactive glass properties to the atomic structure, i.e. the spatial arrangement of atoms.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Depuis l'amélioration des techniques d'analyse structurelle, en particulier la RMN à l'état solide, nous pouvons directement relier plusieurs propriétés des verres bioactifs à la structure atomique, c'est-à-dire à l'arrangement spatial des atomes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>Such detailed understanding of the impact of composition and structure on bioactive glass properties enables us to minimise the number of compositions in preclinical and clinical tests needed to confirm positive tissue responses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette compréhension détaillée de l'impact de la composition et de la structure sur les propriétés des verres bioactifs nous permet de minimiser le nombre de compositions dans les tests précliniques et cliniques nécessaires pour confirmer des réponses tissulaires positives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>More than half a century ago, Hench etal. [1971] developed the first bioactive glass composition, later termed Bioglass 45S5.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il y a plus d'un demi-siècle, Hench etal. [1971] ont développé la première composition de verre bioactif, appelée plus tard Bioglass 45S5.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>This material is generally considered to be the starting point for the entire field of bioactive materials [Jones 2013], which besides glasses includes other materials such as glass-ceramics [Vogel and Höland 1987], ceramics and even some metals such as pre-treated titanium [Kim etal. 1997].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce matériau est généralement considéré comme le point de départ de l'ensemble du domaine des matériaux bioactifs [Jones 2013], qui comprend, outre les verres, d'autres matériaux tels que la vitrocéramique [Vogel et Höland 1987], la céramique et même certains métaux tels que le titane prétraité [Kim etal. 1997].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>Bioglass 45S5 consists of 46.1 SiO₂, 2.6 P₂O₅, 26.9 CaO and 24.4 Na₂O (in molar percentages; composition often quoted in weight percentages: 45 SiO₂, 6 P₂O₅, 24.5 CaO and 24.5 Na₂O).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bioglass 45S5 se compose de 46,1 SiO₂, 2,6 P₂O₅, 26,9 CaO et 24,4 Na₂O (en pourcentages molaires; composition souvent citée en pourcentages pondéraux: 45 SiO₂, 6 P₂O₅, 24,5 CaO et 24,5 Na₂O).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>Larry Hench selected the components for good reasons: Na, Ca and P all are physiological elements naturally present in the human body, and Si is an essential element present in the body at low concentrations.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Larry Hench a sélectionné les composants pour de bonnes raisons: Na, Ca et P sont tous des éléments physiologiques naturellement présents dans le corps humain, et Si est un élément essentiel présent dans le corps à de faibles concentrations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>His reasoning was that a material consisting of these elements would integrate well with the body and not be encapsulated into interfacial fibrous tissue [Hench 2006].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Son raisonnement était qu'un matériau composé de ces éléments s'intégrerait bien au corps et ne serait pas encapsulé dans du tissu fibreux interfacial [Hench 2006].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>This was the natural starting point, and subsequent results proved him to be right: Bioglass 45S5 became the first synthetic material to form an integrated bond with human body tissue including not only bone [Hench and Paschall 1973] but also soft tissue [Hench 1991].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'était le point de départ naturel, et les résultats ultérieurs lui ont prouvé qu'il avait raison: Bioglass 45S5 est devenu le premier matériau synthétique à former une liaison intégrée avec les tissus du corps humain, y compris non seulement les os [Hench et Paschall 1973], mais aussi les tissus mous [Hench 1991].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>It was further shown that ions, particularly soluble silica species, released from the glass stimulated osteoblast proliferation [Xynos etal. 2000] and upregulated various osteoblast genes, including some involved in metabolism and bone homeostasis [Xynos etal. 2001].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il a en outre été montré que les ions, en particulier les espèces de silice solubles, libérés du verre stimulaient la prolifération des ostéoblastes [Xynos etal. 2000] et régulé à la hausse divers gènes ostéoblastiques, y compris certains impliqués dans le métabolisme et l'homéostasie osseuse [Xynos etal. 2001].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>The integration with body tissue is possible because of a biomimetic apatite surface layer which forms when Bioglass 45S5 is in contact with physiological solutions, and which body cells, such as osteoblasts, adhere to and proliferate on [Hench and Paschall 1973].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'intégration avec les tissus corporels est possible grâce à une couche de surface d'apatite biomimétique qui se forme lorsque Bioglass 45S5 est en contact avec des solutions physiologiques, et à laquelle les cellules corporelles, telles que les ostéoblastes, adhèrent et prolifèrent [Hench et Paschall 1973].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>Despite Hench’s compositional reasoning, the development of Bioglass 45S5 can be described, to some extent, as an educated guess.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malgré le raisonnement compositionnel de Hench, le développement du Bioglass 45S5 peut être décrit, dans une certaine mesure, comme une supposition éclairée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>Larry Hench himself often told the story of how his research on finding glass compositions suitable as implant materials was sparked by a chance encounter with a colonel of the US Army [Hench 2006].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Larry Hench lui-même a souvent raconté comment ses recherches sur la recherche de compositions de verre adaptées aux matériaux d'implants ont été déclenchées par une rencontre fortuite avec un colonel de l'armée américaine [Hench 2006].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>This colonel knew from his experience during the Vietnam war that many wounded soldiers lost their limbs simply because their bodies rejected the implant materials available at the time, and he challenged Larry Hench to use his knowledge in glass science to develop a material that would be accepted by the human body.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce colonel savait par expérience pendant la guerre du Vietnam que de nombreux soldats blessés perdaient leurs membres simplement parce que leur corps rejetait les matériaux d'implants disponibles à l'époque, et il a mis au défi Larry Hench d'utiliser ses connaissances en science du verre pour développer un matériau qui serait accepté par le corps humain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>Larry Hench took this challenge, and after liaising with colleagues in the medical field successfully applied for funding by the US Army and embarked on a research project that would lead to Bioglass 45S5.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Larry Hench a relevé ce défi et, après avoir assuré la liaison avec des collègues du domaine médical, a demandé avec succès un financement de l'armée américaine et s'est lancé dans un projet de recherche qui aboutirait au Bioglass 45S5.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>There was, however, no previous work to build upon, no other known synthetic materials, inorganic or organic, which were known to chemically bond to body tissue.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il n'y avait cependant aucun travail antérieur sur lequel s'appuyer, aucun autre matériau synthétique connu, inorganique ou organique, connu pour se lier chimiquement aux tissus corporels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>Today, researchers from many fields, including cell biology, medicine, bio-medicine or dentistry, are actively researching bioactive glasses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Aujourd'hui, des chercheurs de nombreux domaines, notamment la biologie cellulaire, la médecine, la biomédecine ou la dentisterie, recherchent activement des verres bioactifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>Nonetheless, it was materials scientists and engineers such as Larry Hench himself, a ceramic engineer, who we have to thank for developing the first bioactive glasses [Hench 2006].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, ce sont des scientifiques et des ingénieurs en matériaux tels que Larry Hench lui-même, un ingénieur en céramique, que nous devons remercier pour avoir développé les premiers verres bioactifs [Hench 2006].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="EN">
+                <seg>Bioactive glass optimisation is still a topical issue, even fifty years since the first successful studies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'optimisation du verre bioactif reste un sujet d'actualité, même cinquante ans après les premières études réussies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="EN">
+                <seg>The reason for the successful development of bioactive glass compositions is rooted in their glassy nature, as glasses are excellent solvents for almost all elements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La raison du succès du développement des compositions de verre bioactif est enracinée dans leur nature vitreuse, car les verres sont d'excellents solvants pour presque tous les éléments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="EN">
+                <seg>Glass properties depend on the elements included, their concentrations and the resulting atomic structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les propriétés du verre dépendent des éléments inclus, de leurs concentrations et de la structure atomique résultante.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="EN">
+                <seg>Today, the development of new bioactive glass-based implants is highly interdisciplinary and partly guided by our enhanced understanding of the roles of various elements in cellular processes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Aujourd'hui, le développement de nouveaux implants bioactifs à base de verre est hautement interdisciplinaire et en partie guidé par notre meilleure compréhension des rôles de divers éléments dans les processus cellulaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="EN">
+                <seg>The first bioactive glasses consisted of five elements Na, Ca, Si, P and O; today, more than 30 elements have been studied for their potential therapeutic effects in glasses intended for implants [Hoppe etal. 2011; Hupa and Karlsson 2017].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les premiers verres bioactifs étaient constitués de cinq éléments Na, Ca, Si, P et O; aujourd'hui, plus de 30 éléments ont été étudiés pour leurs effets thérapeutiques potentiels dans les verres destinés aux implants [Hoppe etal. 2011 ; Hupa et Karlsson 2017].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="EN">
+                <seg>Hench-type bioactive glasses are silicate glasses often containing smaller amounts of a second glass former, phosphate or borate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les verres bioactifs de type Hench sont des verres de silicate contenant souvent de plus petites quantités d'un deuxième formateur de verre, de phosphate ou de borate.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="EN">
+                <seg>Essentially, the choice of the main glass-forming components in bioactive glasses is based on our understanding of the chemistry and technology of conventional soda-lime silicate glasses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Essentiellement, le choix des principaux composants vitrifiants dans les verres bioactifs repose sur notre compréhension de la chimie et de la technologie des verres silicate sodocalcique conventionnels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="EN">
+                <seg>In addition, recent advances in molecular biology have encouraged researchers to explore whether dopants can give additional benefits for tissue regeneration.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, les progrès récents de la biologie moléculaire ont encouragé les chercheurs à explorer si les dopants peuvent apporter des avantages supplémentaires pour la régénération tissulaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="EN">
+                <seg>However, increasing the number of elements in bioactive glasses requires a detailed understanding of the glass structure and its impact on the properties to find and optimise the most suitable composition for a specific clinical application.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, l'augmentation du nombre d'éléments dans les verres bioactifs nécessite une compréhension détaillée de la structure du verre et de son impact sur les propriétés pour trouver et optimiser la composition la plus appropriée pour une application clinique spécifique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="EN">
+                <seg>Selected bioactive glass compositions not only need to provide the desired properties for the device when in contact with the human body, the compositional choice also needs to allow for economic and reliable production of the material.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les compositions de verre bioactif sélectionnées doivent non seulement fournir les propriétés souhaitées pour le dispositif lorsqu'elles sont en contact avec le corps humain, mais le choix de la composition doit également permettre une production économique et fiable du matériau.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="EN">
+                <seg>This review discusses various approaches taken during the development and optimisation of bioactive glass compositions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette revue discute des différentes approches adoptées lors du développement et de l'optimisation des compositions de verre bioactif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="EN">
+                <seg>Emphasis is put on the impact of structural analysis techniques for providing an understanding of the bioactive glass structure at an atomic level and compositional modelling as a powerful tool for tailoring new bioactive glass compositions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'accent est mis sur l'impact des techniques d'analyse structurelle pour fournir une compréhension de la structure du verre bioactif au niveau atomique et de la modélisation de la composition en tant qu'outil puissant pour adapter de nouvelles compositions de verre bioactif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="EN">
+                <seg>2. Glass development based on statistical series</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. Développement du verre basé sur des séries statistiques</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="EN">
+                <seg>When optimising bioactive glass compositions for a particular application, extensive experimental studies are needed to confirm that the compositions, which typically are multicomponent, are suited for the purpose, especially with regard to material/tissue interactions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lors de l'optimisation des compositions de verre bioactif pour une application particulière, des études expérimentales approfondies sont nécessaires pour confirmer que les compositions, qui sont généralement multicomposantes, sont adaptées à l'usage, en particulier en ce qui concerne les interactions matériau/tissu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="EN">
+                <seg>This includes studies such as in vitro degradation, mineralisation and ion release [Nommeots-Nomm etal. 2020], various cell culture studies [Jablonská etal. 2020] and, ultimately, animal experiments and clinical studies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela comprend des études telles que la dégradation in vitro, la minéralisation et la libération d'ions [Nommeots-Nomm etal. 2020], diverses études sur la culture cellulaire [Jablonská etal. 2020] et, in fine, des expérimentations animales et des études cliniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="EN">
+                <seg>Besides these chemical and biomedical properties, glass physical properties need to be considered as well, and particularly high-temperature processing of the glass into the desired product shape is an additional challenge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Outre ces propriétés chimiques et biomédicales, les propriétés physiques du verre doivent également être prises en compte, et le traitement à haute température du verre dans la forme de produit souhaitée est un défi supplémentaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="EN">
+                <seg>For example, the melt-derived bioactive glasses used clinically are prone to devitrification due to their low contents of glass network formers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, les verres bioactifs dérivés de la fusion utilisés cliniquement sont sujets à la dévitrification en raison de leur faible teneur en formateurs de réseau de verre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="EN">
+                <seg>Here, the current interest in developing three-dimensional porous constructs (typically called “scaffolds”) and fibre-based products that mimic tissue structure such as extra cellular matrix has called for bioactive glass compositions that allow flexible high-temperature processing without compromising bioactivity properties.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ici, l'intérêt actuel pour le développement de constructions poreuses tridimensionnelles (généralement appelées «échafaudages») et de produits à base de fibres qui imitent la structure des tissus tels que la matrice extracellulaire a appelé à des compositions de verre bioactif qui permettent un traitement flexible à haute température sans compromettre les propriétés de bioactivité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="EN">
+                <seg>Once experiments have been performed on a sufficiently large set of samples, computerised optimisation routines offer a means to find compositions that satisfy a set of predetermined properties [Vedel etal. 2009; Westerlund etal. 1983], and statistical or other models describing the property/composition relations are useful tools for composition optimisation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une fois que les expériences ont été effectuées sur un ensemble suffisamment grand d'échantillons, les routines d'optimisation informatisées offrent un moyen de trouver des compositions qui satisfont un ensemble de propriétés prédéterminées [Vedel etal. 2009 ; Westerlund etal. 1983], et des modèles statistiques ou autres décrivant les relations propriété/composition sont des outils utiles pour l'optimisation de la composition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>The properties of bioactive glasses have been characterised in numerous studies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les propriétés des verres bioactifs ont été caractérisées dans de nombreuses études.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>Hench and colleagues’ systematic in vivo studies identified composition ranges in the system Na₂O–CaO–P₂O₅–SiO₂ that chemically bonded to bone and soft tissues [Hench and Wilson 1984].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les études systématiques in vivo de Hench et de ses collègues ont identifié des plages de composition dans le système Na₂O–CaO–P₂O₅–SiO₂ qui se sont chimiquement liées aux os et aux tissus mous [Hench et Wilson 1984].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>Also, several systematic studies discuss the impact of gradual substitution of one element for another on the properties of well-known commercial bioactive glasses such as Bioglass 45S5 [Blochberger etal. 2015; O’Donnell etal. 2010; Tylkowski and Brauer 2013] or BonAlive S53P4 [Massera etal. 2012; Massera and Hupa 2014; Wang etal. 2017].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, plusieurs études systématiques discutent de l'impact de la substitution progressive d'un élément à un autre sur les propriétés des verres bioactifs commerciaux bien connus tels que le Bioglass 45S5 [Blochberger etal. 2015 ; O’Donnell etal. 2010 ; Tylkowski et Brauer 2013] ou BonAlive S53P4 [Massera etal. 2012 ; Massera et Hupa 2014 ; Wang etal. 2017].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>These studies with structural analyses (discussed further below) aim to identify the effect of one particular glass component on the bioactive glass properties.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces études avec des analyses structurelles (discutées plus loin ci-dessous) visent à identifier l'effet d'un composant en verre particulier sur les propriétés du verre bioactif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>The effect of ionic substitutions is discussed in detail in Section4.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'effet des substitutions ioniques est discuté en détail dans la section4.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>For glass optimisation using regression analysis, no systematic changes (such as replacing one element by another) are needed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour l'optimisation du verre par analyse de régression, aucun changement systématique (tel que le remplacement d'un élément par un autre) n'est nécessaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>Instead, a sufficiently large set of compositions is required to mathematically describe the composition/property relationship.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au lieu de cela, un ensemble suffisamment grand de compositions est nécessaire pour décrire mathématiquement la relation composition/propriété.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>Here, these compositional series are described as “statistical”, as they include variation of several or potentially all components.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ici, ces séries compositionnelles sont décrites comme «statistiques», car elles comprennent la variation de plusieurs composants ou potentiellement de tous les composants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>In this approach, the impact of each component on the glass properties was estimated using linear functions of the molar composition within certain composition limits.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cette approche, l'impact de chaque composant sur les propriétés du verre a été estimé en utilisant des fonctions linéaires de la composition molaire dans certaines limites de composition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>Considering that each constituent has a specific effect on each property, overall glass performance prediction requires that all relevant properties can be expressed as functions of the composition.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné que chaque constituant a un effet spécifique sur chaque propriété, la prédiction des performances globales du verre exige que toutes les propriétés pertinentes puissent être exprimées en fonction de la composition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>Over the years, several composition/property relations have been developed for various properties of conventional soda-lime glasses, as described in various text books [Musgraves etal. 2019; Scholze 1991].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au fil des ans, plusieurs relations composition/propriétés ont été développées pour diverses propriétés des verres sodocalciques conventionnels, comme décrit dans divers manuels [Musgraves etal. 2019 ; Scholze 1991].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="EN">
+                <seg>In the group of Kaj Karlsson at Abo Akademi University in Turku, Finland, this regression approach was used successfully in the design of bioactive glasses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans le groupe de Kaj Karlsson à l'Université Abo Akademi de Turku, en Finlande, cette approche de régression a été utilisée avec succès dans la conception de verres bioactifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="EN">
+                <seg>Andersson etal. [1990] used 16 statistically selected compositions within the system 46–65.5 SiO₂, 15–30 Na₂O, 11–25 CaO, 0–8 P₂O₅, 0–3 Al₂O₃ and 0–3 B₂O₃ (in wt%) to study the impact of glass composition on bone bonding when implanted into rat tibia for eight weeks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Andersson etal. [1990] ont utilisé 16 compositions statistiquement sélectionnées dans le système 46-65,5 SiO₂, 15–30 Na₂O, 11–25 CaO, 0–8 P 2 O₅, 0–3 Al ₂O ₃ et 0–3 B₂O₃ (en % en poids) pour étudier l'impact de la composition de verre sur la liaison osseuse lorsqu'elle est implantée dans le tibia de rat pendant huit semaines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="EN">
+                <seg>Also, the bone contact type was evaluated for each composition.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, le type de contact osseux a été évalué pour chaque composition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="EN">
+                <seg>In addition, they measured the weight loss in vitro and analysed the quality of silica-rich and hydroxyapatite surface layers formed during in vitro immersion.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, ils ont mesuré la perte de poids in vitro et analysé la qualité des couches superficielles riches en silice et en hydroxyapatite formées lors de l'immersion in vitro.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="EN">
+                <seg>Based on these characteristics, the glasses were divided into groups of comparable bone-bonding capability, which was rated by a numerical value (ranging from 1 to 6) and referred to as the reaction number (RN).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur la base de ces caractéristiques, les verres ont été divisés en groupes de capacité de liaison osseuse comparable, qui a été évalué par une valeur numérique (allant de 1 à 6) et appelé le nombre de réaction (RN).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="EN">
+                <seg>This approach made it possible to quantifying the property combinations to achieve a composition dependency model for bioactivity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette approche a permis de quantifier les combinaisons de propriétés pour réaliser un modèle de dépendance à la composition pour la bioactivité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="EN">
+                <seg>Andersson et al. used regression analysis of the observations to describe RN as a function of the glass composition given in weight percentages (1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Andersson et al. ont utilisé l'analyse de régression des observations pour décrire RN en fonction de la composition du verre donnée en pourcentages pondéraux (1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="EN">
+                <seg>The idea was to use this calculation to select additional promising compositions without having to go through the full set of experimental characterisations for large sets of glass compositions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'idée était d'utiliser ce calcul pour sélectionner des compositions prometteuses supplémentaires sans avoir à passer par l'ensemble complet des caractérisations expérimentales pour de grands ensembles de compositions de verre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="EN">
+                <seg>Instead, only compositions giving RN values of 5 or higher were assumed to fulfil the criteria of bioactivity and bone-bonding and would be tested experimentally.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Au lieu de cela, seules les compositions donnant des valeurs RN de 5 ou plus ont été supposées répondre aux critères de bioactivité et de liaison osseuse et seraient testées expérimentalement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="EN">
+                <seg>Here, SiO₂, Na₂O etc. refer to the weight percentages of the oxide in the glass composition.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ici, SiO₂, Na₂O, etc. se réfèrent aux pourcentages en poids de l'oxyde dans la composition de verre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="EN">
+                <seg>This and other similar property models [Andersson etal. 1988] were intended to find and select new bioactive glass compositions with desired properties.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci et d'autres modèles de propriété similaires [Andersson etal. 1988] visaient à trouver et à sélectionner de nouvelles compositions de verre bioactif ayant les propriétés souhaitées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="EN">
+                <seg>Interestingly, one composition in this statistical series turned out to have very promising in vivo properties, and it was subsequently tested with great success in several clinical studies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Fait intéressant, une composition de cette série statistique s'est avérée avoir des propriétés in vivo très prometteuses, et elle a ensuite été testée avec grand succès dans plusieurs études cliniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="EN">
+                <seg>Today we know this composition as S53P4, a glass commercially available as BonAlive and approved for several clinical applications [Jones etal. 2016; Lindfors 2009; Lindfors etal. 2010; Lindfors 2011].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Aujourd'hui, nous connaissons cette composition sous le nom de S53P4, un verre disponible dans le commerce sous le nom de BonAlive et approuvé pour plusieurs applications cliniques [Jones etal. 2016 ; Lindfors 2009 ; Lindfors etal. 2010 ; Lindfors 2011].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="EN">
+                <seg>Brink and co-authors used a similar approach of a statistical series of 26 compositions in the system Na₂O–K₂O–MgO–CaO–B₂O₃–P₂O₅–SiO₂ to establish the impact of glass composition on high-temperature processing [Brink 1997a] and in vivo properties [Brink etal. 1997] of bioactive glasses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Brink et ses co-auteurs ont utilisé une approche similaire d'une série statistique de 26 compositions dans le système Na₂O–K₂ O-MgO-CaO-B ₂O₃–P₂O₅–SiO₂ pour établir l'impact de la composition du verre sur le traitement à haute température [Brink 1997a] et les propriétés in vivo [Brink etal. 1997] de verres bioactifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="EN">
+                <seg>The first bioactive glasses spontaneously crystallised during high temperature processing, which made the sintering of glasses into porous scaffolds or the drawing of continuous fibres, a challenge.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les premiers verres bioactifs ont spontanément cristallisé lors d'un traitement à haute température, ce qui a rendu difficile le frittage des verres en échafaudages poreux ou l'étirage de fibres continues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="EN">
+                <seg>K₂O and MgO were assumed to improve the hot-working properties of these bioactive silicate glasses (39–70wt% SiO₂), similar to what is known for conventional soda-lime glasses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>On a supposé que K₂O et MgO amélioraient les propriétés de travail à chaud de ces verres de silicate bioactif (39–70% en poids de SiO₂), similaires à ce qui est connu pour les verres silico-sodo-calciques conventionnels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="EN">
+                <seg>Al₂O₃ was not included in this series as contents of around 2wt% in the glass had been shown to induced adverse effects on bone-bonding [Andersson etal. 1993].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Al₂O₃ n'a pas été inclus dans cette série car il avait été démontré que des teneurs d'environ 2% en poids dans le verre induisaient des effets indésirables sur la liaison osseuse [Andersson etal. 1993].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="EN">
+                <seg>The glasses were studied in rabbit tibia for 8 weeks, after which bone-bonding was evaluated and the presence of silica-rich and hydroxyapatite surface layers was investigated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les verres ont été étudiés dans le tibia de lapin pendant 8 semaines, après quoi la liaison osseuse a été évaluée et la présence de couches de surface riches en silice et en hydroxyapatite a été étudiée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="EN">
+                <seg>These in vivo observations were rated by numerical values from 1 to 4, referred to as index of surface activity (ISA) and subsequently included in a regression analysis as a function of the glass composition in weight percentages (2) [Brink etal. 1997].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces observations in vivo ont été notées par des valeurs numériques de 1 à 4, appelées indice d'activité de surface (ISA) et incluses par la suite dans une analyse de régression en fonction de la composition du verre en pourcentages pondéraux (2) [Brink etal. 1997].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="EN">
+                <seg>The in vivo studies of the glasses by Brink etal. [1997] included one composition combining very good high-temperature processing with an in vivo bioactivity similar to that of S53P4.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les études in vivo des verres par Brink etal. [1997] comprenaient une composition combinant un très bon traitement à haute température avec une bioactivité in vivo similaire à celle de S53P4.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="EN">
+                <seg>This composition, known as 13–93, has since been used for numerous studies on 3D bioactive glass scaffolds or glass fibres [Fagerlund etal. 2012; Fu etal. 2008; Liu etal. 2011; Modglin etal. 2012; Niiranen etal. 2001; Paatola etal. 2001].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette composition, connue sous le nom de 13–93, a depuis été utilisée pour de nombreuses études sur des échafaudages en verre bioactif 3D ou des fibres de verre [Fagerlund etal. 2012 ; Fu etal. 2008 ; Liu etal. 2011 ; Modglin etal. 2012 ; Niiranen etal. 2001 ; Paatola etal. 2001].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="EN">
+                <seg>In addition, borate-based bioactive glasses were developed based on this composition by partially or fully replacing SiO₂ with B₂O₃ [Brown etal. 2009], which have since been used in various studies [Fu etal. 2010; George and Brow 2015; Lin etal. 2014] and have successfully obtained approval for wound care applications [Buck 2020].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, des verres bioactifs à base de borate ont été développés à partir de cette composition en remplaçant partiellement ou totalement SiO₂ par B₂O₃ [Brown etal. 2009], qui ont depuis été utilisés dans diverses études [Fu etal. 2010 ; George et Brow 2015 ; Lin etal. 2014] et ont obtenu avec succès l'approbation pour les demandes de soins des plaies [Buck 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="EN">
+                <seg>Later, several other property/composition regression models were published to describe the physical and in vitro properties of additional bioactive glasses [Arstila etal. 2008; Vedel etal. 2008; Zhang etal. 2009].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus tard, plusieurs autres modèles de régression de propriétés/composition ont été publiés pour décrire les propriétés physiques et in vitro de verres bioactifs supplémentaires [Arstila etal. 2008 ; Vedel etal. 2008 ; Zhang etal. 2009].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="EN">
+                <seg>Vedel etal. [2009] used these models to optimise new bioactive glasses with pre-specified properties.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Vedel etal. [2009] ont utilisé ces modèles pour optimiser de nouveaux verres bioactifs aux propriétés prédéfinies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="EN">
+                <seg>Here, bioactive glasses 45S5, S53P4 and 13–93 and some of the new optimised glasses were implanted in rat femur for up to 8 weeks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ici, des verres bioactifs 45S5, S53P4 et 13–93 et certains des nouveaux verres optimisés ont été implantés dans le fémur de rat jusqu'à 8 semaines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="EN">
+                <seg>Some results from these in vivo studies have subsequently been discussed by Fagerlund etal. [2013] and showed that, in general, in vitro ion release from the glasses and the calculated RN and ISA values correlated with the observed reaction layer formation in vivo.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Certains résultats de ces études in vivo ont ensuite été discutés par Fagerlund etal. [2013] et ont montré qu'en général, la libération d'ions in vitro à partir des verres et les valeurs calculées d'ARN et d'AIS étaient corrélées avec la formation de la couche réactionnelle observée in vivo.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="EN">
+                <seg>These results suggest that regression models provide valuable information for composition optimisation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces résultats suggèrent que les modèles de régression fournissent des informations précieuses pour l'optimisation de la composition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="EN">
+                <seg>One criticism of the RN and ISA models described above is that they are based on the composition in weight percentages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une critique des modèles RN et ISA décrits ci-dessus est qu'ils sont basés sur la composition en pourcentages pondéraux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="EN">
+                <seg>If we want to relate the findings of such studies to the atomic glass structure, the use of models based on the molar glass composition (i.e., molar percentages) would be much more insightful.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si nous voulons relier les résultats de ces études à la structure du verre atomique, l'utilisation de modèles basés sur la composition molaire du verre (c'est-à-dire les pourcentages molaires) serait beaucoup plus perspicace.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="EN">
+                <seg>It might even allow us to gain an understanding of why the different glass components affect the regression equation in the way they do.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela pourrait même nous permettre de comprendre pourquoi les différents composants du verre affectent l'équation de régression comme ils le font.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="EN">
+                <seg>However, the idea of these regression models was to use them in a computerised routine for composition optimisation, where the use of weight-based models presented no disadvantage compared to models based on molar percentages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, l'idée de ces modèles de régression était de les utiliser dans une routine informatisée pour l'optimisation de la composition, où l'utilisation de modèles basés sur le poids ne présentait aucun inconvénient par rapport aux modèles basés sur les pourcentages molaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="EN">
+                <seg>An additional point to consider is that these models are only valid for the compositional range covered by the components included in developing the regression model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un point supplémentaire à considérer est que ces modèles ne sont valables que pour la gamme de composition couverte par les composants inclus dans l'élaboration du modèle de régression.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="EN">
+                <seg>This raises the question whether such models are really predictive or only descriptive: while they seem to work fine for describing the composition/property relationship for the glasses included, it remains to be confirmed in each case whether they are equally useful for helping us to design and select new bioactive compositions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela soulève la question de savoir si de tels modèles sont vraiment prédictifs ou seulement descriptifs: s'ils semblent bien fonctionner pour décrire la relation composition/propriété des verres inclus, il reste à confirmer dans chaque cas s'ils sont également utiles pour nous aider à concevoir et sélectionner de nouvelles compositions bioactives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="EN">
+                <seg>Another disadvantage of such relatively simple regression approaches is that they focus on one glass property per equation only.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un autre inconvénient de ces approches de régression relativement simples est qu'elles se concentrent sur une seule propriété du verre par équation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="EN">
+                <seg>If we want to combine several properties at a time, say, bioactivity with good high-temperature processing, more sophisticated regression approaches may offer advantages.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si nous voulons combiner plusieurs propriétés à la fois, par exemple la bioactivité avec un bon traitement à haute température, des approches de régression plus sophistiquées peuvent offrir des avantages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="EN">
+                <seg>To our knowledge, however, no such studies have been performed on bioactive glasses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À notre connaissance, cependant, aucune étude de ce type n'a été réalisée sur les verres bioactifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>Increasing amounts of data available to describe glass properties affecting glass manufacturing as well as glass performance in the final application pave the road towards improved composition optimisation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'augmentation des quantités de données disponibles pour décrire les propriétés du verre affectant la fabrication du verre ainsi que les performances du verre dans l'application finale ouvre la voie à une optimisation améliorée de la composition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>More modern approaches for optimising glass compositions make use of machine learning and artificial intelligence to design new glass compositions and even products [Mauro 2018; Venugopal etal. 2021].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des approches plus modernes pour optimiser les compositions de verre utilisent l'apprentissage automatique et l'intelligence artificielle pour concevoir de nouvelles compositions de verre et même des produits [Mauro 2018 ; Venugopal etal. 2021</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>So far, this approach has not been used much in the field of bioactive glasses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Jusqu'à présent, cette approche n'a pas été beaucoup utilisée dans le domaine des verres bioactifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>In one study, the dissolution behaviour of phosphate glasses for biomedical applications was described using artificial neural networks, ANN [Brauer etal. 2007].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans une étude, le comportement de dissolution des verres phosphatés pour des applications biomédicales a été décrit à l'aide de réseaux de neurones artificiels, ANN [Brauer etal. 2007).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>As ANN generate black box models only, interpretation of an ANN is not necessarily easy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme ANN génère uniquement des modèles de boîtes noires, l'interprétation d'une ANN n'est pas nécessairement facile.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>For this reason, Echezarreta-Lopez and Landin [2013] used a neurofuzzy logic approach, which combines the ANN adaptive learning capabilities with the fuzzy logic representation through simple rules such as IF… THEN rules.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour cette raison, Echezarreta-Lopez et Landin [2013] ont utilisé une approche de logique neurofluzzy, qui combine les capacités d'apprentissage adaptatif ANN avec la représentation de logique floue à travers des règles simples telles que IF… PUIS les règles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>Their study, which to our knowledge constitutes the only study looking at silicate-based bioactive glasses, investigated the factors affecting bioactive glass antibacterial activity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leur étude, qui constitue à notre connaissance la seule étude portant sur les verres bioactifs à base de silicate, a étudié les facteurs affectant l'activité antibactérienne du verre bioactif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>The authors collected data from the literature, combining them in a large database which they then analysed using neurofuzzy logic.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les auteurs ont collecté des données de la littérature, les combinant dans une grande base de données qu'ils ont ensuite analysée en utilisant la logique neurofuzzy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>Their results show that, based on the data available, bioactive glass antibacterial activity is mainly determined by the release of alkaline metal cations from the glass into the culture medium and the concomitant increase in pH.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leurs résultats montrent que, sur la base des données disponibles, l'activité antibactérienne du verre bioactif est principalement déterminée par la libération de cations de métaux alcalins du verre dans le milieu de culture et l'augmentation concomitante du pH.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>Microbiological conditions such as culture media and time did not have a significant impact on the results, as long as they were suitable for the culture of the bacterial species under investigation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les conditions microbiologiques telles que les milieux de culture et le temps n'ont pas eu d'impact significatif sur les résultats, à condition qu'elles soient adaptées à la culture des espèces bactériennes étudiées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="EN">
+                <seg>Machine learning is a promising tool to understand, design and optimise bioactive glasses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'apprentissage automatique est un outil prometteur pour comprendre, concevoir et optimiser les verres bioactifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="EN">
+                <seg>One reason for it being used sparingly probably lies in the fact that large datasets are needed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'une des raisons pour lesquelles il est utilisé avec parcimonie réside probablement dans le fait que de grands ensembles de données sont nécessaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="EN">
+                <seg>In studies on bioactive glasses, usually relatively small sets of different compositions are investigated.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les études sur les verres bioactifs, des ensembles relativement petits de différentes compositions sont généralement étudiés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="EN">
+                <seg>This means that for meaningful analyses using machine learning tools, the results from many different studies need to be combined.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela signifie que pour des analyses significatives utilisant des outils d'apprentissage automatique, les résultats de nombreuses études différentes doivent être combinés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="EN">
+                <seg>Unfortunately, experimental conditions when studying bioactive glasses, especially for in vitro immersion and cell culture experiments, vary widely, which raises doubts as to how comparable the results really are.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Malheureusement, les conditions expérimentales lors de l'étude des verres bioactifs, en particulier pour les expériences d'immersion in vitro et de culture cellulaire, varient considérablement, ce qui soulève des doutes quant à la comparabilité réelle des résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="EN">
+                <seg>For this reason, members of Technical Committee 04—Bioglasses of the International Commission on Glass recently presented a unified method for performing acellular immersion experiments on bioactive glasses [Maçon etal. 2015].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour cette raison, les membres du comité technique 04—Bioglasses de la Commission internationale du verre ont récemment présenté une méthode unifiée pour effectuer des expériences d'immersion acellulaire sur des verres bioactifs [Maçon etal. 2015).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="EN">
+                <seg>Ideally, more standardised approaches for characterising other glass properties will be adopted by the bioactive glass community in the near future.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Idéalement, des approches plus standardisées pour caractériser d'autres propriétés du verre seront adoptées par la communauté du verre bioactif dans un proche avenir.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="EN">
+                <seg>3. Structural analyses as a foundation for new design strategies</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Les analyses structurelles comme fondement de nouvelles stratégies de conception</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="EN">
+                <seg>For a long time, detailed structural analyses were constrained by glasses’ lack of periodic, i.e., crystalline, order in their structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pendant longtemps, les analyses structurelles détaillées ont été contraintes par le manque d'ordre périodique, c'est-à-dire cristallin, des verres dans leur structure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="EN">
+                <seg>Nowadays, however, we have several analytical tools available to investigate the atomic set-up of glasses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nos jours, cependant, nous disposons de plusieurs outils analytiques pour étudier la configuration atomique des verres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="EN">
+                <seg>Especially advances in solid-state nuclear magnetic resonance (NMR) spectroscopy made it possible to get detailed insight into glass short-range and, to some extent medium-range, structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En particulier, les progrès de la spectroscopie par résonance magnétique nucléaire (RMN) à l'état solide ont permis d'obtenir un aperçu détaillé de la structure du verre à courte portée et, dans une certaine mesure, à moyenne portée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="EN">
+                <seg>A key advantage of solid-state NMR spectroscopy is that the method looks at one specific nucleus at a time (typical examples in glass research being ²⁹Si, ³¹P or ¹¹B for analysing glass networks but also ¹⁹F or ²³Na), which means that even in multi-component compositions, such as those of many bioactive glasses, data interpretation can be much easier than, e.g., for vibrational spectroscopy.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un avantage clé de la spectroscopie RMN à l'état solide est que le procédé examine un noyau spécifique à la fois (des exemples typiques dans la recherche sur le verre étant ²⁹Si, ³¹P ou ¹¹B pour analyser les réseaux de verre mais aussi ¹⁹F ou ²³Na), ce qui signifie que même dans les compositions à plusieurs composants, telles que celles de nombreux verres bioactifs, l'interprétation des données peut être beaucoup plus facile que, par exemple, pour la spectroscopie vibrationnelle.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="EN">
+                <seg>Combined with other structural analysis tools, including Raman and infra-red (IR) spectroscopies [Sawangboon etal. 2020] as well as X-ray and neutron diffraction experiments [Martin etal. 2012] but also computer simulation [Christie etal. 2011], we can now get insight into how the atoms in many bioactive glass systems are arranged.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Combiné avec d'autres outils d'analyse structurelle, y compris les spectroscopies Raman et infrarouge (IR) [Sawangboon etal. 2020] ainsi que des expériences de diffraction des rayons X et des neutrons [Martin etal. 2012] mais aussi la simulation informatique [Christie etal. 2011], nous pouvons maintenant avoir un aperçu de la façon dont les atomes de nombreux systèmes de verre bioactif sont organisés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="EN">
+                <seg>This allows us to establish structure/property relationships in addition to the composition/property relationships discussed above.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela nous permet d'établir des relations structure/propriété en plus des relations composition/propriété discutées ci-dessus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>One of the first structural studies on bioactive glass compositions by solid-state NMR spectroscopy was performed by Lockyer etal. [1995].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'une des premières études structurelles sur les compositions de verre bioactif par spectroscopie RMN à l'état solide a été réalisée par Lockyer etal. 1995 :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>Their main finding was that phosphate did not form part of a phosphosilicate network (or “backbone”) of the glass but was present as isolated orthophosphate groups.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Leur principale conclusion était que le phosphate ne faisait pas partie d'un réseau de phosphosilicate (ou «squelette») du verre mais était présent sous forme de groupes orthophosphates isolés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>This was later confirmed by very detailed solid-state NMR spectroscopy studies using ¹⁷O and ²⁹Si-enriched Bioglass 45S5 [Pedone etal. 2010], although few NMR spectroscopy [Fayon etal. 2013] and computer simulation studies [Tilocca and Cormack 2007] found small amounts of Si–O–P bonds.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela a ensuite été confirmé par des études de spectroscopie RMN à l'état solide très détaillées utilisant du Bioglass 45S5 enrichi en ¹⁷O et ²⁹ Si [Pedone etal. 2010], bien que peu de spectroscopie RMN [Fayon etal. 2013] et des études de simulation informatique [Tilocca et Cormack 2007] ont trouvé de petites quantités de liaisons Si-O-P.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="EN">
+                <seg>At about the same time, Hill [1996], a polymer scientist by training, aimed to find a way to predict whether a particular glass composition would be bioactive or not, and he published his view on how bioactivity was related not only to glass composition but also structure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À peu près au même moment, Hill [1996], un scientifique des polymères de formation, visait à trouver un moyen de prédire si une composition de verre particulière serait bioactive ou non, et il a publié son point de vue sur la façon dont la bioactivité était liée non seulement à la composition du verre, mais aussi à la structure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="EN">
+                <seg>He noted that the degree of polymerisation of the silicate network, which he termed “network connectivity” (NC), was particularly useful in predicting the bioactivity of a given silicate or phosphosilicate glass.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il a noté que le degré de polymérisation du réseau de silicate, qu'il a appelé «connectivité réseau» (NC), était particulièrement utile pour prédire la bioactivité d'un silicate ou d'un verre de phosphosilicate donné.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="EN">
+                <seg>One should note that in Hill’s publication the calculated NC values are incorrect, most likely because, at the time of writing, Hill was unaware of Lockyer etal.]’s [1995] solid-state NMR spectroscopy study showing phosphate present in bioactive glasses as orthophosphate mostly.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il convient de noter que dans la publication de Hill, les valeurs calculées de la NC sont incorrectes, très probablement parce que, au moment de la rédaction, Hill n'était pas au courant de l'étude de spectroscopie RMN à l'état solide de Lockyer etal. [1995] montrant que le phosphate présent dans les verres bioactifs était principalement de l'orthophosphate.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="EN">
+                <seg>Hill therefore assumed that all phosphate formed part of the silicate network connected via Si–O–P bonds.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Hill a donc supposé que tout le phosphate faisait partie du réseau de silicate connecté via des liaisons Si-O-P.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="EN">
+                <seg>Since then, NC calculations taking this into account have been described a number of times in the literature [Brauer etal. 2009; Brauer 2015; Hill and Brauer 2011].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Depuis lors, les calculs de NC en tenant compte ont été décrits à plusieurs reprises dans la littérature [Brauer etal. 2009 ; Brauer 2015 ; Hill et Brauer 2011].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="EN">
+                <seg>The reasoning behind the network connectivity approach is that silicate glasses can be described as inorganic polymers, and that their properties, e.g., their thermal properties or crystallisation tendency, are determined to a large extent by the degree of network polymerisation or NC.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le raisonnement derrière l'approche de connectivité réseau est que les verres de silicate peuvent être décrits comme des polymères inorganiques, et que leurs propriétés, par exemple, leurs propriétés thermiques ou leur tendance à la cristallisation, sont déterminées dans une large mesure par le degré de polymérisation du réseau ou NC.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="EN">
+                <seg>A more disrupted silicate network with large concentrations of non-bridging oxygen atoms (NBO) caused by large modifier concentrations also facilitates water intrusion, thereby enabling the initial ion exchange process which is a requirement for ion release and apatite surface layer formation of bioactive glasses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un réseau de silicate plus perturbé avec de fortes concentrations d'atomes d'oxygène non pontants (NBO) causées par de fortes concentrations de modificateurs facilite également l'intrusion d'eau, permettant ainsi le processus initial d'échange d'ions qui est une exigence pour la libération d'ions et la formation d'une couche superficielle d'apatite des verres bioactifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="EN">
+                <seg>The importance of NBO in this process was visualised impressively by computer simulations [Tilocca and Cormack 2011].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'importance de la NBO dans ce processus a été visualisée de manière impressionnante par des simulations informatiques [Tilocca et Cormack 2011].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="EN">
+                <seg>Dynamic ion release experiments [Fagerlund etal. 2013] highlighted pronounced differences between bioactive glasses and conventional silicate compositions and illustrated how glasses with higher NC (owing to higher silica content) release less ions but also release them more slowly.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Expériences de libération dynamique d'ions [Fagerlund etal. 2013] a mis en évidence des différences prononcées entre les verres bioactifs et les compositions de silicate conventionnelles et a illustré comment les verres à NC plus élevé (en raison de la teneur plus élevée en silice) libèrent moins d'ions mais les libèrent également plus lentement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="EN">
+                <seg>While it is not possible to define a clear cut-off value in NC above which ion release and bioactivity are impeded entirely, both decrease drastically as NC increases [Brauer 2015].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien qu'il ne soit pas possible de définir une valeur seuil claire dans la NC au-dessus de laquelle la libération d'ions et la bioactivité sont entièrement entravées, les deux diminuent considérablement à mesure que la NC augmente [Brauer 2015].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="EN">
+                <seg>When performing ionic substitutions in a bioactive glass, keeping the network connectivity constant helps to maintain bioactivity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Lors de la réalisation de substitutions ioniques dans un verre bioactif, le maintien d'une connectivité réseau constante permet de maintenir la bioactivité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="EN">
+                <seg>It also allows for the investigation of how substitutions impact on bioactivity without this being affected by changes in NC.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il permet également d'étudier l'impact des substitutions sur la bioactivité sans que cela ne soit affecté par les modifications de la NC.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="EN">
+                <seg>This is most easily achieved by performing substitutions on an atomic (or molar) basis [O’Donnell and Hill 2010].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci est plus facilement réalisé en effectuant des substitutions sur une base atomique (ou molaire) [O'Donnell et Hill 2010].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="EN">
+                <seg>Based on this principle, a partially strontium-substituted version of Bioglass 45S5 was developed, which was later commercialised as StronBone^(™) [Jones etal. 2016; O’Donnell etal. 2010].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Sur la base de ce principe, une version partiellement substituée au strontium de Bioglass 45S5 a été développée, qui a ensuite été commercialisée sous le nom de StronBone^(™) [Jones etal. 2016 ; O’Donnell etal. 2010].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="EN">
+                <seg>The necessity of maintaining a constant NC was also illustrated in studies on increasing phosphate contents in bioactive glasses in order to increase the rate of in vitro apatite surface layer formation [Hill and Brauer 2011; O’Donnell etal. 2008, 2009] and on incorporating fluoride in order to optimise bioactive glasses for dental and oral health applications [Brauer etal. 2009; Gentleman etal. 2013].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La nécessité de maintenir une NC constante a également été illustrée dans des études sur l'augmentation des teneurs en phosphate dans les verres bioactifs afin d'augmenter le taux de formation de couche superficielle d'apatite in vitro [Hill et Brauer 2011 ; O’Donnell etal. 2008, 2009] et sur l'incorporation de fluorure afin d'optimiser les verres bioactifs pour les applications de santé dentaire et bucco-dentaire [Brauer etal. 2009 ; Gentleman etal. 2013].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="EN">
+                <seg>In combination [Mneimne etal. 2011], these studies resulted in the development of a bioactive glass (BioMin^(®)) for application in dentifrices [Jones etal. 2016].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En combinaison [Mneimne etal. 2011], ces études ont abouti au développement d'un verre bioactif (BioMin^(®)) pour application dans les dentifrices [Jones etal. 2016].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>Figure1 shows the compositional and structural dependency of in vivo bone contact of bioactive glasses in the system Na₂O–K₂O–MgO–CaO–B₂O₃–P₂O₅–SiO₂ at 8 weeks of implantation in rabbit tibia [Brink etal. 1997].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure1 montre la dépendance compositionnelle et structurelle du contact osseux in vivo des verres bioactifs dans le système Na₂O–K₂O–MgO–CaO–B₂O₃–P₂O₅–SiO₂ à 8 semaines d'implantation dans le tibia de lapin [Brink etal. 1997].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>If we look at the entire dataset (Figure1a), we observe a trend of decreasing bone contact with increasing silica molar fraction and decreasing modifier molar fraction.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si nous regardons l'ensemble des données (Figure1 a), nous observons une tendance à la diminution du contact osseux avec l'augmentation de la fraction molaire de silice et la diminution de la fraction molaire de modificateur.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>Some deviation from this trend is likely to be caused by structural effects of boron present in some of the glasses, which can be present in both three- and four-fold coordination and, thus, affects the overall degree of network polymerisation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un certain écart par rapport à cette tendance est susceptible d'être causé par les effets structurels du bore présent dans certains verres, qui peuvent être présents dans une coordination triple et quadruple et, par conséquent, affectent le degré global de polymérisation du réseau.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>If we only look at borate-free compositions (Figure1b), the trend is clearer.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Si nous ne regardons que les compositions sans borate (Figure1b), la tendance est plus claire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>Figure1c illustrates how in vivo bone contact decreases with NC (calculated for borate-free glasses only, as no structural information was available for the borate-containing ones).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure1c illustre comment le contact osseux in vivo diminue avec la NC (calculé pour les verres sans borate uniquement, car aucune information structurelle n'était disponible pour les verres contenant du borate).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>The large error bars originate from variations in the type of modifier present as well as normal variation during studies involving living systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les grandes barres d'erreur proviennent des variations du type de modificateur présent ainsi que de la variation normale au cours des études impliquant des systèmes vivants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>In Figure1d, variation in bioactive glass surface reactions during immersion in simulated body fluid (SBF, an acellular testing solution, being similar in composition to the inorganic components of blood plasma) are shown to also correlate with glass NC [Brink 1997b]: glasses with the highest NC showed no significant surface reactions, while with decreasing NC silica gel and calcium phosphate layer formation was observed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la figure1d, la variation des réactions de surface du verre bioactif pendant l'immersion dans un fluide corporel simulé (SBF, une solution de test acellulaire, dont la composition est similaire aux composants inorganiques du plasma sanguin) est également en corrélation avec le NC du verre [Brink 1997b]: les verres avec le NC le plus élevé n'ont montré aucune réaction de surface significative, tandis qu'avec le NC décroissant, la formation de couche de gel de silice et de phosphate de calcium a été observée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>This silica gel layer is a surface layer of ion depleted silicate, while the release of calcium and phosphate ions from the glass (together with those ions present in the testing solution, SBF, and a concomitant pH increase) cause precipitation of biomimetic crystalline apatite-like surface layers [Nommeots-Nomm etal. 2020].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette couche de gel de silice est une couche superficielle de silicate appauvri en ions, tandis que la libération d'ions calcium et phosphate du verre (avec les ions présents dans la solution à tester, le SBF, et une augmentation concomitante du pH) provoque la précipitation de couches superficielles de type apatite cristalline biomimétique [Nommeots-Nomm etal. 2020.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="EN">
+                <seg>Today, in addition to classic glass structure investigations, the topological constraint theory provides an additional tool for describing structure/property relationships in glasses and for tailoring compositions for various functional applications [Bauchy 2019; Smedskjaer etal. 2011].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Aujourd'hui, en plus des enquêtes classiques sur la structure du verre, la théorie des contraintes topologiques fournit un outil supplémentaire pour décrire les relations structure/propriété dans les verres et pour personnaliser les compositions pour diverses applications fonctionnelles [Bauchy 2019 ; Smedskjaer etal. 2011].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="EN">
+                <seg>The theory was inspired by the knowledge on the stability of mechanical trusses as well as Zachariasen’s work onglass structure [Phillips and Thorpe 1985; Zachariasen 1932].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La théorie a été inspirée par les connaissances sur la stabilité des fermes mécaniques ainsi que par les travaux de Zachariasen sur la structure en verre [Phillips et Thorpe 1985 ; Zachariasen 1932].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="EN">
+                <seg>Topological constraint theory reduces the glass network to nodes (the atoms present in the glass structure) which are constrained by rods (the chemical bonds between the atoms, i.e. chemical constraints).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La théorie des contraintes topologiques réduit le réseau de verre à des nœuds (les atomes présents dans la structure de verre) qui sont contraints par des tiges (les liaisons chimiques entre les atomes, c'est-à-dire les contraintes chimiques).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="EN">
+                <seg>The resulting rigidity of the network allows for the prediction of various properties such as glass transition temperature or chemical durability [Mascaraque etal. 2017a, b].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La rigidité du réseau qui en résulte permet de prédire diverses propriétés telles que la température de transition vitreuse ou la durabilité chimique [Mascaraque etal. 2017a, b].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="EN">
+                <seg>Silicate glass dissolution kinetics were also investigated by combining topological constraint theory and machine learning [Liu etal. 2019], but so far no such studies seem to have been performed on bioactive glasses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La cinétique de dissolution du verre de silicate a également été étudiée en combinant la théorie des contraintes topologiques et l'apprentissage automatique [Liu etal. 2019], mais jusqu'à présent, aucune étude de ce type ne semble avoir été réalisée sur des verres bioactifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="EN">
+                <seg>One issue with structural investigations is that results are more challenging to interpret for multicomponent glasses, and most bioactive glasses tend to contain a relatively large number of different oxides, including several glass formers (besides SiO₂ typically P₂O₅ but often also B₂O₃) plus numerous modifiers.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un problème avec les enquêtes structurelles est que les résultats sont plus difficiles à interpréter pour les verres multicomposants, et la plupart des verres bioactifs ont tendance à contenir un nombre relativement élevé d'oxydes différents, y compris plusieurs formateurs de verre (en plus de SiO₂ typiquement P₂O₅ mais souvent aussi B₂O₃) plus de nombreux modificateurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="EN">
+                <seg>For many studies access to highly specialized equipment is required, typically available at centralised facilities only, including neutron diffraction or synchrotron X-ray diffraction experiments, but also two-dimensional NMR experiments, the latter often requiring the use of isotope-enriched raw materials, which increases cost of experiments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour de nombreuses études, l'accès à des équipements hautement spécialisés est nécessaire, généralement disponibles dans des installations centralisées uniquement, y compris des expériences de diffraction des neutrons ou de diffraction des rayons X synchrotron, mais aussi des expériences RMN bidimensionnelles, ces dernières nécessitant souvent l'utilisation de matières premières enrichies en isotopes, ce qui augmente le coût des expériences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="EN">
+                <seg>This means that while structural studies can provide us with detailed understanding of how glass atomic structure and macroscopic properties are connected, the number of compositions currently analysed is still limited.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela signifie que si les études structurelles peuvent nous fournir une compréhension détaillée de la façon dont la structure atomique du verre et les propriétés macroscopiques sont liées, le nombre de compositions actuellement analysées est encore limité.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="EN">
+                <seg>4. The influence of modifiers: structural aspects and therapeutic function</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. L'influence des modificateurs: aspects structurels et fonction thérapeutique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>Bioactive glasses are known to contain relatively large concentrations of network modifiers compared to the concentrations present in conventional silicate glasses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les verres bioactifs sont connus pour contenir des concentrations relativement importantes de modificateurs de réseau par rapport aux concentrations présentes dans les verres de silicate conventionnels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>While the amount of modifiers present affects NC, as discussed above, the type of modifiers present also determines bioactive glass properties.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que la quantité de modificateurs présents affecte la NC, comme indiqué ci-dessus, le type de modificateurs présents détermine également les propriétés du verre bioactif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>Calcium oxide is a typical network modifier, and calcium ions are known to influence osteoblast (bone cell) function.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'oxyde de calcium est un modificateur de réseau typique, et les ions calcium sont connus pour influencer la fonction des ostéoblastes (cellules osseuses).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>Sodium oxide is present in most bioactive glass compositions, but its main function is not biological or medical but to lower melting and processing temperatures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'oxyde de sodium est présent dans la plupart des compositions de verre bioactif, mais sa fonction principale n'est pas biologique ou médicale, mais d'abaisser les températures de fusion et de traitement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>To keep these temperatures low, typically high concentrations have been used, which however are known to increase the glass crystallisation tendency.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour maintenir ces températures basses, des concentrations généralement élevées ont été utilisées, qui sont cependant connues pour augmenter la tendance à la cristallisation du verre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="EN">
+                <seg>For glasses with a constant degree of network polymerisation, variations in modifier field strength (or “charge to size ratio”) determine many of the properties.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour les verres avec un degré constant de polymérisation du réseau, les variations de l'intensité du champ modificateur (ou «rapport charge/taille») déterminent de nombreuses propriétés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="EN">
+                <seg>For example, the larger field strength of Ca²⁺ compared to Na⁺ (with both ions having very similar ionic radii) reduces mobility within the glass network and, thus, increases glass transition and melting temperatures and reduces the crystallisation tendency for glasses higher in calcium.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, la plus grande intensité de champ du Ca²⁺ par rapport au Na⁺ (les deux ions ayant des rayons ioniques très similaires) réduit la mobilité au sein du réseau de verre et, par conséquent, augmente la transition vitreuse et les températures de fusion et réduit la tendance à la cristallisation pour les verres plus riches en calcium.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="EN">
+                <seg>This is the reason why glasses of a composition lying in the CaO–SiO₂ region of the phase diagram show lower tendencies to crystallise than glasses located in the Na₂O–2CaO–SiO₂ region [Arstila etal. 2008; Vedel etal. 2007].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est la raison pour laquelle les verres d'une composition située dans la région CaO–SiO₂ du diagramme de phase montrent des tendances à la cristallisation plus faibles que les verres situés dans la région Na₂O–2CaO–SiO₂ [Arstila etal. 2008 ; Vedel etal. 2007].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="EN">
+                <seg>Similarly, glasses designed for improved high temperature processing, such as 13–93 [Brink 1997a], often contain Mg²⁺ in addition to Ca²⁺ ions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De même, les verres conçus pour un traitement amélioré à haute température, tels que le 13–93 [Brink 1997a], contiennent souvent du Mg²⁺ en plus des ions Ca²⁺.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="EN">
+                <seg>Both ions have the same charge but magnesium ions are smaller than calcium ones, resulting in a larger field strength.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les deux ions ont la même charge, mais les ions magnésium sont plus petits que les ions calcium, ce qui entraîne une plus grande intensité de champ.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="EN">
+                <seg>These days, however, ionic substitutions (Figure2) in bioactive glasses focus more on broadening the glasses’ therapeutic range rather than improving basic glass properties [Hoppe etal. 2011].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nos jours, cependant, les substitutions ioniques (figure2) dans les verres bioactifs se concentrent davantage sur l'élargissement de la gamme thérapeutique des verres plutôt que sur l'amélioration des propriétés de base du verre [Hoppe etal. 2011].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="EN">
+                <seg>The idea is that by incorporating ions possessing specific therapeutic properties, one can broaden the therapeutic spectrum of bioactive glasses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'idée est qu'en incorporant des ions possédant des propriétés thérapeutiques spécifiques, on peut élargir le spectre thérapeutique des verres bioactifs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="EN">
+                <seg>Elements added for therapeutic effects include strontium to treat osteoporosis [Gentleman etal. 2010; O’Donnell etal. 2010], cobalt to stimulate blood vessel formation [Azevedo etal. 2015], lithium to enhance hard-tissue regeneration [da Silva etal. 2017] or zinc to activate bone formation [Aina etal. 2007].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les éléments ajoutés pour les effets thérapeutiques comprennent le strontium pour traiter l'ostéoporose [Gentleman etal. 2010 ; O’Donnell etal. 2010], le cobalt pour stimuler la formation des vaisseaux sanguins [Azevedo etal. 2015], le lithium pour améliorer la régénération des tissus durs [da Silva etal. 2017] ou du zinc pour activer la formation osseuse [Aina etal. 2007].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="EN">
+                <seg>Several elements have also been added to induce antibacterial effects around the dissolving bioactive glass implant, e.g., silver [Jones etal. 2006] or zinc.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plusieurs éléments ont également été ajoutés pour induire des effets antibactériens autour de l'implant en verre bioactif en dissolution, par exemple, l'argent [Jones etal. 2006] ou le zinc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="EN">
+                <seg>Figure2 summarises elements studied as components in bioactive glasses, either as main components forming the main glass structure or as dopants added to be released inside the body, providing specific therapeutic effects.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure2 résume les éléments étudiés en tant que composants dans les verres bioactifs, soit en tant que composants principaux formant la structure vitreuse principale, soit en tant que dopants ajoutés pour être libérés à l'intérieur du corps, fournissant des effets thérapeutiques spécifiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="EN">
+                <seg>But not only metal oxides are added to optimise bioactive glass properties.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Mais il n'y a pas que les oxydes métalliques qui sont ajoutés pour optimiser les propriétés du verre bioactif.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="EN">
+                <seg>Fluoride [Mneimne etal. 2011] or chloride [Chen etal. 2015] have been incorporated in bioactive glasses for use in oral healthcare.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Fluorure [Mneimne etal. 2011] ou de chlorure [Chen etal. 2015] ont été incorporés dans des verres bioactifs pour une utilisation dans les soins bucco-dentaires.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>In ion-releasing compositions, a balance needs to be determined between obtaining a therapeutic effect while not causing any general or local toxicity issues.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les compositions libérant des ions, un équilibre doit être déterminé entre l'obtention d'un effet thérapeutique et l'absence de problèmes de toxicité généraux ou locaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>The released ion concentrations must be large enough to activate the desired cellular processes over a critical time period.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les concentrations d'ions libérés doivent être suffisamment importantes pour activer les processus cellulaires souhaités sur une période de temps critique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, concentrations that are too high may induce adverse effects.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'autre part, des concentrations trop élevées peuvent induire des effets indésirables.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>As some elements explored are classified as toxic at certain concentrations, the therapeutic window may be narrow, and the compositional optimisation for the material to be implanted into the human body is challenging.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme certains éléments explorés sont classés comme toxiques à certaines concentrations, la fenêtre thérapeutique peut être étroite et l'optimisation de la composition du matériau à implanter dans le corps humain est difficile.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>Doping with transition elements or heavy metals, for example, is against Larry Hench’s original idea of composing bioactive glasses of elements abundant in the human body, but few in vitro studies have shown promising results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le dopage avec des éléments de transition ou des métaux lourds, par exemple, va à l'encontre de l'idée originale de Larry Hench de composer des verres bioactifs d'éléments abondants dans le corps humain, mais peu d'études in vitro ont montré des résultats prometteurs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>Still, the actual physiological or medical use must remain at least doubtful until in vivo or clinical studies have provided reliable information on the impact of the bioactive glass composition on the desired tissue regeneration effects.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, l'utilisation physiologique ou médicale réelle doit rester au moins douteuse jusqu'à ce que des études in vivo ou cliniques aient fourni des informations fiables sur l'impact de la composition de verre bioactif sur les effets de régénération tissulaire souhaités.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>So far, most clinical studies have been performed for Bioglass 45S5 and BonAlive S53P4 compositions only.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Jusqu'à présent, la plupart des études cliniques ont été réalisées pour les compositions Bioglass 45S5 et BonAlive S53P4 uniquement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="EN">
+                <seg>5. Conclusions</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. Conclusions</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="EN">
+                <seg>While Larry Hench often described his development of the first bioactive glass as an educated guess, we show how fundamental knowledge and understanding of glass science was key in developing and optimising bioactive glass compositions and furthering their clinical use.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Alors que Larry Hench a souvent décrit son développement du premier verre bioactif comme une supposition éclairée, nous montrons comment les connaissances fondamentales et la compréhension de la science du verre ont été essentielles pour développer et optimiser les compositions de verre bioactif et favoriser leur utilisation clinique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="EN">
+                <seg>Various tools have been employed over the years, including regression modelling, structural analyses and machine learning.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Divers outils ont été utilisés au fil des ans, notamment la modélisation de régression, les analyses structurelles et l'apprentissage automatique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="EN">
+                <seg>Composition optimisation to identify glasses suitable as implant materials requires a cross-disciplinary understanding of both glass science and biomedicine.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'optimisation de la composition pour identifier les verres appropriés comme matériaux d'implant nécessite une compréhension interdisciplinaire de la science du verre et de la biomédecine.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="EN">
+                <seg>In addition, transferring a promising composition to clinical applications requires a thorough knowledge of the regulatory work needed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, le transfert d'une composition prometteuse vers des applications cliniques nécessite une connaissance approfondie du travail réglementaire nécessaire.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, tools for glass property optimisation are an important first step towards new biomaterials, and they may even offer feasible means to minimise experimental work and animal studies.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, les outils d'optimisation des propriétés du verre sont un premier pas important vers de nouveaux biomatériaux, et ils peuvent même offrir des moyens réalisables de minimiser les travaux expérimentaux et les études animales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="EN">
+                <seg>Conflicts of interest</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Conflits d’intérêts</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="EN">
+                <seg>Authors have no conflict of interest to declare.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les auteurs n'ont aucun conflit d'intérêts à déclarer.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

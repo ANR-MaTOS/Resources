@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017GREAM052. segId begin by 1, tuid = segId</note>
+        <docid>2017GREAM052</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>De plus, l'intérêt dans les langages définis sur des alphabets infinis ou de grande taille est croissant au fil des années.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, interest in languages defined over large and infinite alphabets has increased in recent years.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Même si plusieurs propriétés et théories se généralisent à partir du cas fini, l'apprentissage de tels langages est une tâche difficile.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although many theories and properties generalize well from the finite case, learning such languages is not an easy task.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En effet, dans ce contexte, l'application naïve des algorithmes d'apprentissage traditionnel n'est pas possible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As the existing methods for learning regular languages depends on the size of the alphabet, a straightforward generalization in this context is not possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous présentons un schéma algorithmique général pour l'apprentissage de langages définis sur des alphabets infinis ou de grande taille, comme par exemple des sous-ensembles bornés de N or R ou des vecteurs booléens de grandes dimensions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this thesis, we present a generic algorithmic scheme that can be used for learning languages defined over large or infinite alphabets, such as bounded subsets of N or R or Boolean vectors of high dimensions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous nous restreignons aux classes de langages qui sont acceptés par des automates déterministes symboliques utilisant des prédicats pour définir les transitions, construisant ainsi une partition finie de l'alphabet pour chaque état.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We restrict ourselves to the class of languages accepted by deterministic symbolic automata that use predicates to label transitions, forming a finite partition of the alphabet for every state.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Notre algorithme d'apprentissage, qui est une adaptation du L* d'Angluin, combine l'apprentissage classique d'un automate par la caractérisation de ses états, avec l'apprentissage de prédicats statiques définissant les partitions de l'alphabet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our learning algorithm, an adaptation of Angluin's L*, combines standard automaton learning by state characterization, with the learning of the static predicates that define the alphabet partitions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous utilisons l'apprentissage incrémental avec la propriété que deux types de requêtes fournissent une information suffisante sur le langage cible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We use the online learning scheme, where two types of queries provide the necessary information about the target language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Les requêtes du premier type sont les requêtes d'adhésions, qui permettent de savoir si un mot proposé appartient ou non au langage cible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first type, membership queries, answer whether a given word belongs or not to the target.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous étudions l'apprentissage de langages définis sur des alphabets infinis ou de grande tailles dans un cadre théorique et général, mais notre objectif est de proposer des solutions concrètes pour un certain nombre de cas particuliers.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We study language learning over large or infinite alphabets within a general framework but our aim is to provide solutions for particular concrete instances.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Ensuite, nous nous intéressons aux deux principaux aspects du problème.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For this, we focus on the two main aspects of the problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, nous supposerons que les requêtes d'équivalence renvoient toujours un contre-exemple minimal pour un ordre de longueur-lexicographique quand l'automate proposé est incorrect.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Initially, we assume that equivalence queries always provide a counter-example which is minimal in the length-lexicographic order when the conjecture automaton is incorrect.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Puis dans un second temps, nous relâchons cette hypothèse forte d'un oracle d'équivalence, et nous la remplaçons avec une hypothèse plus réaliste où l'équivalence est approchée par un test sur les requêtes qui utilisent un échantillonnage sur l'ensemble des mots.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, we drop this ``strong''equivalence oracle and replace it by a more realistic assumption, where equivalence is approximated by testing queries, which use sampling on the set of words.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Dans ce dernier cas, ce type de requêtes ne garantit pas l'obtention de contre-exemples, et par conséquent de contre-exemples minimaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such queries are not guaranteed to find counter-examples and certainly not minimal ones.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Tout les algorithmes ont été implémentés, et leurs performances, en terme de construction d'automate et de taille d'alphabet, ont été évaluées empiriquement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>All proposed algorithms have been implemented and their performance, as a function of automaton and alphabet size, has been empirically evaluated.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

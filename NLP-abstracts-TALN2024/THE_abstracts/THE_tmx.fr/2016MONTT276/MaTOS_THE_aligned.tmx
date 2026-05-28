@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016MONTT276. segId begin by 1, tuid = segId</note>
+        <docid>2016MONTT276</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Avec l’émergence du Web de données, notamment les données ouvertes liées, une abondance de données est devenue disponible sur le web.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>With the emergence of the Web of Data, most notably Linked Open Data (LOD), an abundance of data has become available on the web.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cependant, les ensembles de données LOD et leurs sous-graphes inhérents varient fortement par rapport a leur taille, le thème et le domaine, les schémas et leur dynamicité dans le temps au niveau des données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, LOD datasets and their inherent subgraphs vary heavily with respect to their size, topic and domain coverage, the schemas and their data dynamicity (respectively schemas and metadata) over the time.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans ce contexte, l'identification des jeux de données appropriés, qui répondent a des critères spécifiques, est devenue une tâche majeure, mais difficile a soutenir, surtout pour répondre a des besoins spécifiques tels que la recherche d'entités centriques et la recherche des liens sémantique des données liées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To this extent, identifying suitable datasets, which meet specific criteria, has become an increasingly important, yet challenging task to support issues such as entity retrieval or semantic search and data linking.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Notamment, en ce qui concerne le problème de liage des données, le besoin d'une méthode efficace pour la recommandation des jeux de données est devenu un défi majeur, surtout avec l'état actuel de la topologie du LOD, dont la concentration des liens est très forte au niveau des graphes populaires multi-domaines tels que DBpedia et YAGO, alors qu'une grande liste d'autre jeux de données considérés comme candidats potentiels pour le liage est encore ignorée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Particularly with respect to the interlinking issue, the current topology of the LOD cloud underlines the need for practical and efficient means to recommend suitable datasets: currently, only well-known reference graphs such as DBpedia (the most obvious target), YAGO or Freebase show a high amount of in-links, while there exists a long tail of potentially suitable yet under-recognized datasets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Ce problème est dû a la tradition du web sémantique dans le traitement du problème de " identification des jeux de données candidats pour le liage ".</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This problem is due to the semantic web tradition in dealing with "finding candidate datasets to link to", where data publishers are used to identify target datasets for interlinking.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Bien que la compréhension de la nature du contenu d'un jeu de données spécifique est une condition cruciale pour les cas d'usage mentionnées, nous adoptons dans cette thèse la notion de " profil de jeu de données " - un ensemble de caractéristiques représentatives pour un jeu de données spécifique, notamment dans le cadre de la comparaison avec d'autres jeux de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While an understanding of the nature of the content of specific datasets is a crucial prerequisite for the mentioned issues, we adopt in this dissertation the notion of "dataset profile" - a set of features that describe a dataset and allow the comparison of different datasets with regard to their represented characteristics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Notre première direction de recherche était de mettre en œuvre une approche de recommandation basée sur le filtrage collaboratif, qui exploite à la fois les prols thématiques des jeux de données, ainsi que les mesures de connectivité traditionnelles, afin d'obtenir un graphe englobant les jeux de données du LOD et leurs thèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our first research direction was to implement a collaborative filtering-like dataset recommendation approach, which exploits both existing dataset topic proles, as well as traditional dataset connectivity measures, in order to link LOD datasets into a global dataset-topic-graph.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cette approche a besoin d'apprendre le comportement de la connectivité des jeux de données dans le LOD graphe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This approach relies on the LOD graph in order to learn the connectivity behaviour between LOD datasets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Cependant, les expérimentations ont montré que la topologie actuelle de ce nuage LOD est loin d'être complète pour être considéré comme des données d'apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, experiments have shown that the current topology of the LOD cloud group is far from being complete to be considered as a ground truth and consequently as learning data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Face aux limites de la topologie actuelle du graphe LOD, notre recherche a conduit a rompre avec cette représentation de profil thématique et notamment du concept "apprendre pour classer" pour adopter une nouvelle approche pour l'identification des jeux de données candidats basée sur le chevauchement des profils intensionnels entre les différents jeux de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Facing the limits the current topology of LOD (as learning data), our research has led to break away from the topic proles representation of "learn to rank" approach and to adopt a new approach for candidate datasets identication where the recommendation is based on the intensional profiles overlap between different datasets.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Par profil intensionnel, nous entendons la représentation formelle d'un ensemble d'étiquettes extraites du schéma du jeu de données, et qui peut être potentiellement enrichi par les descriptions textuelles correspondantes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By intensional profile, we understand the formal representation of a set of schema concept labels that best describe a dataset and can be potentially enriched by retrieving the corresponding textual descriptions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Cette représentation fournit l'information contextuelle qui permet de calculer la similarité entre les différents profils d'une manière efficace.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This representation provides richer contextual and semantic information and allows to compute efficiently and inexpensively similarities between proles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Nous identifions le chevauchement de différentes profils à l'aide d'une mesure de similarité semantico-fréquentielle qui se base sur un classement calcule par le tf*idf et la mesure cosinus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We identify schema overlap by the help of a semantico-frequential concept similarity measure and a ranking criterion based on the tf*idf cosine similarity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Les expériences, menées sur tous les jeux de données lies disponibles sur le LOD, montrent que notre méthode permet d'obtenir une précision moyenne de 53% pour un rappel de 100%.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The experiments, conducted over all available linked datasets on the LOD cloud, show that our method achieves an average precision of up to 53% for a recall of 100%.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Afin d'assurer des profils intensionnels de haute qualité, nous introduisons Datavore - un outil oriente vers les concepteurs de métadonnées qui recommande des termes de vocabulaire a réutiliser dans le processus de modélisation des données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, our method returns the mappings between the schema concepts across datasets, a particularly useful input for the data linking step.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Datavore fournit également les métadonnées correspondant aux termes recommandés ainsi que des propositions des triples utilisant ces termes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to ensure a high quality representative datasets schema profiles, we introduce Datavore| a tool oriented towards metadata designers that provides ranked lists of vocabulary terms to reuse in data modeling process, together with additional metadata and cross-terms relations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>L'outil repose sur l’écosystème des Vocabulaires Ouverts Lies (LOV) pour l'acquisition des vocabulaires existants et leurs métadonnées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The tool relies on the Linked Open Vocabulary (LOV) ecosystem for acquiring vocabularies and metadata and is made available for the community.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

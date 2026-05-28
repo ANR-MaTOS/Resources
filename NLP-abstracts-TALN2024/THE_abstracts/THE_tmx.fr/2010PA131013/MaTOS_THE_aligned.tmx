@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2010PA131013. segId begin by 1, tuid = segId</note>
+        <docid>2010PA131013</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les systèmes déterminatifs du français et du polonais sont différents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The system of determination of the French language differs from the system of determination in the Polish language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nos descriptions sont formalisées dans des bases de données dédiées au traitement automatique des langues.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The suggested descriptions are formalized in databases which are designed for automatic processing of natural languages.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous rendons compte systématiquement du fonctionnement et des propriétés des déterminants polonais.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the thesis, the functioning and properties of determiners in the Polish language are systematically described.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous retenons tout particulièrement leurs propriétés syntactico-sémantiques selon qu’ils relèvent de la détermination prédicative et de la détermination argumentale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Additionally their syntactic-semantic properties which results in the division into predicative determination and argumentative determination are considered.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Le tout contribue à l’élaboration des dictionnaires électroniques du LDI.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The work contributes to the development of LDI electronic dictionaries.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

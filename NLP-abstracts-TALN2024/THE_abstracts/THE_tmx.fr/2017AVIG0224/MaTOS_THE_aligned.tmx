@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017AVIG0224. segId begin by 1, tuid = segId</note>
+        <docid>2017AVIG0224</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les flux de contenus audiovisuels peuvent être représentés sous forme de séquences d'événements (par exemple, des suites d'émissions, de scènes, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the same way as TV channels, data streams are represented as a sequence of successive events that can exhibit chronological relations (e.g. a series of programs, scenes, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Dans le contexte d'une chaîne TV, la programmation des émissions suit une cohérence définie par cette même chaîne, mais peut également être influencée par les programmations des chaînes concurrentes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For a targeted channel, broadcast programming follows the rules defined by the channel itself, but can also be affected by the programming of competing ones.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans de telles conditions,les séquences d'événements des flux parallèles pourraient ainsi fournir des connaissances supplémentaires sur les événements d'un flux considéré.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In such conditions, event sequences of parallel streams could provide additional knowledge about the events of a particular stream.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>La modélisation de séquences est un sujet classique qui a été largement étudié, notamment dans le domaine de l'apprentissage automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the sphere of machine learning, various methods that are suited for processing sequential data have been proposed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Les réseaux de neurones récurrents de type Long Short-Term Memory (LSTM) ont notamment fait leur preuve dans de nombreuses applications incluant le traitement de ce type de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Long Short-Term Memory (LSTM) Recurrent Neural Networks have proven its worth in many applications dealing with this type of data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Néanmoins,ces approches sont conçues pour traiter uniquement une seule séquence d'entrée à la fois.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, these approaches are designed to handle only a single input sequence at a time.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Notre contribution dans le cadre de cette thèse consiste à élaborer des approches capables d'intégrer conjointement des données séquentielles provenant de plusieurs flux parallèles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main contribution of this thesis is about developing approaches that jointly process sequential data derived from multiple parallel streams.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Le contexte applicatif de ce travail de thèse, réalisé en collaboration avec le Laboratoire Informatique d'Avignon et l'entreprise EDD, consiste en une tâche de prédiction du genre d'une émission télévisée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The application task of our work, carried out in collaboration with the computer science laboratory of Avignon (LIA) and the EDD company, seeks to predict the genre of a telecast.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Cette prédiction peut s'appuyer sur les historiques de genres des émissions précédentes de la même chaîne mais également sur les historiques appartenant à des chaînes parallèles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This prediction can be based on the histories of previous telecast genres in the same channel but also on those belonging to other parallel channels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une taxonomie de genres adaptée à de tels traitements automatiques ainsi qu'un corpus de données contenant les historiques parallèles pour 4 chaînes françaises.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a telecast genre taxonomy adapted to such automatic processes as well as a dataset containing the parallel history sequences of 4 French TV channels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Deux méthodes originales sont proposées dans ce manuscrit, permettant d'intégrer les séquences des flux parallèles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two original methods are proposed in this work in order to take into account parallel stream sequences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>La première, à savoir, l'architecture des LSTM parallèles(PLSTM) consiste en une extension du modèle LSTM.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first one, namely the Parallel LSTM (PLSTM) architecture, is an extension of the LSTM model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Les PLSTM traitent simultanément chaque séquence dans une couche récurrente indépendante et somment les sorties de chacune de ces couches pour produire la sortie finale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>PLSTM simultaneously processes each sequence in a separate recurrent layer and sums the outputs of each of these layers to produce the final output.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Pour ce qui est de la seconde proposition, dénommée MSE-SVM, elle permet de tirer profit des avantages des méthodes LSTM et SVM.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second approach, called MSE-SVM, takes advantage of both LSTM and Support Vector Machines (SVM) methods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>D'abord, des vecteurs de caractéristiques latentes sont générés indépendamment, pour chaque flux en entrée, en prenant en sortie l'événement à prédire dans le flux principal.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Firstly, latent feature vectors are independently generated for each input stream, using the output event of the main one.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Ces nouvelles représentations sont ensuite fusionnées et données en entrée à un algorithme SVM.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These new representations are then merged and fed to an SVM algorithm.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Les approches PLSTM et MSE-SVM ont prouvé leur efficacité dans l'intégration des séquences parallèles en surpassant respectivement les modèles LSTM et SVM prenant uniquement en compte les séquences du flux principal.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The PLSTM and MSE-SVM approaches proved their ability to integrate parallel sequences by outperforming, respectively, the LSTM and SVM models that only take into account the sequences of the main stream.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Les deux approches proposées parviennent bien à tirer profit des informations contenues dans les longues séquences.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The two proposed approaches take profit of the information contained in long sequences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>En revanche, elles ont des difficultés à traiter des séquences courtes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, they have difficulties to deal with short ones.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Cependant, le problème rencontré avec les séquences courtes est plus prononcé pour le cas de l'approche MSE-SVM.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Though MSE-SVM generally outperforms the PLSTM approach, the problem experienced with short sequences is more pronounced for MSE-SVM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons enfin d'étendre cette approche en permettant d'intégrer des informations supplémentaires sur les événements des séquences en entrée (par exemple, le jour de la semaine des émissions de l'historique).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we propose to extend this approach by feeding additional information related to each event in the input sequences (e.g. the weekday of a telecast).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="FR">
+                <seg>Cette extension, dénommée AMSE-SVM améliore remarquablement la performance pour les séquences courtes sans les baisser lorsque des séquences longues sont présentées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This extension, named AMSE-SVM, has a remarkably better behavior with short sequences without affecting the performance when processing long ones.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

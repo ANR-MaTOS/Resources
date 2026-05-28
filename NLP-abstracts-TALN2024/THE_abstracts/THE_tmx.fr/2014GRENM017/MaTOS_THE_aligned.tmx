@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2014GRENM017. segId begin by 1, tuid = segId</note>
+        <docid>2014GRENM017</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les réseaux sociaux en ligne (OSNs) recueillent une masse de données à caractère privé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Sharing information between users constitutes the cornerstone of the Web 2.0.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Notre thèse propose certaines réponses.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This raises concerns as this data can be exploited by several entities to breach user privacy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans le premier chapitre nous analysons l'impact du partage des données personnelles de l'utilisateur sur sa vie privée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our first contribution consists in demonstrating the privacy threats behind releasing personal information publicly.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, nous montrons comment les intérêts d'un utilisateur--à titre d'exemple ses préférences musicales--peuvent être à l'origine de fuite d'informations sensibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two attacks are constructed to show that a malicious attacker (i.e., any external attacker with access to the public profile) can breach user privacy and even threaten his online security.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Pour ce faire, nous inférons les attributs non divulgués du profil de l'utilisateur en exploitant d'autres profils partageant les même ''goûts musicaux''.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our first attack shows how seemingly harmless interests (e.g., music interests) can leak privacy-sensitive information about users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Notre approche extrait la sémantique des intérêts en utilisant Wikipedia, les partitionne sémantiquement et enfin regroupe les utilisateurs ayant des intérêts semblables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, we infer their undisclosed (private) attributes using the public attributes of other users sharing similar interests.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nos expérimentations réalisées sur plus de 104 milles profils publics collectés sur Facebook et plus de 2000 profils privés de bénévoles, montrent que notre technique d'inférence prédit efficacement les attributs qui sont très souvent cachés par les utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Leveraging semantic knowledge from Wikipedia and a statistical learning method, we demonstrated through experiments---based on more than 104K Facebook profiles---that our inference technique efficiently predicts attributes that are very often hidden by users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans un deuxième temps, nous exposons les conséquences désastreuses du partage des données privées sur la sécurité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our second attack is at the intersection of computer security and privacy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous nous focalisons sur les informations recueillies à partir de profils publics et comment celles-ci peuvent être exploitées pour accélérer le craquage des mots de passe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In fact, we show the disastrous consequence of privacy breach on security by exploiting user personal information---gathered from his public profile---to improve the password cracking process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Premièrement, nous proposons un nouveau « craqueur » de mot de passe basé sur les chaînes de Markov permettant le cassage de plus de 80% des mots de passe, dépassant ainsi toutes les autres méthodes de l'état de l'art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, we propose a Markov chain password cracker and show through extensive experiments that it outperforms all probabilistic password crackers we compared against.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Notre travail se base sur la plate-forme publicitaire d'estimationd'utilisateurs de Facebook pour calculer l'entropie de chaque attribut public.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a practical, yet formally proved, method to estimate the uniqueness of each profile by studying the amount of information carried by public profile attributes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Ce calcul permet d'évoluer l'impact du partage de ces informations publiquement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To achieve our goal, we leverage Ads Audience Estimation platform and an unbiased sample of more than 400K Facebook public profiles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Nos résultats, basées sur un échantillon de plus de 400 mille profils publics Facebook, montrent que la combinaison de sexe, ville de résidence et age permet d'identifier d'une manière unique environ 18% des utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our measurement results show that the combination of gender, current city and age can identify close to 55% of users to within a group of 20 and uniquely identify around 18% of them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Dans la deuxième section de notre thèse nous analysons les interactions entre la plate-forme du réseau social et des tiers et son impact sur à la vie privée des utilisateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the second part of this thesis, we investigate the privacy threats resulting from the interactions between the OSN platform and external entities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Nos résultats indiquent que le « tracking » utilisé par les OSNs couvre la quasi-totalité des catégories Web, indépendamment du contenu et de l'auditoire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our findings indicate that OSN tracking is diffused among almost all website categories which allows OSNs to reconstruct a significant portion of users'web profile and browsing history.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Finalement, nous développons une plate-forme de mesure pour étudier l'interaction entre les plates-formes OSNs, les applications sociales et les « tierces parties » (e.g., fournisseurs de publicité).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we develop a measurement platform to study the interaction between OSN applications---of Facebook and RenRen---and fourth parties.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Nous démontrons que plusieurs applications tierces laissent filtrer des informations relatives aux utilisateurs à des tiers non autorisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We show that several third party applications are leaking user information to ``fourth''party entities such as trackers and advertisers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Ce comportement affecte à la fois Facebook et RenRen avec une sévérité variable :22 % des applications Facebook testées transmettent au moins un attribut à une entité externe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This behavior affects both Facebook and RenRen with varying severity.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

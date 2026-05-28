@@ -1,0 +1,2691 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en" srclang="FR" tgtlang="EN" o-tmf="XML" creationdate="2024-11-15" creationid="MaTOS">
+        <note>This is the sentence alignement file for MERSENNE-mersenne12. segId begin by 1, tuid = segId</note>
+        <docid>mersenne12</docid>
+        <url_src>https://comptes-rendus.academie-sciences.fr/geoscience/articles/10.5802/crgeos.20/</url_src>
+        <url_tgt>https://comptes-rendus.academie-sciences.fr/geoscience/articles/en/10.5802/crgeos.20/</url_tgt>
+        <author>Isabelle Czernichowski-Lauriol</author>
+        <title_en>CO$_{{2}}$ Capture and Storage: the geological carbon sink</title_en>
+        <title_fr>Captage et Stockage du CO$_{{2}}$: le puits de carbone géologique</title_fr>
+        <volume>CRGEOS, 2020, Volume 352, Facing climate change, the range of possibilities</volume>
+        <translator>Catherine W.</translator>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <prop type="paragraph">1</prop>
+            <tuv xml:lang="FR">
+                <seg>Captage et Stockage du CO$_{{2}}$: le puits de carbone géologique</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>CO$_{{2}}$ Capture and Storage: the geological carbon sink</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Le puits de carbone géologique consiste à «remettre» le carbone dans le sous-sol d’où il a été extrait, afin de réduire les émissions résiduelles incompressibles de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The geological carbon sink consists of “putting back” the carbon into the subsurface from which it was extracted, in order to reduce incompressible residual CO₂ emissions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Complémentaire aux puits de carbone terrestre (sols et forêts) et océanique, il devrait jouer un rôle clé pour atteindre la neutralité carbone.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Complementary to terrestrial (soils and forests) and oceanic carbon sinks, it is expected to play a key role in achieving carbon neutrality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>19 opérations de captage et stockage de CO₂ (technologie dite CSC, ou CCS en anglais) fonctionnent déjà dans le monde.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>19 CO₂ capture and storage (CCS) projects are already in operation worldwide.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>D’importants efforts de recherche et d’innovation sont menés pour permettre un saut d’échelle et déployer cette technologie partout où ce sera nécessaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Major research and innovation efforts are being carried out to scale up and deploy this technology wherever it is needed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>La France, l’Europe et de nombreux pays pensent qu’elle sera incontournable pour parvenir à atteindre les objectifs de l’accord de Paris sur le climat et limiter le réchauffement climatique à +1.5 ^(∘)C.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>France, Europe and many countries believe that CCS will be essential to achieve the objectives of the Paris climate agreement and limit global warming to +1.5^(∘)C.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>1. Les puits de carbone, un recours nécessaire pour lutter contre le réchauffement climatique</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>1. Carbon sinks, a necessary remedy for combating climate change</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>L’accord de Paris est le tout premier accord mondial juridiquement contraignant sur le changement climatique, adopté lors de la conférence de Paris sur le climat (COP21) en décembre 2015 [CCNUCC 2015]. Avec pour objectif principal de contenir la hausse de la température moyenne de la planète bien en dessous de 2°C par rapport aux niveaux préindustriels (sur la période de référence 1850–1900), et de la limiter autant que possible à 1,5°C, l’accord de Paris vise également au renforcement des capacités d’adaptation et de résilience face aux effets du changement climatique, ainsi qu’à la mise en œuvre de flux financiers adaptés à ces objectifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The Paris Agreement was the first legally binding global agreement on climate change, adopted at the Paris Climate Conference (COP21) in December 2015 [UNFCCC 2015]. With the main objective of keeping the average global temperature rise well below 2°C compared to pre-industrial levels (over the reference period 1850–1900), and limiting it as much as possible to 1.5°C, the Paris Agreement also aims to strengthen capacities for adaptation and resilience to the effects of climate change, as well as to implement financial flows adapted to these objectives.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans son article 4, il est indiqué que tous les Etats qui ont ratifié l’accord doivent chercher à parvenir au plafonnement mondial des émissions de gaz à effet de serre dans les meilleurs délais et à opérer des réductions rapidement par la suite, conformément aux meilleures données scientifiques, de façon à parvenir à un équilibre entre les émissions anthropiques par les sources et les absorptions anthropiques par les puits de gaz à effet de serre au cours de la deuxième moitié du siècle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Article 4 of the Agreement indicates that all States that have ratified the Agreement shall aim to reach global peaking of greenhouse gas emissions as soon as possible and to undertake rapid reductions thereafter in accordance with best available science, so as to achieve a balance between anthropogenic emissions by sources and removals by sinks of greenhouse gases in the second half of this century.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Parvenir à cet équilibre, c’est parvenir à ce qui est appelé la «neutralité carbone», qui consiste à compenser par des puits de carbone la part d’émissions de CO₂ incompressibles que nous ne pouvons ou ne savons pas encore réduire de manière satisfaisante.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Achieving this balance means achieving what is called 'carbon neutrality', which consists of offsetting via carbon sinks the share of incompressible CO₂ emissions that we cannot or do not yet know how to reduce satisfactorily.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>La «neutralité carbone en 2050» est l’objectif principal retenu par la France pour sa politique d’atténuation du changement climatique, en application de l’accord de Paris [CESE 2020], et est maintenant inscrite dans la loi [République française 2019].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>"Carbon neutrality in 2050" is the main objective chosen by France for its climate change mitigation policy, in application of to the Paris Agreement [CESE 2020]. This policy is now enshrined in law [French Republic 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs la Commission européenne a présenté, le 4 mars 2020, une proposition de loi climat pour entériner l’objectif de neutralité carbone de l’Union européenne d’ici 2050 [Commission européenne 2020].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Furthermore, on March 4th 2020, the European Commission presented a climate law proposal to ratify the European Union's objective of carbon neutrality by 2050 [European Commission 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Il existe plusieurs types de puits de carbone.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There are several types of carbon sinks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>D’abord les puits de carbone dits naturels, mais pour lesquels une intervention humaine est nécessaire pour les préserver ou les renforcer.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, the so-called natural carbon sinks, but for which human intervention is necessary to preserve or strengthen them.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Les forêts en croissance constituent un puits de carbone, capable de retirer du CO₂ de l’atmosphère par le mécanisme de photosynthèse, tout comme peuvent l’être les sols et terres agricoles qui stockent de la matière organique (humus, débris végétaux), ainsi que les océans qui piègent du CO₂ atmosphérique par dissolution dans l’eau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Growing forests constitute a carbon sink, capable of removing CO₂ from the atmosphere through photosynthesis. Soils and agricultural lands that store organic matter (humus, plant debris) can also be carbon sinks, as well as oceans that trap atmospheric CO₂ via its dissolution in water.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Il existe aussi les puits de carbone dits technologiques, il s’agit essentiellement du puits de carbone géologique, qui consiste à capter le CO₂ non pas dans l’atmosphère où il est très dilué, mais dans les fumées des usines qui le recrachent en abondance à des concentrations plus élevées, pour le stocker sous terre dans une couche géologique au-delà d’un kilomètre de profondeur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There are also so-called technological carbon sinks, essentially the geological carbon sink, which consists of capturing CO₂ not in the atmosphere, where it is very diluted, but in the fumes of factories that spew it out in abundance at higher concentrations, in order to store it underground in a geological layer more than a kilometer deep.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Les puits de carbone naturels sont déjà mis à rude épreuve.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Natural carbon sinks are already under strain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Jusqu’au début de la révolution industrielle, les échanges naturels entre l’atmosphère, la végétation, les sols et les océans étaient équilibrés, ce qui explique que la teneur atmosphérique en CO₂ soit restée constante sur plusieurs milliers d’années avant 1750.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Until the beginning of the industrial revolution, the natural exchanges between the atmosphere, vegetation, soils, and oceans were balanced, which explains why the atmospheric content of CO₂ remained constant for several thousand years before 1750.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Mais depuis, l’on s’est mis à exploiter massivement les énergies fossiles extraites du sous-sol que sont le pétrole, le charbon et le gaz naturel, très riches en carbone.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since then, however, massive use has been made of fossil fuels extracted from the subsurface, such as oil, coal, and natural gas, which are very rich in carbon.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>En brûlant ces combustibles fossiles pour la production d’électricité, le chauffage, l’industrie et le transport, le carbone se combine à l’oxygène de l’air pour former du dioxyde de carbone (CO₂) qui est alors émis dans l’atmosphère.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By burning these fossil fuels for electricity generation, heating, industry, and transportation, carbon combines with oxygen in the air to form carbon dioxide (CO₂), which is then emitted into the atmosphere.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Heureusement la moitié de ces émissions de CO₂ a été réabsorbée par la végétation et les océans, les puits de carbone naturels, mais l’autre moitié s’est accumulée dans l’atmosphère, conduisant au changement climatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Fortunately, half of these CO₂ emissions have been reabsorbed by vegetation and oceans, i.e. the natural carbon sinks. However, the other half has accumulated in the atmosphere, leading to climate change.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>La teneur en CO₂ de l’atmosphère, qui était restée en dessous de de 280 ppm (parties par million, soit 0.028%) depuis plus de 800000 ans, est ainsi passée à 410 ppm (0,041%) en l’espace de 200 ans environ et continue de croître de plus en plus vite.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The CO₂ content of the atmosphere, which had remained below 280 ppm (parts per million, or 0.028%) for more than 800,000 years, has thus increased to 410 ppm (0.041%) in about 200 years and continues to rise even faster over time.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Face à cet accroissement sans précédent, les puits de carbone naturels terrestre et océanique, même en les stimulant, ne suffiront pas.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the face of this unprecedented increase, natural land and ocean carbon sinks, even if stimulated, will not suffice.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Leur capacité est limitée et certaines conséquences indésirables se font déjà sentir, telles que l’acidification des océans qui résulte de la dissolution du CO₂ dans l’eau et qui perturbe les écosystèmes marins.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Their capacity is limited and some undesirable consequences are already being felt, such as ocean acidification caused by the dissolution of CO₂ in water that disturbs marine ecosystems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>De plus ils sont fragilisés par le réchauffement climatique, comme le montre par exemple la destruction de plus en plus fréquente des forêts par les tornades et les incendies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, these carbon sinks are weakened by global warming, as demonstrated by the increasing destruction of forests by tornadoes and fires, for example.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Il y a donc même un risque que ces puits de carbone naturels se transforment en sources de carbone.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There is therefore even a risk that these natural carbon sinks will become carbon sources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>Il convient donc d’activer aussi le puits de carbone géologique, ce qui revient à remettre dans le sous-sol, sous forme de CO₂, le carbone d’où il a été extrait sous forme de charbon, de pétrole ou de gaz naturel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is therefore also necessary to activate the geological carbon sink, which means returning the carbon that was extracted in the form of coal, oil, or natural gas to the subsurface, in the form of CO₂.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>Le CO₂ peut être ainsi piégé de manière permanente et ce piège n’est pas fragilisé par le réchauffement climatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>CO₂ can thus be permanently trapped in a way that is not weakened by global warming.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est la technologie appelée «Captage et Stockage de CO₂» (CSC, ou CCS en anglais pour «CO₂ Capture and Storage»), sur laquelle le GIEC a publié un rapport spécial en 2005 [[GIEC 2005]; [ADEME, BRGM, IFP 2007]].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is the technology known as CO₂ Capture and Storage (CCS), or Carbon Capture and Storage, on which the IPCC published a special report in 2005 [[IPCC 2005]; [ADEME, BRGM, IFP 2007]].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>Le présent article explique comment développer un puits de carbone géologique, présente les premières opérations de CSC en fonctionnement dans le monde et fait part des travaux de recherche en cours pour permettre de déployer plus largement ce puits de carbone y compris en France. Il invite à penser des solutions à l’échelle des territoires et explique pourquoi le puits de carbone géologique peut offrir de la flexibilité aux pays et aux territoires pour atteindre la neutralité carbone et pour permettre une transition énergétique et écologique juste et inclusive.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The following article explains how to develop a geological carbon sink, presents the first CCS facilities in operation in the world, and describes the research underway to enable the more widespread implementation of this carbon sink, including in France. It calls for solutions on a territorial scale and explains why the geological carbon sink can offer flexibility to countries and territories in order to achieve carbon neutrality and enable a just and inclusive energy and ecological transition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Cet article reprend en grande partie l’article écrit par l’auteur dans le livre «No(s) Futur(s) » paru en librairie en juillet 2020, une anthologie de textes de science et de fiction destinée à sensibiliser, à informer et à produire des récits autour des enjeux du changement climatique (Figure1, [Czernichowski-Lauriol 2020]). Cet ouvrage est préfacé par sa marraine, Valérie Masson-Delmotte, vice-présidente du groupe 1 du GIEC, groupe qui évalue les aspects scientifiques du système climatique et de l’évolution du climat.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This article largely reproduces the article written by the author in the book "No(s) Futur(s)" ("Our Futures" in English) published in bookstores in July 2020, an anthology of scientific and fictional texts intended to raise awareness, inform, and produce stories around the challenges of climate change (Figure1, [Czernichowski-Lauriol 2020]). This book is prefaced by its godmother, Valérie Masson-Delmotte, Vice-Chair of IPCC Group 1, a group that evaluates the scientific aspects of the climate system and climate change.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>2. Comment créer un puits de carbone géologique?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>2. How to create a geological carbon sink?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Il faut d’abord capter le CO₂ dans les fumées industrielles, car c’est là qu’il est émis en grande quantité, à une concentration élevée (de 4% à 40%, voire plus).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>CO₂ must first be captured in industrial flue gases as this is where it is emitted in large quantities and at a high concentration (from 4% to 40% or more).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Le capter directement dans l’air où il est extrêmement dilué (0,04%), ou sur des sources mobiles comme les pots d’échappement des voitures, est beaucoup plus complexe et coûteux, même si des recherches en ce sens sont en cours.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Capturing it directly in the air where it is extremely diluted (0.04%), or from mobile sources such as car exhaust pipes, is much more complex and costly, although research in this direction is underway.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Le captage consiste à séparer le CO₂ des autres composés présents dans les effluents gazeux industriels (azote de l’air principalement, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Carbon capture consists of separating CO₂ from other compounds present in industrial off-gases (mainly nitrogen from air, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette étape peut être réalisée par différentes techniques déjà éprouvées ou en cours de développement pour améliorer les performances et réduire les coûts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This step can be achieved via different techniques already proven or under development to improve performance and reduce costs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Par exemple le captage de CO₂ par absorption chimique dans des solvants aminés est classiquement mis en œuvre pour le traitement du gaz naturel, qui en contient un peu naturellement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For example, the capture of CO₂ by chemical absorption in amine solvents is conventionally used for the treatment of natural gas, which naturally contains some.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Puis le CO₂ doit être transporté jusqu’à un lieu de stockage adéquat, car il ne peut pas être injecté n’importe où dans le sous-sol, il faut que les conditions géologiques s’y prêtent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then the CO₂ has to be transported to an adequate storage site; it cannot simply be injected anywhere in the subsurface as the location needs to be geologically suitable.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Le CO₂ capté est donc comprimé à forte pression (&gt;73 atm), passant ainsi d’un état gazeux à un état dense assimilable à un liquide, puis il peut être acheminé par des canalisations («carboducs») jusqu’au lieu de stockage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The captured CO₂ is compressed at high pressure (&gt;73 atm), thus passing from a gaseous state to a dense state comparable to a liquid. It can then be conveyed via pipelines to the storage site.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Celles-ci devront être construites pour relier émetteurs de CO₂ et site de stockage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These will have to be built to connect CO₂ emitters to storage sites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans certains cas il pourra être envisagé de reconvertir des gazoducs ou oléoducs en carboducs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In certain cases, it may be possible to convert gas or oil pipelines into CO₂ pipelines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Il s’agit aussi d’une technologie éprouvée, car plusieurs milliers de kilomètres de canalisations transportant du CO₂ sont déjà en opération dans le monde, principalement en Amérique du Nord et pour une injection dans des réservoirs pétroliers.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is also a proven technology, as several thousand kilometers of CO₂ pipelines are already in operation around the world, mainly in North America and for injection into petroleum reservoirs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Le transport par bateaux, par péniches et par camions peut aussi s’envisager.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Transportation by ships, barges, and trucks may also be considered.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Enfin le CO₂ est injecté par un forage au-delà de 800 m de profondeur dans des couches géologiques profondes, poreuses et perméables, de type calcaire ou grès, où le CO₂ vient se loger dans la porosité de la roche, entre les minéraux, repoussant sur les côtés l’eau salée qui y est généralement présente (Figure2).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, CO₂ is injected by drilling beyond 800m in depth into deep, porous, and permeable geological layers of limestone or sandstone. The CO₂ is stored in the pore space between minerals, repelling the salty water which is generally present there (Figure2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Le CO₂ se trouve toujours dans un état dense appelé «état supercritique» car, à ces profondeurs, sa température et sa pression sont supérieures à celles de son point critique (31°C, 73atm).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>CO₂ remains in a dense state called a "supercritical state" at these depths because its temperature and pressure are higher than those of its critical point (31°C, 73atm).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Il n’est alors, ni à l’état gazeux, ni à l’état liquide, mais a des propriétés intermédiaires entre les deux, notamment une densité proche de celle d’un liquide et une viscosité proche de celle d’un gaz.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is then neither in the gaseous state nor in the liquid state, but has intermediate properties between the two, in particular a density close to that of a liquid and a viscosity close to that of a gas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce qui le rend moins enclin à remonter vers la surface qu’un gaz et maximise les quantités stockables dans un volume de roche donnée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This makes it less prone to rise to the surface than a gas and maximises the amounts storable in a given volume of rock.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Sa densité étant légèrement plus faible que celle de l’eau salée présente dans la couche réservoir de stockage, il a tendance à migrer lentement vers le sommet de cette couche, d’où la nécessité de la présence d’une couche argileuse imperméable au-dessus, appelée roche couverture, qui bloque sa remontée (piégeage structural).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since its density is slightly lower than that of the salty water present in the storage reservoir layer, it tends to migrate slowly towards the top of this layer; hence the need for the presence of an impermeable clay layer above, called caprock, which blocks its upward movement (structural trapping).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>D’autres mécanismes de piégeage interviennent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Other trapping mechanisms are involved.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Le CO₂ dense est aussi piégé sous forme de bulles isolées dans les pores des roches traversées du fait des forces de capillarité (piégeage résiduel).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Dense CO₂ is also trapped as isolated bubbles in the pores of the rocks traversed due to capillary forces (residual trapping).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Avec le temps, une partie du CO₂ se dissout dans l’eau salée (piégeage par dissolution) et l’eau enrichie en CO₂ dissous, devenant alors un peu plus lourde, a tendance à migrer vers le bas de la formation de stockage, tout ceci contribuant à piéger de plus en plus efficacement le CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Over time, some of the CO₂ dissolves in the salty water (dissolution trapping). The water enriched in dissolved CO₂ then becomes slightly heavier and tends to migrate down the storage reservoir layer. All of this contributes to trapping CO₂ more and more effectively.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Les réactions minéralogiques induites par le CO₂ dissous qui acidifie l’eau peuvent même parfois conduire à la formation de minéraux carbonatés, ce qui piège le CO₂ sous forme solide (piégeage minéralogique).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Mineralogical reactions induced by dissolved CO₂ that acidifies water can even sometimes lead to the formation of carbonate minerals, which traps CO₂ in solid form (mineral trapping).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>L’importance relative de ces quatre mécanismes de piégeage varie au fil du temps et est dépendante des caractéristiques naturelles de chaque site de stockage ainsi que des conditions d’injection.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The relative importance of these four trapping mechanisms varies over time and is dependent on the natural characteristics of each storage site as well as the injection conditions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>Mettre en œuvre le puits de carbone géologique nécessite donc d’assembler toute une chaîne de captage, transport et stockage de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Implementing the geological carbon sink therefore requires assembling a complete chain of CO₂ capture, transport, and storage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>L’analogie la plus proche avec une pratique industrielle maitrisée et largement répandue dans le monde est celle de la production de gaz naturel (CH₄, le méthane), puis de sa purification, transport par gazoduc et stockage saisonnier à l’état gazeux sous terre, dans une cavité saline ou dans la porosité d’une roche aquifère recouverte d’une roche couverture imperméable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The closest analogy with a controlled and globally widespread industrial practice is that of the production of natural gas (CH₄, methane), then its purification, transport by pipeline, and seasonal storage in a gaseous state underground, in a saline cavity or in the porosity of an aquifer rock covered with an impermeable caprock.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est donc réaliste de penser qu’on pourra maitriser le déploiement à grande échelle du captage et stockage de CO₂, même s’il y a des différences notables entre les deux filières qui doivent être prises en compte du fait de la nature différente du gaz et de la durée de stockage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is therefore realistic to think that it will be possible to master the large-scale deployment of CO₂ capture and storage, even if there are notable differences between the two sectors which must be taken into account due to the different nature of the gas and the duration of storage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>3. La nature nous montre qu’il est possible de stocker du CO₂ sous terre</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>3. Nature shows us that it is possible to store CO₂ underground</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>La nature nous montre que c’est faisable car il existe sous terre de nombreux réservoirs naturels de CO₂, d’origine volcanique ou mantellique et vieux de plusieurs millions d’années, qui prouvent que les couches géologiques peuvent piéger durablement de très grandes quantités de CO₂ [Pearce etal. 2004].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nature shows us that this is feasible because there are numerous natural underground reservoirs of CO₂ of volcanic or mantle origin that are several million years old. This proves that geological formations can sustainably trap very large quantities of CO₂ [Pearce etal. 2004].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans le sud-est de la France par exemple, huit réservoirs naturels de CO₂ ont été découverts lors de l’exploration pétrolière menée dans les années 1960, entre 2 et 4 km de profondeur (Figure3; [Czernichowski-Lauriol etal. 2002]).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In southeastern France, for example, eight natural CO₂ reservoirs were discovered between 2 and 4 km deep during oil exploration in the 1960s (Figure3; [Czernichowski-Lauriol etal. 2002]).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Quand les forages ont été réalisés, croyant avoir découvert du pétrole ou du gaz naturel, c’est avec stupeur qu’il a été constaté que le fluide piégé était du CO₂ (de 66 à 99% CO₂ selon les cas).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>When drilling was carried out with the assumption of having discovered oil or natural gas, it was surprising that the trapped fluid was in fact CO₂ (66 to 99% CO₂ depending on the case).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce CO₂ est remonté des profondeurs de la terre à la faveur de failles et s’est accumulé sous une couverture argileuse dans la porosité de la roche sous-jacente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This CO₂ had risen from the depths of the earth through faults and accumulated under a clay cover in the porosity of the underlying rock.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>A d’autres endroits il s’est dissout dans les eaux présentes dans l’espace poral des roches rencontrées, dont certaines sont devenues des eaux carbogazeuses exploitées (Vichy, Badoit, Perrier…).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>At other places it has dissolved in the waters present in the pore space of the rocks encountered. Some of these have become exploited carbonated waters (Vichy, Badoit, Perrier...).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Ailleurs, il a pu migrer jusqu’en surface et s’échapper dans l’air par un trou ou une fissure.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Elsewhere, it was able to migrate to the surface and escape into the air through a hole or crack.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces émanations gazeuses, appelées mofettes, sont souvent des curiosités naturelles comme à Neyrac dans l’Ardèche et dans la grotte du chien à Royat dans le Puy de Dôme.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These gaseous emanations, called mofettes, are often natural curiosities, such as in Neyrac in the Ardèche department and la grotte du Chien ("the dog cave") in Royat in the Puy de Dôme department.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans certains pays, il y a même des geysers rejetant par intermittence de l’eau et du CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In some countries, there are even geysers releasing water and CO₂ intermittently.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Les plus connus sont le geyser d’Andernach en Allemagne et Crystal Geyser dans l’Utah aux États-Unis, qui sont des attractions touristiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The best known are the Andernach geyser in Germany and Crystal Geyser in Utah in the United States, which are tourist attractions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Les émanations naturelles de CO₂ en surface ne causent dans la plupart des cas aucun dommage, car le CO₂ se disperse dans l’air.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In most cases, natural releases of CO₂ at the ground surface do not cause any damage because CO₂ is dispersed in the air.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Le CO₂ n’est ni inflammable ni explosif, contrairement au méthane.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>CO₂ is neither flammable nor explosive, unlike methane.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est un gaz inodore que nous respirons en permanence et même avalons avec les boissons gazeuses.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is an odourless gas that we breathe constantly and even swallow with carbonated drinks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Il n’est pas toxique à faible dose, contrairement au monoxyde de carbone (CO) qui entraîne des pertes de connaissance dès que sa concentration dans l’air respiré dépasse 0,1%.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is not toxic at low doses, unlike carbon monoxide (CO), which results in unconsciousness as soon as its concentration in breathed air exceeds 0.1%.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Tant que la concentration en CO₂ dans l’air, habituellement de 0,04%, ne dépasse pas 1%, il n’y a aucun effet physiologique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As long as the concentration of CO₂ in the air, usually 0.04%, does not exceed 1%, there is no physiological effect.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Au-delà, on peut observer une augmentation de la concentration en CO₂ dans le sang et une raréfaction relative de l’oxygène de l’air.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Above this, there is an increase in the concentration of CO₂ in the blood and a relative depletion of oxygen in the air.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela peut se traduire par l’accélération du rythme respiratoire et des maux de tête, et, pour des concentrations plus marquées et une durée d’exposition prolongée, par des pertes de conscience voire la mort.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This can result in an accelerated respiratory rhythm and headaches, and, for higher concentrations and prolonged exposure, loss of consciousness and even death.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Le risque d’asphyxie devient réel, seulement si la fuite a lieu au niveau d’un espace confiné (cave, grotte, bâtiment mal ventilé…) ou une dépression du sol, car le CO₂ est un peu plus lourd que l’air et peut s’accumuler dans les points bas.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The risk of asphyxiation becomes real only if the leak occurs at the level of a confined space (cellar, cave, poorly ventilated building...) or a depression in the ground. This is because CO₂ is a little heavier than air and can accumulate in low areas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Sinon, le gaz se disperse dans l’atmosphère, ce qui annihile évidemment l’objectif écologique, mais ne provoque pas une catastrophe sanitaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Otherwise, the gas disperses into the atmosphere, which clearly nullifies the ecological objective but does not cause a health catastrophe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Des intoxications aiguës au CO₂ en milieu ouvert ne sont possibles que par suite de phénomènes volcaniques libérant des centaines de milliers de tonnes de CO₂ d’un seul coup, un débit qui n’a rien à voir avec celui des fuites mêmes les plus graves qui pourraient émaner d’un stockage de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Acute CO₂ poisoning in an open environment is only possible as a result of volcanic phenomena releasing hundreds of thousands of tons of CO₂ at once, a flow rate that is not relevant to even the most serious leaks that could emanate from CO₂ storage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>La catastrophe du lac Nyos au Cameroun en 1986 est dans tous les esprits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The Lake Nyos disaster in Cameroon in 1986 is in everyone's minds.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Elle a été causée par le dégazage brutal du CO₂ d’origine volcanique qui était stocké sous forme dissoute dans les eaux profondes de ce lac de cratère, libérant brutalement en une nuit plus d’un million de tonnes de CO₂ qui, étant plus lourd que l’air, est descendu dans les vallées encaissées et relativement confinées des alentours.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It was caused by the violent outgassing of CO₂ of volcanic origin which was stored in dissolved form in the deep waters of this crater lake, suddenly releasing more than one million tonnes of CO₂ overnight. Being heavier than air, it descended into the entrenched and relatively confined valleys of the surrounding area.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Plus de 1700 personnes, le bétail et de très nombreux animaux sont morts dans les 24 h dans un rayon de 14 km.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More than 1700 people, livestock, and large numbers of animals died within 24 hours within a 14 km radius.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans le cas d’un stockage de CO₂, il n’y a que l’éruption d’un forage qui pourrait relâcher beaucoup de CO₂ d’un coup, mais les débits seraient bien moindres et de la neige carbonique solide se formerait en surface, du fait du refroidissement provoqué par la forte chute de pression.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the case of CO₂ storage, there is only a borehole blowout which could release a great deal of CO₂ at once, but the flow would be much less and solid dry ice would form on the surface due to the cooling caused by the large pressure drop.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Il y a donc très peu de risques de provoquer des accidents mortels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There is therefore very little risk of causing fatal accidents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Si du CO₂ arrivait à s’échapper d’un stockage à travers les failles et fractures naturelles présentes dans la roche couverture ou les couches sus-jacentes, les fuites seraient alors plus modestes, n’atteindraient pas forcément la surface, ou mettraient longtemps à y arriver et s’y manifesteraient sous forme de mofettes isolées, sans doute alignées selon les lignes de faille.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If CO₂ were to escape from storage through natural faults and fractures in the caprock or overlying layers, the leakage would be more modest, would not necessarily reach the surface (or would take a long time to reach), and would manifest itself in isolated mofettes, probably aligned along fault lines.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est ce que l’on observe sur un site naturel en Italie (Latera, en Toscane) où du CO₂ d’origine volcanique arrive en surface au niveau d’une prairie [CO₂GeoNet 2008].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is what is observed at a natural site in Italy (Latera, in Tuscany) where CO₂ of volcanic origin arrives to the surface at the level of a grassland [CO₂GeoNet 2008].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Les émanations gazeuses sont faibles et très localisées, alignées sur une ligne de faille ou à l’intersection de failles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The gas releases are weak and very localised, aligned on a fault line or at an intersection of faults.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Elles ressemblent à des points clairs au milieu de la verdure, du fait d’une modification ou d’une disparition très localisée de végétation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They look like clear spots in the middle of the greenery due to a very localised modification or disappearance of vegetation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Si ces émanations s’arrêtaient, la végétation pourrait revenir.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If these releases stopped, the vegetation could come back.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>En cas de fuite localisée dans la nappe phréatique, ce n’est pas le CO₂ qui est en soit dangereux, puisque nous buvons des eaux naturelles carbogazeuses, mais les impuretés qui l’accompagnent et la possibilité que la concentration en certains métaux (plomb, zinc, manganèse, aluminium, arsenic…), naturellement présents en quantités très faibles dans l’eau, puisse augmenter du fait des réactions minéralogiques induites par l’acidification de l’eau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the event of a localised leak in the water table, it is not CO₂ that is in itself dangerous, since we drink natural carbonated water, but the impurities that accompany it and the possibility that the concentration of certain metals (lead, zinc, manganese, aluminum, arsenic, etc.), naturally present in very small quantities in the groundwater, may increase because of the mineralogical reactions induced by the acidification of the water.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela altérerait alors la qualité de l’eau, qui pourrait ne plus être conforme aux normes pour l’eau potable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This would then affect the quality of the water, which may no longer be compliant with drinking water standards.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>En cas d’arrêt de la fuite, la ré-équilibration chimique entre l’eau et les minéraux devrait conduire à un repiégeage de ces éléments.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If the leakage is stopped, the chemical re-equilibration between water and minerals should lead to re-trapping these elements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Quoi qu’il en soit, les stockages de CO₂ devront être conçus pour éviter toute fuite en dehors du réservoir de stockage et être surveillés pour s’assurer que c’est bien le cas, tout en prévoyant des mesures à prendre en cas de comportement anormal.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In any case, CO₂ storage must be designed to prevent all leakage outside the storage reservoir and be monitored to ensure that this is the case, while also providing for measures to be taken in the event of abnormal behaviour.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>D’où l’importance d’une série de mesures préventives et palliatives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hence the importance of a series of preventive and corrective measures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>4. Comment s’assurer qu’un stockage de CO₂ soit réaliséen toute sécurité pour la population et l’environnement local ?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>4. How to ensure that CO₂ storage is carried outsafely for the population and the local environment?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>Comment choisir un bon site?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>How to choose a good site?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>Quelles sont les lignes de conduite à respecter pour s’assurer, avec un niveau de confiance suffisant, que le CO₂ soit stocké à long terme et en toute sécurité dans la formation de stockage?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>What are the guidelines to be followed to ensure, with a sufficient level of confidence, that CO₂ is safely stored in the storage formation in the long term?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>Il y a cinq grandes catégories de mesures, qui se répartissent tout au long du projet de stockage, depuis sa conception initiale jusqu’à l’arrêt de l’injection et jusqu’à la fin de la phase de surveillance qui se prolonge au-delà, pour vérifier que le site évolue vers une stabilité à long terme (Figure4; [Bouc etal. 2012]).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There are five main categories of measures distributed throughout the storage project, from its initial design, to the cessation of injection, and through the end of the monitoring phase that continues thereafter to verify that the site is evolving towards long-term stability (Figure4; [Bouc etal. 2012]).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>La première repose sur une bonne sélection et caractérisation du site de stockage: la roche réservoir et la roche couverture doivent présenter des caractéristiques naturelles adéquates en termes de porosité, de perméabilité, d’épaisseur et d’étendue latérale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first is based on a good selection and characterisation of the storage site: the reservoir rock and the caprock must have adequate natural characteristics in terms of porosity, permeability, thickness, and lateral extent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est aussi important de connaitre leurs propriétés chimiques, thermiques et mécaniques qui conditionneront aussi la performance du stockage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is also important to know their chemical, thermal, and mechanical properties, which will also determine storage performance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Il faut repérer s’il existe des failles, en particulier au niveau de la roche couverture, et des forages pré-existants dans le secteur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is necessary to identify if there are faults, particularly in the caprock, and pre-existing wells in the area.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>On évitera bien sûr de faire un stockage dans une zone où la sismicité est trop élevée, car elle pourrait affecter l’intégrité des puits et de la roche couverture, ou réactiver des failles trop proches.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Storage in an area where the seismicity is too high must of course be avoided, as it could affect the integrity of the wells and the caprock, or reactivate faults that are too close.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Il faut aussi caractériser les formations situées au-dessus, y compris la nappe phréatique, ainsi que l’environnement de surface, car il faudra éviter toute nuisance (fuite, mouvement de terrain) qui affecterait localement les écosystèmes ou les activités humaines.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is also necessary to characterise the geological formations located above, including groundwaters, as well as the surface environment; one must avoid any nuisance (leakage, ground movement) that would locally affect ecosystems or human activities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette caractérisation initiale constituera aussi un état de référence indispensable auquel pourra être comparée toute mesure effectuée pendant ou après la fin de l’injection, pour savoir dire si un changement observé est induit par le stockage ou résulte d’une autre cause.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This initial characterisation will also establish an indispensable baseline against which any measurement made during or after the end of the injection can be compared in order to know whether an observed change is induced by the storage activities or results from another cause.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>La deuxième catégorie de mesures doit évaluer comment effectuer un stockage performant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second category of measures must evaluate how to perform high-performance storage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Des expériences en laboratoire et des modélisations numériques sont réalisées pour simuler l’injection du CO₂ dans le réservoir et le comportement du stockage sur le long terme, bien après la fin de l’injection, sur des milliers d’années.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Laboratory experiments and numerical modelling are carried out to simulate the injection of CO₂ into the reservoir and the long-term storage behaviour well after the end of the injection, over thousands of years.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Elles doivent prendre en compte toutes les informations acquises lors de la caractérisation initiale du site, mais aussi les caractéristiques du CO₂ à injecter en termes de quantité (tonnes par jour) et de qualité (% et nature des impuretés).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They must take into account all the information acquired during the initial characterisation of the site, but also the characteristics of the CO₂ to be injected in terms of quantity (tonnes per day) and quality (% and nature of impurities).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Car selon le procédé de captage mis en œuvre et le type de fumées traitées, il peut y avoir quelques % d’impuretés dans le CO₂ (N₂, O₂, SO_(x), NO_(x)…).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Depending on the capture process used and the type of flue gases treated, there may be a few % of impurities in the CO₂ (N₂, O₂, SO_(x), NO_(x),etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>L’objectif est d’estimer combien de CO₂ on va pouvoir stocker (capacité de stockage), de dimensionner les opérations d’injection (nombre, position, inclinaison et type de forages), afin de stocker sans causer de dommages mécaniques qui pourraient fracturer la roche couverture ou être ressentis en surface, et de prévoir au cours du temps où le CO₂ dense et le CO₂ dissous vont se répartir dans la formation hôte ainsi que la proportion relative des quatre mécanismes de piégeage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The objectives are to estimate how much CO₂ can be stored (storage capacity); to design of the injection operations (number, position, inclination, and type of injection wells) in order to store without causing mechanical damage that could fracture the caprock or be felt on the surface; and to predict where the dense CO₂ and the dissolved CO₂ will be distributed over time in the host formation, as well as the relative proportion of the four trapping mechanisms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Les marges d’incertitude dans les prévisions sont ensuite évaluées de manière à tenir compte de la connaissance forcément imparfaite du milieu naturel géologique et des hypothèses prises pour les modélisations qui sont toujours des représentations simplifiées de la réalité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The uncertainty margins in the forecasts are then evaluated to take into account the necessarily imperfect knowledge of the natural geological environment and the assumptions made for the models, which are always simplified representations of reality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Les opérations de stockage sont donc dimensionnées avec des marges de sécurité pour qu’aucun phénomène indésirable ne se produise et n’impacte des éléments vulnérables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Storage operations are therefore sized with safety margins so that no undesirable phenomena occur and impact vulnerable elements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>La troisième catégorie de mesures doit permettre que les opérations d’injection et de fermeture du site soit menées correctement : il est essentiel de mesurer en continu la pression d’injection, le débit, la température et la composition du CO₂ injecté.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The third category of measures must ensure that the injection and closure operations of the site are carried out correctly: it is essential to continuously measure the injection pressure, flow rate, temperature, and composition of the injected CO₂.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>Par des méthodes géophysiques (sismiques, gravimétriques, électriques, électromagnétiques…), il est aussi possible de mesurer de façon indirecte, puis de cartographier la distribution du panache de CO₂ dense et les changements qui se produisent dans le réservoir.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By using geophysical methods (seismic, gravimetric, electrical, electromagnetic, etc.), it is also possible to indirectly measure and then map the distribution of the dense CO₂ plume and the changes that occur in the reservoir.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>Il faut notamment s’assurer que les pressions au sein du réservoir restent toujours inférieures à la pression de fracturation de la roche couverture et n’induisent pas de microséismes ou des déformations perceptibles en surface.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In particular, it must be ensured that the pressures within the reservoir always remain below the fracturing pressure of the caprock and do not induce microearthquakes or deformations perceptible at the surface.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>Les modélisations initiales sont affinées et améliorées en prenant en compte tous les paramètres mesurés en cours d’injection de manière à décrire le plus fidèlement possible le comportement du stockage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The initial modelling is refined and improved by taking into account all the parameters measured during injection so as to describe the storage behaviour as accurately as possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>A la fin de l’injection, le puits est bouché en injectant dans le forage un ciment résistant sur une importante hauteur cumulée pour éviter toute remontée de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>At the end of the injection, the well is sealed by injecting a durable cement into the borehole over a large cumulative height to prevent any rise in CO₂.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>La quatrième catégorie de mesures concerne la surveillance attentive de tous les milieux qui pourraient être impactés par le stockage dans le cadre de son fonctionnement normal ou en cas de défaillance.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The fourth category of measures concerns the careful monitoring of all elements that could be impacted by the storage system as part of its normal operation or in the event of failure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est-à-dire non seulement le réservoir de stockage mais aussi la roche couverture, les forages, les roches au-dessus du stockage, la nappe phréatique, la surface du sol ou le plancher marin, les écosystèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These include not only the storage reservoir itself but also the caprock, the boreholes, the overburden, the groundwaters, the surface of the ground or seabed, and ecosystems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Ceci pour rechercher s’il y a des fuites de CO₂ ou pour identifier de possibles impacts liés au stockage, d’où l’importance d’avoir dressé avant l’injection un état de référence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is to investigate whether there are CO₂ leaks or to identify possible impacts related to storage, hence the importance of having established a baseline before injection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Différentes méthodes de mesure et d’auscultation du sol et du sous-sol sont combinées pour être capable de détecter, localiser et quantifier le CO₂ et les changements induits, ou pour vérifier qu’il n’y en a pas.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Different methods of soil and subsurface measurement and investigation are combined to be able to detect, locate, and quantify CO₂ and induced changes, or to verify that there are none.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>La surveillance doit être très active pendant l’injection, puis se poursuivre après la fin de l’injection.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Monitoring should be very active during the injection and then continue after the end of the injection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Elle pourra ensuite être progressivement allégée du fait de la relaxation progressive des déséquilibres générés par l’injection.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It can then be lightened reduced because of the progressive relaxation of the imbalances generated by the injection.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Puis elle pourra être arrêtée si les observations et les modèles montrent de manière convergente que le stockage évolue vers une stabilité à long terme et que les risques d’une évolution altérée sont très peu probables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then it can be stopped if observations and models show in a convergent manner that the storage system is evolving towards long-term stability and that the risks of an altered course of evolution are very unlikely.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Le stockage s’apparentera alors à un gisement naturel de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The storage system will then be similar to a natural CO₂ reservoir.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>La cinquième catégorie de mesures concerne la maitrise des risques en cas d’évolution altérée du stockage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The fifth category of measures concerns the control of risks in the event of unforeseen storage behaviour.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Que ce soit des fuites ou des désordres mécaniques, il faut pouvoir comprendre leurs causes et estimer la gravité de leurs conséquences qui est fonction de l’ampleur du phénomène et de la présence d’éléments vulnérables autour du stockage, à savoir les populations, les infrastructures humaines et les écosystèmes naturels.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Whether leaks or mechanical disorders, it is necessary to be able to understand their causes and estimate the seriousness of their consequences, which depends on the extent of the phenomenon and the presence of vulnerable elements near the storage facility, namely people, human infrastructure, and natural ecosystems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, face à un séisme ressenti, il sera important de savoir s’il est dû à la sismicité naturelle ou s’il s’agit de sismicité induite par les opérations d’injection.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For example, in the case of a detected earthquake, it will be important to know whether it is due to natural seismicity or whether it is seismic activity induced by injection operations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>En cas de fuite de CO₂ en surface, pour en apprécier la gravité pour les populations, il faudra mesurer la concentration dans l’air du CO₂ et des substances associées et faire des simulations pour voir comment il se disperse dans l’atmosphère et s’il peut s’accumuler en partie dans des points bas ou des zones mal ventilées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the event of a surface CO₂ leak, to assess the severity for human populations, it is necessary to measure the concentration of CO₂ and associated substances in the air, and to carry out simulations to see how it disperses in the atmosphere and whether it can accumulate in part in low or poorly ventilated areas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est pendant la période d’injection que les risques sont les plus élevés, mais ils peuvent être facilement contrôlés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Risks are highest during the injection period, but they can be easily controlled.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Sur le long terme, le niveau de risque décroit avec le temps, car l’augmentation de pression qu’avait causée l’injection se dissipe en partie progressivement, du fait de processus naturels d’atténuation (dissolution dans l’eau du réservoir, minéralisation, etc.), jusqu’à atteindre une stabilité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Over the long term, the level of risk decreases over time, as the pressure increase caused by the injection dissipates gradually due to natural attenuation processes (dissolution in reservoir water, mineralisation, etc.) until stability is achieved.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>En conclusion, il est clair que la maitrise du risque passe avant tout par des mesures préventives, telles qu’un bon choix de site et des opérations d’injection et de surveillance correctement effectuées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In conclusion, it is clear that risk management depends first and foremost on preventive measures, such as a good choice of site and properly carried out injection and monitoring operations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Chaque site doit faire l’objet d’une analyse des risques détaillée et prévoir les mesures correctives à mettre en place en cas d’irrégularités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Each site must be subject to a detailed risk analysis and provide for the corrective measures to be put in place in the event of irregularities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est indispensable de pouvoir détecter au plus tôt toute défaillance par des réseaux de surveillance adaptés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is essential to be able to detect any deficiencies as early as possible via suitable monitoring networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>De nombreuses méthodes de surveillance ont été développées pour être en mesure de détecter, localiser et quantifier toute anomalie dans tous les milieux: dans les forages, le réservoir, la roche couverture, les roches sus-jacentes (au-dessus), la nappe phréatique, la surface du sol ou le plancher marin, les écosystèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Numerous monitoring methods have been developed to be able to detect, locate, and quantify any anomaly in all media: in the boreholes, the reservoir, the caprock, the overlying rocks (above the storage system), the water table, the soil surface or the seafloor, and the ecosystems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Elles se basent sur des techniques géochimiques, géophysiques, biogéochimiques et même de télédétection (par avion, drône ou satellite).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They are based on geochemical, geophysical, biogeochemical, and even remote sensing techniques (by plane, drone, or satellite).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Quant aux mesures correctrices, il est par exemple possible de réduire la pression dans le réservoir, en diminuant le débit d’injection de CO₂ ou en extrayant de l’eau salée qui y est présente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Concerning corrective measures, it is possible, for example, to reduce the pressure in the reservoir by reducing the CO₂ injection rate or by extracting salt water.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est aussi envisageable de colmater une zone de faille ou le ciment défectueux d’un puits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is also feasible to plug a fault zone or the defective cement of a well.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Enfin, s’il s’avère que le stockage présente des défauts majeurs imprévus, il peut aussi être décidé d’arrêter l’injection, et comme mesure ultime de maîtrise du risque de récupérer le CO₂ injecté pour l’acheminer vers un site de stockage plus approprié ou pour le rejeter à l’atmosphère.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, if it is found that the storage system has unexpected major defects, it may also be decided to stop the injection, and, as an ultimate measure of risk control, to recover the injected CO₂ to transport it to a more appropriate storage site or release it to the atmosphere.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Certes, le but initial était d’éviter par le stockage d’émettre du CO₂ dans l’atmosphère, mais le fait de devoir le faire pour un stockage défectueux ne remettrait pas en cause l’intérêt d’activer ce puits de carbone dans de nombreux autres endroits.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While the initial goal of CO₂ storage was to avoid CO₂ emissions into the atmosphere, having to do so for one faulty storage site would not underline the value of activating this carbon sink in many other locations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>Depuis les années 2000, des textes juridiques et réglementaires ont été élaborés pour encadrer cette nouvelle technologie de captage et stockage de CO₂, afin qu’elle puisse être mise en œuvre en toute sécurité pour contribuer à la lutte contre le réchauffement climatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since the 2000s, legal and regulatory texts have been developed to regulate this new CO₂capture and storage technology so that it can be safely implemented to contribute to the fight against global warming.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>Deux conventions internationales dont l’objectif est la protection du milieu marin ont été amendées pour permettre un stockage de CO₂ sous les fonds marins (Protocole de Londres, Convention OSPAR).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two international conventions whose objective is the protection of the marine environment have been amended to allow the storage of CO₂ under the seabed (London Protocol, OSPAR Convention).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>Depuis 2009, il existe une directive européenne relative au stockage géologique de CO₂, qui a été transposée en droit français en 2010 et 2011 [Union Européenne 2009].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since 2009, there has been a European directive on the geological storage of CO₂, which was transposed into French law in 2010 and 2011 [European Union 2009].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>Récemment des normes ISO internationales ont été élaborées relatives au captage, au transport et au stockage du CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recently, international ISO standards have been developed for CO₂ capture, transport, and storage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>L’exploitant d’un site de stockage connait donc les lignes de conduite à respecter et doit demander un permis de stockage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The operator of a storage site is therefore aware of the guidelines to be followed and must apply for a storage permit.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>Quant aux autorités nationales de contrôle, elles savent ce qu’il convient d’exiger et de vérifier.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As for the national supervisory authorities, they know what to require and what to inspect.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>Au-delà d’une période de surveillance active du site de stockage par l’exploitant, le transfert de responsabilité à l’Etat est prévu, une trentaine d’années après la fin de l’injection, sur la base de trois conditions: la conformité entre les modèles et les observations, l’absence de fuite détectable, la démonstration de l’évolution du stockage vers la stabilité à long terme.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Beyond a period of active monitoring of the storage site by the operator, the transfer of responsibility to the State is planned, some thirty years after the end of the injection, on the basis of three conditions: conformity between models and observations, absence of detectable leakage, and demonstration of the evolution of the storage system towards long-term stability.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>L’exploitant doit démanteler toutes les installations dont l’Etat ne fera plus usage et doit fournir à l’Etat un plan de surveillance reposant sur des mesures passives, c.-à-d. ne nécessitant pas une intervention particulière de l’Etat mais faisant partie de ses missions générales (par exemple via le suivi des aquifères d’eau potable, de la sismicité, des teneurs en CO₂ en surface, etc.).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The operator must dismantle all installations which the State will no longer use and must provide the State with a monitoring plan based on passive measures, i.e. not requiring any special intervention by the State but executed as part of its general tasks (for example, monitoring of drinking water aquifers, seismicity, surface CO₂ contents, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>L’exploitant devra aussi indiquer à l’Etat les mesures actives qu’il avait prévues lors de la phase sous sa responsabilité, afin que l’Etat puisse les activer en cas de dysfonctionnement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The operator must also inform the State of the active measures that were planned during the phase under their responsibility, so that the State can activate them in the event of malfunction.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>Mais en principe le site de stockage évoluera vers un état d’équilibre stable et se confondra sur le long terme avec un gisement naturel de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, in principle, the storage site will evolve to a stable equilibrium state and will become little different from a natural CO₂ reservoir over the long term.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>5. Les installations de captage et stockage de CO₂ déjà en fonctionnement dans le monde</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>5. CO₂ capture and storage facilities already in operation worldwide</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>Actuellement, il y a 19 opérations de taille industrielle en fonctionnement dans le monde, captant et stockant chacune de l’ordre de 1 million de tonnes de CO₂ par an (soit pour chacune l’équivalent des émissions en CO₂ de 250.000 voitures sur un an) [GCCSI 2019].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Currently, there are 19 industrial-scale facilities in operation worldwide, each capturing and storing around one million tonnes of CO₂ per year (each equivalent to the CO₂ emissions of 250,000 cars over a year) [GCCSI 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>Le Tableau1 en donne la liste et les principales caractéristiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Table1 gives the list of sites and their main characteristics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>Dix de ces opérations sont adossées à du traitement de gaz naturel (méthane), car celui-ci peut contenir 10% ou plus de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Ten of these operations are related to the processing of natural gas (methane), as it can contain 10% or more of CO₂.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>Il faut donc purifier le méthane en réduisant son taux de CO₂ sous 2,5% avant de pouvoir le vendre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Methane must therefore be purified by reducing its CO₂ content to below 2.5% before it can be sold.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est une pratique qui existe depuis longtemps, bien avant la prise de conscience des enjeux climatiques, le CO₂ capté étant relâché dans l’atmosphère.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This has been a long-standing practice, long before climate awareness, with captured CO₂ being released into the atmosphere.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>L’opération de Sleipner en Norvège est une première mondiale, car c’est la première fois qu’il a été décidé à des fins purement climatiques de réinjecter le CO₂ dans le sous-sol (sous la Mer du Nord).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The Sleipner operation in Norway is a world first, as it is the first time that it has been decided for purely climatic purposes to re-inject CO₂ into the subsurface (under the North Sea).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>Et cela fait presque 25 ans qu’elle est en fonctionnement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It has been in operation for almost 25 years.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Deux opérations sont adossées à des centrales thermiques produisant de l’électricité à partir de charbon, l’une au Canada depuis 2014, la première au monde, l’autre aux Etats-Unis depuis 2017.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two operations are backed by thermal power plants producing electricity from coal: one in Canada since 2014, the first in the world, the other in the United States since 2017.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Une autre est adossée à une usine sidérurgique à Abu Dhabi depuis 2016, une première mondiale aussi.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Another is backed by a steel plant in Abu Dhabi since 2016, a world first as well.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Deux opérations concernent la production d’engrais aux Etats-Unis.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Two operations concern the production of fertilisers in the United States.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Trois opérations en Amérique du Nord concernent la production d’hydrogène à partir de charbon ou de gaz naturel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Three operations in North America involve the production of hydrogen from coal or natural gas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Enfin il y a une usine de production de biocarburants (éthanol) à partir de maïs aux Etats-Unis, qui fonctionne depuis 2017, c’est la première dans le monde à être équipée d’un système de captage et stockage de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, there is a plant producing biofuels (ethanol) from corn in the United States, which has been operating since 2017 and is the first in the world to be equipped with a CO₂ capture and storage system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>A noter que dans ce cas, contrairement aux 18 autres, le CO₂ émis n’est pas le résultat de l’utilisation d’énergie fossile, mais de la fermentation biologique du maïs, qui pour pousser avait absorbé du CO₂ atmosphérique par photosynthèse.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It should be noted that in this case, unlike the 18 others, the CO₂ emitted is not the result of the use of fossil energy, but of the biological fermentation of the corn, which in order to grow had absorbed atmospheric CO₂ through photosynthesis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Le CO₂ stocké est donc indirectement du CO₂ atmosphérique, ce qui revient à retirer du CO₂ de l’atmosphère.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The stored CO₂ is therefore indirectly atmospheric CO₂, which amounts to removing CO₂ from the atmosphere.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est ce que le GIEC appelle un scénario à émissions négatives, c.-à-d. où du CO₂ est retiré de l’atmosphère pour être stocké dans le sous-sol, sachant que plus on tarde à réduire les émissions à la source, plus on aura besoin de recourir à ce type de solutions [GIEC 2019].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is what the IPCC calls a negative emissions scenario, where CO₂ is removed from the atmosphere and stored in the subsurface, keeping in mind that the greater the delay in reducing emissions at the source, the greater the need for this type of solution (IPCC 2019).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Quant aux stockages, ils sont réalisés, en dehors des zones montagneuses, dans des bassins sédimentaires qui sont le résultat d’un dépôt de sédiments dans le passé géologique conduisant à une alternance de couches géologiques poreuses et perméables remplies d’eau, appelées aquifères, et de couches imperméables de type argiles, marnes, ou sel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As for the storage systems, they are implemented, outside mountainous areas, in sedimentary basins which are the result of sediment deposits in the geological past, leading to an alternation between porous and permeable geological layers filled with water, called aquifers, and impermeable layers of clay, marl, or salt.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>En proche surface ces aquifères sont remplis d’eau douce et sont souvent utilisés pour fournir de l’eau potable, on parle de nappe phréatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Near to the surface, these aquifers are filled with fresh water and are often used to provide drinking water; this is referred to as the groundwater.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>En profondeur l’eau est de plus en plus salée et devient même plus salée que l’eau de mer, donc totalement impropre à la consommation humaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Deep down, the water is increasingly salty and becomes even more salty than sea water, therefore completely unfit for human consumption.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Localement cette eau est parfois remplacée par du pétrole, du méthane (CH₄) ou même du CO₂ naturel, piégés dans les pores des roches.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Locally, this water is sometimes replaced by oil, methane (CH₄), or even natural CO₂, trapped in the pores of the rocks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est ainsi qu’on distingue deux cibles pour le stockage de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is how two categories of target sites for CO₂ storage are differentiated:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>D’une part les aquifères salins profonds qui offrent des capacités de stockage de CO₂ très importantes et ont une grande étendue géographique, ce qui favorise le rapprochement entre émetteurs de CO₂ et sites de stockage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first are deep saline aquifers that offer very large CO₂ storage capacities and have a large geographical extent, which favourises the proximity between CO₂ emitters and storage sites.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>D’autre part, les gisements de pétrole et de gaz naturels épuisés ou sur le déclin, dont l’existence montre qu’une structure naturelle de piège existe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second are depleted or declining oil and natural gas fields, the existence of which shows that a natural trapping structure exists.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Ceux-ci sont présents dans un nombre d’endroits plus limités et ont des capacités de stockage moindre; néanmoins, c’est une solution attrayante d’autant plus que l’injection de CO₂ dans ces réservoirs peut faciliter l’extraction d’une partie des hydrocarbures restants.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These are present in a more limited number of places and have lower storage capacities; nevertheless, it is an attractive solution, especially since the injection of CO₂ into these reservoirs can facilitate the extraction of some of the remaining hydrocarbons.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Le procédé dit de «récupération assistée d’hydrocarburespar injection de CO₂ » est déjà largement utilisé dans l’industrie pétrolière depuis quelques décennies, notamment aux Etats-Unis mais aussi en Europe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The process known as "enhanced recovery of hydrocarbonsby CO₂ injection" has already been widely used in the oil industry for several decades, particularly in the United States but also in Europe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="FR">
+                <seg>Sur les 19 opérations en fonctionnement, 5 font l’objet de stockages en aquifère salin profond, les 14 autres en réservoir pétrolier et sont associées à de la récupération assistée de pétrole.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Of the 19 facilities in operation, five are storing CO₂ in deep saline aquifers, the other 14 in oil reservoirs in association with enhanced oil recovery.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est que dans ce cas, les coûts du captage, transport et stockage de CO₂ sont compensés par la vente du pétrole additionnel produit.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this latter case, the costs of CO₂ capture, transport, and storage are offset by the sale of the additional oil produced.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="FR">
+                <seg>Les deux stockages en aquifères profonds salins en Norvège sous la mer du Nord ont pu être réalisés car leurs coûts sont compensés par l’exonération de paiement d’une taxe existant dans ce pays sur les émissions de CO₂ offshore.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The two deep saline aquifer storage operations in Norway under the North Sea have been carried out because their costs are offset by the exemption from payment of an existing tax in that country on offshore CO₂ emissions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="FR">
+                <seg>Les 3 autres ont pu bénéficier de subventions publiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The other three were able to benefit from government subsidies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est par ailleurs important de noter que 15 des 19 stockages sont réalisés sur les continents, tandis que les 4 autres sont situés sous le plancher océanique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is also important to note that 15 of the 19 storage facilties are implemented onshore, while the other four are located under the ocean floor.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="FR">
+                <seg>6. Les coûts de mise en œuvre et la recherche d’un modèle économique viable</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>6. The costs of implementation and the search for a viable economic model</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Les coûts du captage et stockage de CO₂ sont actuellement compris entre 20 et 120 € par tonne de CO₂ évité [ZEP 2015].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The costs of CO₂ capture and storage are currently between €20 and €120 per tonne of CO₂ avoided [ZEP 2015].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>L’essentiel du coût (jusqu’à 80%) est lié au processus de captage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Most of the cost (up to 80%) is related to the capture process.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Mais celui-ci est très réduit si le CO₂ est déjà séparé dans le cadre du processus de production, comme c’est le cas pour le traitement du gaz naturel et la production d’engrais et de bioéthanol.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, this is highly reduced if the CO₂ is already separated as part of the production process, as is the case for natural gas processing and the production of fertilisers and bioethanol.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela explique pourquoi ce type d’industries est déjà fortement représenté parmi les 19 opérations de CSC déjà en fonctionnement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This explains why this type of industry is already strongly represented among the 19 CCS facilities already in operation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Les coûts de captage les plus importants concernent les installations où le CO₂ dans les fumées est plus dilué, à savoir la production d’électricité à partir de charbon ou de gaz, ainsi que la production d’acier et de ciment.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The most significant capture costs occur in installations where CO₂ in the flue gas is more diluted, namely in the production of electricity from coal or gas, as well as the production of steel and cement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Le coût du transport et du stockage du CO₂ représente une part relativement faible du coût total du projet, soit environ 10 € par tonne de CO₂ pour un stockage à terre, et 25 € pour un stockage sous la mer.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The cost of transporting and storing CO₂ represents a relatively small share of the total project cost, around €10 per tonne of CO₂ for onshore storage and €25 for offshore storage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Tous ces coûts ne sont que des estimations car ils sont dépendants d’un grand nombre de facteurs, tels que le coût de l’énergie, la distance de transport et la profondeur du stockage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>All of these costs are only estimates because they depend on a large number of factors, such as the cost of energy, the transport distance, and the depth of the storage site.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Comme pour tout type de technologies, on s’attend à des réductions de coûts importantes à la suite des premiers retours d’expérience et de l’apprentissage par la pratique, mais aussi via l’émergence de nouvelles méthodes et procédés qui sont actuellement à divers stades de développement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As with any type of technology, significant cost reductions are expected as a result of feedback from initial experiences and learning-by-doing, but also through the emergence of new methods and processes that are currently at various stages of development.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour que de nouveaux projets puissent voir le jour, les coûts de mise en œuvre doivent être compensés par des revenus, il faut donc un modèle économique viable qui pousse à investir, ce qui est encore rarement le cas.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For new projects to emerge, the costs of implementation must be offset by revenues. A viable economic model that encourages investment is therefore needed, which is still rarely the case.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>Peu de pays ou de régions ont commencé à donner un prix au carbone afin de lutter contre le changement climatique, et les niveaux de prix sont encore trop bas.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Few countries or regions have started to monetise carbon to combat climate change, and prices are still too low.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>Le marché européen d’échange de quotas d’émissions de CO₂ a été créé en 2005 mais il a mal fonctionné du fait de causes diverses (trop de quotas attribués gratuitement, crise économique de 2008, fraude…), ce qui fait que le prix de CO₂ sur ce marché est descendu très bas, à environ 5 € la tonne de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The European emissions trading system (EU ETS) was created in 2005, but it has malfunctioned for various reasons (too many allowances allocated free of charge, 2008 economic crisis, fraud, etc.), which means that the price of CO₂ on this market has fallen very low, to around €5 per tonne of CO₂.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est notamment pour cela qu’il n’y a pas encore d’opérations de captage et stockage de CO₂ en fonctionnement en Europe, en dehors de la Norvège.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is a primary reason why CO₂ capture and storage systems are not yet in operation in Europe, outside Norway.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>Mais ce prix commence à augmenter et a atteint 25 € début 2020 sur ce marché européen.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, this price is starting to rise and reached €25 in early 2020 for this European market.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>Certains pays ont instauré une taxe carbone, comme la Norvège dès 1991 (valeur de 57 € la tonne de CO₂ en 2018) d’où l’opération CSC de Sleipner.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Some countries have introduced a carbon tax, such as Norway since 1991 (value of €57 per tonne of CO₂ in 2018), hence the Sleipner CCS operation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>La France en a introduit une en 2014, qui valait 7 € à l’époque, 55 € en 2018 et qui devrait monter progressivement jusqu’à 100 € en 2030.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>France introduced one in 2014, which was worth €7 at the time, €55 in 2018, and should gradually rise to €100 in 2030.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>Les conditions économiques favorables au déploiement du puits de carbone géologique seront atteintes dès que le prix du carbone aura suffisamment augmenté et qu’en parallèle le coût du CSC aura suffisamment baissé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The economic conditions favourable to the deployment of the geological carbon sink will be achieved once the price of carbon has risen sufficiently and the cost of CCS has fallen sufficiently in parallel.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>A noter qu’aux Etats-Unis, un crédit d’impôt dit 45Q attribue actuellement un crédit de 50 dollars par tonne pour le CO₂ stocké de manière permanente en aquifère salin profond, et 35 dollars par tonne dans le cas d’un stockage en gisement d’hydrocarbure avec récupération assistée de pétrole [GCCSI 2020a].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It should be noted that in the United States, a tax credit called 45Q currently grants a credit of $50 per tonne for CO₂ permanently stored in deep saline aquifers and $35 per tonne in the case of storage in a hydrocarbon field with enhanced oil recovery [GCCSI 2020a].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="195">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est un signal fort qui encourage les investissements et la préparation de nouveaux projets de taille industrielle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is a powerful signal that encourages investment and the preparation of new industrial-scale projects.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="196">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="FR">
+                <seg>7. Des efforts accrus de recherche pour pouvoir déployer massivement ce puits de carbone</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>7. Increased research efforts to allow for implementing of this carbon sink on a massive scale</seg>
+            </tuv>
+        </tu>
+        <tu tuid="197">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>Via les 19 opérations industrielles de captage et stockage de CO₂ en fonctionnement dans le monde, environ 40 Mt de CO₂ sont captées par an et plus de 230 Mt de CO₂ ont été déjà injectées dans le sous-sol en toute sécurité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Via the 19 industrial CO₂ capture and storage facilities in operation worldwide, about 40 Mt of CO₂ are captured per year and more than 230 Mt of CO₂ have already been safely injected into the subsurface.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="198">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>L’Agence Internationale de l’Energie estime, dans un de ses scénarios, que 107 Gt de CO₂ devront être stockées d’ici à 2060 pour atteindre les objectifs en matière de climat et d’énergie à moindre coût [AIE 2019].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The International Energy Agency estimates, in one of its scenarios, that 107 Gt of CO₂ will need to be stored by 2060 to meet climate and energy targets at least cost [IEA 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="199">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce qui veut dire qu’il faudrait plus de 2000 nouvelles opérations de CSC, voire bien plus si l’on veut pouvoir limiter le réchauffement à 1,5°C [GCCSI 2020b].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This means that more than 2000 new CCS operations, if not more, would be required to limit warming to 1.5°C [GCCSI 2020a].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="200">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>Les capacités de stockage au niveau mondial sont en principe suffisantes (au moins 2000 Gt CO₂ comme le rapporte le GIEC dans son rapport spécial de 2005), mais cela nécessite un saut d’échelle considérable !</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Global storage capacity is in principle sufficient (at least 2000 Gt CO₂ as reported by the IPCC in its 2005 Special Report), but this requires a considerable leap in scale!</seg>
+            </tuv>
+        </tu>
+        <tu tuid="201">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est pourquoi des efforts accrus de recherche et d’innovation sur cette technologie ont été demandéspar les États, que ce soit au niveau international par la « Mission Innovation » sur les énergies propres lancée à la conférence COP21 sur le climat à Paris en 2015 [Mission Innovation 2017, 2019], au niveau européen par le plan stratégique pour les technologies énergétiques élaboré en 2015 [SET-Plan 2017], et en France où ce puits de carbone géologique est mobilisé de manière prudente, à hauteur de 15 Mt CO₂/anen2050, dans le scénario de référence de la StratégieNationale Bas-Carbone révisée [MTES 2020].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is why increased research and innovation efforts for this technology have been requestedby countries, whether at the international level by the "Mission Innovation" on clean energy launched at the COP21 climate conference in Paris in 2015 [Mission Innovation 2017, 2019], at the European level by the strategic plan for energy technologies developed in 2015 [SET-Plan 2017], and in France where this geological carbon sink is mobilised in a conservative manner, at a rate of 15 Mt_(CO2)/yearin2050, in the baseline scenario of the revised National Low-Carbon Strategy [MTES 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="202">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>Un grand nombre de projets de recherche et de tests à échelle pilote sont donc en cours en Europe et dans le monde, afin d’augmenter les performances, faire baisser les coûts, réduire toujours plus les risques, faciliter le déploiement dans des contextes variés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A large number of research projects and pilot-scale tests are therefore underway in Europe and worldwide, in order to increase performance, lower costs, further reduce risks, and facilitate deployment in various contexts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="203">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>Quatre nouvelles opérations de CSC sont déjà en construction, deux en Chine et deux au Canada.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Four new CCS operations are already under construction, two in China and two in Canada.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="204">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>Dix autres sont en phase avancée de préparation, dont deux en Europe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Ten others are in the advanced stages of preparation, two of them in Europe.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="205">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>L’une en Norvège où le CO₂ va être capté sur deux usines proches d’Oslo, une cimenterie et une usine de valorisation énergétique des déchets, pour être stocké sous la mer du Nord au large de Bergen.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One is in Norway where CO₂ will be captured from two plants near Oslo, a cement plant and a waste-to-energy plant, to be stored under the North Sea offshore from Bergen.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="206">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>L’autre aux Pays-Bas où Rotterdam se prépare à être une plaque tournante pour la collecte de CO₂ de diverses industries et son stockage sous la mer du Nord.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The other is in the Netherlands where Rotterdam is preparing to be a hub for CO₂ collection from various industries with storage located under the North Sea.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="207">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs le Royaume-Uni commence sérieusement à préparer plusieurs projets de captage de CO₂ en provenance de plusieurs types d’industries pour le stocker aussi sous la mer du Nord [GCCSI 2019].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, the United Kingdom is seriously starting to prepare several CO₂ capture projects from several types of industries to also store it under the North Sea [GCCSI 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="208">
+            <prop type="paragraph">43</prop>
+            <tuv xml:lang="FR">
+                <seg>8. Où en est-on en France?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>8. What is the situation in France?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="209">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="FR">
+                <seg>En France, il n’est pas encore prévu de projet de grande envergure.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In France, no major project has yet been planned.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="210">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="FR">
+                <seg>Mais la recherche académique et industrielle est très active et quelques installations pilotes ont vu le jour pour tester à échelle réduite des technologies de captage, comme sur la centrale à charbon du Havre et bientôt sur l’usine sidérurgique de Dunkerque.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, academic and industrial research is very active and a few pilot-scale facilities have been set up to test capture technologies on a small scale, such as at the Le Havre coal-fired power station and soon at the Dunkirk steelworks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="211">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, TOTAL a testé à Lacq une première chaîne industrielle intégrée de captage-transport-stockage de CO₂ en Europe, avec un pilote intégrant le captage de CO₂ sur une chaudière à gaz, son transport par une canalisation de 27 km et son stockage dans un gisement de gaz épuisé à une profondeur de 4,5 km (réservoir de Rousse proche de Lacq).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, TOTAL has tested in Lacq the first integrated industrial CO₂ capture-transport-storage chain in Europe, with a pilot project integrating CO₂ capture on a gas boiler, transport through a 27 km pipeline, and storage in a depleted gas field at a depth of 4.5 km (Rousse reservoir near Lacq).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="212">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="FR">
+                <seg>Plus de 51000 tonnes de CO₂ ont ainsi été stockées avec succès de 2010 à 2013 [TOTAL 2013].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More than 51,000 tonnes of CO₂ were successfully stored between 2010 and 2013 [TOTAL 2013].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="213">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="FR">
+                <seg>Le BRGM, service géologique national, a été le premier acteur français à se mobiliser, en participant dès 1993 au premier projet de recherche européen intitulé «The underground disposal of carbon dioxide», dans le cadre du 3^(ème) Programme Cadre de Recherche et Développement européen (3^(ème) PCRD) appelé «Joule II» [Holloway etal. 1996].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>BRGM, the national geological survey, was the first French actor to mobilise, participating as early as in 1993 in the first European research project, entitled "The underground disposal of carbon dioxide", within the 3^(rd) Framework Programme for European Research and Development (FP3) called "Joule II" [Holloway etal. 1996].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="214">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="FR">
+                <seg>A l’époque, certaines personnes pensaient déjà que l’homme était en train de perturber le climat et qu’il ne fallait pas attendre d’en être sûr pour trouver des solutions, sinon ce serait trop tard.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>At the time, some people already thought that humankind was disrupting the climate and that we should not wait to find solutions until we were sure, otherwise it would be too late.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="215">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce projet a permis de conclure en la pertinence du concept de captage de CO₂ au niveau des installations industrielles et de son stockage permanent dans le sous-sol, afin de lutter contre le réchauffement climatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This project concluded by showing the relevance of the concept of CO₂ capture at industrial installations and its permanent storage in the subsurface in order to fight against global warming.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="216">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="FR">
+                <seg>Actuellement, la France coordonne 4 projets de recherche européens dans le cadre du 8^(ème) PCRD appelé Horizon 2020.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Currently, France is coordinating four European research projects under the 8^(th) Framework Programme for Research and Development (FP8) called Horizon 2020.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="217">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="FR">
+                <seg>Le BRGM coordonne le projet ENOS «Enabling Onshore CO₂ Storage in Europe» (2016–2020), qui s’attaque aux spécificités du stockage du CO₂ onshore (sur le continent), proche des lieux d’émission, car l’Europe ne peut pas compter uniquement sur un stockage dans le sous-sol de la mer du Nord pour réduire ses émissions de gaz à effet de serre d’au moins 80% d’ici 2050 [Gastine etal. 2017].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>BRGM coordinates the project “Enabling Onshore CO₂ Storage in Europe” (ENOS) (2016–2020), which addresses the specificities of onshore CO₂ storage (on the continent) close to the emission sites, because Europe cannot rely solely on storage in the North Sea subsurface to reduce its greenhouse gas emissions by at least 80% by 2050 [Gastine etal. 2017].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="218">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="FR">
+                <seg>Le BRGM coordonne aussi le projet STRATEGY CCUS (2019–2023) qui élabore des scénarios de déploiement de solutions de captage, stockage et utilisation du CO₂ dans 8 régions jugées favorables d’Europe du Sud et de l’Est, dont la vallée du Rhône (du complexe industriel de Fos-Berre/Marseille jusqu’à Lyon) et le Bassin parisien (de Dunkerque au Havre, Paris et Orléans).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>BRGM also coordinates the STRATEGY CCUS project (2019–2023) which develops scenarios for the deployment of CO₂ capture, transport, storage, and utilisation solutions in eight regions that are considered favourable in Southern and Eastern Europe, including the Rhône Valley (from the Fos-Berre/Marseille industrial complex to Lyon) and the Paris Basin (from Dunkirk to Le Havre, Paris, and Orléans).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="219">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="FR">
+                <seg>L’objectif est de fournir aux gouvernements et aux citoyens des pays concernés (France, Espagne, Portugal, Croatie, Grèce, Roumanie, Pologne) un aperçu de la faisabilité du déploiement de cette solution technologique dans leurs régions, en lien étroit avec un large éventail d’activités socio-économiques locales, afin de les aider à atteindre la neutralité carbone.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The aim is to provide governments and citizens in the countries concerned (France, Spain, Portugal, Croatia, Greece, Romania, Poland) with an overview of the feasibility of implementing this technology solution in their regions, in close connection with a wide range of local socio-economic activities, in order to help them achieve carbon neutrality.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="220">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="FR">
+                <seg>L’IFP Energies nouvelles coordonne le projet CHEERS (2018–2022) qui va tester un procédé innovant de captage du CO₂ sur un pilote en Chine, ainsi que le projet 3D (2019–2022) qui veut faire la démonstration d’un autre procédé innovant de captage de CO₂ sur l’aciérie d’ArcelorMittal à Dunkerque.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>IFP Energies nouvelles is coordinating the CHEERS project (2018–2022) which will test an innovative CO₂ capture process at a pilot project in China, as well as the 3D project (2019–2022) which wants to demonstrate another innovative CO₂ capture process on the ArcelorMittal steel plant in Dunkirk.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="221">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce dernier projet s’inscrit dans une étude plus globale consacrée au développement du futur pôle européen de captage-stockage de CO₂de Dunkerque - Mer du Nord.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The latter project is part of a larger study on the development of the future European CO₂capture and storage hub in Dunkirk - North Sea.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="222">
+            <prop type="paragraph">47</prop>
+            <tuv xml:lang="FR">
+                <seg>La région Centre-Val de Loire s’intéresse à cette technologie et cofinance deux projets de recherche régionaux coordonnés par le BRGM.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The Centre-Val de Loire region is interested in this technology and is co-financing two regional research projects coordinated by BRGM.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="223">
+            <prop type="paragraph">47</prop>
+            <tuv xml:lang="FR">
+                <seg>Le projet CO₂SERRE (2020-2022) étudie comment capter le CO₂ émis par deux usines près d’Orléans, une chaufferie biomasse et une sucrerie, pour l’utiliser dans les serres locales qui ont des besoins croissants car le CO₂ stimule la croissance des plantes et améliore les rendements, et pour stocker le surplus localement sous forme de CO₂ dense dans un aquifère salin profond.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The CO₂SERRE project (2020-2022) is studying how to capture CO₂ emitted by two plants near Orléans, a biomass plant producing heat and power, and a sugar factory, for use in local greenhouses that have growing needs as CO₂ stimulates plant growth and improves yields. It is also studying how to store the surplus locally as dense CO₂ in a deep saline aquifer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="224">
+            <prop type="paragraph">47</prop>
+            <tuv xml:lang="FR">
+                <seg>Un concept similaire a été étudié aux Pays-Bas dans le cadre du projet de recherche européen ENOS (Figure5).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A similar concept was studied in the Netherlands as part of the European research project ENOS (Figure5).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="225">
+            <prop type="paragraph">47</prop>
+            <tuv xml:lang="FR">
+                <seg>Un autre projet, appelé GEOCO₂ (2019–2020), étudie le potentiel en région Centre-Val de Loire du concept combinant le stockage du CO₂ sous forme dissoute avec la production de chaleur géothermique et qui avait fait l’objet à l’origine d’un projet financé par l’Agence Nationale de la Recherche [Kervévan etal. 2017].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Another project, called GEOCO₂ (2019–2020), is studying the potential in the Centre-Val de Loire region of the concept combining the storage of CO₂ in dissolved form with the production of geothermal heat, which was the subject of a previous project funded by the National Research Agency [Kervévan etal. 2017].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="226">
+            <prop type="paragraph">48</prop>
+            <tuv xml:lang="FR">
+                <seg>La France est par ailleurs membre fondateur d’ECCSEL, l’infrastructure de recherche européenne sur le captage et le stockage de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>France is also a founding member of ECCSEL, the European research infrastructure on CO₂ capture and storage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="227">
+            <prop type="paragraph">48</prop>
+            <tuv xml:lang="FR">
+                <seg>Depuis 2017, elle a un statut juridique (ERIC – European Research Infrastructure Consortium), avec 5 états fondateurs: la Norvège (siège), la France, l’Italie, les Pays-Bas et le Royaume-Uni.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since 2017, it has a legal status (ERIC – European Research Infrastructure Consortium), with five founding countries: Norway (headquarters), France, Italy, the Netherlands, and the United Kingdom.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="228">
+            <prop type="paragraph">48</prop>
+            <tuv xml:lang="FR">
+                <seg>ECCSEL est une infrastructure de recherche distribuée qui met à la disposition des chercheurs et ingénieurs du monde entier des plates-formes de recherche de pointe pour développer les technologies de captage, stockage et utilisation de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>ECCSEL is a distributed research infrastructure that provides researchers and engineers around the world with state-of-the-art research facilities to develop technologies for CO₂ capture, storage, and utilisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="229">
+            <prop type="paragraph">48</prop>
+            <tuv xml:lang="FR">
+                <seg>ECCSEL-FR, inscrit dans la stratégie nationale des infrastructures de recherche [MESRI 2018], rassemble l’ensemble des équipements et organismes français permettant d’assurer la présence française dans l’infrastructure européenne ECCSEL.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>ECCSEL-FR, part of the national strategy for research infrastructures [MESRI 2018], brings together all the French facilities and organisations that make it possible to ensure the French presence in the European ECCSEL infrastructure.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="230">
+            <prop type="paragraph">48</prop>
+            <tuv xml:lang="FR">
+                <seg>Le BRGM a été désigné par le gouvernement français pour en assurer la coordination.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>BRGM has been designated by the French government to ensure its coordination.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="231">
+            <prop type="paragraph">49</prop>
+            <tuv xml:lang="FR">
+                <seg>Le BRGM héberge à Orléans le siège de l’association CO₂GeoNet, le réseau d’excellence européen sur le stockage géologique de CO₂ initié en 2004 grâce à un projet européen (6^(ème) PCRD) et qui est devenu une association loi 1901 en 2008 [Czernichowski-Lauriol etal. 2009].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>BRGM hosts in Orleans the headquarters of the CO₂GeoNet association, the European network of excellence on the geological storage of CO₂ initiated in 2004 thanks to a European project (FP6) and which became an association in 2008 in accordance with the French law of 1901 [Czernichowski-Lauriol etal. 2009].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="232">
+            <prop type="paragraph">49</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce réseau a grandi d’année en année, ses membres sont actuellement 29 instituts de recherche sur 21 pays.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The network has grown year after year, and its members currently consist of 29 research institutes in 21 countries.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="233">
+            <prop type="paragraph">49</prop>
+            <tuv xml:lang="FR">
+                <seg>CO₂GeoNet, à travers ses 4 domaines d’activité (recherche, formation, conseil et expertise scientifique, information et communication) a consolidé son rôle de voix scientifique de l’Europe sur le stockage géologique du CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>CO₂GeoNet, through its four fields of activity (research, training, scientific advice and expertise, information, and communication), has consolidated its role as Europe's scientific voice on the geological storage of CO₂.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="234">
+            <prop type="paragraph">49</prop>
+            <tuv xml:lang="FR">
+                <seg>Son évènement phare est l’Open Forum organisé chaque année à Venise pour permettre de débattre des avancées réalisées pour la mise en œuvre du puits de carbone géologique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Its flagship event is the Open Forum held every year in Venice to discuss the progress made in the implementation of the geological carbon sink.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="235">
+            <prop type="paragraph">49</prop>
+            <tuv xml:lang="FR">
+                <seg>CO₂GeoNet est accrédité, en tant qu’ONG Recherche, par la Convention Cadre des Nations Unies sur le Changement Climatique et participe chaque année, depuis la COP21 à Paris, à la conférence mondiale sur le climat, en organisant des conférences et des stands d’exposition pour expliquer ce qu’est ce puits de carbone et comment le mettre en œuvre [Czernichowski-Lauriol etal. 2017].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>CO₂GeoNet is accredited as a Research NGO by the United Nations Framework Convention on Climate Change and participates every year, since COP21 in Paris, in the World Climate Conference, by organising side-events and exhibition stands to explain what this carbon sink is and how to implement it [Czernichowski-Lauriol etal. 2017].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="236">
+            <prop type="paragraph">49</prop>
+            <tuv xml:lang="FR">
+                <seg>Une des réalisations marquantes de CO₂GeoNet est la brochure «Que signifie vraiment le stockage géologique de CO₂?», disponible en 30 langues [CO₂GeoNet 2008].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One of the notable productions of CO₂GeoNet is the brochure "What does geological CO₂storage really mean?", available in 30 languages [CO₂GeoNet 2008].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="237">
+            <prop type="paragraph">50</prop>
+            <tuv xml:lang="FR">
+                <seg>En France, de plus en plus de laboratoires académiques, d’organismes de recherche et d’entreprises se mobilisent pour développer les technologies de captage et de stockage de CO₂, mais aussi diverses options de valorisation du CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In France, more and more academic laboratories, research organisations, and companies are mobilising to develop CO₂ capture and storage technologies, as well as various CO₂recovery options.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="238">
+            <prop type="paragraph">50</prop>
+            <tuv xml:lang="FR">
+                <seg>La plupart sont regroupés au sein du Club CO₂, un lieu d’échanges, d’informations et d’initiatives entre les acteurs du monde industriel et de la recherche [Club CO₂ 2015].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Most of them are grouped together in Club CO₂, a place for exchanges, information, and initiatives between industrial stakeholders and researchers [Club CO₂ 2015].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="239">
+            <prop type="paragraph">50</prop>
+            <tuv xml:lang="FR">
+                <seg>Créé en 2002 sous la coordination de l’ADEME, avec le soutien du BRGM et de l’IFP Energies nouvelles, le Club CO₂ est devenu une association loi 1901 en 2008, d’abord sous présidence du BRGM puis de l’IFP Energies nouvelles depuis 2020.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Created in 2002 under the coordination of ADEME, with the support of BRGM and IFP Energies nouvelles, Club CO₂ became an association in accordance with the French law of 1901 in 2016, first under the presidency of BRGM followed by IFP Energies nouvelles since 2020.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="240">
+            <prop type="paragraph">50</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est important de noter que tous ces acteurs français sont à la pointe de la recherche et de l’innovation dans ce domaine au niveau international et couvrent tous les maillons de la chaine de valeur: captage, transport, stockage, utilisation du CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is important to note that all these French actors are at the forefront of research and innovation in this field at the international level and span all parts of the value chain: capture, transport, storage, and utilisation of CO₂.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="241">
+            <prop type="paragraph">50</prop>
+            <tuv xml:lang="FR">
+                <seg>Les compétences sont donc là pour viser une mise en œuvre en France et des marchés à l’export, comme souligné dans la feuille de route nationale [ADEME 2011].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The skills are therefore there for targeting implementation in France and export markets, as highlighted in the national roadmap [ADEME 2011].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="242">
+            <prop type="paragraph">51</prop>
+            <tuv xml:lang="FR">
+                <seg>A noter que la Stratégie Nationale Bas-Carbone révisée en 2020 appelle à soutenir les développements d’unités pilotes et éventuellement commerciales en captage et stockage du carbone (CSC), ainsi qu’en captage et utilisation du carbone (CUC) avec l’utilisation du CO₂ comme matière première dans la fabrication de carburants ou de produits chimiques [MTES 2020].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It should be noted that the National Low-Carbon Strategy revised in 2020 calls for support for the development of pilot projects and possibly commercial carbon capture and storage (CCS) projects, as well as in carbon capture and utilisation (CCU) with the use of CO₂ as a raw material in the manufacture of fuels or chemicals [MTES 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="243">
+            <prop type="paragraph">52</prop>
+            <tuv xml:lang="FR">
+                <seg>9. Des solutions à penser d’abord à l’échelle des territoires</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>9. Solutions to be considered first at the territorial level</seg>
+            </tuv>
+        </tu>
+        <tu tuid="244">
+            <prop type="paragraph">53</prop>
+            <tuv xml:lang="FR">
+                <seg>La neutralité carbone en 2050 ne sera atteignable que si nous mobilisons tous les moyens possibles et que nous nous attaquons à tous les secteurs émettant des gaz à effet de serre: transport, habitat, agriculture, industrie, transformation d’énergie, déchets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Carbon neutrality in 2050 can only be achieved if we mobilise all possible means and tackle all sectors emitting greenhouse gases: transport, housing, agriculture, industry, energy transformation, and waste.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="245">
+            <prop type="paragraph">53</prop>
+            <tuv xml:lang="FR">
+                <seg>Bien sûr, en premier lieu, il faut tout faire pour réduire à la source les émissions de CO₂: consommer moins d’énergie en promouvant la sobriété et l’efficacité énergétique, développer les énergies renouvelables, éviter le plus possible d’avoir recours aux énergies fossiles, ce qui n’est pas simple car elles assurent encore aujourd’hui plus de 80% de la production totale d’énergie dans le monde, modifier les processus industriels et les pratiques agricoles, arrêter les déforestations massives…</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Of course, in the first place, everything must be done to reduce CO₂emissions at their source: consume less energy by promoting energy sobriety and efficiency; develop renewable energies; avoid the use of fossil fuels as much as possible, which is not simple because they still provide more than 80% of total energy production in the world; modify industrial processes and agricultural practices; stop massive deforestation; etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="246">
+            <prop type="paragraph">53</prop>
+            <tuv xml:lang="FR">
+                <seg>Mais pour la part d’émissions de CO₂ incompressible que nous ne pouvons ou ne savons pas encore réduire de manière satisfaisante, il faudra actionner les puits de carbone pour compenser les émissions, afin de parvenir à la neutralité carbone, indispensable pour limiter le réchauffement climatique en dessous de 2°C.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>But for the incompressible share of CO₂ emissions that we cannot or do not yet know how to reduce satisfactorily, it will be necessary to activate carbon sinks to offset emissions in order to achieve the carbon neutrality that is essential to limit global warming to below 2°C.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="247">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="FR">
+                <seg>Penser des solutions à l’échelle des territoires c’est utiliser les atouts d’un territoire pour faire émerger la meilleure combinaison de moyens, en associant l’ensemble des acteurs de ce territoire (collectivités, préfecture et services déconcentrés de l’état, entreprises, universités, organismes de recherche, agences, associations, citoyens…).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Designing solutions at the territorial level means using the assets of a territory to bring out the best combination of resources, by involving all the actors of this territory (local and regional authorities, decentralised governmental services, companies, universities, research organisations, agencies, associations, citizens, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="248">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="FR">
+                <seg>Car, en fonction des caractéristiques géographiques, géologiques et socio-économiques d’un territoire, beaucoup de variantes dans les solutions et dans les combinaisons de solutions sont possibles pour trouver ce qui est le mieux adapté au territoire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Depending on the geographical, geological, and socio-economic characteristics of a territory, many variants in the solutions and in the combinations of solutions are possible in order to find what is best suited to the territory.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="249">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="FR">
+                <seg>Et plus la panoplie d’outils est large, plus les chances de pouvoir atteindre les objectifs fixés sont importantes, et plus cela offre de la flexibilité pour parvenir à le faire à moindre coût et de manière juste, c’est-à-dire sans que personne ne soit laissé au bord du chemin.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The wider the range of tools, the greater the chances of achieving the objectives that have been set, and the more flexibility to achieve them at a lower cost and in a fair way, i.e. without anyone being left behind.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="250">
+            <prop type="paragraph">54</prop>
+            <tuv xml:lang="FR">
+                <seg>Pouvoir mettre en œuvre un puits de carbone géologique peut permettre de fortement contribuer à tout cela.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The ability to implement a geological carbon sink can make a significant contribution to all of this.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="251">
+            <prop type="paragraph">55</prop>
+            <tuv xml:lang="FR">
+                <seg>Divers schémas de captage et de stockage de CO₂ peuvent être imaginés, il faut donc élaborer le schéma le plus adapté au territoire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Various patterns of CO₂ capture and storage can be imagined, so it is necessary to develop the most suitable pattern for the territory.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="252">
+            <prop type="paragraph">55</prop>
+            <tuv xml:lang="FR">
+                <seg>On peut penser par exemple à capter le CO₂ de tous les émetteurs géographiquement proches, comme dans un bassin industriel, pour le transporter par la même canalisation jusqu’à un même stockage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For example, it is possible to capture CO₂ from all emitters in geographic proximity, as in an industrial area, in order to transport it through the same pipeline to the same storage system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="253">
+            <prop type="paragraph">55</prop>
+            <tuv xml:lang="FR">
+                <seg>On peut aussi penser à avoir plusieurs petits stockages plutôt qu’un gros et unique stockage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One can also consider having several small storage systems rather than a single large storage system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="254">
+            <prop type="paragraph">55</prop>
+            <tuv xml:lang="FR">
+                <seg>Et si aucune possibilité de stockage ne semble possible sur le territoire, aller le stocker dans une région ou pays où cela est possible, comme sous la mer du Nord.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If no storage option seems possible in the territory, then one can store it in a region or country where it is possible, such as under the North Sea.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="255">
+            <prop type="paragraph">55</prop>
+            <tuv xml:lang="FR">
+                <seg>Ou bien trouver des voies pour utiliser ce CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Alternatively, find ways to use this CO₂.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="256">
+            <prop type="paragraph">55</prop>
+            <tuv xml:lang="FR">
+                <seg>Depuis longtemps le CO₂ est utilisé pour faire des boissons gazeuses, des extincteurs, comme réfrigérant, solvant, etc.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For a long time, CO₂ has been used to make carbonated beverages, fire extinguishers, as a refrigerant, solvent, etc.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="257">
+            <prop type="paragraph">55</prop>
+            <tuv xml:lang="FR">
+                <seg>Depuis quelques années des recherches sont menées pour trouver d’autres voies de valorisation du CO₂, en l’utilisant comme matière première pour fabriquer de nouveaux produits (matériaux, plastiques, carburants synthétiques…).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For several years, research has been conducted to find other ways of using CO₂ as a raw material to manufacture new products (materials, plastics, synthetic fuels, etc.).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="258">
+            <prop type="paragraph">55</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela pourrait permettre de catalyser le développement des technologies de captage de CO₂ et du CSC, du fait notamment des revenus économiques générés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This could serve as a catalyst for the development of CO₂ capture technologies and CCS, in particular due to the economic revenues generated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="259">
+            <prop type="paragraph">55</prop>
+            <tuv xml:lang="FR">
+                <seg>On parle alors, pour toute la chaine de valeur, de CSCV (avec valorisation, ou CCUS en anglais).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The entire value chain is called CCUS (adding Utilisation to CCS).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="260">
+            <prop type="paragraph">55</prop>
+            <tuv xml:lang="FR">
+                <seg>Cependant on ne pourra utiliser qu’une petite partie du CO₂ émis (&lt; 5%) et beaucoup de ces produits ne font que retarder l’émission, car leur durée de vie est souvent courte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, only a small part of the CO₂ emitted (&lt; 5%) can be used, and many of these products only delay emissions, as their lifespan is often short.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="261">
+            <prop type="paragraph">55</prop>
+            <tuv xml:lang="FR">
+                <seg>Le stockage est donc indispensable pour réduire les émissions de CO₂ à un niveau compatible à ce qui est requis pour la lutte contre le changement climatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Storage is therefore essential to reduce CO₂ emissions to a level compatible with what is required to combat climate change.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="262">
+            <prop type="paragraph">56</prop>
+            <tuv xml:lang="FR">
+                <seg>Les stockages de CO₂ pourraient être pensés pour récupérer par la même occasion de la chaleur géothermique contenue dans les couches géologiques profondes, afin d’alimenter un réseau de chaleur ou une industrie proche, comme étudié par exemple dans le projet GEOCO₂ mentionné ci-dessus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>CO₂ storage could also be designed to recover geothermal heat from deep geological layers in order to supply a nearby heat network or industry, as studied, for example, in the GEOCO₂ project mentioned above.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="263">
+            <prop type="paragraph">56</prop>
+            <tuv xml:lang="FR">
+                <seg>La température du sous-sol augmente naturellement avec la profondeur, par exemple à 2 km de profondeur elle est en moyenne de 60°C.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The subsurface temperature naturally increases with depth, for example at 2 km depth it is on average 60°C.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="264">
+            <prop type="paragraph">56</prop>
+            <tuv xml:lang="FR">
+                <seg>Une configuration possible serait de doter un doublet géothermique d’une fonction de stockage de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One possible configuration would be to provide a geothermal doublet with a CO₂ storage function.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="265">
+            <prop type="paragraph">56</prop>
+            <tuv xml:lang="FR">
+                <seg>La France maitrise bien le système du doublet géothermique en aquifère salin profond, il y en a notamment plus de quarante en fonctionnement dans le bassin parisien depuis les années 1970.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>France has a good experience of geothermal doublets system in deep saline aquifers. Notably, there are more than forty in operation in the Paris basin since the 1970s.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="266">
+            <prop type="paragraph">56</prop>
+            <tuv xml:lang="FR">
+                <seg>Le principe est de pomper l’eau chaude présente dans l’aquifère profond par un forage producteur, puis de réinjecter l’eau refroidie dans ce même aquifère par un forage injecteur après en avoir récupéré la chaleur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The principle is to pump the hot water present in the deep aquifer through a production well, then to reinject the cooled water into this same aquifer through an injection well after having recovered the heat from it.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="267">
+            <prop type="paragraph">56</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans de nouveaux doublets géothermiques spécialement conçus à cet effet, il pourrait être envisagé d’injecter du CO₂ avec l’eau refroidie, en l’ayant au préalable dissous dans cette eau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In new geothermal doublets specially designed for this purpose, it could be envisaged to inject CO₂ along with the cooled water, having first dissolved it in this water.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="268">
+            <prop type="paragraph">56</prop>
+            <tuv xml:lang="FR">
+                <seg>Tout le CO₂ serait alors stocké sous forme dissoute, il n’y aurait pas de CO₂ stocké sous forme dense.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>All the CO₂ would then be stored in dissolved form; there would be no CO₂ stored in its dense phase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="269">
+            <prop type="paragraph">56</prop>
+            <tuv xml:lang="FR">
+                <seg>On n’aurait alors plus besoin d’avoir une roche couverture pour prévenir tout risque de remontée du CO₂ vers les formations géologiques supérieures, comme dans l’approche "classique" d’un stockage de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It would then no longer be necessary to have a caprock to prevent any risk of CO₂ being returned to the upper geological formations, as with the "conventional" approach to CO₂storage.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="270">
+            <prop type="paragraph">56</prop>
+            <tuv xml:lang="FR">
+                <seg>Mais la quantité de CO₂ injectable est physiquement limitée par la solubilité du CO₂ dans l’eau, donc cette solution ne serait adaptée que pour de petits émetteurs industriels dispersés sur le territoire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the amount of injectable CO₂ is physically limited by the solubility of CO₂ in water, so this solution would only be suitable for small industrial emitters scattered over a territory.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="271">
+            <prop type="paragraph">56</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est important de noter que l’acidification de l’eau liée à la dissolution du CO₂ est fortement atténuée par les processus de dissolutions et précipitations minérales et ne conduit pas à la création d’une cavité souterraine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is important to note that water acidification associated with CO₂ dissolution is strongly mitigated by mineral dissolution and precipitation processes and does not lead to the creation of an underground cavity.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="272">
+            <prop type="paragraph">57</prop>
+            <tuv xml:lang="FR">
+                <seg>D’autres synergies sont possibles avec les énergies renouvelables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Other synergies are possible with renewable energies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="273">
+            <prop type="paragraph">57</prop>
+            <tuv xml:lang="FR">
+                <seg>Si le couplage du stockage de CO₂ avec la géothermie devrait offrir la possibilité de production renouvelable de chaleur, son couplage avec la biomasse énergie devrait permettre de pomper activement le CO₂ atmosphérique, ce qu’on appelle des scénarios à émissions négatives [GIEC 2019; Hilaire etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While the coupling of CO₂ storage with geothermal energy would offer the possibility of renewable heat production, its coupling with biomass energy would allow active pumping of atmospheric CO₂, which is called a negative emissions scenario [IPCC 2019; Hilaire etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="274">
+            <prop type="paragraph">57</prop>
+            <tuv xml:lang="FR">
+                <seg>Par ailleurs, un des moyens envisagés pour résoudre le problème du stockage de l’électricité en excès produite par les énergies renouvelables intermittentes (éolien, photovoltaïque) est de faire de l’électrolyse de l’eau pour former de l’hydrogène et de le combiner avec du CO₂ capté pour produire des hydrocarbures synthétiques (méthane, méthanol, gazoline, DME…), qui sont facilement transportables, distribuables et stockables en utilisant la plupart du temps les infrastructures existantes, et qui viendraient en substitution des ressources fossiles primaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, one of the means envisaged for solving the problem of the storage of excess electricity produced by intermittent renewable energies (wind, photovoltaic) is to electrolyse water to form hydrogen and combine it with captured CO₂ to produce synthetic hydrocarbons (methane, methanol, gasoline, DME, etc.), which are easily transportable, distributable, and storable, most of the time using existing infrastructures, and which would replace primary fossil resources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="275">
+            <prop type="paragraph">57</prop>
+            <tuv xml:lang="FR">
+                <seg>Le CSC pourra donc être utile non seulement pour décarboner les sources d’émissions fixes, mais aussi les émissions diffuses des secteurs du transport ou de l’habitat.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>CCS may therefore be useful not only for decarbonising stationary emission sources, but also diffuse emissions from the transport or residential sectors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="276">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="FR">
+                <seg>Le déploiement de l’hydrogène, dont on pense qu’il jouera un rôle majeur dans la transition énergétique pour décarboner l’industrie, le transport et le chauffage des bâtiments, pourrait aussi être facilité par la technologie CSC.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The expansion of the use of hydrogen, which is expected to play a major role in the energy transition to decarbonise industry, transport, and building heating, could also be facilitated by CCS technology.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="277">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="FR">
+                <seg>L’hydrogène est considéré comme le vecteur d’énergie propre par excellence, car sa combustion ne génère que de l’eau.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hydrogen is considered the standard of excellence of clean energy because its combustion only generates water.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="278">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="FR">
+                <seg>Mais le premier défi est d’arriver à le produire en grandes quantités.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the first challenge is to manage to produce it in large quantities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="279">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="FR">
+                <seg>L’un des moyens envisagés est de le produire par électrolyse de l’eau à partir des énergies renouvelables, dont la part dans le mix énergétique ne cessera d’augmenter à l’avenir (cet hydrogène est dit «vert»).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One of the means envisaged is to produce it by electrolysis of water using renewable energies, whose share in the energy mix will continue to increase in the future (this hydrogen is called "green").</seg>
+            </tuv>
+        </tu>
+        <tu tuid="280">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="FR">
+                <seg>D’importantes recherches sont menées dans ce but.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Significant research is being conducted to this end.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="281">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="FR">
+                <seg>L’hydrogène qui est aujourd’hui principalement utilisé par l’industrie est produit à 95% à partir de combustibles fossiles (charbon, gaz naturel) - cet hydrogène est dit « gris ».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hydrogen, which is currently mainly used by industry, is 95% produced from fossil fuels (coal, natural gas) - this hydrogen is called "grey".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="282">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="FR">
+                <seg>Sa production génère donc du CO₂, mais si on le capte pour le stocker sous terre, on pourrait produire par ce biais-là de grandes quantités d’hydrogène décarboné (cet hydrogène est dit «bleu»).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Its production therefore generates CO₂, but if it is captured and stored underground, one can produce large quantities of decarbonised hydrogen (this hydrogen is called "blue").</seg>
+            </tuv>
+        </tu>
+        <tu tuid="283">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans ce schéma, les émissions de CO₂ auparavant diffuses sur le territoire seraient concentrées en un point, celui où l’hydrogène est produit, où elles pourraient être captées et stockées, décarbonant ainsi toute la chaîne des usages ultérieurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this scheme, the CO₂ emissions previously diffused in the territory would be concentrated at one point, the one where hydrogen is produced, where they could be captured and stored, thus decarbonising the entire chain of subsequent uses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="284">
+            <prop type="paragraph">58</prop>
+            <tuv xml:lang="FR">
+                <seg>Cet hydrogène décarboné via le stockage de CO₂ devrait faciliter le déploiement de l’hydrogène dans le mix énergétique de demain, en attendant que l’hydrogène vert soit en mesure de prendre le relais, ou en appoint à l’hydrogène vert.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This hydrogen which has been decarbonised via CO₂ storage could facilitate the use of hydrogen in the energy mix of tomorrow until green hydrogen is able to take over, or in addition to green hydrogen.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="285">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="FR">
+                <seg>L’hydrogène peut être injecté dans les infrastructures gazières, avec un taux de quelques pourcents, afin de décarboner progressivement le contenu des réseaux de distribution de gaz naturel et les usages associés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hydrogen can be injected into gas infrastructures, at a rate of a few percent, in order to gradually decarbonise the content of natural gas distribution networks and their associated uses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="286">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce taux pourrait être augmenté ultérieurement moyennant des adaptations des réseaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This rate could be increased at a later stage by adapting the networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="287">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="FR">
+                <seg>Des infrastructures spécifiques de transport et de stockage de l’hydrogène sont aussi envisagées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Specific infrastructures for the transport and storage of hydrogen are also envisaged.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="288">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, le projet «H21 North of England» vise la conversion totale du réseau de gaz naturel du Nord de l’Angleterre en réseau 100% hydrogène, afin de décarboner les habitations (chauffage domestique, cuisine), les industries et le transport [Northern Gas Networks, Cadent, Equinor 2018].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For example, the “H21 North of England” project aims at the total conversion of the natural gas network in the North of England into a 100% hydrogen network, in order to decarbonise homes (domestic heating, kitchen), industries, and transport [Northern Gas Networks, Cadent, Equinor 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="289">
+            <prop type="paragraph">59</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce projet prévoit de produire de l’hydrogène bleu à partir de gaz naturel avec stockage de CO₂ sous la mer du Nord et stockage d’H₂ en cavités salines sur le continent en Angleterre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This project involves the production of blue hydrogen from natural gas with storage of CO₂ under the North Sea and storage of H₂ in saline cavities on the mainland in England.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="290">
+            <prop type="paragraph">60</prop>
+            <tuv xml:lang="FR">
+                <seg>10. Conclusion</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>10. Conclusion</seg>
+            </tuv>
+        </tu>
+        <tu tuid="291">
+            <prop type="paragraph">61</prop>
+            <tuv xml:lang="FR">
+                <seg>La lutte contre le changement climatique et la transition énergétique et écologique sont intimement liées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The fight against climate change and the energy and ecological transition are closely linked.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="292">
+            <prop type="paragraph">61</prop>
+            <tuv xml:lang="FR">
+                <seg>Il faut agir pour pouvoir enrayer les grands problèmes liés au climat, à la perte de la biodiversité et aux pollutions diverses, qui se vivent maintenant à l’échelle de la planète.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Action is needed to address the major problems of climate, loss of biodiversity, and pollution, which are now occurring on a global scale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="293">
+            <prop type="paragraph">61</prop>
+            <tuv xml:lang="FR">
+                <seg>Mais il est très complexe d’appréhender quelles actions mener du fait des multiples interrelations entre les activités humaines.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, it is very complex to understand what actions to take because of the multiple interrelationships between human activities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="294">
+            <prop type="paragraph">61</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est important que les actions soient menées en cohérence les unes par rapport aux autres et que les solutions mises en œuvre soient les plus efficaces possibles pour atteindre les objectifs, mais aussi les plus économiques et les plus justes socialement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is important that the actions are carried out in coherence with each other and that the solutions implemented are as effective as possible for achieving objectives, but also the most economical and socially just.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="295">
+            <prop type="paragraph">61</prop>
+            <tuv xml:lang="FR">
+                <seg>Toutes les solutions et combinaisons de solutions doivent donc être étudiées, sans a priori.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>All solutions and combinations of solutions must therefore be studied, without any preconceived biases.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="296">
+            <prop type="paragraph">61</prop>
+            <tuv xml:lang="FR">
+                <seg>Remettre le carbone dans le sous-sol d’où il a été extrait offre un moyen efficace pour réduire les émissions résiduelles incompressibles de CO₂ et même pour retirer du CO₂ qui est déjà dans l’atmosphère. Une boucle vertueuse pour l’environnement et le climat.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Returning carbon to the subsurface from which it was extracted is an effective way to reduce incompressible residual CO₂ emissions and even remove CO₂ that is already in the atmosphere: a virtuous cycle for the environment and the climate.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="297">
+            <prop type="paragraph">61</prop>
+            <tuv xml:lang="FR">
+                <seg>C’est le puits de carbone géologique, qui consiste à imiter la nature en créant des stockages de CO₂ analogues aux nombreux gisements naturels de CO₂.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is the geological carbon sink, which consists of imitating nature by creating CO₂ storages similar to the many natural CO₂ reservoirs.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

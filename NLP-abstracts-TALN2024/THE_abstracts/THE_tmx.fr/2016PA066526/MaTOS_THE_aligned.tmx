@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2016PA066526. segId begin by 1, tuid = segId</note>
+        <docid>2016PA066526</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Nos travaux s'inscrivent dans le domaine des résumés linguistiques flous (RLF) qui permettent la génération de phrases en langage naturel, descriptives de données numériques, et offrent ainsi une vision synthétique et compréhensible de grandes masses d'information.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our research is in the field of fuzzy linguistic summaries (FLS) that allow to generate natural language sentences to describe very large amounts of numerical data, providing concise and intelligible views of these data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Nous nous intéressons d'abord à l'interprétabilité des RLF, capitale pour fournir une vision simplement appréhendable de l'information à un utilisateur humain et complexe du fait de sa formulation linguistique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We first focus on the interpretability of FLS, crucial to provide end-users with an easily understandable text, but hard to achieve due to its linguistic form.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Afin de la garantir dans le cadre de la logique floue standard, nous introduisons une formalisation originale de l'opposition entre phrases de complexité croissante.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to guarantee it in the framework of standard fuzzy logic, we introduce a new model of oppositions between increasingly complex sentences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Ce formalisme nous permet de démontrer que les propriétés de cohérence sont vérifiables par le choix d'un modèle de négation spécifique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The model allows us to show that these consistency properties can be satisfied by selecting a specific negation approach.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>D'autre part, nous proposons sur cette base un cube en 4 dimensions mettant en relation toutes les oppositions possibles entre les phrases d'un RLF et montrons que ce cube généralise plusieurs structures d'opposition logiques existantes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover, based on this model, we design a 4-dimensional cube displaying all the possible oppositions between sentences in a FLS and show that it generalises several existing logical opposition structures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous considérons ensuite le cas de données sous forme de séries numériques et nous intéressons à des résumés linguistiques portant sur leur périodicité : les phrases que nous proposons indiquent à quel point une série est périodique et proposent une formulation linguistique appropriée de sa période.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We then consider the case of data in the form of numerical series and focus on linguistic summaries about their periodicity: the sentences we propose indicate the extent to which the series are periodic and offer an appropriate linguistic expression of their periods.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>La méthode d’extraction proposée, nommée DPE pour Detection of Periodic</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed extraction method, called DPE, standing for Detection of Periodic Events, splits the data in an adaptive manner and without any prior information, using tools from mathematical morphology.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Enfin, DPE génère des phrases comme « Environ toutes les 2 heures, l'afflux de client est important ».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Lastly, DPE returns descriptive sentences of the form ``Approximately every 2 hours, the customer arrival is important''.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Des expériences sur des données artificielles et réelles confirment la pertinence de l'approche.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Experiments with artificial and real data show the relevance of the proposed DPE method.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>D’un point de vue algorithmique, nous proposons une implémentation incrémentale et efficace de DPE, basée sur l’établissement de formules permettant le calcul de mises à jour des variables.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>From an algorithmic point of view, we propose an incremental and efficient implementation of DPE, based on established update formulas.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Cette implémentation permet le passage à l'échelle de la méthode ainsi que l'analyse en temps réel de flux de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This implementation makes DPE scalable and allows it to process real-time streams of data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons également une extension de DPE basée sur le concept de périodicité locale permettant d'identifier les sous-séquences périodiques d'une série temporelle par l’utilisation d’un test statistique original.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also present an extension of DPE based on the local periodicity concept, allowing the identification of local periodic subsequences in a numerical series, using an original statistical test.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>La méthode, validée sur des données artificielles et réelles, génère des phrases en langage naturel permettant d’extraire des informations du type «</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The method validated on artificial and real data returns natural language sentences that extract information of the form ``Every two weeks during the first semester of the year, sales are high''.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

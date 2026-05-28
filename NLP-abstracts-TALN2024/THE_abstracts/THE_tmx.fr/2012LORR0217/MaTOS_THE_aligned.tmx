@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2012LORR0217. segId begin by 1, tuid = segId</note>
+        <docid>2012LORR0217</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'importance des systèmes collaboratifs a considérablement augmenté au cours des dernières années.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The importance of collaborative systems in real-world applications has grown significantly over the recent years.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La majorité de nouvelles applications sont conçues de manière distribuée pour répondre aux besoins du travail collaboratif.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The majority of new applications are designed in a distributed fashion to meet collaborative work requirements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>RCE) qui permettent la manipulation de divers objets partagés, tels que les pages wiki ou les articles scientifiques par plusieurs personnes réparties dans le temps et dans l'espace</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Although such applications are more and more used into many fields, the lack of an adequate access control concept is still limiting their full potential.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous proposons un modèle de contrôle d'accès générique basé sur l'approche de réplication optimiste du document partagé ainsi que sa politique de contrôle d'accès.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a optimistic approach to enforce access control in existing collaborative editing solutions in the sense that a user can temporarily violate the access control policy.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Pour cela, nous proposons une approche optimiste de contrôle d'accès dans la mesure où un utilisateur peut violer temporairement la politique de sécurité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To enforce the policy, we resort to the selective undo approach in order to eliminate the effect of illegal document updates.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Vu l'absence d'une solution d'annulation générique et correcte, nous proposons une étude théorique du problème d'annulation et nous concevons une solution générique basée sur une nouvelle sémantique de l'opération identité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We investigate a theoretical study of the undo problem and propose a generic solution for selectively undoing operations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Afin de valider notre approche tous nos algorithmes ont été implémentés en Java et testés sur la plateforme distribuée Grid'5000</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we apply our framework on a collaboration prototype and measure its performance in the distributed grid GRID?5000 to highlight the scalability of our solution</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-s230871. segId begin by 1, tuid = segId</note>
+        <docid>s230871</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>L'objectif de cette recherche est d'étudier un phénomène linguistique qui s'est développé en Tunisie dans le cyber-territoire des réseaux sociaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The purpose of this research is to investigate a linguistic phenomenon that has been developing in Tunisia in the Social Networks cyber-territory.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette étude a deux objectifs principaux :</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This study has two main aims:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>(1) examiner la langue de la jeunesse tunisienne de la capitale, et en particulier sa réalisation en arabish/arabizi (caractères latines).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>(1) to examine the Tunisian language of the capital's young people, and its realization in Arabish/Arabizi (Latin script).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>(2) Construire un corpus d'arabish tunisien annoté avec plusieurs niveaux d'annotation (Translittération, Partie du discours), en utilisant des techniques TAL.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>(2) To build an Arabish corpus with different annotation levels (such as: tokenization, Part-of-Speech tagging) exploiting NLP approaches.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

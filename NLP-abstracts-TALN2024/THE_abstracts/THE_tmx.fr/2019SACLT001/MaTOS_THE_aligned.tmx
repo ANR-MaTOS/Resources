@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019SACLT001. segId begin by 1, tuid = segId</note>
+        <docid>2019SACLT001</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Ces dernières années, l'apprentissage profond a complètement changé le domaine de vision par ordinateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the last few years, deep learning has changed irrevocably the field of computer vision.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Plus rapide, donnant de meilleurs résultats, et nécessitant une expertise moindre pour être utilisé que les méthodes classiques de vision par ordinateur, l'apprentissage profond est devenu omniprésent dans tous les problèmes d'imagerie, y compris l'imagerie médicale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Faster, giving better results, and requiring a lower degree of expertise to use than traditional computer vision methods, deep learning has become ubiquitous in every imaging application.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Afin de trouver automatiquement des réseaux de neurones adaptés à des tâches spécifiques, nous avons ainsi apporté des contributions à l’optimisation d’hyper-paramètres de réseaux de neurones.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thus this thesis first focused on the topic of hyper-parameter optimization for deep neural networks, i.e. methods for automatically finding efficient neural networks on specific tasks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse propose une comparaison de certaines méthodes d'optimisation, une amélioration en performance d'une de ces méthodes, l'optimisation bayésienne, et une nouvelle méthode d'optimisation d'hyper-paramètres basé sur la combinaison de deux méthodes existantes : l'optimisation bayésienne et hyperband.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The thesis includes a comparison of different methods, a performance improvement of one of these methods, Bayesian optimization, and the proposal of a new method of hyper-parameter optimization by combining two existing methods: Bayesian optimization and Hyperband.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Une fois équipés de ces outils, nous les avons utilisés pour des problèmes d'imagerie médicale : la classification de champs de vue en IRM, et la segmentation du rein en échographie 3D pour deux groupes de patients.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>From there, we used these methods for medical imaging applications such as the classification of field-of-view in MRI, and the segmentation of the kidney in 3D ultrasound images across two populations of patients.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Cette dernière tâche a nécessité le développement d'une nouvelle méthode d'apprentissage par transfert reposant sur la modification du réseau de neurones source par l'ajout de nouvelles couches de transformations géométrique et d'intensité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This last task required the development of a new transfer learning method based on the modification of the source network by adding new geometric and intensity transformation layers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En dernière partie, cette thèse revient vers les méthodes classiques de vision par ordinateur, et nous proposons un nouvel algorithme de segmentation qui combine les méthodes de déformations de modèles et l'apprentissage profond.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally this thesis loops back to older computer vision methods, and we propose a new segmentation algorithm combining template deformation and deep learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Cette méthode est validé sur la tâche de la segmentation du rein en échographie 3D.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The method is validated on the task of kidney segmentation in 3D US images.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

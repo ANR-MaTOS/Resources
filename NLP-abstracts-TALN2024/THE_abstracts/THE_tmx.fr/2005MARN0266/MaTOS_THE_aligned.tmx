@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2005MARN0266. segId begin by 1, tuid = segId</note>
+        <docid>2005MARN0266</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Notre travail a pour objectif une analyse syntaxique des adverbes de temps coréens dont l'interprétation correspond à une durée ou à une date (e. G. 3sigan dongan (pendant 3 heures), 5uel 6il (le 6 mai)).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The aim of this thesis is to carry out a syntactic analysis of time adverbials in Korean which correspond to a time, a date or a duration (e. G. Ohu du si-ei (at two o'clock in the afternoon), 5uel 6il (on May 6th), and 3sigan dongan (for 3 hours)).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Pour la linguistique formelle comme pour le traitement informatique des langues, une description aussi exhaustive et explicite que possible est indispensable.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For formal linguistics as applied in natural language processing, the most exhaustive and explicit description possible is essential.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>La méthodologie du lexique-grammaire (M. Gross 1975, 1986) nous a fourni un modèle de description formelle et systématique de la langue naturelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The 'lexicon-grammar'methodology (M. Gross 1975, 1986b) has provided us with a model for the formal and systematic description of natural language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous avons choisi de décrire les combinaisons lexicales concernées par des graphes d'automates finis, qui constituent autant de "grammaires locales" représentant les différents types de séquences adverbiales possibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have described the lexical combinations concerned using graphs of finite-state automata, which constitute 'local grammars'representing the various types of adverbial sequences in as much detail as possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nos graphes peuvent être intégrés directement à un analyseur syntaxique automatique pour localiser les adverbes de durée et de date en coréen dans des textes quelconques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Our graphs can be integrated directly into an automatic parser for the purpose of locating the Korean adverbs of time, date and duration in large corpora of texts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous consacrons le chapitre 3 à l'analyse des formes interprétables comme des durées et le chapitre 4 à celle des formes interprétables comme des dates.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We devote chapter 3 to the analysis of forms which can be interpreted as duration, and chapter 4 to the analysis of forms which can be interpreted as date or time.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Nous analysons comment les groupes nominaux de temps étudiés dans le deuxième chapitre peuvent entrer dans des phrases qui donnent lieu à des interprétations de durée ou de date</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We investigate how the temporal sequences studied in the second chapter can enter into sentences which allow them to be interpreted as expressing duration or date</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

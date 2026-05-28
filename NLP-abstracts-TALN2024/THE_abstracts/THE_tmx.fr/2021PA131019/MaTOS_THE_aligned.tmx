@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2021PA131019. segId begin by 1, tuid = segId</note>
+        <docid>2021PA131019</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La recherche d’experts consiste en l’identification d’un ensemble d’individus que l’on considère comme experts d’une thématique particulière.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Expert finding consists in the identification of a set of individuals who are considered tobe experts in a particular topic.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Il s’agit d’une problématique essentielle dans le milieu académique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is an essential problem in the academic world.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En effet, il est constamment nécessaire d’identifier des chercheurs appropriés lors de la constitution de comités de lecture ou d’évaluation de projets de recherche, par exemple.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed,it is constantly necessary to identify suitable researchers when setting up reading orevaluation committees for research projects, for example.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>De même, il est particulièrement utile d’identifier automatiquement les experts d’un domaine de recherche à partir de la littérature scientifique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, it is particularly useful to automatically identify experts on a specific field from the scientific literature.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une approche de découverte et d’enrichissement de connaissances basée sur une annotation sémantique des articles scientifiques, sur leur représentation sous forme de réseaux de collaboration scientifique et leur fouille à l’aide d’une méthode d’abstraction de graphe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We suggest an approach for knowledge discovery and enrichment based on a semantic annotation of scientific articles, on their representation in the form of scientific collaboration networks and their exploration using a graph abstraction method.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Cette méthode permet de se focaliser sur les zones denses des réseaux et de découvrir des experts et leurs expertises associées à l’aide de contraintes de connectivité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This method makes it possible to focus on dense areas of networks and to discover experts and their associated expertise using connectivity constraints.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Ces dernières permettent de prendre en compte une validation par les pairs, matérialisée par la densité des relations de collaboration scientifique que les individus entretiennent entre eux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The latter make it possible to take into account a validationby peers, materialized by the density of scientific collaboration relations that individuals maintain with each other.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous expérimentons notre approche sur un corpus de publications scientifiques, proposons une méthode d’évaluation originale de nos résultats et comparons nos performances aux méthodes de recherche d’experts implémentées dans le cadre d’évaluation LT ExpertFinder.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We test our approach on a corpus of scientific publications, propose an original method for evaluating our results and compare our performance to expert research methods implemented in the LT ExpertFinder evaluation framework.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous obtenons des performances supérieures à l’état de l’art et découvrons que les indicateurs d’expertise les plus déterminants sont la rédaction d’articles fortement cités mais également la capacité à citer la littérature scientifique appropriée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We obtain better performance than the state of the art and discover that the most decisive indicators of expertise are the writing of highly cited articles but also the ability to cite the appropriate scientific literature.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

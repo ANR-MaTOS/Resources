@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020COAZ4043. segId begin by 1, tuid = segId</note>
+        <docid>2020COAZ4043</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les interfaces cerveau-ordinateur (Brain-Computer Interface ou BCI) permettent la communication entre l'utilisateur et la machine, grâce à la traduction de l'activité cérébrale en commandes qui servent à contrôler différents dispositifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Brain-Computer Interface (BCI) allows communication between a user and a machine, by converting the user's brain activity into commands that control external devices.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>De nombreuses limitations empêchent la diffusion des systèmes BCI dans des applications réelles, telles que la phase de calibration qui résulte de la variabilité entre sessions et entre sujets.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Many limitations prevent the diffusion of BCI systems in real applications, such as the calibration phase that is a consequence of the issue of variability across sessions and among users.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Cette phase est fondamentale car elle permet de régler les paramètres nécessaires pour le bon fonctionnement du système, mais elle est considérée beaucoup trop longue et fatigante pour le sujet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The calibration phase is fundamental because it allows to set the main parameters to extract the relevant information from the electroencephalograpy (EEG) signal of the subject, but it is considered time consuming and tedious for the user.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L'objectif de cette thèse est de surmonter ces limites par de nouvelles méthodes basées sur l'amélioration ou le remplacement de la phase de calibration traditionnelle, en proposant le développement d'une BCI centrée sur l'utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The objective of this thesis is to overcome these limitations by novel methods based on the improvement or even replacement of the traditional calibration phase, proposing the development of a user-centered BCI system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>D'abord, nous proposons deux systèmes BCI adaptés au sujet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Firstly, we present a design to develop an adaptive BCI system for two different applications.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Le premier concerne un clavier virtuel basé sur des potentiels évoqués modulés par code-modulated Visual Evoked Potential (c-VEP) où la phase de calibration traditionnelle est remplacée par une phase dans laquelle les paramètres de stimulation sont réglés de manière adaptée au sujet.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The former deals with a code-modulated Visual Evoked Potential (c-VEP) speller where an adaptive parameter setting phase is proposed to replace the standard calibration phase.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Le deuxième concerne le développement d'un système basé sur l'imagination mentale (MI-BCI) pour un sujet à déficience motrice sévère (tétraplégie), dans le cadre d'une compétition internationale BCI en direct.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The latter application concerns the development of a Mental Imagery (MI) BCI for a disabled user, characterized by a long user-centered multi-stage training phase, in the context of a international BCI competition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Les méthodes proposées ont montré des résultats prometteurs et ouvrent de nouvelles perspectives pour la diffusion des systèmes BCI plus adaptables à l'utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed methods showed promising results and open new perspectives to the diffusion of BCI</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019TOU30074. segId begin by 1, tuid = segId</note>
+        <docid>2019TOU30074</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La découverte d'unités linguistiques élémentaires (phonèmes, mots) uniquement à partir d'enregistrements sonores est un problème non-résolu qui suscite un fort intérêt de la communauté du traitement automatique de la parole, comme en témoignent les nombreuses contributions récentes de l'état de l'art.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The discovery of elementary linguistic units (phonemes, words) only from sound recordings is an unresolved problem that arouses a strong interest from the community of automatic speech processing, as evidenced by the many recent contributions of the state of the art.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Durant cette thèse, nous nous sommes concentrés sur l'utilisation de réseaux de neurones pour répondre au problème.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>During this thesis, we focused on using neural networks to answer the problem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous avons approché le problème en utilisant les réseaux de neurones de manière supervisée, faiblement supervisée et multilingue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We approached the problem using neural networks in a supervised, poorly supervised and multilingual manner.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Nous avons ainsi développé des outils de segmentation automatique en phonèmes et de classification phonétique fondés sur des réseaux de neurones convolutifs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have developed automatic phoneme segmentation and phonetic classification tools based on convolutional neural networks.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>L'outil de segmentation automatique a obtenu 79% de F-mesure sur le corpus de parole conversationnelle en anglais BUCKEYE.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The automatic segmentation tool obtained 79% F-measure on the BUCKEYE conversational speech corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Ce résultat est similaire à un annotateur humain d'après l'accord inter-annotateurs fourni par les créateurs du corpus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This result is similar to a human annotator according to the inter-annotator agreement provided by the creators of the corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>De plus, il n'a pas besoin de beaucoup de données (environ une dizaine de minutes par locuteur et 5 locuteurs différents) pour être performant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, it does not need a lot of data (about ten minutes per speaker and 5 different speakers) to be effective.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>De plus, il est portable à d'autres langues (notamment pour des langues peu dotées telle que le xitsonga).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition, it is portable to other languages (especially for poorly endowed languages such as xitsonga).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Le système de classification phonétique permet de fixer les différents paramètres et hyperparamètres utiles pour un scénario non supervisé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The phonetic classification system makes it possible to set the various parameters and hyperparameters that are useful for an unsupervised scenario.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Dans le cadre non supervisé, les réseaux de neurones (Auto-Encodeurs) nous ont permis de générer de nouvelles représentations paramétriques, concentrant l'information de la trame d'entrée et ses trames voisines.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the unsupervised context, the neural networks (Auto-Encoders) allowed us to generate new parametric representations, concentrating the information of the input frame and its neighboring frames.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Nous avons étudié leur utilité pour la compression audio à partir du signal brut, pour laquelle ils se sont montrés efficaces (faible taux de RMS, même avec une compression de 99%).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We studied their utility for audio compression from the raw signal, for which they were effective (low RMS, even at 99% compression).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Nous avons également réalisé une pré-étude novatrice sur une utilisation différente des réseaux de neurones, pour générer des vecteurs de paramètres non pas à partir des sorties des couches mais des valeurs des poids des couches.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also carried out an innovative pre-study on a different use of neural networks, to generate vectors of parameters not from the outputs of the layers but from the values of the weights of the layers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Ces paramètres visent à imiter les coefficients de prédiction linéaire (Linear Predictive Coefficients, LPC).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These parameters are designed to mimic Linear Predictive Coefficients (LPC).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Dans le contexte de la découverte non supervisée d'unités similaires à des phonèmes (dénommées pseudo-phones dans ce mémoire) et la génération de nouvelles représentations paramétriques phonétiquement discriminantes, nous avons couplé un réseau de neurones avec un outil de regroupement (k-means).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the context of the unsupervised discovery of phoneme-like units (called pseudo-phones in this memory) and the generation of new phonetically discriminative parametric representations, we have coupled a neural network with a clustering tool (k-means).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>L'alternance itérative de ces deux outils a permis la génération de paramètres phonétiquement discriminants pour un même locuteur : de faibles taux d'erreur ABx intra-locuteur de 7,3% pour l'anglais, 8,5% pour le français et 8,4% pour le mandarin ont été obtenus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The iterative alternation of these two tools allowed the generation of phonetically discriminating parameters for the same speaker: low rates of intra-speaker ABx error of 7.3% for English, 8.5% for French and 8, 4% for Mandarin were obtained.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Ces résultats permettent un gain absolu d'environ 4% par rapport à la baseline (paramètres classiques MFCC) et sont proches des meilleures approches actuelles (1% de plus que le vainqueur du Zero Ressource Speech Challenge 2017).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These results allow an absolute gain of about 4% compared to the baseline (conventional parameters MFCC) and are close to the best current approaches (1% more than the winner of the Zero Resource Speech Challenge 2017).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Les résultats inter-locuteurs varient entre 12% et 15% suivant la langue, contre 21% à 25% pour les MFCC.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The inter-speaker results vary between 12% and 15% depending on the language, compared to 21% to 25% for MFCCs.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

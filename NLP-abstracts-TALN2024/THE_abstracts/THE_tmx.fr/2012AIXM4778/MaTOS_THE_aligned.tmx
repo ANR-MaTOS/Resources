@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2012AIXM4778. segId begin by 1, tuid = segId</note>
+        <docid>2012AIXM4778</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse s'intègre dans le cadre du traitement automatique du langage naturel.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis falls within the framework of Natural Language Processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>La problématique du résumé automatique de documents arabes qui a été abordée, dans cette thèse, s'est cristallisée autour de deux points.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The problems of automatic summarization of Arabic documents which was approached, in this thesis, are based on two points.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le premier point concerne les critères utilisés pour décider du contenu essentiel à extraire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first point relates to the criteria used to determine the essential content to extract.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Le deuxième point se focalise sur les moyens qui permettent d'exprimer le contenu essentiel extrait sous la forme d'un texte ciblant les besoins potentiels d'un utilisateur.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second point focuses on the means to express the essential content extracted in the form of a text targeting the user potential needs.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Afin de montrer la faisabilité de notre approche, nous avons développé le système "L.A.E", basé sur une approche hybride qui combine une analyse symbolique avec un traitement numérique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to show the feasibility of our approach, we developed the "L.A.E" system, based on a hybrid approach which combines a symbolic analysis with a numerical processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Les résultats d'évaluation de ce système sont encourageants et prouvent la performance de l'approche hybride proposée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The evaluation results are encouraging and prove the performance of the proposed hybrid approach.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Ces résultats, ont montré, en premier lieu, l'applicabilité de l'approche dans le contexte de documents sans restriction quant à leur thème (Éducation, Sport, Science, Politique, Reportage, etc.), leur contenu et leur volume.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These results showed, initially, the applicability of the approach in the context of mono documents without restriction as for their topics (Education, Sport, Science, Politics, Interaction, etc), their content and their volume.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Ils ont aussi montré l'importance de l'apprentissage dans la phase de classement et sélection des phrases forment l'extrait final.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>They also showed the importance of the machine learning in the phase of classification and selection of the sentences forming the final extract.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

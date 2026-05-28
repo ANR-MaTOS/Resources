@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2011AVIG0191. segId begin by 1, tuid = segId</note>
+        <docid>2011AVIG0191</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La problématique traitée par la Reconnaissance de la Langue (LR) porte sur la définition découverte de la langue contenue dans un segment de parole.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Language Recognition is the problem of discovering the language of a spoken definition utterance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cette thèse se base sur des paramètres acoustiques de courte durée, utilisés dans une approche d’adaptation de mélanges de Gaussiennes (GMM-UBM).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis achieves this goal by using short term acoustic information within a GMM-UBM approach.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Le problème majeur de nombreuses applications du vaste domaine de la re- problème connaissance de formes consiste en la variabilité des données observées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The main problem of many pattern recognition applications is the variability of problem in the observed data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans le contexte de la Reconnaissance de la Langue (LR), cette variabilité nuisible est due à des causes diverses, notamment les caractéristiques du locuteur, l’évolution de la parole et de la voix, ainsi que les canaux d’acquisition et de transmission.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the context of Language Recognition (LR), this troublesome variability is due to the speaker characteristics, speech evolution, acquisition and transmission channels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans le contexte de la reconnaissance du locuteur, l’impact de la variabilité solution peut sensiblement être réduit par la technique d’Analyse Factorielle (Joint Factor Analysis, JFA).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the context of Speaker Recognition, the variability problem is solved by solution the Joint Factor Analysis (JFA) technique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous introduisons ce paradigme à la Reconnaissance de la Langue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Here, we introduce this paradigm to Language Recognition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>La deuxième hypothèse, plus technique, est que la variabilité nuisible se situe dans un sous-espace de faible dimension, qui est défini de manière globale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The second, more technical assumption consists in the unwanted variability part to be thought to live in a low-dimensional, globally defined subspace.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans ce travail, nous analysons le comportement de la JFA dans le contexte d’un dispositif de LR du type GMM-UBM.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this work, we analyze how JFA behaves in the context of a GMM-UBM LR framework.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Nous introduisons et analysons également sa combinaison avec des Machines à Vecteurs Support (SVM).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also introduce and analyze its combination with Support Vector</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Les premières publications sur la JFA regroupaient toute information qui est amélioration nuisible à la tâche (donc ladite variabilité) dans un seul composant.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Machines(SVMs).The first JFA publications put all unwanted information (hence the variability) improvement into one and the same component, which is thought to follow a Gaussian distribution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Celui-ci est supposé suivre une distribution Gaussienne.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This handles diverse kinds of variability in a unique manner.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>En pratique, nous observons que cette hypothèse n’est pas toujours vérifiée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>But in practice,we observe that this hypothesis is not always verified.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Nous avons, par exemple, le cas où les données peuvent être groupées de manière logique en deux sous-parties clairement distinctes, notamment en données de sources téléphoniques et d’émissions radio.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have for example the case, where the data can be divided into two clearly separate subsets, namely data from telephony and from broadcast sources.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Dans ce cas-ci, nos recherches détaillées montrent un certain avantage à traiter les deux types de données par deux systèmes spécifiques et d’élire comme score de sortie celui du système qui correspond à la catégorie source du segment testé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this case, our detailed investigations show that there is some benefit of handling the two kinds of data with two separate systems and then to elect the output score of the system, which corresponds to the source of the testing utterance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Afin de sélectionner le score de l’un des systèmes, nous avons besoin d’un analyses détecteur de canal source.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For selecting the score of one or the other system, we need a channel source related analyses detector.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons ici différents nouveaux designs pour engendrées de tels détecteurs automatiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose here different novel designs for such automatic detectors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>Dans ce cadre, nous montrons que les facteurs de variabilité (du sous-espace) de la JFA peuvent être utilisés avec succès pour la détection de la source.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this framework, we show that JFA’s variability factors (of the subspace) can be used with success for detecting the source.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Ceci ouvre la perspective intéressante de subdiviser les5données en catégories de canal source qui sont établies de manière automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This opens the interesting perspective of partitioning the data into automatically determined channel source categories,avoiding the need of source-labeled training data, which is not always available.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>L’approche JFA permet une réduction de la mesure de coûts allant jusqu’à généraux 72% relatives, comparé au système GMM-UBM de base.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The JFA approach results in up to 72% relative cost reduction, compared to the overall results GMM-UBM baseline system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>En utilisant des systèmes spécifiques à la source, suivis d’un sélecteur de scores, nous obtenons une amélioration relative de 81%.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Using source specific systems followed by a score selector, we achieve 81% relative improvement.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

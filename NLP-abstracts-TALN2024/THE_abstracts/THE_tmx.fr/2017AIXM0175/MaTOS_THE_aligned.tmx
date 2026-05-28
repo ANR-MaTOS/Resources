@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2017AIXM0175. segId begin by 1, tuid = segId</note>
+        <docid>2017AIXM0175</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le résumé automatique de document repose généralement sur des méthodes par extraction qui sélectionnent dans le texte des passages pertinents et les juxtaposent pour former un résumé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The automatic summarization is generally based on extractive methods that select relevant sentences from the source document and merge them to create a summary.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ces méthodes sont peu adaptées à la problématique du résumé de conversations orales de part la nature spontanée de celles-ci et l’importance de l’interaction entre les locuteurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These methods are not really adapted to the problem of the summary for the spoken conversations because of the spontaneous nature of these dialogs and the importance of the interactions between the speakers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>En ne sélectionnant que certains passages, les résumés par extraction ne contiennent qu’un verbatim de ce qui a été dit, et non pas une description synthétique de ce qui s’est passé lors de la conversation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>By selecting only a few sentences, the final summary will contain only one verbatim of what has been said, and not a synthetic description of what happened during the conversation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>C'est pourquoi des approche abstractives basées sur la détection de concepts permettrait de palier ces difficultés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is why abstractive approaches based on concepts detection would be able to overcome those difficulties.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Puis nous étudions l'intérêt de l'utilisation de modèles sémantiques dans la tâche de résumé automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then we study the interest if using semantic models in the automatic summarization task.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Enfin nous proposons une méthode de résumé à base de patrons.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we propose a method of summay based on patterns.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Les méthodes de résumé par remplissage de patrons ont montré leur intérêt dans des domaines spécifiques pour le résumé automatique de texte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Filling patterns methods have shown their interest in specific areas for automatic text summary.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Dans notre cas, elles permettent de traiter du problème de différence de genre entre les données source (transcriptions de conversations) et la forme des résumés à générer (narration synthétique).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In our case, It allows to deal with the difference in spoken data document style (transcripts of conversations) and the nature if the summaries to be generated (synthetic narration).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Toutefois, elles nécessitent l’écriture manuelle de patrons de résumés et l’annotation manuelle de quantités de données source en concepts à détecter pour remplir ces patrons.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, it requires manual writing of patterns and manual annotations of quantities of source data into concepts to be detected to fill these patterns.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

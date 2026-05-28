@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2020PESC2009. segId begin by 1, tuid = segId</note>
+        <docid>2020PESC2009</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>La qualité de l'information géographique volontaire est actuellement un sujet qui questionne autant les consommateurs de données géographiques que les producteurs de données d'autorité voulant exploiter les bienfaits de la démarche collaborative.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The quality of Volunteered Geographic Information (VGI) is currently a topic that question spatial data users as well as authoritative data producers who are willing to exploit the benefits of crowdsourcing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ce phénomène est un travers de la démarche collaborative, et bien qu'il ne concerne qu'une faible portion des contributions, il peut constituer un obstacle à l'utilisation des données cartographiques participatives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This phenomenon is one the main downsides of crowsdsourcing, and despite the small amount of incidents, it may be a barrier to the use of collaborative spatial data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans une démarche de qualification de l'information géographique volontaire, ce travail de thèse a plus précisément pour objectif de détecter le vandalisme dans les données collaboratives cartographiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis follows an approach based on VGI quality -- in particular, the objective of this work is to detect vandalism in spatial collaborative data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Dans un premier temps, il s'agit de formaliser une définition du concept de carto</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, we formalize a definition of the concept of carto-vandalism.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Enfin, nos expériences explorent la capacité des méthodes d'apprentissage machine (machine learning) à détecter le carto</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, the experiments explore the ability of learning methods to detect carto-vandalism</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2015USPCD056. segId begin by 1, tuid = segId</note>
+        <docid>2015USPCD056</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Dans les domaines de spécialité, les applications telles que la recherche d’information ou la traduction automatique, s’appuient sur des ressources terminologiques pour prendre en compte les termes, les relations sémantiques ou les regroupements de termes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In specialised domains, the applications such as information retrieval for machine translation rely on terminological resources for taking into account terms or semantic relations between terms or groupings of terms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Pour faire face au coût de la constitution de ces ressources, des méthodes automatiques ont été proposées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In order to face up to the cost of building these resources, automatic methods have been proposed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Parmi celles-ci, l’analyse distributionnelle s’appuie sur la redondance d’informations se trouvant dans le contexte des termes pour établir une relation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Among those methods, the distributional analysis uses the repeated information in the contexts of the terms to detect a relation between these terms.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Alors que cette hypothèse est habituellement mise en oeuvre grâce à des modèles vectoriels, ceux-ci souffrent du nombre de dimensions considérable et de la dispersion des données dans la matrice des vecteurs de contexte.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While this hypothesis is usually implemented with vector space models, those models suﬀer from a high number of dimensions and data sparsity in the matrix of contexts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>En corpus de spécialité, ces informations contextuelles redondantes sont d’autant plus dispersées et plus rares que les corpus ont des tailles beaucoup plus petites.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In specialised corpora, this contextual information is even sparser and less frequent because of the smaller size of the corpora.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>De même, les termes complexes sont généralement ignorés étant donné leur faible nombre d’occurrence.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Likewise, complex terms are usually ignored because of their very low number of occurrences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Des relations sémantiques acquises en corpus sont utilisées pour généraliser et normaliser ces contextes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Semantic relations acquired from corpora are used to generalise and normalise those contexts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Nous avons évalué la robustesse de notre méthode sur quatre corpus de tailles, de langues et de domaines différents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We evaluated the method robustness on four corpora of different sizes, different languages and different domains.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>L’analyse des résultats montre que, tout en permettant de prendre en compte les termes complexes dans l’analyse distributionnelle, l’abstraction des contextes distributionnels permet d’obtenir des groupements sémantiques de meilleure qualité mais aussi plus cohérents et homogènes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The analysis of the results shows that, while taking into account complex terms in distributional analysis, the abstraction of distributional contexts leads to defining semantic clusters of better quality, that are also more consistent and more homogeneous.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

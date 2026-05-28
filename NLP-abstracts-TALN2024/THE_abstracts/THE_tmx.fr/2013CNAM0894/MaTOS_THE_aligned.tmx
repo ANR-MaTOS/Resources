@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2013CNAM0894. segId begin by 1, tuid = segId</note>
+        <docid>2013CNAM0894</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Afin de réduire l’intervalle de temps nécessaire entre la publication de l’information sur le Web et sa consultation par les utilisateurs, les sites Web reposent sur le principe de la Syndication Web.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Based on a Publish/Subscribe paradigm, Web Syndication formats such as RSS have emerged as a popular means for timely delivery of frequently updated Web content.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Les fournisseurs d’information diffusent les nouvelles informations à travers des flux RSS auxquels les utilisateurs intéressés peuvent s’abonner.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>According to these formats, information publishers provide brief summaries of the content they deliver on the Web, while information consumers subscribe to a number of RSS feeds and get informed about newly published items.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons un index basé sur les mots-clés des requêtes utilisateurs permettant de retrouver ceux-ci dans les items des flux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose a keyword-based index for user subscriptions to match it on the fly with incoming items.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Trois structures d’indexation de souscriptions sont présentées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We study three indexing techniques for user subscriptions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Un modèle analytique pour estimer le temps de traitement et l’espace mémoire de chaque structure est détaillé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We present analytical models to estimate memory requirements and matching time.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Nous menons une étude expérimentale approfondie de l’impact de plusieurs paramètres sur ces structures.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We also conduct a thorough experimental evaluation to exhibit the impact of critical workload parameters on these structures.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Pour les souscriptions jamais notifiées, nous adaptons les index étudiés pour prendre en considération leur satisfaction partielle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For subscriptions which are never notified, we adapt the indexes to support a partial matching between subscriptions and items.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

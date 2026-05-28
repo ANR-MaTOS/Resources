@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2009GRE39042. segId begin by 1, tuid = segId</note>
+        <docid>2009GRE39042</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Il s'agit le plus souvent d’exercices à trous ou de QCM, conçus à l'aide de systèmes auteurs comme Course builder, Hot Potatoes ou Netquizz.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There is much CALL software on the Internet, designed by using authoring systems such as (Course builder, Hot Potatoes or Netquizz).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ce type d'activités pose plusieurs problèmes comme la rigidité des logiciels (les données utilisés sont prédéfinies et elles ne peuvent être ni modifiées ni enrichies) et la non adaptabilité des parcours aux compétences linguistiques des apprenants (le cheminement est indépendant de ses réponses à chaque étape, faute de pouvoir les évaluer).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such activities poses several problems as the rigidity of software (the data used are predetermined and can not be altered or enhanced) and the not adaptability of course to the language skills of learners (the path is independent of its response to each step, they can not evaluate).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>L'utilisation du TAL, pour la conception de logiciels d'ALAO, représente un moyen faible pour résoudre ces problèmes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The use of the NLP for the design of software CALL, is currently one of the method that can solve the problems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Après plus de deux décennies depuis le début des travaux, l'avancée de recherches dans ce domaine (c'est à dire utilisation de TAL en ALAO) reste insuffisante, à cause de deux facteurs principalement : la méconnaissance du TAL de la part des didacticiens des langues, voire des informaticiens, et le coût des ressources et produits issus du traitement automatique de la langue.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>But after more than two decades since the early work, the advanced research in the topic of CALL based on the NLP remains weak, due to two main factors: the lack of NLP from language didactic psychoanalysts or computer scientists, and the cost of resources and products of natural language processing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>ALAO basé sur le TAL pour la langue arabe sont pratiquement inexistants, malgré une riche bibliographie concernant le traitement automatique de l’arabe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The CALL work based on NLP for the Arabic language is practically not existed, in despite of a rich literature on the automatic processing of Arabic.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Outre les facteurs cités précédemment, la carence concernant la langue arabe dans ce domaine est due au fait qu'elle est une langue difficile à traiter automatiquement.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In addition to factors mentioned above, the deficiency of the Arabic language in this area is due to that Arabic is a language difficult to treat automatically.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>En fonction de cette situation, et désireux d'enrichir les possibilités de création d’activités pédagogiques pour l’arabe, nous avons conçu un étiqueteur, un dérivateur, un conjugueur, un analyseur morphologique ainsi qu’un dictionnaire étiqueté (le plus complet possible) pour la langue arabe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Under this situation, and willing to enrich the possibilities for creating educational activities for Arabic we have: As a first step, developed a labelled dictionary of Arabic (as complete as possible), a derivative, a Conjugator and a morphological analyzer for Arabic.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Ensuite nous avons exploité ces outils pour créer bon nombre d’applications pédagogiques pour l’apprentissage de l’arabe.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In a second step, we used these tools to create a number of educational applications for Arabic learning as a foreign language for French learners by using our system SALA.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

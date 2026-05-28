@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2019TOU30043. segId begin by 1, tuid = segId</note>
+        <docid>2019TOU30043</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette nouvelle ère de petits UAV qui peuplent actuellement l'espace aérien soulève de nombreuses préoccupations en matière de sécurité, en raison de l'absence de pilote à bord et de la nature moins précise des capteurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This new era of small UAVs currently populating the airspace introduces many safety concerns, due to the absence of a pilot onboard and the less accurate nature of the sensors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Cela nécessite des approches intelligentes pour faire face aux situations d'urgence qui se produiront inévitablement pour toutes les catégories d'opérations d'UAV telles que définies par l'AESA (Agence européenne de la sécurité aérienne).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This necessitates intelligent approaches to address the emergency situations that will inevitably arise for all classes of UAV operations as defined by EASA (European Aviation Safety Agency).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Les limitations matérielles de ces petits véhicules suggèrent l'utilisation de la redondance analytique plutôt que la pratique habituelle de la redondance matérielle dans l'aviation humaine.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hardware limitations for these small vehicles point to the utilization of analytical redundancy, rather than to the usual practice of hardware redundancy in manned aviation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Au cours de cette étude, des pratiques d'apprentissage automatique sont mises en œuvre afin de diagnostiquer les défaillances d'un petit drone à voilure fixe afin d'éviter le fardeau de la modélisation précise nécessaire au diagnostic par le modèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In the course of this study, machine learning practices are implemented in order to diagnose faults on a small fixed-wing UAV to avoid the burden of accurate modeling needed in model-based fault diagnosis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Une méthode de classification supervisée, SVM (Support Vector Machines), permet de classer les défauts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A supervised classification method, SVM (Support Vector Machines) is used to classify the faults.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Les données utilisées pour diagnostiquer les défauts sont les mesures de gyroscope et d'accéléromètre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The data used to diagnose the faults are gyro and accelerometer measurements.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>L'idée de restreindre le jeu de données aux mesures d'accéléromètre et de gyroscope est de vérifier la capacité de classification de la méthode, avec un jeu de puces petit et peu coûteux, sans avoir à accéder aux données du pilote automatique, telles que les informations d'entrée de commande.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The idea to restrict the data set to accelerometer and gyro measurements is to check the method's classification ability, with a small and inexpensive chip set and without the need to access the data from the autopilot, such as the control input information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>Ce travail aborde les défauts dans les surfaces de contrôle d'un UAV.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This work addresses the faults in the control surfaces of a UAV.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, les défauts considérés sont la surface de contrôle coincée en angle et la perte d'efficacité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More specifically, the faults considered are the control surface stuck at an angle and the loss of effectiveness.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Tout d'abord, un modèle d'aéronef est simulé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>First, a model of an aircraft is simulated.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Ce modèle n'est pas utilisé pour la conception d'algorithmes FDD (Fault Detection and Diagnosis), mais est utilisé pour générer des données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This model is not used for the design of Fault Detection and Diagnosis (FDD) algorithms, but is instead utilized to generate data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Des données simulées sont utilisées à la place des données de vol pour isoler les effets probables du contrôleur sur le diagnostic, ce qui peut compliquer une étude préliminaire sur les FDD pour les drones.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Simulated data are used instead of flight data in order to isolate the probable effects of the controller on the diagnosis, which may complicate a preliminary study on FDD for drones.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <tuv xml:lang="FR">
+                <seg>Les résultats montrent que pour les mesures simulées, SVM donne des résultats très précis sur la classification des défauts de perte d'efficacité sur les surfaces de contrôle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results show that for simulated measurements, SVM gives very accurate results on the classification of the loss of effectiveness faults on the control surfaces.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <tuv xml:lang="FR">
+                <seg>Ces résultats prometteurs appellent un complément d'investigation afin d'évaluer les performances du SVM en matière de classification des anomalies avec les données de vol.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These promising results call for further investigation so as to assess SVM performance on fault classification with flight data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <tuv xml:lang="FR">
+                <seg>Des vols réels ont été organisés pour générer des données de vol erronées en manipulant le pilote automatique open source, Paparazzi.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Real flights were arranged to generate faulty flight data by manipulating the open source autopilot, Paparazzi.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <tuv xml:lang="FR">
+                <seg>Toutes les données et le code sont disponibles dans le système de partage de code et de versions, Github.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>All data and the code are available in the code sharing and versioning system, Github.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <tuv xml:lang="FR">
+                <seg>La formation est interrompue en raison du besoin de données étiquetées et du fardeau informatique lié à la phase de réglage des classificateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Training is held offline due to the need for labeled data and the computational burden of the tuning phase of the classifiers.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <tuv xml:lang="FR">
+                <seg>Les résultats montrent que, d'après les données de vol, SVM donne un score F1 de 0,98 pour la classification des failles bloquées à la surface de contrôle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Results show that from the flight data, SVM yields an F1 score of 0.98 for the classification of control surface stuck faults.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <tuv xml:lang="FR">
+                <seg>En ce qui concerne les défauts de perte d'efficacité, il est nécessaire de recourir à certaines techniques d'ingénierie, impliquant l'ajout de mesures antérieures, pour obtenir les mêmes performances de classification.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For the loss of efficiency faults, some feature engineering, involving the addition of past measurements is needed in order to attain the same classification performance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <tuv xml:lang="FR">
+                <seg>Un résultat prometteur est découvert lorsque les spinors sont utilisés comme caractéristiques au lieu de vitesses angulaires.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A promising result is discovered when spinors are used as features instead of angular velocities.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <tuv xml:lang="FR">
+                <seg>Les résultats montrent qu'en utilisant les spinors pour la classification, la précision de la classification est considérablement améliorée, en particulier lorsque les classificateurs ne sont pas accordés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Results show that by using spinors for classification, there is a vast improvement in classification accuracy, especially when the classifiers are untuned.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <tuv xml:lang="FR">
+                <seg>À l'aide de spinors et d'un noyau Gaussian, un classifieur sans accord donne un score F1 de 0,9555, soit 0,2712 lorsque les mesures gyroscopiques ont été utilisées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Using spinors and a Gaussian Kernel, an untuned classifier gives an F1 score of 0.9555, which was 0.2712 when gyro measurements were used as features.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <tuv xml:lang="FR">
+                <seg>En résumé, ce travail montre que SVM donne une performance satisfaisante pour la classification des défauts sur les gouvernes d'un drone à l'aide de données de vol.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In summary, this work shows that SVM gives a satisfactory performance for the classification of faults on the control surfaces of a drone using flight data.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

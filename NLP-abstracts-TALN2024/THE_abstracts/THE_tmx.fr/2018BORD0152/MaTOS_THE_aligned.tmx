@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2018BORD0152. segId begin by 1, tuid = segId</note>
+        <docid>2018BORD0152</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Ce travail porte sur la segmentation jointe d’un ensemble d’images dans un cadre bayésien.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This work concerns the joint segmentation of a set images in a Bayesian framework.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Le modèle proposé combine le processus de Dirichlet hiérarchique (HDP) et le champ de Potts.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The proposed model combines the hierarchical Dirichlet process (HDP) and the Potts random field.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Ainsi, pour un groupe d’images, chacune est divisée en régions homogènes et les régions similaires entre images sont regroupées en classes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Hence, for a set of images, each is divided into homogeneous regions and similar regions between images are grouped into classes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>D’une part, grâce au HDP, il n’est pas nécessaire de définir a priori le nombre de régions par image et le nombre de classes, communes ou non.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the one hand, thanks to the HDP, it is not necessary to define a priori the number of regions per image and the number of classes, common or not.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>D’autre part, le champ de Potts assure une homogénéité spatiale.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, the Potts field ensures a spatial consistency.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Les lois a priori et a posteriori en découlant sont complexes rendant impossible le calcul analytique d’estimateurs.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The arising a priori and a posteriori distributions are complex and makes it impossible to compute analytically estimators.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Un algorithme de Gibbs est alors proposé pour générer des échantillons de la loi a posteriori.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A Gibbs algorithm is then proposed to generate samples of the distribution a posteriori.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>De plus,un algorithme de Swendsen-Wang généralisé est développé pour une meilleure exploration dela loi a posteriori.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Moreover,a generalized Swendsen-Wang algorithm is developed for a better exploration of the a posteriori distribution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Enfin, un algorithme de Monte Carlo séquentiel a été défini pour l’estimation des hyperparamètres du modèle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, a sequential Monte Carlo sampler is defined for the estimation of the hyperparameters of the model.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <tuv xml:lang="FR">
+                <seg>Le choix de la meilleure partition se fait par minimisation d’un critère indépendant de la numérotation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The choice of the best partition is done by minimization of a numbering free criterion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <tuv xml:lang="FR">
+                <seg>Ces méthodes ont été évaluées sur des images-test et sur des images naturelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These methods have been evaluated on toy examples and natural images.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <tuv xml:lang="FR">
+                <seg>Les performances de l’algorithme sont évaluées via des métriques connues en statistiques mais peu utilisées en segmentation d’image.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The performance are assessed by metrics well-known in statistics but unused in image segmentation.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-1996NICE2033. segId begin by 1, tuid = segId</note>
+        <docid>1996NICE2033</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Le present travail est une etude terminologique sur le domaine de la finance, en vue d'un traitement automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The present study is a terminological analysis of the financial domain, in a natural language processing perspective.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>On y analyse les formes derivees et composees d'un corpus, mettant evidence sur la relation syntactico-semantique qu'entretiennent leurs constituants, dans le but de determiner quels formants sont productifs dans la langue economique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The derived and compounded forms of a corpus are analysed, emphasis being put on the syntactic and semantic relations between their elements, in order to pick out the constituents that are most productive in the economical language.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Les expressions idiomatiques ou recurrentes du corpus sont egalement traitees.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The research also includes the idiomatic and recurrent expressions of the corpus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>L'etude met egalement en contraste, dans le dernier temps, les termes economiques du coreen et ceux du francais en vue de proposer une aide a la redaction et a la traduction.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As a conclusion, korean and french economical terms are contrasted, so as to supply the translater with an editing and translation toolbox.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

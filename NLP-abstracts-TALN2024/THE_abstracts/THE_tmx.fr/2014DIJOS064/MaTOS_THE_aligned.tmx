@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2014DIJOS064. segId begin by 1, tuid = segId</note>
+        <docid>2014DIJOS064</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Les humains et les robots travaillant en toute sécurité et en parfaite harmonie dans un environnement est l'un des objectifs futurs de la communauté robotique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Humans and robots working safely and seamlessly together in a cooperative environment is one of the future goals of the robotics community.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Quand les humains et les robots peuvent travailler ensemble dans le même espace, toute une catégorie de tâches devient prête à l'automatisation, allant de la collaboration pour l'assemblage de pièces, à la manutention de pièces et de materiels ainsi qu'à leur livraison.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>When humans and robots can work together in the same space, a whole class of tasks becomes amenable to automation, ranging from collaborative assembly to parts and material handling to delivery.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Des normes existent sur la collaboration entre robots et humains, cependant elles se focalisent à limiter les distances d'approche et les forces de contact entre l'humain et le robot.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Proposed standards exist for collaborative human-robot safety, but they focus on limiting the approach distances and contact forces between the human and the robot.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Un outil clé pour la sécurité entre des robots et des humains travaillant dans un environnement inclut la reconnaissance de l'intention dans lequel le robot tente de comprendre l'intention d'un agent (l'humain) en reconnaissant tout ou partie des actions de l'agent pour l'aider à prévoir les actions futures de cet agent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A key enabler for human-robot safety in cooperative environments involves the field of intention recognition, in which the robot attempts to understand the intention of an agent (the human) by recognizing some or all of their actions to help predict the human’s future actions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Dans cette thèse, nous présentons une approche qui est capable de déduire l'intention d'un agent grâce à la reconnaissance et à la représentation des informations de l'état.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We present an approach to inferring the intention of an agent in the environment via the recognition and representation of state information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Cette approche est différente des nombreuses approches présentes dans la littérature qui se concentrent principalement sur la reconnaissance de l'activité (par opposition à la reconnaissance de l'état) et qui « devinent » des raisons pour expliquer les observations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This approach to intention recognition is different than many ontology-based intention recognition approaches in the literature as they primarily focus on activity (as opposed to state) recognition and then use a form of abduction to provide explanations for observations.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

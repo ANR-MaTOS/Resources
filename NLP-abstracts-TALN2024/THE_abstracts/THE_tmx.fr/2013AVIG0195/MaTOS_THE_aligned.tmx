@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2013AVIG0195. segId begin by 1, tuid = segId</note>
+        <docid>2013AVIG0195</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Cette étude présente une nouvelle approche pour la génération automatique de résumés, un des principaux défis du Traitement de la Langue Naturelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This dissertation presents a novel approach to automatic text summarization, one of the most challenging tasks in Natural Language Processing (NLP).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Ce sujet, traité pendant un demi-siècle par la recherche, reste encore actuel car personne n'a encore réussi à créer automatiquement des résumés comparables, en qualité, avec ceux produits par des humains.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Until now, no one had ever created a summarization method capable of producing summaries comparable in quality with those produced by humans.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Dans le premier, les phrases sont triées de façon à ce que les meilleures conforment le résumé final.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Even many of state-of-the-art approaches form the summary by selecting a subset of sentences from the original text.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Or, les phrases sélectionnées pour le résumé portent souvent des informations secondaires, une analyse plus fine s'avère nécessaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Since some of the selected sentences might still contain superfluous information, a finer analysis is needed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une méthode de compression automatique de phrases basée sur l'élimination des fragments à l'intérieur de celles-ci.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We propose an Automatic Sentence Compression method based on the elimination of intra-phrase discourse segments.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>La méthode proposée est capable de générer des résumés corrects en espagnol.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>After applying both algorithms in documents in Spanish, our method is able to produce high quality results.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Les résultats de cette étude soulèvent divers aspects intéressants vis-à-vis du résumé de textes par compression de phrases.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we evaluate the produced summaries using the Turing test to determine if human judges can distinguish between human-produced summaries and machine-produced summaries.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

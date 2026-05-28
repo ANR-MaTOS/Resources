@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en-us" srclang="FR" o-tmf="XML" creationdate="2023-04-28" creationid="MaTOS">
+        <note>This is the sentence alignement file for THE-theses.fr-2009PA083147. segId begin by 1, tuid = segId</note>
+        <docid>2009PA083147</docid>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <tuv xml:lang="FR">
+                <seg>Ce travail de thèse se situe dans le difficile contexte de la linguistique et de l'informatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This thesis lies in the difficult context of linguistics and computer science.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, il s'agit de montrer l'intérêt de la prise en compte simultanée de la structure du document et des connaissances linguistiques pour la classification de documents suivant leur style.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>More precisely, we aim to demonstrate the value of the simultaneous consideration of the document structure and linguistic knowledge for the classification of documents according to their style.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <tuv xml:lang="FR">
+                <seg>Pour cela, nous avons défini de nouveaux descripteurs, qui, combinés avec des descripteurs linguistiques exploitant la hiérarchie textuelle, sont pertinents pour caractériser des types de documents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For this, we defined new descriptors, which, combined with linguistic descriptors exploiting hierarchy of text, are relevant to characterize the types of documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <tuv xml:lang="FR">
+                <seg>Puis, nous avons proposée une méthode de classification fondée sur l'absence des motifs dans les documents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, we proposed a classification method based on non-presence of patterns in the documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <tuv xml:lang="FR">
+                <seg>Une des originalités de notre travail est d'associer des méthodes linguistiques et d'apprentissage automatique à des techniques de recherche de motifs locaux.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One of originalities of our work is to combine linguistic and machine learning methods with techniques search for local patterns.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <tuv xml:lang="FR">
+                <seg>Cette hiérarchisation représente la structure logique du document fondée sur le principe que différentes fenêtres d'observation correspondent à des différents types d'information.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This hierarchy represents the logical structure of the document based on the principle that different windows of observation correspond to different types of information.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <tuv xml:lang="FR">
+                <seg>Ces derniers sont reliés entre eux par le biais de la notion de l'héritage du contexte afin de préserver la cohérence globale du document.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These are interconnected through the concept of inheritance of context in order to preserve the global coherence of the document.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <tuv xml:lang="FR">
+                <seg>D'autre part, des hypothèses liées à la tâche de catégorisation sont émergées telle que l'exploitation de l'absence totale ou partielle de motifs sous certaines contraintes, qui peut servir à construire de nouvelles analogies pour la catégorisation des documents.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, assumptions related to the task of categorization have emerged, such as exploitation of the total or partial absence of patterns under certain constraints, which can be used to build new analogies for the categorization of documents.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <tuv xml:lang="FR">
+                <seg>Alors, en analysant par évidence les motifs à fréquences faibles ou nulles, une nouvelle approche de catégorisation par exclusion-inclusion a été proposée en introduisant une nouvelle notion telle que les motifs exclusifs</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Then, by analyzing by evidence pattrens with low or zero frequencies, a new approach of categorization by exclusion-inclusion was proposed by introducing a new concept such as exclusive patterns</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

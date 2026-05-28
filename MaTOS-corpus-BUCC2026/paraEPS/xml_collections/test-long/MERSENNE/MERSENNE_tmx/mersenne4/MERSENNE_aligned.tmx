@@ -1,0 +1,1530 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en" srclang="FR" tgtlang="EN" o-tmf="XML" creationdate="2024-11-15" creationid="MaTOS">
+        <note>This is the sentence alignement file for MERSENNE-mersenne4. segId begin by 1, tuid = segId</note>
+        <docid>mersenne4</docid>
+        <url_src>https://comptes-rendus.academie-sciences.fr/geoscience/articles/10.5802/crgeos.24/</url_src>
+        <url_tgt>https://comptes-rendus.academie-sciences.fr/geoscience/articles/en/10.5802/crgeos.24/</url_tgt>
+        <author>Venkatramani Balaji</author>
+        <title_en>“Data science” versus physical science: is data technology leading us towards a new synthesis?</title_en>
+        <title_fr>«Science des données» versus science physique: la technologie des données nous conduit-elle vers une nouvelle synthèse?</title_fr>
+        <volume>CRGEOS, 2020, Volume 352, Facing climate change, the range of possibilities</volume>
+        <translator>Romain Dziegielinski</translator>
+        <elem type="sourceLanguage">FR</elem>
+        <elem type="targetLanguage">EN</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <prop type="paragraph">1</prop>
+            <tuv xml:lang="FR">
+                <seg>«Science des données» versus science physique: la technologie des données nous conduit-elle vers une nouvelle synthèse?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>“Data science” versus physical science: is data technology leading us towards a new synthesis?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous vivons, dit-on, dans l’époque de «data science».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We live, it is said, in the age of “data science”.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>L’apprentissage automatique («machine learning», ou ML) à partir des données nous émerveille avec ses avancées, tels les véhicules autonomes et les outils de traduction, et nous effraye également avec ses capacités de surveillance et d’interprétation des visages, gestes et comportements humaines.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Machine learning (ML) from data astonishes us with its advances, such as autonomous vehicles and translation tools, and also worries us with its ability to monitor and interpret human faces, gestures and behaviors.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Dans les sciences, nous sommes témoins d’une nouvelle explosion de littérature autour de l’apprentissage automatique, capable d’interpréter des quantités massives de données, autrement appelé le «big data».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In science, we are witnessing a new explosion of literature around machine learning, capable of interpreting massive amounts of data, otherwise known as “big data”.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Certains prédisent que le calcul numérique va bientôt être dépassé par le ML comme outil de compréhension et de prévision des systèmes dynamiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Some predict that numerical computation will soon be overtaken by ML as a tool for understanding and predicting dynamic systems.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Aucun domaine scientifique n’est aussi étroitement lié avec le calcul haute performance, que la météorologie et les sciences du climat.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>No field of science is as closely related to HPC as meteorology and climate science.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Leur histoire remonte à l’aube du calcul numérique, la technologie à laquelle ont donné naissance von Neumann et ses collègues durant l’après-guerre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Their history dates back to the dawn of numerical computation, the technology that von Neumann and his colleagues pioneered in the post-war era.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous utiliserons comme exemple, dans cet article, la simulation numérique du système Terre, afin de mettre en évidence quelques questions fondamentales posées par l’apprentissage automatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this article, we will use the numerical simulation of the Earth system as an example to highlight some of the fundamental questions posed by machine learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous reviendrons sur l’histoire de la météorologie pour comprendre la dialectique entre le savoir — notre compréhension de l’atmosphère — et la prévision tout court, par exemple la connaissance de la météo du lendemain.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We will return to the history of meteorology to understand the dialectic between knowledge—our understanding of the atmosphere—and forecasting, for example the knowledge of the weather of the next day.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette question est posée aujourd’hui de nouveau par l’apprentissage, car il n’est pas nécessairement possible d’interpréter physiquement car issu directement des données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This question is raised again today by learning, because it is not necessarily possible to interpret physically because it comes directly from the data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>En revanche, le rôle central de la simulation du système Terre pour nous aider à déchiffrer le futur de la planète et le changement climatique, nous demande de sortir de l’actualité des données et de faire des comparaisons avec des Terres fictives (sans émissions industrielles par exemple) et de plusieurs pistes vers l’avenir, ce que nous appelons les «scénarios».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>On the other hand, the central role of Earth system simulation to help us decipher the future of the planet and climate change, requires us to get out of the actuality of the data and make comparisons with fictitious Earths (without industrial emissions for example) and several leads to the future, what we call “scenarios”.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Ici les observations ont un rôle, certes, mais ce sont souvent des données issues des simulations qui sont analysées.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Here observations do have a role, but it is often data from simulations that are analyzed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Finalement, ces données sur le climat ont un poids sociétal et la démocratisation de l’accès à ces dernières a fortement crû ces récentes années.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, these climate data have a societal weight, and the democratization of access to them has grown strongly in recent years.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous montrerons ici certains aspects de l’évolution des technologies de la simulation et des données et ses enjeux importants pour les sciences du système Terre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We will show here some aspects of the evolution of simulation and data technologies and its important stakes for Earth system sciences.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction: la modélisation du climat et ses futurs possibles</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>1. Introduction: climate modelling and its possible future</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>La science du système Terre est devenue un domaine qui a connu une grande croissance provoquée par les soucis contemporains ayant trait au changement climatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Earth system science has become an area of great growth caused by contemporary concerns about climate change.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Prenant la température moyenne globale sur la surface de la planète comme mesure de l’état climatique, on peut poser la question suivante, à quel point vivons-nous dans une époque particulière dans l’histoire géologique de la planète, et si ses variations récentes ont un précèdent dans l’histoire géologique de notre planète.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Taking the global average surface temperature as a measure of the climate state, we can ask the following question, to what degree are we living in a particular era in the geological history of the planet, and whether its recent variations have a precedent in the geological history of our planet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour cela, commençons par examiner les variations de température au cours des 500 derniers millions d’années, Figure1.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>To do this, let's start by looking at temperature changes over the past 500 million years, Figure1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette reconstruction de la température globale repose sur l’interprétation de nombreux proxies qui sortent du champ de cet article (Voir la discussion de cette figure dans le célèbre blog RealClimate,¹ par exemple).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This reconstruction of the global temperature is based on the interpretation of many proxies that are beyond the scope of this article (e.g. see the discussion of this figure in the famous blog RealClimate,¹).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Les principaux événements présentés ici ne sont pas contestés: par exemple, le maximum thermique du Paléocène-Éocène (PETM) d’il y a environ 50millions d’années; les grandes oscillations de température menant aux âges de glace, qui ont debuté il y a environ 1million d’années, et la récente période de stabilité relative commençant il y a environ 10000 ans.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The major events presented here are undisputed: for example, the Paleocene-Eocene Thermal Maximum (PETM) of about 50million years ago; the large temperature oscillations leading to ice ages, which began about 1million years ago, and the recent period of relative stability beginning about 10,000 years ago.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous voyons, bien sûr, le bond important des températures tout à la fin du registre, représentant la période de très forte influence humaine sur la planète, à partir de la révolution industrielle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We see, of course, the significant rise in temperatures at the very end of the register, representing the period of very strong human influence on the planet, starting with the industrial revolution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette augmentation de température peut nous sortir de la zone de confort de température que l’humanité a connu depuis sa sédentarisation [Xu etal. 2020], ce qui représente toute l’histoire de la vie humaine sédentaire: la scène, avec l’agriculture, les villes, et la civilisation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This increase in temperature may take us out of the temperature comfort zone that humanity has experienced since its sedentarisation [Xu etal. 2020], which represents the entire history of sedentary human life: the scenery, with agriculture, cities, and civilisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>H.Sapiens précède cette « niche» humaine, certes, mais avant cette période, il était nomade, suivant le bord de la glace qui enveloppait périodiquement les masses terrestres.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>H.Sapiens predates this human "niche", of course, but before this period he was nomadic, following the edge of the ice which periodically covered the land masses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>De nombreux événements dans l’histoire des migrations humaines coïncident avec d’importants changements climatiques, e.g. la rencontre entre Néandertaliens et humains modernes [Timmermann 2020].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Many events in the history of human migration coincide with major climatic change, e.g. the meeting between Neanderthals and modern humans [Timmermann 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce n’est pas non plus la première fois que nous voyons des événements historiques qui ont un effet sur le climat mondial: l’arrivée des Européens dans le Nouveau Monde a conduit à une « grande mort» des autochtones qui a également laissé des traces sur le bilan carbone et la température [Koch etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is also not the first time that we have seen historical events that have an effect on the global climate: the arrival of Europeans in the New World has led to a "great death" of indigenous people that has also left its mark on the carbon balance and temperature [Koch etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Concentrons-nous maintenant sur l’augmentation récente de la température (Figure1).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Let us now focus on the recent increase in temperature (Figure1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Les grands débats autour de la politique du changement climatique tournent aujourd’hui autour des causes et des conséquences de ce changement de température, et de ce qu’il signifie pour la vie sur la planète.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The major debates around climate change policy today revolve around the causes and consequences of this temperature change, and what it means for life on the planet.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>On sousestime peut-être dans quelle mesure ces résultats dépendent des simulations de la planète entière: la dynamique de l’atmosphère et de l’océan, et leurs interactions avec la biosphère marine et terrestre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is perhaps underestimated the extent to which these results depend on simulations of the entire planet: the dynamics of the atmosphere and ocean, and their interactions with the marine and terrestrial biosphere.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous montrons ici par exemple la figure SPM.7 du dernier rapport du Groupe d’experts intergouvernemental sur l’évolution du climat (GIEC), paru en 2013 [Stocker etal. 2013] (le prochain rapport, AR6, est en cours de rédaction).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Here we show, for example, the SPM.7 figure.of the latest report of the Intergovernmental Panel on Climate Change (IPCC), published in 2013 (Stocker etal. 2013] (the next report, AR6, is currently being drafted).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Sur cette figure, reproduite ici (Figure2), nous voyons la capacité des modèles à reproduire le climat du 20ème siècle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In this figure, reproduced here (Figure2), we see the ability of models to reproduce the climate of the 20th century.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour le si 21ème siècle, on présente deux « scénarios»: l’un, nommé RCP8.5, représentant un monde sans grand effort pour freiner les émissions de CO₂, l’autre, RCP2.6 qui montre la trajectoire thermique d’un monde soumis aux politiques d’atténuation du changement climatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For the 21st century, two "scenarios" are presented: one, named RCP8.5, representing a world without much effort to curb CO₂ emissions, the other, RCP2.6, showing the thermal pathway of a world subject to climate change mitigation policies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>On ne remarque peut-être pas assez à quel point ces chiffres sont dûs aux modèles et aux simulations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It may not be obvious enough how much these numbers are due to models and simulations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>Comme nous allons le voir, nous avons passé de nombreuses décennies à construire des modèles, qui sont principalement basés sur des lois physiques bien connues, mais dont de nombreux aspects sont encore imparfaitement maîtrisés.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As we shall see, we have spent many decades constructing models, which are mainly based on well-known physical laws, of which many aspects are nevertheless still imperfectly mastered.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>Les bandes colorées autour des courbes représentent une connaissance imparfaite ou une « incertitude épistémique».</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The coloured bands around the curves represent imperfect knowledge or "epistemic uncertainty".</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous estimons les limites de cette incertitude en demandant à différents groupes scientifiques de construire différents modèles indépendants (le nombre à côté des courbes dans la Figure2 représente le nombre de modèles participant à cet exercice).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We estimate the limits of this uncertainty by asking different scientific groups to construct different independent models (the number next to the curves in Figure2 represents the number of models participating in this exercise).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="FR">
+                <seg>Les dynamiques sous-jacentes sont «chaotiques», ce qui représente une autre forme d’incertitude.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The underlying dynamics are " chaotic ", which represents another form of uncertainty.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>Le rôle des différents types d’incertitude, tant internes qu’externes, a souvent été analysé (voir l’exemple de la Figure4 de [Hawkins and Sutton 2009], souvent citée).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The role of different types of uncertainty, both internal and external, has often been analysed (see the example in Figure4 of [Hawkins and Sutton 2009], often cited).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est étudié en exécutant des simulations qui échantillonnent toutes les formes d’incertitude.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is studied by running simulations that sample all forms of uncertainty.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>De tels ensembles de simulations sont également utilisés pour des études sur la détection du changement climatique dans un système à variabilité stochastique naturelle et son attribution à l’influence naturelle ou humaine, par exemple pour se demander si un certain événement tel qu’une canicule (par exemple, [Kew etal. 2019]), est attribuable au changement climatique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Such sets of simulations are also used for studies on the detection of climate change in a system with natural stochastic variability and its attribution to natural or human influence, for example to ask whether a certain event such as a heatwave (e.g. [Kew etal. 2019]), can be attributed to climate change.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour de telles études, nous dépendons des modèles pour nous fournir des « contrefactuels» (des états possibles du système qui n’ont jamais eu lieu), où nous simulons des planètes Terre fictives sans influence humaine sur le climat, ce qui ne peut pas être observé.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For such studies, we depend on models to provide us with "counterfactuals " (possible states of the system that have never occurred), where we simulate fictitious Earth planets without human influence on the climate, which cannot be observed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Le rôle central de la simulation numérique dans la compréhension du système terrestre remonte à l’aube de l’informatique moderne, comme nous le décrirons ci-dessous.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The central role of numerical simulation in understanding the Earth system dates back to the dawn of modern computing, as described below.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces modèles reposent sur une base solide de la théorie physique; c’est pourquoi, nous gardons confiance en eux lors de la simulation de contrefactuels qui ne peuvent pas être vérifiés par des observations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These models are based on a solid foundation of physical theory; therefore, we keep faith in them when simulating counterfactuals that cannot be verified by observations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>En parallèle, de nombreux projets visent à construire des machines qui apprennent, le domaine de l’intelligence artificielle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>In parallel, many projects aim to build learning machines, the field of artificial intelligence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces deux grandes tendances de l’informatique moderne ont commencé par des débats clés entre des pionniers tels que John von Neumann et Norbert Wiener.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These two major trends in modern computing began with key debates between pioneers such as John von Neumann and Norbert Wiener.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous montrerons comment ces débats se sont déroulés à l’époque où se développait la simulation numérique de la méteo et du climat.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We will show how these debates took place at a time when numerical simulation of weather and climate was developing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Celles-ci sont réexaminées aujourd’hui, alors que nous avons les mêmes débats aujourd’hui, confrontant la science des données à la science physique, la détection des formes et motifs (« pattern recognition») dans les données par rapport à la découverte de lois physiques sous-jacentes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These are being revisited today, while we have the same debates today, confronting data science with physical science, the detection of shapes and patterns ("pattern recognition ") in data versus the discovery of underlying physical laws.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous montrerons ci-dessous comment les nouvelles technologies liées aux données peuvent conduire à une nouvelle synthèse de la physique et de la science des données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Below we will show how new data technologies can lead to a new synthesis of data physics and science.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="FR">
+                <seg>2. Une brève histoire du temps: les origines de la science météorologique</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>2. A brief history of meteorology</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>L’histoire de la prévision numérique de la météo et du climat coïncide presque exactement avec l’histoire de l’informatique numérique elle-même [Balaji 2013].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The history of numerical weather and climate prediction is almost exactly coincident with the history of digital computing itself [Balaji 2013].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette histoire a été racontée de façon vivante par les historiens [Dahan-Dalmedico 2001; Edwards 2010; Nebeker 1995], ainsi que par les participants eux-mêmes [Platzman 1979; Smagorinsky 1983], qui ont tra vaillé aux côtés de John von Neumann à partir de la fin des années 40.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This story has been vividly told by historians [Dahan-Dalmedico 2001; Edwards 2010; Nebeker 1995], as well as by the participants themselves [Platzman 1979; Smagorinsky 1983], who worked alongside John von Neumann since the late 1940s.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Le développement de la météorologie dynamique en tant que science au 20ème siècle a été raconté par les praticiens (par exemple, [Held 2019; Lorenz 1967]), et nous n’oserions pas essayer de mieux le faire ici.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The development of dynamic meteorology as a science in the 20th century has been told by practitioners (e.g. [Held 2019; Lorenz 1967]), and we would not dare to try to do it better here.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous reviendrons sur cette histoire ci-dessous, car certains des premiers débats sont repris aujourd’hui et sont l’objet de cette enquête.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We will come back to this story below, because some of the first debates are resumed today and are the subject of this investigation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Au cours des sept dernières décennies, les méthodes numériques sont devenues le cœur de la météorologie et de l’océanographie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Over the past seven decades, numerical methods have become the heart of meteorology and oceanography.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour les prévisions météorologiques, une « révolution tranquille» [Bauer etal. 2015] nous a donné des décennies d’avancées continues provenant de modèles numériques intégrant les équations du mouvement pour prédire l’évolution future de l’atmosphère, en tenant compte des effets thermodynamiques et radiatifs et des conditions aux limites évolutives, telles que l’océan et la surface terrestre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For weather prediction a "quiet revolution" [Bauer etal. 2015] has given us decades of steady advances based on numerical models that integrate the equations of motion to predict the future evolution of the atmosphere, taking into account thermodynamic and radiative effects and time-evolving boundary conditions, such as the ocean and the land surface.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Les études précurseures de Vilhelm Bjerknes (par exemple, [Bjerknes 1921]) sont souvent utiliséss comme marqueur signalant le début de la météorologie dynamique, et nous choisissons d’utiliser Vilhelm Bjerknes pour mettre en évidence une dialectique fondamentale qui a animé le débat depuis le début, et jusqu’à ce jour, comme nous le verrons plusloin.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The pioneering studies of Vilhelm Bjerknes (e.g. [Bjerknes 1921]) are often used as a marker to signal the beginning of dynamic meteorology, and we choose to use Vilhelm Bjerknes to highlight a fundamental dialectic that has animated the debate from the beginning, and to this day, as we shall see below.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Bjerknes a été le premier à utiliser des équations aux dérivées partielles (la première utilisation des « équations primitives») pour représenter l’état de la circulation et son évolution temporelle, mais les solutions analytiques étaient difficiles à trouver.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Bjerknes pioneered the use of partial differential equations (the first use of the "primitive equations") to represent the state of circulation and its time evolution, but closed-form solutions were hard to come by.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Les méthodes numériques étaient également immatures, notamment en ce qui concerne l’étude de leur stabilité comme l’on voit dans les tentatives infructueuses de Richardson [1922] impliquant des milliers de personnes faisant des calculs sur papier.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Numerical methods were also immature, especially with regard to the study of their stability as seen in Richardson's [1922] failed attempts involving thousands of people doing calculations on paper.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Abandonnant enfin l’approche par équations (l’indisponibilité des données globales clés pendant la guerre y a joué un rôle aussi), Bjerknes s’est reconcentré sur la production des cartes des masses d’air et de leurs fronts [Bjerknes 1921].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally abandoning the equations-based approach (global data becoming unavailable during war and its aftermath also played a role), Bjerknes reverted to making maps of air masses and their boundaries [Bjerknes 1921].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Les prévisions étaient souvent basées sur une vaste bibliothèque de cartes papier pour trouver une carte qui ressemblait au présent, et à la recherche de la séquence suivante, ce que nous reconnaîtrions aujourd’hui comme la méthode analogue de Lorenz [1969].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Forecasting was often based on a vast library of paper maps to find a map that resembled the present, and looking for the following sequence, what we would today recognise as Lorenz’s[1969] analogue method.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="FR">
+                <seg>Nebeker a commenté l’ironie que Bjerknes, qui a posé les fondements de la météorologie théorique, a également été celui qui a développé la prévision pratique avec des outils « qui n’étaient ni algorithmiques ni basés sur les lois de la physique» [Nebeker 1995].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Nebeker has commented on the irony that Bjerknes, who laid the foundations of theoretical meteorology, was also the one who developed practical forecasting tools "that were neither algorithmic nor based on the laws of physics" [Nebeker 1995].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>On voit ici, en la seule personne de Bjerknes, plusieurs voix dans une conversation qui continue à ce jour.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We see here, in the sole person of Bjerknes, several voices in a conversation that continues to this day.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>D’un côté on conçoit la météorologie comme une science, où tout peut être dérivé des équations de la mécanique des fluides classique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One conceives of meteorology as a science, where everything can be derived from the first principles of classical fluid mechanics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Une seconde approche est orientée spécifiquement vers l’objectif de prédire l’évolution future du système (prévisions météorologiques) et le succès est mesuré par la compétence prévisionnelle, par tout moyen nécessaire.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A second approach is oriented specifically toward the goal of predicting the future evolution of the system (weather forecasts) and success is measured by forecast skill, by any necessary means.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela pourrait, par exemple, être en créant approximativement des analogues à l’état actuel de la circulation et en s’appuyant sur des trajectoires passées similaires pour deviner la météo future.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This could, for instance be by creating approximate analogues to the current state of the circulation and relying on similar past trajectories to make an educated guess of future weather.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>On peut avoir une compréhension du système sans la compétence de le prédire; on peut avoir des prédictions habiles innocentes de toute compréhension.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One can have an understanding of the system without the ability to predict; one can have skillful predictions innocent of any understanding.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>On peut avoir une bibliothèque des données d’apprentissage, et apprendre la trajectoire du système à partir de cela, au moins dans une certaine approximation ou sens probabiliste.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>One can have a library of training data, and learn the trajectory of the system from it, at least in some approximation or probabilistic sense.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Si aucun analogue n’existe dans les données d’entraînement, aucune prédiction n’est possible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If no analog exists in the training data, no prediction is possible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce que l’on a appelé plus tard des prévisions « subjectives» dépendaient beaucoup de l’expérience et du souvenir du météorologue, qui n’était généralement pas bien versé en météorologie théorique, comme le remarque Phillips [1990].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>What was later called "subjective" forecasts depended a lot on the experience and recall of the meteorologist, who was generally not well versed in theoretical meteorology, as Phillips remarks (1990).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="FR">
+                <seg>Des évènements à évolution rapide en l’absence des précurseurs évidents dans les données étaient souvent absents dans les prévisions.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Rapidly evolving events without obvious precursors in the data were often missed.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>L’introduction par Charney d’une solution numérique à l’équation de la vorticité barotrope, et son exécution sur ENIAC, le premier ordinateur numérique opérationnel [Charney etal. 1950], a essentiellement conduit à un renversement complet de fortune dans la course entre la physique et la reconnaissance des formes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Charney's introduction of a numerical solution to the barotropic vorticity equation, and its execution on ENIAC, the first operational digital computer [Charney etal. 1950], essentially led to a complete reversal of fortune in the race between physics and pattern recognition.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="FR">
+                <seg>Les calculateurs programmables (où les instructions de calcul étaient chargées en même temps que des données) ont été la prochaine avancée, et le calcul de point de repère de Phillips [1956] est venu peu après.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Programmable computers (where instructions were loaded in as well as data) came soon after, and the next landmark calculation of Phillips [1956] came soon thereafter.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Il n’a pas fallu longtemps pour que les prévisions basées sur des modèles numériques simplifiés surpassent les prévisions subjectives.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It was not long before forecasts based on simplified numerical models outperformed subjective forecasts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>La compétence de prévision, mesurée (comme aujourd’hui!) par des erreurs dans la hauteur géopotentielle de 500hPa, était nettement meilleure dans les prévisions numériques après la percée de Phillips (voir la Figure1 dans [Shuman 1989]).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Forecasting skill, measured (as today!) by errors in the 500hPa geopotential height, was clearly better in the numerical predictions after Phillips' breakthrough (see Figure1 in [Shuman 1989]).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est maintenant considéré comme un fait parfaitement établi que les prévisions sont basées sur la physique: Edwards [2010] remarque qu’il a eu du mal à convaincre certains des scientifiques qu’il a rencontrés dans les années 90, que des décennies se sont écoulées depuis la fondation de la météorologie théorique avant que la physique heuristique simple et la reconnaissance de modèle sans théorie ne deviennent obsolètes dans les compétences en prévision.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is now considered a well-established fact that forecasts are based on physics: Edwards [2010] remarks that he found it hard to convince some of the scientists he met in the 1990s that it was decades since the founding of theoretical meteorology before simple heuristic and theory-free pattern recognition became obsolete in forecast skill.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>En utilisant les mêmes méthodes exécutées pendant de très longues périodes (ce que von Neumann a appelé des « Prévisions infinies» [Smagorinsky 1983]), le domaine de la simulation climatique s’est développé au cours des mêmes décennies.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Using the same methods run for very long periods of time (what von Neumann called "infinite forecast " [Smagorinsky 1983]), the field of climate simulation developed over the same decades.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Tandis que de simples arguments radiatifs pour le réchauffement induit par le CO₂ ont été avancés dès le XIXe siècle, la simulation numérique a permis de caractériser en détail la réponse dynamique de la circulation générale à une augmentation du CO₂ atmosphérique (par exemple, [Manabe and Wetherald 1975]).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While simple radiative arguments for CO₂-induced warming were advanced in the 19th century, numerical simulation led to the detailed understanding which includes the dynamical response of the general circulation to an increase in atmospheric CO₂ (e.g. [Manabe and Wetherald 1975]).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Des modèles de circulation océanique avaient commencé à apparaître (par exemple [Munk 1950]) et démontraient des variations basse fréquence (selon les normes météorologiques atmosphériques) et l’importance du couplage océanique [Namias 1959].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Models of the ocean circulation had begun to appear (e.g. [Munk 1950]) showing low-frequency variations showing low-frequency (by atmospheric weather standards) variations, and the significance of atmosphere-ocean coupling [Namias 1959].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Lepremier modèle couplé de Manabe and Bryan [1969] est apparu peu après.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Thefirst coupled model of Manabe and Bryan [1969] came soon thereafter.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>La météorologie numérique a aussi conduit par hasard à l’une des découvertes les plus profondes de la seconde moitié du 20e siècle, à savoir que même les systèmes complètement déterministes ont des limites à la prévisibilité de l’évolution future du système, le célèbre « attracteur étrange», marque de « chaos» [Lorenz 1963].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Numerical meteorology also serendipitously led to one of the most profound discoveries of the latter half of the 20th century, namely that even completely deterministic systems have limits to the predictability of the future evolution of the system, the famous "strange attractor", a mark of "chaos" [Lorenz 1963].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Le simple fait de connaître la physique sous-jacente ne conduit pas à une compétence à prédire au-delà d’une limite temporelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Simply knowing the underlying physics does not translate to an ability to predict beyond a point.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Bien avant Lorenz, Norbert Wiener avait declaré que ce serait une « mauvaise technique» [Wiener 1956] d’appliquer des équations différentielles lisses à un monde non linéaire où les erreurs sont grandes et la précision des observations est faible.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Long before Lorenz, Norbert Wiener had declared that it would be a "bad technique" [Wiener 1956] to apply smooth differential equations to a nonlinear world where errors are wide and the precision of observations is small.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="FR">
+                <seg>Lorenz l’a démontré dans un système déterministe mais imprévisible de seulement trois variables, dans l’un des résultats récents les plus beaux et les plus profonds de la physique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Lorenz demonstrated this in a deterministic but unpredictable system of only three variables, in one of the most beautiful and profound recent results of physics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>Pourtant, les statistiques des fluctuations météorologiques de la limite asymptotique pourraient encore être étudiés [Smagorinsky 1983].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>However, the statistics of weather fluctuations in the asymptotic limit could still be usefully studied [Smagorinsky 1983].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="FR">
+                <seg>En une décennie, ces modèles qui étaient les outils de base du métier pour étudier la réponse d’équilibre asymptotique du système terrestre aux changements du forçage externe, sont devenus le nouveau champ des sciences climatiques computationnelles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Within a decade, such models were the basic tools of the trade for studying the asymptotic equilibrium response of Earth system to changes in external forcing, became the new field of computational climate science.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Les résultats pratiques de ces études sont la réponse du climat aux phénomènes anthropiques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The practical outcomes of these studies are the response of the climate to anthropogenic phenomena.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Les émissions de CO₂ ont alarmé le public avec la publication du rapport Charney en 1979 [Charney etal. 1979].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>CO₂ raised public alarm with the publication of the Charney Report in 1979 [Charney etal. 1979].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>La science climatique computationnelle, avec maintenant des ramifications sociétales à l’échelle planétaire, est devenue un domaine en pleine expansion qui s’étend sur de nombreux pays et laboratoires, qui pouvaient désormais tous aspirer à l’échelle de calcul nécessaire pour étudier les implications du changement climatique anthropogène.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Computational climate science, now with planetary-scale societal ramifications, became a rapidly growing field expanding across many countries and laboratories, which could all now aspire to the scale of computing required to work out the implications of anthropogenic climate change.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Il n’y avait jamais assez d’informatique: il était clair, par exemple, que la représentation des nuages était une inconnue majeure dans le système (comme indiqué dans le Rapport Charney) et était (et est toujours, voir [Schneider etal. 2017]) bien en dessous de la résolution spatiale des modèles capables d’exploiter les plus puissants ordinateurs disponibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There was never enough computing: it was clear, for example, that the representation of clouds was a major unknown in the system (as noted in the Charney Report) and was (and still is, see [Schneider etal. 2017]) well below the spatial resolution of models able to exploit the most powerful computers available.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Les modèles étaient avides de ressources, prêts à consommer tout ce qui leur est fourni pour le calcul.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The models were resource-hungry, ready to soak up whatever was provided to them for the calculation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Une compréhension plus sophistiquée du système terrestre a également commencé à ajouter des processus dans les simulations, constituant maintenant un ensemble intégré avec la physique, la chimie et la biologie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A more sophisticated understanding of the Earth system also began to bring more processes into the simulations, now an integrated whole with physics, chemistry and biology components.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Le coût de calcul (sans parler de l’énergie et l’empreinte carbone) de ces simulations devient non négligeable [Balaji etal. 2017].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The calculation cost (not to mention energy and carbon footprint) of these simulations becomes significant [Balaji etal. 2017].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Pourtant, des erreurs récalcitrantes subsistent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Yet, recalcitrant errors remain.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Le biais dit « double ITCZ», par exemple, n’a pas été éliminé malgré de nombreuses reformulations et réglages sur plusieurs générations de modèles du climat [Li and Xie 2014; Lin 2007; Tian and Dong 2020].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The so-called "double ITCZ" bias for example has remained stubbornly resistant to any amount of reformulation or tuning across many generations of climate models [Li and Xie 2014; Lin 2007; Tian and Dong 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est soutenu par beaucoup qu’aucun tripotage avec les paramétrisations ne peut corriger certains de ces biais « récalcitrants», et que seule la simulation directe est susceptible de conduire à des progrès (par exemple [Palmer and Stevens 2019], Encadré2).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is contended by many that no amount of fiddling with parameterizations can correct some of these “recalcitrant ” biases, and that only direct simulation is likely to lead to progress (e.g. [Palmer and Stevens 2019], Box2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>La révolution commencée par von Neumann et Charney à l’IAS, et les décennies suivantes de croissance exponentielle en informatique, ont conduit à d’énormes progrès ainsi qu’à des indicateurs de progrès encore ambigus.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The revolution begun by von Neumann and Charney at the IAS, and the subsequent decades of exponential growth in computing have led to tremendous leaps forward as well as more ambiguous indicators of progress.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Ce qui ressemblait initialement à un triomphe clair de la physique, allié aux avancées informatiques et algorithmiques, montre désormais des signes de décrochage, l’accumulation de « détails» dans les modèles — à la fois dans la résolution et la complexité — entraîne certaines difficultés dans l’interprétation et la maîtrise du comportement des modèles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>What initially looked like a clear triumph of physics allied with computing and algorithmic advances now shows signs of stalling, as the accumulation of "details" in the models — both in resolution and complexity — leads to some difficulty in the interpretation and mastery of model behaviour.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela conduit à un tournant dans la science informatique du climat qui peut n’être pas moins ambitieux que celui de Princeton en 1950.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This is leading to a turn in computational climate science that may be no less far-reaching than the one wrought in Princeton in 1950.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Juste au moment où l’état des lieux de l’informatique climatique a été examiné [Balaji 2015], les contours de la renaissance des réseaux de neurones artificiels (RNA) et de l’apprentissage automatique (ML) commençaient à prendre forme.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Just around the time the state of play in climate computing was reviewed [Balaji 2015], the contours of the revival of artificial neural networks (ANNs) and machine learning (ML) were beginning to take shape.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Comme indiqué dans la Section2, les RNA existaient aux côtés des modèles de von Neumann et Charney pendant des décennies, mais peuvent avoir « langui» car la puissance de calcul et le parallélisme n’étaient pas disponibles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As noted in Section2, ANNS existed alongside the von Neumann and Charney models for decades, but may have languished as the computing power and parallelism were not available.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Les nouveaux processeurs émergeant aujourd’hui sont parfaitement adaptés au ML: le calcul typique d’apprentissage en réseaux profonds (« deep learning» ou DL) se compose d’une algèbre linéaire dense, parallélisable presque à volonté, capable de réduire la bande passante mémoire à précision réduite sans perte de performances.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The new processors emerging today are ideally suited to ML: the typical deep learning (DL) computation consists of dense linear algebra, scalable almost at will, able to reduce the memory bandwidth at reduced precision without loss of performance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="FR">
+                <seg>Des processeurs tels que les TPU (l’unité à traitement tensoriel) se sont montrés capables d’exécuter une charge de travail DL typique proche de la performances maximales de la puce [Jouppi etal. 2017].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Processors such as TPU (the tensor processing unit) showed themselves capable of running a typical DL workload at close to the maximum performance of the chip [Jouppi etal. 2017].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Alors que les promesses des réseaux de neurones ne s’étaient pas concrétisées après leur découverte dans les années 1960 (par exemple, le modèle « perceptron» de [Block etal. 1962]), ces méthodes ont connu une résurgence remarquable dans de nombreux domaines scientifiques ces dernières années, tandis que les approches classiques stagnent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While the promises of neural networks failed to materialise after their discovery in the 1960s (e.g., the "perceptron" model of [Block etal. 1962]), these methods have undergone a remarkable resurgence in many scientific fields in recent years, while conventional approaches stalled.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Alors que la communauté météorologique avait initialement quelque réticences pour ces outils (pour les raisons décrites dans [Hsieh and Tang 1998]), les deux ou trois dernières années ont vu une grande efflorescence de la littérature appliquant l’apprentissage automatique (« machine learning», ou ML) — comme on dit maintenant — dans la science du système terrestre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While the meteorological community may have initially been somewhat reticent (for reasons outlined in [Hsieh and Tang 1998]), the last 2 or 3 have witnessed a great efflorescence of literature applying machine learning or ML — as it is now called — in Earth system science.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous soutenons dans cet article que cela représente un changement radical dans la science informatique du système terrestre qui rivalise avec la révolution de von Neumann.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We argue in this article that this represents a sea change in computational Earth system science that rivals the von Neumann revolution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="FR">
+                <seg>En effet, certains des débats actuels autour de l’apprentissage automatique — opposant les méthodes « sans modèle» à « l’IA interprétable»² par exemple — ressemblent à ceux qui ont eu lieu dans les années 1940–1950.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Indeed, some of the current debates around machine learning — pitting "model-free" methods against '"interpretable AI"² for example — recapitulate those that took place in the 1940s and 1950s.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="FR">
+                <seg>3. Apprendre la physique à partir des données</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>3. Learning physics from data</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Rappelez-vous que V. Bjerknes s’est éloigné de la météorologie théorique en constatant que les outils à sa disposition n’étaient pas suffisants pour faire des prédictions à partir de la théorie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Recall V. Bjerknes’s turn away from theoretical meteorology upon finding that the tools at his disposal were not adequate to the task of making predictions from theory.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est possible que l’état du calcul actuel constitue un parallèle historique, et nous nous tournerons peut-être également vers des prédictions pratiques, sans théorie.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is possible that the computational predicament we now find ourselves in is a historical parallel, and we too shall turn toward practical, theory-free predictions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Un exemple est la prévision des précipitations à partir d’une séquence d’images radar [Agrawal etal. 2019] (essentiellement, extrapoler diverses transformations optiques telles que la translation, rotation, étirement, intensification), qui se montre compétitive vis à vis des prévisions à court terme basées sur des modèles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An example would be the prediction of precipitation from a sequence of radar images [Agrawal etal. 2019] (essentially, extrapolating various optical transformations such as translation, rotation, stretching, intensification) is compared and found competitive with persistence and short term model-based forecasts.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Les méthodes ML ont montré une compétence de prévision exceptionnelle sur de plus longues échelles de temps, y compris la percée de la « barrière du printemps» (c’est le nom donné à un réduction des compétences prévisionnelles dans les modèles initialisés avant le printemps boréal) dans la prévisibilité du phénomène ENSO [Ham etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>ML methods have shown exceptional forecast skill at longer timescales, including breaking through the "spring barrier" (this is the name given to a reduction in forecast skill in models initialised prior to boreal spring) in the ENSO phenomenon predictability [ham etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Fait intéressant, la méthode analogue de Lorenz [1969] montre également une compétence de prévoir ENSO à plus long terme (sans barrière du printemps) par rapport aux modèles dynamiques [Ding etal. 2019], un retour aux premiers jours de la prévision décrit dans la Section2.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Interestingly, the Lorenz analogue method [1969] also shows longer term ENSO skill (with no spring barrier) compared to dynamical models [Ding etal. 2019], a throwback to the early days of forecasting as described in Section2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces succès et d’autres dans le domaine purement « axé sur les données» (bien que les articles sur l’ENSO cités ici utilisent les sorties du modèle comme données d’apprentissage); les prévisions ont conduit à la spéculation dans les média que le ML pourrait en effet rendre obsolètes les prévisions basées sur la physique (voir par exemple « Could Machine Learning Replace the Entire Weather Forecast System?»³ in HPCWire).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These and other successes in the purely "data-driven" field (though the ENSO papers cited here use model outputs as training data); forecasting have led to speculation in the media that ML might indeed make physics-based forecasting obsolete (see for example, "Could Machine Learning Replace the Entire Weather Forecast System?³ in HPCWire).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Des méthodes ML (dans ce cas, réseaux de neurones récurrents) se sont également montrées capables de reproduire une série chronologique à partir de systèmes chaotiques canoniques avec une prévisibilité qui va au-delà de ce que la théorie des systèmes dynamiques suggère [Pathak etal. 2018] laquelle prétend en effet être « sans modèle», ou [Chattopadhyay etal. 2020]).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>ML methods (in this case, recurrent neural networks) have also shown themselves capable of reproducing a time series from canonical chaotic systems with predictability beyond what dynamical systems theory would suggest [Pathak etal. 2018] which indeed makes a claim to be “model-free”, or [Chattopadhyay etal. 2020]).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Est-ce à dire que nous sommes revenus en arrière sur la révolution de von Neumann, avec un retour aux prévisions à partir de la reconnaissance des formes plutôt que la physique?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Does this mean we have come full circle on the von Neumann revolution, and return to forecasting from pattern recognition rather than physics?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>La réponse dépend bien sûr de l’hypothèse que les exemples donnés au système procurent un échantillonnage complet de tous les états possibles du système.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The answer of course is contingent on the presumption that the training data in fact is comprehensive and samples all possible states of the system.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Pour le système Terre, ceci est une proposition douteuse, car il existe une variabilité à toutes les échelles de temps, y compris celles qui dépassent la période pour laquelle nous avons des observations fiables, l’ère des satellites par exemple.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>For the Earth system, this is a dubious proposition, as there is variability on all time scales, including those longer than the observational record itself, the satellite era for instance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="FR">
+                <seg>Un problème clé pour toutes les approches basées sur les données est celui de la généralisabilité au-delà des limites des données d’apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A key issue for all data-driven approaches is that of generalisability beyond the confines of the training data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Passons au climat, nous examinerons les aspects des modèles du système terrestre qui bien que largement basés sur la théorie, sont structurés autour d’une formulation empirique des principes.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Turning to climate, we look at the aspects of Earth system models that while broadly based on theory, are structured around an empirical formulation of principles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces domaines sont évidemment mûrs pour une approche plus directement basée sur les données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These are areas obviously ripe for a more data-driven approach.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Ces modèles sont souvent basés sur les composants paramétrés du modèle qui traitent de la « sous-grille» physique inférieure à la troncature imposée par la discrétisation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>These models are often based on the parameterised components of the model that deal with "sub-gridscale" physics below the truncation imposed by the discretisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>Une caractéristique clé de l’écoulement des fluides géophysiques est la cascade de turbulence tridimensionnelle continue de l’échelle planétaire jusqu’à l’échelle de longueur de Kolmogorov (voir par exemple [Nastrom and Gage 1985], Figure1), qui doit être tronquée quelque part pour une représentation numérique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A key feature of geophysical fluid flow is the 3-dimensional turbulence cascade continuous from planetary scale down to the Kolmogorov length scale (see for example [see e.g., Nastrom and Gage 1985], Figure1), which must be truncated somewhere for a numerical representation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>La représentation de la turbulence sous réseau basée, sur le ML est actuellement un domaine actif [Duraisamy etal. 2019].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>ML-based representation of subgrid turbulence is one area receiving considerable attention now [Duraisamy etal. 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="FR">
+                <seg>D’autres aspects de sous-grille spécifiques à la modélisation du système Terre existent, où le ML pourraient jouer un rôle, notamment en ce qui concerne le transfert radiatif et la représentation des nuages.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Other sub-gridscale aspects particular to Earth system modeling exist, where ML could play a role, including radiative transfer and the representation of clouds</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>Les RNA ont l’avantage immédiat d’être souvent beaucoup plus rapides que le composant qu’ils remplacent [Krasnopolsky etal. 2005; Rasp etal. 2018].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>ANNs have the immediate advantage of often being considerably faster than the component they replace [Krasnopolsky etal. 2005; Rasp etal. 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="FR">
+                <seg>De plus, les procédures d’étalonnage de sont très inefficaces avec les modèles complets et peuvent être considérablement accélérées en utilisant des émulateurs dérivés de l’apprentissage [Williamson etal. 2013].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Further, the calibration procedures of [Hourdin etal. 2017] are very inefficient with full models, and may be considerably accelerated using emulators derived by learning [Williamson etal. 2013].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Le ML pose néanmoins un certain nombre de questions difficiles que nous sommes maintenant activement an train de traiter.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>ML nonetheless poses a number of challenging questions that we are now actively addressing.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Les problèmes habituels de savoir si les données sont représentatives et complètes, et sur la généralisabilité de l’apprentissage, continuent de se poser.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The usual problems of whether the data is representative and comprehensive, and on generalisability of the learning, continue to apply.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Il y a une énigme à résoudre pour décider où se trouve la frontière entre le fait d’être axé sur les connaissances physiques et sur les données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There is a conundrum in deciding where the boundary between being physical knowledge driven and data driven lies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous décrivons certaines des questions clé abordées dans la littérature actuelle.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We outline some key questions being addressed in the current literature.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous prendrons comme point de départ, une composante particulière du modèle (comme la convection atmosphérique ou la turbulence dans les océans) qui est maintenant augmentée par l’apprentissage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We take as a starting point, a particular model component (such as atmospheric convection or ocean turbulence) that is now being augmented by learning.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Prenons la structure du système sous-jacent tel qu’il est maintenant, et utilisons l’apprentissage comme méthode de réduire l’incertitude paramétrique?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Do we take the structure of the underlying system as it is now, and use learning as a method of reducing parametric uncertainty?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="FR">
+                <seg>Les méthodes émergentes nous permettent potentiellement de traiter les erreurs paramétriques et les erreurs structurelles sur une base commune (par exemple [Williamson etal. 2015]), mais nous pouvons toujours choisir d’être sans structure, ou tenter de découvrir la structure elle-même [Zanna and Bolton 2020].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Emerging methods potentially do allow us to treat structural and parametric error on a common footing (e.g. [Williamson etal. 2015]), but we still may choose to go either structure-free, or attempt to discover the structure itself. [Zanna and Bolton 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Si nous nous débarrassons de la structure sous-jacente des équations, nous avons un certain nombre de problèmes à résoudre.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>If we divest ourselves of the underlying structure of equations, we have a number of issues to address.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Comme l’apprentissage est au mieux aussi bon que les données d’apprentissage, nous pouvons constater que le RNA résultant viole certaines lois de base (telles que les lois de conservation) ou ne se généralise pas bien [Bolton and Zanna 2019].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>As the learning is only as good as the training data, we may find that the resulting ANN violates some basic physics (such as conservation laws), or does not generalise well [Bolton and Zanna 2019].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela peut être abordé par un choix approprié de fonctions propres sur lesquelles effectuer l’apprentissage, voir Zanna and Bolton [2020].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This can be addressed by a suitable choice of basis in which to do the learning, see Zanna and Bolton [2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Une considération similaire a été observée [O’Gorman and Dwyer 2018], où un modèle entraîné en utilisant le climat actuel, se montre incapable de se généraliser à un climat plus chaud, mais la perte de généralisation pourrait être traitée par un choix de la variable physique de base.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>A similar consideration was seen in [O'Gorman and Dwyer 2018], which when trained on current climate failed to generalie to a warmer climate, but the loss of generalisability could be addressed by a suitable choice of input basis.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="FR">
+                <seg>Idéalement, nous aimerions aller beaucoup plus loin et apprendre réellement la physique sous-jacente.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Ideally, we would like to go much further and actually learn the underlying physics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Il y a eu des tentatives pour identifier les équations sous-jacentes pour des systèmes bien connus [Brunton etal. 2016; Schmidt and Lipson 2009] et les efforts en cours dans le domaine de la modélisation du climat également, pour trouver des paramétrisations à partir des données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>There have been attempts to learn the underlying equations for well-known systems [Brunton etal. 2016; Schmidt and Lipson 2009] and efforts underway in climate modeling as well, to learn the underlying structure of parameterisations from data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Enfin, nous posons le problème du couplage.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Finally, we pose the problem of coupling.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous avons noté précédemment le problème de l’étalonnage des modèles, qui se fait d’abord au niveau des composants, pour amener chaque processus individuel dans les contraintes d’observation, puis dans une deuxième étape de calibration par rapport à l’ensemble du contraintes globales, telles que l’équilibre radiatif du sommet de l’atmosphère [Hourdin etal. 2017].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have noted earlier the problem of calibration of models, which is done first at the component level, to bring each individual process within observational constraints, and then in a second stage of calibration against systemwide constraints, such as top of atmosphere radiative balance [Hourdin etal. 2017].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>La question de la stabilité des RNA lorsqu’ils sont intégrés dans un système couplé est également à l’étude en ce moment (par exemple [Brenowitz etal. 2020]).</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The issue of the stability of ANNs when integrated into a coupled system is also under active study at the moment (e.g. [Brenowitz etal. 2020]).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="FR">
+                <seg>Il faut savoir choisir d’abord l’unité d’apprentissage: serait-ce un processus individuel, ou le système entier?</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The first step is to choose the unit of learning: should it be an individual process, or the whole system?</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="FR">
+                <seg>4. Récapitulatif</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>4. Summary</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous avons mis en évidence dans cet article une progression historique de la modélisation du système Terre, où la révolution de von Neumann nous a permis de passer de la reconnaissance des motifs à la manipulation numérique directe des équations de la physique.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have highlighted in this article a historical progression in Earth system modeling, in which the von Neumann revolution allowed us to move from pattern recognition to direct numerical manipulation of the equations of physics.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous avons décrit comment l’apprentissage automatique statistique de quantités massives de données offre la possibilité de s’inspirer directement d’observations pour prédire le système terrestre, une transition qui est potentiellement aussi vaste que celle de von Neumann.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We have described how statistical machine learning of massive amounts of data offers the possibility of drawing directly on observations to predict the Earth system, a transition that is potentially as far-reaching as that of von Neumann.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>À première vue, il peut sembler que nous tournons le dos à la révolution de von Neumann, passant de la physique à la simple recherche et au suivi de modèles de données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>At first glance, it may appear as though we are turning our backs on the von Neumann revolution, going back from physics to simply seeking and following patterns in data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>Bien que ces des approches en « boîte noire» puissent en effet être utilisées pour certaines activités, nous constatons de nombreux efforts pour s’assurer que les algorithmes d’apprentissage respectent bien les contraintes physiques même s’ils n’emergent pas directement des données.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>While such black-box approaches may indeed be used for certain activities, we are seeing many attempts to go beyond those, and ensure that the learning algorithms do indeed respect physical constraints even if not present in the data.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>La science est bien sûr basée sur des observations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Science is of course observations based on observations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>Mais « la théorie est chargée de données, et les données sont chargées de théorie», selon la formule prononcée par le philosophe Pierre Duhem.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>But "theory is loaded with data, and data is loaded with theory", according to the words pronounced by the philosopher Pierre Duhem.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>Edwards [2010] a proposé que la même idée s’applique aux modèles: les modèles sont chargés de données, mais les données sont également chargées de modèles.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Edwards [2010] proposed that the same idea applies to models: models are loaded with data, but data is also loaded with models.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous le voyons clairement en ce qui concerne les données climatiques qui sont souvent basées sur ce qu’on appelle la « réanalyse», un ensemble de données mondiales, créé à partir d’observations clairsemées et extrapolées en utilisant des considérations théoriques.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We see this clearly with respect to climate data, which is often based on so-called 'reanalysis', a global dataset, created from sparse observations and extrapolated using theoretical considerations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="FR">
+                <seg>Un résultat récent [Chemke and Polvani 2019], intéressant, montre cette énigme, où il s’avère que les modèles du futur sont corrects mais que les données du passé (à savoir les réanalyses) sont erronées!</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>An interesting recent result [Chemke and Polvani 2019] shows this conundrum, in which it turns out that the models of the future are correct but that the data of the past (i.e. the reanalyses) are wrong!</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Le domaine a également besoin de modèles pour construire des « contrefactuels» par rapport auxquels la réalité actuelle est comparée.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The field also needs models to build "counterfactuals" against which current reality is compared.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela signifie que même les algorithmes d’apprentissage doivent utiliser des résultats générés par les modèles en données d’apprentissage, plutôt que des observations.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This means that even learning algorithms must use model-generated results as training data, rather than observations.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="FR">
+                <seg>Les résultats de l’apprentissage automatique à partir de ces données simulées apprendront à les émuler, passant ainsi de la simulation à l’émulation.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The results of machine learning from this simulated data will learn to emulate them, thus moving from simulation to emulation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Cela est déjà devenu évident dans les tendances récentes, où nous voyons des données simulées devenir de taille comparable aux quantités massives de données d’observation par satellite [Overpeck etal. 2011].</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This has already become evident in recent trends, in which we see simulated data becoming comparable in size to the massive amounts of satellite observation data [Overpeck etal. 2011].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Nous voyons dans la Figure3 la nouvelle « vaste machine» de données à travers le monde à partir de simulations distribuées pour le GIEC, pour l’évaluation actuelle suivant celle de la Figure2.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>We see in Figure3 the new "vast machine" of data across the world from distributed simulations for the IPCC, for the current assessment following that of Figure2.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Il est impératif que ces données soient correctement étiquetées et stockées et donc susceptibles d’être étudiées par les outils du machine learning.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>It is imperative that this data is properly labelled and stored and therefore likely to be studied by machine learning tools.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="FR">
+                <seg>Cette infrastructure de données mondiale montre les possibilités d’une nouvelle synthèse des connaissances physiques et des mégadonnées: à travers l’émulation de données simulées, nous tenterons d’extraire des connaissances physiques sur l’état de la planète et la compétence de prédire son évolution future.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>This global data infrastructure shows the possibilities of a new synthesis of physical knowledge and big data: through the emulation of simulated data, we will try to extract physical knowledge about the state of the planet and the ability to predict its future evolution.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="FR">
+                <seg>Financement</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Funding</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="FR">
+                <seg>V. Balaji est soutenu par le Cooperative Institute for Modeling the Earth System, Princeton Université, sous le prix NA18OAR4320123 de la National Oceanic and Atmospheric Administration, US Department of Commerce, et par l’aide d’État française Make Our Planet Great Again gérée par l’Agence Nationale de Recherche dans le cadre du programme « Investissements d’avenir» avec la référence ANR-17-MPGA-0009.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>V. Balaji is supported by the Cooperative Institute for Modeling the Earth System, Princeton University, under Award NA18OAR4320123 from the National Oceanic and Atmospheric Administration, U.S. Department of Commerce, and by the Make Our Planet Great Again French state aid managed by the Agence Nationale de Recherche under the “Investissements d’avenir” program with the reference ANR-17-MPGA-0009.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Les déclarations, constatations, conclusions et recommandations sont celles des auteurs et ne reflètent pas nécessairement les vues de l’Université de Princeton, de la National Oceanic and Atmospheric Administration, du Department of Commerce américain ou de l’ Agence Nationale de Recherche française.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The statements, findings, conclusions, and recommendations are those of the authors and do not necessarily reflect the views of Princeton University, the National Oceanic and Atmospheric Administration, the U.S. Department of Commerce, or the French Agence Nationale de Recherche.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="FR">
+                <seg>Les auteurs déclarent n’avoir aucun intérêt concurrent.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>The author(s) declare that they have no competing interests.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="FR">
+                <seg>Remerciements</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>Acknowledgments</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="FR">
+                <seg>Je remercie Ghislain de Marsily, Fabien Paulot, et Raphael Dussin pour leur lecture soigneuse des versions initiales de cet article ce qui a permis d’améliorer considérablement le manuscrit. Je remercie l’Académie des sciences et les organisateurs du colloque « Face au changement climatique, le champ des possibles» en janvier 2020, de m’avoir accordé l’opportunité d’y participer et de contribuer à ce numéro spécial.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>I thank Ghislain de Marsily, Fabien Paulot, and Raphael Dussin for their careful reading of the inital versions of this article, which considerably improved the manuscript. I thank the French Académie des sciences and the organisers of the colloquium "Facing climate change, the field of possibilities" in January 2020, for giving me the opportunity to participate and contribute to this special issue.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="FR">
+                <seg>¹http://www.realclimate.org/index.php/archives/2014/03/can-we-make-better-graphs-of-global-temperature-history, récupéré le 31 juillet 2020.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>¹ http://www.realclimate.org/index.php/archives/2014/03/can-we-make-better-graphs-of-global-temperature-history, retrieved on July 31, 2020.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="FR">
+                <seg>²L’ IA, ou intelligence artificielle, est un terme que nous éviterons généralement ici au profit de termes comme l’apprentissage automatique, qui mettent l’accent sur l’aspect statistique, sans impliquer une perspicacité.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>²AI, or artificial intelligence, is a term we shall generally avoid here in favour of terms like machine learning, which emphasise the statistical aspect, without implying insight.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <prop type="paragraph">43</prop>
+            <tuv xml:lang="FR">
+                <seg>³https://www.hpcwire.com/2020/04/27/could-machine-learning-replace-the-entire-weather-fore récupéré le 31 juillet 2020.</seg>
+            </tuv>
+            <tuv xml:lang="EN">
+                <seg>³https://www.hpcwire.com/2020/04/27/could-machine-learning-replace-the-entire-weather-fore retrieved on July 31, 2020.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>

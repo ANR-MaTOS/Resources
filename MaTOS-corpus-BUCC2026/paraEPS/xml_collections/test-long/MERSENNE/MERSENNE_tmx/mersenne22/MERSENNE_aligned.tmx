@@ -1,0 +1,1773 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4b">
+    <header creationtool="xml.etree.ElementTree" creationtoolversion="1.3.0" datatype="PlainText" segtype="sentence" adminlang="en" srclang="EN" tgtlang="FR" o-tmf="XML" creationdate="2024-11-15" creationid="MaTOS">
+        <note>This is the sentence alignement file for MERSENNE-mersenne22. segId begin by 1, tuid = segId</note>
+        <docid>mersenne22</docid>
+        <url_src>https://comptes-rendus.academie-sciences.fr/geoscience/articles/10.5802/crgeos.125/</url_src>
+        <url_tgt>https://comptes-rendus.academie-sciences.fr/geoscience/articles/fr/10.5802/crgeos.125/</url_tgt>
+        <author>Francesco Vetere , Gianluca Iezzi , Diego Perugini , Francois Holtz </author>
+        <title_en>Rheological changes in melts and magmas induced by crystallization and strain rate</title_en>
+        <title_fr>Changements rhéologiques dans les liquides et les magmas induits par la cristallisation et le taux de déformation</title_fr>
+        <volume>CRGEOS, 2022, Volume 352, Le verre, un matériau omniprésent</volume>
+        <translator>Romain Dziegielinski</translator>
+        <elem type="sourceLanguage">EN</elem>
+        <elem type="targetLanguage">FR</elem>
+    </header>
+    <body>
+        <tu tuid="1">
+            <prop type="paragraph">1</prop>
+            <tuv xml:lang="EN">
+                <seg>Rheological changes in melts and magmas induced by crystallization and strain rate</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Changements rhéologiques dans les liquides et les magmas induits par la cristallisation et le taux de déformation</seg>
+            </tuv>
+        </tu>
+        <tu tuid="2">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>This review highlights the rheological and phase proportions variation induced by cooling events from superliquidus temperature (melt) to subliquidus temperatures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette étude met en évidence les variations rhéologiques et les proportions de phases induites par les événements de refroidissement de la température superliquide (fonte) aux températures subliquidus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="3">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>It provides a comprehensive view of the rheological response of magmatic systems undergoing dynamic cooling and shear deformation.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Elle fournit une vue d'ensemble de la réponse rhéologique des systèmes magmatiques soumis à un refroidissement dynamique et à une déformation par cisaillement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="4">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>The two main parameters which are of importance to model the rheological properties of such crystallizing systems and which are simultaneously poorly investigated so far are crystallization and strain rates.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les deux paramètres principaux qui sont importants pour modéliser les propriétés rhéologiques de ces systèmes cristallisants et qui sont simultanément peu étudiés jusqu'à présent sont la cristallisation et les vitesses de déformation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="5">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>The response to relatively high deformation rates results in shear thinning behavior in partly crystallized systems under variable shear rate and it should be considered in magmatic processes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La réponse à des taux de déformation relativement élevés se traduit par un comportement de rhéofluidification dans les systèmes partiellement cristallisés soumis à un taux de cisaillement variable et doit être prise en compte dans les processus magmatiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="6">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>Due to the sluggish crystallization of SiO₂-rich melts, data are mainly available for mafic systems, which does not allow a general reappraisal.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En raison de la lenteur de la cristallisation des matières fondues riches en SiO, les données sont principalement disponibles pour les systèmes mafiques, ce qui ne permet pas une réévaluation générale.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="7">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>An attempt to model available literature data for less evolved systems in dynamic scenarios and a comparison with MELTS algorithm approach (thermodynamic equilibrium conditions) is provided.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une tentative de modélisation des données bibliographiques disponibles pour les systèmes moins évolués dans des scénarios dynamiques et une comparaison avec l'approche de l'algorithme MELTS (conditions d'équilibre thermodynamique) sont fournies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="8">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>Since there are difficulties in comparing experimental data gained using different methodologies, we focus mainly on data obtained with the concentric cylinder technique.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Étant donné qu'il est difficile de comparer les données expérimentales obtenues à l'aide de différentes méthodologies, nous nous concentrons principalement sur les données obtenues à l'aide de la technique du cylindre concentrique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="9">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>This highlights the fact that a general experimental protocol is needed in order to compare and model viscosity data to predict the dynamic rheological evolution for volcanic rocks.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela souligne le fait qu'un protocole expérimental général est nécessaire pour comparer et modéliser les données de viscosité afin de prédire l'évolution rhéologique dynamique des roches volcaniques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="10">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>Supplementary Materials:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Compléments :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="11">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>Supplementary material for this article is supplied as a separate file:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Des compléments sont fournis pour cet article dans le fichier séparé :</seg>
+            </tuv>
+        </tu>
+        <tu tuid="12">
+            <prop type="paragraph">2</prop>
+            <tuv xml:lang="EN">
+                <seg>crgeos-125-suppl.pdf</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>crgeos-125-suppl.pdf</seg>
+            </tuv>
+        </tu>
+        <tu tuid="13">
+            <prop type="paragraph">3</prop>
+            <tuv xml:lang="EN">
+                <seg>1. Introduction</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>1. Introduction</seg>
+            </tuv>
+        </tu>
+        <tu tuid="14">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>Rheological behavior of silicate melts and magmas are of high importance to understand how they form, travel, and emplace into and on the Earth’s surface.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le comportement rhéologique des liquides silicatés et des magmas est d'une grande importance pour comprendre comment ils se forment, se déplacent et se déposent à l'intérieur et à la surface de la Terre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="15">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>A special role in the magmatic evolution is exerted by the melt/magma undercooling degree(s); it is defined as the difference between the system temperature and the temperature at which a phase saturates in the given liquid [Kirkpatrick 1981; Giuliani etal. 2021].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un rôle particulier dans l'évolution magmatique est exercé par le(s) degré(s) de surfusion des liquides/magmas; il est défini comme la différence entre la température du système et la température à laquelle une phase sature dans le liquide donné [Kirkpatrick 1981; Giuliani etal. 2021].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="16">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>From a thermodynamic point of View, the appearance of solid phases from a magma is driven by the undercooling degree.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'un point de vue thermodynamique, l'apparition de phases solides à partir d'un magma est déterminée par le degré de surfusion.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="17">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>However, the nucleation and crystals growth of a mineral phase is also governed by kinetics processes [Lofgren 1980; Dowty 1980; Hammer 2008; Iezzi etal. 2008, 2009; Vetere etal. 2013, 2015; Giuliani etal. 2020a, b].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, la nucléation et la croissance des cristaux d'une phase minérale sont également régies par des processus cinétiques [Lofgren 1980; Dowty 1980; Hammer 2008; Iezzi etal. 2008, 2009; Vetere etal. 2013, 2015; Giuliani etal. 2020a, b].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="18">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>The overall variation in nucleation rate spans many orders of magnitude, while growth rates variation is more limited [Swanson 1977; Kirkpatrick 1981; Lasaga 1997; Cashman 1988; Hammer and Rutherford 2002; Zhang 2008; Iezzi etal. 2009; Mollo and Hammer 2017; Giuliani etal. 2020a].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La variation globale du taux de nucléation s'étend sur plusieurs ordres de grandeur, tandis que la variation des vitesses de croissance est plus limitée [Swanson 1977; Kirkpatrick 1981; Lasaga 1997; Cashman 1988; Hammer et Rutherford 2002; Zhang 2008; Iezzi etal. 2009; Mollo et Hammer 2017; Giuliani etal. 2020a].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="19">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>For a similar bulk magmatic composition, a low nucleation rate produces few crystals that will became large, while a high nucleation rate will result in a large number of tiny crystals [Hammer 2008; Iezzi etal. 2009; Higgins 2006; Mollo and Hammer 2017].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour une composition chimique du magma similaire, un faible taux de nucléation produit peu de cristaux qui deviendront grands, tandis qu'un taux de nucléation élevé se traduira par un grand nombre de minuscules cristaux [Hammer 2008; Iezzi etal. 2009; Higgins 2006; Mollo et Hammer 2017].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="20">
+            <prop type="paragraph">4</prop>
+            <tuv xml:lang="EN">
+                <seg>Nucleation is favored in silicate liquids with a high chemical diffusion, i.e., poor in SiO₂ and rich in H₂O, whereas SiO₂- and H₂O-poor liquids are reluctant to nucleate and prone to vitrify [Iezzi etal. 2009; Vetere etal. 2015].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La nucléation est favorisée dans les liquides silicatés à forte diffusion chimique, c'est-à-dire pauvres en SiO₂ et riches en H₂O, tandis que les liquides pauvres en SiO₂ et en H₂O sont moins favorables à la nucléation et ont tendance à se vitrifier [Iezzi etal. 2009; Vetere etal. 2015].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="21">
+            <prop type="paragraph">5</prop>
+            <tuv xml:lang="EN">
+                <seg>Nucleation and crystallization processes have profound implications for the rheology of magmas and lavas, which depends on the volumetric amount of solid phases as well as on their size and shape [Gonnermann and Manga 2007]. Hence, a clear knowledge of nucleation and crystallization processes driven by solidification, either by cooling or by degassing-induced depressurization, is the key to understand magma rheology and its evolution before turning into a solid rock.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les processus de nucléation et de cristallisation ont des implications profondes sur la rhéologie des magmas et des laves, qui dépend de la quantité volumétrique de phases solides ainsi que de leur taille et de leur forme [Gonnermann et Manga 2007]. Par conséquent, une connaissance claire des processus de nucléation et de cristallisation entraînés par la solidification, soit par refroidissement, soit par dépressurisation induite par le dégazage, est la clé pour comprendre la rhéologie du magma et son évolution avant qu'il ne se transforme en une roche solide.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="22">
+            <prop type="paragraph">6</prop>
+            <tuv xml:lang="EN">
+                <seg>The eruptive style of volcanoes is strongly affected by magma viscoelastic properties [Dingwell 1996; Gonnermann and Manga 2007; Cassidy etal. 2018, and reference therein] and, as shown by Petrelli etal. [2018], their associated timescales. Indeed, the P–T–fO₂ path(s) for a starting magmatic composition (X) governs its solidification behavior and rheological pathway [Lanzafame etal. 2013, 2017].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le style éruptif des volcans est fortement affecté par les propriétés viscoélastiques du magma [Dingwell 1996; Gonnermann et Manga 2007; Cassidy etal. 2018, et référence incluse] et, comme le montrent Petrelli etal. [2018], par leurs échelles de temps associées. En effet, les conditions P-T-fO₂ pour une composition magmatique de départ (X) déterminent son comportement de solidification et son évolution rhéologique [Lanzafame etal. 2013, 2017].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="23">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="EN">
+                <seg>Crystallization under kinetic conditions imposed by 𝛥T∕𝛥t and/or 𝛥P∕𝛥t was experimentally studied and investigated mainly for mafic compositions so far [Arzilli etal. 2019; Polacci etal. 2018; Hammer 2008; Conte etal. 2006; Fiege etal. 2015, and reference therein], while highly evolved melts are harsher to experimental investigation (time consuming), especially in a dry context [Vetere etal. 2013, 2015].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La cristallisation dans des conditions cinétiques imposées 𝛥T∕𝛥t et/ou 𝛥P∕𝛥t a été étudiée expérimentalement et principalement pour des compositions mafiques jusqu'à présent [Arzilli etal. 2019; Polacci etal. 2018; Hammer 2008; Conte etal. 2006; Fiege etal. 2015, et référence incluse], tandis que les fluides magmatiques hautement évolués sont plus difficiles à étudier expérimentalement (chronophages), en particulier dans des conditions sèches [Vetere etal. 2013, 2015].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="24">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="EN">
+                <seg>Nowadays, it is recognized that disequilibrium conditions often occur in natural processes [Kolzenburg etal. 2018; Vetere etal. 2019, 2021, and reference therein].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De nos jours, il est reconnu que des conditions de déséquilibre se produisent souvent dans les processus naturels [Kolzenburg etal. 2018; Vetere etal. 2019, 2021, et référence incluse].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="25">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="EN">
+                <seg>Moreover, ambiguities persist in our understanding of the interplay between crystal nucleation and growth on magma rheological variation (bulk viscosity and density) as it evolves from liquidus temperature down to the glass transition temperature, T_(g).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, des ambiguïtés persistent dans notre compréhension de l'interaction entre la nucléation et la croissance des cristaux sur la variation rhéologique du magma (viscosité et masse volumiques apparentes) à mesure qu'il évolue de la température de liquidus à la température de transition vitreuse, T_(g).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="26">
+            <prop type="paragraph">7</prop>
+            <tuv xml:lang="EN">
+                <seg>The cooling rate and degassing rate induced by depressurization of magmatic batches influence textural, petrological, and geochemical features, as well as volcanic behavior, i.e., from mildly lava effusion to violent explosive paroxysm [Armienti 2008; Hammer 2008; Applegarth etal. 2013; Shea and Hammer 2013; Fiege etal. 2015; Mollo and Hammer 2017; Arzilli etal. 2019, and references therein].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La vitesse de refroidissement et la vitesse de dégazage induites par la dépressurisation des blocs magmatiques influencent les caractéristiques texturales, pétrologiques et géochimiques, ainsi que le comportement volcanique, allant de l'effusion de lave d'intensité modérée jusqu'à l'extrême violence de l'éruption explosive [Armienti 2008; Hammer 2008; Applegarth etal. 2013; Shea et Hammer 2013; Fiege etal. 2015; Mollo et Hammer 2017; Arzilli etal. 2019, et références incluses].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="27">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="EN">
+                <seg>Due to the changes in residual melt chemistry and solid phase growth (as melt solidifies below the liquidus temperature, T_(L)), it is expected that properties such as the apparent viscosity and density will vary, with significant impact on the magma’s ability to move [Giuliani etal. 2021].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En raison des changements dans la chimie des liquides résiduels et la croissance de la phase solide (lorsque le liquide se solidifie en dessous de la température de liquidus, T_(L)), on s'attend à ce que les propriétés telles que la viscosité et la masse volumique apparentes varient, avec un impact significatif sur la capacité du magma à se déplacer [Giuliani etal. 2021].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="28">
+            <prop type="paragraph">8</prop>
+            <tuv xml:lang="EN">
+                <seg>To have an overview of this natural scenario and because of the paucity of direct field data [Chevrel etal. 2019, 2018, 2015], experimental approach is of paramount importance to further understand how magma behaves as it moves into and on the Earth.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour avoir une vue d'ensemble de ce scénario naturel et en raison du manque de données directes de terrain [Chevrel etal. 2019, 2018, 2015], l'approche expérimentale est d'une importance capitale pour mieux comprendre comment le magma se comporte lorsqu'il se déplace à l'intérieur ainsi qu'à la surface de la Terre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="29">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="EN">
+                <seg>In this review, after a general discussion on the nucleation and growth of minerals in silicate melts and magmas and on the general and most used laws and models governing magma rheology, we will focus both on recent experimental data on natural/synthetic systems and numerical approach with the aim to examine equilibrium versus disequilibrium conditions on the solidification of mafic compositions and its impact on rheological behavior.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans cet article, après une discussion générale sur la nucléation et la croissance des minéraux dans les liquides silicatés et les magmas et sur les lois générales et les modèles les plus utilisés régissant la rhéologie du magma, nous nous concentrerons à la fois sur les données expérimentales récentes sur les systèmes naturels/synthétiques et sur l'approche numérique dans le but d'examiner les différences entre les conditions d'équilibre et de déséquilibre sur la solidification des compositions mafiques et leur impact sur le comportement rhéologique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="30">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="EN">
+                <seg>Specifically, we will constrain and model the rheological changes induced by cooling and also by shear stresses.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Plus précisément, nous allons contraindre et modéliser les changements rhéologiques induits par le refroidissement et par les contraintes de cisaillement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="31">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="EN">
+                <seg>Results point to the complex interactions between crystallization processes and rheological behavior as the key for understanding how magmas behave in natural systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats indiquent que les interactions complexes entre les processus de cristallisation et le comportement rhéologique sont la clé pour comprendre le comportement des magmas dans les systèmes naturels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="32">
+            <prop type="paragraph">9</prop>
+            <tuv xml:lang="EN">
+                <seg>We will also emphasize the possible future experimental approaches in order to shed new light on these important natural processes that could be applicable to solidification induced by depressurization for volatile-rich magmas.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous mettrons également l'accent sur les futures approches expérimentales possibles afin de jeter un nouvel éclairage sur ces processus naturels importants qui pourraient être applicables à la solidification induite par la dépressurisation des magmas riches en matières volatiles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="33">
+            <prop type="paragraph">10</prop>
+            <tuv xml:lang="EN">
+                <seg>2. The state of the art</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>2. État de l'art</seg>
+            </tuv>
+        </tu>
+        <tu tuid="34">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>Petrological processes and scenarios are interpreted and reconstructed mainly by studying crystal-chemical attributes of phases [Giuliani etal. 2021, 2022].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les processus et scénarios pétrologiques sont interprétés et reconstruits principalement en étudiant les propriétés cristallochimiques des phases [Giuliani etal. 2021, 2022].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="35">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>This approach commonly assumes thermodynamic equilibrium between magmatic liquid and their mineral/volatile phases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette approche suppose généralement un équilibre thermodynamique entre les liquide magmatiques et leurs phases minérales/volatiles.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="36">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>From thermodynamically derived laws, intensive variables of magmatic systems can be obtained by crystal-chemistry of minerals and coexisting liquids, such as to track evolution of magmas [e.g., Putirka 2008, and references therein].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>À partir des lois thermodynamiques, des variables intensives des systèmes magmatiques peuvent être obtenues par le bais de la chimie cristalline des minéraux et des liquides coexistants, de manière à suivre l'évolution des magmas [par exemple, Putirka 2008, et références incluses].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="37">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>However, we now have clear evidence of disequilibrium features in both intrusive and especially volcanic rocks [e.g., De Paolo and Getty 1996; Roselle etal. 1997; Müller etal. 2004; Nabelek 2007; Baker 2008; Mollo and Hammer 2017; Giuliani etal. 2021].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, nous avons maintenant des preuves manifestes de l'existence de caractéristiques de déséquilibre dans les roches intrusives et surtout volcaniques [par exemple, De Paolo et Getty 1996; Roselle etal. 1997; Müller etal. 2004; Nabelek 2007; Baker 2008; Mollo et Hammer 2017; Giuliani etal. 2021].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="38">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>Hence, the scientific community is aware that compositional changes of minerals in volcanic rocks are not necessarily related to equilibrium conditions, but rather and frequently to a disequilibrium state [e.g., Baker and Grove 1985; Hammer 2006, 2008; Iezzi etal. 2008, 2011; Del Gaudio etal. 2010; Mollo etal. 2010, 2011a, b].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La communauté scientifique est donc consciente que les changements de composition des minéraux dans les roches volcaniques ne sont pas nécessairement liés aux conditions d'équilibre, mais plutôt fréquemment à un état de déséquilibre [par exemple, Baker et Grove 1985; Hammer 2006, 2008; Iezzi etal. 2008, 2011; Del Gaudio etal. 2010; Mollo etal. 2010, 2011a, b].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="39">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>For a bulk chemical composition of a magmatic batch, the increase of undercooling degree and deformation rate (i.e., stretching and folding mechanisms) progressively induces and facilitates nucleation and crystallization processes [Swanson and Ottino 1990; Perugini etal. 2008; Rossi etal. 2019; Tripoli etal. 2019]; in turn, they strongly affect rheological behavior of magmas that eventually rise from depth and emplace on the Earth’s surface.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour une composition chimique globale d'une même coulée magmatique, l'augmentation du degré de sous-refroidissement et du taux de déformation (c'est-à-dire les mécanismes d'étirement et de plissement) induit et facilite progressivement les processus de nucléation et de cristallisation [Swanson et Ottino 1990; Perugini etal. 2008; Rossi etal. 2019; Tripoli etal. 2019]; à leur tour, ils affectent fortement le comportement rhéologique des magmas qui finissent par remonter des profondeurs et se déposer à la surface de la Terre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="40">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>Deformations occurring in dynamic magmas enhance the nucleation and crystal growth; the movement of a magma furnishes continuous and fresh “feeding ingredients” around early formed crystals [Vetere etal. 2020; Vetere and Holtz 2020] when compared to a static condition.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les déformations se produisant dans les magmas dynamiques favorisent la nucléation et la croissance des cristaux; le mouvement d'un magma alimente de manière continue en ingrédients nouveaux les cristaux à peine formés [Vetere etal. 2020; Vetere et Holtz 2020] par rapport à un état statique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="41">
+            <prop type="paragraph">11</prop>
+            <tuv xml:lang="EN">
+                <seg>Also, in order to better understand the rheology of complex systems, another important aspect is related to the delay in crystal nucleation and growth that became progressively higher at low undercooling degree, i.e., close to liquidus temperature [Rusiecka etal. 2020; Giuliani etal. 2020b].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Aussi, afin de mieux comprendre la rhéologie des systèmes complexes, un autre aspect important est lié au retard dans la nucléation et la croissance des cristaux qui devient progressivement plus élevé à faible degré de surfusion, c'est-à-dire proche de la température de liquidus [Rusiecka etal. 2020; Giuliani etal. 2020b].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="42">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>Rheology is defined as the science studying the deformation of materials under well-defined conditions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La rhéologie est définie comme la science qui étudie la déformation des matériaux dans des conditions bien définies.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="43">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>As defined in Mezner [2014], the term rheology (i.e., the flow science) derives from the Greek word “rhein” that is equivalent to the word “flow.”</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme le défini Mezner [2014], le terme rhéologie (c'est-à-dire la science de l'écoulement) dérivé du mot grec « rhein » qui est équivalent au mot «couler».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="44">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>When applied to volcanology, the rheology of magmas essentially studies melt or magma flows as they are subjected to different stress, in magma chambers, along the way to the surface or when flowing on the Earth’s surface or other planetary surface (Mercury or Mars, for example).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Appliquée à la volcanologie, la rhéologie des magmas étudie essentiellement l'écoulement des liquides ou des magmas soumis à des contraintes différentes, dans les chambres magmatiques, le long du trajet vers la surface ou lors de l'écoulement à la surface de la Terre ou d'une autre planète (Mercure ou Mars, par exemple).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="45">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>Starting from the definition of magma, it also implies that the rheological behavior depends mainly on phases present in a system (fluid ± crystals ± exsolved and dissolved volatiles), which depend on a variety of parameters such as pressure, temperature, and fO₂ for a well-defined chemical system.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En partant de la définition du magma, cela implique également que le comportement rhéologique dépend principalement des phases présentes dans un système (fluides ± cristaux ± éléments volatils exsolvés et dissous), qui dépendent d'une variété de paramètres tels que la pression, la température et la fO₂ pour un système chimique bien défini.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="46">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>In addition, it is now clear that such a behavior can change if phases are subjected to certain stress [e.g., shear rate dependence; Vetere and Holtz 2020 and reference therein].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, il est désormais clair qu'un tel comportement peut changer si les phases sont soumises à une certaine contrainte [par exemple, une dépendance au taux de cisaillement; Vetere et Holtz 2020 et référence incluse].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="47">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>In the conventional description of rheological data, in order to parameterize any suspension, there is a need to clearly define the relationship between the imposed shear stress (𝜎 in Pa) and the shear strain-rate (γ̇ in s⁻¹; i.e., deformation rate).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la description classique des données rhéologiques, afin de paramétrer toute suspension, il est nécessaire de définir clairement la relation entre la contrainte de cisaillement imposée (en Pa) et le taux de déformation par cisaillement (γ̇ en s⁻¹; c'est-à-dire le taux de déformation).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="48">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>This relationship can be used to characterize the flow behavior and related flow curve.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette relation peut être utilisée pour caractériser le comportement de l'écoulement et la courbe d'écoulement associée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="49">
+            <prop type="paragraph">12</prop>
+            <tuv xml:lang="EN">
+                <seg>The flow regime is usually defined as Newtonian when there is a simple proportionality between stress and strain:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le régime d'écoulement est généralement défini comme newtonien lorsqu'il existe une proportionnalité simple entre la contrainte et la déformation:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="50">
+            <prop type="paragraph">13</prop>
+            <tuv xml:lang="EN">
+                <seg>where 𝜂 (in Pa⋅s) is the Newtonian viscosity (Figure1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où 𝜂 (en Pa⋅s) représente la viscosité newtonienne (Figure1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="51">
+            <prop type="paragraph">14</prop>
+            <tuv xml:lang="EN">
+                <seg>However, in multiphase and complex systems, such as magma, deviation from Newtonian behavior is observed and shear stress is not simply proportional to strain rate and the following cases are common: (1)a minimum stress is required before viscous flow initiates (also called the Bingham regime) or (2)both the above behaviors are combined, which is expressed by the Herschel–Bulkley model [Herschel and Bulkley 1926]:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, dans les systèmes multiphasiques et complexes, tels que le magma, on observe une déviation du comportement newtonien et la contrainte de cisaillement n'est pas simplement proportionnelle au taux de déformation. Les cas suivants sont courants: (1)une contrainte minimale est requise avant que l'écoulement visqueux ne commence (également appelé régime de Bingham) ou (2)les deux comportements ci-dessus sont combinés, ce qui est exprimé par le modèle de Herschel–Bulkley [Herschel et Bulkley 1926]:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="52">
+            <prop type="paragraph">15</prop>
+            <tuv xml:lang="EN">
+                <seg>where 𝜏_(y) is the yield stress, K is the flow consistency, and n the flow index (details are shown in Figure1) [Herschel and Bulkley 1926; Wildemuth and Williams 1984; Mueller etal. 2010; Mader etal. 2013; Moitra and Gonnermann 2015].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où 𝜏_(y) est la limite d'élasticité, K est la consistance de l'écoulement et n l'indice d'écoulement (les détails sont présentés dans la figure1) [Herschel et Bulkley 1926; Wildemuth et Williams 1984; Mueller etal. 2010; Mader etal. 2013; Moitra et Gonnermann 2015].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="53">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="EN">
+                <seg>The onset of non-Newtonian rheology in silicate melts has been investigated by Webb and Dingwell [1990a, b] using fiber elongation techniques.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'apparition d'une rhéologie non-newtonienne dans les liquides silicatés a été étudié par Webb et Dingwell [1990a, b] en utilisant des techniques d'élongation des fibres.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="54">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="EN">
+                <seg>The chosen melt compositions were a high silica rhyolite, an andesite, a tholeiitic basalt, and a nephelinite.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les compositions de liquides choisies sont une rhyolite à haute teneur en silice, une andésite, un basalte tholéiitique et une néphélinite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="55">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="EN">
+                <seg>Viscosity was determined as the ratio of the applied tensile stress to the observed strain rate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La viscosité a été déterminée comme le rapport entre la contrainte de traction appliquée et le taux de déformation observé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="56">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="EN">
+                <seg>As reported by the authors, “before experiments, each fiber was initially annealed at a temperature for a period of 10⁴s.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme l'ont rapporté les auteurs, «avant les expériences, chaque fibre a d'abord été recuite à une température pendant une période de 10⁴s.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="57">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="EN">
+                <seg>This equilibration time is greater than both the shear and volume relaxation times of a melt with 𝜂v =𝜂 s = 10¹²Pa⋅s and G_(∞) (shear modulus) ≈ K_(∞) (bulk modulus) 10GPa (t_(V) = t_(S) = 100s).”</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce temps d'équilibrage est supérieur à la fois aux temps de cisaillement et de relaxation volumique d'un liquide, avec 𝜂v = 𝜂 s = 10¹²Pa⋅s et G_(∞) (module de cisaillement) ≈ K_(∞) (module d'élasticité isostatique) 10GPa (t_(V) = t_(S) = 100s). »</seg>
+            </tuv>
+        </tu>
+        <tu tuid="58">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="EN">
+                <seg>However, the measurements had no in situ monitoring of the sample temperature and did not consider viscous heating effects.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, les mesures ne comportaient pas de contrôle in situ de la température de l'échantillon et ne tenaient pas compte des effets de l'échauffement visqueux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="59">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="EN">
+                <seg>Figure2 illustrates the apparent viscosity reduction due to viscous heating effect.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure2 illustre la réduction de viscosité apparente due à l'effet de l'échauffement visqueux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="60">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="EN">
+                <seg>As reported by Cordonnier etal. [2012], “fluids with a temperature-dependent viscosity are affected by viscous heating once this heat source overcomes the heat loss (i.e., heat transfer by conduction, convection, and/or radiation).”</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme le rapporte Cordonnier etal. [2012], «les fluides dont la viscosité dépend de la température sont affectés par un échauffement visqueux une fois que cette source de chaleur surmonte la perte de chaleur (c'est-à-dire le transfert de chaleur par conduction, convection et/ou rayonnement)».</seg>
+            </tuv>
+        </tu>
+        <tu tuid="61">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="EN">
+                <seg>This effect, despite increasing shear rates, will move magmas away from the glass transition [Gonnermann and Manga 2007].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cet effet, malgré l'augmentation des taux de cisaillement, éloigne les magmas de la transition vitreuse [Gonnermann et Manga 2007].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="62">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="EN">
+                <seg>Yue and Bruckner [1996] have re-analyzed the fiber elongation observations and formulated a correction for the strain-rate dependence of viscosity that includes viscous heating effects explicitly.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Yue et Bruckner [1996] ont réanalysé les observations sur l'allongement des fibres et ont formulé une correction pour la dépendance de la viscosité au taux de déformation qui inclut explicitement les effets de l'échauffement visqueux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="63">
+            <prop type="paragraph">16</prop>
+            <tuv xml:lang="EN">
+                <seg>The question as to whether viscous heating may have had a measurable effect on previous determinations of the onset of non-Newtonian viscosity remains unsolved.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La question de savoir si l'échauffement visqueux peut avoir eu un effet mesurable sur les déterminations antérieures de l'apparition de la viscosité non newtonienne n'est pas définitivement tranchée.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="64">
+            <prop type="paragraph">17</prop>
+            <tuv xml:lang="EN">
+                <seg>Because magmatic suspensions are strain rate dependent, thus sensitive to the applied shear stress, itis common to define the relative viscosity 𝜂_(r) as:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme les suspensions magmatiques dépendent du taux de déformation et sont donc sensibles à la contrainte de cisaillement appliquée, ilest courant de définir la viscosité relative 𝜂_(r) comme suit:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="65">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="EN">
+                <seg>where 𝜂_(app) defines the ratio of a given stress to a given strain-rate, meaning that the obtained results are only valid for specific deformation conditions and, thus, vary with strain-rate, and 𝜂_(l) is the liquid viscosity.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où 𝜂_(app) définit le rapport entre une contrainte donnée à un taux de déformation donné, ce qui signifie que les résultats obtenus ne sont valables que pour des conditions de déformation spécifiques et, par conséquent, varient en fonction du taux de déformation, et 𝜂_(l) représente la viscosité du liquide.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="66">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="EN">
+                <seg>Particular consideration must be given to the fact that multiphase suspension deforms when subjected to stress; for magmas the most common deformation relates to shear, while other types of deformation like oscillatory, tensile, or compressive behaviors are limited or even absent [details are given in Dingwell 1995; Dingwell and Webb 1989; Webb and Dingwell 1990a, b].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une attention particulière doit être accordée au fait que la suspension polyphasique se déforme lorsqu'elle est soumise à une contrainte; pour les magmas, la déformation la plus courante concerne le cisaillement, tandis que d'autres types de déformation comme les comportements oscillatoires, de traction ou de compression sont limités ou même absents [des détails sont donnés dans Dingwell 1995; Dingwell et Webb 1989; Webb et Dingwell 1990a, b].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="67">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="EN">
+                <seg>It is intuitive that the viscosity of a suspension is different from the viscosity of the liquid component.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il semble logique que la viscosité d'une suspension est différente de la viscosité du composant liquide.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="68">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="EN">
+                <seg>Moreover, the solid phases in suspensions can vary in terms of their volume, size, and shape, and this can drastically affect the rheology of the system [Kerr and Lister 1991; Mueller etal. 2010; Pistone etal. 2016; Arzilli etal. 2019; Kolzenburg etal. 2020, and reference therein].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, les phases solides dans les suspensions peuvent varier en termes de volume, de taille et de forme, ce qui peut considérablement affecter la rhéologie du système [Kerr et Lister 1991; Mueller etal. 2010; Pistone etal. 2016; Arzilli etal. 2019; Kolzenburg etal. 2020, et référence incluse].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="69">
+            <prop type="paragraph">18</prop>
+            <tuv xml:lang="EN">
+                <seg>As an example, prolate or oblate particles in magma could be present and can act as a different opponent to the applied shear stress and, as consequence, to the flow ability (e.g., if particles’ major axes are aligned to flow direction, their influence on flow velocity is minor compared with the opposed cases as with particles’ major axes orthogonal to the flow).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, des particules allongées ou aplaties pourraient être présentes dans le magma et opposer une résistance, différente de la contrainte de cisaillement appliquée et, par conséquent, à la capacité de l'écoulement (par exemple, si les axes principaux des particules sont alignés sur la direction d'écoulement, leur influence sur la vitesse d'écoulement est mineure contrairement aux cas où les axes principaux des particules sont orthogonaux à l'écoulement).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="70">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>Vona etal. [2011] provided a methodology to follow for the evolution of the apparent viscosity as crystallization processes proceed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Vona etal. [2011] ont fourni une méthodologie pour suivre l'évolution de la viscosité apparente au fur et à mesure des processus de cristallisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="71">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>Figure3a shows an S-shape curve where relaxing, incubation, nucleation times, and crystallization processes with a final plateau (denoting the end of the crystallization process) are highlighted.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure3a présente une courbe en forme de S où les processus de relaxation, d'incubation, de nucléation et de cristallisation avec un plateau final (indiquant la fin du processus de cristallisation) sont mis en évidence.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="72">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>This cartoon is confirmed by experimental data for different compositions (as those presented in the following paragraph).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette représentation est confirmée par des données expérimentales pour différentes compositions (comme celles présentées dans le paragraphe suivant).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="73">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>The steepness of the curve is related to the response of the melt when temperature is below the liquidus.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La pente de la courbe est liée à la réponse du liquide lorsque la température est inférieure au liquidus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="74">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>In other words, the curve shows the time that is needed for a melt to relax and eventually to start to nucleate a solid phase.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En d'autres termes, la courbe indique le temps nécessaire à un liquide pour se détendre et commence éventuellement à nucléer une phase solide.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="75">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>As expected, very fluid systems react much faster than more viscous ones and this is clearly evidenced in Figures3b–d where three different melts with compositions varying from andesite (typical intermediate composition between basalt and rhyolite) to basalt and to pyroxenite (an ultramafic igneous rock consisting essentially of minerals of the pyroxene group) are compared.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme on pouvait s'y attendre, les systèmes très fluides réagissent beaucoup plus rapidement que les systèmes plus visqueux, ce qui est clairement mis en évidence dans les figures3b–d où trois liquides différents avec des compositions variant de l'andésite (composition intermédiaire typique entre le basalte et la rhyolite) au basalte et à la pyroxénite (une roche ignée ultramafique constituée essentiellement de minéraux du groupe des pyroxènes) sont comparés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="76">
+            <prop type="paragraph">19</prop>
+            <tuv xml:lang="EN">
+                <seg>Obviously, considering the red curves in Figure3 (e.g., experiments performed at shearrate = 0.1s⁻¹) the most depolymerized pyroxenite composition (Figure3d) reacts faster (ca. 1800s) when compared to basalt (ca. 2 × 10⁴s; Figure3c) and basalt reacts faster when compared to andesitic composition (ca. 3 × 10⁴s; Figure3b).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De toute évidence, si l'on considère les courbes rouges de la figure3 (par exemple, des expériences effectuées à un taux de cisaillement = 0.1s⁻¹), la composition de pyroxénite la plus dépolymérisée (figure3d) réagit plus rapidement (environ 1800s) que le basalte (env. 2 × 10⁴s; figure3c) et le basalte réagit plus rapidement que la composition andésitique (env. 3× 10⁴s; figure3b).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="77">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="EN">
+                <seg>The last consideration on partly crystallized system concerns the approach to the so-called maximum packing fraction (𝛷_(m)) where the viscosity of a suspension (thus, the ability of a melt plus crystal system to flow) tends to infinity and the transition from viscous to elastic behavior might occur.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La dernière réflexion sur les systèmes partiellement cristallisés concerne l'approche par ce qu'on appelle le coefficient de tassement maximal (𝛷_(m)) où la viscosité d'une suspension (donc, la capacité d'un système liquide comportant des cristaux à s'écouler) tend vers l'infini et où il peut se produire une transition d'un comportement visqueux à un comportement élastique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="78">
+            <prop type="paragraph">20</prop>
+            <tuv xml:lang="EN">
+                <seg>𝛷_(m) depends on particle sizes, shapes, and distributions and its value during a flow may change due to possible crystal alignment along the flow directions [see the concept of rheological critical melt percentage, RCMP as discussed in Arzi 1978 and reviewed by Rosenberg and Handy 2005].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>_(𝛷) dépend de la taille, de la forme et de la distribution des particules et sa valeur au cours d'un écoulement peut changer en raison de l'orientation possible des cristaux relative à la direction de l'écoulement [voir le concept de rhéologie de pourcentage critique de fusion (rheological critical melt percentage), RCMP tel que discuté dans Arzi 1978 et examiné par Rosenberg et Handy 2005].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="79">
+            <prop type="paragraph">21</prop>
+            <tuv xml:lang="EN">
+                <seg>3. Investigated compositions</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>3. Compositions étudiées</seg>
+            </tuv>
+        </tu>
+        <tu tuid="80">
+            <prop type="paragraph">22</prop>
+            <tuv xml:lang="EN">
+                <seg>The bulk compositions reconsidered and used in this review are reported in Figure4 (Supplementary Appendix1), on which both kinetics-controlled crystallization events, rheological test, and/or numerical modeling have been performed.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les compositions globales réexaminées et utilisées dans cette article sont rapportées dans la figure4 (annexe supplémentaire 1), sur laquelle on effectue un contrôle cinétique des événements de cristallisation, des tests rhéologiques et/ou une modélisation numérique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="81">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>A first compositional dataset comprises rheological experimental data in which shear stress vary at isothermal conditions, ideally at a fixed undercooling degree [Morrison etal. 2020; Sehlke and Whittington 2020, 2015; Vetere and Holtz 2020; Vetere etal. 2020, 2017; Campagnola etal. 2016; Sehlke etal. 2014; Vona etal. 2011; Ishibashi 2009; Ishibashi and Sato 2007].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un premier ensemble de données de composition comprend des données expérimentales rhéologiques dans lesquelles la contrainte de cisaillement varie dans des conditions isothermes, idéalement à un degré fixe de surfusion [Morrison etal. 2020; Sehlke et Whittington 2020, 2015; Vetere et Holtz 2020; Vetere etal. 2020, 2017; Campagnola etal. 2016; Sehlke etal. 2014; Vona etal. 2011; Ishibashi 2009; Ishibashi et Sato 2007].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="82">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>However, it is important to state that magmatic suspensions are complex chemical systems, where crystallizing phases have different compositions from the parental liquids [Iezzi etal. 2020].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, il est important de préciser que les suspensions magmatiques sont des systèmes chimiques complexes, où les phases de cristallisation ont des compositions différentes de celles des liquides d'origine [Iezzi etal. 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="83">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>Thereby, also at isothermal condition, the crystallization trough time determines a change in composition of both crystalline and liquid phases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, même dans des conditions isothermes, le temps de cristallisation détermine un changement dans la composition des phases cristalline et liquide.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="84">
+            <prop type="paragraph">23</prop>
+            <tuv xml:lang="EN">
+                <seg>The second dataset, although very limited, comprises rheological data derived upon shearing and cooling events acting on silicate liquids, and represent the closest to natural scenarios [Vetere etal. 2019; Kolzenburg etal. 2020, 2019, 2018].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le deuxième ensemble de données, bien que très limité, comprend des données rhéologiques dérivées d'événements de cisaillement et de refroidissement agissant sur des liquides silicatés, et représente les scénarios les plus proches des scénarios naturels [Vetere etal. 2019; Kolzenburg etal. 2020, 2019, 2018].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="85">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="EN">
+                <seg>These two experimental datasets were obtained with the identical methodology (i.e., concentric cylinder) and mirrors a viscosity range of 10¹–10⁶Pa⋅s, thus, partly crystallized silicate melts, where the magma dynamic regime is dictated by crystallinity (𝛷).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces deux ensembles de données expérimentales ont été obtenus avec la même méthodologie (c'est-à-dire, avec des cylindres concentriques) et reflètent une gamme de viscosité de10¹–10⁶Pa⋅s, donc, des liquides silicatés partiellement cristallisés, où le régime dynamique du magma est dicté par la cristallinité (𝛷).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="86">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="EN">
+                <seg>Usually this regime varies from dilute (where 𝛷 varies between 0.05 and 0.25 and particles have low to moderate interaction mainly depending on the particle aspect ratio) to semi dilute regime (∼0.25〈𝛷〉∼0.6) where particles strongly interact with each other with a possible alignment with the flow direction [Figure5; Hoover etal. 2001; Saar etal. 2001; Vetere and Holtz 2020].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Habituellement, ce régime varie de dilué (où 𝛷 varie entre 0.05 et 0.25 et où les particules ont une interaction faible à modérée, principalement en fonction du rapport d'aspect des particules) au régime semi-dilué (∼ 0.25 〈𝛷〉 ∼ 0.6) où les particules interagissent fortement entre elles avec une orientation possible avec la direction de l'écoulement [Figure5; Hoover etal. 2001; Saar etal. 2001; Vetere et Holtz 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="87">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="EN">
+                <seg>Both regimes define non-Newtonian systems with shear thinning behavior (small or strong, depending on 𝛷) with a possible evolution of the apparent yield stress (Figure1).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les deux régimes définissent des systèmes non-newtoniens avec un comportement de rhéofluidification (faible ou fort, selon 𝛷) avec une évolution possible de la limite apparente d'élasticité (Figure1).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="88">
+            <prop type="paragraph">24</prop>
+            <tuv xml:lang="EN">
+                <seg>Those data reveal the importance of dynamic applied to silicate melts under cooling as will be discussed below.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces données révèlent l'importance de la dynamique appliquée aux liquides silicatés lors du refroidissement, comme nous le verrons plus loin.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="89">
+            <prop type="paragraph">25</prop>
+            <tuv xml:lang="EN">
+                <seg>4. Numerical simulation</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>4. Simulation numérique</seg>
+            </tuv>
+        </tu>
+        <tu tuid="90">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="EN">
+                <seg>AlphaMELTS code was used to track the phase evolution path for compositions presented in Figure4 as temperature cools from the liquidus to subliquidus conditions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le code AlphaMELTS a été utilisé pour suivre l'évolution de la phase pour les compositions présentées dans la figure4 lorsque la température diminue, passant des conditions du liquidus au subliquidus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="91">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="EN">
+                <seg>The alphaMELTS (V. 1.9) software provide a simple text-based interface to subroutine versions of the algorithms MELTS, pMELTS, and pHMELTS [Asimow and Ghiorso 1998; Smith and Asimow 2005; Ghiorso etal. 2002; Ghiorso and Sack 1995].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le logiciel alphaMELTS (V. 1.9) fournit une interface textuelle simple aux versions de sous-programme des algorithmes MELTS, pMELTS et pHMELTS [Asimow et Ghiorso 1998; Smith et Asimow 2005; Ghiorso etal. 2002; Ghiorso et Sack 1995].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="92">
+            <prop type="paragraph">26</prop>
+            <tuv xml:lang="EN">
+                <seg>Suitable for multi-component systems, it allows to calculate equilibrium assemblages along a thermodynamic path set by the user (for details on the software, see the following address: http://melts.ofm-research.org/ and https://magmasource.caltech.edu/forum/).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Adapté aux systèmes multi-composants, il permet de calculer des assemblages à l'équilibre au cours d'une évolution thermodynamique défini par l'utilisateur (pour plus de détails sur le logiciel, voir l'adresse suivante: http://melts.ofm-research.org/ et https://magmasource.caltech.edu/forum/).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="93">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>The evolution of residual melt compositions is reported in Figure6a and the evolution of melt proportion versus temperature is shown in Figure6b (as vol%).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'évolution des compositions des liquides résiduels est indiquée à la figure6a et l'évolution de la proportion de liquide en fonction de la température est indiquée à la figure6b (en %vol).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="94">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>In both cases, a direct comparison with literature data is provided.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans les deux cas, une comparaison directe avec les données de la littérature est fournie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="95">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>The calculated liquidus temperature are also available in Supplementary Appendix1 for all the studied compositions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La température de liquidus calculée est également disponible dans l'annexe supplémentaire 1 pour toutes les compositions étudiées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="96">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>In general, it shows progressively lower values as the chemistry of the systems evolves to more silicic ones (higher SiO₂ content), as expected, to equilibrium conditions for the modeled melts.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En général, on obtient des valeurs de plus en plus faibles au fur et à mesure que la chimie des systèmes évolue vers des systèmes plus siliciques (teneur plus élevée en SiO₂), comme prévu, vers des conditions d'équilibre pour les liquides modélisés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="97">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>The evolution of SiO₂ predicted in Figure6a for samples I09, Vo11Stromboli, and Vo11Etna, as for sample M20NYI and SW15NVP–Na, shows higher values than experimental data, while the opposite is observed for sample S14, M20NYA, and, in both cases, the differences become important at lower temperatures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'évolution de SiO₂ prédite à la figure6a pour les échantillons I09, Vo11Stromboli et Vo11Etna, comme pour les échantillons M20NYI et SW15NVP-Na, présente des valeurs plus élevées que les données expérimentales, tandis que le contraire est observé pour l'échantillon S14, M20NYA et, dans les deux cas, les différences deviennent importantes à des températures plus basses.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="98">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>In general, predictions of the Al₂O₃ evolutions are more accurate as those for CaO and MgO oxides, while FeO^(tot) is overestimated for M20NYA, C16 and underestimated for Vo11Stromboli, SW15NVP, and M20NYI samples, respectively.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En général, les prédictions des évolutions de l'Al₂O₃ sont plus précises que celles des oxydes de CaO et de MgO, tandis que le FeO^(tot) est surestimé pour les échantillons M20NYA, C16 et sous-estimé pour les échantillons Vo11Stromboli, SW15NVP et M20NYI, respectivement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="99">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>The difference between experimental data and data predicted by alphaMELTS are particularly large for M20NYI and M20NYA compositions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La différence entre les données expérimentales et les données prédites par alphaMELTS est particulièrement importante pour les compositions M20NYI et M20NYA.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="100">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>As reported by Morrison etal. [2020], this is related to differences in oxygen fugacities (experimental data are obtained at more reduced conditions).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme indiqué dans Morrison etal. [2020], cela est lié aux différences de fugacité d'oxygène (les données expérimentales sont obtenues dans des conditions plus réduites).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="101">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>Thus, we will focus only on rheological data for these compositions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, nous nous concentrerons uniquement sur les données rhéologiques pour ces compositions.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="102">
+            <prop type="paragraph">27</prop>
+            <tuv xml:lang="EN">
+                <seg>The observed differences can be attributed to two aspects: (i)the inherited accuracy of the thermodynamic calculations and (ii)the occurrence of disequilibrium conditions experienced by the analyzed run-products (Figure6a).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les différences observées peuvent être attribuées à deux aspects: (i)la précision héritée des calculs thermodynamiques et (ii)l'apparition de conditions de déséquilibre dans les produits analysés (Figure6a).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="103">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="EN">
+                <seg>Experimental and thermodynamic calculations show that melt fraction decreases with temperature, as expected.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les calculs expérimentaux et thermodynamiques montrent que la fraction liquide diminue avec la température, comme prévu.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="104">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="EN">
+                <seg>In general, the very low effect of temperature on crystallinity predicted by to alphaMELTS 1.9 in the high temperature range is not reproduced by the experimental data (in particular, for M20NYA, V17, C16, SW15NVP–Na, SW15_EB, S14, and I09 compositions).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En général, l'effet très faible de la température sur la cristallinité prédit par les alphaMELTS 1.9 dans le domaine des hautes températures n'est pas reproduit par les données expérimentales (en particulier pour les compositions M20NYA, V17, C16, SW15NVP-Na, SW15_EB, S14 et I09).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="105">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="EN">
+                <seg>In most cases, the volume of residual melt is much lower that the predicted volumes and the liquidus temperatures extrapolated from the experimental data are lower than predicted liquidus temperatures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Dans la plupart des cas, le volume de liquide résiduel est beaucoup plus faible que les volumes prévus et les températures de liquidus extrapolées à partir des données expérimentales sont inférieures aux températures de liquidus prévues.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="106">
+            <prop type="paragraph">28</prop>
+            <tuv xml:lang="EN">
+                <seg>As a result, the effect of temperature on the crystallinity in the experimental products is more pronounced than predicted (see also Figure6d with the crystallinity of the individual experiments).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par conséquent, l'effet de la température sur la cristallinité des produits expérimentaux est plus prononcé que prévu (voir également la figure6d avec la cristallinité des expériences individuelles).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="107">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="EN">
+                <seg>The composition of solid phases was compiled from the literature data and are reported in Figure6c(A–C).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La composition des phases solides a été compilée à partir des données de la littérature et est présentée dans la figure6c(A–C).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="108">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="EN">
+                <seg>The compositions of plagioclase (plg), pyroxene (px), and olivine (ol) that crystallized in the experiments are compared to predicted compositions with alphaMELTS 1.9.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les compositions de plagioclase (plg), de pyroxène (px) et d'olivine (ol) qui ont cristallisé dans les expériences sont comparées aux compositions prédites avec alphaMELTS 1.9.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="109">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="EN">
+                <seg>Predicted and experimental compositions are in general good agreement.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les compositions prédites et expérimentales présentent en général une bonne concordance.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="110">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="EN">
+                <seg>This indicates that alphaMELTS 1.9 is successful in predicting equilibrium mineral compositions but that the prediction of phase proportions is more problematic, which may be due to calibration of the model from static experiments.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ceci indique qu'alphaMELTS 1.9 réussit à prédire les compositions minérales à l'équilibre, mais que la prédiction des proportions des phases est plus problématique, ce qui peut être dû à l'étalonnage du modèle à partir d'expériences statiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="111">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="EN">
+                <seg>Applying a shear stress to crystallization experiments is expected to promote the crystallization and reduce the delay time preceding nucleation [Rusiecka etal. 2020; Vetere etal. 2021].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'application d'une contrainte de cisaillement aux expériences de cristallisation devrait favoriser la cristallisation et réduire le délai précédant la nucléation [Rusiecka etal. 2020; Vetere etal. 2021].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="112">
+            <prop type="paragraph">29</prop>
+            <tuv xml:lang="EN">
+                <seg>Thus, the possible mechanisms to explain this difference in crystallinity might be related to the continuous stirring of the melts at high shear rate in dynamic experiments which is bringing the necessary “feed growth ingredients” (elements necessary to build a crystalline structure) close to individual crystal surfaces and which facilitates crystal growth (see below).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, les mécanismes possibles pour expliquer cette différence de cristallinité pourraient être liés à l'agitation continue des liquides à taux de cisaillement élevé dans des expériences dynamiques qui rapprochent les «ingrédients alimentant la croissance» nécessaires (éléments nécessaires à la construction d'une structure cristalline) des surfaces des cristaux individuels et qui facilite la croissance cristalline (voir ci-dessous).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="113">
+            <prop type="paragraph">30</prop>
+            <tuv xml:lang="EN">
+                <seg>5. Modeling experimental data by varying shear rate and crystal content</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>5. Modélisation des données expérimentales en faisant varier le taux de cisaillement et la teneur en cristaux</seg>
+            </tuv>
+        </tu>
+        <tu tuid="114">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>Due to the intrinsic difficulties in performing experiments, the available experimental dataset on crystallization processes under dynamic conditions are still relatively scarce, as aforementioned.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En raison des difficultés inhérentes à la réalisation d'expériences, les données expérimentales disponibles sur les processus de cristallisation dans des conditions dynamiques sont encore relativement rares, comme indiqué ci-dessus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="115">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>Moreover, the paucity of experimental data on more evolved systems is resulting from the limitations of the experimental technique (Figures6a–6d).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De plus, la rareté des données expérimentales sur les systèmes plus évolués résulte des limites de la technique expérimentale (Figures 6a–6d).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="116">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>In particular, the range of viscosity that can be investigated with the most common apparatus to reach high stress and higher viscosity values (e.g., 𝜂 &gt; 10⁶Pa⋅s) does not cover that of silicic melts at moderate temperature and even with low amounts of crystals.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En particulier, la gamme de viscosité qui peut être étudiée avec l'appareil le plus courant pour atteindre des valeurs de contrainte et de viscosité élevées (par exemple, 𝜂&gt;10⁶Pa⋅s) ne couvre pas celle des liquides silicatés à température modérée et même avec de faibles quantités de cristaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="117">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>We collected 415 literature experimental viscosity data (see Supplementary Appendices1 and2) on different mafic to intermediate compositions at different temperature, shear rate, volume of crystals, and 2D aspect ratio.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons recueilli 415 données expérimentales de viscosité dans la littérature (voir les annexes supplémentaires 1 et2) sur différentes compositions mafiques à intermédiaires à différentes températures, taux de cisaillement, volume de cristaux et rapport d'aspect 2D.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="118">
+            <prop type="paragraph">31</prop>
+            <tuv xml:lang="EN">
+                <seg>All data were obtained with the identical methodology by using concentric cylinder apparatus and the majority show a decrease in the apparent viscosity (at isothermal conditions) as deformation rate increases, pointing to the well-known effect of shear thinning as discussed above.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutes les données ont été obtenues avec la même méthodologie en utilisant un appareil à cylindres concentriques et la majorité montrent une diminution de la viscosité apparente (dans des conditions isothermes) à mesure que le taux de déformation augmente, ce qui indique l'effet bien connu de rhéofluidification comme mentionné ci-dessus.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="119">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="EN">
+                <seg>Apart from viscosity data, one general outcome for most of the investigated systems is that increasing of the strain rate promotes a fast crystal growth rate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Outre les données de viscosité, un résultat général pour la plupart des systèmes étudiés est que l'augmentation du taux de déformation favorise une croissance rapide des cristaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="120">
+            <prop type="paragraph">32</prop>
+            <tuv xml:lang="EN">
+                <seg>Experiments with dynamic crystallization show that only ca. 6000 s are necessary to produce ca. 22 area % of crystals having plagioclase crystal lengths of ca. 300mm, mirroring a growth rate value of 5 × 10⁻⁶cm/s [Vetere and Holtz 2020], much faster than those reported in literature [i.e., 10⁻⁸–10⁻⁹cm/s; Pupier etal. 2008].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les expériences de cristallisation dynamique montrent qu'il suffit d'environ 6000 s pour produire environ 22% de surface de cristaux ayant des longueurs de cristaux de plagioclase d'environ 300mm, reflétant une valeur des vitesses de croissance de 5 × 10⁻⁶cm/s [Vetere et Holtz 2020], beaucoup plus rapide que celles rapportées dans la littérature [c'est-à-dire 10⁻⁸–10⁻⁹cm/s; Pupier etal. 2008].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="121">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="EN">
+                <seg>Considering that water and other volatiles affect the rheology of silicate melts [Fiege etal. 2015, and reference therein], the crystals’ growth rate might also be dependent on strain rates in dynamic hydrous magmas.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Compte tenu du fait que l'eau et d'autres substances volatiles influent sur la rhéologie des liquides silicatés [Fiege etal. 2015, et référence incluse], la vitesse de croissance des cristaux pourrait également dépendre des taux de déformation dans les magmas hydratés dynamiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="122">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="EN">
+                <seg>Literature provides different general models able to reproduce apparent or relative viscosity behaviors as a function of crystal content, shear rate, and aspect ratio of the solid phases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La littérature fournit différents modèles généraux capables de reproduire des comportements de viscosité apparente ou relative en fonction de la teneur en cristaux, du taux de cisaillement et du rapport d'aspect des phases solides.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="123">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="EN">
+                <seg>Most of them use melt viscosity in order to retrieve the relative viscosity of the suspensions (melt + crystals; see(3)), adopting general viscosity models such as proposed by Hui and Zhang [2007] or Giordano etal. [2008].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La plupart d'entre eux utilisent la viscosité à l'état liquide afin d'obtenir la viscosité relative des suspensions (liquide + cristaux; voir(3)), en adoptant des modèles de viscosité généraux tels que ceux proposés par Hui et Zhang [2007] ou Giordano etal. [2008].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="124">
+            <prop type="paragraph">33</prop>
+            <tuv xml:lang="EN">
+                <seg>A list of the most used models is provided in Table1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une liste des modèles les plus utilisés est fournie dans le tableau1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="125">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>Figure7 provides an overview of the relative viscosity data and some of the models provided in Table1 are plotted for comparison.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure7 donne un aperçu des données de viscosité relative et certains des modèles fournis dans le tableau1 sont représentés à des fins de comparaison.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="126">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>All the experimental data processed at different deformation rates show a shear thinning behavior (note identical symbols with same crystal content but different 𝜂_(r) in Figure7) and relative viscosity differences increase with increasing the gap between low and high shear rate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Toutes les données expérimentales traitées à des taux de déformation différents montrent un comportement de rhéofluidification (symboles identiques avec la même teneur en cristaux mais différents 𝜂_(r) la figure7) et les différences de viscosité relative augmentent en fonction de l'accroissement de l'écart entre un taux de cisaillement faible et un taux de cisaillement élevé.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="127">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>For example, Sehlke and Whittington [2015] show that NVP–Na viscosity vary from 7500 to 1500Pa⋅s as shear rate vary from 0.01 to 5s⁻¹ at 1473K with crystal content 29 vol%.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, Sehlke et Whittington [2015] montrent que la viscosité NVP-Na varie de 7500 à 1500Pa⋅s car le taux de cisaillement varie de 0,01 à 5s⁻¹ à 1473K avec une teneur en cristaux de 29%vol. Vetere etal.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="128">
+            <prop type="paragraph">34</prop>
+            <tuv xml:lang="EN">
+                <seg>Vetere etal. [2017] show a decrease of 𝜂_(app) from ca. 10200 to 1100Pa⋅s at 1502K and ca. 28 vol% of crystal as shear rate vary from 0.1 to 5s⁻¹ in synthetic silicate melt compositions analogue for Mercury (for details, please refer to Supplementary Appendix2).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>[2017] montrent une diminution d'𝜂_(app) d'environ 10200 à 1100Pa⋅s à 1502K et environ 28%vol de cristal, car le taux de cisaillement varie de 0,1 à 5s⁻¹ dans les compositions des liquides silicatés synthétiques analogues au mercure (pour plus de détails, se référer à l'annexe supplémentaire 2).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="129">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="EN">
+                <seg>None of the models presented here are successful for predicting the whole experimental dataset.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Aucun des modèles présentés ici ne permet de prédire l'ensemble des données expérimentales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="130">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="EN">
+                <seg>Reasons reside on the different parameters used for modeling.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Du fait des différents paramètres utilisés pour la modélisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="131">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="EN">
+                <seg>For example, the fact that 𝛷_(m) can vary during deformation due to possible particle alignment will obviously change the rheological behavior.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, le fait que 𝛷_(m) puisse varier au cours de la déformation en raison de l'alignement possible des particules modifiera évidemment le comportement rhéologique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="132">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="EN">
+                <seg>And this, up to now, is not predictable.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Et cela, jusqu'à présent, n'est pas prévisible.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="133">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="EN">
+                <seg>Also, the use of image analysis to retrieve solid phase proportions can lead to some uncertainties and a statistically representative dataset of BSEs images selected along different orientations of the investigated sample is necessary.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, l'utilisation de l'analyse d'images pour déterminer les proportions de la phase solide peut conduire à certaines incertitudes et il est nécessaire de disposer d'un ensemble de données statistiquement représentatif d'images BSE sélectionnées le long de différentes orientations de l'échantillon étudié.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="134">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="EN">
+                <seg>Thus, when using few BSEs images, AS (AS = crystals long axis/short axis), and the average volume proportions could be influenced by the orientation of the 2D section in a sample with a strong 3D crystal fabric [Lanzafame etal. 2017].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ainsi, lorsque l'on utilise peu d'images BSE, AS (AS = axe long/court des cristaux), et les proportions volumiques moyennes pourraient être influencées par l'orientation de la section 2D dans un échantillon avec un réseau cristallin 3D important [Lanzafame etal. 2017].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="135">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="EN">
+                <seg>Ideally, analytical data based on tomographic approaches [Polacci etal. 2018; Arzilli etal. 2019] would give the solution to this problem but, up to now, especially when using concentric cylinder apparatus, it is highly difficult and techniques need improvements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Idéalement, des données analytiques basées sur des approches tomographiques [Polacci etal. 2018; Arzilli etal. 2019] apporterait la solution à ce problème mais, jusqu'à présent, en particulier lors de l'utilisation d'appareils à cylindres concentriques, c'est une tâche très difficile et les techniques doivent être améliorées.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="136">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="EN">
+                <seg>Figure7 shows also that it is possible to modify some of the parameters used in an equation in order to get a best fit with experimental data.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La figure7 montre également qu'il est possible de modifier certains des paramètres utilisés dans une équation afin d'obtenir une meilleure adéquation avec les données expérimentales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="137">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="EN">
+                <seg>This is the case, for instance, for the model proposed by Krieger and Dougherty [1959] which could better reproduce experimental data by varying the parameter B and 𝛷_(m) as done in Figure7B and Table1.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>C'est le cas, par exemple, du modèle proposé par Krieger et Dougherty [1959] qui pourrait mieux reproduire les données expérimentales en faisant varier les paramètres B et 𝛷_(m) comme cela est fait dans la figure7B et le tableau1.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="138">
+            <prop type="paragraph">35</prop>
+            <tuv xml:lang="EN">
+                <seg>However, a more exhaustive rheological model has to engulf rheological transitions from a low viscosity, where flow regime is mainly those of the suspending liquids to a high viscosity regime, where parameters such as particle shape, orientation, and volume dominate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, un modèle rhéologique plus exhaustif doit englober les transitions rhéologiques d'une faible viscosité, où le régime d'écoulement est principalement celui des liquides en suspension, à un régime de viscosité élevée, où des paramètres tels que la forme, l'orientation et le volume des particules dominent.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="139">
+            <prop type="paragraph">36</prop>
+            <tuv xml:lang="EN">
+                <seg>Please refer to the provided literature for details.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Pour plus de détails, se référer à la documentation fournie.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="140">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="EN">
+                <seg>We performed diverse test on the dataset provided in Supplementary Appendix2 for constraining a possible comprehensive apparent/relative viscosity model.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous avons effectué divers tests sur l'ensemble de données fourni dans l'annexe supplémentaire 2 pour définir un éventuel modèle complet de viscosité apparente/relative.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="141">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="EN">
+                <seg>The best solution was given by a polynomial approach, although it doesn’t provide excellent results.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La meilleure solution a été donnée par une approche polynomiale, bien qu'elle ne fournisse pas d'excellents résultats.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="142">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="EN">
+                <seg>We propose an empirical approach to retrieve the apparent viscosity from (1)shear rate and volume of solid phases or (2)AS and volume of crystals in silicate melt suspensions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Nous proposons une approche empirique pour déduire la viscosité apparente de (1) le taux de cisaillement et le volume des phases solides ou (2)l'AS et le volume des cristaux dans les suspensions des liquides silicatés.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="143">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="EN">
+                <seg>Results are based on the 415 experimental data presented in Supplementary Appendix2, interpolated by a simple polynomial approach able to build a 3D surface on which log viscosity, shear rate, and volume of crystals in one case and log viscosity, AS, and volume of crystals in the other case are taken into account (Figure8).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les résultats sont basés sur les 415 données expérimentales présentées dans l'annexe supplémentaire 2, interpolées par une approche polynomiale simple capable de construire une surface 3D pour laquelle sont pris en compte, dans un cas, la viscosité logarithmique, le taux de cisaillement et le volume de cristaux, et la viscosité logarithmique, l'AS et le volume de cristaux dans l'autre cas. (Figure8).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="144">
+            <prop type="paragraph">37</prop>
+            <tuv xml:lang="EN">
+                <seg>The apparent viscosity can be estimated using the following expressions:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La viscosité apparente peut être estimée à l'aide des expressions suivantes:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="145">
+            <prop type="paragraph">38</prop>
+            <tuv xml:lang="EN">
+                <seg>and</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>et</seg>
+            </tuv>
+        </tu>
+        <tu tuid="146">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="EN">
+                <seg>where 𝜂_(app) is the apparent viscosity, 𝛾 the shear rate, 𝛷 the crystal content (vol%), and AS the crystal’s aspect ratio.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où 𝜂_(app) est la viscosité apparente, le taux de cisaillement, la teneur en cristaux (%vol) et le rapport d'aspect du cristal AS.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="147">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="EN">
+                <seg>The fixed parameters for (4) are a = 1.917, b = −0.034, c = 9.258, d = −0.032, e = −14.958, and f = −0.737.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les paramètres fixes pour (4) sont a = 1.917, b = −0.034, c = 9.258, d = −0.032, e = −14.958, et f = −0.737.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="148">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="EN">
+                <seg>The parameters for(5) are a = 1.419, b = 0.313, c = −5.952, d = 10.499, and e = −6.481.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les paramètres de(5) sont a = 1.419, b = 0.313, c = −5.952, d = 10.499, et e = −6.481.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="149">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="EN">
+                <seg>These parameters were obtained by non-linear regressions giving Root Mean Square Error (RMSE) of 0.316 and 0.319 and Mean Absolute Error (MAE) of 0.257 and 0.255 for(4) and(5), respectively.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces paramètres ont été obtenus par régressions non linéaires produisant une racine de l'erreur quadratique moyenne (REQM) de 0.316 et 0.319 et une erreur absolue moyenne (EAM de 0.257 et 0.255 pour(4) et(5), respectivement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="150">
+            <prop type="paragraph">39</prop>
+            <tuv xml:lang="EN">
+                <seg>The comparison of the predicted 𝜂_(app) from(4) and(5) with experimental data is shown in Figure9A and B, respectively.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La comparaison de 𝜂_(app) prédite par(4) et(5) avec les données expérimentales est présentée à la figure9A et B, respectivement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="151">
+            <prop type="paragraph">40</prop>
+            <tuv xml:lang="EN">
+                <seg>6. The effect of shear rate, crystal content, and cooling rates</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>6. L'effet du taux de cisaillement, de la teneur en cristaux et des vitesses de refroidissement</seg>
+            </tuv>
+        </tu>
+        <tu tuid="152">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="EN">
+                <seg>The concomitant effect of shear rate and cooling on crystallinity and rheology can be retrieved from experimental data at one atmosphere pressure, mainly obtained for mafic composition.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'effet concomitant du taux de cisaillement et de la vitesse de refroidissement sur la cristallinité et la rhéologie peut être extrait des données expérimentales à une pression atmosphérique, principalement obtenues pour la composition mafique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="153">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="EN">
+                <seg>However, the rheology of systems crystallizing as a result of degassing-induced decompression as a function of decompression-rate and shear rate was never investigated experimentally.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cependant, la rhéologie des systèmes cristallisant à la suite de la décompression induite par le dégazage en fonction du taux de décompression et du taux de cisaillement n'a jamais été étudiée expérimentalement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="154">
+            <prop type="paragraph">41</prop>
+            <tuv xml:lang="EN">
+                <seg>Such experiments would simulate the nearest approach to geological relevant conditions, specifically the ascent of magmas in conduits and dikes.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>De telles expériences simuleraient l'approche la plus proche des conditions géologiques pertinentes, en particulier l'ascension des magmas dans les cheminées et les dykes.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="155">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="EN">
+                <seg>Vetere etal. [2020, 2019] and Kolzenburg etal. [2020, 2019, 2018, 2017] have performed experiments at one atmosphere pressure.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Vetere etal. [2020, 2019] et Kolzenburg etal. [2020, 2019, 2018, 2017] ont effectué des expériences à une pression atmosphérique.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="156">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="EN">
+                <seg>Due to the progressive increase in crystallinity with time during cooling (contrasting to the classical isothermal viscosity experiments presented in paragraphs 4 and 5), the apparent viscosity will never reach a steady value because of the non-equilibrium conditions of the liquid plus crystal suspensions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En raison de l'augmentation progressive de la cristallinité en fonction du temps pendant le refroidissement (contrairement aux expériences classiques de viscosité isotherme présentées aux paragraphes 4 et 5), la viscosité apparente n'atteindra jamais une valeur stable en raison des conditions de non-équilibre des liquides présentant des suspensions cristalline.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="157">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="EN">
+                <seg>As shown in Kolzenburg etal. [2018], crystal growth is progressively limited and potentially impeded in static systems (e.g.,noshear) because the surrounding (residual intra-crystalline) melt is depleted in the compatible elements (already incorporated by the early growth events) required for further crystal growth.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme le montrent Kolzenburg etal. [2018], la croissance des cristaux est progressivement limitée et potentiellement entravée dans les systèmes statiques (par exemple,sans cisaillement) parce que le liquide (intra-cristallin résiduel) environnant est appauvrie en éléments compatibles (déjà incorporés par les premiers événements de croissance) nécessaires à la poursuite de la croissance des cristaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="158">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="EN">
+                <seg>Also, the cooling and the first crystallizing phases enrich the residual and intra-crystalline melts in slow diffusion components (SiO₂ and Al₂O₃), while the drop of temperature determines a progressive slowdown of chemical elements.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, le refroidissement et les premières phases de cristallisation enrichissent les liquides résiduels et intra-cristallins en composants à diffusion lente (SiO₂ et Al₂O₃), tandis que la chute de température détermine un ralentissement progressif des éléments chimiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="159">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="EN">
+                <seg>Dendritic growth is the consequence of such situations, when the movement of chemical species is limited in a solidifying silicate liquid; if the diffusion is so sluggish compared to kinetic condition, nucleation is suppressed and a glass forms [Kirkpatrick 1981; Lofgren 1980; Shea and Hammer 2013; Vetere etal. 2013, 2015].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>La croissance dendritique est la conséquence de telles situations, lorsque le mouvement des espèces chimiques est limité dans un liquide silicaté en cours de solidification; si la diffusion est très lente par rapport à l'état cinétique, cela empêche la nucléation et déclenche la formation du verre [Kirkpatrick 1981; Lofgren 1980; Shea et Hammer 2013; Vetere etal. 2013, 2015].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="160">
+            <prop type="paragraph">42</prop>
+            <tuv xml:lang="EN">
+                <seg>Shear or any other deformation acting on magmas and silicate liquids enhance the diffusion of elements by mass transfer.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le cisaillement ou toute autre déformation agissant sur les magmas et les liquides silicatés améliorent la diffusion des éléments par transfert de masse.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="161">
+            <prop type="paragraph">43</prop>
+            <tuv xml:lang="EN">
+                <seg>As reported in Kolzenburg etal. [2017], systems cooled in the same thermal range crystallize faster (at low 𝛥T and high-T) and more abundantly with progressively increasing shear rates.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme indiqué dans Kolzenburg etal. [2017], les systèmes refroidis dans la même plage thermique cristallisent plus rapidement (à faible 𝛥T et haut T) et plus abondamment avec des taux de cisaillement progressivement croissants.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="162">
+            <prop type="paragraph">43</prop>
+            <tuv xml:lang="EN">
+                <seg>This observation was also reported for isothermal experiments at sub-liquidus conditions by Kouchi etal. [1986], Vona and Romano [2013], Chevrel etal. [2015], and Vetere etal. [2017] and it is now widely accepted that increasing of shear rate increases the crystal growth rate.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette observation a également été remarquée pour des expériences isothermes dans des conditions de subliquidus par Kouchi etal. [1986], Vona et Romano [2013], Chevrel etal. [2015], et Vetere etal. [2017] et il est maintenant largement admis que l'augmentation du taux de cisaillement augmente la vitesse de croissance des cristaux.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="163">
+            <prop type="paragraph">43</prop>
+            <tuv xml:lang="EN">
+                <seg>Also, Vetere etal. [2019, 2020] have shown that the shear rate during cooling influences the growth rate of solid phases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En outre, Vetere etal. [2019, 2020] ont montré que le taux de cisaillement pendant le refroidissement influence la vitesse de croissance des phases solides.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="164">
+            <prop type="paragraph">43</prop>
+            <tuv xml:lang="EN">
+                <seg>In particular, the growth rate of olivine, in pyroxenite melt at cooling rate of 10K/h is ca. 5.3 × 10⁻⁶cm/s.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En particulier, la vitesse de croissance de l'olivine, dans la pyroxénite liquide à une vitesse de refroidissement de 10K/h est d'environ. 5.3 × 10⁻⁶cm/s.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="165">
+            <prop type="paragraph">43</prop>
+            <tuv xml:lang="EN">
+                <seg>Clinopyroxene crystal in shoshonitic melts shows growth rates between 1.2 and 2.1 × 10⁻⁶cm/s as cooling rates vary from 10 to 100K/h, respectively, under a deformation rate of 1s⁻¹.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Le cristal de clinopyroxène dans les liquides shoshonitiques présente des vitesses de croissance entre 1.2 et 2.1 × 10⁻⁶cm/s lorsque les vitesses de refroidissement varient de 10 à 100K/h, respectivement, à un taux de déformation de 1s⁻¹.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="166">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="EN">
+                <seg>As shown in a simulation for magmatic conditions [Petrelli etal. 2016], mechanisms invoked as responsible for this fast crystal growth rate could be a continuous “fresh feeding ingredient” on individual crystal surfaces.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Comme le montre une simulation de conditions magmatiques [Petrelli etal. 2016], les mécanismes invoqués comme responsables de ces vitesses de croissance rapide des cristaux pourraient être une alimentation continue en «ingrédient frais» des surfaces des cristaux individuels.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="167">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="EN">
+                <seg>The fast stirring also enhances the formation of new crystal nuclei, as suggested by Emerson [1926], Cashman etal. [1999], and Vona and Romano [2013].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'agitation rapide améliore également la formation de nouveaux noyaux cristallins, comme suggéré par Emerson [1926], Cashman etal. [1999], et Vona et Romano [2013].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="168">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="EN">
+                <seg>Finally, oxygen fugacity also plays an important role on crystallization processes and related rheological changes [Kolzenburg etal. 2020].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, la fugacité de l'oxygène joue également un rôle important sur les processus de cristallisation et les changements rhéologiques associés [Kolzenburg etal. 2020].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="169">
+            <prop type="paragraph">44</prop>
+            <tuv xml:lang="EN">
+                <seg>For example, increasing of fO₂ in magmas reaching the Earth’s surface can lead to a progressive shift of the equilibrium crystallization temperatures.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Par exemple, l'augmentation de la fO₂ dans les magmas atteignant la surface de la Terre peut conduire à un décalage progressif des températures de cristallisation à l'équilibre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="170">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="EN">
+                <seg>An example for the evolution of apparent viscosity with decreasing temperature and concomitant crystallization is given in Figure10 for three different mafic magmas: pyroxenite, basalt, and shoshonite.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Un exemple de l'évolution de la viscosité apparente avec une température décroissante et une cristallisation concomitante est donné à la figure10 pour trois magmas mafiques différents: la pyroxénite, le basalte et la shoshonite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="171">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="EN">
+                <seg>Experimental conditions in Figure10 are identical for pyroxenite and shoshonite (cooling rate of 10K/h and shear rate of 1s⁻¹), while for basalt the applied cooling rate is slightly higher (30K/h) and shear rate slightly lower (0.77s⁻¹).</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les conditions expérimentales de la figure10 sont identiques pour la pyroxénite et la shoshonite (vitesse de refroidissement de 10K/h et taux de cisaillement de 1s⁻¹), tandis que pour le basalte, la vitesse de refroidissement appliquée est légèrement supérieure (30K/h) et le taux de cisaillement légèrement inférieur (0,77s⁻¹).</seg>
+            </tuv>
+        </tu>
+        <tu tuid="172">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="EN">
+                <seg>These differences are somewhat minimal, but in terms of reactivity to the cooling event, pyroxenite is the fastest.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ces différences sont minimes, mais en termes de réactivité au refroidissement, la pyroxénite est la plus rapide.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="173">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="EN">
+                <seg>The kinks in the evolution of viscosity with temperature decrease are related to the onset of crystallization of mineral phases.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les points d'inflexion dans l'évolution de la viscosité avec la diminution de la température sont liés au début de la cristallisation des phases minérales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="174">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="EN">
+                <seg>Pyroxenite, basalt, and shoshonite compositions (composition reported in Figure4 and Supplementary Appendix1) have a liquidus temperature, computed by using alphaMELTS of 1543, 1444, and 1452K, respectively.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les compositions de la pyroxénite, du basalte et de la shoshonite (composition indiquée dans la figure4 et dans l'annexe supplémentaire 1) ont une température de liquidus, calculée en utilisant des alphaMELTS de 1543, 1444 et 1452K, respectivement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="175">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="EN">
+                <seg>Obviously, crystallization occurs very quickly after reaching the liquidus temperature for the pyroxenite.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est évident que la cristallisation se produit très rapidement après avoir atteint la température de liquidus pour la pyroxénite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="176">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="EN">
+                <seg>The temperature (and time) interval between liquidus and crystallization temperature is larger for the basalt, and even larger for shoshonite.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>L'intervalle de température (et de temps) entre le liquidus et la température de cristallisation est plus grand pour le basalte, et encore plus grand pour la shoshonite.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="177">
+            <prop type="paragraph">45</prop>
+            <tuv xml:lang="EN">
+                <seg>In structural terms, the chemical variability of silicate liquids might be described by the number of non-bridging oxygens (NBO) per tetrahedrally coordinated cation (T) [Mysen and Richet 2005]:</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>En termes structuraux, la variabilité chimique des liquides silicatés pourrait être décrite par le nombre d'oxygènes non-pontants (ONP) par cation à coordination tétraédrique (T) [Mysen et Richet 2005]:</seg>
+            </tuv>
+        </tu>
+        <tu tuid="178">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="EN">
+                <seg>where T is the total atomic abundance of tetrahedrally coordinated cations, M_(i)^(n+) is the proportion of network modifying cations, “i”, with electrical charge n+ after subtraction of the portion required for charge-balancing trivalent cations on tetravalent sites [Mysen and Richet 2005].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>où T est l'abondance atomique totale des cations à coordination tétraédrique, M_(i)^(n+) est la proportion de cations modificateurs de réseau, "i"», de charge électrique n+ après soustraction de la portion nécessaire à l'équilibrage de charge des cations trivalents sur les sites tétravalents [Mysen et Richet 2005].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="179">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="EN">
+                <seg>The resulting NBO/T values are 1.14, 0.66, and 0.36 for pyroxenite, basalt, and shoshonite melts, respectively.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les valeurs ONP/T résultantes sont de 1.14, 0.66 et 0.36 pour la pyroxénite, le basalte et la shoshonite liquides, respectivement.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="180">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="EN">
+                <seg>This shows that high NBO/T values are related with higher cation mobility favoring fast rearrangement of nuclei in order to achieve the “minimum structural unit” for a further crystal growth [Mysen and Richet 2005].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cela montre que des valeurs élevées de ONP/T sont liées à une mobilité cationique plus élevée favorisant un réarrangement rapide des noyaux afin d'atteindre «l'unité structurelle minimale» pour une croissance cristalline ultérieure [Mysen et Richet 2005].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="181">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="EN">
+                <seg>The curves in Figure10 reflect the effect of melt structure on the nucleation and crystal growth delay during cooling, as also reported in Vetere etal. [2015] and Iezzi etal. [2017].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les courbes de la figure10 reflètent l'effet de la structure liquide sur le retard de nucléation et de croissance des cristaux pendant le refroidissement, comme indiqué également dans Vetere etal. [2015] et Iezzi etal. [2017].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="182">
+            <prop type="paragraph">46</prop>
+            <tuv xml:lang="EN">
+                <seg>Nevertheless, more data are needed to possibly define a better relation between cooling rate, applied shear stress, crystal growth, and NBO/T in order to model viscosity evolution of crystallizing magmas.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Néanmoins, davantage données sont nécessaires pour éventuellement définir une meilleure relation entre la vitesse de refroidissement, la contrainte de cisaillement appliquée, la croissance cristalline et le rapport ONP/T afin de modéliser l'évolution de la viscosité des magmas en cours de cristallisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="183">
+            <prop type="paragraph">47</prop>
+            <tuv xml:lang="EN">
+                <seg>Finally, it has recently become evident that the formation of Fe-oxide nanolites can affect the composition of the residual melt and induce change in crystal nucleation and growth processes and thus, on the magma rheological response [Vetere etal. 2015; Di Genova etal. 2020, and reference therein].</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Enfin, il est récemment devenu évident que la formation de nanolites d'oxyde de fer peut affecter la composition du liquide résiduel et induire des changements dans les processus de nucléation et de croissance des cristaux et donc sur la réponse rhéologique du magma [Vetere etal. 2015; Di Genova etal. 2020, et référence incluse].</seg>
+            </tuv>
+        </tu>
+        <tu tuid="184">
+            <prop type="paragraph">47</prop>
+            <tuv xml:lang="EN">
+                <seg>While these phases are too small to be analytically quantified with most of the classical techniques applied to characterize the presented dataset, the potential occurrence of these phases might influence the data in some experimental charges.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Bien que ces phases soient trop petites pour être quantifiées analytiquement avec la plupart des techniques classiques appliquées pour caractériser l'ensemble des données présentées, l'apparition potentielle de ces phases pourrait influencer les données dans certaines charges expérimentales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="185">
+            <prop type="paragraph">48</prop>
+            <tuv xml:lang="EN">
+                <seg>7. Conclusion and future challenges</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>7. Conclusion et enjeux futurs</seg>
+            </tuv>
+        </tu>
+        <tu tuid="186">
+            <prop type="paragraph">49</prop>
+            <tuv xml:lang="EN">
+                <seg>This review shows that silicate melts subjected to different deformation rates show shear thinning behavior both on pure melts as well as on partly crystallized systems, where crystal content does not exceed ca. 40 vol%.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette étude montre que les liquides silicatés soumis à différents taux de déformation montrent un comportement de rhéofluidification à la fois sur les liquides pures ainsi que sur les systèmes partiellement cristallisés, où la teneur en cristaux ne dépasse pas environ 40%vol.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="187">
+            <prop type="paragraph">49</prop>
+            <tuv xml:lang="EN">
+                <seg>It is obvious that there is still a need for experiments aimed at increasing the available dataset simulating viscosity evolution in crystallizing dynamic systems.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Il est évident qu'il existe encore un besoin d'expériences visant à accroître l'ensemble des données disponibles simulant l'évolution de la viscosité dans les systèmes dynamiques en cours de cristallisation.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="188">
+            <prop type="paragraph">49</prop>
+            <tuv xml:lang="EN">
+                <seg>Future studies need also to address the effect of pressure, degassing, and related crystallization to expand disequilibrium rheology models to crustal magmatic conditions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les études futures devront également aborder l'effet de la pression, du dégazage et de la cristallisation associée pour étendre les modèles de rhéologie au déséquilibre aux conditions magmatiques crustales.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="189">
+            <prop type="paragraph">49</prop>
+            <tuv xml:lang="EN">
+                <seg>A common and rationale strategy is required to study magma rheology by using a common and systematic experimental protocol and this is particularly true for the concentric cylinder approach.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Une stratégie commune et rationnelle est nécessaire pour étudier la rhéologie du magma en utilisant un protocole expérimental commun et systématique, ce qui est particulièrement pertinent pour l'approche par l'utilisation d'un dispositif à cylindres concentriques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="190">
+            <prop type="paragraph">49</prop>
+            <tuv xml:lang="EN">
+                <seg>From a general point of view, deformation applied to silicate melts enhances nucleation and growth rates of phases when compared to static conditions.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>D'un point de vue général, la déformation appliquée aux liquides silicatés augmente les taux de nucléation et les vitesses de croissance des phases cristallines par rapport aux conditions statiques.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="191">
+            <prop type="paragraph">49</prop>
+            <tuv xml:lang="EN">
+                <seg>This point needs to be considered in modeling magmatic and volcanic behaviors, since rheological behavior could drastically deviate from that predicted based on static experimental approaches and equilibrium modeling.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Ce point doit être pris en compte dans la modélisation des comportements magmatiques et volcaniques, car le comportement rhéologique pourrait radicalement s'écarter de celui prédit sur la base d'approches expérimentales statiques et de la modélisation à l'équilibre.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="192">
+            <prop type="paragraph">50</prop>
+            <tuv xml:lang="EN">
+                <seg>Conflicts of interest</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Conflits d’intérêts</seg>
+            </tuv>
+        </tu>
+        <tu tuid="193">
+            <prop type="paragraph">51</prop>
+            <tuv xml:lang="EN">
+                <seg>Authors have no conflict of interest to declare.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Les auteurs n'ont aucun conflit d'intérêts à déclarer.</seg>
+            </tuv>
+        </tu>
+        <tu tuid="194">
+            <prop type="paragraph">52</prop>
+            <tuv xml:lang="EN">
+                <seg>Acknowledgements</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Remerciements</seg>
+            </tuv>
+        </tu>
+        <tu tuid="195">
+            <prop type="paragraph">53</prop>
+            <tuv xml:lang="EN">
+                <seg>This study was funded by the “Fondi Ateneo of the University G. D’Annunzio,” PRIN (2009PZ47NA_003) project “Experimental determination of the glass-forming ability (GFA), nucleation and crystallization of natural silicate melts,” and PRIN (2017J277S9_003) project “Time scales of solidification in magmas: Application to Volcanic Eruptions, Silicate Melts, Glasses, Glass-Ceramics” awarded to GI. Alexander von Humbold foundation senior research grant to FV is acknowledged.</seg>
+            </tuv>
+            <tuv xml:lang="FR">
+                <seg>Cette étude a été financée par le projet «Fondi Ateneo de l'Université G. D’Annunzio», le projet PRIN (2009PZ47NA_003) «Experimental determination of the glass-forming ability (GFA), nucleation and crystallization of natural silicate melts» et le projet PRIN (2017J277S9_003) «Time scales of solidification in magmas: Application to Volcanic Eruptions, Silicate Melts, Glasses, Glass-Ceramics» attribué à GI. Nous remercions la fondation Alexander von Humbold d'avoir accordé une bourse de recherche à FV.</seg>
+            </tuv>
+        </tu>
+    </body>
+</tmx>
