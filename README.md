@@ -6,7 +6,7 @@ This repository contains publicly released resources created in the context of t
   - [1. Post-editing data for the NLP domain (EAMT 2024)](#1-post-editing-data-for-the-nlp-domain-eamt-2024)
   - [2. Parallel corpus of EN-FR abstracts in the NLP domain (TALN 2024)](#2-parallel-corpus-of-en-fr-abstracts-in-the-nlp-domain-taln-2024)
   - [3. Parallel(EN-FR) Articles published in Compte-rendus de l'Académie des sciences, (GEOS and CHIM), prepared by the Mersenne Center (WMT 2025)](#3-mersenne-en-fr-parallel-articles-in-geos-and-chim-wmt-2025)
-  - [4. Parallel Abstracts and Parallel Articles in NLP and EPS (BUCC 2026)](#4-parallel-abstracts-and-parallel-articles-in-nlp-and-eps-bucc-2026)
+  - [4. Parallel Abstracts and Parallel Articles in NLP and EPS domains (BUCC 2026)](#4-parallel-abstracts-and-parallel-articles-in-nlp-and-eps-bucc-2026)
     - [ParaEPS](#paraeps)
     - [ParaNLP](#paranlp)
   - [5. Parallel abstracts from all French PhD Thesis Library (theses.fr) (ARTS2026)](#5-parallel-abstracts-from-all-thesesfr-arts2026)
