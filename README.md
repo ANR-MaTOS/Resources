@@ -1,9 +1,8 @@
 # Resources for the MaTOS (Machine Translation for Open Science) ANR project
 
-{:toc}
-
 This repository contains publicly released resources created in the context of the [MaTOS ANR project](https://anr-matos.github.io).
 
+## Table of Content
 
 - [Resources for the MaTOS (Machine Translation for Open Science) ANR project](#resources-for-the-matos-machine-translation-for-open-science-anr-project)
   - [1. Post-editing data for the NLP domain (EAMT 2024)](#1-post-editing-data-for-the-nlp-domain-eamt-2024)
@@ -13,6 +12,8 @@ This repository contains publicly released resources created in the context of t
     - [ParaEPS](#paraeps)
     - [ParaNLP](#paranlp)
   - [5. Parallel abstracts from all theses.fr (ARTS2026)](#5-parallel-abstracts-from-all-thesesfr-arts2026)
+
+----------------
 
 <a id="eamt2024-postedition"></a>
 ## 1. Post-editing data for the NLP domain (EAMT 2024)
