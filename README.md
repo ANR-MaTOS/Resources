@@ -3,8 +3,6 @@
 This repository contains publicly released resources created in the context of the [MaTOS ANR project](https://anr-matos.github.io).
 
 ## Content
-
-- [Resources for the MaTOS (Machine Translation for Open Science) ANR project](#resources-for-the-matos-machine-translation-for-open-science-anr-project)
   - [1. Post-editing data for the NLP domain (EAMT 2024)](#1-post-editing-data-for-the-nlp-domain-eamt-2024)
   - [2. Parallel corpus of EN-FR abstracts in the NLP domain (TALN 2024)](#2-parallel-corpus-of-en-fr-abstracts-in-the-nlp-domain-taln-2024)
   - [3. MERSENNE EN-FR Parallel Articles in GEOS and CHIM (WMT 2025)](#3-mersenne-en-fr-parallel-articles-in-geos-and-chim-wmt-2025)
