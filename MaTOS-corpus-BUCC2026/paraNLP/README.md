@@ -42,6 +42,8 @@ Here is the folder structure. It contains
 └── xml2dataset.py
 ```
 
-
-- [ ] add statistics
+<!-- 
+- [ ] add statistics -->
 - [ ] add an example of our data in tmx format
+
+<!-- We indicate the DOCID in the meta data. Using this DOCID, people can find the original source for each abstract from **THE** in [theses.fr](https://theses.fr/), and for all abstracts in **rTAL** later than 2006 in https://aclanthology.org/venues/tal/. Regarding the abstracts of **rTAL** published before 2006, only their abstracts are open-source as the meta-data. -->

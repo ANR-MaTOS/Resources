@@ -50,7 +50,7 @@ The scripts for data processing and dataset construction will be available soon.
 
 
 - [ ] `<SEC0>` in section title files marks ... 
-- [ ] add statistics
+<!-- - [ ] add statistics  -->
 - [ ] add an example of our data in tmx format
 
 <!-- - `scripts` gives an example to extract parallel texts from the given xml files and to reconstruct the datasets. --> -->

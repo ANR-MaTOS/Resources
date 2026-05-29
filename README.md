@@ -120,8 +120,7 @@ The data and scripts in [MaTOS-corpus-BUCC2026] correspond to two corpora `ParaE
 
 ### ParaEPS
 ParaEPS consists of around 14k parallel articles and 29 parallel articles in Earth and Planetary Sciences (EPS) domain. Detailed data resource are reported in Table 2 of our paper.
-For parallel abstracts, we release the test sets, consisting of four subsets:
-
+For parallel abstracts, we release the test sets, consisting of four subsets.
 
 For the training set and the validation set, as the status of redistributing abstracts from CanMin and CJES are restricted, we provide the docid of the abstracts and the citations of the corresponding publications in the folder [MaTOS-corpus-BUCC2026/paraEPS/tsv_raw]. We will soon release the scripts for data construction from html files for these abstracts.
 Then, we release other abstracts by collection in tmx format, with the list of docid for trainining set, validation set and test set.
