@@ -12,6 +12,7 @@ This repository contains publicly released resources created in the context of t
     - [ParaNLP](#paranlp)
   - [5. Parallel abstracts from all theses.fr (ARTS2026)](#5-parallel-abstracts-from-all-thesesfr-arts2026)
 
+<a id="eamt2024-postedition"></a>
 ## 1. Post-editing data for the NLP domain (EAMT 2024)
 The data in [NLP-corpus] is described in the following paper, published at the EAMT Conference 2024: 
 
@@ -40,6 +41,7 @@ Resources available:
   - The post-editing interface is still live and you can still contribute here: [https://postedition.anr-matos.fr](https://postedition.anr-matos.fr).
   - Code for the post-editing interface: `postediting-interface/tal/`
 
+<a id="taln2024-NLP-abstracts"></a>
 ## 2. Parallel corpus of EN-FR abstracts in the NLP domain (TALN 2024)
 
 The data in [NLP-abstracts-TALN2024] correspond to approximately 2,000 abstracts of PhD Theses and journal abstracts in the NLP domain in French associated with their English translation (or vice-versa). These texts have been downloaded from public sources, manually curated, and aligned at the sentence level. It is redistributed under the terms of the [CC-BY Licence](https://creativecommons.org/licenses/by/4.0/).
@@ -74,7 +76,7 @@ If you would like to use this data, please use the following citation:
 }
 ```
 
-
+<a id="wmt2025-mersenne-articles"></a>
 ## 3. MERSENNE EN-FR Parallel Articles in GEOS and CHIM (WMT 2025)
 
 The data in [MERSENNE-articles-WMT2025] correspond to 23 EN-FR parallel articles. 19 of them are published in Comptes Rendus Géoscience and 4 of them are published in Comptes Rendus Chimie, in partnership with the Mersenne Centre for Open Scientific Publishing based on a diamond open access policy. These journal articles and their translations distributed under a CC-BY 4.0 licence. The translations are provided by the Mersenne Center and publically accessible online.
@@ -110,7 +112,7 @@ If you would like to use this data, please use the following citation:
 }
 ```
 
-
+<a id="bucc2026-paraNLP-paraEPS"></a>
 ## 4. Parallel Abstracts and Parallel Articles in NLP and EPS (BUCC 2026)
 
 
@@ -160,7 +162,7 @@ We cannot release 4 human translated articles due to the copyright issue.
 }
 ```
 
-
+<a id="arts2026-these-abstracts"></a>
 ## 5. Parallel abstracts from all theses.fr (ARTS2026)
 
 The folder [theses-fr-ARTS2026] will soon release a parallel corpus of PhD thesis abstracts(294k), titles(333k), and keywords(~400k) from theses.fr, with the scripts for data collection, processing and construction. This work will be presented at ARTS @ CORIA-TALN 2026.
