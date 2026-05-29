@@ -2,7 +2,7 @@
 
 This repository contains publicly released resources created in the context of the [MaTOS ANR project](https://anr-matos.github.io).
 
-## Table of Content
+## Content
 
 - [Resources for the MaTOS (Machine Translation for Open Science) ANR project](#resources-for-the-matos-machine-translation-for-open-science-anr-project)
   - [1. Post-editing data for the NLP domain (EAMT 2024)](#1-post-editing-data-for-the-nlp-domain-eamt-2024)
