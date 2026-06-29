@@ -174,7 +174,7 @@ The [theses-fr-ARTS2026] folder contains the scripts used to collect, process, a
 
 
 The resulting parallel corpora are publicly available at https://zenodo.org/records/20810178. 
-The released datasets comprise approximately 294k English–French PhD thesis abstract pairs, 333k title pairs, and 429k keyword pairs, all derived from theses.fr.
+The released datasets comprise approximately 294k English–French PhD thesis abstract pairs, 333k title pairs, and 429k keyword pairs, all derived from theses.fr. If you use this resource, please acknowledge the following paper.
 
 
 ```
