@@ -3,13 +3,15 @@
 This repository contains publicly released resources created in the context of the [MaTOS ANR project](https://anr-matos.github.io).
 
 ## Content
+- [Resources for the MaTOS (Machine Translation for Open Science) ANR project](#resources-for-the-matos-machine-translation-for-open-science-anr-project)
+  - [Content](#content)
   - [1. Post-editing data for the NLP domain (EAMT 2024)](#1-post-editing-data-for-the-nlp-domain-eamt-2024)
   - [2. Parallel corpus of EN-FR abstracts in the NLP domain (TALN 2024)](#2-parallel-corpus-of-en-fr-abstracts-in-the-nlp-domain-taln-2024)
-  - [3. Parallel(EN-FR) Articles published in Compte-rendus de l'Académie des sciences, (GEOS and CHIM), prepared by the Mersenne Center (WMT 2025)](#3-mersenne-en-fr-parallel-articles-in-geos-and-chim-wmt-2025)
-  - [4. Parallel Abstracts and Parallel Articles in NLP and EPS domains (BUCC 2026)](#4-parallel-abstracts-and-parallel-articles-in-nlp-and-eps-bucc-2026)
+  - [3. MERSENNE EN-FR Parallel Articles in GEOS and CHIM (WMT 2025)](#3-mersenne-en-fr-parallel-articles-in-geos-and-chim-wmt-2025)
+  - [4. Parallel Abstracts and Parallel Articles in NLP and EPS (BUCC 2026)](#4-parallel-abstracts-and-parallel-articles-in-nlp-and-eps-bucc-2026)
     - [ParaEPS](#paraeps)
     - [ParaNLP](#paranlp)
-  - [5. Parallel abstracts from all French PhD Thesis Library (theses.fr) (ARTS2026)](#5-parallel-abstracts-from-all-thesesfr-arts2026)
+  - [5. Parallel abstracts from all theses.fr (ARTS2026)](#5-parallel-abstracts-from-all-thesesfr-arts2026)
 
 ----------------
 
@@ -166,5 +168,22 @@ We cannot release 4 human translated articles due to the copyright issue.
 <a id="arts2026-these-abstracts"></a>
 ## 5. Parallel abstracts from all theses.fr (ARTS2026)
 
-The folder [theses-fr-ARTS2026] will soon release a parallel corpus of PhD thesis abstracts(294k), titles(333k), and keywords(~400k) from theses.fr, with the scripts for data collection, processing and construction. This work will be presented at ARTS @ CORIA-TALN 2026.
+The [theses-fr-ARTS2026] folder contains the scripts used to collect, process, and construct the datasets presented in the following paper:
 
+> Ziqian Peng, Lichao Zhu, Maxime Bouthors, François Yvon. 2026. Alignement Bilingue des Résumés et des Mots-Clés de theses.fr. ARTS - In Actes du 2ème Atelier sur l'Analyse et la Recherche de Textes Scientifiques, CORIA-TALN 2026,Nantes France, Juin 2026, 
+
+
+The resulting parallel corpora are publicly available at https://zenodo.org/records/20810178. 
+The released datasets comprise approximately 294k English–French PhD thesis abstract pairs, 333k title pairs, and 429k keyword pairs, all derived from theses.fr.
+
+
+```
+@inproceedings{
+peng-etal-2026-alignment,
+title={Alignement Bilingue des R\'esum\'es et des Mots-Cl\'es de these.fr},
+author={Ziqian Peng, Lichao Zhu, Maxime Bouthors, François Yvon.},
+booktitle={Atelier sur l'Analyse et la Recherche de Textes Scientifiques},
+year={2026},
+url={https://openreview.net/forum?id=BGcECDvEjw},
+}
+```

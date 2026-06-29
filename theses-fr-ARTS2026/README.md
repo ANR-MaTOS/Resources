@@ -1,8 +1,12 @@
 # resumeAllTHE: Collect & Align abstracts from [theses.fr](https://theses.fr/)
 
-This is the repository that contains the scripts and any other materials to collect all abstracts from theses.fr, within the [MaTOS](https://anr-matos.github.io/) projects.
+This is the repository that contains the scripts used to collect, process, and construct the datasets presented in the following paper:
 
-The aligned abstracts and keywords are in [to-add-the-link-of-resource] [add-readme-with-stat-with-the-resource]
+> Ziqian Peng, Lichao Zhu, Maxime Bouthors, François Yvon. 2026. Alignement Bilingue des Résumés et des Mots-Clés de theses.fr. ARTS - In Actes du 2ème Atelier sur l'Analyse et la Recherche de Textes Scientifiques, CORIA-TALN 2026,Nantes France, Juin 2026, 
+
+
+The resulting parallel corpora are publicly available at https://zenodo.org/records/20810178. 
+The released datasets comprise approximately 294k English–French PhD thesis abstract pairs, 333k title pairs, and 429k keyword pairs, all derived from theses.fr.
 
 
 ## Codebase organisation
