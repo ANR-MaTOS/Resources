@@ -64,7 +64,7 @@ class Publication():
         pub_info = tei_tree.find('biblFull').find('titleStmt')
         if pub_info.find('title'):
             self.title = pub_info.find('title').text
-        for author in pub_info.findAll('author', {'role': re.compiel("(aut|crp|co_last_author|co_first_author)")}):
+        for author in pub_info.findAll('author', {'role': re.compile("(aut|crp|co_last_author|co_first_author)")}):
             #self.authors.append(Author(author))
             self.authors.append(author.find('idno', {'type': 'halauthorid'}).text)
 
@@ -232,14 +232,14 @@ else:
 # go through domains and keywords
 
 keyword=args.HAL_category
-page_start = 1
+# page_start = 1
 finished = False
 cursor_mark = '&cursorMark=*'
 while not finished:
     # go through page per page (250 results at a time)
     link = "https://api.archives-ouvertes.fr/search/?q=domain_t:" + keyword + "&rows=250&sort=docid%20asc" + cursor_mark
     id2pub, num_downloaded, cursor_mark = get_list_pubs(link, id2pub=id2pub)
-    page_start += 1
+    # page_start += 1
     if num_downloaded == 0:
         finished = True
     os.sys.stderr.write('Newly downloaded: ' + str(num_downloaded) + '\n')
